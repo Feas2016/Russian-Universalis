@@ -1,0 +1,94 @@
+country_decisions = {
+
+	english_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = ENG }
+			NOT = { exists = GBR }
+			### STT
+			NOT = { exists = UEF }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			primary_culture = english
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			owns_core_province = 236		# London
+			owns_core_province = 237		# Oxfordshire
+			owns_core_province = 234		# Wessex
+			owns_core_province = 235		# Kent
+			owns_core_province = 238		# East Anglia
+		}
+		effect = {
+			change_tag = ENG
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			northumbria = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ENG
+			}
+			mercia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ENG
+			}
+			essex = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ENG
+			}
+			welsh_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ENG
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			ENG = {
+				set_capital = 236
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

@@ -1,0 +1,88 @@
+country_event = {
+	id = ger_main.56475
+	title = "ger_main.t.56475"
+	desc = "ger_main.d.56475"
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = GER
+			tag = PRU
+			tag = BRA
+			}
+		exists = POL
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "ger_main.a.56475"
+		add_casus_belli = {	
+			target = POL
+			type = cb_insult
+			months = 12
+		}
+		add_prestige = -10
+		add_legitimacy = -20
+	}
+}
+
+country_event = {
+	id = ger_main.56476
+	title = "ger_main.t.56476"
+	desc = "ger_main.d.56476"
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			tag = GER
+			tag = PRU
+			tag = BRA
+			}
+		exists = POL
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "ger_main.a.56476"
+		add_prestige = 10
+		add_legitimacy = 20
+	}
+}
+
+country_event = {
+	id = ger_main.56477
+	title = "ger_main.t.56477"
+	desc = "ger_main.d.56477"
+	picture = CORRUPTION_eventPicture
+
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	trigger = {
+		OR = {
+			tag = GER
+			tag = PRU
+			tag = BRA
+			}
+	NOT = { has_country_modifier = ger_hommage }	
+	}
+
+	option = {
+		name = "ger_main.a.56477"
+		random_list = {
+			50 = { add_prestige = -10 }
+			50 = { add_prestige = -5 }
+		}
+	}
+}

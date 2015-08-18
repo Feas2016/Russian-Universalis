@@ -1,0 +1,31 @@
+namespace = bosnia
+
+# Spread of Bosnian
+country_event = {
+	id = bosnia.1
+	title = "bosnia.EVTNAME1"
+	desc = "bosnia.EVTDESC1"
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		any_owned_province = {
+			culture = serbian
+			religion = sunni
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 300
+	}
+	
+	option = {
+		name = "bosnia.EVTOPTA1"
+		random_owned_province = {
+			limit = {
+				culture = serbian
+				religion = sunni
+			}
+			change_culture = bosnian
+		}
+	}
+}

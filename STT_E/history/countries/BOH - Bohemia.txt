@@ -1,0 +1,147 @@
+government = feudal_monarchy
+primary_culture = czech
+religion = catholic
+elector = yes
+capital = 266 # Praha
+technology_group = western
+add_accepted_culture = saxon
+
+
+1378.11.29 = {
+	monarch = {
+		name = "Вацлав IV"
+		dynasty = "фон Люксембург"
+		birth_date = 1361.2.26
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+# Personal Union with Hungary under Sigismund I 1419-1437
+
+1419.1.1 = { leader = {	name = "Ян Жижка"	type = general	rank = 1	fire = 6	shock = 3	manuever = 5	siege = 0	death_date = 1424.10.11 } }
+
+1419.1.1 = { leader = {	name = "Прокоп Великий"	type = general	rank = 1	fire = 4	shock = 3	manuever = 5	siege = 1	death_date = 1434.5.30 } }
+
+# Personal Union with Habsburg under Albrecht II 1437-1439
+
+1439.10.27 = {
+	monarch = {
+		name = "Регентский совет"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Personal Union with Habsburg under Ladislaus Postumus 1453-1457
+
+1457.11.24 = {
+	monarch = {
+		name = "Иржи"
+		dynasty = "из Подебрад"
+		birth_date = 1420.4.23
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1471.3.23 = {
+	monarch = {
+		name = "Владислав II"
+		dynasty = "Ягеллион"
+		birth_date = 1456.3.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1516.3.14 = {
+	monarch = {
+		name = "Людовик I"
+		dynasty = "Ягеллон"
+		birth_date = 1506.7.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1526.8.30 = {
+	government = despotic_monarchy
+	elector = no
+}
+
+1526.8.30 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "фон Габсбург"
+		birth_date = 1503.3.10
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1556.10.2 = { government = absolute_monarchy }
+
+1562.9.17 = {
+	monarch = {
+		name = "Максимилиан II"
+		dynasty = "фон Габсбург"
+		birth_date = 1527.7.31
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1576.1.1 = {
+	monarch = {
+		name = "Рудольф II"
+		dynasty = "фон Габсбург"
+		birth_date = 1552.7.18
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1610.1.1 = { leader = {	name = "Христиан Ангальтский"   	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1630.4.17 } }
+
+1612.1.22 = {
+	monarch = {
+		name = "Матвей"
+		dynasty = "фон Габсбург"
+		birth_date = 1557.2.24
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1615.1.1 = { leader = {	name = "Турн"                 	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1640.1.28 } }
+
+# Start of Thirty years war
+1618.5.22 = {
+	monarch = {
+		name = "Междуцарствие"
+		regent = yes
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+	religion = protestant
+	join_league = protestant
+}
+
+#Personal union with Palatinate
+#Personal Union with Habsburg
+
+1620.11.8 = {
+	leave_league = protestant
+}

@@ -1,0 +1,252 @@
+government = iqta
+technology_group = indian
+religion = sunni
+primary_culture = avadhi
+capital = 555	# Jaunpur
+fixed_capital = 555 # Cannot move capital away from this province & no power cost to move to it
+
+#Sultans of Jaunpur
+1399.1.1 = {
+	monarch = {
+		name = "ћубаррак Ўах" #Malik Qaranfal took this name when he became ruler
+		dynasty = "Ўарки"
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "ћалик  аранфал"
+		monarch_name = "ћубаррак Ўах"
+		dynasty = "Ўарки"
+		claim = 75
+		birth_date = 1370.1.1
+		death_date = 1402.1.1
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1401.1.1 = {
+	heir = {
+		name = "»брагим"
+		monarch_name = "»брагим Ўах"
+		dynasty = "Ўарки"
+		birth_date = 1380.1.1
+		death_date = 1436.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+	
+1402.1.1 = {
+	monarch = {
+		name = "»брагим Ўах"
+		dynasty = "Ўарки"
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1402.1.1 = {
+	heir = {
+		name = "ћахмуд"
+		monarch_name = "ћахмуд Ўах"
+		dynasty = "Ўарки"
+		claim = 95
+		birth_date = 1402.1.1
+		death_date = 1457.1.1
+		ADM = 5
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1436.1.1 = {
+	monarch = {
+		name = "ћахмуд Ўах"
+		dynasty = "Ўарки"
+		ADM = 5
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1436.1.1 = {
+	heir = {
+		name = "Ѕхикан"
+		monarch_name = "ћухаммед Ўах"
+		dynasty = "Ўарки"
+		claim = 95
+		birth_date = 1436.1.1
+		death_date = 1458.6.1
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1457.1.1 = {
+	monarch = {
+		name = "ћухаммед Ўах"
+		dynasty = "Ўарки"
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+#While Muhammad Shah is away his brother hussain usurps the throne
+
+1457.1.1 = {
+	heir = {
+		name = "’уссейн"
+		monarch_name = "’уссейн Ўах"
+		dynasty = "Ўарки"
+		birth_date = 1437.1.1
+		death_date = 1486.1.1
+		claim = 85
+		ADM = 4
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1458.6.1 = {
+	monarch = {
+		name = "’уссейн Ўах"
+		dynasty = "Ўарки"
+		ADM = 4
+		DIP = 0
+		MIL = 3
+	}
+}
+
+#Delhi sultan inserts his own son on the throne of Jaunpur 1486, annexation in anything but name
+
+#Surs
+1553.1.1 = {
+	monarch = {
+		name = "јдиль"
+		dynasty = "—ури"
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1553.1.1 = {
+	heir = {
+		name = "Ўер ’ан"
+		monarch_name = "Ўер ’ан"
+		dynasty = "—ури"
+		birth_date = 1520.1.1
+		death_date = 1561.1.1
+		claim = 85
+		ADM = 1
+		DIP = 1
+		MIL = 4
+	}
+}
+
+1557.4.1 = {
+	monarch = {
+		name = "Ўер ’ан"
+		dynasty = "—ури"
+		ADM = 1
+		DIP = 1
+		MIL = 4
+	}
+}
+
+#Kingdom of Kasi
+
+1738.1.1 = {
+	monarch = {
+		name = "Балванг Сингх"
+		dynasty = "Нараян"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+	religion = hinduism
+	primary_culture = bihari
+}
+
+1740.1.1 = {
+	heir = {
+		name = "Чайт Сингх"
+		monarch_name = "Чайт Сингх"
+		dynasty = "Нараян"
+		birth_date = 1730.1.1
+		death_date = 1810.1.1
+		claim = 95
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1770.8.19 = {
+	monarch = {
+		name = "Чайт Сингх"
+		dynasty = "Нараян"
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1770.8.19 = {
+	heir = {
+		name = "Махипат Сингх"
+		monarch_name = "Махипат Сингх"
+		dynasty = "Нараян"
+		birth_date = 1756.1.1
+		death_date = 1795.9.12
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1781.9.14 = {
+	monarch = {
+		name = "Махипат Сингх"
+		dynasty = "Нараян"
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1781.8.19 = {
+	heir = {
+		name = "Удит Сингх"
+		monarch_name = "Удит Сингх"
+		dynasty = "Нараян"
+		birth_date = 1770.1.1
+		death_date = 1835.4.4
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1795.9.12 = {
+	monarch = {
+		name = "Удит Сингх"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 1
+		MIL = 1
+	}
+}

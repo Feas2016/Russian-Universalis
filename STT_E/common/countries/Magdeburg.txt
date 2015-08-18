@@ -1,0 +1,99 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 189  115  99 }
+
+preferred_religion = protestant
+
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Альбрехт #2" = 40
+	"Фридрих #2" = 40
+	"Гюнтер #1" = 20
+	"Гюнтер #0" = 20
+	"Кристиан Вильгельм #0" = 20
+	"Эрнст #0" = 20
+	"Иоахим Фридрих #0" = 20
+	"Иоганн #0" = 20
+	"Иоганн Альбрехт #0" = 20
+	"Леопольд Вильгельм #0" = 20
+	"Сигизмунд #0" = 20
+	"Дитрих #1" = 15
+	"Людвиг #1" = 15
+	"Отто #1" = 15
+	"Петер #1" = 15
+	"Буркхард #3" = 10
+	"Генрих #2" = 10
+	"Конрад #2" = 10
+	"Бернхард #1" = 10
+	"Эрих #1" = 10
+	"Рудольф #1" = 10
+	"Рупрехт #1" = 10
+	"Адольф #0" = 0
+	"Клеменс #0" = 0
+	"Дидерик #0" = 0
+	"Эберхард #0" = 0
+	"Фабиан #0" = 0
+	"Готфрид #0" = 0
+	"Гельмут #0" = 0
+	"Герберт #0" = 0
+	"Герман #0" = 0
+	"Якоб #0" = 0
+	"Леопольд #0" = 0
+	"Манфред #0" = 0
+	"Маркус #0" = 0
+	"Райнер #0" = 0
+	"Зигфрид #0" = 0
+	"Штефан #0" = 0
+	"Виктор #0" = 0
+	"Вольфганг #0" = 0
+	
+	"Моника #0" = -1
+	"Филиппа #0" = -1
+	"Сванхильда #0" = -1
+}
+
+leader_names = { 
+	Арендт Аренкиль Бервальд Бастель Баузе Боллерс
+	Бургхофф Гермс Мейер Шенебек Шлехенштайн Шульц 
+	Зиммерхеккель Винтер Варенхольц Вегер 
+}
+
+ship_names = {
+	"Барлебер Зее" Фридрихштадт Буккау
+	Дисдорф Зильберберг Кройцхорст Лемсдорф
+	Ольвенштедт Пехау Престер Рандау Ротензее
+	Зальбке Зуденбург Вестерхюсен
+}
+
+army_names = {
+	"Армия пров. $PROVINCE$" 
+}

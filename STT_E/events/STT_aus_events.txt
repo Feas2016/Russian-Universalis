@@ -1,0 +1,109 @@
+country_event = {
+	id = aus_main.56471
+	title = "aus_main.t.56471"
+	desc = "aus_main.d.56471"
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+				tag = HAB
+				tag = AEM
+				tag = DUA
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "aus_main.a.56471"
+		add_prestige = 10
+		add_legitimacy = 10
+		add_imperial_influence = 10
+		add_country_modifier = {
+				name = "aus_maius"
+				duration = -1
+			}
+	}
+}
+
+country_event = {
+	id = aus_main.56472
+	title = "aus_main.t.56472"
+	desc = "aus_main.d.56472"
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+				tag = HAB
+				tag = AEM
+				tag = DUA
+			}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "aus_main.a.56472"
+		add_prestige = -15
+		add_legitimacy = -20
+		add_imperial_influence = -10
+	}
+}
+
+country_event = {
+	id = aus_main.56473
+	title = "aus_main.t.56473"
+	desc = "aus_main.d.56473"
+	picture = CORRUPTION_eventPicture
+
+	mean_time_to_happen = {
+		months = 320
+	}
+	
+	trigger = {
+		OR = {
+				tag = HAB
+				tag = AEM
+				tag = DUA
+			}
+	NOT = { has_country_modifier = aus_maius }	
+	}
+
+	option = {
+		name = "aus_main.a.56473"
+		random_list = {
+			50 = { add_prestige = -10 }
+			50 = { add_prestige = -5 }
+		}
+	}
+}
+
+country_event = {
+	id = aus_main.56474
+	title = "aus_main.t.56474"
+	desc = "aus_main.d.56474"
+	picture = BYZ_COURT_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		government = monarchy
+		ai = no
+	}
+	
+	option = {
+		name = "aus_main.a.56474"
+		add_country_modifier = {
+				name = "aus_aulic"
+				duration = 3650
+		}
+	}
+}

@@ -1,0 +1,254 @@
+government = iqta
+technology_group = muslim
+religion = sunni
+primary_culture = afghani
+capital = 447	# Kandahar
+
+#Kingdom of the Mughal prince Hakim
+1565.1.1 = {
+	monarch = {
+		name = "Хаким"
+		dynasty = "Тимурид"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+	capital = 451	# Kabul
+}
+
+#Ghilzai Dynasty
+1707.1.1 = {
+	monarch = {
+		name = "Мир Вай"
+		dynasty = "Гильзаи"
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+	capital = 447	# Kandahar
+}
+
+1707.1.1 = {
+	heir = {
+		name = "Мир Абд аль-Азиз"
+		monarch_name = "Мир Абд аль-Азиз"
+		dynasty = "Гильзаи"
+		birth_date = 1700.1.1
+		death_date = 1716.3.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1715.11.1 = {
+	monarch = {
+		name = "Мир Абд аль-Азиз"
+		dynasty = "Гильзаи"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1715.11.1 = {
+	heir = {
+		name = "Мир Махмуд"
+		monarch_name = "Мир Махмуд"
+		dynasty = "Гильзаи"
+		birth_date = 1715.11.1
+		death_date = 1725.4.25
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}
+
+1716.3.1 = {
+	monarch = {
+		name = "Мир Махмуд"
+		dynasty = "Гильзаи"
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}
+
+1716.3.1 = {
+	heir = {
+		name = "Мир Ашраф"
+		monarch_name = "Мир Ашраф"
+		dynasty = "Гильзаи"
+		birth_date = 1700.1.1
+		death_date = 1729.11.2
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1725.4.25 = {
+	monarch = {
+		name = "Мир Ашраф"
+		dynasty = "Гильзаи"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1725.4.25 = {
+	heir = {
+		name = "Мир Хусейн"
+		monarch_name = "Мир Хусейн"
+		dynasty = "Гильзаи"
+		birth_date = 1710.1.1
+		death_date = 1738.3.12
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1729.11.2 = {
+	monarch = {
+		name = "Мир Хусейн"
+		dynasty = "Гильзаи"
+		adm = 1
+		dip = 0
+		mil = 1
+		
+	}
+}
+
+#Durrani Dynasty
+
+1747.1.1 = {
+	monarch = {
+		name = "Ахмад-шах Дуррани"
+		dynasty = "Дуррани"
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+1748.1.1 = {
+	heir = {
+		name = "Таймур"
+		monarch_name = "Таймур-шах"
+		dynasty = "Дуррани"
+		birth_date = 1748.1.1
+		death_date = 1793.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1772.10.1 = {
+	monarch = {
+		name = "Таймур-шах"
+		dynasty = "Дуррани"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1772.10.1 = {
+	heir = {
+		name = "Заман"
+		monarch_name = "Заман-шах"
+		dynasty = "Дуррани"
+		birth_date = 1770.1.1
+		death_date = 1801.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1780.1.1 = { capital = 451 } # Kabul
+
+1793.1.1 = {
+	monarch = {
+		name = "Заман-шах"
+		dynasty = "Дуррани"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1793.1.1 = {
+	heir = {
+		name = "Махмуд"
+		monarch_name = "Махмуд-шах"
+		dynasty = "Дуррани"
+		birth_date = 1769.1.1
+		death_date = 1803.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1801.1.1 = {
+	monarch = {
+		name = "Махмуд-шах"
+		dynasty = "Дуррани"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+
+
+1803.1.1 = {
+	monarch = {
+		name = "Шуджа-Шах"
+		dynasty = "Дуррани"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1809.5.3 = {
+	monarch = {
+		name = "Махмуд-шах"
+		dynasty = "Дуррани"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1818.1.1 = {
+	monarch = {
+		name = "Али-шах"
+		dynasty = "Дуррани"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1819.1.1 = {
+	monarch = {
+		name = "Айюб-шах"
+		dynasty = "Дуррани"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}

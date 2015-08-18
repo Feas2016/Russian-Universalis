@@ -1,0 +1,672 @@
+government = despotic_monarchy
+primary_culture = vietnamese
+religion = mahayana
+technology_group = chinese
+capital = 613	# Hanoi
+
+# Tran Dynasty, Later Le Dynasty, Mac Dynasty and Tay Son Dynasty
+
+1398.1.1 = {
+	monarch = {
+		name = "Тран Тхье Де"
+		dynasty = "Тран"
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}
+
+1398.1.1 = {
+	heir = {
+		name = "Куй Ли"
+		monarch_name = "Куй Ли"
+		dynasty = "Хо"
+		birth_date = 1370.1.1
+		death_date = 1400.6.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1400.1.1 = {
+	monarch = {
+		name = "Куй Ли"
+		dynasty = "Хо"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Хан Туонг"
+		monarch_name = "Хан Туонг"
+		dynasty = "Хо"
+		birth_date = 1380.1.1
+		death_date = 1407.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1400.6.1 = {
+	monarch = {
+		name = "Хан Туонг"
+		dynasty = "Хо"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1407.1.1 = {
+	monarch = {
+		name = "Хау Тран Джиан Динх Де"
+		dynasty = "Тран"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1407.1.1 = {
+	heir = {
+		name = "Хау Тран"
+		monarch_name = "Хау Тран"
+		dynasty = "Тран"
+		birth_date = 1380.1.1
+		death_date = 1427.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1409.1.1 = {
+	monarch = {
+		name = "Хау Тран"
+		dynasty = "Тран"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+# Later Le Dynasty
+
+1427.1.1 = {
+	monarch = {
+		name = "Ле Лой"
+		dynasty = "Хау Ле"
+		adm = 3
+		dip = 3
+		mil = 5
+		leader = { name = "Ле Лой"	type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 0 }
+	}
+}
+
+1427.1.1 = {
+	heir = {
+		name = "Ле Тай Тонг"
+		monarch_name = "Ле Тай Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1423.1.1
+		death_date = 1442.9.8
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1438.1.1 = {
+	monarch = {
+		name = "Ле Тай Тонг"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1441.1.1 = {
+	heir = {
+		name = "Ле Нан Тонг"
+		monarch_name = "Ле Нан Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1441.1.1
+		death_date = 1459.10.29
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1442.9.8 = {
+	monarch = {
+		name = "Ле Нан Тонг" #Хау Ле Nhan Tong
+		dynasty = "Хау Ле"
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1459.1.1 = {
+	monarch = {
+		name = "Ле Нан Тонг"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1459.1.1 = {
+	heir = {
+		name = "Ле Тхан Тонг"
+		monarch_name = "Ле Тан Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1442.1.1
+		death_date = 1497.3.4
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1460.6.29 = {
+	monarch = {
+		name = "Ле Тхан Тонг"
+		dynasty = "Хау Ле"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1460.6.29 = {
+	heir = {
+		name = "Ле Хьен Тонг"
+		monarch_name = "Ле Хьен Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1460.1.1
+		death_date = 1504.6.25
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1492.1.1 = {leader = {	name = "Хонг Дук"              	type = general	rank = 0	fire = 1	shock = 3	manuever = 4	siege = 0	death_date = 1497.1.1 } }
+
+1497.3.4 = {
+	monarch = {
+		name = "Ле Хьен Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1497.3.4 = {
+	heir = {
+		name = "Ле Тук Тонг"
+		monarch_name = "Ле Тук Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1487.1.1
+		death_date = 1504.12.9
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1504.6.25 = {
+	monarch = {
+		name = "Ле Тук Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1504.6.25 = {
+	heir = {
+		name = "Ле Уй Мук"
+		monarch_name = "Ле Уй Мук"
+		dynasty = "Хау Ле"
+		birth_date = 1487.1.1
+		death_date = 1510.6.11
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1504.12.9 = {
+	monarch = {
+		name = "Ле Уй Мук"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1504.12.9 = {
+	heir = {
+		name = "Ле Туонг Дук"
+		monarch_name = "Ле Туонг Дук"
+		dynasty = "Хау Ле"
+		birth_date = 1492.1.1
+		death_Date = 1516.5.9
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1510.6.11 = {
+	monarch = {
+		name = "Ле Туонг Дук"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1510.6.11 = {
+	heir = {
+		name = "Ле Чьеу Тонг"
+		monarch_name = "Ле Чьеу Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1496.1.1
+		death_date = 1522.1.20
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1516.5.9 = {
+	monarch = {
+		name = "Ле Чьеу Тонг"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1516.5.9 = {
+	heir = {
+		name = "Ле Сунг Хоанг"
+		monarch_name = "Ле Сунг Хоанг"
+		dynasty = "Хау Ле"
+		birth_date = 1506.1.1
+		death_date = 1527.7.13
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1522.1.20 = {
+	monarch = {
+		name = "Ле Сунг Хоанг"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# Mac Dynasty
+
+1527.7.13 = {
+	monarch = {
+		name = "Мак Данг Дунг"
+		dynasty = "Мак"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1527.7.13 = {
+	heir = {
+		name = "Мак Данг Доан"
+		dynasty = "Мак"
+		birth_date = 1500.1.1
+		death_date = 1540.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1529.2.1 = {
+	monarch = {
+		name = "Мак Данг Доан"
+		dynasty = "Мак"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1531.1.1 = {
+	heir = {
+		name = "Транг Тонг"
+		monarch_name = "Транг Тонг"
+		dynasty = "Мак"
+		birth_date = 1531.1.1
+		death_date = 1545.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1541.1.1 = {
+	monarch = {
+		name = "Транг Тонг"
+		dynasty = "Мак"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1541.1.1 = {
+	heir = {
+		name = "Трунг Тонг"
+		monarch_name = "Трунг Тонг"
+		dynasty = "Мак"
+		birth_date = 1535.1.1
+		death_date = 1561.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1545.1.1 = {
+	monarch = {
+		name = "Трунг Тонг"
+		dynasty = "Мак"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1558.1.1 = {
+	heir = {
+		name = "Ан Тонг"
+		monarch_name = "Ан Тонг"
+		dynasty = "Мак"
+		birth_date = 1558.1.1
+		death_date = 1592.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1561.1.1 = {
+	monarch = {
+		name = "Ан Тонг"
+		dynasty = "Мак"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1592.1.1 = {
+	monarch = {
+		name = "Те Тонг"
+		dynasty = "Мак"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1593.1.1 = {
+	monarch = {
+		name = "Кин Тонг"
+		dynasty = "Мак"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1625.1.1 = {
+	monarch = {
+		name = "Тан Тонг"
+		dynasty = "Мак"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1638.1.1 = {
+	monarch = {
+		name = "Чан Тонг"
+		dynasty = "Мак"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1677.1.1 = {
+	monarch = {
+		name = "Тан Тонг"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1677.1.1 = {
+	heir = {
+		name = "Ду Тонг"
+		monarch_name = "Ду Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1676.1.1
+		death_date = 1729.4.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1687.1.1 = { leader = {	name = "Нгай Вуонг"            	type = general	rank = 0	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1702.1.1 } }
+
+1705.5.23 = {
+	monarch = {
+		name = "Ду Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1705.5.23 = {
+	heir = {
+		name = "Дуй Фуонг"
+		monarch_name = "Дуй Фуонг"
+		dynasty = "Хау Ле"
+		birth_date = 1705.5.23
+		death_date = 1732.11.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1715.1.1 = { leader = {	name = "Нгуен Чо"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 1	siege = 1	death_date = 1725.1.1 } }
+
+1729.4.1 = {
+	monarch = {
+		name = "Дуй Фуонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1729.4.1 = {
+	heir = {
+		name = "Туан Тонг"
+		monarch_name = "Туан Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1698.1.1
+		death_date = 1735.5.8
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1732.11.1 = {
+	monarch = {
+		name = "Туан Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1732.11.1 = {
+	heir = {
+		name = "И Тонг"
+		monarch_name = "И Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1699.1.1
+		death_date = 1740.6.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1735.5.8 = {
+	monarch = {
+		name = "И Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1735.5.8 = {
+	heir = {
+		name = "Хьен Тонг"
+		monarch_name = "Хьен Тонг"
+		dynasty = "Хау Ле"
+		birth_date = 1716.1.1
+		death_date = 1776.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1738.1.1 = { leader = {	name = "Нгуен Хоат"          	type = conquistador	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1765.1.1 } }
+
+1740.6.1 = {
+	monarch = {
+		name = "Ле Хьен Тонг"
+		dynasty = "Хау Ле"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1765.1.1 = {
+	heir = {
+		name = "Нгуен Хуэ"
+		monarch_name = "Нгуен Хуэ"
+		dynasty = "Хау Ле"
+		birth_date = 1765.1.1
+		death_date = 1793.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1767.1.1 = { leader = {	name = "Нгуен Хуэ"             	type = general		rank = 0	fire = 2	shock = 3	manuever = 1	siege = 0	death_date = 1782.1.1 } }
+
+1776.1.1 = {
+	monarch = {
+		name = "Нгуен Хуэ"
+		dynasty = "Хау Ле"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+# Tai Son dynasty
+
+1788.1.1 = {
+	monarch = {
+		name = "Нгуен Куанг Тоан"
+		dynasty = "Нгуен"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	leader = {	name = "Нгуен Куанг Тоан"	type = general	rank = 0	fire = 2	shock = 3	manuever = 4	siege = 1	death_date = 1792.1.1  }
+}
+
+1792.1.1 = {
+	monarch = {
+		name = "Гиа Лонг"
+		dynasty = "Нгуен"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}

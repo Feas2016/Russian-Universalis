@@ -1,0 +1,282 @@
+#government = tribal_federation
+government = tribal_kingdom
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = baluchi
+religion = sunni
+technology_group = muslim
+capital = 577	# Quetta
+
+#Mirwaris, ancestors of later Kambarani dynasty:
+
+1444.1.1 = {
+	monarch = {
+	name = "Кумбар"
+		dynasty = "Мирвари"
+		dip = 1
+		adm = 1 
+		mil = 1
+	}
+}
+
+#Rind kingdom:
+
+1468.1.1 = { 
+	monarch = {
+	name = "Мир Чакар"
+		dynasty = "Ринд"
+		dip = 2
+		adm = 1 
+		mil = 3
+	}
+}
+
+1468.1.1 = {
+	heir = {
+		name = "Мир Шахзад"
+		monarch_name = "Мир Шахзад"
+		dynasty = "Ринд"
+		birth_date = 1450.1.1
+		death_Date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1547.1.1 = { capital = 576 } # Kalat
+
+1565.1.1 = { 
+	monarch = {
+	name = "Мир Шахзад"
+		dynasty = "Ринд"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+#Rinds migrate into Multan and become Mughal jagirholders after helping Humayun retake Hindusthan from Sher Shah
+
+#Kambaranis (kingdom of Kalat)
+
+1580.1.1 = {
+	monarch = {
+	name = "Кумбар"
+		dynasty = "Камбарани"
+		dip = 2
+		adm = 1 
+		mil = 2
+	}
+}
+
+
+1638.1.1 = {
+	monarch = {
+	name = "Хасан"
+		dynasty = "Камбарани"
+		dip = 2
+		adm = 1 
+		mil = 2
+	}
+}
+
+1666.1.1 = {
+	government = despotic_monarchy
+	monarch = { 
+		name = "Ахмад I"
+		dynasty = "Камбарани"
+		dip = 2
+		adm = 2 
+		mil = 3
+	}
+} #Kingdom of Kalat
+
+1670.1.1 = {
+	heir = {
+		name = "Мир Мехраб"
+		monarch_name = "Мир Мехраб I"
+		dynasty = "Камбарани"
+		birth_date = 1670.1.1
+		death_Date = 1696.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1695.1.1 = {
+	monarch = { 
+		name = "Мир Мехраб I"
+		dynasty = "Камбарани"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1695.1.1 = {
+	heir = {
+		name = "Самандар"
+		monarch_name = "Самандар"
+		dynasty = "Камбарани"
+		birth_date = 1675.1.1
+		death_Date = 1713.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1696.1.1 = {
+	monarch = { 
+		name = "Самандар"
+		dynasty = "Камбарани"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1696.1.1 = {
+	heir = {
+		name = "Ахмад"
+		monarch_name = "Ахмад II"
+		dynasty = "Камбарани"
+		birth_date = 1680.1.1
+		death_Date = 1714.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1713.1.1 = {
+	monarch = { 
+		name = "Ахмад II"
+		dynasty = "Камбарани"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1713.1.1 = {
+	heir = {
+		name = "Мир Абдулла"
+		monarch_name = "Мир Абдулла"
+		dynasty = "Камбарани"
+		birth_date = 1690.1.1
+		death_Date = 1730.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1715.1.1 = {
+	monarch = { 
+		name = "Мир Абдулла"
+		dynasty = "Камбарани"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1715.1.1 = {
+	heir = {
+		name = "Мир Мухаббат"
+		monarch_name = "Мир Мухаббат"
+		dynasty = "Камбарани"
+		birth_date = 1702.1.1
+		death_Date = 1749.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1730.1.1 = {
+	monarch = { 
+		name = "Мир Мухаббат"
+		dynasty = "Камбарани"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1730.1.1 = {
+	heir = {
+		name = "Мир Мухаммад Насир"
+		monarch_name = "Мир Мухаммад Насир I"
+		dynasty = "Камбарани"
+		birth_date = 1718.1.1
+		death_Date = 1794.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1749.1.1 = {
+	monarch = { 
+		name = "Мир Мухаммад Насир I"
+		dynasty = "Камбарани"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1760.1.1 = {
+	heir = {
+		name = "Мир Махмуд"
+		monarch_name = "Мир Махмуд I"
+		dynasty = "Камбарани"
+		birth_date = 1760.1.1
+		death_Date = 1831.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1794.1.1 = {
+	monarch = { 
+		name = "Мир Махмуд I"
+		dynasty = "Камбарани"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1794.1.1 = {
+	heir = {
+		name = "Мир Мехраб"
+		monarch_name = "Мир Мехраб II"
+		dynasty = "Камбарани"
+		birth_date = 1780.1.1
+		death_Date = 1839.11.13
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}

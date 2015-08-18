@@ -1,0 +1,137 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = aragonese
+add_accepted_culture = catalan
+add_accepted_culture = sicilian
+religion = catholic
+technology_group = western
+historical_friend = POR
+capital = 220 # Valencia
+
+
+1396.5.19 = {
+	monarch = {
+		name = "Мартин I"
+		dynasty = "де Арагон"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1410.5.31 = {
+	monarch = {
+		name = "Компромисс Каспе"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1410.6.1 = { capital = 214 } # Zaragoza
+
+1412.6.24 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "де Трастамара"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1412.6.24 = {
+	heir = {
+		name = "Альфонс"
+		monarch_name = "Альфонс V"
+		dynasty = "де Трастамара"
+		birth_date = 1396.1.1
+		death_date = 1458.6.27
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 6
+	}
+}
+		
+1416.4.2 = {
+	monarch = {
+		name = "Альфонс V"
+		dynasty = "де Трастамара"
+		birth_date = 1396.1.1
+		adm = 2
+		dip = 4
+		mil = 6
+		leader = {	name = "Альфонс V"	type = general	rank = 0	fire = 4	shock = 3	manuever = 4	siege = 1 }
+	}
+}
+
+1416.4.2 = {
+	heir = {
+		name = "Хуан"
+		monarch_name = "Хуан II"
+		dynasty = "де Трастамара"
+		birth_date = 1397.6.29
+		death_date = 1479.1.20
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+1416.4.3 = { capital = 220 } # Valиncia
+
+1443.1.1 = { leader = {	name = "Бернат де Виламари"	type = admiral	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1463.9.1 } }
+
+1458.6.29 = {
+	monarch = {
+		name = "Хуан II"
+		dynasty = "де Трастамара"
+		birth_date = 1397.6.29
+		adm = 4
+		dip = 1
+		mil = 0
+	}
+}
+
+1458.6.29 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд II"
+		dynasty = "де Трастамара"
+		birth_date = 1452.3.10
+		death_date = 1516.1.23
+		claim = 95
+		adm = 4
+		dip = 6
+		mil = 5
+	}
+}
+
+1479.1.20 = {
+	monarch = {
+		name = "Фердинанд II"
+		dynasty = "де Трастамара"
+		birth_date = 1452.3.10
+		adm = 4
+		dip = 6
+		mil = 5
+		leader = {	name = "Фердинанд II"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1 }
+	}
+}
+
+1495.7.1 = { leader = {	name = "Просперо Колонна"      	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+
+1499.1.1 = { leader = { name = "Педро Наварро"		type = general	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1512.4.11 } } # Captured by French, after that in their service
+
+1508.1.1 = { leader = {	name = "Рамон де Кардона"       type = general	rank = 1	fire = 3	shock = 3	manuever = 2	siege = 1	death_date = 1516.1.23 } }
+
+1512.1.1 = { leader = { name = "Фернандо Д’Авалос"	 	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1525.11.4 } }
+
+1516.1.23 = { government = despotic_monarchy }
+
+1724.1.20 = { government = administrative_monarchy }
+
+1759.8.12 = { government = absolute_monarchy }

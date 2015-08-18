@@ -1,0 +1,151 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = kanauji
+religion = hinduism
+technology_group = indian
+capital = 525	# Gwalior
+
+#Tomar Rajputs
+
+1438.1.1 = {
+	monarch = {
+		name = "Бирсингх Деo"
+		dynasty = "Томар"
+		DIP = 1
+		MIL = 3
+		ADM = 2
+	}
+}
+
+1438.1.1 = {
+	heir = {
+		name = "Ман Сингх"
+		monarch_name = "Man Singh"
+		dynasty = "Томар"
+		birth_date = 1420.1.1
+		death_date = 1500.1.1
+		claim = 95
+		DIP = 2
+		MIL = 3
+		ADM = 1
+	}
+}
+
+1486.1.1 = {
+	monarch = {
+		name = "Ман Сингх"
+		dynasty = "Томар"
+		DIP = 2
+		MIL = 3
+		ADM = 1
+	}
+}
+
+#Sindhias
+
+1731.1.1 = {
+	monarch = {
+		name = "Раноджирао"
+		dynasty = "Синдхия"
+		DIP = 4
+		MIL = 5
+		ADM = 2
+	}
+	primary_culture = marathi
+}
+
+1731.1.1 = {
+	heir = {
+		name = "Джаяппарао"
+		monarch_name = "Джаяппарао"
+		dynasty = "Синдхия"
+		birth_date = 1701.1.1
+		death_date = 1755.6.25
+		claim = 95
+		DIP = 3
+		MIL = 5
+		ADM = 2
+	}
+}
+
+1745.6.19 = {
+	monarch = {
+		name = "Джаяппарао"
+		dynasty = "Синдхия"
+		DIP = 3
+		MIL = 5
+		ADM = 2
+	}
+}
+
+1745.6.19 = {
+	heir = {
+		name = "Джанкиджирао"
+		monarch_name = "Джанкиджирао I"
+		dynasty = "Синдхия"
+		birth_date = 1730.1.1
+		death_date = 1761.1.15
+		claim = 95
+		DIP = 1
+		MIL = 4
+		ADM = 3
+	}
+}
+
+1755.6.25 = {
+	monarch = {
+		name = "Джанкиджирао I"
+		dynasty = "Синдхия"
+		DIP = 1
+		MIL = 4
+		ADM = 3
+	}
+}
+
+1755.6.25 = {
+	heir = {
+		name = "Мадхаврао"
+		monarch_name = "Мадхаврао I"
+		dynasty = "Синдхия"
+		birth_date = 1740.1.1
+		death_date = 1794.2.12
+		claim = 95
+		DIP = 3
+		MIL = 5
+		ADM = 3
+	}
+}
+
+1761.1.15 = {
+	monarch = {
+		name = "Мадхаврао I"
+		dynasty = "Синдхия"
+		DIP = 3
+		MIL = 5
+		ADM = 3
+	}
+}
+
+1761.1.15 = {
+	heir = {
+		name = "Даулатрао"
+		monarch_name = "Даулатрао I"
+		dynasty = "Синдхия"
+		birth_date = 1740.1.1
+		death_date = 1827.1.20
+		claim = 95
+		DIP = 3
+		MIL = 4
+		ADM = 3
+	}
+}
+
+1794.2.12 = {
+	monarch = {
+		name = "Даулатрао I"
+		dynasty = "Синдхия"
+		DIP = 3
+		MIL = 4
+		ADM = 3
+	}
+}

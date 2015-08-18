@@ -1,0 +1,104 @@
+country_decisions = {
+
+	seljuk_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SEL }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = PER }
+			OR = {
+			      tag = AKK
+				  tag = QAR
+			}
+			owns = 429			# Esfahan
+			owns = 416
+			owns = 418
+			owns = 382
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns = 429			# Esfahan
+			owns = 416
+			owns = 418
+			owns = 382
+			is_core = 429			# Esfahan
+			is_core = 416
+			is_core = 418
+			is_core = 382
+			OR = {
+				AND = {
+					owns = 444		# Charjui
+					is_core = 444
+				}
+				AND = {
+					owns = 446		# Herat	
+					is_core = 446
+				}
+			}
+			OR = {
+				AND = {
+					owns = 442		# Bukhara
+					is_core = 442
+				}
+				AND = {
+					owns = 436		# Qaen	
+					is_core = 436
+				}
+			}			
+		}
+		effect = {
+			anatolia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SEL
+			}
+			persian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SEL
+			}
+			middle_east = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SEL
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = SEL
+			if = {
+				limit = {
+					technology_group = nomad_group
+				}
+				change_technology_group = muslim
+				change_unit_type = muslim
+			}
+		define_ruler = {
+			name = "Сельджук ибн Дукак"
+			dynasty = "Сельджукид"
+			adm = 2
+			dip = 2
+			mil = 5
+		}
+		define_heir = {
+			name = "Мелик-шах"
+			dynasty = "Сельджукид"
+			adm = 1
+			dip = 3
+			mil = 4
+		}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 4
+	}
+	
+}

@@ -1,0 +1,128 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = panjabi
+religion = sunni
+technology_group = indian
+capital = 506	# Multan
+
+#Langas
+
+1437.1.1 = {
+	monarch = {
+		name = "Кутбудин"
+		dynasty = "Ланга"
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Гуссаин"
+		monarch_name = "Гуссаин I"
+		dynasty = "Ланга"
+		birth_date = 1400.1.1
+		death_date = 1480.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1444.1.1 = { decision = jizya_tax }
+
+1460.1.1 = {
+	monarch = {
+		name = "Гуссаин I"
+		dynasty = "Ланга"
+		ADM = 2
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1460.1.1 = {
+	heir = {
+		name = "Фируз"
+		monarch_name = "Фирузшах"
+		dynasty = "Ланга"
+		birth_date = 1450.1.1
+		death_date = 1500.1.1
+		claim = 95
+		ADM = 1
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Фирузшах"
+		dynasty = "Ланга"
+		ADM = 1
+		DIP = 3
+		MIL = 2
+	}
+}
+
+1480.1.1 = {
+	heir = {
+		name = "Махмуд"
+		monarch_name = "Махмуд"
+		dynasty = "Ланга"
+		birth_date = 1460.1.1
+		death_date = 1518.1.1
+		claim = 95
+		ADM = 0
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Махмуд"
+		dynasty = "Ланга"
+		ADM = 0
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1500.1.1 = {
+	heir = {
+		name = "Гуссаин"
+		monarch_name = "Гуссаин II"
+		dynasty = "Ланга"
+		birth_date = 1480.1.1
+		death_date = 1555.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1518.1.1 = {
+	monarch = {
+		name = "Гуссаин II"
+		dynasty = "Ланга"
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+#Mirranis
+
+1555.1.1 = {
+	monarch = {
+		name = "Гази Хан Миррани"
+		dynasty = "Миррани"
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}

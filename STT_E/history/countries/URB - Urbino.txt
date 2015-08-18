@@ -1,0 +1,278 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = western
+primary_culture = umbrian
+religion = catholic
+capital = 2977	# Urbino
+fixed_capital = 2977 # Cannot move capital away from this province & no power cost to move to it
+
+
+
+#Dukes of Urbino
+1363.1.1 = {
+	monarch = {
+		name = "Антонио I"
+		dynasty = "да Монтефельтро"
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+1377.1.1 = {
+	heir = {
+		name = "Гуидантонио"
+		monarch_name = "Гуидантонио I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1377.1.1 
+		death_date = 1443.2.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1404.1.1 = {
+	monarch = {
+		name = "Гуидантонио I"
+		dynasty = "да Монтефельтро"
+		dip = 2
+		adm = 1
+		mil = 1
+	}
+}
+
+1428.1.1 = {
+	heir = {
+		name = "Оддантонио"
+		monarch_name = "Оддантонио I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1428.1.1
+		death_date = 1444.7.22
+		claim = 95
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}
+
+1443.2.1 = {
+	monarch = {
+		name = "Оддантонио I"
+		dynasty = "да Монтефельтро"
+		dip = 3
+		adm = 0
+		mil = 2
+	}
+}
+
+1443.2.1 = {
+	heir = {
+		name = "Федериго"
+		monarch_name = "Федериго III"
+		dynasty = "да Монтефельтро"
+		birth_date = 1422.6.7
+		death_date = 1482.9.10
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1444.7.22 = {
+	monarch = {
+		name = "Федериго III"
+		dynasty = "да Монтефельтро"
+		birth_date = 1422.6.7
+		dip = 3
+		adm = 2
+		mil = 3
+	}
+}
+
+1472.1.17 = {
+	heir =  {
+		name = "Гуидобальдо"
+		monarch_name = "Гуидобальдо I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1472.1.17
+		death_date = 1508.4.10
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1482.9.10 = {
+	monarch = {
+		name = "Гуидобальдо I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1472.1.17
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1490.3.22 = {
+	heir = {
+		name = "Франческо"
+		monarch_name = "Франческо I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1490.3.22
+		death_date = 1538.10.20
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1502.1.1 = {
+	monarch = {
+		name = "Чезаре I"
+		dynasty = "Борджия"
+		birth_date = 1475.9.13
+		dip = 4
+		adm = 3
+		mil = 5
+	}
+}
+
+1502.4.1 = {
+	monarch = {
+		name = "Гуидобальдо I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1472.1.17
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1502.4.1 = {
+	heir = {
+		name = "Франческо"
+		monarch_name = "Франческо I"
+		dynasty = "да Монтефельтро"
+		birth_date = 1490.3.22
+		death_date = 1538.10.20
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1508.4.11 = {
+	monarch = {
+		name = "Франческо I"
+		dynasty = "делла Ровере"
+		birth_date = 1490.3.22
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1516.5.30 = {
+	monarch = {
+		name = "Лоренцо I"
+		dynasty = "де Медичи"
+		birth_date = 1492.9.12
+		dip = 5
+		adm = 3
+		mil = 5
+	}
+}
+
+#Same as Lorenzo II di Medici of Florence
+
+1519.5.4 = {
+	monarch = {
+		name = "Катерина I"
+		dynasty = "де Медичи"
+		female = yes
+		birth_date = 1519.4.13
+		dip = 6
+		adm = 2
+		mil = 2
+	}
+}
+
+1521.12.22 = {
+	monarch = {
+		name = "Франческо I"
+		dynasty = "делла Ровере"
+		birth_date = 1490.3.22
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+#Same as above, restored
+
+1528.10.20 = {
+	monarch = {
+		name = "Гуидобальдо II"
+		dynasty = "делла Ровере"
+		birth_date = 1514.4.2
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1549.2.20 = {
+	heir = {
+		name = "Франческо Мария"
+		monarch_name = "Франческо Мария II"
+		dynasty = "делла Ровере"
+		birth_date = 1549.2.20
+		death_date = 1631.4.23
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1574.9.28 = {
+	monarch = {
+		name = "Франческо Мария II"
+		dynasty = "делла Ровере"
+		birth_date = 1549.2.20
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1621.7.25 = {
+	monarch = {
+		name = "Франческо Убальдо I"
+		dynasty = "делла Ровере"
+		birth_date = 1605.5.16
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1623.6.29 = {
+	monarch = {
+		name = "Франческо Мария II"
+		dynasty = "делла Ровере"
+		birth_date = 1549.2.20
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+#Same as above, restored
+#Annexed by Papal States 1631.4.28

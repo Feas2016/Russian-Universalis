@@ -1,0 +1,864 @@
+government = steppe_horde
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+technology_group = nomad_group
+religion = sunni
+primary_culture = crimean
+historical_rival = KAZ
+historical_rival = GOL
+historical_rival = KAR
+historical_rival = CND
+historical_rival = AYD
+historical_rival = MEN
+historical_rival = DUL
+historical_rival = RAM
+historical_friend = TUR
+capital = 284	# Crimea
+
+1441.1.1 = {
+	monarch = {
+		name = "Хаджи I"
+		dynasty = "Гирей"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	add_piety = 0.2
+}
+
+1441.1.1 = {
+	heir = {
+		name = "Нур Девлет"
+		monarch_name = "Нур Девлет I"
+		dynasty = "Гирей"
+		birth_date = 1440.1.1
+		death_date = 1503.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1466.8.1 = {
+	monarch = {
+		name = "Нур Девлет I"
+		dynasty = Гирей
+		birth_date = 1440.1.1
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+
+}
+
+1469.1.1 = {
+	monarch = {
+		name = "Менгли I"
+		dynasty = Гирей
+		birth_date = 1445.1.1
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+
+}
+
+1475.3.1 = {
+	monarch = {
+		name = "Хайдер I"
+		dynasty = Гирей
+		birth_date = 1438.1.1
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1475.12.1 = {
+	monarch = {
+		name = "Нур Девлет I"
+		dynasty = Гирей
+		birth_date = 1440.1.1
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1478.5.1 = {
+	monarch = {
+		name = "Менгли I"
+		dynasty = Гирей
+		birth_date = 1445.1.1
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+
+}
+
+1478.5.1 = {
+	heir = {
+		name = "Мехмед"
+		monarch_name = "Мехмед I"
+		dynasty = "Гирей"
+		birth_date = 1465.1.1
+		death_date = 1523.3.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1515.4.1 = {
+	monarch = {
+		name = "Мехмед I"
+		dynasty = Гирей
+		birth_date = 1465.1.1
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+
+}
+
+1515.4.1 = {
+	heir = {
+		name = "Гази"
+		monarch_name = "Гази I"
+		dynasty = "Гирей"
+		birth_date = 1504.1.1
+		death_date = 1524.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1523.3.1 = {
+	monarch = {
+		name = "Гази I"
+		dynasty = Гирей
+		birth_date = 1504.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1524.1.1 = {
+	monarch = {
+		name = "Саадет I"
+		dynasty = Гирей
+		birth_date = 1494.1.1
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1532.5.1 = {
+	monarch = {
+		name = "Ислам I"
+		dynasty = Гирей
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+
+}
+
+1532.10.1 = {
+	monarch = {
+		name = "Сагиб I"
+		dynasty = Гирей
+		birth_date = 1501.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+
+}
+
+1537.1.1 = {
+	heir = {
+		name = "Амин"
+		monarch_name = "Амин I"
+		dynasty = "Гирей"
+		birth_date = 1537.1.1
+		death_date = 1551.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+# Sahib and his children murdered
+
+1551.1.1 = {
+	monarch = {
+		name = "Девлет I"
+		dynasty = Гирей
+		birth_date = 1512.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+		leader = {	name = "Девлет Гирей I"        	type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0}
+	}
+
+}
+
+1551.1.1 = {
+	heir = {
+		name = "Мехмед"
+		monarch_name = "Мехмед II"
+		dynasty = "Гирей"
+		birth_date = 1532.1.1
+		death_date = 1584.6.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1577.6.29 = {
+	monarch = {
+		name = "Мехмед II"
+		dynasty = Гирей
+		birth_date = 1532.1.1
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1577.6.29 = {
+	heir = {
+		name = "Саадет"
+		monarch_name = "Саадет II"
+		dynasty = "Гирей"
+		birth_date = 1555.1.1
+		death_date = 1587.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1584.1.1 = {
+	monarch = {
+		name = "Саадет II"
+		dynasty = Гирей
+		birth_date = 1555.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1584.6.1 = {
+	monarch = {
+		name = "Ислам II"
+		dynasty = Гирей
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1588.3.1 = {
+	monarch = {
+		name = "Гази II"
+		dynasty = Гирей
+		birth_date = 1554.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1596.5.1 = {
+	monarch = {
+		name = "Фетих I"
+		dynasty = Гирей
+		birth_date = 1557.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1596.9.1 = {
+	monarch = {
+		name = "Гази II"
+		dynasty = Гирей
+		birth_date = 1554.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1596.9.1 = {
+	heir = {
+		name = "Тохтамыш"
+		monarch_name = "Тохтамыш I"
+		dynasty = "Гирей"
+		birth_date = 1589.1.1
+		death_date = 1608.6.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1607.12.20 = {
+	monarch = {
+		name = "Тохтамыш I"
+		dynasty = Гирей
+		birth_date = 1589.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1608.6.1 = {
+	monarch = {
+		name = "Селамет I"
+		dynasty = Гирей
+		birth_date = 1558.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1608.6.1 = {
+	heir = {
+		name = "Джанибек"
+		monarch_name = "Джанибек I"
+		dynasty = "Гирей"
+		birth_date = 1558.1.1
+		death_date = 1636.6.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1610.6.1 = {
+	monarch = {
+		name = "Джанибек I"
+		dynasty = Гирей
+		birth_date = 1558.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1623.1.1 = {
+	monarch = {
+		name = "Мехмед III"
+		dynasty = Гирей
+		birth_date = 1584.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1628.6.1 = {
+	monarch = {
+		name = "Джанибек I"
+		dynasty = Гирей
+		birth_date = 1558.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Инайет I"
+		dynasty = Гирей
+		birth_date = 1597.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1637.1.1 = {
+	monarch = {
+		name = "Багадир I"
+		dynasty = Гирей
+		birth_date = 1602.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1641.1.1 = {
+	monarch = {
+		name = "Мехмед IV"
+		dynasty = Гирей
+		birth_date = 1610.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1644.1.1 = {
+	monarch = {
+		name = "Ислам III"
+		dynasty = Гирей
+		birth_date = 1604.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1654.1.1 = {
+	monarch = {
+		name = "Мехмед IV"
+		dynasty = Гирей
+		birth_date = 1610.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1666.3.1 = {
+	monarch = {
+		name = "Адил I"
+		dynasty = Гирей
+		birth_date = 1617.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1671.1.1 = {
+	monarch = {
+		name = "Селим I"
+		dynasty = Гирей
+		birth_date = 1631.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+		leader = {	name = "Селим I"         	type = general	rank = 0	fire = 1	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1678.1.1 = {
+	monarch = {
+		name = "Мурад I"
+		dynasty = Гирей
+		birth_date = 1627.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1683.1.1 = {
+	monarch = {
+		name = "Хаджи II"
+		dynasty = Гирей
+		birth_date = 1644.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+		leader = {	name = "Хаджи II"         	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0}
+	}
+}
+
+1684.1.1 = {
+	monarch = {
+		name = "Селим I"
+		dynasty = Гирей
+		birth_date = 1631.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+		leader = {	name = "Селим I"         	type = general	rank = 0	fire = 1	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1691.1.1 = {
+	monarch = {
+		name = "Саадет III"
+		dynasty = Гирей
+		birth_date = 1645.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1691.6.1 = {
+	monarch = {
+		name = "Сафа I"
+		dynasty = Гирей
+		birth_date = 1637.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1692.1.1 = {
+	monarch = {
+		name = "Селим I"
+		dynasty = Гирей
+		birth_date = 1631.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+		leader = {	name = "Селим I"         	type = general	rank = 0	fire = 1	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1699.1.1 = {
+	monarch = {
+		name = "Девлет II"
+		dynasty = Гирей
+		birth_date = 1648.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1702.1.1 = {
+	monarch = {
+		name = "Селим I"
+		dynasty = Гирей
+		birth_date = 1631.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+		leader = {	name = "Селим I"         	type = general	rank = 0	fire = 1	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1704.1.1 = {
+	monarch = {
+		name = "Гази III"
+		dynasty = Гирей
+		birth_date = 1673.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1707.1.1 = {
+	monarch = {
+		name = "Каплан I"
+		dynasty = Гирей
+		birth_date = 1678.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1709.1.1 = {
+	monarch = {
+		name = "Девлет II"
+		dynasty = Гирей
+		birth_date = 1648.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1713.1.1 = {
+	monarch = {
+		name = "Каплан I"
+		dynasty = Гирей
+		birth_date = 1678.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1715.1.1 = {
+	monarch = {
+		name = "Девлет III"
+		dynasty = Гирей
+		birth_date = 1647.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1717.1.1 = {
+	monarch = {
+		name = "Саадет IV"
+		dynasty = Гирей
+		birth_date = 1662.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1724.1.1 = {
+	monarch = {
+		name = "Менгли II"
+		dynasty = Гирей
+		birth_date = 1678.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1730.1.1 = {
+	monarch = {
+		name = "Каплан I"
+		dynasty = Гирей
+		birth_date = 1678.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1736.1.1 = {
+	monarch = {
+		name = "Фетих II"
+		dynasty = Гирей
+		birth_date = 1696.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1737.1.1 = {
+	monarch = {
+		name = "Менгли II"
+		dynasty = Гирей
+		birth_date = 1678.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1740.1.1 = {
+	monarch = {
+		name = "Саламет II"
+		dynasty = Гирей
+		birth_date = 1691.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1743.1.1 = {
+	monarch = {
+		name = "Селим II"
+		dynasty = Гирей
+		birth_date = 1708.1.1
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1748.5.19 = {
+	monarch = {
+		name = "Арслан I"
+		dynasty = Гирей
+		birth_date = 1692.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1756.1.1 = {
+	monarch = {
+		name = "Халим I"
+		dynasty = Гирей
+		birth_date = 1689.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1758.1.1 = {
+	monarch = {
+		name = "Кирим I"
+		dynasty = Гирей
+		birth_date = 1717.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1764.1.1 = {
+	monarch = {
+		name = "Селим III"
+		dynasty = Гирей
+		birth_date = 1713.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1767.1.1 = {
+	monarch = {
+		name = "Арслан I"
+		dynasty = Гирей
+		birth_date = 1692.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1767.6.2 = {
+	monarch = {
+		name = "Максуд"
+		dynasty = Гирей
+		birth_date = 1720.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1768.1.1 = {
+	monarch = {
+		name = "Кирим I"
+		dynasty = Гирей
+		birth_date = 1717.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1769.1.1 = {
+	monarch = {
+		name = "Девлет IV"
+		dynasty = Гирей
+		birth_date = 1730.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Каплан II"
+		dynasty = Гирей
+		birth_date = 1739.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1770.6.1 = {
+	monarch = {
+		name = "Селим III"
+		dynasty = Гирей
+		birth_date = 1713.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1771.1.1 = {
+	monarch = {
+		name = "Сахиб II"
+		dynasty = Гирей
+		birth_date = 1726.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1775.1.1 = {
+	monarch = {
+		name = "Девлет IV"
+		dynasty = Гирей
+		birth_date = 1730.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1777.5.5 = {
+	monarch = {
+		name = "Шагин I"
+		dynasty = Гирей
+		birth_date = 1745.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1782.5.1 = {
+	monarch = {
+		name = "Бахадур II"
+		dynasty = Гирей
+		birth_date = 1722.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1782.11.1 = {
+	monarch = {
+		name = "Шагин I"
+		dynasty = Гирей
+		birth_date = 1745.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+# Annexed by Russia

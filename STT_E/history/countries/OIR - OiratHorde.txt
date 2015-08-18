@@ -1,0 +1,350 @@
+government = steppe_horde
+technology_group = nomad_group
+religion = tengri_pagan_reformed
+primary_culture = oirats
+capital = 718
+historical_rival = KHA
+
+#Khans of the Oirats (Kalmyks, Dzungars)
+1399.1.1 = {
+	monarch = {
+		name = "Батула"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1408.1.1 = {
+	monarch = {
+		name = "Тогхон Тайиси"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1408.1.1 = {
+	heir = {
+		name = "Эсэн Тайши"
+		monarch_name = "Эсэн Тайши"
+		dynasty = "Чорос"
+		birth_date = 1393.1.1
+		death_Date = 1455.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1438.1.1 = {
+	monarch = {
+		name = "Эсэн Тайши"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 1393.1.1
+	}
+	leader = { name = "Эсэн Тайши"	type = general	rank = 1	fire = 2	shock = 5	manuever = 5	siege = 0 }
+}
+
+1454.1.1 = {
+	monarch = {
+		name = "Амасандж"
+		dynasty = "Чорос"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1455.1.1 = {
+	monarch = {
+		name = "Уш Темур"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1469.1.1 = {
+	monarch = {
+		name = "Измаил"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1483.1.1 = {
+	monarch = {
+		name = "Хишинг"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Ибурай"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1530.1.1 = {
+	monarch = {
+		name = "Архан"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Baatar"
+		dynasty = "Чорос"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1586.1.1 = { religion = buddhism }
+
+1590.1.1 = {
+	monarch = {
+		name = "Гаши"
+		dynasty = "Чорос"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1619.1.1 = {
+	monarch = {
+		name = "Хара Хула"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1619.1.1 = {
+	heir = {
+		name = "Эрдэни-Батур"
+		monarch_name = "Эрдэни-Батур"
+		dynasty = "Чорос"
+		birth_date = 1600.1.1
+		death_Date = 1653.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1623.1.1 = { capital = 714 }
+
+1630.1.1 = {leader = {	name = "Гаши Хан"              	type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1655.1.1 } }
+
+
+1634.1.1 = {
+	monarch = {
+		name = "Эрдэни-Батур"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1634.1.1 = {
+	heir = {
+		name = "Сенгге"
+		monarch_name = "Сенгге"
+		dynasty = "Чорос"
+		birth_date = 1630.1.1
+		death_date = 1671.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1653.1.1 = {
+	monarch = {
+		name = "Сенгге"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+
+}
+
+1653.1.1 = {
+	heir = {
+		name = "Галдан Башигт"
+		monarch_name = "Галдан Башигт"
+		dynasty = "Чорос"
+		birth_date = 1644.1.1
+		death_Date = 1698.9.4
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1671.1.1 = {
+	monarch = {
+		name = "Галдан Башигт"
+		dynasty = "Чорос"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1680.1.1 = {
+	heir = {
+		name = "Цеван Рабдан"
+		monarch_name = "Цеван Рабдан"
+		dynasty = "Чорос"
+		birth_date = 1680.1.1
+		death_Date = 1727.12.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1698.9.4 = {
+	monarch = {
+		name = "Цеван Рабдан"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+1698.9.4 = {
+	heir = {
+		name = "Баян"
+		monarch_name = "Баян"
+		dynasty = "Чорос"
+		birth_date = 1690.1.1
+		death_Date = 1745.8.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1727.12.1 = {
+	monarch = {
+		name = "Баян"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+1727.12.1 = {
+	heir = {
+		name = "Лама Дорджи"
+		monarch_name = "Лама Дорджи"
+		dynasty = "Чорос"
+		birth_date = 1700.1.1
+		death_Date = 1750.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1745.8.1 = {
+	monarch = {
+		name = "Лама Дорджи"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+1745.8.1 = {
+	heir = {
+		name = "Даваджи"
+		monarch_name = "Даваджи"
+		dynasty = "Чорос"
+		birth_date = 1700.1.1
+		death_Date = 1755.10.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Даваджи"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+1750.1.1 = {
+	heir = {
+		name = "Амурсана"
+		monarch_name = "Амурсана"
+		dynasty  = "Чорос"
+		birth_date = 1750.1.1
+		death_Date = 1756.3.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1755.10.1 = {
+	monarch = {
+		name = "Амурсана"
+		dynasty = "Чорос"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+
+}
+
+#Annexed by Qing in March 1756

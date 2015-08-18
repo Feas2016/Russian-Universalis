@@ -1,0 +1,248 @@
+#### F62 EMPIRE MOD ####
+
+namespace = empirefactions
+
+# Food Shortage, choose between ADM and DIP
+country_event = {
+	id = empirefactions.1
+	title = "EmpFact1NAME"
+	desc = "EmpFact1DESC"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact1OPT1"
+		add_faction_influence = {
+			faction = emp_adm
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_dip
+			influence = -20
+		}
+	}
+	
+	option = {
+		name = "EmpFact1OPT2"
+		add_faction_influence = {
+			faction = emp_dip
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_adm
+			influence= -20
+		}
+	}
+}
+
+## TRADING INFLUENCE EVENTS ##
+
+#War Exhaustion, trade MIL for ADM
+country_event = {
+	id = empirefactions.2
+	title = "EmpFact2NAME"
+	desc = "EmpFact2DESC"
+	picture = ECONOMY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+		war_exhaustion = 5
+	}
+	
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = "EmpFact2OPT1"
+		add_faction_influence = {
+			faction = emp_adm
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_mil
+			influence = -20
+		}
+		add_war_exhaustion = -5
+	}
+
+	option = {
+		name = "EmpFact2OPT2"
+		add_war_exhaustion = 5
+	}
+}
+
+# Diplomatic Scandal, trade DIP for ADM
+country_event = {
+	id = empirefactions.3
+	title = "EmpFact3NAME"
+	desc = "EmpFact3DESC"
+	picture = ECONOMY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact3OPT1"
+		add_faction_influence = {
+			faction = emp_adm
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_dip
+			influence = -20
+		}
+	}
+}
+
+# Administration Fails, trade ADM for MIL
+country_event = {
+	id = empirefactions.4
+	title = "EmpFact4NAME"
+	desc = "EmpFact4DESC"
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact4OPT1"
+		add_faction_influence = {
+			faction = emp_mil
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_adm
+			influence = -20
+		}
+	}
+}
+
+# Make Diplomacy not War, trade MIL for DIP
+country_event = {
+	id = empirefactions.5
+	title = "EmpFact5NAME"
+	desc = "EmpFact5DESC"
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact5OPT1"
+		add_faction_influence = {
+			faction = emp_dip
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_mil
+			influence = -20
+		}
+	}
+}
+
+# Workforce Outsourcing, trade ADM for DIP
+country_event = {
+	id = empirefactions.6
+	title = "EmpFact6NAME"
+	desc = "EmpFact6DESC"
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact6OPT1"
+		add_faction_influence = {
+			faction = emp_dip
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_adm
+			influence = -20
+		}
+	}
+}
+
+# Public Support for Wars, trade DIP for MIL
+country_event = {
+	id = empirefactions.7
+	title = "EmpFact7NAME"
+	desc = "EmpFact7DESC"
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		OR = {
+			government = m_empire
+			government = d_empire
+			government = r_empire
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 800
+	}
+	
+	option = {
+		name = "EmpFact7OPT1"
+		add_faction_influence = {
+			faction = emp_mil
+			influence = 20
+		}
+		add_faction_influence = {
+			faction = emp_dip
+			influence = -20
+		}
+	}
+}

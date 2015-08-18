@@ -1,0 +1,155 @@
+country_decisions = {
+
+	carthagen_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = CAR }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+		OR = {
+			AND = {
+			tag = ALG
+			NOT = { exists = TUN }
+			NOT = { exists = FEZ }
+			NOT = { exists = MOR }
+			}
+			AND = {
+			tag = MOR
+			NOT = { exists = FEZ }
+			NOT = { exists = ALG }
+			NOT = { exists = TUN }
+			}
+			AND = {
+			tag = TUN
+			NOT = { exists = ALG }
+			NOT = { exists = FEZ }
+			NOT = { exists = TRP }
+			}
+			AND = {
+			tag = FEZ
+			NOT = { exists = MOR }
+			NOT = { exists = ALG }
+			NOT = { exists = TUN }
+			}
+		}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns = 344			# Marrakesh
+			owns = 338                      # Al-Djazair
+			owns = 341                      # Tunis
+			owns = 354                      # Tripoli
+			owns = 221                      # Mursia
+			is_core = 344			# Marrakesh
+			is_core = 338                   # Al-Djazair
+			is_core = 341                   # Tunis
+			is_core = 354                   # Tripoli
+			OR = {
+				AND = {
+					owns = 343		# Fez
+					is_core = 343
+				}
+				AND = {
+					owns = 227		# Lisboa	
+					is_core = 227
+				}
+			}
+			OR = {
+				AND = {
+					owns = 	220	        # Valencia 
+					is_core = 220
+				}
+				AND = {
+					owns = 217		# Madrid
+					is_core = 217
+				}
+			}
+			OR = {
+				AND = {
+					owns = 333		# Palma
+					is_core = 333
+				}
+				AND = {
+					owns = 127		# Cagliari	
+					is_core = 127
+				}
+			}			
+		}
+		effect = { 
+			algerian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			tunisian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			moroccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			tripoli_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			cyrenaica_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			iberian_peninsula = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			italian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = CAR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+                        }
+                        add_prestige = 25
+			change_tag = CAR
+			change_government = imperial_government
+			CAR = {
+				set_capital = 341
+		        }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 2
+	}
+	
+}

@@ -1,0 +1,494 @@
+########################################
+# Flavor Events for Brandenburg - Prussia
+#
+# written by Sara Wendel-Örtqvist
+########################################
+
+namespace = flavor_brapru
+normal_or_historical_nations = yes
+
+# The incorporation of Prussia into Brandenburg
+country_event = {
+	id = flavor_brapru.3636
+	title = "flavor_brapru.EVTNAME3636"
+	desc = "flavor_brapru.EVTDESC3636"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		PRU = {
+			ai = yes
+			was_player = no
+			OR = {
+				has_opinion = { who = BRA value = 100 }
+				vassal_of = BRA
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTOK"
+		BRA = {
+			create_union = PRU
+		}
+	}
+}
+
+# Reform of the Brandenburg Army
+country_event = {
+	id = flavor_brapru.3518
+	title = "flavor_brapru.EVTNAME3518"
+	desc = "flavor_brapru.EVTDESC3518"
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		is_year = 1600
+		NOT = { is_year = 1700 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3518"
+		add_army_tradition = 5
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB3518"
+		add_navy_tradition = 5
+	}
+}
+
+# The Prussian (Brandenburg) African Trade Company
+country_event = {
+	id = flavor_brapru.3523
+	title = "flavor_brapru.EVTNAME3523"
+	desc = "flavor_brapru.EVTDESC3523"
+	picture = EXPLORERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			AND = {
+				tag = PRU
+				NOT = {
+					exists = BRA
+				}
+			}
+		}
+		any_active_trade_node = {
+			OR = {
+				region = west_african_coast
+				region = south_africa
+				region = central_africa
+			}
+		}	
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3523"
+		add_prestige = 5
+		create_explorer = 5
+		add_country_modifier = {
+			name = prussian_african_trade_company
+			duration = 7300
+		}
+	}
+}
+
+# Immanuel Kant
+country_event = {
+	id = flavor_brapru.5140
+	title = "flavor_brapru.EVTNAME5140"
+	desc = "flavor_brapru.EVTDESC5140"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		is_year = 1781
+		NOT = { is_year = 1800 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTOK"
+		add_prestige = 10
+		define_advisor = {
+			type = philosopher
+			name = "Èììàíóèë Êàíò"
+			skill = 3
+			discount = yes
+		}
+	}
+}
+
+# The Absolutism
+country_event = {
+	id = flavor_brapru.3525
+	title = "flavor_brapru.EVTNAME3525"
+	desc = "flavor_brapru.EVTDESC3525"
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		is_year = 1713
+		NOT = { is_year = 1765 }
+		government = absolute_monarchy
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTOK"
+		add_prestige = 5
+		add_legitimacy = 5
+	}
+}
+
+# The Reform of the Prussian Army
+country_event = {
+	id = flavor_brapru.3526
+	title = "flavor_brapru.EVTNAME3526"
+	desc = "flavor_brapru.EVTDESC3526"
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		NOT = {
+			exists = BRA
+		}
+		is_year = 1700
+		NOT = { is_year = 1800 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3526"
+		add_army_tradition = 5
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB3526"
+		add_navy_tradition = 5
+	}
+}
+
+# The Enlightened Reforms of Frederick the Great
+country_event = {
+	id = flavor_brapru.3530
+	title = "flavor_brapru.EVTNAME3530"
+	desc = "flavor_brapru.EVTDESC3530"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		NOT = { exists = BRA }
+		is_year = 1750
+		NOT = { is_year = 1785 }
+		has_regency = no
+		OR = {
+			DIP = 6
+			ADM = 6
+			MIL = 6
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3530"
+		add_ruler_modifier = {
+			name = pru_enlightenment_reforms
+		}
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB3530"
+		add_stability = 1
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTC3530"
+		add_stability = -1
+		add_ruler_modifier = {
+			name = pru_reaction_reforms
+		}
+	}
+}
+
+# Von Scharnhorst's and Von Stein's Reforms
+country_event = {
+	id = flavor_brapru.3532
+	title = "flavor_brapru.EVTNAME3532"
+	desc = "flavor_brapru.EVTDESC3532"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		NOT = { exists =  BRA }
+		is_year = 1807
+		NOT = { is_year = 1815 }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3532"
+		add_dip_power = 25
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB3532"
+		add_adm_power = 25
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTC3532"
+		add_mil_power = 25
+	}
+}
+
+# Berliner Unwille
+country_event = {
+	id = flavor_brapru.1
+	title = "flavor_brapru.EVTNAME1"
+	desc = "flavor_brapru.EVTDESC1"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		is_year = 1448
+		NOT = { is_year = 1475 }
+		has_regency = no
+		any_owned_province = {
+			is_capital = yes
+			unrest = 80
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA1" #Ignore the rabble
+		add_prestige = 5
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			create_revolt = 1
+		}
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB1" #Listen to the people
+		add_dip_power = 25
+		add_ruler_modifier = { name = bra_berliner_unwille }
+	}
+}
+
+#The Sale of Indulgences
+country_event = {
+	id = flavor_brapru.2
+	title = "flavor_brapru.EVTNAME2"
+	desc = "flavor_brapru.EVTDESC2"
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		is_year = 1480
+		NOT = { is_year = 1505 }
+		religion = catholic
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA2" #Sell Indulgences
+		add_ruler_modifier = { name = bra_sell_indulgences }
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB2" #Ignore it
+		add_papal_influence = -1
+	}
+}
+
+# University of Königsberg
+country_event = {
+	id = flavor_brapru.3
+	title = "flavor_brapru.EVTNAME3"
+	desc = "flavor_brapru.EVTDESC3"
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			AND = {
+				tag = PRU
+				NOT = {
+					exists = BRA
+				}
+			}
+		}
+		is_year = 1540
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA3" #Sponsor the University
+		add_years_of_income = -0.25
+		add_prestige = 5
+		add_adm_power = 100
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB3" #Do nothing
+		add_prestige = -1
+	}
+}
+
+#The Grain Tax
+country_event = {
+	id = flavor_brapru.4
+	title = "flavor_brapru.EVTNAME4"
+	desc = "flavor_brapru.EVTDESC4"
+	picture = ECONOMY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		is_year = 1545
+		NOT = { is_year = 1570 }
+		is_subject = no
+		has_regency = no
+		inflation = 5
+		NOT = {
+			treasury = 100
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA4" #Institute the Grain Tax
+		add_ruler_modifier = { name = bra_grain_tax }
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB4" #Do nothing
+		add_inflation = 1
+	}
+}
+
+#Leonhard Thurneysser
+country_event = {
+	id = flavor_brapru.5
+	title = "flavor_brapru.EVTNAME5"
+	desc = "flavor_brapru.EVTDESC5"
+	picture = ADVISOR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1550
+		NOT = { is_year = 1595 }
+		tag = BRA
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA5"
+		add_adm_power = 25
+		define_advisor = {
+			type = natural_scientist
+			name = "Ëåîíàðä Òóðíåéññåð"
+			skill = 2
+			discount = yes
+		}
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB5"
+		add_prestige = 5
+	}
+}
+
+#Prutenic Tables
+country_event = {
+	id = flavor_brapru.6
+	title = "flavor_brapru.EVTNAME6"
+	desc = "flavor_brapru.EVTDESC6"
+	picture = INVENTION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PRU
+		is_year = 1550
+		NOT = { is_year = 1580 }
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_brapru.EVTOPTA6" #Finance the printing
+		add_years_of_income = -0.5
+		add_ruler_modifier = { name = pru_prutenic_tables }
+	}
+	option = {
+		name = "flavor_brapru.EVTOPTB6" #Ignore the man
+		add_prestige = -5
+	}
+}

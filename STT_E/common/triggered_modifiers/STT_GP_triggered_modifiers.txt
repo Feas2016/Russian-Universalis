@@ -1,0 +1,187 @@
+stt_sofia = {
+	potential = {
+		owns = 151
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+	}
+	trigger = {	
+		owns = 151
+		OR = { 
+			AND	= {				
+				religion_group = christian
+				151 = { has_great_project = stt_ssofia }
+				}
+			AND	= {	
+				religion_group = muslim
+				151 = { has_great_project = stt_asofia }
+				
+				}
+			}	
+	}	
+	prestige = 1
+	missionaries = 1
+	icon = 9
+}
+mod2_ermitaj = {
+	potential = {
+		owns = 33
+		technology_group = western
+	}
+	trigger = {
+		owns = 33
+		33 = { has_great_project = ermitaj }	
+	}	
+	prestige = 1
+	icon = 10
+}
+mod2_vasil_blazen = {
+	potential = {
+		owns = 295
+	}
+	trigger = {
+		owns = 295
+		295 = { has_great_project = vasil_blazen }	
+	}	
+	global_missionary_strength = 0.01
+	global_unrest = -1
+	missionaries = 1
+	icon = 9
+}
+mod2_fort_sunking = {
+	potential = {
+		owns = 183
+	}
+	trigger = {
+		owns = 183
+		183 = { has_great_project = fort_sunking }	
+	}	
+	prestige = 1
+	legitimacy = 0.5
+}
+mod2_hofburg = {
+	potential = {
+		owns = 134
+	}
+	trigger = {
+		owns = 134
+		134 = { has_great_project = hofburg }	
+	}	
+	relations_decay_of_me = 0.3
+	prestige = 0.05
+}
+mod2_tajh_mahal = {
+	potential = {
+		owns = 507
+	}
+	trigger = {
+		owns = 507
+		507 = { has_great_project = tajh_mahal }	
+	}	
+	legitimacy = 0.5
+	global_missionary_strength = 0.05
+	diplomatic_upkeep = 1
+	prestige = 0.5
+}
+mod2_alhambra = {
+	potential = {
+		owns = 223
+	}
+	trigger = {
+		owns = 223
+		223 = { has_great_project = alhambra }	
+	}	
+	prestige = 0.5
+	add_base_tax = 1
+	land_forcelimit = 10
+}
+mod2_alex_mayak = {
+	potential = {
+		owns = 358
+	}
+	trigger = {
+		owns = 358
+		358 = { has_great_project = alex_mayak }	
+	}	
+	naval_forcelimit = 5
+	prestige = 1
+}
+mod2_letn_pekin = {
+	potential = {
+		owns = 1816
+	}
+	trigger = {
+		owns = 1816
+		1816 = { has_great_project = letn_pekin }	
+	}	
+	legitimacy = 1
+	prestige = 1
+	discipline = 0.05
+}
+mod2_ryuanji = {
+	potential = {
+		owns = 1020
+	}
+	trigger = {
+		owns = 1020
+		1020 = { has_great_project = ryuanji }	
+	}	
+	global_missionary_strength = -0.02
+	tolerance_heretic = 2
+ 	tolerance_heathen = 2	
+}
+mod2_atesgah = {
+	potential = {
+		owns = 416
+	}
+	trigger = {
+		owns = 416
+		416 = { has_great_project = atesgah }	
+	}	
+	global_trade_power = 0.1
+}
+mod2_tower = {
+	potential = {
+		owns = 236
+	}
+	trigger = {
+		owns = 236
+		236= { has_great_project = tower }	
+	}	
+	global_unrest = -2
+	legitimacy = 1
+}
+mod2_zam_sforza = {
+	potential = {
+		owns = 104
+	}
+	trigger = {
+		owns = 104
+		104 = { has_great_project = zam_sforza }	
+	}	
+	legitimacy = 1
+	prestige = 1.5
+	idea_cost = -0.02
+}
+mod2_cast_de_ovo = {
+	potential = {
+		owns = 122
+	}
+	trigger = {
+		owns = 122
+		122 = { has_great_project = cast_de_ovo }	
+	}	
+	add_army_tradition = 0.5
+}
+mod2_zam_if = {
+	potential = {
+		owns = 201
+	}
+	trigger = {
+		owns = 201
+		201 = { has_great_project = zam_if }	
+	}	
+	global_unrest = -1
+	legitimacy = 1
+}

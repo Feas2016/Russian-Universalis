@@ -1,0 +1,87 @@
+government = feudal_monarchy
+primary_culture = rajput
+religion = sunni
+technology_group = indian
+capital = 2066	# Nagaur
+
+1399.1.1 = {
+	monarch = {
+		name = "Фируз Хан"
+		dynasty = "Дандани"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Киям"
+		monarch_name = "Киям Хан"
+		dynasty = "Дандани"
+		birth_date = 1399.1.1
+		death_date = 1453.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1428.1.1 = {
+	monarch = {
+		name = "Киям Хан"
+		dynasty = "Дандани"
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1428.1.1 = {
+	heir = {
+		name = "Шамс"
+		monarch_name = "Шамс Хан"
+		dynasty = "Дандани"
+		birth_date = 1410.1.1
+		death_date = 1500.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1453.1.1 = {
+	monarch = {
+		name = "Шамс Хан"
+		dynasty = "Дандани"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1453.1.1 = {
+	heir = {
+		name = "Мухаммед"
+		monarch_name = "Мухаммед Хан"
+		dynasty = "Дандани"
+		birth_date = 1410.1.1
+		death_date = 1513.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+1500.1.1 = {
+	monarch = {
+		name = "Мухаммед Хан"
+		dynasty = "Дандани"
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}

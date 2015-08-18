@@ -1,0 +1,75 @@
+westernised = {
+	stability_cost_modifier = 1
+	global_unrest = 5
+	icon = 5
+}
+reformer = {	
+	prestige = 1
+}
+forgreat = {
+	prestige = 1
+}
+mod_stt_ssofia = {
+
+	local_manpower_modifier = 0.10
+	local_tax_modifier = 0.1
+	
+	picture = "stt_ssofia"
+}
+mod_stt_asofia = {
+
+	local_manpower_modifier = 0.10
+	local_tax_modifier = 0.1
+	
+	picture = "stt_asofia"
+}
+mod_kremlin = {
+
+	local_manpower_modifier = 0.50
+	local_defensiveness = 0.50
+	local_tax_modifier = 0.1
+	
+	picture = "kremlin"
+}
+mod_vasil_blazen = {
+
+	local_unrest = -1
+	local_tax_modifier = 0.2
+	missionaries = 1
+	
+	picture = "vasil_blazen"
+}
+mod_ermitaj = {
+	local_tax_modifier = 0.2
+	
+	picture = "ermitaj"
+}
+mod_hofburg = {
+	local_tax_modifier = 0.1
+}
+mod_tajh_mahal = {
+	add_base_tax = 3
+}
+mod_alhambra = {
+	local_defensiveness = 0.5
+}
+mod_alex_mayak = {
+	province_trade_power_value = 7.5
+}
+mod_letn_pekin = {
+	add_base_tax = 5
+}
+mod_atesgah = {
+	province_trade_power_value = 10
+}
+mod_tower = {
+	local_tax_modifier = 0.1
+}
+mod_cast_de_ovo = {
+	local_defensiveness = 0.4
+	province_trade_power_value = 10
+}
+mod_zam_if = {
+	local_defensiveness = 0.3
+	province_trade_power_value = 10
+}

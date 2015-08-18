@@ -1,0 +1,3084 @@
+guiTypes = {
+
+	windowType = {
+		name = "single_unitpanel"
+		backGround=""
+		position = { x=17 y=260 }	
+		show_position = { x=20 y=260}
+		hide_position = { x=-450 y=260 }	
+		animation_type = "decelerated"
+		animation_time = 150	
+		size = { x=400 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+
+		iconType =
+		{
+			name ="regiment_bg"
+			spriteType = "GFX_regiment_bg"
+			position = { x= 0 y = 57 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		
+
+		# Shown if naval
+		guiButtonType = {
+			name = "enable_patrol_button"
+			position = { x=421 y=191}
+			quadTextureSprite ="GFX_unitpanel_button_enable_patrol"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "UNIT_ENABLE_PATROL_NEW"
+			buttonFont = "vic_18"
+		}
+		iconType = {
+			name ="enable_patrol_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=421 y=191}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# Shown if naval
+		guiButtonType = {
+			name = "enable_tradepatrol_button"
+			position = { x = 421 y = 147 }
+			quadTextureSprite ="GFX_unitpanel_button_enable_tradepatrol"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "UNIT_ENABLE_PATROL_NEW"
+			buttonFont = "vic_18"
+		}
+		iconType = {
+			name ="enable_tradepatrol_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=421 y=147}
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="enable_tradepatrol_button_glow_negative"
+			spriteType = "GFX_unitpanel_button_large_glow_negative"
+			position = { x=421 y=147}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# Shown if naval
+		guiButtonType = {
+			name = "enable_privateermission_button"
+			position = { x = 421 y = 279 }
+			quadTextureSprite ="GFX_unitpanel_button_enable_privateermission"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "UNIT_ENABLE_PATROL_NEW"
+			buttonFont = "vic_18"
+		}
+		iconType = {
+			name ="enable_privateermission_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=421 y=279}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		# Shown if naval
+		guiButtonType = {
+			name = "enable_autotransport_button"
+			position = { x = 421 y = 235 }
+			quadTextureSprite ="GFX_unitpanel_button_enable_autotransfer"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "UNIT_ENABLE_PATROL_NEW"
+			buttonFont = "vic_18"
+		}
+		iconType = {
+			name ="enable_autotransport_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=421 y=235}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+				name = "naval_explore_button"
+				position = { x=421 y=367}
+				quadTextureSprite ="GFX_unitpanel_button_circumnavigate"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+			}		
+			
+		# Shown if province is a naval
+		guiButtonType = {
+				name = "hunt_pirates_button"
+				position = { x=378 y=367}
+				quadTextureSprite ="GFX_unitpanel_button_hunt_pirates"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+			}
+		iconType = {
+			name ="hunt_pirates_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=378 y=367}
+			Orientation = "UPPER_LEFT"
+		}
+
+		# Shown if province is a city
+		guiButtonType = {
+				name = "scorch_button"
+				position = { x=378 y=315}
+				quadTextureSprite ="GFX_unitpanel_button_scorch_land"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+		# Shown if province is a city
+		guiButtonType = {
+				name = "detach_merc_button"
+				position = { x=421 y=147}
+				quadTextureSprite ="GFX_unitpanel_button_detach_mercs"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				shortcut = "n"
+			}
+		
+		# Shown if province if navy
+		guiButtonType = {
+				name = "detach_obsolete_ships"
+				position = { x=378 y=235}
+				quadTextureSprite ="GFX_unitpanel_button_detach_obsolete_ships"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				shortcut = "n"
+			}
+			
+		guiButtonType = {
+				name = "reorganize_units_button"
+				position = { x=378 y=147}
+				quadTextureSprite ="GFX_reorganize_units_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				shortcut = "u"
+			}
+		guiButtonType = {
+				name = "upgrade_fleet_button"
+				position = { x=378 y=279}
+				quadTextureSprite ="GFX_upgrade_fleet_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+
+		## Shown if province is a city
+		#guiButtonType = {
+		#		name = "detach_siege_button"
+		#		position = { x=540 y=21}
+		#		quadTextureSprite ="GFX_unitpanel_button_detach_siege"	
+		#		tooltip = ""
+		#		tooltipText =""
+		#		delayedTooltipText = ""
+		#	}
+
+		# Shown if province is a colony
+		guiButtonType = {
+			name = "burncolony_button"
+			position = { x=421 y=315}
+			quadTextureSprite ="GFX_unitpanel_button_burn_colony"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "UNIT_BURN_COLONY"
+			buttonFont = "vic_18"
+		}
+
+		# Shown if province is a colony
+		guiButtonType = {
+				name = "seizecolony_button"
+				position = { x=421 y=359}
+				quadTextureSprite ="GFX_unitpanel_button_seize_colony"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+#				buttonText = "UNIT_SEIZE_COLONY"
+				buttonFont = "vic_18"
+			}
+		
+		# Shown if province is a colony
+		guiButtonType = {
+				name = "attacknatives_button"
+				position = { x=421 y=271}
+				quadTextureSprite ="GFX_unitpanel_button_attack_natives"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+#				buttonText = "UNIT_ATTACK_NATIVS"
+				buttonFont = "vic_18"
+
+			}
+			
+					
+			
+		guiButtonType = {
+			name = "enable_force_march_button"
+			position = { x=378 y=271}
+			quadTextureSprite ="GFX_unitpanel_button_force_march"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "m"
+		}
+		iconType = {
+			name ="enable_force_march_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=378 y=271}
+			Orientation = "UPPER_LEFT"
+		}
+	
+		# Shown if land
+		guiButtonType = {
+			name = "enable_rebel_button"
+			position = { x=378 y=359}
+			quadTextureSprite ="GFX_unitpanel_button_hunt_rebels"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		iconType = {
+			name ="enable_rebel_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=378 y=359}
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "enable_land_explore_button"
+			position = { x=378 y=359}
+			quadTextureSprite ="GFX_enable_land_explore_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+		iconType = {
+			name ="enable_land_explore_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=378 y=359}
+			Orientation = "UPPER_LEFT"
+		}		
+			
+		#guiButtonType = {
+		#		name = "split_button"
+		#		position = { x=505 y=21}
+		#		quadTextureSprite ="GFX_unitpanel_button_split_in_half"	
+		#		tooltip = ""
+		#		tooltipText =""
+		#		delayedTooltipText = ""
+		#	}
+
+			
+		guiButtonType = {
+				name = "consolidate_button"
+				position = { x = 421 y = 191 }
+				quadTextureSprite ="GFX_unitpanel_button_consolidate"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				shortcut = "k"
+			}
+			
+		instantTextBoxType={
+			position = { x=402 y=70}
+			name = "allow_attach_text"
+			font = "vic_18"
+			borderSize = {x = 8 y = 0}	
+			maxWidth = 110
+			maxHeight = 10
+			text = "ALLOW_ATTACH"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "allow_attach"
+			position = { x=378 y=71}
+			quadTextureSprite ="GFX_checkbox_gold_32"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+		}	
+
+		instantTextBoxType={
+			position = { x=402 y=110}
+			name = "home_at_war_text"
+			font = "vic_18"
+			borderSize = {x = 8 y = 0}	
+			maxWidth = 110
+			maxHeight = 10
+			text = "GO_HOME_AT_WAR"	
+			orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "home_at_war"
+			position = { x=378 y=111}
+			quadTextureSprite ="GFX_checkbox_gold_32"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+		}				
+			
+		guiButtonType = {
+				name = "detach_unit_button"
+				position = { x=378 y=191}
+				quadTextureSprite ="GFX_unitpanel_button_detach"	
+				buttonFont = "vic_18"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+		guiButtonType = {
+				name = "attach_unit_button"
+				position = { x=378 y=191}
+				quadTextureSprite ="GFX_unitpanel_button_attach"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+		guiButtonType = {
+				name = "mothball_button"
+				position = { x=378 y=323}
+				quadTextureSprite ="GFX_unitpanel_button_mothball"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+			}
+			
+		iconType = {
+				name ="mothball_button_glow"
+				spriteType = "GFX_unitpanel_button_large_glow"
+				position = { x=378 y=323}
+				Orientation = "UPPER_LEFT"
+			}
+			
+		guiButtonType = {
+			name = "toggle_foreign_armies_button"
+			position = { x=421 y=323}
+			quadTextureSprite ="GFX_toggle_foreign_armies_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "m"
+		}
+		iconType = {
+			name ="toggle_foreign_armies_button_glow"
+			spriteType = "GFX_unitpanel_button_large_glow"
+			position = { x=421 y=323}
+			Orientation = "UPPER_LEFT"
+		}			
+			
+			
+		guiButtonType = {
+				name = "next_unit_button"
+				position = { x = 353 y = 85 }
+				quadTextureSprite ="GFX_button_next"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				shortcut = "PAGE_UP"
+
+			}
+		guiButtonType = {
+				name = "prev_unit_button"
+				position = { x = 353 y = 109 }
+				quadTextureSprite ="GFX_button_prev"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				shortcut = "PAGE_DOWN"
+
+			}	
+		
+			
+	# Naval Units UNITTYPES	
+			
+			
+			iconType =
+			{
+				name ="nu_top_slots_bg"
+				spriteType = "GFX_unitpanel_nu_top_bg"
+				position = { x= 14 y = 74 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+		# Ska länkas till naval
+			iconType =
+			{
+				name ="ship_load_capacity_bg"
+				spriteType = "GFX_unitpanel_ships_load_capacity_bg"
+				position = { x= 9 y = 338 }
+				Orientation = "LOWER_LEFT"
+			}
+	
+	
+			iconType =
+			{
+				name ="nu_unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 16 y = 85 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_1_count"
+				position = { x = 67 y = 102 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 30
+				maxHeight = 32	
+
+				format=center
+			}
+
+
+			iconType =
+			{
+				name ="nu_unit_type_2"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 100 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "nu_unit_type_2_count"
+				position = { x = 150 y = 102 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 30
+				maxHeight = 32	
+
+				format=center
+			}
+
+			iconType =
+			{
+				name ="nu_unit_type_3"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 187 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_3_count"
+				position = { x = 234 y = 102 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 30
+				maxHeight = 32	
+
+				format=center
+			}
+
+
+			iconType =
+			{
+				name ="nu_unit_type_4"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 270 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "nu_unit_type_4_count"
+				position = { x = 318 y = 102 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 30
+				maxHeight = 32	
+
+				format=center
+			}
+
+# Land Units UNITTYPES
+
+			iconType =
+			{
+				name ="lu_unit_type_1"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 16 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_1_count"
+				position = { x = 21 y = 92 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_1_value"
+				position = { x = 21 y = 111 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format=right
+			}
+
+			iconType =
+			{
+				name ="lu_unit_type_2"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 126 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "lu_unit_type_2_count"
+				position = { x = 133 y = 92 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_2_value"
+				position = { x = 133 y = 111 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 100
+				maxHeight = 32	
+
+				format=right
+			}
+			iconType =
+			{
+				name ="lu_unit_type_3"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= 243 y = 83 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_3_count"
+				position = { x = 264 y = 92 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 80
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_3_value"
+				position = { x = 264 y = 111 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth =  80
+				maxHeight = 32	
+
+				format=right
+			}
+
+	
+
+
+		listboxType = 
+			{
+			name ="subunitlist"
+			position = { x = 50 y = 149 }
+			backGround=""
+			size = { x=295  y =250}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		guiButtonType = {
+			name ="sort_shield"
+			quadTextureSprite = "GFX_sort_shield"
+			position = { x = 27 y = 149 }
+		}
+		guiButtonType = {
+			name ="sort_name"
+			quadTextureSprite = "GFX_sort_126"
+			position = { x = 54 y = 148 }
+			buttonFont = "vic_18"
+			buttonText = "TRADENODE"
+			pdx_tooltip = "TRADE_NAME_SORT_TOOLTIP"
+			pdx_tooltip_delayed = "TRADE_NAME_SORT_TOOLTIP_DELAYED"
+		}
+		guiButtonType = {
+			name ="sort_trader"
+			quadTextureSprite = "GFX_sort_trader02"
+			position = { x = 178 y = 151 }
+			pdx_tooltip = "TRADE_TRADER_SORT_TOOLTIP"
+			pdx_tooltip_delayed = "TRADE_TRADER_SORT_TOOLTIP_DELAYED"
+		}
+		guiButtonType = {
+			name ="sort_income_indicator"
+			quadTextureSprite = "GFX_sort_trade_target02"
+			position = { x = 212 y = 151 }
+			pdx_tooltip = "TRADE_MISSION_SORT"
+			pdx_tooltip_delayed = "TRADE_MISSION_SORT_DELAYED"
+		}
+		guiButtonType = {
+			name ="sort_current_power"
+			quadTextureSprite = "GFX_sort_trade_power2"
+			position = { x = 239 y = 149 }
+			pdx_tooltip = "TRADE_CURRENT_POWER_SORT"
+			pdx_tooltip_delayed = "TRADE_CURRENT_POWER_SORT_DELAYED"
+		}
+		guiButtonType = {
+			name = "sort_nothing"
+			quadTextureSprite = "GFX_sort_62"
+			buttonFont = "vic_18"
+			position = { x = 277 y = 150 }
+		}
+		
+		listboxType = 
+		{
+			name ="tradenodelist"
+			position = { x = 24 y = 172 }
+			backGround=""
+			size = { x=305  y =250}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		listboxType = 
+		{
+			name ="privateernodelist"
+			position = { x = 24 y = 180 }
+			backGround=""
+			size = { x=320  y =215}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		instantTextBoxType = {
+			name = "load_capacity"
+			position = { x = 28 y = 441 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+
+			format = left
+		}
+
+
+	}
+	windowType = {
+		name = "multi_unitpanel"
+		backGround=""
+		position = { x=100 y=150 }	
+		show_position = { x=100 y =150 }
+		hide_position = { x=-600 y =150 }	
+		animation_type = "decelerated"
+		animation_time = 150	
+		size = { x=500 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		listboxType = {
+			name ="unitlist"
+			position = { x= -80 y = 42 }
+			backGround=""
+			size = { x= 500  y = 500 }
+			horizontal = 0
+			spacing = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+			Orientation = "UPPER_LEFT"
+			scrollbar_side = LEFT
+			offset = {x =-3 y = 10}
+		}
+
+		iconType =
+		{
+			name ="multiselect_bg"
+			spriteType = "GFX_multiselection_bg"
+			position = { x= 151 y = 53 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 185	y = 61 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+		}
+
+		guiButtonType = {
+			name = "mergebutton"
+			position = { x = 344 y = 59 }
+			quadTextureSprite ="GFX_multi_merge_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "  "
+			buttonFont = "vic_18"
+			shortcut = "g"
+		}
+			
+		guiButtonType = {
+			name = "deselect_all"
+			position = { x = 376 y = 58 }
+			quadTextureSprite ="GFX_remove_unit_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "  "
+			buttonFont = "vic_18"
+		}
+
+		guiButtonType = {
+				name = "reorganizebutton"
+				position = { x = 312 y = 60 }
+				quadTextureSprite ="GFX_reorg_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				shortcut = "r"
+			}
+
+		guiButtonType = {
+			name = "movebutton"
+			position = { x = 412 y = 60 }
+			quadTextureSprite ="GFX_reorg_button"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			scale = 3
+		}
+		
+	}
+	windowType = {
+		name = "unitpanel"
+		backGround=""
+		position = { x=-500 y=0 }	
+		show_position = { x=-500 y=0 }
+		hide_position = { x=-1000 y=0 }	
+		animation_type = "decelerated"
+		animation_time = 150	
+		size = { x=500 y=90 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		windowType = {
+			name = "embarked_unit"
+			backGround=""
+			position = { x=480 y=40 }	
+			size = { x=128 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+
+			iconType = {
+				name = "icon_embarked"
+				position = { x = -8 y = 0 }
+				spriteType ="GFX_icon_embarked"
+			}
+			
+			#iconType = {
+			#	name ="icon_army"
+			#	spriteType = "GFX_icon_manpower"
+			#	position = { x= 38 y = 23 }
+			#}
+			
+			guiButtonType = {
+				name = "button_embarked"
+				position = { x = 20 y = 0 }
+				quadTextureSprite ="GFX_button_embarked"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}
+
+			instantTextBoxType = {
+				name = "regiment_count"
+				position = { x = 35  y = 38 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 30
+				maxHeight = 17	
+		
+				format = centre
+			}
+
+			instantTextBoxType = {
+				name = "free_count"
+				position = { x = 77  y = 38 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = ""	
+				maxWidth = 30
+				maxHeight = 17	
+		
+				format = centre
+			}			
+			
+			guiButtonType = {
+				name = "button_embarked2"
+				position = { x = 18 y = 53 }
+				quadTextureSprite ="GFX_standard_button_105"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "TRANSPORT"
+				buttonFont = "vic_18"
+			}
+		}
+
+
+
+		iconType =
+		{
+			name ="unitpanel_bg"
+			spriteType = "GFX_unitpanel_bg"
+			position = { x= 0 y = 35 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		windowType = {
+			name = "land_units"
+			backGround=""
+			position = { x= 20 y = 67 }
+			size = { x=128 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+			
+			guiButtonType = 
+			{
+				name = "unit1_type"
+				position = { x= 5 y = 8 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.6
+				shortcut = "z"
+			}
+			instantTextBoxType = {
+				name = "unit1_count"
+				position = { x = 30  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}
+			
+			guiButtonType = 
+			{
+				name = "unit2_type"
+				position = { x= 95 y = 8 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.6
+				shortcut = "x"
+			}	
+			instantTextBoxType = {
+				name = "unit2_count"
+				position = { x = 120  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}			
+			
+			guiButtonType = 
+			{
+				name = "unit3_type"
+				position = { x= 180 y = 9 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.6
+				shortcut = "c"
+			}		
+			instantTextBoxType = {
+				name = "unit3_count"
+				position = { x = 210  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}			
+		}
+		
+		windowType = {
+			name = "naval_units"
+			backGround=""
+			position = { x= 20 y = 67 }
+			size = { x=128 y=64 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no	
+			
+			guiButtonType = 
+			{
+				name = "unit1_type"
+				position = { x= 5 y = 7 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.7
+				shortcut = "z"
+			}
+			instantTextBoxType = {
+				name = "unit1_count"
+				position = { x = 40  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}
+			
+			guiButtonType = 
+			{
+				name = "unit2_type"
+				position = { x= 70 y = 7 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.7
+				shortcut = "x"
+			}	
+			instantTextBoxType = {
+				name = "unit2_count"
+				position = { x = 105  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}			
+			
+			guiButtonType = 
+			{
+				name = "unit3_type"
+				position = { x= 135 y = 7 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.7
+				shortcut = "c"
+			}		
+			instantTextBoxType = {
+				name = "unit3_count"
+				position = { x = 168  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}
+
+			guiButtonType = 
+			{
+				name = "unit4_type"
+				position = { x= 200 y = 7 }
+				quadTextureSprite = "GFX_unit_types_strip_nontransp"
+				scale= 0.7
+				shortcut = "v"
+			}		
+			instantTextBoxType = {
+				name = "unit4_count"
+				position = { x = 232  y = 16 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 50
+				maxHeight = 17	
+				format = left
+			}			
+		}
+		
+		#iconType =
+		#{
+		#	name ="unit_type"
+		#	spriteType = "GFX_unit_types_strip"
+		#	position = { x= 32 y = 4 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+
+		iconType =
+		{
+			name ="unit_morale"
+			spriteType = "GFX_unitpanel_progressbar"
+			position = { x= 18 y = 97 }
+			Orientation = "UPPER_LEFT"
+			rotation = 1.5708
+		}
+		
+		iconType =
+		{
+			name ="unit_morale_yellow"
+			spriteType = "GFX_unitpanel_progressbar_yellow"
+			position = { x= 18 y = 97 }
+			Orientation = "UPPER_LEFT"
+			rotation = 1.5708
+		}
+		
+		iconType =
+		{
+			name ="unit_morale_frame"
+			spriteType = "GFX_unitpanel_morale_frame"
+			position = { x= 5 y = 58 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="unit_low_morale_icon"
+			spriteType = "GFX_unit_low_morale"
+			position = { x= 27 y = 56 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="unit_shattered_retreat_icon"
+			spriteType = "GFX_unit_shattered_retreat"
+			position = { x= 20 y = 48 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+		
+		iconType =
+		{
+			name ="unit_exile_icon"
+			spriteType = "GFX_unitpanel_exile"
+			position = { x= 35 y = 48 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+#		instantTextBoxType = {
+#			name = "unitname"
+#			position = { x = 85 y = 3 }
+#			textureFile = ""
+#			font = "vic_18"
+#			borderSize = {x = 0 y = 0}
+#			text = ""	
+#			maxWidth = 200
+#			maxHeight = 32	
+#		}
+
+		editBoxType = {
+			position = { x = 45 y = 49 }
+			name = "unitname"
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			size = { x=170 y=22 }
+			text = ""
+			orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name = "unit_naming_icon"
+			spriteType = "GFX_unit_naming"
+			position = { x = 25 y = 47 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name = "navy_seperate"
+			spriteType = "GFX_unitpanel_ship_separator"
+			position = { x = 279 y = 73 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "unitstrength_ship"
+			position = { x = 278 y = 81 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 32
+			maxHeight = 32	
+
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "unitstrength_land"
+			position = { x = 267 y = 81 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 32	
+
+			format = centre
+		}
+
+		iconType =
+		{
+			name ="blockade_icon"
+			spriteType = "GFX_combat_blockade"
+			position = { x = 316 y = 80 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.75
+		}
+		
+		instantTextBoxType = {
+			name = "blockade_capacity"
+			position = { x = 334 y = 81 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "50"	
+			maxWidth = 28
+			maxHeight = 32	
+
+			format = center
+		}
+
+
+		iconType =
+		{
+			name ="leader_types"
+			spriteType = "GFX_leader_types"
+			position = { x= 194 y = 48 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+		
+
+		guiButtonType = 
+		{
+			name ="leader_button"
+			quadTextureSprite = "GFX_leader_button02"
+			position = { x= 210 y = 47 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+		}
+
+		iconType = {
+			name ="no_leader_glow_button"
+			spriteType = "GFX_no_leader_glow"
+			position = { x=207 y = 43 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		
+		
+		instantTextBoxType = {
+			name = "unitleader"
+			position = { x = 220 y = 52 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			fixedsize = yes
+			maxWidth = 130
+			maxHeight = 16
+			format = left
+			hint_tag = "hint_leader"
+		}
+
+		iconType =
+		{
+			name ="unit_destination"
+			spriteType = "GFX_icon_unit_destination"
+			position = { x= 130 y = 105 }
+			Orientation = "UPPER_LEFT"
+			frame = 2
+		}
+		
+		instantTextBoxType = {
+			name = "unitlocation"
+			position = { x = 30 y = 105 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 100
+			maxHeight = 16
+
+			fixedsize = yes	
+
+			format = left
+		}
+		guiButtonType = 
+		{
+			name = "unitlocationbutton"
+			position = { x = 30 y = 105 }
+			quadTextureSprite ="GFX_ledger_invisible_button"
+			shortcut = "j"
+		}	
+		
+		instantTextBoxType = {
+			name = "unitattrition"
+			position = { x = 298  y = 105 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 49
+			maxHeight = 17	
+
+			format = right
+		}
+		
+		iconType =
+		{
+			name ="loot_capability_icon"
+			spriteType = "GFX_tiny_loot_icon"
+			position = { x= 167 y = 105 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "loot_capability"
+			position = { x = 189  y = 105 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "§G9§!"	
+			maxWidth = 35
+			maxHeight = 17	
+
+			format = left
+		}
+		
+		iconType =
+		{
+			name ="siege_capability_icon"
+			spriteType = "GFX_siege_capability_icon"
+			position = { x= 238 y = 105 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "siege_capability"
+			position = { x = 260  y = 105 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "§G9§!"	
+			maxWidth = 35
+			maxHeight = 17	
+
+			format = left
+		}
+			
+		guiButtonType =
+		{
+			name ="attach_to_transport_button"
+			spriteType = "GFX_attach_to_transport_button"
+			position = { x= 442 y = 82 }
+			Orientation = "UPPER_LEFT"
+			shortcut = "a"
+			clicksound = "attach_transport"
+		}
+		
+		iconType =
+		{
+			name ="connected_overlay"
+			spriteType = "GFX_provinceView_religion_bg_glow"
+			position = { x= 442 y = 82 }
+			scale = 0.71
+		}	
+		
+		iconType =
+		{
+			name ="unit_attrition_icon"
+			spriteType = "GFX_unit_attrition_icon"
+			position = { x= 289 y = 105 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_attrition"
+		}		
+
+		#instantTextBoxType = {
+		#	name = "unittype"
+		#	position = { x = 100 y = 30 }
+		#	textureFile = ""
+		#	font = "Main_14_orange"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "Swedish Karolins"	
+		#	maxWidth = 1024
+		#	maxHeight = 32	
+		#}
+
+
+
+		guiButtonType = {
+				name = "disbandbutton"
+				position = { x = 360 y = 47 }
+				quadTextureSprite ="GFX_disband_unit_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}
+			
+		guiButtonType =
+		{
+			name ="select_army_button"
+			quadTextureSprite= "GFX_select_army_button"
+			position = { x= 384 y = 47 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "vic_18"
+		}			
+
+		guiButtonType = {
+			name = "detach_siege_button"
+			position = { x = 404 y = 82 }
+			quadTextureSprite ="GFX_unitpanel_button_detach_siege02"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			shortcut = "d"
+		}				
+			
+		guiButtonType = {
+				name = "newunitbutton02"
+				position = { x = 364 y = 82 }
+				quadTextureSprite ="GFX_unitpanel_button_split_in_half02"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+				shortcut = "s"
+			}			
+			
+		guiButtonType = {
+				name = "detach_blockade_button"
+				position = { x = 404 y = 82 }
+				quadTextureSprite ="GFX_unitpanel_button_detach_blockade"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+#				buttonText = "UNIT_DETACH_BLOCKADE"
+				buttonFont = "vic_18"
+				shortcut = "d"
+			}
+			
+		guiButtonType = {
+				name = "detach_damaged_button"
+				position = { x= 442 y = 82 }
+				quadTextureSprite ="GFX_unitpanel_button_detach_damaged"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+				shortcut = "a"
+			}	
+			
+		#guiButtonType = {
+		#		name = "newunitbutton"
+		#		position = { x = 490 y = 155 }
+		#		quadTextureSprite ="GFX_reorg_button"
+		#		tooltip = ""
+		#		tooltipText =""
+		#		delayedTooltipText = ""
+		#		no
+		#		buttonFont = "vic_18"
+		#		shortcut = "r"
+		#	}
+
+		guiButtonType = {
+				name = "remove_unit_from_selection_button"
+				position = { x = 454 y = 47 }
+				quadTextureSprite ="GFX_remove_unit_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+
+			}
+			
+#		guiButtonType = {
+#				name = "trade_mission"
+#				position = { x = 262 y = 53 }
+#				quadTextureSprite ="GFX_reorg_button"
+#				tooltip = ""
+#				tooltipText =""
+#				delayedTooltipText = ""
+#				no
+#				buttonFont = "vic_18"
+#				shortcut = "r"
+#			}
+
+
+	}
+	
+
+	windowType = {
+		name = "embarked_unitpanel"
+		backGround=""
+		position = { x=3 y=85 }	
+		size = { x=400 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		iconType =
+		{
+			name ="multiselect_bg"
+			spriteType = "GFX_multiselection_bg"
+			position = { x= 64 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		instantTextBoxType = {
+			name = "desc"
+			position = { x = 128	 y = 6 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 32	
+		}
+
+
+		iconType =
+		{
+			name ="navy_icon"
+			spriteType = "GFX_unit_types_strip"
+			position = { x= 29 y = 9 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+
+	
+	
+	######Tradenode entry
+
+	windowType = {
+		name = "tradenode_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="goto_tradenode_button"
+			quadTextureSprite = "GFX_trade_view_node_entry_button_short"
+			position = { x= 0 y = 0 }
+		}
+		
+		guiButtonType =
+		{
+			name ="shield"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x= 0 y = 0 }
+			orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType={
+			position = {x = 33 y  = 8 }
+			name = "location"
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 116
+			maxHeight = 20
+			text = "Elbonien"	
+			orientation = "UPPER_LEFT"
+			format = left
+			fixedsize = yes
+		}
+		
+		iconType =
+		{
+			name ="trader_mission"
+			spriteType = "GFX_trade_trader_strip"
+			position = { x= 156 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="income_indicator"
+			spriteType = "GFX_trade_target_strip"
+			position = { x= 187 y = 1 }
+			Orientation = "UPPER_LEFT"
+		}
+				
+		instantTextBoxType={
+			position = {x = 216 y  = 8 }
+			name = "current_power"
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 34
+			maxHeight = 18
+			text = "55"	
+			orientation = "UPPER_LEFT"
+			format = centre
+			fixedsize = yes
+		}
+
+		guiButtonType = {
+			name = "send_merchant"
+			position = { x= 252 y = -1 }
+			quadTextureSprite ="GFX_button_straight_67_32"	
+			buttonText = "SEND"
+			buttonFont = "vic_18"
+			clicksound = click
+		}	
+	}
+
+	######Subunit entry
+
+	windowType = {
+		name = "subunit_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 50 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		iconType =
+			{
+				name ="band_regiment"
+				spriteType = "GFX_band_regiment"
+				position = { x= -33 y = -3 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		iconType =
+			{
+				name ="band_mercenary_regiment"
+				spriteType = "GFX_band_regiment_mercenary"
+				position = { x= -33 y = -3 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+
+		iconType =
+			{
+				name ="icon_type"
+				spriteType = "GFX_unit_types_strip"
+				position = { x= -28 y = 2 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
+		instantTextBoxType = {
+				name = "subunit_amount"
+				position = { x = 228 y = 4 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 50
+				maxHeight = 10
+				format = right	
+				Orientation = "UPPER_LEFT"
+			}
+
+		editBoxType = {
+			position = { x = 25 y = 4 }
+			name = "subunit_name"
+			font = "vic_18"
+			borderSize = {x = 4 y = 2}
+			size = { x=200 y=32}
+			orientation = "UPPER_LEFT"
+		}
+		
+
+		instantTextBoxType = {
+			name = "subunit_type"
+			position = { x = 29 y =27 }
+			format = left
+
+			textureFile = ""
+			font = "vic_18_grey"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 256
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+
+	}
+
+
+	windowType = {
+		name = "leader_selection_panel"
+		backGround=""
+		position = { x=20 y=260 }	
+		size = { x=400 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+	
+		iconType =
+		{
+			name ="regiment_bg"
+			spriteType = "GFX_unitPanel_assign_leader_bg"
+			position = { x= 0 y = 57 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		guiButtonType =
+		{
+			name ="recruit_general"
+			spriteType = "GFX_recruit_general"
+			position = { x= 396 y = 87 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		guiButtonType =
+		{
+			name ="recruit_conquistador"
+			spriteType = "GFX_recruit_conquistador"
+			position = { x= 396 y = 137 }
+			Orientation = "UPPER_LEFT"
+		}	
+		
+		guiButtonType =	
+		{		
+			name ="recruit_admiral"
+			spriteType = "GFX_recruit_admiral"
+			position = { x= 396 y = 87 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		guiButtonType =
+		{
+			name ="recruit_explorer"
+			spriteType = "GFX_recruit_explorer"
+			position = { x= 396 y = 137 }
+			Orientation = "UPPER_LEFT"
+		}		
+	
+		
+		guiButtonType =
+		{
+			name ="convert_ruler_to_general"
+			spriteType = "GFX_convert_ruler_to_general"
+			position = { x= 396 y = 187 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		guiButtonType =
+		{
+			name ="convert_heir_to_general"
+			spriteType = "GFX_convert_heir_to_general"
+			position = { x= 396 y = 237 }
+			Orientation = "UPPER_LEFT"
+		}				
+
+		guiButtonType = {
+				name = "back_button"
+				position = { x=286 y=386}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "BACK"
+				buttonFont = "vic_18"
+				clicksound = back_click
+			}
+
+		guiButtonType = {
+				name = "noleader_button"
+				position = { x=57 y=386}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "NO_LEADER"
+				buttonFont = "vic_18"
+			}
+
+			guiButtonType = {
+				name = "sort_button_siege"
+				position = { x=269 y=92}
+				quadTextureSprite ="GFX_sort_61"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+
+			}	
+			
+		guiButtonType = {
+				name = "sort_button_maneuver"
+				position = { x=207 y=92}				
+				quadTextureSprite ="GFX_sort_61"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+
+			}
+			
+		guiButtonType = {
+				name = "sort_button_shock"
+				position = { x=145 y=92}
+				quadTextureSprite ="GFX_sort_61"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+
+			}
+			
+		guiButtonType = {
+				name = "sort_button_fire"
+				position = { x=83 y=92}
+				quadTextureSprite ="GFX_sort_61"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+
+			}
+
+		
+		iconType =
+		{
+			name ="fire_icon"
+			spriteType = "GFX_military_view_icon_fire"
+			position = { x=102 y=93 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType =
+		{
+			name ="shock_icon"
+			spriteType = "GFX_military_view_icon_shock"
+			position = { x=165 y=93}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		iconType =
+		{
+			name ="siege_icon"
+			spriteType = "GFX_military_view_icon_siege"
+			position = { x=289 y=93 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		
+		iconType =
+		{
+			name ="maneuver_icon"
+			spriteType = "GFX_military_view_icon_maneuver"
+			position = { x=227 y=93 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}		
+
+		listboxType = 
+			{
+			name ="leaderlist"
+			position = { x = 80 y = 113 }
+			backGround=""
+			size = { x=265  y =263}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+
+	}
+
+	######Leader  entry
+
+	windowType = {
+		name = "leader_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 52 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+
+
+		
+
+		guiButtonType = {
+				name = "leader_entry_button"
+				position = { x=-63 y=0}
+				quadTextureSprite ="GFX_leader_assigned_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+			}
+
+		iconType =
+			{
+				name ="leader_types"
+				spriteType = "GFX_leader_types"
+				position = { x= -50 y = 11 }
+				Orientation = "UPPER_LEFT"
+			}
+
+		instantTextBoxType = {
+				name = "leader_name"
+				position = { x = -3 y = 6 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}
+				text = ""	
+				maxWidth = 250
+				maxHeight = 10	
+				Orientation = "UPPER_LEFT"
+				fixedsize = yes
+			}
+
+
+		iconType =
+		{
+			name ="leader_fire"
+			spriteType = "GFX_stars_small"
+			position = { x= 15 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="leader_shock"
+			spriteType = "GFX_stars_small"
+			position = { x= 79 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="leader_siege"
+			spriteType = "GFX_stars_small"
+			position = { x= 203 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="leader_maneuever"
+			spriteType = "GFX_stars_small"
+			position = { x=141  y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+	}
+
+
+#############################################################################################
+##############################  REORG WINDOW ################################################
+#############################################################################################
+	
+	windowType = {
+		name = "reorg_window"
+		backGround="reorg_bg"
+		position = { x= -315 y= -310 }	
+		size = { x=400 y=100 }
+		moveable = 1
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		Orientation = "CENTER"
+		
+		#For land units
+		#iconType =
+		#{
+		#	name ="reorg_bg"
+		#	spriteType = "GFX_reorg_bg"
+		#	position = { x= -10 y = 0 }
+		#	Orientation = "UPPER_LEFT"
+		#}
+		guiButtonType = {
+			name = "reorg_bg"
+			position = { x= 0 y = 0 }
+			quadTextureSprite ="GFX_reorg_bg"	
+			Orientation = "UPPER_LEFT"
+		}	
+
+		windowType = {
+		name = "naval_window"
+		backGround=""
+		position = { x= 0 y = 0 }
+		size = { x=400 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+			#For naval units
+			iconType =
+			{
+				name ="ship_load_capacity_bg"
+				spriteType = "GFX_reorg_bg_navalTop_bg"
+				position = { x= -10 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			# Naval Units UNITTYPES	left	
+			
+			guiButtonType = {
+				name = "nu_unit_type_1_left"
+				position = { x= 69 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_1_count_left"
+				position = { x = 95 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+
+			guiButtonType = {
+				name = "nu_unit_type_2_left"
+				position = { x= 139 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+
+			instantTextBoxType = {
+				name = "nu_unit_type_2_count_left"
+				position = { x = 165 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+			
+			guiButtonType = {
+				name = "nu_unit_type_3_left"
+				position = { x= 209 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}				
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_3_count_left"
+				position = { x = 235 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+			
+			guiButtonType = {
+				name = "nu_unit_type_4_left"
+				position = { x= 280 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+
+			instantTextBoxType = {
+				name = "nu_unit_type_4_count_left"
+				position = { x = 305 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+			
+			# Naval Units UNITTYPES	right
+			
+			guiButtonType = {
+				name = "nu_unit_type_1_right"
+				position = { x= 406 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_1_count_right"
+				position = { x = 432 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+
+			guiButtonType = {
+				name = "nu_unit_type_2_right"
+				position = { x= 476 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_2_count_right"
+				position = { x = 502 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+			
+			guiButtonType = {
+				name = "nu_unit_type_3_right"
+				position = { x= 546 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_3_count_right"
+				position = { x = 572 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+
+			guiButtonType = {
+				name = "nu_unit_type_4_right"
+				position = { x= 616 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "nu_unit_type_4_count_right"
+				position = { x = 642 y = 74 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 35
+				maxHeight = 32	
+
+				format=center
+			}
+
+			guiButtonType = {
+				name = "naval_transfer_left1"
+				position = { x = 98 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+
+			guiButtonType = {
+				name = "naval_transfer_left2"
+				position = { x = 167 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}		
+
+			guiButtonType = {
+				name = "naval_transfer_left3"
+				position = { x = 238 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+			
+			guiButtonType = {
+				name = "naval_transfer_left4"
+				position = { x = 307 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}			
+
+			guiButtonType = {
+				name = "naval_transfer_right1"
+				position = { x = 435 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+
+			guiButtonType = {
+				name = "naval_transfer_right2"
+				position = { x = 504 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}			
+
+			guiButtonType = {
+				name = "naval_transfer_right3"
+				position = { x = 574 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}
+
+			guiButtonType = {
+				name = "naval_transfer_right4"
+				position = { x = 646 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}			
+		}
+		
+
+		windowType = {
+		name = "army_window"
+		backGround=""
+		position = { x= 10 y = 0 }
+		size = { x=400 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+			# Land Units UNITTYPES left	
+			guiButtonType = {
+				name = "lu_unit_type_1_left"
+				position = { x= 72 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_1_count_left"
+				position = { x = 103 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_1_value_left"
+				position = { x = 103 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+
+			guiButtonType = {
+				name = "lu_unit_type_2_left"
+				position = { x= 160 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_2_count_left"
+				position = { x = 190 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_2_value_left"
+				position = { x = 190 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+
+			guiButtonType = {
+				name = "lu_unit_type_3_left"
+				position = { x= 248 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_3_count_left"
+				position = { x = 277 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_3_value_left"
+				position = { x = 277 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth =  42
+				maxHeight = 32	
+
+				format=right
+			}
+			
+
+
+# Land Units UNITTYPES right
+			
+			guiButtonType = {
+				name = "lu_unit_type_1_right"
+				position = { x= 418 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_1_count_right"
+				position = { x = 448 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_1_value_right"
+				position = { x = 448 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+
+			guiButtonType = {
+				name = "lu_unit_type_2_right"
+				position = { x= 506 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+
+			instantTextBoxType = {
+				name = "lu_unit_type_2_count_right"
+				position = { x = 536 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_2_value_right"
+				position = { x = 536 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			
+			guiButtonType = {
+				name = "lu_unit_type_3_right"
+				position = { x= 594 y = 70 }
+				quadTextureSprite ="GFX_unit_types_strip"	
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+				scale = 0.5
+			}			
+			
+			instantTextBoxType = {
+				name = "lu_unit_type_3_count_right"
+				position = { x = 624 y = 68 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "12"	
+				maxWidth = 42
+				maxHeight = 32	
+
+				format=right
+			}
+			instantTextBoxType = {
+				name = "lu_unit_type_3_value_right"
+				position = { x = 624 y = 84 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "123"	
+				maxWidth =  42
+				maxHeight = 32	
+
+				format=right
+			}
+			
+			guiButtonType = {
+				name = "land_transfer_left1"
+				position = { x = 108 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+
+			guiButtonType = {
+				name = "land_transfer_left2"
+				position = { x = 197 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}		
+
+			guiButtonType = {
+				name = "land_transfer_left3"
+				position = { x = 283 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+
+			guiButtonType = {
+				name = "land_transfer_right1"
+				position = { x = 455 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}	
+
+			guiButtonType = {
+				name = "land_transfer_right2"
+				position = { x = 544 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}			
+
+			guiButtonType = {
+				name = "land_transfer_right3"
+				position = { x = 634 y = 103 }
+				quadTextureSprite ="GFX_transfer_all_button_reverse"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+			}				
+		}
+		
+		
+		
+
+		instantTextBoxType = {
+			name = "reorg_label"
+			position = { x = 125 y =10 }
+			format = centre
+
+			textureFile = ""
+			font = "vic_29s"
+			borderSize = {x = 4 y = 0}
+			text = "UNIT_PANEL"	
+			maxWidth = 512
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "unitname_1"
+			position = { x = 96 y =28 }
+			format = centre
+
+			textureFile = ""
+			font = "vic_22s"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"	
+		}
+		
+		instantTextBoxType = {
+			name = "unitname_2"
+			position = { x = 460 y =28 }
+			format = centre
+
+			textureFile = ""
+			font = "vic_22s"
+			borderSize = {x = 4 y = 0}
+			text = ""	
+			maxWidth = 200
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+				name = "closebutton"
+				position = { x= 108 y= 473}
+				quadTextureSprite ="button_type_7"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "CLOSE"
+				buttonFont = "vic_18"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+			}
+			
+			
+		guiButtonType = {
+				name = "select_button_left"
+				position = { x= -120 y= 473}
+				quadTextureSprite ="GFX_list_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "SELECT_THIS_UNIT"
+				buttonFont = "vic_18"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+			}
+
+		guiButtonType = {
+				name = "select_button_right"
+				position = { x= 280 y= 473}
+				quadTextureSprite ="GFX_list_button"	
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "SELECT_THIS_UNIT"
+				buttonFont = "vic_18"
+
+				Orientation = "CENTER"
+				clicksound = close_window
+			}
+
+			
+
+		listboxType = 
+			{
+			name ="left_list"
+			position = { x = 53 y = 157 }
+			backGround=""
+			size = { x=300  y =363}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		listboxType = 
+			{
+			name ="right_list"
+			position = { x = 407 y = 157 }
+			backGround=""
+			size = { x=305  y =363}
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 2
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+		
+		guiButtonType = {
+			name ="sort_type_left"
+			quadTextureSprite = "GFX_sort_170"
+			position = { x = 33 y = 135 }
+			buttonFont = "vic_18"
+			buttonText = "LEDGER_TYPE"
+			pdx_tooltip = "SORT_BY_TYPE"
+			pdx_tooltip_delayed = ""
+		}			
+		
+		guiButtonType = {
+			name ="sort_condition_left"
+			quadTextureSprite = "GFX_sort_170"
+			position = { x = 202 y = 135 }
+			buttonFont = "vic_18"
+			buttonText = "CONDITION"
+			pdx_tooltip = "SORT_BY_CONDITION"
+			pdx_tooltip_delayed = ""	
+		}
+
+		guiButtonType = {
+			name ="sort_type_right"
+			quadTextureSprite = "GFX_sort_170"
+			position = { x = 391 y = 135 }
+			buttonFont = "vic_18"
+			buttonText = "LEDGER_TYPE"
+			pdx_tooltip = "SORT_BY_TYPE"
+			pdx_tooltip_delayed = ""			
+		}			
+
+		guiButtonType = {
+			name ="sort_condition_right"
+			quadTextureSprite = "GFX_sort_170"
+			position = { x = 560 y = 135 }
+			buttonFont = "vic_18"
+			buttonText = "CONDITION"
+			pdx_tooltip = "SORT_BY_CONDITION"
+			pdx_tooltip_delayed = ""	
+		}		
+	}
+	
+	#####Reorg entry
+
+	windowType = {
+		name = "reorg_entry"
+		backGround=""
+		position = { x=-256 y=-120 }	
+		size = { x=254 y= 36 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no		
+
+		iconType =
+		{
+			name ="band_reorg_mercenary_regiment"
+			spriteType = "GFX_band_reorg_mercenary_regiment"
+			position = { x= -20 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="band_reorg_regiment"
+			spriteType = "GFX_band_reorg_regiment"
+			position = { x= -20 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="unit_type"
+			spriteType = "GFX_unit_types_strip"
+			position = { x= -2 y = 5 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+
+		instantTextBoxType = {
+			name = "subunit_name"
+			position = { x = 21 y =5 }
+
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y =0}
+			text = ""	
+			maxWidth = 171
+			maxHeight = 14	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "subunit_type"
+			position = { x = 21 y =19 }
+			format = left
+
+			textureFile = ""
+			font = "vic_18_grey"
+			borderSize = {x = 4 y = 0}
+			text = "xxxxxxxxxx"	
+			maxWidth = 256
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "subunit_strength"
+			position = { x = 165 y =12 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 0}
+			text = "xxxx"	
+			maxWidth = 80
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			format = right
+
+			
+		}
+
+		guiButtonType = {
+				name = "transferbutton"
+				position = { x = 250 y = 7 }
+				quadTextureSprite ="GFX_reorg_right"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				clicksound = ""
+			}
+
+
+	}
+
+	windowType = {
+		name = "reorg_entry_right"
+		backGround=""
+		position = { x=-256 y=-120 }	
+		size = { x=254 y= 36 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		iconType =
+		{
+			name ="band_reorg_mercenary_regiment"
+			spriteType = "GFX_band_reorg_mercenary_regiment"
+			position = { x= -15 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+		iconType =
+		{
+			name ="band_reorg_regiment"
+			spriteType = "GFX_band_reorg_regiment"
+			position = { x= -15 y = -2 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+		iconType =
+		{
+			name ="unit_type"
+			spriteType = "GFX_unit_types_strip"
+			position = { x= 27 y = 5 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+
+
+		instantTextBoxType = {
+			name = "subunit_name"
+			position = { x = 53 y = 5 }
+
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y =0}
+			text = ""	
+			maxWidth = 171
+			maxHeight = 14	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "subunit_type"
+			position = { x = 53 y =19 }
+			format = left
+
+			textureFile = ""
+			font = "vic_18_grey"
+			borderSize = {x = 4 y = 0}
+			text = "xxxxxxxxxx"	
+			maxWidth = 256
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+
+			
+		}
+
+		instantTextBoxType = {
+			name = "subunit_strength"
+			position = { x = 205 y =12 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 0}
+			text = "xxxx"	
+			maxWidth = 80
+			maxHeight = 24	
+			Orientation = "UPPER_LEFT"
+			format = right
+
+			
+		}
+
+		guiButtonType = {
+				name = "transferbutton"
+				position = { x = 0 y = 7 }
+				quadTextureSprite ="GFX_reorg_left"
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonText = "  "
+				buttonFont = "vic_18"
+				clicksound = ""
+			}
+
+
+	}
+
+
+	positionType = {
+		name = "unitlist_start"
+		position = { x = 0 y =130 }
+	}
+	
+	positionType = {
+		name = "unitlist_offset"
+		position = { x = 0 y =92 }
+	}
+
+
+	# Exploration Selection
+
+	windowType = {
+		name = "naval_explore_window"
+		position = { x=37 y=404 }	
+		size = { x=500 y=320 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+		
+		iconType = {
+			name ="bg"
+			spriteType = "GFX_exploration_navy_bg"
+			position = { x= 0 y = 0 }
+		}
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 15 y = 8 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "Title"	
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = yes
+			format = centre
+		}
+		
+		guiButtonType = {
+			name = "may_explore_status"
+			position = { x = 278 y = 9 }
+			borderSize = { x = 0 y = 0 }
+			spriteType = "GFX_may_explore"
+			buttonText = ""
+			buttonFont = "vic_18"
+		}
+		
+		listboxType = {
+			name ="list"
+			position = { x = 6 y = 33 }
+			backGround=""
+			size = { x=319  y =224}
+			horizontal = 0
+			spacing = 0
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+			
+		guiButtonType = {
+			name = "backbutton"
+			position = { x=100 y =258}
+			quadTextureSprite ="largefloaterbutton"
+			buttonText = "CANCEL"
+			buttonFont = "vic_18"
+			shortcut = "ESCAPE"
+		}
+		
+	}	
+	
+	### exploration entry
+	windowType = {
+		name = "exploration_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=360 y= 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+		
+		iconType = {
+			name ="exploration_type"
+			spriteType = "GFX_exploration_type_strip"
+			position = { x= 0 y = 0 }
+		}
+		instantTextBoxType={
+			position = {x = 37 y  = 7 }
+			name = "location"
+			font = "vic_18"	
+			maxWidth = 215
+			maxHeight = 20
+			text = "Elbonien"	
+			format = left
+			fixedsize = yes
+		}		
+		guiButtonType = {
+			name = "send"
+			position = { x= 252 y = 1 }
+			quadTextureSprite ="GFX_button_straight_67_32"	
+			buttonText = "SEND"
+			buttonFont = "vic_18"
+			clicksound = click
+		}	
+	}
+
+}

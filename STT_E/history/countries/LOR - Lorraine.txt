@@ -1,0 +1,394 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -1
+#centralization_decentralization = -4
+#innovative_narrowminded = -1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = 2
+primary_culture = burgundian
+religion = catholic
+technology_group = western
+capital = 189	# Nancy
+
+
+1390.1.1 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Мец"
+		birth_date = 1364.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+# 1431.1.25: Personal Union under Renй of Anjou
+
+1453.2.28 = {
+	monarch = {
+		name = "Жан II"
+		dynasty = "де Валуа"
+		birth_date = 1424.8.2
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1453.2.28 = {
+	heir = {
+		name = "Николя"
+		monarch_name = "Николя I"
+		dynasty = "де Валуа"
+		birth_date = 1448.1.1
+		death_date = 1473.8.25
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1470.12.16 = {
+	monarch = {
+		name = "Николя I"
+		dynasty = "де Валуа"
+		birth_date = 1448.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1470.12.16 = {
+	heir = {
+		name = "Рене"
+		monarch_name = "Рене II"
+		dynasty = "де Водемон"
+		birth_date = 1451.5.2
+		death_date = 1508.12.10
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1473.7.24 = {
+	monarch = {
+		name = "Рене II"
+		dynasty = "де Водемон"
+		birth_date = 1451.5.2
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1489.6.4 = {
+	heir = {
+		name = "Антуан"
+		monarch_name = "Антуан I"
+		dynasty = "де Водемон"
+		birth_date = 1489.6.4
+		death_date = 1544.6.14
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 4
+		leader = {	name = "Антуан I"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
+	}
+}
+
+1508.12.10 = {
+	monarch = {
+		name = "Антуан I"
+		dynasty = "де Водемон"
+		birth_date = 1489.6.4
+		adm = 4
+		dip = 1
+		mil = 4
+		leader = {	name = "Антуан I"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
+	}
+}
+
+1517.8.23 = {
+	heir = {
+		name = "Франсуа"
+		monarch_name = "Франсуа I"
+		dynasty = "де Водемон"
+		birth_date = 1517.8.23
+		death_date = 1545.6.12
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1544.6.15 = {
+	monarch = {
+		name = "Франсуа I"
+		dynasty = "де Водемон"
+		birth_date = 1517.8.23
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1544.6.15 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл III"
+		dynasty = "де Водемон"
+		birth_date = 1543.2.18
+		death_date = 1608.5.14
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 4
+	}
+}
+
+1545.6.13 = {
+	monarch = {
+		name = "Карл III"
+		dynasty = "де Водемон"
+		birth_date = 1543.2.18
+		adm = 6
+		dip = 5
+		mil = 4
+	}
+}
+
+1556.10.2 = { government = absolute_monarchy }
+
+1563.11.8 = {
+	heir = {
+		name = "Анри"
+		monarch_name = "Анри I"
+		dynasty = "де Водемон"
+		birth_date = 1563.11.8
+		death_date = 1624.7.31
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1608.5.15 = {
+	monarch = {
+		name = "Анри I"
+		dynasty = "де Водемон"
+		birth_date = 1563.11.8
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1608.5.15 = {
+	heir = {
+		name = "Франсуа"
+		monarch_name = "Франсуа II"
+		dynasty = "де Водемон"
+		birth_date = 1572.2.27
+		death_date = 1632.10.14
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+
+1624.1.1 = {
+	monarch = {
+		name = "Франсуа II"
+		dynasty = "де Водемон"
+		birth_date = 1572.2.27
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1624.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл IV"
+		dynasty = "де Водемон"
+		birth_date = 1604.4.5
+		death_date = 1674.9.18
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 0
+		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+	}
+}
+
+1624.5.1 = {
+	monarch = {
+		name = "Карл IV"
+		dynasty = "де Водемон"
+		birth_date = 1604.4.5
+		adm = 2
+		dip = 0
+		mil = 0
+		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+	}
+}
+
+1624.5.1 = {
+	heir = {
+		name = "Николя"
+		monarch_name = "Николя II"
+		dynasty = "де Водемон"
+		birth_date = 1612.12.12
+		death_date = 1670.1.25
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1624.9.1 = { government = administrative_monarchy }
+
+1634.1.1 = {
+	join_league = catholic
+}
+
+1634.1.20 = {
+	monarch = {
+		name = "Николя II"
+		dynasty = "де Водемон"
+		birth_date = 1612.12.12
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1634.1.20 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл IV"
+		dynasty = "де Водемон"
+		birth_date = 1604.4.5
+		death_date = 1674.9.18
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 0
+		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+	}
+}
+
+1641.1.1 = {
+	leave_league = catholic
+}
+
+1641.1.30 = {
+	monarch = {
+		name = "Карл IV"
+		dynasty = "де Водемон"
+		birth_date = 1604.4.5
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+1643.4.3 = {
+	heir = {
+		name = "Карл Леопольд"
+		monarch_name = "Карл V Леопольд"
+		dynasty = "де Водемон"
+		birth_date = 1643.4.3
+		death_date = 1690.4.18
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 0
+	}
+}
+
+1675.10.19 = {
+	monarch = {
+		name = "Карл V Леопольд"
+		dynasty = "де Водемон"
+		birth_date = 1643.4.3
+		adm = 1
+		dip = 4
+		mil = 0
+	}
+}
+
+1679.9.11 = {
+	heir = {
+		name = "Леопольд Иосиф"
+		monarch_name = "Леопольд I Иосиф"
+		dynasty = "де Водемон"
+		birth_date = 1679.9.11
+		death_date = 1729.3.27
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1690.4.19 = {
+	monarch = {
+		name = "Леопольд I Иосиф"
+		dynasty = "де Водемон"
+		birth_date = 1679.9.11
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1708.12.8 = {
+	heir = {
+		name = "Франц Стефан"
+		monarch_name = "Франц III Стефан"
+		dynasty = "де Водемон"
+		birth_date = 1708.12.8
+		death_date = 1737.7.9
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1729.3.28 = {
+	monarch = {
+		name = "Франц III Стефан"
+		dynasty = "де Водемон"
+		birth_date = 1708.12.8
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1736.2.1 = {
+	monarch = {
+		name = "Станислав I"
+		dynasty = "Лещинский"
+		birth_date = 1677.10.20
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1766.2.22 = { government = absolute_monarchy }

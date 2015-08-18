@@ -1,0 +1,115 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 205  103  80 }
+
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	maritime_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+#For use only when Munster is ruled by a bishop
+monarch_names = {
+    "Иоганн #0" = 40
+	"Эрих #0" = 40
+	"Фердинанд #0" = 40
+	"Генрих #0" = 40
+	"Отто #0" = 20
+	"Фридрих #1" = 20
+	"Конрад #0" = 20
+	"Вильгельм #0" = 20
+	"Бернхард #0" = 20
+	"Бернхард Христоф #0" = 20
+	"Эрнст #0" = 20
+	"Франц #0" = 20
+	"Франц Арнольд #0" = 20
+	"Фридрих Христиан #0" = 20
+	"Иоганн Вильгельм #0" = 20
+	"Людвиг #2" = 15
+	"Адольф #1" = 15
+	"Людвиг #1" = 10
+	"Адольф #1" = 10
+	"Александер #0" = 0
+	"Андреас #0" = 0
+	"Бальдур #0" = 0
+	"Бруно #0" = 0
+	"Клеменс #0" = 0
+	"Дедрик #0" = 0
+	"Денис #0" = 0
+	"Эрнст #0" = 0
+	"Флориан #0" = 0
+	"Грегор #0" = 0
+	"Гунтрам #0" = 0
+	"Хельмфрид #0" = 0
+	"Гельмут #0" = 0
+	"Исаак #0" = 0
+	"Ян #0" = 0
+	"Иоахим #0" = 0
+	"Мартин #0" = 0
+	"Михаэль #0" = 0
+	"Райнер #0" = 0
+	"Рудольф #0" = 0
+	"Сигизмунд #0" = 0
+	
+	"Сиара #0" = -1
+	"Онира #0" = -1
+	"Треаза #0" = -1
+}
+
+leader_names = {
+	"Энсте"
+	"Денхофф"
+	"фон Коссель"
+	"де Туркхайм"
+	"де Дорнах"
+	"де Кирхайм"
+	"Кемпф"
+	"Ваксмут"
+	"Хельфф"
+	"Крефтинг"
+	"Кене"
+	"Энгельс"
+	"Белькен"
+	"Мейер"
+}
+
+ship_names = {
+	"Лиудгер"
+	"Св. Ламберт"
+	"Либфраюнкирхе"
+	"Граф фон Хойа"
+	"Гревен"
+	"Хильтруп"
+	"Мориц"
+	"Вольбек"
+	"Роксель"
+	"Зенден"
+}
+
+army_names = {
+	"Армия пров. $PROVINCE$" 
+}

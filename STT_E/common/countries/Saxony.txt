@@ -1,0 +1,142 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 155  147  180 }
+
+historical_score = 300
+
+preferred_religion = protestant
+
+historical_idea_groups = {
+	diplomatic_ideas
+	defensive_ideas
+	innovativeness_ideas
+	offensive_ideas
+	economic_ideas
+	trade_ideas
+	quality_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Иоганн Георг  #0" = 80
+	"Фридрих #0" = 60
+	"Фридрих Август #0" = 60
+	"Альбрехт #2" = 40
+	"Христиан #0" = 40
+	"Генрих #4" = 20
+	"Рудольф #2" = 20
+	"Август #0" = 20
+	"Эрнст #0" = 20
+	"Фридрих Христиан #0" = 20
+	"Георг #0" = 20
+	"Мориц #0" = 20
+	"Александр #0" = 15
+	"Антон #0" = 15
+	"Христиан Альбрехт #0" = 15
+	"Гектор #0" = 15
+	"Иоганн #0" = 15
+	"Карл #0" = 15
+	"Клеменс Венцель #0" = 10
+	"Франц Ксавер #0" = 10
+	"Иоахим #0" = 10
+	"Иосиф #0" = 10
+	"Магнус #0" = 10
+	"Максимилиан #0" = 10
+	"Северин #0" = 10
+	"Вольфганг #0" = 10
+	"Альфред #0" = 0
+	"Андреас #0" = 0
+	"Бруно #0" = 0
+	"Буркхард #0" = 0
+	"Гюнтер #0" = 0
+	"Герман #0" = 0
+	"Каэтан #0" = 0
+	"Ламберт #0" = 0
+	"Лука #0" = 0
+	"Михарт #0" = 0
+	"Раймунд #0" = 0
+	"Ульрих #0" = 0
+	"Вильфрид #0" = 0
+	"Вольфрам #0" = 0
+
+	"Амели #0" = -1
+	"Бьянка #0" = -1
+	"Элеонора #0" = -1
+}
+
+leader_names = {
+	"Гергеселль"
+	"Эльснер"
+	"Ранк"
+	"Тайхман"
+	"Таут"
+	"Харцер"
+	"Дитце"
+	"Теллиг"
+	"Пильц"
+	"Винклер"
+	"Юлих"
+	"Ибигау"
+	"Кранке"
+	"Бибер"
+	"фон Рат"
+	"Арним"
+	"Хаманн"
+	"Кирбах"
+	"Гедель"
+	"Эртель"
+	"Шенфельд"
+	"Дайц"
+	"Кун"
+	"Зем"
+	"Фишер"
+	"Бретфельд"
+	"Рабс"
+}
+
+ship_names = {
+	"Видукинд"
+	"Эдберг"
+	"Вихман"
+	"Биллинг"
+	"Лидольф"
+	"Брун"
+	"Отто I"
+	"Генрих I"
+	"Бернхард I"
+	"Ордульф"
+	"Манус"
+	"Лотар"
+	"Лотар"
+	"Генрих II"
+}
+
+
+army_names = {
+	"Гвардия курфюрста"
+	"Армия пров. $PROVINCE$"
+}
+
+fleet_names = {
+	"Флот курфюрста"
+}

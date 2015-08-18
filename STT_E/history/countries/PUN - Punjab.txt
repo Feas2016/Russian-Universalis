@@ -1,0 +1,93 @@
+government = feudal_monarchy
+mercantilism = 0.1
+technology_group = indian
+primary_culture = panjabi
+religion = hinduism
+capital = 507	# Lahore
+
+#Khokhars
+
+1444.1.1 = {
+	monarch = {
+		name = "Жасрат"
+		dynasty = "Хохар"
+		ADM = 0
+		DIP = 1
+		MIL = 3
+	}
+}
+
+
+ 
+
+1553.1.1 = {
+	monarch = {
+		name = "Сикандар"
+		dynasty = "Сури"
+		ADM = 1
+		DIP = 3
+		MIL = 2
+	}
+	religion = sunni
+}
+
+#Sikh leaders in Gujranwala
+1758.1.1 = {
+	monarch = {
+		name = "Джасса Сингх"
+		dynasty = "Ахувалия"
+		ADM = 1
+		DIP = 2
+		MIL = 6
+		leader = { name = "Джасса Ахувалия"	type = general	rank = 0	fire = 2	shock = 3	manuever = 2	siege = 1 }
+	}
+	religion = sikhism
+}
+
+1774.1.1 = {
+	monarch = {
+		name = "Маха Сингх"
+		dynasty = "Сандхавалия"
+		ADM = 0
+		DIP = 1
+		MIL = 5
+	}
+}
+
+1780.11.13 = {
+	heir = {
+		name = "Ранджит"
+		monarch_name = "Ранджит Сингх"
+		dynasty = "Сандхавалия"
+		birth_date = 1780.11.13
+		death_date = 1839.6.20
+		claim = 95
+		ADM = 3
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1801.4.12 = {
+	monarch = {
+		name = "Ранджит Сингх"
+		dynasty = "Сандхавалия"
+		ADM = 3
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1801.4.12 = {
+	heir = {
+		name = "Харак"
+		monarch_name = "Харак Сингх"
+		dynasty = "Сандхавалия"
+		birth_date = 1801.1.1
+		death_date = 1840.11.5
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 2
+	}
+}

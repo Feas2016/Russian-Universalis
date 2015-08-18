@@ -1,0 +1,836 @@
+government = tribal_despotism
+#aristocracy_plutocracy = -5
+#centralization_decentralization = 5
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -5
+#quality_quantity = 2
+#serfdom_freesubjects = -5
+primary_culture = kongolese
+religion = shamanism
+technology_group = sub_saharan
+capital = 1170	# M'banza Kongo
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Нтину"
+		dynasty = "Лукени"
+		adm = 1
+		dip = 4
+		mil = 0
+	}
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Нкуву"
+		monarch_name = "Нкуву"
+		dynasty = "Лукени"
+		birth_date = 1390.1.1
+		death_Date = 1457.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1419.1.1 = {
+	monarch = {
+		name = "Нкуву"
+		dynasty = "Лукени"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1439.1.1 = {
+	heir = {
+		name = "Нзинга Нкува"
+		monarch_name = "Нзинга Нкува"
+		dynasty = "Лукени"
+		birth_date = 1439.1.1
+		death_Date = 1506.6.2
+		claim = 95
+		adm = 1
+		dip = 6
+		mil = 2
+	}
+}
+
+1457.1.1 = {
+	monarch = {
+		name = "Нзинга Нкува"
+		dynasty = "Лукени"
+		adm = 1
+		dip = 6
+		mil = 2
+	}
+}
+
+1480.1.1 = {
+	heir = {
+		name = "Альфонс"
+		monarch_name = "Альфонс I"
+		dynasty = "Лукени"
+		birth_date = 1480.1.1
+		death_Date = 1543.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+1506.6.2 = {
+	monarch = {
+		name = "Альфонс I"
+		dynasty = "Лукени"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+1506.6.2 = {
+	heir = {
+		name = "Педро"
+		monarch_name = "Педро I"
+		dynasty = "Лукени"
+		birth_date = 1500.1.1
+		death_Date = 1545.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1506.6.2 = { religion = catholic }
+
+1543.1.1 = {
+	monarch = {
+		name = "Педро I"
+		dynasty = "Лукени"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1543.1.1 = {
+	heir = {
+		name = "Диего"
+		monarch_name = "Диего I"
+		dynasty = "Лукени"
+		birth_date = 1520.1.1
+		death_date = 1561.9.2
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1545.1.1 = {
+	monarch = {
+		name = "Диего I"
+		dynasty = "Лукени"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1545.1.1 = {
+	heir = {
+		name = "Бернардо"
+		monarch_name = "Бернардо I"
+		dynasty = "Лукени"
+		birth_date = 1520.1.1
+		death_Date = 1566.4.2
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+1561.9.2 = {
+	monarch = {
+		name = "Бернардо I"
+		dynasty = "Лукени"
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+1561.9.2 = {
+	heir = {
+		name = "Энрике"
+		monarch_name = "Энрике I"
+		dynasty = "Лукени"
+		birth_date = 1540.1.1
+		death_date = 1568.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1566.4.2 = {
+	monarch = {
+		name = "Энрике I"
+		dynasty = "Лукени"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1566.4.2 = {
+	heir = {
+		name = "Альваро"
+		monarch_name = "Альваро I"
+		dynasty = "Квилу"
+		birth_date = 1560.1.1
+		death_Date = 1587.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1568.1.1 = {
+	monarch = {
+		name = "Альваро I"
+		dynasty = "Квилу"
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1568.1.1 = {
+	heir = {
+		name = "Альваро"
+		monarch_name = "Альваро II"
+		dynasty = "Квилу"
+		birth_date = 1560.1.1
+		death_Date = 1614.8.2
+		claim = 95
+		adm = 6
+		dip = 1
+		mil = 4
+		leader = {	name = "Альваро II"             	type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0}
+	}
+}
+
+1587.1.1 = {
+	monarch = {
+		name = "Альваро II"
+		dynasty = "Квилу"
+		adm = 6
+		dip = 1
+		mil = 4
+		leader = {	name = "Альваро II"             	type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0}
+	}
+}
+
+1587.1.1 = {
+	heir = {
+		name = "Бернардо"
+		monarch_name = "Бернардо II"
+		dynasty = "Квилу"
+		birth_date = 1587.1.1
+		death_Date = 1615.8.2
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1614.8.2 = {
+	monarch = {
+		name = "Бернардо II"
+		dynasty = "Квилу"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1614.8.2 = {
+	heir = {
+		name = "Альваро"
+		monarch_name = "Альваро III"
+		dynasty = "Квилу"
+		birth_date = 1600.1.1
+		death_Date = 1622.5.5
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1615.8.2 = {
+	monarch = {
+		name = "Альваро III"
+		dynasty = "Квилу"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1622.5.5 = {
+	monarch = {
+		name = "Педро II"
+		dynasty = "Нсунди"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1624.4.14 = {
+	monarch = {
+		name = "Гарсия I"
+		dynasty = "Нсунди"
+		adm = 0
+		dip = 0
+		mil = 1
+	}
+}
+
+1626.6.2 = {
+	monarch = {
+		name = "Амброзио I"
+		dynasty = "Квилу"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1631.3.2 = {
+	monarch = {
+		name = "Альваро IV"
+		dynasty = "Квилу"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1636.2.24 = {
+	monarch = {
+		name = "Альваро V"
+		dynasty = "Кимпанзу"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1636.8.2 = {
+	monarch = {
+		name = "Альваро VI"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1636.8.2 = {
+	heir = {
+		name = "Гарсия"
+		monarch_name = "Гарсия II"
+		dynasty = "Кинлаза"
+		birth_date = 1620.1.1
+		death_Date = 1661.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1641.2.21 = {
+	monarch = {
+		name = "Гарсия II"
+		dynasty = "Кинлаза"
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1661.1.1 = {
+	monarch = {
+		name = "Антонио I"
+		dynasty = "Кинлаза"
+		adm = 3
+		dip = 0
+		mil = 0
+	}
+}
+
+1665.10.30 = {
+	monarch = {
+		name = "Альваро VII"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1666.6.2 = {
+	monarch = {
+		name = "Альваро VIII"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1667.1.1 = {
+	monarch = {
+		name = "Альфонс III"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1669.1.1 = {
+	monarch = {
+		name = "Альваро IX"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1672.1.1 = {
+	monarch = {
+		name = "Рафаэль I"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1674.1.1 = {
+	monarch = {
+		name = "Даниэль I"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1674.1.1 = {
+	heir = {
+		name = "Андрей I"
+		monarch_name = "Андрей I"
+		dynasty = "Кинлаза"
+		birth_date = 1660.1.1
+		death_date = 1690.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1678.1.1 = {
+	monarch = {
+		name = "Андрей I"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Альваро X"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1690.1.1 = {
+	heir = {
+		name = "Педро"
+		monarch_name = "Педро IV"
+		dynasty = "Кинлаза"
+		birth_date = 1670.1.1
+		death_Date = 1717.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1694.12.2 = {
+	monarch = {
+		name = "Педро IV"
+		dynasty = "Кинлаза"
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1694.12.2 = {
+	heir = {
+		name = "Николай"
+		monarch_name = "Николай"
+		dynasty = "Кинлаза"
+		birth_date = 1690.1.1
+		death_Date = 1725.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1717.1.1 = {
+	monarch = {
+		name = "Николай"
+		dynasty = "Кинлаза"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1717.1.1 = {
+	heir = {
+		name = "Себастьян"
+		monarch_name = "Себастьян"
+		dynasty = "Кинлаза"
+		birth_date = 1700.1.1
+		death_Date = 1732.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1725.1.1 = {
+	monarch = {
+		name = "Себастьян"
+		dynasty = "Кинлаза"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1725.1.1 = {
+	heir = {
+		name = "Антонио"
+		monarch_name = "Антонио II"
+		dynasty = "Кинлаза"
+		birth_date = 1710.1.1
+		death_date = 1741.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1732.1.1 = {
+	monarch = {
+		name = "Антонио II"
+		dynasty = "Кинлаза"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1732.1.1 = {
+	heir = {
+		name = "Альваро"
+		monarch_name = "Альваро XI"
+		dynasty = "Кинлаза"
+		birth_date = 1700.1.1
+		death_Date = 1750.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1741.1.1 = {
+	monarch = {
+		name = "Альваро XI"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1741.1.1 = {
+	heir = {
+		name = "Алексей"
+		monarch_name = "Алексей"
+		dynasty = "Кинлаза"
+		birth_date = 1720.1.1
+		death_Date = 1757.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Алексей"
+		dynasty = "Кинлаза"
+		adm = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1750.1.1 = {
+	heir = {
+		name = "Энрике"
+		monarch_name = "Энрике II"
+		dynasty = "Кинлаза"
+		birth_date = 1750.1.1
+		death_Date = 1769.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1757.1.1 = {
+	monarch = {
+		name = "Энрике II"
+		dynasty = "Кинлаза"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1757.1.1 = {
+	heir = {
+		name = "Альфонс"
+		monarch_name = "Альфонс IV"
+		dynasty = "Кинлаза"
+		birth_date = 1750.1.1
+		death_date = 1780.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1769.1.1 = {
+	monarch = {
+		name = "Альфонс IV"
+		dynasty = "Кинлаза"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1769.1.1 = {
+	heir = {
+		name = "Жозе"
+		monarch_name = "Жозе I"
+		dynasty = "Кинлаза"
+		birth_date = 1750.1.1
+		death_Date = 1784.2.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1780.1.1 = {
+	monarch = {
+		name = "Жозе I"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1784.2.1 = {
+	monarch = {
+		name = "Альфонс V"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+1788.1.1 = {
+	monarch = {
+		name = "Жозе II"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1788.1.1 = {
+	heir = {
+		name = "Педро"
+		monarch_name = "Педро VI"
+		dynasty = "Кинлаза"
+		birth_date = 1769.1.1
+		death_Date = 1795.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1792.1.1 = {
+	monarch = {
+		name = "Педро VI"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1792.1.1 = {
+	heir = {
+		name = "Альваро"
+		monarch_name = "Альваро XII"
+		dynasty = "Кинлаза"
+		birth_date = 1780.1.1
+		death_Date = 1798.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1795.1.1 = {
+	monarch = {
+		name = "Альваро XII"
+		dynasty = "Кинлаза"
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1795.1.1 = {
+	heir = {
+		name = "Франcиско"
+		monarch_name = "Франcиско II"
+		dynasty = "Кинлаза"
+		birth_date = 1780.1.1
+		death_Date = 1802.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1798.1.1 = {
+	monarch = {
+		name = "Франcиско II"
+		dynasty = "Кинлаза"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1798.1.1 = {
+	heir = {
+		name = "Гарсия"
+		monarch_name = "Гарсия IV"
+		dynasty = "Кинлаза"
+		birth_date = 1780.1.1
+		death_Date = 1814.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1802.1.1 = {
+	monarch = {
+		name = "Гарсия IV"
+		dynasty = "Кинлаза"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1802.1.1 = {
+	heir = {
+		name = "Гарсия"
+		monarch_name = "Гарсия V"
+		dynasty = "Кинлаза"
+		birth_date = 1775.1.1
+		death_date = 1830.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1814.1.1 = {
+	monarch = {
+		name = "Гарсия V"
+		dynasty = "Кинлаза"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}

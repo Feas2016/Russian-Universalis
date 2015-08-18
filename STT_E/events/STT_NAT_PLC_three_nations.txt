@@ -1,0 +1,77 @@
+namespace = STT_PLU_three_nations
+
+country_event = {
+	id = STT.PLU.600001
+	title = "STT.PLU.600001t"
+	desc = "STT.PLU.600001d"
+	picture = PLU_eventPicture
+	
+	trigger = {
+		tag = PLC
+		num_of_cities = 15
+		OR = {
+			has_country_flag = has_civil_war
+			has_country_flag = had_peasant_war
+		}
+		owns = 280
+		is_core = 280
+		NOT = { exists = UKR }
+	}
+	
+	mean_time_to_happen = {
+		days = 240
+		
+
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.6
+			is_at_war = yes
+		}		
+	}	
+	immediate = {
+		change_tag = PLU
+		culture_group_union = STT_PLU	
+		add_stability = 1
+		add_prestige = -50		
+	}
+	option = {
+		name = "STT.PLU.600001o1"
+		PLU = {
+		change_primary_culture = STT_PLU_polish	
+		every_owned_province = {
+			limit = {
+				culture = lithuanian
+			}	change_culture = STT_PLU_lithuanian }
+		every_owned_province = {
+			limit = {
+				culture = byelorussian
+			}	change_culture = STT_PLU_byelorussian }
+		every_owned_province = {
+			limit = {
+				culture = polish
+			}	change_culture = STT_PLU_polish }
+		every_owned_province = {
+			limit = {
+				culture = ruthenian
+			}	change_culture = STT_PLU_ruthenian }
+		every_owned_province = {
+			limit = {	culture = STT_PLU_ruthenian	}
+			add_province_modifier = {
+				name = local_autonomy
+				duration = 3600
+			}
+			}		
+		}
+	}
+}
