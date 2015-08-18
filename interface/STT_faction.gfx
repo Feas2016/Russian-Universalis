@@ -1,0 +1,86 @@
+spriteTypes = {
+	# Russia monarhy	
+	spriteType = {
+		name = "GFX_faction_bg_rus_boyars"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+	}	
+	spriteType = {
+		name = "GFX_faction_rus_boyars"	
+		texturefile = "gfx//interface//rus_boyar.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_rus_merchants"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+	}	
+	spriteType = {
+		name = "GFX_faction_rus_merchants"	
+		texturefile = "gfx//interface//rus_merchants.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_rus_voin"	
+		texturefile = "gfx//interface//faction_pale_green_frame.tga"
+	}	
+	spriteType = {
+		name = "GFX_faction_rus_voin"	
+		texturefile = "gfx//interface//rus_voin.tga"
+	}
+	
+	#Kingdoms
+
+	spriteType = {
+		name = "GFX_faction_bg_ki_peasants"	
+		texturefile = "gfx//interface//faction_pale_green_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_ki_peasants"	
+		texturefile = "gfx//interface//peasants_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_ki_clergy"	
+		texturefile = "gfx//interface//faction_yellow_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_ki_clergy"	
+		texturefile = "gfx//interface//faithful_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_ki_nobles"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_ki_nobles"	
+		texturefile = "gfx//interface//nobles_icon.tga"
+	}
+	
+	#Empire
+	spriteType = {
+		name = "GFX_faction_bg_emp_adm"	
+		texturefile = "gfx//interface//faction_pale_green_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_emp_adm"	
+		texturefile = "gfx//interface//emp_admin.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_emp_dip"	
+		texturefile = "gfx//interface//faction_yellow_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_emp_dip"	
+		texturefile = "gfx//interface//emp_diplo.tga"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_emp_mil"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_emp_mil"	
+		texturefile = "gfx//interface//emp_milit.tga"
+	}
+}

@@ -1,0 +1,102 @@
+government = iqta
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 0
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -1
+#quality_quantity = -1
+#serfdom_freesubjects = -1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 328	# Sinop
+
+
+1385.1.1 = {
+	monarch = {
+		name = "Исфендияр"
+		dynasty = Кандароглу
+		birth_date = 1365.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1419.1.1 = {
+	heir = {
+		name = "Ибрагим"
+		monarch_name = "Ибрагим II"
+		dynasty = "Кандароглу"
+		birth_date = 1419.1.1
+		death_date = 1443.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1440.1.29 = {
+	monarch = {
+		name = "Ибрагим II"
+		dynasty = Кандароглу
+		birth_date = 1419.1.1
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1440.1.29 = {
+	heir = {
+		name = "Исмаил"
+		monarch_name = "Исмаил"
+		dynasty = "Кандароглу"
+		birth_date = 1423.1.1
+		death_date = 1460.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1443.1.1 = {
+	monarch = {
+		name = "Исмаил"
+		dynasty = Кандароглу
+		birth_date = 1423.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1443.1.1 = {
+	heir = {
+		name = "Ахмад"
+		monarch_name = "Кызыл Ахмад"
+		dynasty = "Кандароглу"
+		birth_date = 1425.1.1
+		death_date = 1493.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+}
+
+1461.1.1 = {
+	monarch = {
+		name = "Кызыл Ахмад"
+		dynasty = Кандароглу
+		birth_date = 1425.1.1
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+}
+
+# Annexed by the Ottoman Empire at the end 1461

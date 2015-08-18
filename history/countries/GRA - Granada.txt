@@ -1,0 +1,195 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = 4
+#centralization_decentralization = -3
+#innovative_narrowminded = -2
+mercantilism = 0.1
+#offensive_defensive = 5
+#land_naval = -3
+#quality_quantity = 2
+#serfdom_freesubjects = -2
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 223	# Granada
+
+
+1392.1.1 = {
+	monarch = {
+		name = "Мухаммед VII"
+		dynasty = "Насрид"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+	add_piety = -0.3
+}
+
+1392.1.1 = {
+	heir = {
+		name = "Юсуф"
+		monarch_name = "Юсуф III"
+		dynasty = "Насрид"
+		birth_date = 1376.1.1
+		death_date = 1417.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1408.1.1 = {
+	monarch = {
+		name = "Юсуф III"
+		dynasty = "Насрид"
+		birth_date = 1376.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1411.1.1 = {
+	heir = {
+		name = "Мухаммед"
+		monarch_name = "Мухаммед VIII"
+		dynasty = "Насрид"
+		birth_date = 1411.1.1
+		death_date = 1431.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1417.1.1 = {
+	monarch = {
+		name = "Мухаммед VIII"
+		dynasty = "Насрид"
+		birth_date = 1411.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1419.1.1 = {
+	monarch = {
+		name = "Мухаммед IX"
+		dynasty = "Насрид"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1446.1.1 = {
+	monarch = {
+		name = "Мухаммед X"
+		dynasty = "Насрид"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1451.1.1 = {
+	monarch = {
+		name = "Мухаммед XI"
+		dynasty = "Насрид"
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1454.1.1 = {
+	monarch = {
+		name = "Саад I Кириза"
+		dynasty = "Насрид"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1462.1.1 = {
+	monarch = {
+		name = "Юсуф V"
+		dynasty = "Насрид"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1463.1.1 = {
+	monarch = {
+		name = "Саад I Кириза"
+		dynasty = "Насрид"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1464.1.1 = {
+	monarch = {
+		name = "Али I Абу-аль-Хасан"
+		dynasty = "Насрид"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1470.1.1 = { leader = {	name = "Ибрагим Али аль-Аттар"	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1483.1.1 } }
+
+1482.1.1 = {
+	monarch = {
+		name = "Мухаммед XII Боабдил"
+		dynasty = "Насрид"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1483.1.1 = {
+	monarch = {
+		name = "Али I Абу-аль-Хасан"
+		dynasty = "Насрид"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1485.1.1 = {
+	monarch = {
+		name = "Мухаммед XIII"
+		dynasty = "Насрид"
+		adm = 0
+		dip = 0
+		mil = 0
+		 leader = { name = "Мухаммед аль-Загал"	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
+	}
+}
+
+1489.1.1 = {
+	monarch = {
+		name = "Мухаммед XII Боабдил"
+		dynasty = "Насрид"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1568.1.1 = { government = despotic_monarchy }
+
+1724.1.20 = { government = administrative_monarchy }
+
+1759.8.12 = { government = absolute_monarchy }

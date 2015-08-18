@@ -1,0 +1,121 @@
+government = iqta
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 3
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+technology_group = muslim
+religion = shiite
+primary_culture = bedouin_arabic
+capital = 398	# Sharjah
+
+
+1719.1.1= {
+	monarch = {
+		name = "Рашид I"
+		dynasty = "аль-Касими"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+	add_piety = 0.1
+}
+
+1757.1.1 = {
+	heir = {
+		name = "Сакр"
+		monarch_name = "Сакр I"
+		dynasty = "аль-Касими"
+		birth_date = 1757.1.1
+		death_date = 1803.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1777.1.1 = {
+	monarch = {
+		name = "Сакр I"
+		dynasty = "аль-Касими"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1783.1.1 = {
+	heir = {
+		name = "Султан"
+		monarch_name = "Султан I"
+		dynasty = "аль-Касими"
+		birth_date = 1783.1.1
+		death_date = 1808.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1803.1.1 = {
+	monarch = {
+		name = "Султан I"
+		dynasty = "аль-Касими"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+}
+
+1803.1.1 = {
+	heir = {
+		name = "ах-Хусейн"
+		monarch_name = "ах-Хусейн"
+		dynasty = "аль-Касими"
+		birth_date = 1785.1.1
+		death_date = 1814.1.1
+		claim = 95
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+1808.1.1 = {
+	monarch = {
+		name = "ах-Хусейн"
+		dynasty = "аль-Касими"
+		dip = 0
+		adm = 3
+		mil = 2
+	}
+}
+
+1808.1.1 = {
+	heir = {
+		name = "аль-Хасан"
+		monarch_name = "аль-Хасан"
+		dynasty = "аль-Касими"
+		birth_date = 1790.1.1
+		death_date = 1814.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1814.1.1 = {
+	monarch = {
+		name = "аль-Хасан"
+		dynasty = "аль-Касими"
+		dip = 1
+		adm = 2
+		mil = 2
+	}
+}

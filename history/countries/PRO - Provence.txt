@@ -1,0 +1,113 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 2
+#innovative_narrowminded = -1
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = 4
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+primary_culture = occitain
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+historical_rival = ARA
+capital = 201 # Aix-en-Provence
+
+
+1399.8.1 = {
+	monarch = {
+		name = "Луи II"
+		dynasty = "де Валуа"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1403.9.25 = {
+	heir = {
+		name = "Луи"
+		monarch_name = "Луи III"
+		dynasty = "де Валуа"
+		birth_date = 1403.9.25
+		death_date = 1434.11.12
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1417.1.1 = {
+	monarch = {
+		name = "Луи III"
+		dynasty = "де Валуа"
+		birth_date = 1403.9.25
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1417.1.1 = {
+	heir = {
+		name = "Рене"
+		monarch_name = "Рене I"
+		dynasty = "де Валуа"
+		birth_date = 1409.1.16
+		death_date = 1480.7.10
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1434.11.16 = {
+	monarch = {
+		name = "Рене I"
+		dynasty = "де Валуа"
+		birth_date = 1409.1.16
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1435.2.2 = { add_accepted_culture = sicilian }
+
+1436.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл III"
+		dynasty = "де Валуа"
+		birth_date = 1436.1.1
+		death_date = 1481.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1442.6.2 = { remove_accepted_culture = sicilian }
+
+1480.7.10 = {
+	monarch = {
+		name = "Карл III"
+		dynasty = "де Валуа"
+		birth_date = 1436.1.1
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1515.1.1 = { government = despotic_monarchy }
+
+1560.1.1 = { religion = reformed }
+
+1589.8.3 = { government = administrative_monarchy }
+
+1661.3.9 = { government = absolute_monarchy }

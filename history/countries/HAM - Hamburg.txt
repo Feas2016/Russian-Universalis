@@ -1,0 +1,28 @@
+government = oligarchic_republic
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 0
+#innovative_narrowminded = 0
+mercantilism = 0.2
+#offensive_defensive = -2
+#land_naval = -1
+#quality_quantity = -1
+#serfdom_freesubjects = -1
+technology_group = western
+religion = catholic
+primary_culture = hannoverian
+capital = 44	# Hamburg
+
+
+1399.1.1 = {
+	monarch = {
+		name = "Сенат"
+		adm = 2
+		dip = 2
+		mil = 4
+		regent = yes
+	}
+}
+
+1529.1.1 = { religion = protestant }
+
+1529.1.1 = { government = administrative_republic }

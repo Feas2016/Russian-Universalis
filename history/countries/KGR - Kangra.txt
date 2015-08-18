@@ -1,0 +1,662 @@
+government = feudal_monarchy
+mercantilism = 0.1
+technology_group = indian
+primary_culture = panjabi
+religion = hinduism
+capital = 509	# Kangra
+historical_friend = DLH
+historical_friend = MUG
+
+1390.1.1 = {
+	monarch = {
+		name = "Мегх Чанд"
+		dynasty = "Каточ"
+		DIP = 2
+		ADM = 1
+		MIL = 2
+	}
+}
+
+1390.1.1 = {
+	heir = {
+		name = "Хари Чанд"
+		monarch_name = "Хари Чанд I"
+		dynasty = "Каточ"
+		birth_date = 1380.1.1
+		death_date = 1420.1.1
+		claim = 95
+		DIP = 1
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1405.1.1 = {
+	monarch = {
+		name = "Хари Чанд I"
+		dynasty = "Каточ"
+		DIP = 1
+		ADM = 1
+		MIL = 3
+	}
+}
+
+#Brother of Hari Chand:
+
+1405.1.1 = {
+	heir = {
+		name = "Каран Чанд"
+		monarch_name = "Каран Чанд II"
+		dynasty = "Каточ"
+		birth_date = 1390.1.1
+		death_date = 1430.1.1
+		claim = 95
+		DIP = 0
+		ADM = 3
+		MIL = 2
+	}
+}
+
+1420.1.1 = {
+	monarch = {
+		name = "Каран Чанд II"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 3
+		MIL = 2
+	}
+}
+
+1420.1.1 = {
+	heir = {
+		name = "Сансар Чанд"
+		monarch_name = "Сансар Чанд I"
+		dynasty = "Каточ"
+		birth_date = 1400.1.1
+		death_date = 1450.1.1
+		claim = 95
+		DIP = 1
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1430.1.1 = {
+	monarch = {
+		name = "Сансар Чанд I"
+		dynasty = "Каточ"
+		DIP = 1
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Девангга Чанд"
+		monarch_name = "Девангга Чанд"
+		dynasty = "Каточ"
+		birth_date = 1420.1.1
+		death_date = 1465.1.1
+		claim = 95
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1450.1.1 = {
+	monarch = {
+		name = "Девангга Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1450.1.1 = {
+	heir = {
+		name = "Нарендра Чанд"
+		monarch_name = "Devangga Чанд"
+		dynasty = "Каточ"
+		birth_date = 1430.1.1
+		death_date = 1480.1.1
+		claim = 95
+		DIP = 2
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1465.1.1 = {
+	monarch = {
+		name = "Нарендра Чанд"
+		dynasty = "Каточ"
+		DIP = 2
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1465.1.1 = {
+	heir = {
+		name = "Сувира Чанд"
+		monarch_name = "Suvira Чанд"
+		dynasty = "Каточ"
+		birth_date = 1450.1.1
+		death_date = 1490.1.1
+		claim = 95
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Сувира Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1480.1.1 = {
+	heir = {
+		name = "Праяг Чанд"
+		monarch_name = "Prayag Чанд"
+		dynasty = "Каточ"
+		birth_date = 1470.1.1
+		death_date = 1510.1.1
+		claim = 95
+		DIP = 3
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1490.1.1 = {
+	monarch = {
+		name = "Праяг Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1490.1.1 = {
+	heir = {
+		name = "Рам Чанд"
+		monarch_name = "Рам Чанд"
+		dynasty = "Каточ"
+		birth_date = 1480.1.1
+		death_date = 1528.1.1
+		claim = 95
+		DIP = 2
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1510.1.1 = {
+	monarch = {
+		name = "Рам Чанд"
+		dynasty = "Каточ"
+		DIP = 2
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1510.1.1 = {
+	heir = {
+		name = "Дхарам Чанд"
+		monarch_name = "Dharam Чанд"
+		dynasty = "Каточ"
+		birth_date = 1468.1.1
+		death_date = 1563.1.1
+		claim = 95
+		DIP = 4
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1528.1.1 = {
+	monarch = {
+		name = "Дхарам Чанд"
+		dynasty = "Каточ"
+		DIP = 4
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1528.1.1 = {
+	heir = {
+		name = "Маника Чанд"
+		monarch_name = "Маника Чанд"
+		dynasty = "Каточ"
+		birth_date = 1495.1.1
+		death_date = 1570.1.1
+		claim = 95
+		DIP = 2
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1563.1.1 = {
+	monarch = {
+		name = "Маника Чанд"
+		dynasty = "Каточ"
+		DIP = 2
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1563.1.1 = {
+	heir = {
+		name = "Джай Чанд"
+		monarch_name = "Джай Чанд V"
+		dynasty = "Каточ"
+		birth_date = 1510.1.1
+		death_date = 1585.1.1
+		claim = 95
+		DIP = 1
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1570.1.1 = {
+	monarch = {
+		name = "Джай Чанд V"
+		dynasty = "Каточ"
+		DIP = 1
+		ADM = 1
+		MIL = 1
+	}
+}
+
+1570.1.1 = {
+	heir = {
+		name = "Бидхи Чанд"
+		monarch_name = "Бидхи Чанд"
+		dynasty = "Каточ"
+		birth_date = 1550.1.1
+		death_date = 1607.1.1
+		claim = 95
+		DIP = 5
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1585.1.1 = {
+	monarch = {
+		name = "Бидхи Чанд"
+		dynasty = "Каточ"
+		DIP = 5
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1585.1.1 = {
+	heir = {
+		name = "Трилока Чанд"
+		monarch_name = "Трилока Чанд"
+		dynasty = "Каточ"
+		birth_date = 1560.1.1
+		death_date = 1612.1.1
+		claim = 95
+		DIP = 3
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1607.1.1 = {
+	monarch = {
+		name = "Трилока Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1608.1.1 = {
+	heir = {
+		name = "Хари Чанд"
+		monarch_name = "Хари Чанд II"
+		dynasty = "Каточ"
+		birth_date = 1608.1.1
+		death_date = 1627.1.1
+		claim = 95
+		DIP = 1
+		ADM = 2
+		MIL = 1
+	}
+}
+
+1612.1.1 = {
+	monarch = {
+		name = "Хари Чанд II"
+		dynasty = "Каточ"
+		DIP = 1
+		ADM = 2
+		MIL = 1
+	}
+}
+
+1612.1.1 = {
+	heir = {
+		name = "Чандaрбхан Чанд"
+		monarch_name = "Чандaрбхан Чанд"
+		dynasty = "Каточ"
+		birth_date = 1580.1.1
+		death_date = 1660.1.1
+		claim = 95
+		DIP = 3
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1621.1.1 = {
+	capital = 511 # Garhwal
+}
+
+1627.1.1 = {
+	monarch = {
+		name = "Чандaрбхан Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 1
+		MIL = 3
+	}
+}
+
+1627.1.1 = {
+	heir = {
+		name = "Виджай"
+		monarch_name = "Виджай Рам Чанд"
+		dynasty = "Каточ"
+		birth_date = 1590.1.1
+		death_date = 1687.1.1
+		claim = 95
+		DIP = 0
+		ADM = 1
+		MIL = 4
+	}
+}
+
+1660.1.1 = {
+	monarch = {
+		name = "Виджай Рам Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 1
+		MIL = 4
+	}
+}
+
+1660.1.1 = {
+	heir = {
+		name = "Уди"
+		monarch_name = "Уди Рам Чанд"
+		dynasty = "Каточ"
+		birth_date = 1640.1.1
+		death_date = 1690.1.1
+		claim = 95
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1687.1.1 = {
+	monarch = {
+		name = "Уди Рам Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1687.1.1 = {
+	heir = {
+		name = "Бхим Чанд"
+		monarch_name = "Бхим Чанд"
+		dynasty = "Каточ"
+		birth_date = 1660.1.1
+		death_date = 1697.1.1
+		claim = 95
+		DIP = 0
+		ADM = 1
+		MIL = 2
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Бхим Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 1
+		MIL = 2
+	}
+}
+
+1690.1.1 = {
+	heir = {
+		name = "Алам Чанд"
+		monarch_name = "Алам Чанд II"
+		dynasty = "Каточ"
+		birth_date = 1680.1.1
+		death_date = 1700.1.1
+		claim = 95
+		DIP = 0
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1697.1.1 = {
+	monarch = {
+		name = "Алам Чанд II"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1697.1.1 = {
+	heir = {
+		name = "Хамир Чанд"
+		monarch_name = "Хамир Чанд"
+		dynasty = "Каточ"
+		birth_date = 1690.1.1
+		death_date = 1747.1.1
+		claim = 95
+		DIP = 3
+		ADM = 4
+		MIL = 3
+	}
+}
+
+1700.1.1 = {
+	monarch = {
+		name = "Хамир Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 4
+		MIL = 3
+	}
+}
+
+1700.1.1 = {
+	heir = {
+		name = "Абхай Чанд"
+		monarch_name = "Абхай Чанд"
+		dynasty = "Каточ"
+		birth_date = 1700.1.1
+		death_date = 1750.1.1
+		claim = 95
+		DIP = 0
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1747.1.1 = {
+	monarch = {
+		name = "Абхай Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 1
+		MIL = 0
+	}
+}
+
+1747.1.1 = {
+	heir = {
+		name = "Шринагар Чанд"
+		monarch_name = "Шринагар Чанд"
+		dynasty = "Каточ"
+		birth_date = 1730.1.1
+		death_date = 1750.6.1
+		claim = 95
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1750.1.1 = {
+	monarch = {
+		name = "Шринагар Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1750.1.1 = {
+	heir = {
+		name = "Гхамир Чанд"
+		monarch_name = "Гхамир Чанд"
+		dynasty = "Каточ"
+		birth_date = 1730.1.1
+		death_date = 1751.1.1
+		claim = 95
+		DIP = 2
+		ADM = 4
+		MIL = 2
+	}
+}
+
+1750.6.1 = {
+	monarch = {
+		name = "Гхамир Чанд"
+		dynasty = "Каточ"
+		DIP = 2
+		ADM = 4
+		MIL = 2
+	}
+}
+
+1750.6.1 = {
+	heir = {
+		name = "Гхаманд Чанд"
+		monarch_name = "Ghamand Чанд"
+		dynasty = "Каточ"
+		birth_date = 1730.1.1
+		death_date = 1774.1.1
+		claim = 95
+		DIP = 3
+		ADM = 3
+		MIL = 4
+	}
+}
+
+1751.1.1 = {
+	monarch = {
+		name = "Гхаманд Чанд"
+		dynasty = "Каточ"
+		DIP = 3
+		ADM = 3
+		MIL = 4
+	}
+}
+
+1751.1.1 = {
+	heir = {
+		name = "Тегх Чанд"
+		monarch_name = "Tegh Чанд"
+		dynasty = "Каточ"
+		birth_date = 1750.1.1
+		death_date = 1775.1.1
+		claim = 95
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1774.1.1 = {
+	monarch = {
+		name = "Тегх Чанд"
+		dynasty = "Каточ"
+		DIP = 0
+		ADM = 0
+		MIL = 0
+	}
+}
+
+1774.1.1 = {
+	heir = {
+		name = "Сансар Чанд"
+		monarch_name = "Сансар Чанд II"
+		dynasty = "Каточ"
+		birth_date = 1765.1.1
+		death_date = 1823.1.1
+		claim = 95
+		DIP = 4
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1775.1.1 = {
+	monarch = {
+		name = "Сансар Чанд II"
+		dynasty = "Каточ"
+		DIP = 4
+		ADM = 2
+		MIL = 2
+	}
+}
+
+1775.1.1 = {
+	heir = {
+		name = "Анирудх Чанд"
+		monarch_name = "Анирудх Чанд II"
+		dynasty = "Каточ"
+		birth_date = 1765.1.1
+		death_date = 1833.1.1
+		claim = 95
+		DIP = 2
+		ADM = 0
+		MIL = 0
+	}
+}

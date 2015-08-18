@@ -1,0 +1,27 @@
+namespace = dorimi_coronation
+
+country_event = {
+	id = dorimi_coronation.56479
+	title = dorimi_coronation.t.56479
+	desc = dorimi_coronation.d.56479
+    picture = CORONA_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = monarchy
+		ai = no
+	}
+	
+	option = {
+		name = dorimi_coronation.a.56479	#Ave Caesar!
+		change_dip = 1
+		add_stability = 1
+		add_years_of_income = -0.2
+		add_imperial_influence = 50
+		add_ruler_modifier = {
+				name = "dorimi_coronation"
+				duration = -1
+			}
+	}
+}

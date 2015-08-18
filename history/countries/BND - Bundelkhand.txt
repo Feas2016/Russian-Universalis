@@ -1,0 +1,569 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = indian
+religion = hinduism
+primary_culture = avadhi
+capital = 559	# Bundelkhand
+
+#Malikzadas of Kalpi
+1399.1.1 = {
+	monarch = {
+		name = "Назир аль-Дин Махмуд Шах"
+		dynasty = "Маликзанда"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	capital = 2059 #Kalpi
+	government = iqta
+	religion = sunni
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Кадир"
+		monarch_name = "Кадир Шах"
+		dynasty = "Маликзанда"
+		birth_date = 1380.1.1
+		death_Date = 1432.1.1
+		claim = 95
+		adm = 4
+		dip = 6
+		mil = 3
+	}
+}
+
+1411.1.1 = {
+	monarch = {
+		name = "Кадир Шах"
+		dynasty = "Маликзанда"
+		adm = 4
+		dip = 6
+		mil = 3
+	}
+}
+
+1411.1.1 = {
+	heir = {
+		name = "Фат аль-Дин Джалал"
+		monarch_name = "Фат аль-Дин Джалал"
+		dynasty = "Маликзанда"
+		birth_date = 1390.1.1
+		death_Date = 1439.1.1
+		claim = 95
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+}
+
+1432.1.1 = {
+	monarch = {
+		name = "Фат аль-Дин Джалал Шах"
+		dynasty = "Маликзанда"
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+}
+
+1432.1.1 = {
+	heir = {
+		name = "Назир"
+		monarch_name = "Назир Хан"
+		dynasty = "Маликзанда"
+		birth_date = 1400.1.1
+		death_Date = 1460.1.1
+		claim = 95
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}
+
+1439.1.1 = {
+	monarch = {
+		name = "Назир Хан"
+		dynasty = "Маликзанда"
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}
+
+#Rajas of Orchha & Mahoba
+1479.1.1 = {
+	monarch = {
+		name = "Малхан Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+	capital = 559
+	religion = hinduism
+}
+
+1479.1.1 = {
+	heir = {
+		name = "Рудра Пратап Сингх"
+		monarch_name = "Рудра Пратап Сингх"
+		dynasty = "Бундела"
+		birth_date = 1468.1.1
+		death_date = 1531.1.1
+		claim = 95
+		ADM = 5
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1501.1.1 = {
+	monarch = {
+		name = "Рудра Пратап Сингх"
+		dynasty = "Бундела"
+		ADM = 5
+		DIP = 3
+		MIL = 3
+	}
+
+}
+
+1501.1.1 = {
+	heir = {
+		name = "Бхарти-кандра"
+		monarch_name = "Бхарти-кандра I"
+		dynasty = "Бундела"
+		birth_date = 1501.1.1
+		death_date = 1554.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1531.1.1 = {
+	monarch = {
+		name = "Бхарти-кандра I"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}
+
+1531.1.1 = {
+	heir = {
+		name = "Мадукар"
+		monarch_name = "Мадукар Шах"
+		dynasty = "Бундела"
+		birth_date = 1531.1.1
+		death_date = 1592.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1554.1.1 = {
+	monarch = {
+		name = "Мадукар Шах"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}
+
+1554.1.1 = {
+	heir = {
+		name = "Рам Шах"
+		monarch_name = "Рам Шах"
+		dynasty = "Бундела"
+		birth_date = 1554.1.1
+		death_date = 1592.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1592.1.1 = {
+	monarch = {
+		name = "Рам Шах"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}
+
+1592.1.1 = {
+	heir = {
+		name = "Бир Сингх Део"
+		monarch_name = "Бир Сингх Део I"
+		dynasty = "Бундела"
+		birth_date = 1580.1.1
+		death_Date = 1626.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1604.1.1 = {
+	monarch = {
+		name = "Бир Сингх Део I"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1604.1.1 = {
+	heir = {
+		name = "Джуджхар Сингх"
+		monarch_name = "Джуджхар Сингх"
+		dynasty = "Бундела"
+		birth_date = 1604.1.1
+		death_Date = 1635.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1626.1.1 = {
+	monarch = {
+		name = "Джуджхар Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1626.1.1 = {
+	heir = {
+		name = "Деви Сингх"
+		monarch_name = "Деви Сингх"
+		dynasty = "Бундела"
+		birth_date = 1616.1.1
+		death_Date = 1641.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Деви Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1635.1.1 = {
+	heir = {
+		name = "Пахар Сингх"
+		monarch_name = "Пахар Сингх"
+		dynasty = "Бундела"
+		birth_date = 1610.1.1
+		death_Date = 1653.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1641.1.1 = {
+	monarch = {
+		name = "Пахар Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1641.1.1 = {
+	heir = {
+		name = "Суджан Сингх"
+		monarch_name = "Суджан Сингх I"
+		dynasty = "Бундела"
+		birth_date = 1621.1.1
+		death_date = 1672.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1653.1.1 = {
+	monarch = {
+		name = "Суджан Сингх I"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1653.1.1 = {
+	heir = {
+		name = "Индрамани Сингх"
+		monarch_name = "Индрамани Сингх"
+		dynasty = "Бундела"
+		birth_date = 1652.1.1
+		death_date = 1675.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1672.1.1 = {
+	monarch = {
+		name = "Индрамани Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1672.1.1 = {
+	heir = {
+		name = "Джасвант Сингх"
+		monarch_name = "Джасвант Сингх"
+		dynasty = "Бундела"
+		birth_date = 1650.1.1
+		death_date = 1684.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1675.1.1 = {
+	monarch = {
+		name = "Джасвант Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1675.1.1 = {
+	heir = {
+		name = "Багхват Сингх"
+		monarch_name = "Багхват Сингх"
+		dynasty = "Бундела"
+		birth_date = 1665.1.1
+		death_Date = 1689.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1684.1.1 = {
+	monarch = {
+		name = "Багхват Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}
+
+1684.1.1 = {
+	heir = {
+		name = "Удват Сингх"
+		monarch_name = "Удват Сингх"
+		dynasty = "Бундела"
+		birth_date = 1660.1.1
+		death_date = 1735.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1689.1.1 = {
+	monarch = {
+		name = "Удват Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}
+
+1689.1.1 = {
+	heir = {
+		name = "Притхви Сингх"
+		monarch_name = "Притхви Сингх"
+		dynasty = "Бундела"
+		birth_date = 1689.1.1
+		death_date = 1752.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1735.1.1 = {
+	monarch = {
+		name = "Притхви Сингх"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1735.1.1 = {
+	heir = {
+		name = "Савант Сингх Махендра"
+		monarch_name = "Савант Сингх Махендра"
+		dynasty = "Бундела"
+		birth_date = 1730.1.1
+		death_date = 1765.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1752.1.1 = {
+	monarch = {
+		name = "Савант Сингх Махендра"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1752.1.1 = {
+	heir = {
+		name = "Хати Сингх Махендра"
+		monarch_name = "Хати Сингх Махендра"
+		dynasty = "Бундела"
+		birth_date = 1740.1.1
+		death_date = 1768.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1765.1.1 = {
+	monarch = {
+		name = "Хати Сингх Махендра"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1765.1.1 = {
+	heir = {
+		name = "Ман Сингх Махендра"
+		monarch_name = "Ман Сингх Махендра"
+		dynasty = "Бундела"
+		birth_date = 1750.1.1
+		death_date = 1775.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1768.1.1 = {
+	monarch = {
+		name = "Ман Сингх Махендра"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1768.1.1 = {
+	heir = {
+		name = "Бхарти-кандра Махендра"
+		monarch_name = "Бхарти-кандра II Махендра"
+		dynasty = "Бундела"
+		birth_date = 1760.1.1
+		death_date = 1776.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+
+1775.1.1 = {
+	monarch = {
+		name = "Бхарти-кандра II Махендра"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1775.1.1 = {
+	heir = {
+		name = "Виркамаджет Махендра"
+		monarch_name = "Виркамаджет Махендра"
+		dynasty = "Бундела"
+		birth_date = 1760.1.1
+		death_date = 1834.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1776.1.1 = {
+	monarch = {
+		name = "Виркамаджет Махендра"
+		dynasty = "Бундела"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+
+}

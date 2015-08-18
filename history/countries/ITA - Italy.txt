@@ -1,0 +1,49 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = -3
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+technology_group = western
+religion = catholic
+primary_culture = lombard
+culture_group_union = latin
+capital = 118		# Roma
+
+
+1797.6.29 = { government = constitutional_republic }
+
+1797.6.29 = {
+	monarch = {
+		name = "Цезальпийская республика"
+		adm = 4
+		dip = 0
+		mil = 0
+		regent = yes
+	}
+}
+
+1802.6.26 = {
+	monarch = {
+		name = "Итальянская республика"
+		adm = 4
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1805.3.18 = { government = constitutional_monarchy }
+
+1805.3.18 = {
+	monarch = {
+		name = "Наполеон I"
+		dynasty = "Бонапарт"
+		adm = 6
+		dip = 3
+		mil = 6
+	}
+}

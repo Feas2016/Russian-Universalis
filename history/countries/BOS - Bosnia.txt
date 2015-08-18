@@ -1,0 +1,126 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 2
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = 1
+#serfdom_freesubjects = -5
+primary_culture = serbian
+religion = orthodox
+technology_group = eastern
+capital = 140	# Sarajevo
+
+
+1398.1.1 = {
+	monarch = {
+		name = "Степан Остоя"
+		dynasty = "Котроманич"
+		# no birth date information	
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1404.1.1 = {
+	monarch = {
+		name = "Степан Твртко II"
+		dynasty = "Котроманич"
+		birth_date = 1381.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1409.1.1 = {
+	monarch = {
+		name = "Степан Остоя"
+		dynasty = "Котроманич"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1418.1.1 = {
+	monarch = {
+		name = "Степан Остоич"
+		dynasty = "Котроманич"
+		birth_date = 1400.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1421.1.1 = {
+	monarch = {
+		name = "Степан Твртко II"
+		dynasty = "Котроманич"
+		birth_date = 1381.1.1
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "Радивой Остоич"
+		dynasty = "Котроманич"
+		birth_date = 1398.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1435.1.1 = {
+	monarch = {
+		name = "Степан Твртко II"
+		dynasty = "Котроманич"
+		birth_date = 1381.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1443.6.23 = {
+	monarch = {
+		name = "Степан Томаш"
+		dynasty = "Котроманич"
+		birth_date = 1412.7.10
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1443.6.23 = {
+	heir = {
+		name = "Степан Томашевич"
+		monarch_name = "Степан Томашевич"
+		dynasty = "Котроманич"
+		birth_date = 1438.1.1
+		death_date = 1463.6.5
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1461.7.11 = {
+	monarch = {
+		name = "Степан Томашевич"
+		dynasty = "Котроманич"
+		birth_date = 1438.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

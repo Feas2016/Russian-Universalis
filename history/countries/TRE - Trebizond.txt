@@ -1,0 +1,100 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 0
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = 1
+#serfdom_freesubjects = -1
+primary_culture = greek
+religion = orthodox
+technology_group = eastern
+historical_friend = FEO
+capital = 330	# Trebizond
+
+
+1390.1.1 = {
+	monarch = {
+		name = "Мануил III"
+		dynasty = "Комнин"
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+1390.1.1 = {
+	heir = {
+		name = "Алексей"
+		monarch_name = "Алексей IV"
+		dynasty = "Комнин"
+		birth_date = 1382.1.1
+		death_date = 1429.10.29
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+		
+
+1417.10.29 = {
+	monarch = {
+		name = "Алексей IV"
+		dynasty = "Комнин"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+
+1417.10.29 = {
+	heir = {
+		name = "Иоанн"
+		monarch_name = "Иоанн IV"
+		dynasty = "Комнин"
+		birth_date = 1403.1.1
+		death_date = 1459.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil =5
+	}
+}
+
+1429.10.29 = {
+	monarch = {
+		name = "Иоанн IV"
+		dynasty = "Комнин"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1429.10.29 = {
+	heir = {
+		name = "Давид"
+		monarch_name = "Давид"
+		dynasty = "Комнин"
+		birth_date = 1408.1.1
+		death_date = 1463.11.1
+		claim = 95
+		adm =  6
+		dip = 0
+		mil = 1
+	}
+}
+		
+
+1459.1.1 = {
+	monarch = {
+		name = "Давид"
+		dynasty = "Комнин"
+		adm = 3
+		dip = 0
+		mil = 1
+	}
+}

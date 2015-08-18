@@ -1,0 +1,556 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = assamese
+religion = hinduism
+technology_group = indian
+capital = 562	# Koch
+
+#Khen Dynasty
+
+1385.1.1 = {
+	monarch = {
+		name = "Гаянка"
+		dynasty = "Кхен"
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1385.1.1 = {
+	heir = {
+		name = "Сукранка"
+		monarch_name = "Сукранка"
+		dynasty = "Кхен"
+		birth_date = 1385.1.1
+		death_date = 1415.1.1
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1400.1.1 = {
+	monarch = {
+		name = "Сукранка"
+		dynasty = "Кхен"
+		ADM = 1
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Мриганка"
+		monarch_name = "Мриганка"
+		dynasty = "Кхен"
+		birth_date = 1400.1.1
+		death_date = 1439.1.1
+		claim = 95
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1415.1.1 = {
+	monarch = {
+		name = "Мриганка"
+		dynasty = "Кхен"
+		ADM = 2
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1415.1.1 = {
+	heir = {
+		name = "Сусенпхб"
+		monarch_name = "Сусенпхб"
+		dynasty = "Кхен"
+		birth_date = 1410.1.1
+		death_date = 1440.1.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1439.1.1 = {
+	monarch = {
+		name = "Сусенпхб"
+		dynasty = "Кхен"
+		ADM = 1
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1439.1.1 = {
+	heir = {
+		name = "Ниладхвайр"
+		monarch_name = "Ниладхвайр"
+		dynasty = "Кхен"
+		birth_date = 1420.1.1
+		death_date = 1460.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1440.1.1 = {
+	monarch = {
+		name = "Ниладхвайр"
+		dynasty = "Кхен"
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Чакрадхвай"
+		monarch_name = "Чакрадхвай"
+		dynasty = "Кхен"
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "Чакрадхвай"
+		dynasty = "Кхен"
+		ADM = 2
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1460.1.1 = {
+	heir = {
+		name = "Ниламбар"
+		monarch_name = "Ниламбар"
+		dynasty = "Кхен"
+		birth_date = 1440.1.1
+		death_date = 1510.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1480.1.1 = {
+	monarch = {
+		name = "Ниламбар"
+		dynasty = "Кхен"
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+#1498 Kooch Dynasty
+
+1510.1.1 = {
+	monarch = {
+		name = "Чандан"
+		dynasty = "Нараян"
+		ADM = 3
+		DIP = 3
+		MIL = 5
+	}
+}
+
+1510.1.1 = {
+	heir = {
+		name = "Висва Сингха"
+		monarch_name = "Висва Сингха"
+		dynasty = "Нараян"
+		birth_date = 1501.1.1
+		death_date = 1554.1.1  #But abdicated before this
+		claim = 95
+		ADM = 3
+		DIP = 3
+		MIL = 4
+	}
+}
+
+1523.1.1 = {
+	monarch = {
+		name = "Висва Сингха"
+		dynasty = "Нараян"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1523.1.1 = {
+	heir = {
+		name = "Нар"
+		monarch_name = "Нар"
+		dynasty = "Нараян"
+		birth_date = 1515.1.1
+		death_date = 1587.1.1
+		claim = 95
+		ADM = 5
+		DIP = 3
+		MIL = 4
+	}
+}
+
+1554.1.1 = {
+	monarch = {
+		name = "Нар"
+		dynasty = "Нараян"
+		ADM = 5
+		DIP = 3
+		MIL = 4
+	}
+}
+
+1554.1.1 = {
+	heir = {
+		name = "Лакшми"
+		monarch_name = "Лакшми"
+		dynasty = "Нараян"
+		birth_date = 1540.1.1
+		death_date = 1621.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+#Mughal Vassals - Western part of kingdom goes to Assam/Ahom
+
+1587.1.1 = {
+	monarch = {
+		name = "Лакшми"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1587.1.1 = {
+	heir = {
+		name = "Бир"
+		monarch_name = "Бир"
+		dynasty = "Нараян"
+		birth_date = 1570.1.1
+		death_date = 1626.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 0
+	}
+}
+
+
+1621.1.1 = {
+	monarch = {
+		name = "Бир"
+		dynasty = "Нараян"
+		ADM = 2
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1621.1.1 = {
+	heir = {
+		name = "Бир"
+		monarch_name = "Бир"
+		dynasty = "Нараян"
+		birth_date = 1610.1.1
+		death_date = 1665.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1626.1.1 = {
+	monarch = {
+		name = "Пран"
+		dynasty = "Нараян"
+		ADM = 2
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1626.1.1 = {
+	heir = {
+		name = "Мадан"
+		monarch_name = "Мадан"
+		dynasty = "Нараян"
+		birth_date = 1620.1.1
+		death_date = 1680.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1665.1.1 = {
+	monarch = {
+		name = "Мадан"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1665.1.1 = {
+	heir = {
+		name = "Басудев"
+		monarch_name = "Басудев"
+		dynasty = "Нараян"
+		birth_date = 1650.1.1
+		death_date = 1682.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+#Vassals of Bhutan
+
+1680.1.1 = {
+	monarch = {
+		name = "Басудев"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1680.1.1 = {
+	heir = {
+		name = "Махендра"
+		monarch_name = "Махендра"
+		dynasty = "Нараян"
+		birth_date = 1650.1.1
+		death_date = 1682.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1682.1.1 = {
+	monarch = {
+		name = "Махендра"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1682.1.1 = {
+	heir = {
+		name = "Руп"
+		monarch_name = "Руп"
+		dynasty = "Нараян"
+		birth_date = 1670.1.1
+		death_date = 1714.1.1
+		claim = 95
+		ADM = 0
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1693.1.1 = {
+	monarch = {
+		name = "Руп"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1693.1.1 = {
+	heir = {
+		name = "Упендра"
+		monarch_name = "Упендра"
+		dynasty = "Нараян"
+		birth_date = 1670.1.1
+		death_date = 1764.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1714.1.1 = {
+	monarch = {
+		name = "Упендра"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1714.1.1 = {
+	heir = {
+		name = "Дебендра"
+		monarch_name = "Дебендра"
+		dynasty = "Нараян"
+		birth_date = 1690.1.1
+		death_date = 1764.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1764.1.1 = {
+	monarch = {
+		name = "Дебендра"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1764.1.1 = {
+	heir = {
+		name = "Дхаирйендра"
+		monarch_name = "Дхаирйендра"
+		dynasty = "Нараян"
+		birth_date = 1744.1.1
+		death_date = 1770.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1765.1.1 = {
+	monarch = {
+		name = "Дхаирйендра"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1765.1.1 = {
+	heir = {
+		name = "Райендра"
+		monarch_name = "Райендра"
+		dynasty = "Нараян"
+		birth_date = 1754.1.1
+		death_date = 1775.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1770.1.1 = {
+	monarch = {
+		name = "Райендра"
+		dynasty = "Нараян"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1770.1.1 = {
+	heir = {
+		name = "Дхарендра"
+		monarch_name = "Дхарендра"
+		dynasty = "Нараян"
+		birth_date = 1758.1.1
+		death_date = 1775.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+#1772 Bhutan annexes Koch Bihar
+#April 25, 1774 British Vassal
+
+1772.1.1 = {
+	monarch = {
+		name = "Дхарендра"
+		dynasty = "Нараян"
+		ADM = 2
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1772.1.1 = {
+	heir = {
+		name = "Харендра"
+		monarch_name = "Харендра"
+		dynasty = "Нараян"
+		birth_date = 1769.1.1
+		death_date = 1840.1.1
+		claim = 95
+		ADM = 1
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1775.1.1 = {
+	monarch = {
+		name = "Харендра"
+		dynasty = "Нараян"
+		ADM = 1
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1796.1.1 = {
+	heir = {
+		name = "Шивендра"
+		monarch_name = "Шивендра"
+		dynasty = "Нараян"
+		birth_date = 1796.1.1
+		death_date = 1847.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 0
+	}
+}

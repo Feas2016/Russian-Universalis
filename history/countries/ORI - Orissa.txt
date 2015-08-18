@@ -1,0 +1,238 @@
+government = feudal_monarchy
+primary_culture = oriya
+religion = hinduism
+technology_group = indian
+capital = 552	# Cuttack
+
+#Rajas of Orissa
+
+1434.1.1 = {
+	monarch = {
+		name = "Капилешвара Гаджапати"
+		dynasty = "Сурявамси"
+		ADM = 3
+		DIP = 4
+		MIL = 6
+	}
+}
+
+1434.1.1 = {
+	heir = {
+		name = "Пурушоттама"
+		monarch_name = "Пурушоттама"
+		dynasty = "Сурявамси"
+		birth_date = 1420.1.1
+		death_Date = 1497.4.2
+		claim = 95
+		ADM = 3
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1466.1.1 = {
+	monarch = {
+		name = "Пурушоттама"
+		dynasty = "Сурявамси"
+		ADM = 3
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1472.1.1 = {	#Usurper
+	monarch = {
+		name = "Хамвира"
+		dynasty = "Сурявамси"
+		ADM = 3
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1476.1.1 = {	#Retaken by Purushottoma with Bahmanid aid
+	monarch = {
+		name = "Пурушоттама"
+		dynasty = "Сурявамси"
+		ADM = 3
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1476.1.1 = {
+	heir = {
+		name = "Пратапрудра"
+		monarch_name = "Пратапрудра"
+		dynasty = "Сурявамси"
+		birth_date = 1470.1.1
+		death_date = 1540.1.1
+		claim = 95
+		ADM = 1
+		DIP = 3
+		MIL = 1
+	}
+}
+
+1497.4.2 = {
+	monarch = {
+		name = "Пратапрудра"
+		dynasty = "Сурявамси"
+		ADM = 1
+		DIP = 3
+		MIL = 1
+	}
+}
+
+1497.4.2 = {
+	heir = {
+		name = "Калуадева"
+		monarch_name = "Калуадева"
+		dynasty = "Сурявамси"
+		birth_date = 1490.1.1
+		death_date = 1541.1.1
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Калуадева"
+		dynasty = "Сурявамси"
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1541.1.1 = {
+	monarch = {
+		name = "Говиндараджа Видьядхара"
+		dynasty = "Бхои"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1541.1.1 = {
+	heir = {
+		name = "Чакрапретапа"
+		monarch_name = "Чакрапретапа"
+		dynasty = "Бхои"
+		birth_date = 1520.1.1
+		death_date = 1557.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1549.1.1 = {
+	monarch = {
+		name = "Чакрапретапа"
+		dynasty = "Бхои"
+		ADM = 0
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1549.1.1 = {
+	heir = {
+		name = "Нарашима Джана"
+		monarch_name = "Нарашима Джана"
+		dynasty = "Бхои"
+		birth_date = 1540.1.1
+		death_date = 1558.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1557.1.1 = {
+	monarch = {
+		name = "Нарашима Джана"
+		dynasty = "Бхои"
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1557.1.1 = {
+	heir = {
+		name = "Рагхурама Чхотра"
+		monarch_name = "Рагхурама Чхотра"
+		dynasty = "Бхои"
+		birth_date = 1530.1.1
+		death_date = 1560.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1558.1.1 = {
+	monarch = {
+		name = "Рагхурама Чхотра"
+		dynasty = "Бхои"
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1560.1.1 = {
+	monarch = {
+		name = "Мукундадева Харишандра"
+		dynasty = "Чалукья"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1560.1.1 = {
+	heir = {
+		name = "Рамчандра Дева"
+		monarch_name = "Рамчандра Дева I"
+		dynasty = "Чалукья"
+		birth_date = 1540.1.1
+		death_date = 1607.1.1
+		claim = 95
+		ADM = 4
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1567.1.1 = {
+	monarch = {
+		name = "Рамчандра Дева I"
+		dynasty = "Чалукья"
+		ADM = 4
+		DIP = 3
+		MIL = 3
+	}
+}
+
+#Conquered by the Karrani sultans of Bengal in 1568
+#Remains under Karrani rule as Bengal falls to the Mughals until eventually annexed
+
+1572.1.1 = {
+	monarch = {
+		name = "Дауд"
+		dynasty = "Каррани"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}

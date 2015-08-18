@@ -1,0 +1,163 @@
+government = tribal_despotism
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = mali
+religion = sunni
+technology_group = sub_saharan
+capital = 1124	# Niani
+
+
+#Kings of Mali
+1390.1.1 = {
+	monarch = {
+		name = "Махмуд"
+		dynasty = "Кейта"
+		dip = 2
+		adm = 1
+		mil = 2
+	}
+	add_piety = -0.15
+}
+
+1390.1.1 = {
+	heir = {
+		name = "Муса"
+		monarch_name = "Муса III"
+		dynasty = "Кейта"
+		birth_date = 1370.1.1
+		death_date = 1450.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1430.1.1 = {
+	monarch = {
+		name = "Муса III"
+		dynasty = "Кейта"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Ули"
+		monarch_name = "Ули II"
+		dynasty = "Кейта"
+		birth_date = 1430.1.1
+		death_date = 1481.9.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1450.1.1 = {
+	monarch = {
+		name = "Ули II"
+		dynasty = "Кейта"
+		dip = 1
+		adm = 1
+		mil = 1
+	}
+}
+
+1460.1.1 = {
+	heir = {
+		name = "Мамаду"
+		monarch_name = "Мамаду II"
+		dynasty = "Кейта"
+		birth_date = 1460.1.1
+		death_date = 1496.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1481.9.1 = {
+	monarch = {
+		name = "Мамаду II"
+		dynasty = "Кейта"
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+}
+
+1481.9.1 = {
+	heir = {
+		name = "Мамаду"
+		monarch_name = "Мамаду III"
+		dynasty = "Кейта"
+		birth_date = 1480.1.1
+		death_date = 9999.1.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1496.1.1 = {
+	monarch = {
+		name = "Мамаду III"
+		dynasty = "Кейта"
+		dip = 3
+		adm = 2
+		mil = 1
+	}
+}
+
+1520.1.1 = {
+	heir = {
+		name = "Мамаду"
+		monarch_name = "Мамаду IV"
+		dynasty ="Кейта"
+		birth_Date = 1520.1.1
+		death_date = 1600.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1535.1.1 = {
+	monarch = {
+		name = "Мамаду IV"
+		dynasty = "Кейта"
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}
+
+#Mali collapses in 1600, leaving a rump state behind.
+#Unspecified numbers of unknown rulers of Kangaba, chief of the remaining rump states
+
+1660.1.1 = {
+	monarch = {
+		name = "Мама Магхан I"
+		dynasty = "Кейта"
+		dip = 1
+		adm = 1
+		mil = 2
+	}
+}
+
+
+
+

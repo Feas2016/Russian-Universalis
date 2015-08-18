@@ -1,0 +1,73 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -1
+#centralization_decentralization = -1
+#innovative_narrowminded = -2
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 2
+#quality_quantity = -2
+#serfdom_freesubjects = 2
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 97	# Amsterdam
+
+
+1389.1.1 = {
+	monarch = {
+		name = "јльберт"
+		dynasty = "фон ¬иттельсбах"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1389.1.1 = {
+	heir = {
+		name = "¬ильгельм"
+		monarch_name = "¬ильгельм VI"
+		dynasty = "фон ¬иттельсбах"
+		birth_date = 1365.4.5
+		death_date = 1417.5.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1404.1.1 = {
+	monarch = {
+		name = "¬ильгельм VI"
+		dynasty = "фон ¬иттельсбах"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "якоба"
+		monarch_name = "якоба"
+		dynasty = "фон ¬иттельсбах"
+		birth_date = 1401.8.16
+		death_date = 1436.10.8
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1417.5.31 = {
+	monarch = {
+		name = "якоба"
+		dynasty = "фон ¬иттельсбах"
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1580.1.1 = { government = administrative_republic } # Constitutionalism and the General Estates

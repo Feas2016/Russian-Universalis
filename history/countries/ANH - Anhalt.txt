@@ -1,0 +1,312 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 0
+#innovative_narrowminded = 0
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 0
+#quality_quantity = 0
+#serfdom_freesubjects = -1
+technology_group = western
+primary_culture = saxon
+religion = catholic
+capital = 58	# Dessau
+
+
+1396.1.1 = {
+	monarch = {
+		name = "Сигизмунд I"
+		dynasty = "Асканьер"
+		birth_date = 1368.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1396.1.1 = {
+	heir = {
+		name = "Георг"
+		monarch_name = "Георг I"
+		dynasty = "Асканьер"
+		birth_date = 1390.1.1
+		death_date = 1474.9.21
+		claim = 85
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+		
+
+1405.1.19 = {
+	monarch = {
+		name = "Георг I"
+		dynasty = "Асканьер"
+		birth_date = 1390.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1450.1.1 = {
+	heir = {
+		name = "Эрнст"
+		monarch_name = "Эрнст I"
+		dynasty = "Асканьер"
+		birth_date = 1450.1.1
+		death_date = 1516.6.12
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1474.9.2 = {
+	monarch = {
+		name = "Эрнст I"
+		dynasty = "Асканьер"
+		birth_date = 1450.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1504.9.4 = {
+	heir = {
+		name = "Иоганн"
+		monarch_name = "Иоганн II"
+		dynasty = "Асканьер"
+		birth_date = 1504.9.4
+		death_date = 1551.2.4
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1516.3.2 = {
+	monarch = {
+		name = "Иоганн II"
+		dynasty = "Асканьер"
+		birth_date = 1504.9.4
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1529.1.1 = { religion = protestant }
+
+1536.10.21 = {
+	heir = {
+		name = "Иоахим Эрнст"
+		monarch_name = "Иоахим Эрнст"
+		dynasty = "Асканьер"
+		birth_date = 1536.10.21
+		death_date = 1586.12.6
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1551.4.2 = {
+	monarch = {
+		name = "Иоахим Эрнст"
+		dynasty = "Асканьер"
+		birth_date = 1536.10.21
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1567.5.9 = {
+	heir = {
+		name = "Иоганн Георг"
+		monarch_name = "Иоганн Георг I"
+		dynasty = "Асканьер"
+		birth_date = 1567.5.9
+		death_date = 1618.5.24
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+	
+1586.3.2 = {
+	monarch = {
+		name = "Иоганн Георг I"
+		dynasty = "Асканьер"
+		birth_date = 1567.5.9
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1596.9.7 = {
+	heir = {
+		name = "Иоганн Казимир"
+		monarch_name = "Иоганн Казимир I"
+		dynasty = "Асканьер"
+		birth_date = 1596.9.7
+		death_date = 1660.9.15
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1608.5.14 = {
+	join_league = protestant
+}
+		
+1618.1.1 = {
+	monarch = {
+		name = "Иоганн Казимир I"
+		dynasty = "Асканьер"
+		birth_date = 1596.9.7
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1627.11.17 = {
+	heir = {
+		name = "Иоганн Георг"
+		monarch_name = "Иоганн Георг II"
+		dynasty = "Асканьер"
+		birth_date = 1627.11.17
+		death_date = 1693.8.7
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1635.5.30 = {
+	leave_league = protestant
+}
+
+1660.7.2 = {
+	monarch = {
+		name = "Иоганн Георг II"
+		dynasty = "Асканьер"
+		birth_date = 1627.11.17
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1676.7.3 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name = "Леопольд I"
+		dynasty = "Асканьер"
+		birth_date = 1676.7.3
+		death_date = 1747.4.7
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1693.5.12 = {
+	monarch = {
+		name = "Леопольд I"
+		dynasty = "Асканьер"
+		birth_date = 1676.7.3
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1700.12.25 = {
+	heir = {
+		name = "Леопольд Максимилиан"
+		monarch_name = "Леопольд II Максимилиан"
+		dynasty = "Асканьер"
+		birth_date = 1700.12.25
+		death_date = 1751.12.16
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1747.4.9 = {
+	monarch = {
+		name = "Леопольд II Максимилиан"
+		dynasty = "Асканьер"
+		birth_date = 1700.12.25
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1747.4.9 = {
+	heir = {
+		name = "Леопольд Фредерик Франц"
+		monarch_name = "Леопольд III"
+		dynasty = "Асканьер"
+		birth_date = 1740.8.10
+		death_date = 1817.8.9
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+		
+
+1751.5.16 = {
+	monarch = {
+		name = "Леопольд III"
+		dynasty = "Асканьер"
+		birth_date = 1740.8.10
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1794.10.1 = {
+	heir = {
+		name = "Леопольд Фридрих"
+		monarch_name ="Леопольд IV"
+		dynasty = "Асканьер"
+		birth_date = 1794.10.1
+		death_date = 1871.5.22
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1817.1.1 = {
+	monarch = {
+		name = "Леопольд IV"
+		dynasty = "Асканьер"
+		birth_date = 1794.10.1
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}

@@ -1,0 +1,101 @@
+namespace = byz_main
+
+country_event = {
+	id = byz_main.564715
+	title = "byz_main.t.564715"
+	desc = "byz_main.d.564715"
+	picture = BYZ_BYZANTINE_EMPEROR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+	option = {
+		name = "byz_main.a.564715"	
+		add_prestige = 5
+		change_mil = 1
+	}
+	
+	option = {
+		name = "byz_main.b.564715"	
+		add_prestige = 5
+		change_dip = 1
+	}
+	
+	option = {
+		name = "byz_main.c.564715"	
+		add_prestige = 5
+		change_adm = 1
+	}
+}
+
+country_event = {
+	id = byz_main.564716
+	title = "byz_main.t.564716"
+	desc = "byz_main.d.564716"
+	picture = BYZ_BYZANTINE_EMPEROR_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		has_factions = yes
+	}
+	
+	option = {
+		name = "byz_main.a.564716"	
+		add_prestige = 5
+		change_mil = 1
+		add_faction_influence = {
+			influence = 20
+		}
+	}
+	
+	option = {
+		name = "byz_main.b.564716"	
+		add_prestige = 5
+		change_dip = 1
+		add_faction_influence = {
+			influence = 20
+		}
+	}
+	
+	option = {
+		name = "byz_main.c.564716"	
+		add_prestige = 5
+		change_adm = 1
+		add_faction_influence = {
+			influence = 20
+		}
+	}
+}
+
+country_event = {
+	id = byz_main.564717
+	title = "byz_main.t.564717"
+	desc = "byz_main.d.564717"
+	picture = STREET_SPEECH_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		OR = {
+				tag = BYZ
+				tag = ROM
+				tag = PQR
+			}
+	}
+	
+	option = {
+		name = "byz_main.a.564717"	
+		add_prestige = 10		
+	}
+}

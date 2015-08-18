@@ -1,0 +1,1102 @@
+##################################################    
+#
+# ADVISORS FOR THE REGION 'TURKEY AND THE BALKAN'
+#
+##################################################    
+##################################################    
+#Provinces:
+##################################################    
+#Balkan:
+##################################################    
+#136 - Dalmatia (Zadar)
+#137 - Ragusa (Ragusa)
+#138 - Zeta (Zabljak)
+#139 - Hum (Mostar)
+#140 - Bosnia (Sarajevo)
+#141 - Serbia (Beograd)
+#142 - Corfu (Corfu)
+#143 - Albania (Durrлs)
+#144 - Janina (Janina)
+#145 - Morea (Mistra)
+#146 - Athens (Athens)
+#147 - Salonica (Salonica)
+#148 - Macedonia (Ьskьb)
+#149 - Edirne (Edirne)
+#150 - Bulgaria (Sofia)
+#151 - Thrace (Constantinople)
+#158 - Transylvania (Turda)
+#159 - Silistria (Silistria)
+#160 - Oltenia (Craiova)
+#161 - Wallachia (Tоrgoviste)
+#163 - Crete (Chania)
+#164 - Naxos (Naxos)
+#268 - Bessarabia (Suceava)
+#320 - Rhodes (Rhodes)
+#321 - Cyprus (Nicosia)
+##################################################    
+#Turkey:
+##################################################    
+#316 - Bithynia (Nicomedia)
+#317 - Bursa (Bursa)
+#318 - Smyrna (Izmir)
+#319 - Antalya (Antalya)
+#322 - Anatolia (Eskisehir)
+#323 - Konya (Konya)
+#324 - Karaman (Karaman)
+#325 - Kastamon (Kastamon)
+#326 - Angora (Angora)
+#327 - Adana (Alexandretta)
+#328 - Sinope (Sinope)
+#329 - Sivas (Sivas)
+#330 - Trebizon (Trebizon)
+#331 - Erserum (Erserum)
+#332 - Mus (Mus)
+##################################################    
+##################################################    
+#Advisor types:
+##################################################    
+#philosopher
+#natural_scientist
+#artist
+#statesman
+#treasurer 
+#naval_reformer
+#army_reformer 
+#trader
+#theologian 
+#spymaster 
+#colonial_governor 
+#diplomat
+##################################################    
+# Era #1  1399 - 1540  (25/25 used currently)
+##################################################
+
+advisor = {
+	advisor_id = 1174
+	name = "Георгий Трапезундский" # One of the Pioneers of the Renaissance
+	location = 163 #Crete
+	skill = 2
+	type = philosopher
+	date = 1425.1.1 #30 years old
+	death_date = 1486.1.1
+}
+
+advisor = {
+	advisor_id = 1175
+	name = "Али ал-Кушчи" # Turkish mathematician and astronomer
+	location = 149 #Edirne
+	skill = 2
+	type = natural_scientist
+	date = 1423.1.1 #20 years old
+	death_date = 1474.12.16
+}
+
+advisor = {
+	advisor_id = 1176
+	name = "Урбан" #Mercenary Hungarian cannon founder 
+	location = 149 #Edirne
+	skill = 3
+	type = army_reformer
+	date = 1450.1.1 #40 years old
+	death_date = 1480.1.1 #30 years after start
+}
+
+advisor = {
+	advisor_id = 1177
+	name = "Кайгусуз Абдал" #Nomadic Theologian
+	location = 319 #Antalya
+	skill = 2
+	type = theologian
+	date = 1450.1.1 #50 years old
+	death_date = 1480.1.1
+}
+
+advisor = {
+	advisor_id = 1178
+	name = "Ахметоглу Сюкрюлла" #Ahmetoglu Sьkrьllah. Diplomat and translator of Arabic music
+	location = 329 #Sivas
+	skill = 1 
+	type = artist
+	date = 1450.1.1 #30 years old
+	death_date = 1470.1.1
+}
+
+advisor = {
+	advisor_id = 1179
+	name = "Али Кушчу" #Last of the great Moslem astronomers 
+	location = 151 #Thrace  
+	skill = 2
+	type = natural_scientist
+	date = 1453.1.1 #30 years old
+	death_date = 1474.1.1
+}
+
+advisor = {
+	advisor_id = 1180
+	name = "Джентиле Беллини" #Venetian court painter who decorated the Sultan's private rooms
+	location = 151 #Thrace
+	skill = 2
+	type = artist
+	date = 1454.1.1 #25 years old
+	death_date = 1507.1.1
+}
+
+advisor = {
+	advisor_id = 1181
+	name = "Махмуд-паша" #Grand Vezir Mahmud Pasha Angeloviu to Mehmed II
+	location = 141 #Serbia
+	skill = 2
+	type = statesman
+	date = 1454.1.1 #30 years old
+	death_date = 1474.1.1
+}
+
+advisor = {
+	advisor_id = 1182
+	name = "Геннадий Схоларий" #Patriarch of Constantinople, philosopher and theologian
+	location = 151 #Thrace
+	skill = 2
+	type = theologian
+	date = 1430.1.1 #30 years old
+	death_date = 1473.1.1
+}
+
+advisor = {
+	advisor_id = 1183
+	name = "Пал Энгжелли" #Albanian Catholic clergyman, Archbishop of Durrлs and Cardinal of Albania 
+	location = 143 #Albania
+	skill = 1
+	type = theologian
+	date = 1446.1.1 #30 years old
+	death_date = 1470.1.1
+}
+
+advisor = {
+	advisor_id = 1184
+	name = "Иса-бек Исакович" #first governor of the Ottoman Province of Bosnia
+	location = 140 #Bosnia
+	skill = 2
+	type = statesman
+	date = 1463.1.1 #Bosnia becomes an Ottoman province
+	death_date = 1493.1.1 #30 years after his start, death date unknown
+}
+
+advisor = {
+	advisor_id = 1185
+	name = "Шейх Хамдулла" #The great master of Arabic calligraphy 
+	location = 328 #Sinope
+	skill = 2
+	type = artist
+	date = 1466.1.1 #30 years old
+	death_date = 1520.1.1
+}
+
+advisor = {
+	advisor_id = 1186
+	name = "Марко Марулич" #Croatian poet, apologist and Christian humanist
+	location = 136 #Dalmatia 
+	skill = 1
+	type = artist
+	date = 1480.8.18 #30 years old
+	death_date = 1524.5.5
+}
+
+#also present as admiral
+advisor = {
+	advisor_id = 1187
+	name = "Пири Рейс" #best known for his maps and charts 
+	location = 151 #Thrace
+	skill = 2
+	type = naval_reformer
+	date = 1495.1.1 #30 years old
+	death_date = 1554.1.1
+}
+
+advisor = {
+	advisor_id = 1188
+	name = "Гази Хусрев-бек" #Ottoman governor of Bosnia, Gazi Husrev-beg, military strategist
+	location = 140 #Bosnia
+	skill = 2
+	type = army_reformer #could also be statesman
+	date = 1510.1.1 #30 years old
+	death_date = 1541.1.1
+}
+
+advisor = {
+	advisor_id = 1189
+	name = "Ганнибал Лучич" #Croatian poet and playwright
+	location = 136 #Dalmatia 
+	skill = 1
+	type = artist
+	date = 1515.1.1 #30 years old
+	death_date = 1553.1.1
+}
+
+advisor = {
+	advisor_id = 1190
+	name = "Хаяли" #Turkish poet, important for the Divan tradition  
+	location = 151 #Thrace 
+	skill = 1
+	type = artist
+	date = 1517.1.1 #birth date is not known, he died in 1557
+	death_date = 1557.1.1
+}
+
+advisor = {
+	advisor_id = 1191
+	name = "Мимар Синан" #Ottoman chief architect for sultans Selim I, Suleiman I, Selim II and Murad III 
+	location = 151 #Thrace
+	skill = 3
+	type = artist
+	date = 1519.4.15 #30 years old
+	death_date = 1588.1.1
+}
+
+advisor = {
+	advisor_id = 1192
+	name = "Альвизе Гритти" #Venetian Freebooter who supplied the Porte
+	location = 316 #Bithynia
+	skill = 1
+	type = trader
+	date = 1520.1.1 #30 years old
+	death_date = 1550.1.1 #30 years after start
+}
+
+advisor = {
+	advisor_id = 1193
+	name = "Дамат Ибрагим-паша" #Suleyman the Magnificent's first appointed Grand Vizier
+	location = 147 #Salonica (born there)
+	skill = 2
+	type = statesman
+	date = 1523.6.27 #became grand vizier
+	death_date = 1536.1.1
+}
+
+advisor = {
+	advisor_id = 1194
+	name = "Джордже Утьесенович" #Archbishop of Gran known as George Martinuzzi or Frбter Gyцrgy, effective regent after the death of Zapolya
+	location = 158 #Transylvania
+	skill = 3
+	type = statesman
+	date = 1529.1.1 #47 years old
+	death_date = 1551.12.16
+}
+
+#advisor = {
+#	name = "Анастасия Лисовская" #Aka Roxelana, Wife of Sьleyman and court schemer
+#	location = 316 #Bithynia 
+#	skill = 1
+#	type = spymaster 
+#	date = 1530.1.1 #30 years old 
+#	death_date = 1558.4.17
+#}
+
+advisor = {
+	advisor_id = 1195
+	name = "Сейфи Челеби" #Traveller and  chronicler
+	location = 151 #Thrace
+	skill = 1
+	type = diplomat
+	date = 1530.1.1 #30 years old
+	death_date = 1560.1.1
+}
+
+advisor = {
+	advisor_id = 1196
+	name = "Насух аль-Силахи" #Nicknamed Matraki. Leading writer and illustrator of military campaigns
+	location = 151 #Thrace
+	skill = 1
+	type = army_reformer
+	date = 1530.1.1 #40 years old
+	death_date = 1564.1.1
+}
+
+advisor = {
+	advisor_id = 1197
+	name = "Марин Држич" #the finest Croatian Renaissance playwright and prose writer
+	location = 137 #Ragusa
+	skill = 1
+	type = artist
+	date = 1538.1.1 #30 years old
+	death_date = 1567.1.1
+}
+
+advisor = {
+	advisor_id = 1198
+	name = "Петр Зоранич" #Croatian writer, known as the author of 'Planine', the first Croatian novel 
+	location = 136 #Dalmatia
+	skill = 1
+	type = artist
+	date = 1538.1.1 #30 years old
+	death_date = 1569.1.1 #not known exactly
+}
+
+advisor = {
+	advisor_id = 1199
+	name = "Иоганн Хонтерус" #introduced printing to the region, implemented the Lutheran reform in Transylvania
+	location = 158 #Transylvania
+	skill = 2 
+	type = theologian
+	date = 1539.1.1 #41 years old
+	death_date = 1549.1.23
+}
+
+##################################################    
+# Era #2  1540 - 1630   (29/25 used currently) 
+##################################################    
+
+advisor = {
+	advisor_id = 1200
+	name = "Ференц Давид" #Founder of Unitarian church in Transylvania and court preacher to John Sigismund
+	location = 158 #Transylvania
+	skill = 1
+	type = theologian
+	date = 1540.1.1 #30 years old
+	death_date = 1579.1.1
+}
+
+advisor = {
+	advisor_id = 1201
+	name = "Валентин Вагнер" #Protestant reformer in Eastern Europe
+	location = 158 #Transylvania
+	skill = 2 
+	type = theologian 
+	date = 1540.1.1 #30 years old
+	death_date = 1557.1.1
+}
+
+advisor = {
+	advisor_id = 1202
+	name = "Йозеф Наси" #(AKA Joгo Miquez) A Jew that was one of the most important statesman in Ottoman Empire
+	location = 151 #Thrace
+	skill = 2 
+	type = statesman 
+	date = 1554.1.1 #30 years old
+	death_date = 1579.1.1
+}
+
+advisor = {
+	advisor_id = 1203
+	name = "Гьон Бузуку" #Albanian Catholic clergyman who wrote the first known printed book in Albanian.
+	location = 143 #Albania
+	skill = 1
+	type = theologian
+	date = 1554.3.22 #start of translation of the Catholic missal into the Gheg dialect
+	death_date = 1584.1.1 #~30 years after start
+}
+
+advisor = {
+	advisor_id = 1204
+	name = "Баки" #Considered one of the greatest contributors to Turkish literature
+	location = 151 #Thrace
+	skill = 2
+	type = artist
+	date = 1556.1.1 #30 years old
+	death_date = 1600.1.1
+}
+
+advisor = {
+	advisor_id = 1205
+	name = "Макарий Соколович" #Serbian Patriarch, brother of the famous Janissary Mehmed-Paљa Sokolovic
+	location = 141 #Serbia 
+	skill = 1
+	type = theologian
+	date = 1557.1.1 #50 years old, became patriarch
+	death_date = 1571.3.4 #dies
+}
+
+advisor = {
+	advisor_id = 1206
+	name = "Патриарх Иеремия II" #Patriarch of Constantinople several times between 1572 and 1595
+	location = 151 #Thrace
+	skill = 1
+	type = theologian
+	date = 1560.1.1 #30 years old
+	death_date = 1595.1.1
+}
+
+#advisor = {
+#	name = "Султанша Баффо" #Sultana Safiye Baffo. Illegitimate Venetian captured by the Ottomans who became the power behind the thrown.
+#	location = 151 #Thrace
+#	skill = 2
+#	type = statesman
+#	date = 1560.1.1 #35 years old
+#	death_date = 1618.1.1
+#}
+
+advisor = {
+	advisor_id = 1207
+	name = "Синан-паша" #governor of Egypt, Damascus and later Grand Vizier
+	location = 151 #Thrace
+	skill = 1
+	type = statesman
+	date = 1569.1.1 #appointed governor of Egypt
+	death_date = 1596.4.3
+}
+
+#advisor = {
+#	name = "Султанша Нурбану" #Mother of Murad III and effective ruler 
+#	location = 151 #Thrace
+#	skill = 1
+#	type = statesman
+#	date = 1574.1.1 #44 years old
+#	death_date = 1583.4.4
+#}
+
+advisor = {
+	advisor_id = 1208
+	name = "Ходжа Садеддин" #Prominent religous scholar
+	location = 151 #Thrace
+	skill = 2
+	type = theologian
+	date = 1575.1.1 #36 years old
+	death_date = 1599.10.2
+}
+
+advisor = {
+	advisor_id = 1209
+	name = "Хасан Ага" #Formally Samson Rowlie from Great Yarmouth, ended up a treasurer and eunuch in Ottoman service
+	location = 151 #Thrace
+	skill = 1
+	type = treasurer
+	date = 1580.1.1 #20 years old
+	death_date= 1600.3.3 #lost will to live
+}
+
+advisor = {
+	advisor_id = 1210
+	name = "Пьетер Буди" #author of four religious works in Albanian
+	location = 143 #Albania
+	skill = 1
+	type = theologian
+	date = 1596.1.1 #30 years old
+	death_date = 1622.12.20
+}
+
+advisor = {
+	advisor_id = 1211
+	name = "Лек Матренга" #author of the second major work of early Albanian literature
+	location = 143 #Albania
+	skill = 1
+	type = artist
+	date = 1597.1.1 #30 years old
+	death_date = 1619.1.1
+}
+
+advisor = {
+	advisor_id = 1212
+	name = "Мимар Касим" #master of Ottoman classical architecture
+	location = 151 #Thrace
+	skill = 2
+	type = artist
+	date = 1600.1.1 #30 years old
+	death_date = 1659.1.1
+}
+
+advisor = {
+	advisor_id = 1213
+	name = "Гаспар Грациани" #Croat polyglot. Renegade diplomat and spy who changed religion like clothes
+	location = 136 #Dalmatia
+	skill = 2
+	type = spymaster
+	date = 1600.1.1 #25 years old
+	death_date = 1620.1.1 #dies
+}
+
+advisor = {
+	advisor_id = 1214
+	name = "Малае Джазири" #AKA Melayк Cizоrо. Poet of Kurdish origin
+	location = 332 #Mus
+	skill = 1
+	type = artist
+	date = 1600.1.1 #30 years old
+	death_date = 1640.3.5 #dies
+}
+
+advisor = {
+	advisor_id = 1215
+	name = "Патриарх Кирилл I" #Greek prelate, theologian and Orthodox Patriarch of Constantinople as Cyril I
+	location = 151 #Thrace
+	skill = 2
+	type = theologian
+	date = 1602.1.1 #30 years old
+	death_date = 1637.6.1
+}
+
+advisor = {
+	advisor_id = 1216
+	name = "Мехмед Кепрюлю" #Grand Vizier, also the founder of the Kцprьlь noble family.
+	location = 143 #Albania (born there)
+	skill = 2
+	type = statesman
+	date = 1605.1.1 #30 years old
+	death_date = 1661.1.1
+}
+
+advisor = {
+	advisor_id = 1217
+	name = "Мурад-паша Куюджу" #Ottoman grand vizier during the reign of Ahmed I
+	location = 151 #Thrace
+	skill = 1
+	type = statesman
+	date = 1606.12.9 #became Grand vizier
+	death_date = 1611.8.5
+}
+
+advisor = {
+	advisor_id = 1218
+	name = "Невизаде Атаи" #real name was Ataullah. Government minister more famous for his poetry
+	location = 150 #Bulgaria
+	skill = 1
+	type = artist 
+	date = 1608.1.1 #25 years old
+	death_date = 1635.1.10
+}
+
+advisor = {
+	advisor_id = 1219
+	name = "Иван Гундулич" #the most celebrated Croatian Baroque poet 
+	location = 137 #Ragusa
+	skill = 1
+	type = artist
+	date = 1619.1.9 #30 years old
+	death_date = 1638.12.8
+}
+
+advisor = {
+	advisor_id = 1220
+	name = "Григорий Урече" #Pre forum commentator on Balkan ethnicity
+	location = 268 #Bessarabia
+	skill = 1
+	type = philosopher
+	date = 1620.1.1 #30 years old
+	death_date = 1647.3.3 #dies
+}
+
+advisor = {
+	advisor_id = 1221
+	name = "Мехмед Абази" #Former slave and Ottoman governor of Bulgaria. A master of mission creep. 
+	location = 150 #Bulgaria
+	skill = 2
+	type = statesman 
+	date = 1620.1.1
+	death_date = 1635.4.4 #dies
+}
+
+advisor = {
+	advisor_id = 1222
+	name = "Матей Басараб" #Wallachian Voivod who built churches and framed laws
+	location = 161 #Wallachia
+	skill = 2
+	type = statesman
+	date = 1620.1.1 #32 years old
+	death_date = 1654.4.9 #dies
+}
+
+advisor = {
+	advisor_id = 1223
+	name = "Факи Тейран" #AKA Feqiyк Teyran. Kurdish folk poet in Homeric tradition
+	location = 332 #Mus
+	skill = 1
+	type = artist
+	date = 1620.1.1 #30 years old
+	death_date = 1660.6.7 #dies
+}
+
+advisor = {
+	advisor_id = 1224
+	name = "Георгий Митрофанович" #Georgios Mitrophanovic, aka Djordje Mitrofanovic. Important serb painter
+	location = 141 #Serbia
+	skill = 1
+	type = artist
+	date = 1622.1.1 #30 years old, decorated the refectory of a monastery
+	death_date = 1652.4.4 #dies 
+}  
+
+#advisor = {
+#	name = "Султанша Кесема" #Mother and regent of Murat IV
+#	location = 151 #Thrace
+#	skill = 1
+#	type = statesman
+#	date = 1623.1.1 #~33 years old, returned as Valide Sultan
+#	death_date = 1651.9.2 #dies        
+#}
+ 
+advisor = {
+	advisor_id = 1225
+	name = "Караджаоглан" #Minstrel and serial seducer known as the "Bard of love"
+	location = 327 #Adana
+	skill = 2
+	type = artist
+	date = 1626.1.1 #20 years old
+	death_date = 1679.1.1
+}
+
+##################################################    
+# Era #3  1630 - 1720 (25/25 used currently) 
+##################################################    
+
+advisor = {
+	advisor_id = 1226
+	name = "Ахмед Челеби Хезарфен" #Hezarfen Ahmet Celebi, Pioneer aviator
+	location = 151 #Thrace
+	skill = 1
+	type = natural_scientist 
+	date = 1630.1.1 #21 years old
+	death_date = 1640.1.1
+}
+
+advisor = {
+	advisor_id = 1227
+	name = "Василь Лупул" #Moldovian Voivode. Ostentatous prince and lawmaker
+	location = 268 #Bessarabia 
+	skill = 1
+	type = statesman
+	date = 1634.1.1 #39 years old, became voivode
+	death_date = 1661.7.7 #dies
+}
+
+advisor = {
+	advisor_id = 1228
+	name = "Патриарх Нектарий" #Orthodox Patriarch of Jerusalem from 1660 to 1669
+	location = 163 #Crete (born there)
+	skill = 1
+	type = theologian
+	date = 1635.1.1 #30 years old
+	death_date = 1680.1.1
+}	
+
+advisor = {
+	advisor_id = 1229
+	name = "Катип Челеби" #Turkish scholar, wrote many encyclopedic contributions
+	location = 151 #Thrace 
+	skill = 1
+	type = natural_scientist
+	date = 1639.1.1 #30 years old
+	death_date = 1657.1.1
+}
+
+advisor = {
+	advisor_id = 1230
+	name = "Лагари Хасан Челеби" #Pioneer rocket scientist and stuntman, considered the first person to have flown
+	location = 151 #Thrace
+	skill = 1
+	type = natural_scientist
+	date = 1640.1.1 #30 years old
+	death_date = 1670.3.5 #dies        
+}
+
+advisor = {
+	advisor_id = 1231
+	name = "Эвлия Челеби" #one of the most famous Ottoman travelers, known for 'Book of Travels'
+	location = 151 #Thrace 
+	skill = 1
+	type = artist
+	date = 1641.2.25 #30 years old
+	death_date = 1682.1.1
+}
+
+advisor = {
+	advisor_id = 1232
+	name = "Митрополит Анфим VI" #Metropolitan of Athens
+	location = 146 #Athens 
+	skill = 1
+	type = theologian
+	date = 1741.1.1 #50 years old, became Metropolitan
+	death_date = 1764.2.3 #dies
+}
+
+advisor = {
+	advisor_id = 1233
+	name = "Константин Кантемир" #Father of Antioch and Dimitrie. Illiterate double agent who secured the Moldavian Voivodship for himself and sons and put to death the Moldavian scholar Costin
+	location = 268 #Bessarabia
+	skill = 1
+	type = spymaster
+	date = 1644.1.1 #30 years old
+	death_date = 1693.3.27 #dies
+}
+
+advisor = {
+	advisor_id = 1234
+	name = "Саббатай Цеви" #Shabtai Tzvi. Succesfully made many Jews believe he was the Messiah. Converted to Islam 
+	location = 318 #Izmir 
+	skill = 2 
+	type = theologian
+	date = 1648.1.1 #22 years old, first time he claims to be the Messiah
+	death_date = 1676.9.30
+}
+
+#advisor = {
+#	name = "Турхан Хатидже" #Concubine to Ibrahim I and regent to her six year old son Mehmed IV. A fiery Russian red head who had her mother in law strangled
+#	location = 151 #Thrace
+#	skill = 1
+#	type = statesman
+#	date = 1648.1.1 #21 years old
+#	death_date = 1682.5.5 #dies
+#}
+
+advisor = {
+	advisor_id = 1235
+	name = "Мирон Костин" #Moldavian Scholar and administrator
+	location = 268 #Bessarabia
+	skill = 1
+	type = treasurer
+	date = 1653.1.1 #20 years old, returned to Moldavia 
+	death_date = 1691.5.5 #dies
+}
+
+#also present as a leader
+advisor = {
+	advisor_id = 1236
+	name = "Фазил Ахмед Кепрюлю" #Grand Vizier, inherited the title from his father 
+	location = 151 #Thrace (don't know better location)
+	skill = 1
+	type = statesman
+	date = 1665.1.1 #30 years old
+	death_date = 1676.1.1
+}
+
+advisor = {
+	advisor_id = 1237
+	name = "Мустафа Итри" #Buhur-i Zade Mustafa Itri Efendi. Religous composer and musician
+	location = 151 #Thrace
+	skill = 1 
+	type = artist
+	date = 1665.1.1 #25 years old
+	death_date = 1711.1.1
+}
+
+advisor = {
+	advisor_id = 1238
+	name = "Сербан Кантакузин" #A progressive Voivod of Wallachia, had the intention to drive the Ottomans out of Europe. Died suddenly.
+	location = 161 #Wallachia
+	skill = 2
+	type = statesman
+	date = 1670.1.1 #30 years old
+	death_date = 1688.7.7 #dies
+}
+
+advisor = {
+	advisor_id = 1239
+	name = "Патриарх Арсений III" #Carnojevic (Arsenius III). Serbian Patriarch who led an exodus of Serbians to Hungary
+	location = 141 #Serbia
+	skill = 2
+	type = theologian
+	date = 1672.1.1 #42 years old, became patriarch
+	death_date = 1700.3.3 #dies
+}
+
+advisor = {
+	advisor_id = 1240
+	name = "Ашик Омер" #Folk poet who wrote while on campaign
+	location = 322 #Anatolia
+	skill = 2 
+	type = artist 
+	date = 1681.1.1 #30 years old
+	death_date = 1707.1.1
+}
+
+advisor = {
+	advisor_id = 1241
+	name = "Ахмад Хани" #AKA Ahmad Khani. Kurdish Writer and proto nationalist 
+	location = 332 #Mus
+	skill = 1
+	type = philosopher
+	date = 1683.1.1 #32 years old, wrote 'Nы-Buhar'
+	death_date = 1707.5.6
+}
+
+advisor = {
+	advisor_id = 1242
+	name = "Мустафа Найма" #Master of interpretive and reflective history
+	location = 151 #Thrace
+	skill = 2 
+	type = philosopher
+	date = 1690.1.1 #35 years old
+	death_date = 1716.1.1
+}
+
+advisor = {
+	advisor_id = 1243
+	name = "Силахдар Ага" #Silahdar Findikli Mehmed Aga. Ottoman historian
+	location = 151 #Thrace
+	skill = 1 
+	type = philosopher 
+	date = 1700.1.1 #32 years old
+	death_date = 1710.1.1
+}
+
+advisor = {
+	advisor_id = 1244
+	name = "Дмитрий Кантемир" #Moldavian Princ, polymath
+	location = 161 #Wallachia (?) 
+	skill = 1
+	type = philosopher
+	date = 1703.10.26 #30 years old
+	death_date = 1723.1.1
+}
+
+advisor = {
+	advisor_id = 1245
+	name = "Незим Фракулла" #Albanian poet
+	location = 143 #Albania
+	skill = 1
+	type = artist
+	date = 1710.1.1 #30 years old
+	death_date = 1760.1.1
+}
+
+advisor = {
+	advisor_id = 1246
+	name = "Ахмед Недим" #one of the most celebrated Ottoman poets
+	location = 151 #Thrace
+	skill = 2
+	type = artist
+	date = 1711.1.1 #30 years old
+	death_date = 1730.1.1
+}
+
+advisor = {
+	advisor_id = 1247
+	name = "Ибрагим-паша Невсехирли" #Grand Vizier of the Ottoman Empire during the Tulip Era
+	location = 151 #Thrace
+	skill = 2
+	type = statesman
+	date = 1718.1.1 #year of birth unknown, he became Grand Vizier in 1718
+	death_date = 1730.10.16
+}
+
+advisor = {
+	advisor_id = 1248
+	name = "Ион Некулче" #Moldavian historian and poet
+	location = 268 #Bessarabia
+	skill = 1
+	type = artist
+	date = 1719.1.1 #47 years old
+	death_date = 1745.1.1 #dies
+}
+
+##################################################    
+# Era #4  1720 - 1810 (21/25 used currently) 
+##################################################    
+
+advisor = {
+	advisor_id = 1249
+	name = "Абрахам Розан" #Long serving Hakham Baљsi (chief Rabbi) of the Ottoman empire
+	location = 151 #Thrace
+	skill = 1 
+	type = theologian
+	date = 1720.1.1 #40 years old, became rabbi
+	death_date = 1745.4.6 #dies
+}
+
+advisor = {
+	advisor_id = 1250
+	name = "Мустафа Чавус" #Tanburi Mustafa Зavus, Consise folk musician
+	location = 151 #Thrace
+	skill = 1
+	type = artist 
+	date = 1722.1.1 #24 years old
+	death_date = 1770.1.1
+}
+
+advisor = {
+	advisor_id = 1251
+	name = "Ибрагим Мутеферрика" #Operator of the first official printing press in the Ottoman Empire
+	location = 158 #Transylvania
+	skill = 1
+	type = natural_scientist
+	date = 1722.1.1 #48 years old
+	death_date = 1742.1.1
+}
+
+advisor = {
+	advisor_id = 1252
+	name = "Петар Накич" #Better known as Pietro Nacchini. Baroque composer and organ builder
+	location = 136 #Dalmatia
+	skill = 2
+	type = artist
+	date = 1722.1.1 #26 years old
+	death_date = 1769.3.4 #dies        
+}
+
+advisor = {
+	advisor_id = 1253
+	name = "Нумбараджи Ахмед" #Claude Alexandre, Comte de Bonneval, French army officer who later went into the service of the Ottoman Empire
+	location = 318 #Izmir 
+	skill = 2 
+	type = army_reformer 
+	date = 1725.1.1 #50 years old
+	death_date = 1747.3.23
+}
+
+advisor = {
+	advisor_id = 1254
+	name = "Тубиа Кайсс" #Patriarch Toubia Kaiss el Khazen of Bekaata Kanaan. Head of the Maronite church
+	location = 321 #Cyprus
+	skill = 1
+	type = theologian
+	date = 1733.1.1 #Ordained Archbishop of Cyprus
+	death_date = 1766.5.19 #died
+}
+
+advisor = {
+	advisor_id = 1255
+	name = "Ахмед Джеззар-паша" #Ottoman governor, famous for defeating Napoleon in Egypt
+	location = 151 #Thrace (don't know better location)
+	skill = 1
+	type = statesman
+	date = 1738.1.1 #30 years old
+	death_date = 1804.1.1
+}
+
+advisor = {
+	advisor_id = 1256
+	name = "Антиох Кантемир" # Moldavian-born Russian Enlightenment man of letters and diplomat.
+	location = 161 #Wallachia (?) 
+	skill = 1
+	type = diplomat
+	date = 1738.9.8 #30 years old
+	death_date = 1744.3.31
+}
+
+advisor = {
+	advisor_id = 1257
+	name = "Николаос Доксарас" #Son of Panagiotis Doxaras, Vault painter and religous artist
+	location = 145 #Morea
+	skill = 1
+	type = artist
+	date = 1738.1.1 #28 years old
+	death_date = 1775.2.3 #died
+}
+
+advisor = {
+	advisor_id = 1258
+	name = "Митрополит Феофил" #Metropolitan of Turnovo
+	location = 150 #Bulgaria
+	skill = 1
+	type = theologian
+	date = 1749.1.1 #50 years old, becomes Metropolitan
+	death_date = 1761.7.7 #dies
+}
+
+advisor = {
+	advisor_id = 1259
+	name = "Паисий Хилендарский" #Bulgarian clergyman and a key Bulgarian National Revival figure
+	location = 150 #Bulgaria
+	skill = 2
+	type = theologian
+	date = 1752.1.1 #30 years old
+	death_date = 1773.1.1
+}
+
+advisor = {
+	advisor_id = 1260
+	name = "Юл Варибоба" #first genuine poet in all of Albanian literature 
+	location = 143 #Albania
+	skill = 1
+	type = artist
+	date = 1752.1.1 #30 years old
+	death_date = 1788.1.1
+}
+
+advisor = {
+	advisor_id = 1261
+	name = "Лука Соркочевич" #Classical symphony composer
+	location = 136 #Dalmatia
+	skill = 1
+	type = artist
+	date = 1760.1.1 #26 years old
+	death_date = 1789.1.3 #dies
+}
+
+advisor = {
+	advisor_id = 1262
+	name = "Митрополит Григорий II" #Metropolitan of Hungaro-Walachia
+	location = 161 #Wallachia
+	skill = 1
+	type = theologian
+	date = 1760.3.3 #50 years old, becomes metropolitan
+	death_date = 1787.4.5 #dies
+}
+
+advisor = {
+	advisor_id = 1263
+	name =  "Никифор Феотокис" #Scholar who championed the Greek language, wrote about physics and mathematics
+	location = 142 #Corfu
+	skill = 1
+	type = natural_scientist
+	date = 1760.3.4 #29 years old
+	death_date = 1800.7.8
+}
+
+advisor = {
+	advisor_id = 1264
+	name = "Матия Релькович" #Croatian writer, left marks on Croatian literature and general culture 
+	location = 137 #Ragusa
+	skill = 1
+	type = artist
+	date = 1762.1.1 #30 years old
+	death_date = 1798.1.1
+}
+
+advisor = {
+	advisor_id = 1265
+	name = "Христо Димитров" #Artist, founder of the Orthodox Samokov school.
+	location = 150 #Bulgaria
+	skill = 1
+	type = artist
+	date = 1765.1.1 #20 years old
+	death_date = 1819.1.4 #dies
+}
+
+advisor = {
+	advisor_id = 1266
+	name = "Софроний Врачанский" #important figure of the Bulgarian Renaissance
+	location = 150 #Bulgaria
+	skill = 1
+	type = artist
+	date = 1769.1.1 #30 years old
+	death_date = 1813.8.2 #last signed document
+}
+
+advisor = {
+	advisor_id = 1267
+	name = "Тома Вишанов Молера" #Known as Molera. Founder of the Bansko school
+	location = 150 #Bulgaria
+	skill = 2
+	type = artist
+	date = 1770.1.1 #20 years old
+	death_date = 1825.4.4 #dies
+}
+
+advisor = {
+	advisor_id = 1268
+	name = "Шейх Галип" #Poet and whirling dervish
+	location = 151 #Thrace
+	skill = 1
+	type = artist
+	date = 1787.1.1 #30 years old
+	death_date = 1799.10.3 #dies        
+}
+
+advisor = {
+	advisor_id = 1269
+	name = "Осман Пазвантоглу" #governor of the Vidin (Bulgaria) district 
+	location = 150 #Bulgaria
+	skill = 1
+	type = statesman
+	date = 1788.1.1 #30 years old
+	death_date = 1807.1.27
+}
+
+##################################################    
+#Could also be added
+##################################################
+#Panagiotis Doxaras, artist, 1700-1729
+
+# CURRENT TOTAL IS = 96
+
+####################################################
+# End of file
+####################################################

@@ -1,0 +1,207 @@
+# Caspian Sea
+control_caspian_sea = {
+
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			417 = { owned_by = ROOT }	# Gilan
+			426 = { owned_by = ROOT } 	# Mazandaran
+			425 = { owned_by = ROOT }	# Derbent
+			421 = { owned_by = ROOT }	# Baku
+			443 = { owned_by = ROOT }	# Ustyur
+			439 = { owned_by = ROOT }	# Mangyshlak
+			465 = { owned_by = ROOT }	# Nogay
+			469 = { owned_by = ROOT }	# Ryn
+			464 = { owned_by = ROOT }	# Astrakhan
+			424 = { owned_by = ROOT }	# Ardabil
+			2349 = { owned_by = ROOT }	# Kizil-Su
+			2214 = { owned_by = ROOT }	# Golestan
+			2199 = { owned_by = ROOT }	# Tarki
+			2208 = { owned_by = ROOT }	# Tarek
+		}
+	}
+
+	trigger = {
+		417 = { owned_by = ROOT }	# Gilan
+		426 = { owned_by = ROOT } 	# Mazandaran
+		425 = { owned_by = ROOT }	# Derbent
+		421 = { owned_by = ROOT }	# Baku
+		443 = { owned_by = ROOT }	# Ustyur
+		439 = { owned_by = ROOT }	# Mangyshlak
+		465 = { owned_by = ROOT }	# Nogay
+		469 = { owned_by = ROOT }	# Ryn
+		464 = { owned_by = ROOT }	# Astrakhan
+		424 = { owned_by = ROOT }	# Ardabil
+		2349 = { owned_by = ROOT }	# Kizil-Su
+		2214 = { owned_by = ROOT }	# Golestan
+		2199 = { owned_by = ROOT }	# Tarki
+		2208 = { owned_by = ROOT }	# Tarek
+	}
+
+	global_trade_income_modifier = 0.05
+}
+
+# Control Gibraltar
+control_gibraltar_straits = {
+
+	potential = {
+		normal_or_historical_nations = yes
+		num_of_ports = 1 # Don't show this to land-locked countries
+		OR = {
+			121 = { owned_by = ROOT }
+			126 = { owned_by = ROOT }
+			226 = { owned_by = ROOT }
+			333 = { owned_by = ROOT }
+			334 = { owned_by = ROOT }
+			335 = { owned_by = ROOT }
+			341 = { owned_by = ROOT }
+			342 = { owned_by = ROOT }
+			1749 = { owned_by = ROOT }
+			1751 = { owned_by = ROOT }
+		}
+	}
+
+	trigger = {
+		226 = { owned_by = ROOT }
+		334 = { owned_by = ROOT }
+		1749 = { owned_by = ROOT }
+		1751 = { owned_by = ROOT }
+	}
+
+	global_trade_income_modifier = 0.025
+}
+
+# Straits of Dover
+control_dover_straits = {
+
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			87 = { owned_by = ROOT }
+			235 = { owned_by = ROOT }
+		}
+	}
+
+	trigger = {
+		87 = { owned_by = ROOT }
+		235 = { owned_by = ROOT }
+	}
+
+	global_trade_income_modifier = 0.025
+}
+
+# Med trade - Mare Nostrum
+mare_trade = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			151 = { owned_by = ROOT } # Constantinople
+			358 = { owned_by = ROOT } # Alexandia
+			341 = { owned_by = ROOT } # Tunis
+			112 = { owned_by = ROOT } # Venice
+			101 = { owned_by = ROOT } # Genoa
+			115 = { owned_by = ROOT } # Pisa
+		}
+	}
+	
+	trigger = {
+		151 = { owned_by = ROOT } # Constantinople
+		358 = { owned_by = ROOT } # Alexandia
+		341 = { owned_by = ROOT } # Tunis
+		112 = { owned_by = ROOT } # Venice
+		101 = { owned_by = ROOT } # Genoa
+		115 = { owned_by = ROOT } # Pisa
+	}
+	
+	trade_efficiency = 0.05
+}
+
+mare_east = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			151 = { owned_by = ROOT } # Constantinople
+			358 = { owned_by = ROOT } # Alexandria
+			163 = { owned_by = ROOT } # Crete
+			321 = { owned_by = ROOT } # Cyprus
+		}
+	}
+	
+	trigger = {
+		151 = { owned_by = ROOT } # Constantinople
+		358 = { owned_by = ROOT } # Alexandria
+		163 = { owned_by = ROOT } # Crete
+		321 = { owned_by = ROOT } # Cyprus
+	}
+	
+	trade_efficiency = 0.05
+}
+
+mare_central = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			126 = { owned_by = ROOT } # Malta
+			341 = { owned_by = ROOT } # Tunis
+			121 = { owned_by = ROOT } # Napoli
+			124 = { owned_by = ROOT } # Messina
+			125 = { owned_by = ROOT } # Palermo
+		}
+	}
+	
+	trigger = {
+		126 = { owned_by = ROOT } # Malta
+		341 = { owned_by = ROOT } # Tunis
+		121 = { owned_by = ROOT } # Napoli
+		124 = { owned_by = ROOT } # Messina
+		125 = { owned_by = ROOT } # Palermo
+	}
+	
+	trade_efficiency = 0.05
+}
+
+mare_west = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			101 = { owned_by = ROOT } # Genoa
+			127 = { owned_by = ROOT } # Sardinia
+			2019 = { owned_by = ROOT } # Marseilles
+			213 = { owned_by = ROOT } # Barcelona
+			333 = { owned_by = ROOT } # Baleares
+		}
+	}
+	
+	trigger = {
+		101 = { owned_by = ROOT } # Genoa
+		127 = { owned_by = ROOT } # Sardinia
+		2019 = { owned_by = ROOT } # Marseilles
+		213 = { owned_by = ROOT } # Barcelona
+		333 = { owned_by = ROOT } # Baleares
+	}
+	
+	trade_efficiency = 0.05
+}
+
+mare_nostrum = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			has_country_modifier = mare_trade
+			has_country_modifier = mare_west
+			has_country_modifier = mare_central
+			has_country_modifier = mare_east
+			has_country_modifier = control_gibraltar_straits
+		}
+	}
+	
+	trigger = {
+		has_country_modifier = mare_trade
+		has_country_modifier = mare_west
+		has_country_modifier = mare_central
+		has_country_modifier = mare_east
+		has_country_modifier = control_gibraltar_straits
+	}	
+	
+	trade_efficiency = 0.05
+}

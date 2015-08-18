@@ -1,0 +1,130 @@
+namespace = slovene
+
+# Slovenian identity
+country_event = {
+	id = slovene.1
+	title = "slovene.EVTNAME1"
+	desc = "slovene.EVTDESC1"
+	picture = REFORM_eventPicture
+	
+	trigger = {
+		is_year = 1558
+		OR = {
+			AND = { 
+				owns = 129 
+				129 = {
+					NOT = { culture = slovene }
+				}
+			}
+			AND = { 
+				owns = 1769
+				1769 = {
+					NOT = { culture = slovene }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "slovene.EVTOPTA1"
+		if = {	owns = 129 }
+			129 = {
+				change_culture = slovene
+			}
+		if = {	owns = 1769 }
+			1769 = {
+				change_culture = slovene
+		}
+	}
+}
+
+
+country_event = {
+	id = slovene.2
+	title = "slovene.EVTNAME2"
+	desc = "slovene.EVTDESC2"
+	picture = REFORM_eventPicture
+	
+	trigger = {
+		is_year = 1558
+		OR = {
+			AND = { 
+				owns = 129 
+				129 = {
+				culture = slovene
+				NOT = { is_core = SLN }
+				}
+			}
+			AND = { 
+				owns = 1769
+				1769 = {
+				culture = slovene
+				NOT = { is_core = SLN }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "slovene.EVTOPTA2"
+		if = {	owns = 129 }
+			129 = {
+				add_core = SLN
+			}
+		if = {	owns = 1769 }
+			1769 = {
+				add_core = SLN
+		}
+	}
+}
+
+country_event = {
+	id = slovene.3
+	title = "slovene.EVTNAME3"
+	desc = "slovene.EVTDESC3"
+	picture = REFORM_eventPicture
+	
+	trigger = {
+		is_year = 1605
+		OR = {
+			AND = { 
+				owns = 154 
+				154 = {
+				culture = slovakian
+				NOT = { is_core = SLK }
+				}
+			}
+			AND = { 
+				owns = 1772
+				1772 = {
+				culture = slovakian
+				NOT = { is_core = SLK }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	option = {
+		name = "slovene.EVTOPTA3"
+		if = {	owns = 154 }
+			154 = {
+				add_core = SLK
+			}
+		if = {	owns = 1772 }
+			1772 = {
+				add_core = SLK
+		}
+	}
+}

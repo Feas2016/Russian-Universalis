@@ -1,0 +1,497 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = kannada
+religion = hinduism
+technology_group = indian
+capital = 533	# Mysore
+
+#Ummatur Cheifs:
+#Very independent feudatories of Vijayanagara, often ignoring the empire or in rebelion against it
+#Have not been able to find specific ummatur rulers
+
+1399.1.1 = {
+	monarch = {
+		name = "Ганга Раджа"
+		dynasty = "Умматур"
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+#Wodeyar dynasty before gaining control of Mysore:
+
+#1399.1.1 = {
+#	monarch = {
+#		name = "Яду Рая"
+#		dynasty = "Водеяр"
+#		ADM = 2
+#		DIP = 0
+#		MIL = 2
+#	}
+#}
+#
+#1399.1.1 = {
+#	heir = {
+#		name = "Чама"
+#		monarch_name = "Чама Раджа I"
+#		dynasty = "Водеяр"
+#		birth_date = 1399.1.1
+#		death_date = 1423.1.1
+#		claim = 95
+#		ADM = 2
+#		DIP = 3
+#		MIL = 3
+#	}
+#}
+#
+#
+#
+#1423.1.1 = {
+#	monarch = {
+#		name = "Чама Раджа I"
+#		dynasty = "Водеяр"
+#		ADM = 2
+#		DIP = 3
+#		MIL = 3
+#	}
+#}
+#
+#1423.1.1 = {
+#	heir = {
+#		name = "Тимма"
+#		monarch_name = "Тимма Раджа I"
+#		dynasty = "Водеяр"
+#		birth_date = 1423.1.1
+#		death_date = 1478.1.1
+#		claim = 95
+#		ADM = 1
+#		DIP = 1
+#		MIL = 1
+#	}
+#}
+#
+#1458.1.1 = {
+#	monarch = {
+#		name = "Тимма Раджа I"
+#		dynasty = "Водеяр"
+#		ADM = 1
+#		DIP = 1
+#		MIL = 1
+#	}
+#}
+#
+#1458.1.1 = {
+#	heir = {
+#		name = "Чама"
+#		monarch_name = "Чама Раджа II"
+#		dynasty = "Водеяр"
+#		birth_date = 1458.1.1
+#		death_date = 1513.1.1
+#		claim = 95
+#		ADM = 2
+#		DIP = 0
+#		MIL = 0
+#	}
+#}
+#
+#1478.1.1 = {
+#	monarch = {
+#		name = "Чама Раджа II"
+#		dynasty = "Водеяр"
+#		ADM = 2
+#		DIP = 0
+#		MIL = 0
+#	}
+#}
+#
+#1478.1.1 = {
+#	heir = {
+#		name = "Чама"
+#		monarch_name = "Чама Раджа III"
+#		dynasty = "Водеяр"
+#		birth_date = 1478.1.1
+#		death_date = 1552.1.1
+#		claim = 95
+#		ADM = 3
+#		DIP = 1
+#		MIL = 2
+#	}
+#}
+#
+
+#Independent Wodeyars:
+
+1513.1.1 = {
+	monarch = {
+		name = "Чама Раджа III"
+		dynasty = "Водеяр"
+		ADM = 3
+		DIP = 1
+		MIL = 2
+	}
+}
+
+1513.1.1 = {
+	heir = {
+		name = "Тимма"
+		monarch_name = "Тимма Раджа II"
+		dynasty = "Водеяр"
+		birth_date = 1513.1.1
+		death_date = 1572.1.1
+		claim = 95
+		ADM = 4
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1552.1.1 = {
+	monarch = {
+		name = "Тимма Раджа II"
+		dynasty = "Водеяр"
+		ADM = 4
+		DIP = 2
+		MIL = 0
+	}
+	government = feudal_monarchy
+}
+
+1552.1.1 = {
+	heir = {
+		name = "Чама"
+		monarch_name = "Чама Раджа IV"
+		dynasty = "Водеяр"
+		birth_date = 1552.1.1
+		death_date = 1576.1.1
+		claim = 95
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1572.1.1 = {
+	monarch = {
+		name = "Чама Раджа IV"
+		dynasty = "Водеяр"
+		ADM = 0
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1572.1.1 = {
+	heir = {
+		name = "Беттада Дева"
+		monarch_name = "Беттада Дева Раджа"
+		birth_date = 1556.1.1
+		death_date = 1578.1.1
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1576.1.1 = {
+	monarch = {
+		name = "Беттада Дева Раджа"
+		dynasty = "Водеяр"
+		ADM = 0
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1576.1.1 = {
+	heir = {
+		name = "Вадайяр"
+		monarch_name = "Раджа Вадайяр"
+		dynasty = "Водеяр"
+		birth_date = 1558.1.1
+		death_date = 1617.6.21
+		claim = 95
+		ADM = 2
+		DIP = 3
+		MIL = 0
+	}
+}
+
+1578.11.27 = {
+	monarch = {
+		name = "Раджа Вадайяр"
+		dynasty = "Водеяр"
+		ADM = 2
+		DIP = 3
+		MIL = 0
+	}
+}
+
+1578.11.27 = {
+	heir = {
+		name = "Чама"
+		monarch_name = "Чама Раджа V"
+		dynasty = "Водеяр"
+		birth_date = 1578.11.27
+		death_date = 1637.1.1
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1617.6.21 = {
+	monarch = {
+		name = "Чама Раджа V"
+		dynasty = "Водеяр"
+		ADM = 3
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1617.6.21 = {
+	heir = {
+		name = "Иммади"
+		monarch_name = "Иммади Раджа"
+		dynasty = "Водеяр"
+		birth_date = 1617.6.21
+		death_date = 1638.10.9
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1637.5.3 = {
+	monarch = {
+		name = "Иммади Раджа"
+		dynasty = "Водеяр"
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1637.5.3 = {
+	heir = {
+		name = "Кантирава Нараса"
+		monarch_name = "Кантирава Нараса Раджа I"
+		dynasty = "Водеяр"
+		birth_date = 1617.1.1
+		death_date = 1659.8.3
+		claim = 95
+		ADM = 1
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1638.10.9 = {
+	monarch = {
+		name = "Кантирава Нараса Раджа I"
+		dynasty = "Водеяр"
+		ADM = 1
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1638.10.9 = {
+	heir = {
+		name = "Кемпа Дева"
+		monarch_name = "Кемпа Дева Раджа"
+		dynasty = "Водеяр"
+		birth_date = 1610.1.1
+		death_date = 1672.2.11
+		claim = 95
+		ADM = 1
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1659.8.3 = {
+	monarch = {
+		name = "Кемпа Дева Раджа"
+		dynasty = "Водеяр"
+		ADM = 1
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1659.8.3 = {
+	heir = {
+		name = "Чикка Дева"
+		monarch_name = "Чикка Дева Раджа"
+		dynasty = "Водеяр"
+		birth_date = 1659.8.3
+		death_date = 1704.11.17
+		claim = 95
+		ADM = 0
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1672.2.11 = {
+	monarch = {
+		name = "Чикка Дева Раджа"
+		dynasty = "Водеяр"
+		ADM = 0
+		DIP = 2
+		MIL = 3
+	}
+}
+
+1672.2.11 = {
+	heir = {
+		name = "Кантирава Нараса"
+		monarch_name = "Кантирава Нараса Раджа II"
+		dynasty = "Водеяр"
+		birth_date = 1672.2.11
+		death_date = 1714.2.17
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 4
+	}
+}
+
+1704.11.17 = {
+	monarch = {
+		name = "Кантирава Нараса Раджа II"
+		dynasty = "Водеяр"
+		ADM = 3
+		DIP = 1
+		MIL = 4
+	}
+}
+
+1704.11.17 = {
+	heir = {
+		name = "Кришна"
+		monarch_name = "Кришна Раджа I"
+		dynasty = "Водеяр"
+		birth_date = 1690.1.1
+		death_date = 1732.3.6
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1714.2.17 = {
+	monarch = {
+		name = "Кришна Раджа I"
+		dynasty = "Водеяр"
+		ADM = 1
+		DIP = 2
+		MIL = 0
+	}
+}
+
+1714.2.17 = {
+	heir = {
+		name = "Чама"
+		monarch_name = "Чама Раджа VI"
+		dynasty = "Водеяр"
+		birth_date = 1710.1.1
+		death_date = 1734.6.12
+		claim = 95
+		ADM = 3
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1732.3.6 = {
+	monarch = {
+		name = "Чама Раджа VI"
+		dynasty = "Водеяр"
+		ADM = 3
+		DIP = 0
+		MIL = 3
+	}
+}
+
+1732.3.6 = {
+	heir = {
+		name = "Кришна"
+		monarch_name = "Кришна Раджа II"
+		dynasty = "Водеяр"
+		birth_date = 1710.1.1
+		death_date = 1761.6.3
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 2
+	}
+}
+
+1734.6.12 = {
+	monarch = {
+		name = "Кришна Раджа II"
+		dynasty = "Водеяр"
+		ADM = 0
+		DIP = 0
+		MIL = 2
+	}
+}
+
+#Usurper
+
+1761.6.3 = {
+	monarch = {
+		name = "Хайдар Али"
+		dynasty = "Фатехи" #From the name of Haidars father, not sure of suitable dynasty name.
+		ADM = 3
+		DIP = 3
+		MIL = 5
+		leader = {	name = "Хайдар Али"          	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 1 }
+	}
+	religion = sunni
+}
+
+1761.6.3 = {
+	heir = {
+		name = "Типу Султан"
+		monarch_name = "Типу Султан"
+		dynasty = "Фатехи"
+		birth_date = 1750.1.1
+		death_date = 1799.5.5
+		claim = 95
+		ADM = 2
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1780.1.1 = { leader = {	name = "Типу Султан"          	type = general	rank = 0	fire = 5	shock = 5	manuever = 3	siege = 1	death_date = 1782.12.8 } }
+
+1782.12.8 = {
+	monarch = {
+		name = "Типу Султан"
+		dynasty = "Фатехи"
+		ADM = 2
+		DIP = 5
+		MIL = 6
+		leader = {	name = "Типу Султан"          	type = general	rank = 0	fire = 5	shock = 5	manuever = 3	siege = 1 }
+	}
+}
+
+1799.5.5 = {
+	monarch = {
+		name = "Кришна Раджа III"
+		dynasty = "Водеяр"
+		ADM = 1
+		DIP = 0
+		MIL = 0
+	}
+	religion = hinduism
+}

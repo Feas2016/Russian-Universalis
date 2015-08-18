@@ -1,0 +1,183 @@
+country_decisions = {
+
+	slavian_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = SLV }
+			OR = {
+				tag = RUS
+				tag = YUG
+				}
+			adm_tech = 24
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+		}
+		allow = {
+			adm_tech = 27
+			is_subject = no
+			is_at_war = no
+			owns = 295			# Moskva
+			owns = 310
+			owns = 280			# Kiev
+			owns = 257
+			owns = 262
+			owns = 141			# Belgrad
+			owns = 140			# Bosnia
+			owns = 1765		# Sofia
+			owns = 150		# Tarnovo
+			is_core = 150
+			is_core = 1765
+			is_core = 141			# Belgrad
+			is_core = 140			# Bosnia
+			is_core = 295			# Moskva
+			is_core = 310
+			is_core = 280			# Kiev
+			is_core = 257
+			is_core = 262
+		}
+		effect = {
+			change_tag = SLV
+			add_prestige = 75
+			add_stability = 2
+			add_legitimacy = 15
+			bohemian_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			wielkopolska = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			malopolska = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			belarus = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			ukrainian_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			russian_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = SLV
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			SLV = {
+				culture_group_union = STT_SLV
+				change_primary_culture = STT_SLV_russian
+				change_government = constitutional_monarchy
+				every_owned_province = {
+					limit = {
+						culture = croatian
+						}			
+					change_culture = STT_SLV_croatian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = serbian
+						}	
+					change_culture = STT_SLV_serbian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = bulgarian
+						}	
+					change_culture = STT_SLV_bulgarian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = romanian
+						}	
+					change_culture = STT_SLV_romanian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = bosnian
+						}	
+					change_culture = STT_SLV_bosnian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = slovene
+						}	
+					change_culture = STT_SLV_slovene 
+					}
+				every_owned_province = {
+					limit = {
+						culture = czech
+						}	
+					change_culture = STT_SLV_czech 
+					}
+				every_owned_province = {
+					limit = {
+						culture = polish
+						}	
+						change_culture = STT_SLV_polish 
+					}
+				every_owned_province = {
+					limit = {
+						culture = schlesian
+						}							
+						change_culture = STT_SLV_schlesian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = russian
+						}	
+						change_culture = STT_SLV_russian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = byelorussian
+						}	
+						change_culture = STT_SLV_byelorussian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = romanian
+						}	
+						change_culture = STT_SLV_romanian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = ruthenian
+						}	
+						change_culture = STT_SLV_ruthenian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = STT_PLU_polish
+						}
+						change_culture = STT_SLV_polish 
+					}
+				every_owned_province = {
+					limit = {
+						culture = STT_PLU_ruthenian
+						}	
+						change_culture = STT_SLV_ruthenian 
+					}
+				every_owned_province = {
+					limit = {
+						culture = STT_PLU_byelorussian
+						}	
+						change_culture = STT_SLV_byelorussian 
+					}				
+				}		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 1
+	}
+}

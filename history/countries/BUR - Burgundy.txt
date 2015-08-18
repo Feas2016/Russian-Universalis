@@ -1,0 +1,191 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = burgundian
+religion = catholic
+technology_group = western
+historical_rival = FRA
+capital = 192	# Dijon
+
+
+1363.1.1 = {
+	monarch = {
+		name = "Филипп II"
+		dynasty = "де Валуа"
+		birth_date = 1342.1.17
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1371.5.28 = {
+	heir = {
+		name = "Иоанн"
+		monarch_name = "Иоанн I"
+		dynasty = "де Валуа"
+		birth_date = 1371.5.28
+		death_date = 1419.9.10
+		claim = 95
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}
+
+
+1404.1.1 = {
+	monarch = {
+		name = "Иоанн I"
+		dynasty = "де Валуа"
+		birth_date = 1371.5.28
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+
+1404.1.1 = {
+	heir = {
+		name = "Филипп"
+		monarch_name = "Филипп III"
+		dynasty = "де Валуа"
+		birth_date = 1396.7.31
+		death_date = 1467.6.15
+		claim = 95
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}
+
+
+1408.1.1 = { leader = {	name = "Жан де Пресси"   	type = general	rank = 3	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1437.1.1 } }
+
+1419.9.11 = {
+	monarch = {
+		name = "Филипп III"
+		dynasty = "де Валуа"
+		birth_date = 1396.7.31
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = { name = "Филипп III"   	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
+	}
+}
+
+
+1433.11.10 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "де Валуа"
+		birth_date = 1433.11.10
+		death_date = 1477.1.5
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 4
+	}
+}
+
+
+
+1467.6.16 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Валуа"
+		birth_date = 1433.11.10
+		adm = 2
+		dip = 0
+		mil = 4
+		leader = { name = "Карл I Смелый"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
+	}
+}
+
+1467.6.16 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария I"
+		dynasty = "де Валуа"
+		birth_date = 1457.2.13
+		death_date = 1482.3.27
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}
+
+1477.1.6 = {
+	monarch = {
+		name = "Мария I"
+		dynasty = "де Валуа"
+		birth_date = 1457.2.13
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}
+
+# Burgundy is owned by the Habsburgs at this point, represented as HAB ownership
+
+1478.7.22 = {
+	heir = {
+		name = "Филипп"
+		monarch_name = "Филипп IV"
+		dynasty = "фон Габсбург"
+		birth_date = 1478.7.22
+		death_date = 1506.9.25
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1482.3.28 = {
+	monarch = {
+		name = "Филипп IV"
+		dynasty = "фон Габсбург"
+		birth_date = 1478.7.22
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1500.2.24 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл II"
+		dynasty = "фон Габсбург"
+		birth_date = 1500.2.24
+		death_date = 1558.9.21
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1506.9.26 = { government = despotic_monarchy }
+
+1506.9.26 = {
+	monarch = {
+		name = "Карл II"
+		dynasty = "фон Габсбург"
+		birth_date = 1500.2.24
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+
+1589.8.3 = { government = administrative_monarchy }
+
+
+1661.3.9 = { government = absolute_monarchy }

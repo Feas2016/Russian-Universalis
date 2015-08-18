@@ -1,0 +1,331 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+technology_group = western
+primary_culture = hannoverian
+religion = catholic
+capital = 53 # Lьneburg
+
+
+# Lьneburg (Dukes of Braunschweig-Lьneburg)
+1373.1.1 = {
+	monarch = {
+		name = "Бернхард I"
+		dynasty = "фон Вельф"
+		birth_date = 1361.1.1
+		dip = 3
+		adm = 2
+		mil = 2
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Отто"
+		monarch_name = "Отто I"
+		dynasty = "фон Вельф"
+		birth_date = 1400.1.1
+		death_date = 1446.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1434.6.11 = {
+	monarch = {
+		name = "Отто I"
+		dynasty = "фон Вельф"
+		birth_date = 1400.1.1
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+
+1434.6.11 = {
+	heir = {
+		name = "Фридрих"
+		monarch_name = "Фридрих I Набожный"
+		dynasty = "фон Вельф"
+		birth_date = 1418.1.1
+		death_date = 1478.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1445.6.1 = {
+	monarch = {
+		name = "Фридрих I Набожный"
+		dynasty = "фон Вельф"
+		birth_date = 1418.1.1
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}
+
+1445.6.1 = {
+	heir = {
+		name = "Бернхард"
+		monarch_name = "Бернхард II"
+		dynasty = "фон Вельф"
+		birth_date = 1410.1.1
+		death_date = 1464.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1457.1.1 = {
+	monarch = {
+		name = "Бернхард II"
+		dynasty = "фон Вельф"
+		birth_date = 1410.1.1
+		dip = 1
+		adm = 0
+		mil = 0
+	}
+}
+
+1457.1.1 = {
+	heir = {
+		name = "Отто"
+		monarch_name = "Отто II"
+		dynasty = "фон Вельф"
+		birth_date = 1440.1.1
+		death_date = 1474.1.1
+		claim = 95
+		dip = 0
+		adm = 1
+		mil = 2
+	}
+}
+
+1464.2.9 = {
+	monarch = {
+		name = "Отто II"
+		dynasty = "фон Вельф"
+		birth_date = 1440.1.1
+		dip = 0
+		adm = 1
+		mil = 2
+	}
+}
+
+1468.1.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих VII"
+		dynasty = "фон Вельф"
+		birth_date = 1468.1.1
+		death_date = 1532.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+
+1486.1.8 = {
+	monarch = {
+		name = "Генрих VII"
+		dynasty = "фон Вельф"
+		birth_date = 1468.1.1
+		dip = 3
+		adm = 1
+		mil = 4
+	}
+}
+
+1497.6.27 = {
+	heir = {
+		name = "Эрнст"
+		monarch_name = "Эрнст I"
+		dynasty = "фон Вельф"
+		birth_date = 1497.6.27
+		death_date = 1546.1.11
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1521.1.1 = {
+	monarch = {
+		name = "Эрнст I"
+		dynasty = "фон Вельф"
+		birth_date = 1497.6.27
+		dip = 2
+		adm = 0
+		mil = 1
+	}
+}
+
+1529.1.1 = { religion = protestant }
+
+1564.12.31 = {
+	heir = {
+		name = "Эрнст"
+		monarch_name = "Эрнст II"
+		dynasty = "фон Вельф"
+		birth_date = 1564.12.31
+		death_date = 1611.3.2
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 2
+	}
+}
+	
+1592.8.20 = {
+	monarch = {
+		name = "Эрнст II"
+		dynasty = "фон Вельф"
+		birth_date = 1564.12.31
+		dip = 0
+		adm = 4
+		mil = 2
+	}
+}
+
+1592.8.20 = {
+	heir = {
+		name = "Христиан"
+		monarch_name = "Христиан I"
+		dynasty = "фон Вельф"
+		birth_date = 1566.11.9
+		death_date = 1633.11.8
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1611.3.2 = {
+	monarch = {
+		name = "Христиан I"
+		dynasty = "фон Вельф"
+		birth_date = 1566.11.9
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1611.3.2 = {
+	heir = {
+		name = "Август"
+		monarch_name = "Август I"
+		dynasty = "фон Вельф"
+		birth_date = 1568.1.1
+		death_date = 1636.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1633.11.8 = {
+	monarch = {
+		name = "Август I"
+		dynasty = "фон Вельф"
+		birth_date = 1568.1.1
+		dip = 1
+		adm = 2
+		mil = 2
+	}
+}
+
+1633.11.8 = {
+	heir = {
+		name = "Фридрих"
+		monarch_name = "Фридрих IV"
+		dynasty = "фон Вельф"
+		birth_date = 1574.8.28
+		death_date = 1648.12.10
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1636.1.1 = {
+	monarch = {
+		name = "Фридрих IV"
+		dynasty = "фон Вельф"
+		birth_date = 1574.8.28
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1636.1.1 = {
+	heir = {
+		name = "Христиан Людвиг"
+		monarch_name = "Христиан Людвиг I"
+		dynasty = "фон Вельф"
+		birth_date = 1622.2.25
+		death_date = 1665.3.15
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+1648.12.10 = {
+	monarch = {
+		name = "Христиан Людвиг I"
+		dynasty = "фон Вельф"
+		birth_date = 1622.2.25
+		dip = 1
+		adm = 0
+		mil = 4
+	}
+}
+
+1648.12.10 = {
+	heir = {
+		name = "Георг Вильгельм"
+		monarch_name = "Георг Вильгельм I"
+		dynasty = "фон Вельф"
+		birth_date = 1624.1.26
+		death_date = 1705.8.28
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1665.3.15 = {
+	monarch = {
+		name = "Георг Вильгельм I"
+		dynasty = "фон Вельф"
+		birth_date = 1624.1.26
+		dip = 4
+		adm = 2
+		mil = 3
+	}
+}
+
+#United with Hannover 1705.6.28
