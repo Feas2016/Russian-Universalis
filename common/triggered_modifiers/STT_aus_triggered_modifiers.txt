@@ -29,19 +29,6 @@ aus_truedynasty = {
 	prestige = 1
 	legitimacy = 1
 }
-aus_capital_lost_trigger = {
-	potential = {
-	OR = {
-			tag = HAB
-			tag = AEM
-		}
-	}
-	trigger = {
-		capital_scope = { not = { controlled_by = ROOT } }
-	}
-	prestige = -3
-	war_exhaustion = -0.05
-}
 
 aus_golbenbull = {
 	potential = {
@@ -83,32 +70,4 @@ aus_yesaulic = {
 	}
 	global_tax_modifier = 0.02
 	diplomatic_reputation = -1
-}
-
-aus_wartime = {
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AEM
-		}
-	}
-	trigger = {
-		is_at_war = yes
-	}
-	global_tax_modifier = -0.02
-	defensiveness = 0.1
-}
-
-aus_peacetime = {
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AEM
-		}
-	}
-	trigger = {
-		is_at_war = no
-	}
-	global_tax_modifier = 0.02
-	defensiveness = -0.25
 }

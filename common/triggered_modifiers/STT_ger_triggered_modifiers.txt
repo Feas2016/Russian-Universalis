@@ -30,20 +30,6 @@ ger_truedynasty = {
 	prestige = 1
 	legitimacy = 1
 }
-ger_capital_lost_trigger = {
-	potential = {
-	OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-		}
-	}
-	trigger = {
-		capital_scope = { not = { controlled_by = ROOT } }
-	}
-	prestige = -3
-	war_exhaustion = -0.05
-}
 
 ger_yearhommage = {
 	potential = {
@@ -88,34 +74,4 @@ ger_yeslandtag = {
 	}
 	global_tax_modifier = 0.02
 	diplomatic_reputation = -1
-}
-
-ger_wartime = {
-	potential = {
-		OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-		}
-	}
-	trigger = {
-		is_at_war = yes
-	}
-	global_tax_modifier = -0.02
-	defensiveness = 0.1
-}
-
-ger_peacetime = {
-	potential = {
-		OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-		}
-	}
-	trigger = {
-		is_at_war = no
-	}
-	global_tax_modifier = 0.02
-	defensiveness = -0.25
 }

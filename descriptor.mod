@@ -1,5 +1,5 @@
 name="[STT]Russian Universalis"
-archive="mod/STTE.zip"
+path="mod/STT_E"
 tags=
 {
 	"Graphics"
@@ -13,4 +13,4 @@ tags=
  
 }
 picture="Europa_Universalis_IV_extended.png"
-supported_version="1.12"
+supported_version="1.13"
