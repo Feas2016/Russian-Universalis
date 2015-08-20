@@ -336,17 +336,17 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "no_colony_label"
-				position = { x = 75 y = -4 }
+				position = { x = 25 y = -4 }
 				font = "vic_29"	
 				borderSize = {x = 0 y = 0}	
 				text = "NO_COLONY_PRESENT"	
-				maxWidth = 185
+				maxWidth = 275
 				maxHeight = 76	
 				format = center	
 			}
 			instantTextBoxType = {
 				name = "region_text"
-				position = { x = 05 y = 20 }
+				position = { x = 05 y = 15 }
 				font = "vic_18"	
 				borderSize = {x = 4 y = 4}	
 				text = "NO_COLONY_PRESENT"	

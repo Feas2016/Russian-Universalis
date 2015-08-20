@@ -31,11 +31,11 @@ country_event = {
 	
 	option = {
 		name = "slovene.EVTOPTA1"
-		if = {	owns = 129 }
+		if = {	limit = { ROOT = { owns = 129 } } }
 			129 = {
 				change_culture = slovene
 			}
-		if = {	owns = 1769 }
+		if = {	limit = { ROOT = { owns = 1769 } } }
 			1769 = {
 				change_culture = slovene
 		}
@@ -75,11 +75,11 @@ country_event = {
 	
 	option = {
 		name = "slovene.EVTOPTA2"
-		if = {	owns = 129 }
+		if = {	limit = { ROOT = { owns = 129 } } }
 			129 = {
 				add_core = SLN
 			}
-		if = {	owns = 1769 }
+		if = {	limit = { ROOT = { owns = 1769 } } }
 			1769 = {
 				add_core = SLN
 		}
@@ -118,11 +118,11 @@ country_event = {
 	
 	option = {
 		name = "slovene.EVTOPTA3"
-		if = {	owns = 154 }
+		if = {	limit = { ROOT = { owns = 154 } } }
 			154 = {
 				add_core = SLK
 			}
-		if = {	owns = 1772 }
+		if = {	limit = { ROOT = { owns = 1772 } } }
 			1772 = {
 				add_core = SLK
 		}
