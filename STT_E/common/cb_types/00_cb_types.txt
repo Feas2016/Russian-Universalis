@@ -259,7 +259,6 @@ cb_imperial = {
 ### STT	
 		is_neighbor_of = FROM
 		OR = {
-			AND = {	
 			dip_tech = 23
 			OR = {
 				government = m_empire
@@ -494,7 +493,7 @@ cb_heretic = {
 				cb_on_religious_enemies = yes
 				government = papal_government
 				government = theocratic_government
-				government = military_religious_order
+				government = monastic_order_government
 			}
 		religion_group = from
 		NOT = { religion = from }
