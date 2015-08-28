@@ -3,6 +3,7 @@ primary_culture = russian
 religion = orthodox
 technology_group = eastern
 capital = 294	# Tver
+fixed_capital = 294 # Cannot move capital away from this province & no power cost to move to it
 government_rank = 1
 
 1398.11.1 = {
@@ -36,6 +37,10 @@ government_rank = 1
 		dip = 0
 		mil = 0
 	}
+}
+
+1449.8.31 = {
+	government_rank = 1
 }
 
 1461.2.10 = {

@@ -1,17 +1,11 @@
 government = oligarchic_republic
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 0
-#innovative_narrowminded = 0
-mercantilism = 0.2
-#offensive_defensive = -2
-#land_naval = -1
-#quality_quantity = -1
-#serfdom_freesubjects = -1
+government_rank = 1
+mercantilism = 0.25
 technology_group = western
 religion = catholic
 primary_culture = hannoverian
 capital = 44	# Hamburg
-
+fixed_capital = 44 # Cannot move capital away from this province & no power cost to move to it
 
 1399.1.1 = {
 	monarch = {

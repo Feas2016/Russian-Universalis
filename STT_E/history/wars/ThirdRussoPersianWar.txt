@@ -1,0 +1,19 @@
+name = "Третья русско-персидская война"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 416 # Azerbaijan
+}
+
+1804.1.1 = {
+	add_attacker = RUS
+	add_defender = PER
+}
+
+# Treaty of Gulistan
+1813.10.24 = {
+	rem_attacker = RUS
+	rem_defender = PER
+}
+

@@ -2,7 +2,12 @@ country_decisions = {
 
 	reestablish_the_theme_system = {
 		potential = {
-			tag = BYZ
+			### STT
+			OR = {
+				tag = BYZ
+				tag = PQR
+				tag = ROM
+			}
 			NOT = { has_country_modifier = the_theme_system }
 			OR = {
 				ai = no
@@ -37,7 +42,7 @@ country_decisions = {
 			owns = 2304 # Canik
 			owns = 2750 # Plovdiv
 		}
-		effect = { ### translate
+		effect = {
 			149 = { change_province_name = Адрианополь rename_capital = Адрианополь }
 			316 = { change_province_name = Оптиматы rename_capital = Никомедия }
 			317 = { change_province_name = Опсикий rename_capital = Прусса }
@@ -54,7 +59,7 @@ country_decisions = {
 			327 = { change_province_name = Киликея rename_capital = Атана }
 			1846 = { change_province_name = Армениакон rename_capital = Амасея }
 			1848 = { change_province_name = Анатоликон rename_capital = Амориум }
-			151 = { change_province_name = Константинополь rename_capital = Константинополь add_base_tax = 6 add_base_manpower = 5 }
+			151 = { change_province_name = Константинополь rename_capital = Константинополь }
 			2296 = { change_province_name = Абидос rename_capital = Пигай }
 			2297 = { change_province_name = Фракиссия rename_capital = Магнисия }
 			2298 = { change_province_name = Анталья rename_capital = Анталья }

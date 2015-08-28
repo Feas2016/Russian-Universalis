@@ -1,0 +1,324 @@
+government = feudal_monarchy
+technology_group = indian
+religion = hinduism
+primary_culture = tamil
+capital = 2101 #Tirunelveli
+#capital = 536 #Madurai
+fixed_capital = 536 # Cannot move capital away from this province & no power cost to move to it
+
+#Rajas of Madurai 
+
+#Last Pandyas - Unsubdued by the Madurai Sultanate and continues to exist after Madurai is annexed by Vijayanagar
+
+1431.1.1 = {
+	monarch = {
+		name = "Паракрама"
+		dynasty = "Пандья"
+		ADM = 3
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1431.1.1 = {
+	heir = {
+		name = "Вира"
+		monarch_name = "Вира"
+		dynasty = "Пандья"
+		birth_date = 1410.1.1
+		death_Date = 1475.1.1
+		claim = 95
+		ADM = 3
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1437.1.1 = {
+	monarch = {
+		name = "Вира"
+		dynasty = "Пандья"
+		ADM = 3
+		DIP = 2
+		MIL = 1
+	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Вира"
+		monarch_name = "Вира II"
+		dynasty = "Пандья"
+		birth_date = 1430.1.1
+		death_Date = 1516.1.1
+		claim = 95
+		ADM = 4
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1475.1.1 = {
+	monarch = {
+		name = "Вира II"
+		dynasty = "Пандья"
+		ADM = 4
+		DIP = 1
+		MIL = 1
+	}
+}
+
+1475.1.1 = {
+	heir = {
+		name = "Паракрама"
+		monarch_name = "Паракрама II"
+		dynasty = "Пандья"
+		birth_date = 1450.1.1
+		death_Date = 1543.1.1
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1516.1.1 = {
+	monarch = {
+		name = "Паракрама II"
+		dynasty = "Пандья"
+		ADM = 2
+		DIP = 1
+		MIL = 3
+	}
+}
+
+1516.1.1 = {
+	heir = {
+		name = "Викрама"
+		monarch_name = "Викрама"
+		dynasty = "Пандья"
+		birth_date = 1480.1.1
+		death_Date = 1565.1.1
+		claim = 95
+		ADM = 3
+		DIP = 1
+		MIL = 4
+	}
+}
+#Annexed
+
+#Independent from Vijayanagar:
+#Madurai Nayaka dynasty, Nayaka = vassal king, but from sources it seems the Madurai Nayakas took it as their dynasty name?
+
+1529.1.1 = {
+	monarch = {
+		name = "Вишванатха"
+		dynasty = "Наяка"
+		ADM = 4
+		DIP = 4
+		MIL = 5
+	}
+}
+
+1529.1.1 = {
+	heir = {
+		name = "Кумара Перия Кришнаппа"
+		monarch_name = "Кумара Перия Кришнаппа"
+		dynasty = "Наяка"
+		birth_date = 1527.1.1
+		death_Date = 1572.1.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1564.1.1 = {
+	monarch = {
+		name = "Кумара Перия Кришнаппа"
+		dynasty = "Наяка"
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1564.1.1 = {
+	heir = {
+		name = "Кришнаппа Перия"
+		monarch_name = "Кришнаппа Перия"
+		dynasty = "Наяка"
+		birth_date = 1560.1.1
+		death_Date = 1595.3.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1572.1.1 = {
+	monarch = {
+		name = "Кришнаппа Перия"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1572.1.1 = {
+	heir = {
+		name = "Лингайя Кумара"
+		monarch_name = "Лингайя Кумара"
+		dynasty = "Наяка"
+		birth_date = 1570.1.1
+		death_Date = 1601.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1595.3.1 = {
+	monarch = {
+		name = "Лингайя Кумара"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1595.3.1 = {
+	heir = {
+		name = "Муту Кришнаппа"
+		monarch_name = "Муту Кришнаппа"
+		dynasty = "Наяка"
+		birth_date = 1590.1.1
+		death_Date = 1609.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1601.1.1 = {
+	monarch = {
+		name = "Муту Кришнаппа"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1601.1.1 = {
+	heir = {
+		name = "Мутту Вираппа"
+		monarch_name = "Мутту Вираппа I"
+		dynasty = "Наяка"
+		birth_date = 1590.1.1
+		death_Date = 1623.1.1
+		claim = 95
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1609.1.1 = {
+	monarch = {
+		name = "Мутту Вираппа I"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1623.1.1 = {
+	monarch = {
+		name = "Тирумала"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1659.1.1 = {
+	monarch = {
+		name = "Мутту Вираппа II"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1662.1.1 = {
+	monarch = {
+		name = "Чокканатха I"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1678.1.1 = {
+	monarch = {
+		name = "Мутту Линга"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1680.1.1 = {
+	monarch = {
+		name = "Чокканатха I"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+#Restored
+
+1682.1.1 = {
+	monarch = {
+		name = "Мутту Вираппа III"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1689.1.1 = {
+	monarch = {
+		name = "Чокканатха II"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+1731.1.1 = {
+	monarch = {
+		name = "Минакши"
+		dynasty = "Наяка"
+		ADM = 2
+		DIP = 2
+		MIL = 2
+	}
+}
+
+#Annexed by the Carnatic in April 1736

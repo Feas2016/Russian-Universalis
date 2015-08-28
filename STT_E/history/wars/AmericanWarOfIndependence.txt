@@ -1,0 +1,236 @@
+name = "Американская война за независимость"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = USA
+}
+
+# Declaration of independence
+1776.7.4 = {
+	add_attacker = USA
+	add_defender = GBR
+}
+
+1776.8.27 = {
+	battle = {
+		name = "Бруклин"
+		location = 965
+		attacker = {
+			commander = "Джордж Вашингтон"	# George Washington
+			infantry = 12000
+			losses = 15	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Уильям Хоу"	# William Howe
+			infantry = 22000
+			losses = 2	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1777.1.2 = {
+	battle = {
+		name = "Трентон"
+		location = 957
+		attacker = {
+			commander = "Джордж Вашингтон"	# George Washington
+			infantry = 2500
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander =	"Иоганн Ралль" # Johan Rall
+			infantry = 1500
+			losses = 2	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1777.1.3 = {
+	battle = {
+		name = "Принстон"
+		location = 957
+		attacker = {
+			commander = "Джордж Вашингтон"	# George Washington
+			infantry = 4500
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Чарльз Корнуоллис"	# Charles Cornwallis
+			infantry = 800
+			losses = 32	# percent
+			country = GBR
+		}
+		result = yes
+	}
+}
+
+1777.4.13 = {
+	battle = {
+		name = "Баунд-брук"
+		location = 957
+		attacker = {
+			commander = "Бенджамин Линкольн"	# Benjamin Lincoln
+			infantry = 500
+			losses = 22	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Чарльз Корнуоллис"	# Charles Cornwallis
+			infantry = 4000
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+
+
+# Treaty of alliance
+1778.2.6 = {
+	add_attacker = FRA
+} 
+
+1778.6.30 = {
+	battle = {
+		name = "Элигейте-бридж"
+		location = 926
+		attacker = {
+			commander = "Элайджа Кларк"	# Elijah Clark
+			infantry = 300 
+			losses = 4	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Жак-Марк Превост"	# Marc Prevost
+			infantry = 800
+			losses = 2	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1779.2.14 = {
+	battle = {
+		name = "Кетл-крик"
+		location = 953
+		attacker = {
+			commander = "Эндрю Пикенс"	# Andrew Pickens
+			infantry = 350
+			losses = 4	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Джеймс Бойд"	# James Boyd
+			infantry = 600
+			losses = 3	# percent
+			country = GBR
+		}
+		result = yes
+	}
+}
+
+1779.3.3 = {
+	battle = {
+		name = "Брайе-крик"
+		location = 929
+		attacker = {
+			commander = "Джон Эш"	# John Ashe
+			infantry = 450
+			losses = 98	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Арчибальд Кэмпбелл"	# Archibald Campbell
+			infantry = 2200
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1779.6.1 = {
+	add_attacker = SPA
+} 
+
+1780.1.1 = {
+	add_attacker = NED
+}
+
+1780.8.16 = {
+	battle = {
+		name = "Камден"
+		location = 929
+		attacker = {
+			commander = "Горацио Гейтс"	# Horatio Gates
+			infantry = 3000
+			losses = 50	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Чарльз Корнуоллис"	# Charless Cornwallis
+			infantry = 2300
+			losses = 4	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1780.10.7 = {
+	battle = {
+		name = "Королевская гора"
+		location = 932
+		attacker = {
+			commander = "Уильям Кэмпбелл"	# William Campell
+			infantry = 850
+			losses = 3	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Патрик Фергюсон"	# Patrick Ferguson
+			infantry = 1000
+			losses = 16	# percent
+			country = GBR
+		}
+		result = yes
+	}
+}
+
+1781.1.17 = {
+	battle = {
+		name = "Коупенс"
+		location = 932
+		attacker = {
+			commander = "Даниэль Морган"	# Daniel Morgan
+			infantry = 1000
+			losses = 5	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Банастр Тарлетон"	# Banastre Tarleton
+			infantry = 1000
+			losses = 45	# percent
+			country = GBR
+		}
+		result = yes
+	}
+}
+
+# Treaty of Paris
+1783.9.3 = {
+	rem_attacker = USA
+	rem_attacker = SPA
+	rem_attacker = FRA
+	rem_attacker = NED
+	rem_defender = GBR
+}

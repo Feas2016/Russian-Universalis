@@ -1,0 +1,109 @@
+name = "Восьмидесятилетняя война"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = NED
+}
+
+# Union of Utrecht
+1579.1.23 = {
+	add_attacker = SPA
+	add_defender = NED
+}
+
+1597.1.23 = {
+	battle = {
+		name = "Тюрнхаут"
+		location = 90
+		attacker = {
+			commander = "Варакс"	# Count of Varas
+			infantry = 4600
+			cavalry = 550
+			artillery = 5
+			losses = 38	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Мориц Нассау"	# Maurice de Nassau
+			infantry = 5900
+			cavalry = 820
+			artillery = 5
+			losses = 1	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+1600.7.2 = {
+	battle = {
+		name = "Ньюпорт"
+		location = 90
+		attacker = {
+			commander = "Альбрехт I"	# Albrecht of Austria
+			infantry = 6000
+			cavalry = 1200
+			artillery = 10
+			losses = 36	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Мориц Нассау"	# Maurits of Nassau
+			infantry = 9000
+			cavalry = 1500
+			artillery = 15
+			losses = 15	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+1607.4.25 = {
+	battle = {
+		name = "Гибралтар"
+		location = 1293
+		attacker = {
+			commander = "Хуан Альварес де Авила"	# Juan Бlvarez de Бvila
+			heavy_ship = 10
+			light_ship = 11
+			losses = 100	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Якоб ван Хемскерк"	# Jacob van Heemskerk
+			light_ship = 26
+			losses = 2	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+1639.10.31 = {
+	battle = {
+		name = "Даунс"
+		location = 1271
+		attacker = {
+			commander = "Антонио де Окуэндо"	# Antonio de Oquendo
+			heavy_ship = 60
+			light_ship = 10
+			losses = 86	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Мартин Тромп"	# Maarten Tromp
+			heavy_ship = 60
+			light_ship = 70
+			losses = 1	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+# Treaty of Mьnster
+1648.1.30 = {
+	rem_attacker = SPA
+	rem_defender = NED
+}

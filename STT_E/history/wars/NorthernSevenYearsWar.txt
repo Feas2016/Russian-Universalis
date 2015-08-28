@@ -1,0 +1,49 @@
+name = "Северная семилетняя война"
+war_goal = {
+	type = take_capital_personal_union
+	casus_belli = cb_restore_personal_union
+	tag = SWE
+}
+
+1563.8.13 = {
+	add_attacker = DAN
+	add_attacker = POL
+	add_attacker = HSA
+	add_defender = SWE
+}
+
+1565.10.20 = {
+	battle = {
+		name = "Аксторна"
+		location = 26
+		attacker = {
+			commander = "Дениэль Ранцу"	# Daniel Rantzau
+			infantry = 5000 # Estimate
+			cavalry = 2500 # Estimate
+			losses = 20	#percent
+			country = DAN
+		}
+		defender = {
+			commander = "Якоб Хенрикссон"	# Jacob Henriksson Hдstesko
+			infantry = 8000 # Estimate
+			cavalry = 3000 # Estimate
+			losses = 14	#percent
+			country = SWE
+		}
+		result = yes
+	}
+}
+
+# Union of Lublin
+1569.7.1 = {
+	rem_attacker = POL
+	add_attacker = PLC
+}
+
+# Peace of Stettin
+1570.12.13 = {
+	rem_attacker = DAN
+	rem_attacker = PLC
+	rem_attacker = HSA
+	rem_defender = SWE
+}

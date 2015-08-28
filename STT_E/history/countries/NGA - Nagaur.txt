@@ -1,8 +1,9 @@
-government = feudal_monarchy
+government = iqta
 primary_culture = rajput
 religion = sunni
 technology_group = indian
 capital = 2066	# Nagaur
+fixed_capital = 2066 # Cannot move capital away from this province & no power cost to move to it
 
 1399.1.1 = {
 	monarch = {
@@ -74,6 +75,10 @@ capital = 2066	# Nagaur
 		dip = 1
 		mil = 1
 	}
+}
+
+1465.1.1 = {
+	government_rank = 1
 }
 
 1500.1.1 = {

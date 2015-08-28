@@ -1,12 +1,4 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -2
-#centralization_decentralization = 0
-#innovative_narrowminded = 2
-mercantilism = 0.1
-#offensive_defensive = 2
-#land_naval = 0
-#quality_quantity = -1
-#serfdom_freesubjects = 1
 primary_culture = castillian
 add_accepted_culture = andalucian
 add_accepted_culture = leonese
@@ -131,7 +123,14 @@ national_focus = MIL
 
 1491.1.1 = { leader = {	name = "Фадрике Альварес де Толедо"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
-1492.1.1 = { leader = {	name = "Христофор Колумб"       	type = explorer	rank = 7	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 } }
+1492.1.1 = {
+	leader = {	name = "Христофор Колумб"       	type = explorer	rank = 7	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 }
+	set_global_flag = columbus_happened
+}
+
+1492.10.12 = {
+	set_global_flag = new_world_discovered
+}
 
 #1493.1.1 = { decision = colonial_expansion }
 

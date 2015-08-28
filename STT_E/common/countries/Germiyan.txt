@@ -1,0 +1,87 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 200 8 21 }
+
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	quality_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	ottoman_yaya
+	ottoman_musellem
+	ottoman_azab
+	ottoman_timariot
+	ottoman_janissary
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Мухаммед #0" = 20
+	"Иззеддин #0" = 20
+	"Такеддин #1" = 20
+	"Исхак #0" = 20
+	"Ахмед #0" = 20
+	"Касим #0" = 20
+	"Махмуд #0" = 20
+	"Ибрахим #0" = 10
+	"Али #0" = 10
+	"Мустафа #0" = 10
+	"Дервис #0" = 10 
+	
+	"Хавва #0" = -1
+}
+
+leader_names = {
+	Алемдар Амасиали Аяс
+	Бали Барбарос Байрам
+	Цеззар Кандарси Целеби Церрах Черкез Дживан Кухадар
+	Дамад Дервис Дефтердар
+	Гедик Гази Гумулькинели Чурчу
+	Хадим Хекимоглу Херсекли
+	Копрулу Кемаль Кукук Кока Караманли Кусе Кара Каниджели Кеманкес Каймак Кавалали
+	Исхак Иззед
+	Лала Лефкели
+	Малкок Муеззинзаде
+	Невшехирли Нисанки
+	Орук Улук Османкикли Охрили Офлу
+	Руми
+	Пири Паргали Пияле Пехливан
+	Салих Сокуллу Сари Салихдар Семиз Сердар
+	Топал Тайяр Тургут Тархунку
+	Вели
+	Емисаи
+}
+
+ship_names = {
+	"Нуре Суфи" Сададдин "Караман Бей" Эрменек
+	Мут Гюльнар Мер Силифке Киликиа Ларанде
+	Бунсуз "Зейналь-Хак" "Семседдин Мехмет" Гуксу
+}
+
+army_names = {
+	"Ордусу $PROVINCE$"
+}
+
+fleet_names = {
+	"Донанмасо $PROVINCE$"
+}

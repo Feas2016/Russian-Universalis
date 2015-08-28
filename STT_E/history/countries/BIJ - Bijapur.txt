@@ -1,9 +1,9 @@
-government = feudal_monarchy
-mercantilism = 0.1
+government = iqta
 technology_group = indian
 religion = shiite
 primary_culture = kannada
 capital = 569	# Bijapur
+fixed_capital = 569 # Cannot move capital away from this province & no power cost to move to it
 
 1490.1.1 = {
 	monarch = {
@@ -13,7 +13,7 @@ capital = 569	# Bijapur
 		ADM = 4
 		MIL = 5
 	}
-
+	government_rank = 1
 }
 
 1498.1.1 = {
@@ -52,6 +52,10 @@ capital = 569	# Bijapur
 		DIP = 0
 		MIL = 0
 	}
+}
+
+1518.1.1 = {
+	government_rank = 2
 }
 
 1534.8.27 = {
@@ -111,6 +115,7 @@ capital = 569	# Bijapur
 		ADM = 2
 		MIL = 1
 	}
+	government_rank = 1
 }
 
 1557.1.1 = {
@@ -125,6 +130,10 @@ capital = 569	# Bijapur
 		DIP = 3
 		MIL = 5
 	}
+}
+
+1564.1.1 = {
+	government_rank = 2
 }
 
 1580.4.11 = {
@@ -161,6 +170,10 @@ capital = 569	# Bijapur
 	}
 }
 
+1636.1.1 = {
+	government_rank = 1
+}
+
 1637.1.1 = {
 	heir = {
 		name = "Али"
@@ -183,6 +196,10 @@ capital = 569	# Bijapur
 		ADM = 2
 		MIL = 1
 	}
+}
+
+1657.1.1 = {
+	government_rank = 2
 }
 
 1660.1.1 = {

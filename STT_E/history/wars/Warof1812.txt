@@ -1,0 +1,237 @@
+name = "Англо-американская война"
+
+war_goal = {
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
+}
+
+1812.6.18 = {
+	add_attacker = USA
+	add_defender = GBR
+}
+
+1812.8.15 = {
+	battle = {
+		name = "Детройт"
+		location = 944
+		attacker = {
+			commander = "Уильям Халл"	# William Hull
+			infantry = 2500
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Исаак Брок"	# Isaac Brock
+			infantry = 1250
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1812.10.13 = {
+	battle = {
+		name = "Квинстон-Хайтс"
+		location = 986
+		attacker = {
+			commander = "Стефан ван Ренсселаер"	# Stephen Van Rensselaer
+			infantry = 1500
+			losses = 2	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Исаак Брок"	# Isaac Brock 
+			infantry = 1300
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1812.11.20 = {
+	battle = {
+		name = "Лаколь-Миллс"
+		location = 994
+		attacker = {
+			commander = "Генри Диборн"	# Henry Dearborn
+			infantry = 600
+			losses = 2	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Шарль де Салаберри"	# Charles de Salaberry
+			infantry = 500
+			losses = 0	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1813.2.22 = {
+	battle = {
+		name = "Огденсбург"
+		location = 964
+		attacker = {
+			commander = "Бенджамин Форсайт"	# Benjamin Forsyth
+			infantry = 250
+			losses = 36	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Джордж Макдоннелл"	# George MacDonnell
+			infantry = 500
+			losses = 11	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1813.4.27 = {
+	battle = {
+		name = "Йорк"
+		location = 986
+		attacker = {
+			commander = "Зебулон Пайк"	# Zebulon Pike 
+			infantry = 2000
+			losses = 16	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Роджер Шиффе"	# Roger Sheaffe
+			infantry = 700
+			losses = 21	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1813.6.6 = {
+	battle = {
+		name = "Стони-Крик"
+		location = 987
+		attacker = {
+			commander = "Джон Чандлер"	# John Chandler
+			infantry = 3400
+			losses = 2	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Джон Винсент"	# John Vincent
+			infantry = 700
+			losses = 3	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1813.10.25 = {
+	battle = {
+		name = "Шатогуе"
+		location = 994
+		attacker = {
+			commander = "Уэйд Хэмптон"	# Wade Hampton
+			infantry = 4000
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Шарль де Салаберри"	# Charles de Salaberry
+			infantry = 570
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1813.11.11 = {
+	battle = {
+		name = "Ферма Крайслера"
+		location = 989
+		attacker = {
+			commander = "Джеймс Уилкинсон"	# James Wilkinson
+			infantry = 2500
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Уильям Малкастер"	# William Mulcaster
+			infantry = 800
+			losses = 4	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1814.7.5 = {
+	battle = {
+		name = "Чиппава"
+		location = 987
+		attacker = {
+			commander = "Джейкоб Браун"	# Jacob Brown
+			infantry = 3500
+			losses = 2	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Файнеас Риалл"	# Phineas Riall
+			infantry = 2000
+			losses = 7	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1814.8.24 = {
+	battle = {
+		name = "Бладенсбург"
+		location = 953
+		attacker = {
+			commander = "Уильям Уиндер"	# William H. Winder
+			infantry = 4500
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Роберт Росс"	# Robert Ross
+			infantry = 7000
+			losses = 1	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+1814.9.6 = {
+	battle = {
+		name = "Платтсбург"
+		location = 964
+		attacker = {
+			commander = "Томас Макдонау"	# Thomas MacDonough
+			infantry = 3400
+			losses = 6	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Джордж Превост"	# George Prevost
+			infantry = 11000
+			losses = 3	# percent
+			country = GBR
+		}
+		result = no
+	}
+}
+
+# Treaty of Ghent
+1814.12.24 = {
+	rem_attacker = USA
+	rem_defender = GBR
+}

@@ -1,12 +1,5 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 4
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -3
-#quality_quantity = 0
-#serfdom_freesubjects = -4
+government_rank = 1
 technology_group = western
 primary_culture = bavarian
 religion = catholic
@@ -149,9 +142,6 @@ capital = 65	# München!
 	}
 }
 
-1524.1.1   = { set_country_flag = peasant_war }
-
-1526.1.1   = { clr_country_flag = peasant_war }
 
 1528.2.29 = {
 	heir = {
@@ -420,4 +410,8 @@ capital = 65	# München!
 	}
 }
 
-1806.7.12 = { elector = no } # The HRE is formally abolished
+1806.7.12 = { elector = no government_rank = 1 } # The HRE is formally abolished #government_rank = 2
+
+1813.10.20 = {
+	government_rank = 2
+}

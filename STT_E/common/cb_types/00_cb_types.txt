@@ -260,13 +260,7 @@ cb_imperial = {
 		is_neighbor_of = FROM
 		OR = {
 			dip_tech = 23
-			OR = {
-				government = m_empire
-				government = d_empire
-				government = r_empire
-				government = nw_empire
-				government = n_empire
-			}
+			government_rank = 3
 			invasion_nation = yes
 		}
 		is_subject = no

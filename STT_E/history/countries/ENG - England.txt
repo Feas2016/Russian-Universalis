@@ -8,87 +8,6 @@ religion = catholic
 capital = 236 # London
 national_focus = DIP
 
-
-1380.1.1 = { 
-	leader = {	
-		name = "Роберт Ноллс"	
-		type = general	
-		rank = 2	
-		fire = 1	
-		shock = 3	
-		manuever = 3
-		siege = 1	
-		death_date = 1407.1.1 
-	} 
-}
-
-1399.9.12 = {
-	monarch = {
-		name = "Генрих IV"
-		dynasty = "Ланкастер"
-		birth_date = 1366.4.15
-		adm = 1
-		dip = 1
-		mil = 0
-	}
-}
-
-1399.9.12 = {
-	heir = {
-		name = "Генрих"
-		monarch_name = "Генрих V"
-		dynasty = "Ланкастер"
-		birth_date = 1386.9.16
-		death_date = 1422.8.31
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 5
-		leader = {
-			name = "Генрих V"
-			type = general
-			rank = 1
-			fire = 4
-			shock = 4
-			manuever = 5
-			siege = 1}
-	}
-}
-
-1413.3.21 = {
-	monarch = {
-		name = "Генрих V"
-		dynasty = "Ланкастер"
-		birth_date = 1386.9.16
-		adm = 2
-		dip = 2
-		mil = 5
-		leader = { name = "Генрих V"		type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 1 }
-	}
-}
-
-1414.1.1 = { leader = {	name = "Граф Уорвик"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1439.4.30 } }
-
-1414.2.1 = { leader = {	name = "Граф Шрусбери"	type = general	rank = 1	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1453.7.17 } }
-
-1418.1.1 = { leader = {	name = "Герцог Кларенс"	type = general	rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1421.3.22 } }
-
-1421.12.6 = {
-	heir = {
-		name = "Генрих"
-		monarch_name = "Генрих VI"
-		dynasty = "Ланкастер"
-		birth_date = 1421.12.6
-		death_date = 1471.5.21
-		claim = 95
-		adm = 0
-		dip = 0
-		mil = 0
-	}
-}
-
-1422.8.31 = { leader = { name = "Герцог Бедфорд"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1435.9.14 } }
-
 1422.8.31 = {
 	monarch = {
 		name = "Генрих VI"
@@ -99,6 +18,12 @@ national_focus = DIP
 		mil = 0
 	}
 }
+
+#1434.1.1 = { leader = {	name = "Ричард Невилл"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
+
+1435.1.1 = { leader = {	name = "Ричард Йоркский"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
+
+1450.1.1 = { leader = {	name = "Джон Моубрей"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.4.6 } }
 
 1453.10.13 = { # Edward of Westminster
 	heir = {
@@ -113,13 +38,6 @@ national_focus = DIP
 		mil = 4
 	}
 }
-1434.1.1 = { leader = {	name = "Ричард Невилл"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
-
-1435.1.1 = { leader = {	name = "Ричард Йоркский"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
-
-1435.1.1 = { leader = {	name = "Генри Перси"        	type = general	rank = 4	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1455.5.22 } }
-
-1450.1.1 = { leader = {	name = "Джон Моубрей"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.4.6 } }
 
 1455.1.1 = { leader = {	name = "Эдмунд Бофорт"	type = general	rank = 10	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1471.5.6 } }
 
@@ -128,7 +46,7 @@ national_focus = DIP
 1461.3.4 = {
 	monarch = {
 		name = "Эдуард IV"
-		dynasty = "York"
+		dynasty = "Йорк"
 		birth_date = 1442.4.28
 		adm = 3
 		dip = 2
@@ -206,7 +124,7 @@ national_focus = DIP
 }
 
 1471.4.11 = { leader = {	name = "Герцог Йоркский"	type = general	rank = 0	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1483.6.25 } }
-1475.8.29 = { remove_accepted_culture = gascon remove_accepted_culture = normand } # Treaty of Picuigny
+1475.8.29 = { remove_accepted_culture = gascon remove_accepted_culture = normand set_global_flag = eng_had_end_of_hundred_years_war } # Treaty of Picuigny
 
 1478.1.18 = { leader = {	name = "Томас Говард"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1513.10.1 } }
 1483.4.9 = {
@@ -287,6 +205,9 @@ national_focus = DIP
 	} 
 }
 
+1497.1.1 = { leader = {	name = "Джон Кабот"             	type = explorer	rank = 9	fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1499.7.2 } }
+
+
 1502.4.2 = {
 	heir = {
 	    name = "Генрих"
@@ -301,8 +222,6 @@ national_focus = DIP
 	} 
 }
 
-1497.1.1 = { leader = {	name = "Джон Кабот"              	type = explorer	rank = 9	fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1499.7.2 } }
-
 1508.1.1 = { leader = {	name = "Себастьян Кабот"              	type = explorer	rank = 9	fire = 5	shock = 2	manuever = 4	siege = 0	death_date = 1557.2.8 } }
 
 1509.4.22 = {
@@ -316,7 +235,7 @@ national_focus = DIP
 	}
 }
 
-1509.4.22 = { government = absolute_monarchy }
+#1509.4.22 = { government = absolute_monarchy }
 
 1512.1.1 = { leader = {	name = "Чарльз Брэндон"               	type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1545.8.24 } }
 
@@ -530,6 +449,12 @@ national_focus = DIP
 	}
 }
 
+1610.1.1 = { leader = {	name = "Дадд Дадли"                	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1684.3.3 } }
+
+1612.1.1 = { leader = {	name = "Уильям Баффин"                	type = explorer	rank = 13	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1622.1.23 } }
+
+1612.1.1 = { leader = {	name = "Томас Баттон"                	type = explorer	rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1634.4.8 } }
+
 1612.11.6 = {
 	heir = {
 		name = "Карл"
@@ -543,12 +468,6 @@ national_focus = DIP
 		mil = 2
 	}
 }
-
-1610.1.1 = { leader = {	name = "Дадд Дадли"                	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1684.3.3 } }
-
-1612.1.1 = { leader = {	name = "Уильям Баффин"                	type = explorer	rank = 13	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1622.1.23 } }
-
-1612.1.1 = { leader = {	name = "Томас Баттон"                	type = explorer	rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1634.4.8 } }
 
 1623.1.1 = { leader = {	name = "Джордж Вильерс"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 2	siege = 0	death_date = 1624.8.23 } }
 
@@ -592,7 +511,7 @@ national_focus = DIP
 	
 	# Cromwell and the Republic
 	religion = reformed
-	government = republican_dictatorship
+	#government = republican_dictatorship
 }
 
 1649.1.29 = { leader = { name = "Роберт Блэйк"		type = admiral	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1657.8.17 } }	
@@ -602,6 +521,7 @@ national_focus = DIP
 1649.1.29 = { leader = { name = "Томас Фэрфакс"	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1671.11.12 } }
 
 1650.1.1 = { leader = {	name = "Джордж Эскью"		type = admiral	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1671.7.19 } }
+
 
 1651.12.30 = { mercantilism = 0.1 decision = establish_british_merchant_navy } # The Act of Navigation
 
@@ -625,7 +545,7 @@ national_focus = DIP
 		regent = yes
 	}
 	religion = protestant
-	government = noble_republic
+	#government = noble_republic
 } # The protectorate is Abolished
 
 1660.5.29 = {
@@ -639,7 +559,7 @@ national_focus = DIP
 	}
 	
 	# The Restoration of the Stuarts
-	government = absolute_monarchy
+	#government = absolute_monarchy
 }
 
 1660.5.29 = {
@@ -659,7 +579,7 @@ national_focus = DIP
 
 1660.5.29 = { leader = { name = "Принц Руперт"		type = admiral		rank = 2	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1682.11.19 } }
 
-1660.5.29 = { decision = tenures_abolition_act }
+#1660.5.29 = { decision = tenures_abolition_act }
 
 1668.1.1 = { leader = {	name = "Пьер-Эспри Рэдиссон"	type = conquistador	rank = 6	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1710.4.1 } }
 
@@ -721,7 +641,7 @@ national_focus = DIP
 		mil = 1
 	}
 }
-1688.12.11 = { religion = protestant government = noble_republic }
+1688.12.11 = { religion = protestant }
 
 1688.12.11 = {
 	monarch = {
@@ -744,7 +664,7 @@ national_focus = DIP
 	}
 
 	# The Glorious Revolution
-	government = constitutional_monarchy
+	#government = constitutional_monarchy
 }
 
 1689.2.15 = {
@@ -770,7 +690,7 @@ national_focus = DIP
 
 1700.1.1 = { leader = {	name = "Джордж Рук"		type = admiral	rank = 0	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1709.1.24 } }
 
-1702.3.8 = { decision = establish_the_wooden_wall }
+#1702.3.8 = { decision = establish_the_wooden_wall }
 
 1702.3.8 = {
 	monarch = {

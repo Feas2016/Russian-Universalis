@@ -6,11 +6,10 @@ country_decisions = {
 
 	establish_hexamilion = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			owns = 1773
+			owns = 146
+			NOT = { primary_culture = turkish }
+			NOT = { religion = sunni }
 			OR = { 
 				NOT = { 1773 = { has_province_modifier = byz_hexamilion } } 
 				NOT = { 146 = { has_province_modifier = byz_hexamilion } } 
@@ -77,11 +76,8 @@ country_decisions = {
 	
 	establish_europe = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
+			NOT = { is_year = 1500 }
 			NOT = { has_country_modifier = byz_europe }
 			dip = 3
 		}
@@ -107,7 +103,15 @@ country_decisions = {
 				limit = { controlled_by = ROOT  }
 				cavalry = ROOT
 				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
+				cavalry = ROOT
 				cavalry = ROOT					
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
 				infantry = ROOT
 				infantry = ROOT
 				infantry = ROOT
@@ -116,7 +120,7 @@ country_decisions = {
 			}
 			}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -152,7 +156,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -252,7 +256,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	establish_byzsacred = {
@@ -349,7 +353,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	establish_byznavy = {
@@ -380,7 +384,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	establish_byzcouncil = {
@@ -425,7 +429,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -464,7 +468,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -503,7 +507,7 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -578,7 +582,7 @@ country_decisions = {
 			country_event  = { id = byz_adopt_heir.564711 }
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	
@@ -715,7 +719,7 @@ country_decisions = {
 			}		
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	

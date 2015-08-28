@@ -1,96 +1,131 @@
 country_decisions = {
 
-restore_the_roman_empire = {
-		major = yes
-        potential = {
-			OR = {
-				tag = BYZ
-				tag = PQR 
-			}
-			adm_tech = 12
-		}
-		allow = {
-			ADM = 3
-			DIP = 3
-			MIL = 3
-			adm_tech = 15
-			is_subject = no
-			is_at_war = no
-			owns = 118	# Roma
-			owns = 112	# Venezia
-			owns = 113	# Ferrara
-			owns = 101	# Liguria
-			owns = 358	# Alexandria
-			owns = 146	# Athens
-			owns = 341	# Tunis
-			owns = 121	# Napoli
-
-		}
-		effect = {
-			add_ruler_modifier = {
-			name = "byz_ceasar"
-			duration = -1
-			}
-			remove_country_modifier = byz_ancestors
-			italian_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROM
-			}
-			change_government = rome_government
-			set_government_rank = 3
-			add_prestige = 50
-                        change_tag = ROM
-			every_owned_province = { 
-                                add_core = ROM
-				}
-			swap_free_idea_group = yes
-		}
-		ai_will_do = {
-			factor = 1
+form_the_latin_empire = {
+	major = yes
+	potential = {
+		owns = 151	# Constantinople
+		religion = catholic
+		NOT = { exists = LAE }
+		is_subject = no		
+		NOT = { exists = BYZ }
+		NOT = { tag = PQR }
+		NOT = { tag = ROM }
+		NOT = { tag = HLR }
+	}
+	allow = {		
+		owns_core_province = 151	# Constantinople
+		religion = catholic
+		stability = 1
+		is_at_war = no
+		num_of_owned_provinces_with = {
+			value = 6
+			region = greece_region
 		}
 	}
-	byz_spqr = {
-	
-	major = yes
-		potential = {
-			OR = { 
-				AND = { 
-					tag = PQR
-					NOT = { government = spqr_republic }
-					}
-				tag = ROM
-				tag = BYZ
-				} 
-			NOT = { stability = 0 }
-		}
-		allow =  {
-			adm_tech = 3
-			NOT = { stability = 0 }
-			is_at_war = no
-		}
-		effect = {
+	effect = {
+		add_prestige = 25
+		change_tag = LAE
+		swap_free_idea_group = yes
+		change_primary_culture = greek
+		change_government = feudal_monarchy
+		change_technology_group = western
+		set_government_rank = 2
 		every_owned_province = {
-                add_core = PQR
-				}
-			country_event  = { id = byz_main.564717}
-			add_stability = 2
-			add_adm_power = 50
-			italian_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = PQR
+			add_core = LAE
+		}
+	}
+	ai_will_do = { factor = 1 }
+	ai_importance = 40
+}
+
+byz_spqr = {
+	major = yes
+	potential = {
+		OR = {
+			culture_group = latin
+			culture_group = byzantine
+			}
+		NOT = {	adm_tech = 10 }
+		is_subject = no
+		num_of_cities = 3
+		NOT = { exists = PQR }
+		NOT = { exists = ROM }
+	}
+	allow = {
+		OR = {
+			culture_group = latin
+			culture_group = byzantine
+			}
+		NOT = {	adm_tech = 10 }
+		is_at_war = no
+		num_of_owned_provinces_with = {
+			value = 15
+			region = italian_region
+			}
+		}
+	effect = {
+		italian_region = {
+			limit = { NOT = { owned_by = ROOT }	}
+				add_core = PQR
 			}
 			change_government = spqr_republic
 			set_government_rank = 2
-			add_prestige = -50	
-            change_tag = PQR			
+			change_tag = PQR
 			swap_free_idea_group = yes
+			add_stability = 2
+			add_adm_power = 100
+			add_republican_tradition = 1
 		}
-		ai_will_do = {
-			factor = 0
-		}
+	ai_will_do = { factor = 1 }
+	ai_importance = 40
+}
+
+restore_the_roman_empire = {
+	major = yes
+    potential = {
+		OR = {
+			AND = {
+				NOT = {	adm_tech = 10 }
+				OR = {
+					culture_group = latin
+					culture_group = byzantine
+				}
+			}
+			tag = BYZ
+			tag = PQR
+			}
+		NOT = { exists = ROM }
+		is_subject = no
 	}
+	allow = {
+		OR = {
+			NOT = {	adm_tech = 10 }
+			tag = BYZ
+			tag = PQR
+			}
+		is_at_war = no
+		owns_core_province = 118	# Roma
+		owns_core_province = 151	# Constantinople
+		owns_core_province = 112	# Venezia
+		owns_core_province = 113	# Ferrara
+		owns_core_province = 101	# Liguria
+		owns_core_province = 146	# Athens
+		owns_core_province = 341	# Tunis
+		owns_core_province = 121	# Napoli
+	}
+	effect = {
+		add_ruler_modifier = {
+			name = "byz_ceasar"
+			duration = -1
+			}
+		change_government = rome_government
+		set_government_rank = 3
+		add_prestige = 50
+		change_tag = ROM
+		swap_free_idea_group = yes
+		}
+	ai_will_do = { factor = 1 }
+	ai_importance = 40
+}
+
 }

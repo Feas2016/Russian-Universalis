@@ -1,18 +1,11 @@
 government = iqta
-#aristocracy_plutocracy = -4
-#centralization_decentralization = 5
-#innovative_narrowminded = 3
-mercantilism = 0.1
-#offensive_defensive = -1
-#land_naval = -5
-#quality_quantity = 3
-#serfdom_freesubjects = -2
 technology_group = muslim
 religion = sunni
 primary_culture = turkmeni
 historical_rival = SHY
+historical_rival = BUK
 capital = 1973	# Urgench
-
+fixed_capital = 1973 # Cannot move capital away from this province & no power cost to move to it
 
 # Khiva (Khwarizm)
 1511.1.1 = {
@@ -246,6 +239,7 @@ capital = 1973	# Urgench
 		adm = 0
 		mil = 0
 	}
+	government_rank = 1
 }
 
 1745.1.1 = {
@@ -266,6 +260,10 @@ capital = 1973	# Urgench
 		adm = 1
 		mil = 2
 	}
+}
+
+1747.6.19 = {
+	government_rank = 2
 }
 
 1757.1.1 = {

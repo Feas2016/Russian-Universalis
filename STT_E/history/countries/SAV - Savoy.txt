@@ -1,16 +1,9 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 4
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 1
-#land_naval = 1
-#quality_quantity = -1
-#serfdom_freesubjects = -2
-primary_culture = lombard
+government_rank = 1
+primary_culture = piedmontese
 religion = catholic
 technology_group = western
-capital = 103 # Torino
+capital = 205 # Chambery
 
 
 1391.1.1 = {
@@ -242,8 +235,9 @@ capital = 103 # Torino
 }
 
 1529.1.1 = {
-	capital = 103 # Piedmont
+	capital = 205 # Chambery
 }
+
 1538.6.17 = {
 	capital = 102 # Nice
 }
@@ -282,7 +276,11 @@ capital = 103 # Torino
 		leader = {	name = "Карл Эммануил"      	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0}
 	}
 }
-		
+
+1563.2.7 = {
+	capital = 103 #Torino
+}
+	
 1580.8.31 = {
 	monarch = {
 		name = "Карл Эммануил I"

@@ -1,0 +1,15 @@
+name = "Бенгальская кампания"
+war_goal = {
+	type = superiority_overseas
+	casus_belli = cb_overseas
+}
+
+1756.1.1 = {
+	add_attacker = BNG
+	add_defender = GBR
+}
+
+1757.6.23 = {
+	rem_attacker = BNG
+	rem_defender = GBR
+}

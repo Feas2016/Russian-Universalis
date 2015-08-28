@@ -4,7 +4,6 @@ religion = shiite #Ismailis
 technology_group = indian
 capital = 2054	# Ahmadabad
 
-
 #Sultans of Gujarat
 1391.1.1 = {
 	monarch = {
@@ -272,6 +271,14 @@ capital = 2054	# Ahmadabad
 	}
 }
 
+1544.1.1 = {
+	government_rank = 1
+}
+
+1545.1.1 = {
+	government_rank = 2
+}
+
 1554.2.14 = {
 	monarch = {
 		name = "Ахмед Шах III"
@@ -331,3 +338,18 @@ capital = 2054	# Ahmadabad
 }
 
 #Mughal conquest in 1593
+
+1725.1.1 = { #Contested rule by various nobles with little influence
+	government_rank = 1
+	monarch = {
+		name = "Могольские наместники"
+		regent = yes
+		ADM = 0
+		DIP = 0
+		MIL = 0
+	}
+}
+
+1757.1.1 = {
+	government_rank = 2
+}

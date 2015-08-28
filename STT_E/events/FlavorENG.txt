@@ -640,7 +640,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader = "Jane Grey"
+				leader = "Джейн Грей"
 				female = yes
 			}
 		}
@@ -1147,7 +1147,7 @@ country_event = {
 			spawn_rebels = {
 				type = noble_rebels
 				size = 2
-				leader = "Hugh O'Neill"
+				leader = "Хьюго О'Нилл"
 			}
 		}
 	}
@@ -1505,7 +1505,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { dynasty = Стюарт }
+		NOT = { dynasty = "Стюарт" }
 	}
 
 	mean_time_to_happen = {
@@ -1569,7 +1569,7 @@ country_event = {
 	}
 }
 
-# Sir Роберт Уолпол
+# Sir Robert Walpole
 country_event = {
 	id = flavor_eng.9140
 	title = "flavor_eng.EVTNAME9140"
@@ -1702,7 +1702,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { dynasty = Стюарт }
+		NOT = { dynasty = "Стюарт" }
 	}
 
 	mean_time_to_happen = {
@@ -2395,8 +2395,8 @@ country_event = {
 		add_stability = 1
 		define_heir = {
 			claim = 100
-			name = "Henry"
-			dynasty = "Tudor"
+			name = "Генрих"
+			dynasty = "Тюдор"
 			adm = 3
 			dip = 4
 			mil = 2

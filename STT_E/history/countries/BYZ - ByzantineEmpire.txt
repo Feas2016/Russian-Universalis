@@ -1,12 +1,14 @@
-government = byz_government
-mercantilism = 0.1
+government = byz_government ### STT
+government_rank = 3
 primary_culture = greek
 culture_group_union = byzantine
 religion = orthodox
 technology_group = eastern
 historical_rival = TUR
+historical_friend = PQR
+historical_friend = ROM
 capital = 151 # Constantinople
-government_rank = 2
+fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
 1391.2.16 = {
 	monarch = {

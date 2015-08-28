@@ -1,10 +1,11 @@
 government = merchant_republic
+mercantilism = 0.25
 primary_culture = russian
 religion = orthodox
 technology_group = eastern
 historical_rival = MOS
 capital = 310	# Novgorod
-
+fixed_capital = 310 # Cannot move capital away from this province & no power cost to move to it
 
 1429.1.1 = {
 	monarch = {
@@ -13,6 +14,10 @@ capital = 310	# Novgorod
 		dip = 4
 		mil = 2
 	}
+}
+
+1456.2.1 = {
+	government_rank = 1
 }
 
 1459.1.1 = {

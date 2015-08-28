@@ -1,0 +1,112 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 85  126  85 }
+
+historical_score = 50
+
+preferred_religion = protestant
+
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	administrative_ideas
+	spy_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Генрих #1" = 40
+	"Иоганн #1" = 40
+	"Герхард #2" = 20
+	"Фридрих #1" = 20
+	"Отто #1" = 20
+	"Балдвин #0" = 20
+	"Кристоф #0" = 20
+	"Георг #0" = 20
+	"Иоганн Адольф #0" = 20
+	"Иоганн Фридрих #0" = 20
+	"Николаус #0" = 20
+	"Буркхард #2" = 15
+	"Альбрехт #1" = 15
+	"Готфрид #1" = 15
+	"Бернхард #1" = 10
+	"Флорент #1" = 10
+	"Адам #0" = 0
+	"Александр #0" = 0
+	"Андреас #0" = 0
+	"Балдур #0" = 0
+	"Бруно #0" = 0
+	"Клеменс #0" = 0
+	"Дэнис #0" = 0
+	"Экхард #0" = 0
+	"Эрнст #0" = 0
+	"Флориан #0" = 0
+	"Грегор #0" = 0
+	"Хельмфрид #0" = 0
+	"Гельмут #0" = 0
+	"Исаак #0" = 0
+	"Йоахим #0" = 0
+	"Юрген #0" = 0
+	"Клаус #0" = 0
+	"Мартин #0" = 0
+	"Максимилман #0" = 0
+	"Михаэль #0" = 0
+	"Райнер #0" = 0
+	"Рудольф #0" = 0
+	"Зигерт #0" = 0
+	"Зигмунд #0" = 0
+	
+	"Верена #0" = -1
+	"Алексиа #0" = -1
+	"Беатрикс #0" = -1
+}
+
+leader_names = { 
+	Адлер Алерс Баке Бекроге Бергиус Бернингхаузен 
+	Боелкен Бельхайм Брилл Дилиус Древерс Энгельс Фицке 
+	Фукард Гефкен Гильдемайстер Гроверманн Хаппах
+	Хаймбрух Хинке Киндт Кюхне Крефтинг Лапорте Лёнинг 
+	Мейер Ойлрич Ордеманн Райнерс Роде Сандерс Шулькен
+	Штайнвахс Стукен Труернитт "фон Боберт" "фон Каппельн" 
+	"фон Холтен" "фон Хорн" "фон Майнерцхаген" 
+}
+
+ship_names = {
+	Роланд
+	Тагенбаре
+	Гельбен
+	"Иоганн Дав"
+	Гонорий
+	Виллегард
+	Йевер
+	"Бремер Штольц"
+	"Ваппен фон Бремен"
+	"Бремер Шлуссель"
+	Вестервелле
+}
+
+army_names = {
+	"Гвардия архиепископа" "Армия пров. $PROVINCE$" 
+}

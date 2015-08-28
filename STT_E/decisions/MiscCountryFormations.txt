@@ -208,8 +208,7 @@ country_decisions = {
 			### STT
 			NOT = { tag = PQR }
 			NOT = { tag = ROM }
-			NOT = { exists = PQR }
-			NOT = { exists = ROM }
+			NOT = { tag = LAE }
 			primary_culture = greek
 			is_colonial_nation = no
 			OR = {

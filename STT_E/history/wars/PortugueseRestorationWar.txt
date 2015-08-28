@@ -1,0 +1,124 @@
+name = "Испанско-португальская война"
+war_goal = {
+	type = take_capital_personal_union
+	casus_belli = cb_restore_personal_union
+	tag = POR
+}
+
+1640.12.1 = {
+	add_attacker = SPA
+	add_defender = POR
+}
+
+1644.5.26 = {
+	battle = {
+		name = "Монтихо"
+		location = 218
+		attacker = {
+			commander = "Барон Моллинген"	# Baron of Mollingen
+			infantry = 6000
+			cavalry = 2500
+			losses = 35	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Матиаш де Альбукерке"	# Matias de Albuquerque
+			infantry = 6000
+			cavalry = 1000
+			artillery = 6
+			losses = 25	# percent
+			country = POR
+		}
+		result = no
+	}
+}
+
+1659.1.14 = {
+	battle = {
+		name = "Элваш"
+		location = 229
+		attacker = {
+			commander = "Луис де Аро"	# Luis de Haro
+			infantry = 14000
+			cavalry = 5000
+			losses = 2	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Антониу Луиш де Менезеш"	# Antуnio Luнs de Meneses
+			infantry = 8000
+			cavalry = 3000
+			artillery = 7
+			losses = 65	# percent
+			country = POR
+		}
+		result = no
+	}
+}
+
+1663.6.8 = {
+	battle = {
+		name = "Амехиаль"
+		location = 229
+		attacker = {
+			commander = "Дон Хуан Хосе Австрийский"	# Don Juan Josй de Austria
+			infantry = 22000
+			losses = 24	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Санчо Мануэль де Вильена"	# Sancho Manoel de Vilhena
+			infantry = 2000
+			losses = 5	# percent
+			country = POR
+		}
+		result = no
+	}
+}
+
+1664.7.7 = {
+	battle = {
+		name = "Кастел-Родриго"
+		location = 232
+		attacker = {
+			commander = "Герцог Осуна"	# Duke of Osuna
+			infantry = 5000
+			losses = 20	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Педро де Магальянеш"	# Pedro Jacques de Magalhгes
+			infantry = 3000
+			losses = 15	# percent
+			country = POR
+		}
+		result = no
+	}
+}
+
+1665.6.17 = {
+	battle = {
+		name = "Монте-Кларос"
+		location = 229
+		attacker = {
+			commander = "Луис де Бенавидес Каррильо"	# Luis de Benavides Carrillo
+			infantry = 15000
+			cavalry = 7000
+			losses = 45	# percent
+			country = SPA
+		}
+		defender = {
+			commander = "Антониу Луиш де Менезеш"	# Antуnio Luнs de Meneses
+			infantry = 20500
+			losses = 10	# percent
+			country = POR
+		}
+		result = no
+	}
+}
+
+# Treaty of Lisbon
+1668.2.13 = {
+	rem_attacker = SPA
+	rem_defender = POR
+}

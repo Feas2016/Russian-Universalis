@@ -1,5 +1,4 @@
 government = feudal_monarchy
-mercantilism = 0.1
 technology_group = muslim
 religion = sunni
 primary_culture = afghani
@@ -37,6 +36,7 @@ capital = 524 #Agra
 1526.4.21 = {
 	capital = 522
 	change_unit_type = indian
+	government_rank = 3
 }
 
 1530.12.27 = {
@@ -455,6 +455,10 @@ capital = 524 #Agra
 	}
 }
 
+1785.1.1 = {
+	government_rank = 1
+}
+
 1806.11.18 = {
 	monarch = {
 		name = "¿Í·‡ II"
@@ -478,3 +482,8 @@ capital = 524 #Agra
 		mil = 0
 	}
 }
+
+#1803.1.1 = {
+#	government_rank = 3
+#}
+

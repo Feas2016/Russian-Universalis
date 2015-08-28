@@ -62,8 +62,13 @@ trade_company_west_india = {
 	provinces = {
 		503 504 505 506 513 514 515 518 521 528 576 577 2051 2052 2053 2054 2056 2058 2067 2068 2072 2079 2086 2087 2088 2093 2200 2231
 	}
-
-	
+	# Specific
+	names = {
+	 	trigger = {
+	 			tag = RUS
+	 	}
+	 	name = "TRADE_COMPANY_WEST_INDIA_Russian_Trade_Company"
+	 }
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_WEST_INDIA_Root_Culture_GetName"
@@ -97,16 +102,16 @@ trade_company_east_india = {
 	}
 	
 	# Specific (Removed for redundancy)
-	#names = {
-	#	trigger = {
-	#		OR = {
-	#			tag = GBR
-	#			tag = ENG
-	#		}
-	#		primary_culture = english
-	#	}
-	#	name = "TRADE_COMPANY_INDIA_British_East_India_Company"
-	#}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			primary_culture = english
+		}
+		name = "TRADE_COMPANY_INDIA_British_East_India_Company"
+	}
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_EAST_INDIA_Root_Culture_GetName"
@@ -158,12 +163,12 @@ trade_company_indonesia = {
 	}
 
 	# Specific (Removed for potential confusion)
-	#names = {
-	#	trigger = {
-	#		primary_culture = dutch
-	#	}
-	#	name = "TRADE_COMPANY_INDONESIA_Dutch_East_Indies_Company"
-	#}
+	names = {
+		trigger = {
+			primary_culture = dutch
+		}
+		name = "TRADE_COMPANY_INDONESIA_Dutch_East_Indies_Company"
+	}
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_INDONESIA_Root_Culture_GetName"
@@ -249,6 +254,12 @@ trade_company_east_china = {
 	}
 	
 	# Specific
+	names = {
+	 	trigger = {
+	 			tag = RUS
+	 	}
+	 	name = "TRADE_COMPANY_EAST_CHINA_Russian_Trade_Company"
+	 }
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_EAST_CHINA_Root_Culture_GetName"
@@ -266,6 +277,12 @@ trade_company_north_china = {
 	}
 	
 	# Specific
+	names = {
+	 	trigger = {
+	 			tag = RUS
+	 	}
+	 	name = "TRADE_COMPANY_NORTH_CHINA_Russian_Trade_Company"
+	 }
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_NORTH_CHINA_Root_Culture_GetName"

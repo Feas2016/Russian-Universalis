@@ -1,10 +1,10 @@
 government = feudal_monarchy
-mercantilism = 0.1
+government_rank = 1
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
 capital = 519	# Jaipur
-
+fixed_capital = 519 # Cannot move capital away from this province & no power cost to move to it
 
 1388.1.1 = {
 	monarch = {
@@ -402,6 +402,10 @@ capital = 519	# Jaipur
 	}
 }
 
+1707.3.15 = {
+	government_rank = 2
+}
+
 1721.1.1 = {
 	heir = {
 		name = "Исри Сингх"
@@ -414,6 +418,10 @@ capital = 519	# Jaipur
 		MIL = 2
 		ADM = 0
 	}
+}
+
+1740.1.1 = {
+	government_rank = 1
 }
 
 1743.9.21 = {
@@ -486,6 +494,10 @@ capital = 519	# Jaipur
 		MIL = 2
 		ADM = 2
 	}
+}
+
+1770.1.1 = {
+	government_rank = 2
 }
 
 1778.1.1 = {

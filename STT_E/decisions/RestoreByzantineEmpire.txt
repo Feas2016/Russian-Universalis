@@ -3,6 +3,11 @@ country_decisions = {
 	restore_byzantine_empire = {
 		major = yes
 		potential = {
+			### optimization
+			OR = {
+				primary_culture = greek
+				primary_culture = pontic_greek
+			}
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -14,10 +19,7 @@ country_decisions = {
 			### STT
 			NOT = { tag = ROM }
 			NOT = { exists = PQR }
-			OR = {
-				primary_culture = greek
-				primary_culture = pontic_greek
-			}
+			NOT = { exists = LAE }
 			religion = orthodox
 		}
 		allow = {

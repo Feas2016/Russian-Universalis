@@ -1,16 +1,10 @@
 government = despotic_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 0
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = -2
-#land_naval = 3
-#quality_quantity = -1
-#serfdom_freesubjects = -1
 technology_group = chinese
 religion = sunni
 primary_culture = malayan
 capital = 594	# Pattani
+fixed_capital = 594 # Cannot move capital away from this province & no power cost to move to it
+
 
 1399.1.1 = {
 	add_piety = -0.1
@@ -34,6 +28,10 @@ capital = 594	# Pattani
 		dip = 2
 		mil = 2
 	}
+}
+
+1500.1.1 = {
+	government_rank = 1
 }
 
 1511.8.24 = {
@@ -203,7 +201,11 @@ capital = 594	# Pattani
 		female = yes
 	}
 }
-		
+
+1632.1.1 = {
+	government_rank = 2
+}
+
 
 1635.1.1 = {
 	monarch = {
@@ -228,6 +230,10 @@ capital = 594	# Pattani
 		dip = 2
 		mil = 2
 	}
+}
+
+1636.1.1 = {
+	government_rank = 1
 }
 
 1649.1.1 = {

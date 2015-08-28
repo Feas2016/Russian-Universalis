@@ -1,0 +1,142 @@
+government = iqta 
+technology_group = muslim
+religion = sunni
+primary_culture = berber
+capital = 336 # Tlemcen
+fixed_capital = 336 # Cannot move capital away from this province & no power cost to move to it
+
+1395.1.1 = {
+	monarch = {
+		name = "Мухаммад III"
+		dynasty = "Заййанид"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_piety = 0.35
+}
+
+1400.1.1 = {
+	monarch = {
+		name = "Абдалла I"
+		dynasty = "Заййанид"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1402.1.1 = {
+	monarch = {
+		name = "Мухаммад IV"
+		dynasty = "Заййанид"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1411.1.1 = {
+	monarch = {
+		name = "Абд аль-Вахиб"
+		dynasty = "Заййанид"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "Мухаммад V"
+		dynasty = "Заййанид"
+		adm = 0
+		dip = 3
+		mil = 0
+	}
+}
+
+1430.7.27 = {
+	monarch = {
+		name = "Ахмад II"
+		dynasty = "Заййанид"
+		adm = 4
+		dip = 1
+		mil = 2
+		leader = {	name = "Ахмад II"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0 }
+	}
+}
+
+1462.2.2 = {
+	monarch = {
+		name = "Мухаммад V"
+		dynasty = "Заййанид"
+		adm = 0
+		dip = 3
+		mil = 0
+	}
+}
+
+1468.1.1 = {
+	monarch = {
+		name = "Мухаммад VI"
+		dynasty = "Заййанид"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+	government_rank = 1
+}
+
+1505.1.1 = {
+	monarch = {
+		name = "Мухаммад VII"
+		dynasty = "Заййанид"
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1516.1.1 = {
+	monarch = {
+		name = "Миса III"
+		dynasty = "Заййанид"
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1527.1.1 = {
+	monarch = {
+		name = "'Абд Аллах III"
+		dynasty = "Заййанид"
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+1540.1.1 = {
+	monarch = {
+		name = "Ахмад III"
+		dynasty = "Заййанид"
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+1549.1.1 = {
+	government_rank = 1
+}
+
+1550.1.1 = {
+	monarch = {
+		name = "аль-Хассан"
+		dynasty = "Заййанид"
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}

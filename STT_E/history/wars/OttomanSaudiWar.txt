@@ -1,0 +1,158 @@
+name = "Турецко-саудовская война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 405 # Al Jawf
+}
+
+1811.1.1 = {
+	add_attacker = TUR
+	add_defender = NAJ
+}
+
+1811.1.1 = {
+	battle = {
+		name = "Янбу"
+		location = 384
+		attacker = {
+			commander = "Тусун-паша"	# Tusun Pasha
+			infantry = 10000
+			losses = 0	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Сауд аль-Кабир"	# Saud AL-Kabeer
+			infantry = 70
+			losses = 1	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+1812.1.1 = {
+	battle = {
+		name = "Аль-Сафра"
+		location = 384
+		attacker = {
+			commander = "Тусун-паша"	# Tusun Pasha
+			infantry = 8000
+			losses = 25	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Сауд аль-Кабир"	# Saud AL-Kabeer
+			infantry = 10000
+			losses = 8	# percent
+			country = NAJ
+		}
+		result = no
+	}
+}
+
+1812.6.1 = {
+	battle = {
+		name = "Медина"
+		location = 384
+		attacker = {
+			commander = "Тусун-паша"	# Tusun Pasha
+			infantry = 20000
+			losses = 2	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Сауд аль-Кабир"	# Saud AL-Kabeer
+			infantry = 10000
+			losses = 1	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+1813.1.1 = {
+	battle = {
+		name = "Джедда"
+		location = 385
+		attacker = {
+			commander = "Тусун-паша"	# Tusun Pasha
+			infantry = 25000
+			losses = 1	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Сауд аль-Кабир"	# Saud AL-Kabeer
+			infantry = 2000
+			losses = 40	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+1813.1.20 = {
+	battle = {
+		name = "Мекка"
+		location = 385
+		attacker = {
+			commander = "Тусун-паша"	# Tusun Pasha
+			infantry = 22000
+			losses = 0	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Сауд аль-Кабир"	# Faisal bin Saud
+			infantry = 1000
+			losses = 1	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+1818.1.1 = {
+	battle = {
+		name = "Неджд"
+		location = 392
+		attacker = {
+			commander = "Ибрагим-паша"	# Ibrahim Pasha
+			infantry = 30000
+			losses = 3	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Абдулла I" 	# Abdullah I
+			infantry = 6000
+			losses = 83	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+1818.9.1 = {
+	battle = {
+		name = "Дирия"
+		location = 394
+		attacker = {
+			commander = "Ибрагим-паша"	# Ibrahim Pasha
+			infantry = 30000
+			artillery = 30
+			losses = 2	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Абдулла I"	# Abdullah I
+			infantry = 2000
+			losses = 85	# percent
+			country = NAJ
+		}
+		result = yes
+	}
+}
+
+# Abdullah is forced to surrender
+1818.9.9 = {
+	rem_attacker = TUR
+	rem_defender = NAJ
+}

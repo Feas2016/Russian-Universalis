@@ -1,17 +1,9 @@
-government = reich_government
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 1
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -1
-#quality_quantity = -1
-#serfdom_freesubjects = -3
+government = feudal_monarchy
+government_rank = 1
 primary_culture = prussian
 religion = catholic
 technology_group = western
 capital = 41	# Kцnigsberg
-government_rank = 1
 
 1510.12.14 = {
 	monarch = {
@@ -159,7 +151,8 @@ government_rank = 1
 		leader = {	name = "Фридрих I"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
 }
-### STT delete goverment
+
+1688.5.10 = { government = absolute_monarchy }
 
 1688.8.14 = {
 	heir = {
@@ -177,7 +170,7 @@ government_rank = 1
 
 1701.1.18 = { capital = 50 }	# Berlin
 
-1701.1.18 = { elector = yes }
+1701.1.18 = { elector = yes government_rank = 2 }
 
 1702.1.1 = { leader = {	name = "Леопольд фон Дессау"            	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 
@@ -224,7 +217,8 @@ government_rank = 1
 		leader = {	name = "Фридрих II Великий"          	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 1 }
 	}
 }
-### STT delete goverment
+
+1740.5.30 = { government = enlightened_despotism }
 
 1741.1.1 = { leader = {	name = "Ганс фон Цитен"	type = general	rank = 7	fire = 2	shock = 4	manuever = 4	siege = 0	death_date = 1760.11.3 } }
 

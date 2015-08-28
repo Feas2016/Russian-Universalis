@@ -9,6 +9,7 @@ capital = 219 # Toledo
 
 national_focus = MIL
 
+
 1491.1.1 = { leader = {	name = "Альварес де Толедо"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1520.1.1 } }
 
 1495.1.1 = { leader = {	name = "Просперо Колонна"      	type = general		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1523.12.1 } }
@@ -173,6 +174,14 @@ national_focus = MIL
 
 1568.1.1 = { leader = {	name = "Педро Сармьенто де Гамбоа" type = explorer	rank = 11	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1584.1.1 } }
 
+1568.12.25 = {
+	set_country_flag = alpujarras_revolt_happened
+}
+
+1570.10.28 = {
+	set_country_flag = end_of_granada
+}
+
 1571.1.1 = { leader = {	name = "Хуан Мартинес Рекальде"	type = admiral	rank = 3	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1588.1.1 } }
 
 1571.1.1 = { leader = {	name = "Дон Хуан Австрийский"    	type = admiral		rank = 1	fire = 4	shock = 5	manuever = 4	siege = 0	death_date = 1576.1.1 } }
@@ -241,9 +250,10 @@ national_focus = MIL
 
 1609.7.15 = { leader = { name = "Антонио де Окуэндо"	type = admiral		rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1640.6.7 } }
 
-1613.1.1 = { leader = {	name = "Фадрике де Толедо"    	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1634.1.1 } }
+#1613.1.1 = { leader = {	name = "Фадрике де Толедо"    	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1634.1.1 } } # Removed /SWЦ
 
-1618.1.1 = { leader = {	name = "Герцог де Ферия"        	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1634.1.14 } }
+
+#1618.1.1 = { leader = {	name = "Герцог де Ферия"        	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1634.1.14 } } # Removed /SWЦ
 1619.3.20 = {
 	join_league = catholic
 }
@@ -264,11 +274,12 @@ national_focus = MIL
 
 1640.1.1 = { remove_accepted_culture = sicilian remove_accepted_culture = lombard }
 
+1647.7.7 = { leader = {	name = "Хуан Хосе Австрийский"		type = general	rank = 0	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1663.6.4 } }
+
+
 1648.1.30 = {
 	leave_league = catholic
 }
-
-1647.7.7 = { leader = {	name = "Хуан Хосе Австрийский"		type = general	rank = 0	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1663.6.4 } }
 
 1661.11.6 = {
 	heir = {
@@ -488,7 +499,7 @@ national_focus = MIL
 	}
 }
 
-1808.6.6 = { government = constitutional_monarchy }
+1808.6.6 = { government = constitutional_monarchy government_rank = 1 }
 
 1808.6.6 = {
 	monarch = {
@@ -500,7 +511,7 @@ national_focus = MIL
 	}
 }
 
-1813.12.11 = { government = enlightened_despotism }
+1813.12.11 = { government = enlightened_despotism government_rank = 2 }
 
 1813.12.11 = { leader = { name = "Ф. Кастаньос"			type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1852.9.24 } }
 

@@ -172,6 +172,44 @@ JAG_ideas = {
 	}
 }
 
+LAE_ideas = {
+	start = {
+		discipline = 0.05
+		global_unrest = -2
+	}
+	
+	bonus = {
+		papal_influence = 2
+	}
+	
+	trigger = {
+        tag = LAE
+    }
+	free = yes        #will be added at load.
+	
+	defense_of_the_faith = {
+		defensiveness = 0.25
+	}
+	assistance_to_the_suffering = {
+		manpower_recovery_speed = 0.15
+	}
+	the_tongues_of_knights = {
+		diplomatic_upkeep = 1
+	}
+	reconquista_of_the_sea = {
+		galley_power = 0.2
+		privateer_efficiency = 0.25
+	}
+	ecumenical_defenders_of_christendom = {
+		tolerance_heretic = 3
+	}
+	scourge_of_the_corsairs = {
+		naval_forcelimit_modifier = 0.5
+	}
+	crusader_tradition = {
+		army_tradition = 1
+	}
+}
 
 ROMan_ideas = {
 	start = {

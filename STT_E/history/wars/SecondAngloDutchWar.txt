@@ -1,0 +1,56 @@
+name = "Вторая англо-голландская война"
+war_goal = {
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
+}
+
+1665.3.4 = {
+	add_attacker = ENG
+	add_defender = NED
+}
+
+1665.6.13 = {
+	battle = {
+		name = "Лоустофт"
+		location = 1270
+		attacker = {
+			commander = "Герцог Йоркский"	# James Stuart
+			heavy_ship = 109
+			losses = 1	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Якоб ван Вассенар Обдам"	# Jacob van Wassenaer Obdam
+			heavy_ship = 103
+			losses = 16	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+1666.6.1 = {
+	battle = {
+		name = "Норт-Форленд"
+		location = 1271
+		attacker = {
+			commander = "Джордж Монк"	# George Monck
+			heavy_ship = 79
+			losses = 13	# percent
+			country = ENG
+		}
+		defender = {
+			commander = "Михаэль де Рюйтер"	# Michiel de Ruyter
+			heavy_ship = 84
+			losses = 5	# percent
+			country = NED
+		}
+		result = no
+	}
+}
+
+# Treaty of Breda
+1667.7.31 = {
+	rem_attacker = ENG
+	rem_defender = NED
+}

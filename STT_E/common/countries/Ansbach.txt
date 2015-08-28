@@ -5,7 +5,6 @@ graphical_culture = westerngfx
 color = { 130  77  119 }
 
 historical_idea_groups = {
-	trade_ideas
 	defensive_ideas
 	religious_ideas
 	economic_ideas
@@ -13,6 +12,7 @@ historical_idea_groups = {
 	offensive_ideas
 	spy_ideas
 	quality_ideas
+	trade_ideas
 }
 
 historical_units = {
@@ -74,12 +74,11 @@ monarch_names = {
 	"Зигфрид #0" = 0
 	"Штефан #0" = 0
 	"Виктор #0" = 0
+
     "Лютигарда #0" = -1
 	"Михаэлла #0" = -1
     "Розмария #0" = -1
-
 }
-
 
 leader_names = {
 	"Фихтельман"
@@ -110,20 +109,6 @@ leader_names = {
 	"Вайнрих"
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ship_names = {
 	"Фридрих фон Ансбах"
 	"Альбрехт Ахиллес"
@@ -140,17 +125,3 @@ ship_names = {
 army_names = {
 	"Армия пров. $PROVINCE$"
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

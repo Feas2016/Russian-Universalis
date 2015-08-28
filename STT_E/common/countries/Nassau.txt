@@ -1,0 +1,101 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 91 83 203 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Иоганн #0" = 60
+	"Филипп #2" = 40
+	"Людвиг #0" = 40
+	"Альбрехт #0" = 20
+	"Эрнст #0" = 20
+	"Фридрих #0" = 20
+	"Фридрих Людвиг #0" = 20
+	"Карл Август #0" = 15
+	"Карл Кристиан #0" = 15
+	"Фридрих Вильгельм #0" = 10
+	"Карл #0" = 10
+	"Адольф #0" = 10
+	"Валрад #0" = 10
+	"Адельмар #0" = 0
+	"Альбрехт #0" = 0
+	"Барнабас #0" = 0
+	"Дэнис #0" = 0
+	"Эгон #0" = 0
+	"Эрих #0" = 0
+	"Герхард #0" = 0
+	"Готлиб #0" = 0
+	"Грегор #0" = 0
+	"Хаган #0" = 0
+	"Гельмут #0" = 0
+	"Исаак #0" = 0
+	"Исидор #0" = 0
+	"Иво #0" = 0
+	"Йоахим #0" = 0
+	"Джозеф #0" = 0
+	"Кресценс #0" = 0
+	"Лотар #0" = 0
+	"Оскар #0" = 0
+	"Зигфрид #0" = 0
+	"Стефан #0" = 0
+	"Томас #0" = 0
+	"Венцель #0" = 0
+	"Вернер #0" = 0
+	"Вольфрам #0" = 0
+	
+	"Анна #0" = -1
+	"Элизабет #0" = -1
+	"Вильгельмина #0" = -1
+}
+
+leader_names = {
+	"фон Гагерн"
+	"фон Биберштейн"
+	"фон Вальдердорф"
+	"фон Бок унд Хемсдорф"
+	"фон Дунгерн"
+	"Хегенхан"
+	"фон Винцингероде"
+	"зу Сайн-Витгенштейн"
+	"фон Узинген"
+	"фон Вайльбург"
+	"фон Идштайн"
+}
+
+ship_names = {
+	Идштайн Узинген Отвайлер Вайльбург Висбаден
+	Зонненберг Штинберг Ханау Марбург Вецлар
+}
+
+army_names = {
+	"Армия пров. $PROVINCE$" 
+}

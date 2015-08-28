@@ -5,10 +5,6 @@ country_decisions = {
 		potential = {
 			primary_culture = russian
 			owns = 295
-			OR = {
-				ai = no
-				treasury = 1000				
-				}
 		295 = {
 			NOT = { has_great_project = kremlin }
 			NOT = { has_construction = canal }
@@ -75,18 +71,9 @@ country_decisions = {
 		major = yes
 		potential = {
 		    OR = {
-			tag = TSR
-			tag = RUS
-			}
-			owns = 295
-			owns = 1082
-			OR = {
-				ai = no
-				AND = {
-					treasury = 4000
-					owns = 295
-				}
-			}
+				tag = TSR
+				tag = RUS
+			}			
 			295 = {
 				owns = ROOT
 				has_great_project = kremlin
@@ -96,6 +83,7 @@ country_decisions = {
 		}
 		allow = {
 			owns = 295
+			owns = 1082
 			treasury = 4000
 			adm_power = 300
 		}

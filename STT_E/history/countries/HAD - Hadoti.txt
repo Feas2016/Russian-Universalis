@@ -1,8 +1,10 @@
 government = feudal_monarchy
+government_rank = 1
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
 capital = 528 # Kota
+fixed_capital = 528 # Cannot move capital away from this province & no power cost to move to it
 
 1384.1.1 = {
 	monarch = {
@@ -448,4 +450,8 @@ capital = 528 # Kota
 		dip = 2
 		mil = 1
 	}
+}
+
+1818.2.10 = {
+	government_rank = 2
 }

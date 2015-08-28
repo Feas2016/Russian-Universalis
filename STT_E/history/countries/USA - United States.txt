@@ -54,7 +54,7 @@ capital = 965	# New York
 		dip = 5	
 		mil = 6
 		
-		attach_leader = "Джордж Вашингтон"
+		leader = {	name = "Джордж Вашингтон"     	type = general	rank = 1	fire = 2	shock = 2	manuever = 6	siege = 0  death_date = 1799.12.14 }
 	}
 }
 
@@ -69,7 +69,7 @@ capital = 965	# New York
 	}
 }
 
-1799.1.1 = { decision = judiciary_act }
+#1799.1.1 = { decision = judiciary_act }
 
 1800.1.1  = { leader = {	name = "Соломон ван Ренселлер"	type = general	rank = 5	fire = 4	shock = 4	manuever = 4	siege = 0  death_date =  1852.4.23 } }
 

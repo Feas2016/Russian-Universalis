@@ -4,6 +4,7 @@ religion = orthodox
 primary_culture = ruthenian
 capital = 283	# Zaporozhia
 
+
 1506.1.1 = {	
 	monarch = {		
 		name = "Лянцкоронский"			
@@ -22,13 +23,17 @@ capital = 283	# Zaporozhia
 	}
 }
 
-1550.1.1 = {	
+1550.1.1 = {
 	monarch = {		
 		name = "Вишневецкий-Байда"		
 		adm = 3		
 		dip = 3		
 		mil = 3  
 	}
+}
+
+1555.1.1 = {
+	government_rank = 1
 }
 
 1563.1.1 = {	
@@ -391,6 +396,11 @@ capital = 283	# Zaporozhia
 		dip = 6
 		mil = 5
 	}
+	government_rank = 2
+}
+
+1654.1.8 = {
+	government_rank = 1
 }
 
 1657.1.1 = {
@@ -465,4 +475,8 @@ capital = 283	# Zaporozhia
 		dip = 1
 		mil = 3
 	}
+}
+
+1775.8.3 = {
+	government_rank = 2
 }

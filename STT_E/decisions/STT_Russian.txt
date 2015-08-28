@@ -14,7 +14,7 @@ country_decisions = {
 			government_rank = 2
 		}
 		allow = {
-			adm_tech = 8
+			adm_tech = 7
 			is_subject = no
 			is_at_war = no
 			owns = 295			# Moskva
@@ -209,8 +209,6 @@ country_decisions = {
 			NOT = { owns = 2410 }
 			NOT = { owns = 151 }
 			NOT = { exists = BYZ }
-			NOT = { exists = ROM }
-			NOT = { exists = PQR }
 		}
 
 		allow = {

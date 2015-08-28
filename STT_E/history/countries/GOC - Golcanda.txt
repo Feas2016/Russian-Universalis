@@ -1,9 +1,9 @@
-government = despotic_monarchy
-mercantilism = 0.1
+government = iqta
 technology_group = indian
 religion = shiite
 primary_culture = telegu
 capital = 542	# Golcanda 
+fixed_capital = 542 # Cannot move capital away from this province & no power cost to move to it
 
 1490.1.1 = {
 	monarch = {
@@ -13,6 +13,11 @@ capital = 542	# Golcanda
 		ADM = 5
 		MIL = 6
 	}
+	government_rank = 1
+}
+
+1518.1.1 = {
+	government_rank = 2
 }
 
 1520.12.18 = {
@@ -159,6 +164,10 @@ capital = 542	# Golcanda
 	}
 }
 
+1636.1.1 = {
+	government_rank = 1
+}
+
 1640.1.1 = {
 	heir = {
 		name = "Абуль Хасан"
@@ -173,6 +182,11 @@ capital = 542	# Golcanda
 	}
 }
 
+1656.1.1 = {
+	government_rank = 2
+}
+
+
 1672.4.21 = {
 	monarch = {
 		name = "Абуль Хасан"
@@ -181,6 +195,14 @@ capital = 542	# Golcanda
 		ADM = 2
 		MIL = 0
 	}
+}
+
+1677.1.1 = {
+	government_rank = 1
+}
+
+1684.1.1 = {
+	government_rank = 2
 }
 
 #Annexed by the Mughals October 1687

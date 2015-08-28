@@ -1,19 +1,9 @@
 government = steppe_horde
-#aristocracy_plutocracy = -4
-#centralization_decentralization = 5
-#innovative_narrowminded = 3
-mercantilism = 0.1
-#offensive_defensive = -1
-#land_naval = -1
-#quality_quantity = 3
-#serfdom_freesubjects = -5
 primary_culture = kazani
 religion = sunni
 technology_group = nomad_group
-historical_rival = CRI
-historical_rival = GOL
 capital = 1082	# Kazan
-
+historical_rival = GOL
 
 1438.1.1 = {
 	monarch = {
@@ -159,6 +149,10 @@ capital = 1082	# Kazan
 		dip = 2
 		mil = 4
 	}
+}
+
+1503.4.1 = {
+	government_rank = 1
 }
 
 1519.4.1 = {

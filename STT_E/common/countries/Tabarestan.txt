@@ -1,54 +1,50 @@
 #Country Name: Please see filename.
 
-graphical_culture = easterngfx
+graphical_culture = muslimgfx
 
-color = { 65  205  171 }
+color = { 217 144 88 }
 
 historical_idea_groups = {
 	defensive_ideas
-	administrative_ideas
+	religious_ideas
+	offensive_ideas
 	trade_ideas
 	spy_ideas
-	diplomatic_ideas
 	economic_ideas
-	religious_ideas
-	quantity_ideas
+	diplomatic_ideas
+	administrative_ideas
 }
 
 historical_units = {
-	eastern_medieval_infantry
-	eastern_knights
-	slavic_stradioti
-	eastern_militia
-	muscovite_musketeer
-	muscovite_caracolle
-	muscovite_soldaty
-	muscovite_cossack
-	russian_petrine
-	russian_lancer
-	russian_green_coat
-	russian_cuirassier
-	eastern_skirmisher
-	eastern_uhlan
-	eastern_carabinier
-	russian_mass
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_mass_infantry
+	muslim_dragoon
+	persian_rifle
 }
 
 monarch_names = {
-	"Пертрезок" = 120
-	"Верзахт" = 60
-	"Бельзебук" = 60
-	"Парсабок" = 40
-	"Мила" = -1
-	"Манли" = -1
-	"Мичка" = -1
+	"Bisutun #0"  = 20
+	"Adud ud-Dawlah #0"  = 10
+	"Kayumarth #0"  = 20
+	"Bakir Almaluf #0"  = 10
+	"Kai-Ka'us #0"  = 10
+	"Jahangir #0"  = 20
+	"Aziz #0"  = 10
+	"Sa'ad ud-Dawlah #0"  = 20
+	"Bahman #0"  = 10
+	"Mila #0"  = -1
+	"Manli #0"  = -1
+	"Mitchka #0"  = -1
 }
 
 leader_names = { 
-	Пертрезок
-	Верзахт
-	Бельзебук
-	Парсабок
 	Мазьяр
 	Кухьяр
 	Шахрияр
@@ -64,7 +60,7 @@ leader_names = {
 	Хасан
 	Рустам
 	Карин
-	Ардашир	
+	Ардашир
 }
 
 ship_names = {

@@ -1,5 +1,4 @@
 government = despotic_monarchy
-mercantilism = 0.1
 primary_culture = rajput
 religion = hinduism
 technology_group = indian
@@ -175,6 +174,10 @@ capital = 514	# Jodphur
 	}
 }
 
+1530.1.1 = {
+	government_rank = 1
+}
+
 1532.1.1 = {
 	monarch = {
 		name = "Малдев"
@@ -330,6 +333,10 @@ capital = 514	# Jodphur
 }
 #Born posthumously
 
+1679.8.1 = {
+	government_rank = 2
+}
+
 1706.1.1 = {
 	monarch = {
 		name = "Аджит Сингх"
@@ -376,6 +383,10 @@ capital = 514	# Jodphur
 		MIL = 0
 		ADM = 0
 	}
+}
+
+1738.1.1 = {
+	government_rank = 1
 }
 
 1749.6.18 = {
@@ -540,4 +551,5 @@ capital = 514	# Jodphur
 		MIL = 3
 		ADM = 4
 	}
+	government_rank = 2
 }

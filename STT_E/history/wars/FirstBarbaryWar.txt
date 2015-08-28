@@ -1,0 +1,60 @@
+name = "Первая пиратская война"
+war_goal = {
+	type = superiority_insult_mutual
+	casus_belli = cb_insult
+}
+
+1801.5.1 = {
+	add_attacker = MOR
+	add_attacker = TRP
+	add_attacker = ALG
+	add_defender = USA
+}
+
+1803.10.1 = {
+	battle = {
+		name = "Триполи"
+		location = 1313
+		attacker = {
+			commander = "Гассан-Бей"	# Hassan Bey
+			heavy_ship = 8
+			losses = 2	# percent
+			country = TRP
+		}
+		defender = {
+			commander = "Эдвард Пребл"	# Edward Preble
+			heavy_ship = 7
+			losses = 2	# percent
+			country = USA
+		}
+		result = no
+	}
+}
+
+1805.4.27 = {
+	battle = {
+		name = "Дерне"
+		location = 1313
+		attacker = {
+			commander = "Гассан-Бей"	# Hassan Bey
+			infantry = 700
+			losses = 25	# percent
+			country = TRP
+		}
+		defender = {
+			commander = "Уильям Итон"	# William Eaton
+			infantry = 4000
+			losses = 3	# percent
+			country = USA
+		}
+		result = no
+	}
+}
+
+# Treaty with Tripoli
+1805.6.4 = {
+	rem_attacker = MOR
+	rem_attacker = TRP
+	rem_attacker = ALG
+	rem_defender = USA
+}

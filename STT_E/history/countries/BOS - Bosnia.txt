@@ -1,17 +1,12 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 2
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 1
-#land_naval = -1
-#quality_quantity = 1
-#serfdom_freesubjects = -5
 primary_culture = serbian
-religion = orthodox
+religion = catholic
 technology_group = eastern
-capital = 140	# Sarajevo
+capital = 3002	# Sarajevo
 
+1389.1.1 = {
+	government_rank = 1
+}
 
 1398.1.1 = {
 	monarch = {
@@ -22,6 +17,10 @@ capital = 140	# Sarajevo
 		dip = 1
 		mil = 2
 	}
+}
+
+1402.7.1 = {
+	government_rank = 2
 }
 
 1404.1.1 = {

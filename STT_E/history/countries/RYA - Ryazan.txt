@@ -3,6 +3,7 @@ primary_culture = russian
 religion = orthodox
 technology_group = eastern
 capital = 301	# Ryazan
+fixed_capital = 301 # Cannot move capital away from this province & no power cost to move to it
 government_rank = 1
 
 1372.1.1 = {
@@ -63,4 +64,8 @@ government_rank = 1
 		dip = 3
 		mil = 1
 	}
+}
+
+1454.1.1 = {
+	government_rank = 1
 }

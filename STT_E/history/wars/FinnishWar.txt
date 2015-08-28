@@ -1,0 +1,257 @@
+name = "Финляндская война"
+war_goal = {
+	type = superiority_trade_mutual
+	casus_belli = cb_trade_war
+}
+
+1807.7.8 = {
+	add_attacker = FRA
+	add_defender = SWE
+} 
+
+1808.2.21 = {
+	add_attacker = RUS
+}
+
+1808.2.28 = {
+	add_attacker = DAN
+}
+
+1808.3.2 = {
+	battle = {
+		name = "Свеаборг"
+		location = 28
+		attacker = {
+			commander = "Фёдор Буксгевден"	# Friedrich Wilhelm von Buxhoeveden
+			infantry = 1100
+			losses = 1	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Карл-Олоф Кронштедт"	# Carl Olof Cronstedt
+			infantry = 7500
+			artillery = 2000
+			losses = 1	# percent
+			country = SWE
+		}
+		result = no
+		# Historians say Russia won. Lies. All lies.
+	}
+}
+
+1808.4.18 = {
+	battle = {
+		name = "Сикаиоки"
+		location = 19
+		attacker = {
+			commander = "Яков Кульнев" 	# Yakov Petrovitch Kulnev
+			infantry = 1080
+			losses = 3	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Карл-Юхан Адлеркрейц"	# Carl Johan Adlercreutz
+			infantry = 400
+			losses = 1	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.4.27 = {
+	battle = {
+		name = "Револакс"
+		location = 19
+		attacker = {
+			commander = "Михаил Булатов" 	# Michail Leontjevich Bulatov
+			infantry = 1080
+			losses = 17	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Вильгельм Мориц Клингспор" 	# Wilhelm Mauritz Klingspor
+			infantry = 2300
+			losses = 4	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+
+1808.5.2 = {
+	battle = {
+		name = "Пулккила"
+		location = 19
+		attacker = {
+			commander = "Обухов"	# Obuhov
+			infantry = 1200
+			losses = 5	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Юхан-Август Сандельс"	# Johan August Sandels
+			infantry = 1500
+			losses = 3	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.7.14 = {
+	battle = {
+		name = "Лапуа"
+		location = 27
+		attacker = {
+			commander = "Николай Раевский"	# Nikolai Nikolaievitsch Rayevskij
+			infantry = 4000
+			losses = 1	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Карл-Юхан Адлеркрейц"	# Carl Johan Adlercreutz
+			infantry = 4650
+			losses = 1	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.8.10 = {
+	battle = {
+		name = "Каухайоки"
+		location = 27
+		attacker = {
+			commander = "Шепелев" 	# Schepeljeff
+			infantry = 2000
+			losses = 1	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Георг-Карл фон Дёбельн" 	# Georg Carl von Dцbeln
+			infantry = 2000
+			losses = 1	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.8.17 = {
+	battle = {
+		name = "Алавус"
+		location = 27
+		attacker = {
+			commander = "Эриксон"	# Erikson
+			infantry = 2400
+			losses = 15	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Карл-Юхан Адлеркрейц" 	# Carl Johan Adlercreutz
+			infantry = 3900
+			losses = 5	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.9.13 = {
+	battle = {
+		name = "Ютас"
+		location = 27
+		attacker = {
+			commander = "Косачевский"	# Kosatchoffskij
+			infantry = 1500
+			losses = 9	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Георг-Карл фон Дёбельн"	# Georg Carl von Dцbeln
+			infantry = 1500
+			losses = 3	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1808.9.14 = {
+	battle = {
+		name = "Оровайс"
+		location = 27
+		attacker = {
+			commander = "Николай Каменский"	# Nikolay Mikhailovich Kamensky
+			infantry = 6500
+			losses = 15	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Карл-Юхан Адлеркрейц"	# Carl Johan Adlercreutz
+			infantry = 5000
+			losses = 16	# percent
+			country = SWE
+		}
+		result = yes
+	}
+}
+
+1808.10.27 = {
+	battle = {
+		name = "Колъенвирта"
+		location = 31
+		attacker = {
+			commander = "Николай Тучков"	# Nikolai Alexejvitsch Tutschkoff
+			infantry = 7000
+			losses = 15	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Юхан-Август Сандельс"	# Johan August Sandels
+			infantry = 1800
+			losses = 17	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+1809.8.19 = {
+	battle = {
+		name = "Ратань"
+		location = 11
+		attacker = {
+			commander = "Николай Каменский"	# Nikolay Mikhailovich Kamensky
+			infantry = 5000
+			losses = 35	# percent
+			country = RUS
+		}
+		defender = {
+			commander = "Густав Вахтмейстер"	# Gustaf Wachtmeister
+			infantry = 6800
+			losses = 17	# percent
+			country = SWE
+		}
+		result = no
+	}
+}
+
+# Treaty of Fredrikshamn
+1809.9.17 = {
+	rem_attacker = RUS
+}
+
+# Treaty of Jцnkцping
+1809.12.11 = {
+	rem_attacker = DAN
+}
+
+# Treaty of Paris
+1810.1.6 = {
+	rem_attacker = FRA
+	rem_defender = SWE
+}

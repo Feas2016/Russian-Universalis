@@ -1,12 +1,13 @@
 government = feudal_monarchy
 primary_culture = kashmiri
-religion = buddhism
+religion = vajrayana
 technology_group = indian
 capital = 2074	# Ladakh
+fixed_capital = 2074 # Cannot move capital away from this province & no power cost to move to it
 
-1430.1.1 = {	#Realm divided between 2 monarchs at thsi date.
+1430.1.1 = {	#Realm divided between 2 monarchs at this date.
 	monarch = {
-		name = "Гялпа Такпа Бомлде"
+		name = "Гьялпо Такпа Бомлде"
 		dynasty = "Намгял"
 		adm = 4
 		dip = 4
@@ -30,8 +31,8 @@ capital = 2074	# Ladakh
 
 1470.1.1 = {
 	monarch = {
-		name = "Lotus Chhogaldan"
-		dynasty = "Namgyal"
+		name = "Лотус Чхогалдан"
+		dynasty = "Намгял"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -40,9 +41,9 @@ capital = 2074	# Ladakh
 
 1470.1.1 = {
 	heir = {
-		name = "Tashi"
-		monarch_name = "Tashi"
-		dynasty = "Namgyal"
+		name = "Таши"
+		monarch_name = "Таши"
+		dynasty = "Намгял"
 		birth_date = 1450.1.1
 		death_Date = 1532.1.1
 		claim = 95
@@ -54,8 +55,8 @@ capital = 2074	# Ladakh
 
 1500.1.1 = {
 	monarch = {
-		name = "Tashi"
-		dynasty = "Namgyal"
+		name = "Таши"
+		dynasty = "Намгял"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -64,9 +65,9 @@ capital = 2074	# Ladakh
 
 1515.1.1 = { #Tashi produces no heirs, to solve this he arranges for his brother, who he previously blinded to secure his own succession, to have a child to succeed him.
 	heir = {
-		name = "Tsewang"
-		monarch_name = "Tsewang"
-		dynasty = "Namgyal"
+		name = "Цэван"
+		monarch_name = "Цэван"
+		dynasty = "Намгял"
 		birth_date = 1515.1.1
 		death_Date = 1555.1.1
 		claim = 95
@@ -78,8 +79,8 @@ capital = 2074	# Ladakh
 
 1532.1.1 = {
 	monarch = {
-		name = "Tsewang"
-		dynasty = "Namgyal"
+		name = "Цэван"
+		dynasty = "Намгял"
 		adm = 3
 		dip = 3
 		mil = 5
@@ -88,9 +89,9 @@ capital = 2074	# Ladakh
 
 1532.1.1 = {
 	heir = {
-		name = "Jamyang"
-		monarch_name = "Jamyang"
-		dynasty = "Namgyal"
+		name = "Джамьянг"
+		monarch_name = "Джамьянг"
+		dynasty = "Намгял"
 		birth_date = 1530.1.1
 		death_Date = 1610.1.1
 		claim = 95
@@ -102,8 +103,8 @@ capital = 2074	# Ladakh
 
 1555.1.1 = {
 	monarch = {
-		name = "Jamyang"
-		dynasty = "Namgyal"
+		name = "Джамьянг"
+		dynasty = "Намгял"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -112,9 +113,9 @@ capital = 2074	# Ladakh
 
 1555.1.1 = {
 	heir = {
-		name = "Singye"
-		monarch_name = "Singye"
-		dynasty = "Namgyal"
+		name = "Сингье"
+		monarch_name = "Сингье"
+		dynasty = "Намгял"
 		birth_date = 1550.1.1
 		death_Date = 1645.1.1
 		claim = 95
@@ -126,8 +127,8 @@ capital = 2074	# Ladakh
 
 1610.1.1 = {
 	monarch = {
-		name = "Singye"
-		dynasty = "Namgyal"
+		name = "Сингье"
+		dynasty = "Намгял"
 		adm = 4
 		dip = 1
 		mil = 3
@@ -136,9 +137,9 @@ capital = 2074	# Ladakh
 
 1610.1.1 = {
 	heir = {
-		name = "Deldan"
-		monarch_name = "Deldan"
-		dynasty = "Namgyal"
+		name = "Делдан"
+		monarch_name = "Делдан"
+		dynasty = "Намгял"
 		birth_date = 1600.1.1
 		death_Date = 1666.1.1
 		claim = 95
@@ -150,8 +151,8 @@ capital = 2074	# Ladakh
 
 1645.1.1 = {
 	monarch = {
-		name = "Deldan"
-		dynasty = "Namgyal"
+		name = "Делдан"
+		dynasty = "Намгял"
 		adm = 5
 		dip = 1
 		mil = 1
@@ -160,9 +161,9 @@ capital = 2074	# Ladakh
 
 1645.1.1 = {
 	heir = {
-		name = "Delek"
-		monarch_name = "Delek"
-		dynasty = "Namgyal"
+		name = "Делек"
+		monarch_name = "Делек"
+		dynasty = "Намгял"
 		birth_date = 1620.1.1
 		death_Date = 1695.1.1
 		claim = 95
@@ -174,8 +175,8 @@ capital = 2074	# Ladakh
 
 1666.1.1 = {
 	monarch = {
-		name = "Delek"
-		dynasty = "Namgyal"
+		name = "Делек"
+		dynasty = "Намгял"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -184,9 +185,9 @@ capital = 2074	# Ladakh
 
 1666.1.1 = {
 	heir = {
-		name = "Nyima"
-		monarch_name = "Nyima"
-		dynasty = "Namgyal"
+		name = "Ньима"
+		monarch_name = "Ньима"
+		dynasty = "Намгял"
 		birth_date = 1660.1.1
 		death_Date = 1750.1.1
 		claim = 95
@@ -198,8 +199,8 @@ capital = 2074	# Ladakh
 
 1695.1.1 = {
 	monarch = {
-		name = "Nyima"
-		dynasty = "Namgyal"
+		name = "Ньима"
+		dynasty = "Намгял"
 		adm = 2
 		dip = 4
 		mil = 2
@@ -208,9 +209,9 @@ capital = 2074	# Ladakh
 
 1695.1.1 = {
 	heir = {
-		name = "Deskyong"
-		monarch_name = "Deskyong"
-		dynasty = "Namgyal"
+		name = "Дескьёнг"
+		monarch_name = "Дескьёнг"
+		dynasty = "Намгял"
 		birth_date = 1680.1.1
 		death_Date = 1770.1.1
 		claim = 95
@@ -222,8 +223,8 @@ capital = 2074	# Ladakh
 
 1750.1.1 = {
 	monarch = {
-		name = "Deskyong"
-		dynasty = "Namgyal"
+		name = "Дескьёнг"
+		dynasty = "Намгял"
 		adm = 1
 		dip = 0
 		mil = 0
@@ -232,9 +233,9 @@ capital = 2074	# Ladakh
 
 1750.1.1 = {
 	heir = {
-		name = "Phuntsog"
-		monarch_name = "Phuntsog"
-		dynasty = "Namgyal"
+		name = "Пунцог"
+		monarch_name = "Пунцог"
+		dynasty = "Намгял"
 		birth_date = 1700.1.1
 		death_Date = 1775.1.1
 		claim = 70
@@ -244,10 +245,14 @@ capital = 2074	# Ladakh
 	}
 }
 
+1752.1.1 = {
+	government_rank = 1
+}
+
 1770.1.1 = {
 	monarch = {
-		name = "Phuntsog"
-		dynasty = "Namgyal"
+		name = "Пунцог"
+		dynasty = "Намгял"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -256,9 +261,9 @@ capital = 2074	# Ladakh
 
 1770.1.1 = {
 	heir = {
-		name = "Saskyong"
-		monarch_name = "Saskyong"
-		dynasty = "Namgyal"
+		name = "Сакьёнг"
+		monarch_name = "Сакьёнг"
+		dynasty = "Намгял"
 		birth_date = 1690.1.1
 		death_Date = 1780.1.1
 		claim = 95
@@ -270,8 +275,8 @@ capital = 2074	# Ladakh
 
 1775.1.1 = {
 	monarch = {
-		name = "Saskyong"
-		dynasty = "Namgyal"
+		name = "Сакьёнг"
+		dynasty = "Намгял"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -280,9 +285,9 @@ capital = 2074	# Ladakh
 
 1775.1.1 = {
 	heir = {
-		name = "Tsewang"
-		monarch_name = "Tsewang II"
-		dynasty = "Namgyal"
+		name = "Цэван"
+		monarch_name = "Цэван II"
+		dynasty = "Намгял"
 		birth_date = 1730.1.1
 		death_Date = 1810.1.1
 		claim = 95
@@ -294,8 +299,8 @@ capital = 2074	# Ladakh
 
 1780.1.1 = {
 	monarch = {
-		name = "Tsewang II"
-		dynasty = "Namgyal"
+		name = "Цэван II"
+		dynasty = "Намгял"
 		adm = 2
 		dip = 0
 		mil = 2
@@ -304,9 +309,9 @@ capital = 2074	# Ladakh
 
 1780.1.1 = {
 	heir = {
-		name = "Tsetan"
-		monarch_name = "Tsetan"
-		dynasty = "Namgyal"
+		name = "Цэтан"
+		monarch_name = "Цэтан"
+		dynasty = "Намгял"
 		birth_date = 1750.1.1
 		death_Date = 1820.1.1
 		claim = 95
@@ -316,10 +321,14 @@ capital = 2074	# Ladakh
 	}
 }
 
+1809.1.1 = {
+	government_rank = 2
+}
+
 1810.1.1 = {
 	monarch = {
-		name = "Tsetan"
-		dynasty = "Namgyal"
+		name = "Цэтан"
+		dynasty = "Намгял"
 		adm = 4
 		dip = 1
 		mil = 1
@@ -328,9 +337,9 @@ capital = 2074	# Ladakh
 
 1810.1.1 = {
 	heir = {
-		name = "Tsepel Tondup"
-		monarch_name = "Tsepel Tondup"
-		dynasty = "Namgyal"
+		name = "Цепель Тондуп"
+		monarch_name = "Цепель Тондуп"
+		dynasty = "Намгял"
 		birth_date = 1780.1.1
 		death_Date = 1834.1.1
 		claim = 95
@@ -342,8 +351,8 @@ capital = 2074	# Ladakh
 
 1820.1.1 = {
 	monarch = {
-		name = "Tsepel Tondup"
-		dynasty = "Namgyal"
+		name = "Цепель Тондуп"
+		dynasty = "Намгял"
 		adm = 0
 		dip = 1
 		mil = 0

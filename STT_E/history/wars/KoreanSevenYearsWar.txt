@@ -1,0 +1,212 @@
+name = "Корейская семилетняя война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 736 # Gyeongsang
+}
+
+1592.5.25 = {
+	add_attacker = JAP
+	add_attacker = SMZ
+	add_attacker = MRI
+	add_attacker = CSK
+	add_defender = KOR
+}
+
+1592.5.26 = {
+	battle = {
+		name = "Санджу"
+		location = 736
+		attacker = {
+			commander = "Кониси Юкинага"
+			infantry = 18000
+			losses = 5	# percent
+			country = JAP
+		}
+		defender = {
+			commander = "Чон Баль"
+			infantry = 8000
+			losses = 90	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.6 = {
+	battle = {
+		name = "Чхунджу"
+		location = 735
+		attacker = {
+			commander = "Кониси Юкинага"	# Konishi Yukinaga
+			infantry = 18000
+			losses = 3	# percent
+			country = JAP
+		}
+		defender = {
+			commander = "Синь Лип"	# Sin Lip
+			infantry = 8000
+			losses = 38	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.6.16 = {
+	battle = {
+		name = "Орен" # Yi's initial naval campaign
+		location = 1376
+		defender = {
+			commander = "И Сунсин"	# Yi Sun-sin
+			heavy_ship = 28
+			light_ship = 18
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Тодо Такатора"	# Todo Takatora
+			heavy_ship = 5
+			light_ship = 63
+			losses = 60	# percent
+			country = JAP
+		}
+		result = no
+	}
+}
+
+1592.7.7 = {
+	battle = {
+		name = "Весеннее наступление"
+		location = 735
+		attacker = {
+			commander = "Като Киёмаса"	
+			infantry = 20000
+			losses = 5	# percent
+			country = JAP
+		}
+		defender = {
+			commander = "Ким Мянву"
+			infantry = 13000
+			losses = 40	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1592.8.1 = {
+	add_defender = MNG
+}
+
+1592.8.14 = {
+	battle = {
+		name = "Ханань" #Hansan Island
+		location = 1376
+		defender = {
+			commander = "И Сунсин"	# Yi Sun-sin
+			heavy_ship = 56
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Вакисака"	# Wakizaka
+			heavy_ship = 60
+			light_ship = 13
+			losses = 64	# percent
+			country = JAP
+		}
+		result = no
+	}
+}
+
+1593.2.8 = {
+	battle = {
+		name = "Пхеньян" #2nd Battle of Pyongyang
+		location = 1845
+		defender = {
+			commander = "Ли Рисунь"
+			infantry = 53000
+			losses = 5	# percent
+			country = MNG
+		}
+		attacker = {
+			commander = "Кониси Юкинага"
+			infantry = 15000
+			losses = 8	# percent
+			country = JAP
+		}
+		result = no
+	}
+}
+
+1593.2.27 = {
+	battle = {
+		name = "Одавара"
+		location = 735
+		attacker = {
+			commander = "Укита Хидэиэ"
+			infantry = 41000
+			losses = 8	# percent
+			country = JAP
+		}
+		defender = {
+			commander = "Ли Рисунь"
+			infantry = 20000
+			losses = 35	# percent
+			country = MNG
+		}
+		result = yes
+	}
+}
+
+1597.8.27 = {
+	battle = {
+		name = "Чхильчхоллян"
+		location = 1376
+		attacker = {
+			commander = "Тодо Такатора"	# Todo Takatora
+			heavy_ship = 500
+			losses = 1	# percent
+			country = JAP
+		}
+		defender = {
+			commander = "Ян Юань"	# Won Gyan
+			heavy_ship = 169
+			losses = 93	# percent
+			country = KOR
+		}
+		result = yes
+	}
+}
+
+1597.10.26 = {
+	battle = {
+		name = "Менгнян"
+		location = 1376
+		defender = {
+			commander = "И Сунсин"	# Yi Sun-sin
+			heavy_ship = 13
+			losses = 0	# percent
+			country = KOR
+		}
+		attacker = {
+			commander = "Тодо Такатора"	# Todo Takatora
+			heavy_ship = 133
+			light_ship = 200
+			losses = 9	# percent
+			country = JAP
+		}
+		result = no
+	}
+}
+
+# The Japanese troops withdraw
+1598.12.24 = {
+	rem_attacker = JAP
+	rem_attacker = SMZ
+	rem_attacker = MRI
+	rem_attacker = CSK
+	rem_defender = KOR
+	rem_defender = MNG
+}

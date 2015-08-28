@@ -5,7 +5,6 @@ graphical_culture = westerngfx
 color = { 157  51  167 }
 
 historical_idea_groups = {
-	trade_ideas
 	defensive_ideas
 	offensive_ideas
 	religious_ideas
@@ -13,6 +12,7 @@ historical_idea_groups = {
 	diplomatic_ideas
 	innovativeness_ideas
 	spy_ideas
+	trade_ideas	
 }
 
 historical_units = {
@@ -74,10 +74,12 @@ monarch_names = {
 	"Маркус #0" = 0
 	"Рафаэль #0" = 0
 	"Ридигер #0" = 0
+
     "Алейда #0" = -1
 	"Кордула #0" = -1
 	"Гундула #0" = -1
-	}
+}
+
 leader_names = {
 	"Блиттерсдорф"
 	"фон Гельнхаузен"
@@ -99,9 +101,6 @@ leader_names = {
 	"фон Лейен"
 	"Ансембург"
 	"Зебниц"
-	"фон Лейн"
-	"Ансембург"
-	"Зебнитч"
 }
 
 ship_names = {

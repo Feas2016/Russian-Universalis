@@ -1,6 +1,7 @@
 namespace = purple_phoenix 
 
 normal_or_historical_nations = yes
+
 country_event = {
 
 	id = purple_phoenix.1
@@ -10,8 +11,7 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		num_of_cities = 8
 		NOT = { has_idea = byz_admin_power }
@@ -46,8 +46,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
 		owns = 146 #Athens
@@ -75,8 +74,7 @@ country_event = {
 	picture = SIEGE_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
 		owns = 316 #Izmit
@@ -90,7 +88,7 @@ country_event = {
 		name = "purple_phoenix.3.a"
 		add_prestige = 10
 		add_dip_power = 50
-		316 = { change_province_name = Оптиматы rename_capital = Никомедия }
+		316 = { change_province_name = "Оптиматы" rename_capital = "Никомедия" }
 	}
 }
 
@@ -105,11 +103,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
-		owns = 2313 #Антиохия
+		owns = 2313 #Antioch
 	}
 	
 	mean_time_to_happen = {
@@ -135,8 +132,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
 		owns = 379 #Judea
@@ -164,8 +160,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
 		owns = 118 #Rome
@@ -193,8 +188,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		religion = orthodox
 		owns = 118 #Rome
@@ -222,8 +216,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		OR = {
 			owns = 144
@@ -254,8 +247,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		OR = {
 			owns = 149
@@ -288,8 +280,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		OR = {
 			owns = 316
@@ -321,8 +312,7 @@ country_event = {
 	picture = BYZANTINE_EAGLE_eventPicture
 		
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {
@@ -352,8 +342,7 @@ country_event = {
 	picture = BYZANTINE_EAGLE_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {
@@ -382,8 +371,7 @@ country_event = {
 	picture = BYZANTINE_EMPEROR_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {
@@ -412,8 +400,7 @@ country_event = {
 	picture = BYZANTINE_EMPEROR_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {
@@ -442,8 +429,7 @@ country_event = {
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {
@@ -472,8 +458,7 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	trigger = {
-		### STT
-		OR = { tag = BYZ tag = PQR tag = ROM }
+		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		NOT = { has_idea = byz_admin_power }
 		OR = {

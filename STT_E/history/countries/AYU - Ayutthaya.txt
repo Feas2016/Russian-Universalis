@@ -1,18 +1,8 @@
 government = despotic_monarchy
-#aristocracy_plutocracy = -2
-#centralization_decentralization = 3
-#innovative_narrowminded = 2
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = 0
-#quality_quantity = 3
-#serfdom_freesubjects = -2
 primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
 capital = 600 # Ayutthaya
-historical_rival = TAU
-historical_rival = ANN
 
 
 1395.1.1 = {
@@ -274,6 +264,10 @@ historical_rival = ANN
 	}
 }
 
+1564.1.1 = {
+	government_rank = 1
+}
+
 1568.1.1 = {
 	monarch = {
 		name = "Махин"
@@ -282,6 +276,11 @@ historical_rival = ANN
 		dip = 1
 		mil = 0
 	}
+	government_rank = 2
+}
+
+1569.1.1 = {
+	government_rank = 1
 }
 
 1569.11.1 = {
@@ -307,6 +306,10 @@ historical_rival = ANN
 		mil = 5
 		leader = { name = "Наресуен"	type = general	rank = 0	fire = 2	shock = 3	manuever = 4	siege = 1 }
 	}
+}
+
+1584.5.3 = {
+	government_rank = 2
 }
 
 1590.7.1 = {

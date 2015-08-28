@@ -1,20 +1,11 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 0
-#innovative_narrowminded = 0
-mercantilism = 0.1
-#offensive_defensive = -2
-#land_naval = -1
-#quality_quantity = -1
-#serfdom_freesubjects = -1
+government_rank = 1
 primary_culture = lombard
 add_accepted_culture = greek
 religion = catholic
 technology_group = eastern
 capital = 146	#Athens
-historical_friend = KNI
-historical_friend = NAX
-historical_friend = CYP
+fixed_capital = 146 # Cannot move capital away from this province & no power cost to move to it
 
 1402.1.1 = {
 	monarch = {

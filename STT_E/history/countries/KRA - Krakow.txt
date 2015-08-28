@@ -1,16 +1,9 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -5
-#centralization_decentralization = 4
-#innovative_narrowminded = -1
-mercantilism = 0.1
-#offensive_defensive = -3
-#land_naval = -3
-#quality_quantity = 0
-#serfdom_freesubjects = -4
 primary_culture = polish
 religion = catholic
 technology_group = eastern
 capital = 262	# Krakow
+fixed_capital = 262 # Cannot move capital away from this province & no power cost to move to it
 
 1530.1.1 = { government = administrative_monarchy }
 

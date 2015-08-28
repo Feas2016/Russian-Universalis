@@ -8,21 +8,22 @@ capital = 552	# Cuttack
 
 1434.1.1 = {
 	monarch = {
-		name = "Капилешвара Гаджапати"
-		dynasty = "Сурявамси"
-		ADM = 3
-		DIP = 4
+		name = "Капилендра"
+		dynasty = "Гаджапати" #Suryavamshi
+		ADM = 4
+		DIP = 5
 		MIL = 6
+		leader = { name = "Капилендра"	type = general	rank = 1	fire = 3	shock = 5	manuever = 2	siege = 1 }
 	}
 }
 
 1434.1.1 = {
 	heir = {
-		name = "Пурушоттама"
+		name = "Хамвира"
 		monarch_name = "Пурушоттама"
-		dynasty = "Сурявамси"
-		birth_date = 1420.1.1
-		death_Date = 1497.4.2
+		dynasty = "Гаджапати"
+		birth_date = 1418.1.1
+		death_Date = 1476.1.1
 		claim = 95
 		ADM = 3
 		DIP = 2
@@ -30,33 +31,47 @@ capital = 552	# Cuttack
 	}
 }
 
-1466.1.1 = {
-	monarch = {
+1465.1.1 = {	#Heir changed by Kapilendra
+	heir = {
 		name = "Пурушоттама"
-		dynasty = "Сурявамси"
+		monarch_name = "Пурушоттама"
+		dynasty = "Гаджапати"
+		birth_date = 1420.1.1
+		death_Date = 1497.4.2
+		claim = 95
 		ADM = 3
 		DIP = 2
-		MIL = 2
+		MIL = 5
 	}
 }
 
-1472.1.1 = {	#Usurper
+1466.1.1 = {
 	monarch = {
-		name = "Хамвира"
-		dynasty = "Сурявамси"
+		name = "Пурушоттама"
+		dynasty = "Гаджапати"
 		ADM = 3
 		DIP = 2
-		MIL = 0
+		MIL = 5
+	}
+}
+
+1472.1.1 = {	#Usurper, former heir
+	monarch = {
+		name = "Хамвира"
+		dynasty = "Гаджапати"
+		ADM = 3
+		DIP = 2
+		MIL = 2
 	}
 }
 
 1476.1.1 = {	#Retaken by Purushottoma with Bahmanid aid
 	monarch = {
 		name = "Пурушоттама"
-		dynasty = "Сурявамси"
+		dynasty = "Гаджапати"
 		ADM = 3
 		DIP = 2
-		MIL = 2
+		MIL = 6
 	}
 }
 
@@ -64,7 +79,7 @@ capital = 552	# Cuttack
 	heir = {
 		name = "Пратапрудра"
 		monarch_name = "Пратапрудра"
-		dynasty = "Сурявамси"
+		dynasty = "Гаджапати"
 		birth_date = 1470.1.1
 		death_date = 1540.1.1
 		claim = 95
@@ -77,7 +92,7 @@ capital = 552	# Cuttack
 1497.4.2 = {
 	monarch = {
 		name = "Пратапрудра"
-		dynasty = "Сурявамси"
+		dynasty = "Гаджапати"
 		ADM = 1
 		DIP = 3
 		MIL = 1
@@ -88,7 +103,7 @@ capital = 552	# Cuttack
 	heir = {
 		name = "Калуадева"
 		monarch_name = "Калуадева"
-		dynasty = "Сурявамси"
+		dynasty = "Гаджапати"
 		birth_date = 1490.1.1
 		death_date = 1541.1.1
 		claim = 95
@@ -101,7 +116,7 @@ capital = 552	# Cuttack
 1540.1.1 = {
 	monarch = {
 		name = "Калуадева"
-		dynasty = "Сурявамси"
+		dynasty = "Гаджапати"
 		ADM = 3
 		DIP = 1
 		MIL = 2

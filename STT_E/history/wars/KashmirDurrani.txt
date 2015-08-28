@@ -1,0 +1,15 @@
+name = "Кашимирская война за независимость"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+}
+
+1755.1.1 = {
+	add_attacker = KSH
+	add_defender = AFG
+}
+
+1762.1.1 = {
+	rem_attacker = KSH
+	rem_defender = AFG
+}

@@ -887,7 +887,7 @@ guiTypes = {
 		### Select new rival window.
 		windowType = {
 			name = "select_rivals_window"
-			position = { x=4 y=230 }	
+			position = { x=4 y=114 }	
 			size = { x=300 y=400 }
 			moveable = 0
 			Orientation = "UPPER_LEFT"
@@ -896,7 +896,7 @@ guiTypes = {
 			{
 				name ="bg"
 				spriteType = "GFX_choose_rivals_bg"
-				position = { x= 0 y = 0 }
+				position = { x= -12 y = -124 }
 				Orientation = "UPPER_LEFT"
 			}
 			
@@ -988,7 +988,7 @@ guiTypes = {
 				name ="list"
 				position = { x = 109 y = 40 }
 				backGround=""
-				size = { x=303 y = 288}
+				size = { x=303 y = 404}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 0
@@ -999,7 +999,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "back"
-				position = { x= 235 y = 301 }
+				position = { x= 235 y = 417 }
 				quadTextureSprite ="GFX_province_back_button"	
 				buttonText = "BACK"
 				buttonFont = "vic_18"

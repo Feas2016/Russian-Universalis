@@ -1,0 +1,31 @@
+#1825 - Aki
+
+owner = HSK
+controller = HSK
+culture = japanese
+religion = shinto
+capital = "Томо"
+trade_goods = grain
+hre = no
+base_tax = 4
+base_manpower = 3
+base_production = 3
+is_city = yes
+add_core = HSK
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+
+1420.1.1 = { add_core = OUC }
+1466.1.1 = { add_core = MRI }
+1470.1.1 = { owner = OUC controller = OUC }
+1520.1.1 = { add_core = AMA }
+1525.1.1 = { owner = MRI controller = MRI }
+1525.1.1 = { fort_15th = yes } # Замок Ёсиды Кориямы, столица клана Мори
+1525.1.1 = { capital = "Корияма" }
+1542.1.1 = { discovered_by = POR }
+1566.11.28 = { remove_core = AMA }
+1599.1.1 = { capital = "Хиросима" }
+1603.1.1 = { fort_15th = no } # The Mori clan moved to Suo

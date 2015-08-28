@@ -10,6 +10,10 @@ country_decisions = {
 			}
 			NOT = { tag = POL }
 			NOT = { exists = RUS }
+			OR = {
+				NOT = { exists = RUS }
+				ai = no
+			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			### STT
@@ -34,7 +38,9 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = RUS }
-			adm_tech = 10
+			adm_tech = 14
+			### STT
+			technology_group = western
 			is_subject = no
 			is_at_war = no
 			owns_core_province = 295			# Moskva

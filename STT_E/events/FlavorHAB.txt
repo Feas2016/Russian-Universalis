@@ -147,7 +147,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "фон Габсбург"
+			dynasty = "von Habsburg"
 		}
 	}
 
@@ -211,7 +211,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "фон Габсбург"
+			dynasty = "von Habsburg"
 		}
 		modifier = {
 			factor = 0.25
@@ -247,7 +247,7 @@ country_event = {
 				senior_union_with = BOH
 			}
 			BOH = { break_union = HAB }
-		}	
+		}
 	}
 }
 
@@ -513,7 +513,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 5
-				leader = "Istvбn Bocskay"
+				leader = "Иштван Бочкаи"
 				friend = HUN
 			}
 			clr_province_flag = hungarian_revolt
@@ -881,7 +881,7 @@ country_event = {
 #		tag = HAB
 #		NOT = { is_year = 1500 }
 #		is_emperor = yes
-#		dynasty = "фон Габсбург"
+#		dynasty = "von Habsburg"
 #		prestige = 50
 #	}
 #
@@ -940,7 +940,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "фон Габсбург"
+			dynasty = "von Habsburg"
 		}
 	}
 	
@@ -972,7 +972,7 @@ country_event = {
 		months = 100
 		modifier = {
 			factor = 0.75
-			dynasty = "фон Габсбург"
+			dynasty = "von Habsburg"
 		}
 	}
 	
@@ -1173,7 +1173,7 @@ country_event = {
 					has_country_flag = habsburg_adm_heir
 				}
 				define_heir = {
-					dynasty = "фон Габсбург"
+					dynasty = "von Habsburg"
 					female = yes
 					ADM = 5
 					DIP = 1
@@ -1187,7 +1187,7 @@ country_event = {
 					has_country_flag = habsburg_dip_heir
 				}
 				define_heir = {
-					dynasty = "фон Габсбург"
+					dynasty = "von Habsburg"
 					female = yes
 					DIP = 5
 					ADM = 1
@@ -1201,7 +1201,7 @@ country_event = {
 					has_country_flag = habsburg_mil_heir
 				}
 				define_heir = {
-					dynasty = "фон Габсбург"
+					dynasty = "von Habsburg"
 					female = yes
 					MIL = 5
 					ADM = 1
@@ -1307,7 +1307,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 150
+		months = 100
 	}
 	
 

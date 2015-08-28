@@ -1635,7 +1635,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		always = no
 		has_dlc = "American Dream"
 		tag = USA
 		NOT = {
@@ -2395,7 +2394,7 @@ country_event = {
 	}
 
 	option = {
-		name = "usa_dlc.EVTOPTB62" # Томас Джефферсон
+		name = "usa_dlc.EVTOPTB62" # Thomas Jefferson
 		add_opinion = { 
 			who = GBR 
 			modifier = opinion_displeased 
@@ -2561,7 +2560,7 @@ country_event = {
 	mean_time_to_happen = { months = 200 }
 	
 	option = {
-		name = "usa_dlc.EVTOPTA64" # Томас Джефферсон
+		name = "usa_dlc.EVTOPTA64" # Thomas Jefferson
 		add_adm_power = 20
 		define_ruler = {
 			name = "Томас Джефферсон"
@@ -2679,7 +2678,7 @@ country_event = {
 	mean_time_to_happen = { months = 200 }
 	
 	option = {
-		name = "usa_dlc.EVTOPTA66" # Томас Джефферсон
+		name = "usa_dlc.EVTOPTA66" # Thomas Jefferson
 		add_mercantilism = 0.05
 		define_ruler = {
 			name = "Томас Джефферсон"
@@ -2840,7 +2839,7 @@ country_event = {
 			has_ruler = "Джеймс Мэдисон"
 		}
 		NOT = {
-			has_ruler = "ДэВитт Клинтон"
+			has_ruler = "ДеВитт Клинтон"
 		}
 	}
 	
@@ -2873,7 +2872,7 @@ country_event = {
 		add_stability = -1
 		add_mercantilism = -0.05
 		define_ruler = {
-			name = "ДэВитт Клинтон"
+			name = "Дэвитт Клинтон"
 			adm = 4	
 			dip = 6
 			mil = 3

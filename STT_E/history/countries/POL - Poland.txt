@@ -1,5 +1,4 @@
 government = feudal_monarchy
-mercantilism = 0.1
 primary_culture = polish
 religion = catholic
 technology_group = eastern
@@ -12,7 +11,7 @@ national_focus = ADM
 
 1444.11.11 = {
 	monarch = {
-		name = "Междуцарствие"
+		name = "(Междуцарствие)"
 		adm = 0
 		mil = 0
 		dip = 0
@@ -358,3 +357,7 @@ national_focus = ADM
 1789.1.1 = { leader = {	name = "Тадеуш Косцюшко"	type = general	rank = 1	fire = 3	shock = 4	manuever = 5	siege = 1	death_date = 1817.10.15 } }
 
 1789.1.1 = { leader = {	name = "Юзеф Понятовский"        	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1813.1.1 } }
+
+1807.7.9 = {
+	government_rank = 1
+}

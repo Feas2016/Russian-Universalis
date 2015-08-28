@@ -5,15 +5,16 @@ country_decisions = {
 		potential = {
 			NOT = { exists = SLV }
 			OR = {
-				tag = RUS
-				tag = YUG
-				}
+				culture_group = west_slavic
+				culture_group = east_slavic
+				culture_group = south_slavic
+			}
 			adm_tech = 24
 			OR = {
 				ai = no
 				AND = {
 					ai = yes
-					num_of_cities = 15
+					num_of_cities = 40
 				}
 			}
 		}

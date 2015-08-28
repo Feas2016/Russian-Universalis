@@ -1,9 +1,10 @@
 government = feudal_monarchy
-mercantilism = 0.1
+government_rank = 1
 primary_culture = kannada
 religion = hinduism
 technology_group = indian
 capital = 533	# Mysore
+fixed_capital = 533 # Cannot move capital away from this province & no power cost to move to it
 
 #Ummatur Cheifs:
 #Very independent feudatories of Vijayanagara, often ignoring the empire or in rebelion against it
@@ -154,7 +155,7 @@ capital = 533	# Mysore
 		DIP = 2
 		MIL = 0
 	}
-	government = feudal_monarchy
+	government_rank = 2
 }
 
 1552.1.1 = {
@@ -456,6 +457,7 @@ capital = 533	# Mysore
 		leader = {	name = "Хайдар Али"          	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 1 }
 	}
 	religion = sunni
+	government = iqta
 }
 
 1761.6.3 = {
@@ -494,4 +496,5 @@ capital = 533	# Mysore
 		MIL = 0
 	}
 	religion = hinduism
+	government = feudal_monarchy
 }

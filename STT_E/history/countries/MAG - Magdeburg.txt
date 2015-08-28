@@ -6,7 +6,6 @@ technology_group = western
 capital = 52	# Magdeburg
 fixed_capital = 52 # Cannot move capital away from this province & no power cost to move to it
 
-
 1382.1.1 = {
 	monarch = {
 		name = "Альбрехт III"
@@ -122,16 +121,6 @@ fixed_capital = 52 # Cannot move capital away from this province & no power cost
 	join_league = protestant
 }
 
-1635.1.1 = {
-	monarch = {
-		name = "Август I"
-		birth_date = 1614.8.13
-		adm = 1
-		dip = 1
-		mil = 0
-	}
-}
-
 1629.5.22 = {
 	leave_league = protestant
 }
@@ -142,6 +131,16 @@ fixed_capital = 52 # Cannot move capital away from this province & no power cost
 
 1631.5.20 = {
 	leave_league = protestant
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Август I"
+		birth_date = 1614.8.13
+		adm = 1
+		dip = 1
+		mil = 0
+	}
 }
 
 1650.1.1 = { primary_culture = prussian }

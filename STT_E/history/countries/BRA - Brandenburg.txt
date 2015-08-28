@@ -1,11 +1,11 @@
-government = reich_government
-mercantilism = 0.1
+government = feudal_monarchy
+government_rank = 1
 elector = yes
 technology_group = western
 primary_culture = saxon
 religion = catholic
 capital = 50	# Berlin
-government_rank = 1
+
 
 1378.12.9 = {
 	monarch = {
@@ -355,7 +355,8 @@ government_rank = 1
 		leader = { name = "Фридрих III"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0}
 	}
 }
-### STT delete goverment
+
+1688.5.10 = { government = absolute_monarchy }
 
 1690.1.1 = { leader = {	name = "фон Дессау"            	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 

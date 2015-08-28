@@ -8,15 +8,14 @@ capital = 92 # Brabant
 	government_rank = 1
 }
 
-
 1559.1.1 = {
 	monarch = {
 		name = "Вильгельм I"
-		dynasty = "Оранский"
+		dynasty = "ван Оранье"
 		adm = 5
 		dip = 4
 		mil = 5
-		leader = { name = "Вильгельм Оранский"	type = general		rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
+		leader = { name = "Вильгельм ван Оранье"	type = general		rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
 	}
 }
 
@@ -29,6 +28,11 @@ capital = 92 # Brabant
 1575.1.1 = { religion = reformed }
 
 1579.1.1 = { leader = {	name = "Вильгельм Людовик Нассау"	type = general		rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1620.6.13 } }
+
+
+1579.1.23 = {
+	government_rank = 2
+}
 
 1580.1.1 = { decision = enlist_privateers }
 
@@ -96,11 +100,11 @@ capital = 92 # Brabant
 1625.4.23 = {
 	monarch = {
 		name = "Фридрих Генрих I"
-		dynasty = "ван Оранж"
+		dynasty = "ван Оранье"
 		adm = 3
 		dip = 2
 		mil = 3
-		leader = { name = "Фридрих Генрих I ван Оранж"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 2 }
+		leader = { name = "Фридрих Генрих I ван Оранье"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 2 }
 	}
 }
 
@@ -119,11 +123,11 @@ capital = 92 # Brabant
 1647.3.14 = {
 	monarch = {
 		name = "Вильгельм II"
-		dynasty = "ван Оранж"
+		dynasty = "ван Оранье"
 		adm = 5
 		dip = 3
 		mil = 3
-		leader = { name = "Вильгельм II Оранский"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0 }
+		leader = { name = "Вильгельм II ван Оранье"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 }
 
@@ -160,11 +164,11 @@ capital = 92 # Brabant
 1672.6.28 = {
 	monarch = {
 		name = "Вильгельм III"
-		dynasty = "ван Оранж"
+		dynasty = "ван Оранье"
 		adm = 6
 		dip = 4
 		mil = 4
-		leader = { name = "Вильгельм III Оранский"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = { name = "Вильгельм III ван Оранье"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -199,7 +203,7 @@ capital = 92 # Brabant
 1747.4.1 = {
 	monarch = {
 		name = "Вильгельм IV"
-		dynasty = "ван Оранж"
+		dynasty = "ван Оранье"
 		adm = 3
 		dip = 1
 		mil = 2
@@ -212,7 +216,7 @@ capital = 92 # Brabant
 1751.10.22 = {
 	monarch = {
 		name = "Вильгельм V"
-		dynasty = "ван Оранж"
+		dynasty = "ван Оранье"
 		adm = 3
 		dip = 2
 		mil = 2
@@ -223,14 +227,15 @@ capital = 92 # Brabant
 
 1778.1.1 = { leader = {	name = "Иоанн Вильгельм де Винтер"		type = admiral	rank = 1	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1787.1.1 } }
 
-1795.1.1 = {
+1795.1.19 = {
 	monarch = {
 		name = "Батавская республика"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
-	government = revolutionary_republic
+	government = constitutional_republic
+	government_rank = 1
 }
 
 1799.1.1 = { leader = { name = "Давид Хендрик Шассе"		type = general	rank = 0	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
@@ -256,6 +261,7 @@ capital = 92 # Brabant
 		mil = 2
 	}
 	government = constitutional_monarchy # Napoleonic monarchy
+	government_rank = 2
 }
 
 1810.7.1 = {
@@ -271,7 +277,7 @@ capital = 92 # Brabant
 1813.11.30 = {
 	monarch = {
 		name = "Вильгельм I"
-		dynasty = "Оранский"
+		dynasty = "ван Оранье"
 		adm = 3
 		dip = 3
 		mil = 2

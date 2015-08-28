@@ -1,15 +1,7 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 4
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 1
-#land_naval = 1
-#quality_quantity = -1
-#serfdom_freesubjects = -2
 technology_group = western
 religion = catholic
-primary_culture = sicilian
+primary_culture = neapolitan
 capital = 121 # Napoli
 
 1399.1.1 = {
@@ -198,7 +190,7 @@ capital = 121 # Napoli
 	}
 }
 
-1734.6.2 = { government = enlightened_despotism }
+1734.6.2 = { government = enlightened_despotism government_rank = 1 }
 
 1734.6.2 = {
 	monarch = {
@@ -236,6 +228,10 @@ capital = 121 # Napoli
 	}
 }
 
+1768.5.12 = {
+	government_rank = 2
+}
+
 1800.1.1 = { capital = 125 } # Palermo
 
 1806.3.11 = {
@@ -247,6 +243,10 @@ capital = 121 # Napoli
 		mil = 2
 		adm = 2
 	}
+}
+
+1806.3.11 = {
+	government_rank = 1
 }
 
 1808.8.1 = {

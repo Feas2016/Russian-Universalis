@@ -21,14 +21,14 @@ capital = 236	# London
 
 1651.12.30 = { decision = establish_british_merchant_navy }
 
-1660.5.29 = { decision = tenures_abolition_act }
+#1660.5.29 = { decision = tenures_abolition_act }
 
 1673.1.1 = { decision = test_act }
 
-1700.1.1 = { decision = agricultural_cultivation }
+#1700.1.1 = { decision = agricultural_cultivation }
 
 1702.3.8 = {
-	decision = establish_the_wooden_wall
+#	decision = establish_the_wooden_wall
 	monarch = {
 		name = "Анна I"
 		dynasty = "Стюарт"
@@ -124,20 +124,6 @@ capital = 236	# London
 	}
 }
 
-1751.3.20 = {
-	heir = {
-		name = "Георг Вильгельм"
-		monarch_name = "Георг III"
-		dynasty = "фон Ганновер"
-		birth_date = 1738.6.4
-		death_date = 1820.1.29
-		claim = 95
-		adm = 1
-		dip = 1
-		mil = 4
-	}
-}
-
 1740.1.1 = { leader = {	name = "Джордж Энсон"		type = admiral	rank = 3	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1762.1.1 } }
 
 1740.1.1 = { leader = {	name = "Чарльз Камберленд"	type = general	rank = 2	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1765.10.31 } }
@@ -157,6 +143,20 @@ capital = 236	# London
 1750.1.1 = { leader = {	name = "Чарльз Сондерс"	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1775.12.7 } }
 
 1750.1.1 = { set_country_flag = american_revolution }
+
+1751.3.20 = {
+	heir = {
+		name = "Георг Вильгельм"
+		monarch_name = "Георг III"
+		dynasty = "фон Ганновер"
+		birth_date = 1738.6.4
+		death_date = 1820.1.29
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
 
 1752.1.1 = { leader = {	name = "Эдвард Брэддок"	type = general		rank = 1	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1755.7.13 } }
 
@@ -237,7 +237,7 @@ capital = 236	# London
 
 1794.1.1 = { leader = { name = "Герцог Веллингтон"	type = general		rank = 0	fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1819.1.1 } }
 
-1799.1.1 = { decision = combination_act }
+#1799.1.1 = { decision = combination_act }
 
 1804.1.1 = { leader = { name = "Томас Кохрейн"	type = admiral		rank = 0	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1810.1.1 } }
 

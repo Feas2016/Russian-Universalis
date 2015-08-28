@@ -1,0 +1,64 @@
+name = "Вторая англо-маратхская война"
+war_goal = {
+	type = superiority_overseas
+	casus_belli = cb_overseas
+}
+
+1803.8.1 = {
+	add_attacker = GBR
+	add_defender = GWA
+	add_defender = NAG
+}
+
+1803.9.11 = {
+	battle = {
+		name = "Дели"
+		location = 522
+		attacker = {
+			commander = "Джерард Лейк"	# Gerard Lake
+			infantry = 4500
+			losses = 7	# percent
+			country = GBR
+		}
+		defender = {
+			commander = "Буркин"	# Bourquin
+			infantry = 19000
+			losses = 40	# percent
+			country = GWA
+		}
+		result = yes
+	}
+}
+
+1803.9.23 = {
+	battle = {
+		name = "Ассайе"
+		location = 545
+		attacker = {
+			commander = "Артур Уэлсли"	# Arthur Wellesley
+			infantry = 4500
+			cavalry = 2000
+			losses = 56	# percent
+			country = GBR
+		}
+		defender = {
+			commander = "Рагходжи Бхонсле"	# Ragojee Bhonsla
+			infantry = 50000
+			artillery = 100
+			losses = 12	# percent
+			country = GWA
+		}
+		result = yes
+	}
+}
+
+# Treaty of Deogaon
+1803.12.17 = {
+	rem_defender = NAG
+}
+
+# Treaty of Rajpurghat
+1805.12.25 = {
+	rem_attacker = GBR
+	rem_defender = GWA
+}

@@ -1,16 +1,10 @@
 government = theocratic_government
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 4
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = 1
-#quality_quantity = 0
-#serfdom_freesubjects = -4
-primary_culture = bavarian
+government_rank = 1
+primary_culture = swabian
 religion = catholic
 technology_group = western
-capital = 1868	# Bremen
+capital = 1868
+fixed_capital = 1868 # Cannot move capital away from this province & no power cost to move to it
 
 1373.1.1 = {
 	monarch = {

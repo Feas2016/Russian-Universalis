@@ -1,0 +1,194 @@
+########################################
+# Flavor Events for Timurid
+#
+# written by Sara Wendel-÷rtqvist
+########################################
+
+namespace = flavor_tim
+normal_or_historical_nations = yes
+
+# The Disintegration of the Timurid Empire
+country_event = {
+	id = flavor_tim.1
+	title = "flavor_tim.EVTNAME1"
+	desc = "flavor_tim.EVTDESC1"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = TIM
+		is_year = 1450
+		NOT = { is_year = 1500 }
+		NOT = {
+			adm = 3
+		}
+		NOT = {
+			dip = 3
+		}
+		NOT = {
+			mil = 3
+		}
+		has_regency = no
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					MUG = {
+						exists = no
+					}
+					any_owned_province = {
+						is_core = MUG
+						can_spawn_rebels = nationalist_rebels
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_core = MUG
+						can_spawn_rebels = nationalist_rebels
+					}
+					set_province_flag = babur
+				}
+				every_owned_province = {
+					limit = {
+						is_core = MUG
+						can_spawn_rebels = nationalist_rebels
+						NOT = { has_province_flag = babur }
+					}
+					set_province_flag = mughal_revolt
+				}
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = babur }
+					NOT = { has_province_flag = mughal_revolt }
+				}
+				set_province_flag = revolt
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = babur }
+					NOT = { has_province_flag = mughal_revolt }
+					NOT = { has_province_flag = revolt }
+				}
+				set_province_flag = revolt
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = babur }
+					NOT = { has_province_flag = mughal_revolt }
+					NOT = { has_province_flag = revolt }
+				}
+				set_province_flag = revolt
+			}
+		}
+	}
+	
+	option = { 
+		name = "flavor_tim.EVTOPTA1" # Attack all traitors
+		ai_chance = { factor = 100 }
+		random_owned_province = {
+			limit = {
+				has_province_flag = babur
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 6
+				leader = "¡‡·Û “ËÏÛË‰"
+			}
+			clr_province_flag = babur
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = mughal_revolt
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1
+			}
+			clr_province_flag = mughal_revolt
+		}
+		every_owned_province = {
+			limit = {
+				has_province_flag = revolt
+			}
+			create_revolt = 2
+			clr_province_flag = revolt
+		}
+	}
+	option = {
+		name = "flavor_tim.EVTOPTB1" # Bribe all traitors
+		ai_chance = { factor = 0 }
+		add_years_of_income = -2
+		add_inflation = 5
+	}
+}
+
+# Ismail's Resurrection of Persia
+country_event = {
+	id = flavor_tim.2
+	title = "flavor_tim.EVTNAME2"
+	desc = "flavor_tim.EVTDESC2"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		any_owned_province = { is_core = PER }
+		NOT = { exists = PER }
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 2000
+	}
+	
+	option = {
+		name = "flavor_tim.EVTOPTA2" # Crush the Shiite rebels
+		every_owned_province = {
+			limit = { is_core = PER }
+			add_province_modifier = {
+				name = add_unrest_10_modifier
+				duration = 1825
+			}
+		}
+	}
+}
+
+# Ulugh Beg's Observatory
+country_event = {
+	id = flavor_tim.3
+	title = "flavor_tim.EVTNAME3"
+	desc = "flavor_tim.EVTDESC3"
+	picture = FORT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TIM
+		NOT = { is_year = 1465 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "flavor_tim.EVTOPTA3" # Build it!
+		add_years_of_income = -1
+		add_dip_power = 50
+		add_mil_power = 50
+		add_adm_power = 50
+	}
+	option = {
+		name = "flavor_tim.EVTOPTB3" # We don't have the time or the money for such foolishness!
+		add_prestige = -5
+	}
+}

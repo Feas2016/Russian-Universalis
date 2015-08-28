@@ -85,6 +85,7 @@ national_focus = DIP
 		name = "Педро Инфанте"
 		dynasty = "де Авис"
 		birth_date = 1392.1.1
+		regent = yes
 		adm = 4
 		dip = 2
 		mil = 1
@@ -106,6 +107,8 @@ national_focus = DIP
 	}
 }
 
+1443.1.1 = { leader = {	name = "Диего Гомеш"		type = explorer 	rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
+
 1448.6.9 = {
 	monarch = {
 		name = "Альфонс V"
@@ -118,11 +121,9 @@ national_focus = DIP
 	}
 }
 
-1441.1.1 = { leader = {	name = "Нуньо Тристао"		type = explorer		rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
+#1441.1.1 = { leader = {	name = "Нуньо Тристао"		type = explorer		rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
 
-1443.1.1 = { leader = {	name = "Диего Гомеш"		type = explorer 	rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
-
-1444.1.1 = { leader = {	name = "Альваро Фернандес"	type = explorer		rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
+#1444.1.1 = { leader = {	name = "Альваро Фернандес"	type = explorer		rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
 
 1450.1.1 = { decision = act_of_uniformity decision = blasphemy_act }
 
@@ -201,8 +202,6 @@ national_focus = DIP
 #1500.1.1 = { decision = colonial_expansion }
 
 1500.1.1 = { leader = { name = "Руй Лоуренсо Раваско"	type = conquistador	rank = 4	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1506.1.1 } }
-
-1500.1.1 = { mercantilism = 0.1 } # Commercial Conflict in the Indian Ocean
 
 1500.3.9 = { leader = {	name = "Педро Альвареш Кабрал"  	type = explorer		rank = 6	fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1502.1.1 } }
 

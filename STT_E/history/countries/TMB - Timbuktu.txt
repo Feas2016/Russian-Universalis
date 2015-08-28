@@ -1,0 +1,333 @@
+government = tribal_federation
+primary_culture = tuareg
+religion = sunni
+technology_group = sub_saharan
+capital = 1132	# Niani
+fixed_capital = 1132 # Cannot move capital away from this province & no power cost to move to it
+
+#Tuareg Leaders
+1434.1.1 = {
+	monarch = {
+		name = "Акил"
+		dynasty = "Акамальвал"
+		dip = 2
+		adm = 1
+		mil = 4
+	}
+	add_piety = -0.15
+}
+
+#Chased out of Timbuktu in 1468 by Songhai conquest.
+
+#Arma leaders of Timbuktu, appointed by Arma through elections by the military leaders
+
+1618.1.1 = {
+	government = noble_republic
+	monarch = {
+		name = "Аль-Хадж I"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1618.1.1 = {
+	heir = {
+		name = "Мухаммед Банакану"
+		monarch_name = "Мухаммед I Банакану"
+		dynasty = "Аскиа"
+		birth_date = 1600.1.1
+		death_date = 1635.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1621.1.1 = {
+	monarch = {
+		name = "Мухаммед I Банакану"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1621.1.1 = {
+	heir = {
+		name = "Али Залил"
+		monarch_name = "Али Залил"
+		dynasty = "Аскиа"
+		birth_date = 1600.1.1
+		death_Date = 1635.7.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Али Залил"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1635.7.1 = {
+	monarch = {
+		name = "Мухаммед I Банакану"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1635.7.1 = {
+	heir = {
+		name = "Мухаммед"
+		monarch_name = "Аль-Хадж II Мухаммед"
+		dynasty = "Аскиа"
+		birth_Date = 1615.1.1
+		death_Date = 1647.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+		
+
+#Restored
+1642.1.1 = {
+	monarch = {
+		name = "Аль-Хадж II Мухаммед"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1642.1.1 = {
+	heir = {
+		name = "Дауд"
+		monarch_name = "Дауд"
+		dynasty = "Аскиа"
+		birth_Date = 1620.1.1
+		death_Date = 1668.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1647.1.1 = {
+	monarch = {
+		name = "Дауд"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1647.1.1 = {
+	heir = {
+		name = "Мухаммед аль-Садик"
+		monarch_name = "Мухаммед II аль-Садик"
+		dynasty = "Аскиа"
+		birth_Date = 1640.1.1
+		death_date = 1684.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1668.1.1 = {
+	monarch = {
+		name = "Мухаммед II аль-Садик"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1668.1.1 = {
+	heir = {
+		name = "Мухаммед"
+		monarch_name = "Мухаммед III"
+		dynasty = "Аскиа"
+		birth_Date = 1660.1.1
+		death_date = 1702.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1684.1.1 = {
+	monarch = {
+		name = "Мухаммед III"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1684.1.1 = {
+	heir = {
+		name = "Бакари"
+		monarch_name = "Бакари"
+		dynasty = "Аскиа"
+		birth_date = 1670.1.1
+		death_date = 1705.12.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1702.1.1 = {
+	monarch = {
+		name = "Бакари"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1702.1.1 = {
+	heir = {
+		name = "Абд аль-Рахман"
+		monarch_name = "Абд аль-Рахман"
+		dynasty = "Аскиа"
+		birth_date = 1690.1.1
+		death_Date = 1709.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1705.12.1 = {
+	monarch = {
+		name = "Абд аль-Рахман"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1705.12.1 = {
+	heir = {
+		name = "Бакр"
+		monarch_name = "Бакр"
+		dynasty = "Аскиа"
+		birth_Date = 1680.1.1
+		death_date = 1713.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1709.1.1 = {
+	monarch = {
+		name = "Бакр"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1709.1.1 = {
+	heir = {
+		name = "Аль-Мухтар"
+		monarch_name = "Аль-Мухтар"
+		dynasty = "Аскиа"
+		birth_date = 1690.1.1
+		death_date = 1730.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1713.1.1 = {
+	monarch = {
+		name = "Аль-Мухтар"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1713.1.1 = {
+	heir = {
+		name = "Аль-Хадж"
+		monarch_name = "Аль-Хадж III"
+		dynasty = "Аскиа"
+		birth_date = 1700.1.1
+		death_date = 1748.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1730.1.1 = {
+	monarch = {
+		name = "Аль-Хадж III"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1730.1.1 = {
+	heir = {
+		name = "Махмуд"
+		monarch_name = "Махмуд"
+		dynasty = "Аскиа"
+		birth_Date = 1720.1.1
+		death_Date = 1769.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1748.1.1 = {
+	monarch = {
+		name = "Махмуд"
+		dynasty = "Аскиа"
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

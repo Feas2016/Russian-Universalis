@@ -32,7 +32,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.1.a
 		define_ruler = {
-			name = "(Regent) Янош"
+			name = "(Регент) Янош"
 			dynasty = "Хуньяди"
 			DIP = 5			
 			ADM = 4
@@ -349,7 +349,7 @@ country_event = {
 		if = {
 			limit = { is_lesser_in_union = no }
 			add_legitimacy = -10
-		}	
+		}			
 	}
 	option = {
 		name = flavor_hun.8.b
@@ -370,7 +370,7 @@ country_event = {
 		tag = HUN
 		truce_with = TUR
 		exists = HAB
-		HAB = { dynasty = "фон ѓабсург" }
+		HAB = { dynasty = "фон Габсбург" }
 		TUR = {
 			any_owned_province = {
 				region = hungarian_region
@@ -459,7 +459,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				size = 2
-				leader = "Дьёрдя Дожи"
+				leader = "Дьёрдь Дожа"
 			}
 			clr_province_flag = hun_peasant_revolt
 		}
@@ -499,7 +499,7 @@ country_event = {
 		add_prestige = 5
 		define_advisor = {
 			type = statesman
-			name = "Томаш Бакукс"
+			name = "Тамаш Бакоц"
 			discount = yes
 			skill = 2
 		}
