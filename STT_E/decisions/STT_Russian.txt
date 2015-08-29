@@ -265,35 +265,6 @@ country_decisions = {
 		}
 	}
 	
-	establish_bride = {
-		potential = {
-			OR = {
-			tag = MOS
-			tag = TSR
-			tag = RUS
-		}
-			NOT = { has_country_modifier = rus_bride }
-			religion = orthodox
-			government = monarchy
-		}
-		allow = {
-			is_at_war = no
-			dip = 3
-			dip_power = 50
-			legitimacy = 90
-		}
-		effect = {
-			add_treasury = -200
-			add_dip_power = -50
-			add_country_modifier = {
-				name = "rus_bride"
-				duration = -1
-			}		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	establish_zemsky = {
 		potential = {
 			OR = {

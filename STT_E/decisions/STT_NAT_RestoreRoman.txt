@@ -56,6 +56,7 @@ byz_spqr = {
 			culture_group = latin
 			culture_group = byzantine
 			}
+		owns = 118
 		NOT = {	adm_tech = 10 }
 		is_at_war = no
 		num_of_owned_provinces_with = {
@@ -64,12 +65,30 @@ byz_spqr = {
 			}
 		}
 	effect = {
-		italian_region = {
-			limit = { NOT = { owned_by = ROOT }	}
-				add_core = PQR
+		every_province = {
+			limit = { region = italian_region }
+			add_core = PQR
+			}
+		if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
 			}
 			change_government = spqr_republic
 			set_government_rank = 2
+			set_capital = 118
 			change_tag = PQR
 			swap_free_idea_group = yes
 			add_stability = 2
@@ -118,9 +137,27 @@ restore_the_roman_empire = {
 			name = "byz_ceasar"
 			duration = -1
 			}
+		if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
 		change_government = rome_government
 		set_government_rank = 3
 		add_prestige = 50
+		add_legitimacy = 50
 		change_tag = ROM
 		swap_free_idea_group = yes
 		}

@@ -211,21 +211,17 @@ LAE_ideas = {
 	}
 }
 
-ROMan_ideas = {
+ROM_ideas = {
 	start = {
-		discipline = 0.1
 		legitimacy = 1
-	}
-	
+		discipline = 0.1
+	}	
 	bonus = {
 		global_manpower_modifier = 0.33
 	}
 	
  trigger = {
- OR = {
-		tag = PQR
-		tag = ROM
-	}
+	tag = ROM
 	}
 	free = yes
 	
@@ -233,7 +229,7 @@ ROMan_ideas = {
 		global_unrest = -1
 	}
 	legacy_of_rome_rom = {
-		diplomatic_reputation = 5
+		diplomatic_reputation = 2
 	}
 	spqr_rom = {
 		stability_cost_modifier = -0.2
@@ -253,6 +249,43 @@ ROMan_ideas = {
 	}
 }
 
+PQR_ideas = {
+	start = {
+		republican_tradition = 0.01
+		discipline = 0.1
+	}	
+	bonus = {
+		global_manpower_modifier = 0.33
+	}
+	
+ trigger = {
+	tag = PQR
+	}
+	free = yes
+	
+	pax_romana_rom = {
+		global_unrest = -1
+	}
+	legacy_of_rome_rom = {
+		diplomatic_reputation = 2
+	}
+	spqr_rom = {
+		stability_cost_modifier = -0.2
+	}
+	roman_legions_rom = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
+	}
+	roman_architecture_rom = {
+		production_efficiency = 0.2
+	}
+	imperial_bureaucracy_rom = {
+		global_tax_modifier = 0.1
+	}
+	imperium_sine_fine_rom = {
+		core_creation = -0.20
+	}
+}
 
 SCA_ideas = {
 	start = {

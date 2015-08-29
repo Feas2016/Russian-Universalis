@@ -48,14 +48,16 @@ country_decisions = {
 				tag = BYZ
 				tag = ROM
 				tag = PQR
-			}
+				tag = MOS
+				tag = TSR
+				tag = RUS
+				}
 			NOT = { has_country_modifier = byz_bride }
 			dip = 2
+			religion = orthodox
 		}
 		allow = {
-			OR = {
-			advisor = artist 
-			}
+			religion = orthodox
 			is_at_war = no
 			dip = 2
 			prestige = 70
@@ -68,7 +70,8 @@ country_decisions = {
 			add_country_modifier = {
 				name = "byz_bride"
 				duration = -1
-			}		}
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -136,9 +139,6 @@ country_decisions = {
 			dip = 2
 		}
 		allow = {
-			OR = {
-			advisor = master_of_mint
-			}
 			is_at_war = no
 			adm = 3
 			dip = 2
@@ -147,7 +147,6 @@ country_decisions = {
 			stability = 1
 		}
 		effect = {
-			add_stability = -1
 			add_prestige = 10
 			add_treasury = -100
 			add_adm_power = -50
@@ -156,17 +155,13 @@ country_decisions = {
 				duration = -1
 			}		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
 	establish_echinades = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
 			NOT = { has_country_modifier = byz_echinades }
 			mil = 3
 		}
@@ -225,11 +220,7 @@ country_decisions = {
 	
 	establish_byzsenate = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
 			NOT = { has_country_modifier = byz_senate }
 			adm = 4
 		}
@@ -261,11 +252,7 @@ country_decisions = {
 	}
 	establish_byzsacred = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
 			NOT = { has_country_modifier = byz_sacred }
 			dip = 2
 			adm = 2
@@ -294,11 +281,7 @@ country_decisions = {
 	}
 	establish_byzuni = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
 			NOT = { has_country_modifier = byz_uni }
 			dip = 3
 			adm = 2
@@ -405,7 +388,7 @@ country_decisions = {
 					tag = TSR
 				}
 			}
-			
+			dominant_religion = orthodox
 			NOT = { has_country_modifier = byz_council }
 			NOT = { has_country_modifier = byz_council2 }
 			NOT = { has_country_modifier = byz_council3 }
@@ -447,6 +430,7 @@ country_decisions = {
 			has_country_modifier = byz_council
 			NOT = { has_country_modifier = byz_council2 }
 			NOT = { has_country_modifier = byz_council3 }
+			dominant_religion = orthodox
 		}
 		allow = {
 			is_at_war = no
@@ -486,6 +470,7 @@ country_decisions = {
 			has_country_modifier = byz_council2
 			NOT = { has_country_modifier = byz_council3 }
 			NOT = { has_country_modifier = byz_council }
+			dominant_religion = orthodox
 		}
 		allow = {
 			is_at_war = no
@@ -624,6 +609,8 @@ country_decisions = {
 				tag = ROM
 				tag = PQR
 			}
+			NOT = { has_ruler_modifier = byz_foruniver }
+			has_country_modifier = byz_uni
 		}
 		allow = {
 			NOT = { has_ruler_modifier = byz_foruniver }
@@ -652,6 +639,8 @@ country_decisions = {
 				tag = ROM
 				tag = PQR
 			}
+			NOT = { has_ruler_modifier = byz_forsenate }
+			has_country_modifier = byz_senate
 		}
 		allow = {
 			NOT = { has_ruler_modifier = byz_forsenate }
@@ -676,11 +665,7 @@ country_decisions = {
 	
 	byz_establish_barbarium = {
 		potential = {
-			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
-			}
+			tag = BYZ
 		}
 		allow = {
 			NOT = { has_country_modifier = byz_barbarium }
@@ -703,7 +688,6 @@ country_decisions = {
 			OR = {
 				tag = BYZ
 				tag = ROM
-				tag = PQR
 			}
 		}
 		allow = {

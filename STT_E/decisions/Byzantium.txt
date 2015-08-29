@@ -9,9 +9,35 @@ country_decisions = {
 				tag = ROM
 			}
 			NOT = { has_country_modifier = the_theme_system }
-			OR = {
-				ai = no
-				num_of_cities = 3
+			### STT
+			calc_true_if = {
+				owns = 151 # Constantinople
+				owns = 149 # Edirne
+				owns = 316 # Izmit
+				owns = 317 # Hudavendigar
+				owns = 318 # Sugla (Izmir)
+				owns = 319 # Mentese
+				owns = 322 # Kütahya
+				owns = 323 # Konya
+				owns = 324 # Karaman
+				owns = 325 # Kastamonu
+				owns = 326 # Ankara
+				owns = 328 # Sinop
+				owns = 329 # Sivas
+				owns = 330 # Trebizond
+				owns = 327 # Adana
+				owns = 1846 # Amasya
+				owns = 1848 # Hamid
+				owns = 2296 # Biga
+				owns = 2297 # Saruhan
+				owns = 2298 # Tekke
+				owns = 2299 # Bolu
+				owns = 2300 # Bozok
+				owns = 2301 # Kayseri
+				owns = 2302 # Icel
+				owns = 2304 # Canik
+				owns = 2750 # Plovdiv
+				amount = 15
 			}
 		}
 		allow = {

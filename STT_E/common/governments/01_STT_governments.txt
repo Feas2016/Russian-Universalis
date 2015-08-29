@@ -189,7 +189,12 @@ rome_government = {
 	nation_designer_cost = 40
 	nation_designer_trigger = {
 		culture_group = lombardy
-	}			
+	}
+
+	faction = emp_dip
+	faction = emp_adm
+	faction = emp_mil
+	
 	rank = {
 		3 = {
 			global_manpower_modifier = 0.20

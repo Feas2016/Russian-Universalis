@@ -10,20 +10,8 @@ country_decisions = {
 			NOT = { tag = HLR }
 			is_part_of_hre = no
 			is_emperor = no
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 5
-				}
-			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
-				}
-			}
+			num_of_cities = 5
+			NOT = { government = theocracy }
 		}
 		allow = {
 			adm_tech = 15
@@ -31,24 +19,15 @@ country_decisions = {
 			is_at_war = no
 			is_part_of_hre = no
 			is_emperor = no
-			owns = 73	# Tirol
-			owns = 128	# Karnten
-			owns = 132	# Steiermark
-			owns = 133	# Linz
-			owns = 134	# Wien
-			owns = 1770	# Ostmarch
-			owns = 1863	# Graz
-			owns = 266	# Bohemia
-			owns = 265	# Moravia
-			is_core = 73
-			is_core = 128
-			is_core = 132 
-			is_core = 133
-			is_core = 134
-			is_core = 1770
-			is_core = 1863
-			is_core = 266
-			is_core = 265
+			owns_core_province = 73	# Tirol
+			owns_core_province = 128	# Karnten
+			owns_core_province = 132	# Steiermark
+			owns_core_province = 133	# Linz
+			owns_core_province = 134	# Wien
+			owns_core_province = 1770	# Ostmarch
+			owns_core_province = 1863	# Graz
+			owns_core_province = 266	# Bohemia
+			owns_core_province = 265	# Moravia
 			}
 		effect = {
 		random_owned_province = {
