@@ -19,35 +19,19 @@ country_decisions = {
 		allow = {
 			is_subject = no
 			is_at_war = no
-			owns = 429			# Esfahan
-			owns = 416
-			owns = 418
-			owns = 382
-			is_core = 429			# Esfahan
-			is_core = 416
-			is_core = 418
-			is_core = 382
+			owns_core_province = 429			# Esfahan
+			owns_core_province = 416
+			owns_core_province = 418
+			owns_core_province = 382
 			OR = {
-				AND = {
-					owns = 444		# Charjui
-					is_core = 444
+				owns_core_province = 444		# Charjui
+				owns_core_province = 446		# Herat	
 				}
-				AND = {
-					owns = 446		# Herat	
-					is_core = 446
+			OR = {
+				owns_core_province = 442		# Bukhara
+				owns_core_province = 436		# Qaen
 				}
 			}
-			OR = {
-				AND = {
-					owns = 442		# Bukhara
-					is_core = 442
-				}
-				AND = {
-					owns = 436		# Qaen	
-					is_core = 436
-				}
-			}			
-		}
 		effect = {
 			anatolia = {
 				limit = {

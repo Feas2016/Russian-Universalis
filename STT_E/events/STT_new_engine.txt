@@ -1,0 +1,408 @@
+#####################
+### TRADE
+#####################
+# GOLD from Africa!
+country_event = {
+	id = 60000
+	title = "EVTNAME60000"
+	desc = "EVTDESC60000"
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		technology_group = western
+		OR = { #optimization
+			all_subject_country = {
+				gold = 1
+			}
+		gold = 1
+		}
+		OR = { 
+			west_african_coast = {
+				OR = {
+					all_subject_country = {
+						gold = 1
+					}
+					gold = 1
+				}
+			}
+			south_africa = {
+				OR = {
+					all_subject_country = {
+						gold = 1
+					}
+					gold = 1
+				}
+			}
+			central_africa = {
+				OR = {
+					all_subject_country = {
+						gold = 1
+					}
+					gold = 1
+				}
+			}
+			north_africa = {
+				OR = {
+					all_subject_country = {
+						gold = 1
+					}
+					gold = 1
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		
+		modifier = {
+			factor = 1.0
+			all_subject_country = {
+				gold = 1
+			}
+		}
+		modifier = {
+			factor = 2.0
+			all_subject_country = {
+				gold = 2
+			}
+		}
+		modifier = {
+			factor = 3.0
+			all_subject_country = {
+				gold = 3
+			}
+		}
+		modifier = {
+			factor = 4.0
+			all_subject_country = {
+				gold = 4
+			}
+		}
+		modifier = {
+			factor = 5.0
+			all_subject_country = {
+				gold = 5
+			}
+		}
+		modifier = {
+			factor = 6.0
+			all_subject_country = {
+				gold = 6
+			}
+		}
+		modifier = {
+			factor = 7.0
+			all_subject_country = {
+				gold = 7
+			}
+		}
+		modifier = {
+			factor = 8.0
+			all_subject_country = {
+				gold = 8
+			}
+		}
+		modifier = {
+			factor = 9.0
+			all_subject_country = {
+				gold = 9
+			}
+		}
+		modifier = {
+			factor = 10.0
+			all_subject_country = {
+				gold = 10
+			}
+		}
+	}
+	option = {
+		name = "EVTOPTA60000"
+		add_years_of_income = 1.0
+		add_inflation = 0.5
+	}
+}
+
+#########################
+### WESTERN
+#########################
+country_event = {
+	id = 60010
+	title = EVTNAME60010
+	desc = EVTDESC60010
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = EVTOPTA60010
+	}
+}
+
+country_event = {
+	id = 60011
+	title = EVTNAME60011
+	desc = EVTDESC60011
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = EVTOPTA60011
+	}
+}
+
+country_event = {
+	id = 60012
+	title = EVTNAME60012
+	desc = EVTDESC60012
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = EVTOPTA60012
+	}
+}
+
+#############################
+### RIVAL and FRIENDS
+#############################
+
+country_event = { #main theme
+	id = 60021
+	title = "EVTNAME60021"
+	desc = "EVTDESC60021"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	option = {
+		name = "EVTOPTA60021"
+		random_ally = {
+			limit = {
+				num_of_cities = 10
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				NOT = { is_rival = ROOT }
+				NOT = { historical_friend_with = ROOT }
+				}
+			set_country_flag = friend_timer
+		}
+		country_event = { id = 60022 days = 18000 tooltip = "EVTTOOLTIP60022" }
+		country_event = { id = 60026 days = 36000 tooltip = "EVTTOOLTIP60026" }
+	}
+	option = {
+		name = "EVTOPTB60021"
+		add_prestige = -10
+	}
+}
+
+country_event = { #friends or not
+	id = 60022
+	title = "EVTNAME60022"
+	desc = "EVTDESC60022"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	option = {
+		name = "EVTOPTA60022"
+	if = {
+		limit = {
+			any_ally = {
+				num_of_cities = 10
+				NOT = { historical_friend_with = ROOT }
+				has_country_flag = friend_timer
+				has_opinion = {
+					who = ROOT
+					value = 150
+					}
+				}
+			}
+		country_event = { id = 60023 days = 60 tooltip = "EVTTOOLTIP60023" }
+		}
+	if = {
+		limit = {
+			any_ally = {
+				num_of_cities = 10
+				NOT = { historical_friend_with = ROOT }
+				has_country_flag = friend_timer
+				AND = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+						}
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+							}
+						}
+					}
+				}
+			}
+		country_event = { id = 60024 days = 60 tooltip = "EVTTOOLTIP60024" }
+		}
+	if = {
+		limit = {
+			any_country = {
+				num_of_cities = 10
+				NOT = { historical_friend_with = ROOT }
+				has_country_flag = friend_timer
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+						}
+					}
+				}
+			}
+		country_event = { id = 60025 days = 60 tooltip = "EVTTOOLTIP60025" }
+		}
+	}
+}
+
+country_event = { #success
+	id = 60023
+	title = "EVTNAME60023"
+	desc = "EVTDESC60023"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	option = {
+		name = "EVTOPTA60023"
+		add_dip_power = 200
+		add_mil_power = 100
+		add_adm_power = 100
+		random_ally = {
+			limit = {
+				num_of_cities = 10
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				NOT = { is_rival = ROOT }
+				NOT = { historical_friend_with = ROOT }
+			}
+			clr_country_flag = friend_timer
+			add_historical_friend = ROOT
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_pleased
+				years = 20
+			}
+			add_dip_power = 200
+			add_mil_power = 100
+			add_adm_power = 100		
+		}
+		clr_country_flag = had_event_60021
+	}
+}
+
+country_event = { #take a chanse
+	id = 60024
+	title = "EVTNAME60024"
+	desc = "EVTDESC60024"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	option = {
+		name = "EVTOPTA60024"
+		country_event = { id = 60022 days = 18000 tooltip = "EVTTOOLTIP60022" }
+	}
+	option = {
+		name = "EVTOPTB60024"
+		add_prestige = -10
+		clr_country_flag = had_event_60021
+	}
+}
+
+country_event = {
+	id = 60025
+	title = "EVTNAME60025"
+	desc = "EVTDESC60025"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	option = {
+		name = "EVTOPTA60025"
+		add_stability = -1
+		clr_country_flag = had_event_60021
+		random_ally = {
+			limit = {
+				num_of_cities = 10
+				NOT = { is_rival = ROOT }
+				NOT = { historical_friend_with = ROOT }
+				has_country_flag = friend_timer
+			}
+			clr_country_flag = friend_timer
+		}
+	}
+}
+
+ country_event = { #remove
+	id = 60026
+	title = "EVTNAME60026"
+	desc = "EVTDESC60026"
+	picture = DIPLOMACY_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+		num_of_cities = 10
+		any_country = {
+			historical_friend_with = ROOT
+			num_of_cities = 10			
+			OR = {
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+				is_rival = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = "EVTOPTA60026"
+		every_country = {
+			limit = {
+			historical_friend_with = ROOT
+			num_of_cities = 10			
+			OR = {
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+						}
+					}
+				is_rival = ROOT
+				}
+			}
+		remove_historical_friend = ROOT
+		}
+	}
+}

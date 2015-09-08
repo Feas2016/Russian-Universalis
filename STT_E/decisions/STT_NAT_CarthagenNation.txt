@@ -52,46 +52,24 @@ country_decisions = {
 			adm_tech = 10
 			is_subject = no
 			is_at_war = no
-			owns = 344			# Marrakesh
-			owns = 338                      # Al-Djazair
-			owns = 341                      # Tunis
-			owns = 354                      # Tripoli
-			owns = 221                      # Mursia
-			is_core = 344			# Marrakesh
-			is_core = 338                   # Al-Djazair
-			is_core = 341                   # Tunis
-			is_core = 354                   # Tripoli
+			owns_core_province = 344			# Marrakesh
+			owns_core_province = 338                      # Al-Djazair
+			owns_core_province = 341                      # Tunis
+			owns_core_province = 354                      # Tripoli
+			owns_core_province = 221                      # Mursia
 			OR = {
-				AND = {
-					owns = 343		# Fez
-					is_core = 343
+				owns_core_province = 343		# Fez
+				owns_core_province = 227		# Lisboa
 				}
-				AND = {
-					owns = 227		# Lisboa	
-					is_core = 227
+			OR = {
+				owns_core_province = 	220	        # Valencia 
+				owns_core_province = 217		# Madrid
 				}
+			OR = {
+				owns_core_province = 333		# Palma
+				owns_core_province = 127		# Cagliari
+				}			
 			}
-			OR = {
-				AND = {
-					owns = 	220	        # Valencia 
-					is_core = 220
-				}
-				AND = {
-					owns = 217		# Madrid
-					is_core = 217
-				}
-			}
-			OR = {
-				AND = {
-					owns = 333		# Palma
-					is_core = 333
-				}
-				AND = {
-					owns = 127		# Cagliari	
-					is_core = 127
-				}
-			}			
-		}
 		effect = { 
 			algerian_region = {
 				limit = {

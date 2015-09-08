@@ -24,11 +24,10 @@ western = {
 			add_ruler_modifier = {
 				name = "reformer"
 				duration = -1
-			}
-			
+			}			
 			random_list = {
                 25 = {
-                    country_event  = { id = westernized.564722}
+                    country_event  = { id = 60010 }
 					change_technology_group = western
 					add_stability = -1
 					add_prestige = -30
@@ -41,7 +40,7 @@ western = {
                     }
                 }
                 50 = {
-                    country_event  = { id = westernized.564733}
+                    country_event  = { id = 60011 }
                     add_stability = -2
                     add_prestige = -40
 					add_adm_power = -300
@@ -54,7 +53,7 @@ western = {
                     }
                 }
                 25 = {
-                    country_event  = { id = westernized.564744}
+                    country_event  = { id = 60012 }
 					add_inflation = 5
                     add_stability = -3
 					add_prestige = -50
@@ -94,7 +93,7 @@ western_unit = {
 			}
 			random_list = {
                 25 = {
-                    country_event  = { id = westernized.564722}
+                    country_event  = { id = 60010 }
 					change_unit_type = western
 					add_stability = -1
 					add_prestige = -30
@@ -107,7 +106,7 @@ western_unit = {
                     }
                 }
                 50 = {
-                    country_event  = { id = westernized.564733}
+                    country_event  = { id = 60011 }
                     add_stability = -2
                     add_prestige = -40
 					add_mil_power = -300
@@ -120,7 +119,7 @@ western_unit = {
                     }
                 }
                 25 = {
-                    country_event  = { id = westernized.564744}
+                    country_event  = { id = 60012 }
 					add_inflation = 5
                     add_stability = -3
 					add_prestige = -50
@@ -167,4 +166,40 @@ thegreat = {
 			factor = 1
 		}
 	}
+friendship = {
+	potential = {
+		num_of_cities = 10
+		NOT = { has_country_flag = had_event_60021 }
+		any_ally = {
+			num_of_cities = 10
+			has_opinion = {
+				who = ROOT
+				value = 100
+				}
+			NOT = { is_rival = ROOT }
+			NOT = { historical_friend_with = ROOT }
+			NOT = { has_country_flag = friend_timer }
+		}
+	}
+	allow = {
+		num_of_cities = 10
+		any_ally = {
+			num_of_cities = 10
+			has_opinion = {
+				who = ROOT
+				value = 100
+				}
+			NOT = { is_rival = ROOT }
+			NOT = { historical_friend_with = ROOT }			
+		}
+	}
+	effect = {
+		country_event = { id = 60021 days = 1 tooltip = "EVTTOOLTIP60021" }
+		set_country_flag = had_event_60021
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 }
