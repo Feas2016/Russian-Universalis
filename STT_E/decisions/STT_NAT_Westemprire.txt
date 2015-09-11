@@ -6,84 +6,47 @@ country_decisions = {
 		    NOT = { exists = WEK }
 			NOT = { exists = HLR }
 		OR = {
-			AND = {
 			tag = FRA
-			NOT = { exists = BUR }
-			NOT = { exists = LOR }
-			NOT = { exists = AAC }
-			}
-			AND = {
 			tag = BUR
-			NOT = { exists = FRA }
-			NOT = { exists = LOR }
-			NOT = { exists = AAC }
-			}
-			AND = {
 			tag = LOR
-			NOT = { exists = BUR }
-			NOT = { exists = FRA }
-			NOT = { exists = AAC }
-			}
-			AND = {
 			tag = AAC
-			NOT = { exists = BUR }
-			NOT = { exists = LOR }
-			NOT = { exists = FRA }
 			}
 		}
-	}
-		allow = {
+		allow = { OR = {
+			AND = { tag = FRA 
+				NOT = { exists = BUR }
+				NOT = { exists = LOR }
+				NOT = { exists = AAC }
+				}
+			AND = { tag = BUR 
+				NOT = { exists = FRA }
+				NOT = { exists = LOR }
+				NOT = { exists = AAC }
+				}
+			AND = { tag = LOR
+				NOT = { exists = BUR }
+				NOT = { exists = FRA }
+				NOT = { exists = AAC }
+				}
+			AND = { tag = AAC 
+				NOT = { exists = BUR }
+				NOT = { exists = LOR }
+				NOT = { exists = FRA }
+				}
+				}
 			adm_tech = 12
 			is_subject = no
 			is_at_war = no
-			owns = 177	# Maine
-			owns = 179	# Blois
-			owns = 182	# Vermandois
-			owns = 183	# Île-de-France
-			owns = 184	# Orléannais
-			owns = 185	# Othe
-			owns = 186	# Champagne
-			owns = 95 # Breda
-			owns = 96 # Zeeland
-			owns = 97 # Holland
-			owns = 98 # Utrecht
-			owns = 99 # Gelre
-			owns = 100 # Friesland
-			owns = 104	# Lombardia
-			owns = 116	# Firenze
-			owns = 117	# Siena
-			owns = 118	# Roma
-			owns = 119	# Ancona
-			owns = 50	# Brandenburg
-			owns = 52	# Altmark
-			owns = 53	# Lüneburg
-			owns = 57	# Hannover
-			owns = 58	# Anhalt
-			owns = 61	# Dresden
-			owns = 62	# Leipzig
-			owns = 63	# Erfurt
-			owns = 67	# Franken
-			owns = 73	# Tirol
-			owns = 128	# Karnten
-			owns = 132	# Steiermark
-			owns = 133	# Linz
-			owns = 134	# Wien
-			owns = 1770	# Ostmarch
-			owns = 1863	# Graz
+			french_region = { type = all country_or_vassal_holds = ROOT }
+			lombardia = { type = all country_or_vassal_holds = ROOT }
+			the_low_countries = { type = all country_or_vassal_holds = ROOT }
+			lotharingia = { type = all country_or_vassal_holds = ROOT }
+			bavarian_region = { type = all country_or_vassal_holds = ROOT }
+			helvetia = { type = all country_or_vassal_holds = ROOT }
+			swabia = { type = all country_or_vassal_holds = ROOT }
+			franconian_region = { type = all country_or_vassal_holds = ROOT }
 		}
 		effect = {
-			french_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = WEK
-			}
-			lombardia = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = WEK
-			}
 			german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -96,16 +59,14 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = WEK
-			WEK = {
-				set_capital = 1878
-			}
+			set_capital = 1878
 			culture_group_union = french
 			culture_group_union = germanic
 			culture_group_union = latin
 			swap_free_idea_group = yes		#keep progress
 			dismantle_hre = yes
 			set_government_rank = 3
-			add_legitimacy = 100
+			add_legitimacy = 50
 		}
 		ai_will_do = {
 			factor = 1
