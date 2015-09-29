@@ -38,7 +38,7 @@ control_caspian_sea = {
 		2208 = { owned_by = ROOT }	# Tarek
 	}
 
-	global_trade_income_modifier = 0.05
+	global_own_trade_power = 0.05
 }
 
 # Control Gibraltar
@@ -68,7 +68,7 @@ control_gibraltar_straits = {
 		1751 = { owned_by = ROOT }
 	}
 
-	global_trade_income_modifier = 0.025
+	global_own_trade_power = 0.025
 }
 
 # Straits of Dover
@@ -87,7 +87,7 @@ control_dover_straits = {
 		235 = { owned_by = ROOT }
 	}
 
-	trade_efficiency = 0.05	
+	global_own_trade_power = 0.05	
 }
 
 # Med trade - Mare Nostrum
