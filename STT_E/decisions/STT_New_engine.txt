@@ -166,40 +166,5 @@ thegreat = {
 			factor = 1
 		}
 	}
-friendship = {
-	potential = {
-		num_of_cities = 10
-		NOT = { has_country_flag = had_event_60021 }
-		any_ally = {
-			num_of_cities = 10
-			has_opinion = {
-				who = ROOT
-				value = 100
-				}
-			NOT = { is_rival = ROOT }
-			NOT = { historical_friend_with = ROOT }
-			NOT = { has_country_flag = friend_timer }
-		}
-	}
-	allow = {
-		num_of_cities = 10
-		any_ally = {
-			num_of_cities = 10
-			has_opinion = {
-				who = ROOT
-				value = 100
-				}
-			NOT = { is_rival = ROOT }
-			NOT = { historical_friend_with = ROOT }			
-		}
-	}
-	effect = {
-		country_event = { id = 60021 days = 1 tooltip = "EVTTOOLTIP60021" }
-		set_country_flag = had_event_60021
-	}
-	ai_will_do = {
-		factor = 0
-	}
-}
 
 }

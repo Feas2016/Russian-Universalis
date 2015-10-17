@@ -17,11 +17,12 @@ country_event = {
 		is_year = 1450
 		NOT = { is_year = 1550 }
 		OR = {
+		### STT
 			AND = {
 				tag = MOS
-				NOT = { exists = RUS }
+				NOT = { exists = TSR }
 			}
-			tag = RUS
+			tag = TSR
 		}
 	}
 
@@ -69,11 +70,12 @@ country_event = {
 		is_year = 1560
 		NOT = { is_year = 1573 }
 		OR = {
+		### STT
 			AND = {
 				tag = MOS
-				NOT = { exists = RUS }
+				NOT = { exists = TSR }
 			}
-			tag = RUS
+			tag = TSR
 		}
 		NOT = { advisor_exists = 1026 }
 		owns = 295		# Moskva
@@ -112,10 +114,9 @@ country_event = {
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
 		}
 		any_province = {
@@ -135,6 +136,8 @@ country_event = {
 			}
 			NOT  = { owned_by = MOS }
 			NOT  = { owned_by = RUS }
+			### STT
+			NOT  = { owned_by = TSR }
 			NOT = { is_claim = ROOT }
 		}
 	}
@@ -169,6 +172,8 @@ country_event = {
 				}
 				NOT  = { owned_by = MOS }
 				NOT  = { owned_by = RUS }
+				### STT
+				NOT  = { owned_by = TSR }
 				NOT = { is_claim = ROOT }
 			}
 			add_claim = ROOT
@@ -193,10 +198,9 @@ country_event = {
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
 		}
 		OR = {
@@ -267,10 +271,9 @@ country_event = {
 		is_year = 1550
 		NOT = { is_year = 1650 }
 		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
 		}
 		any_province = {
@@ -289,6 +292,8 @@ country_event = {
 				province_id = 1071
 			}
 			NOT  = { owned_by = MOS }
+			### STT
+			NOT  = { owned_by = TSR }
 			NOT  = { owned_by = RUS }
 			NOT = { is_core = ROOT }
 			NOT = { is_claim = ROOT }
@@ -325,6 +330,8 @@ country_event = {
 				}
 				NOT  = { owned_by = MOS }
 				NOT  = { owned_by = RUS }
+				### STT
+				NOT  = { owned_by = TSR }
 				NOT = { is_core = ROOT }
 				NOT = { is_claim = ROOT }
 			}
@@ -349,11 +356,9 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3410 }
 		is_year = 1540
 		NOT = { is_year = 1560 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
 		}
 		owns = 295
@@ -396,12 +401,11 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = RUS_had_event_3411 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
+			}
 		}
 		capital_scope = {
 			NOT = { controlled_by = ROOT }
@@ -467,12 +471,11 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3413 }
 		is_year = 1550
 		NOT = { is_year = 1650 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
+			}
 		}
 	}
 	
@@ -528,13 +531,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3415 }
 		is_year = 1500
 		NOT = { is_year = 1700 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 		NOT = {
 			exists = BYZ
@@ -593,13 +595,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3416 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -637,13 +638,11 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1005 }
 		is_year = 1500
 		NOT = { is_year = 1600 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			}
 		religion = orthodox
 	}
 
@@ -680,13 +679,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3203 }
 		is_year = 1620
 		NOT = { is_year = 1661 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		NOT = { advisor_exists = 1038 }
 		owns = 295		# Moskva
 	}
@@ -723,13 +721,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3417 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -786,13 +783,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1006 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 	}
 	
@@ -830,13 +826,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3418 }
 		is_year = 1600
 		NOT = { is_year = 1700 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 	}
 
@@ -914,13 +909,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1007 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 	}
 
@@ -965,13 +959,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1008 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 	}
 
@@ -1063,13 +1056,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3419 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		exists = MNG
 	}
 	
@@ -1134,13 +1126,12 @@ country_event = {
 		is_year = 1650
 		NOT = { is_year = 1750 }
 		num_of_cities = 2
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		exists = MNG
 	}
 	
@@ -1223,13 +1214,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3421 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		OR = {
 			exists = MNG
 			exists = QNG
@@ -1394,13 +1384,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3422 }
 		is_year = 1650
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		SWE = {
 			any_owned_province = {
 				is_core = ROOT
@@ -1464,13 +1453,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3426 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -1532,13 +1520,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3427 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		religion = orthodox
 	}
 	
@@ -1585,13 +1572,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3430 }
 		is_year = 1500
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		exists = KUR
 		KUR = {
 			has_heir = no
@@ -1671,13 +1657,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3432 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -1734,13 +1719,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3434 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -1784,13 +1768,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3435 }
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		NOT = { stability = 1 }
 	}
 	
@@ -1829,13 +1812,12 @@ country_event = {
 		has_country_flag = RUS_had_event_3435
 		is_year = 1700
 		NOT = { is_year = 1800 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -1906,13 +1888,12 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = RUS_had_event_3437 }
 		is_year = 1750
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -1978,13 +1959,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_3438 }
 		NOT = { has_country_flag = RUS_had_event_3437 }
 		is_year = 1750
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 	
 	mean_time_to_happen = {
@@ -2044,13 +2024,12 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = RUS_had_event_3439 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		SWE = { has_country_flag = SWE_had_event_3259 }
 		war_with = SWE
 		NOT = { exists = FIN }
@@ -2118,13 +2097,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1000 }
 		is_year = 1763
 		NOT = { is_year = 1790 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 
 	mean_time_to_happen = {
@@ -2153,13 +2131,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1001 }
 		is_year = 1716
 		NOT = { is_year = 1750 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 
 	mean_time_to_happen = {
@@ -2188,13 +2165,12 @@ country_event = {
 		NOT = { has_country_flag = RUS_had_event_1002 }
 		is_year = 1741
 		NOT = { is_year = 1765 }
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 	}
 
 	mean_time_to_happen = {
@@ -2227,13 +2203,12 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = RUS_had_event_1010 }
 		is_year = 1500
-		OR = {
-			AND = {
-				tag = MOS
-				NOT = { exists = RUS }
-			}
+		OR = { ### STT
+			tag = MOS
+			tag = TSR
 			tag = RUS
-		}
+			tag = SLV
+			}
 		NOT = { technology_group = western }
 		is_at_war = no
 		is_monarch_leader = no
