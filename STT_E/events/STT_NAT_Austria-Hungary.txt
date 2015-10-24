@@ -1,7 +1,9 @@
+namespace = STT_NAT_Austria-Hungary.
+
 country_event = {
-	id = 150001
-	title = "EVTNAME150001"
-	desc = "EVTDESC150001"
+	id = STT_NAT_Austria-Hungary.1
+	title = "STT_NAT_Austria-Hungary.n.1"
+	desc = "STT_NAT_Austria-Hungary.de.1"
 	picture = AUSHUNG_eventPicture
 	fire_only_once = yes
 	
@@ -40,7 +42,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA150001"
+		name = "STT_NAT_Austria-Hungary.a.1"
 		add_stability = 1
 		add_prestige = -50
 		change_tag = DUA
@@ -61,7 +63,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTB150001"
+		name = "STT_NAT_Austria-Hungary.b.1"
 		add_stability = -1
 		add_legitimacy = -25
 		every_owned_province = {
@@ -84,9 +86,9 @@ country_event = {
 }
 
 country_event = {
-	id = 150002
-	title = "EVTNAME150002"
-	desc = "EVTDESC150002"
+	id = STT_NAT_Austria-Hungary.2
+	title = "STT_NAT_Austria-Hungary.n.2"
+	desc = "STT_NAT_Austria-Hungary.de.2"
 	picture = AUSHUNG_eventPicture
 	fire_only_once = yes
 	
@@ -102,7 +104,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA150002"
+		name = "STT_NAT_Austria-Hungary.a.1"
 		add_stability = 1
 		add_legitimacy = 15
 		change_tag = AEM

@@ -1,11 +1,13 @@
+namespace = STT_new_engine
+
 #####################
 ### TRADE
 #####################
 # GOLD from Africa!
 country_event = {
-	id = 60000
-	title = "EVTNAME60000"
-	desc = "EVTDESC60000"
+	id = STT_new_engine.60000
+	title = "STT_new_engine.NAME60000"
+	desc = "STT_new_engine.DESC60000"
 	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
@@ -118,7 +120,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "EVTOPTA60000"
+		name = "STT_new_engine.OPTA60000"
 		add_years_of_income = 1.0
 		add_inflation = 0.5
 	}
@@ -128,9 +130,9 @@ country_event = {
 ### WESTERN
 #########################
 country_event = {
-	id = 60010
-	title = EVTNAME60010
-	desc = EVTDESC60010
+	id = STT_new_engine.60010
+	title = STT_new_engine.NAME60010
+	desc = STT_new_engine.DESC60010
 	picture = WESTERNISATION_eventPicture
     
     is_triggered_only = yes
@@ -140,14 +142,14 @@ country_event = {
 	}
 	
 	option = {	
-		name = EVTOPTA60010
+		name = STT_new_engine.OPTA60010
 	}
 }
 
 country_event = {
-	id = 60011
-	title = EVTNAME60011
-	desc = EVTDESC60011
+	id = STT_new_engine.60011
+	title = STT_new_engine.NAME60011
+	desc = STT_new_engine.DESC60011
 	picture = WESTERNISATION_eventPicture
     
     is_triggered_only = yes
@@ -157,14 +159,14 @@ country_event = {
 	}
 	
 	option = {	
-		name = EVTOPTA60011
+		name = STT_new_engine.OPTA60011
 	}
 }
 
 country_event = {
-	id = 60012
-	title = EVTNAME60012
-	desc = EVTDESC60012
+	id = STT_new_engine.60012
+	title = STT_new_engine.NAME60012
+	desc = STT_new_engine.DESC60012
 	picture = WESTERNISATION_eventPicture
     
     is_triggered_only = yes
@@ -174,7 +176,7 @@ country_event = {
 	}
 	
 	option = {	
-		name = EVTOPTA60012
+		name = STT_new_engine.OPTA60012
 	}
 }
 
@@ -183,9 +185,9 @@ country_event = {
 #############################
 
 country_event = { #main theme
-	id = 60021
-	title = "EVTNAME60021"
-	desc = "EVTDESC60021"
+	id = STT_new_engine.60021
+	title = "STT_new_engine.NAME60021"
+	desc = "STT_new_engine.DESC60021"
 	picture = DIPLOMACY_eventPicture
  
     trigger = {
@@ -205,7 +207,7 @@ country_event = { #main theme
 		months = 600 #600
 		}
 	option = { #good idea
-		name = "EVTOPTA60021"
+		name = "STT_new_engine.OPTA60021"
 		ai_chance = { factor = 90 }
 		every_ally = {
 			limit = {
@@ -217,84 +219,84 @@ country_event = { #main theme
 				NOT = { is_rival = ROOT }
 				NOT = { historical_friend_with = ROOT }
 				}
-			country_event = { id = 60022 days = 30 } 
+			country_event = { id = STT_new_engine.60022 days = 30 } 
 			}
 		set_country_flag = friend_timer
 		}
 	option = { # bad idea
-		name = "EVTOPTB60021"
+		name = "STT_new_engine.OPTB60021"
 		ai_chance = { factor = 10 }
 		add_prestige = -10
 	}
 }
 
 country_event = { #reply
-	id = 60022
-	title = "EVTNAME60022"
-	desc = "EVTDESC60022"
+	id = STT_new_engine.60022
+	title = "STT_new_engine.NAME60022"
+	desc = "STT_new_engine.DESC60022"
 	picture = DIPLOMACY_eventPicture
  
 	is_triggered_only = yes #off MTTH
  
 	option = { #good idea
-		name = "EVTOPTA60022"
+		name = "STT_new_engine.OPTA60022"
 		ai_chance = { factor = 90 }
-		FROM = { country_event = { id = 60023 days = 30 } }
+		FROM = { country_event = { id = STT_new_engine.60023 days = 30 } }
 		add_dip_power = 50	
 	}
 	option = { #bad idea
-		name = "EVTOPTB60022"
+		name = "STT_new_engine.OPTB60022"
 		ai_chance = { factor = 10 }
 		add_prestige = -5
-		FROM = { country_event = { id = 60024 days = 30 } }
+		FROM = { country_event = { id = STT_new_engine.60024 days = 30 } }
 	}
 }
 
 country_event = { #start timer
-	id = 60023
-	title = "EVTNAME60023"
-	desc = "EVTDESC60023"
+	id = STT_new_engine.60023
+	title = "STT_new_engine.NAME60023"
+	desc = "STT_new_engine.DESC60023"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60023"
-		FROM = { country_event = { id = 60025 days = 18000 } } #18000
+		name = "STT_new_engine.OPTA60023"
+		FROM = { country_event = { id = STT_new_engine.60025 days = 18000 } } #18000
 		add_dip_power = 50
 	}
 	option = {
-		name = "EVTOPTB60023"
+		name = "STT_new_engine.OPTB60023"
 		add_prestige = -5
 		clr_country_flag = friend_timer
 	}
 }
 
 country_event = { #don't start timer
-	id = 60024
-	title = "EVTNAME60024"
-	desc = "EVTDESC60024"
+	id = STT_new_engine.60024
+	title = "STT_new_engine.NAME60024"
+	desc = "STT_new_engine.DESC60024"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60024"
+		name = "STT_new_engine.OPTA60024"
 		add_prestige = -5
 		clr_country_flag = friend_timer
 	}
 }
 
 country_event = { #friends or not
-	id = 60025
-	title = "EVTNAME60025"
-	desc = "EVTDESC60025"
+	id = STT_new_engine.60025
+	title = "STT_new_engine.NAME60025"
+	desc = "STT_new_engine.DESC60025"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
   
 	option = {
-		name = "EVTOPTA60025"
+		name = "STT_new_engine.OPTA60025"
 	if = {
 		limit = {
 			FROM = {
@@ -307,7 +309,7 @@ country_event = { #friends or not
 				value = 150
 				}
 			}
-		FROM = { country_event = { id = 60026 days = 30 } }
+		FROM = { country_event = { id = STT_new_engine.60026 days = 30 } }
 		}
 	if = {
 		limit = {
@@ -329,7 +331,7 @@ country_event = { #friends or not
 					}
 				}
 			}
-		FROM = { country_event = { id = 60028 days = 30 } }
+		FROM = { country_event = { id = STT_new_engine.60028 days = 30 } }
 		}
 	if = {
 		limit = {
@@ -345,14 +347,14 @@ country_event = { #friends or not
 					}
 				}
 			}
-		FROM = { country_event = { id = 60029 days = 30 } }
+		FROM = { country_event = { id = STT_new_engine.60029 days = 30 } }
 		}
 	if = {
 		limit = {
 			FROM = { NOT = { num_of_cities = 10 } }
 			}
 		FROM = {
-			country_event = { id = 60030 days = 30 }
+			country_event = { id = STT_new_engine.60030 days = 30 }
 			clr_country_flag = friend_timer 
 			}
 		}
@@ -360,15 +362,15 @@ country_event = { #friends or not
 }
 
 country_event = { #success
-	id = 60026
-	title = "EVTNAME60026"
-	desc = "EVTDESC60026"
+	id = STT_new_engine.60026
+	title = "STT_new_engine.NAME60026"
+	desc = "STT_new_engine.DESC60026"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60026"
+		name = "STT_new_engine.OPTA60026"
 		add_dip_power = 200
 		add_mil_power = 100
 		add_adm_power = 100
@@ -379,20 +381,20 @@ country_event = { #success
 			modifier = opinion_pleased
 			years = 20
 		}
-		FROM = { country_event = { id = 60027 days = 30 } }	
+		FROM = { country_event = { id = STT_new_engine.60027 days = 30 } }	
 	}
 }
 
 country_event = { #success FROM
-	id = 60027
-	title = "EVTNAME60027"
-	desc = "EVTDESC60027"
+	id = STT_new_engine.60027
+	title = "STT_new_engine.NAME60027"
+	desc = "STT_new_engine.DESC60027"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60027"
+		name = "STT_new_engine.OPTA60027"
 		add_dip_power = 200
 		add_mil_power = 100
 		add_adm_power = 100
@@ -406,56 +408,56 @@ country_event = { #success FROM
 }
 
 country_event = { #take a chanse
-	id = 60028
-	title = "EVTNAME60028"
-	desc = "EVTDESC60028"
+	id = STT_new_engine.60028
+	title = "STT_new_engine.NAME60028"
+	desc = "STT_new_engine.DESC60028"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60028"
-		country_event = { id = 60025 days = 180 }
+		name = "STT_new_engine.OPTA60028"
+		country_event = { id = STT_new_engine.60025 days = 180 }
 	}
 	option = {
-		name = "EVTOPTB60028"
+		name = "STT_new_engine.OPTB60028"
 		add_prestige = -10
 		clr_country_flag = friend_timer
 	}
 }
 
 country_event = {
-	id = 60029
-	title = "EVTNAME60029"
-	desc = "EVTDESC60029"
+	id = STT_new_engine.60029
+	title = "STT_new_engine.NAME60029"
+	desc = "STT_new_engine.DESC60029"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60029"
+		name = "STT_new_engine.OPTA60029"
 		add_stability = -1
 	}
 }
 
 country_event = {
-	id = 60030
-	title = "EVTNAME60030"
-	desc = "EVTDESC60030"
+	id = STT_new_engine.60030
+	title = "STT_new_engine.NAME60030"
+	desc = "STT_new_engine.DESC60030"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60030"
+		name = "STT_new_engine.OPTA60030"
 		add_prestige = -20
 	}
 }
 
  country_event = { #remove
-	id = 60031
-	title = "EVTNAME60031"
-	desc = "EVTDESC60031"
+	id = STT_new_engine.60031
+	title = "STT_new_engine.NAME60031"
+	desc = "STT_new_engine.DESC60031"
 	picture = DIPLOMACY_eventPicture
         
 	trigger = {
@@ -478,7 +480,7 @@ country_event = {
 		months = 240
 	}
 	option = {
-		name = "EVTOPTA60031"
+		name = "STT_new_engine.OPTA60031"
 		every_country = {
 			limit = {
 				historical_friend_with = ROOT
@@ -493,22 +495,22 @@ country_event = {
 					is_rival = ROOT
 				}
 			}
-		country_event = { id = 60032 days = 30 }
+		country_event = { id = STT_new_engine.60032 days = 30 }
 		remove_historical_friend = ROOT
 		}
 	}
 }
 
 country_event = {
-	id = 60032
-	title = "EVTNAME60032"
-	desc = "EVTDESC60032"
+	id = STT_new_engine.60032
+	title = "STT_new_engine.NAME60032"
+	desc = "STT_new_engine.DESC60032"
 	picture = DIPLOMACY_eventPicture
     
     is_triggered_only = yes
     
 	option = {
-		name = "EVTOPTA60032"
+		name = "STT_new_engine.OPTA60032"
 		remove_historical_friend = FROM
 	}
 }
