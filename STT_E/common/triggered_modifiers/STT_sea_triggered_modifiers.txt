@@ -38,7 +38,7 @@ control_caspian_sea = {
 		2208 = { owned_by = ROOT }	# Tarek
 	}
 
-	global_own_trade_power = 0.05
+	global_trade_power = 0.05
 }
 
 # Control Gibraltar
@@ -68,7 +68,7 @@ control_gibraltar_straits = {
 		1751 = { owned_by = ROOT }
 	}
 
-	global_own_trade_power = 0.025
+	global_trade_power = 0.025
 }
 
 # Straits of Dover
@@ -87,7 +87,7 @@ control_dover_straits = {
 		235 = { owned_by = ROOT }
 	}
 
-	global_own_trade_power = 0.05	
+	global_trade_power = 0.05	
 }
 
 # Med trade - Mare Nostrum
@@ -113,7 +113,7 @@ mare_trade = {
 		115 = { owned_by = ROOT } # Pisa
 	}
 	
-	trade_efficiency = 0.05
+	global_trade_power = 0.05
 }
 
 mare_east = {
@@ -134,7 +134,7 @@ mare_east = {
 		321 = { owned_by = ROOT } # Cyprus
 	}
 	
-	trade_efficiency = 0.05
+	global_trade_power = 0.05
 }
 
 mare_central = {
@@ -157,7 +157,7 @@ mare_central = {
 		125 = { owned_by = ROOT } # Palermo
 	}
 	
-	trade_efficiency = 0.05
+	global_trade_power = 0.05
 }
 
 mare_west = {
@@ -166,7 +166,7 @@ mare_west = {
 		OR = {
 			101 = { owned_by = ROOT } # Genoa
 			127 = { owned_by = ROOT } # Sardinia
-			2019 = { owned_by = ROOT } # Marseilles
+			201 = { owned_by = ROOT } # Marseilles
 			213 = { owned_by = ROOT } # Barcelona
 			333 = { owned_by = ROOT } # Baleares
 		}
@@ -175,12 +175,12 @@ mare_west = {
 	trigger = {
 		101 = { owned_by = ROOT } # Genoa
 		127 = { owned_by = ROOT } # Sardinia
-		2019 = { owned_by = ROOT } # Marseilles
+		201 = { owned_by = ROOT } # Marseilles
 		213 = { owned_by = ROOT } # Barcelona
 		333 = { owned_by = ROOT } # Baleares
 	}
 	
-	trade_efficiency = 0.05
+	global_trade_power = 0.05
 }
 
 mare_nostrum = {
@@ -203,5 +203,5 @@ mare_nostrum = {
 		has_country_modifier = control_gibraltar_straits
 	}	
 	
-	trade_efficiency = 0.05
+	global_trade_power = 0.05
 }
