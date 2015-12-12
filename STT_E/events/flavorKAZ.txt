@@ -1,0 +1,497 @@
+########################################
+#          Kazan Events                #
+########################################
+
+namespace = flavor_kaz
+normal_or_historical_nations = yes
+
+# Ruler of Kazan Dies
+country_event = {
+	id = flavor_kaz.1
+	title = "flavor_kaz.EVTNAME1"
+	desc = "flavor_kaz.EVTDESC1"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		tag = KAZ
+		ai = yes
+		was_player = no
+		NOT = { has_country_flag = kazan_succession_crisis }
+		is_at_war = yes
+		is_subject = no
+		has_regency = no
+		is_female = no
+		NOT = { is_year = 1500 }
+		MOS = {
+			exists = yes
+			is_subject = no
+			num_of_cities = 8
+			is_neighbor_of = KAZ
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500
+		modifier = {
+			factor = 1.1
+			luck = yes
+		}
+		modifier = {
+			factor = 0.75
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.75
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_heir_leader = yes
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { war_score = 0 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -25 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { war_score = -75 }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = kazan_succession_crisis
+			add_ruler_modifier = {
+				name = kazan_succession_crisis
+			}
+			# MOS
+			if = {
+				limit = {
+					MOS = {
+					is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_muscovy
+			}
+			# Crimea
+			if = {
+				limit = {
+					CRI = {
+						marriage_with = ROOT
+						is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_crimea
+			}
+			# Nogai
+			if = {
+				limit = {
+					NOG = {
+						marriage_with = ROOT
+						is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_kaz.EVTOPTA1"
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_heir = yes
+		}
+		tooltip = {
+			kill_ruler = yes
+		}
+		hidden_effect = {
+			define_ruler = {
+				regency = yes
+			}
+			# Muscovy
+			if = {
+				limit = {
+					has_country_flag = kaz_eligible_muscovy
+				}
+				MOS = {
+					country_event = { id = flavor_kaz.3 days = 3 }
+				}
+			}
+			# Crimea
+			if = {
+				limit = {
+					NOT = { has_country_flag = kaz_eligible_muscovy }
+					has_country_flag = kaz_eligible_crimea
+				}
+				if = {
+					CRI = {
+						country_event = { id = flavor_kaz.4 days = 3 }
+					}
+				}
+			}
+			# Nogai
+			if = {
+				limit = {
+					NOT = { has_country_flag = kaz_eligible_muscovy }
+					NOT = { has_country_flag = kaz_eligible_crimea }
+					has_country_flag = kaz_eligible_nogai
+				}
+				if = {
+					NOG = {
+						country_event = { id = flavor_kaz.5 days = 3 }
+					}
+				}
+			}
+		}
+	}
+}
+
+# Fate of Kazan
+country_event = {
+	id = flavor_kaz.2
+	title = "flavor_kaz.EVTNAME2"
+	desc = "flavor_kaz.EVTDESC2"
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	
+	trigger = {
+		tag = KAZ
+		ai = yes
+		was_player = no
+		NOT = { has_country_flag = kazan_succession_crisis }
+		is_at_war = no
+		is_subject = no
+		NOT = { is_year = 1500 }
+		has_regency = yes
+		has_heir = no
+		MOS = {
+			exists = yes
+			is_subject = no
+			num_of_cities = 8
+			is_neighbor_of = KAZ
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 1.1
+			luck = yes
+		}
+		modifier = {
+			factor = 0.75
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.75
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_heir_leader = yes
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { war_score = 0 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -25 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { war_score = -75 }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = kazan_succession_crisis
+			add_ruler_modifier = {
+				name = kazan_succession_crisis
+			}
+			# Muscovy
+			if = {
+				limit = {
+					MOS = {
+						is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_muscovy
+			}
+			# Crimea
+			if = {
+				limit = {
+					CRI = {
+						marriage_with = ROOT
+						is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_crimea
+			}
+			# Nogai
+			if = {
+				limit = {
+					NOG = {
+						marriage_with = ROOT
+						is_subject = no
+					}
+				}
+				set_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_kaz.EVTOPTA2"
+		hidden_effect = {
+			# Muscovy
+			if = {
+				limit = {
+					has_country_flag = kaz_eligible_muscovy
+				}
+				MOS = {
+					country_event = { id = flavor_kaz.3 days = 3 }
+				}
+			}
+			# Crimea
+			if = {
+				limit = {
+					NOT = { has_country_flag = kaz_eligible_muscovy }
+					has_country_flag = kaz_eligible_crimea
+				}
+				CRI = {
+					country_event = { id = flavor_kaz.4 days = 3 }
+				}
+			}
+			# Nogai
+			if = {
+				limit = {
+					NOT = { has_country_flag = kaz_eligible_muscovy }
+					NOT = { has_country_flag = kaz_eligible_crimea }
+					has_country_flag = kaz_eligible_nogai
+				}
+				NOG = {
+					country_event = { id = flavor_kaz.5 days = 3 }
+				}
+			}
+		}
+	}
+}
+
+##### Muscovy #####
+
+# Kazan Succession Crisis
+country_event = {
+	id = flavor_kaz.3
+	title = "flavor_kaz.EVTNAME3"
+	desc = "flavor_kaz.EVTDESC3"
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_kaz.EVTOPTA3"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				war_with = KAZ
+			}
+			white_peace = KAZ
+		}
+		set_country_flag = kaz_successor
+		ROOT = {
+			release = QAS
+			vassalize = KAZ
+			vassalize = QAS
+		}
+
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_muscovy
+				clr_country_flag = kaz_eligible_crimea
+				clr_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kaz.EVTOPTB3"
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+		ROOT = {
+			release = QAS
+			vassalize = QAS
+		}
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_muscovy
+			}
+		}
+		
+		# Send on event
+		hidden_effect = {
+			# Crimea
+			if = {
+				limit = {
+					KAZ = {
+						exists = yes
+						NOT = { has_country_flag = kaz_eligible_muscovy }
+						has_country_flag = kaz_eligible_crimea
+					}
+				}
+				CRI = {
+						country_event = { id = flavor_kaz.4 days = 3 }
+				}
+			}
+			# Nogai
+			if = {
+				limit = {
+					KAZ = {
+						exists = yes
+						NOT = { has_country_flag = kaz_eligible_muscovy }
+						NOT = { has_country_flag = kaz_eligible_crimea }
+						has_country_flag = kaz_eligible_nogai
+					}
+				}
+				NOG = {
+						country_event = { id = flavor_kaz.5 days = 3 }
+				}
+			}
+		}
+	}
+}
+
+##### Crimea #####
+
+# Kazan Succession Crisis
+country_event = {
+	id = flavor_kaz.4
+	title = "flavor_kaz.EVTNAME3"
+	desc = "flavor_kaz.EVTDESC5"
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = "flavor_kaz.EVTOPTA4"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				war_with = KAZ
+			}
+			white_peace = KAZ
+		}
+		set_country_flag = kaz_successor
+
+		ROOT = { create_union = KAZ }	
+
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_muscovy
+				clr_country_flag = kaz_eligible_crimea
+				clr_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kaz.EVTOPTB4"
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+		
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_crimea
+			}
+		}
+		
+		# Send on event
+		hidden_effect = {
+			# Nogai
+			if = {
+				limit = {
+					KAZ = {
+						exists = yes
+						NOT = { has_country_flag = kaz_eligible_muscovy }
+						NOT = { has_country_flag = kaz_eligible_crimea }
+						has_country_flag = kaz_eligible_nogai
+					}
+				}
+				NOG = {
+						country_event = { id = flavor_kaz.5 days = 3 }
+				}
+			}
+		}
+	}
+}
+
+##### Nogai #####
+
+# Kazan Succession Crisis
+country_event = {
+	id = flavor_kaz.5
+	title = "flavor_kaz.EVTNAME3"
+	desc = "flavor_kaz.EVTDESC5"
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+		
+	option = {
+		name = "flavor_kaz.EVTOPTA4"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				war_with = KAZ
+			}
+			white_peace = KAZ
+		}
+		set_country_flag = kaz_successor
+
+		ROOT = { create_union = KAZ }	
+		
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_muscovy
+				clr_country_flag = kaz_eligible_crimea
+				clr_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+
+	option = {
+		name = "flavor_kaz.EVTOPTB4"
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+		
+		# Clear flags
+		hidden_effect = {
+			KAZ = {
+				clr_country_flag = kaz_eligible_nogai
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+country_decisions = {
+
+	invite_knyaz = {
+		major = yes
+		potential = {
+			government = veche_republic
+		}
+		allow = {
+			is_subject = no
+			government = veche_republic
+			faction_in_power = mr_aristocrats
+			republican_tradition = 0.45
+			mil_power = 25
+			adm_power = 200
+		}
+		effect = {
+			add_adm_power = -200
+			add_mil_power = -50
+			add_republican_tradition = -0.25
+			country_event = { id = veche.1 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = 0 }
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 350 }
+			}
+			modifier = {
+				NOT = { republican_tradition = 0.65 }
+				factor = 0
+			}
+			modifier = {
+				is_at_war = no
+				factor = 0.35
+			}
+			modifier = {
+				mil = 2
+				factor = 0
+			}
+		}
+	}
+	
+	send_knyaz_out = {
+		major = yes
+		potential = {
+			government = knyaz_veche_republic
+			had_country_flag = { flag = knyaz_invited days = 360 }
+		}
+		allow = {
+			government = knyaz_veche_republic
+			stability = 0
+		}
+		effect = {
+			add_stability = -1
+			country_event = { id = veche.2 }
+			clr_country_flag = knyaz_invited
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

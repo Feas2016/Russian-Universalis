@@ -2237,7 +2237,6 @@ pagan_theocracy = {
 }
 
 #Novgorod_mode
-
 veche_republic = {
 	rank = {
 		1 = VECHE_REPUBLIC
@@ -2294,37 +2293,6 @@ knyaz_veche_republic = {
 	}
 }
 
-# Îðäû - Áîëüøàÿ è Íîãàéñêàÿ - áóäóò èìåííî îðäàìè, à íå õàíñòâàìè íà ðàíãå 2
-
-sve_gov_steppe_horde = {
-	rank = {
-		1 = HORDE
-		2 = HORDE
-		3 = KHAGANATE
-	}
-	
-	ruler_male = {
-		1 = JINONG
-		2 = KHAN
-		3 = KHAGAN
-	}
-	
-	ruler_female = {
-		1 = JINONG
-		2 = KHATUN
-		3 = GREAT_KHATUN
-	}
-	
-	trigger = {
-		government = steppe_horde
-		OR = {
-			tag = BHO
-			tag = NOG
-			tag = OIR
-		}
-	}
-}
-
 udel_principality = {
 	rank = {
 		1 = UDEL_PRINCIPALITY
@@ -2344,59 +2312,5 @@ udel_principality = {
 			culture_group = east_slavic
 			tag = PRM
 		}
-	}
-}
-
-jurchen_monarchy_QNG = {
-	rank = {
-		1 = PRINCIPALITY
-		2 = KHANATE
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = BEILE
-		2 = KHAN
-		3 = EMPEROR
-	}
-
-	ruler_female = {
-		1 = GEGE
-		2 = KHATUN
-		3 = EMPRESS
-	}
-
-	trigger = {
-		tag = QNG
-		primary_culture = manchu
-	}
-}
-
-tribal_principality = {
-	rank = {
-		1 = PRINCIPALITY
-		2 = GRAND_PRINCIPALITY
-		3 = TSARDOM
-	}
-
-	ruler_male = {
-		1 = KNIAZ
-		2 = GREAT_KNIAZ
-		3 = TSAR
-	}
-
-	ruler_female = {
-		1 = KNIAGINIA
-		2 = GREAT_KNIAGINIA
-		3 = TSARITSA
-	}
-
-	trigger = {
-		OR = {
-			culture_group = east_slavic
-			tag = PRM
-		}
-		government = monarchy
-		government = tribal_principality
 	}
 }

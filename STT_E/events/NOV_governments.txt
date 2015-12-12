@@ -1,0 +1,27 @@
+namespace = nov_gov
+
+country_event = {
+	id = nov_gov.1
+	title = nov_gov.1.t
+	desc = nov_gov.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		government = udel_principality
+		is_vassal = no
+		is_march = no
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = OK
+		add_prestige = 5
+		change_government = feudal_monarchy
+	}
+	
+}
+
