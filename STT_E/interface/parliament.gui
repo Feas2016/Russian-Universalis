@@ -39,7 +39,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "start_issue"
-			position = { x=199 y =307}
+			position = { x=199 y =380}
 			quadTextureSprite ="button_type_1"	
 			tooltip = ""
 			tooltipText =""
@@ -58,7 +58,7 @@ guiTypes = {
 #####	previous_debate_slot should only be visible when there is a previous debate.  		
 		iconType = {
 			name = "previous_debate_slot"
-			position = { x=11 y =204}
+			position = { x=11 y =240}
 			quadTextureSprite ="GFX_parliament_previous_debate_slot"	
 		}		
 
@@ -80,14 +80,14 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 400
-			maxHeight = 80
+			maxHeight = 116
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left
 		}
 
 		instantTextBoxType= {
-			position = { x=0 y=208}
+			position = { x=0 y=246}
 			name = "enacted_modifiers_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -99,19 +99,19 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=34 y =233 }
+			position = { x=34 y =272 }
 			name = "enacted_modifiers_effect"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 400
-			maxHeight = 80
+			maxHeight = 116
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left
 		}
 
 		instantTextBoxType= {
-			position = { x=34 y =183}
+			position = { x=34 y =219}
 			name = "chance_to_win_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -123,7 +123,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=220 y =183}
+			position = { x=220 y =219}
 			name = "chance_to_win"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -135,7 +135,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=278 y=183}
+			position = { x=278 y=219}
 			name = "chance_to_end_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -147,7 +147,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=464 y =183}
+			position = { x=464 y =219}
 			name = "chance_to_end"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -159,7 +159,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType= {
-			position = { x=214 y =343}
+			position = { x=214 y =415}
 			name = "num_seats"
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}	
@@ -173,9 +173,9 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="seats_listbox"
-			position = { x=46 y =370}
+			position = { x=46 y =438}
 			backGround=""
-			size = { x=446 y =260}
+			size = { x=446 y =198}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -231,10 +231,10 @@ guiTypes = {
 				name ="list"
 				position = { x = 60 y = 137 }
 				backGround=""
-				size = { x=436 y = 600}
+				size = { x=436 y = 500}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
-				spacing = 0
+				spacing = -50
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
@@ -291,7 +291,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonText = "Тут должен быть текст"
+			buttonText = "BHT_STT"
 			buttonFont = "vic_18"
 
 			clicksound = decision
@@ -305,7 +305,7 @@ guiTypes = {
 		name = "new_issue_entry"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=300 y= 103 }
+		size = { x=298 y= 164 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -332,7 +332,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=24 y =18}
+			position = { x=14 y =18}
 			name = "effect"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -344,7 +344,7 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "select_button"
-			position = { x=275 y =35}
+			position = { x=280 y =24}
 			quadTextureSprite ="button_type_1"	
 			tooltip = ""
 			tooltipText =""

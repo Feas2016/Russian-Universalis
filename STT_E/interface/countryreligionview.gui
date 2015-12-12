@@ -121,7 +121,7 @@ guiTypes = {
 		name = "religionlistitem"
 		backGround =""
 		position = { x=0 y=10 }	
-		size = { x=300 y= 130 }
+		size = { x=300 y= 110 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -157,7 +157,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Province name"	
-			maxWidth = 512
+			maxWidth = 230
 			maxHeight = 32
 			format = left
 		}
@@ -166,13 +166,13 @@ guiTypes = {
 		{
 			name ="reformation_center_icon"
 			spriteType = "GFX_heretics_tolerance_icon"
-			position = { x = 135 y = 24 }
+			position = { x = 115 y = 24 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "reformation_center_desc"
-			position = { x = 160 y =28 }
+			position = { x = 140 y =28 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -185,7 +185,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="religion_modifiers_listbox_convert"
-			position = { x=110 y = 50}
+			position = { x=90 y = 50}
 			backGround=""
 			size = { x=300 y =100}
 			Orientation = "UPPER_LEFT"
@@ -197,13 +197,8 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "religion_convert_now"
-			position = { x=300 y = -3}
-			quadTextureSprite ="GFX_execute_decision"	
-			tooltip = ""
-			tooltipText =""
-			delayedTooltipText = ""
-			buttonText = "SEND"
-			buttonFont = ""
+			position = { x=362 y = -2}
+			quadTextureSprite ="GFX_change_religion_button"	
 		}
 	
 	}
@@ -268,7 +263,7 @@ guiTypes = {
 		
 		guiButtonType = {
 				name = "close_button"
-				position = { x = 503 y = 11}
+				position = { x = 514 y = -1 }
 				quadTextureSprite ="GFX_closebutton"	
 				tooltip = ""
 				tooltipText =""
@@ -308,15 +303,6 @@ guiTypes = {
 		}
 		
 		###Current religion
-		iconType =
-		{
-			name ="current_religion_icon"
-			spriteType = "GFX_icon_religion"
-			position = { x = 90 y = 157 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_religion"
-		}
-		
 		instantTextBoxType = {
 			name = "current_religion_name"
 			position = { x = 84 y =126 }
@@ -327,6 +313,25 @@ guiTypes = {
 			maxWidth = 124
 			maxHeight = 32
 			format = left
+			fixedsize = yes
+		}
+
+		iconType = {
+			name ="secondary_religion_banner"
+			spriteType = "GFX_secondary_religion_banner"
+			position = { x = 80 y = 152 }
+		}		
+		
+		instantTextBoxType = {
+			name = "secondary_religion_name"
+			position = { x = 80 y = 156 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""
+			maxWidth = 100
+			maxHeight = 32
+			format = right
 			fixedsize = yes
 		}
 		
@@ -347,7 +352,7 @@ guiTypes = {
 		{
 			name ="convert_button"
 			quadTextureSprite = "GFX_religion_convert_button"
-			position = { x= 25 y = 103 }
+			position = { x= 10 y = 103 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -356,7 +361,37 @@ guiTypes = {
 			hint_tag = "hint_changereligion"
 		}
 		
+		iconType =
+		{
+			name ="current_religion_icon"
+			spriteType = "GFX_icon_religion"
+			position = { x = 28 y = 157 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_religion"
+		}
+
+		iconType =
+		{
+			name ="secondary_religion_icon"
+			spriteType = "GFX_icon_religion"
+			position = { x = 92 y = 180 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_religion"
+			scale = 0.65
+		}		
 		
+		guiButtonType = 
+		{
+			name ="convert_secondary_button"
+			quadTextureSprite = "GFX_religion_secondary_convert_button"
+			position = { x= 180 y = 148 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "Main_14"
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_changereligion"
+		}	
 		
 		###Tolerance
 		instantTextBoxType = {
@@ -1240,8 +1275,8 @@ guiTypes = {
 			listboxType = {
 				name = "religions_listbox"
 				backGround = ""
-				position = { x=68 y =185 }
-				size = { x=370 y =320 }
+				position = { x=48 y =185 }
+				size = { x=465 y =340 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2

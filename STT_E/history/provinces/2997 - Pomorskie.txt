@@ -9,9 +9,10 @@ religion = catholic
 trade_goods = grain
 hre = no
 base_tax = 3 
-base_production = 3
+base_production = 4
 base_manpower = 3
 is_city = yes
+estate = estate_burghers
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -40,7 +41,7 @@ discovered_by = ottoman
 	add_core = PLC
 }# Union of Lublin, Polish administration
 1572.1.1 = { unrest = 6 } # Sigismund II dies
-1575.12.12 = { owner = HSA controller = HSA add_core = HSA } # Danzig rebels
+1575.12.12 = { owner = DNZ controller = DNZ add_core = DNZ } # Danzig rebels
 1577.12.16 = { owner = PLC controller = PLC } # Danzig War, retaken by Poland
 1588.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war
 1589.1.1 = { revolt = {} controller = PLC unrest = 0 } # Coronation of Sigismund III

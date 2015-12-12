@@ -13,7 +13,6 @@ capital = "Ôðîñîí"
 add_local_autonomy = 25
 is_city = yes
 add_core = NOR
-add_core = SWE
 discovered_by = eastern
 discovered_by = western
 
@@ -27,7 +26,7 @@ discovered_by = western
 1613.1.20 = { controller = DAN } # The Peace of Knäred
 1644.2.1 = { controller = SWE } # Torstenssons War-Captured by Herman Flemming (Unknown date)
 1644.8.1 = { controller = DAN } # Torstenssons War-Captured by Hannibal Sehested
-1645.8.13 = { owner = SWE controller = SWE } # The Peace of Brömsebro
+1645.8.13 = { owner = SWE controller = SWE add_core = SWE } # The Peace of Brömsebro
 1657.11.25 = { controller = DAN } # Karl X Gustavs First Danish War-Captured by Bielke
 1658.2.26 = { controller = SWE } # The Peace of Roskilde
 1690.1.1 = { culture = swedish } # date estimated

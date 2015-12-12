@@ -42,19 +42,19 @@ guiTypes = {
 		{
 			name ="goto_tradenode_button"
 			quadTextureSprite = "GFX_trade_view_node_entry_button"
-			position = { x= -8 y = 0 }
+			position = { x= -32 y = 0 }
 		}
 		
 		guiButtonType =
 		{
 			name ="shield"
 			quadTextureSprite = "GFX_shield_small"
-			position = { x= -8 y = 0 }
+			position = { x= -32 y = 0 }
 			orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType={
-			position = {x = 25 y  = 8 }
+			position = {x = 0 y  = 8 }
 			name = "location"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -70,19 +70,19 @@ guiTypes = {
 		{
 			name ="trader_mission"
 			spriteType = "GFX_trade_trader_strip"
-			position = { x= 146 y = 0 }
+			position = { x= 134 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType =
 		{
 			name ="income_indicator"
 			spriteType = "GFX_trade_target_strip"
-			position = { x= 178 y = 1 }
+			position = { x= 166 y = 1 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType={
-			position = {x = 207 y  = 8 }
+			position = {x = 195 y  = 8 }
 			name = "income"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -93,9 +93,22 @@ guiTypes = {
 			format = right
 			fixedsize = yes
 		}
-				
+		
 		instantTextBoxType={
-			position = {x = 268 y  = 8 }
+			position = {x = 255 y  = 8 }
+			name = "total_power"
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 38
+			maxHeight = 18
+			text = "5555"	
+			orientation = "UPPER_LEFT"
+			format = center
+			fixedsize = yes
+		}		
+		
+		instantTextBoxType={
+			position = {x = 293 y  = 8 }
 			name = "current_power"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -108,7 +121,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x = 308 y  = 8 }
+			position = {x = 333 y  = 8 }
 			name = "current_value"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -122,7 +135,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "send_merchant"
-			position = { x= 362 y = -1 }
+			position = { x= 387 y = -1 }
 			quadTextureSprite ="GFX_button_straight_87_32"	
 			buttonText = "SEND"
 			buttonFont = "vic_18"
@@ -170,7 +183,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 503 y = 11 }
+			position = { x = 514 y = -1 }
 			quadTextureSprite ="GFX_closebutton"	
 			tooltip = ""
 			tooltipText =""
@@ -209,8 +222,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"
 			text = "TRADE_EFFICIENCY_LABEL"	
-			maxWidth = 120
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 16
 			fixedsize = yes
 		}
 		
@@ -221,7 +234,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "55%"	
 			maxWidth = 65
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}
@@ -242,8 +255,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"				
 			text = "TRADE_RANGE_LABEL"	
-			maxWidth = 120
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 16
 			fixedsize = yes
 		}
 		
@@ -254,7 +267,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "350"	
 			maxWidth = 65
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}
@@ -274,8 +287,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"				
 			text = "TRADE_STEERING_LABEL"	
-			maxWidth = 120
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 16
 			fixedsize = yes
 		}
 		
@@ -286,7 +299,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "-45%"	
 			maxWidth = 65
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}
@@ -306,8 +319,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"				
 			text = "MERCANTILISM_LABEL"
-			maxWidth = 120
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 16
 			fixedsize = yes
 		}
 		
@@ -318,7 +331,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "13.37%"	
 			maxWidth = 65
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}		
@@ -339,8 +352,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"				
 			text = "MODIFIER_PRIVATEER_EFFICIENCY"
-			maxWidth = 140
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 20
 			fixedsize = yes
 		}
 		
@@ -351,7 +364,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "13.37%"	
 			maxWidth = 65
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}	
@@ -372,8 +385,8 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"				
 			text = "INLAND_BONUS"
-			maxWidth = 120
-			maxHeight = 32
+			maxWidth = 150
+			maxHeight = 20
 			fixedsize = yes
 		}
 		
@@ -384,7 +397,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "13.37%"	
 			maxWidth = 96
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}	
@@ -405,7 +418,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "TRADE_GOODS_LBL"
 			maxWidth = 150
-			maxHeight = 32
+			maxHeight = 20
 			fixedsize = yes
 		}
 		
@@ -416,43 +429,11 @@ guiTypes = {
 			font = "vic_18"				
 			text = "13.37%"	
 			maxWidth = 96
-			maxHeight = 32
+			maxHeight = 20
 			format = right
 			fixedsize = yes
 		}	
-		iconType =
-		{
-			name ="envoy_traveltime_icon"
-			spriteType = "GFX_envoy_traveltime_icon"
-			position = { x= 44 y = 317 }
-			Orientation = "UPPER_LEFT"
-			hint_tag = "hint_diplomat"
-			scale = 0.5
-		}
 		
-		instantTextBoxType = {
-			name = "envoy_traveltime_label"
-			position = { x = 75 y =326 }
-			textureFile = ""
-			font = "vic_18"				
-			text = "MODIFIER_ENVOY_TRAVEL_TIME"
-			maxWidth = 150
-			maxHeight = 32
-			fixedsize = yes
-		}
-		
-		instantTextBoxType = {
-			name = "envoy_traveltime_value"
-			position = { x = 167 y =326 }
-			textureFile = ""
-			font = "vic_18"				
-			text = "13.37%"	
-			maxWidth = 96
-			maxHeight = 32
-			format = right
-			fixedsize = yes
-		}
-
 		iconType =
 		{
 			name ="global_trade_power_icon"
@@ -470,7 +451,7 @@ guiTypes = {
 			font = "vic_18"				
 			text = "MODIFIER_GLOBAL_TRADE_POWER"
 			maxWidth = 150
-			maxHeight = 32
+			maxHeight = 20
 			fixedsize = yes
 		}
 		
@@ -559,25 +540,25 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "trade_embargoes_on_us_label"
-			position = { x = 302 y =242 }
+			position = { x = 302 y =238 }
 			textureFile = ""
 			font = "vic_18"				
 			text = "TRADE_EMBARGOES_ON_US_LABEL"
-			maxWidth = 160
+			maxWidth = 210
 			maxHeight = 20
 			fixedsize = yes
 		}
 		
 		OverlappingElementsBoxType = {
 			name = "trade_embargoes_on_us_list"	
-			position = { x = 290  y = 263  }
+			position = { x = 290  y = 258  }
 			size = { x=215 y= 30 }
 			spacing = 1.0
 		}
 		
 		instantTextBoxType = {
 			name = "trade_embargoes_on_us_none"
-			position = { x = 302 y =271 }
+			position = { x = 302 y =266 }
 			textureFile = ""
 			font = "vic_18_grey"				
 			text = "GO_NONE"
@@ -585,6 +566,37 @@ guiTypes = {
 			maxHeight = 20
 			fixedsize = yes
 		}
+		
+		#### NEW #### Trade Power
+		
+		instantTextBoxType = {
+			name = "transferring_trade_label"
+			position = { x = 302 y =290 }
+			textureFile = ""
+			font = "vic_18"				
+			text = "TRANSFERRING_TRADE_TO_US_LABEL"
+			maxWidth = 210
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "transferring_trade_list"	
+			position = { x = 290  y = 310  }
+			size = { x=215 y= 30 }
+			spacing = 1.0
+		}
+		
+		instantTextBoxType = {
+			name = "transferring_trade_none"
+			position = { x = 302 y =318 }
+			textureFile = ""
+			font = "vic_18_grey"				
+			text = "GO_NONE"
+			maxWidth = 160
+			maxHeight = 20
+			fixedsize = yes
+		}		
 		
 		
 		
@@ -613,13 +625,13 @@ guiTypes = {
 			guiButtonType = {
 				name ="sort_shield"
 				quadTextureSprite = "GFX_sort_shield"
-				position = { x = 44 y = 1 }
+				position = { x = 20 y = 1 }
 			}
 		
 			guiButtonType = {
 				name ="sort_name"
-				quadTextureSprite = "GFX_sort_126"
-				position = { x = 71 y = 1 }
+				quadTextureSprite = "GFX_sort_136"
+				position = { x = 47 y = 3 }
 				buttonFont = "vic_18"
 				buttonText = "NAME"
 				pdx_tooltip = "TRADE_NAME_SORT_TOOLTIP"
@@ -628,45 +640,53 @@ guiTypes = {
 			guiButtonType = {
 				name ="sort_trader"
 				quadTextureSprite = "GFX_sort_trader02"
-				position = { x = 195 y = 3 }
+				position = { x = 182 y = 3 }
 				pdx_tooltip = "TRADE_TRADER_SORT_TOOLTIP"
 				pdx_tooltip_delayed = "TRADE_TRADER_SORT_TOOLTIP_DELAYED"
 			}
 			guiButtonType = {
 				name ="sort_income_indicator"
 				quadTextureSprite = "GFX_sort_trade_target02"
-				position = { x = 229 y = 3 }
+				position = { x = 216 y = 3 }
 				pdx_tooltip = "TRADE_MISSION_SORT"
 				pdx_tooltip_delayed = "TRADE_MISSION_SORT_DELAYED"
 			}
 			guiButtonType = {
 				name ="sort_income"
 				quadTextureSprite = "GFX_sort_income3"
-				position = { x = 256 y = 3 }
+				position = { x = 243 y = 3 }
 				pdx_tooltip = "TRADE_INCOME_SORT"
 				pdx_tooltip_delayed = "TRADE_INCOME_SORT_DELAYED"
 			}
 			guiButtonType = {
 				name ="sort_current_power"
 				quadTextureSprite = "GFX_sort_trade_power2"
-				position = { x = 317 y = 1 }
-				pdx_tooltip = "TRADE_CURRENT_POWER_SORT"
+				position = { x = 342 y = 1 }
+				pdx_tooltip = "TRADE_OUR_CURRENT_POWER_SORT"
 				pdx_tooltip_delayed = "TRADE_CURRENT_POWER_SORT_DELAYED"
 			}
 			guiButtonType = {
+				name ="sort_total_power"
+				quadTextureSprite = "GFX_sort_total_trade_power"
+				position = { x = 304 y = 1 }
+				pdx_tooltip = "TRADE_TOTAL_POWER_SORT"
+				pdx_tooltip_delayed = "TRADE_TOTAL_POWER_SORT_DELAYED"
+			}			
+			
+			guiButtonType = {
 				name ="sort_current_value"
 				quadTextureSprite = "GFX_sort_trade_value"
-				position = { x = 355 y = 1 }
+				position = { x = 380 y = 1 }
 				pdx_tooltip = "TRADE_CURRENT_VALUE_SORT"
 				pdx_tooltip_delayed = "TRADEMAP_TOTAL_EXP"
 			}
 			guiButtonType = {
 				name ="sort_send"
 				quadTextureSprite = "GFX_sort_100"
-				position = { x = 412 y = 1 }
+				position = { x = 437 y = 1 }
 				buttonFont = "vic_18"
-				buttonText = "ACTIVE_MISSION"
-				pdx_tooltip = "ACTIVE_MISSION"
+				buttonText = "MISSION"
+				pdx_tooltip = "ACTIVE_MISSION_TOOLTIP"
 				pdx_tooltip_delayed = ""
 			}
 			listboxType = 
@@ -674,7 +694,7 @@ guiTypes = {
 				name ="tradenode_list"
 				position = { x = 50 y = 23 }
 				backGround=""
-				size = { x=448 y = 120}
+				size = { x=473 y = 120}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 0

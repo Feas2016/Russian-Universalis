@@ -12,6 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
+estate = estate_nobles
 add_core = DLH
 add_core = PUN
 add_core = PTA
@@ -29,19 +30,19 @@ discovered_by = chinese
 1443.1.1 = {
 	revolt = { type = pretender_rebels leader = "Бахлул-хан Лоди" }
 	controller = REB
-} #First revolt of Бахлул-хан Лоди
+} #First revolt of Bahlul Lodi
 1445.1.1 = {
 	controller = DLH
 	revolt = { }
-} #Бахлул-хан Лоди returns to the Punjab
+} #Bahlul Lodi returns to the Punjab
 1447.1.1 = {
 	revolt = { type = pretender_rebels leader = "Бахлул-хан Лоди" }
 	controller = REB
-} #Second revolt of Бахлул-хан Лоди
+} #Second revolt of Bahlul Lodi
 1448.1.1 = {
 	controller = DLH
 	revolt = { }
-} #Бахлул-хан Лоди returns to the Punjab
+} #Bahlul Lodi returns to the Punjab
 1517.11.21 = { unrest = 8 } #Afghan factionalism
 1526.2.1 = {
 	controller = TIM

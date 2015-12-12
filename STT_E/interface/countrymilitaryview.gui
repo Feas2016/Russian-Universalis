@@ -230,7 +230,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 503 y = 11 }
+			position = { x = 514 y = -1 }
 			quadTextureSprite ="GFX_closebutton"	
 			tooltip = ""
 			tooltipText =""
@@ -989,7 +989,7 @@ guiTypes = {
 		windowType = {
 			name = "leaderlist_window"
 			backGround=""
-			position = { x=7 y=-89 }	
+			position = { x=7 y=-99 }	
 			size = { x=1024 y=100 }
 			moveable = 0
 			dontRender = ""
@@ -1044,7 +1044,7 @@ guiTypes = {
 				name ="leaderlist"
 				position = { x = 164 y = 456 }
 				backGround=""
-				size = { x=348 y =144}
+				size = { x=350 y =144}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 0
@@ -1056,7 +1056,7 @@ guiTypes = {
 		### Discipline, Land, Naval Morale and Military tactics
 		instantTextBoxType = {
 			name = "army_tradition_label"
-			position = { x = 57 y =309 }
+			position = { x = 50 y =309 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1068,7 +1068,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "army_tradition_value"
-			position = { x = 67 y =309 }
+			position = { x = 57 y =309 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1083,11 +1083,11 @@ guiTypes = {
 		{
 			name ="land_morale_icon"
 			spriteType= "GFX_icon_land"
-			position = { x= 25 y = 315 }
+			position = { x= 15 y = 315 }
 		}
 		instantTextBoxType = {
 			name = "land_morale_label"
-			position = { x = 57 y =325 }
+			position = { x = 50 y =325 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1099,7 +1099,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "land_morale_value"
-			position = { x = 67 y =325 }
+			position = { x = 57 y =325 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1110,7 +1110,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "land_support_limit_label"
-			position = { x = 60 y =341 }
+			position = { x = 50 y =341 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1122,7 +1122,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "land_support_limit_value"
-			position = { x = 66 y =341 }
+			position = { x = 56 y =341 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1135,7 +1135,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "navy_tradition_label"
-			position = { x = 57 y =358 }
+			position = { x = 50 y =358 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1147,7 +1147,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "navy_tradition_value"
-			position = { x = 67 y =358 }
+			position = { x = 57 y =358 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1162,12 +1162,12 @@ guiTypes = {
 		{
 			name ="naval_morale_icon"
 			spriteType= "GFX_icon_naval"
-			position = { x= 26 y = 366 }
+			position = { x= 16 y = 366 }
 		}
 		
 		instantTextBoxType = {
 			name = "naval_morale_label"
-			position = { x = 57 y =372 }
+			position = { x = 50 y =372 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1179,7 +1179,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "naval_morale_value"
-			position = { x = 67 y =372 }
+			position = { x = 57 y =372 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1190,7 +1190,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "naval_support_limit_label"
-			position = { x = 60 y =388 }
+			position = { x = 50 y =388 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1202,7 +1202,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "naval_support_limit_value"
-			position = { x = 66 y =388 }
+			position = { x = 56 y =388 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1216,13 +1216,13 @@ guiTypes = {
 		{
 			name ="icon_military_tactics"
 			spriteType= "GFX_icon_military_tactics"
-			position = { x= 31 y = 410 }
+			position = { x= 21 y = 410 }
 			hint_tag = "hint_miltac"
 		}
 	
 		instantTextBoxType = {
 			name = "military_tactics_label"
-			position = { x = 60 y =411 }
+			position = { x = 50 y =411 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1235,7 +1235,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "military_tactics_value"
-			position = { x = 67 y =411 }
+			position = { x = 57 y =411 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1249,13 +1249,13 @@ guiTypes = {
 		{
 			name ="discipline_icon"
 			spriteType= "GFX_icon_discipline"
-			position = { x= 25 y = 431}
+			position = { x= 15 y = 431}
 			hint_tag = "hint_discipline"
 		}
 
 		instantTextBoxType = {
 			name = "discipline_label"
-			position = { x = 60 y =440 }
+			position = { x = 50 y =440 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1268,7 +1268,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "discipline_value"
-			position = { x = 67 y = 440 }
+			position = { x = 57 y = 440 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1282,13 +1282,13 @@ guiTypes = {
 		{
 			name ="defensiveness_icon"
 			spriteType= "GFX_icon_mil_defensiveness"
-			position = { x= 31 y = 470 }
+			position = { x= 21 y = 471 }
 			hint_tag = "hint_fortdefense"
 		}
 
 		instantTextBoxType = {
 			name = "defensiveness_label"
-			position = { x = 47 y =469 }
+			position = { x = 50 y =470 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1301,7 +1301,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "defensiveness_value"
-			position = { x = 67 y = 469 }
+			position = { x = 57 y = 470 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1310,22 +1310,22 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}		
-		
+	
 		iconType =
 		{
-			name ="fort_maintenance_icon"
-			spriteType= "GFX_maintenance_icon"
-			position = { x= 32 y = 498 }
-			hint_tag = "hint_fortdefense"
+			name ="siegeability_icon"
+			spriteType= "GFX_siege_ability_icon"
+			position = { x= 17 y = 495 }
+			hint_tag = "hint_leadersiege"
 		}
 
 		instantTextBoxType = {
-			name = "fort_maintenance_label"
-			position = { x = 60 y =498 }
+			name = "siegeability_label"
+			position = { x = 50 y =500 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
-			text = "MIL_fort_maintenance"	
+			text = "MIL_SIEGEABILITY"	
 			maxWidth = 90
 			maxHeight = 20
 			format = left
@@ -1333,41 +1333,8 @@ guiTypes = {
 		}
 		
 		instantTextBoxType = {
-			name = "fort_maintenance_value"
-			position = { x = 67 y = 498 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "88%"	
-			maxWidth = 128
-			maxHeight = 20
-			format = right
-		}		
-		
-		iconType =
-		{
-			name ="siegeability_icon"
-			spriteType= "GFX_siege_ability_icon"
-			position = { x= 27 y = 523 }
-			hint_tag = "hint_leadersiege"
-		}
-
-		instantTextBoxType = {
-			name = "siegeability_label"
-			position = { x = 60 y =528 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "MIL_SIEGEABILITY"	
-			maxWidth = 120
-			maxHeight = 20
-			format = left
-			fixedsize = yes
-		}
-		
-		instantTextBoxType = {
 			name = "siegeability_value"
-			position = { x = 67 y = 528 }
+			position = { x = 57 y = 500 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1376,24 +1343,58 @@ guiTypes = {
 			maxHeight = 20
 			format = right
 		}	
+		
+		iconType =
+		{
+			name ="combat_width_icon"
+			spriteType= "GFX_icon_combat_width"
+			position = { x= 22 y = 528 }
+			hint_tag = "hint_combatwidth"
+		}
+
+		instantTextBoxType = {
+			name = "combat_width_label"
+			position = { x = 50 y =528 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "HINT_COMBATWIDTH_TITLE"	
+			maxWidth = 120
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+		
+		instantTextBoxType = {
+			name = "combat_width_value"
+			position = { x = 57 y = 528 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "88%"	
+			maxWidth = 128
+			maxHeight = 20
+			format = right
+		}		
+				
 
 		iconType =
 		{
 			name ="mothball_icon"
 			spriteType= "GFX_active_forts_icon"
-			position = { x= 32 y = 570 }
+			position = { x= 22 y = 570 }
 			hint_tag = "hint_leadersiege"
 		}
 
 		instantTextBoxType = {
 			name = "mothball_label"
-			position = { x = 60 y =570 }
+			position = { x = 30 y =570 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "99/99 Forts Active"	
-			maxWidth = 139
-			maxHeight = 20
+			maxWidth = 169
+			maxHeight = 16
 			format = left
 			fixedsize = yes
 		}
@@ -1402,14 +1403,39 @@ guiTypes = {
 		{
 			name = "mothball_all"
 			quadTextureSprite= "GFX_mothball_all_forts_button"
-			position = { x= 30 y = 595 }
+			position = { x= 14 y = 605 }
 		}
 		
 		guiButtonType =
 		{
 			name = "activate_all"
 			quadTextureSprite= "GFX_activate_all_forts_button"
-			position = { x= 75 y = 595 }
+			position = { x= 58 y = 605 }
+		}
+
+		guiButtonType = {
+			name ="automatic_full_maintenance_checkbox"
+
+			position = { x= 16 y = 655 }
+			quadTextureSprite ="GFX_checkbox_gold_24"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			frame = 2
+		}
+
+		instantTextBoxType = {
+			name = "automatic_full_maintenance_label"
+			position = { x = 42 y =653 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "AUTOMATIC_MAINTENANCE"	
+			maxWidth = 140
+			maxHeight = 80
+			format = left
+			fixedsize = yes
 		}
 	}
 

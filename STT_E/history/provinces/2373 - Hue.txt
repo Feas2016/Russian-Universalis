@@ -11,7 +11,9 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
+estate = estate_nobles
 add_core = DAI
+add_core = ANN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -38,7 +40,6 @@ discovered_by = ottoman
 1558.1.1 = {
 	owner = ANN
 	controller = ANN
-	add_core = ANN
 } # The Nguyen Lords became independent from the Trinh Lords
 1769.1.1 = { unrest = 6 } # Tay Son Rebellion
 1775.1.1 = {

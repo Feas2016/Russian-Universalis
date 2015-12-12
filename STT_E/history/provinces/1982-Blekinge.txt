@@ -1,7 +1,6 @@
 #Blekinge
 
 add_core = DAN
-add_core = SWE
 owner = DAN
 controller = DAN
 culture = danish
@@ -23,7 +22,7 @@ discovered_by = ottoman
 1534.8.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
 1536.3.15 = { revolt = {} controller = DAN } # Liberated by Sweden
 1536.3.15 = { religion = protestant} # Unknown date
-1658.2.26 = { owner = SWE } # The Peace of Roskilde
+1658.2.26 = { controller = SWE owner = SWE add_core = SWE  } # The Peace of Roskilde
 1680.1.1 = { 
 	capital = "Карлскруна" 
 	culture = swedish
