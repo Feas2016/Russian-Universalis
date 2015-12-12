@@ -1,0 +1,36 @@
+mod_wasteland_arctic = {
+
+	local_colonial_growth = -20
+	attrition = 10
+	max_attrition = 25
+	movement_cost = 1.5
+	supply_limit = -0.10
+	
+	picture = "wasteland_arctic"
+}
+westernised = {
+	stability_cost_modifier = 1
+	global_unrest = 5
+	icon = 5
+}
+reformer = {	
+	prestige = 1
+}
+forgreat = {
+	prestige = 1
+}
+jagtolerance_modifier = {
+	diplomatic_reputation = 2
+	#icon = 3
+}
+kingdom_of_god = {
+	diplomats = 1
+	prestige = 1
+	stability_cost_modifier = -0.05
+	advisor_pool = 2
+	free_leader_pool = 1
+	#icon = 9
+}
+super_albania = {
+	defensiveness = 1
+}

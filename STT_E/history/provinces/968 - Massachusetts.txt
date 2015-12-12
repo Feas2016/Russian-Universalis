@@ -5,9 +5,9 @@ religion = totemism
 capital = "Массачусетс"
 trade_goods = unknown
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 2
 native_size = 25
 native_ferocity = 3
 native_hostileness = 7
@@ -30,8 +30,8 @@ add_permanent_province_modifier = {
 	capital = "Глостер"
 	trade_goods = fish
 }# Arrival of the Dorchester company
-1626.1.1 = { capital = "Салем"} #Founded on Cape Ann
-1630.1.1 = { capital = "Бостон" }
+1626.1.1 = { capital = "Salem" } #Founded on Cape Ann
+1630.1.1 = { capital = "Boston" }
 1670.1.1 = { unrest = 4 }# The expansion of the British colonies led to racial tensions
 1675.1.1 = { is_city = yes } # King Philip's war
 1678.4.12 = { unrest = 0 } # Peace treaty
@@ -55,6 +55,6 @@ add_permanent_province_modifier = {
 	controller = USA
 	add_core = USA
 } # Declaration of independence
-1782.11.1 = { remove_core = GBR unrest = 0 } # Preliminary articles of peace, the British recognized Amercian independence
+1782.11.1 = { remove_core = GBR unrest = 0 } # Preliminary articles of peace, the British recognized American independence
 1786.8.29 = { unrest = 6 } # Shays rebellion
 1787.2.3 = { unrest = 0 }

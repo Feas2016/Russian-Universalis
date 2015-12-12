@@ -43,6 +43,7 @@ march_christian_monarchy = {
 
 	trigger = {
 		government = monarchy
+		### STT
 		OR = {
 			religion = catholic
 			religion = protestant
@@ -365,7 +366,7 @@ austrian_monarchy = {
 
 	trigger = {
 		tag = HAB
-		###
+		### STT
 		tag = AEM
 		tag = DUA
 		government = monarchy
@@ -657,7 +658,7 @@ byzantine_monarchy = {
 		}
 	}
 }
-
+### STT
 gov_spqr_republic = {
 	rank = {
 		2 = SENATE
@@ -1196,6 +1197,7 @@ russian_monarchy = {
 
 	trigger = {
 		government = monarchy
+### STT
 		technology_group = eastern
 		OR = {
 			culture_group = east_slavic
@@ -1692,7 +1694,7 @@ german_republic = {
 	rank = {
 		1 = REPUBLIC
 		2 = GRAND_REPUBLIC
-		3 = GREAT_REPUBLIC
+		3 = FEDERAL_REPUBLIC
 	}
 
 	ruler_male = {
@@ -1712,7 +1714,7 @@ german_republic = {
 		culture_group = germanic
 	}
 }
-
+### STT
 gov_reich_government = {
 	rank = {
 		1 = MARGRAVIATE
@@ -2102,7 +2104,7 @@ shiite_theocracy = {
 	}
 
 	trigger = {
-		religion = ibadi
+		religion = shiite
 		government = theocracy
 	}
 }
@@ -2129,7 +2131,10 @@ uyghur_theocracy = {
 	trigger = {
 		religion = sunni
 		government = theocracy
-		primary_culture = uyghur
+		OR = {
+			primary_culture = uyghur
+			has_country_flag = end_of_khojas
+		}
 	}
 }
 
@@ -2147,8 +2152,8 @@ sunni_theocracy = {
 	}
 
 	ruler_female = {
-		2 = IMAM
 		1 = SHEIKH
+		2 = IMAM
 		3 = HIGH_IMAM
 	}
 

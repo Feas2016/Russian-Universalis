@@ -1,18 +1,18 @@
 #Skåne
 
 add_core = DAN
-add_core = SWE
 owner = DAN
 controller = DAN
 culture = danish
 religion = catholic
 hre = no
-base_tax = 6 
-base_production = 6
+base_tax = 7
+base_production = 7
 trade_goods = grain
 base_manpower = 5
 capital = "Ëóíä"
 is_city = yes
+estate = estate_nobles
 fort_15th = yes 
 discovered_by = eastern
 discovered_by = western
@@ -28,7 +28,7 @@ discovered_by = ottoman
 	fort_15th = no
 	fort_16th = yes
 }
-1658.2.26 = { owner = SWE } # The Peace of Roskilde
+1658.2.26 = { controller = SWE owner = SWE add_core = SWE } # The Peace of Roskilde
 1685.1.1 = {
 	fort_16th = no
 	fort_17th = yes

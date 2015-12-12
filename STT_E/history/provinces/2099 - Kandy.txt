@@ -11,12 +11,17 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 is_city = yes
+estate = estate_church
 add_core = CEY
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian
 discovered_by = chinese
 
+add_permanent_province_modifier = {
+	name = religious_center
+	duration = -1
+}
 1505.1.1 = { discovered_by = POR } # Francisco de Almeida
 1542.1.1 = { add_core = POR }
 1660.1.1 = {

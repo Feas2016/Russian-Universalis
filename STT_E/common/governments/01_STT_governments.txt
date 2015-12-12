@@ -10,10 +10,6 @@ rus_government = {
 		primary_culture = russian
 	}
 	
-	faction = rus_boyars
-	faction = rus_merchants
-	faction = rus_voin
-	
 	rank = {
 		1 = {
 			global_unrest = -1
@@ -42,10 +38,6 @@ rus_imperial_government = {
 	nation_designer_trigger = {
 		primary_culture = russian
 	}
-	
-	faction = emp_adm
-	faction = emp_dip
-	faction = emp_mil
 	
 	rank = {
 		1 = {
@@ -80,9 +72,6 @@ reich_government = {
 	nation_designer_trigger = {
 		culture_group = germanic
 	}
-			faction = emp_mil
-			faction = emp_adm
-			faction = emp_dip			
 			
 	rank = {
 		1 = {
@@ -118,10 +107,6 @@ kaiserreich_government = {
 		culture_group = austrian
 	}
 
-	faction = emp_dip
-	faction = emp_adm
-	faction = emp_mil
-	
 	rank = {
 		1 = {
 			core_creation = -0.2
@@ -156,11 +141,8 @@ byz_government = {
 	nation_designer_trigger = {
 		culture_group = byzantine
 	}
-	faction = ki_clergy
-	faction = ki_nobles
-	faction = ki_peasants
 			
-		rank = {
+	rank = {
 		1 = {
 			production_efficiency = 0.1
 			diplomatic_upkeep = 1
@@ -192,10 +174,6 @@ rome_government = {
 		culture_group = lombardy
 	}
 
-	faction = emp_dip
-	faction = emp_adm
-	faction = emp_mil
-	
 	rank = {
 		3 = {
 			global_manpower_modifier = 0.20
@@ -221,10 +199,6 @@ spqr_republic = {
 		culture_group = byzantine
 	}
 
-	faction = mr_aristocrats
-	faction = mr_traders
-	faction = mr_guilds	
-	
 	has_parliament = yes
 	
 	rank = {
@@ -300,10 +274,6 @@ turkey_republic = {
 		global_autonomy = -0.15
 		}
 	}
-	
-	faction = mr_aristocrats
-	faction = mr_traders
-	faction = mr_guilds	
 }
 the_empire_of_the_rising_sun = {
 	monarchy = yes
@@ -327,10 +297,6 @@ the_empire_of_the_rising_sun = {
 		}
 	}
 	fixed_rank = 3
-	
-	faction = ki_nobles
-	faction = mr_traders
-	faction = ki_peasants
 }
 # Special for the Hetmanat
 cossack_republic = {
@@ -380,10 +346,6 @@ veche_republic = {
 	ai_will_do = {
 		factor = 0	
 	}
-		
-	faction = mr_aristocrats
-	faction = mr_traders
-	faction = mr_guilds	
 	
 	rank = {
 		1 = {

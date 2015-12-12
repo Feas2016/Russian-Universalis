@@ -11,7 +11,9 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
+estate = estate_nobles
 add_core = CHA
+add_core = ANN
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -31,7 +33,6 @@ discovered_by = ottoman
 1558.1.1 = {
 	owner = ANN
 	controller = ANN
-	add_core = ANN
 	remove_core = TOK
 } # The Nguyen Lords were independent from the Trinh Lords
 1600.1.1 = {

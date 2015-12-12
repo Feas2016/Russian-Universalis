@@ -119,8 +119,8 @@ guiTypes = {
 		iconType =
 		{
 			name ="tax_base_icon"
-			spriteType ="GFX_development_button_base_tax"	
-			position = { x = 8 y = 12 }
+			spriteType ="GFX_icon_tax_base"	
+			position = { x = 10 y = 16 }
 		}
 
 		instantTextBoxType = {
@@ -139,8 +139,8 @@ guiTypes = {
 		iconType =
 		{
 			name ="prod_base_icon"
-			spriteType ="GFX_development_button_base_production"
-			position = { x= 90 y = 12 }
+			spriteType ="GFX_production_icon"
+			position = { x= 92 y = 16 }
 		}	
 
 		instantTextBoxType = {
@@ -159,8 +159,8 @@ guiTypes = {
 		iconType =
 		{
 			name ="mp_base_icon"
-			spriteType ="GFX_development_button_base_manpower"	
-			position = { x= 172 y = 12 }
+			spriteType ="GFX_text_icon_manpower"	
+			position = { x= 174 y = 16 }
 		}	
 
 		instantTextBoxType = {
@@ -340,7 +340,7 @@ guiTypes = {
 				font = "vic_29"	
 				borderSize = {x = 0 y = 0}	
 				text = "NO_COLONY_PRESENT"	
-				maxWidth = 275
+				maxWidth = 285
 				maxHeight = 76	
 				format = center	
 			}

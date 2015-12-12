@@ -629,7 +629,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 2001
-	name = "Махмуд Гаван" #Rich persian merchant and extremely influential minister of coin and politican in the Bahmani Sultanate
+	name = "Махмуд Гаван" #Rich Persian merchant and extremely influential minister of coin and politican in the Bahmani Sultanate
 	location = 1948 #Bidar
 	skill = 3
 	type = trader	#or diplomat
@@ -679,8 +679,9 @@ advisor = {
 
 advisor = {
 	advisor_id = 2005
-	name = "Мирабай" #Poetess and Hindu saint, author of hundreds of devotionals to Krishna.
-	location = 518 #Mewar  
+	name = "Мирабай" #PPoetess and Hindu saint, author of hundreds of devotionals to Krishna.
+	location = 518 #Mewar
+	female = yes
 	skill = 2
 	type = theologian
 	date = 1524.1.1 #~22 years old, Princess of Chitter.
@@ -1011,8 +1012,9 @@ advisor = {
 	advisor_id = 2014
 	name = "Тарабай" #Maratha queen who ruled through her son and effectively acts as the supreme ruler of the Maratha state for a long time. Pioneer of Maratha tactics and warfare
 	location = 1946 #Desh
+	female = yes
 	skill = 2
-	type = army_organiser #army_reformer? Also quite profficient at plotting, but her military leadership is more important in game terms
+	type = army_organiser #army_reformer? Also quite proficient at plotting, but her military leadership is more important in game terms
 	date = 1700.3.12 #Crowns her son and starts acting as the "queen of the Marathas"
 	death_date = 1714.10.1 #Ousted and put in house arrest for 34 years in Panhala, returns in 1748 (73 years old) and quickly becomes a major political player again
 }

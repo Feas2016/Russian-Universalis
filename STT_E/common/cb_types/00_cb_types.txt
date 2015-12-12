@@ -14,7 +14,8 @@
 # --------------------------------------------------------------
 
 # Restoration of recently broken PU
-cb_restore_personal_union = {
+cb_restore_personal_union = {	
+	valid_for_subject = no
 	
 	is_triggered_only = yes
 	months = 120
@@ -32,6 +33,7 @@ cb_restore_personal_union = {
 
 # Defected province
 cb_defection = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 12
@@ -41,6 +43,7 @@ cb_defection = {
 
 # Cancelled loan
 cb_loan_cancelled = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 12
@@ -50,6 +53,7 @@ cb_loan_cancelled = {
 
 # Hostile spy discovered
 cb_spy_discovered = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 12
@@ -59,6 +63,7 @@ cb_spy_discovered = {
 
 # Vassal that broke free
 cb_disloyal_vassal = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 120
@@ -68,6 +73,7 @@ cb_disloyal_vassal = {
 
 # A HRE prince has been annexed
 cb_hre_attacked = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 60
@@ -77,6 +83,7 @@ cb_hre_attacked = {
 
 # War of Honor
 cb_insult = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	
@@ -87,6 +94,7 @@ cb_insult = {
 
 # Dishonored an alliance
 cb_dishonored_call = {
+	valid_for_subject = no
 
 	is_triggered_only = yes
 	months = 36
@@ -96,6 +104,7 @@ cb_dishonored_call = {
 
 # CB for vassalization missions
 cb_vassalize_mission = {
+	valid_for_subject = no
 	
 	is_triggered_only = yes
 	months = 120
@@ -105,6 +114,7 @@ cb_vassalize_mission = {
 
 # CB for fabricated claim on throne. (from events)
 cb_fabricated_claims = {
+	valid_for_subject = no
 	
 	is_triggered_only = yes
 	months = 12
@@ -114,6 +124,7 @@ cb_fabricated_claims = {
 
 # CB for Emperor against HRE members that refuse religious conformance
 cb_religious_conformance = {
+	valid_for_subject = no
 	
 	is_triggered_only = yes
 	months = 24
@@ -123,7 +134,7 @@ cb_religious_conformance = {
 
 # Friction along a border
 cb_border_war = {
-
+	valid_for_subject = no
 	is_triggered_only = yes
 	months = 12
 	
@@ -132,6 +143,8 @@ cb_border_war = {
 
 # Trade War (from events and others)
 cb_trade_war_triggered = {
+	valid_for_subject = no
+
 	is_triggered_only = yes
 	months = 24
 
@@ -139,6 +152,8 @@ cb_trade_war_triggered = {
 }
 
 cb_trade_conflict = {
+	valid_for_subject = no
+
 	is_triggered_only = yes
 	months = 24
 
@@ -146,6 +161,8 @@ cb_trade_conflict = {
 }
 
 cb_annex = {
+	valid_for_subject = no
+
 	is_triggered_only = yes
 	months = 24
 
@@ -153,6 +170,8 @@ cb_annex = {
 }
 
 cb_change_government = {
+	valid_for_subject = no
+
 	is_triggered_only = yes
 	months = 120
 
@@ -419,6 +438,7 @@ cb_crusade = {
 	prerequisites = {
 		is_neighbor_of = FROM
 		NOT = { religion_group = FROM }
+		NOT = {	has_matching_religion = FROM }
 		OR = {
 			AND = {
 				FROM = { is_crusade_target = yes }
@@ -439,7 +459,7 @@ cb_defender_of_the_faith = {
 	prerequisites = {
 		is_defender_of_faith = yes
 		is_neighbor_of = FROM
-		NOT = {	religion = FROM }
+		NOT = {	has_matching_religion = FROM }
 		cb_on_religious_enemies = yes
 		is_revolution_target = no
 		OR = {
@@ -450,30 +470,6 @@ cb_defender_of_the_faith = {
 	}
 	
 	war_goal = defend_country_faith
-}
-
-# Liberation of same-faith provinces
-cb_religious_liberation = {
-	valid_for_subject = no
-	
-	prerequisites = {
-		always = no
-		NOT = { religion_group = christian } # Christians and Muslims get Holy War instead
-		NOT = { religion_group = muslim }
-		NOT = { religion_group = FROM }
-		religion_group_claim = FROM
-		OR = {
-			cb_on_religious_enemies = yes
-		}
-		OR = {
-			hre_religion_treaty = no
-			capital_scope = { is_part_of_hre = no }
-			FROM = { capital_scope = { is_part_of_hre = no } }
-		}	
-		is_revolution_target = no		
-	}
-	
-	war_goal = take_province_religion
 }
 
 # Purging of Heresy
@@ -490,7 +486,7 @@ cb_heretic = {
 				government = monastic_order_government
 			}
 		religion_group = from
-		NOT = { religion = from }
+		NOT = {	has_matching_religion = FROM }
 		OR = {
 			NOT = { has_dlc = "Art of War" }
 			hre_religion_treaty = no
@@ -925,7 +921,11 @@ cb_chinese_unification = {
 			NOT = { is_subject_of = ROOT }
 			culture_group = east_asian #Chinese
 			any_owned_province = {
-				region = chinese_region
+				OR = {
+					region = north_china_region
+					region = xinan_region
+					region = south_china_region
+				}
 			}
 			NOT = { has_country_modifier = the_mandate_of_heaven }
 		}
@@ -933,4 +933,22 @@ cb_chinese_unification = {
 	}
 	
 	war_goal = superiority_chinese_unification
+}
+
+
+# Force migration
+cb_force_migration = {
+
+	valid_for_subject = no
+	
+	prerequisites = {
+		has_dlc = "The Cossacks"
+		is_neighbor_of = FROM
+		is_subject = no
+		FROM = {
+			can_migrate = yes
+			is_subject = no
+		}
+	}	
+	war_goal = force_migration
 }
