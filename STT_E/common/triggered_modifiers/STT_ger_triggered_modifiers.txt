@@ -1,0 +1,77 @@
+###########################################
+# Triggered modifiers for Kaisertum by dorimi
+###########################################
+ger_truedynasty = {
+	potential = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+		}
+	}
+	trigger = {
+		government = monarchy
+		OR = {
+			dynasty = "фон Ольденбург"
+			dynasty = "фон Мекленбург"
+			dynasty = "фон Гогенцоллерн"
+			dynasty = "фон Габсбург"
+			dynasty = "фон Цвайбрюккен"
+			dynasty = "фон Виттельсбах"
+			dynasty = "фон Гольштейн"
+			dynasty = "фон Гессен-Кассель"
+			dynasty = "фон Гольштейн-Готторп"
+			dynasty = "фон Пфальц-Ноймаркт"
+			dynasty = "фон Брауншвейг-Люнебург"
+			dynasty = "фон Ганновер"
+			dynasty = "фон Веттин"
+		}
+	}
+	prestige = 1
+	legitimacy = 1
+}
+
+ger_yearhommage = {
+	potential = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+		}
+	}
+	trigger = {
+		NOT = { has_country_modifier = ger_hommage }
+	}
+	prestige = -1
+}
+
+ger_nolandtag = {
+	potential = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+		}
+	}
+	trigger = {
+		NOT = { has_country_modifier = ger_landtag }
+	}
+	global_tax_modifier = -0.02
+	stability_cost_modifier = -0.05
+	diplomatic_reputation = 1
+}
+
+ger_yeslandtag = {
+	potential = {
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+		}
+	}
+	trigger = {
+		has_country_modifier = ger_landtag
+	}
+	global_tax_modifier = 0.02
+	diplomatic_reputation = -1
+}
