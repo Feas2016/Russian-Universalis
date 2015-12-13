@@ -1,0 +1,159 @@
+ dorimi_preparing = {
+	potential = {
+	    is_part_of_hre = yes
+		is_emperor = yes
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+			tag = DUA
+			tag = HAB
+			tag = AEM
+		}
+	}
+	trigger = {
+		OR = {
+			has_ruler_modifier = dorimi_sword
+			has_ruler_modifier = dorimi_orb
+			has_ruler_modifier = dorimi_cross
+			has_ruler_modifier = dorimi_crown
+		}
+	NOT = { has_ruler_modifier = dorimi_coronation }
+	}
+	prestige = 1
+	legitimacy = -1
+}
+
+dorimi_ready = {
+	potential = {
+	is_emperor = yes
+	is_part_of_hre = yes
+	OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+			tag = DUA
+			tag = HAB
+			tag = AEM
+		}
+	}
+	trigger = {
+			has_ruler_modifier = dorimi_sword
+			has_ruler_modifier = dorimi_orb
+			has_ruler_modifier = dorimi_cross
+			has_ruler_modifier = dorimi_crown
+			NOT = { is_emperor = no }
+			NOT = { has_ruler_modifier = dorimi_coronation }
+	}
+	imperial_authority = -0.05
+}
+
+ dorimi_done = {
+	potential = {
+		is_emperor = yes
+		is_part_of_hre = yes
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+			tag = DUA
+			tag = HAB
+			tag = AEM
+		}
+	}
+	trigger = {
+	NOT = { is_emperor = no }
+		has_ruler_modifier = dorimi_coronation
+	}
+	imperial_authority = 0.01
+}
+
+ dorimi_undone = {
+	potential = {
+		is_emperor = yes
+		is_part_of_hre = yes
+		OR = {
+			tag = BRA
+			tag = PRU
+			tag = GER
+			tag = DUA
+			tag = HAB
+			tag = AEM
+		}
+	}
+	trigger = {
+	    NOT = { is_emperor = no }
+		NOT = { has_ruler_modifier = dorimi_coronation }
+	}
+	diplomatic_reputation = -1
+}
+legacy_rome = {
+	potential = {
+		OR = {
+			owns = 118	#Roma
+			owns = 151	#Constantinople
+		}
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+	}
+
+	trigger = {
+		owns = 118	#Roma
+		is_core = 118
+		owns = 151	#Constantinople
+		is_core = 151
+		OR = {
+			religion_group = christian
+			religion_group = muslim
+		}
+		OR = {
+			AND = {
+				owns = 1749		#Cadiz
+				is_core = 1749
+			}
+			AND = {
+				owns = 213		#Barcelona
+				is_core = 213
+			}
+			AND = {
+				owns = 201		#Provence	
+				is_core = 201
+			}
+		}
+		OR = {
+			AND = {
+				owns = 146		#Athens
+				is_core = 146
+			}
+			AND = {
+				owns = 124		#Messina
+				is_core = 124
+			}
+			AND = {
+				owns = 319		#Mentese
+				is_core = 319
+			}
+		}
+		OR = {
+			AND = {
+				owns = 358		#Alexandria
+				is_core = 358
+			}
+			AND = {
+				owns = 377		#Aleppo
+				is_core = 377
+			}
+			AND = {
+				owns = 341		#Tunis	
+				is_core = 341
+			}
+		}
+	}
+
+	global_tax_modifier = 0.03
+	global_manpower_modifier = 0.03
+	trade_efficiency = 0.03
+	#icon = 9
+}
