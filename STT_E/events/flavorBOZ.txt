@@ -1,4 +1,4 @@
-namespace = flavorBOZ
+﻿namespace = flavorBOZ
 
 country_event = {
 	id = flavorBOZ.1
@@ -24,7 +24,7 @@ country_event = {
 			}
 			NOT = { num_of_cities = 6 }
 			has_country_flag = BOZ_will_be_inherited
-			NOT = { has_ruler = "Mihail" }
+			NOT = { has_ruler = "Михаил" }
 		}
 	}
 	
@@ -60,7 +60,7 @@ country_event = {
 		}
 		BOZ = {
 			define_ruler = {
-				dynasty = Ðþðèêîâè÷
+				dynasty = "Рюрикович"
 				fixed = no
 			}
 		}
@@ -96,8 +96,8 @@ country_event = {
 		BOZ = {
 			NOT = { num_of_cities = 6 }
 			NOT = { has_country_flag = BOZ_will_be_inherited }
-			has_ruler = "Mihail"
-			dynasty = Ðþðèêîâè÷
+			has_ruler = "Михаил"
+			dynasty = "Рюрикович"
 		}
 	}
 	

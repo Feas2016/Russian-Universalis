@@ -17,6 +17,9 @@ veche_republic = {
 		factor = 0	
 	}
 		
+	faction = mr_aristocrats
+	faction = mr_traders
+	faction = mr_guilds	
 	
 	rank = {
 		1 = {
@@ -50,6 +53,10 @@ knyaz_veche_republic = {
 	ai_will_do = {
 		factor = 0	
 	}
+		
+	faction = mr_aristocrats
+	faction = mr_traders
+	faction = mr_guilds
 
 	rank = {
 		1 = {
@@ -115,4 +122,3 @@ udel_principality = {
 
 	fixed_rank = 1
 }
-
