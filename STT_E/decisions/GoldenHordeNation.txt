@@ -41,13 +41,13 @@ country_decisions = {
 			change_tag = GOL
 			add_prestige = 35
 			add_legitimacy = 25
-			steppes = {
+			crimea_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_claim = GOL
 			}
-			russian_region = {
+			russia_region = {
 				limit = {
 					owner = {
 						primary_culture = russian
