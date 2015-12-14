@@ -11,6 +11,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { government = dutch_republic }
+		### STT
 		NOT = { government = knyaz_veche_republic }
 	}
 
@@ -68,6 +69,7 @@ country_event = {
 			}
 			change_government = despotic_monarchy
 		}	
+		### STT
 		if = {
 			limit = {
 				NOT = { government = veche_republic }
@@ -78,7 +80,7 @@ country_event = {
 			limit = {
 				government = veche_republic
 			}
-			add_scaled_republican_tradition = -0.25
+			add_scaled_republican_tradition = -0.15
 		}
 		random_list = {
 			10 = {
@@ -91,7 +93,7 @@ country_event = {
 				add_mil_power = 50
 			}
 		}
-		add_karma = -20
+		add_karma = -5
 	}
 	option = {
 		name = "EVTOPTB700"	# An administrator type
@@ -111,6 +113,7 @@ country_event = {
 				influence = 20
 			}				
 		}
+		add_karma = 10
 	}
 	option = {
 		name = "EVTOPTC700"	# A diplomat
@@ -129,7 +132,8 @@ country_event = {
 				faction = mr_traders
 				influence = 20
 			}				
-		}		
+		}
+		add_karma = 10		
 	}
 	option = {
 		name = "EVTOPTD700"	# A military man
@@ -148,36 +152,8 @@ country_event = {
 				faction = mr_aristocrats
 				influence = 20
 			}				
-		}		
-	}
-	option = {
-		name = "elections.700.e"	# We need a Medici to rule us
-		trigger = { tag = LAN }
-		ai_chance = { factor = 90 }
-		define_ruler = {
-			mil = 3
-			adm = 2
-			dip = 1					
-			fixed = yes
 		}
-		if = {
-			limit = { 
-				has_faction = mr_aristocrats 
-			}
-			add_faction_influence = {
-				faction = mr_aristocrats
-				influence = 10
-			}				
-		}
-		if = {
-			limit = { 
-				has_faction = mr_guilds 
-			}
-			add_faction_influence = {
-				faction = mr_guilds
-				influence = 10
-			}				
-		}			
+		add_karma = 10
 	}
 }
 
@@ -401,7 +377,7 @@ country_event = {
 		change_statists_vs_orangists = 0.33
 	}
 }
-
+### STT
 # Special for veche gov.
 country_event = {
 	id = 702

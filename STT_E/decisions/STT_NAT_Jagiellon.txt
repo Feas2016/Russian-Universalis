@@ -1,0 +1,556 @@
+country_decisions = {
+
+#####################LITHUANIA##############################
+    #Form Jagiellon Diplomatically as Lithuania
+	lit_jagiellon_dip = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = LIT
+            
+			POL = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			BOH = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			HUN = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            legitimacy = 100
+            
+            is_at_war = no
+			is_subject = no
+            
+            AND = {
+                OR = {
+                    POL = {	junior_union_with = LIT	}
+                    POL = {	vassal_of = LIT	}
+                }
+                OR = {
+                    BOH = {	junior_union_with = LIT	}
+                    BOH = {	vassal_of = LIT	}
+                }
+                OR = {
+                    HUN = {	junior_union_with = LIT	}
+                    HUN = {	vassal_of = LIT	}
+                }
+            }
+            NOT = { num_of_unions = 4 }
+		}
+        
+		effect = {
+			change_tag = JAG
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			change_government = imperial_government
+			inherit = POL
+            inherit = BOH
+			inherit = HUN
+            set_capital = 260
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+    #Form Jagiellon Militarily as Lithuania
+	lit_jagiellon_mil = {
+		major = yes
+		potential = {
+			NOT = { exists = JAG }
+			tag = LIT
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            
+            is_at_war = no
+			is_subject = no
+            
+            owns_core_province = 272 #Vilna
+            owns_core_province = 257 #Warszawa
+            owns_core_province = 266 #Bohemia
+            owns_core_province = 153 #Pest
+            owns_core_province = 276 #Minsk
+            owns_core_province = 280 #Kiev
+            owns_core_province = 290 #Poltava
+            owns_core_province = 262 #Krakow                        
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+			change_tag = JAG
+			swap_free_idea_group = yes
+			change_government = imperial_government
+            set_capital = 260
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+#####################POLAND##############################
+    #Form Jagiellon Diplomatically as Poland
+	pol_jagiellon_dip = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = POL
+            
+			LIT = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			BOH = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			HUN = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            legitimacy = 100
+            
+            is_at_war = no
+			is_subject = no
+            
+            AND = {
+                OR = {
+                    LIT = {	junior_union_with = POL	}
+                    LIT = {	vassal_of = POL	}
+                }
+                OR = {
+                    BOH = {	junior_union_with = POL	}
+                    BOH = {	vassal_of = POL	}
+                }
+                OR = {
+                    HUN = {	junior_union_with = POL	}
+                    HUN = {	vassal_of = POL	}
+                }
+            }
+            NOT = { num_of_unions = 4 }
+		}
+        
+		effect = {
+			change_tag = JAG
+			swap_free_idea_group = yes
+			inherit = LIT
+            inherit = BOH
+			inherit = HUN
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+    #Form Jagiellon Militarily as Poland
+	pol_jagiellon_mil = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = POL
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            
+            is_at_war = no
+			is_subject = no
+            
+            owns_core_province = 272 #Vilna
+            owns_core_province = 257 #Warszawa
+            owns_core_province = 266 #Bohemia
+            owns_core_province = 153 #Pest
+            owns_core_province = 276 #Minsk
+            owns_core_province = 280 #Kiev
+            owns_core_province = 290 #Poltava
+            owns_core_province = 262 #Krakow            
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+			change_tag = JAG
+			swap_free_idea_group = yes
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+        
+		ai_importance = 50
+	}
+
+#####################BOHEMIA##############################
+    #Form Jagiellon Diplomatically as BOHEMIA
+	boh_jagiellon_dip = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = BOH
+            
+			LIT = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			POL = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			HUN = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            legitimacy = 100
+            
+            is_at_war = no
+			is_subject = no
+            
+            AND = {
+                OR = {
+                    LIT = {	junior_union_with = BOH	}
+                    LIT = {	vassal_of = BOH	}
+                }
+                OR = {
+                    POL = {	junior_union_with = BOH	}
+                    POL = {	vassal_of = BOH	}
+                }
+                OR = {
+                    HUN = {	junior_union_with = BOH	}
+                    HUN = {	vassal_of = BOH	}
+                }
+            }
+            NOT = { num_of_unions = 4 }
+		}
+        
+		effect = {
+			change_tag = JAG
+			swap_free_idea_group = yes
+			inherit = LIT
+			inherit = POL
+			inherit = HUN
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+    #Form Jagiellon Militarily as Bohemia
+	boh_jagiellon_mil = {
+		major = yes
+		potential = {
+			NOT = { exists = JAG }
+			tag = BOH
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            
+            is_at_war = no
+			is_subject = no
+            
+            owns_core_province = 272 #Vilna
+            owns_core_province = 257 #Warszawa
+            owns_core_province = 266 #Bohemia
+            owns_core_province = 153 #Pest
+            owns_core_province = 276 #Minsk
+            owns_core_province = 280 #Kiev
+            owns_core_province = 290 #Poltava
+            owns_core_province = 262 #Krakow
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+			change_tag = JAG
+			swap_free_idea_group = yes
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+#####################HUNGARY##############################
+    #Form Jagiellon Diplomatically as Hungary
+	hun_jagiellon_dip = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = HUN
+            
+			LIT = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			POL = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			BOH = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            legitimacy = 100
+            
+            is_at_war = no
+			is_subject = no
+            
+            AND = {
+                OR = {
+                    LIT = {	junior_union_with = HUN	}
+                    LIT = {	vassal_of = HUN	}
+                }
+                OR = {
+                    POL = {	junior_union_with = HUN	}
+                    POL = {	vassal_of = HUN	}
+                }
+                OR = {
+                    BOH = {	junior_union_with = HUN	}
+                    BOH = {	vassal_of = HUN	}
+                }
+            }
+            NOT = { num_of_unions = 4 }
+		}
+        
+		effect = {
+			change_tag = JAG
+			swap_free_idea_group = yes
+			inherit = LIT
+			inherit = POL
+			inherit = BOH
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+    #Form Jagiellon Militarily as Hungary
+	hun_jagiellon_mil = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			tag = HUN
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            
+            is_at_war = no
+			is_subject = no
+            
+            owns_core_province = 272 #Vilna
+            owns_core_province = 257 #Warszawa
+            owns_core_province = 266 #Bohemia
+            owns_core_province = 153 #Pest
+            owns_core_province = 276 #Minsk
+            owns_core_province = 280 #Kiev
+            owns_core_province = 290 #Poltava
+            owns_core_province = 262 #Krakow
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+			change_tag = JAG
+			swap_free_idea_group = yes
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+        
+		ai_importance = 50
+	}
+    
+
+#####################COMMONWEALTH##############################
+    #Form Jagiellon Diplomatically as Commonwealth
+	plc_jagiellon_dip = {
+		major = yes
+        
+		potential = {
+			NOT = { exists = JAG }
+			OR = {
+				tag = PLC
+				tag = PLU
+            }
+			BOH = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+            
+			HUN = {
+				exists = yes
+				ai = yes
+				was_player = no
+			}
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            legitimacy = 100
+            
+            is_at_war = no
+			is_subject = no
+            
+            AND = {
+                OR = {
+                    BOH = {	junior_union_with = PLC	}
+                    BOH = {	vassal_of = PLC	}
+                }
+                OR = {
+                    HUN = {	junior_union_with = PLC	}
+                    HUN = {	vassal_of = PLC	}
+                }
+            }
+            NOT = { num_of_unions = 3 }
+		}
+        
+		effect = {
+			change_tag = JAG
+			swap_free_idea_group = yes
+            inherit = BOH
+			inherit = HUN
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+    
+    #Form Jagiellon Militarily as Commonwealth
+	plc_jagiellon_mil = {
+		major = yes
+		potential = {
+			NOT = { exists = JAG }
+			OR = {
+				tag = PLC
+				tag = PLU
+            }
+		}
+        
+		allow = {
+            adm_tech = 10
+            stability = 3
+            
+            is_at_war = no
+			is_subject = no
+            
+            owns_core_province = 272 #Vilna
+            owns_core_province = 257 #Warszawa
+            owns_core_province = 266 #Bohemia
+            owns_core_province = 153 #Pest
+            owns_core_province = 276 #Minsk
+            owns_core_province = 280 #Kiev
+            owns_core_province = 290 #Poltava
+            owns_core_province = 262 #Krakow
+		}
+        
+		effect = {
+            add_country_modifier = {
+                name = "centralization_modifier"
+                duration = 7300
+            }
+			change_tag = JAG
+			swap_free_idea_group = yes
+            set_capital = 260
+			change_government = imperial_government
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}  
+}
