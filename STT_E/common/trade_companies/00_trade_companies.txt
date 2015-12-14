@@ -5,7 +5,12 @@ trade_company_west_africa = {
 		1164 1165 1166 1167 1169 1170 1171 2239 1096 1112 1113 1114 1793 2241 1097 1098 1118 1119 1126 1139 1141 1147 1151 1163 1172 2242 2258 2290 2294 1901 2948 2949 
 		798 1168 1306
 		### STT
-		3015 3016 3020 3021 3030 3031 3032 3033 3034 3035 3036 3037 3038 3054 3055 3057 3058 3059 3060 3061 3063
+		4031 4032
+		4036 4037
+		4046 4047 4048 4049 4050 4051 4052 4053 4054
+		4070 4071
+		4073 4074 4075 4076 4077
+		4079
 	}
 	
 	# Specific
@@ -24,7 +29,8 @@ trade_company_south_africa = {
 	provinces = {
 		789 833 1174 1175 1176 1177 1178 1179 1180 1181 1182 1801 1173 2856 2864 2880  
 		### STT
-		2719 2720 2721 2722 2723 3064 3065 3066 3067 3068 3069 3070 3071 3072
+		2719 2720 2721 2722 2723
+		4080 4081 4082 4083 4084 4085 4086 4087 4088
 	}
 	
 	# Specific
@@ -41,9 +47,12 @@ trade_company_east_africa = {
 	color = { 200 0 0 }
 	
 	provinces = {
-		788 1100 1102 1103 1183 1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1197 1198 1199 1200 1201 1202 1203 1204 1792 1798 1799 1900 2796 2774 2950 2951 2952
+		788 1100 1102 1103 1183 1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1197 1198 1199 1200 1201 1202 1203 1204 1273 1792 1798 1799 1900 1925 2796 2774 2950 2951 2952
 		### STT
-		3042 3044 3045 3046 3047 3048 3049 3050 3051 3052 3053 3056 3062
+		4058
+		4060 4061 4062 4063 4064 4065 4066 4067 4068 4069
+		4072
+		4078
 	}
 	
 	# Specific
@@ -102,16 +111,16 @@ trade_company_east_india = {
 	}
 	
 	# Specific (Removed for redundancy)
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			primary_culture = english
-		}
-		name = "TRADE_COMPANY_INDIA_British_East_India_Company"
-	}
+	#names = {
+	#	trigger = {
+	#		OR = {
+	#			tag = GBR
+	#			tag = ENG
+	#		}
+	#		primary_culture = english
+	#	}
+	#	name = "TRADE_COMPANY_INDIA_British_East_India_Company"
+	#}
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_EAST_INDIA_Root_Culture_GetName"
@@ -159,16 +168,16 @@ trade_company_indonesia = {
 	provinces = {
 		593 594 595 596 597 598 599 617 618 619 620 621 622 623 636 637 638 639 640 659 1998 1999 2390 2391 2392 2393 2394 2673 2674 2675 2676 2677 2678 2679 2680 2681 2682 2683 2684 2685 2686 2703 2704 2705 2706 2707 2708 2709 2710 2711 2712 2740 
 		### STT		
-		3089 3090 3091 3092
+		4105 4106 4107 4108
 	}
 
 	# Specific (Removed for potential confusion)
-	names = {
-		trigger = {
-			primary_culture = dutch
-		}
-		name = "TRADE_COMPANY_INDONESIA_Dutch_East_Indies_Company"
-	}
+	#names = {
+	#	trigger = {
+	#		primary_culture = dutch
+	#	}
+	#	name = "TRADE_COMPANY_INDONESIA_Dutch_East_Indies_Company"
+	#}
 	# Generic
 	names = {
 		name = "TRADE_COMPANY_INDONESIA_Root_Culture_GetName"
@@ -200,7 +209,9 @@ trade_company_moluccas = {
 	provinces = {
 		646 2687 2688 2689 2690 2718 2724 1245 647 645 2717 648 649 650 2725 2696 2695 635 633 634 643 2713 2714 642 2715 641 2716 632 627 2691 631 2693 629 2692 628 626 625 630 624 644 
 		### STT
-		1236 1237 1238 2719 2720 2721 2722 2723 3093 3094 3095 3096 3097
+		1236 1237 1238
+		2719 2720 2721 2722 2723
+		4109 4110 4111 4112 4113
 	}
 
 	# Generic
