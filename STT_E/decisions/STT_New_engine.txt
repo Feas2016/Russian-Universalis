@@ -27,7 +27,7 @@ western = {
 			}			
 			random_list = {
                 25 = {
-                    country_event  = { id = 60010 }
+                    country_event  = { id = STT_new_engine.60010 }
 					change_technology_group = western
 					add_stability = -1
 					add_prestige = -30
@@ -40,7 +40,7 @@ western = {
                     }
                 }
                 50 = {
-                    country_event  = { id = 60011 }
+                    country_event  = { id = STT_new_engine.60011 }
                     add_stability = -2
                     add_prestige = -40
 					add_adm_power = -300
@@ -53,7 +53,7 @@ western = {
                     }
                 }
                 25 = {
-                    country_event  = { id = 60012 }
+                    country_event  = { id = STT_new_engine.60012 }
 					add_inflation = 5
                     add_stability = -3
 					add_prestige = -50
@@ -93,7 +93,7 @@ western_unit = {
 			}
 			random_list = {
                 25 = {
-                    country_event  = { id = 60010 }
+                    country_event  = { id = STT_new_engine.60010 }
 					change_unit_type = western
 					add_stability = -1
 					add_prestige = -30
@@ -106,7 +106,7 @@ western_unit = {
                     }
                 }
                 50 = {
-                    country_event  = { id = 60011 }
+                    country_event  = { id = STT_new_engine.60011 }
                     add_stability = -2
                     add_prestige = -40
 					add_mil_power = -300
@@ -119,7 +119,7 @@ western_unit = {
                     }
                 }
                 25 = {
-                    country_event  = { id = 60012 }
+                    country_event  = { id = STT_new_engine.60012 }
 					add_inflation = 5
                     add_stability = -3
 					add_prestige = -50

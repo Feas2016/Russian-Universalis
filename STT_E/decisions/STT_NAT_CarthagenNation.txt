@@ -95,10 +95,8 @@ country_decisions = {
                         }
                         add_prestige = 25
 			change_tag = CAR
-			change_government = imperial_government
-			CAR = {
-				set_capital = 341
-		        }
+			set_government_rank = 3
+			set_capital = 341
 		}
 		ai_will_do = {
 			factor = 1

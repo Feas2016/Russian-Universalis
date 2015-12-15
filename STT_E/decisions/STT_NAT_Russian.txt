@@ -1,4 +1,5 @@
 country_decisions = {
+
 	russian_tsardom = {
 		major = yes
 		potential = {
@@ -28,25 +29,27 @@ country_decisions = {
 				}
 			}
 		effect = {
+			add_prestige = 25
+			change_tag = TSR
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = TSR
+				add_permanent_claim = TSR
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3300
-			}
-			add_prestige = 25
-			change_tag = TSR
-			country_event = { id = ideagroups.1 } #Swap Ideas
-			set_government_rank = 3
+			}		
+			country_event = { id = ideagroups.1 } #Swap Ideas			
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = 4
 	}
 	
 	velikiy_novgorod = {
@@ -71,20 +74,12 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 310			# Novgorod
 			OR = {
-				AND = {
-					owns = 294		# Tver
-				}
-				AND = {
-					owns = 308		# Yaroslavl	
-				}
+				owns = 294		# Tver
+				owns = 308		# Yaroslavl	
 			}
 			OR = {
-				AND = {
-					owns = 274		# Pskov
-				}
-				AND = {
-					owns = 275		# Polotsk	
-				}
+				owns = 274		# Pskov
+				owns = 275		# Polotsk
 			}			
 		}
 		effect = {
@@ -92,7 +87,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = VNO
+				add_permanent_claim = VNO
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -110,9 +105,7 @@ country_decisions = {
 	novgorod_nation = {
 		major = yes
 		potential = {
-		OR = {
 		    tag = VNO
-			}
 			NOT = { exists = RUS }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -142,10 +135,8 @@ country_decisions = {
 				owns_core_province = 293		# Smolensk
 				}
 			OR = {
-				AND = {
-					owns_core_province = 274		# Pskov
-					owns_core_province = 307		# Vladimir
-				}
+				owns_core_province = 274		# Pskov
+				owns_core_province = 307		# Vladimir
 			}	
 		}
 		effect = {
@@ -153,7 +144,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = RUS
+				add_permanent_claim = RUS
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -191,36 +182,36 @@ country_decisions = {
 		}
 
 		effect = {
-			add_claim = 151
+			add_permanent_claim = 151
 			macedonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			northern_greece_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			morea_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			western_aegean_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			thrace_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			add_dip_power = -20
 			set_country_flag = return_cons

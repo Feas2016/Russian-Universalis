@@ -9,16 +9,7 @@ country_decisions = {
 			NOT = { has_great_project = kremlin }
 			NOT = { has_construction = canal }
 			}
-		}
-		potential = {
-			
-			295 = {
-				owns = ROOT
-				NOT = { has_great_project = kremlin }
-				NOT = { has_construction = canal }
-			}
-		}
-	
+		}	
 		allow = {
 			owns = 295
 			treasury = 1000
@@ -73,9 +64,9 @@ country_decisions = {
 		    OR = {
 				tag = TSR
 				tag = RUS
-			}			
+			}
+			owns = 295
 			295 = {
-				owns = ROOT
 				has_great_project = kremlin
 				NOT = { has_great_project = vasil_blazen }
 				NOT = { has_construction = canal }
@@ -129,21 +120,15 @@ country_decisions = {
 	construct_ermitaj = {
 		major = yes
 		potential = {
-		technology_group = western
-		capital = 33
-			OR = {
-				ai = no
-				AND = {
-					treasury = 3000
-					owns = 33
-				}
-			}
+			technology_group = western
+			owns = 33
+			capital = 33
+			treasury = 3000
 			33 = {
-				owns = ROOT
 				NOT = { has_great_project = ermitaj }
 				NOT = { has_construction = canal }
 			}
-	 }
+		}
 		allow = {
 			owns = 33
 			treasury = 3000

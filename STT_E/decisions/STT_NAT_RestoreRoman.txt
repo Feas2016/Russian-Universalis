@@ -27,7 +27,7 @@ form_the_latin_empire = {
 	effect = {
 		add_prestige = 25
 		change_tag = LAE
-		swap_free_idea_group = yes
+		country_event = { id = ideagroups.1 } #Swap Ideas
 		change_primary_culture = greek
 		change_government = feudal_monarchy
 		change_technology_group = western
@@ -117,7 +117,7 @@ restore_the_roman_empire = {
 			}
 		NOT = { exists = ROM }
 		NOT = { tag = PAP }
-		NOT = { tag = HRE }
+		NOT = { tag = HLR }
 		is_subject = no
 	}
 	allow = {

@@ -31,32 +31,28 @@ country_decisions = {
 		allow = {
             adm_tech = 10
             stability = 3
-            legitimacy = 100
-            
+            legitimacy = 100            
             is_at_war = no
 			is_subject = no
-            
-            AND = {
-                OR = {
-                    POL = {	junior_union_with = LIT	}
-                    POL = {	vassal_of = LIT	}
-                }
-                OR = {
-                    BOH = {	junior_union_with = LIT	}
-                    BOH = {	vassal_of = LIT	}
-                }
-                OR = {
-                    HUN = {	junior_union_with = LIT	}
-                    HUN = {	vassal_of = LIT	}
-                }
-            }
-            NOT = { num_of_unions = 4 }
+			OR = {
+				POL = {	junior_union_with = LIT	}
+				POL = {	vassal_of = LIT	}
+			}
+			OR = {
+				BOH = {	junior_union_with = LIT	}
+				BOH = {	vassal_of = LIT	}
+			}
+			OR = {
+				HUN = {	junior_union_with = LIT	}
+				HUN = {	vassal_of = LIT	}
+			}
+			NOT = { num_of_unions = 4 }
 		}
         
 		effect = {
 			change_tag = JAG
 			country_event = { id = ideagroups.1 } #Swap Ideas
-			change_government = imperial_government
+			set_government_rank = 3
 			inherit = POL
             inherit = BOH
 			inherit = HUN
@@ -100,11 +96,10 @@ country_decisions = {
                 duration = 7300
             }
 			change_tag = JAG
-			swap_free_idea_group = yes
-			change_government = imperial_government
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			set_government_rank = 3
             set_capital = 260
-		}
-        
+		}        
 		ai_will_do = {
 			factor = 1
 		}
@@ -146,32 +141,28 @@ country_decisions = {
             
             is_at_war = no
 			is_subject = no
-            
-            AND = {
-                OR = {
-                    LIT = {	junior_union_with = POL	}
-                    LIT = {	vassal_of = POL	}
-                }
-                OR = {
-                    BOH = {	junior_union_with = POL	}
-                    BOH = {	vassal_of = POL	}
-                }
-                OR = {
-                    HUN = {	junior_union_with = POL	}
-                    HUN = {	vassal_of = POL	}
-                }
-            }
+			OR = {
+				LIT = {	junior_union_with = POL	}
+				LIT = {	vassal_of = POL	}
+			}
+			OR = {
+				BOH = {	junior_union_with = POL	}
+				BOH = {	vassal_of = POL	}
+			}
+			OR = {
+				HUN = {	junior_union_with = POL	}
+				HUN = {	vassal_of = POL	}
+			}
             NOT = { num_of_unions = 4 }
-		}
-        
+		}        
 		effect = {
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			inherit = LIT
             inherit = BOH
 			inherit = HUN
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -212,9 +203,9 @@ country_decisions = {
                 duration = 7300
             }
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -256,35 +247,31 @@ country_decisions = {
             adm_tech = 10
             stability = 3
             legitimacy = 100
-            
             is_at_war = no
 			is_subject = no
-            
-            AND = {
-                OR = {
-                    LIT = {	junior_union_with = BOH	}
-                    LIT = {	vassal_of = BOH	}
-                }
-                OR = {
-                    POL = {	junior_union_with = BOH	}
-                    POL = {	vassal_of = BOH	}
-                }
-                OR = {
-                    HUN = {	junior_union_with = BOH	}
-                    HUN = {	vassal_of = BOH	}
-                }
+            OR = {
+                LIT = {	junior_union_with = BOH	}
+                LIT = {	vassal_of = BOH	}
+            }
+            OR = {
+                POL = {	junior_union_with = BOH	}
+                POL = {	vassal_of = BOH	}
+            }
+            OR = {
+                HUN = {	junior_union_with = BOH	}
+                HUN = {	vassal_of = BOH	}
             }
             NOT = { num_of_unions = 4 }
 		}
         
 		effect = {
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			inherit = LIT
 			inherit = POL
 			inherit = HUN
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -324,9 +311,9 @@ country_decisions = {
                 duration = 7300
             }
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -367,35 +354,31 @@ country_decisions = {
             adm_tech = 10
             stability = 3
             legitimacy = 100
-            
             is_at_war = no
 			is_subject = no
-            
-            AND = {
-                OR = {
-                    LIT = {	junior_union_with = HUN	}
-                    LIT = {	vassal_of = HUN	}
-                }
-                OR = {
-                    POL = {	junior_union_with = HUN	}
-                    POL = {	vassal_of = HUN	}
-                }
-                OR = {
-                    BOH = {	junior_union_with = HUN	}
-                    BOH = {	vassal_of = HUN	}
-                }
+            OR = {
+                LIT = {	junior_union_with = HUN	}
+                LIT = {	vassal_of = HUN	}
+            }
+            OR = {
+                POL = {	junior_union_with = HUN	}
+                POL = {	vassal_of = HUN	}
+            }
+            OR = {
+                BOH = {	junior_union_with = HUN	}
+                BOH = {	vassal_of = HUN	}
             }
             NOT = { num_of_unions = 4 }
 		}
         
 		effect = {
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
 			inherit = LIT
 			inherit = POL
 			inherit = BOH
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -436,9 +419,9 @@ country_decisions = {
                 duration = 7300
             }
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -477,30 +460,26 @@ country_decisions = {
             adm_tech = 10
             stability = 3
             legitimacy = 100
-            
             is_at_war = no
 			is_subject = no
-            
-            AND = {
-                OR = {
-                    BOH = {	junior_union_with = PLC	}
-                    BOH = {	vassal_of = PLC	}
-                }
-                OR = {
-                    HUN = {	junior_union_with = PLC	}
-                    HUN = {	vassal_of = PLC	}
-                }
+            OR = {
+                BOH = {	junior_union_with = PLC	}
+                BOH = {	vassal_of = PLC	}
+            }
+            OR = {
+                HUN = {	junior_union_with = PLC	}
+                HUN = {	vassal_of = PLC	}
             }
             NOT = { num_of_unions = 3 }
 		}
         
 		effect = {
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
             inherit = BOH
 			inherit = HUN
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
@@ -543,9 +522,9 @@ country_decisions = {
                 duration = 7300
             }
 			change_tag = JAG
-			swap_free_idea_group = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
             set_capital = 260
-			change_government = imperial_government
+			set_government_rank = 3
 		}
         
 		ai_will_do = {
