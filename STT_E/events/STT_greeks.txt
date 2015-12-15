@@ -1,0 +1,37 @@
+namespace = greeks
+
+# end of Byzantines
+country_event = {
+	id = greeks.1
+	title = "greeks.EVTNAME1"
+	desc = "greeks.EVTDESC1"
+	picture = REFORM_eventPicture
+	fire_only_once = yes	
+
+	trigger = {
+		tag = TUR
+		NOT = { exists = BYZ }
+		NOT = { exists = PQR }
+		NOT = { exists = ROM }
+		is_year = 1550
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "greeks.EVTOPTA1"
+		hidden_effect = {
+			every_province = {
+				remove_core = BYZ
+			}
+		}
+		every_province = {
+			limit = {
+				culture = greek
+			}
+			add_core = GRE
+		}
+	}
+}

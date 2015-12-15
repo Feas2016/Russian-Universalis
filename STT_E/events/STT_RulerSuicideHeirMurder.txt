@@ -1,0 +1,23 @@
+namespace = RulerSuicideHeirMurder
+
+#Adopt a heir BYZ
+
+country_event = {
+	id = byz_adopt_heir.564711
+	title = byz_adopt_heir.564711.t
+	desc = byz_adopt_heir.564711.d
+	picture = NEW_HEIR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = byz_adopt_heir.564711.a
+		add_prestige = -10
+		add_legitimacy = -50
+		define_heir = {
+			dynasty = ROOT
+			claim = 20
+		}
+	}
+}

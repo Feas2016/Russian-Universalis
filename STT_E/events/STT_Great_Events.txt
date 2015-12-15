@@ -1,0 +1,526 @@
+namespace = stt_projects
+
+province_event = {
+	id = stt_great.564745
+	title = "stt_great.EN564745"
+	desc = "stt_great.ED564745"
+	picture = BENKRUPTCY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_construction = canal
+		owner = { owns = 151 }
+	}
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564745"
+		ai_chance = { factor = 25 }
+		owner = {
+			add_years_of_income = -3.0
+		}
+		add_construction_progress = 0.01
+	}
+	option = {	# It's too costly
+		name = "stt_great.EB564745"
+		ai_chance = { factor = 75 }
+		add_construction_progress = -0.03
+	}
+}
+province_event = {
+	id = stt_great.564746
+	title = "stt_great.EN564746"
+	desc = "stt_great.ED564746"
+	picture = BYZ_BYZANTINE_EMPEROR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_construction = canal
+		owner = { owns = 151 }
+	}
+	
+	
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564746"
+		ai_chance = { factor = 25 }
+		owner = {
+			add_dip_power = -200
+		}
+	}
+	option = {	# It's too costly
+		name = "stt_great.EB564746"
+		ai_chance = { factor = 75 }
+		add_construction_progress = -0.05
+	}
+}
+
+province_event = {
+	id = stt_great.564747
+	title = "stt_great.EN564747"
+	desc = "stt_great.ED564747"
+	picture = KREMLIN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = kremlin
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564747"
+		ai_chance = { factor = 100 }
+		295 = {
+			add_province_modifier = {
+				name = "mod_kremlin"
+				duration = -1
+			}
+		}
+	}
+}
+province_event = {
+	id = stt_great.564754
+	title = "stt_great.EN564754"
+	desc = "stt_great.ED564754"
+	picture = vasil_blazen_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = vasil_blazen
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564754"
+		ai_chance = { factor = 100 }
+		295 = {
+			add_province_modifier = {
+				name = "mod_vasil_blazen"
+				duration = -1
+			}
+		}
+		
+	}
+}
+province_event = {
+	id = stt_great.564751
+	title = "stt_great.EN564751"
+	desc = "stt_great.ED564751"
+	picture = ermitaj_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = ermitaj
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564751"
+		ai_chance = { factor = 100 }
+		33 = {
+			add_province_modifier = {
+				name = "mod_ermitaj"
+				duration = -1
+			}		
+		}
+		
+	}
+}
+province_event = {
+	id = stt_great.564748
+	title = "stt_great.EN564748"
+	desc = "stt_great.ED564748"
+	picture = stt_ssofia_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = stt_ssofia
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564748"
+		ai_chance = { factor = 100 }
+		151 = {
+			add_province_modifier = {
+				name = "mod_stt_ssofia"
+				duration = -1
+			}
+		}
+	}
+}
+province_event = {
+	id = stt_great.564749
+	title = "stt_great.EN564749"
+	desc = "stt_great.ED564749"
+	picture = stt_asofia_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = stt_asofia		
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564749"
+		ai_chance = { factor = 100 }
+		151 = {
+			add_province_modifier = {
+				name = "mod_stt_asofia"
+				duration = -1
+			}
+		}
+	}
+}
+province_event = {
+	id = stt_great.564755
+	title = "stt_great.EN564755"
+	desc = "stt_great.ED564755"
+	picture = fort_sunking_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = fort_sunking
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	# Go ahead
+		name = "stt_great.EA564755"
+		ai_chance = { factor = 100 }
+		183 = {
+			add_province_modifier = {
+				name = "mod_fort_sunking"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564756
+	title = "stt_great.EN564756"
+	desc = "stt_great.ED564756"
+	picture = hofburg_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = hofburg
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564756"
+		ai_chance = { factor = 100 }
+		134 = {
+			add_province_modifier = {
+				name = "mod_hofburg"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564757
+	title = "stt_great.EN564757"
+	desc = "stt_great.ED564757"
+	picture = tajh_mahal_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = tajh_mahal
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564757"
+		ai_chance = { factor = 100 }
+		507 = {
+			add_province_modifier = {
+				name = "mod_tajh_mahal"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564758
+	title = "stt_great.EN564758"
+	desc = "stt_great.ED564758"
+	picture = alhambra_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = alhambra
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564758"
+		ai_chance = { factor = 100 }
+		223 = {
+			add_province_modifier = {
+				name = "mod_alhambra"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564759
+	title = "stt_great.EN564759"
+	desc = "stt_great.ED564759"
+	picture = alex_mayak_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = alex_mayak
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564759"
+		ai_chance = { factor = 100 }
+		358 = {
+			add_province_modifier = {
+				name = "mod_alex_mayak"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564760
+	title = "stt_great.EN564760"
+	desc = "stt_great.ED564760"
+	picture = letn_pekin_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = letn_pekin
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564760"
+		ai_chance = { factor = 100 }
+		1816 = {
+			add_province_modifier = {
+				name = "mod_letn_pekin"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564761
+	title = "stt_great.EN564761"
+	desc = "stt_great.ED564761"
+	picture = ryuanji_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = ryuanji
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564761"
+		ai_chance = { factor = 100 }
+		1020 = {
+			add_province_modifier = {
+				name = "mod_ryuanji"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564762
+	title = "stt_great.EN564762"
+	desc = "stt_great.ED564762"
+	picture = atesgah_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = atesgah
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564762"
+		ai_chance = { factor = 100 }
+		416 = {
+			add_province_modifier = {
+				name = "mod_atesgah"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564763
+	title = "stt_great.EN564763"
+	desc = "stt_great.ED564763"
+	picture = tower_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = tower
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564763"
+		ai_chance = { factor = 100 }
+		236 = {
+			add_province_modifier = {
+				name = "mod_tower"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564764
+	title = "stt_great.EN564764"
+	desc = "stt_great.ED564764"
+	picture = zam_sforza_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = zam_sforza
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564764"
+		ai_chance = { factor = 100 }
+		104 = {
+			add_province_modifier = {
+				name = "mod_zam_sforza"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564765
+	title = "stt_great.EN564765"
+	desc = "stt_great.ED564765"
+	picture = cast_de_ovo_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = cast_de_ovo
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564765"
+		ai_chance = { factor = 100 }
+		122 = {
+			add_province_modifier = {
+				name = "mod_cast_de_ovo"
+				duration = -1
+			}
+		}		
+	}
+}
+province_event = {
+	id = stt_great.564766
+	title = "stt_great.EN564766"
+	desc = "stt_great.ED564766"
+	picture = zam_if_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = zam_if
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564766"
+		ai_chance = { factor = 100 }
+		201 = {
+			add_province_modifier = {
+				name = "mod_zam_if"
+				duration = -1
+			}
+		}		
+	}
+}
