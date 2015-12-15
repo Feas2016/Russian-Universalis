@@ -513,7 +513,7 @@ country_event = {
 country_event = {
 	id = veche.3
 	title = "EVTNAME700"
-	desc = veche.3.desc
+	desc = 702.d
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
@@ -525,7 +525,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "veche.1.a"	# An administrator type
+		name = "EVTOPTB700"	# An administrator type
 		ai_chance = { factor = 40 }
 		change_government = veche_republic
 		define_ruler = {
@@ -545,7 +545,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "veche.1.b"	# A diplomat
+		name = "EVTOPTC700"	# A diplomat
 		ai_chance = { factor = 30 }
 		change_government = veche_republic
 		define_ruler = {
@@ -565,7 +565,7 @@ country_event = {
 		}			
 	}
 	option = {
-		name = "veche.1.c"	# A military man
+		name = "EVTOPTD700"	# A military man
 		ai_chance = { factor = 30 }
 		change_government = veche_republic
 		define_ruler = {
