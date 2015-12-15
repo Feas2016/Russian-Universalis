@@ -372,19 +372,9 @@ country_decisions = {
 	construct_hofburg = {
 		major = yes
 		potential = {
-		AND = {
-		   AND = {
-		     is_year = 1600
-		     NOT = { is_year = 1700 }
-		  }
-		  owns = 134
-			OR = {
-				ai = no
-				AND = {
-					treasury = 3500
-					owns = 134
-				}
-			}
+			is_year = 1600
+			NOT = { is_year = 1700 }
+			treasury = 3500
 			num_of_cities = 15
 			134 = {
 				owns = ROOT
@@ -392,7 +382,6 @@ country_decisions = {
 				NOT = { has_construction = canal }
 			}
 		}
-	 }
 		allow = {
 			owns = 134
 			treasury = 3500

@@ -383,9 +383,11 @@ country_decisions = {
 						tag = ROM
 						tag = PQR
 					}
-					tag = MOS
-					tag = RUS
-					tag = TSR
+					OR = {
+						tag = MOS
+						tag = RUS
+						tag = TSR
+					}	
 				}
 			}
 			dominant_religion = orthodox
@@ -706,5 +708,5 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
+}
 	

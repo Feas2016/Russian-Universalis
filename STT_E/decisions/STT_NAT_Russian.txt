@@ -19,22 +19,14 @@ country_decisions = {
 			is_at_war = no
 			owns_core_province = 295	# Moskva
 			OR = {
-				AND = {
-					owns = 294		# Tver
+				owns = 294		# Tver
+				owns = 308		# Yaroslavl	
 				}
-				AND = {
-					owns = 308		# Yaroslavl	
+			OR = {
+				owns = 306		# Nijni-Novgorod
+				owns = 307		# Vladimir	
 				}
 			}
-			OR = {
-				AND = {
-					owns = 306		# Nijni-Novgorod
-				}
-				AND = {
-					owns = 307		# Vladimir	
-				}
-			}			
-		}
 		effect = {
 			russia_region = {
 				limit = {

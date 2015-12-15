@@ -14,7 +14,7 @@ conquer_finland = {
 		is_year = 1500
 		normal_or_historical_nations = yes
 		### STT
-		OR = ( tag = RUS tag = TSR tag = SLV}
+		OR = { tag = RUS tag = TSR tag = SLV}
 		is_subject = no
 		is_neighbor_of = SWE
 		NOT = { war_with = SWE }
