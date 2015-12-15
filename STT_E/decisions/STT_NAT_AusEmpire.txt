@@ -43,19 +43,19 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = AEM
+				add_permanent_claim = AEM
 			}
 			inner_austria_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = AEM
+				add_permanent_claim = AEM
 			}			
 			bohemia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = AEM
+				add_permanent_claim = AEM
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

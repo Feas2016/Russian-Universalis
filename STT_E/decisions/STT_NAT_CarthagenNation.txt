@@ -75,19 +75,19 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = CAR
+				add_permanent_claim = CAR
 			}
 			iberia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = CAR
+				add_permanent_claim = CAR
 			}
 			italy_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = CAR
+				add_permanent_claim = CAR
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
