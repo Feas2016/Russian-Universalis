@@ -58,7 +58,7 @@ country_decisions = {
 			romandie_area = { type = all country_or_vassal_holds = ROOT }
 		}
 		effect = {
-			german_region = {
+			germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
