@@ -106,19 +106,3 @@ knyaz_veche_republic = {
 #		}
 #	}
 #}
-
-udel_principality = {
-	monarchy = yes
-
-	valid_for_new_country = no
-	allow_convert = no
-
-	rank = {
-		1 = {
-			global_unrest = -1
-			development_cost = -0.1
-		}
-	}
-
-	fixed_rank = 1
-}
