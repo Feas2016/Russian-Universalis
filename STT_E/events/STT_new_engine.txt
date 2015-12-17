@@ -192,16 +192,14 @@ country_event = { #friends or not
 				NOT = { historical_friend_with = ROOT }
 				has_country_flag = friend_timer
 				}
-				AND = {
+				has_opinion = {
+					who = FROM
+					value = 50
+					}
+				NOT = {	
 					has_opinion = {
 						who = FROM
-						value = 50
-						}
-					NOT = {	
-						has_opinion = {
-							who = FROM
-							value = 150
-						}
+						value = 150
 					}
 				}
 			}

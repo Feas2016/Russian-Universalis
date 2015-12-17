@@ -10,10 +10,8 @@ country_event = {
 	
 	trigger = {
 		primary_culture = russian
-		AND = {
-			government = rus_government
-			government_rank = 2
-		}
+		government = rus_government
+		government_rank = 2
 		NOT = { exists = TSR }
 		NOT = { exists = RUS }
 		NOT = { exists = SLV }
