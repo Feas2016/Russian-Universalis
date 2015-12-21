@@ -9,7 +9,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = POL }
-			NOT = { tag = RUS }
+			NOT = { tag = RUS }			
 			OR = {
 				NOT = { exists = RUS }
 				ai = no
@@ -18,6 +18,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			### STT
 			NOT = { tag = SLV }
+			NOT = { tag = VNO }
 			NOT = { exists = MOS }
 			primary_culture = russian
 			OR = {
