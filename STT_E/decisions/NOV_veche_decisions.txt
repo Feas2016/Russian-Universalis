@@ -6,10 +6,12 @@ country_decisions = {
 		potential = {
 			government = veche_republic
 			NOT = { government_rank = 3 }
+			NOT = { is_year = 1550 }
 		}
 		allow = {
 			is_subject = no
 			government = veche_republic
+			NOT = { government_rank = 3 }
 			NOT = { is_year = 1550 }
 			faction_in_power = mr_aristocrats
 			republican_tradition = 0.45

@@ -101,6 +101,28 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
+			### STT
+			white_ruthenia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			280 = {
+				add_permanent_claim = RUS
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

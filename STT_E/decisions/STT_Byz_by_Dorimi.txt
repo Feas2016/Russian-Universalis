@@ -558,7 +558,7 @@ country_decisions = {
 				name = "byz_heir_adopted"
 				duration = -1
 			}
-			country_event  = { id = byz_adopt_heir.564711 }
+			country_event  = { id = stt_greeks_events.4 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -614,7 +614,7 @@ country_decisions = {
 			has_regency = no
 		}
 		effect = {
-			country_event  = { id = byz_main.564715}
+			country_event  = { id = stt_greeks_events.2 }
 			add_treasury = -50
 			add_ruler_modifier = {
 				name = "byz_foruniver"
@@ -644,7 +644,7 @@ country_decisions = {
 			has_regency = no
 		}
 		effect = {
-			country_event  = { id = byz_main.564716}
+			country_event  = { id = stt_greeks_events.3 }
 			add_treasury = -50
 			add_ruler_modifier = {
 				name = "byz_forsenate"

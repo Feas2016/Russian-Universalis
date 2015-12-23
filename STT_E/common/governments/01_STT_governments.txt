@@ -171,7 +171,7 @@ rome_government = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	nation_designer_trigger = {
-		culture_group = lombardy
+		culture_group = latin
 	}
 
 	rank = {
@@ -286,7 +286,7 @@ the_empire_of_the_rising_sun = {
 	nation_designer_trigger = {
 		culture_group = japanese_g
 		technology_group = chinese
-		capital_scope = { region = japanese_region }
+		capital_scope = { region = japan_region }
 	}		
 	
 	rank = {

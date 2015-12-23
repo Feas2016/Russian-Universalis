@@ -136,10 +136,8 @@ country_event = {
 					NOT = { has_country_flag = kaz_eligible_muscovy }
 					has_country_flag = kaz_eligible_crimea
 				}
-				if = {
-					CRI = {
-						country_event = { id = flavor_kaz.4 days = 3 }
-					}
+				CRI = {	
+					country_event = { id = flavor_kaz.4 days = 3 }
 				}
 			}
 			# Nogai
@@ -149,10 +147,8 @@ country_event = {
 					NOT = { has_country_flag = kaz_eligible_crimea }
 					has_country_flag = kaz_eligible_nogai
 				}
-				if = {
-					NOG = {
-						country_event = { id = flavor_kaz.5 days = 3 }
-					}
+				NOG = {
+					country_event = { id = flavor_kaz.5 days = 3 }
 				}
 			}
 		}

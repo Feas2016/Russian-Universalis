@@ -146,7 +146,7 @@ country_decisions = {
 		effect = {
 			change_tag = PRU
 			### STT
-			change_government = konigreich_government
+			change_government = reich_government
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -233,7 +233,7 @@ country_decisions = {
 		effect = {
 			change_tag = PRU
 			### STT
-			change_government = konigreich_government
+			change_government = reich_government
 			if = {
 				limit = {
 					is_part_of_hre = yes

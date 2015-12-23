@@ -40,7 +40,9 @@ country_event = {
 		}
 		### STT
 		if = {
-			NOT = { government = elective_monarchy }
+			limit = {
+				NOT = { government = elective_monarchy }
+			}
 		}
 		change_government = elective_monarchy
 	}

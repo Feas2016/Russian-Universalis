@@ -1,9 +1,9 @@
-namespace = rus_events
+namespace = stt_rus
 
 country_event = {
-	id = velikoe_knyazestvo.600002e
-	title = "velikoe_knyazestvo.600002t"
-	desc = "velikoe_knyazestvo.600002d"
+	id = stt_rus.1
+	title = "stt_rus.t.1"
+	desc = "stt_rus.de.1"
 	picture = VEL_KNYAZ
 	
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	option = {
-		name = "velikoe_knyazestvo.a.600002"
+		name = "stt_rus.a.1"
 		add_stability = 1
 		add_prestige = 60
 		add_dip_power = 50			
@@ -32,9 +32,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = cossak_zaz.600003e
-	title = "cossak_zaz.600003t"
-	desc = "cossak_zaz.600003d"
+	id = stt_rus.2
+	title = "stt_rus.t.2"
+	desc = "stt_rus.de.2"
 	picture = COSSAK_ZAZ
 	
 	trigger = {
@@ -47,7 +47,7 @@ country_event = {
 	}
 
 	option = {
-		name = "cossak_zaz.a.600003"
+		name = "stt_rus.a.2"
 		change_government = cossack_republic
 		set_government_rank = 1
 		add_prestige = 10			

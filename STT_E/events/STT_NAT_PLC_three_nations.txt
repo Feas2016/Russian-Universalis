@@ -1,9 +1,9 @@
 namespace = STT_PLU_three_nations
 
 country_event = {
-	id = STT.PLU.600001
-	title = "STT.PLU.600001t"
-	desc = "STT.PLU.600001d"
+	id = STT_PLU_three_nations.1
+	title = "STT_PLU_three_nations.t.1"
+	desc = "STT_PLU_three_nations.de.1"
 	picture = PLU_eventPicture
 	
 	trigger = {
@@ -19,8 +19,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 240
-		
+		days = 240		
 
 		modifier = {
 			factor = 0.9
@@ -38,40 +37,43 @@ country_event = {
 			factor = 0.6
 			is_at_war = yes
 		}		
-	}	
-	immediate = {
-		change_tag = PLU
-		culture_group_union = STT_PLU	
-		add_stability = 1
-		add_prestige = -50		
 	}
+	
 	option = {
-		name = "STT.PLU.600001o1"
+		name = "STT_PLU_three_nations.a.1"
+		change_tag = PLU
+		add_stability = 1
+		add_prestige = -50	
 		PLU = {
-		change_primary_culture = STT_PLU_polish	
-		every_owned_province = {
-			limit = {
-				culture = lithuanian
-			}	change_culture = STT_PLU_lithuanian }
-		every_owned_province = {
-			limit = {
-				culture = byelorussian
-			}	change_culture = STT_PLU_byelorussian }
-		every_owned_province = {
-			limit = {
-				culture = polish
-			}	change_culture = STT_PLU_polish }
-		every_owned_province = {
-			limit = {
-				culture = ruthenian
-			}	change_culture = STT_PLU_ruthenian }
-		every_owned_province = {
-			limit = {	culture = STT_PLU_ruthenian	}
-			add_province_modifier = {
-				name = local_autonomy
-				duration = 3600
+			change_primary_culture = STT_PLU_polish	
+			every_owned_province = {
+				limit = {
+					culture = lithuanian
+				}
+				change_culture = STT_PLU_lithuanian 
 			}
-			}		
+			every_owned_province = {
+				limit = {
+					culture = byelorussian
+				}
+				change_culture = STT_PLU_byelorussian 
+			}
+			every_owned_province = {
+				limit = {
+					culture = polish
+				}
+				change_culture = STT_PLU_polish 
+			}
+			every_owned_province = {
+				limit = {
+					culture = ruthenian
+				}
+				change_culture = STT_PLU_ruthenian
+				add_province_modifier = {
+					name = local_autonomy
+					duration = 3600
+				}
+			}
 		}
 	}
 }

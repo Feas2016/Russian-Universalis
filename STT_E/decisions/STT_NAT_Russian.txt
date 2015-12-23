@@ -35,16 +35,56 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
+			### Pernament!
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = TSR
 			}
+			### WANT WANT WANT!!! =)
+			### Livonia
+			estonia_ingria_area  = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
+			livonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
+			curonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
+			### You take Astrahan? Kazan take, Arhangelsk take, Astrahan take. Shpake - don't take.
+			astrakhan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
+			lower_don_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
+			saratov_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = TSR
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3300
-			}		
+			}
 			country_event = { id = ideagroups.1 } #Swap Ideas			
 		}
 		ai_will_do = {
@@ -83,18 +123,39 @@ country_decisions = {
 			}			
 		}
 		effect = {
+			add_prestige = 25
+			change_tag = VNO
+			### Pernament!
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = VNO
 			}
+			### WANT WANT WANT!!! =)
+			estonia_ingria_area  = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = VNO
+			}
+			livonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = VNO
+			}
+			curonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = VNO
+			}
+			### don't have interested in Crimea at this time.
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3300
-			}
-			add_prestige = 25
-			change_tag = VNO
+			}					
 		}
 		ai_will_do = {
 			factor = 1
@@ -102,7 +163,7 @@ country_decisions = {
 		ai_importance = 4
 	}
 	
-	novgorod_nation = {
+	russian_republic = { ### after VNO
 		major = yes
 		potential = {
 		    tag = VNO
@@ -156,6 +217,33 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = RUS
+			}
+			bashkiria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			white_ruthenia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			sloboda_ukraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			280 = {
 				add_permanent_claim = RUS
 			}
 			add_country_modifier = {

@@ -4,8 +4,8 @@ normal_or_historical_nations = yes
 #Poland Crown
 country_event = {
 	id = stt_pol.1
-	title = stt_pol.1.t
-	desc = stt_pol.1.de
+	title = stt_pol.t.1
+	desc = stt_pol.de.1
 
 	picture = POLAND_CROWN_eventPicture
 	
@@ -41,7 +41,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.1.a #We must retain the Jagiellon Dynasty
+		name = stt_pol.a.1 #We must retain the Jagiellon Dynasty
 		ai_chance = {
 			factor = 90 
 		}
@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.1.b #Appoint a Local Noble.
+		name = stt_pol.b.1 #Appoint a Local Noble.
 		ai_chance = { 
 			factor = 10
 		}
@@ -78,16 +78,16 @@ country_event = {
 # variant 1 Poland Crown Poland
 country_event = {
 	id = stt_pol.2
-	title = stt_pol.2.t
-	desc = stt_pol.2.de
+	title = stt_pol.t.2
+	desc = stt_pol.de.2
 
-	picture = GRAND_CORONATOIN_LITVA_eventPicture
+	picture = POLAND_CROWN_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = stt_pol.2.a
+		name = stt_pol.a.2
 		ai_chance = {
 			factor = 100 
 		}		
@@ -108,28 +108,25 @@ country_event = {
 # variant 2 Poland Crown Poland
 country_event = {
 	id = stt_pol.3
-	title = stt_pol.3.t
-	desc = stt_pol.3.de
+	title = stt_pol.t.3
+	desc = stt_pol.de.3
 
-	picture = POLAND_CROWN_eventPicture
+	picture = JAGELLON_REFUSES_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	immediate = {
+	option = {
+		name = stt_pol.a.3
+		ai_chance = {
+			factor = 80
+		}
 		add_opinion = {
 			who = LIT
 			modifier = freedom_litva_modifier
 		}
 		add_claim = 2962
 		add_claim = 279
-	}
-	
-	option = {
-		name = stt_pol.3.a
-		ai_chance = {
-			factor = 80
-		}		
 		define_ruler = {
 			DIP = 4
 			ADM = 4
@@ -149,10 +146,16 @@ country_event = {
 		}
 	}
 	option = {	
-		name = stt_pol.3.b
+		name = stt_pol.b.3
 		ai_chance = {
 			factor = 20 
 		}
+		add_opinion = {
+			who = LIT
+			modifier = freedom_litva_modifier
+		}
+		add_claim = 2962
+		add_claim = 279
 		MAZ = { country_event = { days = 30 id = stt_pol.5 } }
 		create_union = MAZ
 	}
@@ -161,8 +164,8 @@ country_event = {
 # variant 2 Poland Crown Mazovia
 country_event = {
 	id = stt_pol.4
-	title = stt_pol.4.t
-	desc = stt_pol.4.de
+	title = stt_pol.t.4
+	desc = stt_pol.de.4
 
 	picture = JAGELLON_REFUSES_eventPicture
 	
@@ -173,18 +176,19 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		name = stt_pol.4.a
+		name = stt_pol.a.4
 		add_claim = 269
+		add_claim = 277
 	}
 }
 
 # variant 2 Poland Crown Mazovia Poland Union
 country_event = {
 	id = stt_pol.5
-	title = stt_pol.5.t
-	desc = stt_pol.5.de
+	title = stt_pol.t.5
+	desc = stt_pol.de.5
 
-	picture = POLAND_CROWN_eventPicture
+	picture = PIAST_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -193,21 +197,22 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		name = stt_pol.5.a
+		name = stt_pol.a.5
 		POL = { create_union = MAZ }
 		add_prestige = 15
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
 		}
+		add_claim = 277
 	}
 }
 
 # King of Litva?
 country_event = {
 	id = stt_pol.6
-	title = stt_pol.6.t
-	desc = stt_pol.6.de
+	title = stt_pol.t.6
+	desc = stt_pol.de.6
 
 	picture = KING_OF_POLAND_AND_LITVA_eventPicture
 	
@@ -226,7 +231,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.6.a
+		name = stt_pol.a.6
 		ai_chance = {
 			factor = 75
 		}
@@ -243,7 +248,7 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.6.b
+		name = stt_pol.b.6
 		ai_chance = {
 			factor = 25 
 		}
@@ -263,7 +268,7 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
-		add_years_of_income = -0.3
+		add_treasury = -25
 		emperor = {
 			add_opinion = { who = ROOT modifier = empire_vitovt_was_right_modifier }
 		}
@@ -275,8 +280,8 @@ country_event = {
 # Grand coronation
 country_event = {
 	id = stt_pol.7
-	title = stt_pol.7.t
-	desc = stt_pol.7.de
+	title = stt_pol.t.7
+	desc = stt_pol.de.7
 
 	picture = KING_OF_POLAND_AND_LITVA_eventPicture
 	
@@ -300,12 +305,12 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.7.a
+		name = stt_pol.a.7
 		ai_chance = {
 			factor = 75 
 		}
 		set_government_rank = 2
-		add_years_of_income = -2
+		add_treasury = -150
 		add_stability = 1
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -327,12 +332,12 @@ country_event = {
 	}
 	
 	option = {
-		name = stt_pol.7.b
+		name = stt_pol.b.7
 		ai_chance = {
 			factor = 25
 		}
 		set_government_rank = 2
-		add_years_of_income = -0.5
+		add_treasury = -25
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 5
