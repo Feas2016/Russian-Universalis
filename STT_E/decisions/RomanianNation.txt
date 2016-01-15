@@ -1,0 +1,83 @@
+country_decisions = {
+
+	romanian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { exists = RMN }
+			### STT
+			OR = {
+				primary_culture = wallahian
+				primary_culture = moldavian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			NOT = { exists = BYZ }
+			owns_core_province = 158	# Transylvania
+			owns_core_province = 159	# Silistria
+			owns_core_province = 160	# Oltenia
+			owns_core_province = 161	# Wallachia
+			owns_core_province = 268	# Bessarabia
+			owns_core_province = 1756	# Budjak
+		}
+		effect = {
+			change_tag = RMN
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
+				set_government_rank = 2
+			}
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			RMN = {
+				set_capital = 161
+			}
+			### STT
+			change_primary_culture = romanian
+			country_event = { id = flavor_alb.2 tooltip = "romanian_nation_tooltip" }
+			#(not have unique ideas) country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

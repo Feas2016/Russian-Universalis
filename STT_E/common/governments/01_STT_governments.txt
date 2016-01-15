@@ -13,18 +13,18 @@ rus_government = {
 	rank = {
 		1 = {
 			global_unrest = -1
-			land_morale = 0.20
-			global_autonomy = -0.1
+			land_morale = 0.10
+			global_autonomy = -0.05
 		}
 		2 = {
-			land_morale = 0.20
+			land_morale = 0.10
 			global_unrest = -1
-			global_autonomy = -0.15			
+			global_autonomy = -0.1		
 		}
 		3 = {
-			land_morale = 0.20
+			land_morale = 0.10
 			global_unrest = -1	
-			global_autonomy = -0.2
+			global_autonomy = -0.15
 		}
 	}
 }
@@ -41,19 +41,19 @@ rus_imperial_government = {
 	
 	rank = {
 		1 = {
-			land_morale = 0.20
+			land_morale = 0.10
 			stability_cost_modifier = -0.20
 			army_tradition_decay = -0.02
 			global_autonomy = -0.1
 		}
 		2 = {
-			land_morale = 0.20
+			land_morale = 0.10
 			stability_cost_modifier = -0.20
 			army_tradition_decay = -0.02
 			global_autonomy = -0.15			
 		}
 		3 = {
-			land_morale = 0.20
+			land_morale = 0.10
 			stability_cost_modifier = -0.20
 			army_tradition_decay = -0.02
 			global_autonomy = -0.2

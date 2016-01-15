@@ -931,7 +931,12 @@ romanian_monarchy = {
 
 	trigger = {
 		government = monarchy
-		primary_culture = romanian
+		### STT
+		OR = {
+			primary_culture = wallahian
+			primary_culture = moldavian
+			primary_culture = romanian
+		}
 	}
 }
 

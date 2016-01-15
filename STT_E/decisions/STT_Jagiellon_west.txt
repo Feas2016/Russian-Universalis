@@ -1,49 +1,41 @@
 country_decisions = {
 
     jag_westernize_tech = {
-		major = yes
-        
+		major = yes        
 		potential = {
 			tag = JAG
             NOT = {
                 technology_group = western
             }
-		}
-        
+		}        
 		allow = {
             stability = 3
-            is_at_war = no
-            
+            is_at_war = no            
             adm_power = 500
             dip_power = 500
             mil_power = 500
-		}
-        
+		}        
 		effect = {
             change_technology_group = western
             add_stability = -3
             add_adm_power = -500
             add_dip_power = -500
             add_mil_power = -500
-		}
-        
+		}        
 		ai_will_do = {
 			factor = 1
-		}
-        
+		}        
 		ai_importance = 50
 	}
     
     jag_westernize_units = {
-		major = yes
-        
+		major = yes        
 		potential = {
 			tag = JAG
             NOT = {
                 unit_type = western
             }
-		}
-        
+		}        
 		allow = {
             stability = 3
             is_at_war = no
@@ -51,49 +43,40 @@ country_decisions = {
             adm_power = 500
             dip_power = 500
             mil_power = 500
-		}
-        
+		}        
 		effect = {
             change_unit_type = western
             add_stability = -3
             add_adm_power = -500
             add_dip_power = -500
             add_mil_power = -500
-		}
-        
+		}        
 		ai_will_do = {
 			factor = 1
-		}
-        
+		}        
 		ai_importance = 50
 	}
     
 	jag_cultural_tolerance = {
-		major = yes
-        
+		major = yes        
 		potential = {
 			tag = JAG
             NOT = {
                 has_country_modifier = jagtolerance_modifier
             }
-		}
-        
+		}        
 		allow = {
             stability = 0
-            is_at_war = no
-            
+            is_at_war = no            
             dip_power = 200
-		}
-        
+		}        
 		effect = {
             add_stability = 1
-            add_dip_power = -200
-            
+            add_dip_power = -200            
 			add_country_modifier = {
 				name = "jagtolerance_modifier"
 				duration = -1
-            }
-			
+            }			
             add_accepted_culture = lithuanian
 			add_accepted_culture = polish
 			add_accepted_culture = schlesian
@@ -103,42 +86,10 @@ country_decisions = {
 			add_accepted_culture = ruthenian
 			add_accepted_culture = romanian
 			add_accepted_culture = croatian
-		}
-        
+		}        
 		ai_will_do = {
 			factor = 1
-		}
-        
-		ai_importance = 50
-	}
-	
-    jag_westernize_gov = {
-		major = yes
-        
-		potential = {
-			tag = JAG
-            technology_group = western
-            unit_type = western
-            NOT = {	government_rank = 3 }
-		}
-        
-		allow = {
-            stability = 3
-            is_at_war = no
-            
-            adm_power = 200
-		}
-        
-		effect = {
-            add_stability = -3
-            add_adm_power = -200
-            set_government_rank = 3
-		}
-        
-		ai_will_do = {
-			factor = 1
-		}
-        
+		}        
 		ai_importance = 50
 	}
 }
