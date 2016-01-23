@@ -10,6 +10,7 @@ subjugate_viatka = {
 		normal_or_historical_nations = yes
 		OR = {
 			tag = MOS
+			tag = TSR
 			tag = RUS
 		}
 		is_subject = no
@@ -39,7 +40,7 @@ subjugate_viatka = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 5000
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = VIA value = 0 } }
@@ -139,7 +140,7 @@ subjugate_perm = {
 		}
 	}
 	chance = {
-		factor = 5000
+		factor = 3000
 		modifier = {
 			factor = 2
 			dip = 3
