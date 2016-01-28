@@ -56,7 +56,7 @@ theravada_kotte = {
 		owns = 2099 # Kandy
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -74,7 +74,7 @@ vajrayana_lhasa = {
 		owns = 677 # Lhasa
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -92,7 +92,7 @@ mahayana_louyang = {
 		owns = 1836 # Luoyang
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -114,7 +114,7 @@ buddhist_bodh_gaya = {
 		owns = 558 # Patna (Bodh Gaya)
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -132,7 +132,7 @@ hindu_varanasi = {
 		owns = 2095 # Varanasi
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -151,7 +151,7 @@ inti_lima = {
 		is_religion_reformed = yes
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -170,7 +170,7 @@ nahuatl_cholula = {
 		is_religion_reformed = yes
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -189,7 +189,7 @@ mayan_chichen_itza = {
 		is_religion_reformed = yes
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -208,7 +208,7 @@ sikh_amritsar = {
 		2075 = { religion = sikhism }
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -226,7 +226,7 @@ christian_mecca = {
 		owns = 385 # Mecca
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -247,7 +247,7 @@ custodian_of_the_two_holy_mosques = {
 		owns = 384
 	}
 
-	prestige = 1
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -270,7 +270,7 @@ jerusalem_held = {
 		owns = 379 # Judea
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 }
 
@@ -293,7 +293,7 @@ non_catholic_rome = {
 		owns = 118 # Roma
 	}
 
-	prestige = 1			#1% more yearly prestige
+	prestige = 0.5
 	missionaries = 1
 	#icon = 9
 }
@@ -349,6 +349,7 @@ papal_subjugation = {
 western_arms_trade = {
 	potential = {
 		NOT = { technology_group = western }
+		NOT = { technology_group = high_american }
 	}
 
 	trigger = {

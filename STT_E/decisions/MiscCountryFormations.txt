@@ -326,7 +326,10 @@ country_decisions = {
 				set_capital = 146
 			}
 			if = {
-				limit = { NOT = { has_idea_group = greek_ideas } }
+				limit = {
+					NOT = { has_idea_group = greek_ideas } 
+					is_playing_custom_nation = no
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}

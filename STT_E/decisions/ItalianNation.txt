@@ -86,7 +86,10 @@ country_decisions = {
 			ITA = {
 				set_capital = 118
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -136,7 +139,6 @@ country_decisions = {
 			owns_core_province = 2977	# Pesaro
 		}
 		effect = {
-			country_event = { id = ideagroups.1 } #Swap Ideas
 			add_country_modifier = {
 				name = "kingdom_of_god"
 				duration = -1

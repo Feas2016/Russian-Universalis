@@ -5,7 +5,7 @@ estate_nobles =
 	color = { 200 0 50 }
 	
 	# Is estate kept in control of province on conquest?
-	keep_on_conquest = yes	
+	keep_on_conquest = no
 	
 	# They want to control at least this % of the country's non-overseas development, if # of home provinecs is above set amount
 	min_territory = 10
@@ -52,6 +52,10 @@ estate_nobles =
 	
 	# Min autonomy in estate provinces
 	min_autonomy = 25
+	
+	# Estate cancels out the following multiplicative local autonomy effects:
+	autonomy_does_not_affect = local_manpower_modifier
+	autonomy_does_not_affect = land_forcelimit
 
 	country_modifier_happy = {
 		manpower_recovery_speed = 0.2 
@@ -68,13 +72,13 @@ estate_nobles =
 	# These do not scale, but only applied in provinces owned by the estate
 	province_modifier_happy = {
 		local_defensiveness = 0.15
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.2
 	}
 	province_modifier_neutral = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 0.2
 	}	
 	province_modifier_angry = {
-		local_unrest = 10
+		local_unrest = 5
 	}		
 	
 	# Influence modifiers
@@ -162,6 +166,13 @@ estate_nobles =
 		}
 		loyalty = -10
 	}
+	loyalty_modifier = {
+		desc = EST_VAL_FULL_ARISTOCRATIC
+		trigger = {
+			full_idea_group = aristocracy_ideas
+		}
+		loyalty = 10
+	}
 	
 	#Alternative naming of estates
 	custom_name = {
@@ -177,9 +188,6 @@ estate_nobles =
 			OR = {
 				culture_group = east_slavic
 				primary_culture = bulgarian
-				### STT
-				primary_culture = wallahian
-				primary_culture = moldavian
 				primary_culture = romanian
 			}
 		}
@@ -296,11 +304,9 @@ estate_nobles =
 		
 		effect = {
 			add_prestige = -5
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nobles
-				desc = EST_VAL_DIET_HELD_LOYALTY
-				loyalty = 10
-				duration = 7300
+				loyalty = 15
 			}
 			add_estate_influence_modifier = {
 				estate = estate_nobles
@@ -334,6 +340,11 @@ estate_nobles =
 		
 		years_between_use = 10
 		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_burghers_disaster }
+		}
+		
 		trigger = {
 			estate_loyalty = {
 				estate = estate_nobles
@@ -341,7 +352,7 @@ estate_nobles =
 			}	
 			estate_influence = {
 				estate = estate_nobles
-				influence = 50
+				influence = 40
 			}			
 		}
 		
@@ -367,6 +378,8 @@ estate_nobles =
 		
 		potential = {
 			has_idea_group = exploration_ideas
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_burghers_disaster }
 		}
 		
 		trigger = {
@@ -376,7 +389,7 @@ estate_nobles =
 			}	
 			estate_influence = {
 				estate = estate_nobles
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -399,6 +412,11 @@ estate_nobles =
 		icon = 4
 		
 		years_between_use = 20
+		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_burghers_disaster }
+		}
 		
 		trigger = {		
 			estate_loyalty = {
@@ -462,11 +480,9 @@ estate_nobles =
 				}
 				add_mil_power = 200
 			}				
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nobles
-				desc = EST_VAL_DEMANDED_NOBLES_SUPPORT
-				duration = 7300
-				loyalty = -15
+				loyalty = -20
 			}
 		}
 		
@@ -480,10 +496,15 @@ estate_nobles =
 		
 		years_between_use = 30
 		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_burghers_disaster }
+		}
+		
 		trigger = {
 			estate_influence = {
 				estate = estate_nobles
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -524,6 +545,11 @@ estate_nobles =
 		
 		years_between_use = 25
 		
+		potential = {
+			NOT = { has_disaster = estate_church_disaster }
+			NOT = { has_disaster = estate_burghers_disaster }
+		}
+		
 		trigger = {
 			estate_loyalty = {
 				estate = estate_nobles
@@ -531,7 +557,7 @@ estate_nobles =
 			}
 			estate_influence = {
 				estate = estate_nobles
-				influence = 50
+				influence = 40
 			}
 		}
 		
@@ -586,11 +612,9 @@ estate_nobles =
 				}
 				add_manpower = 0.25
 			}	
-			add_estate_loyalty_modifier = {
+			add_estate_loyalty = {
 				estate = estate_nobles
-				desc = EST_VAL_DEMANDED_MORE_TROOPS
-				loyalty = -10
-				duration = 9125
+				loyalty = -15
 			}
 		}
 		

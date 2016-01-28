@@ -16,6 +16,30 @@ ottoman_marches = {
 	
 	trigger = {
 		is_march = yes
+		religion_group = muslim
+		overlord = {
+			primary_culture = turkish
+		}
+	}
+}
+
+ottoman_vassals = {
+	rank = {
+		1 = BEYLIK
+	}
+
+	ruler_male = {
+		1 = BEY
+	}
+
+	ruler_female = {
+		1 = HATUN
+	}
+
+	trigger = {
+		government = monarchy
+		religion_group = muslim
+		NOT = { is_march = yes }
 		overlord = {
 			primary_culture = turkish
 		}
@@ -43,11 +67,31 @@ march_christian_monarchy = {
 
 	trigger = {
 		government = monarchy
-		### STT
+		religion_group = christian
+		NOT = { religion = orthodox }
+		NOT = { religion = coptic }
+		is_march = yes
+	}
+}
+
+march_eastern_christian_monarchy = {
+	rank = {
+		1 = PRINCIPALITY
+	}
+	
+	ruler_male = {
+		1 = PRINCE
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+	}
+
+	trigger = {
+		government = monarchy
 		OR = {
-			religion = catholic
-			religion = protestant
-			religion = reformed
+			religion = coptic
+			religion = orthodox
 		}
 		is_march = yes
 	}
@@ -1935,6 +1979,30 @@ jewish_theocracy = {
 	}
 }
 
+zoroastrian_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = HERBAD
+		2 = MOBED
+		3 = MOABADAN_MOABAD
+	}
+
+	ruler_female = {
+		1 = HERBAD
+		2 = MOBEDYAR
+		3 = MOABADAN_MOABAD
+	}
+
+	trigger = {
+		religion = zoroastrian
+		government = theocracy
+	}
+}
 sikh_theocracy = {
 	rank = {
 		1 = HOLY_STATE

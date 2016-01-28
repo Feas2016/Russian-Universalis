@@ -121,7 +121,10 @@ country_decisions = {
 			set_capital = 344 #Marrekech
 			change_government = despotic_monarchy #Desert tribes settling down, theocracies become monarchies.
 			change_primary_culture = moroccan
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -236,7 +239,10 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 338 #Algiers
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -339,7 +345,10 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 341
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -430,7 +439,10 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 354 #Tripoli
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

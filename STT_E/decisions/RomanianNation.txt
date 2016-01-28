@@ -73,7 +73,10 @@ country_decisions = {
 			### STT
 			change_primary_culture = romanian
 			country_event = { id = flavor_alb.2 tooltip = "romanian_nation_tooltip" }
-			#(not have unique ideas) country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
