@@ -3,9 +3,9 @@ country_decisions = {
 	construct_kremlin = {
 		major = yes
 		
-		potential = {			
+		potential = {	
+			owns = 295
 			295 = {
-				owns = ROOT
 				NOT = { has_great_project = kremlin } 
 				NOT = { has_construction = great_project }
 			}
