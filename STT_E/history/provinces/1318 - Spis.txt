@@ -2,16 +2,20 @@
 
 owner = HUN
 controller = HUN  
-culture = slovakian ### STT
+culture = slovak
 religion = catholic
-capital = "Ñïèø"
-trade_goods = gold #Schemnitz / Banská Štiavnica
+capital = "Spiš"
+trade_goods = copper
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = HUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
 
 1432.1.1  = { unrest = 10 } # The city is attacked by Hussites
 1434.1.1  = { unrest = 0 }
@@ -28,10 +32,6 @@ add_core = HUN
 1567.1.1  = { religion = reformed } # Synod of Debrecen
 #1570.1.1   = { remove_core = TRA	} #Treaty of Speyer
 1604.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The nobility in Royal Hungary rebelled against Habsburg & Jesuit repression
-### STT
-1605.1.1 = {
-	add_core = SLK
-}
 1606.1.1  = { revolt = {} controller = HAB religion = reformed } # Peace treaty, guaranteed religious toleration
 1619.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Bethlen uprisings
 1626.1.1  = { revolt = {} controller = HAB   } # The 3rd Peace of Pressburg, puts an end to the Bethlen uprisings

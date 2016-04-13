@@ -1,78 +1,139 @@
+#Country Name: Please see filename.
+
 graphical_culture = easterngfx
 
-color = { 102 139 139 }
+color = { 123  159  149 }
 
 historical_idea_groups = {
-	defensive_ideas
-	offensive_ideas
-	trade_ideas
-	spy_ideas
 	economic_ideas
+	defensive_ideas
 	diplomatic_ideas
+	offensive_ideas
+	innovativeness_ideas
 	quantity_ideas
+	administrative_ideas
 	religious_ideas
 }
 
 historical_units = {
-	bardiche_infantry
-	eastern_knights
-	slavic_stradioti
-	eastern_militia
-	hungarian_hussar
-	germanized_pike
-	polish_musketeer
-	polish_hussar
-	polish_tercio
-	polish_winged_hussar
-	eastern_skirmisher
-	eastern_uhlan
-	eastern_carabinier
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
 
 monarch_names = {
-	"Джозеф #0" = 60
-	"Ян #0" = 20
-	"Петр #0" = 20
-	"Мартин #0" = 15
-	"Стефан #0" = 15
-	"Милан #0" = 10
-	"Михаид #0" = 10
-	"Мирослав #0" = 10
-	"Томас #0" = 10
-	"Ладислав #0" = 10
-	
-	"Мария #0" = -1
-	"Анна #0" = -1
-	"Зузана #0" = -1
-	"Катарина #0" = -1
-	"Ева #0" = -1
-	"Яна #0" = -1
+	"Vбclav #4" = 50
+	"Jirн #0" = 25
+	"Karel #5" = 40
+	"Premysl #0" = 10
+	"Premysl Otakar #3" = 25
+	"Zikmund #0" = 0
+	"Frantisek #0" = 0
+	"Jindrich #0" = 5
+	"Josef #0" = 5
+	"Frantisek Josef #0" = 0
+	"Bocek #0" = 0
+	"Jan Jirн #0" = 5
+	"Ludvнk #0" = 0
+	"Vladislav #0" = 20
+	"Vladimнr #0" = 10
+	"Petr #0" = 5
+	"Jan Petr #0" = 5
+	"Viktorнn #0" = 0
+	"Jan Vбclav #0" = 0
+	"Josef Vбclav #0" = 0
+	"Karel Josef #0" = 0
+	"Matyбљ #0" = 0
+	"Ferdinand #0" = 5
+	"Otakar #0" = 10
+	"Vratislav #3" = 5
+	"Boleslav #4" = 10
+	"Vilйm #0" = 5
+	"Viktor #0" = 0
+	"Jaromнr #0" = 5
+	"Jaroslav #0" = 1
+	"Anezka #0" = -1
+	"Eliska #0" = -1
+	"Katerina #0" = -1
+	"Marie #0" = -1
+	"Ludmila #0" = -1
+	"Alzbeta #0" = -1
 }
 
-leader_names = { 
-	Адамек Блаха Боровски Бразда Буцик 
-	Буриан Капковик Целко Цервенка Цибулька 
-	Смрек Дробный Дурица Фиала Гаждос
-	Гарван Глинка Градески Гудак Гвиздослав 
-	Яник Яносик Юрко Когут Комаровский Ковасова
-	Моравитц Новак Патчка Пеликан Петрас
-	Рыбарь Рузиска Рубарь Сафарик Сладкович
-	Седлак Симум Спилар Стафура Стур Статославский
-	Сукура Сзтрака Тисо Томчикова Тупи Засек
+leader_names = {
+	Zajнc
+	Jiskra
+	Zeleznэ
+	Capek
+	Thurn
+	Kolowrat
+	Schwarzenberg
+	"z Rozmberka"
+	Velen
+	Sokol
+	"ze Zerotнna"
+	"z Husi"
+	"z Polzic"
+	Harant
+	"z Brandэsa"
+	Purkyne
+	"z Veleslavнna"
+	"z Rozmitбlu"
+	Berka
+	"z Pardubic"
+	"ze Lvovic"
+	Kaspar
+	Reiner
+	"ze Svamberka"
+	"z Vartemberka"
+	"z Mitrovic"
+	Pнka
+	Mansfeld
+	Velikэ
+	Syrovэ
+	"z Otradovic"
+	"z Falkensteina"
 }
 
 ship_names = {
-	"Крес"
-	"Дуги Оток"
-	"Голи"
-	"Крл"
-	"Паг"
-	"Плавник"
-	"Сусак"
-	"Свети Гргур"
-	"Тиджат"
-	"Унидже"
-	"Веле Шранкане"
-	"Зларин"
-	"Змаджан"
+	"Svatэ Vaclav"
+	"Svatб Ludmila"
+	"Svatэ Jan Nepomuckэ"
+	"Svatэ Mikulбs"
+	"Svatэ Jirн"
+	"Svatб Anezkб"
+	"Nejsvetejsн Trojice"
+	"Krбl Karel"
+	"Krбl Boleslav"
+	"Krбl Premysl"
+	"Panna Maria Viteznб"
+	"Jan Hus"
+	"Jan Zizka"
+	"Prokop Holэ"
+	"Knнze Bretislav"
+	"Premysl Orac"
+	Ctirad
+	Cechy
+	Morava
+	Libuse
+	Odvбznэ
+	Neporazitelnэ
+	Rychlэ
+	Bystrэ
+	Orel
+	Sokol
+	Slezsko
+	Sipka
+	Hvezda
 }

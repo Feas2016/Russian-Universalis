@@ -1,0 +1,24 @@
+#Ösel and Dagö, incl. Sonnenburg and Arensburg.
+
+owner = LIV
+controller = LIV
+add_core = LIV
+culture = latvian
+religion = catholic
+hre = no
+base_tax = 2 
+base_production = 2
+trade_goods = fish
+base_manpower = 3
+capital = "Wolmar"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+
+1542.1.1 = { religion = protestant} # Unknown date
+1581.1.14 = { owner = PLC controller = PLC add_core = PLC } # Treaty of Drohiczyn
+1621.9.15 = { owner = SWE controller = SWE } # 2nd Polish War-Captured by GIIA
+1629.10.16 = { add_core = SWE remove_core = PLC } # The Armistice of Altmark
+1710.7.1 = { controller = RUS } # The Great Nordic War-Captured Riga
+1721.8.30 = { owner = RUS add_core = RUS remove_core = SWE } # The Peace of Nystad
+

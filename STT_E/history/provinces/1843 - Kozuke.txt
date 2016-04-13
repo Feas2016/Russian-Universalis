@@ -1,0 +1,25 @@
+#1843 - Kozuke
+
+owner = UES
+controller = UES
+culture = japanese
+religion = shinto
+capital = "Utsunomiya"
+trade_goods = grain
+hre = no
+base_tax = 8
+base_production = 8
+base_manpower = 3
+is_city = yes
+add_core = UES
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = ANU
+
+1542.1.1 = { discovered_by = POR }
+1582.10.27 = { add_core = HJO owner = HJO controller = HJO }
+1590.8.10 = { remove_core = HJO remove_core = UES add_core = TKG owner = TKG controller = TKG }
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }

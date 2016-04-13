@@ -1,0 +1,106 @@
+government = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = chinese
+capital = 1030	# owari
+
+1490.1.1 = {
+	monarch = {
+		name = "Tatsukatsu"
+		dynasty = "Oda"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1520.1.1 = {
+	monarch = {
+		name = "Nobusada"
+		dynasty = "Oda"
+#		birth_date = 1490.1.1
+#		death_date = 1538.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1520.1.1 = {
+	heir = {
+		name = "Nobuhide"
+		monarch_name = "Nobuhide"
+		dynasty = "Oda"
+		birth_date = 1510.1.1
+		death_date = 1551.4.8
+		claim = 80
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1527.1.1 = { 
+	monarch = {
+		name = "Nobuhide"
+		dynasty = "Oda"
+#		birth_date = 1510.1.1
+#		death_date = 1551.4.8
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1534.6.23 = {
+	heir = {
+		name = "Nobunaga"
+		monarch_name = "Nobunaga"
+		dynasty = "Oda"
+		birth_date = 1534.6.23
+		death_date = 1582.6.21
+		claim = 90
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+	
+1551.4.8 = { 
+	monarch = {
+		name = "Nobunaga"
+		dynasty = "Oda"
+#		birth_date = 1534.6.23
+#		death_date = 1582.6.21
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1557.1.1 = {
+	heir = {
+		name = "Nobutada"
+		monarch_name = "Nobutada"
+		dynasty = "Oda"
+		birth_date = 1557.1.1
+		death_date = 1582.6.21
+		claim = 90
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+	
+1582.6.21 = { 
+	monarch = {
+		name = "Hidenobu"
+		dynasty = "Oda"
+#		birth_date = 1580.1.1
+#		death_date = 1605.6.24
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}

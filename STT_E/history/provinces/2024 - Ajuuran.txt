@@ -1,0 +1,34 @@
+#2024 - Garoowe
+
+owner = MRE
+controller = MRE
+add_core = MRE
+add_core = MJE
+culture = somali
+religion = sunni
+capital = "Garoowe"
+is_city = yes
+base_manpower = 1
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1 
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+discovered_by = ZIM
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1499.1.1 = { discovered_by = POR } 
+1526.1.1 = { owner = ADA controller = ADA } #Ahmad Gran secures control over Marehan
+1550.1.1 = { discovered_by = TUR }
+1555.1.1 = { owner = MRE controller = MRE } #Northern part of province no longer conrolled by ADA
+1650.1.1 = { owner = MJE controller = MJE remove_core = MRE}

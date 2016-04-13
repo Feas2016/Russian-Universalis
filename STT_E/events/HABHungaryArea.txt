@@ -1,0 +1,349 @@
+namespace = HAB_HungaryArea
+
+country_event = {
+	id = HAB_HungaryArea.1
+	title = "HAB_HungaryArea_1_title"
+	desc = "HAB_HungaryArea_1_desc"
+	picture = ASSASSINATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1449
+		CIL = {
+			exists = yes
+			is_subject = no
+			ai = yes
+			was_player = no
+		}
+		tag = HUN
+		has_regency = no
+		NOT = {
+			has_leader = "John Hunyadi"
+			has_ruler = "(Regent) John"
+			dynasty = "Hunyadi"
+		}
+
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = HAB_HungaryArea.1.op1
+		ai_chance = { factor = 100 }
+		add_adm_power = -100
+		add_mil_power = -100
+			if = {
+				limit = {
+					CRO = {
+						AND = { 
+							exists = yes
+							is_subject_of = HUN
+						}
+					}
+				}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = no	
+						}
+						cede_province = CRO
+					}
+				}	
+			}
+			if = {
+				limit = {
+					CRO = {
+						is_subject = no
+						}
+					}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = no	
+						}
+						cede_province = HUN
+					}
+				}	
+			}
+			if = {
+				limit = {
+					STY = {
+						AND = { 
+							exists = yes
+							is_subject_of = HAB
+						}
+					}
+				}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = yes	
+						}
+						cede_province = HAB
+					}
+				}	
+			}
+			if = {
+				limit = {
+					STY = {
+						is_subject = no
+						}
+					}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = yes	
+						}
+						cede_province = STY
+					}
+				}	
+			}
+	}
+	option = {
+		name = HAB_HungaryArea.1.op2
+		create_union = CIL
+		add_dip_power = -100
+		if = {
+			limit = {
+				STY = {
+					AND = { 
+						exists = yes
+						is_subject_of = HAB
+					}
+				}
+			}
+			CIL = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes	
+					}
+					cede_province = HAB
+				}
+			}	
+		}
+		if = {
+			limit = {
+				STY = {
+					is_subject = no
+					}
+				}
+			CIL = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes	
+					}
+					cede_province = STY
+				}
+			}	
+		}
+	}
+	option = {
+		name = HAB_HungaryArea.1.op3
+		add_prestige = -5
+		if = {
+				limit = {
+					CRO = {
+						AND = { 
+							exists = yes
+							is_subject_of = HUN
+						}
+					}
+				}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_core = HUN
+							is_core = CRO
+						}
+						remove_core = HUN
+						remove_core = CRO
+					}
+				}	
+			}
+			if = {
+				limit = {
+					CRO = {
+						is_subject = no
+						}
+					}
+				CIL = {
+					every_owned_province = {
+						limit = {
+							is_core = HUN
+						}
+						remove_core = HUN
+					}
+				}	
+			}
+	}
+}
+
+#Sickly count of Gorz
+country_event = {
+	id = HAB_HungaryArea.2
+	title = "HAB_HungaryArea_2_title"
+	desc = "HAB_HungaryArea_2_desc"
+	picture = BAD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = GOR
+		GOR = {
+			has_ruler = "John II"
+			dynasty = "Meinhardiner"
+			has_heir = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = HAB_HungaryArea.2.op1
+		add_ruler_modifier = { name = low_fertility }
+		change_adm = -1
+		change_dip = -1
+		change_mil = -1
+	}
+}
+
+#Claimed by Habsburg or Venice, first to claim.
+country_event = {
+	id = HAB_HungaryArea.3
+	title = "HAB_HungaryArea_3_title"
+	desc = "HAB_HungaryArea_3_desc"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			GOR = {
+				has_ruler = "John II"
+				dynasty = "Meinhardiner"
+				has_heir = no
+				NOT = {
+					num_of_cities = 3
+				}
+			}
+			OR = {
+				tag = HAB
+				tag = VEN
+			}
+			NOT = {
+				has_country_flag = gorz_claimed
+				has_country_flag = gorz_not_claimed
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = HAB_HungaryArea.3.op1
+		ai_chance = { factor = 100 }
+			GOR = {
+					every_owned_province = {
+						add_claim = ROOT
+					}
+				}
+			hidden_effect = {
+				set_country_flag = gorz_claimed
+					if = {
+						limit = {
+							tag = HAB
+						}
+						VEN = {
+							country_event = { id = HAB_HungaryArea.4 }
+						}
+					}
+					if = {
+						limit = {
+							tag = VEN
+						}
+						HAB = {
+							country_event = { id = HAB_HungaryArea.5 }
+						}
+					}
+			}
+	}		
+	option = {
+		name = HAB_HungaryArea.3.op2
+		ai_chance = { factor = 0 }
+			add_prestige = -5
+			hidden_effect = {
+				set_country_flag = gorz_not_claimed
+			}
+	}
+}
+
+#HAB first
+country_event = {
+	id = HAB_HungaryArea.4
+	title = "HAB_HungaryArea_4_title"
+	desc = "HAB_HungaryArea_4_desc"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_flag = gorz_claimed
+				has_country_flag = gorz_not_claimed
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	option = {
+		name = HAB_HungaryArea.4.op1
+		ai_chance = { factor = 100 }
+			GOR = {
+					every_owned_province = {
+						add_claim = ROOT
+					}
+				}
+	}
+	option = {
+		name = HAB_HungaryArea.4.op2
+		ai_chance = { factor = 0 }
+			add_prestige = -5
+			hidden_effect = {
+				set_country_flag = gorz_not_claimed
+			}
+	}
+}
+
+#VEN first
+country_event = {
+	id = HAB_HungaryArea.5
+	title = "HAB_HungaryArea_5_title"
+	desc = "HAB_HungaryArea_5_desc"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_flag = gorz_claimed
+				has_country_flag = gorz_not_claimed
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 0
+	}
+	option = {
+		name = HAB_HungaryArea.5.op1
+		ai_chance = { factor = 100 }
+			GOR = {
+					every_owned_province = {
+						add_claim = ROOT
+					}
+				}
+	}
+	option = {
+		name = HAB_HungaryArea.5.op2
+		ai_chance = { factor = 0 }
+			add_prestige = -5
+			hidden_effect = {
+				set_country_flag = gorz_not_claimed
+			}
+	}
+}

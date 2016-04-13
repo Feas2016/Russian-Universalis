@@ -1,43 +1,7 @@
-# A province can belong to several regions.
+# A province can only belong to one region!
 
 # random_new_world_region is used for RNW. Must be first in this list.
 random_new_world_region = {
-	discover_if = {
-		capital_scope = { continent = europe }
-		any_country = {
-			capital_scope = { continent = europe }
-			has_discovered_region = {
-				region = FROM
-				years = 50
-			}
-		}
-		is_year = 1500
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = FROM
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = FROM
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_country = {
-			capital_scope = { region = FROM }
-			has_discovered_capital_region_of = { who = ROOT years = 30 # num of years
-			}
-		}
-	}
 }
 
 ########################################
@@ -45,59 +9,6 @@ random_new_world_region = {
 ########################################
 
 france_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = france_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = france_region
-			who = ROOT
-			years = 30 # num of years
-		}	
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = france_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = france_region
-			}
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		brittany_area
 		normandy_area
@@ -112,64 +23,12 @@ france_region = {
 		loire_area
 		bourgogne_area
 		pyrenees_area
+		orleanais_area
+		paris_area
 	}
 }
 
 scandinavia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = scandinavia_region
-			}
-		}
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = scandinavia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = scandinavia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = scandinavia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		svealand_area
 		norrland_area
@@ -181,66 +40,15 @@ scandinavia_region = {
 		northern_norway
 		eastern_norway
 		western_norway
+		bothnia_area
 		subarctic_islands_area
+		karelia_area
+		greenland_area
 	}
 }
 
 
 low_countries_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = low_countries_region
-			}
-		}
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = low_countries_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = low_countries_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = low_countries_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		wallonia_area
 		flanders_area
@@ -253,60 +61,6 @@ low_countries_region = {
 }
 
 italy_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = italy_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = italy_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = italy_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = italy_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		venetia_area
 		lombardy_area
@@ -323,61 +77,85 @@ italy_region = {
 	}
 }
 
-iberia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
 
-			has_discovered_region = {
-				years = 20
-				region = iberia_region
-			}
-		}
+north_german_region = {
+	areas = { 
+		erzgebirge_area
+		south_saxony_area
+		northern_saxony_area
+		thuringia_area
+		neumark_area
+		mittelmark_area
+		vorpommern_area
+		bohemia_area
+		hinter_pommern_area
+		north_rhine_area
+		lower_rhineland_area
+		westphalia_area
+		hesse_area
+		lower_saxony_area
+		weser_area
+		holstein_area
+		mecklenburg_area
+		moravia_area
+
+
+
+
+
 	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = iberia_region
-			}
-		}
+}
+
+
+
+
+south_german_region = {
+	areas = { 
+		tirol_area
+		austria_proper_area
+		inner_austria_area
+		switzerland_area
+		lower_bavaria_area
+		upper_bavaria_area
+		franconia_area
+		lower_swabia_area
+		upper_swabia_area
+		upper_rhineland_area
+		romandie_area
+		palatinate_area
+
 	}
-	discover_if = {
-		has_discovered_region = {
-			region = iberia_region
-			years = 20 #Num of years
-		}
+}
+
+russia_region = {
+	areas = {
+		moscow_area
+		suzdal_area
+		novgorod_area
+		pskov_area
+		beloozero_area
+		pomor_area
+		ryazan_area
+		ingria_area
+		nizhy_novgorod_area
+		tver_area
+		yaroslavl_area
+		galich_area
+		perm_area
+		kama_area
+
 	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = iberia_region
-			who = ROOT
-			years = 30 # num of years
-		}
+}
+
+
+ural_region = {
+	areas = {
+		
+		
 	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
+}
+
+iberia_region = {
 	areas = {
 		aragon_area
 		catalonia_area
@@ -391,233 +169,13 @@ iberia_region = {
 		alentejo_area
 		beieras_area
 		macaronesia_area
+		bascia_area
 	}
 }
 
-germany_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
 
-			has_discovered_region = {
-				years = 20
-				region = germany_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = germany_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = germany_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = germany_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	areas = { 
-		silesia_area
-		bohemia_area
-		erzgebirge_area
-		south_saxony_area
-		lower_bavaria_area
-		upper_bavaria_area
-		franconia_area
-		lower_swabia_area
-		upper_swabia_area
-		northern_saxony_area
-		thuringia_area
-		neumark_area
-		mittelmark_area
-		vorpommern_area
-		hinter_pommern_area
-		tirol_area
-		austria_proper_area
-		inner_austria_area
-		upper_rhineland_area
-		palatinate_area
-		north_rhine_area
-		lower_rhineland_area
-		westphalia_area
-		hesse_area
-		lower_saxony_area
-		weser_area
-		holstein_area
-		mecklenburg_area
-		switzerland_area
-		romandie_area
-		carinthia_area
-	}
-}
-
-russia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				area = nogai_area
-				area = kazakhstan_area
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = russia_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = russia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = russia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = russia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	areas = {
-		moscow_area
-		suzdal_area
-		smolensk_area
-		novgorod_area
-		pskov_area
-		beloozero_area
-		kazan_area
-		ural_area
-		pomor_area
-		galich_area
-		kama_area
-		perm_area
-		karelia_area
-		ryazan_area
-		tambov_area
-		saratov_area
-		bashkiria_area		
-		nenetz_area ### STT
-	}
-}
 
 british_isles_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = british_isles_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = british_isles_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = british_isles_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = british_isles_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		mercia_area
 		wessex_area
@@ -626,65 +184,12 @@ british_isles_region = {
 		wales_area
 		lowlands_area
 		highlands_area
-		ireland_area
+		eastern_ireland_area
+		western_ireland_area
 	}
 }
 
 baltic_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = baltic_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = baltic_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = baltic_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = baltic_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		lithuania_area
 		livonia_area
@@ -696,123 +201,17 @@ baltic_region = {
 }
 
 poland_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = poland_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = poland_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = poland_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = poland_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		wielkopolska_area
 		malopolska_area
 		red_ruthenia_area
 		mazovia_area
+		silesia_area
+		
 	}
 }
 
 ruthenia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = ruthenia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = ruthenia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = ruthenia_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = ruthenia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		west_dniepr_area
 		east_dniepr_area
@@ -820,66 +219,13 @@ ruthenia_region = {
 		white_ruthenia_area
 		podolia_volhynia_area
 		pripyat_area
+		smolensk_area
+		bryansk_area
 
 	}
 }
 
 crimea_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = crimea_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = crimea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = crimea_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = crimea_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		crimea_area
 		lower_don_area
@@ -887,64 +233,14 @@ crimea_region = {
 		zaporizhia_area
 		yedisan_area
 		azov_area
+		kazan_area
+		saratov_area
+		bashkiria_area
+		tambov_area
 	}
 }
 
 balkan_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = egypt_region
-				region = maghreb_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = balkan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = balkan_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = balkan_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = balkan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		croatia_area
 		east_adriatic_coast_area
@@ -956,64 +252,12 @@ balkan_region = {
 		morea_area
 		western_aegean_area
 		thrace_area
+		albania_area
+		carinthia_area
 	}
 }
 
 carpathia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = egypt_region
-				region = maghreb_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = carpathia_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = carpathia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = carpathia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = carpathia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		transdanubia_area
 		alfold_area
@@ -1021,73 +265,11 @@ carpathia_region = {
 		transylvania_area
 		wallachia_area
 		moldavia_area
+		banat_area
 	}
 }
 
 egypt_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = maghreb_region
-				region = west_africa_region
-				region = central_africa_region
-				region = horn_of_africa_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = egypt_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = egypt_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = egypt_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = egypt_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1650.1.1
-		capital_scope = { superregion = india_superregion }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		libyan_desert_area
 		gharbia_area
@@ -1100,69 +282,6 @@ egypt_region = {
 }
 
 maghreb_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = egypt_region
-				region = west_africa_region
-				region = central_africa_region
-				region = maghreb_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = maghreb_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = maghreb_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = maghreb_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = maghreb_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1650.1.1
-		capital_scope = { superregion = india_superregion }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		fezzan_area
 		tunisia_area
@@ -1179,69 +298,6 @@ maghreb_region = {
 }
 
 mashriq_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = central_asia_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = maghreb_region
-				region = east_africa_region
-				region = indonesia_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = india_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = mashriq_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = mashriq_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			superregion = east_indies_superregion
-		}
-		num_of_ports = 1
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = mashriq_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = mashriq_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		syria_area
 		palestine_area
@@ -1249,154 +305,27 @@ mashriq_region = {
 		al_jazira_area
 		iraq_arabi_area
 		basra_area
+		aleppo_area
 	}
 }
 
 anatolia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = central_asia_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = maghreb_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = anatolia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = anatolia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = anatolia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = anatolia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		hudavendigar_area
 		aydin_area
 		karaman_area
-		aleppo_area
 		rum_area
 		kastamonu_area
 		erzurum_area
 		north_kurdistan_area
 		dulkadir_area
 		eastern_aegean_area
+		cilicia_area
+		pontus_area
 	}
 }
 
 persia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = maghreb_region
-				region = central_asia_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = east_indies_superregion
-				superregion = india_superregion
-			}
-		}
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = persia_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = persia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = persia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = baluchistan_region #Spread of discoveries
-			years = 50 #Num of years
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = khorasan_region #Spread of discoveries
-			years = 50 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = persia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		south_kurdistan_area
 		luristan_area
@@ -1410,89 +339,6 @@ persia_region = {
 }
 
 khorasan_region = {
-	discover_if = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-		started_in = 1673.1.1
-	}
-	discover_if = {
-		tag = FRA
-		started_in = 1677.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				continent = asia
-			}
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = khorasan_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = khorasan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = central_asia_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = east_indies_superregion
-				superregion = india_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = khorasan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = persia_region
-			years = 50 #Num of years
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = baluchistan_region #Spread of discoveries
-			years = 50 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = khorasan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		merv_area
 		balkh_area
@@ -1500,151 +346,13 @@ khorasan_region = {
 		ghor_area
 		sistan_area
 		khorasan_area
-	}
-}
-
-baluchistan_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1488.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = baluchistan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = central_asia_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = east_indies_superregion
-				superregion = india_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = baluchistan_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = baluchistan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = baluchistan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	areas = {
 		makran_area
 		kalat_area
 	}
 }
 
-caucasia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = egypt_region
-				region = maghreb_region
-				area = transoxiana_area
-				area = transcaspia_area
-				area = khiva_area
-				area = nogai_area
-				area = kazakhstan_area
-				area = ferghana_area
-				area = arys_area
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = caucasia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
 
-			has_discovered_region = {
-				years = 20
-				region = caucasia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = caucasia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1650.1.1
-		superregion = india_superregion
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = caucasia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+caucasia_region = {
 	areas = {
 		circassia_area
 		georgia_area
@@ -1655,70 +363,6 @@ caucasia_region = {
 }
 
 arabia_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = africa
-				continent = europe
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = arabia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = arabia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = arabia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = arabia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		hejaz_area
 		najd_area
@@ -1729,263 +373,55 @@ arabia_region = {
 	}
 }
 
-west_africa_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1460.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1600
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = west_africa_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = west_africa_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = west_africa_region
-				region = maghreb_region
-				region = central_africa_region
-				region = egypt_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1550
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = west_africa_region
-			years = 50
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = west_africa_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = west_africa_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+niger_region = {
 	areas = {
-		western_sahara_area
-		cap_verde_area
+
 		adamawa_plateau_area
 		lower_niger_area
 		hausa_area
-		dendi_area
 		upper_volta_area
 		atacora_oueme_area
-		niger_bend_area
 		lower_volta_area
 		kong_area
 		massina_area
-		baghena_area
 		manding_area
-		futa_jallon_area
 		tekrur_area
-		guinea_coast_area
-		west_africa_coast_area
-		gulf_of_guinea_area
 	}
 }
 
-central_africa_region = {
-	discover_if = {
-		any_owned_province = {
-			region = central_africa_region
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = maghreb_region
-				region = west_africa_region
-				region = egypt_region
-				region = horn_of_africa_region
-				region = central_africa_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = central_africa_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
+guinea_region = {
+	areas = {
 
-			has_discovered_region = {
-				years = 20
-				region = central_africa_region
-			}
-		}
+		cap_verde_area
+		guinea_coast_area
+		gulf_of_guinea_area
+		futa_jallon_area
+		west_africa_coast_area
+
+
 	}
-	discover_if = {
-		has_discovered_region = {
-			region = central_africa_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = central_africa_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+}
+
+
+sahel_region = {
 	areas = {
 		darfur_central_sahara_area
 		kanem_area
 		bornu_area
 		azbin_area
 		kurdufan_area
-		### STT
-		camerun_area
-		central_africa_area
-		zair_area
+		western_sahara_area
+		dendi_area
+		baghena_area
+		niger_bend_area
+		mauritanian_coast_area
+		northern_mauritania_area
+		southern_mauritania_area
+		
 	}
 }
 
 horn_of_africa_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		started_in = 1550.1.1
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = horn_of_africa_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = horn_of_africa_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = central_africa_region
-				region = east_africa_region
-				region = horn_of_africa_region
-				region = egypt_region
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = horn_of_africa_region
-			years = 50
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = horn_of_africa_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = horn_of_africa_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		ajuuran_area
 		southern_ethiopia_area
@@ -2003,803 +439,139 @@ horn_of_africa_region = {
 }
 
 east_africa_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		started_in = 1550.1.1
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = east_africa_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = horn_of_africa_region
-				region = east_africa_region
-				superregion = near_east_superregion
-				superregion = persia_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = east_africa_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1550
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = east_africa_region
-			years = 50
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = east_africa_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = east_africa_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		northern_swahili_coast_area
 		central_swahili_coast_area
 		mozambique_area
-		zambezi_area
-		zimbabwe_area
-		madagascar_area
+		lower_zambezi_area
+		upper_zambezi_area
+		ruvuma_area
+		ngonde_area
 		mascarenes_area
-		kenya_area
-		### STT
+		madagascar_highlands_area
+		southern_madagaskar_area
+		betsimasaraka_area
+		sakalava_area
+		southern_madagascar
+		uticulo_makuana_area
+		jubba_area
+		makuana_area
+	}
+}
+
+central_africa_region = {
+	areas = {
+		ngonde_area
+		buha_area
+		katanga_area
+		zambia_area
+		luba_area
+		sankuru_area
 		tanzania_area
+		kenya_area
+		buzinza_area
+		uganda_area
+		rwanda_area
+		shaba_area
 	}
 }
 
 kongo_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1481.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		started_in = 1550.1.1
-	}
-	 
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = kongo_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = kongo_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = kongo_region
-			years = 50
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = {
-			region = kongo_region
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = kongo_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = kongo_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
-		west_congo_area
+		coastal_kongo
 		kongo_area
 		angola_namibia_area
+		matamba_area
+		lower_kasai_area
+		kasai_area
+		west_congo_area
+		angola_area
 	}
 }
 
 central_asia_region = {
-	discover_if = {
-		tag = RUS
-		started_in = 1622.1.1
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = central_asia_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = central_asia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = tibet_region
-				region = mongolia_region
-				region = central_asia_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = central_asia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = central_asia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		nogai_area
 		transcaspia_area
 		transoxiana_area
 		kazakhstan_area
 		balchasj_area
-		tarim_basin_area
 		khiva_area
 		ferghana_area
 		jetysuu_area
-		zungaria_area
-		altai_sayan_area
 		arys_area
 	}
 }
 
 south_africa_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1481.1.1
-	}
-	discover_if = {
-		tag = FRA
-		started_in = 1529.6.1 #Parmentier Brothers
-	}
-	discover_if = {
-		started_in = 1540.1.1
-		capital_scope = { continent = europe }
-	}
-	 
-	discover_if = {
-		capital_scope = { region = south_africa_region }
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_africa_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_africa_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_africa_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_africa_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = south_africa_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		south_african_plateau_area
 		cape_of_good_hope_area
-		### STT
-		botsvana_area
+		zimbabwe_area
+		quelimane_area
+		namibia_area
+		zambezi_area
+		
 	}
 }
 
-siberia_region = {
-	discover_if = {
-		tag = RUS
-		started_in = 1582.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1550
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = siberia_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = siberia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = siberia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = manchuria_region
-			region = mongolia_region
-			region = central_asia_region
-			region = siberia_region
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				continent = asia
-			}
-		}
-		is_year = 1750
-	}
-	 
-	discover_if = {
-		has_discovered_region = {
-			region = siberia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = siberia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+west_siberia_region = {
 	areas = {
 		yrtesh_area
 		ob_area
 		central_siberia_area
 		tunguska_area
 		irkutsk_area
+		ishim_area
+		ural_area
+	}
+}
+
+east_siberia_region = {
+	areas = {
 		yakutia_area
 		okhotsk_area
 		magadan_area
 		kamchatka_area
-		ishim_area
 		buryatia_area
-		### STT
-		arctic_siberia_area
 	}
 }
 
 mongolia_region = {
-	discover_if = {
-		tag = RUS
-		started_in = 1633.1.1
-	}
-	discover_if = {
-		tag = SPA
-		started_in = 1682.1.1 #Ferdinand Verbiest
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = mongolia_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = mongolia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1650
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = mongolia_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = manchuria_region
-				region = central_asia_region
-				region = japan_region
-				region = mongolia_region
-				region = korea_region
-				region = tibet_region
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				continent = asia
-			}
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = mongolia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = mongolia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		outer_mongolia_area
 		inner_mongolia_area
 		ordos_area
+		zungaria_area
+		altai_sayan_area
+		
 	}
 }
 
 manchuria_region = {
-	discover_if = {
-		tag = RUS
-		started_in = 1640.1.1
-	}
-	discover_if = {
-		tag = SPA
-		started_in = 1709.1.1
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = manchuria_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = manchuria_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1650
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = manchuria_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = tibet_region
-				region = manchuria_region
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				continent = asia
-			}
-		}
-		is_year = 1730
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = manchuria_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = manchuria_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		heilongjiang_area
 		jilin_area
 		ilan_hala_area
 		liaoning_area
+		north_korea_area
+		central_korea_area
+		south_korea_area
+		
 	}
 }
 
 tibet_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1634.1.1
-	}
-	discover_if = {
-		tag = SPA
-		started_in = 1682.1.1 #Ferdinand Verbiest
-	}
-	 
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = tibet_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = tibet_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1650
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = tibet_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = tibet_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				continent = asia
-			}
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = tibet_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = tibet_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		utsang_area
 		amdo_area
 		kham_area
+		tarim_basin_area
+		
 	}
 }
 
 bengal_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = bengal_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = bengal_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = bengal_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = egypt_region
-				region = tibet_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = bengal_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = bengal_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		west_bengal_area
 		north_bengal_area
@@ -2813,93 +585,6 @@ bengal_region = {
 }
 
 hindusthan_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = hindusthan_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = hindusthan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = hindusthan_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = tibet_region
-				region = egypt_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = hindusthan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = hindusthan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		bihar_area
 		oudh_area
@@ -2916,190 +601,22 @@ hindusthan_region = {
 	}
 }
 
-rajputana_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = rajputana_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = rajputana_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = rajputana_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = tibet_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = egypt_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = rajputana_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = rajputana_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+west_india_region = {
 	areas = {
 		marwar_area
 		mewar_area
 		jaipur_area
 		malwa_area
+		gujarat_area
+		saurashtra_area
+		tapti_area
+		sindh_area
+		konkan_area
+		
 	}
 }
 
 deccan_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = deccan_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = deccan_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = deccan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = tibet_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = egypt_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = deccan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = deccan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		maharashtra_area
 		gondwana_area
@@ -3114,93 +631,6 @@ deccan_region = {
 }
 
 coromandel_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = coromandel_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = coromandel_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = coromandel_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = tibet_region
-				region = japan_region
-				region = korea_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = egypt_region
-				superregion = persia_superregion
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = coromandel_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = coromandel_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		andhra_area
 		coromandel_area
@@ -3210,588 +640,43 @@ coromandel_region = {
 	}
 }
 
-west_india_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = west_india_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = west_india_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = west_india_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = horn_of_africa_region
-				region = east_africa_region
-				region = tibet_region
-				region = egypt_region
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = west_india_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = west_india_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	areas = {
-		gujarat_area
-		saurashtra_area
-		tapti_area
-		sindh_area
-		konkan_area
-	}
-}
 
 burma_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1500.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = burma_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = burma_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = burma_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = central_asia_region
-				region = japan_region
-				region = korea_region
-				region = tibet_region
-				region = east_africa_region
-				region = arabia_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = burma_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = burma_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		kachin_area
 		upper_burma_area
 		lower_burma_area
 		shan_hill_area
+		northern_thai_area
+
 	}
 }
 
 japan_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1542.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = japan_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = japan_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = japan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = manchuria_region
-				region = korea_region
-				region = japan_region
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = japan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = japan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		hokkaido_area
+		hokuriku_area
+		kanto_area
 		kyushu_area
 		chubu_area
-		kanto_thoku_area
 		kansai_area
+		thohoku_area
 		chugoku_area
 	}
 }
 
-korea_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1519.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = korea_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = korea_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = korea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = manchuria_region
-				region = japan_region
-				region = korea_region
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = korea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = korea_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	areas = {
-		north_korea_area
-		central_korea_area
-		south_korea_area
-	}
-}
-
 australia_region = {
-	discover_if = {
-		tag = GBR
-		started_in = 1770.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1700
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = australia_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = australia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = australia_region
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = australia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = australia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = australia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		western_australia_area
 		northern_australia_area
 		eastern_australia_area
 		southern_australia_area
-### STT		
-		central_australia_area
 	}
 }
 
-new_zealand_region = {
-	discover_if = {
-		tag = GBR
-		started_in = 1770.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1700
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = new_zealand_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = new_zealand_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = new_zealand_region
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = new_zealand_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = new_zealand_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = new_zealand_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	areas = {
-		te_ika_a_maui_area
-		te_waipounamu_area
-	}
-}
 
 south_china_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1514.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_china_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_china_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_china_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = manchuria_region
-				region = korea_region
-				region = japan_region
-				region = tibet_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_china_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = south_china_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
-		guangxi_area
 		guangdong_area
 		fujian_area
 		jiangxi_area
@@ -3804,184 +689,16 @@ south_china_region = {
 }
 
 xinan_region = {
-	discover_if = {
-		tag = SPA
-		started_in = 1655.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1700.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = xinan_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = xinan_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = xinan_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = mongolia_region
-				region = manchuria_region
-				region = korea_region
-				region = japan_region
-				region = tibet_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = xinan_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = xinan_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		sichuan_area
 		yun_gui_area
+		guangxi_area
+		
 	}
 }
 
 north_china_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1519.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = north_china_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = north_china_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = north_china_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				area = zungaria_area
-				area = altai_sayan_area
-				area = tarim_basin_area
-				area = jetysuu_area
-				area = ferghana_area
-				area = arys_area
-				area = transoxiana_area
-				region = mongolia_region
-				region = manchuria_region
-				region = korea_region
-				region = japan_region
-				region = tibet_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = europe
-		}
-		is_year = 1650 #Spready via trade ties. Will know where/what it is but not necessarily how to get there.
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = north_china_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = north_china_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+	
 	areas = {
 		hebei_area
 		shandong_area
@@ -3993,82 +710,7 @@ north_china_region = {
 }
 
 brazil_region = {
-	discover_if = {
-		OR = {
-			tag = SPA
-			tag = CAS
-		}
-		started_in = 1499.1.1
-	}
-	discover_if = {
-		tag = POR
-		started_in = 1500.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1550.1.1
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = brazil_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = brazil_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = brazil_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1600.1.1
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = brazil_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = brazil_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+	
 	areas = {
 		rio_grande_do_sol_area
 		minas_gerais_area
@@ -4087,243 +729,21 @@ brazil_region = {
 }
 
 la_plata_region = {
-	discover_if = {
-		OR = {
-			tag = SPA
-			tag = CAS
-		}
-		started_in = 1516.1.23
-	}
-	discover_if = {
-		tag = POR
-		started_in = 1530.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1550.1.1
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = la_plata_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = la_plata_region
-			years = 50
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = la_plata_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = la_plata_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = la_plata_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		patagonia_area
 		cuyo_area
 		southern_pampas_area
 		buenos_aires_area
-		tucuman_area
-		chaco_area
 		banda_oriental_area
-		paraguay_area
 		south_atlantic_islands_area
-	}
-}
-
-chile_region = {
-	discover_if = {
-		tag = SPA
-		started_in = 1520.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1550.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = chile_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = chile_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = chile_region
-			}
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = chile_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = chile_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
-	areas = {
 		southern_chile_area
 		central_chile_area
-		northern_chile_area
+
 	}
 }
 
-colombia_region = {
-	discover_if = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-		started_in = 1498.1.1
-	}
-	discover_if = {
-		tag = POR
-		started_in = 1505.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1550.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = colombia_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = colombia_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
 
-			has_discovered_region = {
-				years = 20
-				region = colombia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = south_america
-				region = carribeans_region
-				region = mississippi_region
-				region = southeast_america_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = colombia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = colombia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+colombia_region = {
 	areas = {
 		upper_guyana_area
 		guyana_area
@@ -4338,435 +758,95 @@ colombia_region = {
 }
 
 peru_region = {
-	discover_if = {
-		tag = SPA
-		started_in = 1525.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1550.1.1
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1500
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = peru_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = peru_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = peru_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = peru_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = peru_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		kuntisuyu_area
 		chimor_area
 		ucayali_area
 		cajamarca_area
 		huanuco_area
-		beni_area
-		upper_peru
 		antisuyu_area
 		quito_area
 	}
 }
 
-indonesia_region = {
-	discover_if = {
-		started_in = 1509.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1521.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = indonesia_region
-			years = 50
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = indonesia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = japan_region
-				region = korea_region
-				region = east_africa_region
-				region = arabia_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = indonesia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = horn_of_africa_region
-		}
-		num_of_ports = 1
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = indonesia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = indonesia_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+upper_peru_region = {
 	areas = {
-		great_moluccas_area
-		north_sumatra_area
-		central_sumatra_area
-		south_sumatra_area
-		luzon_area
-		east_java_area
-		central_java_area
-		west_java_area
-		kutai_area
-		brunei_area
-		kalimantan_area
-		molluca_area
-		lesser_sunda_islands_area
-		sulawesi_area
-		indian_ocean_islands_area
-		papua_area
+		beni_area
+		upper_peru
+		tucuman_area
+		chaco_area
+		paraguay_area
+		northern_chile_area
+		
 	}
 }
 
-oceanea_region = {
-	discover_if = {
-		started_in = 1550.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1642.1.1
-		tag = NED
-	}
-	discover_if = {
-		started_in = 1770.1.1 
-		tag = GBR
-	}
-	discover_if = {
-		capital_scope = {
-			region = oceanea_region
-		}
-	}
-	discover_if = {
-		overlord = {
+malaya_region = {	#Western Indonesia Malaya.
+	areas = {
+		north_sumatra_area
+		central_sumatra_area
+		south_sumatra_area
+		indian_ocean_islands_area
+		tenasserim_area
+		malaya_area
 
-			has_discovered_region = {
-				years = 20
-				region = oceanea_region
-			}
-		}
+
 	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = oceanea_region
-			}
-		}
+}
+
+
+moluccas_region = {
+	areas = {
+		molluca_area
+		sulawesi_area
+		luzon_area
+		great_moluccas_area
+		papua_area
+
 	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1700
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = oceanea_region
-			years = 50
-		}
+}
+
+
+
+indonesia_region = { #Eastern Indonesian/Malayan Islands.
+	areas = {
+		kutai_area
+		brunei_area
+		kalimantan_area
+		east_java_area
+		central_java_area
+		west_java_area
+		lesser_sunda_islands_area
+
 	}
-	discover_if = {
-		has_discovered_region = {
-			region = oceanea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = oceanea_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
+}
+
+
+oceanea_region = {
 	areas = {
 		polynesia_area
 		micronesia_area
 		melanesia_area
+		te_ika_a_maui_area
+		te_waipounamu_area
+		
 	}
 }
 
 indo_china_region = {
-	discover_if = {
-		started_in = 1509.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1521.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = indo_china_region
-			years = 50
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = north_america }
-			NOT = { continent = south_america }
-			NOT = { continent = new_world }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = indo_china_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = indo_china_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = japan_region
-				region = korea_region
-				region = east_africa_region
-				superregion = near_east_superregion
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = china_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = horn_of_africa_region
-		}
-		num_of_ports = 1
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = indo_china_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = indo_china_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		vietnam_area
 		south_laos_area
 		north_laos_area
 		central_thai_area
-		northern_thai_area
-		tenasserim_area
 		cambodia_area
 		mekong_area
 		champa_area
 		khorat_area
-		malaya_area
 	}
 }
 
 canada_region = {
-	discover_if = {
-		started_in = 1605.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1610.1.1
-		tag = ENG
-	}
-	discover_if = {
-		started_in = 1625.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = canada_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = canada_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = canada_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = great_lakes_region
-				region = canada_region
-				region = northeast_america_region
-				region = southeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = canada_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = canada_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		upper_acadia_area
 		lower_acadia_area
@@ -4783,83 +863,6 @@ canada_region = {
 }
 
 great_lakes_region = {
-	discover_if = {
-		started_in = 1609.1.1 # Samuel de Champlain.
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1629.1.1
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-	}
-	discover_if = {
-		started_in = 1650.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		is_year = 1600
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = great_lakes_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = great_lakes_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = great_lakes_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = canada_region
-				region = great_lakes_region
-				region = northeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = great_lakes_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = great_lakes_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		ohio_country_area
 		illinois_country_area
@@ -4869,86 +872,6 @@ great_lakes_region = {
 }
 
 northeast_america_region = {
-	discover_if = {
-		started_in = 1524.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1607.1.1
-		tag = ENG
-	}
-	discover_if = {
-		started_in = 1609.1.1
-		tag = NED
-	}
-	discover_if = {
-		started_in = 1610.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = great_lakes_region
-				region = canada_region
-				region = northeast_america_region
-				region = southeast_america_region
-				region = mississippi_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = northeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = northeast_america_region
-			years = 50
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = northeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = northeast_america_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = northeast_america_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		great_woods_area
 		massachusetts_bay_area
@@ -4961,92 +884,6 @@ northeast_america_region = {
 }
 
 southeast_america_region =  {
-	discover_if = {
-		started_in = 1524.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1607.1.1
-		tag = ENG
-	}
-	discover_if = {
-		started_in = 1609.1.1
-		tag = NED
-	}
-	discover_if = {
-		started_in = 1610.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = southeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = southeast_america_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = great_lakes_region
-				region = canada_region
-				region = northeast_america_region
-				region = southeast_america_region
-				region = mississippi_region
-				region = carribeans_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = southeast_america_region
-			years = 50
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1650.1.1
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = southeast_america_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = southeast_america_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		chesapeake_area
 		great_valley_area
@@ -5058,87 +895,6 @@ southeast_america_region =  {
 }
 
 mississippi_region = {
-	discover_if = {
-		started_in = 1541.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1673.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1750.1.1
-		NOT = { continent = africa }
-	}
-	discover_if = {
-		started_in = 1800.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = great_lakes_region
-				region = northeast_america_region
-				region = southeast_america_region
-				region = mississippi_region
-				region = carribeans_region
-				area = texas_area
-				area = rio_grande_area
-				area = eastern_mexico_area
-				area = northeast_mexico_area
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = mississippi_region
-			years = 50
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = mississippi_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		started_in = 1700.1.1
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = mississippi_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = mississippi_region
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = mississippi_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		lower_louisiana_area
 		west_florida_area
@@ -5152,70 +908,6 @@ mississippi_region = {
 }
 
 great_plains_region = {
-	discover_if = {
-		started_in = 1738.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1780.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = great_lakes_region
-				region = great_plains_region
-				region = mississippi_region
-				region = cascadia_region
-				region = california_region
-				region = mexico_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = great_plains_region
-			years = 50
-		}
-		is_year = 1750
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = great_plains_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = great_plains_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				region = great_plains_region
-				years = 20
-			}
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = great_plains_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		lower_plains_area
 		high_plains_area
@@ -5227,74 +919,6 @@ great_plains_region = {
 }
 
 california_region = {
-	discover_if = {
-		started_in = 1542.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1579.6.16
-		OR = {
-			tag = GBR
-			tag = ENG
-		}
-	}
-	discover_if = {
-		started_in = 1780.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = cascadia_region
-				region = great_plains_region
-				region = california_region
-				region = mexico_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = california_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = california_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = california_region
-			years = 50
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = california_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = california_region
-			who = ROOT
-			years = 30 # num of years
-		}
-	}
 	areas = {
 		california_area
 		baja_california_area
@@ -5306,73 +930,6 @@ california_region = {
 }
 
 cascadia_region = {
-	discover_if = {
-		started_in = 1543.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1778.1.1
-		tag = GBR
-	}
-	discover_if = {
-		started_in = 1780.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = cascadia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = california_region
-				region = great_plains_region
-				region = cascadia_region
-				area = athabasca_area
-				area = prairies_area
-				area = saskatchewan_area
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = cascadia_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = cascadia_region
-			years = 50
-		}
-		is_year = 1700
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = cascadia_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = cascadia_region
-			who = ROOT
-			years = 30 # num of years
-		}		
-	}
 	areas = {
 		oregon_area
 		columbia_river_area
@@ -5385,79 +942,6 @@ cascadia_region = {
 }
 
 hudson_bay_region = {
-	discover_if = {
-		started_in = 1612.1.1
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-	}
-	discover_if = {
-		started_in = 1699.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1780.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = hudson_bay_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = hudson_bay_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = california_region
-				region = great_plains_region
-				region = great_lakes_region
-				region = canada_region
-				region = northeast_america_region
-				region = southeast_america_region
-				region = hudson_bay_region
-				area = interior_plateau_area
-				area = columbia_river_area
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = hudson_bay_region
-			years = 50
-		}
-		is_year = 1650
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = hudson_bay_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = hudson_bay_region
-			who = ROOT
-			years = 30 # num of years
-		}		
-	}
 	areas = {
 		james_bay_area
 		hudson_bay_area
@@ -5469,79 +953,6 @@ hudson_bay_region = {
 }
 
 mexico_region = {
-	discover_if = {
-		started_in = 1517.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = mexico_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = mexico_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = california_region
-				region = great_plains_region
-				region = mississippi_region
-				region = southeast_america_region
-				region = carribeans_region
-				region = mexico_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = mexico_region
-			years = 50
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = mexico_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = mexico_region
-			who = ROOT
-			years = 30 # num of years
-		}		
-	}
 	areas = {
 		eastern_mexico_area
 		mexico_area
@@ -5559,81 +970,6 @@ mexico_region = {
 }
 
 central_america_region = {
-	discover_if = {
-		started_in = 1502.1.1
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = carribeans_region
-				region = colombia_region
-				region = southeast_america_region
-				region = mississippi_region
-				region = central_america_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = central_america_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = central_america_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = central_america_region
-			years = 50
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = central_america_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = central_america_region
-			who = ROOT
-			years = 30 # num of years
-		}		
-	}
 	areas = {
 		guatemala_area
 		honduras_area
@@ -5644,80 +980,6 @@ central_america_region = {
 }
 
 carribeans_region = {
-	discover_if = {
-		started_in = 1493.1.1
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = carribeans_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = colombia_region
-				region = southeast_america_region
-				region = mississippi_region
-				region = carribeans_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = carribeans_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = carribeans_region
-			years = 50
-		}
-		is_year = 1600
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = carribeans_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		has_any_country_in_region_discovered_capital_region_of = {
-			region = carribeans_region
-			who = ROOT
-			years = 30 # num of years
-		}		
-	}
 	areas = {
 		cuba_area
 		hispaniola_area
@@ -5729,43 +991,6 @@ carribeans_region = {
 
 #Sea Regions
 baltic_sea_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = baltic_sea_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = baltic_sea_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = baltic_sea_region
-			years = 20 #Num of years
-		}
-	}
 	areas = {
 		baltic_area
 		kattegat_area
@@ -5773,52 +998,6 @@ baltic_sea_region = {
 }
 
 north_atlantic_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				continent = europe
-				region = maghreb_region
-				region = egypt_region
-				superregion = near_east_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = north_atlantic_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = north_atlantic_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = north_atlantic_region
-			}
-		}
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
 	areas = {
 		north_sea_area
 		norwegian_sea_area
@@ -5831,77 +1010,30 @@ north_atlantic_region = {
 	}
 }
 
-american_east_coast_region = {
-	discover_if = {
-		started_in = 1524.1.1
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1607.1.1
-		tag = ENG
-	}
-	discover_if = {
-		started_in = 1609.1.1
-		tag = NED
-	}
-	discover_if = {
-		started_in = 1610.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = american_east_coast_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
+south_atlantic_region = {
+	areas = {
+		south_atlantic_area
 
-			has_discovered_region = {
-				years = 20
-				region = american_east_coast_region
-			}
-		}
 	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = hudson_bay_region
-				region = canada_region
-				region = northeast_america_region
-				region = southeast_america_region
-			}
-		}
+}
+
+caribbean_sea_region = {
+	areas = {
+		bahama_channel_area
+		coast_of_guyana_area
+		caribbean_sea_area
+		gulf_of_mexico_area
+		
 	}
-	discover_if = {
-		has_discovered_region = {
-			region = american_east_coast_region
-			years = 20 #Num of years
-		}
+}
+
+central_atlantic_region = {
+	areas = {
+		sargasso_sea_area
 	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = american_east_coast_region
-			years = 50
-		}
-	}
+}
+
+american_east_coast_region = {
 	areas = {
 		sea_of_labrador_area
 		hudson_bay_sea_area
@@ -5911,263 +1043,23 @@ american_east_coast_region = {
 }
 
 mediterrenean_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = egypt_region
-				region = maghreb_region
-				continent = europe
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = mediterrenean_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = mediterrenean_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = mediterrenean_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			continent = asia
-		}
-		is_year = 1700
-	}
 	areas = {
-		eastern_mediterrenean_area
 		western_mediterrenean_area
+		eastern_mediterrenean_area
 		black_sea_area
 	}
 }
 
-caribbean_sea_region = {
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = carribeans_region
-				region = colombia_region
-				region = southeast_america_region
-				region = mississippi_region
-				superregion = central_america_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = caribbean_sea_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = caribbean_sea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = caribbean_sea_region
-			}
-		}
-	}
-	discover_if = {
-		started_in = 1493.1.1
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = caribbean_sea_region
-			years = 50
-		}
-	}
-	areas = {
-		bahama_channel_area
-		coast_of_guyana_area
-		caribbean_sea_area
-		gulf_of_mexico_area
-		sargasso_sea_area
-	}
-}
-
 west_african_sea_region = {
-	discover_if = {
-		tag = POR
-		started_in = 1445.1.1
-	}
-	discover_if = {
-		started_in = 1490.1.1
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-	}
-	discover_if = {
-		started_in = 1500.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = {
-			OR = {
-				region = maghreb_region
-				region = west_africa_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = west_african_sea_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = west_african_sea_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = west_african_sea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = west_african_sea_region
-			years = 50
-		}
-	}
 	areas = {
 		west_african_coast_sea_area
 		gulf_of_guinea_sea_area
+		skeleton_coast_area
+		cape_of_storms_area
 	}
 }
 
 west_indian_ocean_region = {
-	discover_if = {
-		started_in = 1498.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = west_indian_ocean_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = east_africa_region
-				region = horn_of_africa_region
-				region = arabia_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = west_indian_ocean_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = west_indian_ocean_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = west_indian_ocean_region
-			years = 50
-		}
-	}
 	areas = {
 		western_indian_ocean_area
 		swahili_coast_sea_area
@@ -6175,62 +1067,6 @@ west_indian_ocean_region = {
 }
 
 arabian_sea_region = {
-	discover_if = {
-		started_in = 1498.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = arabian_sea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = east_africa_region
-				region = horn_of_africa_region
-				region = egypt_region
-				superregion = india_superregion
-				superregion = east_indies_superregion
-				superregion = near_east_superregion
-				superregion = persia_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = arabian_sea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = arabian_sea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = arabian_sea_region
-			years = 50
-		}
-	}
 	areas = {
 		arabian_sea_area
 		persian_gulf_area
@@ -6239,61 +1075,6 @@ arabian_sea_region = {
 }
 
 east_indian_ocean_region = {
-	discover_if = {
-		started_in = 1498.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = east_africa_region
-				region = horn_of_africa_region
-				region = arabia_region
-				superregion = india_superregion
-				superregion = china_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = east_indian_ocean_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = east_indian_ocean_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = east_indian_ocean_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = east_indian_ocean_region
-			years = 50
-		}
-	}
 	areas = {
 		eastern_indian_ocean_area
 		bay_of_bengal_area
@@ -6302,83 +1083,12 @@ east_indian_ocean_region = {
 }
 
 south_indian_ocean_region = {
-	discover_if = {
-		has_discovered_region = {
-			region = south_indian_ocean_region
-			years = 20 #Num of years
-		}
-	}
 	areas = {
 		south_indian_ocean_area
 	}
 }
 
 south_china_sea_region = {
-	discover_if = {
-		started_in = 1509.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1521.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_china_sea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = japan_region
-				region = korea_region
-				region = east_africa_region
-				superregion = india_superregion
-				superregion = china_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_china_sea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			region = horn_of_africa_region
-		}
-		num_of_ports = 1
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_china_sea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_china_sea_region
-			years = 50
-		}
-	}
 	areas = {
 		java_sea_area
 		south_china_sea_area
@@ -6388,68 +1098,6 @@ south_china_sea_region = {
 }
 
 east_china_sea_region = {
-	discover_if = {
-		started_in = 1514.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1521.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = east_china_sea_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = japan_region
-				region = korea_region
-				region = east_africa_region
-				region = manchuria_region
-				region = mongolia_region
-				region = siberia_region
-				superregion = india_superregion
-				superregion = china_superregion
-				superregion = east_indies_superregion
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = east_china_sea_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = east_china_sea_region
-			years = 50
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = east_china_sea_region
-			}
-		}
-	}
 	areas = {
 		east_china_sea_area
 		philipine_sea_area
@@ -6459,115 +1107,12 @@ east_china_sea_region = {
 }
 
 north_east_pacific_region = {
-	discover_if = {
-		started_in = 1521.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1542.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1640.1.1
-		tag = RUS
-	}
-	discover_if = {
-		started_in = 1650.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			region = oceanea_region
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = north_east_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = north_east_pacific_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = north_east_pacific_region
-			years = 50
-		}
-	}
 	areas = {
 		east_pacific_ocean_area
 	}
 }
 
 south_east_pacific_region = {
-	discover_if = {
-		started_in = 1642.1.1
-		tag = NED
-	}
-	discover_if = {
-		started_in = 1770.1.1 
-		tag = GBR
-	}
-	discover_if = {
-		started_in = 1800.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_east_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				region = oceanea_region
-				region = new_zealand_region
-				region = australia_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_east_pacific_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_east_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_east_pacific_region
-			years = 50
-		}
-	}
 	areas = {
 		coral_sea_area
 		tasman_sea_area
@@ -6576,54 +1121,6 @@ south_east_pacific_region = {
 }
 
 south_west_pacific_region = {
-	discover_if = {
-		started_in = 1550.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1650.1.1 
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			region = oceanea_region
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_west_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_west_pacific_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_west_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_west_pacific_region
-			years = 50
-		}
-	}
 	areas = {
 		south_pacific_area
 		polynesian_triangle_area
@@ -6631,53 +1128,6 @@ south_west_pacific_region = {
 }
 
 north_west_pacific_region = {
-	discover_if = {
-		started_in = 1741.1.1
-		tag = RUS
-	}
-	discover_if = {
-		started_in = 1778.1.1
-		tag = GBR
-	}
-	discover_if = {
-		started_in = 1800.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = north_west_pacific_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = north_west_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = north_west_pacific_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = north_west_pacific_region
-			years = 50
-		}
-	}
 	areas = {
 		north_pacific_area
 		north_pacific_coast_area
@@ -6687,54 +1137,6 @@ north_west_pacific_region = {
 }
 
 pacific_south_america_region = {
-	discover_if = {
-		started_in = 1520.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1600.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = pacific_south_america_region
-			}
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = pacific_south_america_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = pacific_south_america_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = pacific_south_america_region
-			years = 50
-		}
-	}
 	areas = {
 		chilean_sea_area
 		sea_of_grau_area
@@ -6743,146 +1145,8 @@ pacific_south_america_region = {
 }
 
 atlantic_south_america_region = {
-	discover_if = {
-		started_in = 1500.1.1
-		OR = {
-			tag = SPA
-			tag = POR
-			tag = CAS
-		}
-	}
-	discover_if = {
-		started_in = 1550.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		capital_scope = {
-			continent = south_america
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = atlantic_south_america_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = atlantic_south_america_region
-			}
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {	
-				years = 20
-				region = atlantic_south_america_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = atlantic_south_america_region
-			years = 50
-		}
-	}
 	areas = {
 		coast_of_brazil_sea_area
 		argentine_sea_area
-	}
-}
-
-south_atlantic_region = {
-	discover_if = {
-		started_in = 1481.1.1
-		tag = POR
-	}
-	discover_if = {
-		started_in = 1520.1.1
-		tag = SPA
-	}
-	discover_if = {
-		started_in = 1529.6.1 # Parmentier Brothers
-		tag = FRA
-	}
-	discover_if = {
-		started_in = 1540.1.1
-		capital_scope = { continent = europe }
-	}
-	discover_if = {
-		started_in = 1700.1.1
-		capital_scope = {
-			NOT = { continent = africa }
-		}
-	}
-	discover_if = {
-		started_in = 1750.1.1 #Everyone in the entire world.
-	}
-	discover_if = {
-		any_neighbor_country = {
-			OR = {
-				culture_group = ROOT
-				religion_group = ROOT
-			}
-			has_discovered_region = {
-				years = 75
-				region = south_atlantic_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = {
-			OR = {
-				province_id = 1174
-				region = kongo_region
-				region = south_africa_region
-			}
-		}
-	}
-	discover_if = {
-		has_discovered_region = {
-			region = south_atlantic_region
-			years = 20 #Num of years
-		}
-	}
-	discover_if = {
-		overlord = {
-
-			has_discovered_region = {
-				years = 20
-				region = south_atlantic_region
-			}
-		}
-	}
-	discover_if = {
-		capital_scope = { continent = europe }
-		has_any_country_on_continent_discovered_region = {
-			continent = europe
-			region = south_atlantic_region
-			years = 50
-		}
-	}
-	areas = {
-		south_atlantic_area
-		skeleton_coast_area
-		cape_of_storms_area
 	}
 }

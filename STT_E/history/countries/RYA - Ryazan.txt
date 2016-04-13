@@ -1,15 +1,14 @@
-government = rus_government
+government = feudal_monarchy
 primary_culture = russian
 religion = orthodox
 technology_group = eastern
 capital = 301	# Ryazan
 fixed_capital = 301 # Cannot move capital away from this province & no power cost to move to it
-government_rank = 1
 
 1372.1.1 = {
 	monarch = {
-		name = "Олег Иванович"
-		dynasty = "Рюрикович"
+		name = "Oleg Ivanovich"
+		dynasty = "Rurikovich"
 		adm = 1
 		dip = 3
 		mil = 1
@@ -18,9 +17,9 @@ government_rank = 1
 
 1372.1.1 = {
 	heir = {
-		name = "Федор Олегович"
-		monarch_name = "Федор Олегович"
-		dynasty = "Рюрикович"
+		name = "Fyodor Olegovich"
+		monarch_name = "Fyodor Olegovich"
+		dynasty = "Rurikovich"
 		birth_date = 1372.1.1
 		death_date = 1427.1.1
 		claim = 95
@@ -32,8 +31,8 @@ government_rank = 1
 
 1402.1.1 = {
 	monarch = {
-		name = "Федор Олегович"
-		dynasty = "Рюрикович"
+		name = "Fyodor Olegovich"
+		dynasty = "Rurikovich"
 		birth_date = 1372.1.1
 		adm = 2
 		dip = 3
@@ -43,9 +42,9 @@ government_rank = 1
 
 1402.1.1 = {
 	heir = {
-		name = "Иван Федорович"
-		monarch_name = "Иван Федорович"
-		dynasty = "Рюрикович"
+		name = "Ivan Fyodorovich"
+		monarch_name = "Ivan Fyodorovich"
+		dynasty = "Rurikovich"
 		birth_date = 1402.1.1
 		death_date = 1456.1.1
 		claim = 95
@@ -57,8 +56,8 @@ government_rank = 1
 
 1427.1.1 = {
 	monarch = {
-		name = "Иван Федорович"
-		dynasty = "Рюрикович"
+		name = "Ivan Fyodorovich"
+		dynasty = "Rurikovich"
 		birth_date = 1402.1.1
 		adm = 3
 		dip = 3

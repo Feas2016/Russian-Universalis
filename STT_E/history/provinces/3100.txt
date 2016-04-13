@@ -1,0 +1,26 @@
+#139 - Hum
+
+owner = HUM		# Part of the Bosnian kingdom
+controller = HUM
+culture = serbian
+religion = orthodox
+capital = "Hvoca"	# Unofficial capital of Herzegovina
+trade_goods = wool
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+is_city = yes
+add_core = HUM
+add_core = BOS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1521.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+}
+

@@ -1,0 +1,20 @@
+#1086 - Kaurna
+
+culture = aboriginal
+religion = animism
+capital = "Kaurna"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 0
+base_manpower = 0
+native_size = 10
+native_ferocity = 1
+native_hostileness = 9
+
+1802.1.1 = { discovered_by = GBR } # Matthew Flinders
+
+add_permanent_province_modifier = {
+	name = minor_river_estuary_modifier
+	duration = -1
+}

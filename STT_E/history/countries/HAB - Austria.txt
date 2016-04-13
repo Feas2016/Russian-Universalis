@@ -1,18 +1,19 @@
-government = kaiserreich_government ### STT
+government = feudal_monarchy
 government_rank = 1
 primary_culture = austrian
 religion = catholic
 technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
+historical_rival = TUR
 
 national_focus = ADM
 
 
 1395.8.29 = {
 	monarch = {
-		name = "Альбрехт IV"
-		dynasty = "фон Габсбург"
+		name = "Albrecht IV"
+		dynasty = "von Habsburg"
 		adm = 1
 		dip = 1
 		mil = 3
@@ -21,9 +22,9 @@ national_focus = ADM
 
 1397.8.10 = {
 	heir = {
-		name = "Альбрехт"
-		monarch_name = "Альбрехт V"
-		dynasty = "фон Габсбург"
+		name = "Albrecht"
+		monarch_name = "Albrecht V"
+		dynasty = "von Habsburg"
 		birth_date = 1397.8.10
 		death_date = 1439.10.27
 		claim = 95
@@ -35,8 +36,8 @@ national_focus = ADM
 
 1404.9.14 = {
 	monarch = {
-		name = "Альбрехт V"
-		dynasty = "фон Габсбург"
+		name = "Albrecht V"
+		dynasty = "von Habsburg"
 		birth_date = 1397.8.10
 		adm = 1
 		dip = 1
@@ -47,8 +48,8 @@ national_focus = ADM
 
 1439.10.27 = {
 	monarch = {
-		name = "Фридрих III"
-		dynasty = "фон Габсбург"
+		name = "Friedrich III"
+		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
 		adm = 2
 		dip = 5
@@ -62,8 +63,8 @@ national_focus = ADM
 
 1452.1.1 = {
 	monarch = {
-		name = "Ладислав I Постум"
-		dynasty = "фон Габсбург"
+		name = "Ladislaus Postumus"
+		dynasty = "von Habsburg"
 		birth_date = 1440.2.22
 		adm = 3
 		dip = 3
@@ -73,8 +74,8 @@ national_focus = ADM
 
 1457.11.24 = {
 	monarch = {
-		name = "Фридрих III"
-		dynasty = "фон Габсбург"
+		name = "Friedrich III"
+		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
 		adm = 2
 		dip = 5
@@ -84,9 +85,9 @@ national_focus = ADM
 
 1459.3.22 = {
 	heir = {
-		name = "Максимилиан"
-		monarch_name = "Максимилиан I"
-		dynasty = "фон Габсбург"
+		name = "Maximilian"
+		monarch_name = "Maximilian I"
+		dynasty = "von Habsburg"
 		birth_date = 1459.3.22
 		death_date = 1519.1.12
 		claim = 95
@@ -98,8 +99,8 @@ national_focus = ADM
 
 1493.8.21 = {
 	monarch = {
-		name = "Максимилиан I"
-		dynasty = "фон Габсбург"
+		name = "Maximilian I"
+		dynasty = "von Habsburg"
 		birth_date = 1459.3.22
 		adm = 2
 		dip = 4
@@ -109,9 +110,9 @@ national_focus = ADM
 
 1493.8.21 = {
 	heir = {
-		name = "Филипп" # The Handsome
-		monarch_name = "Филипп I Красивый"
-		dynasty = "фон Габсбург"
+		name = "Philip" # The Handsome
+		monarch_name = "Philip I"
+		dynasty = "von Habsburg"
 		birth_date = 1478.7.22
 		death_date = 1506.9.25
 		claim = 95
@@ -125,7 +126,7 @@ national_focus = ADM
 
 1499.1.1 = { 
 	leader = {	
-		name = "фон Фрундсберг"
+		name = "von Frundsberg"
         type = general
 		rank = 1
 		fire = 4
@@ -173,22 +174,22 @@ national_focus = ADM
 
 1521.4.28 = {
 	monarch = {
-		name = "Фердинанд I"
-		dynasty = "фон Габсбург"
+		name = "Ferdinand I"
+		dynasty = "von Habsburg"
 		birth_date = 1503.3.10
 		adm = 4
 		dip = 3
 		mil = 4
-		leader = {	name = "Фердинанд I"	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0 }
+		leader = {	name = "Ferdinand I"	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 }
 
 
 1527.7.31 = {
 	heir = {
-		name = "Максимилиан"
-		monarch_name = "Максимилиан II"
-		dynasty = "фон Габсбург"
+		name = "Maximilian"
+		monarch_name = "Maximilian II"
+		dynasty = "von Habsburg"
 		birth_date = 1527.7.31
 		death_date = 1576.10.12
 		claim = 95
@@ -235,12 +236,12 @@ national_focus = ADM
 
 1556.10.2 = { government = absolute_monarchy }
 
-1560.1.1 = { leader = {	name = "Франц Иосиф"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
+1560.1.1 = { leader = {	name = "Franz-Josef"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
 
 1564.7.27 = {
 	monarch = {
-		name = "Максимилиан II"
-		dynasty = "фон Габсбург"
+		name = "Maximilian II"
+		dynasty = "von Habsburg"
 		birth_date = 1527.7.31
 		adm = 2
 		dip = 4
@@ -250,9 +251,9 @@ national_focus = ADM
 
 1564.7.27 = {
 	heir = {
-		name = "Рудольф"
-		monarch_name = "Рудольф II"
-		dynasty = "фон Габсбург"
+		name = "Rudolf"
+		monarch_name = "Rudolf II"
+		dynasty = "von Habsburg"
 		birth_date = 1552.7.18
 		death_date = 1612.1.20
 		claim = 95
@@ -293,8 +294,8 @@ national_focus = ADM
 
 1576.10.14 = {
 	monarch = {
-		name = "Рудольф II"
-		dynasty = "фон Габсбург"
+		name = "Rudolf II"
+		dynasty = "von Habsburg"
 		birth_date = 1552.7.18
 		adm = 4
 		dip = 3
@@ -304,9 +305,9 @@ national_focus = ADM
 
 1576.10.14 = {
 	heir = {
-		name = "Матвей"
-		monarch_name = "Матвей I"
-		dynasty = "фон Габсбург"
+		name = "Matthias"
+		monarch_name = "Matthias I"
+		dynasty = "von Habsburg"
 		birth_date = 1557.2.24
 		death_date = 1619.3.20
 		claim = 95
@@ -318,7 +319,7 @@ national_focus = ADM
 
 1583.1.1 = { capital = 266 }	# Prague
 
-1585.1.1 = { leader = {	name = "Эрцгерцог Карл"                  	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1600.1.1 } }
+1585.1.1 = { leader = {	name = "Karl"                  	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1600.1.1 } }
 
 #Trade Good Events
 1600.1.1 = {
@@ -351,14 +352,14 @@ national_focus = ADM
 	set_global_flag = evangelical_union_happened
 }
 
-1610.1.1 = { leader = {	name = "Франц фон Мерси"             	type = general	rank = 2	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1645.1.1 } }
+1610.1.1 = { leader = {	name = "Franz von Mercy"             	type = general	rank = 2	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1645.1.1 } }
 
 1611.1.1 = { capital = 134 }	# Wien
 
 1612.1.22 = {
 	monarch = {
-		name = "Матвей I"
-		dynasty = "фон Габсбург"
+		name = "Matthias I"
+		dynasty = "von Habsburg"
 		birth_date = 1557.2.24
 		adm = 2
 		dip = 2
@@ -368,9 +369,9 @@ national_focus = ADM
 
 1612.1.22 = {
 	heir = {
-		name = "Фердинанд"
-		monarch_name = "Фердинанд II"
-		dynasty = "фон Габсбург"
+		name = "Ferdinand"
+		monarch_name = "Ferdinand II"
+		dynasty = "von Habsburg"
 		birth_date = 1578.7.9
 		death_date = 1637.2.15
 		claim = 95
@@ -387,14 +388,14 @@ national_focus = ADM
 1614.1.1 = {  decision = conventicle_act }
 #1614.1.1 = { decision = judiciary_act }
 
-1615.1.1 = { leader = {	name = "А. фон Валленштейн"	type = general	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1634.2.25 } }
+1615.1.1 = { leader = {	name = "Wallenstein"	type = general	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1634.2.25 } }
 
-1618.1.1 = { leader = {	name = "Готфрид Паппенгейм"	type = general	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1632.11.17 } }
+1618.1.1 = { leader = {	name = "Gottfried Pappenheim"	type = general	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1632.11.17 } }
 
 1619.3.22 = {
 	monarch = {
-		name = "Фердинанд II"
-		dynasty = "фон Габсбург"
+		name = "Ferdinand II"
+		dynasty = "von Habsburg"
 		birth_date = 1578.7.9
 		adm = 2
 		dip = 1
@@ -404,9 +405,9 @@ national_focus = ADM
 
 1619.3.22 = {
 	heir = {
-		name = "Фердинанд"
-		monarch_name = "Фердинанд III"
-		dynasty = "фон Габсбург"
+		name = "Ferdinand"
+		monarch_name = "Ferdinand III"
+		dynasty = "von Habsburg"
 		birth_date = 1608.7.13
 		death_date = 1657.4.2
 		claim = 95
@@ -419,13 +420,13 @@ national_focus = ADM
 
 1620.1.1 = { decision = act_of_uniformity }
 
-1624.1.1 = { leader = {	name = "фон Хацфельдт"         	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1647.1.1 } }
+1624.1.1 = { leader = {	name = "von Hatzfeldt"         	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1647.1.1 } }
 
-1625.1.1 = { leader = {	name = "Маттиас Галлас"	type = general	rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1647.1.1 } }
+1625.1.1 = { leader = {	name = "Matthias Gallas"	type = general	rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1647.1.1 } }
 
-1627.1.1 = { leader = {	name = "Пикколомини"           	type = general	rank = 1	fire = 4	shock = 3	manuever = 4	siege = 1	death_date = 1656.8.11 } }
+1627.1.1 = { leader = {	name = "Piccolomini"           	type = general	rank = 1	fire = 4	shock = 3	manuever = 4	siege = 1	death_date = 1656.8.11 } }
 
-1630.1.1 = { leader = {	name = "Монтекукколи"          	type = general	rank = 2	fire = 4	shock = 3	manuever = 4	siege = 1	death_date = 1680.10.16 } }
+1630.1.1 = { leader = {	name = "Montecuccoli"          	type = general	rank = 2	fire = 4	shock = 3	manuever = 4	siege = 1	death_date = 1680.10.16 } }
 
 #Trade Good Events
 1635.1.1 = {
@@ -453,8 +454,8 @@ national_focus = ADM
 
 1637.2.15 = {
 	monarch = {
-		name = "Фердинанд III"
-		dynasty = "фон Габсбург"
+		name = "Ferdinand III"
+		dynasty = "von Habsburg"
 		birth_date = 1608.7.13
 		adm = 4
 		dip = 1
@@ -464,9 +465,9 @@ national_focus = ADM
 
 1640.6.9 = {
 	heir = {
-		name = "Леопольд"
-		monarch_name = "Леопольд I"
-		dynasty = "фон Габсбург"
+		name = "Leopold"
+		monarch_name = "Leopold I"
+		dynasty = "von Habsburg"
 		birth_date = 1640.6.9
 		death_date = 1705.5.5
 		claim = 95
@@ -507,8 +508,8 @@ national_focus = ADM
 
 1658.7.1 = {
 	monarch = {
-		name = "Леопольд I"
-		dynasty = "фон Габсбург"
+		name = "Leopold I"
+		dynasty = "von Habsburg"
 		birth_date = 1640.6.9
 		adm = 4
 		dip = 4
@@ -558,17 +559,17 @@ national_focus = ADM
 		}
 }
 
-1670.1.1 = { leader = {	name = "Эрцгерцог Фердинанд"             	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1695.1.1 } }
+1670.1.1 = { leader = {	name = "Ferdinand"             	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1695.1.1 } }
 
-1670.1.1 = { leader = {	name = "Георг Вальдек"		type = general	rank = 3	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1692.11.19 } }
+1670.1.1 = { leader = {	name = "Georg Waldeck"		type = general	rank = 3	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1692.11.19 } }
 
-1675.1.1 = { leader = {	name = "Карл V Лотарингский" 	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1690.1.1 } }
+1675.1.1 = { leader = {	name = "Charles V de Lorraine" 	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1690.1.1 } }
 
 1678.7.26 = {
 	heir = {
-		name = "Иосиф"
-		monarch_name = "Иосиф I"
-		dynasty = "фон Габсбург"
+		name = "Josef"
+		monarch_name = "Josef I"
+		dynasty = "von Habsburg"
 		birth_date = 1678.7.26
 		death_date = 1711.4.17
 		claim = 95
@@ -596,15 +597,15 @@ national_focus = ADM
 		}
 }
 
-1685.1.1 = { leader = {	name = "Евгений Савойский"           	type = general	rank = 1	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1730.1.1 } }
+1685.1.1 = { leader = {	name = "Prinz Eugen"           	type = general	rank = 1	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1730.1.1 } }
 
-1685.1.1 = { leader = {	name = "фон Штаремберг"       	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 3	death_date = 1705.1.1 } }
+1685.1.1 = { leader = {	name = "von Starhemberg"       	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 3	death_date = 1705.1.1 } }
 
-#1690.1.1 = { leader = {	name = "фон Мерси"             	type = general	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } }
+#1690.1.1 = { leader = {	name = "von Mercy"             	type = general	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } } # Removed /SWГ–
 
-1690.1.1 = { leader = {	name = "Людвиг"                	type = general	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1710.1.1 } }
+1690.1.1 = { leader = {	name = "Ludwig"                	type = general	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1710.1.1 } }
 
-1697.1.1 = { leader = {	name = "фон Траун"             	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1748.1.1 } }
+1697.1.1 = { leader = {	name = "von Traun"             	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1748.1.1 } }
 
 #Trade Good Events
 1700.1.1 = {
@@ -619,8 +620,8 @@ national_focus = ADM
 
 1705.5.7 = {
 	monarch = {
-		name = "Иосиф I"
-		dynasty = "фон Габсбург"
+		name = "Josef I"
+		dynasty = "von Habsburg"
 		birth_date = 1678.7.26
 		adm = 3
 		dip = 1
@@ -630,9 +631,9 @@ national_focus = ADM
 
 1705.5.7 = {
 	heir = {
-		name = "Карл"
-		monarch_name = "Карл II"
-		dynasty = "фон Габсбург"
+		name = "Karl"
+		monarch_name = "Karl II"
+		dynasty = "von Habsburg"
 		birth_date = 1685.10.1
 		death_date = 1740.10.20
 		claim = 95
@@ -655,8 +656,8 @@ national_focus = ADM
 
 1711.4.19 = {
 	monarch = {
-		name = "Карл II"
-		dynasty = "фон Габсбург"
+		name = "Karl II"
+		dynasty = "von Habsburg"
 		birth_date = 1685.10.1
 		adm = 4
 		dip = 3
@@ -666,9 +667,9 @@ national_focus = ADM
 
 1717.5.13 = {
 	heir = {
-		name = "Мария Терезия"
-		monarch_name = "Мария I Терезия"
-		dynasty = "фон Габсбург"
+		name = "Maria Theresia"
+		monarch_name = "Maria Theresia I"
+		dynasty = "von Habsburg"
 		birth_date = 1717.5.13
 		death_date = 1780.11.29
 		claim = 95
@@ -679,28 +680,28 @@ national_focus = ADM
 	}
 }
 
-1720.1.1 = { leader = {	name = "Франц"                 	type = general	rank = 1	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1735.1.1 } }
+1720.1.1 = { leader = {	name = "Franz"                 	type = general	rank = 1	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1735.1.1 } }
 
-1720.1.1 = { leader = {	name = "Ромер"                 	type = general	rank = 7	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1741.1.1 } }
+1720.1.1 = { leader = {	name = "Romer"                 	type = general	rank = 7	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1741.1.1 } }
 
-1725.1.1 = { leader = {	name = "Лобковиц"             	type = general	rank = 8	fire = 3	shock = 2	manuever = 2	siege = 2	death_date = 1750.1.1 } }
+1725.1.1 = { leader = {	name = "Lobkowitz"             	type = general	rank = 8	fire = 3	shock = 2	manuever = 2	siege = 2	death_date = 1750.1.1 } }
 
-1730.1.1 = { leader = {	name = "фон Найперг"          	type = general	rank = 5	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1774.5.26 } }
+1730.1.1 = { leader = {	name = "von Neipperg"          	type = general	rank = 5	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1774.5.26 } }
 
-1730.1.1 = { leader = {	name = "Батяны"              	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1750.1.1 } }
+1730.1.1 = { leader = {	name = "Bathyany"              	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1750.1.1 } }
 
-1734.1.1 = { leader = {	name = "фон Даун"              	type = general	rank = 1	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1741.7.30 } }
+1734.1.1 = { leader = {	name = "von Daun"              	type = general	rank = 1	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1741.7.30 } }
 
-1735.1.1 = { leader = {	name = "Мориц Саксонский"               	type = general	rank = 1	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.1.1 } }
+1735.1.1 = { leader = {	name = "Sachsen"               	type = general	rank = 1	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.1.1 } }
 
-#1737.1.1 = { leader = {	name = "Карл Лотарингский"   	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } }
+#1737.1.1 = { leader = {	name = "Charles de Lorraine"   	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } } # Removed /SWГ–
 
-1738.1.1 = { leader = {	name = "Броун"                	type = general	rank = 8	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1757.1.1 } }
+1738.1.1 = { leader = {	name = "Browne"                	type = general	rank = 8	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1757.1.1 } }
 
 1740.10.22 = {
 	monarch = {
-		name = "Мария I Терезия"
-		dynasty = "фон Габсбург"
+		name = "Maria Theresia I"
+		dynasty = "von Habsburg"
 		birth_date = 1717.5.13
 		adm = 5
 		dip = 5
@@ -711,13 +712,13 @@ national_focus = ADM
 
 1740.10.22 = { government = enlightened_despotism }
 
-1741.1.1 = { leader = {	name = "фон Лаудон"            	type = general	rank = 2	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1789.1.1 } }
+1741.1.1 = { leader = {	name = "von Laudon"            	type = general	rank = 2	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1789.1.1 } }
 
 1741.3.13 = {
 	heir = {
-		name = "Иосиф"
-		monarch_name = "Иосиф II"
-		dynasty = "фон Габсбург"
+		name = "Josef"
+		monarch_name = "Josef II"
+		dynasty = "von Habsburg"
 		birth_date = 1741.3.13
 		death_date = 1790.2.20
 		claim = 95
@@ -727,7 +728,7 @@ national_focus = ADM
 	}
 }
 
-1743.1.1 = { leader = {	name = "Франц фон Ласи"		type = general	rank = 2	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1801.11.24 } }
+1743.1.1 = { leader = {	name = "Franz von Lacy"		type = general	rank = 2	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1801.11.24 } }
 
 #Trade Good Events
 1750.1.1 = {
@@ -740,16 +741,16 @@ national_focus = ADM
 		}
 }
 
-1760.1.1 = { leader = {	name = "Надашдь"                	type = general	rank = 6	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1785.1.1 } }
+1760.1.1 = { leader = {	name = "Nadasy"                	type = general	rank = 6	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1785.1.1 } }
 
 #1770.1.1 = { decision = tenures_abolition_act }
 
-1780.1.1 = { leader = {	name = "Йозеф Альвинци"              	type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1810.9.25 } }
+1780.1.1 = { leader = {	name = "Jozsef Alvintzy"              	type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1810.9.25 } }
 
 1780.11.30 = {
 	monarch = {
-		name = "Иосиф II"
-		dynasty = "фон Габсбург"
+		name = "Josef II"
+		dynasty = "von Habsburg"
 		birth_date = 1741.3.13
 		adm = 5
 		dip = 6
@@ -759,9 +760,9 @@ national_focus = ADM
 
 1780.11.30 = {
 	heir = {
-		name = "Леопольд"
-		monarch_name = "Леопольд II"
-		dynasty = "фон Габсбург"
+		name = "Leopold"
+		monarch_name = "Leopold II"
+		dynasty = "von Habsburg"
 		birth_date = 1747.5.5
 		death_date = 1792.3.1
 		claim = 95
@@ -771,9 +772,9 @@ national_focus = ADM
 	}
 }
 
-1785.1.1 = { leader = {	name = "Мак"                  	type = general	rank = 2	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1828.1.1 } }
+1785.1.1 = { leader = {	name = "Mack"                  	type = general	rank = 2	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1828.1.1 } }
 
-1789.1.1 = { leader = {	name = "фон Вурмзер"           	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1797.1.1 } }
+1789.1.1 = { leader = {	name = "von Wurmser"           	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1797.1.1 } }
 
 #Trade Good Events
 1790.1.1 = {
@@ -788,8 +789,8 @@ national_focus = ADM
 
 1790.2.20 = {
 	monarch = {
-		name = "Леопольд II"
-		dynasty = "фон Габсбург"
+		name = "Leopold II"
+		dynasty = "von Habsburg"
 		birth_date = 1747.5.5
 		adm = 3
 		dip = 2
@@ -799,9 +800,9 @@ national_focus = ADM
 
 1790.2.20 = {
 	heir = {
-		name = "Франц"
-		monarch_name = "Франц II"
-		dynasty = "фон Габсбург"
+		name = "Franz"
+		monarch_name = "Franz II"
+		dynasty = "von Habsburg"
 		birth_date = 1768.2.12
 		death_date = 1835.3.2
 		claim = 95
@@ -811,12 +812,12 @@ national_focus = ADM
 	}
 }
 
-1792.1.1 = { leader = {	name = "Эрцгерцог Карл"        	type = general	rank = 0	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1840.1.1 } }
+1792.1.1 = { leader = {	name = "Erzherzog Karl"        	type = general	rank = 0	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1840.1.1 } }
 
 1792.3.3 = {
 	monarch = {
-		name = "Франц II"
-		dynasty = "фон Габсбург"
+		name = "Franz II"
+		dynasty = "von Habsburg"
 		birth_date = 1768.2.12
 		adm = 2
 		dip = 4
@@ -826,9 +827,9 @@ national_focus = ADM
 
 1793.4.19 = {
 	heir = {
-		name = "Фердинанд"
-		monarch_name = "Фердинанд I"	
-		dynasty = "фон Габсбург"
+		name = "Ferdinand"
+		monarch_name = "Ferdinand I"	
+		dynasty = "von Habsburg"
 		birth_date = 1793.4.19
 		death_date = 1875.6.29
 		claim = 95
@@ -838,8 +839,8 @@ national_focus = ADM
 	}
 }
 
-1799.1.1 = { leader = {	name = "Михаэль фон Мелас"	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1803.1.1 } }
+1799.1.1 = { leader = {	name = "Michael von Melas"	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1803.1.1 } }
 
-1800.1.1 = { leader = {	name = "Эрцгерцог Иоганн"      	type = general	rank = 1	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1859.1.1 } }
+1800.1.1 = { leader = {	name = "Erzherzog Johann"      	type = general	rank = 1	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1859.1.1 } }
 
-1805.1.1 = { leader = {	name = "Шварценберг"         	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1817.1.1 } }
+1805.1.1 = { leader = {	name = "Schwarzenberg"         	type = general	rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1817.1.1 } }

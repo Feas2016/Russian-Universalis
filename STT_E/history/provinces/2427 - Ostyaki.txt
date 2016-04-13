@@ -1,0 +1,29 @@
+#2427 - Ostyaki
+
+owner = KDA
+controller = KDA
+add_core = KDA
+capital = "Belogorye"
+culture = ostyaki
+religion = shamanism
+trade_goods = salt
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 2
+native_hostileness = 2
+native_size = 4
+native_ferocity = 3
+discovered_by = nomad_group
+
+1468.1.1 = { discovered_by = SIB }
+1593.1.1 = {
+	discovered_by = RUS
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	is_city = yes 
+} # Yermak Timofeevich
+1736.1.1 = { culture = russian religion = orthodox }
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

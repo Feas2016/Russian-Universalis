@@ -1,0 +1,29 @@
+#2389 - Phra Bang
+
+owner = AYU
+controller = AYU
+culture = central_thai
+religion = buddhism
+capital = "Sri Thep"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production =3
+base_manpower = 2
+is_city = yes
+add_core = SUK
+add_core = AYU
+discovered_by = chinese
+discovered_by = indian
+
+1438.1.1 = {	
+	add_core = AYU
+} # Sukhothai is under Personal Union with Ayutthaya
+1530.1.1 = {
+	owner = AYU
+	controller = AYU
+	remove_core = SUK
+} # Completely annexed by Ayutthaya
+1535.1.1 = { discovered_by = POR }
+1767.4.1 = { unrest = 7 } # The fall of Ayutthaya
+1774.1.1 = { unrest = 0 }

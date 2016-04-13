@@ -1,0 +1,29 @@
+# No previous file for Tohome
+
+owner = CHO
+controller = CHO
+add_core = CHO
+is_city = yes
+culture = choctaw
+religion = totemism
+capital = "Tohome"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1540.1.1 = { discovered_by = SPA } # Hernando de Soto
+1786.1.3 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	culture = american
+	trade_goods = cotton
+	is_city = yes
+	religion = protestant 
+} #Treaty of Hopewell (with the Choctaw), come under US authority

@@ -1,0 +1,32 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = pommeranian
+religion = catholic
+technology_group = western
+capital = 2994 # Stettin
+fixed_capital = 2994
+
+1424.1.1 = {
+	monarch = {
+		name = "Joachim I"
+		dynasty = "von Greifen"
+		birth_date = 1424.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1451.1.1 = {
+	heir = {
+		name = "Otto"
+		monarch_name = "Otto III"
+		dynasty = "von Greifen"
+		birth_date = 1444.1.1
+		death_date = 1464.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
