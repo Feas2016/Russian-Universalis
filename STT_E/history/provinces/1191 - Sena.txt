@@ -4,7 +4,7 @@ owner = ZIM
 controller = ZIM
 add_core = ZIM
 culture = shona #tonga
-religion = animism
+religion = shamanism
 capital = "Tete"
 is_city = yes
 base_manpower = 1
@@ -24,6 +24,12 @@ discovered_by = MLI
 discovered_by = SFA
 discovered_by = central_african
 discovered_by = sub_saharan
+
+add_permanent_province_modifier = {
+	name = minor_inland_center_of_trade_modifier
+	duration = -1
+}
+
 1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
 1532.1.1 = { unrest = 5 } #Tonga revolts against Mutapa overlordship
 1550.1.1 = { unrest = 5 } #Tonga revolts against Mutapa overlordship

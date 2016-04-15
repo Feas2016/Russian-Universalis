@@ -19,6 +19,11 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
+add_permanent_province_modifier = {
+	name = minor_inland_center_of_trade_modifier
+	duration = -1
+}
+
 1498.1.1 = { discovered_by = POR }
 1565.1.26 = { controller = BIJ }
 1565.7.1 = { controller = VIJ }

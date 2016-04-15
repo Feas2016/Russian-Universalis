@@ -3,7 +3,7 @@
 owner = SAK
 controller = SAK
 culture = sumatran
-religion = sunni
+religion = hinduism
 capital = "Siak"
 trade_goods = chinaware
 hre = no
@@ -16,6 +16,11 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
+
+add_permanent_province_modifier = {
+	name = minor_coastal_center_of_trade_modifier
+	duration = -1
+}
 
 1405.1.1 = { discovered_by = MNG }
 1509.1.1 = { discovered_by = POR }

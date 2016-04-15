@@ -16,6 +16,11 @@ add_core = CDL
 discovered_by = chinese
 discovered_by = indian
 
+add_permanent_province_modifier = {
+	name = minor_inland_center_of_trade_modifier
+	duration = -1
+}
+
 1502.1.1 = {
 	controller = SST
 	owner = SST

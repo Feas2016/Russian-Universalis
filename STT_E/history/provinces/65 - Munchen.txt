@@ -16,6 +16,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+add_permanent_province_modifier = {
+	name = major_inland_center_of_trade_modifier
+	duration = -1
+}
+
 1632.1.1 = { base_tax = 12 base_production = 12 } # Swedish troops ravage the countryside and extort 300.000$ from Munich. 
  # Plague kills large parts of the population
 1700.1.1 = { base_tax = 14 

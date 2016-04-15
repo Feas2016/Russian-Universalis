@@ -1,9 +1,9 @@
 #598 - Pahang
 
-owner = MLC
-controller = MLC
+owner = KEL
+controller = KEL
 culture = malayan
-religion = sunni
+religion = hinduism
 capital = "Kuala Krai"
 trade_goods = grain
 hre = no
@@ -11,8 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = MLC
-add_core = JOH
+add_core = KEL
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -22,4 +21,5 @@ discovered_by = ottoman
 1528.1.1 = {
 	owner = JOH
 	controller = JOH
+        add_core = KEL
 }

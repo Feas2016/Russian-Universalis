@@ -1,8 +1,11 @@
 #626 - Karta
 
-owner = MAJ
-controller = MAJ
+owner = SUN
+controller = SUN
+add_core = MTR
+add_core = DMK
 add_core = MAJ
+add_core = SUN
 culture = javanese
 religion = hinduism
 capital = "Karta"
@@ -20,8 +23,6 @@ discovered_by = ottoman
 1475.1.1 = {
 	owner = DMK
 	controller = DMK
-	add_core = DMK
-	remove_core = MAJ
 } # Demak Sultanate was established
 1500.1.1 = { religion = sunni }
 1509.1.1 = { discovered_by = POR }

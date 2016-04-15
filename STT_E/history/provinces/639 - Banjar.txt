@@ -1,9 +1,13 @@
 #639 - Banjar
 
-culture = bornean
+owner = BNJ
+controller = BNJ
+add_core = BNJ
+is_city = yes
+culture = banjar
 religion = hinduism
 capital = "Banjar"
-trade_goods = unknown
+trade_goods = tropical_wood
 hre = no
 base_tax = 4
 base_production = 4
@@ -18,10 +22,5 @@ discovered_by = ottoman
 
 1521.1.1 = { discovered_by = POR }
 1526.9.24 = {
-	owner = BNJ
-	controller = BNJ
-	add_core = BNJ
-	is_city = yes
 	religion = sunni
-	trade_goods = tropical_wood
 } # Banjar Sultanate was founded

@@ -1,18 +1,11 @@
-name="[STT]Russian Universalis"
-path="mod/STT_E"
-dependencies={
-	"EU4 Russian localisation FULL"
+name="Historical Additions: Borders+"
+archive="mod/hab.zip"
+replace_path="history/provinces"
+replace_path="common/country_tags"
+tags={
+	"Graphics"
+	"Map"
+	"Historical"
 }
-tags=
-{
- "Graphics"
- "Fixes"
- "Map"
- "Historical"
- "New Nations"
- "Missions and Decisions"
- "Translation"
- "Events" 
-}
-picture="Europa_Universalis_IV_extended.png"
-supported_version="1.15"
+picture="preview-img1.jpg"
+supported_version="1.16.*.*"

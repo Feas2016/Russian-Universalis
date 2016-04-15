@@ -1,9 +1,13 @@
 #653 - Lanao
 
+owner = MGD
+controller = MGD
+add_core = MGD
+is_city = yes
 culture = filipino
 religion = animism
 capital = "Marawi"
-trade_goods = unknown
+trade_goods = spices
 hre = no
 base_tax = 4
 base_production = 4
@@ -13,14 +17,7 @@ native_ferocity = 4
 native_hostileness = 5
 discovered_by = chinese
 
-1450.1.1 = { religion = sunni }
-1520.1.1 = {
-	owner = MGD
-	controller = MGD
-	add_core = MGD
-	is_city = yes
-	trade_goods = spices
-} # Sultanate of Maguindanao
+1500.1.1 = { religion = sunni }
 1521.1.1 = { discovered_by = SPA }
 1640.1.1 = {
 	owner = LNO

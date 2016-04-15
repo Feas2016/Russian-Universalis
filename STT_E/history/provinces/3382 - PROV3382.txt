@@ -1,92 +1,61 @@
-#507 - Lahore
+#2086 - Cholistan
 
-owner = DLH
-controller = DLH
+owner = MUL
+controller = MUL
 culture = panjabi
-religion = hinduism
+religion = sunni
 capital = "Faisalabad"
 trade_goods = grain
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 5
+base_tax = 6 
+base_production = 6
+base_manpower = 3
 is_city = yes
 add_core = MUL
-add_core = DLH
-add_core = PUN
-#Data Durbar Complex
 discovered_by = indian
-discovered_by = muslim
+discovered_by = muslim 
 discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
-extra_cost = 10
 
-
-
-1443.1.1 = {
-	revolt = { type = pretender_rebels leader = "Bahlul Lodi" }
-	controller = REB
-} #First revolt of Bahlul Lodi
-1445.1.1 = {
-	controller = DLH revolt = { }
-} #Bahlul Lodi returns to the Punjab
-1447.1.1 = {
-	revolt = { type = pretender_rebels leader = "Bahlul Lodi" }
-	controller = REB
-} #Second revolt of Bahlul Lodi
-1448.1.1 = {
+1414.1.1 = {
+	owner = DLH
 	controller = DLH
-	revolt = { }
-} #Bahlul Lodi returns to the Punjab
-1499.1.1 = { religion = sikhism }
-1522.1.1 = {
-	revolt = { size = 1 type = pretender_rebels leader = "Daulat Khan Lodi" }
-	controller = REB
-} #Daulat Kahn Lodi revolt
-1525.1.1 = {
-	controller = TIM owner = TIM add_core = TIM
-	revolt = { }
-} #Defects to Babur
-1526.4.21 = {
-	owner = MUG
-	controller = MUG
-	add_core = MUG
-	remove_core = DLH
-	remove_core = TIM
-} #Battle of Panipat
+}
+1437.1.1 = {
+	owner = MUL
+	controller = MUL
+} # Captured by Langas and separated from Sultanate
+1526.1.1 = {
+	owner = SND
+	controller = SND
+	add_core = SND
+} # Conquered by Arguns
 1544.1.1 = {
 	owner = BNG
 	controller = BNG
-	add_core = BNG
-} # Sur expansion
-1553.1.1 = {
-	owner = PUN
-	controller = PUN
-	remove_core = BNG
-} #Death of Islam Shah Sur, Suri empire split
-1554.7.1 = { controller = MUG } #Humayun invades
-1554.12.1 = { owner = MUG } #Aftermath of the battle of Sirhind
-1566.1.1 = { revolt = { type = noble_rebels size = 1 } }
-1566.6.1 = { revolt = { } }
-1567.1.1 = { fort_15th = no fort_16th = yes } #Renovated and rebuilt by Akbar
+} # Sur Expansionism
+1545.1.1 = {
+	owner = SND
+	controller = SND
+} # Sher Shah dies
+1574.1.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+	remove_core = SND
+} # Integrated into Mughal Empire
 1690.1.1 = { discovered_by = ENG }
-1700.1.1 = { revolt = { type = sikhism_rebels size = 2 name = "Sikh Rebels" } }
 1707.5.12 = { discovered_by = GBR }
-1715.1.1 = { revolt = { } }
-1720.1.1 = { revolt = { type = sikhism_rebels size = 3 name = "Sikh Rebels" } } #Sikhs
 1752.1.1 = {
 	owner = AFG
 	controller = AFG
+	add_core = AFG
 	remove_core = MUG
-	revolt = { }
 }
-1758.1.1 = {
-	controller = MAR
-	add_core = GWA
-} # Held by the Peshawas
-1760.1.1 = { controller = AFG }
-1767.1.1 = {
-	owner = PUN
+1818.1.1 = {
+	owner = PUN	#Bahawalpur State
 	controller = PUN
+	add_core = PUN
+	remove_core = AFG
 }
