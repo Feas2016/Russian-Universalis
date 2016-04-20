@@ -1,0 +1,103 @@
+# Major city bonuses - granted if certain countries own certain major cities. Lost otherwise.
+# 
+# Owning the following cities grants significant pretige to whoever owns them: 
+#
+# start to 1599:	Paris
+# 1600 to 1699:		Paris, London
+# 1700 to End:		Paris, London, Amsterdam, Moscow
+#
+# NOTE: Paris exclusive to France until 1700
+#
+# Special cities:
+# Granada - Cordoba, Toledo
+#Province IDs changed
+
+# Paris is really only important for France until 1700
+city_paris = {
+	potential = {
+		owns = 183 
+		normal_or_historical_nations = yes
+		OR = {
+			tag = FRA
+			tag = ANV
+			is_year = 1700
+		}
+	}
+	trigger = {
+		owns = 183
+	}
+
+	prestige = 0.5
+}
+
+city_london = {
+	potential = {
+		owns = 236
+		normal_or_historical_nations = yes
+		is_year = 1600
+	}
+	trigger = {
+		owns = 236
+	}
+
+	prestige = 0.5
+}
+
+city_amsterdam = {
+	potential = {
+		owns = 97
+		normal_or_historical_nations = yes
+		is_year = 1700
+	}
+	trigger = { 
+		owns = 97
+	}
+
+	prestige = 0.5
+}
+
+city_moscow = {
+	potential = {
+		owns = 295
+		normal_or_historical_nations = yes
+		is_year = 1700
+	}
+	trigger = { 
+		owns = 295
+	}
+
+	prestige = 0.5
+}
+
+# Special cities for Cordoba
+city_gra_cordoba = {
+	potential = {
+		owns = 225
+		normal_or_historical_nations = yes
+		OR = {
+			tag = GRA
+			tag = ADL
+		}
+	}
+	trigger = {
+		owns = 225
+	}
+
+	prestige = 0.5
+}
+
+city_gra_toledo = {
+	potential = {
+		owns = 219
+		normal_or_historical_nations = yes
+		OR = {
+			tag = GRA
+			tag = ADL
+		}
+	}
+	trigger = {
+		owns = 219
+	}
+
+	prestige = 0.5
+}

@@ -18,24 +18,28 @@ control_caspian_sea = {
 			2214 = { owned_by = ROOT }	# Golestan
 			2199 = { owned_by = ROOT }	# Tarki
 			2208 = { owned_by = ROOT }	# Tarek
+			3476 = { owned_by = ROOT }	# Amol
+			3439 = { owned_by = ROOT }	# Talesh
 		}
 	}
 
 	trigger = {
-		417 = { owned_by = ROOT }	# Gilan
-		426 = { owned_by = ROOT } 	# Mazandaran
-		425 = { owned_by = ROOT }	# Derbent
-		421 = { owned_by = ROOT }	# Baku
-		443 = { owned_by = ROOT }	# Ustyur
-		439 = { owned_by = ROOT }	# Mangyshlak
-		465 = { owned_by = ROOT }	# Nogay
-		469 = { owned_by = ROOT }	# Ryn
-		464 = { owned_by = ROOT }	# Astrakhan
-		424 = { owned_by = ROOT }	# Ardabil
-		2349 = { owned_by = ROOT }	# Kizil-Su
-		2214 = { owned_by = ROOT }	# Golestan
-		2199 = { owned_by = ROOT }	# Tarki
-		2208 = { owned_by = ROOT }	# Tarek
+			417 = { owned_by = ROOT }	# Gilan
+			426 = { owned_by = ROOT } 	# Mazandaran
+			425 = { owned_by = ROOT }	# Derbent
+			421 = { owned_by = ROOT }	# Baku
+			443 = { owned_by = ROOT }	# Ustyur
+			439 = { owned_by = ROOT }	# Mangyshlak
+			465 = { owned_by = ROOT }	# Nogay
+			469 = { owned_by = ROOT }	# Ryn
+			464 = { owned_by = ROOT }	# Astrakhan
+			424 = { owned_by = ROOT }	# Ardabil
+			2349 = { owned_by = ROOT }	# Kizil-Su
+			2214 = { owned_by = ROOT }	# Golestan
+			2199 = { owned_by = ROOT }	# Tarki
+			2208 = { owned_by = ROOT }	# Tarek
+			3476 = { owned_by = ROOT }	# Amol
+			3439 = { owned_by = ROOT }	# Talesh
 	}
 
 	global_trade_power = 0.05
@@ -71,6 +75,25 @@ control_gibraltar_straits = {
 	global_trade_power = 0.025
 }
 
+# Control Gibraltar 2
+control_gibraltar_straits2 = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			has_country_modifier = control_gibraltar_straits
+		}
+	}
+	
+	trigger = {
+		363 = { has_great_project = suez_canal }
+		has_country_modifier = control_gibraltar_straits
+	}	
+	
+	global_trade_power = 0.025
+
+}
+
+
 # Straits of Dover
 control_dover_straits = {
 
@@ -81,7 +104,6 @@ control_dover_straits = {
 			235 = { owned_by = ROOT }
 		}
 	}
-
 	trigger = {
 		87 = { owned_by = ROOT }
 		235 = { owned_by = ROOT }
@@ -89,6 +111,8 @@ control_dover_straits = {
 
 	global_trade_power = 0.05	
 }
+
+
 
 # Med trade - Mare Nostrum
 mare_trade = {
@@ -204,4 +228,30 @@ mare_nostrum = {
 	}	
 	
 	global_trade_power = 0.05
+}
+
+# Center of Europe
+center_of_europe = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR = {
+			num_of_owned_provinces_with = { value = 1 region = south_germany_region }
+			num_of_owned_provinces_with = { value = 1 region = north_germany_region }
+			num_of_owned_provinces_with = { value = 1 region = poland_region }
+			num_of_owned_provinces_with = { value = 1 region = carpathia_region }
+		}
+	}
+
+	trigger = {
+		ROOT = { owns_or_vassal_of = 263 }
+		ROOT = { owns_or_vassal_of = 264 }
+		ROOT = { owns_or_vassal_of = 2966 }
+		ROOT = { owns_or_vassal_of = 3244 }
+		ROOT = { owns_or_vassal_of = 3257 }
+		ROOT = { owns_or_vassal_of = 3258 }
+		NOT = { overseas_provinces_percentage = 0.01 }
+	}
+
+	trade_efficiency = 0.05
+	global_trade_power = 0.10
 }
