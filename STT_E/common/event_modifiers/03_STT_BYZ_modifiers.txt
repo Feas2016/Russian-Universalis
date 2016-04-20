@@ -1,0 +1,171 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+# Written by Dorimi
+##################################################################################################
+
+byz_hexamilion = {
+	local_defensiveness = 0.25
+	icon = 7
+}
+
+byz_bride = {
+	heir_chance = 0.20
+	stability_cost_modifier = 0.1
+	icon = 7
+}
+
+byz_europe = {
+	diplomatic_reputation = 2
+	relations_decay_of_me = 0.10
+	diplomatic_upkeep = -1
+	icon = 6
+}
+
+byz_mirrors = {
+	idea_cost = -0.05
+	legitimacy = 1
+	icon = 5
+}
+
+byz_echinades = {
+	prestige_from_naval = 0.05
+	defensiveness = 0.10
+	icon = 8
+}
+
+byz_fire = {
+	naval_morale = 0.10
+	global_tax_modifier = -0.05
+	icon = 7
+}
+
+byz_senate = {
+	stability_cost_modifier = 0.15
+	core_creation = -0.1
+	diplomatic_upkeep = 1
+	icon = 2
+}
+
+byz_sacred = {
+	legitimacy = 1
+	relations_decay_of_me = 0.05
+	stability_cost_modifier = 0.10
+	global_spy_defence = -0.10
+	icon = 5
+}
+
+byz_uni = {
+	advisor_pool = 1
+	advisor_cost = -0.1
+	idea_cost = -0.05
+	global_tax_modifier = -0.05
+	icon = 9
+}
+
+byz_land = {
+	land_morale = 0.08
+	naval_morale = -0.2
+	land_forcelimit_modifier = 0.1
+	naval_forcelimit_modifier = -0.3
+	army_tradition = 0.2
+	mil_tech_cost_modifier = -0.1
+	dip_tech_cost_modifier = 0.1
+	prestige_from_land = 0.15
+	icon = 8
+}
+
+byz_navy = {
+	naval_morale = 0.08
+	land_morale = -0.2
+	land_forcelimit_modifier = -0.3
+	naval_forcelimit_modifier = 0.1
+	navy_tradition = 0.2
+	dip_tech_cost_modifier = -0.1
+	mil_tech_cost_modifier = 0.1
+	prestige_from_naval = 0.15
+	icon = 7
+}
+
+byz_council = {
+	tolerance_heretic = 1
+	relations_decay_of_me = 0.1
+	icon = 10
+}
+
+byz_council2 = {
+	global_missionary_strength = 0.03
+	missionary = 2
+	relations_decay_of_me = 0.1
+	icon = 10
+}
+
+byz_council3 = {
+	global_missionary_strength = 0.02
+	stability_cost_modifier = -0.2
+	tolerance_heretic = 1
+	global_tax_modifier = 0.1
+	relations_decay_of_me = 0.1
+	icon = 10
+}
+
+byz_ancestors = {
+	relations_decay_of_me = -0.3
+	icon = 2
+}
+
+byz_ceasar = {
+	legitimacy = 1
+	prestige = 2
+}
+#the one who restored Senate
+byz_consul = {
+	prestige_decay = -0.1
+}
+
+#the one who conquers Asia
+byz_conqueror = {
+	prestige = 1
+}
+#appoint heir
+byz_heir_adopted = {	
+	legitimacy = -0.1
+}
+
+#arrival of Gustiniani
+byz_gustiniani = {	
+	land_morale = 0.13
+	naval_morale = 0.13
+}
+
+#visiting senate sessions
+byz_forsenate = {	
+	prestige = 1
+}
+
+#visiting Uni
+byz_foruniver = {	
+	prestige = 1
+}
+
+byz_books = {	
+	prestige_decay = -0.1
+}
+
+#######################
+#
+# new added after 28.10.2013
+#
+#################
+
+byz_barbarium = {
+	global_spy_defence = 0.25
+	global_tax_modifier = -0.10
+}
+
+byz_callsenate = {
+	global_tax_modifier = -0.05
+	stability_cost_modifier = -0.50
+	prestige = -1
+}
+
+

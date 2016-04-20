@@ -1,0 +1,36 @@
+###########################################
+# Triggered modifiers for Third Rome by dorimi
+###########################################
+rus_truedynasty = {
+	potential = {
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+			tag = NOV
+			tag = VNO
+			tag = SLV
+		}
+	}
+	trigger = {
+		government = monarchy
+		religion = orthodox
+		OR = {
+			dynasty = "Рюрикович"
+			dynasty = "Годунов"
+			dynasty = "Шуйский"
+			dynasty = "Романов"
+			dynasty = "Шереметев"
+			dynasty = "Голицын"
+			dynasty = "Нарышкин"
+			dynasty = "Шогин"
+			dynasty = "Хилков"
+			dynasty = "Горчаков"
+			dynasty = "Белосельский"
+			dynasty = "Челяднин"
+			dynasty = "Потёмкин"
+		}
+	}
+	legitimacy = 1
+	tolerance_own = 1
+}
