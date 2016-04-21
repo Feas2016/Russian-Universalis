@@ -1,0 +1,55 @@
+namespace = STT_new_engine
+
+#########################
+### WESTERN
+#########################
+country_event = {
+	id = STT_new_engine.60010
+	title = STT_new_engine.NAME60010
+	desc = STT_new_engine.DESC60010
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = STT_new_engine.OPTA60010
+	}
+}
+
+country_event = {
+	id = STT_new_engine.60011
+	title = STT_new_engine.NAME60011
+	desc = STT_new_engine.DESC60011
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = STT_new_engine.OPTA60011
+	}
+}
+
+country_event = {
+	id = STT_new_engine.60012
+	title = STT_new_engine.NAME60012
+	desc = STT_new_engine.DESC60012
+	picture = WESTERNISATION_eventPicture
+    
+    is_triggered_only = yes
+    
+	trigger = {
+        ai = no
+	}
+	
+	option = {	
+		name = STT_new_engine.OPTA60012
+	}
+}

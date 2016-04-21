@@ -1,0 +1,112 @@
+namespace = STT_NAT_Austria-Hungary.
+
+country_event = {
+	id = STT_NAT_Austria-Hungary.1
+	title = "STT_NAT_Austria-Hungary.n.1"
+	desc = "STT_NAT_Austria-Hungary.de.1"
+	picture = AUSHUNG_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = AEM
+		num_of_cities = 15
+		OR = {
+			has_country_flag = civil_war
+			has_country_flag = peasant_war
+		}
+		owns_core_province = 153
+		NOT = { exists = HUN }
+		#has_spawned_rebels = pretender_rebels
+	}
+	
+	mean_time_to_happen = {
+		days = 240
+		
+
+		modifier = {
+			factor = 0.9
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.6
+			is_at_war = yes
+		}
+	}
+	
+	option = {
+		name = "STT_NAT_Austria-Hungary.a.1"
+		add_stability = 1
+		add_prestige = -50
+		change_tag = DUA
+		add_country_modifier = {
+			name = "dual_monarchy"
+			duration = -1
+		}
+		every_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			add_province_modifier = {
+				name = local_autonomy
+				duration = -1
+			}
+			add_core = HUN
+		}
+	}
+	option = {
+		name = "STT_NAT_Austria-Hungary.b.1"
+		add_stability = -1
+		add_legitimacy = -25
+		every_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			add_core = HUN
+			add_nationalism = 10
+		}
+		random_owned_province = {
+			limit = {
+				is_core = HUN
+				culture = hungarian
+			}
+			nationalist_rebels = 3
+			change_siege = 20		#so they take them quickly
+		}
+		
+	}
+}
+
+country_event = {
+	id = STT_NAT_Austria-Hungary.2
+	title = "STT_NAT_Austria-Hungary.n.2"
+	desc = "STT_NAT_Austria-Hungary.de.2"
+	picture = AUSHUNG_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = DUA
+		NOT = { exists = HAB }
+		NOT = { exists = AEM }
+		NOT = { any_owned_province = { culture = hungarian } }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "STT_NAT_Austria-Hungary.a.1"
+		add_stability = 1
+		add_legitimacy = 15
+		change_tag = AEM
+		remove_country_modifier = "dual_monarchy"
+	}
+}

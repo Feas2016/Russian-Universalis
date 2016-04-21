@@ -1,0 +1,65 @@
+namespace = STT_anarhy
+
+country_event = {
+	id = STT_anarhy.1	
+	title = "STT_anarhy.1.t"
+	desc = "STT_anarhy.1.d"
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+	trigger = {
+		government = anarhy_government
+		stability = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+		
+	option = {		
+		name = "STT_anarhy.1.o1"
+		ai_chance = { factor = 25 }
+		add_stability = 2
+		change_government = administrative_monarchy
+		country_event  = { id = peasants_war.6 }
+	}
+	option = {		
+		name = "STT_anarhy.1.o2"
+		ai_chance = { factor = 50 }
+		add_stability = 2
+		change_government = administrative_republic
+		country_event  = { id = peasants_war.6 }
+	}
+	option = {		
+		name = "STT_anarhy.1.o3"
+		ai_chance = { factor = 25 }
+		add_stability = 2
+		change_government = theocratic_government
+		country_event  = { id = peasants_war.6 }
+	}
+}
+country_event = {
+	id = STT_anarhy.2	
+	title = "STT_anarhy.2.t"
+	desc = "STT_anarhy.2.d"
+	picture = ACCUSATION_eventPicture
+	
+	trigger = {
+		government = anarhy_government
+	}
+	
+		mean_time_to_happen = {
+		months = 5
+	}
+	
+		option = {		
+		name = "STT_anarhy.2.o1"
+		ai_chance = { factor = 50 }
+		kill_ruler = yes
+		kill_heir = yes
+	}
+		option = {		
+		name = "STT_anarhy.2.o2"
+		ai_chance = { factor = 50 }
+		add_stability = -1
+	}
+}

@@ -1,0 +1,42 @@
+country_event = {
+	id = STT_religions.1
+	title = "STT_religions.t.1"
+	desc = "STT_religions.de.1"
+	picture = BRETSK_UNI_eventPicture
+	
+	trigger = {
+		is_year = 1590
+		NOT = { is_year = 1620 }
+		NOT = { any_owned_province = { religion = grekocatholic } }
+		ROOT = {
+			OR = { 
+				owns = 277
+				owns = 260
+				owns = 279
+				owns = 259
+				owns = 1940
+				owns = 2424
+				owns = 261
+				owns = 162
+				owns = 1952
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}	
+	
+	option = { name = "STT_religions.a.1"
+		277 = { change_religion = grekocatholic }
+		260 = { change_religion = grekocatholic }
+		279 = { change_religion = grekocatholic }
+		259 = { change_religion = grekocatholic }
+		1940 = { change_religion = grekocatholic }
+		2424 = { change_religion = grekocatholic }
+		261 = { change_religion = grekocatholic }
+		162 = { change_religion = grekocatholic }
+		1952 = { change_religion = grekocatholic }
+	}
+	
+}

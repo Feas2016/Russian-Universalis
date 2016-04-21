@@ -1,0 +1,168 @@
+namespace = stt_rus
+
+country_event = {
+	id = stt_rus.1
+	title = "stt_rus.t.1"
+	desc = "stt_rus.de.1"
+	picture = VEL_KNYAZ
+	
+	fire_only_once = yes
+	
+	trigger = {
+		primary_culture = russian
+		government = rus_government
+		government_rank = 2
+		NOT = { exists = TSR }
+		NOT = { exists = RUS }
+		NOT = { exists = SLV }
+		NOT = { tag = MOS }
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "stt_rus.a.1"
+		add_stability = 1
+		add_prestige = 60
+		add_dip_power = 50			
+		add_mil_power = 50
+	}
+}
+country_event = {
+	id = stt_rus.2
+	title = "stt_rus.t.2"
+	desc = "stt_rus.de.2"
+	picture = COSSAK_ZAZ
+	
+	trigger = {
+		tag = ZAZ
+		NOT = { government = cossack_republic }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "stt_rus.a.2"
+		change_government = cossack_republic
+		set_government_rank = 1
+		add_prestige = 10			
+		add_mil_power = 50
+	}
+}
+
+province_event = {
+	id = stt_rus.3
+	title = "stt_rus.t.3"
+	desc = "stt_rus.de.3"
+	picture = COLONIZATION_eventPicture
+		
+	trigger = {
+		has_terrain = steppe
+		owner = { technology_group = eastern }
+		culture = tartar		
+		NOT = { has_owner_culture = yes } # without eastern tartars
+		any_neighbor_province = { has_owner_culture = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	option = {
+		ai_chance = { factor = 90 }
+		name = "stt_rus.a.3"
+		change_culture = owner
+	}
+	option = {
+		name = "stt_rus.b.3"
+		ai_chance = { factor = 10 }
+		add_prestige = -10
+	}
+}
+
+province_event = {
+	id = stt_rus.4
+	title = "stt_rus.t.4"
+	desc = "stt_rus.de.4"
+	picture = COLONIZATION_eventPicture
+		
+	trigger = {
+		region = siberia_region
+		has_empty_adjacent_province = yes
+		OR = {
+			owner = { technology_group = eastern }
+			AND = {
+				owner = { technology_group = western }
+				OR = {
+					culture_group = STT_PLU
+					culture_group = STT_SLV
+					culture_group = STT_SLV
+					culture_group = south_slavic
+					culture_group = west_slavic
+					culture_group = east_slavic
+					culture_group = magyar
+					culture_group = finno_ugric
+					culture_group = byzantine
+				}
+			}
+		}
+		owner = { NOT = { num_of_colonies = 4 } }
+	}
+
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	option = {
+		ai_chance = { factor = 90 }
+		name = "stt_rus.a.4"
+		random_empty_neighbor_province = {
+			create_colony = 100
+		}
+	}
+	option = {
+		name = "stt_rus.b.4"
+		ai_chance = { factor = 10 }
+				trigger = {
+			owner = {
+			num_of_colonies = 1
+			}
+		}
+		owner = {
+			random_owned_province = {
+				limit = {
+					is_colony = yes
+				}
+				add_colonysize = 50
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = stt_rus.5
+	title = "stt_rus.t.5"
+	desc = "stt_rus.de.5"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes #off MTTH
+
+	option = { 
+		name = "stt_rus.a.5"
+		ai_chance = { factor = 90 }
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_horde_vs_civ
+		}
+	}
+	option = { 
+		name = "stt_rus.b.5"
+		ai_chance = { factor = 10 }
+		add_prestige = -10
+	}
+}

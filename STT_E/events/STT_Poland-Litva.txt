@@ -1,0 +1,347 @@
+namespace = stt_pol
+normal_or_historical_nations = yes
+
+#Poland Crown
+country_event = {
+	id = stt_pol.1
+	title = stt_pol.t.1
+	desc = stt_pol.de.1
+
+	picture = POLAND_CROWN_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = LIT
+		is_subject = no
+		NOT = { junior_union_with = POL }
+		POL = {
+			exists = yes
+			is_subject = no
+			has_regency = yes
+		}
+		NOT = { is_year = 1450 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.1
+			is_year = 1447
+		}
+		modifier = {
+			factor = 0.01
+			is_year = 1448
+		}
+		modifier = {
+			factor = 0.001
+			is_year = 1449
+		}
+	}
+	
+	option = {
+		name = stt_pol.a.1 #We must retain the Jagiellon Dynasty
+		ai_chance = {
+			factor = 90 
+		}
+		add_prestige = 5
+		POL = { 
+			create_union = ROOT
+			country_event = { days = 5 id = stt_pol.2 }
+			}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}		
+	}
+	
+	option = {
+		name = stt_pol.b.1 #Appoint a Local Noble.
+		ai_chance = { 
+			factor = 10
+		}
+		POL = {	country_event = { days = 5 id = stt_pol.3 }	}
+		MAZ = { country_event = { days = 5 id = stt_pol.4 }	}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_opinion = {
+			who = POL
+			modifier = freedom_litva_modifier
+		}
+		add_claim = 281
+	}
+}
+
+# variant 1 Poland Crown Poland
+country_event = {
+	id = stt_pol.2
+	title = stt_pol.t.2
+	desc = stt_pol.de.2
+
+	picture = POLAND_CROWN_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = stt_pol.a.2
+		ai_chance = {
+			factor = 100 
+		}		
+		add_prestige = 10
+		ROOT = { create_union = LIT	}
+		add_years_of_income = 0.3
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	}
+}
+
+# variant 2 Poland Crown Poland
+country_event = {
+	id = stt_pol.3
+	title = stt_pol.t.3
+	desc = stt_pol.de.3
+
+	picture = JAGELLON_REFUSES_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = stt_pol.a.3
+		ai_chance = {
+			factor = 80
+		}
+		add_opinion = {
+			who = LIT
+			modifier = freedom_litva_modifier
+		}
+		add_claim = 2962
+		add_claim = 279
+		define_ruler = {
+			DIP = 4
+			ADM = 4
+			MIL = 4
+			claim = 60
+		}
+		change_government = elective_monarchy
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = stt_pol3_influence_modifier
+			influence = 10
+			duration = 7300
+		}
+	}
+	option = {	
+		name = stt_pol.b.3
+		ai_chance = {
+			factor = 20 
+		}
+		add_opinion = {
+			who = LIT
+			modifier = freedom_litva_modifier
+		}
+		add_claim = 2962
+		add_claim = 279
+		MAZ = { country_event = { days = 30 id = stt_pol.5 } }
+		create_union = MAZ
+	}
+}
+
+# variant 2 Poland Crown Mazovia
+country_event = {
+	id = stt_pol.4
+	title = stt_pol.t.4
+	desc = stt_pol.de.4
+
+	picture = JAGELLON_REFUSES_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = stt_pol.a.4
+		add_claim = 269
+		add_claim = 277
+	}
+}
+
+# variant 2 Poland Crown Mazovia Poland Union
+country_event = {
+	id = stt_pol.5
+	title = stt_pol.t.5
+	desc = stt_pol.de.5
+
+	picture = PIAST_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = stt_pol.a.5
+		POL = { create_union = MAZ }
+		add_prestige = 15
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_claim = 277
+	}
+}
+
+# King of Litva?
+country_event = {
+	id = stt_pol.6
+	title = stt_pol.t.6
+	desc = stt_pol.de.6
+
+	picture = KING_OF_POLAND_AND_LITVA_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LIT
+		is_year = 1453
+		government = monarchy
+		is_subject = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = stt_pol.a.6
+		ai_chance = {
+			factor = 75
+		}
+		add_opinion = {
+			who = POL
+			modifier = litva_can_wait_modifier
+		}
+		POL = {
+			add_opinion = {
+				who = ROOT
+				modifier = litva_can_wait_modifier
+			}
+		}
+	}
+	
+	option = {
+		name = stt_pol.b.6
+		ai_chance = {
+			factor = 25 
+		}
+		add_opinion = {
+			who = POL
+			modifier = litva_vitovt_was_right_modifier
+		}
+		remove_historical_friend = POL
+		POL = {
+			add_opinion = {
+				who = ROOT
+				modifier = litva_vitovt_was_right_modifier
+			}
+			remove_historical_friend = ROOT
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_treasury = -25
+		emperor = {
+			add_opinion = { who = ROOT modifier = empire_vitovt_was_right_modifier }
+		}
+		add_opinion = { who = emperor modifier = empire_vitovt_was_right_modifier }
+		set_country_flag = vitovt_was_right
+	}
+}
+
+# Grand coronation
+country_event = {
+	id = stt_pol.7
+	title = stt_pol.t.7
+	desc = stt_pol.de.7
+
+	picture = KING_OF_POLAND_AND_LITVA_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = LIT
+		has_country_flag = vitovt_was_right
+		government = monarchy
+		government_rank = 1
+		is_subject = no
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		clr_country_flag = vitovt_was_right
+	}
+	
+	option = {
+		name = stt_pol.a.7
+		ai_chance = {
+			factor = 75 
+		}
+		set_government_rank = 2
+		add_treasury = -150
+		add_stability = 1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}		
+		add_prestige = 10
+	}
+	
+	option = {
+		name = stt_pol.b.7
+		ai_chance = {
+			factor = 25
+		}
+		set_government_rank = 2
+		add_treasury = -25
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_prestige = 2
+	}
+}

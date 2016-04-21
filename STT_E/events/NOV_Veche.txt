@@ -1,0 +1,587 @@
+###########################
+# From Novgorod mod by Skepteroun
+###########################
+
+namespace = veche
+
+# Технические
+
+# Приглашение князя
+country_event = {
+	id = veche.1
+	title = veche.1.t
+	desc = veche.1.desc
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			change_government = knyaz_veche_republic
+			set_country_flag = knyaz_invited
+		}		
+	}
+	
+	option = {
+		ai_chance = { factor = 15 }
+		name = veche.1.a # Рязанскиий
+		trigger = {
+			exists = RYA
+			RYA = {
+				NOT = { vassal_of = GOL }
+			}
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = RYA
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				RYA = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 20 }
+		name = veche.1.b # Литовский
+		trigger = {
+			exists = LIT
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = LIT
+			modifier = knyaz_from_our_lands
+		}
+	}
+	option = {
+		ai_chance = { factor = 10 }
+		name = veche.1.c # Тверской
+		trigger = {
+			exists = TVE
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = TVE
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				TVE = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 25 }
+		name = veche.1.d # Киевский
+		trigger = {
+			exists = KIE
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = KIE
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				KIE = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+		if = {
+			limit = {
+				KIE = {
+					vassal_of = LIT
+				}
+			}
+			reverse_add_opinion = {
+				who = LIT
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 10
+				YAR = {
+					NOT = { vassal_of = MOS }
+				}
+			}
+		}
+		name = veche.1.e # Ярославский
+		trigger = {
+			exists = YAR
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = YAR
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				YAR = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 15 }
+		name = veche.1.f # Смоленский
+		trigger = {
+			exists = SMO
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = SMO
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				SMO = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+		if = {
+			limit = {
+				SMO = {
+					vassal_of = LIT
+				}
+			}
+			reverse_add_opinion = {
+				who = LIT
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 10 }
+		name = veche.1.g # Полоцкий
+		trigger = {
+			exists = PLT
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = PLT
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				PLT = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+		if = {
+			limit = {
+				PLT = {
+					vassal_of = LIT
+				}
+			}
+			reverse_add_opinion = {
+				who = LIT
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 10 }
+		name = veche.1.h # Черниговский
+		trigger = {
+			exists = CHR
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = CHR
+			modifier = knyaz_from_our_lands
+		}
+		if = {
+			limit = {
+				CHR = {
+					vassal_of = MOS
+				}
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+		if = {
+			limit = {
+				CHR = {
+					vassal_of = LIT
+				}
+			}
+			reverse_add_opinion = {
+				who = LIT
+				modifier = knyaz_from_our_vassal_lands
+			}
+		}
+	}
+	option = {
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 25
+				MOS = {
+					vassal_of = NOV 
+				}
+			}
+		}
+		name = veche.1.i # Москвовский
+		trigger = {
+			exists = MOS
+		}
+		define_ruler = {
+		}
+		reverse_add_opinion = {
+			who = MOS
+			modifier = knyaz_from_our_lands
+		}
+	}
+	option = {
+		ai_chance = { factor = 15 }
+		name = veche.1.j # Местный
+		define_ruler = {
+		}
+		add_republican_tradition = 0.05
+	}
+}
+
+# Высылка князя
+country_event = {
+	id = veche.2
+	title = veche.2.t
+	desc = veche.2.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = veche.2.a
+		change_government = veche_republic
+		add_republican_tradition = 0.05
+		add_stability = -1
+		country_event = { id = 701 }
+	}
+}
+
+# Флавор
+
+country_event = {
+	id = veche.100
+	title = veche.100.t
+	desc = veche.100.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+		government = knyaz_veche_republic
+		OR = {
+			NOT = { has_country_flag = knyaz_asked_about_residention }
+			had_country_flag = { flag = knyaz_asked_about_residention days = 4380 }
+		}
+		NOT = { has_country_flag = knyaz_residention_in_novgorod }
+	}
+	
+	mean_time_to_happen = {
+		months = 96
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = veche.100.a # Позволить это
+		add_republican_tradition = -0.15
+		add_prestige = 10
+		310 = {
+			add_base_tax = 1
+		}
+		set_country_flag = knyaz_residention_in_novgorod
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = veche.100.b # No.
+		add_republican_tradition = 0.05
+		set_country_flag = knyaz_asked_about_residention
+	}
+}
+
+country_event = {
+	id = veche.101
+	title = veche.101.t
+	desc = veche.101.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = knyaz_veche_republic
+		OR = {
+			NOT = { has_country_flag = merchants_against_knyaz }
+			had_country_flag = { flag = merchants_against_knyaz days = 1460 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 144
+		
+		modifier = {
+			factor = 0.5
+			faction_in_power = mr_aristocrats
+		}
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { republican_tradition = 0.65 }
+		}
+	}
+	
+	option = {
+		name = veche.101.a
+		add_stability = -1
+		set_country_flag = merchants_against_knyaz
+	}
+}
+
+country_event = {
+	id = veche.102
+	title = veche.101.t
+	desc = veche.102.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = knyaz_veche_republic
+		OR = {
+			NOT = { has_country_flag = merchants_against_knyaz_2 }
+			had_country_flag = { flag = merchants_against_knyaz_2 days = 1460 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.5
+			faction_in_power = mr_aristocrats
+		}
+	}
+	
+	option = {
+		ai_chance = {
+			factor = 65
+		}
+		name = veche.102.a
+		add_prestige = -5
+		add_faction_influence = {
+			faction = mr_traders
+			influence = 20
+		}
+		add_country_modifier = {
+			name = "NOV_k_free_trade"
+			duration = 730
+		}
+		add_mercantilism = -0.02
+		set_country_flag = merchants_against_knyaz_2
+	}
+	option = {
+		ai_chance = {
+			factor = 35
+		}
+		name = veche.102.b
+		add_mercantilism = 0.01
+		add_prestige = 1
+	}
+}
+
+
+################
+# Кризис вечевой системы
+################
+
+#country_event = {
+#	id = veche.50
+#	title = veche.50.t
+#	desc = veche.50.d
+#	picture = DEBATE_REPUBLICAN_eventPicture
+	
+#	trigger = {
+#		NOT = { has_country_flag = crisis_of_veche }
+#		OR = {
+#			government = veche_republic
+#			government = knyaz_veche_republic
+#		}
+#		OR = {
+#			adm_tech = 12
+#			is_year = 1600
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 180
+#		
+#		modifier = {
+#			factor = 0.85
+#			NOT = { adm = 3 }
+#		}
+#		
+#		modifier = {
+#			factor = 0.75
+#			NOT = { adm = 2 }
+#		}
+#
+#		modifier = {
+#			factor = 0.65
+#			NOT = { faction_in_power = mr_aristocrats }
+#		}
+#		
+#		modifier = {
+#			factor = 0.8
+#			has_building = university
+#		}
+#	}
+#	
+#	option = {
+#		name = "veche.50.a"
+#		add_country_modifier = {
+#			name = "crisis_of_veche_modifier"
+#			duration = -1
+#		}
+#	}
+#}
+
+#country_event = {
+#	id = veche.200
+#	title = veche.200.t
+#	desc = veche.200.d
+#	picture = REFORM_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = veche.228.a
+#		change_government = reformed_veche_republic
+#	}
+#}
+
+### STT
+# Special for veche gov.
+country_event = {
+	id = veche.3
+	title = "EVTNAME700"
+	desc = 702.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#is_colonial_nation = no
+		government = knyaz_veche_republic
+		had_country_flag = { flag = knyaz_invited days = 2 }
+	}
+	
+	option = {
+		name = "EVTOPTB700"	# An administrator type
+		ai_chance = { factor = 40 }
+		change_government = veche_republic
+		define_ruler = {
+			mil = 1
+			adm = 4
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_guilds 
+			}
+			add_faction_influence = {
+				faction = mr_guilds
+				influence = 20
+			}				
+		}
+	}
+	option = {
+		name = "EVTOPTC700"	# A diplomat
+		ai_chance = { factor = 30 }
+		change_government = veche_republic
+		define_ruler = {
+			dip = 4
+			adm = 1
+			mil = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_traders 
+			}
+			add_faction_influence = {
+				faction = mr_traders
+				influence = 20
+			}				
+		}			
+	}
+	option = {
+		name = "EVTOPTD700"	# A military man
+		ai_chance = { factor = 30 }
+		change_government = veche_republic
+		define_ruler = {
+			mil = 4
+			adm = 1
+			dip = 1					
+			fixed = yes
+		}
+		if = {
+			limit = { 
+				has_faction = mr_aristocrats 
+			}
+			add_faction_influence = {
+				faction = mr_aristocrats
+				influence = 20
+			}				
+		}		
+	}
+}
