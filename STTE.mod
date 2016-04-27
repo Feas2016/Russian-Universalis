@@ -1,17 +1,16 @@
 name="[STT]Russian Universalis"
 path="mod/STT_E"
-dependencies={
-	"EU4 Russian localisation FULL"
-}
+replace_path="history/provinces"
+replace_path="common/country_tags"
 tags={
-	"Graphics"
-	"Fixes"
-	"Map"
-	"Historical"
-	"New Nations"
-	"Missions and Decisions"
-	"Translation"
-	"Events"
+ "Graphics"
+ "Fixes"
+ "Map"
+ "Historical"
+ "New Nations"
+ "Missions and Decisions"
+ "Translation"
+ "Events" 
 }
 picture="Europa_Universalis_IV_extended.png"
-supported_version="1.16.*.*"
+supported_version="1.16"

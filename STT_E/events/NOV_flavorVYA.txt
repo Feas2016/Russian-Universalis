@@ -1,0 +1,137 @@
+# From Novgorod mod by Skepteroun
+namespace = flavorVYA
+
+country_event = {
+	id = flavorVYA.1
+	title = flavorVYA.1.t
+	desc = flavorVYA.1.d
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = MOS
+			AND = {
+				NOT = { exists = MOS }
+				tag = RUS
+			}
+		}
+		VYA = {
+			OR = {
+				vassal_of = MOS
+				AND = {
+					vassal_of = RUS
+					NOT = { exists = MOS }
+				}
+			}
+			NOT = { num_of_cities = 6 }
+			has_country_flag = VYA_will_be_inherited
+			NOT = { has_ruler = "Михаил" }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+		
+		modifier = {
+			factor = 0.25
+			VYA = {
+				NOT = { num_of_cities = 3 }
+			}
+		}
+	}
+	
+	option = {
+		name = flavorVYA.1.a
+		ai_chance = {
+			factor = 80
+		}
+		inherit = VYA
+		every_owned_province = {
+				limit = {
+					is_core = VYA
+				}
+				remove_core = VYA
+		}
+	}
+	
+	option = {
+		name = flavorVYA.1.b
+		ai_chance = {
+			factor = 15
+		}
+		VYA = {
+			define_ruler = {
+				dynasty = "Рюрикович"
+				fixed = no
+			}
+		}
+	}
+	
+	option = {
+		name = flavorVYA.1.c
+		ai_chance = {
+			factor = 5
+		}
+		add_prestige = 5
+		add_legitimacy = 5
+	}
+}
+
+country_event = {
+	id = flavorVYA.2
+	title = flavorVYA.2.t
+	desc = flavorVYA.2.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+		exists = VYA
+		OR = {
+			VYA = {
+				vassal_of = MOS
+			}
+			AND = {
+				NOT = { exists = MOS }
+				vassal_of = RUS
+			}
+		}
+		VYA = {
+			NOT = { num_of_cities = 6 }
+			NOT = { has_country_flag = VYA_will_be_inherited }
+			has_ruler = "Михаил"
+			dynasty = "Рюрикович"
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 480
+		
+		modifier = {
+			factor = 0.75
+			VYA = {
+				NOT = {
+					num_of_cities = 2
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_opinion = { who = VYA value = 100 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			NOT = {
+				has_opinion = { who = VYA value = -50 }
+			}
+		}
+	}
+	
+	option = {
+		name = flavorVYA.2.a
+		add_prestige = 5
+		VYA = {
+			set_country_flag = VYA_will_be_inherited
+		}
+	}
+}
+
