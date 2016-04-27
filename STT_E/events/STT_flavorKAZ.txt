@@ -19,9 +19,9 @@ country_event = {
 		ai = yes
 		was_player = no
 		NOT = { is_year = 1520 }
-		NOT = { num_of_cities = 17 }
+		NOT = { num_of_cities = 20 }
 		OR = {
-			 OR = {
+			OR = {
 				MOS = {	
 					exists = yes 
 					num_of_cities = 10
@@ -74,61 +74,63 @@ country_event = {
 				win = yes
 			}
 		}
-		33 = {
-			# Muscovy
-			if = {
-				limit = {
-					MOS = {
-						exists = yes 
-						num_of_cities = 10
-						is_subject = no
-						is_neighbor_of = KAZ
+		random_list = {
+			50 = {
+				# Muscovy
+				if = {
+					limit = {
+						MOS = {
+							exists = yes 
+							num_of_cities = 10
+							is_subject = no
+							is_neighbor_of = KAZ
+						}
+					}
+					MOS = {	
+						country_event = { id = flavor_kaz.2 days = 3 }	
 					}
 				}
-				MOS = {	
-					country_event = { id = flavor_kaz.2 days = 3 }	
-				}
-			}
-			# TSR
-			if = {
-				limit = {
+				# TSR
+				if = {
+					limit = {
+						TSR = {	
+							exists = yes 
+							num_of_cities = 10
+							is_subject = no
+							is_neighbor_of = KAZ
+						}
+					}
 					TSR = {	
-						exists = yes 
-						num_of_cities = 10
-						is_subject = no
-						is_neighbor_of = KAZ
+						country_event = { id = flavor_kaz.2 days = 3 }	
 					}
 				}
-				TSR = {	
-					country_event = { id = flavor_kaz.2 days = 3 }	
-				}
 			}
-		}
-		33 = {
-			if = {
-				limit = {
+			30 = {
+				if = {
+					limit = {
+						CRI = {	
+							exists = yes 
+							num_of_cities = 5
+							is_subject = no
+						}
+					}
 					CRI = {	
-						exists = yes 
-						num_of_cities = 5
-						is_subject = no
+						country_event = { id = flavor_kaz.3 days = 3 }
 					}
-				}
-				CRI = {	
-					country_event = { id = flavor_kaz.3 days = 3 }
 				}
 			}
-		}
-		33 = {
-			if = {
-				limit = {
-					NOG = {	
-						exists = yes 
-						num_of_cities = 5
-						is_subject = no
+			20 = {
+				if = {
+					limit = {
+						NOG = {	
+							exists = yes 
+							num_of_cities = 5
+							is_subject = no
+						}
 					}
-				}
-				NOG = {	
-					country_event = { id = flavor_kaz.3 days = 3 }	
+					NOG = {	
+						country_event = { id = flavor_kaz.3 days = 3 }	
+					}
 				}
 			}
 		}
