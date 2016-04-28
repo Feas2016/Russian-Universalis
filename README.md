@@ -1,2 +1,2 @@
 # Russian-Universalis
-Mod for game Europa Universalis IV
+Mod for game Europa Universalis IV.
