@@ -1,0 +1,58 @@
+country_decisions = {
+	transylvanian_puppet = {
+		potential = {
+			tag = TUR
+			TRA  = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			adm_power = 100
+			stability = 1
+			is_at_war = no 
+			is_subject = false
+		}
+		effect = {
+			add_adm_power = -100
+			158 = {
+				add_core = TRA
+			}
+			157 = {
+				add_core = TRA
+			}
+			1951 = {
+				add_core = TRA
+			}
+			1952 = {
+				add_core = TRA
+			}
+			156 = {
+				add_core = TRA
+			}
+			155 = {
+				add_core = TRA
+			}
+			1953 = {
+				add_core = TRA
+			}
+			162 = {
+				add_core = TRA
+			}
+			153 = {
+				add_core = TRA
+			}
+			135 = {
+				add_core = TRA
+			}
+			1864 = {
+				add_core = TRA
+			}
+			1772 = {
+				add_core = TRA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

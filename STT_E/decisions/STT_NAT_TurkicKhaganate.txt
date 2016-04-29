@@ -1,0 +1,46 @@
+country_decisions = {
+
+	turkic_khaganate = {
+		major = yes
+		potential = {
+			NOT = { exists = TGN }
+			NOT = { tag = TUR }
+			NOT = { tag = RUS }
+			culture_group = altaic
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			stability = 2
+			prestige = 50
+			owns_core_province = 465
+			owns_core_province = 466
+			owns_core_province = 457
+			owns_core_province = 1082
+			owns_core_province = 476
+			owns_core_province = 739
+			owns_core_province = 715
+			owns_core_province = 2116
+			owns_core_province = 2109
+			owns_core_province = 2122
+			owns_core_province = 2747
+		}
+		effect = {
+			change_tag = TGN
+			add_prestige = 35
+			add_horde_unity = 25
+			central_asia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GOL
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 20
+	}
+	
+}
+

@@ -1,0 +1,283 @@
+country_decisions = {
+
+	# Unite Japan
+	unite_japan = {
+		major = yes
+		potential = {
+			tag  = JAP
+			government = shogunate
+			num_of_vassals = 1
+			any_country = {
+				vassal_of = JAP
+				government = daimyo
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			num_of_cities = 15
+		}
+		effect = {
+		### STT
+			change_government = the_empire_of_the_rising_sun
+			set_government_rank = 3
+			custom_tooltip = unite_japan_subject_tooltip
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						government = daimyo
+					}
+					change_government = feudal_monarchy
+					ROOT = {
+						free_vassal = PREV
+					}
+					every_owned_province = {
+						remove_core = JAP
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 20 }
+			}
+		}
+	}
+	
+	# United Japan
+	united_japan = {
+		major = yes
+		potential = {
+			tag = JAP
+			government = shogunate
+		}
+		allow = {
+			is_subject = no
+			all_country = {
+				NOT = {
+					government = daimyo
+				}
+			}
+		}
+		effect = {
+			### STT
+			change_government = the_empire_of_the_rising_sun
+			set_government_rank = 3
+			add_legitimacy = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	# United Japan
+	united_japan_daimyo = {
+		major = yes
+		potential = {
+			government = daimyo
+			OR = {
+				NOT = { exists = JAP }
+				is_subject = no
+			}
+		}
+		allow = {
+			NOT = { exists = JAP }
+			is_subject = no
+			all_country = {
+				OR = {
+					tag = ROOT
+					NOT = { government = daimyo }
+				}
+			}
+		}
+		effect = {
+			change_tag = JAP
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			### STT
+			change_government = the_empire_of_the_rising_sun
+			set_government_rank = 3
+			add_legitimacy = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+
+	# Sword Hunt
+	sword_hunt = {
+		potential = {
+			always = no
+			government = daimyo
+			NOT = {
+				has_country_modifier = sword_hunter
+				has_country_flag = sword_hunt
+			}
+		}
+		allow = {
+			stability = 3
+			legitimacy = 50
+			prestige = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = sword_hunter
+				duration = 365
+			}
+			set_country_flag = sword_hunt
+			every_country = {
+				limit = { 
+					government = daimyo 
+					NOT = {
+						has_country_modifier = sword_hunter
+					}
+				}
+				add_opinion = { who = ROOT modifier = opinion_sword_hunt }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					any_country = {
+						government = daimyo
+						OR = {
+							NOT = { has_opinion = { who = ROOT value = 0 } }
+							has_opinion = { who = ROOT value = 170 }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	# Sakoku
+	enforce_sakoku_law = {
+		potential = {
+			tag = JAP
+			NOT = { has_country_modifier = sakoku_law }
+			NOT = { has_country_flag = sakoku_law }
+			has_country_modifier = "western_trade"
+		}
+		allow = {
+			stability = 2
+			num_of_cities = 15
+			OR = {
+				legitimacy = 75
+				republican_tradition = 0.75
+			}
+			adm_power = 200
+			mil_power = 200
+			dip_power = 200
+		}
+		effect = {
+			JAP = {
+				remove_country_modifier = "western_trade"
+				add_country_modifier = {
+					name = "sakoku_law"
+					duration = -1
+				}
+				set_country_flag = sakoku_law
+			}
+			every_subject_country = {
+				limit = {
+					primary_culture = japanese
+				}
+				remove_country_modifier = "western_trade"
+				add_country_modifier = {
+					name = "sakoku_law"
+					duration = -1
+				}
+				set_country_flag = sakoku_law
+			}
+			set_global_flag = japan_is_closed
+			add_adm_power = -200
+			add_dip_power = -200
+			add_mil_power = -200
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_modifier = western_trade
+				NOT = {
+					any_owned_province = {
+						religion = catholic
+						has_missionary = no
+					}
+				}
+			}
+		}
+	}
+
+	send_western_embassy_mission = {
+		potential = {
+			always = no
+			NOT = {
+				has_global_flag = japan_is_closed
+				has_country_modifier = western_embassy_mission
+			}
+			government = daimyo
+			has_global_flag = japan_has_encountered_the_west
+			any_known_country = {
+				technology_group = western
+			}
+		}
+	
+		allow = {
+			treasury = 200
+			dip_power = 50
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = western_embassy_mission
+				duration = 3650
+			}
+			add_treasury = -200
+			add_dip_power = -50
+		}
+	}
+	
+	hire_ninjas = {
+		potential = {
+			always = no
+			government = daimyo
+			NOT = { has_country_modifier = ninjas }
+			advisor = spymaster
+		}
+	
+		allow = {
+			treasury = 100
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = ninjas
+				duration = 1825
+			}
+			add_treasury = -100
+		}
+	}
+
+}

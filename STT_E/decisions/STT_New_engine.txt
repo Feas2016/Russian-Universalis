@@ -1,0 +1,170 @@
+country_decisions = {
+
+western = {
+		major = yes
+		potential = {
+			NOT = { technology_group = western }
+			adm_tech = 12
+			any_neighbor_country = { technology_group = western }
+		}
+		allow = {
+			adm_power = 900
+			stability = 3
+			treasury = 6500
+			adm_tech = 12
+		}
+		effect = {
+			add_stability = -3
+			add_treasury = -6500
+			add_adm_power = -500
+			add_country_modifier = {
+				name = "westernised"
+				duration = 3650
+			}
+			add_ruler_modifier = {
+				name = "reformer"
+				duration = -1
+			}			
+			random_list = {
+                25 = {
+                    country_event  = { id = STT_new_engine.60010 }
+					change_technology_group = western
+					add_stability = -1
+					add_prestige = -30
+					add_adm_power = -200
+					capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 3
+                        }
+                    }
+                }
+                50 = {
+                    country_event  = { id = STT_new_engine.60011 }
+                    add_stability = -2
+                    add_prestige = -40
+					add_adm_power = -300
+					change_technology_group = western
+					capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 4
+                        }
+                    }
+                }
+                25 = {
+                    country_event  = { id = STT_new_engine.60012 }
+					add_inflation = 5
+                    add_stability = -3
+					add_prestige = -50
+					add_adm_power = -400
+					change_technology_group = western
+                    capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 5
+                        }
+                    }
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+western_unit = {
+		major = yes
+		potential = {
+			NOT = { unit_type = western }
+			technology_group = western			
+		}
+		allow = {
+			mil_power = 900
+			stability = 1
+			treasury = 2500
+			mil_tech = 12
+		}
+		effect = {
+			add_treasury = -2500
+			add_mil_power = -500
+			add_country_modifier = {
+				name = "westernised"
+				duration = 3650
+			}
+			random_list = {
+                25 = {
+                    country_event  = { id = STT_new_engine.60010 }
+					change_unit_type = western
+					add_stability = -1
+					add_prestige = -30
+					add_mil_power = -200
+					capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 3
+                        }
+                    }
+                }
+                50 = {
+                    country_event  = { id = STT_new_engine.60011 }
+                    add_stability = -2
+                    add_prestige = -40
+					add_mil_power = -300
+					change_unit_type = western
+					capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 6
+                        }
+                    }
+                }
+                25 = {
+                    country_event  = { id = STT_new_engine.60012 }
+					add_inflation = 5
+                    add_stability = -3
+					add_prestige = -50
+					add_mil_power = -400
+					change_unit_type = western
+                    capital_scope = {
+                        spawn_rebels = {
+                            type = noble_rebels
+                            size = 10
+                        }
+                    }
+                }
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+thegreat = {
+		major = yes
+		potential = {
+			NOT = { has_ruler_modifier = "forgreat" }
+			mil = 5
+			dip = 5
+			adm = 5
+		}
+		allow = {
+			has_regency = no
+			OR = {
+				mil = 5
+				dip = 5
+				adm = 5
+			}
+		}
+		effect = {
+			add_treasury = -100
+			add_dip_power = -50
+			add_ruler_modifier = {
+				name = "forgreat"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

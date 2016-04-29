@@ -1,0 +1,477 @@
+namespace = flavor_steppe
+# don_cossaks
+country_event = {
+	id = "flavor_steppe.1"
+	title = "flavor_steppe.1.t"
+	desc = "flavor_steppe.1.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 2409
+		owns_core_province = 2413
+		owns_core_province = 288
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {	
+		name = "flavor_steppe.1.a"
+			manpower = -2000
+		2409 = {
+			add_core = DON
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_don"
+			duration = -1
+			}
+			}
+		288 = {
+			add_core = DON
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_don"
+			duration = -1
+			}
+			}
+		2413 = {
+			add_core = DON
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_don"
+			duration = -1
+			}
+			}
+				}
+		}
+
+}
+# zaz_cossaks
+country_event = {
+	id = "flavor_steppe.2"
+	title = "flavor_steppe.2.t"
+	desc = "flavor_steppe.2.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = LIT
+		tag = POL
+		tag = PLC
+		}
+		owns_core_province = 283
+		owns_core_province = 2411
+		owns_core_province = 290
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {	
+		name = "flavor_steppe.2.a"
+			manpower = -1000
+		283 = {
+			add_core = ZAZ
+			change_culture = ruthenian
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_zaz"
+			duration = -1
+			}
+			}
+		2411 = {
+			add_core = ZAZ
+			change_culture = ruthenian
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_zaz"
+			duration = -1
+			}
+			}
+		290 = {
+			add_core = ZAZ
+			change_culture = ruthenian
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_zaz"
+			duration = -1
+			}
+			}
+				}
+		}
+}
+# ural_cossaks
+country_event = {
+	id = "flavor_steppe.3"
+	title = "flavor_steppe.3.t"
+	desc = "flavor_steppe.3.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 474
+		owns_core_province = 2365
+		owns_core_province = 2367
+		owns_core_province = 469
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {	
+		name = "flavor_steppe.3.a"
+			manpower = -1000
+		474 = {
+			add_core = YAK
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+		2365 = {
+			add_core = YAK
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+		469 = {
+			add_core = YAK
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+		2367 = {
+			add_core = YAK
+			change_culture = russian
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+				}
+		}
+
+}
+# sibir_cossaks
+country_event = {
+	id = "flavor_steppe.4"
+	title = "flavor_steppe.4.t"
+	desc = "flavor_steppe.4.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 1071
+		owns_core_province = 2354
+		owns_core_province = 2357
+		owns_core_province = 479
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {
+			manpower = -1000
+		name = "flavor_steppe.4.a"
+		1071 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_sibir"
+			duration = -1
+			}
+			}
+		479 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_sibir"
+			duration = -1
+			}
+			}
+		2354 = 
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_sibir"
+			duration = -1
+			}
+			}
+				}
+		2357 = 
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_sibir"
+			duration = -1
+			}
+			}
+				}
+
+		}
+}
+# terek_cossaks
+country_event = {
+	id = "flavor_steppe.5"
+	title = "flavor_steppe.5.t"
+	desc = "flavor_steppe.5.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 2208
+		owns_core_province = 2199
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 15
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {	
+		name = "flavor_steppe.5.a"
+			manpower = -1000
+		2208 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_terek_kouban"
+			duration = -1
+			}
+			}
+		2199 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_terek_kouban"
+			duration = -1
+			}
+			}
+				}
+		}
+}
+# orenburg_cossaks
+country_event = {
+	id = "flavor_steppe.6"
+	title = "flavor_steppe.6.t"
+	desc = "flavor_steppe.6.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 2420
+		owns_core_province = 1966
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {
+			manpower = -1000
+		name = "flavor_steppe.6.a"
+		2420 = {
+			change_culture = cossack 
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+		1966 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_ural_orenburg"
+			duration = -1
+			}
+			}
+
+				}
+		}
+}
+
+# kouban_cossaks
+country_event = {
+	id = "flavor_steppe.7"
+	title = "flavor_steppe.7.t"
+	desc = "flavor_steppe.7.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		tag = RUS
+		tag = MOS
+		}
+		owns_core_province = 2414
+		owns_core_province = 286
+		owns_core_province = 287
+		NOT = { is_year = 1700 }
+	}
+	mean_time_to_happen = {
+		months = 5
+		modifier = {
+			factor = 1.25
+			stability = 3
+		}
+		modifier = {
+			factor = 0.75
+			stability = 0
+		}
+	}
+	option = {	
+		name = "flavor_steppe.7.a"
+			manpower = -2000
+		2414 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_terek_kouban"
+			duration = -1
+			}
+			}
+		286 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_terek_kouban"
+			duration = -1
+			}
+			}
+		287 = {
+			change_culture = cossack
+			change_religion = orthodox
+			add_province_modifier = {
+			name = "volnitsa_terek_kouban"
+			duration = -1
+			}
+			}
+				}
+		}
+}
+country_event = {
+	id = "flavor_steppe.8"
+	title = "flavor_steppe.8.t"
+	desc = "flavor_steppe.8.d"
+	picture = "HORDE_ON_HORSEBACK_eventPicture"
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+		AND = {
+		tag = OIR
+		government = steppe_horde
+		is_year = 1600
+		NOT = { stability = 1 }
+		}
+		AND = {
+		OR = { tag = RUS tag = MOS}
+		NOT = {
+		 OIR = exists }
+		}
+		}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {	# A stronger COUNTRY will emerge!
+		name = "flavor_steppe.8.a"
+		468 = {    change_culture = oirat
+				change_religion = vajrayana
+				add_core = KAL }
+		2417 = {    change_culture = oirat
+				change_religion = vajrayana
+				add_core = KAL }
+		2416 = {    change_culture = oirat
+				change_religion = vajrayana
+				add_core = KAL }			
+		}
+}

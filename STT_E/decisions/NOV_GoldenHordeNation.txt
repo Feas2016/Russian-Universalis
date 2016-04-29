@@ -1,0 +1,68 @@
+# From Novgorod mod by Skepteroun
+country_decisions = {
+
+	# Stub
+	restore_golden_horde = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			is_playing_custom_nation = no
+			NOT = { exists = GOL }
+			NOT = { tag = TUR }
+			NOT = { tag = RUS }
+			culture_group = altaic
+			NOT = { primary_culture = bashkir }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			stability = 2
+			legitimacy = 75
+			owns_core_province = 303
+			owns_core_province = 466
+			owns_core_province = 464
+			owns_core_province = 287
+			owns_core_province = 284
+			owns_core_province = 1778
+			owns_core_province = 1082
+			owns_core_province = 1081
+			owns_core_province = 472
+			owns_core_province = 476
+			owns_core_province = 1075
+		}
+		effect = {
+			change_tag = GOL
+			add_prestige = 35
+			add_legitimacy = 25
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GOL
+			}
+			russia_region = {
+				limit = {
+					owner = {
+						primary_culture = russian
+					}
+					culture = russian
+				}
+				add_permanent_claim = GOL
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 100
+	}
+	
+}
+

@@ -1,0 +1,120 @@
+country_decisions = {
+
+	reestablish_the_theme_system = {
+		potential = {
+			### STT
+			OR = {
+				tag = BYZ
+				tag = PQR
+				tag = ROM
+			}
+			NOT = { has_country_modifier = the_theme_system }
+			### STT
+			calc_true_if = {
+				owns = 151 # Constantinople
+				owns = 149 # Edirne
+				owns = 316 # Izmit
+				owns = 317 # Hudavendigar
+				owns = 318 # Sugla (Izmir)
+				owns = 319 # Mentese
+				owns = 322 # Kьtahya
+				owns = 323 # Konya
+				owns = 324 # Karaman
+				owns = 325 # Kastamonu
+				owns = 326 # Ankara
+				owns = 328 # Sinop
+				owns = 329 # Sivas
+				owns = 330 # Trebizond
+				owns = 327 # Adana
+				owns = 1846 # Amasya
+				owns = 1848 # Hamid
+				owns = 2296 # Biga
+				owns = 2297 # Saruhan
+				owns = 2298 # Tekke
+				owns = 2299 # Bolu
+				owns = 2300 # Bozok
+				owns = 2301 # Kayseri
+				owns = 2302 # Icel
+				owns = 2304 # Canik
+				owns = 2750 # Plovdiv
+				amount = 15
+			}
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 149 # Edirne
+			owns = 316 # Izmit
+			owns = 317 # Hudavendigar
+			owns = 318 # Sugla (Izmir)
+			owns = 319 # Mentese
+			owns = 322 # Kьtahya
+			owns = 323 # Konya
+			owns = 324 # Karaman
+			owns = 325 # Kastamonu
+			owns = 326 # Ankara
+			owns = 328 # Sinop
+			owns = 329 # Sivas
+			owns = 330 # Trebizond
+			owns = 327 # Adana
+			owns = 1846 # Amasya
+			owns = 1848 # Hamid
+			owns = 2296 # Biga
+			owns = 2297 # Saruhan
+			owns = 2298 # Tekke
+			owns = 2299 # Bolu
+			owns = 2300 # Bozok
+			owns = 2301 # Kayseri
+			owns = 2302 # Icel
+			owns = 2304 # Canik
+			owns = 2750 # Plovdiv
+		}
+		effect = {
+			149 = { change_province_name = Адрианополь rename_capital = Адрианополь }
+			316 = { change_province_name = Оптиматы rename_capital = Никомедия }
+			317 = { change_province_name = Опсикий rename_capital = Прусса }
+			318 = { change_province_name = Смирна rename_capital = Смирна }
+			319 = { change_province_name = Миляс rename_capital = Мугла }
+			322 = { change_province_name = Кютахья rename_capital = Кютахья }
+			323 = { change_province_name = Иконий rename_capital = Икониум }
+			324 = { change_province_name = Ларинда rename_capital = Ларинда }
+			325 = { change_province_name = Пафлагония rename_capital = Амастрис }
+			326 = { change_province_name = Галатия rename_capital = Анкира }
+			328 = { change_province_name = Синоп rename_capital = Синоп }
+			329 = { change_province_name = Себастия rename_capital = Себастия }
+			330 = { change_province_name = Трапезунд rename_capital = Трапезунд }
+			327 = { change_province_name = Киликея rename_capital = Атана }
+			1846 = { change_province_name = Армениакон rename_capital = Амасея }
+			1848 = { change_province_name = Анатоликон rename_capital = Амориум }
+			151 = { change_province_name = Константинополь rename_capital = Константинополь }
+			2296 = { change_province_name = Абидос rename_capital = Пигай }
+			2297 = { change_province_name = Фракиссия rename_capital = Магнисия }
+			2298 = { change_province_name = Анталья rename_capital = Анталья }
+			2299 = { change_province_name = Букеларии rename_capital = Клавдиполь}
+			2300 = { change_province_name = Каппадокия rename_capital = Тавиум }
+			2301 = { change_province_name = Харсиан rename_capital = Кесария }
+			2302 = { change_province_name = Селевкия rename_capital = Кермараг }
+			2304 = { change_province_name = Халдия rename_capital = Амиссос}
+			2750 = { change_province_name = Филиппополь rename_capital = Филиппополь}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+						
+			add_country_modifier = {
+				name = "the_theme_system"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

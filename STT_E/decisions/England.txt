@@ -1,0 +1,102 @@
+country_decisions = {
+
+	establish_british_merchant_navy = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+				### STT
+				tag = UEF
+			}
+			dip_tech = 15
+			NOT = { has_country_modifier = british_merchant_navy }
+		}
+		allow = {
+			maritime_ideas = 5
+			monthly_income = 60
+			trade_income_percentage = 0.33
+			has_idea = grand_navy
+			has_idea = national_trade_policy
+		}
+		effect = {
+			add_country_modifier = {
+				name = "british_merchant_navy"
+				duration = -1
+			}		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	acknowledge_britanna_rules_the_waves = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+				### STT
+				tag = UEF
+			}
+			NOT = { has_country_modifier = britanna_rules_the_waves }
+		}
+		allow = {
+			num_of_total_ports = 30
+			num_of_heavy_ship = 50
+			num_of_light_ship = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = "britanna_rules_the_waves"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+
+
+	designate_the_staple_port = {
+		potential = {
+			OR = {
+				tag = ENG
+				### STT
+				tag = GBR
+				tag = UEF
+			}
+			owns = 87
+			NOT = { 87 = { has_province_modifier = the_staple_port } }
+
+		}
+		allow = {
+			is_at_war = no
+			adm = 2
+			adm_power = 40
+			NOT = {
+				1744 = {
+					owned_by = ROOT
+				}
+			}
+		
+		}
+		effect = {
+			1744 = {
+				 owner = {
+					add_opinion = { who = ENG modifier = opinion_designated_staple_port }
+				}
+			}
+			add_mercantilism = 0.10
+			add_adm_power = -40
+			87 = {
+				add_province_modifier = {
+					name = "the_staple_port"
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+government = imperial_government_2
+technology_group = western
+primary_culture = greek
+culture_group_union = byzantine
+religion = orthodox
+historical_rival = TUR
+historical_rival = HLR
+historical_rival = LAE
+historical_friend = PQR
+historical_friend = BYZ
+capital = 118 # Rome
+government_rank = 3
+
+1425.7.21 = {
+	monarch = {
+		name = "Ромул Август"
+		dynasty = "Флавий"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1448.10.31 = {
+	heir = {
+		name = "Ромул Август"
+		monarch_name = "Ромул Август II"
+		dynasty = "Флавий"
+		birth_date = 1444.7.29
+		death_date = 1524.7.29
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
