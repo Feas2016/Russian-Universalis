@@ -46,6 +46,18 @@ l_russian:
  HAVE_HEIR_WITH_HIGHER_MIL_THEN: "Âîåííûå óìåíèÿ íàñëåäíèêà âûøå $VALUE|Y$"
  REMOVE_LOOT_TAG_EFFECT: "Äåðæàâà $COUNTRY|Y$ óíåñëà â êà÷åñòâå äîáû÷è $AMOUNT|Y$¤"
  REMOVE_LOOT_ENEMY_EFFECT: "Âðàãè óíåñëè â êà÷åñòâå äîáû÷è $AMOUNT|Y$¤"
+ IS_NOT_STATE: "ÍÅ ÿâëÿåòñÿ âëàäåíèåì"
+ IS_STATE: "ßâëÿåòñÿ âëàäåíèåì"
+ IS_NOT_TERRITORY: "ÍÅ ÿâëÿåòñÿ òåððèòîðèåé"
+ IS_TERRITORY: "ßâëÿåòñÿ òåððèòîðèåé"
+ HAVE_LESS_STATES_THAN: "×èñëî âëàäåíèé ìåíüøå $VALUE|Y$"
+ HAVE_MORE_STATES_THAN: "×èñëî âëàäåíèé áîëüøå $VALUE|Y$"
+ HAVE_LESS_TERRITORIES_THAN: "×èñëî òåððèòîðèé ìåíüøå $VALUE|Y$"
+ HAVE_MORE_TERRITORIES_THAN: "×èñëî òåððèòîðèé áîëüøå $VALUE|Y$"
+ HAVE_LESS_PROVINCES_IN_STATES_THAN: "×èñëî ïðîâèíöèé âî âëàäåíèè ìåíüøå $VALUE|Y$"
+ HAVE_MORE_PROVINCES_IN_STATES_THAN: "×èñëî ïðîâèíöèé âî âëàäåíèè áîëüøå $VALUE|Y$"
+ HAVE_LESS_PROVINCES_IN_TERRITORIES_THAN: "×èñëî ïðîâèíöèé íà òåððèòîðèè ìåíüøå $VALUE|Y$"
+ HAVE_MORE_PROVINCES_IN_TERRITORIES_THAN: "×èñëî ïðîâèíöèé íà òåððèòîðèè áîëüøå $VALUE|Y$"
  EXCOMMUNICATE_EFFECT: "Äåðæàâà $TARGET|Y$ îòëó÷åíà îò öåðêâè\n"
  LIFT_EXCOMMUNICATE_EFFECT: "Âîîäóøåâëåíèå îò îòëó÷åíèÿ äåðæàâû $TARGET|Y$\n"
  ADD_HISTORICAL_FRIEND_EFFECT: "Îáúÿâèòü äåðæàâó $TARGET|Y$ ñâîèì èñòîðè÷åñêèì äðóãîì\n"
@@ -137,6 +149,12 @@ l_russian:
  ADVISOR_TYPE_EMPLOYED_0: "Íà äàííûé ìîìåíò íàíÿò $TYPE$.\n" #Example: Quartermaster is currently employed
  ADVISOR_TYPE_EMPLOYED_1: "Íà äàííûé ìîìåíò íàíÿò $TYPE$ ($ARG0$ êóëüòóðà).\n" #Example: French Advisor is currently employed
  ADVISOR_TYPE_EMPLOYED_2: "Íà äàííûé ìîìåíò íàíÿò $TYPE$, èñïîâåäóþùèé $ARG1$, ($ARG0$ êóëüòóðà).\n" #Example: Protestant English Statesman is currently employed
+ ADD_SPY_NETWORK_IN: "Ðàçìåð øïèîíñêîé ñåòè â äåðæàâå $TARGET$ óâåëè÷èòñÿ íà $VAL$.\n"
+ ADD_SPY_NETWORK_FROM: "Äåðæàâà $TARGET$ óâåëè÷èò ñâîþ øïèîíñêóþ ñåòü íà $VAL$.\n"
+ HAVE_SPY_NETWORK_IN: "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ïðåâûøàåò $VAL$.\n"
+ NOT_HAVE_SPY_NETWORK_IN: "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ÍÅ ïðåâûøàåò $VAL$.\n"
+ HAVE_SPY_NETWORK_FROM: "Øïèîíñêàÿ ñåòü äåðæàâû $TARGET$ ïðåâûøàåò $VAL$.\n"
+ NOT_HAVE_SPY_NETWORK_FROM: "Øïèîíñêàÿ ñåòü äåðæàâû $TARGET$ ÍÅ ïðåâûøàåò $VAL$.\n"
  HAVENT_CLAIM: "ÍÅ èìååò ïðåòåíçèþ íà ïðîâèíöèþ "
  HAVE_CLAIM_IN: "Èìååò ïðåòåíçèþ íà ïðîâèíöèþ "
  HAVE_PERMANENT_CLAIM_IN: "Èìååò âå÷íóþ ïðåòåíçèþ íà ïðîâèíöèþ "
@@ -343,6 +361,16 @@ l_russian:
  HAS_NOT_MATCHING_RELIGION_COUNTRY: "Ñèíêðåòè÷íàÿ èëè îñíîâíàÿ âåðà äåðæàâû §Y$WHO$§! ÍÅ ñîâïàäàåò ñ ñèíêðåòè÷íîé èëè îñíîâíîé âåðîé äåðæàâû §Y$OTHER$§!"
  HAS_BEEN_DISCOVERED_YEARS: " áûëà îòêðûòà áîëåå $YEARS$ ëåò íàçàä."
  HAS_NOT_BEEN_DISCOVERED_YEARS: " ÍÅ áûëà îòêðûòà áîëåå $YEARS$ ëåò íàçàä."
+ DOES_NOT_HAVE_ATTITUDE_ABOUT: "Íå èìååò §Y$ATTITUDE$§! ìíåíèå î äåðæàâå §Y$WHO$§!"
+ HAS_ATTITUDE_ABOUT: "Èìååò §Y$ATTITUDE$§! ìíåíèå î äåðæàâå §Y$WHO$§!"
+ IS_NOT_PERMANENT_COUNTRY_CLAIM: "ÍÅ èìåþòñÿ âå÷íûå $COUNTRYADJ$èå ïðåòåíçèè."
+ IS_PERMANENT_COUNTRY_CLAIM: "Èìåþòñÿ âå÷íûå $COUNTRYADJ$èå ïðåòåíçèè."
+ DOESNT_HAVE_PERMANENT_CLAIM_ON: "ÍÅ èìåþòñÿ âå÷íûå ïðåòåíçèè íà "
+ HAS_PERMANENT_CLAIM_ON: "Èìåþòñÿ âå÷íûå ïðåòåíçèè íà"
+ INCREASE_DISASTER_PROGRESS_EFFECT: "Ïðîãðåññ áåäñòâèÿ §Y$DISASTER$§! óâåëè÷åí íà §R$VALUE$§!"
+ DECREASE_DISASTER_PROGRESS_EFFECT: "Ïðîãðåññ áåäñòâèÿ §Y$DISASTER$§! ñíèæåí íà §G$VALUE$§!"
+ DOES_NOT_HAVE_DISASTER_PROGRESS: "Ïðîãðåññ áåäñòâèÿ $DISASTER|Y$ íèæå $VALUE|Y$"
+ HAS_DISASTER_PROGRESS: "Ïðîãðåññ áåäñòâèÿ $DISASTER|Y$ âûøå $VALUE|Y$"
  
  
  
