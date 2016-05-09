@@ -4,7 +4,7 @@ subjugate_viatka = {
 	category = MIL
 	
 	target_provinces = {
-		owned_by = VIA
+		owned_by = KHY
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -14,7 +14,7 @@ subjugate_viatka = {
 			tag = RUS
 		}
 		is_subject = no
-		VIA = {
+		KHY = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			religion_group = ROOT
@@ -26,15 +26,15 @@ subjugate_viatka = {
 	abort = {
 		OR = {
 			is_subject = yes
-			NOT = { exists = VIA }
+			NOT = { exists = KHY }
 			NOT = { religion_group = ROOT }
 		}
 	}
 	success = {
 		OR = {
-			VIA = { is_subject_of = ROOT }
+			KHY = { is_subject_of = ROOT }
 			AND = {
-				NOT = { exists = VIA }
+				NOT = { exists = KHY }
 				1079 = { owned_by = ROOT }
 			}
 		}
@@ -43,7 +43,7 @@ subjugate_viatka = {
 		factor = 5000
 		modifier = {
 			factor = 2
-			NOT = { has_opinion = { who = VIA value = 0 } }
+			NOT = { has_opinion = { who = KHY value = 0 } }
 		}
 	}
 	immediate = {
@@ -150,5 +150,183 @@ subjugate_perm = {
 		set_country_flag = perm_mission_rus
 		add_prestige = 5
 		vassalize = PRM
+	}
+}
+
+subjugate_pronsk = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = PNS
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_subject = no
+		PNS = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = pronsk_subjugated }
+		NOT = { last_mission = subjugate_pronsk }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = PNS }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			PNS = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = PNS }
+				3174 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PNS value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 3174
+				}
+			}
+			3174 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 3174
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = pronsk_subjugated
+	}
+}
+
+subjugate_odoev = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = OKA
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_subject = no
+		OKA = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = odoev_subjugated }
+		NOT = { last_mission = subjugate_odoev }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = OKA }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			OKA = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = OKA }
+				3195 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = OKA value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 3195
+				}
+			}
+			3195 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 3195
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = odoev_subjugated
 	}
 }
