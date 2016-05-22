@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 226 70 56 }
+color = { 126  203  120 }
 
 revolutionary_colors = { 5  9  5 } #Ottoman Civil Ensign
 
@@ -40,120 +40,221 @@ historical_units = {
 }
 
 monarch_names = {
-	"Mehmet #0" = 80
-	"Mustafa #0" = 80
-	"Murat #1" = 60
-	"Ahmet #0" = 60
-	"Selim #0" = 60
-	"Osman #1" = 40
-	"Mahmut #0" = 40
-	"Sьleyman #0" = 40
-	"Bayezid #0" = 20
-	"Orhan #1" = 20
-	"Abdulaziz #0" = 10
-	"Abdьlhamit #0" = 10
-	"Ibrahim #0" = 10
-	"Abdьlmecit #0" = 10
-	"Abdullah #0" = 1
-	"Cem #0" = 1
-	"Cihangir #0" = 1
-	"Alaattin #0" = 1
-	"Isa #0" = 1
-	"Musa #0" = 1
-	"Цmer #0" = 1
-	"Seyfettin #0" = 1
-	"Yakup #0" = 1
-	"Yusuf #0" = 1
-	"Giyasettin #0" = 0
-	"Numan #0" = 0
-	"Abdulrahman #0" = 0
-	"Ali #0" = 0
-	"Davut #0" = 0
-	"Hasan #0" = 0
-	"Hьseyin #0" = 0
-	"Ishak #0" = 0
-	"Kamer #0" = 0
-	"Kasim #0" = 0
-	"Korkut #0" = 0
-	"Emin #0" = 0
-	"Iskender #0" = 0
-	"Halil #0" = 0
-	"Sait #0" = 0
-	"Hamit #0" = 0
-	"Ertugrul #0" = 0
-	"Izzettin #0" = 0
-	"Nizamettin #0" = 0
-	"Sinan #0" = 0
-	"Ferhat #0" = 0
-	"Salih #0" = 0
-	"Ismail #0" = 0
-	"Cьneyt #0" = 0
-	"Bahadir #0" = 0
-	"Hizir #0" = 0
-	"Harun #0" = 0
-	"Cemal #0" = 0
-	"Inal #0" = 0
-	"Celalettin #0" = 0
-	"Ilyas #0" = 0
-	"Hayrettin #0" = 0
-	"Dursun #0" = 0
-	"Ramazan #0" = 0
-	"Recep #0" = 0
+	"Мехмед #2" = 80
+	"Мустафа #0" = 80
+	"Мурад #1" = 60
+	"Ахмед #0" = 60
+	"Селим #0" = 60
+	"Осман #1" = 40
+	"Махмуд #0" = 40
+	"Сулейман #0" = 40
+	"Баязид #0" = 20
+	"Орхан #1" = 20
+	"Абдул-Азиз #0" = 10
+	"Абдул-Хамид #0" = 10
+	"Ибрагим #0" = 10
+	"Абдул-Меджид #0" = 10
+	"Абдуллах #0" = 1
+	"Джем #0" = 1
+	"Джахангир #0" = 1
+	"Ала уд-Дин #0" = 1
+	"Иса #0" = 1
+	"Муса #0" = 1
+	"Амир #0" = 1
+	"Сейфеддин #0" = 1
+	"Якуб #0" = 1
+	"Юсуф #0" = 1
+	"Гияс уд-Дин #0" = 0
+	"Нуман #0" = 0
+	"Абдул-Рахман #0" = 0
+	"Али #0" = 0
+	"Дауд #0" = 0
+	"Хасан #0" = 0
+	"Хусейн #0" = 0
+	"Исхак #0" = 0
+	"Камар #0" = 0
+	"Касим #0" = 0
+	"Коркуд #0" = 0
+	"Эмин #0" = 0
+	"Искандер #0" = 0
+	"Халил #0" = 0
+	"Саид #0" = 0
+	"хамид #0" = 0
+	"Эртогрул #0" = 0
+	"Изз ад-дин #0" = 0
+	"Низамуддин #0" = 0
+	"Синан #0" = 0
+	"Ферхад #0" = 0
+	"Салих #0" = 0
+	"Исмаил #0" = 0
+	"Джюнейт #0" = 0
+	"Бахадыр #0" = 0
+	"Хизир #0" = 0
+	"Гарун #0" = 0
+	"Кемль #0" = 0
+	"Инал #0" = 0
+	"Джалал ад-Дин #0" = 0
+	"Ильяс #0" = 0
+	"Хайр-ад-Дин #0" = 0
+	"Дурсун #0" = 0
+	"Рамазан  #0" = 0
+	"Реджеп #0" = 0
 
-	"Hatice #0" = -1
-	"Safiye #0" = -1
-	"Zeynep #0" = -1
-	"Hьrrem #0" = -1
-	"Mihrimah #0" = -1
-	"Nurbanu #0" = -1
-	"Handan #0" = -1
-	"Alime #0" = -1
-	"Kцsem #0" = -1
-	"Hьma #0" = -1
+	"Хатидже #0" = -1
+	"Сафийе #0" = -1
+	"Зайнаб #0" = -1
+	"Хюррем #0" = -1
+	"Михримах #0" = -1
+	"Нурбану #0" = -1
+	"Хандан #0" = -1
+	"Алиме #0" = -1
+	"Кёсем #0" = -1
+	"Хюма #0" = -1
 }
 
 leader_names = {
-	Alemdar Amasyali Ayas
-	Bali Barbaros Bayram
-	Cezzar Зandarli Зelebi Cerrah Зerkes Civan Зuhadar
-	Damad Dervis Defterdar
-	Gedik Gazi Gьmьlcineli Gьrcь
-	Hadim Hekimoglu Hersekli
-	Kцprьlь Kemal Kьзьk Koca Karamanli Kцse Kara Kanijeli Kemankes Kaymak Kavalali
-	Ishak Izzed
-	Lala Lefkeli
-	Malkoз Mьezzinzade
-	Nevsehirli Nisanci
-	Oruз Uluз Osmancikli Ohrili Oflu
-	Rumi
-	Piri Pargali Piyale Pehlivan
-	Salih Sokullu Sari Silahdar Semiz Serdar
-	Topal Tayyar Turgut Tarhuncu
-	Veli
-	Yemisзi
-	Karaosmanoglu Capanoglu Pasaoglu Pasvanoglu Jalili
+	"Алемдар"
+	"Амасьяли"
+	"Аяс"
+	"Бали"
+	"Барбаросса"
+	"Байрам"
+	"Джеззар"
+	"Чандарли"
+	"Челеби"
+	"Джеррах"
+	"Черкес"
+	"Дамат"
+	"Дервис"
+	"Экрем"
+	"Гедик"
+	"Гази"
+	"Гюмюльджинели"
+	"Гюрджю"
+	"Хадим"
+	"Хекимоглу"
+	"Херсекли"
+	"Кепрюлю"
+	"Кемель"
+	"Куджук"
+	"Коджа"
+	"Караманли"
+	"Кара"
+	"Канижели"
+	"Кеманкес"
+	"Исхак"
+	"Лала"
+	"Лефкели"
+	"Мезаморто"
+	"Малькоч"
+	"Мюэззин-заде"
+	"Мелек"
+	"Невсехерли"
+	"Орух"
+	"Улуг"
+	"Османджикли"
+	"Охрили"
+	"Рум"
+	"Пири"
+	"Паргали"
+	"Пиали"
+	"Салих"
+	"Сокуллу"
+	"Сиссау"
+	"Силахдар"
+	"Семиз"
+	"Сердар"
+	"Топаль"
+	"Табаниясси"
+	"Тайяр"
+	"Драгут"
+	"Вели"
+	"Емисчи"
+	"Оздемир"
+	"Оздемироглу"
+	"Окюз"
 }
 
 ship_names = {
-	Osmaniye Orhaniye Konstantiniyye Hьdavendigar Muradiye Mesudiye Hamidiye Resadiye
-	Heybetnьma Tayyar Sultanhisar Gelibolu Alparslan Timsah Mecidiye Mahabet Ejder
-	Yunus Sivrihisar Akhisar Akka Aziziye Bereket Galata Kozlu Kuzlum Nilьfer Zuhaf
-	Ceyhan Feke Kozan Seyhan Kahta Bolvadin Dinar Ihsaniye Incehisar Sandikli Sultandagi
-	Gьdьl Haymana Kazan Kalecik Nallihan Polatli Akseki Alanya Elmali Finike Kepez Korkuteli
-	Kumluca Manavgat Serik Germiyan Saka Saruhan Aydin Kuyucak Kusadasi Nazilli Sцke Ayvalik
-	Havran Bigadiз Edremit Manyas Balya Amasra Bozьyьk Sцgьt Adakli Solhan Ahlat Gerede
-	Seben Gцynьk Bucak Gemlik Gьrsu Inegцl Ayvacik Biga Ezine Lapseki Korgun Dodurga Iskilip
-	Laзin Зivril Honaz Tavas Dicle Firat Lice Ergani Enez Ipsala Meriз Havsa Nizip Gцrele
-	Gцce Kelkit Belen Erzin Hassa Gцnen Safranbolu Ermenek Akyaka Sьrmene Vakfikebir Eregli
-	Darica Kandira Ahirli Зumra Emet Bodrum Dalaman Fethiye Milas Yatagan Malazgirt Fatsa Ьnye
-	Kadirli Findikli Arifiye Atakum Bafra Canik Carsamba Havza Kavak Ladik Terme Baykan Boyabat
-	Divrigi Kangal Saray Niksar Zile Akзaabat Maзka Of Зaykara Hayrat
+	"Кари Алемдар"
+	"Арнауд Али"
+	"Драгуд Али"
+	"Ферхад Али"
+	"Гамид Али"
+	"Юсуф Али"
+	"Карл Али"
+	"Караман Али"
+	"Макасир Али"
+	"Сейди Али"
+	"Тартар Али"
+	"Улуг Али"
+	"Селим Басти"
+	"Дермат Бей"
+	"Кара Бей"
+	"Карам Бей"
+	"Меми Бей"
+	"Осман Бей"
+	"Синиан Челеби"
+	"Мурад Дарий"
+	"Салим Дели"
+	"Насур Ферхад"
+	"Магьяр Ферхад"
+	"Насур Ферхад"
+	"Кафир Хадджи"
+	"Киафи Хадджи"
+	"Кос Хадджи"
+	"Мустафа Хадджи"
+	"Мурад Хасан"
+	"Караман Хайдер"
+	"Хиос Мехемет"
+	"Усчиуфли Меми"
+	"Кос Менд"
+	"Кари Мора"
+	"Амдджазаде Мустафа"
+	"Кадемли Мустафа"
+	"Чендерели Мустафа"
+	"Хигнау Мустафа"
+	"Ионас Осман"
+	"Пиали Осман"
+	"Пири Осман"
+	"Турсун Осман"
+	"Иосул Пиали"
+	"Алемдар Паша"
+	"Дарий Паша"
+	"Караман Паша"
+	"Челеби Рейс"
+	"Касам Рейс"
+	"Карали Рейс"
+	"Наси Рейс"
+	"Осман Рейс"
+	"Пири Рейс"
+	"Пириман Рейс"
+	"Сали Рейс"
+	"Сейди Рейс"
+	"Талатаги Рейс"
+	"Улуж Рейс"
+	"Кара Роди"
+	"Пери Селим"
+	"Кедук Сейди"
+	"Хазули Синиан"
 }
 
 army_names = {
-	"Anadolu Ordusu" "Balkan Ordusu" "Mоsоr Ordusu" "Kоrоm Ordusu" "$PROVINCE$ Ordusu"
+	"Имперская армия"
+	"Анатолийская армия"
+	"Сирийская армия"
+	"Египетская армия"
+	"Персидская армия"
+	"Венгерская армия"
+	"Австрийская армия"
+	"Крымская армия"
+	"Балканская армия"
 }
 
 fleet_names = {
-	"Karadeniz Donanmasо" "Ege Donanmasо" "Akdeniz Donanmasо" "Kоzоldeniz Donanmasо" "$PROVINCE$ Donanmasо"
+	"Черноморская эскадра"
+	"Эгейская эскадра"
+	"Сирийская эскадра"
+	"Египетская эскадра"
+	"Эскадра Красного моря"
 }

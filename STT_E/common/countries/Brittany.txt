@@ -36,96 +36,227 @@ historical_units = {
 }
 
 monarch_names = {
-	"Franзois #0" = 60
-	"Jean #4" = 40
-	"Artur #2" = 20
-	"Pierre #2" = 20
-	"Anne #0" = -10
-	"Claudine #0" = -10
-	"Henri #0" = 10
-	"Charles #1" = 5
-	"Gilles #0" = 5
-	"Richard #0" = 5
-	"Corentin #0" = 0
-	"Deniel #0" = 0
-	"Dinan #0" = 0
-	"Erwan #0" = 0
-	"Gaлl #0" = 0
-	"Gwenaлl #0" = 0
-	"Gwenneg #0" = 0
-	"Gwilherm #0" = 0
-	"Iouennic #0" = 0
-	"Loпc #0" = 0
-	"Maeldan #0" = 0
-	"Mikael #0" = 0
-	"Olier #0" = 0
-	"Padrig #0" = 0
-	"Paol #0" = 0
-	"Patern #0" = 0
-	"Pier #0" = 0
-	"Primel #0" = 0
-	"Roparzh #0" = 0
-	"Servan #0" = 0
-	"Similien #0" = 0
-	"Sklaer #0" = 0
-	"Sulio #0" = 0
-	"Uuinmael #0" = 0
-	"Venec #0" = 0
-	"Visant #0" = 0
-	"Vonig #0" = 0
-	"Vougay #0" = 0
-	"Winifrid #0" = 0
-	"Yann #0" = 0
+	"Франсуа #0" = 60
+	"Жан #4" = 40
+	"Артур #2" = 20
+	"Пьер #2" = 20
+	"Анна #0" = -10
+	"Клодин #0" = -10
+	"Генрих #0" = 10
+	"Карл #1" = 5
+	"Жиль #0" = 5
+	"Ричард #0" = 5
+	"Корентен #0" = 0
+	"Дениель #0" = 0
+	"Динан #0" = 0
+	"Эрван #0" = 0
+	"Гаэль #0" = 0
+	"Гвенаэль #0" = 0
+	"Гвеннег #0" = 0
+	"Гвильхерм #0" = 0
+	"Иуэнник #0" = 0
+	"Луи #0" = 0
+	"Мельдан #0" = 0
+	"Микаэль #0" = 0
+	"Олье #0" = 0
+	"Падриг #0" = 0
+	"Паоль #0" = 0
+	"Патерн #0" = 0
+	"Пьер #0" = 0
+	"Примель #0" = 0
+	"Ропарж #0" = 0
+	"Серван #0" = 0
+	"Симильен #0" = 0
+	"Склаэр #0" = 0
+	"Сулио #0" = 0
+	"Уинмаэль #0" = 0
+	"Венец #0" = 0
+	"Висант #0" = 0
+	"Вониг #0" = 0
+	"Вуге #0" = 0
+	"Винфрид #0" = 0
+	"Ян #0" = 0
 }
 
 leader_names = {
-	d'Ancenis d'Angennes d'Argentrй
-	"de Bain" "de Beaudiez" "de Beaumetz" "de Boisguйhenneuc" "de Bouлtiez"
-	"de Chateaubriand" "de Chвtillon" "de Coatgoureden" "de Coлtivy" "de Coлtmen" "Couasnon de la Barilliиre" "de Craon" 
-	"de Dol"
-	d'Elbиne
-	"de Francheville"
-	"de Goulaine" "de Gourcuff"
-	"de Halgoet" "de la Haye Saint Hilaire" 
-	"Kalbean de Cardelan" "de Kerdrel" "de Kerellec" "de Kergoulay" "de Kerguenech" "de Kerguerron" "de Kersauzon" "de Kersulguen" 
-	"de Lamballe" "de Locmaria" 
-	"de Machecoule" Madec "de Malestroit" "de Mercoeur" "de Monfort"
-	"de la Nouл-Bogat"
-	"de Penguem" "de Penhoadic" "de Penthiиvre" "de Pontbriand" 
-	"de Rieux" "de Rodellec" "de Rohan" "de Roscoat" "de Rostrenen"
-	"de Saint Hoularn" "de Saint Meleuc" "de Sйvignй"
-	"de Talhouлt" "de Tasher de la Pagerie" "de Tintйriac" "de Tonquedec" "de Tournemine" "de Trйmereuc" "de la Trйmoille" "de Trogoff" "de Tromelin"
-	"de Vitrй"
+	"д'Ансени"
+	"д'Анженне"
+	"д'Аржентре"
+	"де Бен"
+	"де Бодьез"
+	"де Бомец"
+	"де Буагеэннок"
+	"де Буэтьез"
+	"де Шатобриан"
+	"де Шатийон"
+	"де Коагуреден"
+	"де Коэтиви"
+	"де Коэтмен"
+	"Куасон де ла Барийер"
+	"де Краон"
+	"де Доль"
+	"д'Эльбен"
+	"де Франшевиль"
+	"де Гулен"
+	"де Гуркуфф"
+	"де Хальгоэ"
+	"де ла Ээ Сен-Илар"
+	"Кальбен де Карделан"
+	"де Кердрель"
+	"де Кереллек"
+	"де Кергуле"
+	"де Кергенеш"
+	"де Кергеррон"
+	"де Керсозон"
+	"де Керсульген"
+	"де Ламбалль"
+	"де Локмария"
+	"де Машекуль"
+	"Мадек"
+	"де Малеструа"
+	"де Меркер"
+	"де Монфор"
+	"де ла Нуэ-Бога"
+	"де Пенгем"
+	"де Пеноадик"
+	"де Пентьевр"
+	"де Понбриан"
+	"де Рье"
+	"де Роделлек"
+	"де Роган"
+	"де Роскоа"
+	"де Ростренен"
+	"де Сен-Уларн"
+	"де Сен-Мелюк"
+	"де Севинье"
+	"де Талуэ"
+	"де Таше де ла Пажерье"
+	"де Тинтерьяк"
+	"де Тонкедек"
+	"де Турнемен"
+	"де Тремерок"
+	"де ла Тремой"
+	"де Трогофф"
+	"де Тромелен"
+	"де Витре"
 }
 
 ship_names = {
-	Achille Actif Active Admirable Aglaй
-	Aimable Alcide Algйsiras Alose Amazone
-	Ambition Amphion Anйmone Annibal Apollon
-	Argonaute Artйsien Audacieux Auguste Avenant
-	Badine Barbue Beaumont Bйcasse Belliqueux
-	Bergиre Berryer "Bien Aimй" Bienfaisant Bon
-	Bretagne Bretonne Brillant Brutus Cachй
-	Cйlиbre Centaure Chameau Comte Courageux
-	Dйfenseur Diadиme Diamant Dictateur Diligent
-	Dragon Duc Elephant Elisabeth Emerillon
-	Entreprenant Eole Fleuron Formidable Fortunй
-	Foudroyant Fougueux Fourgon Furieux Glorieux
-	"Grande Hermine" Impйtueux Indien Indomptable Jupiter
-	Lйopard Loire Massiac Neptune Nestor
-	Orion Pйgase "Petite Hermine" Portefaix Profond
-	Protйe Rolland "Saint Guillaume" Sarcelle Sйvиre
-	Six-Corps Solide Solitaire Souverain Sphиre
-	Sphinx Superbe Tardif Tйmйraire Terrible
-	Thйsйe Tonnant Triomphant Triton Union
-	Vaillant Vengeur Victoire Vigilant Volante
+	"Ашиль"
+	"Актиф"
+	"Актив"
+	"Адмирабль"
+	"Аглаэ"
+	"Эмабль"
+	"Альсид"
+	"Альжесира"
+	"Алоз"
+	"Амазон"
+	"Амбитьон"
+	"Амфьон"
+	"Анемон"
+	"Аннибаль"
+	"Аполлон"
+	"Аргонот"
+	"Артезьен"
+	"Одасие"
+	"Огюст"
+	"Авенан"
+	"Баден"
+	"Барбю"
+	"Бомон"
+	"Бекасс"
+	"Белико"
+	"Бержер"
+	"Берриэ"
+	"Бьен Эме"
+	"Бьенфесан"
+	"Бон"
+	"Бретань"
+	"Бретонн"
+	"Брийан"
+	"Брутус"
+	"Каше"
+	"Селебре"
+	"Сантур"
+	"Шамо"
+	"Комте"
+	"Кураже"
+	"Дефенсо"
+	"Диадем"
+	"Дьяман"
+	"Диктато"
+	"Дилижент"
+	"Драго"
+	"Дюк"
+	"Элефан"
+	"Элизабет"
+	"Эмерийон"
+	"Энтрепренан"
+	"Эоль"
+	"Флерон"
+	"Формидабль"
+	"Фортун"
+	"Фудройан"
+	"Фуго"
+	"Фуржон"
+	"Фурье"
+	"Глорье"
+	"Гран Эрмин"
+	"Эмпетюе"
+	"Эндьен"
+	"Эндомтабль"
+	"Жюпите"
+	"Леопар"
+	"Луар"
+	"Массиак"
+	"Нептун"
+	"Несто"
+	"Орион"
+	"Пегас"
+	"Петит Эрмин"
+	"Портефе"
+	"Профон"
+	"Проте"
+	"Роллан"
+	"Сен-Гийом"
+	"Сарсель"
+	"Север"
+	"Сикс-Корпс"
+	"Солид"
+	"Солитер"
+	"Суверен"
+	"Сфер"
+	"Сфинкс"
+	"Суперб"
+	"Тардиф"
+	"Темерер"
+	"Террибль"
+	"Тезе"
+	"Тоннан"
+	"Триомфан"
+	"Тритон"
+	"Юньон"
+	"Вайан"
+	"Ванжо"
+	"Виктуар"
+	"Вижилан"
+	"Волан"
 }
 
 army_names = {
-	 "Armйe du Trйgor"       "Armйe de Cornouaille"  "Armйe du Lйon"	 
-	 "Armйe du Vannetais"    "Armйe du Pays de Dol"  "Armйe du Pays de Saint Brieuc"
-	 "Armйe du Pays Rennais" "Armйe du Pays Nantais" "Armйe du Pays de Saint Malo"
-	 "Armйe de Broлrec"      "Armйe de Trйguier"     "Armйe de Penthiиvre"
-	 "Armйe de Porhoлt"
-	 "Armйe de $PROVINCE$" 
+	"Армия Трегора"
+	"Армия Корнуая"
+	"Армия Леона"
+	"Армия Ванна"
+	"Армия Пей-де-Доля"
+	"Армия Пей-де-Сен-Бриека"
+	"Армия Пей-Ренна"
+	"Армия Пей-Нанта"
+	"Армия Пей-де-Сен-Мало"
+	"Армия Бререка"
+	"Армия Трегие"
+	"Армия Пентьевра"
+	"Армия Порхе"
+	"Армия пров. $PROVINCE$"
 }

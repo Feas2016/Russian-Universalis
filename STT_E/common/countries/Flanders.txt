@@ -32,78 +32,89 @@ historical_units = {
 }
 
 monarch_names = {
-	"Margareta #3" = -15
-	"Filips #1" = 15
-	"Jan #0" = 15
-	"Boudewijn #9" = 5
-	"Arnolf #3" = 5
-	"Lodewijk #3" = 5
-	"Robrecht #3" = 5
-	"Willem #2" = 5
-	"Diederik #1" = 5	
-	"Gwijde #1" = 5	
-	"Karel #1" = 5
-	"Antoon #0" = 5
-	"Abraham #0" = 0
-	"Alexander #0" = 0
-	"Alfons #0" = 0
-	"Andries #0" = 0
-	"Balthasar #0" = 0
-	"Bartholomeus #0" = 0
-	"Christoffel #0" = 0
-	"Constantijn #0" = 0
-	"Cornelis #0" = 0
-	"Daniлl #0" = 0
-	"David #0" = 0
-	"Ernst #0" = 0
-	"Erwin #0" = 0
-	"Ewoud #0" = 0
-	"Floris #0" = 0
-	"Gabriel #0" = 0
-	"Godfried #0" = 0
-	"Hans #0" = 0
-	"Jacob #0" = 0
-	"Kasper #0" = 0
-	"Ludger #0" = 0
-	"Luuk #0" = 0
-	"Marinus #0" = 0
-	"Pieter #0" = 0
-	"Renate #0" = 0
-	"Rodolf #0" = 0
-	"Roeland #0" = 0
-	"Valentijn #0" = 0
+	"Маргарета #3" = -15
+	"Филипп #1" = 15
+	"Ян #0" = 15
+	"Бодуэн #9" = 5
+	"Арнульф #3" = 5
+	"Людовик #3" = 5
+	"Робрехт #3" = 5
+	"Вильгельм #2" = 5
+	"Дидерик #1" = 5
+	"Гвиде #1" = 5
+	"Карл #1" = 5
+	"Антон #0" = 5
+	"Абрахам #0" = 0
+	"Александр #0" = 0
+	"Альфонс #0" = 0
+	"Андрес #0" = 0
+	"Бальтазар #0" = 0
+	"Бартоломео #0" = 0
+	"Кристоффель #0" = 0
+	"Константин #0" = 0
+	"Корнелий #0" = 0
+	"Даниэль #0" = 0
+	"Давид #0" = 0
+	"Эрнст #0" = 0
+	"Эрвин #0" = 0
+	"Эвуд #0" = 0
+	"Флорис #0" = 0
+	"Габриэль #0" = 0
+	"Годфрид #0" = 0
+	"Ганс #0" = 0
+	"Якоб #0" = 0
+	"Каспер #0" = 0
+	"Лютгер #0" = 0
+	"Люк #0" = 0
+	"Маринус #0" = 0
+	"Питер #0" = 0
+	"Рене #0" = 0
+	"Рудольф #0" = 0
+	"Роланд #0" = 0
+	"Валентин #0" = 0
 }
 
 leader_names = {
-	Dampierre Deconinck
-	Goethals
-	Nevers
-	Penen
-	"Van Bellegem" "Van Gulik"
-	"Van Herstal" "Van Leeuwergem"
-	"Van Lichtervelde" "Van Nieuwland"
-	"Van Oudenaarde" "Van Petershem"
-	"Van Raveschoot" "Van Renesse"
+	"Дампьер"
+	"Деконинк"
+	"Гоэтальс"
+	"Невер"
+	"Пенен"
+	"ван Беллегем"
+	"ван Гулик"
+	"вен Герсталь"
+	"ван Леевергем"
+	"ван Лихтервельде"
+	"ван Ниевланд"
+	"ван Оденаарде"
+	"ван Петершем"
+	"ван Равешоот"
+	"ван Ренессе"
 }
 
 ship_names = {
-	Antwerpen
-	"Boudewijn I" Brugge
-	"De Vlaamse leeuw"
-	Gent Guldensporenslag "Gwijde van Dampierre" 
-	Hasselt
-	"Jacob van Artevelde"
-	"Karel de Goede" "Kerel van Vlaanderen"
-	Leuven
-	"Manneken Pis" Mechelen
-	"Pieter de Coninck"
-	Schelde
-	"Tijl Uilenspiegel"
-	Vlaanderen
+	"Антверпен"
+	"Бодуэн I"
+	"Брюгге"
+	"Де Вламсе леев"
+	"Гент"
+	"Гульденспоренслаг"
+	"Гвейде ван Дампьер"
+	"Хассельт"
+	"Якоб ван Артевельд"
+	"Карел де Гоеде"
+	"Карел ван Влаандерен"
+	"Левен"
+	"Маннекен Пис"
+	"Мехелен"
+	"Питер де Конинк"
+	"Шельда"
+	"Тиль Уленшпигель"
+	"Флаандерен"
 }
 
 army_names = {
-	"Leger van $PROVINCE$"  }
+  "Армия пров. $PROVINCE$" }
 
-fleet_names = {  "Vloot van $PROVINCE$" 
+fleet_names = {  "Эскадра пров. $PROVINCE$" 
 	 }

@@ -35,86 +35,150 @@ historical_units = {
 }
 
 leader_names = {
-	Adam Alexander
-	Bruce Beaton Boyd
-	Cameron Campbell Cochrane Crichton Cunynghame Crawford Carnegie Colyear
-	Douglas Duncan "de Dunbar" Dalzell Drummond
-	Erskine
-	Forbes Ferguson Fletcher Fleming
-	Gordon Graham Gilchrist
-	Hume Hepburn Hamilton
-	Johnstone
-	Knox Keith Kerr
-	Law Leslie Livingston Lindsay
-	MacKenzie MacDonald MacGregor Malise MacTaggart Montgomerie Maxwell Murray Maitland
-	Nasmyth
-	Ogilvy
-	Playfair Paterson
-	Raeburn Randolph Ruthven
-	Selkirk Strathbogie Sinclair Stewart Seton
-	Wilkie Wishart Wemyss	
+	"Адам"
+	"Александр"
+	"Брюс"
+	"Битон"
+	"Бойд"
+	"Кэмерон"
+	"Кэмпбелл"
+	"Кохрейн"
+	"Кричтон"
+	"Канингэм"
+	"Кроуфорд"
+	"Карнеги"
+	"Портмор"
+	"Дуглас"
+	"Дункан"
+	"де Дунбар"
+	"Дользель"
+	"Драммонд"
+	"Эрскин"
+	"Форбс"
+	"Фергюсон"
+	"Флетчер"
+	"Флеминг"
+	"Гордон"
+	"Грэхем"
+	"Гилкрист"
+	"Юм"
+	"Хепберн"
+	"Гамильтон"
+	"Джонстон"
+	"Нокс"
+	"Кейт"
+	"Керр"
+	"Лоу"
+	"Лесли"
+	"Ливингстон"
+	"Линдсей"
+	"МакКензи"
+	"МакДональд"
+	"МакГрегор"
+	"Мализ"
+	"МакТаггарт"
+	"Монтгомери"
+	"Маквелл"
+	"Мюррей"
+	"Майтланд"
+	"Несмит"
+	"Огилви"
+	"Плейфейр"
+	"Патерсон"
+	"Рэберн"
+	"Рэндольф"
+	"Ратвен"
+	"Селкерк"
+	"Стретбоги"
+	"Синклер"
+	"Стюарт"
+	"Сетон"
+	"Уилки"
+	"Уишарт"
+	"Уэмисс"
 }
 
 monarch_names = {
-	"James #0" = 120
-	"Robert #2" = 20
-	"Henry #0" = 20
-	"Alexander #3" = 10
-	"Arthur #0" = 10
-	"Mary #0" = -10
-	"Walter #0" = 10
-	"John #1" = 5
-	"Charles #0" = 5
-	"Malcolm #4" = 1
-	"Donald #3" = 1
-	"David #2" = 1
-	"Duncan #2" = 1
-	"Andrea #0" = 0
-	"Alan #0" = 0
-	"Ailpein #0" = 0
-	"Archibald #0" = 0
-	"Barclay #0" = 0
-	"Beathan #0" = 0
-	"Bruce #0" = 0
-	"Cameron #0" = 0
-	"Cinбed #0" = 0
-	"Conall #0" = 0
-	"Douglas #0" = 0
-	"Duff #0" = 0
-	"Edan #0" = 0
-	"Evander #0" = 0
-	"Fraser #0" = 0
-	"Garry #0" = 0
-	"Glen #0" = 0
-	"Ian #0" = 0
-	"Keir #0" = 0
-	"Kennedy #0" = 0
-	"Lennox #0" = 0
-	"Logan #0" = 0
-	"Micheil #0" = 0
-	"Mungo #0" = 0
-	"Munroe #0" = 0
-	"Scott #0" = 0
-	"Wallace #0" = 0
+	"Яков #0" = 120
+	"Роберт #2" = 20
+	"Генрих #0" = 20
+	"Александр #3" = 10
+	"Артур #0" = 10
+	"Мария #0" = -10
+	"Стюарт #0" = 10
+	"Иоанн #1" = 5
+	"Карл #0" = 5
+	"Малькольм #4" = 1
+	"Дональд #3" = 1
+	"Давид #2" = 1
+	"Дункан #2" = 1
+	"Андреа #0" = 0
+	"Алан #0" = 0
+	"Эльпин #0" = 0
+	"Арчибальд #0" = 0
+	"Барклай #0" = 0
+	"Битен #0" = 0
+	"Брюс #0" = 0
+	"Кэмерон #0" = 0
+	"Синед #0" = 0
+	"Коналл #0" = 0
+	"Дуглас #0" = 0
+	"Дафф #0" = 0
+	"Эдан #0" = 0
+	"Эвандер #0" = 0
+	"Фрейзер #0" = 0
+	"Гарри #0" = 0
+	"Глен #0" = 0
+	"Иан #0" = 0
+	"Кайр #0" = 0
+	"Кеннеди #0" = 0
+	"Леннокс #0" = 0
+	"Логан #0" = 0
+	"Майкл #0" = 0
+	"Манго #0" = 0
+	"Манро #0" = 0
+	"Скотт #0" = 0
+	"Уоллес #0" = 0
 }
 
 ship_names = {
-	Advantage "Ann of Anstruther"
-	Bonaventure Bruce
-	Charles "Christian of Boness" Christopher Cuckoo
-	Flower Fortune
-	"Good Fortune" Green-tree
-	"Great Michael"
-	James Janet "Jenny Pirwin"
-	"King's Caravel"
-	"Lamb of Leith" Lesley Lion
-	Margaret "Margaret of Peterhead" "Mary Willoughby" "Mary Walsingham" Mercury Moon Morton
-	Pelican "Prince Rupert" "Providence of Dundee"
-	"Rainbow of Dundee" Rothes
-	Salamander "St. Salvator"
-	Thistle
-	Unicorn
-	Venture
-	Wemyss
-	"Yellow Caravel"
+	"Эдвантидж"
+	"Энн оф Анстратер"
+	"Бонавентуре"
+	"Брюс"
+	"Карл"
+	"Кристиан оф Боннес"
+	"Кристофер"
+	"Кукко"
+	"Флауэр"
+	"Форчун"
+	"Гуд Форчун"
+	"Грин-три"
+	"Грейт Михаэль"
+	"Джеймс"
+	"Джанет"
+	"Дженни Пирвин"
+	"Кингс Каравел"
+	"Ламб оф Лейт"
+	"Лесли"
+	"Лайон"
+	"Маргарет"
+	"Маргарет оф Петерхед"
+	"Мэри Виллоуби"
+	"Мэри Уолсингэм"
+	"Меркури"
+	"Мун"
+	"Мортон"
+	"Пеликан"
+	"Принс Руперт"
+	"Провиденс оф Данди"
+	"Рейнбоу оф Данди"
+	"Ротсей"
+	"Саламандер"
+	"Сент-Сальватор"
+	"Фисл"
+	"Юникорн"
+	"Венчур"
+	"Уэмисс"
+	"Йеллоу Каравел"
 }

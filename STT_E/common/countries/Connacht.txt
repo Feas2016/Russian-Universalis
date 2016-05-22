@@ -33,46 +33,46 @@ historical_units = {
 }
 
 monarch_names = {
-	"Feidlimidh #1" = 40
-	"Бed #16" = 20
-	"Cathal #6" = 20
-	"Turlough #3" = 20
-	"Brian #1" = 20
-	"Tadhg #4" = 10
-	"Donal #4" = 1
-	"Aindriъ #0" = 0
-	"Alaois #0" = 0
-	"Alastar #0" = 0
-	"Alonghus #0" = 0
-	"Berach #0" = 0
-	"Bradбin #0" = 0
-	"Brennan #0" = 0
-	"Brody #0" = 0
-	"Brуnach #0" = 0
-	"Calbhach #0" = 0
-	"Caolan #0" = 0
-	"Carroll #0" = 0
-	"Ceallach #0" = 0
-	"Caerbhall #0" = 0
-	"Cian #0" = 0
-	"Conan #0" = 0
-	"Connor #0" = 0
-	"Diarmaid #0" = 0
-	"Dubhghall #0" = 0
-	"Йamonn #0" = 0
-	"Eoghan #0" = 0
-	"Fearchar #0" = 0
-	"Fearghas #0" = 0
-	"Fionnlagh #0" = 0
-	"Flann #0" = 0
-	"Gallchobhair #0" = 0
-	"Gobбn #0" = 0
-	"Grбdaigh #0" = 0
-	"Lommбn #0" = 0
-	"Maeleachlain #0" = 0
-	"Murchadha #0" = 0
-	"Naomhбn #0" = 0
-	"Niall #0" = 0
+	"Федлимиг #1" = 40
+	"Эд #16" = 20
+	"Кахал #6" = 20
+	"Турлох #3" = 20
+	"Бриан #1" = 20
+	"Тадг #4" = 10
+	"Домналл #4" = 1
+	"Анриу #0" = 0
+	"Алис #0" = 0
+	"Аластар #0" = 0
+	"Алонгус #0" = 0
+	"Берах #0" = 0
+	"Брадан #0" = 0
+	"Бреннан #0" = 0
+	"Броди #0" = 0
+	"Бронах #0" = 0
+	"Калэвах #0" = 0
+	"Килан #0" = 0
+	"Каролл #0" = 0
+	"Калах #0" = 0
+	"Керэвалл #0" = 0
+	"Киан #0" = 0
+	"Конан #0" = 0
+	"Коннор #0" = 0
+	"Диармид #0" = 0
+	"Дубгалл #0" = 0
+	"Амонн #0" = 0
+	"Оган #0" = 0
+	"Ферхар #0" = 0
+	"Фергас #0" = 0
+	"Финнлаг #0" = 0
+	"Фланн #0" = 0
+	"Галлховир #0" = 0
+	"Гобан #0" = 0
+	"Градиг #0" = 0
+	"Ломман #0" = 0
+	"Мелахлин #0" = 0
+	"Мурхага #0" = 0
+	"Ниван #0" = 0
+	"Ниалл #0" = 0
 	
 	"Bйbinn #0" = -1
 	"Fionola #0" = -1
@@ -80,28 +80,58 @@ monarch_names = {
 }
 
 leader_names = {
-	"Mac Branain" "Mac Conraoi" "Mac Cuille" "Mac Diarmada"
-	"Mac Donnchadha" "Mac Eochaidh" "Mac Maghnais"
-	"У Birn" "У Breislein" "У Cadhla" "У Caithniadh"
-	"У Cathail" "У Cearbhaill" "У Cйirнn" "У Clйirigh"
-	"У Coigligh" "У Concheannain" "У Conghailaigh" "У Cuana"
-	"У Doibhilin" "У Domhnallбin" "У Dorchaidhe" "У Diubhбin"
-	"У Dъnadhaigh" "У Fionn" "У Fionnachta" "У Fionnagбin"
-	"У Fionnбin" "У Flaithbheartach" "У Gadhra" "У hAllmhurбin"
-	"У hEaghra" "У hUigнn" "У Leannain" "У Maoldъin" "У Manachain"
-	"У Mughrбin" "У Reachtagбin" "У Seachnasaigh" "У Tarpaigh"
-	"У Tighearnaigh"
+	"Мак Бранин"
+	"Мак Конри"
+	"Мак Килле"
+	"Мак Диармада"
+	"Мак Доннхага"
+	"Мак Охиг"
+	"Мак Майнис"
+	"О'Бирн"
+	"О'Бреслен"
+	"О'Кайла"
+	"О'Кихниаг"
+	"О'Кахил"
+	"О'Кархилл"
+	"О'Керин"
+	"О'Клериг"
+	"О'Коглиг"
+	"О'Конханнин"
+	"О'Конгилиг"
+	"О'Куэна"
+	"О'Дивилин"
+	"О'Довналлин"
+	"О'Дорхиге"
+	"О'Диувин"
+	"О'Дунагиг"
+	"О'Финн"
+	"О'Финнахта"
+	"О'Финнагин"
+	"О'Финнин"
+	"О'Флихвертах"
+	"О'Гагра"
+	"О'Аллвурин"
+	"О'Агра"
+	"О'Игин"
+	"О'Леннин"
+	"О'Милдин"
+	"О'Манахин"
+	"О'Мугрин"
+	"О'Рахтегин"
+	"О'Шахнасиг"
+	"О'Тарпиг"
+	"О'Тигерниг"
 }
 
 ship_names = {
-	Athlone
-	Ballina
-	Ballinrobe
-	Ballyhaunis
-	Boyle
-	Castlebar
-	Galway
-	Connemara
-	Mayo
-	Roscommon	
+	"Атлон"
+	"Баллина"
+	"Баллинроб"
+	"Баллихаунис"
+	"Бойл"
+	"Кастлебар"
+	"Галуэй"
+	"Коннемара"
+	"Майо"
+	"Роскоммон"
 }

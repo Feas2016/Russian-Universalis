@@ -34,88 +34,166 @@ historical_units = {
 }
 
 monarch_names = {
-	"Benedictus #12" = 60
-	"Clemens #7" = 20
-	"Iohannes #22" = 10
-	"Gregorius #11" = 10
-	"Innocentius #6" = 5
-	"Urbanus #5" = 5
-	"Aimйe #0" = 0
-	"Albert #0" = 0
-	"Alexandre #0" = 0
-	"Amйdйe #0" = 0
-	"Andrй #0" = 0		
-	"Antoine #0" = 0
-	"Armand #0" = 0
-	"Arnaud #0" = 0
-	"Barthйlйmy #0" = 0
-	"Bastian #0" = 0
-	"Benoоt #0" = 0
-	"Bertrand #0" = 0
-	"Cйsar #0" = 0
-	"Charles #0" = 0
-	"Calude #0" = 0
-	"Clйment #0" = 0
-	"Denis #0" = 0
-	"Donat #0" = 0
-	"Йdouard #0" = 0
-	"Ermenegilde #0" = 0
-	"Йtienne #0" = 0
-	"Eudes #0" = 0
-	"Fabien #0" = 0
-	"Fйlix #0" = 0
-	"Grйgoire #0" = 0
-	"Honorй #0" = 0
-	"Jean #0" = 0
-	"Jean-Baptiste #0" = 0
-	"Jourdain #0" = 0
-	"Lйon #0" = 0
-	"Louis #0" = 0
-	"Paul #0" = 0
-	"Pierre #0" = 0
-	"Sylvain #0" = 0
-	
-	"Йloпse #0" = -1
-	"Florette #0" = -1
-	"Jasmine #0" = -1
+	"Бенедикт #12" = 60
+	"Климент #7" = 20
+	"Иоанн #22" = 10
+	"Григорий #11" = 10
+	"Иннокентий #6" = 5
+	"Урбан #5" = 5
+	"Эме #0" = 0
+	"Альбер #0" = 0
+	"Александр #0" = 0
+	"Амадей #0" = 0
+	"Андре #0" = 0
+	"Антуан #0" = 0
+	"Арман #0" = 0
+	"Арно #0" = 0
+	"Бартелеми #0" = 0
+	"Бастиан #0" = 0
+	"Бенуа #0" = 0
+	"Бертран #0" = 0
+	"Сезар #0" = 0
+	"Шарль #0" = 0
+	"Калюд #0" = 0
+	"Клемен #0" = 0
+	"Дени #0" = 0
+	"Дона #0" = 0
+	"Эдуар #0" = 0
+	"Эрменгильд #0" = 0
+	"Этьен #0" = 0
+	"Эд #0" = 0
+	"Фабьен #0" = 0
+	"Феликс #0" = 0
+	"Грегуар #0" = 0
+	"Оноре #0" = 0
+	"Жан #0" = 0
+	"Жан-Батист #0" = 0
+	"Журдан #0" = 0
+	"Леон #0" = 0
+	"Луи #0" = 0
+	"Поль #0" = 0
+	"Пьер #0" = 0
+	"Сильвен #0" = 0
+
+	"Алонса #0" = -1
+	"Флоретта #0" = -1
+	"Жасмин #0" = -1
 }
 
 leader_names = {
-	"d'Agoult" "d'Allemand" "des Alrics" "d'Ancйzune" "d'Artaud" "d'Astouaud"
-	"des Balbs" Balbani "de Baldoni" "de Berton de Balbes" "de Brancas"
-	"de Caritat de Condorcet" "de Cavaillon" "de Cheisolme" "de Crillon" 
-	"de Farges" "de Fontfroide" "de Fortia"
-	"de Gallйan" "de Grignan" Grimaldi 
-	Imperiali "des Isnards"
-	"de Joannis" Juliani
-	"de Lйvis" "de Libertat" "de Lopиs"
-	"de Malespine" "de Marseille-Vintimille" "de Mistral de Mondragon" "de Montauban" "de Montmorency"
-	"de Novarin"
-	"Odde de Bonniot" "d'Orange" "d'Orlйans de la Motte" 
-	"de Panisse" "de Pascalis" "Pelletier de Gigondas" "de Pйruzzi"
-	"de Raffйlis" "Raimond de Mormoiron"  Raousset
-	"de Saluces" "des Seguins"
-	Tonduti
-	"d'Urban"
-	"de Vassadel" "de Villeneuve"
+	"д'Агуль"
+	"д'Аллеман"
+	"дес Альрик"
+	"д'Энсезюн"
+	"д'Арто"
+	"д'Астуо"
+	"дес Бальб"
+	"Бальбани"
+	"де Бальдони"
+	"де Берто де Бальбе"
+	"де Бранка"
+	"де Карита де Кондорсе"
+	"де Кавайон"
+	"де Шейсольме"
+	"де Криллон"
+	"де Фарже"
+	"де Фонфруад"
+	"де Фортья"
+	"де Галлеан"
+	"де Гриньян"
+	"Гримальди"
+	"Империали"
+	"дес Иснард"
+	"де Жоанни"
+	"Жулиани"
+	"де Леви"
+	"де Либерта"
+	"де Лопе"
+	"де Малеспен"
+	"де Марсей-Винтимиль"
+	"де Мистраль де Мондрагон"
+	"де Монтобан"
+	"де Монморанси"
+	"де Новарен"
+	"Одд де Бонньо"
+	"д'Оранж"
+	"д'Орлеан де ла Мотт"
+	"де Панисс"
+	"де Паскали"
+	"Пеллетье де Жигонда"
+	"де Перуцци"
+	"де Раффели"
+	"Раймон де Мормуарон"
+	"Рауссе"
+	"де Салюсе"
+	"дес Сеген"
+	"Тондути"
+	"д'Урбан"
+	"де Вассадель"
+	"де Вильнев"
 }
 
 ship_names = {
-        "Notre Dame" "Sainte Anastasie" "Saint Andiol" "Saint Andrй" "Sainte Anne"
-        "Saint Antonin" "Saint Auban" "Saint Aubert" "Sainte Baume" "Saint Cannat"
-        "Sainte Catherine" "Sainte Cйcile" "Saint Claude" "Sainte Colombe" "Saint Cyr"
-        "Saint Edh" "Saint Etienne" "Saint Gabriel" "Saint Geniиs" "Saint Genis"
-        "Saint Hyppolyte" "Sainte Jalle" "Saint Jean" "Saint Jйrфme" "Saint Laurent"
-        "Saint Maime" "Saint Marc" "Saint Marcel" "Saint Marcellin" "Sainte Marguerite"
-        "Saintes Marie" "Saint Martin" "Saint Maurice" "Saint Maximin" "Saint Michel"
-        "Saint Pantalйon" "Saint Paul" "Saint Paul Tricastin" "Saint Pierre" "Saint Pierre Avez"
-        "Saint Rйmy" "Saint Quenin" "Saint Restitut" "Saint Rimbert" "Saint Romain"
-        "Saint Roman" "Saint Saturnin" "Saint Sauveur" "Saint Vйran" "Saint Vincent"
+	"Нотр-Дам"
+	"Сен-Анастаси"
+	"Сен-Андиоль"
+	"Сен-Андре"
+	"Сен-Анн"
+	"Сен-Антонин"
+	"Сен-Обан"
+	"Сен-Обер"
+	"Сан-Бом"
+	"Сен-Канна"
+	"Сен-Катрин"
+	"Сан-Сесиль"
+	"Сен-Клод"
+	"Сен-Коломб"
+	"Сен-Сир"
+	"Сен-Эд"
+	"Сен-Этьен"
+	"Сен-Габриэль"
+	"Сен-Женье"
+	"Сен-Жени"
+	"Сен-Ипполит"
+	"Сен-Жаль"
+	"Сен-Жан"
+	"Сен-Жером"
+	"Сен-Лоран"
+	"Сен-Мем"
+	"Сен-Марк"
+	"Сен-Марсель"
+	"Сен-Марселин"
+	"Сен-Маргерит"
+	"Сен-Мари"
+	"Сен-Мартин"
+	"Сен-Морис"
+	"Сен-Максимин"
+	"Сен-Мишель"
+	"Сен-Панталеон"
+	"Сен-Поль"
+	"Сен-Поль Трикастин"
+	"Сен-Пьер"
+	"Сен-Пьер Авез"
+	"Сен-Реми"
+	"Сен-Кенин"
+	"Сен-Реститут"
+	"Сен-Римбер"
+	"Сен-Ромен"
+	"Сен-Роман"
+	"Сен-Сатурнин"
+	"Сен-Совер"
+	"Сен-Веран"
+	"Сен-Винсен"
 }
 
 army_names = {
-         "Armйe de Saint Michel" "Armйe de Saint Georges" "Armйe de l'Archange Gabriel"
-         "Armйe de Notre Dame"   "Armйe de Saint Jacques" "Armйe de Saint Dominique"
-         "Armйe de Saint Jean"   "Armйe de Saint Maurice"
-	 "Armйe de $PROVINCE$" 
+	"Армия Св. Михаила"
+	"Армия Св. Георга"
+	"Армия архангела Гавриила"
+	"Армия Богоматери"
+	"Армия Св. Иакова"
+	"Армия Св. Доминика"
+	"Армия Св. Иоанна"
+	"Армия Св. Мориса"
+	"Армия пров. $PROVINCE$"
 }

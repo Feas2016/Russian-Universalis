@@ -32,82 +32,145 @@ historical_units = {
 	napoleonic_lancers
 }
 
-leader_names = { 
-	Bennett Bevan Bowen
-	Cadell Cadwallader
-	Daniels Davis Davies
-	Edwards Ellis Evans
-	Griffiths Gough Gwyn
-	Harris Hopkins Howells Hughes Humphries
-	James Jenkins John Jones
-	Lewis Llewellyn Lloyd
-	Madog Matthews Meredith Merrick Morgan Morris Mostyn
-	Owen
-	Parry Phillips Powell Prees Price Pritchard Protheroe Pugh
-	Rees Richards Roberts Rogers
-	Thomas
-	Vaughan
-	Watkins Williams
+leader_names = {
+	"Беннетт"
+	"Беван"
+	"Бауэн"
+	"Кэделль"
+	"Кэдвалладер"
+	"Дэниелс"
+	"Дейвис"
+	"Дэвис"
+	"Эдвардс"
+	"Эллис"
+	"Эванс"
+	"Гриффитс"
+	"Гоу"
+	"Гуин"
+	"Харрис"
+	"Хопкинс"
+	"Хауэллс"
+	"Хьюз"
+	"Хамфрис"
+	"Джеймс"
+	"Дженкинс"
+	"Джон"
+	"Джонс"
+	"Льюис"
+	"Ллиуэлин"
+	"Ллойд"
+	"Мадог"
+	"Мэтьюз"
+	"Мередит"
+	"Меррик"
+	"Морган"
+	"Моррис"
+	"Мостин"
+	"Оуэн"
+	"Перри"
+	"Филлипс"
+	"Пауэлл"
+	"Прис"
+	"Прайс"
+	"Притчард"
+	"Протеро"
+	"Пью"
+	"Рис"
+	"Ричардс"
+	"Робертс"
+	"Роджерс"
+	"Томас"
+	"Воган"
+	"Уоткинс"
+	"Уильямс"
 }
 
 monarch_names = {
-	"Owain #3" = 20
-	"Dafydd #3" = 10
-	"Gruffydd #3" = 10
-	"Llewelyn #3" = 10
-	"Rhodri #3" = 10
-	"Maredudd #2" = 10
-	"Cynan #1" = 10
-	"Cadwaladr #3" = 5
-	"Iago #3" = 5
-	"Idwal #2" = 5
-	"Maelgwyn #2" = 5
-	"Einion #1" = 5
-	"Iorwerth #1" = 5
-	"Trahaearn #1" = 5
-	"Aeron #0" = 0
-	"Aled #0" = 0
-	"Aneirin #0" = 0
-	"Arvel #0" = 0
-	"Berwyn #0" = 0
-	"Brynmor #0" = 0
-	"Cadfael #0" = 0
-	"Cadoc #0" = 0
-	"Cadwgawn #0" = 0
-	"Celyn #0" = 0
-	"Cledwyn #0" = 0
-	"Colwyn #0" = 0
-	"Dai #0" = 0
-	"Dilwyn #0" = 0
-	"Emyr #0" = 0
-	"Gawain #0" = 0
-	"Glynn #0" = 0
-	"Gwyn #0" = 0
-	"Heddwyn #0" = 0
-	"Heilyn #0" = 0
-	"Hywel #0" = 0
-	"Rhian #0" = 0
-	"Tristan #0" = 0
-	"Tudor #0" = 0
-	"Urien #0" = 0
-	"Vaughan #0" = 0
+	"Овайн #3" = 20
+	"Давит #3" = 10
+	"Грифит #3" = 10
+	"Ллиуэлин #3" = 10
+	"Родри #3" = 10
+	"Маредит #2" = 10
+	"Кинан #1" = 10
+	"Кадуаладар #3" = 5
+	"Иаго #3" = 5
+	"Идваль #2" = 5
+	"Майлгуин #2" = 5
+	"Эйнион #1" = 5
+	"Иоруэт #1" = 5
+	"Трахайарн #1" = 5
+	"Айрон #0" = 0
+	"Алед #0" = 0
+	"Анейрин #0" = 0
+	"Арвел #0" = 0
+	"Беруин #0" = 0
+	"Бринмор #0" = 0
+	"Кадвайль #0" = 0
+	"Кадок #0" = 0
+	"Кадугаун #0" = 0
+	"Келин #0" = 0
+	"Кледуин #0" = 0
+	"Колуин #0" = 0
+	"Дай #0" = 0
+	"Дилуин #0" = 0
+	"Эмир #0" = 0
+	"Гауайн #0" = 0
+	"Глинн #0" = 0
+	"Гуин #0" = 0
+	"Хетуин #0" = 0
+	"Хейлин #0" = 0
+	"Хиуэл #0" = 0
+	"Риан #0" = 0
+	"Тристан #0" = 0
+	"Тидор #0" = 0
+	"Уриэн #0" = 0
+	"Воган #0" = 0
 	
-	"Ceridwen #0" = -1
-	"Elain #0" = -1
-	"Gwenyth #0" = -1
+	"Керидвэн #0" = -1
+	"Элейна #0" = -1
+	"Гвенит #0" = -1
 }
 
 ship_names = {
-	Bedwyr Brycheiniog
-	Cadwaladr Caerdydd Caernarfon Caradoc Ceredigion Conwy Culhwch  
-	Deheubarth "Dewi Sant" Dolbadarn Dolwyddelan Dyfed
-	Eryri
-	Glywysing Gwalchmei "Gwenan Gorn" Gwydion Gwyn Gwynedd
-	Lleu "Llewellyn Fawr"
-	Mabinogi Math Meirionydd Morgannwg
-	Olwen "Owain Glyndwr"
-	Penfro Powys "Preiddeu Annwn" Pryderi Pwyll
-	Rhiannon
-	Taff Teifi Teirnon Tywi
-	"Ynys Mфn"
+	"Бедуйр"
+	"Брихейниог"
+	"Кадуаладр"
+	"Кайрдит"
+	"Кайрнарвон"
+	"Карадок"
+	"Кередигион"
+	"Конуи"
+	"Кулхух"
+	"Дехеубарт"
+	"Деуи Сант"
+	"Долбадарн"
+	"Долуйделан"
+	"Дивед"
+	"Эрири"
+	"Глиуйсинг"
+	"Гуалхмей"
+	"Гуэнан Горн"
+	"Гуидион"
+	"Гуин"
+	"Гуинет"
+	"Ллеу"
+	"Ллиуэлин Фаур"
+	"Мабиноги"
+	"Мат"
+	"Мейрионит"
+	"Морганнуг"
+	"Олуэн"
+	"Оуайн Глиндур"
+	"Пенфро"
+	"Поуис"
+	"Прейтей Аннун"
+	"Придери"
+	"Пуйлл"
+	"Рианнон"
+	"Таф"
+	"Тейви"
+	"Тейрнон"
+	"Тиуи"
+	"Инис Мон"
 }

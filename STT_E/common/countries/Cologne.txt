@@ -33,68 +33,104 @@ historical_units = {
 }
 
 monarch_names = {
-	"Hermann #3" = 40
-	"Friedrich #2" = 40
-	"Gebhard #0" = 40
-	"Adolf #2" = 20
-	"Dietrich #1" = 20
-	"Philipp #1" = 20
-	"Anton #0" = 20
-	"Anton Viktor #0" = 20
-	"Clemens August #0" = 20
-	"Ernst #0" = 20
-	"Ferdinand #0" = 20
-	"Maximilian Franz #0" = 20
-	"Maximilian Friedrich #0" = 20
-	"Maximilian Heinrich #0" = 20
-	"Joseph Clemens #0" = 20
-	"Rupprecht #0" = 20
-	"Salentin #0" = 20
-	"Engelbert #3" = 15
-	"Heinrich #2" = 15
-	"Siegfried #2" = 15
-	"Konrad #1" = 15
-	"Kuno #1" = 15
-	"Walram #1" = 15
-	"Wikbold #1" = 15
-	"Wilhelm #1" = 15
-	"Bruno #4" = 10
-	"Adam #0" = 0
-	"Alfred #0" = 0
-	"Christian #0" = 0
-	"Dominik #0" = 0
-	"Gottlob #0" = 0
-	"Gьnther #0" = 0
-	"Hans #0" = 0
-	"Hyeronimus #0" = 0
-	"Jьrgen #0" = 0
-	"Karl #0" = 0
-	"Paul #0" = 0
-	"Rudolf #0" = 0
-	"Theodor #0" = 0
-	"Tobias #0" = 0
+	"Герман #3" = 40
+	"Фридрих #2" = 40
+	"Гебхард #0" = 40
+	"Адольф #2" = 20
+	"Дитрих #1" = 20
+	"Филипп #1" = 20
+	"Антон #0" = 20
+	"Антон Виктор #0" = 20
+	"Клеменс Август #0" = 20
+	"Эрнст #0" = 20
+	"Фердинанд #0" = 20
+	"Максимилиан Франц #0" = 20
+	"Максимилиан Фридрих #0" = 20
+	"Максимилиан Генрих #0" = 20
+	"Иосиф Клеменс #0" = 20
+	"Рупрехт #0" = 20
+	"Салентин #0" = 20
+	"Энгельберт #3" = 15
+	"Генрих #2" = 15
+	"Зигфрид #2" = 15
+	"Конрад #1" = 15
+	"Куно #1" = 15
+	"Вальрам #1" = 15
+	"Викбольд #1" = 15
+	"Вильгельм #1" = 15
+	"Бруно #4" = 10
+	"Адам #0" = 0
+	"Альфред #0" = 0
+	"Христиан #0" = 0
+	"Доминик #0" = 0
+	"Готлоб #0" = 0
+	"Гюнтер #0" = 0
+	"Ганс #0" = 0
+	"Иероним #0" = 0
+	"Юрген #0" = 0
+	"Карл #0" = 0
+	"Пауль #0" = 0
+	"Рудольф #0" = 0
+	"Теодор #0" = 0
+	"Тобиас #0" = 0
 	
-	"Carina #0" = -1
-	"Diana #0" = -1
-	"Elisa #0" = -1
+	"Карина #0" = -1
+	"Диана #0" = -1
+	"Элиза #0" = -1
 }
 
 leader_names = {
-	Baten Bьhmer Bombeck Breucker Buschmann Diekmann
-	Eckrath Fischedick Fortkamp Boymann Bremer
-	Lohmann Perdekamp Grьter Hegemann Kappenberg
-	Hegemann Knьmann Leggewe Liesenfeld Limberg 
-	Glaser Lochtkemper Lohe Nathrath Ortmann 
-	Pickenbrock Sankьhler Springmann Stratmann
-	Stenkhoff "von Wedich" Wessels "von Westerburg"
+	"Батен"
+	"Бюмер"
+	"Бомбек"
+	"Бройккер"
+	"Бушман"
+	"Дикман"
+	"Экрат"
+	"Фишедик"
+	"Форткамп"
+	"Бойман"
+	"Бремер"
+	"Ломан"
+	"Пердекамп"
+	"Грютер"
+	"Хегеман"
+	"Каппенберг"
+	"Хегеман"
+	"Кнюман"
+	"Леггеве"
+	"Лисенфельд"
+	"Лимберг"
+	"Гласер"
+	"Лохткемпер"
+	"Лоэ"
+	"Натрат"
+	"Ортман"
+	"Пиккенброк"
+	"Санкюлер"
+	"Спрингман"
+	"Штратман"
+	"Штенкхофф"
+	"фон Ведих"
+	"Вессельс"
+	"фон Вестербург"
 }
 
 ship_names = {
-	"Erzbischof Brun" "Erbischof Anno" "Bischof Hildebold"
-	"Erzbischof Gunthar" "Erzbischof Gero" "Rainald von Dassel"
-	"Engelbert II" "Konrad Hochstaden" Rhein Erft Agger
+	"Эрцбишоф Брун"
+	"Эрцбишоф Анно"
+	"Бишоф Хильдебольд"
+	"Эрцбишоф Гунтар"
+	"Эрцбишоф Геро"
+	"Рейнальд фон Дассель"
+	"Энгельберт II"
+	"Конрад Гохштаден"
+	"Рейн"
+	"Эрфт"
+	"Аггер"
 }
 
 army_names = {
-	"Erzbischofliche Garde" "Armee von $PROVINCE$" 
+  "Гвардия архиепископа"
+	"Армия пров. $PROVINCE$"
 }

@@ -35,130 +35,399 @@ historical_units = {
 }
 
 monarch_names = {
-	"Christian #0" = 55
-	"Karl #0" = 50
-	"Gustav #0" = 40
-	"Fredrik #0" = 35
-	"Hеkon #0" = 30
-	"Erik #0" = 25
-	"Olav #0" = 15
-	"Gustav #0 Adolf" = 15
-	"Karl #0 Gustav" = 15
-	"Karl #0 Johan" = 15
-	"Johan #0" = 10
-	"Knut #0" = 5
-	"Harald #0" = 5
-	"Christina #0" = -15
-	"Margareta #0" = -15
-	"Ulrika #0" = -10
-	"Eleonora #0" = -5
-	"Adolf #0" = 0
-	"Alfred #0" = 0
-	"August #0" = 0
-	"Axel #0" = 0
-	"Bengt #0" = 0
-	"Birger #0" = 0
-	"Bjцrn #0" = 0
-	"Edvard #0" = 0
-	"Einar #0" = 0
-	"Folke #0" = 0
-	"Gottfrid #0" = 0
-	"Gunnar #0" = 0
-	"Henrik #0" = 0
-	"Inge #0" = 0
-	"Jakob #0" = 0
-	"Lars #0" = 0
-	"Ludvig #0" = 0
-	"Magnus #0" = 0
-	"Mikael #0" = 0
-	"Nils #0" = 0
-	"Olof #0" = 0
-	"Oskar #0" = 0
-	"Patrik #0" = 0
-	"Pontus #0" = 0
-	"Rangvald #0" = 0
-	"Rettil #0" = 0
-	"Sigismund #0" = 0
-	"Sigvard #0" = 0
-	"Simon #0" = 0
-	"Sven #0" = 0
-	"Tomas #0" = 0
-	"Ulrik #0" = 0
-	"Waldemar #0" = 0
+	"Кристиан #0" = 55
+	"Карл #0" = 50
+	"Густав #0" = 40
+	"Фредерик #0" = 35
+	"Хакон #0" = 30
+	"Эрик #0" = 25
+	"Олаф #0" = 15
+	"Густав #0 Адольф" = 15
+	"Карл #0 Густав" = 15
+	"Карл #0 Йохан" = 15
+	"Юхан #0" = 10
+	"Кнут #0" = 5
+	"Харальд #0" = 5
+	"Кристина #0" = -15
+	"Маргарита #0" = -15
+	"Ульрика #0" = -10
+	"Элеонора #0" = -5
+	"Адольф #0" = 0
+	"Альфред #0" = 0
+	"Август #0" = 0
+	"Аксель #0" = 0
+	"Бенгт #0" = 0
+	"Биргер #0" = 0
+	"Бьорн #0" = 0
+	"Эдвард #0" = 0
+	"Эйнар #0" = 0
+	"Фольке #0" = 0
+	"Готфрид #0" = 0
+	"Гуннар #0" = 0
+	"Генрих #0" = 0
+	"Инге #0" = 0
+	"Якоб #0" = 0
+	"Ларс #0" = 0
+	"Людвиг #0" = 0
+	"Магнус #0" = 0
+	"Микаэль #0" = 0
+	"Нильс #0" = 0
+	"Оскар #0" = 0
+	"Олаф #0" = 0
+	"Патрик #0" = 0
+	"Понтус #0" = 0
+	"Рангвальд #0" = 0
+	"Реттиль #0" = 0
+	"Сигизмунд #0" = 0
+	"Сигвард #0" = 0
+	"Симон #0" = 0
+	"Свен #0" = 0
+	"Томас #0" = 0
+	"Ульрик #0" = 0
+	"Вальдемар #0" = 0
 }
 	 
 leader_names = {
-	Andersson Armfeldt "von Ascheberg" Adlercreutz Adlersparre Alkmaar Anckarstrцm
-	Bagge Banйr Bielke Brahe
-	Cronstedt
-	"von Dцbeln" Dahlbergh Dufwa
-	Engelbrekt Eriksson Ehrensvдrd "von Essen" Eka Ehrenstrahl
-	Fleming "von Fersen"
- 	Gadh Grip "af Gennдs" "de la Gardie" Gyllenhielm Gathenhielm Gustavsson
-	Horn Hеrd Hahn Hastfer Hjдrne
-	Jдgerhorn
-	Kцnigsmarck Klingspor
-	Lewenhaupt Leijonhufvud Liljencrantz Lindschцld
-	Oxenstierna
-	Palmstruch Piper Prinz
-	Rehnskiцld Ribbing
-	Stenbock Sandels Skytte Sture
-	"Tre Rosor" Torstensson "af Trolle" Toll
-	Wrangel Wachtmeister Wallenberg
-	Еkerhielm
-	Adeler Ahlefeldt Akeleye Amundsen Arenstorff 
-	Bille Bolt Brockenhuus
-	Christiansen
-	Daa
-	Ebbesen Eberstein Ellbrecht 
-	Falkenskjold Fischer
-	Galt Gersdorff Gjedde Gyldenlшve Gyldenstjerne Gшye
-	Harboe Hardenberg Holstein Huitfeldt Hшegh
-	Jensen Juel
-	Krabbe Krag Krumpen Knudtzon Kvistgaard Kaas
-	Lingby Lunge Lьtzow Lшvenшrn
-	Moltke Moth Munk
-	Norby
-	Pedersen Povlsen Pallesen Pil
-	Rantzau Reventlow Rosenkrantz Rosenшrn
-	Schlentz Schack Scholten Sehested Skram
-	Thomsen "von Trampe" Trolle
-	Ulfeldt
+	"Андерссон"
+	"Армфельдт"
+	"фон Ашеберг"
+	"Адлеркрейц"
+	"Алдершпарре"
+	"Алькмаар"
+	"Анкарстрем"
+	"Багге"
+	"Банер"
+	"Бьельке"
+	"Браге"
+	"Кронштедт"
+	"фон Дебельн"
+	"Дальберг"
+	"Дуфва"
+	"Энгельбрект"
+	"Эрикссон"
+	"Эренсверд"
+	"фон Эссен"
+	"Эка"
+	"Эренстраль"
+	"Флеминг"
+	"фон Ферсен"
+	"Гад"
+	"Грип"
+	"аф Геннес"
+	"де ла Гарди"
+	"Юлленъельм"
+	"Гатенъельм"
+	"Густавссон"
+	"Горн"
+	"Герд"
+	"Хан"
+	"Хастфер"
+	"Йерне"
+	"Ягерхорн"
+	"Кенигсмарк"
+	"Клингспор"
+	"Левенгаупт"
+	"Лейюнхувуд"
+	"Лильенкранц"
+	"Линдшельд"
+	"Оксенштерна"
+	"Пальмструк"
+	"Пипер"
+	"Принц"
+	"Реншельд"
+	"Риббинг"
+	"Стенбок"
+	"Сандельс"
+	"Скютте"
+	"Стуре"
+	"Тре Росор"
+	"Торстенссон"
+	"аф Тролле"
+	"Толль"
+	"Врангель"
+	"Вахтмейстер"
+	"Валленберг"
+	"Океръельм"
+	"Аделер"
+	"Алефельдт"
+	"Акелейе"
+	"Амундсен"
+	"Аренсторфф"
+	"Билле"
+	"Больт"
+	"Броккенхус"
+	"Христиансен"
+	"Даа"
+	"Эббесен"
+	"Эберштайн"
+	"Эльбрехт"
+	"Фалькеншельд"
+	"Фишер"
+	"Гальт"
+	"Герсдорфф"
+	"Гьедде"
+	"Гильденлеве"
+	"Гильденштерн"
+	"Гейе"
+	"Харбо"
+	"Харденберг"
+	"Гольштейн"
+	"Хитфельдт"
+	"Хеег"
+	"Йенсен"
+	"Юэль"
+	"Краббе"
+	"Краг"
+	"Крумпен"
+	"Кнудсен"
+	"Квистгард"
+	"Каас"
+	"Лингбю"
+	"Лунге"
+	"Лютцов"
+	"Левенерн"
+	"Мольтке"
+	"Мот"
+	"Мунк"
+	"Норби"
+	"Педерсен"
+	"Поульсен"
+	"Паллесен"
+	"Пиль"
+	"Рантцау"
+	"Реветлев"
+	"Розенкрантц"
+	"Розенерн"
+	"Шлентц"
+	"Шак"
+	"Шолтен"
+	"Сехестед"
+	"Скрам"
+	"Томсен"
+	"фон Трампе"
+	"Тролле"
+	"Ульфельдт"
 }
 
 ship_names = {
-	Akilles Amarant Andromeda Anklam Bohus "Bцse Lejon" Calmar Camilla Carolus Charlotte Cossacken 
-	Crono-Solen Disa Drottningen Elfsborg Elisabet Engel "Engel Gabriel" 
-	Enighet Euridice Falk Fenix Finland "Flygande Wargen" Fortuna Fredrika "Fredrika Amalia" 
-	Frцija Galathe "Gamla Fortuna" "Gamla Rikssvдrdet" "Gotha Lejon" Grip Gustavus "Gyllende Lejon" 
-	Gцta Gцteborg Halland Havsfru Hektor Herkules Hieronymus Hjalmar Hцk Illerim Ingeborg Jomfru 
-	Jupiter Jдgare "Kalmar Nyckel" Kalmarkastell Karlskrona Kronan Laxen Lejon Lodbrok 
-	Mars Mercurius Morgonstjдrna Norden Nordstjдrna Nyckeln Nyland Oden Pelikanen Postillion 
-	"Prins Carl" Prinsessan Regina Rosa Skеne Smеland "St. Erik" "St. Gцran" "St. Johannes" 
-	"St. Thomas" Starkoster Stenbock Stockholm "Stora Cronan" "Svenska Falk" "Svenska Lejonet" 
-	Sverige Svдrdet Sцdermanland Tapper Thetis Tigern "Tre Kronor" Troilus Ulrica Uppland 
-	Vasen Warberg Wasa Werden Vestervik Wдstmanland Witduve Цland Цrn
-	Achilles "Arche Noa" Arken Beskjermer "Byens Lшffue" Caritas "Charlotte Amalie" 
-	Christiania Christiansand Christiansш "Christianus IV" "Christianus V" Churprindsen 
-	Concordia Cжsar Dannebroge David Delmenhorst Ditmarsken Draken "Dronning Louisa" 
-	Ebenetzer Elefanten Enighed "Engelske Fortuna" Enhiшrningen Fides Flores 
-	"Flygende Hjorten" "Fredericus III" "Fredericus IV" Fyen Gravenstein Griffe 
-	Gyldenlшve Hannibal Havfru Havhest Havmand Hector Hercules "Hertug Olufs Pincke" 
-	Hiжlperen Hjort Hшyenhald Hummer "Hvide Шrn" Hшjenhald Island Jernvеgen Jжgermester 
-	Justitia "Kongens Jagt Krone" "Kronet Fisk" Lamprenen Leopard Lindorm Loss Lovisa 
-	"Lшvendals Gallej" Makalшs Merkurius Morian Najaden Nelleblad Neptunus 
-	"Norske Lшve" Oldenborg Papegoye Patienta Pelican Phшnix "Prinds Carl" 
-	"Prinds Christian" "Prinds Wilhelm" Raae Samson Solen 
-	"Sophia Amalia" "Sophia Hedvig" "St. Georg" "St. Oluf" Stormar Stralsund 
-	Svaerdfisk Svan "Svenske Jomfru" Sшridder Tomler "To Lшver" "Tre Lшver" Trefoldighed 
-	Victoria Vindhunden Wenden Шrnen
-	Еlvik
-	Bergen
-	Engan
-	Kristiansund
-	Molde
-	Oslo
-	Roan
-	Stavanger Sula
-	Trondheim
+	"Акиллес"
+	"Амарант"
+	"Андромеда"
+	"Анклам"
+	"Бохус"
+	"Бесе Лейон"
+	"Кальмар"
+	"Камилла"
+	"Каролус"
+	"Шарлотт"
+	"Коссаккен"
+	"Кроно-Солен"
+	"Давид"
+	"Диса"
+	"Дракен"
+	"Дроттнинген"
+	"Элефантен"
+	"Эльфсборг"
+	"Элисабет"
+	"Энгель"
+	"Энгель Габриель"
+	"Энигет"
+	"Эуридис"
+	"Фальк"
+	"Феникс"
+	"Финланд"
+	"Флюганде Варген"
+	"Фортуна"
+	"Фредрика"
+	"Фредрика Амалия"
+	"Фрейя"
+	"Галате"
+	"Гамла Фортуна"
+	"Гамла Рикссвердет"
+	"Гота Лейон"
+	"Грип"
+	"Густавус"
+	"Юлленде Лейон"
+	"Гета"
+	"Гетеборг"
+	"Халланд"
+	"Хавсфру"
+	"Гектор"
+	"Геркулес"
+	"Иеронимус"
+	"Яльмар"
+	"Хек"
+	"Иллерим"
+	"Ингеборг"
+	"Йомфру"
+	"Жюпите"
+	"Йегаре"
+	"Кальмар Никкель"
+	"Кальмаркастелль"
+	"Карлскруна"
+	"Кронан"
+	"Лаксен"
+	"Леопард"
+	"Лейон"
+	"Лодброк"
+	"Марс"
+	"Меркуриус"
+	"Моргонстьерна"
+	"Норден"
+	"Нордстьерна"
+	"Никкельн"
+	"Ниланд"
+	"Оден"
+	"Пеликанен"
+	"Постиллион"
+	"Принс Карл"
+	"Принсессан"
+	"Регина"
+	"Роза"
+	"Сконе"
+	"Смоланд"
+	"Солен"
+	"Св. Эрик"
+	"Св. Геран"
+	"Св. Иоанн"
+	"Св. Томас"
+	"Старкостер"
+	"Стенбок"
+	"Стокгольм"
+	"Стора Кронан"
+	"Сван"
+	"Свенска Фальк"
+	"Свенска Лейонет"
+	"Свериге"
+	"Свердет"
+	"Седерманланд"
+	"Таппер"
+	"Тетис"
+	"Тигерн"
+	"Тре Кронор"
+	"Тройлус"
+	"Ульрика"
+	"Уппланд"
+	"Васен"
+	"Виктория"
+	"Варберг"
+	"Васа"
+	"Ванден"
+	"Верден"
+	"Вестервик"
+	"Вестманланд"
+	"Виктория"
+	"Витдуве"
+	"Эланд"
+	"Эрн"
+	"Акиллес"
+	"Арке Ноа"
+	"Аркен"
+	"Бескьермер"
+	"Бюенс Леффе"
+	"Каритас"
+	"Шарлотта Амалия"
+	"Кристиания"
+	"Кристиансанд"
+	"Кристиансе"
+	"Кристиан IV"
+	"Кристиан V"
+	"Курпринцен"
+	"Конкордия"
+	"Цезарь"
+	"Даннеброге"
+	"Давид"
+	"Дельменхорст"
+	"Дитмарскен"
+	"Дракен"
+	"Дроннинг Луиза"
+	"Эбенетцер"
+	"Элефантен"
+	"Энигхед"
+	"Энгельске Фортуна"
+	"Енхиернинген"
+	"Фидес"
+	"Флорес"
+	"Флюгенде Хьортен"
+	"Фортуна"
+	"Фредерик III"
+	"Фредерик IV"
+	"Фюен"
+	"Гравенштайн"
+	"Гриффе"
+	"Гильденлеве"
+	"Ганнибал"
+	"Хафру"
+	"Хавхест"
+	"Хавманд"
+	"Гектор"
+	"Геркулес"
+	"Хертуг Олуфс Пинке"
+	"Хиельперен"
+	"Хьорт"
+	"Хейенхальд"
+	"Хуммер"
+	"Гвиде Эрн"
+	"Хойенхальд"
+	"Исланд"
+	"Йернваген"
+	"Ягерместер"
+	"Йюститиа"
+	"Конгенс Ягт Кроне"
+	"Кронет Фиск"
+	"Лампренен"
+	"Леопард"
+	"Линдорм"
+	"Лосс"
+	"Ловиса"
+	"Левендалс Галлей"
+	"Макалес"
+	"Марс"
+	"Меркурий"
+	"Мориан"
+	"Наяден"
+	"Неллеблад"
+	"Нептун"
+	"Норске Леве"
+	"Ольденборг"
+	"Папегойе"
+	"Патиента"
+	"Пеликан"
+	"Феникс"
+	"Принс Карл"
+	"Принс Христиан"
+	"Принс Христиан"
+	"Принс Вильгельм"
+	"Раае"
+	"Самсон"
+	"Солен"
+	"София Амалия"
+	"София Едвига"
+	"Св. Эрик"
+	"Св. Георг"
+	"Св. Олуф"
+	"Стормар"
+	"Штральзунд"
+	"Сваердфиск"
+	"Сван"
+	"Свенске Йомфру"
+	"Сериддер"
+	"Томлер"
+	"То Левер"
+	"Тре Левер"
+	"Трефольдигхед"
+	"Виктория"
+	"Виндхунден"
+	"Ванден"
+	"Ернен"
+	"Олвик"
+	"Берген"
+	"Энган"
+	"Кристиансунд"
+	"Мельде"
+	"Осло"
+	"Роан"
+	"Ставангер"
+	"Сула"
+	"Тронхейм"
 }

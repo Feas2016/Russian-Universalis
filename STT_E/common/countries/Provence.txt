@@ -34,94 +34,230 @@ historical_units = {
 }
 
 monarch_names = {
-	"Charles #2" = 40
-	"Louis #1" = 40
-	"Renй #1" = 20
-	"Nicolas #0" = 10
-	"Jean #0" = 5
-	"Raymond Berengar #3" = 1
-	"Alphonse #2" = 1
-	"Robert #1" = 1
-	"Adhйmar #0" = 0
-	"Aymeric #0" = 0
-	"Bartomiu #0" = 0
-	"Benedit #0" = 0
-	"Bernat #0" = 0
-	"Bertran #0" = 0
-	"Damiбn #0" = 0
-	"Emeric #0" = 0
-	"Enric #0" = 0
-	"Estиve #0" = 0
-	"Ferrбn #0" = 0
-	"Folquet #0" = 0
-	"Frances #0" = 0
-	"Gastу #0" = 0
-	"Guilhem #0" = 0
-	"Huc #0" = 0
-	"Jacme #0" = 0
-	"Jaufre #0" = 0
-	"Jordan #0" = 0
-	"Loys #0" = 0
-	"Lucas #0" = 0
-	"Martн #0" = 0
-	"Matheu #0" = 0
-	"Miqueu #0" = 0
-	"Per #0" = 0
-	"Pol #0" = 0
-	"Pons #0" = 0
-	"Sanc #0" = 0
-	"Thibaud #0" = 0
-	"Vicentz #0" = 0
-	"Victor #0" = 0
-	"Xavier #0" = 0
+	"Карл #2" = 40
+	"Луи #1" = 40
+	"Рене #1" = 20
+	"Николя #0" = 10
+	"Жан #0" = 5
+	"Раймон Беренгар #3" = 1
+	"Альфонс #2" = 1
+	"Робер #1" = 1
+	"Адемар #0" = 0
+	"Эмерик #0" = 0
+	"Бартомью #0" = 0
+	"Бенеди #0" = 0
+	"Берна #0" = 0
+	"Бертран #0" = 0
+	"Дамиан #0" = 0
+	"Эмерик #0" = 0
+	"Энрик #0" = 0
+	"Эстев #0" = 0
+	"Ферран #0" = 0
+	"Фульк #0" = 0
+	"Франс #0" = 0
+	"Гастон #0" = 0
+	"Гийом #0" = 0
+	"Юк #0" = 0
+	"Жакме #0" = 0
+	"Жофр #0" = 0
+	"Журдан #0" = 0
+	"Луа #0" = 0
+	"Лука #0" = 0
+	"Мартин #0" = 0
+	"Матье #0" = 0
+	"Мике #0" = 0
+	"Пер #0" = 0
+	"Поль #0" = 0
+	"Понс #0" = 0
+	"Санк #0" = 0
+	"Тибо #0" = 0
+	"Висенс #0" = 0
+	"Виктор #0" = 0
+	"Ксавье #0" = 0
 	
-	"Nadine #0" = -1
-	"Osanne #0" = -1
-	"Yolande #0" = -1
+	"Надин #0" = -1
+	"Осанна #0" = -1
+	"Иоланта #0" = -1
 }
 
 leader_names = {
-	"d'Abeille" "d'Adhйmar" "d'Agoult" "d'Aiglun" "d'Aiguiиres" "d'Allemagne" "d'Amalric" "d'Audiffredi"
-	"de Bagnols" "de Barberin" "de Barcillon" "de Baschi" "des Baux" "de Bermond" "de Bionneau" "de Brunet"
-	"de Cadenet" "de Cascaris-Castellet" "de Castaing" "de Castellane" "de Castillon" Coquerel "de Cordes" "de Cormis" "de Crillon"
-	"d'Entrecasteaux" "d'Espagnet" Esparron "d'Espinouze"
-	"de Fargis" "Fauque de Jonquiиres" "Ferrй de la Grange" 
-	"de Gassendi" "de Gйvaudan" "de Gombert" "de Gordes" "de Grignan" Grimaldi "de Grimaud" "de Guast" "des Isnards" 
-	"de Lauris" "de Libertat" "de Lomйnie"
-	"de Monteil" "de Montpezat" 
-	"de Paule" "de Pena" "Pene de la Borde" "de la Pйrusse" "de Pontevиs"
-	"de Raimondis" "de Revest" "de Riquetti"
-	"de Sabran" "de Sade" "de Saint Victoret" "de Sйguiran" "de Simiane"
-	"de Valbelle"
+	"д'Абейе"
+	"д'Адемар"
+	"д'Агуль"
+	"д'Эглюн"
+	"д'Эжьере"
+	"д'Алемань"
+	"д'Амальрик"
+	"д'Одиффреди"
+	"де Баньоль"
+	"де Берберен"
+	"де Барсийон"
+	"де Баши"
+	"де Бо"
+	"де Бермон"
+	"де Бьонно"
+	"де Брюне"
+	"де Кадене"
+	"де Каскари-Кастелет"
+	"де Кастен"
+	"де Кастеллан"
+	"де Кастийон"
+	"Кокерель"
+	"де Корде"
+	"де Корми"
+	"де Крийон"
+	"д'Энтрекасто"
+	"д'Эспанье"
+	"Эспаррон"
+	"д'Эспинуз"
+	"де Фаржи"
+	"Фоке де Жонкьере"
+	"Ферре де ла Гранж"
+	"де Гассенди"
+	"де Геводан"
+	"де Гомбер"
+	"де Горде"
+	"де Гриньян"
+	"Гримальди"
+	"де Гримо"
+	"де Гюаст"
+	"де Иснард"
+	"де Лори"
+	"де Либерта"
+	"де Ломенье"
+	"де Монтей"
+	"де Монпеза"
+	"де Поль"
+	"де Пена"
+	"Пене де ла Борд"
+	"де ла Перюсс"
+	"де Понтеве"
+	"де Ремонди"
+	"де Ревес"
+	"де Рикетти"
+	"де Сабран"
+	"де Сад"
+	"де Сен-Викторе"
+	"де Сегюран"
+	"де Симьян"
+	"де Вальбель"
 }
 
+
 ship_names = {
-	Achille Agrйable "Aigle Volant" Alcyon Alouette
-	Altier Aquilon Ardente Assurй Avenant
-	Aventurier Baleine Bйcasse Bienvenu Bizarre
-	Borйe "Branche d'Olivier" Brillant Bucentaure Cachй
-	Caille Capable Centaure Cйsar "Cheval Marin"
-	Coche "Commerce de Marseille" "Commerce de Montpellier" "Comte de Provence" Conquйrant
-	Constant Content Croissant Dauphine Diamant
-	Dieppoise Dur Dromadaire Eclatant Eole
-	Espйrance Fantasque Ferme Fidиle Fier
-	Florissant Formidable Fort Foudroyant Gaillard
-	Heureux Hйros Jason Lion Mignon
-	Minerve Ocйan Orphйe Parfait Phйnix
-	Poli Pompeux Portefaix Protecteur Provenзal
-	Provence Prudent Puissant Rйale Redoutable
-	Requin "Royal Louis" Sage Sagittaire "Royal Thйrиse"
-	"Saint Esprit" "Saint Joseph" "Saint Philippe" Sardine Sceptre
-	Sйduisant Seine Sйrieux Solide Souverain
-	Suffisant Tйmйraire Terrible Tigre Tonnant
-	Toulon Toulouse Trident Triomphant Triton
-	Union Vaillant Vigilant Volontaire Zйlй
+	"Ашиль"
+	"Агреабль"
+	"Эгль Волан"
+	"Альсион"
+	"Алуэтт"
+	"Альтье"
+	"Акилон"
+	"Ардант"
+	"Ассюр"
+	"Авенан"
+	"Авантюрье"
+	"Балейн"
+	"Бекасс"
+	"Бьенвеню"
+	"Бизарр"
+	"Боре"
+	"Бранш д'Оливье"
+	"Брийан"
+	"Бюсантур"
+	"Каше"
+	"Каий"
+	"Капабль"
+	"Сантур"
+	"Сезар"
+	"Шеваль Марен"
+	"Кош"
+	"Коммерс де Марсей"
+	"Коммерс де Монпелье"
+	"Комте де Прованс"
+	"Конкеран"
+	"Констан"
+	"Контан"
+	"Круассан"
+	"Дофин"
+	"Дьяман"
+	"Дьеппуаз"
+	"Дю"
+	"Дромадер"
+	"Эклатан"
+	"Эоль"
+	"Эсперанс"
+	"Фантаске"
+	"Ферм"
+	"Фидель"
+	"Фье"
+	"Флориссан"
+	"Формидабль"
+	"Форт"
+	"Фудройан"
+	"Гайар"
+	"Эвро"
+	"Эрос"
+	"Жасон"
+	"Лион"
+	"Миньон"
+	"Минерв"
+	"Осеан"
+	"Орфе"
+	"Парфе"
+	"Феникс"
+	"Поли"
+	"Помпо"
+	"Портефуа"
+	"Протекте"
+	"Провансаль"
+	"Прованс"
+	"Прюдан"
+	"Пюиссан"
+	"Реаль"
+	"Редутабль"
+	"Рекен"
+	"Ройаль Луи"
+	"Саже"
+	"Сажиттер"
+	"Ройаль Терезе"
+	"Сен-Эспри"
+	"Сен-Жозеф"
+	"Сен-Филипп"
+	"Сардин"
+	"Септре"
+	"Седюйсан"
+	"Сене"
+	"Серие"
+	"Солид"
+	"Суверен"
+	"Сюффисан"
+	"Темерер"
+	"Террибль"
+	"Тигр"
+	"Тоннан"
+	"Тулон"
+	"Тулуз"
+	"Тридан"
+	"Триомфан"
+	"Тритон"
+	"Юньон"
+	"Вайан"
+	"Вижилан"
+	"Волонтер"
+	"Зеле"
 }
 
 army_names = {
-	"Armйe de Marseille" "Armйe des Baux" "Armйe de Provence-Forcalquier" 
-	"Armйe d'Orange" "Armйe du Pays d'Arles" "Armйe des Alpes"
-	"Armйe du Rhфne" "Armйe de la Durance" "Armйe de Haute Provence"
-	"Armйe de Basse Provence" "Armйe du Vivarais"
-	"Armйe de $PROVINCE$"
+	"Армия Марселя"
+	"Армия Бо"
+	"Армия Прованс-Форкалькье"
+	"Армия д'Оранжа"
+	"Армия Пей-д'Арля"
+	"Альпийская армия"
+	"Армия Роны"
+	"Армия Дюранса"
+	"Армия Верхнего Прованса"
+	"Армия Нижнего Прованса"
+	"Армия Виваре"
+	"Армия пров. $PROVINCE$"
 }

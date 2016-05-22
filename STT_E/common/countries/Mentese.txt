@@ -36,86 +36,176 @@ historical_units = {
 }
 
 monarch_names = {
-	"Mentese #1" = 20
-	"Mesud #1" = 20
-	"Ibrahim #1" = 20
-	"Mehmed #1" = 20
-	"Ahmed #1" = 20
-	"Musa #1" = 20
-	"Hamza #0" = 0
-	"Eylьk #0" = 0
-	"Dьndar #0" = 0
-	"Цmer #0" = 0
-	"Halil #0" = 0
-	"Selim #0" = 0
-	"Kubad #0" = 0
-	"Ilyas #0" = 0
-	"Hizir #0" = 0
-	"Sьleyman #0" = 0
-	"Abdьlhamid #0" = 0
-	"Abdullah #0" = 0
-	"Abdьlmecid #0" = 0
-	"Cihangir #0" = 0
-	"Giyasuddin #0" = 0
-	"Isa #0" = 0
-	"Numan #0" = 0
-	"Cem #0" = 0
-	"Orhan #1" = 0
-	"Abdulaziz #0" = 0
-	"Abdulmalik #0" = 0
-	"Abdulrahman #0" = 0
-	"Alaaddin #0" = 0
-	"Ali #0" = 0
-	"Davud #0" = 0
-	"Hasan #0" = 0
-	"Hьseyin #0" = 0
-	"Ishak #0" = 0
-	"Kamer #0" = 0
-	"Kasim #0" = 0
-	"Korkud #0" = 0
-	"Murad #0" = 0
-	"Seyfettin #0" = 0
-	"Yakub #0" = 0
-	"Yusuf #0" = 0
-	"Iskender #0" = 0
+	"Ментеше #1" = 20
+	"Масуд #1" = 20
+	"Ибрагим #1" = 20
+	"Мехмед #1" = 20
+	"Ахмед #1" = 20
+	"Муса #1" = 20
+	"Хамза #0" = 0
+	"Эйлюк #0" = 0
+	"Дундар #0" = 0
+	"Омар #0" = 0
+	"Халиль #0" = 0
+	"Селим #0" = 0
+	"Кубад #0" = 0
+	"Ильяс #0" = 0
+	"Хизир #0" = 0
+	"Сулейман #0" = 0
+	"Абдул-Хамид #0" = 0
+	"Абдулла #0" = 0
+	"Абдул-Меджид #0" = 0
+	"Джахангир #0" = 0
+	"Гияс уд-Дин #0" = 0
+	"Иса #0" = 0
+	"Нуман #0" = 0
+	"Джем #0" = 0
+	"Орхан #1" = 0
+	"Абдул-Азиз #0" = 0
+	"Абдул-Малик #0" = 0
+	"Абдул-Рахман #0" = 0
+	"Ала уд-Дин #0" = 0
+	"Али #0" = 0
+	"Дауд #0" = 0
+	"Хасан #0" = 0
+	"Хусейн #0" = 0
+	"Исхак #0" = 0
+	"Камар #0" = 0
+	"Касим #0" = 0
+	"Коркуд #0" = 0
+	"Мурад #0" = 0
+	"Саиф уд-Дин #0" = 0
+	"Якуб #0" = 0
+	"Юсуф #0" = 0
+	"Искандер #0" = 0
 	
-	"Cevriye #0" = -1
-	"Habibe #0" = -1
+	"Севрийе #0" = -1
+	"Хабиб #0" = -1
 }
 
 leader_names = {
-	Alemdar Amasyali Ayas
-	Bali Barbaros Bayram
-	Cezzar Зandarli Зelebi Cerrah Зerkes Civan Зuhadar
-	Damad Dervis Defterdar
-	Gedik Gazi Gьmьlcineli Gьrcь
-	Hadim Hekimoglu Hersekli
-	Kцprьlь Kemal Kьзьk Koca Karamanli Kцse Kara Kanijeli Kemankes Kaymak Kavalali
-	Ishak Izzed
-	Lala Lefkeli
-	Malkoз Mьezzinzade
-	Nevsehirli Nisanci
-	Oruз Uluз Osmancikli Ohrili Oflu
-	Rumi
-	Piri Pargali Piyale Pehlivan
-	Salih Sokullu Sari Silahdar Semiz Serdar
-	Topal Tayyar Turgut Tarhuncu
-	Veli
-	Yemisзi
+	"Алемдар"
+	"Амасьяли"
+	"Аяс"
+	"Бали"
+	"Барбаросса"
+	"Байрам"
+	"Джеззар"
+	"Чандарли"
+	"Челеби"
+	"Джеррах"
+	"Черкес"
+	"Дамат"
+	"Дервис"
+	"Экрем"
+	"Гедик"
+	"Гази"
+	"Гюмюльджинели"
+	"Гюрджю"
+	"Хадим"
+	"Хекимоглу"
+	"Херсекли"
+	"Кепрюлю"
+	"Кемель"
+	"Куджук"
+	"Коджа"
+	"Караманли"
+	"Кара"
+	"Канижели"
+	"Кеманкес"
+	"Исхак"
+	"Лала"
+	"Лефкели"
+	"Мезаморто"
+	"Малькоч"
+	"Мюэззин-заде"
+	"Мелек"
+	"Невсехерли"
+	"Орух"
+	"Улуг"
+	"Османджикли"
+	"Охрили"
+	"Рум"
+	"Пири"
+	"Паргали"
+	"Пиали"
+	"Салих"
+	"Сокуллу"
+	"Сиссау"
+	"Силахдар"
+	"Семиз"
+	"Сердар"
+	"Топаль"
+	"Табаниясси"
+	"Тайяр"
+	"Драгут"
+	"Вели"
+	"Емисчи"
+	"Оздемир"
+	"Оздемироглу"
+	"Окюз"
 }
 
 ship_names = {
-	Osmaniye Orhaniye Konstantiniyye Hьdavendigar Muradiye Mesudiye Hamidiye Resadiye
-	Heybetnьma Tayyar Sultanhisar Gelibolu Alparslan Timsah Mecidiye Mahabet Ejder
-	Yunus Sivrihisar Akhisar Akka Aziziye Bereket Galata Kozlu Kuzlum Nilьfer Zuhaf
-	Ceyhan Feke Kozan Seyhan Kahta Bolvadin Dinar Ihsaniye Incehisar Sandikli Sultandagi
-	Gьdьl Haymana Kazan Kalecik Nallihan Polatli Akseki Alanya Elmali Finike Kepez Korkuteli
-	Kumluca Manavgat Serik Germiyan Saka Saruhan Aydin Kuyucak Kusadasi Nazilli Sцke Ayvalik
-	Havran Bigadiз Edremit Manyas Balya Amasra Bozьyьk Sцgьt Adakli Solhan Ahlat Gerede
-	Seben Gцynьk Bucak Gemlik Gьrsu Inegцl Ayvacik Biga Ezine Lapseki Korgun Dodurga Iskilip
-	Laзin Зivril Honaz Tavas Dicle Firat Lice Ergani Enez Ipsala Meriз Havsa Nizip Gцrele
-	Gцce Kelkit Belen Erzin Hassa Gцnen Safranbolu Ermenek Akyaka Sьrmene Vakfikebir Eregli
-	Darica Kandira Ahirli Зumra Emet Bodrum Dalaman Fethiye Milas Yatagan Malazgirt Fatsa Ьnye
-	Kadirli Findikli Arifiye Atakum Bafra Canik Carsamba Havza Kavak Ladik Terme Baykan Boyabat
-	Divrigi Kangal Saray Niksar Zile Akзaabat Maзka Of Зaykara Hayrat
+	"Кари Алемдар"
+	"Арнауд Али"
+	"Драгуд Али"
+	"Ферхад Али"
+	"Гамид Али"
+	"Юсуф Али"
+	"Карл Али"
+	"Караман Али"
+	"Макасир Али"
+	"Сейди Али"
+	"Тартар Али"
+	"Улуг Али"
+	"Селим Басти"
+	"Дермат Бей"
+	"Кара Бей"
+	"Карам Бей"
+	"Меми Бей"
+	"Осман Бей"
+	"Синиан Челеби"
+	"Мурад Дарий"
+	"Салим Дели"
+	"Насур Ферхад"
+	"Магьяр Ферхад"
+	"Насур Ферхад"
+	"Кафир Хадджи"
+	"Киафи Хадджи"
+	"Кос Хадджи"
+	"Мустафа Хадджи"
+	"Мурад Хасан"
+	"Караман Хайдер"
+	"Хиос Мехемет"
+	"Усчиуфли Меми"
+	"Кос Менд"
+	"Кари Мора"
+	"Амдджазаде Мустафа"
+	"Кадемли Мустафа"
+	"Чендерели Мустафа"
+	"Хигнау Мустафа"
+	"Ионас Осман"
+	"Пиали Осман"
+	"Пири Осман"
+	"Турсун Осман"
+	"Иосул Пиали"
+	"Алемдар Паша"
+	"Дарий Паша"
+	"Караман Паша"
+	"Челеби Рейс"
+	"Касам Рейс"
+	"Карали Рейс"
+	"Наси Рейс"
+	"Осман Рейс"
+	"Пири Рейс"
+	"Пириман Рейс"
+	"Сали Рейс"
+	"Сейди Рейс"
+	"Талатаги Рейс"
+	"Улуж Рейс"
+	"Кара Роди"
+	"Пери Селим"
+	"Кедук Сейди"
+	"Хазули Синиан"
 }

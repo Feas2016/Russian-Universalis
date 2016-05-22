@@ -35,82 +35,152 @@ historical_units = {
 }
 
 monarch_names = {
-	"Carlo #0" = 60
-	"Amedeo #7" = 40
-	"Carlo Emanuele #0" = 40
-	"Filiberto #0" = 40
-	"Vittorio Amedeo #0" = 40
-	"Filippo #1" = 20
-	"Emanuele Filiberto #0" = 20
-	"Francesco Giacinto #0" = 20
-	"Ludovico #0" = 20
-	"Antonio #0" = 15
-	"Bernardo #0" = 15
-	"Filippo Emanuel #0" = 15
-	"Giacomo Ludovico #0" = 15
-	"Pietro #2" = 10
-	"Tomasso #2" = 10
-	"Adriano #0" = 10
-	"Aimone #0" = 10
-	"Assolone #0" = 10
-	"Emanuele #0" = 10
-	"Francesco #0" = 10
-	"Giacomo #0" = 10
-	"Gian Claudio #0" = 10
-	"Gian Maria #0" = 10
-	"Giano #0" = 10
-	"Giovanni Amedeo #0" = 10
-	"Giovanni Ludovico #0" = 10
-	"Girolamo #0" = 10
-	"Janus #0" = 10
-	"Maurizio #0" = 10
-	"Umberto #3" = 5
-	"Agostino #0" = 0
-	"Bonaventura #0" = 0
-	"Edmondo #0" = 0
-	"Gennaro #0" = 0
-	"Giulio #0" = 0
-	"Lazzaro #0" = 0
-	"Lorenzo #0" = 0
-	"Nestore #0" = 0
-	"Sebastiano #0" = 0
-	"Vittorio #0" = 0
-	
-	"Sandra #0" = -1
-	"Alice #0" = -1
-	"Barbara #0" = -1
+	"Карл #0" = 60
+	"Амадей #7" = 40
+	"Карл Эммануил #0" = 40
+	"Филиберт #0" = 40
+	"Виктор Амадей #0" = 40
+	"Филипп #1" = 20
+	"Эммануил Филиберт #0" = 20
+	"Франциск Гиацинт #0" = 20
+	"Людовик #0" = 20
+	"Антонио #0" = 15
+	"Бернард #0" = 15
+	"Филипп Эммануил #0" = 15
+	"Якоб Людовик #0" = 15
+	"Петр #2" = 10
+	"Томассо #2" = 10
+	"Адриан #0" = 10
+	"Аймоне #0" = 10
+	"Ассолоне #0" = 10
+	"Эммануил #0" = 10
+	"Франциск #0" = 10
+	"Якоб #0" = 10
+	"Иоанн Клавдий #0" = 10
+	"Иоанн Мария #0" = 10
+	"Иоанн #0" = 10
+	"Иоанн Амадей #0" = 10
+	"Иоанн Людовик #0" = 10
+	"Иероним #0" = 10
+	"Янус #0" = 10
+	"Мориц #0" = 10
+	"Умберто #3" = 5
+	"Агостино #0" = 0
+	"Бонавентура #0" = 0
+	"Эдмондо #0" = 0
+	"Дженнаро #0" = 0
+	"Джулио #0" = 0
+	"Лаццаро #0" = 0
+	"Лоренцо #0" = 0
+	"Несторе #0" = 0
+	"Себастьяно #0" = 0
+	"Витторио #0" = 0
+
+	"Сандра #0" = -1
+	"Алиса #0" = -1
+	"Барбара #0" = -1
 }
 
 leader_names = {
-	Alfieri "d'Appiani d'Aragona" "Arborio Mella" Asinari "d'Attalaya"
-	Balbo Benso "Boncompagni Ludovisi" Borromeo Bosco Botta Broglia "di Busca"
-	"di Cadoval" Cafasso "Cantatore di Breo" "di Cardй" Casati Chiodo "Cisa Asinari" Cottolengo
-	"Doria di Ciriй" Ferrero-Fiesco Fiesco Gaetani "Gaetani dell'Aquila" Galletti Gioberti
-	Lascaris "Luserna di Bonifacio" "Luserna di Campiglione" "Luserna di Chiaberto" "di Luserna"
-	"del Marco" "de Maretta" Melzi Micca "del Monte" d'Ottaiano
-	"di Paesana" "Paleologi Montferrato" Pallavicini "di Saluzzo" "di Savoia" Solaro
-	Taparelli "della Torre" Valdo Valfrй Vico
+	"Альфьери"
+	"д'Аппьяни д'Арагона"
+	"Арборио Мелла"
+	"Азинари"
+	"д'Атталая"
+	"Бальбо"
+	"Бенсо"
+	"Бонкомпаньи Лудовизи"
+	"Борромео"
+	"Боско"
+	"Ботта"
+	"Бролья"
+	"ди Буска"
+	"ди Кадоваль"
+	"Кафассо"
+	"Кантаторе ди Брео"
+	"ди Карде"
+	"Казати"
+	"Кьодо"
+	"Чиза Азинари"
+	"Коттоленго"
+	"Дория ди Чирие"
+	"Ферреро-Фьеско"
+	"Фьеско"
+	"Гаэтани"
+	"Гаэтани делла Аквила"
+	"Галлетти"
+	"Джоберти"
+	"Ласкарис"
+	"Лузерна ди Бонифацио"
+	"Лузерна ди Кампильоне"
+	"Лузерна ди Кьяберто"
+	"ди Лузерна"
+	"дель Марко"
+	"де Маретта"
+	"Мельци"
+	"Микка"
+	"дель Монте"
+	"д'Оттаяно"
+	"ди Паэзана"
+	"Палеолог"
+	"Паллавичини"
+	"ди Салуццо"
+	"ди Савоя"
+	"Соларо"
+	"Тапарелли"
+	"делла Торре"
+	"Вальдо"
+	"Вальфре"
+	"Вико"
 }
 
 ship_names = { 
-	"Adelaide di Susa" Albane Aimone "Amedeo Coda" Annecy
-	Bauges Bellevaux Biancamano Bonifacio
-	"Casa di Savoia" Chablais Chambйry Contamine-sur-Arve
-	"Dora Riparia"
-	Edoardo Entremont
-	Faucigny Filippo
-	Genevois Giacomo Jaquerio
-	Hautecombe
-	"Umberto Sabaudia" 
-	"Lac du Bourget" Leysse  
-	Maurienne  
-	Oddone 
-	"Pietro I" Piemonte "fiume Po"
-	"Sacra Sindone" "San Domenico" "San Donato" "San Paolo" "Santa Rita" "San Salvario" "Stura di Lanzo" Sangone 
-	Talloires Tamiй Tommaso Tarentaise Torino
-	"Val d'Aosta" 
+	"Аделаиде ди Суза"
+	"Альбане"
+	"Аймоне"
+	"Амедео Кода"
+	"Аннеси"
+	"Боже"
+	"Беллево"
+	"Бьянкамано"
+	"Бонифацио"
+	"Каса ди Савойя"
+	"Шаблэ"
+	"Шамбери"
+	"Контамен-сюр-Арв"
+	"Дора Рипария"
+	"Эдоардо"
+	"Энтремон"
+	"Фосиньи"
+	"Филиппо"
+	"Женева"
+	"Джакомо"
+	"Жакерио"
+	"Отекомб"
+	"Умберто Сабаудия"
+	"Лак дю Бурже"
+	"Лейсс"
+	"Мориенн"
+	"Оддоне"
+	"Пьетро I"
+	"Пьемонт"
+	"Фиуме По"
+	"Сакра Синдоне"
+	"Сан-Доменико"
+	"Сан-Донато"
+	"Сан-Паоло"
+	"Санта-Рита"
+	"Сан-Сальварио"
+	"Стура ди Ланцо"
+	"Сангоне"
+	"Таллуаре"
+	"Тамье"
+	"Томмазо"
+	"Тарентес"
+	"Торино"
+	"Валь д'Аоста"
 }
 
 army_names = {
-	"Armata di $PROVINCE$"
+	"Армия пров. $PROVINCE$"
 }

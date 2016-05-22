@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 227 211 34 }
+color = { 55  140  143 }
 
 revolutionary_colors = { 13  8  5 }
 
@@ -35,67 +35,93 @@ historical_units = {
 }
 
 monarch_names = {
-	"Johann #3" = 80
-	"Albrecht #4" = 60
-	"Heinrich #3" = 40
-	"Magnus #1" = 40
-	"Ulrich #1" = 40
-	"Christian Ludwig #0" = 40
-	"Friedrich #0" = 40
-	"Johann Albrecht #0" = 40
-	"Adolf Friedrich #0" = 20
-	"Friedrich Franz #0" = 20
-	"Friedrich Wilhelm #0" = 20
-	"Karl Leopold #0" = 20
-	"Siegmund August #0" = 20
-	"Erich #0" = 15
-	"Friedrich Ludwig #0" = 15
-	"Johann Georg #0" = 15
-	"Karl #0" = 15
-	"Ludwig #0" = 15
-	"Adolf #0" = 10
-	"Adolf Ernst #0" = 10
-	"Balthasar #0" = 10
-	"Bernhard Siegmund #0" = 10
-	"Christoph #0" = 10
-	"Georg #0" = 10
-	"Gustav #0 Wilhelm" = 10
-	"Gustav #0 Rudolf" = 10
-	"Heinrich Wilhelm #0" = 10
-	"Philipp Ludwig #0" = 10
-	"Adalbert #0" = 0
-	"Barnabas #0" = 0
-	"Diederick #0" = 0
-	"Erwin #0" = 0
-	"Hagan #0" = 0
-	"Jeremias #0" = 0
-	"Joseph #0" = 0
-	"Kurt #0" = 0
-	"Markus #0" = 0
-	"Niklas #0" = 0
-	"Reinhard #0" = 0
-	"Viktor #0" = 0
+	"Иоганн #3" = 80
+	"Альбрехт #4" = 60
+	"Генрих #3" = 40
+	"Магнус #1" = 40
+	"Ульрих #1" = 40
+	"Христиан Людвиг #0" = 40
+	"Фридрих #0" = 40
+	"Иоганн Альбрехт #0" = 40
+	"Адольф Фридрих #0" = 20
+	"Фридрих Франц #0" = 20
+	"Фридрих Вильгельм #0" = 20
+	"Карл Леопольд #0" = 20
+	"Сигизмунд Август #0" = 20
+	"Эрих #0" = 15
+	"Фридрих Людвиг #0" = 15
+	"Иоганн Георг #0" = 15
+	"Карл #0" = 15
+	"Людвиг #0" = 15
+	"Адольф #0" = 10
+	"Адольф Эрнест #0" = 10
+	"Бальтазар #0" = 10
+	"Бернхард Сигизмунд #0" = 10
+	"Христоф #0" = 10
+	"Георг #0" = 10
+	"Густав #0 Вильгельм" = 10
+	"Густав #0 Рудольф" = 10
+	"Генрих Вильгельм #0" = 10
+	"Филипп Людвиг #0" = 10
+	"Адальберт #0" = 0
+	"Барнабас #0" = 0
+	"Дидерик #0" = 0
+	"Эрвин #0" = 0
+	"Хаган #0" = 0
+	"Иеремия #0" = 0
+	"Иосиф #0" = 0
+	"Курт #0" = 0
+	"Маркус #0" = 0
+	"Никлас #0" = 0
+	"Райнхард #0" = 0
+	"Виктор #0" = 0
 	
-	"Evelyn #0" = -1
-	"Hannelore #0" = -1
-	"Irma #0" = -1
+	"Эвелин #0" = -1
+	"Ханнерлора #0" = -1
+	"Ирма #0" = -1
 }
 
 leader_names = {
-	Jacobs Meincke Reinike Schlien Wacker 
-	Busekke BuЯacker Gesiter Gothan Jauert 
-	Klatt Laudan Niemann Panck Porepp Sass 
-	Schultz Schuhr Seeland Steinkopp TheeЯ 
-	Warncke Wilcke Schliechting 
+	"Якобс"
+	"Майнке"
+	"Райнике"
+	"Шлин"
+	"Ваккер"
+	"Бусекке"
+	"Бусаккер"
+	"Гезитер"
+	"Готан"
+	"Яуэрт"
+	"Клатт"
+	"Лаудан"
+	"Ниман"
+	"Панк"
+	"Порепп"
+	"Сасс"
+	"Шульц"
+	"Шур"
+	"Зееланд"
+	"Штайнкопп"
+	"Теес"
+	"Варнке"
+	"Вильке"
+	"Шлихтинг"
 }
 
 ship_names = {
-	Mekelenborch "Fьrst Borwin" "Fьrst Nikolaus"
-	"Herzog Albrecht" "Herzog Heinrich" "Herzog Magnus"
-	"Herzog Erich" "Herzog Balthasar" "Herzog Karl"
-	"Herzog Adolf Friedrich" "Herzog Johann Georg"
+	"Мекеленборх"
+	"Фюрст Борвин"
+	"Фюрст Николаус"
+	"Герцог Альбрехт"
+	"Герцог Генрих"
+	"Герцог Магнус"
+	"Герцог Эрих"
+	"Герцог Бальтазар"
+	"Герцог Карл"
+	"Герцог Адольф Фридрих"
+	"Герцог Иоганн Георг"
 }
 
 army_names = {
-	"Armee von $PROVINCE$" 
+	"Армия пров. $PROVINCE$" 
 }

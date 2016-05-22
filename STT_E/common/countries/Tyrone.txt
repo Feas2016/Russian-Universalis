@@ -33,71 +33,107 @@ historical_units = {
 }
 
 leader_names = {
-	"Mac Anna" "Mac Бrdghail" "Mac Artian" "Mac Cearbhaill" "Mac Dhomhnaill"
-	"Mac Lochlainn" "Mac Mathghamha" "Mac Suibhne" "Mag Aonghusa" "Mag Uidhir"
-	"У Banain" "У Baoghill" "У Canannain" "У Caoinnigh" "У Caiside" "У Ceallaigh"
-	"У Cleireigh" "У Corcrбin" "У Cuileannбin" "У Cuinn" "У Duibheamhna"
-	"У Daimhнn" "У Dochartaigh" "У Doibhilin" "У Duachбin" "У Farachбin"
-	"У fLaithbheartaigh" "У Flaithre" "У Flannagбin" "У hAodhagбin" "У hAnluain"
-	"У hЙignigh" "У hInneirghe" "У hНr" "У Longбin" "У Lorcбin" "У Maolagбin"
-	"У Maoldъin" "У Neill" "У Raithbheartiagh"
+	"Мак Анна"
+	"Мак Арэдгил"
+	"Мак Артиан"
+	"Мак Кервилл"
+	"Мак Говнилл"
+	"Мак Лохлинн"
+	"Мак Махгава"
+	"Мак Сивне"
+	"Маг Ингуса"
+	"Маг Ихир"
+	"О'Банин"
+	"О'Бигилл"
+	"О'Кананнин"
+	"О'Кинниг"
+	"О'Кишиде"
+	"О'Каллиг"
+	"О'Клерег"
+	"О'Коркрин"
+	"О'Килеаннин"
+	"О'Кинн"
+	"О'Дивевна"
+	"О'Дивин"
+	"О'Дохартиг"
+	"О'Дивилин"
+	"О'Дуэхин"
+	"О'Фарахин"
+	"О'Флихвертиг"
+	"О'Флихре"
+	"О'Фланнагин"
+	"О'Игагин"
+	"О'Анлуин"
+	"О'Эгниг"
+	"О'Иннерге"
+	"О'Ир"
+	"О'Лонгин"
+	"О'Лоркин"
+	"О'Милагин"
+	"О'Милдин"
+	"О'Нилл"
+	"О'Рихвертиг"
 }
 
 monarch_names = {
-	"Donal #12" = 40
-	"Art #0" = 40
-	"Conn #0" = 40
-	"Einrн #0" = 40
-	"Бed #13" = 20
-	"Niall #6" = 20
-	"Brian #2" = 20
-	"Eoghan #1" = 20
-	"Sйan #0" = 20
-	"Turlough #0" = 20
-	"Alaois #0" = 0
-	"Alastar #0" = 0
-	"Aonghus #0" = 0
-	"Bradбin #0" = 0
-	"Brennan #0" = 0
-	"Brуnach #0" = 0
-	"Calbhach #0" = 0
-	"Caolan #0" = 0
-	"Carroll #0" = 0
-	"Ceallach #0" = 0
-	"Caerbhall #0" = 0
-	"Cian #0" = 0
-	"Conan #0" = 0
-	"Connor #0" = 0
-	"Diarmaid #0" = 0
-	"Dubghall #0" = 0
-	"Йamonn #0" = 0
-	"Fбelбn #0" = 0
-	"Fearchar #0" = 0
-	"Fearghas #0" = 0
-	"Fionnlagh #0" = 0
-	"Flann #0" = 0
-	"Gallchobhair #0" = 0
-	"Gobбn #0" = 0
-	"Grбdaigh #0" = 0
-	"Lommбn #0" = 0
-	"Maeleachlain #0" = 0
-	"Murchadha #0" = 0
-	"Naomhбn #0" = 0
-	"Torin #0" = 0
-	
-	"Talulla #0" = -1
-	"Pбdraigнn #0" = -1
-	"Lнadбin #0" = -1
+	"Домналл #12" = 40
+	"Арт #0" = 40
+	"Конн #0" = 40
+	"Энри #0" = 40
+	"Эд #13" = 20
+	"Ниалл #6" = 20
+	"Бриан #2" = 20
+	"Оган #1" = 20
+	"Шан #0" = 20
+	"Турлох #0" = 20
+	"Алис #0" = 0
+	"Аластар #0" = 0
+	"Ингус #0" = 0
+	"Брадан #0" = 0
+	"Бреннан #0" = 0
+	"Бронах #0" = 0
+	"Калэвах #0" = 0
+	"Килан #0" = 0
+	"Каролл #0" = 0
+	"Калах #0" = 0
+	"Керэвалл #0" = 0
+	"Киан #0" = 0
+	"Конан #0" = 0
+	"Коннор #0" = 0
+	"Диармид #0" = 0
+	"Дубгалл #0" = 0
+	"Амонн #0" = 0
+	"Фелан #0" = 0
+	"Ферхар #0" = 0
+	"Фергас #0" = 0
+	"Финнлаг #0" = 0
+	"Фланн #0" = 0
+	"Галлховир #0" = 0
+	"Гобан #0" = 0
+	"Градиг #0" = 0
+	"Ломман #0" = 0
+	"Мелахлин #0" = 0
+	"Мурхага #0" = 0
+	"Ниван #0" = 0
+	"Торин #0" = 0
+
+	"Талулла #0" = -1
+	"Падрайга #0" = -1
+	"Лаадейн #0" = -1
 }
 
 ship_names = {
-	Aedh
-	Baedan
-	Colman Cookstown 
-	Donal
-	Eocha Eogan 
-	Fergal Fergus
-	Niall
-	Omagh
-	Strabane Suibne
+	"Аэд"
+	"Баэдан"
+	"Колман"
+	"Кукстаун"
+	"Донал"
+	"Эоча"
+	"Эоган"
+	"Фергал"
+	"Фергус"
+	"Нилл"
+	"Ома"
+	"Страбэйн"
+	"Суибне"
 }

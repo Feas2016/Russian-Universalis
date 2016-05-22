@@ -32,75 +32,110 @@ historical_units = {
 }
 
 monarch_names = {
-	"Frederik #2" = 40
-	"Hendrik #1" = 20
-	"David #0" = 20
-	"Filips #0" = 20
-	"Gijsbert #0" = 20
-	"Rudolf #0" = 20
-	"Engelbert #0" = 10
-	"Johan #5" = 5
-	"Arnold #2" = 5
-	"Boudewijn #2" = 5
-	"Dedrick #2" = 5
-	"Willem #2" = 5
-	"Andries #1" = 5
-	"Floris #1" = 5
-	"Godfried #1" = 5
-	"Jakob #1" = 5
-	"Koenraad #1" = 5
-	"Nikolaas #1" = 5
-	"Adriaan #0" = 0
-	"Alexander #0" = 0
-	"Augustijn #0" = 0
-	"Bartholomeus #0" = 0
-	"Christiaan #0" = 0
-	"Constantijn #0" = 0
-	"Daniлl #0" = 0
-	"Dominicus #0" = 0
-	"Fabian #0" = 0
-	"Frans #0" = 0
-	"Gillis #0" = 0
-	"Herman #0" = 0
-	"Ignaas #0" = 0
-	"Ivo #0" = 0
-	"Jurriaan #0" = 0
-	"Luuk #0" = 0
-	"Martijn #0" = 0
-	"Matthijs #0" = 0
-	"Michaлl #0" = 0
-	"Sieuwed #0" = 0
-	"Thomas #0" = 0
-	"Valentijn #0" = 0
-	
-	"Sofie #0" = -1
-	"Yvonne #0" = -1
-	"Angelique #0" = -1
+	"Фридрих #2" = 40
+	"Генрих #1" = 20
+	"Давид #0" = 20
+	"Филипп #0" = 20
+	"Гисберт #0" = 20
+	"Рудольф #0" = 20
+	"Энгельберт #0" = 10
+	"Иоган #5" = 5
+	"Арнольд #2" = 5
+	"Бодуэн #2" = 5
+	"Дитрих #2" = 5
+	"Вильгельм #2" = 5
+	"Андреас #1" = 5
+	"Флорис #1" = 5
+	"Годфрид #1" = 5
+	"Якоб #1" = 5
+	"Конрад #1" = 5
+	"Николаус #1" = 5
+	"Адриан #0" = 0
+	"Александер #0" = 0
+	"Аугустин #0" = 0
+	"Бартоломео #0" = 0
+	"Кристиаан #0" = 0
+	"Константин #0" = 0
+	"Даниэль #0" = 0
+	"Доминик #0" = 0
+	"Фабиан #0" = 0
+	"Франс #0" = 0
+	"Жиль #0" = 0
+	"Герман #0" = 0
+	"Игнас #0" = 0
+	"Иво #0" = 0
+	"Юрриан #0" = 0
+	"Люк #0" = 0
+	"Мартейн #0" = 0
+	"Маттиас #0" = 0
+	"Михаэль #0" = 0
+	"Сиувед #0" = 0
+	"Томас #0" = 0
+	"Валентин #0" = 0
+
+	"София #0" = -1
+	"Ивона #0" = -1
+	"Анжелика #0" = -1
 }
 
-leader_names = {	
-	"van Aduard" "van Carnbee" "van Coehoorn"
-	"van der Oije" "van Giessenburg" "van Grovestins"
-	"van Schoonheten" "van Steenwijk" "van Welderen"
-	"van Zoelen" Agterberg Bailly Beekmann Bernard
-	Brenninkmeyer Conring Cordewiender Cubes "de Arthuysen" 
-	"de Geer" "de Groot" Edelkoort Elsendoorn Geitenbeek
-	Gildemeester Hartog Kuijper Laan "van Pelt" Leicher
-	Ligteringe Makkink Osti Pylsweert Rekkae Rijke
-	"van Selmont" "van Amerongen"
+leader_names = {
+	"ван Адуард"
+	"ван Карнбее"
+	"ван Когорн"
+	"ван дер Оейе"
+	"ван Гиссенбург"
+	"ван Гровестинс"
+	"ван Шоохетен"
+	"ван Стеенвейк"
+	"ван Вельдерен"
+	"ван Золен"
+	"Агтерберг"
+	"Байи"
+	"Беекман"
+	"Бернард"
+	"Бреннинкмайер"
+	"Конринг"
+	"Кордевиндер"
+	"Кубес"
+	"де Артуйзен"
+	"де Геер"
+	"де Гроот"
+	"Эделькоорт"
+	"Эльзендоорн"
+	"Гайтенбеек"
+	"Гильдемеестер"
+	"Хартог"
+	"Куэйпер"
+	"Лаан"
+	"ван Пельт"
+	"Лайхер"
+	"Лигтеринге"
+	"Маккинк"
+	"Ости"
+	"Пильсвеерт"
+	"Реккаэ"
+	"Рейке"
+	"ван Сельмонт"
+	"ван Амеронген"
 }
 
 ship_names = {
-	"Alberik I" Amersfoort
-	"De dom van Utrecht" Duifje
-	Muiden
-	"Sticht van Utrecht"
-	Utrecht
-	Wachter "Wapen van Amersfoort" "Wapen van Utrecht" "Wijk bij Duurstede" Willibrord 
+	"Альберик I"
+	"Амерсфоорт"
+	"Де дом ван Утрехт"
+	"Дуйфе"
+	"Муйден"
+	"Штихт ван Утрехт"
+	"Утрехт"
+	"Вахтер"
+	"Вапен ван Амерсфоорт"
+	"Вапен ван Утрехт"
+	"Вейк бей Дуурштеде"
+	"Виллиброрд"
 }
 
 army_names = {
-	"Leger van $PROVINCE$"  }
+	"Армия пров. $PROVINCE$" }
 
-fleet_names = {  "Vloot van $PROVINCE$" 
+fleet_names = {  "Эскадра пров. $PROVINCE$" 
 	 }

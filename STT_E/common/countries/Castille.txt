@@ -34,85 +34,207 @@ historical_units = {
 }
 
 monarch_names = {
-	"Enrique #2" = 40
-	"Fernando #4" = 20
-	"Juan #1" = 20
-	"Felipe #0" = 20
-	"Alfonso #11" = 10
-	"Carlos #0" = 10
-	"Isabel #0" = -10
-	"Juana #0" = -10
-	"Marнa #0" = -5
-	"Catalina #0" = -5
-	"Sancho #4" = 1
-	"Ramiro #2" = 1
-	"Pedro #1" = 1
-	"Alonso #0" = 0
-	"Бlvaro #0" = 0
-	"Baltasar #0" = 0
-	"Bernardo #0" = 0
-	"Bertrбn #0" = 0
-	"Cristobal #0" = 0
-	"Diego #0" = 0
-	"Domingo #0" = 0
-	"Esteban #0" = 0
-	"Fadrique #0" = 0
-	"Francisco #0" = 0
-	"Garcнa #0" = 0
-	"Gуmez #0" = 0
-	"Gonzalo #0" = 0
-	"Gutierre #0" = 0
-	"Hermenegildo #0" = 0
-	"Hernando #0" = 0
-	"Ignacio #0" = 0
-	"Laнn #0" = 0
-	"Lope #0" = 0
-	"Miguel #0" = 0
-	"Nuсo #0" = 0
-	"Odуn #0" = 0
-	"Ramуn #0" = 0
-	"Rodrigo #0" = 0
-	"Tomбs #0" = 0
-	"Valeriano #0" = 0
+	"Генрих #2" = 40
+	"Фердинанд #4" = 20
+	"Хуан #1" = 20
+	"Филипп #0" = 20
+	"Альфонс #11" = 10
+	"Карл #0" = 10
+	"Изабелла #0" = -10
+	"Хуана #0" = -10
+	"Мария #0" = -5
+	"Каталина #0" = -5
+	"Санчо #4" = 1
+	"Рамиро #2" = 1
+	"Педро #1" = 1
+	"Алонсо #0" = 0
+	"Альваро #0" = 0
+	"Бальтасар #0" = 0
+	"Бернардо #0" = 0
+	"Бертран #0" = 0
+	"Кристобаль #0" = 0
+	"Диего #0" = 0
+	"Доминго #0" = 0
+	"Эстебан #0" = 0
+	"Фадрике #0" = 0
+	"Франсиско #0" = 0
+	"Гарсия #0" = 0
+	"Гомес #0" = 0
+	"Гонсало #0" = 0
+	"Гутьерре #0" = 0
+	"Эрменегильдо #0" = 0
+	"Эрнандо #0" = 0
+	"Игнасио #0" = 0
+	"Лаин #0" = 0
+	"Лопе #0" = 0
+	"Мигель #0" = 0
+	"Нуньо #0" = 0
+	"Одон #0" = 0
+	"Рамон #0" = 0
+	"Родриго #0" = 0
+	"Томас #0" = 0
+	"Валериано #0" = 0
 }
 
 leader_names = {
-	"de Aguirre" "de Alarcуn" "de Toledo" "de Andrade" "de Ayala"
-	"de Bazбn" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos Colуn Coronado Cortйs
-	"de Toledo" "de Cуrdoba" "de la Cueva" "de Figueroa" Fonseca
-	Gбlvez Gуmez "de Guzmбn" "Jimйnez de Cisneros"
-	"de Leiva" "Lуpez de Haro" "de Luna"
-	"de Lara" "de Velasco" "de Villena" "de Mendoza"
-	Narvбez "de Nebrija" "Nuсez de Balboa" "de Ojeda" Orellana Osorio 
-	Pimentel Pinzуn Pizarro "Ponce de Leуn" Portocarrero
-	"de Rojas" Tellez-Girуn "de la Vega" "de Zъсiga"
+	"де Агирре"
+	"де Аларкон"
+	"де Толедо"
+	"де Андраде"
+	"де Айяла"
+	"де Басан"
+	"де Бенавидес"
+	"Кампоманес"
+	"де Кастилья"
+	"де ла Серда"
+	"Сьенфуэгос"
+	"Колон"
+	"Коронадо"
+	"Кортес"
+	"де Толедо"
+	"де Кордоба"
+	"де ла Куэва"
+	"де Фигероа"
+	"Фонсека"
+	"Гальвес"
+	"Гомес"
+	"де Гусман"
+	"Хименес де Сиснерос"
+	"де Лейва"
+	"Лопес де Аро"
+	"де Луна"
+	"де Лара"
+	"де Веласко"
+	"де Вильена"
+	"де Мендоса"
+	"Нарваэс"
+	"де Небриха"
+	"Нуньес де Бальбоа"
+	"де Охеда"
+	"Орельяна"
+	"Осорио"
+	"Пиментель"
+	"Пинсон"
+	"Писарро"
+	"Понсе де Леон"
+	"Портокарреро"
+	"де Рохас"
+	"Тельес-Хирон"
+	"де ла Вега"
+	"де Суньига"
 }
 
 ship_names = {
-	Andalucнa Argonauta Asturias Asunciуn Atrevido Azor
-	Cartagonova Castilla "Castillo Negro" Castor "Ciervo Volante"
-	Doncella Dragуn 
-	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "Espнritu Santo" Extremadura
-	Furor Galicia "Gran Grifуn" Halcуn Hйrcules Isabela Jъpiter
-	"La Concepciуn" "La Magdalena" "La Manuela" Leуn Ligera "Lobo Marino"
-	Marte Mercurio Neptuno Niсa Oriуn
-	"Paloma Blanca" Pegaso "Perro Marino" Pinta Plutуn Pollux "Prнncipe de Asturias"
-	Rayo "Real Alfonso" "Real Enrique" "Real Juan" "Rey Pelayo" "Rey Rodrigo"
-	"San Andrйs" "San Antonio" "San Bartolomй" "San Bernabй" "San Cristobal" "San Enrique"
-	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San Jerуnimo"
-	"San Josй" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
-	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa Bбrbara" "Santa Beatriz"
-	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa Marнa"
-	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "Santнsima Trinidad" "Santo Domingo" Sirena
-	Terror Toledo Trinidad Tritуn Unicornio
-	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano Zъсiga
+	"Андалусия"
+	"Аргонаута"
+	"Астуриас"
+	"Асунсьон"
+	"Атревидо"
+	"Азор"
+	"Картагонова"
+	"Кастилья"
+	"Кастильо Негро"
+	"Кастор"
+	"Сиэрво Воланте"
+	"Донселья"
+	"Драгон"
+	"Эль Гран Грин"
+	"Эль Ретиро"
+	"Энеас"
+	"Эоло"
+	"Эсперанса"
+	"Эспириту Санто"
+	"Экстремадура"
+	"Фурор"
+	"Галисия"
+	"Гран Грифон"
+	"Алькон"
+	"Эркулес"
+	"Исабела"
+	"Хупитер"
+	"Ла Консепсьон"
+	"Ла Магдалена"
+	"Ла Мануэла"
+	"Леон"
+	"Лихера"
+	"Лобо Марино"
+	"Марте"
+	"Меркурио"
+	"Нептуно"
+	"Нинья"
+	"Орион"
+	"Палома Бланка"
+	"Пегасо"
+	"Перро Марино"
+	"Пинта"
+	"Плутон"
+	"Поллукс"
+	"Принсипе де Астуриас"
+	"Райо"
+	"Реал Альфонсо"
+	"Реал Энрике"
+	"Реал Хуан"
+	"Рей Пелайо"
+	"Рей Родриго"
+	"Сан-Андрес"
+	"Сан-Антонио"
+	"Сан-Бартоломе"
+	"Сан-Бернабе"
+	"Сан-Кристобаль"
+	"Сан-Энрике"
+	"Сан-Эстебан"
+	"Сан-Фернандо"
+	"Сан-Франсиско"
+	"Сан-Габриэль"
+	"Сан-Исидоро"
+	"Сан-Херонимо"
+	"Сан-Хосе"
+	"Сан-Хуан"
+	"Сан-Хуан Баутиста"
+	"Сан-Леандро"
+	"Сан-Мигель"
+	"Сан-Педро"
+	"Сан-Рафаэль"
+	"Сан-Сальвадор"
+	"Сан-Себастьян"
+	"Санта-Ана"
+	"Санта-Барбара"
+	"Санта-Беатрис"
+	"Санта-Каталина"
+	"Санта-Крус"
+	"Санта-Фе"
+	"Санта-Исабель"
+	"Санта-Хуста"
+	"Санта-Мария"
+	"Санта-Марта"
+	"Санта-Рита"
+	"Санта-Тереса"
+	"Сантьяго"
+	"Сантисима Тринидад"
+	"Санто-Доминго"
+	"Сирена"
+	"Террор"
+	"Толедо"
+	"Тринидад"
+	"Тритон"
+	"Уникорнио"
+	"Венседора"
+	"Вентура"
+	"Виктория"
+	"Вихиланте"
+	"Вискайя"
+	"Вулкано"
+	"Суньига"
 }
 
 
 army_names = {
-	"Guardia Real" "Ejйrcito de $PROVINCE$"
+	"Королевская гвардия"
+	"Армия пров. $PROVINCE$"
 }
 
 fleet_names = {
-	"Armada Real"	"Flota de $PROVINCE$"
+	"Королевская армада"
+	"Эскадра пров. $PROVINCE$"
+}
 }

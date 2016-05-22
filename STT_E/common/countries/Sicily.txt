@@ -35,73 +35,164 @@ historical_units = {
 }
 
 monarch_names = {
-	"Ferdinando #0" = 20
-	"Martino #0" = 20
-	"Pietro #3" = 15
-	"Francesco #0" = 15
-	"Maria #0" = -15
-	"Federigo #3" = 10
-	"Guglielmo #3" = 10
-	"Luigi #1" = 10
-	"Leopoldo #0" = 10
-	"Carlo #1" = 5
-	"Manfred #1" = 5
-	"Tancredo #1" = 5
-	"Achille #0" = 0
-	"Alberto #0" = 0
-	"Antonio #0" = 0
-	"Bernardo #0" = 0
-	"Cesare #0" = 0
-	"Ciro #0" = 0
-	"Claudio #0" = 0
-	"Daniele #0" = 0
-	"Demetrio #0" = 0
-	"Enrico #0" = 0
-	"Fabio #0" = 0
-	"Filippo #0" = 0
-	"Flavio #0" = 0
-	"Gaetano #0" = 0
-	"Giovanni #0" = 0
-	"Giuseppe #0" = 0
-	"Graziano #0" = 0
-	"Luciano #0" = 0
-	"Manfredo #0" = 0
-	"Modesto #0" = 0
-	"Nestore #0" = 0
-	"Ottaviano #0" = 0
-	"Prudenzio #0" = 0
-	"Roberto #0" = 0
-	"Samuele #0" = 0
-	"Sesto #0" = 0
-	"Valerio #0" = 0
-	"Vincenzo #0" = 0
+	"Фердинандо #0" = 20
+	"Мартин #0" = 20
+	"Пьетро #3" = 15
+	"Франческо #0" = 15
+	"Мария #0" = -15
+	"Федериго #3" = 10
+	"Гульельмо #3" = 10
+	"Луиджи #1" = 10
+	"Леопольдо #0" = 10
+	"Карло #1" = 5
+	"Манфред #1" = 5
+	"Танкредо #1" = 5
+	"Акилле #0" = 0
+	"Альберто #0" = 0
+	"Антонио #0" = 0
+	"Бернардо #0" = 0
+	"Чезаре #0" = 0
+	"Чиро #0" = 0
+	"Клаудио #0" = 0
+	"Даниеле #0" = 0
+	"Деметрио #0" = 0
+	"Энрико #0" = 0
+	"Фабио #0" = 0
+	"Филипп #0" = 0
+	"Флавио #0" = 0
+	"Гаэтано #0" = 0
+	"Джованни #0" = 0
+	"Джузеппе #0" = 0
+	"Грациано #0" = 0
+	"Лучано #0" = 0
+	"Манфредо #0" = 0
+	"Модесто #0" = 0
+	"Несторе #0" = 0
+	"Оттавиано #0" = 0
+	"Пруденцио #0" = 0
+	"Роберто #0" = 0
+	"Самуэле #0" = 0
+	"Сесто #0" = 0
+	"Валерио #0" = 0
+	"Винченцо #0" = 0
 }
 
 leader_names = {
-	d'Agnesi "di Aragona" Asmondo "d'Austria" "Barbiano Belgioioso" "di Borbone"
-	Carafa Castagna Cattaneo Ciaja Cialdini Colonna Coppola Corleone
-	Damiani d'Este Farini Felice Filangieri "Gaetani dell'Aquila" "de Gattinara" "di Gesualdo" Gonzaga
-	"La Masa" Lamoral "di Marzano" Mazzini "di Medici" Orsini
-	Paruta Pignatelli Pilo Platamonte "de Podio" Riso Rizzi Ruffo Ruggiero
-	Sanseverino Santapace Serra Settimo Sfondrati Speciale Spinola
-	Tanucci Tassoni Trivulcio Ventimiglia Zannoni
+	"д'Аньези"
+	"ди Арагона"
+	"Асмондо"
+	"д'Аустрия"
+	"Барбьяно Бельджоиозо"
+	"ди Борбоне"
+	"Карафа"
+	"Кастанья"
+	"Каттанео"
+	"Чаджа"
+	"Чальдини"
+	"Колонна"
+	"Коппола"
+	"Корлеоне"
+	"Дамиани"
+	"д'Эсте"
+	"Фарини"
+	"Феличе"
+	"Филаньери"
+	"Гаэтани делла Аквила"
+	"де Гаттинара"
+	"ди Джезуальдо"
+	"Гонцага"
+	"ла Маза"
+	"Ламораль"
+	"ди Марцано"
+	"Маццини"
+	"ди Медичи"
+	"Орсини"
+	"Парута"
+	"Пиньятелли"
+	"Пило"
+	"Платамонте"
+	"де Подио"
+	"Ризо"
+	"Рицци"
+	"Руффо"
+	"Руджеро"
+	"Сансеверино"
+	"Сантапаче"
+	"Серра"
+	"Сеттимо"
+	"Сфондрати"
+	"Спечале"
+	"Спинола"
+	"Тануччи"
+	"Тассони"
+	"Тривульчо"
+	"Вентимилья"
+	"Дзаннони"
 }
 
 ship_names = {
-	Agatobles Altavilla Apollo Archimede Audaze Borbone
-	Calabria Capitana Diana Disttrutore Drago
-	Ercole Etna "Federigo Barbarossa" Folgorante Fulminante
-	Generoso Guiscardo Hohenstaufen Idra Invencibile L'Aretusa Jupiter
-	"Maria Inmacolata" Marte Mercurio Messaggero Minerva
-	Napoli Navigante Nettuno Palinuro Partenope Pegaso 
-	Peloro Plutone Puglia "Purissima Concezione"
-	"Re Carlo" "Re Federigo" "Re Ferrante" "Regina dei Mari"
-	"S.Francesco d'Assisi" Saetta "San Antonio" "San Carlo"
-	"San Ferdinando" "San Vito" Sannita "Santa Amalia" "Santa Helena"
-	"Santa Lucia" "Santa Wenfrida" Sant'Agata Sant'Agatone
-	Sibilla Sicilia Sirena Tancredi Veloce
+	"Агатоблес"
+	"Альтавилла"
+	"Аполло"
+	"Аркимеде"
+	"Аудаце"
+	"Борбоне"
+	"Калабрия"
+	"Капитана"
+	"Диана"
+	"Дисттруторе"
+	"Драго"
+	"Эрколе"
+	"Этна"
+	"Федериго Барбаросса"
+	"Фольгоранте"
+	"Фульминанте"
+	"Дженерозо"
+	"Гуисгардо"
+	"Гогенштауфен"
+	"Идра"
+	"Инвесибиле"
+	"Л'Аретуза"
+	"Юпитер"
+	"Мария Иммаколата"
+	"Марте"
+	"Меркурио"
+	"Мессаджеро"
+	"Минерва"
+	"Наполи"
+	"Навиганте"
+	"Неттуно"
+	"Палинуро"
+	"Партенопе"
+	"Пегасо"
+	"Пелоро"
+	"Плутоне"
+	"Пулья"
+	"Пуриссима Кончеционе"
+	"Ре Карло"
+	"Ре Федериго"
+	"Ре Ферранте"
+	"Реджина деи Мари"
+	"Сан-Франческо д'Ассизи"
+	"Саэтта"
+	"Сан-Антонио"
+	"Сан-Карло"
+	"Сан-Фердинандо"
+	"Сан-Вито"
+	"Саннита"
+	"Санта-Амалия"
+	"Санта-Элена"
+	"Санта-Лючия"
+	"Санта-Венфрида"
+	"Санта-Агата"
+	"Санта-Агатоне"
+	"Сибилла"
+	"Сичилия"
+	"Сирена"
+	"Танкреди"
+	"Велоче"
 }
 
 army_names = {
-	"Armata di $PROVINCE$"
+	"Армия пров. $PROVINCE$"
 }

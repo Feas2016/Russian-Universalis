@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 39 71 136 }
+color = { 100  50  150 }
 revolutionary_colors = { 15  6  16 } #Parthenopean Republic
 
 historical_score = 120
@@ -35,77 +35,138 @@ historical_units = {
 }
 
 monarch_names = {
-	"Carlo #3" = 80
-	"Ferrante #0" = 80
-	"Filippo #0" = 60
-	"Alfonso #0" = 40
-	"Federigo #0" = 20
-	"Ladislao #0" = 20
-	"Gioachino #0" = 20
-	"Giovanna #1" = -15
-	"Achille #0" = 15
-	"Gabriele #0" = 15
-	"Alberto #0" = 10
-	"Antonio #0" = 10
-	"Cesare #0" = 10
-	"Francesco #0" = 10
-	"Giovanni #0" = 10
-	"Giuseppe #0" = 10
-	"Leopoldo #0" = 10
-	"Adriano #0" = 0
-	"Alessandro #0" = 0
-	"Alfredo #0" = 0
-	"Bartolomeo #0" = 0
-	"Benedetto #0" = 0
-	"Claudio #0" = 0
-	"Enzo #0" = 0
-	"Fabio #0" = 0
-	"Fabrizio #0" = 0
-	"Gaspare #0" = 0
-	"Leandro #0" = 0
-	"Marco #0" = 0
-	"Martino #0" = 0
-	"Nestore #0" = 0
-	"Paolo #0" = 0
-	"Pietro #0" = 0
-	"Raniero #0" = 0
-	"Roberto #0" = 0
-	"Salvatore #0" = 0
-	"Vicenzo #0" = 0
+    "Карло #3" = 80
+	"Ферранте #0" = 80
+	"Филиппо #0" = 60
+	"Альфонсо #0" = 40
+	"Федериго #0" = 20
+	"Ладислао #0" = 20
+	"Джоакино #0" = 20
+	"Джованна #1" = -15
+	"Акилле #0" = 15
+	"Габриэле #0" = 15
+	"Альберто #0" = 10
+	"Антонио #0" = 10
+	"Чезаре #0" = 10
+	"Франческо #0" = 10
+	"Джованни #0" = 10
+	"Джузеппе #0" = 10
+	"Леопольдо #0" = 10
+	"Адриано #0" = 0
+	"Алессандро #0" = 0
+	"Альфредо #0" = 0
+	"Бартоломео #0" = 0
+	"Бенедетто #0" = 0
+	"Клаудио #0" = 0
+	"Энцо #0" = 0
+	"Фабио #0" = 0
+	"Фабрицио #0" = 0
+	"Гаспаре #0" = 0
+	"Леандро #0" = 0
+	"Марко #0" = 0
+	"Мартино #0" = 0
+	"Несторе #0" = 0
+	"Паоло #0" = 0
+	"Пьетро #0" = 0
+	"Раньеро #0" = 0
+	"Роберто #0" = 0
+	"Сальваторе #0" = 0
+	"Виченцо #0" = 0
 }
 
 leader_names = {
-	"degli Albizzi" Allori "d'Appiani d'Aragona" "d'Asburgo"
-	Barberini Bartolini Benciveni Bizzelli Boncompagni
-	Botta-Adorno Buontalenti Buti Butteri "di Campofregoso"
-	Cercignani Chiastavelli Chigi Corsini Cybo-Malaspina
-	"di Farnese" Gori Grimaldi "Grimaldi di Busca" Lanzi Lessi
-	Ludovisi Malaspina Mancinetti "di Medici" "del Moro" Nasini
-	Orsini Piccolomini Pico Pierallini Pieroni Piombante Pontelli
-	Rivani Rospigliosi "del Rosso" Savaranola Soderini Tempesta
-	Terreni Tonelli Traballesi Ulivelli Vasari Zucchi
+	"Дельи Альбицци"
+	"Аллори"
+	"д'Аппьяни д'Арагона"
+	"д'Асбурго"
+	"Барберини"
+	"Бартолини"
+	"Бенчивени"
+	"Биццели"
+	"Бонкомпаньи"
+	"Ботта-Адорно"
+	"Буонталенти"
+	"Бути"
+	"Буттери"
+	"ди Кампофрегозо"
+	"Черчиньяни"
+	"Кьяставелли"
+	"Киджи"
+	"Корсини"
+	"Кибо-Маласпина"
+	"ди Фарнезе"
+	"Гори"
+	"Гримальди"
+	"Гримальди ди Буска"
+	"Ланци"
+	"Лесси"
+	"Лудовизи"
+	"Маласпина"
+	"Манчинетти"
+	"ди Медичи"
+	"дель Моро"
+	"Назини"
+	"Орсини"
+	"Пикколомини"
+	"Пико"
+	"Пьераллини"
+	"Пьерони"
+	"Пьомбанте"
+	"Понтелли"
+	"Ривани"
+	"Роспильози"
+	"дель Россо"
+	"Саванарола"
+	"Содерини"
+	"Темпеста"
+	"Террени"
+	"Тонелли"
+	"Трабаллези"
+	"Уливелли"
+	"Вазари"
+	"Дзукки"
 }
 
 ship_names = {
-	Albizi  Arcetri Arezzo
-	Bellosguardo Bisenzio
-	Careggi "Corso Donati" "Cosimo de' Medici"
-	"Dante Alighieri" "Dino Compagni"
-	Fiesole "Filippo Brunelleschi" Firenze "fiume Arno"
-	"fiume Greve" "Francesco Petrarca"
-	Galluzzo "Giano della Bella" Giotto
-	Impruneta
-	Medici Mugnone
-	Orsanmichele
-	Pistoia Prato
-	Ripoli
-	"San Frediano" "San Giovanni Battista" "San Lorenzo"
-	"San Marco" "Santa Maria del Fiore" "Santa Trinita"
-	Scandicci Settignano "Sesto Fiorentino"
-	Terzolle
-	"Vieri de Cerchi"
+	"Альбици"
+	"Акчетри"
+	"Ареццо"
+	"Беллосгуардо"
+	"Бизенцио"
+	"Кареджи"
+	"Корсо Донати"
+	"Козимо де Медичи"
+	"Данте Алигьери"
+	"Дино Компаньи"
+	"Фьезоле"
+	"Филиппо Брунеллески"
+	"Фиренце"
+	"Фиуме Арно"
+	"Фиуме Греве"
+	"Франческо Петрарка"
+	"Галлуццо"
+	"Джано делла Белла"
+	"Джотто"
+	"Импрунета"
+	"Медичи"
+	"Муньоне"
+	"Орсанмикеле"
+	"Пистоя"
+	"Прато"
+	"Риполи"
+	"Сан-Фредиано"
+	"Сан-Джованни Баттиста"
+	"Сан-Лоренцо"
+	"Сан-Марко"
+	"Санта-Мария дель Фьоре"
+	"Санта-Тринита"
+	"Скандиччи"
+	"Сеттиньяно"
+	"Сесто Фьорентино"
+	"Терцолле"
+	"Вьери де Черки"
 }
 
 army_names = {
-	"Armata di $PROVINCE$"
+	"Армия пров. $PROVINCE$"
 }

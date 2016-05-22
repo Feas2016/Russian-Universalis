@@ -37,84 +37,161 @@ historical_units = {
 }
 
 monarch_names = {
-	"Philippe #1" = 80
-	"Charles #0" = 60
-	"Louis #0" = 30
-	"Jean #0" = 20
-	"Louis-Henri #0" = 20
-	"Louis-Joseph #0" = 20
-	"Henri #1" = 10
-	"Antoine #0" = 10
-	"Henri-Jules #0" = 10
-	"Joseph #0" = 10
-	"Marie #0" = -10
-	"Franзois #0" = 5
-	"Hughes #5" = 1
-	"Eudes #4" = 1
-	"Robert #2" = 1
-	"Armand #0" = 0
-	"Barthйlemy #0" = 0
-	"Benoоt #0" = 0
-	"Bernard #0" = 0
-	"Claude #0" = 0
-	"Denis #0" = 0
-	"Йtienne #0" = 0
-	"Eugиne #0" = 0
-	"Eustache #0" = 0
-	"Georges #0" = 0
-	"Gui #0" = 0
-	"Guillaume #0" = 0
-	"Isidore #0" = 0
-	"Jean-Baptiste #0" = 0
-	"Jules #0" = 0
-	"Marc #0" = 0
-	"Maurice #0" = 0
-	"Michel #0" = 0
-	"Nicolas #0" = 0
-	"Pascal #0" = 0
-	"Pierre #0" = 0
-	"Raoul #0" = 0
-	"Renй #0" = 0
-	"Sйbastien #0" = 0
-	"Simon #0" = 0
+	"Филипп #1" = 80
+	"Карл #0" = 60
+	"Луи #0" = 30
+	"Жан #0" = 20
+	"Луи-Генрих #0" = 20
+	"Луи-Жозеф #0" = 20
+	"Генрих #1" = 10
+	"Антуан #0" = 10
+	"Генрих-Юлий #0" = 10
+	"Жозеф #0" = 10
+	"Мария #0" = -10
+	"Франциск #0" = 5
+	"Гуго #5" = 1
+	"Эд #4" = 1
+	"Робер #2" = 1
+	"Арман #0" = 0
+	"Бартелеми #0" = 0
+	"Бенуа #0" = 0
+	"Бернар #0" = 0
+	"Клод #0" = 0
+	"Дени #0" = 0
+	"Этьен #0" = 0
+	"Эжен #0" = 0
+	"Эсташ #0" = 0
+	"Жорж #0" = 0
+	"Ги #0" = 0
+	"Гийом #0" = 0
+	"Исидор #0" = 0
+	"Жан-Батист #0" = 0
+	"Жюль #0" = 0
+	"Марк #0" = 0
+	"Морис #0" = 0
+	"Мишель #0" = 0
+	"Николя #0" = 0
+	"Паскаль #0" = 0
+	"Пьер #0" = 0
+	"Рауль #0" = 0
+	"Рене #0" = 0
+	"Себастьен #0" = 0
+	"Симон #0" = 0
 }
 
 leader_names = {
-        d'Aban d'Abonde Arbelot d'Auxy
-        "de Balay" "de Bauffremont" "de Beaumont" "de Beugre" "de Boulay" "de Bourgeois" Bourgogne-Montaigu "de Brachet" "de Brimeu"
-        "de Castaing" "de Chabot" "de Chвlon" "de Chвlon-Arlay" "de Chandieu" "de Chastellux" "de Chin" "de Cicon" "de Coligny" "de Crйquy" "de Cuiseaux"
-        "de Damas" "de Dammartin" "de Donzy" "de Dyo"
-        "d'Egmont"
-        "de Ferrette"
-        "de Lalaing" "de Lannoy" "Le Corgne" "de Lugny"
-        "de Marle" "de Melun" "de Montfaucon"
-        "Nagu de Varennes" "de Nanton" "de Neufchвtel" "de Noyelles"
-        "de Pontailler" "de la Porte"
-        "Pot de la Roche" "de Rochebaron" "de Rochechouart" "de Roye"
-        "de Scorailles" "de Sйmur"
-        "de Ternant" "de Tonnerre" "de Toucy" "de Toulonjon"
-        "de Vaubresson" "de Vaudrey" "de Vellexon" "de Vergy" "de Vienne" "de Villaines" "de Villiers"
+        "д'Эбан"
+	"д'Эбон"
+	"Арбело"
+	"д'Оси"
+	"де Балай"
+	"де Боффремон"
+	"де Бомон"
+	"де Бежр"
+	"де Буле"
+	"де Буржой"
+	"Бургонь-Монтегю"
+	"де Браше"
+	"де Бримо"
+	"де Кастен"
+	"де Шабо"
+	"де Шалон"
+	"де Шалон-Эрле"
+	"де Шандье"
+	"де Шастелю"
+	"де Шин"
+	"де Сикон"
+	"де Колиньи"
+	"де Креки"
+	"де Кюисо"
+	"де Дама"
+	"де Даммартен"
+	"де Донзи"
+	"де Дио"
+	"д'Эгмон"
+	"де Ферретт"
+	"де Лален"
+	"де Ланной"
+	"Ле Корнье"
+	"де Люньи"
+	"де Марль"
+	"де Мелюн"
+	"де Монфокон"
+	"Нагю де Варенн"
+	"де Нантон"
+	"де Невшатель"
+	"де Нойэль"
+	"де Понтайе"
+	"де ла Порт"
+	"По де ла Рош"
+	"де Рошебарон"
+	"де Рошешуар"
+	"де Ройе"
+	"де Скорайе"
+	"де Семюр"
+	"де Тернан"
+	"де Тоннерр"
+	"де Туси"
+	"де Тулонжон"
+	"де Вобрессон"
+	"де Водрей"
+	"де Веллесон"
+	"де Вержи"
+	"де Вьенн"
+	"де Вилене"
+	"де Вильер"
 }
 
 ship_names = {
-	Armanзon Arroux
-	Bourgogne Brugge
-	Cambrai "Castrum Divionense" Childebert "Childebert II" Chilperic Citeaux Chlothar Cluny Comtesse "Cфte-d'Or" 
-	Dijon "Duc de Bourgogne" Duchesse 
-	Gebicca Giselher Godegisel Godomar Gunderic Gundobad Gundomar "Gundomar II" Gunther Guntram
-	"Jean sans Peur"
-	"Marie de Bourgogne"
-	"Philippe le Bon" "Philippe le Hardi"
-	"Richard de Bourgogne"
-	Saфne Sigismund
-	Theudebert "Theuderic II"
-	Vйzelay
+	"Армансон"
+	"Арру"
+	"Бургонь"
+	"Брюгге"
+	"Камбре"
+	"Кастрюм Дивионанс"
+	"Хильдеберт I"
+	"Хильдеберт II"
+	"Шильперик"
+	"Сито"
+	"Хлотарь"
+	"Клюни"
+	"Комтесс"
+	"Кот-д'Ор"
+	"Дижон"
+	"Дюк де Бургонь"
+	"Дюшесс"
+	"Гебикка"
+	"Гизеле"
+	"Годегисель"
+	"Годомар"
+	"Гюндерик"
+	"Гюндобад"
+	"Гюндомар I"
+	"Гюндомар II"
+	"Гюнтер"
+	"Гюнтрам"
+	"Жан сан Пе"
+	"Мари де Бургонь"
+	"Филипп ле Бон"
+	"Филипп ле Арди"
+	"Ришар де Бургонь"
+	"Саон"
+	"Сигизмунд"
+	"Теодеберт"
+	"Теодерик II"
+	"Везелэ"
 }
 
 army_names = {
-         "Armйe du Charolais"     "Armйe de Chalon"    "Armйe du Comtй" 
-         "Armйe de l'Autunois"    "Armйe du Mвconnais" "Armйe de l'Auxerrois"
-         "Armйe de l'Avallonnais" "Armйe de Tonnerre"  "Armйe de l'Auxonnois"
-         "Armйe de la Saone"      
-	 "Armйe de $PROVINCE$" 
+ 	"Армия Шароле"
+	"Армия Шалона"
+	"Армия Комте"
+	"Армия л'Отунуа"
+	"Армия Маконне"
+	"Армия л'Оксеруа"
+	"Армия л'Аваллонне"
+	"Армия Тоннерра"
+	"Армия л'Оксоннуа"
+	"Армия ла Саона"
+	"Армия пров. $PROVINCE$"
 }

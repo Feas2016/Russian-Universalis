@@ -35,90 +35,148 @@ historical_units = {
 }
 
 monarch_names = {
-	"Heinrich #4" = 70
-	"Konrad #4" = 40
-	"Albrecht #0" = 20
-	"Friedrich #0" = 20
-	"Johann #0" = 20
-	"Johann Kaspar #0" = 20
-	"Karl #0" = 20
-	"Ludwig #0" = 20
-	"Martin #0" = 20
-	"Michael #0" = 20
-	"Paul #0" = 20
-	"Ulrich #0" = 20
-	"Walter #0" = 20
-	"Wolfgang #0" = 20
-	"Clemens August #0" = 15
-	"Georg #0" = 15
-	"Johann Eustach #0" = 15
-	"Karl Alexander #0" = 15
-	"Karl Joseph #0" = 15
-	"Leopold Wilhelm #0" = 15
-	"Ludwig Anton #0" = 15
-	"Ludwig Franz #0" = 15
-	"Maximilian #0" = 15
-	"Maximilian Franz #0" = 15
-	"Adalbert #0" = 0
-	"Adam #0" = 0
-	"Arnold #0" = 0
-	"Bernhard #0" = 0
-	"Dietrich #0" = 0
-	"Egon #0" = 0
-	"Gregor #0" = 0
-	"Humbert #0" = 0
-	"Immanuel #0" = 0
-	"Isidor #0" = 0
-	"Lothar #0" = 0
-	"Markus #0" = 0
-	"Matthias #0" = 0
-	"Pankraz #0" = 0
-	"Rudolf #0" = 0
-	"Theodor #0" = 0
-	
-	"Maria #0" = -1
-	"Magdalena #0" = -1
-	"Eva #0" = -1
+	"Генрих #4" = 70
+	"Конрад #4" = 40
+	"Альбрехт #0" = 20
+	"Фридрих #0" = 20
+	"Иоганн #0" = 20
+	"Иоганн Каспар #0" = 20
+	"Карл #0" = 20
+	"Людвиг #0" = 20
+	"Мартин #0" = 20
+	"Михаэль #0" = 20
+	"Пауль #0" = 20
+	"Ульрих #0" = 20
+	"Вальтер #0" = 20
+	"Вольфганг #0" = 20
+	"Клеменс Август #0" = 15
+	"Георг #0" = 15
+	"Иоганн Ойстах #0" = 15
+	"Карл Александер #0" = 15
+	"Карл Иосиф #0" = 15
+	"Леопольд Вильгельм #0" = 15
+	"Людвиг Антон #0" = 15
+	"Людвиг Франц #0" = 15
+	"Максимилиан #0" = 15
+	"Максимилиан Франц #0" = 15
+	"Адальберт #0" = 0
+	"Адам #0" = 0
+	"Арнольд #0" = 0
+	"Бернхард #0" = 0
+	"Дитрих #0" = 0
+	"Эгон #0" = 0
+	"Грегор #0" = 0
+	"Гумберт #0" = 0
+	"Иммануэль #0" = 0
+	"Исидор #0" = 0
+	"Лотар #0" = 0
+	"Маркус #0" = 0
+	"Маттиас #0" = 0
+	"Панкрац #0" = 0
+	"Рудольф #0" = 0
+	"Теодор #0" = 0
+
+	"Мария #0" = -1
+	"Магдалена #0" = -1
+	"Ева #0" = -1
 }
 
 leader_names = {
-	"von Aderkas" "von Albedyll" "von Altenburg" "von Ampringen" "von Arfberg" 
-	"von Bassenheim" "von Bobenhausen" "von Bremen" "von Buchholtz" "von Buxhoeveden"
-	"von Campenhausen" "von Cronberg" "von Cube"
-	"von Dellinghausen" "von Drachenfels"
-	"von Ekesparre" "von Erlichshausen"
-	"von Freymann" "Freytag von Loringhoven"
-	"von Hehn" "von Helbrungen" "von Howen" "von Hunnius" "von Hoyningen" 
-	"von Jungingen"
-	"von Keyserling" "von Koskull" "von Kniprode" "von Klot-Heydenfeldt" "von Krusenstiern"
-	"von Lilienfeld"
-	"von Patkul" "von Poll"
-	"von Rennenkampff" "von Rothstein" "von Ruszdorf" "von Richtenberg" "von Roth-Rцsthof"
-	"von Sass" "von Schubert" "von Sangershausen" "von Schwanden"
-	"von Tieffen"
-	"von Uexkьll" "von Ungern-Sternberg" "von Urenbach"
-	"von Wrangel" "von Wistinghausen" "von Wattzau" "von Wallenrode"
+	"фон Адеркас"
+	"фон Альбедиль"
+	"фон Альтенбург"
+	"фон Ампринген"
+	"фон Арфберг"
+	"фон Бассенхайм"
+	"фон Бобенхаузен"
+	"фон Бремен"
+	"фон Бухгольц"
+	"фон Буксгеведен"
+	"фон Кампенхаузен"
+	"фон Кронберг"
+	"фон Кубе"
+	"фон Деллингхаузен"
+	"фон Драхенфельс"
+	"фон Экеспарре"
+	"фон Эрлихсхаузен"
+	"фон Фрейман"
+	"Фрейтаг фон Лорингхофен"
+	"фон Хен"
+	"фон Хельбрунген"
+	"фон Ховен"
+	"фон Хунниус"
+	"фон Хойнинген"
+	"фон Юнгинген"
+	"фон Кейсерлинг"
+	"фон Коскулль"
+	"фон Книпроде"
+	"фон Клот-Хейденфельдт"
+	"фон Крузенштерн"
+	"фон Лилинфельд"
+	"фон Паткуль"
+	"фон Полль"
+	"фон Ренненкампф"
+	"фон Ротштайн"
+	"фон Русцдорф"
+	"фон Рихтенберг"
+	"фон Рот-Рестоф"
+	"фон Сасс"
+	"фон Шуберт"
+	"фон Сангерсхаузен"
+	"фон Шванден"
+	"фон Тиффен"
+	"фон Уэкскюлль"
+	"фон Унгерн-Штернберг"
+	"фон Уренбах"
+	"фон Врангель"
+	"фон Вистингхаузен"
+	"фон Ватцау"
+	"фон Валленроде"
 }
 
 ship_names = {
-	Danzig
-	Elbing
-	Gottersweder
-	Kцnigsberg
-	Marienburg Mittenburg Mitau
-	Thorn
-	Windau
-	Goldingen
-	"von Bassenheim" "Otto von Kerpen" "Heinrich von Tunna" "Hermann von Salza" "Konrad von Thьringen"
-	"Gerhard von Malberg" "von Hohenlohe" "von Wьllersleben" "Poppo von Osterna"
-	"von Sangershausen" "von Heldrungen" "Burkhard von Schwanden" "von Feuchtwangen"
-	"von Trier" "Werner von Orseln" "von Braunschweig" "Dietrich von Altenburg" "von Wattzau"
-	"von Arfberg" "Winrich von Kniprode" "von Rotenstein" "von Wallenrode" "Konrad V von Jungingen"
-	"Ulrich von Jungingen" "Heinrich von Plauen" "von Sternberg" "von Wetzhausen"
-	"Johann von Tiefen" "Walter von Cronberg"
+	"Данциг"
+	"Эльбинг"
+	"Готтерсведер"
+	"Кенигсберг"
+	"Мариенбург"
+	"Миттенбург"
+	"Митау"
+	"Торн"
+	"Виндау"
+	"Гольдинген"
+	"фон Бассенхайм"
+	"Отто фон Керпен"
+	"Хайнрих фон Тунна"
+	"Герман фон Зальца"
+	"Конрад фон Тюринген"
+	"Герхард фон Мальберг"
+	"фон Гогенлоэ"
+	"фон Вюллерслебен"
+	"Поппо фон Остерна"
+	"фон Сангерсхаузен"
+	"фон Хельдрунген"
+	"Буркхард фон Шванден"
+	"фон Фойхтванген"
+	"фон Трир"
+	"Вернер фон Орсельн"
+	"фон Брауншвейг"
+	"Дитрих фон Альтенбург"
+	"фон Ватцау"
+	"фон Арфберг"
+	"Винрих фон Книпроде"
+	"фон Ротештайн"
+	"фон Валленроде"
+	"Конрад фон Юнгинген"
+	"Ульрих фон Юнгинген"
+	"Хайнрих фон Плауэн"
+	"фон Штернберг"
+	"фон Вецхаузен"
+	"Иоганн фон Тифен"
+	"Вальтер фон Кронберг"
 }
 
 
 army_names = {
-	"Banner"
+	"Хоругвь"
 }

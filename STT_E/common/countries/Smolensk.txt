@@ -35,69 +35,102 @@ historical_units = {
 }
 
 monarch_names = {
-	"Svyatoslav #2" = 25
-	"Mstislav #3" = 20
-	"Roman #1" = 20
-	"Davyd #1" = 20
-	"Fedor #1" = 20
-	"Mikhail #1" = 20
-	"Gleb #2" = 20
-	"Ivan #1" = 15
-	"Rostislav #2" = 15
-	"Vsevolod #1" = 10
-	"Iaropolk #1" = 10
-	"Aleksandr #1" = 10
-	"Vladimir #1" = 10
-	"Yury #0" = 5
-	"Olgierd #0" = 5
-	"Bryachislav #0" = 5
-	"Vasiliy #0" = 5
-	"Izyaslav #0" = 5
-	"Vseslav #0" = 5
-	"Boris #0" = 5
-	"Adrian #0" = 0
-	"Afanasiy #0" = 0
-	"Daniil #0" = 0
-	"Dmitriy #0" = 0
-	"Dorofey #0" = 0
-	"Faddey #0" = 0
-	"Feodosiy #0" = 0
-	"Feofil #0" = 0
-	"Foma #0" = 0
-	"Gavriil #0" = 0
-	"Grigoriy #0" = 0
-	"Igor #0" = 0
-	"Mefodiy #0" = 0
-	"Naum #0" = 0
-	"Nikita #0" = 0
-	"Nikolai #0" = 0
-	"Pankrati #0" = 0
-	"Prokhor #0" = 0
-	"Pyotr #0" = 0
-	"Radoslav #0" = 0
-	"Ruslan #0" = 0
-	"Semen #0" = 0
-	"Serafim #0" = 0
-	"Sevastian #0" = 0
-	"Stanislav #0" = 0
-	"Timofeiy #0" = 0
-	"Varfolomeiy #0" = 0
-	"Vikentiy #0" = 0
-	"Yaroslav #0" = 0
-	
-	"Faina #0" = -1
-	"Arina #0" = -1
-	"Taisiya #0" = -1
+	"Святослав #2" = 25
+	"Мстислав #3" = 20
+	"Роман #1" = 20
+	"Давид #1" = 20
+	"Федор #1" = 20
+	"Михаил #1" = 20
+	"Глеб #2" = 20
+	"Иван #1" = 15
+	"Ростислав #2" = 15
+	"Всеволод #1" = 10
+	"Ярополк #1" = 10
+	"Александр #1" = 10
+	"Владимир #1" = 10
+	"Юрий #0" = 5
+	"Ольгерд #0" = 5
+	"Брячислав #0" = 5
+	"Василий #0" = 5
+	"Изяслав #0" = 5
+	"Всеслав #0" = 5
+	"Борис #0" = 5
+	"Адриан #0" = 0
+	"Афанасий #0" = 0
+	"Даниил #0" = 0
+	"Дмитрий #0" = 0
+	"Дорофей #0" = 0
+	"Фаддей #0" = 0
+	"Осип #0" = 0
+	"Феофил #0" = 0
+	"Фома #0" = 0
+	"Гавриил #0" = 0
+	"Григорий #0" = 0
+	"Игор #0" = 0
+	"Мефодий #0" = 0
+	"Наум #0" = 0
+	"Никита #0" = 0
+	"Лев #0" = 0
+	"Панкрат #0" = 0
+	"Прохор #0" = 0
+	"Петр #0" = 0
+	"Роман #0" = 0
+	"Руслан #0" = 0
+	"Семен #0" = 0
+	"Серафим #0" = 0
+	"Севастьян #0" = 0
+	"Станислав #0" = 0
+	"Тимофей #0" = 0
+	"Варфоломей #0" = 0
+	"Викентий #0" = 0
+	"Ярослав #0" = 0
+
+	"Фиона #0" = -1
+	"Арина #0" = -1
+	"Тася #0" = -1
 }
 
-leader_names = { 
-	Vitebsky Izyaslavsky Dursky Galisky Borovsky Vereisky Volotsky Galitsky
-	Mozhaisky Uglisky Shemyakin Satin Aladyin Beznosov Bokeev Burukhin Vnukov Korobyin
-	Zabolotsky Dalmatov Kisleevsky Travin Tsyplyatev Shukalovsky
+leader_names = {
+	"Витебский"
+	"Картачев"
+	"Дурский"
+	"Теншин"
+	"Боровский"
+	"Брюхатый"
+	"Волоцкий"
+	"Кротов"
+	"Можайский"
+	"Углицкий"
+	"Шемякин"
+	"Сатин"
+	"Алядин"
+	"Безносов"
+	"Бокеев"
+	"Бурухин"
+	"Внуков"
+	"Коробин"
+	"Заболоцкий"
+	"Далматов"
+	"Кислевский"
+	"Травин"
+	"Цыплятев"
+	"Елагин"
 }
 
 ship_names = {
-	Velikaya Chudskoye Pskovskoye Polotsk Smolensk Bryansk
-	Rakovor Bolotovo Kulikovo Ostrov Izborsk
-	Pechory Porhov "Velikiye Luki" Sebezh
+	"Великое"
+	"Чудское озеро"
+	"Псков"
+	"Полоцк"
+	"Смоленск"
+	"Брянск"
+	"Раковор"
+	"Болотово"
+	"Куликово"
+	"Остров"
+	"Изборск"
+	"Печоры"
+	"Порхов"
+	"Великие Луки"
+	"Себеж"
 }

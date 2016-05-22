@@ -33,85 +33,166 @@ historical_units = {
 }
 
 monarch_names = {
-	"Alfonso #0" = 40
-	"Ercole #0" = 40
-	"Niccolт #2" = 20
-	"Borso #1" = 20
-	"Leonello #0" = 20
-	"Alessandro #0" = 15
-	"Ferdinando #0" = 15
-	"Folco #0" = 15
-	"Luigi #0" = 15
-	"Sigismondo #0" = 15
-	"Alberto #1" = 10
-	"Francesco #0" = 10
-	"Ippolito #0" = 10
-	"Azzo #3" = 5
-	"Aldobrandino #2" = 5
-	"Obizzo #2" = 5
-	"Rinaldo #1" = 5
-	"Agostino #0" = 0
-	"Baldasare #0" = 0
-	"Carlo #0" = 0
-	"Cesare #0" = 0
-	"Cosimo #0" = 0
-	"Cristiano #0" = 0
-	"Davide #0" = 0
-	"Ennio #0" = 0
-	"Fulgenzio #0" = 0
-	"Gennaro #0" = 0
-	"Giulio #0" = 0
-	"Giuseppe #0" = 0
-	"Lazzaro #0" = 0
-	"Martino #0" = 0
-	"Nicola #0" = 0
-	"Ottavio #0" = 0
-	"Panfilo #0" = 0
-	"Prospero #0" = 0
-	"Renato #0" = 0
-	"Ruggiero #0" = 0
-	"Torquato #0" = 0
-	"Ugo #0" = 0
-	"Vincenzo #0" = 0
+	"Альфонсо #0" = 40
+	"Эрколе #0" = 40
+	"Никколо #2" = 20
+	"Борсо #0" = 20
+	"Леонелло #0" = 20
+	"Алессандро #0" = 15
+	"Фердинандо #0" = 15
+	"Фолько #0" = 15
+	"Луиджи #0" = 15
+	"Сигисмондо #0" = 15
+	"Альберто #1" = 10
+	"Франческо #0" = 10
+	"Ипполито #0" = 10
+	"Аццо #3" = 5
+	"Альдобрандино #2" = 5
+	"Обиццо #2" = 5
+	"Ринальдо #2" = 5
+	"Агостино #0" = 0
+	"Бальдазаре #0" = 0
+	"Карло #0" = 0
+	"Чезаре #0" = 0
+	"Козимо #0" = 0
+	"Кристиано #0" = 0
+	"Давиде #0" = 0
+	"Эннио #0" = 0
+	"Фульдженцио #0" = 0
+	"Дженнаро #0" = 0
+	"Джулио #0" = 0
+	"Джузеппе #0" = 0
+	"Лаццаро #0" = 0
+	"Мартино #0" = 0
+	"Николо #0" = 0
+	"Оттавио #0" = 0
+	"Панфило #0" = 0
+	"Просперо #0" = 0
+	"Ренато #0" = 0
+	"Руджеро #0" = 0
+	"Торкато #0" = 0
+	"Уго #0" = 0
+	"Винченцо #0" = 0
 	
-	"Gaia #0" = -1
-	"Liboria #0" = -1
-	"Marietta #0" = -1
+	"Гайя #0" = -1
+	"Либория #0" = -1
+	"Мариеттта #0" = -1
 }
 
 leader_names = {
-	Allegri "d'Appiani d'Aragona" Araldini "di Ardizzone" Ariosto Avanzini
-	Bacciochi Barberini Battisti Boiardo Boncompagni Boncompagni-Ludovisi
-	Calcagnini Catena Colonna "del Cossa" d'Este Farini "di Farnese" "di Ferrari"
-	Giardini Grandi Graziosi Gualandelli Gucciardini Loschi
-	Malmussi Marescalchi Menotti Mitelli Montecuccoli Montefeltro Nardi Nobili
-	Ordelaffi Pavironica Peretti Pico Pio Rangoni "de Roberti" Rossetti
-	Santarosa "di Sauli" Tassoni "de Tolomei" "della Torre" Tura Viridis Zini
+	"Аллегри"
+	"д'Аппьяни д'Арагона"
+	"Аральдини"
+	"ди Ардиццоне"
+	"Ариосто"
+	"Аванцини"
+	"Баччиоки"
+	"Барберини"
+	"Баттисти"
+	"Боиардо"
+	"Бонкомпаньи"
+	"Бонкомпаньи-Лудовизи"
+	"Кальканьини"
+	"Катена"
+	"Колонна"
+	"дель Косса"
+	"д'Эсте"
+	"Фарини"
+	"ди Фарнезе"
+	"ди Феррари"
+	"Джардини"
+	"Гранди"
+	"Грациози"
+	"Гуаланделли"
+	"Гуччиардини"
+	"Лоски"
+	"Мальмусси"
+	"Марескальки"
+	"Менотти"
+	"Мителли"
+	"Монтекукколи"
+	"Монтефельтро"
+	"Нарди"
+	"Нобили"
+	"Орделаффи"
+	"Павироника"
+	"Перетти"
+	"Пико"
+	"Пио"
+	"Рангони"
+	"де Роберти"
+	"Россетти"
+	"Сантароза"
+	"ди Саули"
+	"Тассони"
+	"де Толомей"
+	"делла Торре"
+	"Тура"
+	"Виридис"
+	"Дзини"
 }
 
 ship_names = { 
-	Aguscello Albarea "Azzo VI d'Este"
-	Baura Boara "Borgo Scoline" Bova "Borso"
-	Casaglia Cassana "Castel Trivellino" "Chiesuol del Fosso" "Cocomaro di Cona"
-	"Cocomaro di Focomorto" Codrea Cona Contrapт Corlo Correggio
-	Denore
-	Ezzelino
-	Focomorto Francolino
-	Gaibana "Gaibanella Sant'Egidio" "Guglielmo Adelardi" 
-	"Malborghetto di Boara" "Malborghetto di Correggio" Marrara Mezzavia
-	Monestirolo Montalbano
-	"Niccolу III"
-	"Obizzo II"
-	Parasacco Pescara Pontegradella Pontelagoscuro "Ponte Travagli" Porotto Porporana
-	Quartesana
-	Ravalle
-	"S.Caterina" "S.Paolo" Sabbioni "San Bartolomeo in Bosco" "San Giorgio"
-	"San Martino" "San Mercuriale di Forlм" "San Michele" "Sant'Egidio" Spinazzino
-	Tedaldo "Torre della Fossa"
-	Uccellino 
-	Viconovo Villanova
+	"Агушелло"
+	"Альбарея"
+	"Аццо д'Эсте"
+	"Баура"
+	"Боара"
+	"Борго Сколине"
+	"Бова"
+	"Борсо"
+	"Касалья"
+	"Кассана"
+	"Кастель Тривеллино"
+	"Кьезуоль дель Фоссо"
+	"Кокомаро ди Кона"
+	"Кокомаро ди Фокоморто"
+	"Кондрея"
+	"Кона"
+	"Контрапо"
+	"Корло"
+	"Корреджо"
+	"Деноре"
+	"Эццелино"
+	"Фокоморто"
+	"Франколино"
+	"Гайбана Гайбанелла"
+	"Санта-Эджидио"
+	"Гульельмо Аделарди"
+	"Мальборгетто ди Боара"
+	"Мальборгетто ди Корреджо"
+	"Маррара"
+	"Меццавия"
+	"Монестироло"
+	"Монтальбано"
+	"Никколо III"
+	"Обиццо II"
+	"Парасакко"
+	"Пескара"
+	"Понтеграделла"
+	"Понтелагоскуро"
+	"Понте Травальи"
+	"Поротто"
+	"Порпорана"
+	"Куартесана"
+	"Равалле"
+	"Санта-Катерина"
+	"Сан-Паоло"
+	"Саббиони"
+	"Сан-Бартоломео ин Боско"
+	"Сан-Джорджо"
+	"Сан-Мартино"
+	"Сан-Меркуриале ди Форли"
+	"Сан-Микеле"
+	"Санта-Эджидио"
+	"Спинаццино"
+	"Тедальдо"
+	"Торре делла Фосса"
+	"Уччеллино"
+	"Виконово"
+	"Вилланова"
 }
 
 army_names = {
-	"Armata di $PROVINCE$"
+	"Армия пров. $PROVINCE$"
 }

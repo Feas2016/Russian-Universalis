@@ -34,85 +34,161 @@ historical_units = {
 }
 
 monarch_names = {
-	"Charles #0" = 80
-	"Antoine #0" = 20
-	"Jean #0" = 40
-	"Pierre #1" = 20
-	"Louis #2" = 10
-	"Henri #0" = 10
-	"Suzanne #0" = -10
-	"Franзois #0" = 10
-	"Philippe #0" = 5
-	"Archambault #10" = 1
-	"Adhйmar #1" = 1		
-	"Guy #1" = 1
-	"Robert #1" = 1
-	"Alexandre #0" = 0
-	"Ambroise #0" = 0
-	"Armand #0" = 0
-	"Barthйlemy #0" = 0
-	"Benoоt #0" = 0
-	"Blaise #0" = 0
-	"Claude #0" = 0
-	"Georges #0" = 0
-	"Guillaume #0" = 0
-	"Ignace #0" = 0
-	"Jean-Baptiste #0" = 0
-	"Joseph #0" = 0
-	"Jules #0" = 0
-	"Martin #0" = 0
-	"Matthieu #0" = 0
-	"Maurice #0" = 0
-	"Maximiliem #0" = 0
-	"Michel #0" = 0
-	"Nicolas #0" = 0
-	"Raoul #0" = 0
-	"Renaud #0" = 0
-	"Roland #0" = 0
-	"Sйbastien #0" = 0
-	"Serge #0" = 0
-	"Sylvain #0" = 0
-	"Thibault #0" = 0
-	"Vincent #0" = 0
+	"Карл #0" = 80
+	"Антуан #0" = 20
+	"Жан #0" = 40
+	"Пьер #1" = 20
+	"Луи #1" = 10
+	"Анри #0" = 10
+	"Сюзанна #0" = -10
+	"Франсуа #0" = 10
+	"Филипп #0" = 5
+	"Аршамбо #10" = 1
+	"Адемар #1" = 1
+	"Ги #1" = 1
+	"Робер #1" = 1
+	"Александр #0" = 0
+	"Амбруаз #0" = 0
+	"Арман #0" = 0
+	"Бартелеми #0" = 0
+	"Бенуа #0" = 0
+	"Блез #0" = 0
+	"Клод #0" = 0
+	"Жорж #0" = 0
+	"Гийом #0" = 0
+	"Игнас #0" = 0
+	"Жан-Батист #0" = 0
+	"Жозеф #0" = 0
+	"Жюль #0" = 0
+	"Мартин #0" = 0
+	"Матье #0" = 0
+	"Морис #0" = 0
+	"Максимильен #0" = 0
+	"Мишель #0" = 0
+	"Николя #0" = 0
+	"Рауль #0" = 0
+	"Рено #0" = 0
+	"Ролан #0" = 0
+	"Себастьен #0" = 0
+	"Серж #0" = 0
+	"Сильвен #0" = 0
+	"Тибо #0" = 0
+	"Венсан #0" = 0
 }
 
 leader_names = {
-        "d'Arcy d'Ally" d'Arfeuil d'Arnoux "Aujay de la Dure"
-        "de Bar" "de Barbanзois" "de Barbarin" "de Basmaison" "de Beauvoir" "de Bellenaves" "de Bodinat" "de Boisй" "de Bonnefont" "de Bonnevie" "de Boucaumont" "de Bourbon-Busset" "de Bressoles" "de Breuil" "de Buchepot" "de la Bussiиre" "de Buysson"
-        "de Chabannes de La Palice" "de Champfeu" "de Chazeron" "Cordeboeuf de Beauverger"
-        "de Faucomprй" "de Fontanges" "de Frйmont"
-        "de Genestaux" "de Groing" "de Grossouvre" "du Guй" 
-        "Hutteau d'Origny"
-        "de La Baume" "de La Boulaye" "de La Valliиre" 
-        "de Magnoux" "du Mas de l'Isle" "de Monestay" "Motier de La Fayette"
-        "de Neufchaises" "de Neuville"
-        "du Peschin"
-        "de la Roche-Aymon" "de Rochedragon"
-        "de Saint Julien"
-        "de Troussebois"
-        "d'Ussel"
-        "de Villaines" "de Villars"
+  "д'Арси д'Алли"
+	"д'Арфей"
+	"д'Арну"
+	"Оже де ла Дюр"
+	"де Бар"
+	"де Барбансуа"
+	"де Барбарен"
+	"де Басмесон"
+	"де Бовуа"
+	"де Белленав"
+	"де Бодина"
+	"де Буас"
+	"де Боннефон"
+	"де Бонневье"
+	"де Букомон"
+	"де Бурбон-Бюссе"
+	"де Брессоль"
+	"де Брей"
+	"де Бюшепо"
+	"де ла Буссье"
+	"де Бюйссон"
+	"де Шабанне де ла Палис"
+	"де Шампфо"
+	"де Шазерон"
+	"Кордебеф де Боверже"
+	"де Фокомпре"
+	"де Фонтанже"
+	"де Фремон"
+	"де Женесто"
+	"де Груан"
+	"де Гроссувр"
+	"дю Ге"
+	"Утто д'Ориньи"
+	"де ла Бом"
+	"де ла Булай"
+	"де ла Вальер"
+	"де Манью"
+	"дю Ма де л'Иль"
+	"де Монесте"
+	"Мотье де ла Файетт"
+	"де Нефшесе"
+	"де Невиль"
+	"дю Пешен"
+	"де ла Рош-Эмон"
+	"де Рошедрагон"
+	"де Сен-Жюльен"
+	"де Труссебуа"
+	"д'Юссель"
+	"де Вилене"
+	"де Виллар"
 }
 
 ship_names = {
-        Barrais-Bussoles Beauvoir Bellerive Bessay Besson Bourbon-Lancy Bourbon-l'Archambaut Buxiиres
-        Cйrilly Chantelle Chatelguyon Chavroches Chevagne Combronde Commentry Couleuvre Cressanges Cusset
-        Dompierre
-        Ebreuil
-        Gannat
-        Jaligny
-        "Lapalisse" "Le Montet"
-        Marcillat Meaulne Monestier Montaigut Montcombroux Montluзon Montmarault Montord Moulins
-        Nйris "Neuilly le Rйal"
-        Pionsat
-        "St Aubin le Monial" "Saint Eloy" "St Etienne de Vicq" "Saint Germain" "Saint Hilaire" "Saint Lйon" "Saint Pierre Laval" "Saint Pourзain" "Saint Rйmy" "Saint Yorre" Souvigny
-        Varennes Vichy
-        Ygrande
+       "Барре-Буссоль"
+	"Бовуа"
+	"Беллерив"
+	"Бессэ"
+	"Бессон"
+	"Бурбон-Ланси"
+	"Бурбон-л'Аршамбо"
+	"Бюсьер"
+	"Серилли"
+	"Шантель"
+	"Шательгйон"
+	"Шавроше"
+	"Шеванье"
+	"Комброн"
+	"Коммантри"
+	"Кулевр"
+	"Крессанже"
+	"Кюссе"
+	"Домпьер"
+	"Эбрей"
+	"Ганна"
+	"Жалиньи"
+	"Лапалисс"
+	"Ле Монте"
+	"Марсийа"
+	"Мольн"
+	"Монестье"
+	"Монтэгю"
+	"Монкомбро"
+	"Монлюсон"
+	"Монмаро"
+	"Монтор"
+	"Мулен"
+	"Нери"
+	"Неийи ле Реаль"
+	"Пионса"
+	"Сен-Обен ле Мониаль"
+	"Сен-Элуа"
+	"Сен-Этьенн де Викк"
+	"Сен-Жермен"
+	"Сен-Илер"
+	"Сен-Леон"
+	"Сен-Пьер Лаваль"
+	"Сен-Пурсен"
+	"Сен-Реми"
+	"Сен-Йорр"
+	"Сувиньи"
+	"Варенн"
+	"Виши"
+	"Игран"
 }
 
 army_names = {
-         "Armйe du Bourbonnais" "Armйe de Bourbon"   "Armйe de Limagne"    
-         "Armйe de l'Allier"    "Armйe de la Marche" "Armйe du Beaujolais"  
-         "Armйe du Forez"
-	 "Armйe de $PROVINCE$" 
+ 	"Бурбонская армия"
+	"Армия Бурбонне"
+	"Армия Лимани"
+	"Армия л'Алье"
+	"Армия ла Марша"
+	"Армия Божоле"
+	"Армия Фореза"
+	"Армия пров. $PROVINCE$"
 }

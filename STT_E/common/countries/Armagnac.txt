@@ -35,88 +35,161 @@ historical_units = {
 }
 
 monarch_names = {
-	"Jean #3" = 40
-	"Charles #0" = 40
-	"Bernard #6" = 20
-	"Henri #0" = 10
-	"Marguerite #0" = -10
-	"Geraud #6" = 5
-	"Guillaume #1" = 5
-        "Arnaud-Bernard #2" = 1
-        "Mascarose #1" = 1
-        "Esquivat #1" = 1
-	"Pierre-Geraud #1" = 1		
-        "Armand #0" = 0
-	"Arnaud #0" = 0
-        "Aymeric #0" = 0
-	"Bartomiu #0" = 0
-	"Bernat #0" = 0
-	"Bertrand #0" = 0
-	"Domejon #0" = 0
-        "Eneco #0" = 0
-	"Estиve #0" = 0
-        "Exemen #0" = 0
-	"Ferrбn #0" = 0
-	"Folquet #0" = 0
-	"Frix #0" = 0
-	"Gastу #0" = 0
-        "Gaufrй #0" = 0
-	"Guilhem #0" = 0
-	"Jacme #0" = 0
-	"Jordan #0" = 0
-	"Loys #0" = 0
-	"Martн #0" = 0
-	"Matheu #0" = 0
-        "Miqueu #0" = 0
-	"Oth #0" = 0
-	"Per #0" = 0
-	"Pol #0" = 0
-	"Romeu #0" = 0
-	"Thomas #0" = 0
-	"Vicentz #0" = 0
-	"Vives #0" = 0
+	"Жан #3" = 40
+	"Карл #0" = 40
+	"Бернар #6" = 20
+	"Анри #0" = 10
+	"Маргарита #0" = -10
+	"Жеро #6" = 5
+	"Гийом #1" = 5
+	"Арно-Бернар #2" = 1
+	"Маскарос #1" = 1
+	"Эскива #1" = 1
+	"Пьер-Жеро #1" = 1
+	"Арман #0" = 0
+	"Арно #0" = 0
+	"Эмерик #0" = 0
+	"Бартомью #0" = 0
+	"Берна #0" = 0
+	"Бертран #0" = 0
+	"Домежон #0" = 0
+	"Энеко #0" = 0
+	"Эстев #0" = 0
+	"Эсемен #0" = 0
+	"Ферран #0" = 0
+	"Фульк #0" = 0
+	"Фри #0" = 0
+	"Гастон #0" = 0
+	"Жофре #0" = 0
+	"Гильем #0" = 0
+	"Жакме #0" = 0
+	"Журдан #0" = 0
+	"Луа #0" = 0
+	"Марти #0" = 0
+	"Матье #0" = 0
+	"Мике #0" = 0
+	"От #0" = 0
+	"Пер #0" = 0
+	"Поль #0" = 0
+	"Роме #0" = 0
+	"Тома #0" = 0
+	"Висенс #0" = 0
+	"Виве #0" = 0
 }
 
 leader_names = {
-	"d'Artagnan" "d'Astarac" "d'Avensac" "d'Avezan" 
-	"Barry de Puyol" "de Batz" "de Broque" "de Burosse" 
-	"de Calbiac" "de Cambairac" "de Castanet" "de Castelbajac" "de Catellan" "Chastenet de Puysйgur" "de Cheveny" "de Corneillan" "du Cos de la Hitte" 
-	"d'Esclignac" "d'Esparbez" 
-	"de Faudoas" "de Forcade"
-	"de Galard de Brassac" "de Gestas" "de Goth" "de Grossoles" 
-	"de La Barthe" "de La Briffe" "de Lacaze" "de Lasseran" "de Lavardac" "de L'Isle Jourdain" "de Lizarey" "de Lomagne" "de Loupiac" "de Luppй"
-	"de Maulйon" "de Maupas" "de Montcorneil" "de Montйgut" "de Montluc" "de Montpezat"
-	"de Nogaret"
-	"de Pardaillan"
-	"de Roquelaure"
-	"de Salles" "de Sensacq" "de Sйrignac" "de Solages"
-	"de la Tour-Maubourg"
-	"de Voisins"
+	"д'Артаньян"
+	"д'Астарак"
+	"д'Авенсак"
+	"д'Авезан"
+	"Барри де Пюйоль"
+	"де Бац"
+	"де Брок"
+	"де Бюросс"
+	"де Кальбьяк"
+	"де Камбайрак"
+	"де Кастане"
+	"де Кастельбажак"
+	"де Кателлан"
+	"Шастене де Пюйсегюр"
+	"де Шевени"
+	"де Корнейан"
+	"дю Ко де ла Итте"
+	"д'Эсклиньяк"
+	"д'Эспарбез"
+	"де Фодоа"
+	"де Форкад"
+	"де Галар де Брассак"
+	"де Жеста"
+	"де Гот"
+	"де Гроссоле"
+	"де Ла Барт"
+	"де Ла Брифф"
+	"де Лаказ"
+	"де Лассеран"
+	"де Лавардак"
+	"де Л'Иль Журден"
+	"де Лизаре"
+	"де Ломанье"
+	"де Лупиак"
+	"де Люппе"
+	"де Молеон"
+	"де Мопа"
+	"де Монкорней"
+	"де Монтегю"
+	"де Монлюк"
+	"де Монпеза"
+	"де Ногаре"
+	"де Пардайан"
+	"де Рокелор"
+	"де Саль"
+	"де Сенсак"
+	"де Сериньяк"
+	"де Солаже"
+	"де Тур-Мобург"
+	"де Вуасен"
 }
 
 ship_names = {
-        Aignan Auch Auterive
-        Brugnens
-        Castera-Verduran Casteljaloux Castillon-Massas Condom Couloume-Mondebat
-        Duran
-        Eauze Esparebent
-        Fleurance
-        Grailly
-        Hagetmau
-        Jegun
-        Lalanne Larroumiouac Lasserade Lasseube-Propre "La Testиre" Laurensan Lavardens Lectoure Lupiac
-        Massin Miramont-Latour Mirande Mirepoix Montaut-les-Crйneaux Montesquiou Montestruc
-        Nogaro
-        Pauilhac Peyrusse-Massas Preignan
-        Rambert Roquefort Roquelaure
-        "Saint Aunix-Langros" "Saint Clar" "Sainte Christie" "Saint Griиde" "Saint Lary" "Saint Puy" "Sainte Radegonde" "Saint Sever"
-        Tournecoupe Tudelle
-        Vic-Fйzensac
+	"Эньян"
+	"Ош"
+	"Отерив"
+	"Брюньен"
+	"Кастера-Вердюран"
+	"Кастельжалу"
+	"Кастийон-Масса"
+	"Кондом"
+	"Кулум-Мондеба"
+	"Дюран"
+	"Оз"
+	"Эспаребан"
+	"Флеранс"
+	"Грайи"
+	"Ажетмо"
+	"Жегун"
+	"Лаланн"
+	"Ларрумьюак"
+	"Лассерад"
+	"Лассеб-Пропр"
+	"Ла Тестер"
+	"Лорансан"
+	"Лаварданс"
+	"Лектур"
+	"Люпиак"
+	"Массен"
+	"Мирамон-Латур"
+	"Миранд"
+	"Мирепуа"
+	"Монто-ле-Крено"
+	"Монтескье"
+	"Монтеструк"
+	"Ногаро"
+	"Пойак"
+	"Перюсс-Массас"
+	"Преньян"
+	"Рамбер"
+	"Рокфор"
+	"Роклор"
+	"Сен-Они-Ланжро"
+	"Сен-Клар"
+	"Сен-Кристи"
+	"Сен-Гриед"
+	"Сен-Лари"
+	"Сен-Пюй"
+	"Сен-Радежон"
+	"Сен-Север"
+	"Турнекуп"
+	"Тюдель"
+	"Вик-Фезансак"
 }
 
 army_names = {
-         "Armйe d'Armagnac"   "Armйe de Lomagne"     "Armйe du Condomois" 
-         "Armйe de l'Astarac" "Armйe du Fйzensaguet" "Armйe du Gimois"    
-         "Armйe de Gascogne"              
-	 "Armйe de $PROVINCE$" 
+	"Армия Арманьяка"
+	"Армия Ломани"
+	"Армия Кондомуа"
+	"Армия л'Астарака"
+	"Армия Фезенсаге"
+	"Армия Жимуа"
+	"Армия Гаскони"
+	"Армия пров. $PROVINCE$"
 }

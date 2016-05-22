@@ -34,94 +34,172 @@ historical_units = {
 }
 
 monarch_names = {
-	"Wilhelm #1" = 40
-	"Armand #0" = 40
-	"Johann #3" = 20
-	"Konrad #3" = 20
-	"Albrecht #0" = 20
-	"Erasmus #0" = 20
-	"Franz Egon #0" = 20
-	"Johann Georg #0" = 20
-	"Karl #0" = 20
-	"Leopold #0" = 20
-	"Leopold Wilhelm #0" = 20
-	"Louis Constantine #0" = 20		
-	"Louis Renй #0" = 20
-	"Rupprecht #0" = 20
-	"Wilhelm Egon #0" = 20
-	"Berthold #2" = 10
-	"Burkhard #2" = 10
-	"Friedrich #2" = 10
-	"Rudolf #2" = 10
-	"Ludwig #1" = 10
-	"Heinrich #4" = 5
-	"Werner #2" = 5
-	"Balduin #1" = 5
-	"Bruno #1" = 5
-	"Eberhard #1" = 5
-	"Gebhard #1" = 5
-	"Gottfried #1" = 5
-	"Kuno #1" = 5
-	"Lambert #1" = 5
-	"Otto #1" = 5
-	"Walter #1" = 5
-	"Adolf #0" = 0
-	"Alfred #0" = 0
-	"Baldur #0" = 0
-	"Erich #0" = 0
-	"Ferdinand #0" = 0
-	"Franz #0" = 0
-	"Gьnther #0" = 0
-	"Rainer #0" = 0
-	"Stefan #0" = 0
-	
-	"Alexandra #0" = -1
-	"Christiane #0" = -1
-	"Emma #0" = -1
+	"Вильгельм #1" = 40
+	"Арманд #0" = 40
+	"Иоганн #3" = 20
+	"Конрад #3" = 20
+	"Альбрехт #0" = 20
+	"Эразм #0" = 20
+	"Франц Эгон #0" = 20
+	"Иоганн Георг #0" = 20
+	"Карл #0" = 20
+	"Леопольд #0" = 20
+	"Леопольд Вильгельм #0" = 20
+	"Луи Константин #0" = 20		
+	"Луи Рене #0" = 20
+	"Рупрехт #0" = 20
+	"Вильгельм Эгон #0" = 20
+	"Бертольд #2" = 10
+	"Буркхард #2" = 10
+	"Фридрих #2" = 10
+	"Рудольф #2" = 10
+	"Людвиг #1" = 10
+	"Генрих #4" = 5
+	"Вернер #2" = 5
+	"Бальдуин #1" = 5
+	"Бруно #1" = 5
+	"Эберхард #1" = 5
+	"Гебхард #1" = 5
+	"Готфрид #1" = 5
+	"Куно #1" = 5
+	"Ламберт #1" = 5
+	"Отто #1" = 5
+	"Вальтер #1" = 5
+	"Адольф #0" = 0
+	"Альфред #0" = 0
+	"Бальдур #0" = 0
+	"Эрих #0" = 0
+	"Фердинанд #0" = 0
+	"Франц #0" = 0
+	"Гюнтер #0" = 0
+	"Райнер #0" = 0
+	"Штефан #0" = 0
+
+    "Александра #0" = -1
+	"Кристина #0" = -1
+	"Эмма #0" = -1
 }
 
 leader_names = {
-	d'Andleau d'Arnsberg
-	"de Bainville" "de Baltis" "de Berenfelz" "de Berckheim" "de Bйonholdt" "de Beroldingen" "Bock de Blasheim" "Bock de Erlenburg" "de Bocklinsau"
-	"de Dalberg" "de Deux-Ponts-Bitche" "de Dornach"
-	"de Falkenstein" "de Fleckenstein" "de Furstenberg"
-	"Gailing d'Altheim" "de Gielsberg"
-	"de Hagenbach" "de Hanau-Lichtenberg" "de Hohenstein" "de Hungerstein"
-	"de Kippenheim" "de Kircheim"
-	"de Landeck" "de Landenberg"  "Linange-Westerburg" "de Lupfen" "de Lutzelburg"
-	"de Morimont" "de Mullenheim" "de Munck"
-	"de Pfasttatt"
-	"de Ramstein" "de Rathsamhausen"  "de Rйguisheim" "de Reichenstein" "zu Rhein" "de Rheinfeld" "de Ribeaupierre"
-	"de Schaunburg" "de Schmitzbourg" "de Schoenau" "de Sickingen"
-	"de Thierstein" "de Turckheim"
-	"d'Uttenheim"
-	"de Wasselnheim" "de Weitersheim" "de Wildsberg" "de Winterbescher" Wolff "de Wormser"
-	"de Zurlauben"
+	"д'Андло"
+	"д'Арнсберг"
+	"де Банвиль"
+	"де Бальти"
+	"де Беренфельц"
+	"де Беркхайм"
+	"де Беонхольдт"
+	"де Берольдинген"
+	"Бок де Бласхайм"
+	"Бок де Эрленбург"
+	"де Боклинзау"
+	"де Дальберг"
+	"де Дье-Пон-Биш"
+	"де Дорнах"
+	"де Фалькенштайн"
+	"де Флеккенштайн"
+	"де Фюрстенберг"
+	"Гайлинг д'Альтхайм"
+	"де Гильсберг"
+	"де Хагенбах"
+	"де Ханау-Лихтенберг"
+	"де Хохенштайн"
+	"де Хунгерштайн"
+	"де Киппенхайм"
+	"де Кирхайм"
+	"де Ландек"
+	"де Ланденберг"
+	"Линанге-Вестербург"
+	"де Люпфен"
+	"де Лютцельбург"
+	"де Моримон"
+	"де Мюлленхайм"
+	"де Мунк"
+	"де Пфаштатт"
+	"де Рамштайн"
+	"де Ратзамхаузен"
+	"де Регюсхайм"
+	"де Райхенштайн"
+	"цу Рейн"
+	"де Рейнфельд"
+	"де Рибопьер"
+	"де Шаунбург"
+	"де Шмицбург"
+	"де Шенау"
+	"де Зиккинген"
+	"де Тирштайн"
+	"де Туркхайм"
+	"д'Уттенхайм"
+	"де Вассельнхайм"
+	"де Вайтерсхайм"
+	"де Вильдсберг"
+	"де Винтербешер"
+	"Вольфф"
+	"де Вурмзер"
+	"де Цурлаубен"
 }
 
 ship_names = {
-	Altkirch Ammerschwihr Andolsheim
-	Barr Benfeld Bischwiller Bitche Bollwiller Brumath
-	Cernay Colmar 
-	Dieffenthal
-	Ensisheim Erstein
-	Guebwiller
-	Haguenau Honwald Horbourg-Wihr Hunspach
-	Kanterbrau Kaysersberg
-	Lautenbach Lauterburg Lembach
-	Marckolsheim Molsheim Mulhausen Munster Mutzig
-	Neuf-Brisach
-	Oberhaslach Obernai Olsheim Orbey
-	Reichshoffen Riquewihr Rouffach
-	Saverne Scherwiller Schirmeck Sйlestat Souffelweyer Soufflenheim Soultzmatt Strassburg
-	Thann Turckheim
-	Vendenheim
-	Wissemburg Wittelsheim
+	"Альткирх"
+	"Аммершвир"
+	"Андольшайм"
+	"Барр"
+	"Бенфельд"
+	"Бишвиллер"
+	"Битхе"
+	"Болльвиллер"
+	"Брумат"
+	"Цернай"
+	"Кольмар"
+	"Диффенталь"
+	"Энзишайм"
+	"Эрштайн"
+	"Гюбвиллер"
+	"Хагюнау"
+	"Хонвальд"
+	"Хорбург-Вир"
+	"Хуншпах"
+	"Кантербрау"
+	"Кайзерсберг"
+	"Лаутенбах"
+	"Лаутербург"
+	"Лембах"
+	"Маркольшайм"
+	"Мольшайм"
+	"Мюлуз"
+	"Мюнстер"
+	"Мютциг"
+	"Нойф-Бризах"
+	"Оберхаслах"
+	"Обернай"
+	"Ольшайм"
+	"Орбей"
+	"Райхшоффен"
+	"Риквевир"
+	"Роуфлах"
+	"Саверн"
+	"Шервиллер"
+	"Ширмек"
+	"Селестат"
+	"Соуффельвейер"
+	"Соуффленхайм"
+	"Соульцматт"
+	"Страссбург"
+	"Танн"
+	"Туркхайм"
+	"Венденхайм"
+	"Виссембург"
+	"Виттельшайм"
 }
 
 army_names = {
-	"Armйe d'Alsace"    "Armйe du Rhin"        "Armйe des Vosges"      
-	"Armйe du Sundgau"  "Armйe du Jura"        "Armйe de l'Ochsenfeld" 
-	"Armйe de la Hardt" "Armйe de la Dйcapole" "Armйe de Strasbourg"
-	"Armйe de $PROVINCE$" 
+	"Эльзасская армия"
+	"Рейнская армия"
+	"Вогезская армия"
+	"Армия Сунго"
+	"Юрская армия"
+	"Армия Оксенфельда"
+	"Армия ла Харда"
+	"Армия ла Декаполя"
+	"Страсбургская армия"
+	"Армия пров. $PROVINCE$"
 }

@@ -34,66 +34,94 @@ historical_units = {
 }
 
 monarch_names = {
-	"Friedrich #5" = 60
-	"Georg Friedrich #0" = 40
-	"Albrecht #1" = 20
-	"Albrecht #1 Achilles" = 20
-	"Christian Albrecht #0" = 20
-	"Karl Alexander #0" = 20
-	"Georg #0" = 20
-	"Joachim Ernst #0" = 20
-	"Johann Friedrich #0" = 20
-	"Karl Wilhelm Friedrich #0" = 20
-	"Wilhelm Friedrich #0" = 20
-	"Johann #3" = 15
-	"Albrecht Ernst #0" = 15
-	"Georg Albrecht #0" = 15
-	"Johann Cicero #0" = 15
-	"Karl Friedrich August #0" = 15
-	"Kasimir #0" = 15
-	"Leopold Friedrich #0" = 15
-	"Friedrich Albrecht #0" = 10
-	"Friedrich August #0" = 10
-	"Friedrich Karl #0" = 10
-	"Gumprecht #0" = 10
-	"Johann Albrecht #0" = 10
-	"Johann Georg #0" = 10
-	"Siegmund #0" = 10
-	"Wilhelm #0" = 10
-	"Gottfried #2" = 5
-	"Adolf #0" = 0
-	"Clemens #0" = 0
-	"Diederik #0" = 0
-	"Eberhard #0" = 0
-	"Helmut #0" = 0
-	"Hermann #0" = 0
-	"Jakob #0" = 0
-	"Luitpold #0" = 0
-	"Markus #0" = 0
-	"Rainer #0" = 0
-	"Siegfried #0" = 0
-	"Stefan #0" = 0
-	"Viktor #0" = 0
-	
-	"Luitgard #0" = -1
-	"Michaela #0" = -1
-	"Rosemarie #0" = -1
+	"Фридрих #5" = 60
+	"Георг Фридрих #0" = 40
+	"Альбрехт #1" = 20
+	"Альбрехт #1 Ахиллес" = 20
+	"Христиан Альбрехт #0" = 20
+	"Карл Александер #0" = 20
+	"Георг #0" = 20
+	"Иоахим Эрнст #0" = 20
+	"Иоганн Фридрих #0" = 20
+	"Карл Вильгельм Фридрих #0" = 20
+	"Вильгельм Фридрих #0" = 20
+	"Иоганн #3" = 15
+	"Альбрехт Эрнст #0" = 15
+	"Георг Альбрехт #0" = 15
+	"Иоганн Цицерон #0" = 15
+	"Карл Фридрих Август #0" = 15
+	"Казимир #0" = 15
+	"Леопольд Фридрих #0" = 15
+	"Фридрих Альбрехт #0" = 10
+	"Фридрих Август #0" = 10
+	"Фридрих Карл #0" = 10
+	"Гумпрехт #0" = 10
+	"Иоганн Альбрехт #0" = 10
+	"Иоганн Георг #0" = 10
+	"Зигмунд #0" = 10
+	"Вильгельм #0" = 10
+	"Готфрид #2" = 5
+	"Адольф #0" = 0
+	"Клеменс #0" = 0
+	"Дидерик #0" = 0
+	"Эберхард #0" = 0
+	"Гельмут #0" = 0
+	"Герман #0" = 0
+	"Якоб #0" = 0
+	"Леопольд #0" = 0
+	"Маркус #0" = 0
+	"Райнер #0" = 0
+	"Зигфрид #0" = 0
+	"Штефан #0" = 0
+	"Виктор #0" = 0
+
+    "Лютигарда #0" = -1
+	"Михаэлла #0" = -1
+    "Розмария #0" = -1
 }
 
-leader_names = { 
-	Fichtelmann Grimm Schmidt Sцll Dдumler
-	Dick Dietsch Ernst Fischer Fцdisch Franck
-	Hofmann Hцhrer Knцrnschild Langheinrich Maier Narr
-	Ott Ranck Rudl Sack Schwager Seel Sell 
-	Teichmann Weinrich
+leader_names = {
+	"Фихтельман"
+	"Гримм"
+	"Шмидт"
+	"Золль"
+	"Доймлер"
+	"Дик"
+	"Дитш"
+	"Эрнст"
+	"Фишер"
+	"Федих"
+	"Франк"
+	"Гофман"
+	"Герер"
+	"Кнерншильд"
+	"Лангхайнрих"
+	"Майер"
+	"Нарр"
+	"Отт"
+	"Ранк"
+	"Рудль"
+	"Сак"
+	"Швагер"
+	"Зеель"
+	"Зелль"
+	"Тайхман"
+	"Вайнрих"
 }
 
 ship_names = {
-	"Friedrich von Ansbach" "Albrecht Achilles"
-	"Friedrich V" Georg "Georg Friedrich" Rezat
-	Onoldsbach Hohenzollern Kulmbach Bayreuth
+	"Фридрих фон Ансбах"
+	"Альбрехт Ахиллес"
+	"Фридрих V"
+	"Георг"
+	"Георг Фридрих"
+	"Резат"
+	"Онольдсбах"
+	"Гогенцоллерн"
+	"Кульмбах"
+	"Байрейт"
 }
 
 army_names = {
-	"Armee von $PROVINCE$" 
+	"Армия пров. $PROVINCE$"
 }
