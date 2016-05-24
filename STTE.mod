@@ -1,7 +1,6 @@
 name="[STT]Russian Universalis"
 path="mod/STT_E"
 replace_path="history/provinces"
-replace_path="common/country_tags"
 tags={
  "Graphics"
  "Fixes"
