@@ -31,7 +31,7 @@ country_event = {
 	}
 	option = {	
 		name = "flavor_steppe.1.a"
-			manpower = -2000
+		manpower = -2000
 		2409 = {
 			add_core = DON
 			change_culture = cossack
@@ -40,7 +40,7 @@ country_event = {
 			name = "volnitsa_don"
 			duration = -1
 			}
-			}
+		}
 		288 = {
 			add_core = DON
 			change_culture = cossack
@@ -49,7 +49,7 @@ country_event = {
 			name = "volnitsa_don"
 			duration = -1
 			}
-			}
+		}
 		2413 = {
 			add_core = DON
 			change_culture = cossack
@@ -58,10 +58,8 @@ country_event = {
 			name = "volnitsa_don"
 			duration = -1
 			}
-			}
-				}
 		}
-
+	}
 }
 # zaz_cossaks
 country_event = {
@@ -124,8 +122,7 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
-		}
+	}
 }
 # ural_cossaks
 country_event = {
@@ -197,9 +194,7 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
-		}
-
+	}
 }
 # sibir_cossaks
 country_event = {
@@ -251,7 +246,7 @@ country_event = {
 			duration = -1
 			}
 			}
-		2354 = 
+		2354 = {
 			change_culture = cossack
 			change_religion = orthodox
 			add_province_modifier = {
@@ -259,8 +254,7 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
-		2357 = 
+		2357 = {
 			change_culture = cossack
 			change_religion = orthodox
 			add_province_modifier = {
@@ -268,9 +262,8 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
 
-		}
+	}
 }
 # terek_cossaks
 country_event = {
@@ -320,8 +313,7 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
-		}
+	}
 }
 # orenburg_cossaks
 country_event = {
@@ -371,9 +363,7 @@ country_event = {
 			duration = -1
 			}
 			}
-
-				}
-		}
+	}
 }
 
 # kouban_cossaks
@@ -433,8 +423,7 @@ country_event = {
 			duration = -1
 			}
 			}
-				}
-		}
+	}
 }
 country_event = {
 	id = "flavor_steppe.8"
@@ -447,18 +436,20 @@ country_event = {
 	
 	trigger = {
 		OR = {
-		AND = {
-		tag = OIR
-		government = steppe_horde
-		is_year = 1600
-		NOT = { stability = 1 }
+			AND = {
+				tag = OIR
+				government = steppe_horde
+				is_year = 1600
+				NOT = { stability = 1 }
+			}
+			AND = {
+				OR = { tag = RUS tag = MOS }
+				NOT = {
+					OIR = exists
+				}
+			}
 		}
-		AND = {
-		OR = { tag = RUS tag = MOS}
-		NOT = {
-		 OIR = exists }
-		}
-		}
+	}
 	mean_time_to_happen = {
 		months = 24
 	}
@@ -473,5 +464,5 @@ country_event = {
 		2416 = {    change_culture = oirat
 				change_religion = vajrayana
 				add_core = KAL }			
-		}
+	}
 }
