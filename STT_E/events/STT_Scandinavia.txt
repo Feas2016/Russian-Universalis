@@ -19,12 +19,13 @@ province_event = {
 			}
 		}
 		any_province = {
-			limit = {
+			OR = {
 				province_id = 18
 				province_id = 3220
 				province_id = 3204
 				}
 			is_empty = yes
+			NOT = { is_colony = yes }
 		}
 	}
 	
