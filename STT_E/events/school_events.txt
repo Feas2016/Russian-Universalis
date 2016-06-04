@@ -1,0 +1,35 @@
+namespace = school
+
+#Для уборки модификатора. Появляется только у ИИ
+country_event = {
+	id = school.1
+	title = "school.EVTNAME1"
+	desc = "school.EVTDESC1"
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	trigger = {
+		any_country = {
+			OR = {
+				has_country_modifier = heir_training
+				has_country_modifier = heir_not_training
+			}
+			has_heir = no
+		}
+		ai = yes
+	}
+	option = {
+		name = "school.EVTOPTA1"
+			random_country = {
+				limit = {
+					OR = {
+						has_country_modifier = heir_training
+						has_country_modifier = heir_not_training
+					}
+					has_heir = no
+				}
+				remove_country_modifier = heir_training
+				remove_country_modifier = heir_not_training
+			}
+		}
+	}
+}

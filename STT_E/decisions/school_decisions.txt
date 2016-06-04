@@ -1,0 +1,233 @@
+country_decisions = {
+	#Административное обучение
+	school_adm = {
+		potential = {
+			has_heir = yes
+			heir_age = 5
+			not = { 
+				heir_adm = 6
+				heir_age = 15
+				has_country_modifier = heir_training
+				has_country_modifier = heir_not_training
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+		}
+		allow = {
+			treasury = 25
+			adm_power = 40
+			stability = 2
+		}
+		effect = {
+			add_adm_power = -40
+			add_treasury = -25
+			if = {
+				limit = {
+					not = {
+						heir_adm = 5
+					}
+				}
+				random_list = {
+					20 = {
+						change_heir_adm = 2
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						change_heir_adm = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					heir_adm = 5
+				}
+				random_list = {
+					50 = {
+						change_heir_adm = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					50 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+	}
+	#Дипломатическое обучение
+	school_dip = {
+		potential = {
+			has_heir = yes
+			heir_age = 5
+			not = { 
+				heir_dip = 6
+				heir_age = 15
+				has_country_modifier = heir_training
+				has_country_modifier = heir_not_training
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+		}
+		allow = {
+			treasury = 25
+			dip_power = 40
+			stability = 2
+		}
+		effect = {
+			add_dip_power = -40
+			add_treasury = -25
+			if = {
+				limit = {
+					not = {
+						heir_dip = 5
+					}
+				}
+				random_list = {
+					20 = {
+						change_heir_dip = 2
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						change_heir_dip = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					heir_dip = 5
+				}
+				random_list = {
+					50 = {
+						change_heir_dip = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					50 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+	}
+	#Военное обучение
+	school_mil = {
+		potential = {
+			has_heir = yes
+			heir_age = 5
+			not = { 
+				heir_mil = 6
+				heir_age = 15
+				has_country_modifier = heir_training
+				has_country_modifier = heir_not_training
+			}
+			OR = {
+				technology_group = western
+				technology_group = eastern
+				technology_group = ottoman
+				technology_group = muslim
+			}
+		}
+		allow = {
+			treasury = 25
+			mil_power = 40
+			stability = 2
+		}
+		effect = {
+			add_mil_power = -40
+			add_treasury = -25
+			if = {
+				limit = {
+					not = {
+						heir_mil = 5
+					}
+				}
+				random_list = {
+					20 = {
+						change_heir_mil = 2
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						change_heir_mil = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					40 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					heir_mil = 5
+				}
+				random_list = {
+					50 = {
+						change_heir_mil = 1
+						add_country_modifier = {
+							name = "heir_training"
+							duration = 3650
+						}
+					}
+					50 = {
+						add_country_modifier = {
+							name = "heir_not_training"
+							duration = 3650
+						}
+					}
+				}
+			}
+		}
+	}
+}
