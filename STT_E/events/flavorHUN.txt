@@ -19,7 +19,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_regency = yes
-		has_leader = "John Hunyadi"
+		has_leader = "Джон Хуньяди"
 		is_year = 1445
 		NOT = { is_year = 1470 }
 	}
@@ -32,17 +32,17 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.1.a
 		define_ruler = {
-			name = "(Regent) John"
-			dynasty = "Hunyadi"
+			name = "(Регент) Джон"
+			dynasty = "Хуньяди"
 			DIP = 5			
 			ADM = 4
 			MIL = 5
 			regency = yes
-			attach_leader = "John Hunyadi"
+			attach_leader = "Джон Хуньяди"
 		}
 		define_heir = {
-			name = "Ladislaus Postumus"
-			dynasty = "von Habsburg"
+			name = "Ладислав Постум"
+			dynasty = "фон Габсбург"
 			adm = 1
 			dip = 2
 			mil = 1
@@ -51,7 +51,7 @@ country_event = {
 		every_country = {
 			limit = {
 				NOT = { tag = ROOT }
-				dynasty = "von Habsburg"
+				dynasty = "фон Габсбург"
 			}
 			add_opinion = {
 				who = root
@@ -68,8 +68,8 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_stability = 1
 		define_heir = {
-			name = "Ladislaus Postumus"
-			dynasty = "von Habsburg"
+			name = "Ладислав Постум"
+			dynasty = "фон Габсбург"
 			adm = 3
 			dip = 3
 			mil = 2
@@ -98,13 +98,13 @@ country_event = {
 		NOT = { is_year = 1457 }
 		has_heir = no
 		has_regency = no
-		dynasty = "von Habsburg"
+		dynasty = "фон Габсбург"
 		NOT = { num_of_unions = 1 }
 		any_country = {
 			is_subject = no
 			government = monarchy
 			has_regency = no
-			dynasty = "von Habsburg"
+			dynasty = "фон Габсбург"
 		}
 	}
 	
@@ -119,7 +119,7 @@ country_event = {
 		HAB = { remove_historical_friend = HUN }
 		define_heir = {
 			name = "Mбtyбs"
-			dynasty = "Hunyadi"
+			dynasty = "Хуньяди"
 			adm = 4
 			dip = 5
 			mil = 5
@@ -133,7 +133,7 @@ country_event = {
 				is_subject = no
 				government = monarchy
 				has_regency = no
-				dynasty = "von Habsburg"
+				dynasty = "фон Габсбург"
 			}
 			tooltip = {
 				add_casus_belli = {	
@@ -155,7 +155,7 @@ country_event = {
 			limit = {
 				is_subject = no
 				government = monarchy
-				dynasty = "von Habsburg"
+				dynasty = "фон Габсбург"
 				has_regency = no
 			}
 			create_union = HUN
@@ -216,7 +216,7 @@ country_event = {
 		is_year = 1466
 		NOT = { is_year = 1470 }
 		has_regency = no
-		dynasty = "Hunyadi"
+		dynasty = "Хуньяди"
 	}
 	
 	mean_time_to_happen = {
@@ -255,7 +255,7 @@ country_event = {
 		is_year = 1465
 		has_regency = no
 		owns = 1772 #Pressburg
-		dynasty = "Hunyadi"
+		dynasty = "Хуньяди"
 		religion = catholic
 	}
 	
@@ -391,7 +391,7 @@ country_event = {
 		tag = HUN
 		truce_with = TUR
 		exists = HAB
-		HAB = { dynasty = "von Habsburg" }
+		HAB = { dynasty = "фон Габсбург" }
 		TUR = {
 			any_owned_province = {
 				OR = {
