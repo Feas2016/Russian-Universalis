@@ -580,7 +580,7 @@ YUG_ideas = {
 CAR_ideas = {
     start = {
 	    navy_tradition = 1.5
-	    naval_morale = 0.2
+	    naval_morale = 0.15
 	}
 
 	bonus = {
@@ -592,31 +592,31 @@ CAR_ideas = {
 	}
 	free = yes
 
-	castles_of_car ={
-	    defensiveness = 0.20
+	glory_of_carfagen = {
+	prestige = 1
+	diplomatic_reputation = 2
+	}
+	 mercenaries_of_car = {
+	    mercenary_cost = -0.20
+		merc_maintenance_modifier = -0.15
 	}
 	trade_legacy_of_car = {
 	    merchants = 1
-		global_trade_power = 0.05
+		global_trade_power = 0.10
 		}
-    mercenaries_of_car = {
-	    mercenary_cost = -0.20
-		merc_maintenance_modifier = -0.15
+	cultures_of_car ={
+	    accepted_culture_threshold = -0.3
+	}
+	new_methods_of_trade = {
+	trade_efficiency = 0.20
+	}
+    punic_cavalry = {
+	cavalry_cost = -0.15
+    cavalry_power = 0.15
 	}
 	wisdom_of_car = {
 	    technology_cost = -0.05
 	    idea_cost = -0.1
-	}
-	new_methods_of_trade = {
-	trade_efficiency = 0.15
-	}
-    punic_cavalry = {
-	cavalry_cost = -0.2
-    cavalry_power = 0.15
-	}
-	glory_of_carfagen = {
-	prestige = 1
-	diplomatic_reputation = 2
 	}
 }
 

@@ -9,12 +9,12 @@ province_event = {
 	
 	trigger = {
 		is_year = 1500
-		OR = { 
+		OR = {
 			tag = SWE
 			tag = SCA
 			AND = {
-				NOT = { tag = SCA }
-				NOT = { tag = SWE }
+				NOT = { exists = SCA }
+				NOT = { exists = SWE }
 				culture_group = scandinavian
 			}
 		}
