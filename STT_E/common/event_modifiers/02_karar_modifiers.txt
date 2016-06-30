@@ -1,0 +1,58 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+# 
+##################################################################################################
+
+recruit_new_soldiers = {
+	global_revolt_risk = 3
+	#icon = 7
+}
+
+reform_the_kanun_system = {
+	global_revolt_risk = -1
+	diplomatic_reputation = 5
+	stability_cost_modifier = -0.25
+	#icon = 7
+}
+
+collect_extra_vergi = {
+	global_revolt_risk = 5
+	#icon = 7
+}
+
+culus_tip_to_jannissery = {
+	land_morale = 0.20
+	#icon = 7
+}
+
+give_zekat = {
+	global_revolt_risk = -3
+	#icon = 7
+}
+
+consruct_kulliye = {
+	production_efficiency = 0.10
+	diplomatic_reputation = 5
+	#icon = 7
+}
+
+tedbiri_kiyafet = {
+	global_revolt_risk = -1
+	diplomatic_reputation = 3
+	#icon = 7
+}
+
+ban_alcohol_and_tobacco = {
+	global_revolt_risk = 1
+	production_efficiency = 0.30
+	#icon = 7
+}
+buyuk_aydin = {
+	adm_tech_cost_modifier = -0.2
+	#icon = 5
+}
+vakif_devam = {
+	global_revolt_risk = 3
+	#icon = 7
+}
+ignored_ramadan_timer = { }

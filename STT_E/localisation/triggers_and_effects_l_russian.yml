@@ -149,7 +149,7 @@
  ADVISOR_TYPE_EMPLOYED_0:0 "Íà äàííûé ìîìåíò íàíÿò $TYPE$.\n" #Example: Quartermaster is currently employed
  ADVISOR_TYPE_EMPLOYED_1:0 "Íà äàííûé ìîìåíò íàíÿò $TYPE$ ($ARG0$ êóëüòóðà).\n" #Example: French Advisor is currently employed
  ADVISOR_TYPE_EMPLOYED_2:0 "Íà äàííûé ìîìåíò íàíÿò $TYPE$, èñïîâåäóþùèé $ARG1$, ($ARG0$ êóëüòóðà).\n" #Example: Protestant English Statesman is currently employed
- ADD_SPY_NETWORK_IN:0 "Ðàçìåð øïèîíñêîé ñåòè â äåðæàâå $TARGET$ óâåëè÷èòñÿ íà $VAL$.\n"
+ ADD_SPY_NETWORK_IN:0 "Ðàçìåð øïèîíñêîé ñåòè â äåðæàâå $TARGET$ èçìåíèòñÿ íà $VAL$.\n"
  ADD_SPY_NETWORK_FROM:0 "Äåðæàâà $TARGET$ óâåëè÷èò ñâîþ øïèîíñêóþ ñåòü íà $VAL$.\n"
  HAVE_SPY_NETWORK_IN:0 "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ïðåâûøàåò $VAL$.\n"
  NOT_HAVE_SPY_NETWORK_IN:0 "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ÍÅ ïðåâûøàåò $VAL$.\n"
@@ -175,8 +175,8 @@
  TARGET_LOSE_CLAIM_EFFECT:0 "Äåðæàâà §Y$WHO$§W ïîòåðÿåò ïðåòåíçèè: §Y$LOSE$§W.\n"
  HAVE_NOT_CORE_CLAIM_AGAINST:0 "ÍÅ èìååò ïðåòåíçèè ïðîòèâ äåðæàâû "
  HAVE_CORE_CLAIM_AGAINST:0 "Èìååò ïðåòåíçèþ ïðîòèâ äåðæàâû "
- IS_NOT_RELIGION_REFORMED:0 " ðåôîðìèðîâàë âåðîâàíèÿ.\n"
- IS_RELIGION_REFORMED:0 " ÍÅ ðåôîðìèðîâàë âåðîâàíèÿ.\n"
+ IS_NOT_RELIGION_REFORMED:0 " ÍÅ ðåôîðìèðîâàë âåðîâàíèÿ.\n"
+ IS_RELIGION_REFORMED:0 " ðåôîðìèðîâàë âåðîâàíèÿ.\n"
  IS_NOT_IN_LEAGUE_WAR:0 "ÍÅ ñðàæàåòñÿ íà ñòîðîíå êàêîé-ëèáî ëèãè.\n"
  IS_IN_LEAGUE_WAR:0 "Ñðàæàåòñÿ íà ñòîðîíå êàêîé-ëèáî ëèãè.\n"
  IS_NOT_LEAGUE_LEADER:0 "ÍÅ ëèäåð Ðåëèãèîçíîé ëèãè.\n"
@@ -312,8 +312,8 @@
  ANY_CONSTRUCTION:0 "ñîçäàíèå ÷åãî-òî"
  HAVE_LESS_THAN_X_BUILDINGS:0 "Èìååò ìåíåå $VALUE$ $BUILDING$"
  HAVE_MORE_THAN_X_BUILDINGS:0 "Èìååò áîëåå $VALUE$ $BUILDING$"
- OWNS_CORE_PROVINCE:0 "Âëàäååò è ñ÷èòàåò íàöèîíàëüíîé:0 "
- NOT_OWNS_CORE_PROVINCE:0 "ÍÅ âëàäååò, íî ñ÷èòàåò íàöèîíàëüíîé:0 "
+ OWNS_CORE_PROVINCE:0 "Âëàäååò è ñ÷èòàåò íàöèîíàëüíîé: "
+ NOT_OWNS_CORE_PROVINCE:0 "ÍÅ âëàäååò, íî ñ÷èòàåò íàöèîíàëüíîé: "
  RULER_AGE_LESS_THAN:0 "Âîçðàñò ïðàâèòåëÿ ìåíåå "
  RULER_AGE_AT_LEAST:0 "Âîçðàñò ïðàâèòåëÿ áîëüøå èëè ðàâåí "
  HAS_GREAT_PROJECT:0 "Âåëèêèé ïðîåêò $NAME|Y$."
@@ -335,6 +335,12 @@
  HAS_GUARANTEED:0 "Åñòü ãàðàíòèè äåðæàâå $WHO|Y$"
  SWITCH_TAG:0 "Èãðà çà äåðæàâó $TAG|Y$.\n"
  REBELS:0 "ïîâñòàíöû"
+ RULER_HAS_PERSONALITY:0 "$NAME$ - $PERSONALITY$\n"
+ RULER_HAS_NOT_PERSONALITY:0 "$NAME$ - ÍÅ $PERSONALITY$\n"
+ HEIR_HAS_PERSONALITY:0 "Íàñëåäíèê '$NAME$' - $PERSONALITY$\n"
+ HEIR_HAS_NOT_PERSONALITY:0 "Íàñëåäíèê '$NAME$' - ÍÅ $PERSONALITY$\n"
+ ADD_RULER_PERSONALITY:0 "$NAME$ òåïåðü $PERSONALITY|Y$."
+ REMOVE_RULER_PERSONALITY:0 "$NAME$ áîëüøå íå $PERSONALITY|Y$."
  WARSCORE_AGAINST_LESS_THAN:0 "Âîåííûé ñ÷åò ïðîòèâ äåðæàâû $WHO$ ìåíåå $SCORE|Y%$"
  WARSCORE_AGAINST_MORE_THAN:0 "Âîåííûé ñ÷åò ïðîòèâ äåðæàâû $WHO$ ïî êðàéíåé ìåðå $SCORE|Y%$"
  NOT_HAS_HARSH_TREATMENT:0 "ÍÅ ïðèìåíÿëîñü æåñòîêîå îáðàùåíèå"
@@ -371,6 +377,3 @@
  DECREASE_DISASTER_PROGRESS_EFFECT:0 "Ïðîãðåññ áåäñòâèÿ §Y$DISASTER$§! ñíèæåí íà §G$VALUE$§!"
  DOES_NOT_HAVE_DISASTER_PROGRESS:0 "Ïðîãðåññ áåäñòâèÿ $DISASTER|Y$ íèæå $VALUE|Y$"
  HAS_DISASTER_PROGRESS:0 "Ïðîãðåññ áåäñòâèÿ $DISASTER|Y$ âûøå $VALUE|Y$"
- 
- 
- 

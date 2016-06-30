@@ -1,5 +1,4 @@
 -- Custom defines for Typus to fix the main menu camera:
-NDefines.NGame.MAX_RANDOM_NEW_WORLD = "2.2.2"
 NDefines.NGame.END_DATE = "1850.1.1"
 
 NDefines.NFrontend.CAMERA_LOOKAT_X = 2787.0
@@ -35,7 +34,6 @@ NDefines.NFrontend.CREDITS_POS_Z = 1824.0
 NDefines.NFrontend.CREDITS_LOOK_X = 2916.0
 NDefines.NFrontend.CREDITS_LOOK_Z = 2027.0
 
-NDefines.NCountry.ALLOW_ZERO_BASE_VALUES = 1
 NDefines.NCountry.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1
 NDefines.NCountry.ALLOW_ESTATE_IN_CAPITAL = 1
 

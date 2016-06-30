@@ -1,0 +1,229 @@
+	country_decisions = {
+
+	recruit_new_soldiers = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = recruit_new_soldiers }
+		}
+		allow = {
+			MIL = 4
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_manpower = 5
+			add_ruler_modifier = {
+				name = "recruit_new_soldiers"
+				duration = -1
+			}		
+			}
+
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { mil_power = 200 }
+			}
+		}
+	}
+	
+		reform_the_kanun_system = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_modifier = reform_the_kanun_system }
+		}
+		allow = {
+			MIL = 4
+			adm_power = 500
+		}
+		effect = {
+			add_adm_power = -500
+			add_country_modifier = {
+				name = "reform_the_kanun_system"
+				duration = -1
+			}		
+			}
+
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 500 }
+			}
+		}
+	}
+	
+	collect_extra_vergi = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = collect_extra_vergi }
+		}
+		allow = {
+			MIL = 4
+			adm_power = 300
+		}
+		effect = {
+			add_adm_power = -300
+			add_treasury = 2500
+			add_piety = -0.3
+			add_ruler_modifier = {
+				name = "collect_extra_vergi"
+				duration = -1
+			}		
+			}
+
+		
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 300 }
+			}
+		}
+	}
+	
+	culus_tip_to_jannissery = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = culus_tip_to_jannissery }
+		}
+		allow = {
+			MIL = 4
+			dip_power = 300
+		}
+		effect = {
+			add_dip_power = -300
+			add_treasury = -4000
+			add_ruler_modifier = {
+				name = "culus_tip_to_jannissery"
+				duration = -1
+			}	
+			}
+
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 300 }
+			}
+		}
+	}
+	
+	give_zekat = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = give_zekat }
+		}
+		allow = {
+			MIL = 4
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			add_treasury = -1000
+			add_ruler_modifier = {
+				name = "give_zekat"
+				duration = -1
+			}	
+			add_piety = 0.3
+			}
+
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 100 }
+			}
+		}
+	}
+	
+	consruct_kulliye = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = consruct_kulliye }
+		}
+		allow = {
+			MIL = 4
+			adm_power = 500
+		}
+		effect = {
+			add_adm_power = -500
+			add_treasury = -5000
+			add_stability = 1
+			add_ruler_modifier = {
+				name = "consruct_kulliye"
+				duration = -1
+			}	
+			add_piety = 0.7
+			}
+
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 500 }
+			}
+		}
+	}
+	
+	tedbiri_kiyafet = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = tedbiri_kiyafet }
+		}
+		allow = {
+			MIL = 4
+			dip_power = 250
+		}
+		effect = {
+			add_dip_power = -250
+			add_stability = 1
+			add_ruler_modifier = {
+				name = "tedbiri_kiyafet"
+				duration = -1
+			}	
+			}
+
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 250 }
+			}
+		}
+	}
+	
+		ban_alcohol_and_tobacco = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_modifier = ban_alcohol_and_tobacco }
+		}
+		allow = {
+			MIL = 4
+			dip_power = 50
+		}
+		effect = {
+			add_dip_power = -50
+			add_stability = -1
+			add_ruler_modifier = {
+				name = "ban_alcohol_and_tobacco"
+				duration = -1
+			}	
+			}
+			
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 50 }
+			}
+		}
+	}
+}

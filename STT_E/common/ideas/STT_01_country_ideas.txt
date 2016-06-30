@@ -612,7 +612,7 @@ CAR_ideas = {
 	}
     punic_cavalry = {
 	cavalry_cost = -0.15
-    cavalry_power = 0.15
+    cavalry_power = 0.20
 	}
 	wisdom_of_car = {
 	    technology_cost = -0.05
@@ -701,5 +701,84 @@ KHK_ideas = {
 	}
 	KHK_horde_ambitions = {
 	    ae_impact = -0.15
+	}
+}
+
+
+CRI_ideas = {
+    start = {
+	    prestige = 1
+		global_missionary_strength = 0.02
+	}
+	
+	bonus = {
+	    stability_cost_modifier = -0.20
+	}
+	    trigger = {
+		tag = CRI
+	}
+	free = yes
+	
+	CRI_life_of_steppe_warrior = {
+		land_attrition = -0.20
+	}
+	CRI_slaves_centre = {
+	    trade_efficiency = 0.20
+	}
+	CRI_military = {
+	    cavalry_power = 0.20
+		cavalry_cost = -0.10
+	}
+	CRI_bei = {
+	    global_unrest = -3
+	}
+	CRI_nomads = {
+	    caravan_power = 0.2
+	}
+	CRI_military_superiority = {
+	    leader_siege = 2
+	}
+	CRI_contacts_with_west = {
+	    improve_relation_modifier = 0.30
+	}
+}
+
+
+GOL_ideas = {
+    start = {
+	    core_creation = -0.20
+		global_manpower_modifier = 0.20
+	}
+	
+	bonus = {
+	    years_of_nationalism = -10
+	}
+	    trigger = {
+		tag = GOL
+	}
+	free = yes
+	
+	GOL_trade_politics = {
+	    trade_steering = 0.33
+	}
+	GOL_eastern_wisdom = {
+	    idea_cost = -0.10
+	}
+	GOL_cavalry_horde = {
+	    cavalry_power = 0.20
+		cavalry_cost = -0.10
+	}
+	GOL_great_tribute = {
+	    vassal_income = 0.25
+	}
+	GOL_effects_zamyatnya = {
+	    horde_unity = 1.5
+		legitimacy = 1.5
+	}
+	GOL_islam_acception = {
+	    global_missionary_strength = 0.02
+	}
+	GOL_fast_assimilation = {
+	    accepted_culture_threshold = -0.2
 	}
 }
