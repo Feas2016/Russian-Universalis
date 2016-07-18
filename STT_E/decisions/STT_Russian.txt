@@ -536,6 +536,12 @@ country_decisions = {
 					primary_culture = ruthenian
 				}
 				is_at_war = no
+				NOT = {
+					OR = {
+						truce_with = BHO
+						truce_with = GOL
+					}
+				}
 			}
 		}
 		effect = {
