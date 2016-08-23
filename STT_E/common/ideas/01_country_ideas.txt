@@ -54,7 +54,6 @@ LUZ_ideas = {
 		OR = {
 		tag = LUZ
 		tag = KSB
-		tag = PLB
 			}	
 	}
 	free = yes
@@ -211,7 +210,7 @@ DON_ideas = {
 		galley_cost = -0.35
 	}
 }
-TRK_ideas = {
+##TRK_ideas = {
 	start = {
 		mercenary_cost = -0.20
 		diplomatic_reputation = 1	
@@ -544,6 +543,7 @@ english_minor_ideas = {
 			tag = ENG
 			tag = GBR
 			tag = NOL
+			tag = UEF
 		}
 	}
 	free = yes		#wibe added at load.

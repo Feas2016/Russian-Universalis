@@ -3,149 +3,112 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = pommeranian
-capital = 2996
+capital = 46	# Mecklenburg
+fixed_capital = 46 # Cannot move capital away from this province & no power cost to move to it
 
-1392.1.1 = {
+1384.1.1 = {
 	monarch = {
-		name = "Ulrich I"
-		dynasty = "von Mecklenburg"
-		birth_date = 1365.1.1
-		adm = 1
-		dip = 2
-		mil = 3
+		name = "Альбрехт III"
+		dynasty = "фон Мекленбург"
+		birth_date = 1338.1.1
+		adm = 2
+		dip = 4
+		mil = 4
 	}
 }
 
-1410.1.1 = {
-	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich I"
-		dynasty = "von Mecklenburg"
-		birth_date = 1410.1.1
-		death_date = 1466.8.20
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 2
-	}
-}
-
-1417.4.8 = {
+1412.4.1 = {
 	monarch = {
-		name = "Heinrich I"
-		dynasty = "von Mecklenburg"
-		birth_date = 1410.1.1
-		adm = 3
-		dip = 2
-		mil = 2
-	}
-}
-
-1428.1.1 = {
-	heir = {
-		name = "Ulrich"
-		monarch_name = "Ulrich II"
-		dynasty = "von Mecklenburg"
-		birth_date = 1428.1.1
-		death_date = 1466.8.20
-		claim = 95
+		name = "Иоганн IV"
+		dynasty = "фон Мекленбург"
+		birth_date = 1370.1.1
 		adm = 4
 		dip = 2
 		mil = 3
 	}
 }
 
-1466.5.1 = {
-	monarch = {
-		name = "Ulrich II"
-		dynasty = "von Mecklenburg"
-		birth_date = 1428.1.1
-		adm = 4
-		dip = 2
-		mil = 3
-	}
-}
-
-1466.5.1 = {
+1417.3.9 = {
 	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich IV"
-		dynasty = "von Mecklenburg"
+		name = "Генрих"
+		monarch_name = "Генрих IV"
+		dynasty = "фон Мекленбург"
 		claim = 95
 		birth_date = 1417.1.1
 		death_date = 1477.3.9
-		adm = 1
-		dip = 2
+		adm = 3
+		dip = 4
 		mil = 1
 	}
 }
 
-1471.7.14 = {
+1422.1.1 = {
 	monarch = {
-		name = "Heinrich IV"
-		dynasty = "von Mecklenburg"
+		name = "Генрих IV"
+		dynasty = "фон Мекленбург"
 		birth_date = 1417.1.1
-		adm = 1
-		dip = 2
+		adm = 3
+		dip = 4
 		mil = 1
 	}
 }
 
-1471.7.14 = {
+1441.1.1 = {
 	heir = {
-		name = "Magnus"
-		monarch_name = "Magnus II"
-		dynasty = "von Mecklenburg"
+		name = "Магнус"
+		monarch_name = "Магнус II"
+		dynasty = "фон Мекленбург"
+		claim = 95
 		birth_date = 1441.1.1
 		death_date = 1503.11.20
-		claim = 95
-		adm = 1
-		dip = 3
-		mil = 4
+		adm = 4
+		dip = 2
+		mil = 2
 	}
 }
 
-1477.3.10 = {
+1477.3.9 = {
 	monarch = {
-		name = "Magnus II"
-		dynasty = "von Mecklenburg"
+		name = "Магнус II"
+		dynasty = "фон Мекленбург"
 		birth_date = 1441.1.1
-		adm = 1
-		dip = 3
-		mil = 4
+		adm = 4
+		dip = 2
+		mil = 2
 	}
 }
 
 1479.5.3 = {
 	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich V"
-		dynasty = "von Mecklenburg"
+		name = "Генрих"
+		monarch_name = "Генрих V"
+		dynasty = "фон Мекленбург"
 		birth_date = 1479.5.3
 		death_date = 1552.2.6
 		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 2
+		dip = 4
+		mil = 1
 	}
 }
 
-1503.9.21 = {
+1503.12.27 = {
 	monarch = {
-		name = "Heinrich V"
-		dynasty = "von Mecklenburg"
+		name = "Генрих V"
+		dynasty = "фон Мекленбург"
 		birth_date = 1479.5.3
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 2
+		dip = 4
+		mil = 1
 	}
 }
+
 
 1525.12.23 = {
 	heir = {
-		name = "Johann Albrecht"
-		monarch_name = "Johann Albrecht I"
-		dynasty = "von Mecklenburg"
+		name = "Иоганн Альбрехт"
+		monarch_name = "Иоганн Альбрехт I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1525.12.23
 		death_date = 1576.2.12
 		claim = 95
@@ -159,8 +122,8 @@ capital = 2996
 
 1552.2.6 = {
 	monarch = {
-		name = "Johann Albrecht I"
-		dynasty = "von Mecklenburg"
+		name = "Иоганн Альбрехт I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1525.12.23
 		adm = 0
 		dip = 2
@@ -170,9 +133,9 @@ capital = 2996
 
 1558.3.7 = {
 	heir = {
-		name = "Johann"
-		monarch_name = "Johann VII"
-		dynasty = "von Mecklenburg"
+		name = "Иоганн"
+		monarch_name = "Иоганн VII"
+		dynasty = "фон Мекленбург"
 		birth_date = 1558.3.7
 		death_date = 1592.3.22
 		claim = 95
@@ -184,8 +147,8 @@ capital = 2996
 
 1585.1.1 = {
 	monarch = {
-		name = "Johann VII"
-		dynasty = "von Mecklenburg"
+		name = "Иоганн VII"
+		dynasty = "фон Мекленбург"
 		birth_date = 1558.3.7
 		adm = 1
 		dip = 1
@@ -195,9 +158,9 @@ capital = 2996
 
 1588.12.15 = {
 	heir = {
-		name = "Adolf Friedrich"
-		monarch_name = "Adolf Friedrich I"
-		dynasty = "von Mecklenburg"
+		name = "Адольф Фридрих"
+		monarch_name = "Адольф Фридрих I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1588.12.15
 		death_date = 1658.2.27
 		claim = 95
@@ -209,8 +172,8 @@ capital = 2996
 
 1592.1.1 = {
 	monarch = {
-		name = "Adolf Friedrich I"
-		dynasty = "von Mecklenburg"
+		name = "Адольф Фридрих I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1588.12.15
 		adm = 3
 		dip = 4
@@ -220,9 +183,9 @@ capital = 2996
 
 1623.12.1 = {
 	heir = {
-		name = "Christian Ludwig"
-		monarch_name = "Christian Ludwig I"
-		dynasty = "von Mecklenburg"
+		name = "Христиан Людвиг"
+		monarch_name = "Христиан Людвиг I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1623.12.1
 		death_date = 1692.6.21
 		claim = 95
@@ -242,8 +205,8 @@ capital = 2996
 
 1628.1.1 = {
 	monarch = {
-		name = "Albrecht Wenzel"
-		dynasty = "von Waldstein"
+		name = "Альбрехт"
+		dynasty = "фон Валленштейн"
 		birth_date = 1583.9.24
 		adm = 3
 		dip = 5
@@ -257,8 +220,8 @@ capital = 2996
 
 1631.1.1 = {
 	monarch = {
-		name = "Adolf Friedrich I"
-		dynasty = "von Mecklenburg"
+		name = "Адольф Фридрих I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1588.12.15
 		adm = 3
 		dip = 4
@@ -273,9 +236,9 @@ capital = 2996
 
 1631.1.1 = {
 	heir = {
-		name = "Christian Ludwig"
-		monarch_name = "Christian Ludwig I"
-		dynasty = "von Mecklenburg"
+		name = "Христиан Людвиг"
+		monarch_name = "Христиан Людвиг I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1623.12.1
 		death_date = 1692.6.21
 		claim = 95
@@ -292,8 +255,8 @@ capital = 2996
 
 1658.2.26 = {
 	monarch = {
-		name = "Christian Ludwig I"
-		dynasty = "von Mecklenburg"
+		name = "Христиан Людвиг I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1623.12.1
 		adm = 2
 		dip = 2
@@ -303,9 +266,9 @@ capital = 2996
 
 1675.3.28 = {
 	heir = {
-		name = "Friedrich Wilhelm"
-		monarch_name = "Friedrich Wilhelm I"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих Вильгельм"
+		monarch_name = "Фридрих Вильгельм I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1675.3.28
 		death_date = 1713.7.31
 		claim = 95
@@ -318,8 +281,8 @@ capital = 2996
 
 1692.6.22 = {
 	monarch = {
-		name = "Friedrich Wilhelm I"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих Вильгельм I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1675.3.28
 		adm = 1
 		dip = 4
@@ -329,9 +292,9 @@ capital = 2996
 
 1692.6.22 = {
 	heir = {
-		name = "Karl Leopold"
-		monarch_name = "Karl Leopold"
-		dynasty = "von Mecklenburg"
+		name = "Карл Леопольд"
+		monarch_name = "Карл Леопольд I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1678.11.26
 		death_date = 1747.11.28
 		claim = 95
@@ -343,8 +306,8 @@ capital = 2996
 
 1713.7.30 = {
 	monarch = {
-		name = "Karl Leopold"
-		dynasty = "von Mecklenburg"
+		name = "Карл Леопольд I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1678.11.26
 		adm = 0
 		dip = 2
@@ -354,9 +317,9 @@ capital = 2996
 
 1713.7.30 = {
 	heir = {
-		name = "Christian Ludwig"
-		monarch_name = "Christian Ludwig II"
-		dynasty = "von Mecklenburg"
+		name = "Христиан Людвиг"
+		monarch_name = "Христиан Людвиг II"
+		dynasty = "фон Мекленбург"
 		birth_date = 1683.11.15
 		death_date = 1756.5.30
 		claim = 95
@@ -368,8 +331,8 @@ capital = 2996
 
 1728.1.1 = {
 	monarch = {
-		name = "Christian Ludwig II"
-		dynasty = "von Mecklenburg"
+		name = "Христиан Людвиг II"
+		dynasty = "фон Мекленбург"
 		birth_date = 1683.11.15
 		adm = 2
 		dip = 3
@@ -379,9 +342,9 @@ capital = 2996
 
 1728.1.1 = {
 	heir = {
-		name = "Friedrich"
-		monarch_name = "Friedrich der Fromme"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих"
+		monarch_name = "Фридрих I Набожный"
+		dynasty = "фон Мекленбург"
 		birth_date = 1717.11.9
 		death_date = 1785.4.24
 		claim = 95
@@ -395,8 +358,8 @@ capital = 2996
 
 1756.5.30 = {
 	monarch = {
-		name = "Friedrich der Fromme"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих I Набожный"
+		dynasty = "фон Мекленбург"
 		birth_date = 1717.11.9
 		adm = 4
 		dip = 2
@@ -406,9 +369,9 @@ capital = 2996
 
 1756.12.10 = {
 	heir = {
-		name = "Friedrich Franz"
-		monarch_name = "Friedrich Franz I"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих Франц"
+		monarch_name = "Фридрих Франц I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1756.12.10
 		death_date = 1837.2.1
 		claim = 95
@@ -420,8 +383,8 @@ capital = 2996
 
 1785.4.25 = {
 	monarch = {
-		name = "Friedrich Franz I"
-		dynasty = "von Mecklenburg"
+		name = "Фридрих Франц I"
+		dynasty = "фон Мекленбург"
 		birth_date = 1756.12.10
 		adm = 2
 		dip = 1
@@ -431,12 +394,48 @@ capital = 2996
 
 1800.9.15 = {
 	heir = {
-		name = "Paul Friedrich"
-		monarch_name = "Paul Friedrich"
-		dynasty = "von Mecklenburg"
+		name = "Пауль Фридрих"
+		monarch_name = "Пауль Фридрих"
+		dynasty = "фон Мекленбург"
 		birth_date = 1800.9.15
 		death_date = 1842.3.7
 		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1837.2.1 = {
+	monarch = {
+		name = "Пауль Фридрих"
+		dynasty = "фон Мекленбург"
+		birth_date = 1800.9.15
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1837.2.1 = {
+	heir = {
+		name = "Фридрих Франц"
+		monarch_name = "Фридрих Франц II"
+		dynasty = "фон Мекленбург"
+		birth_date = 1823.2.28
+		death_date = 1883.4.15
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1842.3.7 = {
+	monarch = {
+		name = "Фридрих Франц II"
+		dynasty = "фон Мекленбург"
+		birth_date = 1800.9.15
 		adm = 2
 		dip = 2
 		mil = 2

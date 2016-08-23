@@ -4,19 +4,19 @@
 ##################################################################################################
 
 recruit_new_soldiers = {
-	global_revolt_risk = 3
+	global_unrest = 2
 	#icon = 7
 }
 
 reform_the_kanun_system = {
-	global_revolt_risk = -1
-	diplomatic_reputation = 5
+	global_unrest = -1
+	diplomatic_reputation = 2
 	stability_cost_modifier = -0.25
 	#icon = 7
 }
 
 collect_extra_vergi = {
-	global_revolt_risk = 5
+	global_unrest = 3
 	#icon = 7
 }
 
@@ -26,24 +26,24 @@ culus_tip_to_jannissery = {
 }
 
 give_zekat = {
-	global_revolt_risk = -3
+	global_unrest = -3
 	#icon = 7
 }
 
 consruct_kulliye = {
 	production_efficiency = 0.10
-	diplomatic_reputation = 5
+	diplomatic_reputation = 2
 	#icon = 7
 }
 
 tedbiri_kiyafet = {
 	global_revolt_risk = -1
-	diplomatic_reputation = 3
+	diplomatic_reputation = 2
 	#icon = 7
 }
 
 ban_alcohol_and_tobacco = {
-	global_revolt_risk = 1
+	global_unrest = 1
 	production_efficiency = 0.30
 	#icon = 7
 }
@@ -52,7 +52,7 @@ buyuk_aydin = {
 	#icon = 5
 }
 vakif_devam = {
-	global_revolt_risk = 3
+	global_unrest = 3
 	#icon = 7
 }
 ignored_ramadan_timer = { }

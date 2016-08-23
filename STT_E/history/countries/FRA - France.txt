@@ -767,6 +767,8 @@ national_focus = DIP
 		mil = 2
 	}
 }
+1814.1.1 = { leader = {	name = "Ген де Бурмон"	type = general		rank = 1	fire = 2	shock = 1	manuever = 3	siege = 3	death_date = 1846.10.27 } }
+
 
 1814.4.11 = {
 	government = administrative_monarchy
@@ -792,5 +794,44 @@ national_focus = DIP
 		adm = 2
 		dip = 3
 		mil = 1
+	}
+}
+
+1830.8.2 = {
+	monarch = {
+		name = "Карл X"
+		adm = 2
+		dip = 3
+		mil = 1
+		dynasty = "де Бурбон" 
+		birth_date = 1757.10.9
+	}
+}
+
+1830.8.2 = {
+	heir = {
+		name = "Луи-Филипп"
+		monarch_name = "Луи-Филипп I"
+		dynasty = "де Бурбон"
+		birth_date = 1773.10.6
+		death_date = 1850.8.26
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+		leader = { name = "Луи-Филипп I"	type = general	rank = 2	fire = 3	shock = 2	manuever = 2	siege = 3 }
+	}
+}
+
+1831.1.1 = { leader = {	name = "Тома Робер Бюжо"	type = general		rank = 1	fire = 2	shock = 3	manuever = 4	siege = 1	death_date = 1849.6.10 } }
+
+1848.1.24 = {
+	monarch = {
+		name = "Луи-Филипп I"
+		adm = 2
+		dip = 3
+		mil = 5
+		dynasty = "де Бурбон" 
+		birth_date = 1773.10.6
 	}
 }

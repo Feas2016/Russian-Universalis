@@ -564,11 +564,14 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				NOT = { num_of_cities = 7 }
-				factor = 0
-			}
-			modifier = {
-				NOT = { num_of_cities = PREV }
+				any_neighbor_country = {
+					OR = {
+						tag = MOS
+						primary_culture = russian
+						primary_culture = ruthenian
+					}
+					num_of_infantry = ROOT
+				}
 				factor = 0
 			}
 		}
@@ -583,7 +586,11 @@ country_decisions = {
 				primary_culture = ruthenian
 			}
 			NOT = { has_country_modifier = rus_hommage_modifer }
-		}
+			OR = {
+					exists = BHO
+					exists = GOL
+				}
+			}
 		allow = {
 			OR = {
 				ROOT = { is_neighbor_of = BHO }
@@ -637,10 +644,15 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				num_of_cities = 7
+				any_neighbor_country = {
+					OR = {
+						tag = BHO
+						tag = GOL
+					}
+					num_of_infantry = ROOT
+				}
 				factor = 0
 			}
 		}
 	}
-	
-}
+}	

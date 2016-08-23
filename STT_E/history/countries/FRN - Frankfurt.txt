@@ -9,7 +9,7 @@ fixed_capital = 1876 # Cannot move capital away from this province & no power co
 
 1399.1.1 = {
 	monarch = {
-		name = "Stadtrat"
+		name = "Горсовет"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -23,11 +23,61 @@ fixed_capital = 1876 # Cannot move capital away from this province & no power co
 
 1806.1.1 = {
 	monarch = {
-		name = "Karl Theodor Anton Maria"
-		dynasty = "von Dalberg"
+		name = "Карл Теодор Антон Мария"
+		dynasty = "фон Дальберг"
 		birth_date = 1744.2.8
 		adm = 1
 		dip = 1
 		mil = 1
+	}
+}
+
+813.10.28 = {
+	heir = {
+		name = "Эжен"
+		monarch_name = "Эжен"
+		birth_date = 1781.9.3
+		death_date = 1824.2.21
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 1
+		dynasty = "де Богарне"
+	}
+}
+
+1813.10.28 = {
+	monarch = {
+		name = "Эжен"
+		dynasty = "де Богарне"
+		birth_date = 1781.2.21
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1813.10.28 = {
+	heir = {
+		name = "Огюст"
+		monarch_name = "Август"
+		birth_date = 1810.12.9
+		death_date = 1835.3.28
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 1
+		dynasty = "де Богарне"
+	}
+}
+1813.12.3 = { government = constitutional_republic }
+
+1813.12.3 = {
+	monarch = {
+		name = "Горсовет"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

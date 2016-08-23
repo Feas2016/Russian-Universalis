@@ -307,3 +307,27 @@ capital = 41	# Kцnigsberg
 1807.1.1 = { capital = 40 } # Memel
 
 1808.1.1 = { capital = 50 } # Berlin
+
+1840.6.7 = {
+	monarch = {
+		name = "Фридрих Вильгельм IV"
+		dynasty = "фон Гогенцоллерн"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1840.6.7 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1797.3.22
+		death_date = 1888.3.9
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
