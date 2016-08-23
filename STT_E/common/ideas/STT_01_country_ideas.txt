@@ -331,7 +331,7 @@ SCA_ideas = {
 }
 
 
-SLV_ideas = {
+SLA_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
 		infantry_cost = -0.20
@@ -342,7 +342,7 @@ SLV_ideas = {
 	}
 
 	trigger = {
-			tag = SLV
+			tag = SLA
 	}
 	free = yes		#will be added at load.
 

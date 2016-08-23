@@ -1,45 +1,4 @@
-SLA_ideas = {
-	start = {
-		land_forcelimit_modifier = 0.33
-		manpower_recovery_speed = 0.33
-	}
 
-	bonus = {
-		culture_conversion_cost = -0.25
-	}
-	
-	trigger = {
-		tag = SLA	
-	}
-	free = yes		#will be added at load.
-	
-	slav_tolerance = {
-		tolerance_heretic = 3
-		religious_unity = 0.2
-	}
-	military_schools = {
-		army_tradition_decay = -0.01
-		army_tradition = 1
-	}
-	slavs_expansion = {
-		colonist_placement_chance = 0.15
-		global_colonial_growth = 40
-	}
-	emperor_of_eurasia = {
-		diplomatic_upkeep = 2
-		legitimacy = 0.5
-	}
-	panslav_romantism = {
-		idea_cost = -0.10
-	}
-	from_urals_to_Lubice = {
-		trade_efficiency = 0.05
-		merchant_steering_to_inland = 20
-	}
-	heroism  = {
-		land_morale = 0.20
-	}
-}
 LUZ_ideas = {
 	start = {
 	global_manpower_modifier = 0.2			
@@ -210,7 +169,7 @@ DON_ideas = {
 		galley_cost = -0.35
 	}
 }
-##TRK_ideas = {
+TRK_ideas = {
 	start = {
 		mercenary_cost = -0.20
 		diplomatic_reputation = 1	

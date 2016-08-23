@@ -3,12 +3,12 @@ country_decisions = {
 	slavian_nation = {
 		major = yes
 		potential = {
-			NOT = { exists = SLV }
+			NOT = { exists = SLA }
 			OR = {
 				culture_group = west_slavic
 				culture_group = east_slavic
 				culture_group = south_slavic
-				culture_group = STT_PLU
+				culture_group = stt_plu
 			}
 			adm_tech = 24
 			OR = {
@@ -32,212 +32,212 @@ country_decisions = {
 			owns_core_province = 140			# Bosnia
 		}
 		effect = {
-			change_tag = SLV
+			change_tag = SLA
 			add_prestige = 75
 			add_stability = 2
 			add_legitimacy = 15
 			bohemia_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			silesia_area = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			carpathia_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			poland_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			ruthenia_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			russia_region = {
 				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = SLV
+				add_permanent_claim = SLA
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			SLV = {
-				change_primary_culture = STT_SLV_russian
+			every_province = {
+				limit = {
+					culture = croatian
+					}			
+				change_culture = stt_sla_croatian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = croatian
+					}
+				change_primary_culture = stt_sla_croatian
+				}
+			every_province = {
+				limit = {
+					culture = serbian
+					}	
+				change_culture = stt_sla_serbian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = serbian
+					}
+				change_primary_culture = stt_sla_serbian
+				}
+			every_province = {
+				limit = {
+					culture = bosnian
+					}	
+				change_culture = stt_sla_bosnian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = bosnian
+					}
+				change_primary_culture = stt_sla_bosnian
+				}
+			every_province = {
+				limit = {
+					culture = slovene
+					}	
+				change_culture = stt_sla_slovene 
+				}
+			every_country = {
+				limit = {
+					primary_culture = slovene
+					}
+				change_primary_culture = stt_sla_slovene
+				}					
+			every_province = {
+				limit = {
+					culture = slovakian
+					}	
+				change_culture = stt_sla_slovakian
+				}
+			every_country = {
+				limit = {
+					primary_culture = slovakian
+					}
+				change_primary_culture = stt_sla_slovakian
+				}
+			every_province = {
+				limit = {
+					culture = czech
+					}	
+				change_culture = stt_sla_czech 
+				}
+			every_country = {
+				limit = {
+					primary_culture = czech
+					}
+				change_primary_culture = stt_sla_czech
+				}
+			every_province = {
+				limit = {
+					culture = schlesian
+					}							
+					change_culture = stt_sla_schlesian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = schlesian
+					}
+				change_primary_culture = stt_sla_schlesian
+				}
+			every_province = {
+				limit = {
+					culture = russian
+					}	
+					change_culture = stt_sla_russian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = russian
+					}
+				change_primary_culture = stt_sla_russian
+				}
+			every_province = {
+				limit = {
+					culture = polish
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = polish 
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = ruthenian
+					}	
+					change_culture = stt_sla_ruthenian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = ruthenian
+					}
+				change_primary_culture = stt_sla_ruthenian
+				}
+			every_province = {
+				limit = {
+					culture = byelorussian
+					}	
+					change_culture = stt_sla_byelorussian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = byelorussian
+					}
+				change_primary_culture = stt_sla_byelorussian
+				}
+			every_province = {
+				limit = {
+					culture = stt_plu_polish
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = stt_plu_polish 
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = stt_plu_ruthenian
+					}	
+					change_culture = stt_sla_ruthenian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = stt_plu_ruthenian
+					}
+				change_primary_culture = stt_sla_ruthenian
+				}
+			every_province = {
+				limit = {
+					culture = stt_plu_byelorussian
+					}	
+					change_culture = stt_sla_byelorussian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = stt_plu_byelorussian
+					}
+				change_primary_culture = stt_sla_byelorussian
+				}
+			SLA = {
+				change_primary_culture = stt_sla_russian
 				change_government = constitutional_monarchy
 				country_event = { id = ideagroups.1 } #Swap Ideas
-				every_province = {
-					limit = {
-						culture = croatian
-						}			
-					change_culture = STT_SLV_croatian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = croatian
-						}
-					change_primary_culture = STT_SLV_croatian
-					}
-				every_province = {
-					limit = {
-						culture = serbian
-						}	
-					change_culture = STT_SLV_serbian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = serbian
-						}
-					change_primary_culture = STT_SLV_serbian
-					}
-				every_province = {
-					limit = {
-						culture = bosnian
-						}	
-					change_culture = STT_SLV_bosnian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = bosnian
-						}
-					change_primary_culture = STT_SLV_bosnian
-					}
-				every_province = {
-					limit = {
-						culture = slovene
-						}	
-					change_culture = STT_SLV_slovene 
-					}
-				every_country = {
-					limit = {
-						primary_culture = slovene
-						}
-					change_primary_culture = STT_SLV_slovene
-					}					
-				every_province = {
-					limit = {
-						culture = slovakian
-						}	
-					change_culture = STT_SLV_slovakian
-					}
-				every_country = {
-					limit = {
-						primary_culture = slovakian
-						}
-					change_primary_culture = STT_SLV_slovakian
-					}
-				every_province = {
-					limit = {
-						culture = czech
-						}	
-					change_culture = STT_SLV_czech 
-					}
-				every_country = {
-					limit = {
-						primary_culture = czech
-						}
-					change_primary_culture = STT_SLV_czech
-					}
-				every_province = {
-					limit = {
-						culture = schlesian
-						}							
-						change_culture = STT_SLV_schlesian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = schlesian
-						}
-					change_primary_culture = STT_SLV_schlesian
-					}
-				every_province = {
-					limit = {
-						culture = russian
-						}	
-						change_culture = STT_SLV_russian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = russian
-						}
-					change_primary_culture = STT_SLV_russian
-					}
-				every_province = {
-					limit = {
-						culture = polish
-						}
-						change_culture = STT_SLV_polish 
-					}
-				every_country = {
-					limit = {
-						primary_culture = polish 
-						}
-					change_primary_culture = STT_SLV_polish 
-					}
-				every_province = {
-					limit = {
-						culture = ruthenian
-						}	
-						change_culture = STT_SLV_ruthenian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = ruthenian
-						}
-					change_primary_culture = STT_SLV_ruthenian
-					}
-				every_province = {
-					limit = {
-						culture = byelorussian
-						}	
-						change_culture = STT_SLV_byelorussian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = byelorussian
-						}
-					change_primary_culture = STT_SLV_byelorussian
-					}
-				every_province = {
-					limit = {
-						culture = STT_PLU_polish
-						}
-						change_culture = STT_SLV_polish 
-					}
-				every_country = {
-					limit = {
-						primary_culture = STT_PLU_polish 
-						}
-					change_primary_culture = STT_SLV_polish 
-					}
-				every_province = {
-					limit = {
-						culture = STT_PLU_ruthenian
-						}	
-						change_culture = STT_SLV_ruthenian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = STT_PLU_ruthenian
-						}
-					change_primary_culture = STT_SLV_ruthenian
-					}
-				every_province = {
-					limit = {
-						culture = STT_PLU_byelorussian
-						}	
-						change_culture = STT_SLV_byelorussian 
-					}
-				every_country = {
-					limit = {
-						primary_culture = STT_PLU_byelorussian
-						}
-					change_primary_culture = STT_SLV_byelorussian
-					}
-				}		
-		}
+				}
+			}
 		ai_will_do = {
 			factor = 1
 		}

@@ -44,36 +44,36 @@ country_event = {
 		change_tag = PLU
 		add_stability = 1
 		add_prestige = -50	
+		every_owned_province = {
+			limit = {
+				culture = lithuanian
+			}
+			change_culture = stt_plu_lithuanian 
+		}
+		every_owned_province = {
+			limit = {
+				culture = byelorussian
+			}
+			change_culture = stt_plu_byelorussian 
+		}
+		every_owned_province = {
+			limit = {
+				culture = polish
+			}
+			change_culture = stt_plu_polish 
+		}
+		every_owned_province = {
+			limit = {
+				culture = ruthenian
+			}
+			change_culture = stt_plu_ruthenian
+			add_province_modifier = {
+				name = local_autonomy
+				duration = 3600
+			}
+		}
 		PLU = {
-			change_primary_culture = STT_PLU_polish	
-			every_owned_province = {
-				limit = {
-					culture = lithuanian
-				}
-				change_culture = STT_PLU_lithuanian 
-			}
-			every_owned_province = {
-				limit = {
-					culture = byelorussian
-				}
-				change_culture = STT_PLU_byelorussian 
-			}
-			every_owned_province = {
-				limit = {
-					culture = polish
-				}
-				change_culture = STT_PLU_polish 
-			}
-			every_owned_province = {
-				limit = {
-					culture = ruthenian
-				}
-				change_culture = STT_PLU_ruthenian
-				add_province_modifier = {
-					name = local_autonomy
-					duration = 3600
-				}
-			}
+			change_primary_culture = stt_plu_polish	
 		}
 	}
 }
