@@ -162,9 +162,10 @@ country_decisions = {
 			tag = RUS
 			tag = NOV
 			tag = VNO
-		}
+			}
 			NOT = { has_country_modifier = rus_raskol }
 			religion = orthodox
+			is_year = 1650
 		}
 		allow = {
 			advisor = theologian
@@ -174,9 +175,10 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -2
-			add_prestige = 5
+			add_prestige = 30
 			add_treasury = -50
 			add_adm_power = -20
+			add_dip_power = 100
 			add_country_modifier = {
 				name = "rus_raskol"
 				duration = -1
