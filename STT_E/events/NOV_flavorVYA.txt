@@ -12,6 +12,11 @@ country_event = {
 			tag = MOS
 			AND = {
 				NOT = { exists = MOS }
+				tag = TSR
+			}
+			AND = {
+				NOT = { exists = MOS }
+				NOT = { exists = TSR }
 				tag = RUS
 			}
 		}
@@ -19,8 +24,13 @@ country_event = {
 			OR = {
 				vassal_of = MOS
 				AND = {
+					vassal_of = TSR
+					NOT = { exists = MOS }
+				}
+				AND = {
 					vassal_of = RUS
 					NOT = { exists = MOS }
+					NOT = { exists = TSR }
 				}
 			}
 			NOT = { num_of_cities = 6 }
@@ -91,6 +101,11 @@ country_event = {
 			}
 			AND = {
 				NOT = { exists = MOS }
+				vassal_of = TSR
+			}
+			AND = {
+				NOT = { exists = MOS }
+				NOT = { exists = TSR }
 				vassal_of = RUS
 			}
 		}
@@ -134,4 +149,3 @@ country_event = {
 		}
 	}
 }
-
