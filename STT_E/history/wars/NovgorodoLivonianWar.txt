@@ -1,0 +1,28 @@
+name = "Новгородо-Ливонская Война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1842 #Narva
+}
+
+
+1444.3.22 = {
+	add_defender = LIV
+	add_defender = TEU
+	add_defender = RIG
+	add_defender = OSE
+	add_defender = DOR
+	add_defender = KUR
+	add_attacker = NOV
+}
+
+# Treaty of Who knows what
+1444.11.11 = {
+	rem_defender = LIV
+	rem_defender = TEU
+	rem_defender = RIG
+	rem_defender = OSE
+	rem_defender = DOR
+	rem_defender = KUR
+	rem_attacker = NOV
+}
