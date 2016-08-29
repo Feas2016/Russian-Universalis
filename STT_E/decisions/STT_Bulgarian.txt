@@ -4,6 +4,7 @@ country_decisions = {
 			tag = BUL
 			religion = orthodox
 			primary_culture = bulgarian
+			NOT = { government_rank = 3 }
 		}
 		allow = {
 			adm_power = 100
