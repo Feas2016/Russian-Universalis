@@ -1,0 +1,186 @@
+FRA_conquer_algeria = {
+
+    type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+	    area = algiers_area
+	}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = FRA
+		is_year = 1820
+		is_subject = no
+		is_at_war = no
+		algiers_area = {
+			NOT = { owned_by = ROOT }
+		}
+		NOT = { has_country_flag = FRA_conquered_algiers }
+		
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+		add_adm_power = 25
+		set_country_flag = FRA_conquered_algiers
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}
+
+CAR_return_homeland = {
+
+    type = country
+
+	category = MIL
+	ai_mission = yes
+
+    target_provinces = {
+	    OR = {
+			province_id = 378
+			province_id = 1855
+			province_id = 1854
+		}
+		NOT = { owned_by = ROOT }
+	}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CAR
+		is_subject = no
+		is_at_war = no
+		OR = {
+			NOT = { owns = 378 }	
+			NOT = { owns = 1855 }	
+			NOT = { owns = 1854 }		
+		}
+		NOT = { has_country_flag = CAR_conquered_finikia }
+		
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 30
+		set_country_flag = CAR_conquered_finikia
+        add_country_modifier = { 
+        name = "boom_economy" 
+        duration = 3650 
+        } 
+    }
+}
+
+CAR_conquest_malta = {
+    
+	type = country
+
+	category = MIL
+	ai_mission = yes
+
+    target_provinces = {
+			province_id = 126
+			NOT = { owned_by = ROOT }
+		}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CAR
+		is_subject = no
+		is_at_war = no	
+		NOT = { owns = 126 }		
+		NOT = { has_country_flag = CAR_conquered_malta }
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+		set_country_flag = CAR_conquered_malta
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}

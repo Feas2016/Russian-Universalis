@@ -6,3 +6,52 @@ technology_group = eastern
 capital = 3192
 fixed_capital = 3192 # Cannot move capital away from this province & no power cost to move to it
 government_rank = 1
+
+1420.1.1 = {
+	monarch = {
+		name = "Иван Андреевич Брюхатый"
+		dynasty = "Рюрикович"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Владимир"
+		monarch_name = "Владимир Андреевич"
+		dynasty = "Рюрикович"
+		birth_date = 1430.1.1
+		death_date = 1480.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1460.1.1 = {
+	monarch = {
+		name = "Владимир Андреевич"
+		dynasty = "Рюрикович"
+		birth_date = 1430.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1460.1.1 = {
+	heir = {
+		name = "Андрей"
+		monarch_name = "Андрей Иванович Хохолок"
+		dynasty = "Рюрикович"
+		birth_date = 1460.1.1
+		death_date = 1500.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

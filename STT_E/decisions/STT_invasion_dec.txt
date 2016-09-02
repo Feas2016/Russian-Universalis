@@ -1,0 +1,43 @@
+country_decisions = {
+
+ invest_algiers = {
+    major = yes
+	    potential = {
+		    capital_scope = {
+			    continent = europe
+			}
+			year = 1600
+			technology_group = western
+			NOT = { has_country_flag = invest_in_algiers }
+			algiers_area = {
+			    owned_by = ROOT 
+		    }
+		}
+		
+		allow = {
+			stability = 1
+			is_at_war = no
+			adm_power = 50
+			treasury = 800
+		}
+		
+		effect = {
+		    add_adm_power = -50
+			add_treasury = -800
+		    every_province = {
+			limit = {
+				OR = {
+					province_id = 3302
+					province_id = 337
+					province_id = 2461
+					province_id = 338
+					}
+				}
+		    add_base_manpower = 3
+			add_base_tax = 3
+			add_base_production = 3
+		    }
+		    set_country_flag = invest_in_algiers
+		}
+    }
+}
