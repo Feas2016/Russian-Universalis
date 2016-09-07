@@ -45,3 +45,22 @@ heir_not_training = {
 	prestige = -0.1
 	legitimacy = -0.1
 }
+
+# Персидский ковер
+persian_carpet_modifier = {
+	legitimacy = 0.1
+	republican_tradition = 0.01
+	prestige = 0.1
+}
+# Картины из Флоренции
+florentian_painting_modifier = {
+	legitimacy = 0.2
+	republican_tradition = 0.015
+	prestige = 0.2
+}
+# Памятник правителю
+ruler_statue_modifier = {
+	legitimacy = 0.5
+	republican_tradition = 0.025
+	prestige = 0.5
+}
