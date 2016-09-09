@@ -169,6 +169,7 @@ thegreat = {
 persian_carpet = {
 		potential = {
 			NOT = { primitives = yes }
+			NOT = { has_ruler_modifier = "persian_carpet_modifier" }
 		}
 		allow = {
 			NOT = { primitives = yes }
@@ -196,6 +197,7 @@ persian_carpet = {
 florentian_painting = {
 		potential = {
 			NOT = { primitives = yes }
+			NOT = { has_ruler_modifier = "florentian_painting_modifier" }
 			}
 		allow = {
 			NOT = { primitives = yes }
@@ -223,6 +225,7 @@ florentian_painting = {
 the_ruler_statue = {
 		potential = {
 			adm_tech = 8
+			NOT = { has_ruler_modifier = "the_ruler_statue_modifier" }
 			}
 		allow = {
 			adm_tech = 8
