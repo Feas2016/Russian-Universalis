@@ -170,6 +170,8 @@ persian_carpet = {
 		potential = {
 			NOT = { primitives = yes }
 			NOT = { has_ruler_modifier = "persian_carpet_modifier" }
+			has_regency = no
+			is_lesser_in_union = no
 		}
 		allow = {
 			NOT = { primitives = yes }
@@ -198,6 +200,8 @@ florentian_painting = {
 		potential = {
 			NOT = { primitives = yes }
 			NOT = { has_ruler_modifier = "florentian_painting_modifier" }
+			has_regency = no
+			is_lesser_in_union = no
 			}
 		allow = {
 			NOT = { primitives = yes }
@@ -214,11 +218,11 @@ florentian_painting = {
 			factor = 0.6
 			modifier = {
 			    factor = 1
-				treasury = 100
+				treasury = 300
 			}
 			modifier = {
 			    factor = 1.5
-				treasury = 200
+				treasury = 450
 			}
 		}
 	}
@@ -226,6 +230,8 @@ the_ruler_statue = {
 		potential = {
 			adm_tech = 8
 			NOT = { has_ruler_modifier = "the_ruler_statue_modifier" }
+			has_regency = no
+			is_lesser_in_union = no
 			}
 		allow = {
 			adm_tech = 8
@@ -242,11 +248,11 @@ the_ruler_statue = {
 			factor = 0.6
 			modifier = {
 			    factor = 1
-				treasury = 300
+				treasury = 500
 			}
 			modifier = {
 			    factor = 1.5
-				treasury = 500
+				treasury = 700
 			}
 		}
 	}

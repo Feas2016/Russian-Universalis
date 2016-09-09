@@ -1,0 +1,401 @@
+government = feudal_monarchy
+primary_culture = kashmiri
+religion = vajrayana
+technology_group = indian
+capital = 2074	# Ladakh
+fixed_capital = 2074 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = {
+	government_rank = 1
+}
+
+1440.1.1 = {	
+	monarch = {
+		name = "Лхачен Чогдан"
+		dynasty = "Мау-Юл"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Лхачен Бара"
+		monarch_name = "Лхачен Бара"
+		dynasty = "Мау-Юл"
+		birth_date = 1450.1.1
+		death_Date = 1470.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1465.1.1 = {
+	monarch = {
+		name = "Лхачен Бара"
+		dynasty = "Мау-Юл"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1470.1.2 = {
+	monarch = {
+		name = "Лхачен Бхаган"
+		dynasty = "Намгьял"
+		adm = 2
+		dip = 3
+		mil = 4
+		leader = {	name = "Лхачен Бхаган"            	type = general	rank = 2	fire = 3	shock = 4	manuever = 5	siege = 1 }
+	}
+}
+
+1470.1.2 = {
+	heir = {
+		name = "Лхаван"
+		monarch_name = "Лхаван"
+		dynasty = "Намгьял"
+		birth_date = 1460.1.1
+		death_Date = 1510.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1485.1.1 = {
+	monarch = {
+		name = "Лхаван"
+		dynasty = "Намгьял"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1485.1.1 = {
+	heir = {
+		name = "Лата Джухдан"
+		monarch_name = "Лата Джухдан"
+		dynasty = "Намгьял"
+		birth_date = 1480.1.1
+		death_Date = 1535.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1510.1.2 = {
+	monarch = {
+		name = "Лата Джухдан"
+		dynasty = "Намгьял"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1510.1.2 = {
+	heir = {
+		name = "Кундгэ"
+		monarch_name = "Кундгэ"
+		dynasty = "Намгьял"
+		birth_date = 1500.1.1
+		death_Date = 1550.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1535.1.2 = {
+	monarch = {
+		name = "Кундгэ"
+		dynasty = "Намгьял"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1535.1.2 = {
+	heir = {
+		name = "Таши"
+		monarch_name = "Таши"
+		dynasty = "Намгьял"
+		birth_date = 1510.1.1
+		death_Date = 1575.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+1550.1.2 = {
+	monarch = {
+		name = "Таши"
+		dynasty = "Намгьял"
+		adm = 5
+		dip = 1
+		mil = 3
+		leader = {	name = "Таши"            	type = general	rank = 1	fire = 2	shock = 3	manuever = 1	siege = 1 }
+	}
+}
+
+1550.1.2 = {
+	heir = {
+		name = "Цэванг"
+		monarch_name = "Цэванг I"
+		dynasty = "Намгьял"
+		birth_date = 1530.1.1
+		death_Date = 1595.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1575.1.2 = {
+	monarch = {
+		name = "Цэванг I"
+		dynasty = "Намгьял"
+		adm = 2
+		dip = 1
+		mil = 5
+		leader = {	name = "Цэванг I"            	type = general	rank = 1	fire = 5	shock = 4	manuever = 3	siege = 2}
+	}
+}
+
+1575.1.2 = {
+	heir = {
+		name = "Джамьянг"
+		monarch_name = "Джамьянг"
+		dynasty = "Намгьял"
+		birth_date = 1550.1.1
+		death_Date = 1616.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1595.1.2 = {
+	monarch = {
+		name = "Джамьянг"
+		dynasty = "Намгьял"
+		adm = 4
+		dip = 4
+		mil = 3
+		religion = sunni
+	}
+}
+
+1595.1.2 = {
+	heir = {
+		name = "Сэнге"
+		monarch_name = "Сэнге"
+		dynasty = "Намгьял"
+		birth_date = 1575.1.1
+		death_Date = 1642.1.1
+		claim = 95
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
+
+1616.1.2 = {
+	monarch = {
+		name = "Сэнге"
+		dynasty = "Намгьял"
+		adm = 6
+		dip = 4
+		mil = 6
+		religion = vajrayana
+	}
+}
+
+1630.1.1 = {
+	government_rank = 2
+}
+
+1616.1.2 = {
+	heir = {
+		name = "Делдан"
+		monarch_name = "Делдан"
+		dynasty = "Намгьял"
+		birth_date = 1600.1.1
+		death_Date = 1694.1.1
+		claim = 70
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+
+
+1642.1.2 = {
+	monarch = {
+		name = "Делдан"
+		dynasty = "Намгьял"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1642.1.2 = {
+	heir = {
+		name = "Ньима"
+		monarch_name = "Ньима"
+		dynasty = "Намгьял"
+		birth_date = 1620.1.1
+		death_Date = 1729.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1694.1.2 = {
+	monarch = {
+		name = "Ньима"
+		dynasty = "Намгьял"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1694.1.2 = {
+	heir = {
+		name = "Децун"
+		monarch_name = "Децун"
+		dynasty = "Намгьял"
+		birth_date = 1690.1.1
+		death_Date = 1739.1.1
+		claim = 95
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}
+
+1729.1.2 = {
+	monarch = {
+		name = "Децун"
+		dynasty = "Намгьял"
+		adm = 2
+		dip = 0
+		mil = 2
+	}
+}
+
+1729.1.2 = {
+	heir = {
+		name = "Пхунцог"
+		monarch_name = "Пхунцог"
+		dynasty = "Намгьял"
+		birth_date = 1710.1.1
+		death_Date = 1753.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1739.1.2 = {
+	monarch = {
+		name = "Пхунцог"
+		dynasty = "Намгьял"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1739.1.2 = {
+	heir = {
+		name = "Цэванг"
+		monarch_name = "Цэванг II"
+		dynasty = "Намгьял"
+		birth_date = 1730.1.1
+		death_Date = 1782.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1753.1.2 = {
+	monarch = {
+		name = "Цэванг II"
+		dynasty = "Намгьял"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1753.1.2 = {
+	heir = {
+		name = "Цэтан"
+		monarch_name = "Цэтан"
+		dynasty = "Намгьял"
+		birth_date = 1745.1.1
+		death_Date = 1802.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1782.1.2 = {
+	monarch = {
+		name = "Цэт4"
+		dynasty = "Намгьял"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1782.1.2 = {
+	heir = {
+		name = "Цэпал"
+		monarch_name = "Цэпал"
+		dynasty = "Намгьял"
+		birth_date = 1760.1.1
+		death_Date = 1837.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1802.1.2 = {
+	monarch = {
+		name = "Цэпал"
+		dynasty = "Намгьял"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
