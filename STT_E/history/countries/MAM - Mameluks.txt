@@ -8,7 +8,7 @@ capital = 361 # Cairo
 
 1399.1.1 = {
 	monarch = {
-		name = "ан-Насир Фарадж"
+		name = "Фарадж ан-Насир"
 		dynasty = "Бурджит"
 		adm = 2
 		dip = 2
@@ -19,7 +19,7 @@ capital = 361 # Cairo
 
 1412.1.1 = {
 	monarch = {
-		name = "Шайх ал-Муайяд"
+		name = "Шейх аль-Муайяд"
 		dynasty = "Бурджит"
 		adm = 2
 		dip = 3
@@ -29,7 +29,7 @@ capital = 361 # Cairo
 
 1421.1.1 = {
 	monarch = {
-		name = "Мухаммад I"
+		name = "Мухаммед I ас-Салех"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
@@ -39,7 +39,7 @@ capital = 361 # Cairo
 
 1422.1.1 = {
 	monarch = {
-		name = "Барсбой"
+		name = "Барсбай аль-Ашраф"
 		dynasty = "Бурджит"
 		adm = 2
 		dip = 3
@@ -47,9 +47,19 @@ capital = 361 # Cairo
 	}
 }
 
+1437.1.1 = {
+	monarch = {
+		name = "Юсуф аль-Азиз"
+		dynasty = "Бурджит"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
 1438.6.8 = {
 	monarch = {
-		name = "Джакмак"
+		name = "Джакмак аз-Захир"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 2
@@ -59,7 +69,7 @@ capital = 361 # Cairo
 
 1453.2.13 = {
 	monarch = {
-		name = "Инал"
+		name = "Инал аль-Ашраф"
 		dynasty = "Бурджит"
 		adm = 2
 		dip = 2
@@ -69,7 +79,7 @@ capital = 361 # Cairo
 
 1461.2.25 = {
 	monarch = {
-		name = "Хушкадам"
+		name = "Хушкадам аз-Захир"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
@@ -80,7 +90,7 @@ capital = 361 # Cairo
 1461.2.25 = {	
 	heir = {
 		name = "Каит-бай"
-		monarch_name = "Билбай"
+		monarch_name = "Каит-бай аль-Ашраф"
 		dynasty = "Бурджит"
 		birth_date = 1418.1.1
 		death_date = 1496.7.8
@@ -93,7 +103,7 @@ capital = 361 # Cairo
 
 1467.10.10 = {
 	monarch = {
-		name = "Каит-бай"
+		name = "Каит-бай аль-Ашраф"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 3
@@ -103,7 +113,7 @@ capital = 361 # Cairo
 
 1496.7.8 = {
 	monarch = {
-		name = "Мухаммад II"
+		name = "Мухаммедд II ан-Насир"
 		dynasty = "Бурджит"
 		adm = 2
 		dip = 0
@@ -113,7 +123,7 @@ capital = 361 # Cairo
 
 1498.10.30 = {
 	monarch = {
-		name = "Кансух I"
+		name = "Кансух I аз-Захир"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 2
@@ -123,87 +133,112 @@ capital = 361 # Cairo
 
 1500.6.29 = {
 	monarch = {
-		name = "Джанбалат"
+		name = "Джанбалат аль-Ашраф"
 		dynasty = "Бурджит"
 		adm = 0
 		dip = 1
 		mil = 1
+	}
+}
+
+1501.1.1 = {
+	monarch = {
+		name = "Туман-бай I аль-Адиль"
+		dynasty = "Бурджит"
+		adm = 1
+		dip = 1
+		mil = 3             	
 	}
 }
 
 1501.6.26 = {
 	monarch = {
-		name = "Кансух II"
+		name = "Кансух II аль-Гаури"
 		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
 		mil = 3
-		leader = {	name = "аль-Кансур"             	type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = {	name = "Кансух II аль-Гаури"             	type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
 	}
 }
 
 1516.8.25 = {
 	monarch = {
-		name = "Туман-бай II"
+		name = "Туман-бай II аль-Ашраф"
 		dynasty = "Бурджит"
 		adm = 0
 		dip = 0
 		mil = 2
-		leader = {	name = "Туман-бай II"		type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
+		leader = {	name = "Туман-бай II аль-Ашраф"		type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
 	}
 }
 
-1768.1.1 = {
+1757.1.1 = {
 	monarch = {
-		name = "Ало аль-Кабор"
-		dynasty = "Бей"
+		name = "Али-бей аль-Кабир"
+		dynasty = ""
 		adm = 3
+		dip = 3
+		mil = 6
+		leader = { name = "Али-бей аль-Кабир"		type = general	rank = 2	fire = 4	shock = 3	manuever = 4	siege = 2 }
+	}
+}
+
+1769.1.1 = { leader = {	name = "Мухаммед Бей Абу аль-Дахаб"           	type = general	rank = 3	fire = 5	shock = 3	manuever = 5	siege = 1	death_date = 1773.1.1 } }
+
+1773.1.1 = {
+	monarch = {
+		name = "Мухаммед Бей Абу аль-Дахаб"
+		dynasty = ""
+		adm = 4
+		dip = 3
+		mil = 5
+		leader = { name = "Мухаммед Бей Абу аль-Дахаб"		type = general	rank = 3	fire = 5	shock = 3	manuever = 5	siege = 1 }
+	}
+}
+
+1784.1.1 = {
+	monarch = {
+		name = "Ибрагим Бей"
+		dynasty = ""
+		adm = 3
+		dip = 2
+		mil = 1
+		leader = { name = "Ибрагим Бей"		type = general	rank = 1	fire = 2	shock = 2	manuever = 4	siege = 0 }
+	}
+}
+
+1784.1.1 = { leader = {	name = "Мурад Бей"             	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1800.1.1 } }
+
+1786.1.1 = { leader = {	name = "Исмаил Бей"             	type = general	rank = 2	fire = 2	shock = 2	manuever = 4	siege = 1	death_date = 1800.1.1 } }
+
+1786.1.1 = {
+	monarch = {
+		name = "Шейх аль-Балад"
+		dynasty = ""
+		adm = 2
 		dip = 3
 		mil = 2
 	}
 }
 
-1773.5.2 = {
+1804.1.1 = {
 	monarch = {
-		name = "Мехмед"
-		dynasty = "Бей"
-		adm = 4
-		dip = 1
-		mil = 1
-	}
-}
-
-1775.6.11 = {
-	monarch = {
-		name = "Мурад"
-		dynasty = "Бей"
-		adm = 2
-		dip = 3
-		mil = 3
-	}
-}
-
-1792.1.1 = { leader = {	name = "Ибрагим Бей"           	type = general	rank = 1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1804.3.14 } }
-
-1792.1.1 = { leader = {	name = "Мурад Бей"             	type = general	rank = 2	fire = 1	shock = 3	manuever = 4	siege = 0	death_date = 1801.4.22 } }
-
-1801.4.23 = {
-	monarch = {
-		name = "Ахмед"
-		dynasty = "Хуршид"
+		name = "Хурдиш Ахмед"
+		dynasty = ""
 		adm = 0
 		dip = 1
-		mil = 0
+		mil = 2
 	}
 }
 
-1804.3.14 = {
+1805.5.1 = {
 	monarch = {
-		name = "Мухаммад Али"
-		dynasty = "Мухаммад"
+		name = "Мухаммед Али"
+		dynasty = ""
 		adm = 6
 		dip = 4
 		mil = 6
-		leader = { name = "Мехмед Али"		type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = { name = "Мухаммед Али"		type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
 	}
 }

@@ -5,12 +5,52 @@ technology_group = eastern
 capital = 293	# Smolensk
 fixed_capital = 293 # Cannot move capital away from this province & no power cost to move to it
 
-1386.1.1 = {
+1313.1.1 = {
 	monarch = {
-		name = "Yury I"
-		dynasty = "Rostaslavichi"
+		name = "Иван"
+		dynasty = "Рюрикович"
 		adm = 0
 		dip = 0
+		mil = 3
+	}
+}
+
+1359.1.1 = {
+	monarch = {
+		name = "Святослав"
+		dynasty = "Рюрикович"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1386.1.1 = {
+	monarch = {
+		name = "Юрий"
+		dynasty = "Рюрикович"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1392.1.1 = {
+	monarch = {
+		name = "Глеб"
+		dynasty = "Рюрикович"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1401.1.1 = {
+	monarch = {
+		name = "Юрий"
+		dynasty = "Рюрикович"
+		adm = 2
+		dip = 3
 		mil = 3
 	}
 }

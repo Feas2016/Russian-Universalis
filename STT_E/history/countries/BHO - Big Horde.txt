@@ -3,17 +3,18 @@ government_rank = 2
 primary_culture = mishary
 religion = sunni
 technology_group = nomad_group
-capital = 303	# Saratov
+capital = 466	# Saray
 historical_rival = TUR
 historical_rival = KAZ
 
 1432.1.1 = {
 	monarch = {
-		name = "Кычак-Мухаммед"
+		name = "Сеид-Ахмад"
 		dynasty = "Чингизид"
-		adm = 0
-		dip = 0
-		mil = 2
+		adm = 2
+		dip = 2
+		mil = 4
+		leader = {	name = "Сеид-Ахмад"             	type = general	rank = 2	fire = 4	shock = 3	manuever = 3	siege = 1 }
 	}
 }
 
@@ -25,9 +26,9 @@ historical_rival = KAZ
 		birth_date = 1435.1.1
 		death_date = 1481.1.6
 		claim = 90
-		adm = 1
-		dip = 3
-		mil = 2
+		adm = 3
+		dip = 2
+		mil = 4
 	}
 }
 
@@ -35,32 +36,34 @@ historical_rival = KAZ
 	monarch = {
 		name = "Ахмад"
 		dynasty = "Чингизид"
-		adm = 1
-		dip = 3
-		mil = 2
+		adm = 3
+		dip = 2
+		mil = 4
+		leader = {	name = "Ахмад"             	type = general	rank = 2	fire = 3	shock = 4	manuever = 5	siege = 1 }
 	}
 }
 
 1460.1.1 = {
 	heir = {
-		name = "Сайид Ахмад"
-		monarch_name = "Сайид Ахмад I"
+		name = "Шейх Ахмад"
+		monarch_name = "Шейх Ахмад"
 		dynasty = "Чингизид"
 		birth_date = 1460.1.1
 		death_date = 1528.1.1
 		claim = 50
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 2
+		dip = 4
+		mil = 3
 	}
 }
 
 1481.1.6 = {
 	monarch = {
-		name = "Сайид Ахмад"
+		name = "Шейх Ахмад"
 		dynasty = "Чингизид"
-		adm = 0
-		dip = 0
-		mil = 0
+		adm = 2
+		dip = 4
+		mil = 3
+		leader = {	name = "Шейх Ахмад"             	type = general	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 1 }
 	}
 }

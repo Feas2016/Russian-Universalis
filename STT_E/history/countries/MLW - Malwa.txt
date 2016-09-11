@@ -4,108 +4,127 @@ religion = sunni
 technology_group = indian
 capital = 526	# Mandu
  
-#Sultans of Malwa
-1390.1.1 = {
+1401.1.1 = {
+	government_rank = 1
+ 
+ 1401.1.1 = {
 	monarch = {
-		name = "Dilavar Khan Husain"
-		dynasty = "Ghuri"
-		ADM = 1
+		name = "Амид-шах Дауд"
+		dynasty = "Гури"
+		ADM = 3
 		DIP = 2
-		MIL = 2
+		MIL = 3
 	}
 }
 
-1390.1.1 = {
+1401.1.1 = {
 	heir = {
-		name = "Alp Khan Hushang"
-		monarch_name = "Alp Khan Hushang"
-		dynasty = "Ghuri"
+		name = "Хушанг"
+		monarch_name = "Хушанг-шах"
+		dynasty = "Гури"
 		birth_date = 1380.1.1
 		death_date = 1435.1.1
 		claim = 95
-		ADM = 3
+		ADM = 4
 		DIP = 3
-		MIL = 0
+		MIL = 2
 	}
 }
 
  
 
-1405.1.1 = {
+1406.1.1 = {
 	monarch = {
-		name = "Alp Khan Hushang"
-		dynasty = "Ghuri"
-		ADM = 3
+		name = "Хушанг-шах"
+		dynasty = "Гури"
+		ADM = 4
 		DIP = 3
-		MIL = 0
+		MIL = 2
+		leader = {	name = "Хушанг-шах"             	type = general	rank = 2	fire = 4	shock = 2	manuever = 3	siege = 2 }
 	}
 }
 
-1405.1.1 = {
+1406.1.1 = {
 	heir = {
-		name = "Ghazni"
-		monarch_name = "Ghazni Khan"
-		dynasty = "Ghuri"
+		name = "Мухаммед"
+		monarch_name = "Мухаммед-шах"
+		dynasty = "Гури"
 		birth_date = 1380.1.1
 		death_date = 1436.5.3
 		claim = 95
 		ADM = 2
 		DIP = 1
-		MIL = 2
+		MIL = 3
 	}
 }
 
 1435.1.1 = {
 	monarch = {
-		name = "Ghazni Khan"
-		dynasty = "Ghuri"
+		name = "Мухаммед-шах I"
+		dynasty = "Гури"
 		ADM = 2
 		DIP = 1
-		MIL = 2
+		MIL = 3
+		leader = {	name = "Мухаммед-шах"             	type = general	rank = 2	fire = 2	shock = 4	manuever = 2	siege = 1 }
+	}
+}
+
+1435.1.1 = {
+	heir = {
+		name = "Масуд"
+		monarch_name = "Масуд-шах"
+		dynasty = "Гури"
+		birth_date = 1400.1.1
+		# no death date information
+		claim = 95
+		ADM = 2
+		DIP = 1
+		MIL = 3
 	}
 }
 
 1436.5.3 = {
 	monarch = {
-		name = "Mahmud I"
-		dynasty = "Khalji"
-		ADM = 5
-		DIP = 5
+		name = "Мухаммед I"
+		dynasty = "Халджи"
+		ADM = 4
+		DIP = 3
 		MIL = 6
+		leader = {	name = "Мухаммед-шах"             	type = general	rank = 2	fire = 2	shock = 4	manuever = 5	siege = 1 }
 	}
 }
 
 1450.1.1 = {
 	heir = {
-		name = "Ghiyath Shah"
-		monarch_name = "Ghiyath Shah"
-		dynasty = "Khalji"
+		name = "Гияс"
+		monarch_name = "Гияс-шах"
+		dynasty = "Халджи"
 		birth_date = 1450.1.1
 		death_date = 1500.11.18
 		claim = 95
-		ADM = 1
+		ADM = 2
 		DIP = 3
-		MIL = 1
+		MIL = 2
 	}
 }
 
 1469.5.30 = {
 	monarch = {
-		name = "Ghiyath Shah"
-		dynasty = "Khalji"
-		ADM = 1
+		name = "Гийас-шах"
+		dynasty = "Халджи"
+		ADM = 2
 		DIP = 3
-		MIL = 1
+		MIL = 2
 	}
 }
 
 1469.5.30 = {
 	heir = {
-		name = "Nasir Shah"
-		monarch_name = "Nasir Shah"
-		dynasty = "Khalji"
-		birth_date = 1469.5.30
-		death_date = 1511.4.30
+		name = "Абдул Кадир"
+		monarch_name = "Насир-шах"
+		dynasty = "Халджи"
+		# no birth date information
+		death_date = 1510.12.1
 		claim = 95
 		ADM = 1
 		DIP = 0
@@ -113,170 +132,71 @@ capital = 526	# Mandu
 	}
 }
 
-1500.11.18 = {
+1500.11.20 = {
 	monarch = {
-		name = "Nasir Shah"
-		dynasty = "Khalji"
+		name = "Насир-шах"
+		dynasty = "Халджи"
 		ADM = 1
 		DIP = 0
+		MIL = 3
+		leader = {	name = "Насир-шах"             	type = general	rank = 2	fire = 1	shock = 4	manuever = 4	siege = 1 }
+	}
+}
+
+1500.11.20 = {
+	heir = {
+		name = "Шихаб"
+		monarch_name = "Шихаб-шах"
+		dynasty = "Халджи"
+		# no birth date information
+		death_date = 1511.7.1
+		claim = 95
+		ADM = 1
+		DIP = 2
+		MIL = 4
+	}
+}
+
+1510.1.1 = {
+	heir = {
+		name = "Азам-Хумаюм"
+		monarch_name = "Мухаммед-шах II"
+		dynasty = "Халджи"
+		# no birth date information
+		death_date = 1531.3.1
+		claim = 95
+		ADM = 1
+		DIP = 1
 		MIL = 3
 	}
 }
 
-1500.11.18 = {
-	heir = {
-		name = "Mahmud Shah"
-		monarch_name = "Mahmud Shah"
-		dynasty = "Khalji"
-		birth_date = 1490.1.1
-		death_date = 1531.3.29
-		claim = 95
-		ADM = 0
-		DIP = 0
-		MIL = 2
+1510.12.1 = {
+	monarch = {
+		name = "Шихаб-шах"
+		dynasty = "Халджи"
+		ADM = 1
+		DIP = 2
+		MIL = 4
 	}
 }
 
-1511.4.30 = {
+1511.6.2 = {
 	monarch = {
-		name = "Mahmud Shah"
-		dynasty = "Khalji"
-		ADM = 0
-		DIP = 0
-		MIL = 2
-	}
-}
-
-#1531.3.29 = {
-#	monarch = {
-#		name = "Gujarat occupation"
-#		ADM = 2
-#		DIP = 2
-#		MIL = 0
-#	}
-#}
-
-1536.1.1 = {
-	monarch = {
-		name = "Qadir Shah"
-		dynasty = "Qadirid"
-		ADM = 2
-		DIP = 1
-		MIL = 0
-	}
-}
-
-#1542.1.1 = {
-#	monarch = {
-#		name = "Mughal Occupation"
-#		ADM = 2
-#		DIP = 2
-#		MIL = 2
-#	}
-#}
-
-1554.1.1 = {
-	monarch = {
-		name = "Salim Shah"
-		dynasty = "Shaja'atid"
+		name = "Мухаммед-шах II"
+		dynasty = "Халджи"
 		ADM = 1
 		DIP = 1
-		MIL = 0
-	}
-}
-
-1554.1.1 = {
-	heir = {
-		name = "Baz Bahadur"
-		monarch_name = "Baz Bahadur"
-		dynasty = "Shaja'atid"
-		birth_date = 1534.1.1
-		death_date = 1562.1.1
-		claim = 95
-		ADM = 2
-		DIP = 0
-		MIL = 0
+		MIL = 3
+		leader = {	name = "Мухаммед-шах II"             	type = general	rank = 1	fire = 1	shock = 2	manuever = 1	siege = 0 }
 	}
 }
 
 1555.1.1 = {
 	monarch = {
-		name = "Baz Bahadur"
-		dynasty = "Shaja'atid"
+		name = "Баз-Бахадур-шах"
 		ADM = 2
-		DIP = 0
-		MIL = 0
-	}
-}
-
-#1562.1.1 = {
-#	monarch = {
-#		name = "Mughal occupation"
-#		ADM = 2
-#		DIP = 2
-#		MIL = 2
-#	}
-#}
-
-
-#Maharajas of Indore
-
-1728.1.1 = {
-	monarch = {
-		name = "Malhar Rao I"
-		dynasty = "Holkar"
-		ADM = 2
-		DIP = 3
-		MIL = 5
-	}
-}
-
-1740.1.1 = {
-	heir = {
-		name = "Mali"
-		monarch_name = "Mali Rao"
-		dynasty = "Holkar"
-		birth_date = 1740.1.1
-		death_date = 1767.4.5
-		claim = 95
-		ADM = 0
-		DIP = 0
-		MIL = 1
-	}
-}
-
-1766.5.19 = {
-	monarch = {
-		name = "Mali Rao"
-		dynasty = "Holkar"
-		ADM = 0
-		DIP = 0
-		MIL = 1
-	}
-}
-
-1766.5.19 = {
-	heir = {
-		name = "Ahalya Bai"
-		monarch_name = "Ahalya Bai"
-		dynasty = "Holkar"
-		birth_date = 1740.1.1
-		death_date = 1818.1.1
-		claim = 95
-		ADM = 6
-		DIP = 4
+		DIP = 2
 		MIL = 2
-		female = yes
-	}
-}
-
-1767.4.5 = {
-	monarch = {
-		name = "Ahalya Bai"
-		dynasty = "Holkar"
-		ADM = 6
-		DIP = 4
-		MIL = 2
-		female = yes
 	}
 }
