@@ -1,4 +1,4 @@
-country_decisions = {
+﻿country_decisions = {
 
 western = {
 		major = yes
@@ -164,96 +164,6 @@ thegreat = {
 		}
 		ai_will_do = {
 			factor = 1
-		}
-	}
-persian_carpet = {
-		potential = {
-			NOT = { primitives = yes }
-			NOT = { has_ruler_modifier = "persian_carpet_modifier" }
-			has_regency = no
-			is_lesser_in_union = no
-		}
-		allow = {
-			NOT = { primitives = yes }
-			treasury = 100			
-		}
-		effect = {
-			add_prestige = 5
-			add_treasury = -100
-			add_ruler_modifier = {
-				name = persian_carpet_modifier
-			}
-		}
-		ai_will_do = {
-			factor = 0.6
-			modifier = {
-			    factor = 1
-				treasury = 200
-			}
-			modifier = {
-			    factor = 1.5
-				treasury = 350
-			}
-		}
-	}
-florentian_painting = {
-		potential = {
-			NOT = { primitives = yes }
-			NOT = { has_ruler_modifier = "florentian_painting_modifier" }
-			has_regency = no
-			is_lesser_in_union = no
-			}
-		allow = {
-			NOT = { primitives = yes }
-			treasury = 150			
-		}
-		effect = {
-			add_ruler_modifier = {
-				name = florentian_painting_modifier
-			}
-			add_prestige = 5
-			add_treasury = -150
-		}
-		ai_will_do = {
-			factor = 0.6
-			modifier = {
-			    factor = 1
-				treasury = 300
-			}
-			modifier = {
-			    factor = 1.5
-				treasury = 450
-			}
-		}
-	}
-the_ruler_statue = {
-		potential = {
-			adm_tech = 8
-			NOT = { has_ruler_modifier = "the_ruler_statue_modifier" }
-			has_regency = no
-			is_lesser_in_union = no
-			}
-		allow = {
-			adm_tech = 8
-			treasury = 200
-		}
-		effect = {
-			add_ruler_modifier = {
-				name = the_ruler_statue_modifier
-			}
-			add_prestige = 5
-			add_treasury = -200
-		}
-		ai_will_do = {
-			factor = 0.6
-			modifier = {
-			    factor = 1
-				treasury = 500
-			}
-			modifier = {
-			    factor = 1.5
-				treasury = 700
-			}
 		}
 	}
 }
