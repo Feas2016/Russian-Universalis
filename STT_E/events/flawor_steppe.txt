@@ -11,6 +11,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = RUS
+			tag = TSR
 			tag = MOS
 		}
 		owns_core_province = 2409
@@ -75,6 +76,7 @@ country_event = {
 			tag = LIT
 			tag = POL
 			tag = PLC
+			tag = JAG
 		}
 		owns_core_province = 283
 		owns_core_province = 2411
@@ -137,6 +139,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 474
 		owns_core_province = 2365
@@ -209,6 +212,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 1071
 		owns_core_province = 2354
@@ -277,6 +281,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2208
 		owns_core_province = 2199
@@ -327,6 +332,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2420
 		owns_core_province = 1966
@@ -378,6 +384,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2414
 		owns_core_province = 286
@@ -442,7 +449,7 @@ country_event = {
 				NOT = { stability = 1 }
 			}
 			AND = {
-				OR = { tag = RUS tag = MOS }
+				OR = { tag = RUS tag = MOS tag = TSR}
 				NOT = {	OIR = exists }
 			}
 		}

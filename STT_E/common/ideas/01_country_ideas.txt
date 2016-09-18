@@ -1,5 +1,5 @@
 
-LUZ_ideas = {
+LUS_ideas = {
 	start = {
 	global_manpower_modifier = 0.2			
 	recover_army_morale_speed = 0.05	
@@ -11,7 +11,7 @@ LUZ_ideas = {
 	
 	trigger = {
 		OR = {
-		tag = LUZ
+		tag = LUS
 		tag = KSB
 			}	
 	}
@@ -45,7 +45,7 @@ LUZ_ideas = {
 	}
 
 }
-SLV_ideas = {
+SLK_ideas = {
 	start = {
 		mercenary_cost = -0.2
 		merc_maintenance_modifier = -0.3		
@@ -56,7 +56,10 @@ SLV_ideas = {
 	}
 	
 	trigger = {
-		tag = SLV	
+		OR = {
+			tag = SLO #Nitra
+			tag = SLK
+		}
 	}
 	free = yes
 	karpatian_wall = {
@@ -76,15 +79,15 @@ SLV_ideas = {
 		diplomatic_reputation = 1
 	}
 	catholicks_and_lutherans = {
-			tolerance_heretic = 3
-			}
+		tolerance_heretic = 3
+	}
 	manufaktures = {
 		production_efficiency = 0.15
 		development_cost = -0.05
 	}
 
 }
-SLO_ideas = {
+SLN_ideas = {
 	start = {
 	mercenary_cost = -0.25
 	tolerance_own = 1			
@@ -95,7 +98,7 @@ SLO_ideas = {
 	}
 	
 	trigger = {
-		tag = SLO	
+		tag = SLN	
 	}
 	free = yes
 	friuli_minority = {
@@ -139,8 +142,8 @@ DON_ideas = {
 	
 	trigger = {
 		OR = {
+		tag = YIK
 		tag = DON
-		tag = YAK
 			}
 	}
 	free = yes
@@ -169,46 +172,46 @@ DON_ideas = {
 		galley_cost = -0.35
 	}
 }
-TRK_ideas = {
-	start = {
-		mercenary_cost = -0.20
-		diplomatic_reputation = 1	
-	}
-	
-	bonus = {
-		infantry_power = 0.1
-	}
-	
-	trigger = {
-		tag = TRK
-	}
-	free = yes
-	
-	flexible_diplomacy_turov = {
-		improve_relation_modifier = 0.25
-		ae_impact = -0.05
-	}	
-	heritage_of_the_rus = {
-		legitimacy = 1
-	}
-	cultural_center = {
-		prestige = 0.5
-		prestige_decay = -0.01
-	}
-	decentralisation_turov = {
-		stability_cost = -0.25
-	}
-	russian_ambition = {
-		core_creation = -0.15
-	}
-	resistance_to_latin = {
-		tolerance_own = 1
-	}
-	forest_of_europe = {
-		build_cost = -0.1
-		development_cost = -0.1
-	}
-}
+#TRK_ideas = { # Бывший Туров ныне Турция
+#	start = {
+#		mercenary_cost = -0.20
+#		diplomatic_reputation = 1	
+#	}
+#	
+#	bonus = {
+#		infantry_power = 0.1
+#	}
+#	
+#	trigger = {
+#		tag = TRK
+#	}
+#	free = yes
+#	
+#	flexible_diplomacy_turov = {
+#		improve_relation_modifier = 0.25
+#		ae_impact = -0.05
+#	}	
+#	heritage_of_the_rus = {
+#		legitimacy = 1
+#	}
+#	cultural_center = {
+#		prestige = 0.5
+#		prestige_decay = -0.01
+#	}
+#	decentralisation_turov = {
+#		stability_cost = -0.25
+#	}
+#	russian_ambition = {
+#		core_creation = -0.15
+#	}
+#	resistance_to_latin = {
+#		tolerance_own = 1
+#	}
+#	forest_of_europe = {
+#		build_cost = -0.1
+#		development_cost = -0.1
+#	}
+#}
 GRO_ideas = {
 	start = {
 		merc_maintenance_modifier = -0.15
@@ -300,7 +303,7 @@ MRV_ideas = {
 	}
 	
 	trigger = {
-		tag = MRV
+		tag = MOV
 	}
 	free = yes
 	

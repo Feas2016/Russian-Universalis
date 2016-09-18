@@ -316,7 +316,10 @@ TUR_ideas = {
 	}
 
 	trigger = {
-		tag = TUR
+		OR = {
+			tag = TUR
+			tag = TRK #STT
+		}
 	}
 	free = yes		#will be added at load.
 	
