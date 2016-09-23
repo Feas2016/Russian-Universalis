@@ -178,6 +178,15 @@ religious_ideas = {
 	ai_will_do = {
 		factor = 0.9
 		modifier = {
+		    factor = 4
+			OR = {
+			       tag = TSR
+			       tag = RUS
+			       tag = RU2
+			       tag = MOS
+			}
+		}
+		modifier = {
 			factor = 0
 			has_idea_group = humanist_ideas
 		}
@@ -343,7 +352,18 @@ defensive_ideas = {
 
 	ai_will_do = {
 		factor = 0.77
+		modifier = {
+		    factor = 3
+			OR = {
+			       tag = TSR
+			       tag = RUS
+			       tag = RU2
+			       tag = MOS
+			}
+			has_idea_group = religious_ideas
+		}
 	}
+	
 }
 
 
@@ -752,6 +772,14 @@ expansion_ideas = {
 		}
 		modifier = {
 			factor = 0
+			NOT = {
+			   OR = {
+			       tag = TSR
+			       tag = RUS
+			       tag = RU2
+			       tag = MOS
+			   }
+			}
 			NOT = { has_idea_group = exploration_ideas }
 			NOT = { is_colonial_nation = yes }
 		}
@@ -762,6 +790,16 @@ expansion_ideas = {
 				technology_group = eastern
 				technology_group = muslim
 			}
+		}
+		modifier = {
+		    factor = 3
+			OR = {
+			       tag = TSR
+			       tag = RUS
+			       tag = RU2
+			       tag = MOS
+			}
+			has_idea_group = defensive_ideas
 		}
 	}
 }
@@ -801,6 +839,10 @@ administrative_ideas = {
 		modifier = {
 			factor = 2
 			government = steppe_horde
+		}
+		modifier = {
+		    factor = 10
+			tag = TUR
 		}
 	}
 }
