@@ -13,6 +13,7 @@ country_event = {
 		NOT = { government = dutch_republic }
 		### STT
 		NOT = { government = knyaz_veche_republic }
+		NOT = { government = carthage_republic }
 	}
 
 	option = {
@@ -168,6 +169,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { government = dutch_republic }
+		NOT = { government = carthage_republic }
 	}
 	
 	option = {
@@ -341,7 +343,6 @@ country_event = {
 		define_ruler = {
 		}
 		change_statists_vs_orangists = -0.33
-	
 	}
 	option = {
 		name = elections.720.b
@@ -375,5 +376,55 @@ country_event = {
 		define_ruler = {
 		}
 		change_statists_vs_orangists = 0.33
+	}
+}
+
+# Carthage Republic
+country_event = {
+	id = elections.820
+	title = elections.820.t
+	desc = elections.820.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = carthage_republic
+	}
+	
+	option = {
+		name = elections.820.a
+		define_ruler = {
+		}
+	}
+	option = {
+		name = elections.820.b
+		define_ruler = {
+		}
+	}
+}
+
+country_event = {
+	id = elections.821
+	title = elections.820.t
+	desc = elections.821.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		government = carthage_republic
+	}
+	
+	option = {
+		name = elections.820.a
+		define_ruler = {
+		}
+	
+	}
+	option = {
+		name = elections.820.b
+		define_ruler = {
+		}
 	}
 }

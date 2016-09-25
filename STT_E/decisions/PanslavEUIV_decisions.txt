@@ -1,48 +1,44 @@
 country_decisions = {
 	volga_germans = {
-			potential = {
+		potential = {
 			tag = RUS
 			is_year = 1600
 			NOT = { exists = GER }
 			NOT = { exists = HRE }
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
 			owns_core_province = 2418 #Pokrovsk
 			treasury = 1000
 			technology_group = western
-
-			}
+		}
 		effect = {
 			add_adm_power = -50
 			add_dip_power = -25
 			add_treasury = -500
 			2418 = {
-			add_base_tax = 4
-			change_culture = swabian 
-			change_religion = catholic 
+				add_base_tax = 4
+				change_culture = swabian 
+				change_religion = catholic 
  			}
 			add_prestige = 20
-                add_country_modifier = {
-			name = "Volga_germans"
-			duration = 1825
+            add_country_modifier = {
+				name = "Volga_germans"
+				duration = 1825
 			}
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	slaviano_serbia = {
-			potential = {
+		potential = {
 			tag = RUS
 			is_year = 1600
 			owns_core_province = 2413 #Donbass
 			NOT = { exists = SER }
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -54,25 +50,23 @@ country_decisions = {
 			add_dip_power = -15
 			add_treasury = -250
 			2413 = {
-			add_base_tax = 2
+				add_base_tax = 2
  			}
 			add_prestige = 10
 			add_country_modifier = {
-			name = "improved_dip_reputation"
-			duration = 1080
+				name = "improved_dip_reputation"
+				duration = 1080
 			}
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	yugoslavia = {
-			potential = {
+		potential = {
 			tag = SER
 			adm_tech = 10
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -89,26 +83,24 @@ country_decisions = {
 			}
 		effect = {
 			add_prestige = 10
-                add_country_modifier = {
-			name = "centralisation"
-			duration = 1825
+            add_country_modifier = {
+				name = "centralisation"
+				duration = 1825
 			}
 			culture_group_union = south_slavic
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	polabia_state = {
-			potential = {
+		potential = {
 			OR = {
-			tag = LUS
-			tag = KSB
+				tag = LUS
+				tag = KSB
 			}
-			adm_tech = 10
-			}
-
+		adm_tech = 10
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -133,29 +125,26 @@ country_decisions = {
 			owns_core_province = 1775 
 			owns_core_province = 1857 
 			owns_core_province = 1858 
-
-			}
+		}
 		effect = {
 			add_prestige = 10
-                add_country_modifier = {
-			name = "centralisation"
-			duration = 1825
+            add_country_modifier = {
+				name = "centralisation"
+				duration = 1825
 			}
 			change_tag = PLA
 			culture_group_union = west_slavic
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	illiria_proj = {
-			potential = {
+		potential = {
 			culture_group = south_slavic
 			NOT = { tag = SER tag = BUL tag = ALB }
 			adm_tech = 10
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -169,32 +158,30 @@ country_decisions = {
 			owns_core_province = 1769 
 			owns_core_province = 137
 			owns_core_province = 139 
-			}
+		}
 		effect = {
 			add_prestige = 10
-                add_country_modifier = {
-			name = "centralisation"
-			duration = 1825
+            add_country_modifier = {
+				name = "centralisation"
+				duration = 1825
 			}
 			change_tag = ILR
 			culture_group_union = south_slavic
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-		czh_union = {
-			potential = {
+	czh_union = {
+		potential = {
 			OR = {
-			tag = BOH
-			tag = MOV
-			tag = SLK
-			tag = SIL
+				tag = BOH
+				tag = MOV
+				tag = SLK
+				tag = SIL
 			}
 			adm_tech = 15
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -209,26 +196,24 @@ country_decisions = {
 			owns_core_province = 2963
 			owns_core_province = 43 
 			owns_core_province = 259 
-			}
+		}
 		effect = {
 			add_prestige = 10
-                add_country_modifier = {
-			name = "centralisation"
-			duration = 1825
+            add_country_modifier = {
+				name = "centralisation"
+				duration = 1825
 			}
 			culture_group_union = west_slavic
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-celtic_union = {
-			potential = {
+	celtic_union = {
+		potential = {
 			culture_group = gaelic
 			adm_tech = 10
-			}
-
+		}
 		allow = {
 			is_subject = no
 			is_at_war = no
@@ -243,19 +228,17 @@ celtic_union = {
 			owns_core_province = 375
 			owns_core_province = 172 
 			owns_core_province = 169 
-			}
+		}
 		effect = {
 			add_prestige = 10
-                add_country_modifier = {
-			name = "centralisation"
-			duration = 1825
+            add_country_modifier = {
+				name = "centralisation"
+				duration = 1825
 			}
 			culture_group_union = gaelic
-			}
-
+		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-
 }

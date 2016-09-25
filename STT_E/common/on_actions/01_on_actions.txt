@@ -1,0 +1,17 @@
+# country 
+on_new_term_election = {
+	events = {
+		700		# Election event
+		elections.720		# Dutch Republic
+		elections.820       # Carthage Republic
+	}
+}
+
+# country 
+on_death_election = {
+	events = {
+		701		# Election event
+		elections.721		# Dutch Republic
+		elections.821    # Carthage Republic
+	}
+}
