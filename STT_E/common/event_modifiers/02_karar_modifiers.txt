@@ -33,11 +33,19 @@ give_zekat = {
 consruct_kulliye = {
 	production_efficiency = 0.10
 	diplomatic_reputation = 2
+	advisor_cost = -0.10
+	idea_cost = -0.05
+	culture_conversion_cost = -0.10
+	global_unrest = -1
+	caravan_power = 0.10
+	technology_cost = -0.05
+	global_missionary_strength = 0.01
+	tolerance_own = 1
 	#icon = 7
 }
 
 tedbiri_kiyafet = {
-	global_revolt_risk = -1
+	global_unrest = -1
 	diplomatic_reputation = 2
 	#icon = 7
 }

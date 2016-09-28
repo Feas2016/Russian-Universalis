@@ -10,19 +10,13 @@
 			mil_power = 100
 		}
 		effect = {
-		    if = {
-			   limit = {
-			   ai = yes
-			   }
-			add_manpower = 20
-			}
 			add_mil_power = -100
 			add_manpower = 20
 			add_ruler_modifier = {
 				name = "recruit_new_soldiers"
 				duration = -1
 			}		
-		}
+			}
 
 		
 		ai_will_do = {
@@ -49,14 +43,14 @@
 				name = "reform_the_kanun_system"
 				duration = -1
 			}		
-		}
+			}
 
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { adm_power = 700 }
+				NOT = { adm_power = 500 }
 			}
 		}
 	}
@@ -69,7 +63,6 @@
 		allow = {
 			adm = 4
 			adm_power = 200
-			treasury = 2000
 		}
 		effect = {
 			add_adm_power = -200
@@ -83,10 +76,10 @@
 
 		
 		ai_will_do = {
-			factor = 0
+			factor = 0.5
 			modifier = {
 				factor = 0
-				NOT = { adm_power = 800 }
+				NOT = { adm_power = 300 }
 			}
 		}
 	}
@@ -99,11 +92,10 @@
 		allow = {
 			dip = 4
 			dip_power = 200
-			treasury = 2500
 		}
 		effect = {
 			add_dip_power = -200
-			add_treasury = -2500
+			add_treasury = -1200
 			add_ruler_modifier = {
 				name = "culus_tip_to_jannissery"
 				duration = -1
@@ -115,7 +107,7 @@
 			factor = 0
 			modifier = {
 				factor = 0
-				NOT = { dip_power = 700 }
+				NOT = { dip_power = 300 }
 			}
 		}
 	}
@@ -128,7 +120,6 @@
 		allow = {
 			adm = 4
 			adm_power = 75
-			treasury = 800
 		}
 		effect = {
 			add_adm_power = -75
@@ -142,7 +133,7 @@
 
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 0
 			modifier = {
 				factor = 0
 				NOT = { adm_power = 100 }
@@ -158,17 +149,20 @@
 		allow = {
 			adm = 4
 			adm_power = 350
-			treasury = 3000
 		}
 		effect = {
 			add_adm_power = -350
-			add_treasury = -3000
-			add_stability = 1
+			add_dip_power = -75
+			add_mil_power = -75
+			add_treasury = -1800
+			add_stability = 2
+			add_piety = 0.40
+			add_prestige = 50
+			add_legitimacy = 30
 			add_ruler_modifier = {
 				name = "consruct_kulliye"
 				duration = -1
-			}	
-			add_piety = 0.7
+			}		
 			}
 
 		
@@ -176,7 +170,7 @@
 			factor = 0
 			modifier = {
 				factor = 0
-				NOT = { adm_power = 800 }
+				NOT = { adm_power = 500 }
 			}
 		}
 	}
@@ -201,10 +195,10 @@
 
 		
 		ai_will_do = {
-			factor = 0.5
+			factor = 0
 			modifier = {
 				factor = 0
-				NOT = { dip_power = 650 }
+				NOT = { dip_power = 250 }
 			}
 		}
 	}
@@ -225,14 +219,14 @@
 				name = "ban_alcohol_and_tobacco"
 				duration = -1
 			}	
-		}
+			}
 			
 
 		ai_will_do = {
-			factor = 0.5
+			factor = 0
 			modifier = {
 				factor = 0
-				NOT = { dip_power = 100 }
+				NOT = { dip_power = 50 }
 			}
 		}
 	}
