@@ -1,0 +1,264 @@
+namespace = stt_odoyev
+normal_or_historical_nations = yes
+
+#Odoyev needs some money (OKA)
+country_event = {
+    id = stt_odoyev.1
+	title = stt_odoyev.t.1
+	desc = stt_odoyev.de.1
+	
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+	    tag = OKA
+		is_year = 1447
+		is_subject_of = LIT
+		NOT = { war_with = MOS }
+		NOT = { has_country_flag = no_money_anymore }
+	}
+	
+	mean_time_to_happen = { 
+	    months = 12
+		modifier = {
+			factor = 10
+			has_country_flag = odoyev_want_money
+		}
+	}
+	
+	option = {
+	    name = stt_odoyev.a.1 #Defense from Moscow - difficult work
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		LIT = {
+		    country_event = { days = 5 id = stt_odoyev.2 }
+		}
+		set_country_flag = odoyev_want_money
+	}
+}
+
+#Odoyev wants some money (LIT)
+country_event = {
+    id = stt_odoyev.2
+	title = stt_odoyev.t.2
+	desc = stt_odoyev.de.2
+	
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.2 #No money to Odoyev
+		ai_chance = {
+			factor = 75
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_opinion = {
+			who = OKA
+			modifier = no_money_to_odoyev
+		}
+		OKA = {
+		    country_event = { days = 5 id = stt_odoyev.3 }
+			set_country_flag = no_money_anymore
+		}
+		
+	}
+	
+	option = {
+	    name = stt_odoyev.b.2 #Give money to Odoyev
+		ai_chance = {
+		    factor = 25
+		}
+		add_treasury = -30
+		add_opinion = {
+			who = OKA
+			modifier = money_to_odoyev
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		OKA = {
+		    country_event = { days = 5 id = stt_odoyev.4 }
+		}
+	}
+}
+
+#No money, but you stay (OKA)
+country_event = {
+    id = stt_odoyev.3
+	title = stt_odoyev.t.3
+	desc = stt_odoyev.de.3
+	
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.3 #Need Moscow's help
+	    ai_chance = {
+		    factor = 75
+		}
+		add_opinion = {
+			who = LIT
+			modifier = no_money_to_odoyev
+		}
+		add_opinion = {
+			who = MOS
+			modifier = help_of_moscow
+		}
+		LIT = {
+		    free_vassal = OKA
+		}
+		MOS = {
+		    country_event = { days = 5 id = stt_odoyev.5 }
+		}
+	}
+	
+	option = {
+	    name = stt_odoyev.b.3 #Accept
+		ai_chance = {
+		    factor = 25
+		}
+		add_opinion = {
+			who = LIT
+			modifier = accept_and_wait
+		}
+		clr_country_flag = no_money_anymore
+	}
+}
+
+#Eee, money
+country_event = {
+    id = stt_odoyev.4
+	title = stt_odoyev.t.4
+	desc = stt_odoyev.de.4
+	
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.4 #Odoyev - defender of Lithuania:)
+		add_treasury = 30
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+}
+
+#Odoyev want to Moscow (MOS)
+country_event = {
+    id = stt_odoyev.5
+	title = stt_odoyev.t.5
+	desc = stt_odoyev.de.5
+	
+	picture = STREET_SPEECH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.5 #When we unite, we unstoppable
+		ai_chance = {
+		    factor = 80
+		}
+		add_opinion = {
+		    who = OKA
+			modifier = help_to_odoyev
+		}
+		create_march = OKA
+		OKA = {
+		    country_event = { days = 5 id = stt_odoyev.6 }
+		}
+		LIT = {
+		    country_event = { days = 5 id = stt_odoyev.7 }
+		}
+	}
+	
+	option = {
+	    name = stt_odoyev.b.5 #It's not time to fight with Lithuania
+		ai_chance = {
+		    factor = 20
+		}
+		add_opinion = {
+		    who = OKA
+			modifier = odoyev_betrayed_by_MOS
+		}
+		add_opinion = {
+		    who = LIT
+			modifier = odoyev_betrayed_LIT
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+	}
+}
+
+#Moscow is our new defender (OKA)
+country_event = {
+    id = stt_odoyev.6
+	title = stt_odoyev.t.6
+	desc = stt_odoyev.de.6
+	
+	picture = STREET_SPEECH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.6 #Moscow stronger, than Lithuania
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+		add_opinion = {
+		    who = MOS
+			modifier = help_of_moscow
+		}
+	}
+}
+
+#Odoyev betrayed us! (LIT)
+country_event = {
+    id = stt_odoyev.7
+	title = stt_odoyev.t.7
+	desc = stt_odoyev.de.7
+	
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_odoyev.a.7
+		add_opinion = {
+		    who = OKA
+			modifier = odoyev_betrayed_us
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_claim = 3195
+	}
+	
+	option = {
+	    name = stt_odoyev.b.7
+		add_opinion = {
+		    who = OKA
+			modifier = odoyev_betrayed_us
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+	}
+}
