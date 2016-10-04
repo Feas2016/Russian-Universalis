@@ -7553,7 +7553,11 @@ ROM_ideas = {
 	}
 	
 	trigger = {
-		tag = ROM
+	### STT
+		OR = {
+			tag = ROM
+			tag = PQR
+		}
 	}
 	free = yes
 	
@@ -7583,45 +7587,45 @@ ROM_ideas = {
 
 ### STT  MNS delete
 
-SLN_ideas = {
-	start = {  
-		build_cost = -0.10	  
-		diplomats = 1
-	}
-  
-	bonus = {
-		fort_maintenance_modifier = -0.2
-	}
-  
-	trigger = {
-		tag = SLN
-	}
-	free = yes
-  
-	sln_promote_the_trade = {
-		trade_efficiency = 0.1
-	}
-	sln_rebuild_the_castle_of_sligo = {
-		enemy_core_creation = 0.25
-	}
-	sln_galic_meets_norman = {
-		accepted_culture_threshold = -0.1	  
-	}
-	sln_a_different_way = {
-		spy_offence = 0.10
-		global_spy_defence = 0.10	  
-	}
-	sln_study_the_norman_traditions = {
-		mil_tech_cost_modifier = -0.1	  
-	}
-	sln_sligo_rules_the_waves = {
-		naval_forcelimit_modifier = 0.2
-	}
-	sln_pragmatism = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1		  
-	}
-}
+#SLN_ideas = {
+#	start = {  
+#		build_cost = -0.10	  
+#		diplomats = 1
+#	}
+#  
+#	bonus = {
+#		fort_maintenance_modifier = -0.2
+#	}
+#  
+#	trigger = {
+#		tag = SLN
+#	}
+#	free = yes
+#
+#	sln_promote_the_trade = {
+#		trade_efficiency = 0.1
+#	}
+#	sln_rebuild_the_castle_of_sligo = {
+#		enemy_core_creation = 0.25
+#	}
+#	sln_galic_meets_norman = {
+#		accepted_culture_threshold = -0.1	  
+#	}
+#	sln_a_different_way = {
+#		spy_offence = 0.10
+#		global_spy_defence = 0.10	  
+#	}
+#	sln_study_the_norman_traditions = {
+#		mil_tech_cost_modifier = -0.1	  
+#	}
+#	sln_sligo_rules_the_waves = {
+#		naval_forcelimit_modifier = 0.2
+#	}
+#	sln_pragmatism = {
+#		tolerance_heretic = 1
+#		tolerance_heathen = 1		  
+#	}
+#}
 
 ANT_ideas = {
 	start = {  
