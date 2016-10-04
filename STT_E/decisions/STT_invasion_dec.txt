@@ -47,8 +47,7 @@ country_decisions = {
     }
  
  major_boost = {
-    major = yes
-	    potential = {
+        potential = {
 		    ai = yes
 		    AND = {
 		         NOT = { has_country_modifier = help_to_osman }

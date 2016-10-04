@@ -110,13 +110,9 @@ restore_the_roman_empire = {
 		OR = {
 			AND = {
 				NOT = {	adm_tech = 15 }
-				OR = {
-					culture_group = latin
-					culture_group = byzantine
-				}
+				culture_group = byzantine
 			}
 			tag = BYZ
-			tag = PQR
 			}
 		NOT = { exists = ROM }
 		NOT = { tag = PAP }
@@ -127,7 +123,6 @@ restore_the_roman_empire = {
 		OR = {
 			NOT = {	adm_tech = 15 }
 			tag = BYZ
-			tag = PQR
 			}
 		is_at_war = no
 		owns_core_province = 118	# Roma

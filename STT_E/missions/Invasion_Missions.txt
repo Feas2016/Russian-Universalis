@@ -184,3 +184,79 @@ CAR_conquest_malta = {
         } 
     }
 }
+
+ROME_trade_provinces = {
+
+    type = country
+
+	category = MIL
+	ai_mission = yes
+
+    target_provinces = {
+	    OR = {
+		    province_id = 1751
+			province_id = 101
+			province_id = 112
+			province_id = 358
+			province_id = 2313
+			province_id = 213
+		}
+		NOT = { owned_by = ROOT }
+	}
+	allow = {
+	    normal_or_historical_nations = yes
+		OR = {
+		    tag = PQR
+			tag = ROM
+		}
+		is_subject = no
+		is_at_war = no
+		OR = {
+			NOT = { owns = 1751 }	
+			NOT = { owns = 101 }	
+			NOT = { owns = 112 }
+            NOT = { owns = 358 }
+			NOT = { owns = 2313 }
+			NOT = { owns = 213 }
+		}
+		NOT = { has_country_flag = ROME_take_trade_cities }
+		
+	}
+	abort = {
+		is_subject = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 30
+		set_country_flag = ROME_take_trade_cities
+        add_country_modifier = { 
+        name = "boom_economy" 
+        duration = 3650 
+        } 
+    }
+}

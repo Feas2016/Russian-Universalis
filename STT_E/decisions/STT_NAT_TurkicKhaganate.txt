@@ -7,6 +7,8 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = RUS }
 			culture_group = altaic
+			NOT = { tag = OIR }
+			NOT = { tag = KHA }
 		}
 		allow = {
 			is_at_war = no
@@ -29,6 +31,7 @@ country_decisions = {
 			change_tag = TGN
 			add_prestige = 35
 			add_horde_unity = 25
+			add_legitimacy = 25
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			central_asia_region = {
 				limit = {
