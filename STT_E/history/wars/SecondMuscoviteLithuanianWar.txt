@@ -1,0 +1,97 @@
+name = "Вторая Московско-Литовская Война"
+war_goal = {
+	type = take_province_nationalist
+	casus_belli = cb_nationalist
+	province = 293 # Smolensk
+}
+
+1500.5.1 = {
+	add_attacker = MOS
+	add_attacker = CRI
+	add_defender = LIT
+	add_defender = POL
+	add_attacker = TRU
+}
+
+1500.7.14 = {
+	battle = {
+		name = "Ведроша"
+		location = 295
+		defender = {
+			commander = "Даниил Щеня"	# Daniil Shchenya
+			infantry = 26000
+			cavalry = 12000
+			losses = 3	# percent
+			country = MOS
+		}
+		attacker = {
+			commander = "Константин Острожский"	# Konstantin Ostrogski
+			infantry = 28000
+			cavalry = 12000
+			losses = 20	# percent
+			country = POL
+		}
+		result = yes
+	}
+}
+
+1501.8.26 = {
+	add_defender = LVA
+	add_attacker = PSK
+}
+
+1501.8.27 = {
+	battle = {
+		name = "Серица"
+		location = 295 #Изборск
+		defender = {
+			commander = "Даниил Пенько"	# Daniil Shchenya
+			infantry = 4000
+			cavalry = 2000
+			losses = 5	# percent
+			country = MOS
+		}
+		attacker = {
+			commander = "Вальтер фон Плеттенберг"	# Konstantin Ostrogski
+			infantry = 2000
+			cavalry = 4000
+			artillery = 2000
+			losses = 2	# percent
+			country = LVA
+		}
+		result = yes
+	}
+}
+
+1502.9.13 = {
+	battle = {
+		name = "Смолин"
+		location = 295 #Изборск
+		defender = {
+			commander = "Даниил Щеня"	# Daniil Shchenya
+			infantry = 9000
+			cavalry = 3000
+			losses = 20	# percent
+			country = PSK
+		}
+		attacker = {
+			commander = "Вальтер фон Плеттенберг"	# Konstantin Ostrogski
+			infantry = 3000
+			cavalry = 2000
+			losses = 5	# percent
+			country = LVA
+		}
+		result = yes
+	}
+}
+
+# Truce
+1503.3.25 = {
+	rem_attacker = MOS
+	rem_attacker = CRI
+	rem_defender = LIT
+	rem_defender = POL
+	rem_attacker = TRU
+	rem_defender = LVA
+	rem_attacker = PSK
+}
