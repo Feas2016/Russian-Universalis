@@ -4,6 +4,7 @@ take_slavic_province = {
 	badboy_factor = 0.75
 	prestige_factor = 2
 	peace_cost_factor = 0.75	
+	deny_annex = yes
 	
 	allowed_provinces = {
 		OR = {
@@ -20,4 +21,38 @@ take_slavic_province = {
 	prov_desc = ALL_CGROUP_PROVS
 	
 	war_name = PANSLAVIC_WAR_NAME	
+}
+
+sack_papal_rome = {
+	type = take_capital
+	
+	prestige_factor = 1.5
+	peace_cost_factor = 0.5
+	
+	badboy_factor = 0.8
+	
+	attacker = {
+		po_gold = yes
+		po_revoke_cores = yes
+		po_release_vassals = yes
+		po_release_annexed = yes
+		po_humiliate = yes
+		po_annul_treaties = yes
+		po_concede_defeat = yes
+		po_trade_power = yes
+	}
+	
+	defender = {
+		po_gold = yes
+		po_become_vassal = yes
+		po_demand_provinces = yes
+		po_concede_defeat = yes
+		po_revoke_cores = yes
+		po_release_vassals = yes
+		po_release_annexed = yes
+		po_annul_treaties = yes
+		po_trade_power = yes
+	}
+	
+	war_name = SACK_OF_ROME_WAR_NAME	
 }

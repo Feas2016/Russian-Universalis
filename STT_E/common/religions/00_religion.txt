@@ -14,6 +14,8 @@ christian = {
 	flags_with_emblem_percentage = 33 # default == 0
 	flag_emblem_index_range = { 1 57 }
 
+	
+	
 	catholic = {
 		color = { 0.8 0.8 0 }
 		icon = 1
@@ -202,16 +204,16 @@ christian = {
 				}
 			}	
 			sanction_commercial_monopoly = {
-				cost = 100
+				cost = 50
 				potential = {
 					NOT = { tag = PAP }
 				}
 				allow = {
 					NOT = { war_with = PAP }
-					NOT = { mercantilism = 1 }
+					NOT = { mercantilism = 100 }
 				}
 				effect = {
-					add_mercantilism = 0.01
+					add_mercantilism = 1
 				}
 				ai_will_do = {
 					factor = 1
@@ -273,10 +275,20 @@ christian = {
 				is_in_capital_area = yes
 				is_reformation_center = no
 				is_island = no
-				development = 10
+				OR = {
+					has_province_flag = start_of_protestant_reformation
+					development = 10
+				}
 				NOT = {
 					any_neighbor_province = {
 						is_reformation_center = yes
+					}
+				}
+				NOT = {
+					any_province = {
+						area = PREV
+						is_reformation_center = yes
+						religion = protestant
 					}
 				}
 				NOT = { has_climate = arctic }
@@ -304,6 +316,15 @@ christian = {
 			if = {
 				limit = {
 					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = protestant
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				hidden_effect = {
 					random_owned_province = {
@@ -320,6 +341,13 @@ christian = {
 							NOT = {
 								any_neighbor_province = {
 									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									is_reformation_center = yes
+									religion = protestant
 								}
 							}
 							not = { province_id = 118 }
@@ -341,6 +369,15 @@ christian = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = protestant
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				add_years_of_income = 1.0
 				hidden_effect = {
@@ -358,6 +395,13 @@ christian = {
 							is_island = no
 							NOT = {
 								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = protestant
 									is_reformation_center = yes
 								}
 							}
@@ -431,10 +475,20 @@ christian = {
 				not = { province_id = 118 }
 				is_in_capital_area = yes
 				is_reformation_center = no
-				development = 10
+				OR = {
+					has_province_flag = start_of_reformed_reformation
+					development = 10
+				}
 				is_island = no
 				NOT = {
 					any_neighbor_province = {
+						is_reformation_center = yes
+					}
+				}
+				NOT = {
+					any_province = {
+						area = PREV
+						religion = reformed
 						is_reformation_center = yes
 					}
 				}
@@ -463,6 +517,15 @@ christian = {
 			if = {
 				limit = {
 					has_country_flag = reformation_money
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = reformed
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				hidden_effect = {
 					random_owned_province = {
@@ -479,6 +542,13 @@ christian = {
 							development = 10
 							NOT = {
 								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = reformed
 									is_reformation_center = yes
 								}
 							}
@@ -500,6 +570,15 @@ christian = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = reformation_money }
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								religion = reformed
+								is_reformation_center = yes
+							}
+							amount = 3
+						}
+					}
 				}
 				add_years_of_income = 1.0
 				hidden_effect = {
@@ -517,6 +596,13 @@ christian = {
 							development = 10
 							NOT = {
 								any_neighbor_province = {
+									is_reformation_center = yes
+								}
+							}
+							NOT = {
+								any_province = {
+									area = PREV
+									religion = reformed
 									is_reformation_center = yes
 								}
 							}
@@ -608,7 +694,6 @@ christian = {
 	
 	coptic = {
 	
-		# TODO:
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
@@ -616,7 +701,7 @@ christian = {
 		icon = 14
 		country = {
 			defensiveness = 0.1
-			tolerance_own = 2
+			tolerance_own = 1
 		}
 		country_as_secondary = {
 			siege_ability = 0.1
@@ -628,7 +713,17 @@ christian = {
 		
 		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
 		
-		misguided_heretic = yes		# Other christians hate them less (?)
+		misguided_heretic = yes
+		
+		holy_sites = { 358 1227 2313 1234 419 }
+		
+		blessings = {
+			legitimize_government
+			encourage_warriors_of_the_faith
+			send_monks_to_establish_monasteries
+			promote_territorial_rights
+			will_of_the_martyrs
+		}
 	}
 	
 	crusade_name = CRUSADE
@@ -923,10 +1018,28 @@ pagan = {
 		
 		heretic = { SNAKE_CLAN }
 	}
-	
-	shamanism = {
+	shamanism = { #Fetishism, tag kept to avoid breaking saves.
 		color = { 0.5 0.3 0.3 }
 		icon = 12
+		country = {
+			tolerance_heathen = 2
+			diplomatic_reputation = 1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
+
+		fetishist_cult = yes
+		heretic = { GOAT_SKULL }
+	}
+	#STT
+	siberian_shamanism = {
+		color = { 0.4 0.3 0.6 }
+		icon = 28
 		country = {
 			tolerance_own = 1
 			global_unrest = -1
@@ -941,7 +1054,6 @@ pagan = {
 		
 		heretic = { GOAT_SKULL }	
 	}
-	
 	totemism = {
 		color = { 0.5 0.45 0.45 }
 		icon = 13

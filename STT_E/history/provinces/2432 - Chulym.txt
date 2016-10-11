@@ -1,7 +1,7 @@
 #2432 - Chulym
 
 culture = tungus
-religion = shamanism
+religion = siberian_shamanism
 capital = "Igarka"
 trade_goods = unknown
 hre = no
@@ -23,3 +23,9 @@ discovered_by = nomad_group
 	trade_goods = gold
 }
 1637.1.1 = { add_core = RUS }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

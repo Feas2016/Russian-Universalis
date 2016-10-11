@@ -4,7 +4,7 @@ owner = HOD
 controller = HOD
 add_core = HOD
 culture = yukagyr
-religion = shamanism
+religion = siberian_shamanism
 capital = "Omolon"
 trade_goods = fur
 hre = no
@@ -27,4 +27,11 @@ discovered_by = KMC
 	add_core = RUS
 	culture = russian
 	religion = orthodox 
+}
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
 }

@@ -39,3 +39,26 @@ cb_panslavism = {
 	
 	war_goal = take_slavic_province
 }
+
+cb_sack_of_rome = {	
+	prerequisites = {		
+		ROOT = {
+			is_excommunicated = yes
+			religion = catholic
+		}
+		FROM = {
+			tag = PAP
+			owns_core_province = 118
+		}
+	}
+	
+	attacker_disabled_po = {
+		po_annex
+		po_demand_provinces
+		po_become_vassal
+		po_become_protectorate
+		po_form_personal_union
+	}
+
+	war_goal = sack_papal_rome
+}

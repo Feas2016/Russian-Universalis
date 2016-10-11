@@ -66,7 +66,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		technology_cost = -0.05
+		global_institution_spread = 0.10
 	}
 
 	trigger = {
@@ -118,6 +118,7 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		technology_cost = -0.05
+		embracement_cost = -0.1
 	}
 	dynamic_court = {
 		advisor_pool = 1
@@ -133,10 +134,18 @@ innovativeness_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.125
+		factor = 0.3
 		modifier = {
 			factor = 2
 			government = steppe_horde
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 50
 		}
 	}
 }
@@ -178,6 +187,10 @@ religious_ideas = {
 	ai_will_do = {
 		factor = 0.9
 		modifier = {
+			factor = 0
+			has_idea_group = humanist_ideas
+		}
+		modifier = {
 		    factor = 4
 			OR = {
 			       tag = TSR
@@ -185,10 +198,6 @@ religious_ideas = {
 			       tag = RU2
 			       tag = MOS
 			}
-		}
-		modifier = {
-			factor = 0
-			has_idea_group = humanist_ideas
 		}
 	}
 }
@@ -217,7 +226,7 @@ spy_ideas = {
 	}	
 	
 	additional_loyalist_recruitment = {
-		reduced_liberty_desire = -10
+		reduced_liberty_desire = 10
 	}
 
 	
@@ -363,7 +372,6 @@ defensive_ideas = {
 			has_idea_group = religious_ideas
 		}
 	}
-	
 }
 
 
@@ -404,8 +412,8 @@ trade_ideas = {
 			NOT = { government = merchant_republic }
 		}
 		modifier = {
-			factor = 0.33
-			NOT = { government = merchant_republic }
+			factor = 3
+			government = merchant_republic
 		}
 	}
 }
@@ -455,6 +463,14 @@ economic_ideas = {
 		modifier = {
 			factor = 2
 			government = steppe_horde
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 20
+		}
+		modifier = {
+			factor = 1.3
+			num_of_cities = 50
 		}
 	}
 }
@@ -534,8 +550,9 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { technology_group = western }
-			NOT = { technology_group = high_american }
+			NOT = { has_institution = renaissance }
+			NOT = { tag = POR }
+			NOT = { tag = CAS }
 		}
 		modifier = {
 			factor = 0.1
@@ -583,8 +600,12 @@ exploration_ideas = {
 			num_of_ports = 20
 		}
 		modifier = {
-			factor = 10
-			tag = POR
+			factor = 1000
+			OR = {
+				tag = POR
+				tag = CAS
+				tag = SPA
+			}
 		}
 		modifier = {
 			factor = 2
@@ -593,7 +614,6 @@ exploration_ideas = {
 				tag = NED
 				tag = ENG
 				tag = FRA
-				tag = CAS
 				tag = KUR
 			}
 		}
@@ -771,6 +791,20 @@ expansion_ideas = {
 			}
 		}
 		modifier = {
+			factor = 10
+			OR = {
+			       tag = TSR
+			       tag = RUS
+			       tag = RU2
+			   }
+			num_of_cities = 30
+			any_owned_province = {
+				any_neighbor_province = {
+					is_empty = yes
+				}
+			}
+		}
+		modifier = {
 			factor = 0
 			NOT = {
 			   OR = {
@@ -790,16 +824,6 @@ expansion_ideas = {
 				technology_group = eastern
 				technology_group = muslim
 			}
-		}
-		modifier = {
-		    factor = 3
-			OR = {
-			       tag = TSR
-			       tag = RUS
-			       tag = RU2
-			       tag = MOS
-			}
-			has_idea_group = defensive_ideas
 		}
 	}
 }
@@ -867,7 +891,7 @@ humanist_ideas = {
 		years_of_nationalism = -10
 	}
 	cultural_ties = {
-		accepted_culture_threshold = -0.5
+		num_accepted_cultures = 2
 	}
 	benevolence = {
 		relations_decay_of_me = 0.3
@@ -877,7 +901,7 @@ humanist_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.79
+		factor = 0.9
 		modifier = {
 			factor = 0
 			has_idea_group = religious_ideas
@@ -920,13 +944,17 @@ influence_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.93
+		factor = 0.5
 		modifier = {
 			factor = 1.5
 			is_emperor = yes
 		}
 		modifier = {
-			factor = 2
+			factor = 1.7
+			num_of_vassals = 1
+		}
+		modifier = {
+			factor = 1.7
 			num_of_vassals = 2
 		}
 	}

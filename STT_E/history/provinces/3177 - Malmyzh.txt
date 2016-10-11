@@ -4,7 +4,7 @@ owner = RMI
 controller = RMI
 capital = "Malmyzh"
 culture = mari
-religion = shamanism
+religion = siberian_shamanism
 trade_goods = grain
 hre = no
 base_tax = 2 
@@ -20,7 +20,13 @@ discovered_by = western
 discovered_by = nomad_group
 discovered_by = ottoman
 
-1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
+1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = RMI } # Russian conquest of Kazan
 1600.1.1 = { culture = russian religion = orthodox }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}
 1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

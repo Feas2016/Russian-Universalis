@@ -3,7 +3,7 @@
 owner = SHY
 controller = SHY
 culture = siberian
-religion = shamanism
+religion = siberian_shamanism
 capital = "Qashliq"
 trade_goods = fur
 hre = no
@@ -38,3 +38,9 @@ revolt_risk = 15
 1610.1.1 = { revolt_risk = 2 }
 1616.1.1 = { revolt_risk = 6 }
 1620.1.1 = { revolt_risk = 0 remove_core = SIB }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

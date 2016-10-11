@@ -1,7 +1,7 @@
 #1046 - Butalsk
 
 culture = yakut
-religion = shamanism
+religion = siberian_shamanism
 capital = "Ust-Maya"
 trade_goods = unknown
 hre = no
@@ -29,3 +29,10 @@ discovered_by = KMC
 1668.1.1 = { add_core = RUS }
 1684.1.1 = { unrest = 4 } # Yakut rebellion
 1686.1.1 = { unrest = 0 }
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

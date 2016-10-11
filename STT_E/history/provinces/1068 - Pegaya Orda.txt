@@ -4,7 +4,7 @@ owner = SKW
 controller = SKW
 add_core = SKW
 culture = samoyed
-religion = shamanism
+religion = siberian_shamanism
 capital = "Narim"
 trade_goods = iron
 hre = no
@@ -25,3 +25,10 @@ is_city = yes
 	controller = RUS
         add_core = RUS
 } # Yermak Timofeevich
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

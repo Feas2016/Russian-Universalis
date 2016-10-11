@@ -1,7 +1,7 @@
 #1054 - Ilimsk
 
 culture = tungus
-religion = shamanism
+religion = siberian_shamanism
 capital = "Mukhtuya"
 trade_goods = unknown
 hre = no
@@ -26,3 +26,10 @@ discovered_by = nomad_group
 1660.1.1 = { unrest = 0 }
 1684.1.1 = { unrest = 4 } # Yakut rebellion
 1686.1.1 = { unrest = 0 }
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

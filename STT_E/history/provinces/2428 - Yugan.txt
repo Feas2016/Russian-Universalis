@@ -4,7 +4,7 @@ owner = SKW
 controller = SKW
 add_core = SKW
 culture = samoyed
-religion = shamanism
+religion = siberian_shamanism
 capital = "Yugan"
 trade_goods = fur
 hre = no
@@ -28,3 +28,9 @@ is_city = yes
 1669.1.1 = { unrest = 0 }
 1679.1.1 = { unrest = 3 }
 1680.1.1 = { unrest = 0 }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

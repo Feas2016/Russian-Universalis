@@ -164,7 +164,7 @@ JAG_ideas = {
 	}
     
 	jag_religion = {
-        accepted_culture_threshold = -0.2
+        num_accepted_cultures = 2
         no_religion_penalty = yes
 	}
     
@@ -211,6 +211,82 @@ LAE_ideas = {
 	}
 	crusader_tradition = {
 		army_tradition = 1
+	}
+}
+
+ROM_ideas = {
+	start = {
+		legitimacy = 1
+		discipline = 0.05
+	}	
+	bonus = {
+		free_leader_pool = 1
+	}
+	
+ trigger = {
+	tag = ROM
+	}
+	free = yes
+	
+	pax_romana_rom = {
+		global_unrest = -1
+	}
+	legacy_of_rome_rom = {
+		diplomatic_reputation = 2
+	}
+	spqr_rom = {
+		stability_cost_modifier = -0.2
+	}
+	roman_legions_rom = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
+	}
+	roman_architecture_rom = {
+		production_efficiency = 0.2
+	}
+	imperial_bureaucracy_rom = {
+		global_tax_modifier = 0.1
+	}
+	imperium_sine_fine_rom = {
+		core_creation = -0.20
+	}
+}
+
+PQR_ideas = {
+	start = {
+		republican_tradition = 0.01
+		discipline = 0.05
+	}	
+	bonus = {
+		free_leader_pool = 1
+	}
+	
+ trigger = {
+	tag = PQR
+	}
+	free = yes
+	
+	pax_romana_rom = {
+		global_unrest = -1
+	}
+	legacy_of_rome_rom = {
+		diplomatic_reputation = 2
+	}
+	spqr_rom = {
+		stability_cost_modifier = -0.2
+	}
+	roman_legions_rom = {
+		infantry_power = 0.10
+		land_forcelimit_modifier = 0.15
+	}
+	roman_architecture_rom = {
+		production_efficiency = 0.2
+	}
+	imperial_bureaucracy_rom = {
+		global_tax_modifier = 0.1
+	}
+	imperium_sine_fine_rom = {
+		core_creation = -0.20
 	}
 }
 
@@ -289,8 +365,8 @@ TSR_ideas = {
 	table_of_ranks_tsr = {
 		army_tradition = 0.5
 	}	
-	curriculum_of_the_cadet_corps_tsr = {
-		technology_cost = -0.10
+	curriculum_of_the_cadet_corps = {
+		global_institution_spread = 0.2
 	}
 }
 
@@ -488,7 +564,7 @@ CAR_ideas = {
 		global_trade_power = 0.10
 		}
 	cultures_of_car ={
-	    accepted_culture_threshold = -0.3
+	    num_accepted_cultures = 3
 	}
 	new_methods_of_trade = {
 	trade_efficiency = 0.20
@@ -662,7 +738,7 @@ GOL_ideas = {
 	    global_missionary_strength = 0.02
 	}
 	GOL_fast_assimilation = {
-	    accepted_culture_threshold = -0.2
+	    num_accepted_cultures = 2
 	}
 }
 
@@ -764,7 +840,7 @@ TIS_ideas = {
 	free = yes
 	
 	TIS_multiculture = {
-	    accepted_culture_threshold = -0.2
+	    num_accepted_cultures = 2
 		global_unrest = -2
 	}
 	
@@ -839,54 +915,6 @@ OKA_ideas = {
 	
 	OKA_flowering = {
 	    global_unrest = -2
-	}
-}
-
-
-MLW_ideas = {
-    start = {
-	    production_efficiency = 0.10
-		trade_steering = 0.10
-	}
-	
-	bonus = {
-	    global_unrest = -1.5
-	}
-	
-	trigger = {
-		tag = MLW
-	}
-	free = yes
-	
-	MLW_influence = {
-	    vassal_income = 0.10
-		vassal_forcelimit_bonus = 0.50
-	}
-	
-	MLW_trade = {
-	    merchants = 1
-		trade_efficiency = 0.10
-	}
-	
-	MLW_defense = {
-	    land_morale = 0.10
-		discipline = 0.025
-	}
-	
-	MLW_visiri = {
-	    advisor_cost = -0.15
-	}
-	
-	MLW_neighboors = {
-	    leader_land_shock = 1
-	}
-	
-	MLW_loyality = {
-	    diplomatic_annexation_cost = -0.20
-	}
-	
-	MLW_greatest_army = {
-	    land_forcelimit_modifier = 0.30
 	}
 }
 

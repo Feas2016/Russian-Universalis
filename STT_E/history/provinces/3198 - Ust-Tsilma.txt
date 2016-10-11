@@ -1,20 +1,20 @@
 #1780 - Komi
 
 culture = uralic
-religion = shamanism
+religion = siberian_shamanism
 hre = no
 base_tax = 2 
 base_production = 2
 trade_goods = fur 
 base_manpower = 1
-capital = "Ust-Tislma"
+capital = "Пустозерск"
 native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 discovered_by = eastern
 discovered_by = nomad_group
 
-1593.1.1 = {
+1499.1.1 = {
 	discovered_by = RUS
 	owner = RUS
 	controller = RUS
@@ -24,3 +24,9 @@ discovered_by = nomad_group
 }
 1598.1.7 = { unrest = 5 } # "Time of troubles"
 1613.3.3 = { unrest = 0 } # Order returned, Romanov dynasty
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

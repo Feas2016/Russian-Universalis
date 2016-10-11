@@ -1,7 +1,7 @@
 #2445 - Mangazea
 
 culture = samoyed
-religion = shamanism
+religion = siberian_shamanism
 capital = "Mangazea"
 trade_goods = fur
 hre = no
@@ -23,3 +23,9 @@ extra_cost = 10
 }
 1605.1.1 = { add_core = RUS }
 1700.1.1 = { base_tax = 1 base_production = 1 }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

@@ -4,7 +4,7 @@ owner = LYA
 controller = LYA
 add_core = LYA
 culture = ostyaki
-religion = shamanism
+religion = siberian_shamanism
 capital = "Sumgut-Vosh"
 trade_goods = unknown
 hre = no
@@ -25,3 +25,9 @@ trade_goods = salt
 	controller = RUS
 	add_core = RUS
 } # Berezov founded
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

@@ -4,7 +4,7 @@ owner = SKW
 controller = SKW
 add_core = SKW
 culture = samoyed
-religion = shamanism
+religion = siberian_shamanism
 capital = "Vah"
 trade_goods = fur
 hre = no
@@ -22,9 +22,16 @@ is_city = yes
 	owner = RUS
 	controller = RUS
 	add_core = RUS
+	capital = "Kemerovo"
 } # Yermak Timofeevich
 1606.1.1 = { unrest = 3 } # Rebellions
 1608.1.1 = { unrest = 5 }
 1610.1.1 = { unrest = 2 }
 1616.1.1 = { unrest = 6 }
 1620.1.1 = { unrest = 0 remove_core = SIB }
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

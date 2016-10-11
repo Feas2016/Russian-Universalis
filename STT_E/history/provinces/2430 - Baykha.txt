@@ -1,7 +1,7 @@
 #2430 - Baykha
 
 culture = samoyed
-religion = shamanism
+religion = siberian_shamanism
 capital = "Troitskiy"
 trade_goods = unknown
 hre = no
@@ -22,4 +22,10 @@ native_hostileness = 3
 1628.1.1 = {
 	add_core = RUS
 	trade_goods = fur
+}
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
 }

@@ -5,7 +5,7 @@ controller = PLM
 add_core = PLM
 capital = "Pelym"
 culture = mansi
-religion = shamanism
+religion = siberian_shamanism
 trade_goods = fur
 hre = no
 base_tax = 3
@@ -23,4 +23,10 @@ discovered_by = nomad_group
 	controller = RUS
 	add_core = RUS
 } # Yermak Timofeevich
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}
 1722.1.1 = { capital = "Nizhny Tagil" }

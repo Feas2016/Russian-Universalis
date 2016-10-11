@@ -1,7 +1,7 @@
 #1043 - Okhotsk
 
 culture = yakut
-religion = shamanism
+religion = siberian_shamanism
 capital = "Okhotsk"
 trade_goods = unknown
 hre = no
@@ -28,3 +28,10 @@ discovered_by = KMC
 1654.1.1 = { unrest = 3 } # Okhotsk fort burned
 1655.1.1 = { unrest = 0 }
 1668.1.1 = { add_core = RUS }
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}

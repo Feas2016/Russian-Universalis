@@ -1,7 +1,7 @@
 #1052 - Verkohzehkoye
 
 culture = yakut
-religion = shamanism
+religion = siberian_shamanism
 capital = "Stanovoy"
 trade_goods = unknown
 hre = no
@@ -26,3 +26,11 @@ discovered_by = KMC
 } # Pyotr Beketov
 1678.1.1 = { add_core = RUS }
 1700.1.1 = { trade_goods = fur }
+
+1721.11.2 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	remove_core = RUS
+}
+ 
