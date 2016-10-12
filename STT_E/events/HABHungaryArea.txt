@@ -8,18 +8,18 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1449
+		tag = HUN
 		CIL = {
 			exists = yes
 			is_subject = no
 			ai = yes
 			was_player = no
 		}
-		tag = HUN
 		has_regency = no
 		NOT = {
-			has_leader = "John Hunyadi"
-			has_ruler = "(Regent) John"
-			dynasty = "Hunyadi"
+			has_leader = "Янош Хуньяди"
+			has_ruler = "(Регент) Янош"
+			dynasty = "Хуньяди"
 		}
 
 	}
@@ -187,8 +187,8 @@ country_event = {
 	trigger = {
 		tag = GOR
 		GOR = {
-			has_ruler = "John II"
-			dynasty = "Meinhardiner"
+			has_ruler = "Иоганн II"
+			dynasty = "Майнхардинер"
 			has_heir = no
 		}
 	}
@@ -214,8 +214,8 @@ country_event = {
 	trigger = {
 		AND = {
 			GOR = {
-				has_ruler = "John II"
-				dynasty = "Meinhardiner"
+				has_ruler = "Иоганн II"
+				dynasty = "Майнхардинер"
 				has_heir = no
 				NOT = {
 					num_of_cities = 3

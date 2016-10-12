@@ -36,267 +36,462 @@ historical_units = {
 }
 
 monarch_names = {
-	"Ivan #3" = 60
-	"Fyodor #1" = 60
-	"Pyotr #0" = 60
-	"Vasiliy #2" = 20
-	"Aleksandr #0" = 20
-	"Alexei #0" = 20
-	"Boris #0" = 20
-	"Mikhail #0" = 20
-	"Pavel #0" = 20
-	"Yekaterina #0" = -20
-	"Dmitriy #6" = 15
-	"Yuriy #4" = 15
-	"Anna #0" = -15
-	"Elizaveta #0" = -15
-	"Konstantin #0" = 15
-	"Andrei #3" = 10
-	"Semen #1" = 10
-	"Nikolai #0" = 10
-	"Afanasiy #0" = 0
-	"Anatoliy #0" = 0
-	"Anton #0" = 0
-	"Arseniy #0" = 0
-	"Artamon #0" = 0
-	"Artemiy #0" = 0
-	"Bogdan #0" = 0
-	"Demyan #0" = 0
-	"Epifaniy #0" = 0
-	"Feofan #0" = 0
-	"Gavriil #0" = 0
-	"Grigoriy #0" = 0
-	"Iosif #0" = 0
-	"Isaak #0" = 0
-	"Kirill #0" = 0
-	"Lavrentiy #0" = 0
-	"Lazar #0" = 0
-	"Lev #0" = 0
-	"Malyuta #0" = 0
-	"Mark #0" = 0
-	"Mefodiy #0" = 0
-	"Nikifor #0" = 0
-	"Nikita #0" = 0
-	"Nikodim #0" = 0
-	"Oleg #0" = 0
-	"Platon #0" = 0
-	"Prokopiy #0" = 0
-	"Sergei #0" = 0
-	"Stanislav #0" = 0
-	"Varfolomey #0" = 0
-	"Yefim #0" = 0
-	"Yulian #0" = 0
-	"Wladyslaw #1" = 20
-	"Stanislaw #0" = 20
-	"Kazimierz #3" = 20
-	"Aleksander #0" = 20
-	"Henryk #0" = 20
-	"Jan #0" = 20
-	"Jan #0 Albert" = 20
-	"Jan #0 Kazimierz" = 20
-	"Michal #0" = 20
-	"Stefan #0" = 20
-	"Zygmunt #0" = 20
-	"Zygmunt #0 August" = 20
-	"Aleksander #0 Karol" = 15
-	"Zygmunt #0 Kazimierz" = 15
-	"Krzysztof #0" = 10
-	"Fryderyk #0" = 10
-	"Jan #0 Olbracht" = 10
-	"Jan #0 Zygmunt" = 10
-	"Karol #0 Ferdynand" = 10
-	"Olbracht #0" = 10
-	"Albert #0" = 0
-	"Aleksy #0" = 0
-	"Andrzej #0" = 0
-	"Bartlomiej #0" = 0
-	"Bogumil #0" = 0
-	"Bronislaw #0" = 0
-	"Dawid #0" = 0
-	"Dominik #0" = 0
-	"Emil #0" = 0
-	"Eugeniusz #0" = 0
-	"Ferdynand #0" = 0
-	"Gustaw #0" = 0
-	"Igor #0" = 0
-	"Iwan #0" = 0
-	"Krystian #0" = 0
-	"Lech #0" = 0
-	"Lucjusz #0" = 0
-	"Ludwik #0" = 0
-	"Lukasz #0" = 0
-	"Maksym #0" = 0
-	"Mariusz #0" = 0
-	"Mieszko #3" = 0
-	"Miroslaw #0" = 0
-	"Oskar #0" = 0
-	"Patryk #0" = 0
-	"Rafal #0" = 0
-	"Sylwester #0" = 0
-	"Szymon #0" = 0
-	"Zygfryd #0" = 0
-	"Richeza #0" = -1
-	"Judith #0" = -1
-	"Agafia #0" = -1
-	"Vбclav #0" = 25
-	"Jirн #0" = 15
-	"Karel #5" = 20
-	"Premysl #0" = 10
-	"Premysl Otakar #3" = 25
-	"Zikmund #0" = 0
-	"Frantisek #0" = 0
-	"Jindrich #0" = 5
-	"Josef #0" = 5
-	"Frantisek Josef #0" = 0
-	"Bocek #0" = 0
-	"Jan Jirн #0" = 5
-	"Ludvнk #0" = 0
-	"Vladislav #0" = 20
-	"Vladimнr #0" = 10
-	"Petr #0" = 5
-	"Jan Petr #0" = 5
-	"Viktorнn #0" = 0
-	"Jan Vбclav #0" = 0
-	"Josef Vбclav #0" = 0
-	"Karel Josef #0" = 0
-	"Matyбљ #0" = 0
-	"Ferdinand #0" = 5
-	"Otakar #0" = 10
-	"Vratislav #3" = 5
-	"Boleslav #4" = 10
-	"Vilйm #0" = 5
-	"Viktor #0" = 0
-	"Jaromнr #0" = 5
-	"Jaroslav #0" = 1
-	"Anezka #0" = -1
-	"Eliska #0" = -1
-	"Katerina #0" = -1
-	"Marie #0" = -1
-	"Ludmila #0" = -1
-	"Alzbeta #0" = -1
+	"Иван #3" = 60
+	"Федор #1" = 60
+	"Петр #0" = 60
+	"Василий #2" = 20
+	"Александр #0" = 20
+	"Алексей #0" = 20
+	"Борис #0" = 20
+	"Михаил #0" = 20
+	"Павел #0" = 20
+	"Екатерина #0" = -20
+	"Дмитрий #6" = 15
+	"Юрий #4" = 15
+	"Анна #0" = -15
+	"Елизавета #0" = -15
+	"Константин #0" = 15
+	"Андрей #3" = 10
+	"Семен #1" = 10
+	"Николай #0" = 10
+	"Афанасий #0" = 0
+	"Анатолий #0" = 0
+	"Антон #0" = 0
+	"Арсений #0" = 0
+	"Артамон #0" = 0
+	"Артемий #0" = 0
+	"Богдан #0" = 0
+	"Демьян #0" = 0
+	"Епифаний #0" = 0
+	"Феофан #0" = 0
+	"Гавриил #0" = 0
+	"Григорий #0" = 0
+	"Иосиф #0" = 0
+	"Исаак #0" = 0
+	"Кирилл #0" = 0
+	"Лаврентий #0" = 0
+	"Лазарь #0" = 0
+	"Лев #0" = 0
+	"Малюта #0" = 0
+	"Марк #0" = 0
+	"Мефодий #0" = 0
+	"Никифор #0" = 0
+	"Никита #0" = 0
+	"Николай #0" = 0
+	"Олег #0" = 0
+	"Платон #0" = 0
+	"Прокопий #0" = 0
+	"Сергей #0" = 0
+	"Станислав #0" = 0
+	"Варфоломей #0" = 0
+	"Ефим #0" = 0
+	"Юлиан #0" = 0
+	"Август #1" = 60
+	"Владислав #3" = 60
+	"Станислав #0" = 40
+	"Казимир #3" = 20
+	"Александр #0" = 20
+	"Генрих #0" = 20
+	"Ян #0" = 20
+	"Ян #0 Альберт" = 20
+	"Ян #0 Казимир" = 20
+	"Михал #0" = 20
+	"Стефан #0" = 20
+	"Сигизмунд #0" = 20
+	"Сигизмунд #0 Август" = 20
+	"Александр #0 Карл" = 15
+	"Сигизмунд #0 Казимир" = 15
+	"Кшиштоф #0" = 10
+	"Фридрих #0" = 10
+	"Ян #0 Сигизмунд" = 10
+	"Карл #0 Фердинанд" = 10
+	"Ольбрахт #0" = 10
+	"Альберт #0" = 0
+	"Алексий #0" = 0
+	"Анджей #0" = 0
+	"Бартоломей #0" = 0
+	"Богумил #0" = 0
+	"Бронислав #0" = 0
+	"Давид #0" = 0
+	"Доминик #0" = 0
+	"Эмиль #0" = 0
+	"Эугениуш #0" = 0
+	"Фердинанд #0" = 0
+	"Густав #0" = 0
+	"Игорь #0" = 0
+	"Иван #0" = 0
+	"Кристиан #0" = 0
+	"Лех #0" = 0
+	"Луцюш #0" = 0
+	"Людвиг #0" = 0
+	"Лукаш #0" = 0
+	"Максим #0" = 0
+	"Марюш #0" = 0
+	"Мешко #3" = 0
+	"Мирослав #0" = 0
+	"Оскар #0" = 0
+	"Патрик #0" = 0
+	"Рафаль #0" = 0
+	"Сильвестер #0" = 0
+	"Шимон #0" = 0
+	"Зигфрид #0" = 0
+	"Ричеза #0" = -1
+	"Юдит #0" = -1
+	"Агафия #0" = -1
+	"Стефан #2" = 60
+	"Лазарь #1" = 20
+	"Георгий #0" = 20
+	"Юрий #0" = 20
+	"Милош #0" = 20
+	"Джорже #0" = 20
+	"Алексей #0" = 15
+	"Гргур #0" = 15
+	"Петр #0" = 15
+	"Тодор #0" = 15
+	"Александр #0" = 10
+	"Михаил #0" = 10
+	"Милан #0" = 10
+	"Богдан #0" = 0
+	"Бранко #0" = 0
+	"Братислав #0" = 0
+	"Дарко #0" = 0
+	"Драган #0" = 0
+	"Дубравко #0" = 0
+	"Душан #0" = 0
+	"Филип #0" = 0
+	"Горан #0" = 0
+	"Иван #0" = 0
+	"Иосиф #0" = 0
+	"Константин #0" = 0
+	"Лука #0" = 0
+	"Марко #0" = 0
+	"Матея #0" = 0
+	"Мирослав #0" = 0
+	"Младен #0" = 0
+	"Небоша #0" = 0
+	"Неманья #0" = 0
+	"Ненад #0" = 0
+	"Никола #0" = 0
+	"Педраг #0" = 0
+	"Станко #0" = 0
+	"Тома #0" = 0
+	"Винко #0" = 0
+	"Векослав #0" = 0
+	"Здравко #0" = 0
+	"Звонимир #0" = 0
+
+	"Бранка #0" = -1
+	"Джакода #0" = -1
+	"Мирна #0" = -1
 }
 
 leader_names = {
-	Adashev Apraxine Atlasov
-	Basmanov Baryatiski Bibikov Beketov Baranov
-	Chernigovets Chelyuskin Chuiski
-	Dolgorukov Dubenski Dezhnev
-	Ermolov
-	Fermor
-	Godunov Golitsyn Gagarin Glinski
-	Kasimovskiy Kurbski Khovanski Kutuzov Koltsov-Mosalski Khabarov
-	Mikulinski Menshikov Minih Mansurov Moskvitin
-	Ovchina-Obolenski Osterman-Tolstoy Orlov
-	Pozharski Potemkin Petrov Poyarkov Patrikeev
-	Romodanovski Rumyantsev Repnin Rebrov
-	Shuiski Sheremetev Skopin Shein Soltikov Spiridof Senyavin Stroganov Semenov
-	Tottleben "de Tolly" Tomasov
-	Ushakov
-	Vorotinski Vishnevetski
-	Wittgenstein
-	Yalichev Yermak Milytin
-Zajнc
-	Jiskra
-	Zeleznэ
-	Capek
-	Thurn
-	Kolowrat
-	Schwarzenberg
-	"z Rozmberka"
-	Velen
-	Sokol
-	"ze Zerotнna"
-	"z Husi"
-	"z Polzic"
-	Harant
-	"z Brandэsa"
-	Purkyne
-	"z Veleslavнna"
-	"z Rozmitбlu"
-	Berka
-	"z Pardubic"
-	"ze Lvovic"
-	Kaspar
-	Reiner
-	"ze Svamberka"
-	"z Vartemberka"
-	"z Mitrovic"
-	Pнka
-	Mansfeld
-	Velikэ
-	Syrovэ
-	"z Otradovic"
-	"z Falkensteina"
-Arciszewski
-	Benyowski Bidziсski Branicki
-	Czarniecki Chometowski
-	Dunin Denhoff Drzewicki
-	Grodzicki Gуrka
-	Houwaldt
-	Jablonowski Jazlowiecki
-	Kurozwecki Kurbski Koniecpolski Kosciuszko Krasinski Kalinowski Korycki Kazanowski Kmita
-	Lubomirski Lisowski Lanckoroсski Leszczyсski Lacki
-	Malski Mniszech Matczyсski Mlodziejowski
-	Ostrorуg Olesnicki Opacki Ozarowski Ossolinski
-	Paniewski Patkul Poniatowski Pulaski Przyjemski Piaseczyсski Potocki
-	Rytwiaсski Rzewuski
-	Sobieski Sahajdaczny Siemienowicz Sulkowski Stadnicki Sieniawski
-	Tarnowski
-	Wyhowski Wielopolski
-	Zamoyski Zebrzydowski Zacwilichowski Zborowski Zbaraski
+	"Адашев"
+	"Апраксин"
+	"Бестужев-Рюмин"
+	"Басманов"
+	"Барятинский"
+	"Бибиков"
+	"Бекетов"
+	"Бутурлин"
+	"Аксаков"
+	"Чернышев"
+	"Оболенский"
+	"Долгоруков"
+	"Головкин"
+	"Плещеев"
+	"Шогин"
+	"Ермолов"
+	"Головин"
+	"Годунов"
+	"Голицын"
+	"Гагарин"
+	"Глинский"
+	"Касимовский"
+	"Курбский"
+	"Хованский"
+	"Кутузов"
+	"Кольцов-Мосальский"
+	"Куракин"
+	"Микулинский"
+	"Коновницын"
+	"Лопухин"
+	"Мансуров"
+	"Милославский"
+	"Овчина-Оболенский"
+	"Толстой"
+	"Орлов"
+	"Пожарский"
+	"Потемкин"
+	"Прозоровский"
+	"Мстиславский"
+	"Патрикеев"
+	"Ромодановский"
+	"Румянцев"
+	"Репнин"
+	"Нарышкин"
+	"Шуйский"
+	"Шереметев"
+	"Троекуров"
+	"Шеин"
+	"Салтыков"
+	"Спиридов"
+	"Сенявин"
+	"Строганов"
+	"Суворов"
+	"Шувалов"
+	"Одоевский"
+	"Трубецкой"
+	"Ушаков"
+	"Воротынский"
+	"Волконский"
+	"Воронцов"
+	"Щербатов"
+	"Татищев"
+	"Арцишевский"
+	"Беньевский"
+	"Бидзинский"
+	"Браницкий"
+	"Чарнецкий"
+	"Хометовский"
+	"Дунин"
+	"Денхофф"
+	"Джевицкий"
+	"Гродзицкий"
+	"Горка"
+	"Хоувальдт"
+	"Яблоновский"
+	"Язловецкий"
+	"Курозвецкий"
+	"Курбский"
+	"Конецпольский"
+	"Косцюшко"
+	"Красинский"
+	"Калиновский"
+	"Корыцкий"
+	"Казановский"
+	"Кмита"
+	"Любомирский"
+	"Лисовский"
+	"Ланцкоронский"
+	"Лещинский"
+	"Лацкий"
+	"Мальский"
+	"Мнишек"
+	"Матчынский"
+	"Млодзеевский"
+	"Острожский"
+	"Олесницкий"
+	"Опацкий"
+	"Озаровский"
+	"Оссолинский"
+	"Паневский"
+	"Раткуль"
+	"Понятовский"
+	"Пулаский"
+	"Пжыемский"
+	"Пясечинский"
+	"Потоцкий"
+	"Рытвянский"
+	"Жевуский"
+	"Собеский"
+	"Сагайдачный"
+	"Семенович"
+	"Сульковский"
+	"Стадницкий"
+	"Сенявский"
+	"Тарновский"
+	"Выховский"
+	"Велопольский"
+	"Замойский"
+	"Зебжыдовский"
+	"Засвилиховский"
+	"Зборовский"
+	"Збарский"
+	"Бойович"
+	"Драшкович"
+	"Джинджич"
+	"Храковец"
+	"Лазаревич"
+	"Маркович"
+	"Обилич"
+	"Петрович"
+	"Постек"
+	"Путник"
 }
 
 army_names = {
-	"Russian army"
-	"Baltic army"
-	"Polish army"
-	"Czech army"
-	"Bulgar army"
-	"Ural army"
-	"Polab army"
-	"Siberia army"
-	"Serbian army"
-	"Romanian army"
-	"Slovakian army"
-	"Slovenian army"
-	"Croatian army"
-	"Montenegro army"
+	"Русская армия"
+	"Балтийская армия"
+	"Польская армия"
+	"Чешская армия"
+	"Болгарская армия"
+	"Уральская армия"
+	"Полабская армия"
+	"Сибирская армия"
+	"Сербская армия"
+	"Румынская армия"
+	"Словакская армия"
+	"Словенская армия"
+	"Хорватская армия"
+	"Черногорская армия"
 }
 ship_names = {
-	"Sv.Nestor" "Maria Magdalena" "Sv.Ekaterina" "Sv.Petr i Pavel" "Apostol Petr"
-	"Apostol Pavel" "Sv.Mark" "Sv.Matfei" "Sv.Georgiy Pobedonosetz" "Sv.Alxander Nevskiy"
-	"Sv.Ioann Krestitel" "Sv.Andrey Pervozvanniy" "Sv.Vladmir" "Sv.Boris i Gleb"
-	"Sv.Kirill i Mefodiy" Mstislav Yaroslav Sviatoslav Sudislav Stanislav Vsevolod
-	Vladislav Rurik Rostislav Vladimir Izyaslav Vseslav Boleslav Mecheslav Rodislav
-	Ratibor Branimir Gavriil Mihail Uriil Rafail Salafail Varakhail Yagudiil Kastor
-	Yaroslavets Pallada Passat Perekat Predanny Priboy Liman Primerny Provorny
-	Ivanovets Speshniy Kreyser Pylky Zhemchug Nadezhda Neva Diana Merkuriy Vostok
-	Mirniy Yunona Alexander Pollux Opyt Avos Kamchatka Desna Dnepr Taganrog Yevstafiy
-	"Rozhdestvo Hristovo" Preobrazheniye "Dvenadsat Apostolov" "Tri Sviatitelya" Burya
-	Yevropa Krym Tavrida Groza Tverdiy Ezekiel
-"Arka Noego"
-        "Bialy Orzel" Burza "Bialy Lew" "Brzesko-Kujawskie" Belzkie Braclawskie
-        Charitas "Czarny Orzel" "Czarny Kruk" Chelminskie Czernichowskie
-        Fortuna
-        Gryf Gwiazda Gnieznienskie
-	Inowroclawskie
-	"Krуl Dawid" Kaliskie Krakowskie Kijowskie Krakуw
-        Lublin "Latajacy Jelen" Lwуw Leczyckie Lubelskie
-        "Maly Bialy Orzel" Malborskie Mazowieckie
-        Niewrazliwy "Nowy Czarny Orzel"
-        "Prorok Samuel" "Panna Wodna" Plomien Poznanskie Plockie Podlaskie Podolskie
-	"Rycerz Swiety Jerzy" Rawskie Ruskie
-        Strzelec Suwerenny "Swiety Piotr" Sieradzkie Sandomierskie "Swiety Kazimierz"
-        "Wielkie Slonce" Wodnik Warminskie Wolynskie Warszawa
-        Zwyciestwo "Zуlty Lew"
-
+	"Св. Нестор"
+	"Мария Магдалина"
+	"Св. Екатерина"
+	"Св. Петр и Павел"
+	"Апостол Петр"
+	"Апостол Павел"
+	"Св. Марк"
+	"Св. Матфей"
+	"Св. Георгий Победоносец"
+	"Св. Александр Невский"
+	"Св. Иоанн Креститель"
+	"Св. Андрей Первозванный"
+	"Св. Владимир"
+	"Св. Борис и Глеб"
+	"Св. Кирилл и Мефодий"
+	"Мстислав"
+	"Ярослав"
+	"Святослав"
+	"Судислав"
+	"Станислав"
+	"Всеволод"
+	"Владислав"
+	"Рюрик"
+	"Ростислав"
+	"Владимир"
+	"Изяслав"
+	"Всеслав"
+	"Болеслав"
+	"Мечеслав"
+	"Родислав"
+	"Ратибор"
+	"Бранимир"
+	"Гавриил"
+	"Михаил"
+	"Уриил"
+	"Рафаил"
+	"Салафиил"
+	"Варахиил"
+	"Иегудиил"
+	"Кастор"
+	"Ярославец"
+	"Паллада"
+	"Пассат"
+	"Перекат"
+	"Преданный"
+	"Прибой"
+	"Искусный"
+	"Примерный"
+	"Проворный"
+	"Ивановец"
+	"Спешный"
+	"Ловкий"
+	"Пылкий"
+	"Жемчуг"
+	"Надежда"
+	"Нева"
+	"Диана"
+	"Меркурий"
+	"Восток"
+	"Мирный"
+	"Юнона"
+	"Александр"
+	"Поллукс"
+	"Быстрый"
+	"Смелый"
+	"Камчатка"
+	"Десна"
+	"Днепр"
+	"Храбрый"
+	"Евстафий"
+	"Рождество Христово"
+	"Преображенье"
+	"Двенадцать апостолов"
+	"Три Святителя"
+	"Богатырь"
+	"Европа"
+	"Крым"
+	"Таврида"
+	"Внимательный"
+	"Твердый"
+	"Иезекииль"
+	"Арка Ноэго"
+	"Бялы Ожел"
+	"Бужа"
+	"Бялы Лев"
+	"Бжеско-Куявске"
+	"Бельске"
+	"Брацлавске"
+	"Харитас"
+	"Чарни Ожел"
+	"Чарни Крук"
+	"Чельминске"
+	"Черниховске"
+	"Фортуна"
+	"Грыф"
+	"Гвязда"
+	"Гнезненьске"
+	"Иноворцлавске"
+	"Крул Давид"
+	"Калиске"
+	"Краковске"
+	"Киевске"
+	"Краков"
+	"Люблин"
+	"Латаяци Елень"
+	"Львов"
+	"Лечиске"
+	"Любельске"
+	"Малы Бялы Ожел"
+	"Мальборске"
+	"Мазовецке"
+	"Невразливы"
+	"Новы Чарны Ожел"
+	"Пророк Самуэл"
+	"Панна Водна"
+	"Пломень"
+	"Познанске"
+	"Плоцке"
+	"Подласке"
+	"Подольске"
+	"Рыцеж Светы Ержи"
+	"Равске"
+	"Русске"
+	"Стжелец"
+	"Суверенны"
+	"Светы Петр"
+	"Серадзке"
+	"Сандомерске"
+	"Светы Казимеж"
+	"Вельке Слонце"
+	"Водник"
+	"Варминьске"
+	"Волыньске"
+	"Варшава"
+	"Звыцество"
+	"Зулты Лэв"
+	"Раска"
+	"Босния"
+	"Дукля"
+	"Захумлия"
+	"Травуния"
+	"Пагания"
+	"Стефан Неманья"
+	"Стефан Првовенкани"
+	"Стефан Душан"
+	"Милютин"
 }
 
 fleet_names = {
-	"Blue Squadron"
-	"Red Squadron"
-	"White Squadron"
-	"Baltic Squadron"
-	"Black Sea Squadron"
-	"Adriatik sea Squadron"
+	"Синяя эскадра"
+	"Красная эскадра"
+	"Белая эскадра"
+	"Северный флот"	
+	"Балтийский флот"
+	"Черноморский флот"
+	"Средиземноморский флот"
+	"Тихоокеанский флот"
 }

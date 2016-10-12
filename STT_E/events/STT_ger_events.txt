@@ -1,3 +1,5 @@
+namespace = ger_main
+
 country_event = {
 	id = ger_main.56475
 	title = "ger_main.t.56475"
@@ -75,7 +77,7 @@ country_event = {
 			tag = PRU
 			tag = BRA
 			}
-	NOT = { has_country_modifier = ger_hommage }	
+		NOT = { has_country_modifier = ger_hommage }	
 	}
 
 	option = {

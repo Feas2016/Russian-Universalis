@@ -18,10 +18,11 @@ country_event = {
 	
 	
 	trigger = {
-		tag = CAS
-		NOT = { exists = SPA }
+		### STT
 		is_year = 1450
 		NOT = { is_year = 1530 }
+		tag = CAS
+		NOT = { exists = SPA }
 		is_subject = no
 		num_of_cities = 10
 		ARA = {
@@ -331,6 +332,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		### STT
+		is_year = 1521
+		NOT = { is_year = 1556 }
 		OR = {
 			AND = {
 				tag = CAS
@@ -339,8 +343,6 @@ country_event = {
 			tag = SPA
 		}
 		religion = catholic
-		is_year = 1521
-		NOT = { is_year = 1556 }
 	}
 
 	mean_time_to_happen = {

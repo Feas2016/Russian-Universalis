@@ -8,6 +8,15 @@ province_event = {
 	major = yes
 	
 	trigger = {
+		any_province = {
+			OR = {
+				province_id = 18
+				province_id = 3220
+				province_id = 3204
+				}
+			is_empty = yes
+			NOT = { is_colony = yes }
+		}
 		is_year = 1500
 		OR = {
 			tag = SWE
@@ -17,15 +26,6 @@ province_event = {
 				NOT = { exists = SWE }
 				culture_group = scandinavian
 			}
-		}
-		any_province = {
-			OR = {
-				province_id = 18
-				province_id = 3220
-				province_id = 3204
-				}
-			is_empty = yes
-			NOT = { is_colony = yes }
 		}
 	}
 	

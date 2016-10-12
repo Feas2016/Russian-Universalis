@@ -1,3 +1,5 @@
+namespace = religions
+
 country_event = {
 	id = STT_religions.1
 	title = "STT_religions.t.1"
@@ -9,10 +11,9 @@ country_event = {
 	
 	trigger = {
 		is_year = 1590
-		NOT = { is_year = 1620 }
-		NOT = { any_owned_province = { religion = grekocatholic } }
+		NOT = { is_year = 1620 }		
 		ROOT = {
-			OR = { 
+			OR = {
 				owns = 277
 				owns = 260
 				owns = 279
@@ -23,6 +24,17 @@ country_event = {
 				owns = 162
 				owns = 1952
 			}
+		}
+		OR = {
+			NOT = { 277 = { religion = grekocatholic } }
+			NOT = { 260 = { religion = grekocatholic } }
+			NOT = { 279 = { religion = grekocatholic } }
+			NOT = { 259 = { religion = grekocatholic } }
+			NOT = { 1940 = { religion = grekocatholic } }
+			NOT = { 2424 = { religion = grekocatholic } }
+			NOT = { 261 = { religion = grekocatholic } }
+			NOT = { 162 = { religion = grekocatholic } }
+			NOT = { 1952 = { religion = grekocatholic } }
 		}
 	}
 

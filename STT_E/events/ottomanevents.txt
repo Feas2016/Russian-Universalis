@@ -7,9 +7,9 @@ country_event = {
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	trigger = {		
-		religion_group = muslim
-		is_month = 7
 		tag = TUR
+		religion_group = muslim
+		is_month = 7		
 		NOT = { is_month = 9 }
 		NOT = {
 			has_country_modifier = ignored_ramadan_timer
@@ -48,15 +48,16 @@ country_event = {
 
 
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 50
 
-	modifier = {
-		factor = 0.1
-		NOT = { stability = 1 }
-	}
+		modifier = {
+			factor = 0.1
+			NOT = { stability = 1 }
+		}
 	}
 
 	option = {
@@ -85,15 +86,16 @@ country_event = {
 	picture = INVENTION_eventPicture
 	
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 50
 
-	modifier = {
-		factor = 0.1
-		NOT = { stability = 0 }
-	}
+		modifier = {
+			factor = 0.1
+			NOT = { stability = 0 }
+		}
 	}
 	
 	option = {
@@ -137,15 +139,16 @@ country_event = {
 	picture = COURT_eventPicture
 	
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 45
 
-	modifier = {
-		factor = 0.2
-		NOT = { stability = 0 }
-	}
+		modifier = {
+			factor = 0.2
+			NOT = { stability = 0 }
+		}
 	}
 
 	option = {
@@ -176,16 +179,17 @@ country_event = {
 	
 
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 30
 
-	modifier = {
-		factor = 0.3
-		NOT = { stability = 0 }
+		modifier = {
+			factor = 0.3
+			NOT = { stability = 0 }
+		}
 	}
-}
 
 	option = {
 		name = "harem1"		
@@ -213,15 +217,16 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 25
 
-	modifier = {
-		factor = 0.5
-		NOT = { stability = 0 }
-	}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+		}
 	}
 
 	option = {
@@ -244,15 +249,16 @@ country_event = {
 	picture = UNIVERSITY_eventPicture
 	
 	trigger = { 
-	tag=TUR	}
+		tag = TUR	
+	}
 
 	mean_time_to_happen = {
 	years = 45
 
-	modifier = {
-		factor = 0.2
-		NOT = { stability = 0 }
-	}
+		modifier = {
+			factor = 0.2
+			NOT = { stability = 0 }
+		}
 	}
 
 	option = {
