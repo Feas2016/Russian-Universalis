@@ -35,11 +35,12 @@ guiTypes = {
 			spriteType = "GFX_gender_icon"
 			position = { x= 70 y = 4 }
 			Orientation = "UPPER_LEFT"
+			scale = 0.8
 		}
 
 		instantTextBoxType = {
 			name = "leader_name"
-			position = { x = 70 y = 4 }
+			position = { x = 92 y = 4 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0 }
@@ -48,9 +49,19 @@ guiTypes = {
 			maxHeight = 20	
 			fixedsize = yes	
 		}
+		
+		iconType =
+		{
+			name ="leader_personality"
+			spriteType = "GFX_idea_unknown"
+			position = { x= 69 y = 17 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.3
+		}
+
 		instantTextBoxType = {
 			name = "leader_assignment"
-			position = { x = 70 y =17 }
+			position = { x = 92 y =17 }
 			textureFile = ""
 			font = "vic_18_grey"
 			borderSize = {x = 0 y = 0}
@@ -1078,14 +1089,14 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "ARMY_LABEL"	
-			maxWidth = 128
+			maxWidth = 128 ### Расширил надпись
 			maxHeight = 20
 			format = left
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name = "army_tradition_value"
-			position = { x = 57 y =309 }
+			position = { x = 67 y =309 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1109,14 +1120,14 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "LEDGER_LAND_MORALE"
-			maxWidth = 120
+			maxWidth = 120 ### Расширил надпись
 			maxHeight = 20
 			format = left
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name = "land_morale_value"
-			position = { x = 57 y =325 }
+			position = { x = 67 y =325 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1139,7 +1150,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "land_support_limit_value"
-			position = { x = 56 y =341 }
+			position = { x = 67 y =341 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1157,14 +1168,14 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "NAVAL_LABEL"
-			maxWidth = 128
+			maxWidth = 128 ### Увеличил надпись
 			maxHeight = 20
 			format = left
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name = "navy_tradition_value"
-			position = { x = 57 y =358 }
+			position = { x = 67 y =358 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1189,14 +1200,14 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "LEDGER_NAVAL_MORALE"	
-			maxWidth = 120
+			maxWidth = 120 ### Увеличил длину
 			maxHeight = 20
 			format = left
 			fixedsize = yes
 		}
 		instantTextBoxType = {
 			name = "naval_morale_value"
-			position = { x = 57 y =372 }
+			position = { x = 67 y =372 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1219,7 +1230,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "naval_support_limit_value"
-			position = { x = 56 y =388 }
+			position = { x = 67 y =388 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1252,7 +1263,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "military_tactics_value"
-			position = { x = 57 y =411 }
+			position = { x = 57 y =411 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1285,7 +1296,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "discipline_value"
-			position = { x = 57 y = 440 }
+			position = { x = 67 y = 440 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1299,18 +1310,18 @@ guiTypes = {
 		{
 			name ="defensiveness_icon"
 			spriteType= "GFX_icon_mil_defensiveness"
-			position = { x= 21 y = 471 }
+			position = { x= 11 y = 471 }
 			hint_tag = "hint_fortdefense"
 		}
 
 		instantTextBoxType = {
 			name = "defensiveness_label"
-			position = { x = 50 y =470 }
+			position = { x = 30 y =470 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "MIL_DEFENSIVENESS"	
-			maxWidth = 120
+			maxWidth = 120 ### Увеличил длину
 			maxHeight = 20
 			format = left
 			fixedsize = yes
@@ -1318,7 +1329,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "defensiveness_value"
-			position = { x = 57 y = 470 }
+			position = { x = 67 y = 470 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1343,7 +1354,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "MIL_SIEGEABILITY"	
-			maxWidth = 90
+			maxWidth = 120 ### Увеличил длину
 			maxHeight = 20
 			format = left
 			fixedsize = yes
@@ -1351,7 +1362,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "siegeability_value"
-			position = { x = 57 y = 500 }
+			position = { x = 72 y = 500 } ### Сдвинул вправо
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1384,7 +1395,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "combat_width_value"
-			position = { x = 57 y = 528 }
+			position = { x = 67 y = 528 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -1405,13 +1416,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "mothball_label"
-			position = { x = 30 y =570 }
+			position = { x = 30 y =570 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "99/99 Forts Active"	
-			maxWidth = 169
-			maxHeight = 16
+			maxWidth = 169 ### Увеличил длину
+			maxHeight = 16 ### Увеличил длину
 			format = left
 			fixedsize = yes
 		}

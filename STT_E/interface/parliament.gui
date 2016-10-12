@@ -141,7 +141,7 @@ guiTypes = {
 			name = "chance_to_end_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 250
+			maxWidth = 250 ### Увеличил длину
 			maxHeight = 30
 			text = "PARLIAMENT_CHANCE_DEBATE_ENDS"
 			orientation = "UPPER_LEFT"
@@ -293,7 +293,7 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonText = "BHT_STT"
+			buttonText = "BHT_STT" ### Перевел
 			buttonFont = "vic_18"
 
 			clicksound = decision
@@ -322,11 +322,11 @@ guiTypes = {
 		}
 		
 		instantTextBoxType= {
-			position = { x=24 y =-8}
+			position = { x=24 y =-8} ### Сдвинул влево
 			name = "name"
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 380
+			maxWidth = 380 ### Увеличил длину
 			maxHeight = 20
 			text = ""	
 			orientation = "UPPER_LEFT"

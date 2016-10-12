@@ -58,7 +58,7 @@ guiTypes = {
 		{
 			name ="hre_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 43 y = 103 }
+			position = { x= 55 y = 115 }
 			hint_tag = "hint_religion"
 			allwaystransparent = yes
 		}	
@@ -67,7 +67,7 @@ guiTypes = {
 		{
 			name ="hre_heretic_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 653 y = 103 }
+			position = { x= 665 y = 115 }
 			hint_tag = "hint_religion"
 			allwaystransparent = yes			
 		}			
@@ -94,7 +94,7 @@ guiTypes = {
 		{
 			name ="hre_religion_icon_2"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 346 y = 98 }
+			position = { x= 359 y = 110 }
 			hint_tag = "hint_religion"
 			allwaystransparent = yes
 		}		
@@ -150,12 +150,12 @@ guiTypes = {
 		#### AUTHORITY
 		instantTextBoxType = {
 			name = "influence_label"
-			position = { x = 140 y = 105 }
+			position = { x = 140 y = 105 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
 			text = "HRE_INFLUENCE"	
-			maxWidth = 140
+			maxWidth = 140 ### Увеличил длину
 			maxHeight = 32	
 			format = centre
 		}
@@ -217,12 +217,12 @@ guiTypes = {
 		#### REFORM DECISIONS
 		instantTextBoxType = {
 			name = "decisions_label"
-			position = { x = 469 y = 106 }
+			position = { x = 442 y = 106 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
 			text = "HRE_DECISIONS"	
-			maxWidth = 128
+			maxWidth = 178 ### Увеличил длину
 			maxHeight = 32	
 			format = centre
 		}
@@ -363,7 +363,7 @@ guiTypes = {
 
 	positionType = {
 		name = "member_shield_offset"
-		position = { x = 26 y = 0 }
+		position = { x = 30 y = 0 }
 	}
 	
 	positionType = {

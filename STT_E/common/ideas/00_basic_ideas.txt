@@ -190,6 +190,7 @@ religious_ideas = {
 			factor = 0
 			has_idea_group = humanist_ideas
 		}
+		###STT
 		modifier = {
 		    factor = 4
 			OR = {
@@ -361,6 +362,7 @@ defensive_ideas = {
 
 	ai_will_do = {
 		factor = 0.77
+		###STT
 		modifier = {
 		    factor = 3
 			OR = {
@@ -790,6 +792,7 @@ expansion_ideas = {
 				is_colonial_nation = yes
 			}
 		}
+		###STT
 		modifier = {
 			factor = 10
 			OR = {
@@ -804,6 +807,7 @@ expansion_ideas = {
 				}
 			}
 		}
+		###STT
 		modifier = {
 			factor = 0
 			NOT = {
@@ -864,6 +868,7 @@ administrative_ideas = {
 			factor = 2
 			government = steppe_horde
 		}
+		### STT
 		modifier = {
 		    factor = 10
 			tag = TUR

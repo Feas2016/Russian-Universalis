@@ -332,22 +332,22 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "no_colony_label"
-				position = { x = 25 y = -4 }
+				position = { x = 25 y = -4 } ### Поднял надпись
 				font = "vic_29"	
 				borderSize = {x = 0 y = 0}	
 				text = "NO_COLONY_PRESENT"	
-				maxWidth = 285
-				maxHeight = 76	
+				maxWidth = 285 ### Расширил надпись
+				maxHeight = 76 ### Расширил надпись
 				format = center	
 			}
 			instantTextBoxType = {
 				name = "region_text"
-				position = { x = 05 y = 15 }
+				position = { x = 05 y = 15 } ### Поднял надпись
 				font = "vic_18"	
 				borderSize = {x = 4 y = 4}	
 				text = "NO_COLONY_PRESENT"	
 				maxWidth = 332
-				maxHeight = 76	
+				maxHeight = 76 ### Расширил надпись	
 				format = center	
 			}			
 		}
@@ -422,7 +422,7 @@ guiTypes = {
 				borderSize = {x = 4 y = 4}	
 				text = "NO_COLONY_PRESENT"	
 				maxWidth = 256
-				maxHeight = 76	
+				maxHeight = 76 ### Расширил надпись
 				format = center	
 				fixedsize = yes
 			}	

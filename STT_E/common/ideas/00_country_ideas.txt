@@ -20,7 +20,7 @@ ENG_ideas = {
 		OR = {
 			tag = ENG
 			tag = GBR
-			tag = GB2
+			tag = GB2 ###STT
 		}
 	}
 	free = yes		#wibe added at load.
@@ -489,7 +489,7 @@ POL_ideas = {
 		OR = {
 			tag = POL
 			tag = PLC
-			tag = KPO
+			tag = KPO  ###STT
 		}
 	}
 	free = yes		#will be added at load.
@@ -743,7 +743,7 @@ GEN_Ideas = {
 	trigger = {
 		OR = {
 			tag = GEN
-			tag = LRO
+			tag = LRO   ###STT
 		}
 	}
 	free = yes
@@ -3866,7 +3866,7 @@ SMO_ideas = {
 		religious_unity = 0.15
 	}
 	armories_of_smolensk = {
-		fire_damage = 0.1		
+		fire_damage = 0.1	
 	}
 	smo_western_mercenaries = {
 		merc_maintenance_modifier = -0.25
@@ -7609,7 +7609,7 @@ SLN_ideas = {
 		enemy_core_creation = 0.25
 	}
 	sln_galic_meets_norman = {
-		num_accepted_cultures = 1  
+		num_accepted_cultures = 1
 	}
 	sln_a_different_way = {
 		spy_offence = 0.10
@@ -7649,7 +7649,7 @@ ANT_ideas = {
 		idea_cost = -0.1
 	}
 	ant_andrianoni = {
-		 prestige = 1
+		prestige = 1
 	}
 	ant_ombiasa = {
 		diplomatic_reputation = 1
