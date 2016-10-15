@@ -39,7 +39,20 @@ capital = 65	# Mьnchen!
 		adm = 2	
 		dip = 2
 		mil = 2
-    	}
+    }
+	queen = {
+		country_of_origin = BRU
+		name = "Анна"
+		dynasty = "фон Вельф"
+		birth_date = 1414.1.1
+		death_date = 1474.4.14
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
 }
 
 1438.7.3 = {
@@ -106,6 +119,20 @@ capital = 65	# Mьnchen!
 	}
 }
 
+1487.1.2 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Кунигунда"
+		dynasty = "фон Габсбург"
+		birth_date = 1465.3.16
+		death_date = 1520.8.6
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
 1467.9.4   = {
 	monarch = {
 		name = "Альбрехт IV Мудрый"
@@ -142,6 +169,19 @@ capital = 65	# Mьnchen!
 	}
 }
 
+1522.10.5 = {
+	queen = {
+		country_of_origin = BAD
+		name = "Кунигунда"
+		dynasty = "фон Церинген"
+		birth_date = 1507.6.25
+		death_date = 1580.11.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
 
 1528.2.28 = {
 	heir = {
@@ -166,6 +206,17 @@ capital = 65	# Mьnchen!
 		dip = 3	
 		mil = 0
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1528.7.7
+		death_date = 1590.10.16
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
 }
 
 1550.3.7 = {
@@ -189,6 +240,17 @@ capital = 65	# Mьnchen!
 		birth_date = 1548.9.29
 		adm = 4	
 		dip = 1	
+		mil = 1
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Рената"
+		dynasty = "де Водемон"
+		birth_date = 1544.4.20
+		death_date = 1602.5.22
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }
@@ -216,6 +278,17 @@ capital = 65	# Mьnchen!
 		dip = 4	
 		mil = 0
 	}
+	queen = {
+		country_of_origin = LOR
+		name = "Елисавета"
+		dynasty = "де Водемон"
+		birth_date = 1574.10.9
+		death_date = 1635.1.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1609.1.1   = { leader = { name = "Тилли"	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 1	death_date = 1632.4.30 } }
@@ -229,6 +302,20 @@ capital = 65	# Mьnchen!
 1630.1.1   = { leader = { name = "Мерси"	type = general	rank = 0	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
 
 1635.1.1   = { leader = { name = "фон Вертх"	type = general	rank = 1	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1652.9.16 } }
+
+1635.7.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1610.3.13
+		death_date = 1665.9.25
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
 
 1636.10.31 = {
 	heir = {
@@ -259,6 +346,17 @@ capital = 65	# Mьnchen!
 		dip = 2
 		mil = 3
 	}
+	queen = {
+		country_of_origin = SAV
+		name = "Генриетта Аделаида"
+		dynasty = "Савойская"
+		birth_date = 1636.11.6
+		death_date = 1676.6.13
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
 }
 
 1662.7.11 = {
@@ -288,6 +386,34 @@ capital = 65	# Mьnchen!
 	}
 }
 
+1685.7.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Антония"
+		dynasty = "фон Габсбург"
+		birth_date = 1669.1.18
+		death_date = 1692.12.24
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1695.1.2 = {
+	queen = {
+		country_of_origin = PLC
+		name = "Тереза Кунигунда"
+		dynasty = "Собески"
+		birth_date = 1669.1.18
+		death_date = 1692.12.24
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
 1697.8.6 = {
 	heir = {
 		name = "Карл Альбрехт"
@@ -313,6 +439,17 @@ capital = 65	# Mьnchen!
 		dynasty = "фон Виттельсбах"
 		birth_date = 1697.8.6
 		adm = 2
+		dip = 3
+		mil = 1
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Амалия"
+		dynasty = "фон Габсбург"
+		birth_date = 1701.10.22
+		death_date = 1756.12.11
+		female = yes
+		adm = 3
 		dip = 3
 		mil = 1
 	}
@@ -349,25 +486,50 @@ capital = 65	# Mьnchen!
 1745.1.21 = {
 	heir = {
 		name = "Карл Теодор"
-		monarch_name = "Karl Theodor I"
+		monarch_name = "Карл IV Теодор"
 		dynasty = "фон Виттельсбах"
 		birth_date = 1724.12.11
 		death_date = 1799.2.16
-		claim = 95
+		claim = 65
 		adm = 3
 		dip = 4
 		mil = 0
 	}
 }
 
+1747.7.9 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Мария Анна"
+		dynasty = "фон Веттин"
+		birth_date = 1728.8.29
+		death_date = 1797.2.17
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
 1777.12.30 = {
 	monarch = {
-		name = "Карл II Теодор"
-		dynasty = "фон Виттельсбах"
+		name = "Карл IV Теодор"
+		dynasty = "фон Пфальц-Нойбург"
 		birth_date = 1724.12.11
 		adm = 3
 		dip = 4
 		mil = 0
+	}
+	queen = {
+		country_of_origin = PAL
+		name = "Елисавета Огюст"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1721.1.17
+		death_date = 1794.8.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -375,7 +537,7 @@ capital = 65	# Mьnchen!
 	heir = {
 		name = "Максимилиан Иосиф"
 		monarch_name = "Максимилиан IV Иосиф"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1756.5.27
 		death_date = 1825.10.13
 		claim = 95
@@ -385,22 +547,44 @@ capital = 65	# Mьnchen!
 	}
 }
 
+1795.2.15 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Леопольдина"
+		dynasty = "фон Габсбург"
+		birth_date = 1776.12.10
+		death_date = 1848.6.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1799.2.15  = {
 	monarch = {
 		name = "Максимилиан IV Иосиф"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1756.5.27
 		adm = 5
 		dip = 5
 		mil = 2
 	}
-}
-
-1799.2.15 = {
+	queen = {
+		country_of_origin = BAD
+		name = "Каролина"
+		dynasty = "фон Церинген"
+		birth_date = 1776.6.13
+		death_date = 1841.11.13
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 	heir = {
 		name = "Людвиг"
 		monarch_name = "Людвиг I"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1786.8.25
 		death_date = 1848.2.28
 		claim = 95
@@ -419,7 +603,7 @@ capital = 65	# Mьnchen!
 1825.10.13  = {
 	monarch = {
 		name = "Людвиг I"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1786.8.25
 		adm = 3
 		dip = 3
@@ -431,7 +615,7 @@ capital = 65	# Mьnchen!
 	heir = {
 		name = "Максимилиан"
 		monarch_name = "Максимилиан II"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1811.11.28
 		death_date = 1864.3.10
 		claim = 95
@@ -444,10 +628,24 @@ capital = 65	# Mьnchen!
 1848.3.10  = {
 	monarch = {
 		name = "Максимилиан II"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1811.11.28
 		adm = 4
 		dip = 5
 		mil = 4
+	}
+}
+
+1848.3.10 = {
+	heir = {
+		name = "Людвиг"
+		monarch_name = "Людвиг II"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1845.8.25
+		death_date = 1886.1.13
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }

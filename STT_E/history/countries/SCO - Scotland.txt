@@ -1,5 +1,6 @@
 government = feudal_monarchy
 primary_culture = scottish
+add_accepted_culture = highland_scottish
 religion = catholic
 technology_group = western
 capital = 248 # Edinburgh
@@ -62,6 +63,22 @@ capital = 248 # Edinburgh
 		dynasty = Стюарт
 		adm = 3
 		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = righteous_personality
+}
+
+1449.7.3 = {
+	queen = {
+		country_of_origin = GEL
+		name = "Мэри"
+		dynasty = "ван Эгмонд"
+		birth_date = 1434.1.1
+		death_date = 1460.8.3
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 2
 	}
 }

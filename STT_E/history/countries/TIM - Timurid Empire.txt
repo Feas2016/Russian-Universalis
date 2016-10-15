@@ -3,6 +3,7 @@
 #######################################
 technology_group = nomad_group
 primary_culture = uzbehk
+add_accepted_culture = persian
 religion = sunni
 government = steppe_horde
 capital = 454 # Samarkand
@@ -53,10 +54,15 @@ historical_rival = MUL
 	monarch = {
 		name = "Шахрух"
 		dynasty = "Тимурид"
+		birth_date = 1377.8.20
 		adm = 1
 		dip = 1	
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = well_advised_personality
 }
 
 1409.1.1 = {

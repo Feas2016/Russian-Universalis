@@ -2,6 +2,7 @@ government = constitutional_monarchy
 technology_group = western
 primary_culture = english
 add_accepted_culture = scottish
+add_accepted_culture = welsh
 religion = protestant
 capital = 236	# London
 
@@ -35,6 +36,16 @@ capital = 236	# London
 		dip = 5
 		mil = 4
 		female = yes
+	}
+	queen = {
+		country_of_origin = DAN
+		name = "Джордж"
+		dynasty = "фон Ольденбург"
+		birth_date = 1653.4.2
+		death_date = 1708.10.28
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -105,6 +116,17 @@ capital = 236	# London
 		adm = 4
 		dip = 3
 		mil = 4
+	}
+	queen = {
+		country_of_origin = ANS
+		name = "Кэролайн"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1683.3.1
+		death_date = 1737.11.20
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 3
 	}
 }
 
@@ -177,6 +199,20 @@ capital = 236	# London
 		adm = 1
 		dip = 1
 		mil = 4
+	}
+}
+
+1761.9.8 = {
+	queen = {
+		country_of_origin = MKL
+		name = "Шарлотт"
+		dynasty = "фон Мекленбург"
+		birth_date = 1683.3.1
+		death_date = 1737.11.20
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
 	}
 }
 

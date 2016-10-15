@@ -1,6 +1,9 @@
 government = despotic_monarchy
 primary_culture = castillian
 add_accepted_culture = sicilian
+add_accepted_culture = leonese
+add_accepted_culture = neapolitan
+add_accepted_culture = wallonian
 religion = catholic
 technology_group = western
 historical_friend = POR
@@ -77,6 +80,20 @@ national_focus = MIL
 
 #1526.1.1 = { decision = naval_convoy_system }
 
+1526.3.10 = {
+	queen = {
+		country_of_origin = POR
+		name = "Изабелла"
+		dynasty = "де Авис"
+		birth_date = 1503.10.24
+		death_date = 1539.5.1
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
 1526.12.1 = { leader = { name = "Франциско де Монтежо Ст." type = conquistador rank = 12 	fire = 3 	shock = 3 	manuever = 3 	siege = 0	death_date = 1542.1.1 } }
 
 1526.12.1 = { leader = { name = "Франциско де Монтежо"  type = conquistador	rank = 9	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1535.1.1 } }
@@ -143,6 +160,31 @@ national_focus = MIL
 		dip = 3
 		mil = 4
 	}
+	queen = {
+		country_of_origin = ENG
+		name = "Мэри"
+		dynasty = "Тудор"
+		birth_date = 1516.2.18
+		death_date = 1558.12.17
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1559.6.22 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Елисавета"
+		dynasty = "де Валуа"
+		birth_date = 1545.4.2
+		death_date = 1568.10.3
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1560.1.1 = { leader = { name = "Бернардино де Мендоза"	type = general		rank = 12	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1578.1.1 } }
@@ -167,6 +209,20 @@ national_focus = MIL
 
 1568.12.25 = {
 	set_country_flag = alpujarras_revolt_happened
+}
+
+1570.5.1 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1549.11.1
+		death_date = 1580.10.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
 
 1570.10.28 = {
@@ -213,6 +269,20 @@ national_focus = MIL
 	}
 }
 
+1599.4.18 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Маргарет"
+		dynasty = "фон Габсбург"
+		birth_date = 1584.12.25
+		death_date = 1611.10.3
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
 1601.1.1 = { capital = 214 } # Valladolid 
 
 1605.4.8 = {
@@ -251,6 +321,17 @@ national_focus = MIL
 		dip = 3
 		mil = 1
 	}
+	queen = {
+		country_of_origin = FRA
+		name = "Елисавета"
+		dynasty = "де Валуа"
+		birth_date = 1602.11.22
+		death_date = 1644.10.6
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1630.1.1 = { leader = {	name = "Фердинанд Кардинал-Инфант" 	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1641.11.9 } }
@@ -264,6 +345,20 @@ national_focus = MIL
 
 1648.1.30 = {
 	leave_league = catholic
+}
+
+1649.10.7 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Марьяна"
+		dynasty = "фон Габсбург"
+		birth_date = 1634.12.24
+		death_date = 1696.5.16
+		female = yes
+		adm = 4
+		dip = 1
+		mil = 1
+	}
 }
 
 1661.11.6 = {
@@ -292,6 +387,20 @@ national_focus = MIL
 	}
 }
 
+1679.11.19 = {
+	queen = {
+		country_of_origin = SPA #ORL
+		name = "Мари Луиза"
+		dynasty = "де Валуа"
+		birth_date = 1662.3.26
+		death_date = 1689.2.12
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1683.12.19 = {
 	heir = {
 		name = "Филипп"
@@ -306,6 +415,20 @@ national_focus = MIL
 	}
 }
 
+1689.8.28 = {
+	queen = {
+		country_of_origin = PAL
+		name = "Мария Анна"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1662.3.26
+		death_date = 1689.2.12
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1700.11.1 = {
 	monarch = {
 		name = "Филипп V"
@@ -313,6 +436,20 @@ national_focus = MIL
 		adm = 3
 		dip = 1
 		mil = 3
+	}
+}
+
+1701.11.2 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Луиза"
+		dynasty = "ди Савойя"
+		birth_date = 1688.8.17
+		death_date = 1714.2.14
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 2
 	}
 }
 
@@ -368,6 +505,17 @@ national_focus = MIL
 		dip = 1
 		mil = 3
 	}
+	queen = {
+		country_of_origin = PAR
+		name = "Елисавета"
+		dynasty = "Фарнезе"
+		birth_date = 1692.10.25
+		death_date = 1766.7.11
+		female = yes
+		adm = 5
+		dip = 5
+		mil = 3
+	}
 }
 
 1724.8.31 = {
@@ -396,6 +544,17 @@ national_focus = MIL
 		dip = 1
 		mil = 2
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Барбара"
+		dynasty = "де Браганса"
+		birth_date = 1711.12.4
+		death_date = 1758.8.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
 }
 
 1746.7.9 = {
@@ -419,6 +578,17 @@ national_focus = MIL
 		adm = 4
 		dip = 2
 		mil = 3
+	}
+	queen = {
+		country_of_origin = SAX
+		name = "Мария Амалия"
+		dynasty = "фон Веттин"
+		birth_date = 1724.11.24
+		death_date = 1760.9.27
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -453,6 +623,17 @@ national_focus = MIL
 		name = "Карл IV"
 		dynasty = "де Бурбон"
 		adm = 0
+		dip = 2
+		mil = 1
+	}
+	queen = {
+		country_of_origin = PAR
+		name = "Мария Луиза"
+		dynasty = "де Бурбон"
+		birth_date = 1751.12.9
+		death_date = 1819.1.2
+		female = yes
+		adm = 2
 		dip = 2
 		mil = 1
 	}
@@ -494,6 +675,17 @@ national_focus = MIL
 		dip = 4
 		mil = 1
 	}
+	queen = {
+		country_of_origin = FRA
+		name = "Джули"
+		dynasty = "Клэри"
+		birth_date = 1771.12.26
+		death_date = 1845.4.7
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
+	}
 }
 
 1813.12.11 = { government = enlightened_despotism government_rank = 2 }
@@ -516,6 +708,34 @@ national_focus = MIL
 		dynasty = "де Бурбон"
 		adm = 1
 		dip = 2
+		mil = 1
+	}
+}
+
+1816.9.29 = {
+	queen = {
+		country_of_origin = POR
+		name = "Мария Исабель"
+		dynasty = "де Браганса"
+		birth_date = 1797.5.19
+		death_date = 1818.12.26
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1819.10.20 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Мария Жозефа Амалия"
+		dynasty = "фон Веттин"
+		birth_date = 1803.5.18
+		death_date = 1829.5.18
+		female = yes
+		adm = 1
+		dip = 1
 		mil = 1
 	}
 }

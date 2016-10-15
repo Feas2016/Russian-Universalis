@@ -66,6 +66,17 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 		dip = 5
 		mil = 2
 	}
+	queen = {
+		country_of_origin = LOR
+		name = "Изабелла"
+		dynasty = "де Мец"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
 
 1435.2.2 = { add_accepted_culture = sicilian }
@@ -86,6 +97,20 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1442.6.2 = { remove_accepted_culture = sicilian }
 
+1454.9.10 = {
+	queen = {
+		country_of_origin = BRI #Count of Laval
+		name = "Жанна"
+		dynasty = "де Лаваль"
+		birth_date = 1433.11.10
+		death_date = 1498.12.19
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
 1480.7.10 = {
 	monarch = {
 		name = "Карл III"
@@ -93,6 +118,17 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 		birth_date = 1436.1.1
 		adm = 0
 		dip = 2
+		mil = 1
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Жанна"
+		dynasty = "де Водемон"
+		birth_date = 1458.1.1
+		death_date = 1480.12.1
+		female = yes
+		adm = 1
+		dip = 1
 		mil = 1
 	}
 }

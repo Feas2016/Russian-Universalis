@@ -1,7 +1,8 @@
 government = feudal_monarchy
 government_rank = 1
 primary_culture = lithuanian
-add_accepted_culture = polish
+add_accepted_culture = byelorussian
+add_accepted_culture = ruthenian
 religion = catholic
 technology_group = eastern
 historical_friend = POL
@@ -53,6 +54,9 @@ capital = 272 # Vilnius
 		dip = 4
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = incorruptible_personality
 }
 
 1461.8.5 = {

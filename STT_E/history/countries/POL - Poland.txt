@@ -28,7 +28,23 @@ national_focus = ADM
 		dip = 4
 		mil = 1
 	}
-	government = elective_monarchy
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = incorruptible_personality
+}
+
+1454.2.10 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Эльжбета"
+		dynasty = "фон Габсбург"
+		birth_date = 1437.1.1
+		death_date = 1505.8.30
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
 }
 
 1459.12.27 = {
@@ -43,6 +59,8 @@ national_focus = ADM
 		dip = 0
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = silver_tongue_personality
 }
 
 1461.1.1 = { leader = {	name = "Петр Дунин"           	type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1484.1.1 } }
@@ -74,6 +92,23 @@ national_focus = ADM
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_heir_personality = naive_personality
+}
+
+1495.2.15 = {
+	queen = {
+		country_of_origin = MOS
+		name = "Елена"
+		dynasty = "Рюрикович"
+		birth_date = 1476.5.19
+		death_date = 1513.1.20
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
 }
 
 1501.6.18 = {
@@ -85,9 +120,6 @@ national_focus = ADM
 		dip = 0
 		mil = 0
 	}
-}
-
-1501.6.18 = {
 	heir = {
 		name = "Жигмунт"
 		monarch_name = "Жигмунт I Старый"
@@ -99,6 +131,10 @@ national_focus = ADM
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+	add_heir_personality = scholar_personality
+	add_heir_personality = charismatic_negotiator_personality
 }
 
 1506.8.20 = {
@@ -109,6 +145,37 @@ national_focus = ADM
 		adm = 3
 		dip = 3
 		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = charismatic_negotiator_personality
+}
+
+1495.2.15 = {
+	queen = {
+		country_of_origin = TRA
+		name = "Барбара"
+		dynasty = "Заполя"
+		birth_date = 1490.1.1
+		death_date = 1515.10.2
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1518.4.18 = {
+	queen = {
+		country_of_origin = MLO
+		name = "Бона"
+		dynasty = "Сфорца"
+		birth_date = 1494.2.2
+		death_date = 1557.11.19
+		female = yes
+		adm = 1
+		dip = 5
+		mil = 2
 	}
 }
 
@@ -124,9 +191,26 @@ national_focus = ADM
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = infertile_personality
+	add_heir_personality = industrious_personality
 }
 
 1521.1.1 = { leader = {	name = "Ян Тарновский"		type = general	rank = 1	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1561.5.16 } }
+
+1543.5.6 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Эльжбета"
+		dynasty = "фон Габсбург
+		birth_date = 1526.7.9
+		death_date = 1545.6.15
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
 
 1548.4.2 = {
 	monarch = {
@@ -136,6 +220,37 @@ national_focus = ADM
 		adm = 3
 		dip = 3
 		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = industrious_personality
+}
+
+1550.12.7 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Барбара"
+		dynasty = "Радвилов"
+		birth_date = 1520.12.6
+		death_date = 1551.5.8
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1553.7.30 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Катажина"
+		dynasty = "фон Габсбург"
+		birth_date = 1533.9.15
+		death_date = 1572.2.28
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
 	}
 }
 

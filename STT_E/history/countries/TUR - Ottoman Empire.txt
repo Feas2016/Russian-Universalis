@@ -1,4 +1,4 @@
-government = despotic_monarchy
+government = ottoman_government
 primary_culture = turkish
 add_accepted_culture = bulgarian
 add_accepted_culture = greek
@@ -23,6 +23,7 @@ national_focus = MIL
 		manuever = 3
 		siege = 1
 		death_date = 1453.9.9
+		trait = inspirational_leader_general_personality
 	}
 }
 	
@@ -35,6 +36,9 @@ national_focus = MIL
 		dip = 5
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	#add_ruler_personality = lawgiver_personality
 }
 
 1446.1.1 = {
@@ -64,10 +68,11 @@ national_focus = MIL
 		adm = 5
 		dip = 5
 		mil = 6
+		leader = { name = "Мехмед II"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
 	}
-}
-
-1451.2.3 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_heir_personality = lawgiver_personality
 	monarch = {
 		name = "Мехмед II Фатих"
 		dynasty = "Османоглу"
@@ -111,6 +116,8 @@ national_focus = MIL
 		mil = 5
 		leader = { name = "Баязид II"            type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
 }
 
 1481.5.4 = {
@@ -147,6 +154,8 @@ national_focus = MIL
 		mil = 5
 		leader = { name = "Селим I"         type = general	rank = 0	fire = 5	shock = 4	manuever = 5	siege = 1}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
 }
 
 1512.5.2 = {
@@ -181,6 +190,9 @@ national_focus = MIL
 		mil = 6
 		leader = { name = "Сулейман I"     type = general	rank = 0	fire = 5	shock = 3	manuever = 4	siege = 2}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = just_personality
 }
 
 1520.9.23 = {
@@ -260,6 +272,9 @@ national_focus = MIL
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1566.9.8 = {
@@ -285,6 +300,8 @@ national_focus = MIL
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
 }
 
 1574.12.16 = {
@@ -312,6 +329,8 @@ national_focus = MIL
 		dip = 0
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 1595.1.16 = {
@@ -337,6 +356,8 @@ national_focus = MIL
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = architectural_visionary_personality
 }
 
 1603.12.22 = {
@@ -362,6 +383,8 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
 1618.2.25 = {
@@ -373,6 +396,8 @@ national_focus = MIL
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 1618.2.25 = {
@@ -400,6 +425,8 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
 1622.5.20 = {
@@ -426,6 +453,9 @@ national_focus = MIL
 		mil = 4
 		leader = { name = "Мурад IV"              type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = incorruptible_personality
 }
 
 1623.9.11 = {
@@ -451,9 +481,11 @@ national_focus = MIL
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
 }
 
-1640.2.8 = { government = absolute_monarchy }
+#1640.2.8 = { government = absolute_monarchy }
 
 1642.1.2 = {
 	heir = {
@@ -478,6 +510,9 @@ national_focus = MIL
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1648.8.19 = {
@@ -767,6 +802,7 @@ national_focus = MIL
 		adm = 3
 		dip = 1
 		mil = 1
+		leader = {	name = "Махмуд"         	type = general	rank = 0	fire = 2	shock = 1	manuever = 1	siege = 0	}
 	}
 }
 
@@ -783,6 +819,8 @@ national_focus = MIL
 		mil = 1
 	}
 }
+
+1825.12.12 = { leader = {	name = "Решид Мехмед-паша"	type = general	rank = 0	fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1839.1.1 } }
 		
 1839.7.1 = {
 	monarch = {

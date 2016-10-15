@@ -119,6 +119,17 @@ national_focus = DIP
 		mil = 2
 		leader = {	name = "Афонсу V"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Изабелла"
+		dynasty = "де Авис"
+		birth_date = 1432.3.1
+		death_date = 1455.12.2
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
 }
 
 #1441.1.1 = { leader = {	name = "Нуну Триштан"		type = explorer		rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
@@ -151,6 +162,20 @@ national_focus = DIP
 
 1471.1.1 = { leader = { name = "Руй де Секейра"	type = explorer		rank = 5	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
 
+1475.5.30 = {
+	queen = {
+		country_of_origin = CAS
+		name = "Джоанна"
+		dynasty = "де Трастамара"
+		birth_date = 1462.2.21
+		death_date = 1530.2.12
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1480.1.1 = { leader = {	name = "Диогу Кан"             	type = explorer		rank = 10	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
 
 1481.1.1 = { government = despotic_monarchy }
@@ -163,6 +188,17 @@ national_focus = DIP
 		adm = 2
 		dip = 5
 		mil = 4
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Элеонора"
+		dynasty = "де Авис"
+		birth_date = 1458.5.2
+		death_date = 1525.11.17
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -199,6 +235,20 @@ national_focus = DIP
 
 1497.7.8 = { leader = {	name = "Васко да Гама"         	type = explorer		rank = 2	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
 
+1497.9.30 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Изабелла"
+		dynasty = "де Трастамара"
+		birth_date = 1470.10.2
+		death_date = 1498.8.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 #1500.1.1 = { decision = colonial_expansion }
 
 1500.1.1 = { leader = { name = "Руи Лоренцо Раваско"	type = conquistador	rank = 4	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1506.1.1 } }
@@ -208,6 +258,20 @@ national_focus = DIP
 1500.5.12 = { leader = { name = "Гашпар Корте-Реал" 	type = explorer		rank = 2	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
 
 1500.5.12 = { leader = { name = "Мигель Корте-Реал"  	type = explorer		rank = 4	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+
+1500.10.30 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Мария"
+		dynasty = "де Трастамара"
+		birth_date = 1482.6.29
+		death_date = 1517.3.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
 #1501.1.1 = { decision = house_of_trade }
 
@@ -239,6 +303,20 @@ national_focus = DIP
 
 1509.1.1 = { leader = {	name = "Карамуру"		type = conquistador	rank = 1	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1527.1.1 } }
 
+1518.7.16 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Леонор"
+		dynasty = "фон Габсбург"
+		birth_date = 1498.1.15
+		death_date = 1558.2.25
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1521.12.17 = {
 	monarch = {
 		name = "Жуан III"
@@ -246,6 +324,20 @@ national_focus = DIP
 		birth_date = 1502.6.7
 		adm = 1
 		dip = 5
+		mil = 1
+	}
+}
+
+1525.2.10 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Екатерина"
+		dynasty = "фон Габсбург"
+		birth_date = 1507.1.14
+		death_date = 1578.2.12
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }
@@ -280,6 +372,17 @@ national_focus = DIP
 		adm = 2
 		dip = 2
 		mil = 4
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Джоанна"
+		dynasty = "фон Габсбург"
+		birth_date = 1535.6.24
+		death_date = 1573.9.7
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -335,6 +438,17 @@ national_focus = DIP
 		mil = 4
 		leader = {	name = "Антониу I"   	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0 }
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Анна"
+		dynasty = "Барбоза"
+		birth_date = 1530.1.1
+		death_date = 1590.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1585.1.1 = { leader = { name = "Афонсу де Кастро"		type = admiral		rank = 4	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1607.6.3 } }
@@ -352,11 +466,22 @@ national_focus = DIP
 1640.12.1 = {
 	monarch = {
 		name = "Жуан IV"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1604.3.19
 		adm = 3
 		dip = 5
 		mil = 3
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Луиза"
+		dynasty = "де Медина-Сидония"
+		birth_date = 1631.10.31
+		death_date = 1666.2.27
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 4
 	}
 }
 
@@ -364,7 +489,7 @@ national_focus = DIP
 	heir = {
 		name = "Афонсу"
 		monarch_name = "Афонсу VI"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1643.8.21
 		death_date = 1683.9.12
 		claim = 95
@@ -381,7 +506,7 @@ national_focus = DIP
 1656.11.7 = {
 	monarch = {
 		name = "Афонсу VI"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1643.8.21
 		adm = 0
 		dip = 0
@@ -393,7 +518,7 @@ national_focus = DIP
 	heir = {
 		name = "Педру"
 		monarch_name = "Педру II"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1648.4.26
 		death_date = 1706.12.9
 		claim = 95
@@ -405,24 +530,63 @@ national_focus = DIP
 
 1659.1.1 = { leader = {	name = "Ф. ван Шомберг"	type = general		rank = 2	fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1668.1.1 } }
 
+1666.8.2 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Франсиска"
+		dynasty = "ди Савойя"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
 1667.11.24 = {
 	monarch = {
 		name = "Педру II"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1648.4.26
 		adm = 5
 		dip = 3
 		mil = 4
 	}
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Франсиска"
+		dynasty = "ди Савойя"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
 }
 
 1685.12.1 = { leader = { name = "Франсиско да Сильва"	type = admiral		rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1720.2.29 } }
+
+1687.8.11 = {
+	queen = {
+		country_of_origin = PAL
+		name = "Мария Софья"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1666.8.6
+		death_date = 1699.8.4
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
 
 1689.10.22 = {
 	heir = {
 		name = "Жуан"
 		monarch_name = "Жуан V"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1689.10.22
 		death_date = 1750.7.31
 		claim = 95
@@ -439,11 +603,36 @@ national_focus = DIP
 1706.12.11 = {
 	monarch = {
 		name = "Жуан V"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1689.10.22
 		adm = 2
 		dip = 2
 		mil = 3
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1708.10.27 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -451,7 +640,7 @@ national_focus = DIP
 	heir = {
 		name = "Жозе"
 		monarch_name = "Жозе I"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1714.6.6
 		death_date = 1777.2.24
 		claim = 95
@@ -466,11 +655,22 @@ national_focus = DIP
 1750.8.2 = {
 	monarch = {
 		name = "Жозе I"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1714.6.6
 		adm = 6
 		dip = 3
 		mil = 3
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Мария-Виктория"
+		dynasty = "де Бурбон"
+		birth_date = 1718.3.31
+		death_date = 1781.1.17
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
 	}
 }
 
@@ -478,7 +678,7 @@ national_focus = DIP
 	heir = {
 		name = "Мария"
 		monarch_name = "Мария I"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1734.12.17
 		death_date = 1816.3.20
 		claim = 95
@@ -494,12 +694,23 @@ national_focus = DIP
 1777.2.23 = {
 	monarch = {
 		name = "Мария I"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1734.12.17
 		adm = 0
 		dip = 1
 		mil = 0
 		female = yes
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Педро"
+		dynasty = "де Браганса"
+		birth_date = 1717.7.5
+		death_date = 1786.5.25
+		female = no
+		adm = 2
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -507,7 +718,7 @@ national_focus = DIP
 	heir = {
 		name = "Жуан"
 		monarch_name = "Жуан VI"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1767.5.13
 		death_date = 1826.3.10
 		claim = 95
@@ -532,10 +743,112 @@ national_focus = DIP
 1816.3.20 = {
 	monarch = {
 		name = "Жуан VI"
-		dynasty = "де Браганс"
+		dynasty = "де Браганса"
 		birth_date = 1767.5.13
 		adm = 1
 		dip = 1
 		mil = 0
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Карлота"
+		dynasty = "де Бурбон"
+		birth_date = 1775.4.25
+		death_date = 1830.1.7
+		female = yes
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1826.3.10 = {
+	monarch = {
+		name = "Педру IV"
+		dynasty = "де Браганса"
+		birth_date = 1798.10.12
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1826.3.10 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		death_date = 1853.11.15
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1828.3.3 = {
+	monarch = {
+		name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1828.7.11 = {
+	monarch = {
+		name = "Мигел I"
+		dynasty = "де Браганса"
+		birth_date = 1802.10.26
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1828.7.11 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		death_date = 1853.11.15
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1834.5.26 = {
+	monarch = {
+		name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1834.5.26 = {
+	heir = {
+		name = "Педру"
+		monarch_name = "Педру V"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1837.9.17
+		death_date = 1861.11.11
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
 	}
 }

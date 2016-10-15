@@ -28,6 +28,20 @@ capital = 12 #Sjaelland
 	}
 }
 
+1445.9.26 = {
+	queen = {
+		country_of_origin = BRA
+		name = "Доротея"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1430.1.1
+		death_date = 1471.4.11
+		female = yes
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
 1448.9.1 = {
 	monarch = {
 		name = "Кристиан I"
@@ -71,6 +85,17 @@ capital = 12 #Sjaelland
 		dip = 3
 		mil = 4
 		leader = { name = "Ганс"		type = general	rank = 0	fire = 2	shock = 2	manuever = 2	siege = 0 }
+	}
+	queen = {
+		country_of_origin = SAX
+		name = "Кристина"
+		dynasty = "фон Веттин"
+		birth_date = 1461.12.25
+		death_date = 1521.12.8
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 }
 
@@ -119,6 +144,20 @@ capital = 12 #Sjaelland
 	}
 }
 
+1515.8.12 = {	#Arrival in Denmark, married by proxy in 1514.7.11
+	queen = {
+		country_of_origin = HAB
+		name = "Елисавета" #or Isabella
+		dynasty = "фон Габсбург"
+		birth_date = 1501.7.18
+		death_date = 1526.1.19
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
 1519.1.1 = { leader = {	name = "Отто Крупмен"          	type = general	rank = 2	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1569.1.1 } }
 
 1523.1.1 = { leader = {	name = "Йохан Рантцау"         	type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0 	death_date = 1565.12.12 } }
@@ -131,6 +170,17 @@ capital = 12 #Sjaelland
 		adm = 3
 		dip = 3
 		mil = 4
+	}
+	queen = {
+		country_of_origin = POM
+		name = "Софи"
+		dynasty = "Гриф"
+		birth_date = 1498.1.1
+		death_date = 1568.5.13
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -159,6 +209,17 @@ capital = 12 #Sjaelland
 		dip = 4
 		mil = 3
 	}
+	queen = {
+		country_of_origin = LAU
+		name = "Доротея"
+		dynasty = "Асканий"
+		birth_date = 1511.7.9
+		death_date = 1571.10.7
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
 }
 
 1534.7.1 = {
@@ -177,7 +238,10 @@ capital = 12 #Sjaelland
 
 1535.1.1 = { leader = {	name = "Петер Скрам"           	type = admiral	rank = 2	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1581.7.11 } }
 
-1536.1.1 = { religion = protestant }
+1536.1.1 = {
+	religion = protestant
+	add_accepted_culture = norwegian
+}
 
 1540.1.1 = { leader = {	name = "Герлуф Тролле"         	type = admiral	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1565.6.25 } }
 
@@ -193,6 +257,21 @@ capital = 12 #Sjaelland
 }
 
 1562.1.1 = { leader = {	name = "Даниэль Рантцау"        	type = general	rank = 2	fire = 4	shock = 5	manuever = 3	siege = 1	death_date = 1569.11.11 } }
+
+1572.7.20 = {
+	queen = {
+		country_of_origin = MKL
+		name = "Софи"
+		dynasty = "фон Мекленбург"
+		birth_date = 1557.9.4
+		death_date = 1631.10.14
+		female = yes
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
 
 1577.4.12 = {
 	heir = {
@@ -229,6 +308,20 @@ capital = 12 #Sjaelland
 	}
 }
 
+1597.11.27 = {
+	queen = {
+		country_of_origin = BRA
+		name = "Анна Катрин"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1575.6.26
+		death_date = 1612.4.4
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1603.1.1 = { decision = superintendents }
 
 1609.3.18 = {
@@ -248,6 +341,20 @@ capital = 12 #Sjaelland
 1610.1.1 = { leader = {	name = "Йенс Мунк"             	type = explorer		rank = 4	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1628.1.1 } }
 
 1610.1.1 = { leader = {	name = "Герт Рантцау"          	type = general		rank = 2	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1627.1.1 } }
+
+1615.12.31 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Кирстен"
+		dynasty = "Мунк"
+		birth_date = 1598.7.6
+		death_date = 1658.4.19
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
 
 1618.1.1 = { leader = {	name = "Ов Гьедд"            	type = conquistador	rank = 7	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1660.1.1 } }
 
@@ -279,6 +386,17 @@ capital = 12 #Sjaelland
 		adm = 0
 		dip = 0
 		mil = 3
+	}
+	queen = {
+		country_of_origin = LUN
+		name = "Софи Амалия"
+		dynasty = "фон Вельф"
+		birth_date = 1628.3.24
+		death_date = 1685.2.20
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
 	}
 }
 
@@ -327,6 +445,17 @@ capital = 12 #Sjaelland
 		mil = 2
 		leader = { name = "Кристиан V"		type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
+	queen = {
+		country_of_origin = HES
+		name = "Софи Амалия"
+		dynasty = "фон Гессен"
+		birth_date = 1650.4.27
+		death_date = 1714.3.27
+		female = yes
+		adm = 3
+		dip = 1
+		mil = 3
+	}
 }
 
 1670.2.10 = { government = absolute_monarchy }
@@ -364,6 +493,17 @@ capital = 12 #Sjaelland
 		dip = 2
 		mil = 2
 	}
+	queen = {
+		country_of_origin = MKL
+		name = "Луиза"
+		dynasty = "фон Мекленбург"
+		birth_date = 1667.8.28
+		death_date = 1721.3.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
 
 1699.11.30 = {
@@ -388,6 +528,20 @@ capital = 12 #Sjaelland
 
 1721.1.1 = { leader = {	name = "Ганс Эгдес"           	type = explorer	rank = 4	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1758.1.1 } }
 
+1721.4.4 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Анна Софи"
+		dynasty = "Ревентлоу"
+		birth_date = 1693.4.16
+		death_date = 1743.1.7
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1730.10.14 = {
 	monarch = {
 		name = "Кристиан VI"
@@ -395,6 +549,17 @@ capital = 12 #Sjaelland
 		birth_date = 1699.11.30
 		adm = 3
 		dip = 3
+		mil = 1
+	}
+	queen = {
+		country_of_origin = BRA
+		name = "Софи Магдалены"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1700.11.28
+		death_date = 1770.5.27
+		female = yes
+		adm = 2
+		dip = 1
 		mil = 1
 	}
 }
@@ -424,6 +589,17 @@ capital = 12 #Sjaelland
 		dip = 3
 		mil = 3
 	}
+	queen = {
+		country_of_origin = GBR
+		name = "Луиза"
+		dynasty = "фон Ганновер"
+		birth_date = 1724.12.18
+		death_date = 1751.12.19
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
 }
 
 1749.1.29 = {
@@ -440,6 +616,20 @@ capital = 12 #Sjaelland
 	}
 }
 
+1752.7.8 = {
+	queen = {
+		country_of_origin = BRU
+		name = "Юлиана Мария"
+		dynasty = "фон Вельф"
+		birth_date = 1729.9.4
+		death_date = 1796.10.10
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
 1760.1.1 = { leader = {	name = "Ф. К. Каас"             	type = admiral	rank = 4	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1775.1.1 } }
 
 1766.1.16 = {
@@ -450,6 +640,17 @@ capital = 12 #Sjaelland
 		adm = 0
 		dip = 0
 		mil = 0
+	}
+	queen = {
+		country_of_origin = GBR
+		name = "Кэролайн Матильда"
+		dynasty = "фон Ганновер"
+		birth_date = 1751.7.22
+		death_date = 1775.5.10
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 2
 	}
 }
 
@@ -477,6 +678,17 @@ capital = 12 #Sjaelland
 		adm = 0
 		dip = 0
 		mil = 0
+	}
+	queen = {
+		country_of_origin = HES
+		name = "Мари Софи Фредерике
+		dynasty = "фон Гессен"
+		birth_date = 1767.10.28
+		death_date = 1852.3.24
+		female = yes
+		adm = 4
+		dip = 2
+		mil = 2
 	}
 }
 

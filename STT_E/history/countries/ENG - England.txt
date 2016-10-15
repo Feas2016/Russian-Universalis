@@ -1,5 +1,5 @@
 government = english_monarchy
-mercantilism = 0.25
+mercantilism = 25
 technology_group = western
 primary_culture = english
 add_accepted_culture = gascon
@@ -18,11 +18,27 @@ national_focus = DIP
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
 }
 
 #1434.1.1 = { leader = {	name = "Ричард Невилл"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
 
 1435.1.1 = { leader = {	name = "Ричард Плантагенет"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
+
+1445.4.23 = {
+	queen = {
+		country_of_origin = PRO
+		name = "Маргарет"
+		dynasty = "де Анжу"
+		birth_date = 1430.3.23
+		death_date = 1471.4.11
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
 
 1450.1.1 = { leader = {	name = "Джон Моубрэй"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }
 
@@ -73,6 +89,20 @@ national_focus = DIP
 1461.3.4 = { leader = {	name = "Ричард Невилл"	type = general	rank = 0	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1471.4.14 } }
 
 1461.3.4 = { leader = {	name = "Уильям Гастингс"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1483.6.13 } }
+
+1465.5.1 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Елисавета"
+		dynasty = "Woodville"
+		birth_date = 1437.1.1
+		death_date = 1492.6.8
+		female = yes
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
 
 1470.10.30 = {	monarch = {
 		name = "Генрих VI"
@@ -163,6 +193,17 @@ national_focus = DIP
 		mil = 4
 		leader = {	name = "Ричард III"             	type = general	rank = 0	fire = 2	shock = 4	manuever = 4	siege = 1 }
 	}
+	queen = {
+		country_of_origin = ENG
+		name = "Анна"
+		dynasty = "Невилл"
+		birth_date = 1465.6.11
+		death_date = 1485.3.16
+		female = yes
+		adm = 2
+		dip = 4
+		mil = 2
+	}
 }
 
 1483.6.26 = { # Edward of Middleham
@@ -191,6 +232,20 @@ national_focus = DIP
 }
 
 1485.8.23 = { leader = {	name = "Жаспер Тюдор"	type = general	rank = 1	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1495.12.21 } }
+
+1486.1.18 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Елисавета"
+		dynasty = "Йорк"
+		birth_date = 1466.2.11
+		death_date = 1503.2.11
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
 
 1486.9.20 = {
 	heir = {
@@ -236,7 +291,19 @@ national_focus = DIP
 	}
 }
 
-#1509.4.22 = { government = absolute_monarchy }
+1509.6.24 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Екатерина"
+		dynasty = "де Трастамара"
+		birth_date = 1485.12.16
+		death_date = 1536.1.7
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
 
 1512.1.1 = { leader = {	name = "Чарльз Брэндон"               	type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1545.8.24 } }
 
@@ -258,13 +325,40 @@ national_focus = DIP
 }
 #1525.1.1 = { decision = judiciary_act }
 
+1533.5.28 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Анна"
+		dynasty = "Болейн"
+		birth_date = 1501.1.1
+		death_date = 1536.5.17
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
 1534.1.1 = { 
  	# Act of Supremacy
  	religion = protestant
 	decision = suffragan_bishop_act
 }
 
-1536.1.1 = { decision = dissolution_of_the_monasteries }
+1536.1.1 = {
+	decision = dissolution_of_the_monasteries
+	queen = {
+		country_of_origin = ENG
+		name = "Джейн"
+		dynasty = "Сеймур"
+		birth_date = 1508.1.1
+		death_date = 1537.11.12
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
 
 1537.10.12 = {
 	heir = {
@@ -277,6 +371,48 @@ national_focus = DIP
 		adm = 3
 		dip = 3
 		mil = 1
+	}
+}
+
+1540.1.6 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Анна"
+		dynasty = "фон дер Марк"
+		birth_date = 1515.9.22
+		death_date = 1557.7.16
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1540.7.28 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Екатерина"
+		dynasty = "Говард"
+		birth_date = 1523.1.1
+		death_date = 1541.11.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1543.7.12 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Екатерина"
+		dynasty = "Парр"
+		birth_date = 1512.1.1
+		death_date = 1548.9.5
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
 	}
 }
 
@@ -325,6 +461,16 @@ national_focus = DIP
 		dip = 2
 		mil = 2
 		female = yes
+	}
+	queen = { #Prince-Consort
+		country_of_origin = ENG
+		name = "Гилфорд"
+		dynasty = "Дадли"
+		birth_date = 1535.1.1
+		death_date = 1554.2.12
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -421,7 +567,7 @@ national_focus = DIP
 
 1597.1.1 = { leader = {	name = "Генри Гудзон" 		type = explorer		rank = 9	fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1611.6.17 } }
 
-1598.1.1 = { mercantilism = 0.1 } # The Canceling of Royal Monopolies
+1598.1.1 = { mercantilism = 10 } # The Canceling of Royal Monopolies
 
 1600.1.1 = { leader = {	name = "Джон Смит"		type = conquistador	rank = 8	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1617.7.11 } }
 
@@ -432,6 +578,17 @@ national_focus = DIP
 		birth_date = 1566.6.19
 		adm = 2
 		dip = 3
+		mil = 1
+	}
+	queen = {
+		country_of_origin = DAN
+		name = "Анна"
+		dynasty = "фон Ольденбург"
+		birth_date = 1574.12.12
+		death_date = 1619.3.2
+		female = yes
+		adm = 3
+		dip = 4
 		mil = 1
 	}
 }
@@ -483,6 +640,20 @@ national_focus = DIP
 	}
 }
 
+1625.6.13 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Генриетта Мария"
+		dynasty = "де Бурбон"
+		birth_date = 1609.11.25
+		death_date = 1669.9.10
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
 1630.5.29 = {
 	heir = {
 		name = "Карл"
@@ -524,7 +695,7 @@ national_focus = DIP
 1650.1.1 = { leader = {	name = "Джордж Эскью"		type = admiral	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1671.7.19 } }
 
 
-1651.12.30 = { mercantilism = 0.1 decision = establish_british_merchant_navy } # The Act of Navigation
+1651.12.30 = { mercantilism = 25 decision = establish_british_merchant_navy } # The Act of Navigation
 
 1658.9.3 = {
 	monarch = {
@@ -582,6 +753,20 @@ national_focus = DIP
 
 #1660.5.29 = { decision = tenures_abolition_act }
 
+1662.4.23 = {
+	queen = {
+		country_of_origin = POR
+		name = "Екатерина"
+		dynasty = "де Браганса"
+		birth_date = 1638.11.25
+		death_date = 1705.12.31
+		female = yes
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
 1668.1.1 = { leader = {	name = "Пьерр-Эсприт Радиссон"	type = conquistador	rank = 6	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1710.4.1 } }
 
 1672.1.1 = {
@@ -608,6 +793,17 @@ national_focus = DIP
 		dip = 2
 		mil = 3
 		leader = {	name = "Яков II"             	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = MOD
+		name = "Мэри"
+		dynasty = "д'Эсте"
+		birth_date = 1658.10.5
+		death_date = 1718.5.7
+		female = yes
+		adm = 2
+		dip = 4
+		mil = 1
 	}
 }
 
@@ -663,6 +859,17 @@ national_focus = DIP
 		mil = 5
 		leader = {	name = "Виллем III"		type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 1 }
 	}
+	queen = {
+		country_of_origin = MOD
+		name = "Мэри"
+		dynasty = "Стюарт"
+		birth_date = 1662.4.30
+		death_date = 1694.12.28
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 3
+	}
 
 	# The Glorious Revolution
 	#government = constitutional_monarchy
@@ -702,6 +909,16 @@ national_focus = DIP
 		dip = 5
 		mil = 4
 		female = yes
+	}
+	queen = {
+		country_of_origin = DAN
+		name = "Джордж"
+		dynasty = "фон Ольденбург"
+		birth_date = 1653.4.2
+		death_date = 1708.10.28
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 

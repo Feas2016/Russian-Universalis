@@ -40,9 +40,11 @@ capital = 57 # Lüneburg
 		adm = 2
 		mil = 2
 	}
-}
-
-1416.10.16 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = careful_personality
+	add_ruler_personality = craven_personality
+	add_heir_personality = cruel_personality
 	heir = {
 		name = "Âèëüãåëüì"
 		monarch_name = "Âèëüãåëüì I"
@@ -53,6 +55,20 @@ capital = 57 # Lüneburg
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+}
+
+1436.1.1 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Õåëåí"
+		dynasty = "ôîí äåğ Ìàğê"
+		birth_date = 1423.1.1
+		death_date = 1471.1.1
+		female = yes
+		adm = 1 
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -67,6 +83,8 @@ capital = 57 # Lüneburg
 		adm = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
 }
 # remark="Also Wilhelm I of Lüneburg"
 
@@ -457,7 +475,7 @@ capital = 57 # Lüneburg
 	}
 }
 
-1780.3.26 = {
+1806.10.16 = {
 	heir = {
 		name = "Êàğë"
 		monarch_name = "Êàğë II"

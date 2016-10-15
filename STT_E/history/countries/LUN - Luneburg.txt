@@ -41,9 +41,6 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 		adm = 3
 		mil = 2
 	}
-}
-
-1434.6.11 = {
 	heir = {
 		name = "Фридрих"
 		monarch_name = "Фридрих"
@@ -55,6 +52,10 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 		dip = 2
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_heir_personality = craven_personality
 }
 
 1445.6.1 = {
@@ -66,6 +67,8 @@ fixed_capital = 53 # Cannot move capital away from this province & no power cost
 		adm = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 1445.6.1 = {

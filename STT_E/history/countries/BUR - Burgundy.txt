@@ -1,6 +1,7 @@
 government = feudal_monarchy
 government_rank = 1
 primary_culture = burgundian
+add_accepted_culture = wallonian
 religion = catholic
 technology_group = western
 capital = 192	# Dijon
@@ -71,8 +72,26 @@ capital = 192	# Dijon
 		mil = 5
 		leader = { name = "Филипп III"   	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = well_advised_personality
+	add_heir_personality = bold_fighter_personality
 }
 
+1430.1.7 = {
+	queen = {
+		country_of_origin = POR
+		name = "Изабелла"
+		dynasty = "де Авис"
+		birth_date = 1397.2.21
+		death_date = 1471.12.17
+		female = yes
+		adm = 3 
+		dip = 4
+		mil = 1
+	}
+}
 
 1433.11.10 = {
 	heir = {
@@ -100,6 +119,9 @@ capital = 192	# Dijon
 		mil = 4
 		leader = { name = "Карл I Смелый"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_heir_personality = benevolent_personality
 }
 
 1467.6.16 = {
@@ -117,6 +139,20 @@ capital = 192	# Dijon
 	}
 }
 
+1468.7.3 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Маргарет"
+		dynasty = "Йорк"
+		birth_date = 1446.5.3
+		death_date = 1503.11.23
+		female = yes
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
 1477.1.6 = {
 	monarch = {
 		name = "Мария I"
@@ -127,6 +163,8 @@ capital = 192	# Dijon
 		mil = 2
 		female = yes
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
 }
 
 # Burgundy is owned by the Habsburgs at this point, represented as HAB ownership

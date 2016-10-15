@@ -18,6 +18,17 @@ national_focus = MIL
 		mil = 2
 		leader = {	name = "Карл VIII"   type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
+	queen = {
+		country_of_origin = SWE
+		name = "Катарина"
+		dynasty = "Гумсехувуд"
+		birth_date = 1418.1.1
+		death_date = 1451.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
 }
 
 1457.2.25 = { government = noble_republic }
@@ -98,6 +109,17 @@ national_focus = MIL
 		dip = 1
 		mil = 1
 	}
+	queen = {
+		country_of_origin = SWE
+		name = "Элин"
+		dynasty = "Стуре"
+		birth_date = 1442.1.1
+		death_date = 1495.1.1
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
 }
 	
 1467.11.12 = {
@@ -114,12 +136,37 @@ national_focus = MIL
 
 1467.11.12 = { government = feudal_monarchy }
 
+1470.1.1 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Кристина"
+		dynasty = "Абрахамссон"
+		birth_date = 1432.1.1
+		death_date = 1492.1.1
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1470.5.15 = {
 	monarch = {
 		name = "Стен Густавссон"
 		dynasty = "Стюр"
 		adm = 1
 		dip = 1
+		mil = 1
+	}
+	queen = {
+		country_of_origin = SWE
+		name = "Ингеборг"
+		dynasty = "Тотт"
+		birth_date = 1440.1.1
+		death_date = 1507.12.1
+		female = yes
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }	
@@ -134,6 +181,17 @@ national_focus = MIL
 		dip = 1
 		mil = 1
 	}
+	queen = {
+		country_of_origin = SWE
+		name = "Беата"
+		dynasty = "Тотт"
+		birth_date = 1440.1.1
+		death_date = 1506.1.1
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
 }
 
 1501.1.1 = { leader = {	name = "Гемминг Гадх"	type = general	rank = 4	fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1520.12.1 } }
@@ -146,12 +204,34 @@ national_focus = MIL
 		dip = 1
 		mil = 1
 	}
+	queen = {
+		country_of_origin = SWE
+		name = "Ингеборг"
+		dynasty = "Тотт"
+		birth_date = 1440.1.1
+		death_date = 1507.12.1
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
 }
 
 1503.12.14 = {
 	monarch = {
 		name = "Сванте Нилльсон"
 		dynasty = "Стюр"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	queen = {
+		country_of_origin = DAN
+		name = "Метте"
+		dynasty = "Дыре"
+		birth_date = 1465.1.1
+		death_date = 1530.1.1
+		female = yes
 		adm = 1
 		dip = 1
 		mil = 1
@@ -164,6 +244,17 @@ national_focus = MIL
 		adm = 1
 		dip = 1
 		mil = 1
+	}
+	queen = {
+		country_of_origin = SWE
+		name = "Кристина"
+		dynasty = "Гиллунстиерна"
+		birth_date = 1494.1.1
+		death_date = 1559.1.5
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -195,9 +286,27 @@ national_focus = MIL
 		dip = 4
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = cruel_personality
 }
 
 1530.1.1 = { religion = protestant } # Parliament of Versterеs
+
+1531.9.24 = {
+	queen = {
+		country_of_origin = LAU
+		name = "Катарина"
+		dynasty = "Асканьер"
+		birth_date = 1513.9.24
+		death_date = 1535.9.23
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
 
 1533.12.13 = {
 	heir = {
@@ -216,7 +325,35 @@ national_focus = MIL
 
 1534.1.1 = { leader = {	name = "Йохан Т. Тре Розор"       	type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1556.1.1 } }
 
+1536.10.1 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Катарина"
+		dynasty = "Лейонхуфвуд"
+		birth_date = 1516.1.1
+		death_date = 1551.8.26
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
 1551.1.1 = { leader = {	name = "Клас Хорн"             	type = admiral	rank = 1	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1566.9.9 } }
+
+1552.8.22 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Катарина"
+		dynasty = "Стенбок"
+		birth_date = 1535.7.22
+		death_date = 1621.12.13
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
 
 #1555.1.1 = { leader = {	name = "Клас Флеминг"       	type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
 
@@ -231,6 +368,8 @@ national_focus = MIL
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
 }
 
 1560.9.30 = {
@@ -247,6 +386,10 @@ national_focus = MIL
 	}
 }
 
+1561.1.1 = {
+	add_accepted_culture = estonian
+}
+
 1561.1.1 = { leader = {	name = "Бу Грип"               	type = general	rank = 4	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1569.1.1 } }
  
 1563.1.1 = { leader = {	name = "Карл де Морне"	type = general	rank = 3	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1574.9.4 } }
@@ -254,6 +397,20 @@ national_focus = MIL
 1563.1.1 = { leader = {	name = "Хенрик Хорн"           	type = general	rank = 2	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1693.1.1 } }
 
 1565.1.1 = { leader = {	name = "Понтус де ла Гарди"	type = general	rank = 1	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1585.11.5 } }
+
+1568.7.4 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Карин"
+		dynasty = "Менсдоттер"
+		birth_date = 1550.11.6
+		death_date = 1612.9.13
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
 
 1568.9.30 = {
 	monarch = {
@@ -263,6 +420,33 @@ national_focus = MIL
 		adm = 3
 		dip = 3
 		mil = 3
+	}
+	queen = {
+		country_of_origin = POL
+		name = "Катарина"
+		dynasty = "Ягеллон"
+		birth_date = 1526.9.1
+		death_date = 1583.9.13
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+}
+
+1569.7.10 = { #Official Coronation + Tag Switch POL -> PLC
+	queen = {
+		country_of_origin = PLC
+		name = "Катарина"
+		dynasty = "Ягеллон"
+		birth_date = 1526.9.1
+		death_date = 1583.9.13
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -284,6 +468,20 @@ national_focus = MIL
 
 1575.1.1 = { leader = {	name = "Карл Хорн"             	type = general	rank = 2	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1601.5.16 } }
 
+1585.2.21 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Гунилла"
+		dynasty = "Биелке"
+		birth_date = 1568.6.25
+		death_date = 1597.6.25
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
 1592.11.19 = {
 	monarch = {
 		name = "Сигизмунд"
@@ -292,6 +490,17 @@ national_focus = MIL
 		adm = 2
 		dip = 2
 		mil = 3
+	}
+	queen = {
+		country_of_origin = HAB
+		name = "Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1573.8.16
+		death_date = 1598.1.31
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -305,6 +514,17 @@ national_focus = MIL
 		adm = 5
 		dip = 4
 		mil = 0
+	}
+	queen = {
+		country_of_origin = SHL
+		name = "Кристина"
+		dynasty = "фон Голштейн-Готторп"
+		birth_date = 1573.4.12
+		death_date = 1625.12.8
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 1
 	}
 }
 
@@ -325,8 +545,6 @@ national_focus = MIL
 
 1600.1.1 = { leader = {	name = "Герман Врангель"        	type = general	rank = 3	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1643.12.11 } }
 
-1603.1.1 = { decision = superintendents }
-
 #1604.1.1 = { leader = {	name = "Йохан де ла Гарди"	type = general	rank = 1	fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1642.3.10 } } # Removed /SWЦ
 
 1605.1.1 = { leader = {	name = "Эверт Хорн"            	type = general	rank = 3	fire = 4	shock = 3	manuever = 3	siege = 2	death_date = 1615.7.30 } }
@@ -343,9 +561,26 @@ national_focus = MIL
 		mil = 6
 		leader = {	name = "Густав II Адольф"       	type = general	rank = 0	fire = 6	shock = 5	manuever = 6	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = tactical_genius_personality
 }
 
 #1614.1.1 = { decision = judiciary_act } # The Court of Appeals
+
+1620.11.25 = {
+	queen = {
+		country_of_origin = BRA
+		name = "Мария Элеонора"
+		dynasty = "von Hohenzollern"
+		birth_date = 1599.11.11
+		death_date = 1655.3.18
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
 
 #1625.1.1 = { decision = land_recruiting_act }
 
@@ -389,6 +624,9 @@ national_focus = MIL
 		mil = 2
 		female = yes
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tolerant_personality
+	add_ruler_personality = well_connected_personality
 }
 
 1634.1.1 = { leader = {	name = "Арвид Виттенбергский"	type = general		rank = 5	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1657.9.7 } }
@@ -406,12 +644,28 @@ national_focus = MIL
 1654.6.8 = {
 	monarch = {
 		name = "Карл X Густав"
-		dynasty = "фон Виттельсбах"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1622.11.8
 		adm = 3
 		dip = 1
 		mil = 6
 		leader = {	name = "Карл X Густав"         	type = general	rank = 0	fire = 4	shock = 4	manuever = 5	siege = 1 }
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+}
+
+1654.10.24 = {
+	queen = {
+		country_of_origin = SHL
+		name = "Хедвиг Элеонора"
+		dynasty = "фон Голштейн-Готторп"
+		birth_date = 1636.10.23
+		death_date = 1715.11.24
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -442,9 +696,27 @@ national_focus = MIL
 		mil = 2
 		leader = {	name = "Карл XI"               	type = general	rank = 0	fire = 3	shock = 3	manuever = 5	siege = 0 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = righteous_personality
 }
 
 1680.1.1 = { leader = {	name = "Густав Армфельд"              	type = general	rank = 4	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1736.10.24 } }
+
+1680.5.6 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Ульрика Элеонора"
+		dynasty = "фон Ольденбург"
+		birth_date = 1656.9.11
+		death_date = 1693.7.26
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
 
 1682.6.17 = {
 	heir = {
@@ -472,6 +744,9 @@ national_focus = MIL
 		mil = 6
 		leader = {	name = "Карл XII"	type = general	rank = 0	fire = 6	shock = 6	manuever = 5	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = strict_personality
 }
 
 1697.4.7 = {
@@ -513,6 +788,17 @@ national_focus = MIL
 		mil = 2
 		female = yes
 	}
+	queen = {
+		country_of_origin = HES
+		name = "Фредрик"
+		dynasty = "фон Гессен-Кассель"
+		birth_date = 1676.4.18
+		death_date = 1751.3.27
+		female = no
+		adm = 3
+		dip = 2
+		mil = 4
+	}
 }
 
 1720.5.4 = {
@@ -523,6 +809,17 @@ national_focus = MIL
 		adm = 3
 		dip = 2
 		mil = 4
+	}
+	queen = {
+		country_of_origin = SWE
+		name = "Ульрика Элеонора"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1688.1.23
+		death_date = 1741.11.24
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
 	}
 }
 
@@ -540,6 +837,17 @@ national_focus = MIL
 		adm = 4
 		dip = 3
 		mil = 2
+	}
+	queen = {
+		country_of_origin = PRU
+		name = "Ловиса Ульрики"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1720.7.24
+		death_date = 1782.7.16
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
 	}
 }
 
@@ -570,6 +878,17 @@ national_focus = MIL
 		dip = 4
 		mil = 2
 		leader = {	name = "Густав III"	type = general	rank = 0	fire = 1	shock = 2	manuever = 2	siege = 0 }
+	}
+	queen = {
+		country_of_origin = DAN
+		name = "София Магдалена"
+		dynasty = "фон Ольденбург"
+		birth_date = 1746.7.3
+		death_date = 1813.8.21
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -619,6 +938,20 @@ national_focus = MIL
 	}
 }
 
+1797.10.31 = {
+	queen = {
+		country_of_origin = BAD
+		name = "Фредрика"
+		dynasty = "фон Церинген"
+		birth_date = 1781.3.12
+		death_date = 1800.4.3
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1801.1.1 = { leader = {	name = "Сандельс"               	type = general	rank = 8	fire = 3	shock = 4	manuever = 6	siege = 0	death_date = 1827.1.1 } }
 
 1801.1.1 = { leader = {	name = "Тролль"                  	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1817.1.1 } }
@@ -631,6 +964,17 @@ national_focus = MIL
 		adm = 2
 		dip = 5
 		mil = 2
+	}
+	queen = {
+		country_of_origin = SHL
+		name = "Хедвиг Элизабет Шарлотта"
+		dynasty = "фон Гольштейн-Готторп"
+		birth_date = 1759.3.22
+		death_date = 1818.6.20
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 1
 	}
 }
 
@@ -645,6 +989,17 @@ national_focus = MIL
 		dip = 2
 		mil = 4
 		leader = {	name = "Жан-Батист Жюль Бернадот"        	type = general	rank = 0	fire = 4	shock = 4	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = FRA
+		name = "Дэсидэриа"
+		dynasty = "Клэри"
+		birth_date = 1777.11.8
+		death_date = 1860.12.17
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 

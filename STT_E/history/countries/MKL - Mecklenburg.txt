@@ -51,6 +51,9 @@ fixed_capital = 46 # Cannot move capital away from this province & no power cost
 		dip = 4
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = drunkard_personality
 }
 
 1441.1.1 = {
