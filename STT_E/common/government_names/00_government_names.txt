@@ -709,11 +709,11 @@ gov_spqr_republic = {
 	}
 
 	ruler_male = {
-		2 = ARCHON
+		2 = CONSUL
 	}
 
 	ruler_female = {
-		2 = ARCHONSS
+		2 = CONSUL
 	}
 
 	trigger = {
@@ -1250,8 +1250,7 @@ russian_monarchy = {
 		technology_group = eastern
 		OR = {
 			culture_group = east_slavic
-			culture_group = uralic_g
-			tag = UVA
+			tag = PRM
 		}
 	}
 }
@@ -1891,6 +1890,8 @@ muslim_republic = {
 	trigger = {
 		government = republic
 		religion_group = muslim
+		NOT = { government = carthage_republic }
+		NOT = { tag = CAR }
 	}
 }
 
@@ -2391,5 +2392,24 @@ udel_principality = {
 			culture_group = east_slavic
 			tag = PRM
 		}
+	}
+}
+
+carthage_republic = {
+    rank = {
+	    3 = CARTHAGE_REPUBLIC_NAME
+	}
+
+    ruler_male = {
+	    3 = SUFFET
+	}
+	
+	ruler_female = {
+	    3 = SUFFET
+	}
+	
+	trigger = {
+	    government = carthage_republic
+		tag = CAR
 	}
 }

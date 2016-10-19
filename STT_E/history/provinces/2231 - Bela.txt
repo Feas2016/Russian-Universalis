@@ -1,7 +1,7 @@
 #2063 - Bela
 
-owner = BAL
-controller = BAL
+owner = TIM
+controller = TIM
 culture = baluchi
 religion = sunni
 capital = "Bela"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_local_autonomy = 25
-add_core = BAL
+add_core = TIM
 discovered_by = KAS
 discovered_by = indian
 discovered_by = muslim
@@ -21,11 +21,6 @@ discovered_by = nomad_group
 
 1500.1.1 = { discovered_by = POR }
 1595.1.1 = { owner = MUG controller = MUG add_core = MUG }
-1666.1.1 = {
-	owner = BAL
-	controller = BAL
-	remove_core = MUG
-} #Kingdom of Kalat
 
 
 

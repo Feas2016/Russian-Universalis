@@ -9,18 +9,17 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = POL }
-			NOT = { tag = RUS }			
+			NOT = { tag = RUS }
 			OR = {
 				NOT = { exists = RUS }
 				ai = no
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = SLA }
-			NOT = { tag = VNO }
-			NOT = { exists = MOS }
-			primary_culture = russian
+			NOT = { tag = SLA } ### STT
+			NOT = { tag = VNO } ### STT
+			NOT = { exists = MOS } ### STT
+			primary_culture = russian ### STT
 			OR = {
 				ai = no
 				AND = {
@@ -39,9 +38,8 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = RUS }
-			### STT
-			adm_tech = 14
-			technology_group = western
+			adm_tech = 14 ### STT
+			has_institution = manufactories
 			is_subject = no
 			is_nomad = no
 			is_at_war = no
@@ -62,12 +60,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUS
-			### STT
-			change_government = rus_imperial_government
+			change_government = rus_imperial_government ### STT
 			if = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -126,6 +124,19 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 25
 		}
