@@ -9,8 +9,8 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		primary_culture = russian
 		government = rus_government
-		primary_culture = russian		
 		government_rank = 2
 		NOT = { exists = TSR }
 		NOT = { exists = RUS }
@@ -91,8 +91,8 @@ province_event = {
 		
 	trigger = {
 	    OR = {
-			region = west_siberia_region
-			region = east_siberia_region
+		region = west_siberia_region
+		region = east_siberia_region
 		}
 		has_empty_adjacent_province = yes
 		OR = {
@@ -155,9 +155,10 @@ country_event = {
 	option = { 
 		name = "stt_rus.a.5"
 		ai_chance = { factor = 90 }
-		declare_war_with_cb = {
-			who = FROM
-			casus_belli = cb_horde_vs_civ
+		add_casus_belli = {
+			target = FROM
+			type = cb_horde_vs_civ
+			years = 10
 		}
 	}
 	option = { 
