@@ -5,6 +5,30 @@ technology_group = indian
 capital = 2074	# Ladakh
 fixed_capital = 2074 # Cannot move capital away from this province & no power cost to move to it
 
+1430.1.1 = {	#Realm divided between 2 monarchs at this date.
+	monarch = {
+		name = "Гьялпо Такпа Бомлде"
+		dynasty = "Намгял"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Лотус Чхогалдан"
+		monarch_name = "Лотус Чхогалдан"
+		dynasty = "Намгял"
+		birth_date = 1430.1.1
+		death_Date = 1500.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
 1440.1.1 = {
 	government_rank = 1
 }
@@ -394,6 +418,34 @@ fixed_capital = 2074 # Cannot move capital away from this province & no power co
 	monarch = {
 		name = "Цэпал"
 		dynasty = "Намгьял"
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1809.1.1 = {
+	government_rank = 2
+}
+
+1810.1.1 = {
+	heir = {
+		name = "Цепель Тондуп"
+		monarch_name = "Цепель Тондуп"
+		dynasty = "Намгял"
+		birth_date = 1780.1.1
+		death_Date = 1834.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 0
+	}
+}
+
+1820.1.1 = {
+	monarch = {
+		name = "Цепель Тондуп"
+		dynasty = "Намгял"
 		adm = 0
 		dip = 1
 		mil = 0
