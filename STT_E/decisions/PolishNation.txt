@@ -8,9 +8,9 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = PLC }
-			###STT
-			NOT = { exists = JAG }
+			NOT = { exists = PLC }			
+			NOT = { exists = JAG }	###STT
+			NOT = { exists = PLU }	###STT
 			NOT = { tag = POL }
 			OR = {
 				ai = no
@@ -55,6 +55,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {

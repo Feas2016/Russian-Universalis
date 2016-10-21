@@ -8,10 +8,9 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = GBR }
-			### STT
-			NOT = { exists = UEF }
-			NOT = { tag = WEK }
+			NOT = { exists = GBR }			
+			NOT = { exists = UEF }	### STT
+			NOT = { tag = WEK }	### STT
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			OR = {
@@ -51,6 +50,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -107,6 +107,8 @@ country_decisions = {
 								SCO = {	junior_union_with = ENG	}
 								SCO = {	vassal_of = ENG	}
 							}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							SCO = { NOT = { num_of_cities = 11 } } #Keep this number the same as in allow
 						}
 					}
 				}
@@ -120,6 +122,8 @@ country_decisions = {
 								ENG = {	junior_union_with = SCO	}
 								ENG = {	vassal_of = SCO	}
 							}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							ENG = { NOT = { num_of_cities = 28 } } #Keep this number the same as in allow
 						}
 					}
 				}
@@ -138,7 +142,7 @@ country_decisions = {
 						SCO = {	junior_union_with = ENG	}
 						SCO = {	vassal_of = ENG	}
 					}
-					SCO = { NOT = { num_of_cities = 11 } }
+					SCO = { NOT = { num_of_cities = 11 } } #Keep this number the same as in potential
 				}
 				AND = {
 					tag = SCO
@@ -146,7 +150,7 @@ country_decisions = {
 						ENG = {	junior_union_with = SCO	}
 						ENG = {	vassal_of = SCO	}
 					}
-					ENG = { NOT = { num_of_cities = 28 } }
+					ENG = { NOT = { num_of_cities = 28 } } #Keep this number the same as in potential
 				}
 			}
 		}
@@ -205,6 +209,8 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 200
+		do_not_integrate = ENG
+		do_not_integrate = SCO
 	}
 
 }

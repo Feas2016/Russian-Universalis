@@ -15,7 +15,7 @@ country_decisions = {
 		allow = {
 			is_core = 33
 			is_at_war = no
-			technology_group = western
+			has_institution = manufactories	###STT
 		}
 		effect = {
 			set_country_flag = relocated_capital_st_petersburg
@@ -41,12 +41,11 @@ country_decisions = {
 	
 	establish_russian_patriarchate = {
 		potential = {
-			### STT
-			OR = {
+			OR = {	### STT
 				tag = RUS
-				tag = SLA
-				tag = TSR
-			}
+				tag = SLA	### STT
+				tag = TSR	### STT
+			}	### STT
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no

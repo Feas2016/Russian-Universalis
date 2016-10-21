@@ -12,10 +12,13 @@ country_decisions = {
 			NOT = { tag = FRA }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
-			### STT
-			NOT = { exists = FRA }
-			NOT = { exists = WEK }
-			NOT = { exists = UEF }
+			NOT = { exists = FRA }	### STT
+			NOT = { exists = WEK }	### STT
+			NOT = { exists = UEF }	### STT
+			OR = {
+				ai = no
+				NOT = { exists = FRA }
+			}
 			OR = {
 				culture_group = french
 				primary_culture = basque
@@ -49,6 +52,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -76,6 +80,19 @@ country_decisions = {
 			add_prestige = 25
 			FRA = {
 				set_capital = 183
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {

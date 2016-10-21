@@ -126,8 +126,7 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			### STT
-			change_government = byz_government
+			change_government = byz_government	### STT
 			set_government_rank = 3
 			if = {
 				limit = { has_custom_ideas = no }

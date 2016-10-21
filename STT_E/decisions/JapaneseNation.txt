@@ -18,9 +18,8 @@ country_decisions = {
 			is_at_war = no
 			num_of_cities = 15
 		}
-		effect = {
-		### STT
-			change_government = the_empire_of_the_rising_sun
+		effect = {		
+			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
 			hidden_effect = {
@@ -63,8 +62,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			### STT
-			change_government = the_empire_of_the_rising_sun
+			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
@@ -110,8 +108,7 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			### STT
-			change_government = the_empire_of_the_rising_sun
+			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			add_legitimacy = 100
 			add_adm_power = 100
@@ -201,7 +198,7 @@ country_decisions = {
 			}
 			every_subject_country = {
 				limit = {
-					primary_culture = japanese
+					culture_group = japanese_g
 				}
 				remove_country_modifier = "western_trade"
 				add_country_modifier = {
@@ -238,9 +235,11 @@ country_decisions = {
 				has_country_modifier = western_embassy_mission
 			}
 			government = daimyo
+			NOT = { has_institution = global_trade }
 			has_global_flag = japan_has_encountered_the_west
 			any_known_country = {
 				technology_group = western
+				has_institution = global_trade
 			}
 		}
 	

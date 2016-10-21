@@ -39,7 +39,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = RUS }
 			adm_tech = 14 ### STT
-			has_institution = manufactories
+			has_institution = manufactories ###STT
 			is_subject = no
 			is_nomad = no
 			is_at_war = no
@@ -99,26 +99,25 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
-			### STT
-			white_ruthenia_area = {
+			white_ruthenia_area = {		### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = RUS
 			}
-			sloboda_ukraine_area = {
+			sloboda_ukraine_area = {	### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = RUS
 			}
-			east_dniepr_area = {
+			east_dniepr_area = {	### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = RUS
 			}
-			280 = {
+			280 = {		### STT
 				add_permanent_claim = RUS
 			}
 			add_country_modifier = {

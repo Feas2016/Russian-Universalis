@@ -36,12 +36,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			### STT
-			change_government = reich_government
 			if = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -70,7 +69,14 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-### STT delete
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government	###STT
+			}
 			add_prestige = 5
 			change_primary_culture = prussian
 			PRU = {
@@ -146,8 +152,6 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			### STT
-			change_government = reich_government
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -161,14 +165,24 @@ country_decisions = {
 				add_permanent_claim = PRU
 			}
 			add_prestige = 25
-### STT delete
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government	###STT
+			}
 			every_neighbor_country = {
 				limit = { government = monarchy }
 				add_opinion = { who = ROOT modifier = secularized_monastic_order }
 			}
 			set_capital = 41		# Ostpreussen
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_country_modifier = {
@@ -228,12 +242,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			### STT
-			change_government = reich_government
 			if = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -261,6 +274,14 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government ###STT
+			}
 			add_prestige = 25
 			change_primary_culture = prussian
 			capital_scope = {
@@ -277,7 +298,10 @@ country_decisions = {
 				change_culture = prussian
 			}
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_country_modifier = {

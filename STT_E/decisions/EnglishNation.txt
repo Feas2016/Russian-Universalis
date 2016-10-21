@@ -10,8 +10,7 @@ country_decisions = {
 			}
 			NOT = { tag = ENG }
 			NOT = { exists = GBR }
-			### STT
-			NOT = { exists = UEF }
+			NOT = { exists = UEF }	### STT
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			primary_culture = english
@@ -80,7 +79,6 @@ country_decisions = {
 				add_permanent_claim = ENG
 			}
 			wessex_area = {
-
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

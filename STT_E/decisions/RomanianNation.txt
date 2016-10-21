@@ -11,11 +11,10 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { exists = RMN }
-			### STT
-			OR = {
-				primary_culture = wallahian
-				primary_culture = moldavian
-			}
+			OR = {	### STT
+				primary_culture = wallahian	### STT
+				primary_culture = moldavian	### STT
+			}	### STT
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -43,6 +42,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -70,9 +70,8 @@ country_decisions = {
 			RMN = {
 				set_capital = 161
 			}
-			### STT
-			change_primary_culture = romanian
-			country_event = { id = flavor_alb.2 tooltip = "romanian_nation_tooltip" }
+			change_primary_culture = romanian	### STT
+			country_event = { id = flavor_alb.2 tooltip = "romanian_nation_tooltip" }	### STT
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

@@ -14,8 +14,7 @@ country_decisions = {
 			NOT = { tag = ALG }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = CAR }
+			NOT = { tag = CAR }	### STT
 			OR = {
 				primary_culture = moroccan
 				AND = {
@@ -73,6 +72,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -146,8 +146,7 @@ country_decisions = {
 			NOT = { tag = ALG }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = CAR }
+			NOT = { tag = CAR }	### STT
 			OR = {
 				primary_culture = algerian
 				AND = {
@@ -198,6 +197,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -264,8 +264,7 @@ country_decisions = {
 			NOT = { tag = ALG }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = CAR }
+			NOT = { tag = CAR }	### STT
 			OR = {
 				primary_culture = tunisian
 				AND = {
@@ -316,6 +315,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -371,8 +371,7 @@ country_decisions = {
 			NOT = { tag = TRP }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = CAR }
+			NOT = { tag = CAR }	### STT
 			OR = {
 				primary_culture = tunisian
 				primary_culture = berber
@@ -410,6 +409,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {

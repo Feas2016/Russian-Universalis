@@ -18,6 +18,7 @@ country_decisions = {
 				}
 			}
 			culture_group = turko_semitic #Arabic
+			NOT = { primary_culture = turkish }
 		}
 		allow = {
 			is_subject = no
@@ -43,6 +44,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
@@ -82,15 +84,12 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = ARB
-			### STT
-			set_capital = 385
-			swap_free_idea_group = yes		#keep progress
+			set_capital = 385	### STT
+			swap_free_idea_group = yes	 ### STT
 		}
 		ai_will_do = {
-		### STT
-			factor = 1
+			factor = 1 ### STT
 		}
-		### STT
-		ai_importance = 5
+		ai_importance = 5 ### STT
 	}
 }

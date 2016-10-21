@@ -10,8 +10,7 @@ country_decisions = {
 			NOT = {
 				has_country_modifier = unified_islam
 			}
-			### STT
-			NOT = { exists = ISL }
+			NOT = { exists = ISL }	###STT
 		}
 		allow = {
 			religion_group = muslim
@@ -44,9 +43,8 @@ country_decisions = {
 			add_adm_power = -100
 			add_mil_power = -100
 			add_dip_power = -100
-			###STT
-			change_tag = ISL
-			change_government = theocratic_government
+			change_tag = ISL	###STT
+			change_government = theocratic_government	###STT
 		}
 		ai_will_do = {
 			factor = 0

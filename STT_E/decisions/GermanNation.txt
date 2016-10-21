@@ -11,8 +11,8 @@ country_decisions = {
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = WEK }
+			NOT = { tag = ROM }
+			NOT = { tag = WEK }	### STT
 			OR = {
 				ai = no
 				AND = {
@@ -73,8 +73,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GER
-			### STT
-			change_government = reich_government
+			change_government = reich_government	### STT
 			emperor = {
 				add_opinion = {
 					who = root
@@ -86,12 +85,18 @@ country_decisions = {
 				country_event = { id = hre_event.5 }
 			}
 			set_government_rank = 3
-			germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GER
 			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}			
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

@@ -10,11 +10,11 @@ country_decisions = {
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = ITA }
 			NOT = { tag = TUS }
-			### STT
-			NOT = { tag = PQR }
-			NOT = { tag = ROM }
+			NOT = { tag = PQR }	### STT
+			NOT = { tag = CAR }	### STT
 			OR = {
 				ai = no
 				AND = {
@@ -74,6 +74,9 @@ country_decisions = {
 				change_government = feudal_monarchy
 			}
 			add_prestige = 25
+			hidden_effect = {
+				country_event = { id = flavor_tus.2 days = 50 random = 20 }
+			}
 		}
 		ai_will_do = {
 			factor = 1

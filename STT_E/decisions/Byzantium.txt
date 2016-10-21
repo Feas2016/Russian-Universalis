@@ -38,6 +38,8 @@ country_decisions = {
 				owns = 2304 # Canik
 				owns = 2750 # Plovdiv
 				amount = 15
+
+
 			}
 		}
 		allow = {
@@ -95,6 +97,7 @@ country_decisions = {
 			2302 = { change_province_name = Селевкия rename_capital = Кермараг }
 			2304 = { change_province_name = Халдия rename_capital = Амиссос}
 			2750 = { change_province_name = Филиппополь rename_capital = Филиппополь}
+			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
 					NOT = { has_global_flag = constantinople_restored }

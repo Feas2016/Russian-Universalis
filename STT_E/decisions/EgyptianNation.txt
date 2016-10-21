@@ -22,8 +22,7 @@ country_decisions = {
 					num_of_cities = 3
 				}
 			}
-			### STT
-			adm_tech = 18
+			adm_tech = 18	### STT
 		}
 		allow = {
 			adm_tech = 20
@@ -42,6 +41,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {

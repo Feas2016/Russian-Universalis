@@ -14,8 +14,12 @@ country_decisions = {
 			}
 			NOT = { tag = MUG }
 			NOT = { tag = PER }
-			### STT
-			NOT = { tag = SEL }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { tag = SEL }	### STT
 			OR = {
 				culture_group = iranian
 				primary_culture = azerbaijani
@@ -49,6 +53,7 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 					is_elector = no
+					is_emperor = no
 				}
 				every_owned_province = {
 					limit = {
