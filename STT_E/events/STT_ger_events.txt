@@ -1,5 +1,5 @@
 namespace = ger_main
-
+### Прусская дань Польше (все 3 эвента)
 country_event = {
 	id = ger_main.56475
 	title = "ger_main.t.56475"
@@ -9,11 +9,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
+		tag = PRU
 		exists = POL
 	}
 
@@ -42,11 +38,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
+		tag = PRU
 		exists = POL
 	}
 
@@ -72,12 +64,9 @@ country_event = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
-		NOT = { has_country_modifier = ger_hommage }	
+		tag = PRU
+		exists = POL
+		has_country_modifier = ger_hommage	
 	}
 
 	option = {

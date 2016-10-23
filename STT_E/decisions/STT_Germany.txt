@@ -1,13 +1,10 @@
 country_decisions = {
 
-	establish_hommage = {
+	establish_hommage = { ### Прусская дань Польше
 		major = yes
 		potential = {
-			OR = {
-				tag = PRU
-				tag = GER
-			}
-			NOT = { has_country_modifier = ger_hommage }
+			tag = PRU
+			has_country_modifier = ger_hommage
 		}
 		allow = {
 			is_at_war = no
@@ -45,8 +42,8 @@ country_decisions = {
 		potential = {
 			OR = {
 				tag = PRU
-				tag = GER
-			}
+				tag = TEU
+			}			
 			NOT = { has_country_modifier = ger_landtag }
 		}
 		allow = {
