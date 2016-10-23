@@ -406,7 +406,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		76 = { add_base_tax = -2 }
 	}
 	option = {		# Stop the Archbishop's Purge
@@ -539,7 +539,7 @@ country_event = {
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 5
-				leader = "István Bocskay"
+				leader = "Èøòâàí Áî÷êàè"
 				friend = HUN
 			}
 			clr_province_flag = hungarian_revolt
@@ -599,7 +599,7 @@ country_event = {
 	}
 	option = {		# No Change
 		name = "flavor_hab.EVTOPTB3216"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -633,7 +633,7 @@ country_event = {
 	}
 	option = {		# Let the Nobility run these modane things
 		name = "flavor_hab.EVTOPTB3328"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -715,7 +715,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		every_owned_province = {
 			limit = {
 				OR = {
@@ -804,7 +804,7 @@ country_event = {
 				type = nationalist_rebels
 				size = 3
 				friend = HUN
-				leader = "Imre Thököly"
+				leader = "Èìğå Òåêåëè"
 			}
 			
 
@@ -1130,7 +1130,7 @@ country_event = {
 
 	option = {		# A true wonder!
 		name = "flavor_hab.EVTOPTA6"
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 25
 	}
 }
@@ -1541,7 +1541,7 @@ country_event = {
 	option = {# Discourage the Settlements
 		name = flavor_hab.10.b
 		ai_chance = { factor = 20 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1669,7 +1669,7 @@ country_event = {
 	}
 	option = {# Let us be conservative.
 		name = flavor_hab.14.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1732,7 +1732,7 @@ country_event = {
 	
 	option = {# That is great to hear, we must not keep him from his work.
 		name = flavor_hab.16.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

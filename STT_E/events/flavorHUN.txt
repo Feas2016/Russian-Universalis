@@ -19,7 +19,8 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_regency = yes
-		has_leader = "Джон Хуньяди"
+		has_consort_regency = no
+		has_leader = "Янош Хуньяди"
 		is_year = 1445
 		NOT = { is_year = 1470 }
 	}
@@ -32,13 +33,13 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.1.a
 		define_ruler = {
-			name = "(Регент) Джон"
+			name = "(Регент) Янош"
 			dynasty = "Хуньяди"
 			DIP = 5			
 			ADM = 4
 			MIL = 5
 			regency = yes
-			attach_leader = "Джон Хуньяди"
+			attach_leader = "Янош Хуньяди"
 		}
 		define_heir = {
 			name = "Ладислав Постум"
@@ -66,7 +67,7 @@ country_event = {
 	option = {
 		name = flavor_hun.1.b
 		ai_chance = { factor = 50 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		define_heir = {
 			name = "Ладислав Постум"
 			dynasty = "фон Габсбург"
@@ -99,6 +100,7 @@ country_event = {
 		has_heir = no
 		has_regency = no
 		dynasty = "фон Габсбург"
+		# del STT NOT = { num_of_unions = 1 }
 		any_country = {
 			is_subject = no
 			government = monarchy
@@ -149,7 +151,7 @@ country_event = {
 	option = {
 		name = flavor_hun.2.b	
 		ai_chance = { factor = 25 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_country = {
 			limit = {
 				is_subject = no
@@ -196,7 +198,7 @@ country_event = {
 		add_casus_belli = {	
 			target = HUN
 			type = cb_restore_personal_union
-			months = 60
+			months = 120
 		}
 	}
 }
@@ -233,7 +235,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.4.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_owned_province = {
 			add_base_manpower = 1
 		}
@@ -482,7 +484,7 @@ country_event = {
 			spawn_rebels = {
 				type = anti_tax_rebels
 				size = 2
-				leader = "Gyцrgy Dуzsa"
+				leader = "Дьёрдем Дожа"
 			}
 			clr_province_flag = hun_peasant_revolt
 		}
@@ -522,7 +524,7 @@ country_event = {
 		add_prestige = 5
 		define_advisor = {
 			type = statesman
-			name = "Tamбs Bakуcz"
+			name = "Тамаш Бакоц"
 			discount = yes
 			skill = 2
 		}

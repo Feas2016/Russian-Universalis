@@ -84,8 +84,8 @@ country_event = {
 	
 	option = {
 		name = "flavor_pol.EVTOPTA3468" # Enact
-		add_stability = 1
-		add_mercantilism = 0.025
+		add_stability_or_adm_power = yes
+		add_mercantilism = 3
 		add_country_modifier = {
 			name = pol_statute_piotrkow
 			duration = 10950
@@ -221,7 +221,6 @@ country_event = {
 	is_triggered_only = yes	
 	trigger = {
 		government = elective_monarchy
-		primary_culture = polish
 		NOT = { has_country_flag = pol_pact_conventa_flag }
 		OR = {
 			NOT = { ADM = 2 }
@@ -275,7 +274,7 @@ country_event = {
 		name = "flavor_pol.EVTOPTA3485" # Make a strict Army Reform only
 		add_yearly_manpower = 1
 		add_mil_power = 150
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = "flavor_pol.EVTOPTB3485" # Reform Army and undermine the power of the Sejm
@@ -377,6 +376,7 @@ country_event = {
 			}
 			tag = PLC
 		}
+		religion_group = christian
 		exists = TUR
 		NOT = { alliance_with = TUR }
 		NOT = { is_subject_of = TUR }
@@ -604,8 +604,8 @@ country_event = {
 	
 	option = {
 		name = "flavor_pol.EVTOPTA3497" # No, it's too problematic to change the situation
-		add_stability = 1
-		add_mercantilism = 0.025
+		add_stability_or_adm_power = yes
+		add_mercantilism = 3
 		custom_tooltip = "pol_stag_maybe_more"
 
 	}
@@ -647,8 +647,8 @@ country_event = {
 	
 	option = {
 		name = "flavor_pol.EVTOPTA3497" # No, it's too problematic to change the situation
-		add_stability = 1
-		add_mercantilism = 0.025
+		add_stability_or_adm_power = yes
+		add_mercantilism = 3
 		custom_tooltip = "pol_stag_maybe_more"
 		
 	}
@@ -691,8 +691,8 @@ country_event = {
 	
 	option = {
 		name = "flavor_pol.EVTOPTA3497" # No, it's too problematic to change the situation
-		add_stability = 1
-		add_mercantilism = 0.025
+		add_stability_or_adm_power = yes
+		add_mercantilism = 3
 		custom_tooltip = "pol_stag_maybe_more"
 		
 	}
@@ -737,7 +737,7 @@ country_event = {
 	option = {
 		name = "flavor_pol.EVTOPTA3497" # No, it's too problematic to change the situation
 		add_stability = 2
-		add_mercantilism = 0.025
+		add_mercantilism = 3
 		custom_tooltip = "pol_stag_no_more"
 
 	}
@@ -834,7 +834,6 @@ country_event = {
 	picture = LIBERUM_VETO_eventPicture
 	
 	trigger = {
-		primary_culture = polish
 		has_regency = no
 		has_country_flag = pol_pact_conventa_flag
 		NOT = {
@@ -947,7 +946,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_pol.EVTOPTB1" # Abandon the plans
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1030,7 +1029,7 @@ country_event = {
 	}
 	option = {
 		name = "flavor_pol.EVTOPTB3" # Allow it
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = "flavor_pol.EVTOPTC3" # Ban it
@@ -1209,7 +1208,6 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		primary_culture = polish
 		has_country_flag = pol_pact_conventa_flag
 		is_year = 1600
 		government = monarchy
@@ -1233,13 +1231,13 @@ country_event = {
 			factor = 0
 		}
 		add_prestige = -100
-		change_government = noble_republic
+		change_government = oligarchic_republic
 		define_ruler = {
-			name = "(The Sejm)"
+			name = "(Сейм)"
 			adm = 0
 			dip = 0
 			mil = 0
-			age = 18
+			regency = yes
 		}
 	}
 	option = {
@@ -1558,7 +1556,7 @@ country_event = {
 					religion = catholic
 					NOT = { province_id = 260 }
 				}
-			set_province_flag = reading_brest_bible
+				set_province_flag = reading_brest_bible
 			}
 			random_owned_province = {
 				limit = {
@@ -1568,7 +1566,7 @@ country_event = {
 					NOT = { province_id = 260 }
 					NOT = { has_province_flag = reading_brest_bible }
 				}
-			set_province_flag = reading_brest_bible
+				set_province_flag = reading_brest_bible
 			}
 		}
 	}

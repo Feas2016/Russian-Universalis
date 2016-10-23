@@ -2310,14 +2310,15 @@ country_event = {
 
 # Grand Embassy
 country_event = {
-	id = flavor_rus.1010	
+	id = flavor_rus.1010
+	
 	title = "flavor_rus.EVTNAME1010"
 	desc = "flavor_rus.EVTDESC1010"
 	picture = COURT_eventPicture
+
+	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_country_flag = RUS_had_event_1010 }
-		is_year = 1500
 		OR = {
 			AND = {
 				tag = MOS
@@ -2327,7 +2328,6 @@ country_event = {
 			tag = TSR
 			tag = RU2
 		}
-		NOT = { technology_group = western }
 		is_at_war = no
 		is_monarch_leader = no
 		has_regency = no
@@ -2343,15 +2343,15 @@ country_event = {
 			capital_scope = {
 				continent = europe
 			}
-			technology_group = western
-			has_opinion = { who = ROOT value = 50 }
+			tech_difference = 5
+			has_opinion = { who = ROOT value = 10 }
 			NOT = { is_rival = ROOT }
 			NOT = { is_enemy = ROOT }
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 12
 	}
 	
 	immediate = {
@@ -2362,14 +2362,13 @@ country_event = {
 		name = "flavor_rus.EVTOPTA1010"
 		ai_chance = { factor = 100 }
 		set_country_flag = grand_embassy
-		set_variable = { which = grand_embassy value = 1 }
 		add_years_of_income = -0.25
 		random_known_country = {
 			limit = {
 				capital_scope = {
 					continent = europe
 				}
-				technology_group = western
+				tech_difference = 15
 				has_opinion = { who = ROOT value = 50 }
 				NOT = { is_rival = ROOT }
 				NOT = { is_enemy = ROOT }
@@ -2380,7 +2379,7 @@ country_event = {
 	option = {		# Our country holds the knowledge we need
 		name = "flavor_rus.EVTOPTB1010"
 		ai_chance = { factor = 0 }
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -2399,7 +2398,7 @@ country_event = {
 	
 	option = {		# Invite him to stay
 		name = "flavor_rus.EVTOPTA1011"
-		ai_chance = { factor = 70 }
+		ai_chance = { factor = 100 }
 		FROM = {
 			add_opinion = {
 				who = ROOT
@@ -2412,7 +2411,7 @@ country_event = {
 	}
 	option = {		# Politely turn him away
 		name = "flavor_rus.EVTOPTB1011"
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 0 }
 		add_prestige = -15
 		FROM = {
 			add_opinion = {
@@ -2424,7 +2423,7 @@ country_event = {
 	}
 	option = {		# Send him packing!
 		name = "flavor_rus.EVTOPTC1011"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 0 }
 		FROM = {
 			add_casus_belli = {
 				type = cb_insult
@@ -2559,6 +2558,18 @@ country_event = {
 	option = {		# No, we have other countries to visit
 		name = "flavor_rus.EVTOPTD1013"
 		ai_chance = { factor = 25 }
+		trigger = {
+			any_known_country = {
+				NOT = { has_country_flag = grand_embassy }
+				capital_scope = {
+					continent = europe
+				}
+				tech_difference = 5
+				has_opinion = { who = RUS value = 10 }
+				NOT = { is_rival = ROOT }
+				NOT = { is_enemy = ROOT }
+			}
+		}
 		add_years_of_income = -0.1
 		hidden_effect = {
 			change_variable = { which = grand_embassy value = 1 }
@@ -2572,7 +2583,7 @@ country_event = {
 				capital_scope = {
 					continent = europe
 				}
-				technology_group = western
+				tech_difference = 15
 				has_opinion = { who = RUS value = 50 }
 				NOT = { is_rival = ROOT }
 				NOT = { is_enemy = ROOT }
@@ -2601,7 +2612,17 @@ country_event = {
 	
 	option = {		# Very well, we have other countries to visit
 		name = "flavor_rus.EVTOPTA1014"
-		trigger = { NOT = { check_variable = { which = grand_embassy value = 6 } } }
+		trigger = {
+			NOT = { check_variable = { which = grand_embassy value = 6 } }
+			NOT = { has_country_flag = grand_embassy }
+			capital_scope = {
+				continent = europe
+			}
+			tech_difference = 15
+			has_opinion = { who = RUS value = 50 }
+			NOT = { is_rival = ROOT }
+			NOT = { is_enemy = ROOT }
+		}
 		ai_chance = { factor = 75 }
 		hidden_effect = {
 			change_variable = { which = grand_embassy value = 1 }
@@ -2615,7 +2636,7 @@ country_event = {
 				capital_scope = {
 					continent = europe
 				}
-				technology_group = western
+				tech_difference = 15
 				has_opinion = { who = RUS value = 50 }
 				NOT = { is_rival = ROOT }
 				NOT = { is_enemy = ROOT }
@@ -2746,7 +2767,17 @@ country_event = {
 	
 	option = {		# We still have other countries to visit
 		name = "flavor_rus.EVTOPTA1016"
-		trigger = { NOT = { check_variable = { which = grand_embassy value = 6 } } }
+		trigger = {
+			NOT = { check_variable = { which = grand_embassy value = 6 } }
+			NOT = { has_country_flag = grand_embassy }
+			capital_scope = {
+				continent = europe
+			}
+			tech_difference = 15
+			has_opinion = { who = ROOT value = 50 }
+			NOT = { is_rival = ROOT }
+			NOT = { is_enemy = ROOT }
+		}
 		ai_chance = { factor = 75 }
 		hidden_effect = {
 			change_variable = { which = grand_embassy value = 1 }
@@ -2757,8 +2788,8 @@ country_event = {
 				capital_scope = {
 					continent = europe
 				}
-				technology_group = western
-				has_opinion = { who = ROOT value = 50 }
+				tech_difference = 5
+				has_opinion = { who = ROOT value = 10 }
 				NOT = { is_rival = ROOT }
 				NOT = { is_enemy = ROOT }
 			}
