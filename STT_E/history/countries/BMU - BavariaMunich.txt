@@ -224,8 +224,6 @@ capital = 65	# Mьnchen!
 	join_league = catholic
 }
 
-1623.1.1   = { elector = yes }	
-
 1630.1.1   = { leader = { name = "Мерки"	type = general	rank = 0	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
 
 1635.1.1   = { leader = { name = "фон Верт"	type = general	rank = 1	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1652.9.16 } }
@@ -302,11 +300,6 @@ capital = 65	# Mьnchen!
 	}
 }
 	
-
-1706.1.1   = { elector = no }
-
-1714.1.1   = { elector = yes }
-
 1726.2.25  = {
 	monarch = {
 		name = "Карл Альберт I"
@@ -410,7 +403,7 @@ capital = 65	# Mьnchen!
 	}
 }
 
-1806.7.12 = { elector = no government_rank = 1 } # The HRE is formally abolished #government_rank = 2
+1806.7.12 = { government_rank = 1 } # The HRE is formally abolished #government_rank = 2
 
 1813.10.20 = {
 	government_rank = 2

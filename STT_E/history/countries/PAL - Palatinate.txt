@@ -1,6 +1,7 @@
 government = feudal_monarchy
 government_rank = 1
 primary_culture = hessian
+add_accepted_culture = bavarian
 religion = catholic
 elector = yes
 technology_group = western
@@ -66,8 +67,23 @@ capital = 77	# Pfalz
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
 }
 
+1445.10.18 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Маргарет"
+		dynasty = "ди Савойя"
+		birth_date = 1420.8.7
+		death_date = 1479.9.30
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 1436.12.30 = {
 	heir = {
 		name = "‘ридрих"
@@ -114,6 +130,17 @@ capital = 77	# Pfalz
 		birth_date = 1448.7.14
 		adm = 3
 		dip = 0
+		mil = 2
+	}
+	queen = {
+		country_of_origin = BAV
+		name = "Маргарет"
+		dynasty = "фон ¬иттельсбах"
+		birth_date = 1456.11.7
+		death_date = 1501.1.25
+		female = yes
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }
