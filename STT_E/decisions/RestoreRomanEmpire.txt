@@ -1,5 +1,114 @@
 country_decisions = {
 
+	restore_roman_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			owns = 118
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { exists = ROM }
+			OR = {
+				religion_group = christian
+				religion_group = pagan
+			}
+		}
+		allow = {
+			italy_region = {
+				type = all
+				owned_by = ROOT
+			}
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			balkan_region = {
+				type = all
+				owned_by = ROOT
+			}
+			anatolia_region = {
+				type = all
+				owned_by = ROOT
+			}
+			mashriq_region = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 343 # Fez
+			owns = 341 # Tunis
+			owns = 361 # Cairo
+			owns = 236 # London
+			owns = 245 # Yorkshire
+			owns = 96 # Zeeland
+			owns = 134 # Vienna
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			change_tag = ROM
+			custom_tooltip = roman_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_owner_culture = yes
+					}
+					change_culture = roman
+				}
+			}
+			change_primary_culture = roman
+			custom_tooltip = restore_roman_empire_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
+			change_government = rome_government ### STT
+			add_legitimacy = 50 ### STT
+			add_prestige = 50
+			set_capital = 118 # Rome
+			add_core = 118 # Rome
+			#if = {
+			#	limit = {
+			#		is_part_of_hre = yes
+			#		is_elector = no
+			#	}
+			#	every_owned_province = {
+			#		limit = {
+			#			is_part_of_hre = yes
+			#		}
+			#		set_in_empire = no
+			#	}
+			#}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			### STT
+			add_ruler_modifier = {
+				name = "byz_ceasar"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 form_the_latin_empire = {
 	major = yes
 	potential = {
@@ -102,70 +211,6 @@ byz_spqr = {
 		}
 	ai_will_do = { factor = 1 }
 	ai_importance = 40
-}
-
-restore_the_roman_empire = {
-	major = yes
-    potential = {
-		OR = {
-			AND = {
-				NOT = {	adm_tech = 15 }
-				culture_group = byzantine
-			}
-			tag = BYZ
-			}
-		NOT = { exists = ROM }
-		NOT = { tag = PAP }
-		NOT = { tag = HLR }
-		is_subject = no
 	}
-	allow = {
-		OR = {
-			NOT = {	adm_tech = 15 }
-			tag = BYZ
-			}
-		is_at_war = no
-		owns_core_province = 118	# Roma
-		owns_core_province = 151	# Constantinople
-		owns_core_province = 112	# Venezia
-		owns_core_province = 113	# Ferrara
-		owns_core_province = 101	# Liguria
-		owns_core_province = 146	# Athens
-		owns_core_province = 341	# Tunis
-		owns_core_province = 121	# Napoli
-		owns_core_province = 124	# Messina
-	}
-	effect = {
-		set_government_rank = 3
-		add_prestige = 50
-		change_government = rome_government
-		change_tag = ROM
-		country_event = { id = ideagroups.1 } #Swap Ideas
-		if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				emperor = {
-					add_opinion = {
-						who = root
-						modifier = opinion_left_empire
-					}
-				}
-				set_in_empire = no
-				emperor = {
-					country_event = { id = hre_event.5 }
-				}
-			}
-		add_legitimacy = 50
-		add_ruler_modifier = {
-			name = "byz_ceasar"
-			duration = -1
-			}
-		}
-	ai_will_do = { factor = 1 }
-	ai_importance = 40
-}
-
+	
 }
