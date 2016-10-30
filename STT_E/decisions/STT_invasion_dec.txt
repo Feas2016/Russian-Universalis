@@ -46,7 +46,7 @@ country_decisions = {
 		}
     }
  
- major_boost = {
+    major_boost = {
         potential = {
 		    ai = yes
 		    AND = {
@@ -60,7 +60,7 @@ country_decisions = {
 			   tag = RU2
 			   tag = MOS
 			}
-			NOT = { is_year = 1700 }
+			NOT = { is_year = 1675 }
 		}
 		allow = {
 		    OR = {
@@ -75,7 +75,7 @@ country_decisions = {
 				tag = TUR
 			    NOT = { has_idea = civil_servants }
 			    }
-			add_adm_power = 450
+			add_adm_power = 300
 			add_dip_power = 150
 			}
 		    if = { 
@@ -97,9 +97,9 @@ country_decisions = {
 				    }
 				NOT = { has_idea = inquisition }	
 				}
-			add_adm_power = 450
-			add_dip_power = 200
-			add_treasury = 200
+			add_adm_power = 300
+			add_dip_power = 100
+			add_treasury = 300
 			}
 			if = {
 			    limit = {
@@ -113,7 +113,7 @@ country_decisions = {
 				}
 			add_adm_power = 200
 			add_dip_power = 100
-			add_mil_power = 100	
+			add_treasury = 300
 			}
 			if = {
 			    limit = {
@@ -144,4 +144,66 @@ country_decisions = {
 		    factor = 1
 		}
     }
+	
+    establish_baltic_fleet = {
+        potential = {
+		    OR = {
+			    tag = TSR
+				tag = RUS
+				tag = RU2
+			}
+		    government_rank = 3
+			NOT = { has_country_modifier = baltic_fleet }
+		}
+		
+		allow = {
+		    stability = 0
+			treasury = 500
+			owns_core_province = 30
+			owns_core_province = 33
+			owns_core_province = 34
+			owns_core_province = 1842
+		}
+		
+		effect = {
+		    add_treasury = -500
+		    add_country_modifier = {
+				name = "baltic_fleet"
+				duration = -1
+            }
+		}
+    }
+
+    establish_blacksea_fleet = {
+        potential = {
+		    OR = {
+			    tag = TSR
+				tag = RUS
+				tag = RU2
+			}
+		    government_rank = 3
+			NOT = { has_country_modifier = blacksea_fleet }
+		}
+		
+		allow = {
+		    crimea_area = {
+			    owned_by = ROOT 
+				type = all
+		    }
+		    stability = 0
+			treasury = 700
+			owns_core_province = 1974
+			owns_core_province = 2412
+			owns_core_province = 3412
+			owns_core_province = 286
+		}
+		
+		effect = {
+		    add_treasury = -700
+		    add_country_modifier = {
+				name = "blacksea_fleet"
+				duration = -1
+            }
+		}
+    }	
 }

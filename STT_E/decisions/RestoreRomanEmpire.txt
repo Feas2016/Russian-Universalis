@@ -23,33 +23,27 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			france_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+			    value = 30
+			    region = france_region
 			}
-			iberia_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+			    value = 20
+			    region = balkan_region
 			}
-			balkan_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+			    value = 20
+			    region = anatolia_region
 			}
-			anatolia_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+			    value = 20
+			    region = iberia_region
 			}
-			mashriq_region = {
-				type = all
-				owned_by = ROOT
-			}
-			owns = 343 # Fez
 			owns = 341 # Tunis
-			owns = 361 # Cairo
-			owns = 236 # London
-			owns = 245 # Yorkshire
-			owns = 96 # Zeeland
-			owns = 134 # Vienna
+			owns = 358 # Alexandria
+			owns = 379 # Jerusalem
+			owns = 151 # Constantinople
+			owns = 146 # Athens
 			is_at_war = no
 			is_subject = no
 			is_nomad = no
