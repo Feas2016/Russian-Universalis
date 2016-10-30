@@ -3,38 +3,9 @@ country_decisions = {
 	russian_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = { tag = POL }
-			NOT = { tag = RUS }
-			OR = {
-				NOT = { exists = RUS }
-				ai = no
-			}
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			NOT = { tag = SLA } ### STT
-			NOT = { tag = VNO } ### STT
-			NOT = { exists = MOS } ### STT
+			tag = TSR
+			NOT = { exists = RUS }
 			primary_culture = russian ### STT
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 3
-				}
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 		}
 		allow = {
 			NOT = { exists = RUS }
