@@ -18,15 +18,17 @@ province_event = {
 			NOT = { is_colony = yes }
 		}
 		is_year = 1500
-		OR = {
-			tag = SWE
-			tag = SCA
-			AND = {
-				NOT = { exists = SCA }
-				NOT = { exists = SWE }
-				culture_group = scandinavian
-			}
-		}
+		owner = {
+		    OR = {
+			    tag = SWE
+			    tag = SCA
+			    AND = {
+				    NOT = { exists = SCA }
+				    NOT = { exists = SWE }
+				    culture_group = scandinavian
+			    }
+		    }
+		}	
 	}
 	
 	mean_time_to_happen = {
@@ -40,7 +42,7 @@ province_event = {
 			is_year = 1600
 		}
 		modifier = {
-			factor = 1.0
+			factor = 1.2
 			is_year = 1650
 		}
 	}
