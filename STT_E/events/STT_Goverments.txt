@@ -45,10 +45,11 @@ country_event = {
 	
 	trigger = {
 		government = anarhy_government
+		NOT = { stability = 0 }
 	}
 	
 	mean_time_to_happen = {
-		months = 5
+		months = 15
 	}
 	
 	option = {		
