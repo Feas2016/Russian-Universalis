@@ -66,7 +66,14 @@ recover_west_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -152,7 +159,14 @@ recover_central_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -239,7 +253,14 @@ recover_east_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -310,7 +331,14 @@ recover_crimea = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -384,7 +412,14 @@ recover_east_islands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -460,7 +495,14 @@ recover_albania = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -533,7 +575,14 @@ recover_isteria = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -619,7 +668,14 @@ recover_north_italy = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -706,7 +762,14 @@ recover_lombardia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -779,7 +842,14 @@ recover_west_islands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -859,7 +929,14 @@ recover_south_spain = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -943,7 +1020,14 @@ recover_tripoli = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1014,7 +1098,14 @@ recover_tunis = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1090,7 +1181,14 @@ recover_antioch = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1167,7 +1265,14 @@ recover_jerusalem = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1242,7 +1347,14 @@ recover_alexandria = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

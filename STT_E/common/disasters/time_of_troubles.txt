@@ -6,10 +6,10 @@ time_of_troubles = {
 		OR = {
 			AND = {
 				tag = MOS
-				NOT = { exists = TSR }
+				NOT = { exists = TSR } ###STT
 				NOT = { exists = RUS }
 			}
-			AND = {
+			AND = { ###STT
 				tag = TSR
 				NOT = { exists = RUS }
 			}

@@ -21,6 +21,8 @@ estate_cossacks =
 	
 	trigger = {	
 		NOT = { government = merchant_republic }
+		NOT = { government = trading_city }
+		NOT = { government = revolutionary_republic }
 		NOT = { government = native_council }
 		NOT = { government = siberian_native_council }
 		is_nomad = no
@@ -356,7 +358,7 @@ estate_cossacks =
 		effect = {
 			create_conquistador = 40		
 			add_estate_influence_modifier = {
-				estate = estate_nobles
+				estate = estate_cossacks
 				desc = EST_VAL_COSSACK_CONQUISTADOR
 				influence = 15
 				duration = 10950

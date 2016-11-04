@@ -69,7 +69,14 @@ recover_greece = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -143,7 +150,14 @@ recover_the_coast_of_asia_minor = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -208,7 +222,14 @@ recover_the_balkans = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -369,7 +390,14 @@ recover_south_italy = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -431,7 +459,16 @@ recover_rome = {
 		add_claim = 118
 	}
 	abort_effect = {
-		remove_claim = 118
+		118 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = BYZ_recovered_rome
@@ -512,7 +549,14 @@ recover_sicily = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -613,7 +657,14 @@ the_pentarchy = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -678,7 +729,16 @@ destroy_venice = {
 		add_claim = 112
 	}
 	abort_effect = {
-		remove_claim = 112
+		112 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
 	}
 	effect = {
 		set_country_flag = BYZ_destroyed_venice
