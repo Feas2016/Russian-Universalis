@@ -169,7 +169,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { government = dutch_republic }
-		NOT = { government = carthage_republic }
+		NOT = { government = carthage_republic } ###STT
 	}
 	
 	option = {
@@ -343,6 +343,7 @@ country_event = {
 		define_ruler = {
 		}
 		change_statists_vs_orangists = -0.33
+	
 	}
 	option = {
 		name = elections.720.b

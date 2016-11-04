@@ -572,10 +572,6 @@ country_decisions = {
 		potential = {
 			NOT = { government_rank = 3 }
 			OR = {
-				technology_group = western
-				technology_group = eastern
-			}
-			OR = {
 				tag = ROM
 				tag = BYZ
 			}
