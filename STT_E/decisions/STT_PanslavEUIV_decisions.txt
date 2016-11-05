@@ -77,39 +77,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	yugoslavia = {
-		potential = {
-			tag = SER
-			adm_tech = 10
-			NOT = { has_country_flag = yugoslavia }
-		}
-		allow = {
-			is_subject = no
-			is_at_war = no
-			owns_core_province = 141
-			owns_core_province = 148
-			owns_core_province = 138
-			owns_core_province = 140
-			owns_core_province = 131 
-			owns_core_province = 136 
-			owns_core_province = 129 
-			owns_core_province = 1769 
-			owns_core_province = 137
-			owns_core_province = 1827 
-		}
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			culture_group_union = south_slavic
-			set_country_flag = yugoslavia
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	polabia_state = {
 		potential = {
 			OR = {
@@ -170,6 +137,7 @@ country_decisions = {
 			}
 			adm_tech = 10
 			NOT = { exists = ILR }
+			NOT = { exists = YUG }
 		}
 		allow = {
 			is_subject = no
