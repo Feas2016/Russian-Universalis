@@ -1,0 +1,373 @@
+########################################
+# Events for Bohemia
+#
+# written by Johan Andersson
+########################################
+
+namespace = flavor_boh
+normal_or_historical_nations = yes
+
+#Hussites march on Prague
+country_event = {
+	id = flavor_boh.1
+	title = flavor_boh.1.t
+	desc = flavor_boh.1.d
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 266
+		is_year = 1446
+		NOT = { is_year = 1457 }
+		is_at_war = no
+		religion = catholic
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 17
+	}
+	
+	option = {
+		ai_chance = { factor = 90 }
+		name = flavor_boh.1.a
+		add_papal_influence = -100
+		if = {
+			limit = {
+				has_regency = no
+			}
+			tooltip = {
+				kill_ruler = yes
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_heir = yes
+		}
+		define_ruler = {
+			name = "Йиржи"
+			dynasty = "из Подебрад"
+			adm = 5
+			dip = 3
+			mil = 2
+		}
+		add_reform_desire = 0.03
+	}
+	
+	option = {
+		name = flavor_boh.1.b
+		266 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Йиржи из Подебрад"
+			}		
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+#The Heretic King
+country_event = {
+	id = flavor_boh.2
+	title = flavor_boh.2.t
+	desc = flavor_boh.2.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		has_ruler = "Йиржи"
+		is_year = 1455
+		exists = PAP
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		ai_chance = { factor = 90 }
+		name = flavor_boh.2.a
+		add_papal_influence = 5
+		add_stability = -2
+		PAP = {
+			add_opinion = {
+				who = root
+				modifier = boh_papal_reconciled
+			}
+		}
+		add_reform_desire = -0.01
+	}
+	option = {
+		name = flavor_boh.2.b
+		every_known_country = {
+			limit = {
+				religion = catholic
+				num_of_cities = 5
+				#NOT = { has_country_modifier = heretic_country }
+			}
+			add_opinion = {
+				who = root
+				modifier = boh_heretic_hussite
+			}			
+		}
+		country_event = {
+			id = flavor_boh.3			
+			days = 2500
+			random = 100
+			tooltip = flavor_boh.2.3
+		}
+		add_reform_desire = 0.02
+	}
+}
+
+# Confederacy of Zelena Hora
+country_event = {
+	id = flavor_boh.3
+	title = flavor_boh.3.t
+	desc = flavor_boh.3.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_boh.3.a
+		add_prestige = -5
+		random_owned_province = {
+			spawn_rebels = {
+				type = religious_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = religious_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# The Vladislav Hall
+country_event = {
+	id = flavor_boh.4
+	title = flavor_boh.4.t
+	desc = flavor_boh.4.d
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 266
+		is_year = 1493
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	option = {
+		name = flavor_boh.4.a
+		add_prestige = 50
+	}
+}
+
+# Municipal Constitution
+country_event = {
+	id = flavor_boh.5
+	title = flavor_boh.5.t
+	desc = flavor_boh.5.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		is_year = 1500
+		NOT = { ADM = 4 }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = flavor_boh.5.a
+		ai_chance = { factor = 90 }
+		add_ruler_modifier = {
+			name = boh_strong_nobles
+		}
+	}
+	option = {
+		name = flavor_boh.5.b
+		add_stability = -3
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# Brahe & Kepler
+country_event = {
+	id = flavor_boh.6
+	title = flavor_boh.6.t
+	desc = flavor_boh.6.d
+	picture = INVENTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		is_year = 1599
+		owns = 266
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = flavor_boh.6.a
+		trigger = {
+			num_of_ports = 1
+		}
+		ai_chance = { factor = 90 }	
+		add_navy_tradition = 10
+	}
+	option = {
+		name = flavor_boh.6.b
+		add_army_tradition = 10
+	}	
+}
+
+# Hussite Traditions.
+country_event = {
+	id = flavor_boh.7
+	title = flavor_boh.7.t
+	desc = flavor_boh.7.d
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = no		#can happen repeatedly... :)
+
+	trigger = {
+		owns = 266
+		is_religion_enabled = protestant
+		religion = catholic
+		NOT = { religion_years = { protestant = 100 } }
+		NOT = { government = papal_government }
+		any_owned_province = {
+			religion = catholic
+			culture = czech
+		}
+	}	
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.75
+			num_of_religion = {
+				religion = catholic
+				value = 0.5
+			}			
+		}
+	}
+	
+	option = {
+		name = flavor_boh.7.a
+		ai_chance = { factor = 90 }	
+		random_owned_province = {
+			limit = {
+				religion = catholic
+				culture = czech
+			}
+			change_religion = protestant
+		}
+	}
+	
+	option = {
+		name = flavor_boh.7.b
+		ai_chance = { factor = 0 }	
+		trigger = {
+			adm_power = 10
+		}
+		add_adm_power = -50
+	}
+}
+
+# Winter King in Prague
+country_event = {
+	id = flavor_boh.8
+	title = flavor_boh.8.t
+	desc = flavor_boh.8.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOH
+		is_emperor = no
+		religion = catholic
+		any_owned_province = {
+			religion = protestant
+			culture = czech
+		}
+		is_year = 1580
+	}
+	
+	
+	option = {
+		name = flavor_boh.8.a
+		ai_chance = { factor = 90 }	
+		change_religion = protestant
+		if = {
+			limit = {
+				emperor = { religion = catholic }
+			}
+			emperor = {
+				add_casus_belli = {	
+					target = BOH
+					type = cb_religious_conformance
+					months = 1200
+				}
+				add_opinion = {
+					who = root
+					modifier = boh_protestant_king
+				}										
+			}
+		}
+
+		every_neighbor_country = {
+			limit = {
+				is_emperor = no
+				religion = catholic
+				num_of_cities = 5
+			}
+			add_casus_belli = {	
+				target = BOH
+				type = cb_religious_conformance
+				months = 1200
+			}	
+			add_opinion = {
+				who = root
+				modifier = boh_protestant_king
+			}							
+		}
+	}
+}
