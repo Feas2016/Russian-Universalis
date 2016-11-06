@@ -1,0 +1,46 @@
+# These ideas are loaded after all country ideas, but before default idea.
+
+uralic_g_ideas = {
+	start = {
+		enemy_core_creation = 0.25
+		stability_cost_modifier = -0.20
+	}
+	
+	bonus = {
+		prestige = 0.5
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = uralic_g
+			
+		}
+	}
+	free = yes
+	
+	ug_mordvin_forests = {
+		hostile_attrition = 2
+	}
+	ug_not_popularity_language = {
+		global_spy_defence = 0.20
+	}
+	ug_old_gods = {
+		religious_unity = 0.25
+		global_missionary_strength = 0.01
+	}
+	ug_forests_kremlin = {
+		defensiveness = 0.15
+	}
+	ug_old_traditions = {
+		global_unrest = -2		
+	}
+	ug_unique_art = {
+		production_efficiency = 0.1
+	}
+	ug_volga_trade = {
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.25
+	}
+}	
+
+
