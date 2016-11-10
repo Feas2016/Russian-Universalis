@@ -4,6 +4,7 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { exists = CAC }
+			NOT = { tag = ADU }
 			AND = {
 				OR = {
 					tag = GRA

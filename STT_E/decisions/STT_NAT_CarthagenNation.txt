@@ -93,10 +93,11 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
                         }
-                        add_prestige = 25
+            add_prestige = 25
 			change_tag = CAR
 			set_government_rank = 3
 			set_capital = 341
+			change_government = carthage_republic
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {

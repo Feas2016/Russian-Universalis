@@ -7550,6 +7550,7 @@ ROM_ideas = {
 	start = {
 		discipline = 0.05
 		legitimacy = 1
+		republican_tradition = 0.01
 	}
 	
 	bonus = {
@@ -7565,7 +7566,7 @@ ROM_ideas = {
 	free = yes
 	
 	pax_romana = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	legacy_of_rome = {
 		diplomatic_reputation = 2
@@ -7581,7 +7582,7 @@ ROM_ideas = {
 		production_efficiency = 0.2
 	}
 	imperial_bureaucracy = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
 	}
 	imperium_sine_fine = {
 		core_creation = -0.20
