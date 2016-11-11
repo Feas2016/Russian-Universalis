@@ -5,7 +5,7 @@ religion = protestant
 capital = 965	# New York
 
 
-1700.1.1 = { decision = agricultural_cultivation }
+#1700.1.1 = { decision = agricultural_cultivation }
 
 1700.9.6  = {
 	monarch = {
@@ -36,6 +36,7 @@ capital = 965	# New York
 
 1776.1.1 = { capital = 956 } # Philadelphia
 
+1776.7.4 = { set_country_flag = usa_declaration_independence_flag }
 1776.12.1 = { leader = {	name = "Джордж Рождерс Кларк"	type = general	rank = 5	fire = 1	shock = 1	manuever = 4	siege = 0  death_date = 1793.2.2 } }
 
 1777.1.1  = { leader = {	name = "Казимир Пуляский"        type = general	rank = 6	fire = 2	shock = 3	manuever = 4	siege = 0  death_date = 1779.10.11 } }
@@ -57,8 +58,6 @@ capital = 965	# New York
 
 1790.12.6  = { capital = 956 } # Philadelphia
 
-1791.12.15 = { religion = secularism }
-
 1797.3.4  = {
 	monarch = {
 		name = "Джон Адамс"
@@ -68,7 +67,7 @@ capital = 965	# New York
 	}
 }
 
-1799.1.1 = { decision = judiciary_act }
+#1799.1.1 = { decision = judiciary_act }
 
 1800.1.1  = { leader = {	name = "Соломон ван Рензелляр"	type = general	rank = 5	fire = 4	shock = 4	manuever = 4	siege = 0  death_date =  1852.4.23 } }
 
