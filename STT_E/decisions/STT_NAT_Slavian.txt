@@ -36,6 +36,9 @@ country_decisions = {
 			add_prestige = 75
 			add_stability = 2
 			add_legitimacy = 15
+			change_government = constitutional_monarchy
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			# claims
 			bohemia_area = {
 				limit = { NOT = { owned_by = ROOT } }
 				add_permanent_claim = SLA
@@ -59,11 +62,7 @@ country_decisions = {
 			russia_region = {
 				limit = { NOT = { owned_by = ROOT } }
 				add_permanent_claim = SLA
-			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
+			}			
 			every_province = {
 				limit = {
 					culture = croatian
@@ -75,7 +74,7 @@ country_decisions = {
 					primary_culture = croatian
 					}
 				change_primary_culture = stt_sla_croatian
-				}
+				}				
 			every_province = {
 				limit = {
 					culture = serbian
@@ -138,15 +137,27 @@ country_decisions = {
 				}
 			every_province = {
 				limit = {
+					culture = moravian
+					}	
+				change_culture = stt_sla_czech 
+				}
+			every_country = {
+				limit = {
+					primary_culture = moravian
+					}
+				change_primary_culture = stt_sla_czech
+				}				
+			every_province = {
+				limit = {
 					culture = schlesian
 					}							
-					change_culture = stt_sla_schlesian 
+					change_culture = stt_sla_czech 
 				}
 			every_country = {
 				limit = {
 					primary_culture = schlesian
 					}
-				change_primary_culture = stt_sla_schlesian
+				change_primary_culture = stt_sla_czech
 				}
 			every_province = {
 				limit = {
@@ -162,6 +173,30 @@ country_decisions = {
 				}
 			every_province = {
 				limit = {
+					culture = novgorodian
+					}	
+					change_culture = stt_sla_russian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = novgorodian
+					}
+				change_primary_culture = stt_sla_russian
+				}
+			every_province = {
+				limit = {
+					culture = cossaks
+					}	
+					change_culture = stt_sla_russian 
+				}
+			every_country = {
+				limit = {
+					primary_culture = cossaks
+					}
+				change_primary_culture = stt_sla_russian
+				}
+			every_province = {
+				limit = {
 					culture = polish
 					}
 					change_culture = stt_sla_polish 
@@ -169,6 +204,54 @@ country_decisions = {
 			every_country = {
 				limit = {
 					primary_culture = polish 
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = obodrit
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = obodrit
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = kashubian
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = kashubian
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = mazovian
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = mazovian 
+					}
+				change_primary_culture = stt_sla_polish 
+				}
+			every_province = {
+				limit = {
+					culture = sorbian
+					}
+					change_culture = stt_sla_polish 
+				}
+			every_country = {
+				limit = {
+					primary_culture = sorbian 
 					}
 				change_primary_culture = stt_sla_polish 
 				}
@@ -232,10 +315,9 @@ country_decisions = {
 					}
 				change_primary_culture = stt_sla_byelorussian
 				}
-			SLA = {
-				change_primary_culture = stt_sla_russian
-				change_government = constitutional_monarchy
-				country_event = { id = ideagroups.1 } #Swap Ideas
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
 				}
 			}
 		ai_will_do = {
