@@ -96,10 +96,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { exists = VNO }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
 			tag = NOV
-			primary_culture = russian
 			OR = {
 				ai = no
 				AND = {
@@ -165,14 +162,18 @@ country_decisions = {
 	
 	russian_republic = { ### after VNO
 		major = yes
-		potential = {
-		    tag = VNO
+		potential = {		    
 			NOT = { exists = RUS }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			NOT = { tag = TSR }
 			NOT = { tag = MOS }
-			primary_culture = russian
+			OR = {
+				tag = VNO
+				primary_culture = russian
+				primary_culture = novgorodian
+			}
+			government = republic
 			OR = {
 				ai = no
 				AND = {

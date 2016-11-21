@@ -186,10 +186,15 @@ country_decisions = {
 			is_nomad = no
 			owns_core_province = 338 #Algiers
 			owns_core_province = 2461 #Dahra
-			OR = {
-				owns_core_province = 336 #Tlemcen
-				owns_core_province = 339 #Kabylia
-			}
+			###STT
+			owns_core_province = 2460 #Dahra			
+			owns_core_province = 349
+			owns_core_province = 340
+			owns_core_province = 2456
+			owns_core_province = 2457
+			owns_core_province = 350
+			owns_core_province = 336 #Tlemcen
+			owns_core_province = 339 #Kabylia
 		}
 		effect = {
 			change_tag = ALG
