@@ -15,9 +15,9 @@ country_decisions = {
 			}
 			NOT = { exists = BYZ }
 			NOT = { tag = HLR }
-			NOT = { tag = ROM }
 			NOT = { tag = TUR }
 			### STT
+			NOT = { tag = ROM }
 			NOT = { exists = PQR }
 			NOT = { exists = LAE }
 			religion = orthodox
@@ -127,12 +127,6 @@ country_decisions = {
 				}
 			}
 			change_government = byz_government	### STT
-			if = {
-				limit = { has_global_flag = hagia_sophia_now_mosque }
-				clr_global_flag = hagia_sophia_now_mosque
-				show_ambient_object = hagia_sophia
-				hide_ambient_object = hagia_sophia_minarets
-			}
 			set_government_rank = 3
 			if = {
 				limit = { has_custom_ideas = no }

@@ -701,6 +701,70 @@ cb_super_badboy = {
 	war_goal = superiority_punitive
 }
 
+# War on "primitives" (annexable religion)
+cb_primitives = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			cb_on_primitives = yes
+			AND = {
+				is_colonial_nation = yes
+				is_neighbor_of = FROM
+			}
+		}
+		NOT = { has_country_modifier = the_proclamation_of_year_timer } # Used from event
+		FROM = {
+			primitives = yes
+			OR = {
+				is_subject = no
+				AND = {
+					is_subject = yes
+					overlord = { primitives = yes }
+				}
+			}
+		}
+		is_revolution_target = no
+	}
+
+	war_goal = superiority_primitives
+}
+
+cb_overseas = {
+	valid_for_subject = no
+
+	prerequisites = {
+		cb_on_overseas = yes
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = ottoman
+		}
+
+		FROM = {
+			primitives = no
+			is_subject = no
+			capital_scope = {
+				OR = {
+					continent = asia
+					continent = africa
+				}
+			}
+			OR = {
+				technology_group = indian
+				technology_group = sub_saharan
+				technology_group = east_african
+				technology_group = central_african
+				technology_group = chinese
+				technology_group = nomad_group
+			}
+		}
+		is_subject = no
+		is_revolution_target = no
+	}
+
+	war_goal = superiority_overseas
+}
 
 # Claim Throne
 cb_claim_throne = {
@@ -929,7 +993,7 @@ cb_maya_expansion = {
 		is_neighbor_of = FROM
 	}
 
-	war_goal = take_capital_mayan
+	war_goal = take_capital_imperial
 }
 
 # Rival Humiliate CB

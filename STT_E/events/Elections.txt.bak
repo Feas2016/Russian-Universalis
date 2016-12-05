@@ -4,17 +4,8 @@ namespace = elections
 country_event = {
 	id = 700
 	title = "EVTNAME700"
+	desc = "EVTDESC700"
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	desc = {
-		trigger = { NOT = { has_ruler_flag = leader_has_been_pushed_out } }
-		desc = EVTDESC700
-	}
-	
-	desc = {
-		trigger = { has_ruler_flag = leader_has_been_pushed_out }
-		desc = elections.700.d
-	}
 	
 	is_triggered_only = yes
 	
@@ -29,25 +20,24 @@ country_event = {
 		name = "EVTOPTA700"	# Current ruler stays
 		trigger = {
 			has_regency = no
-			NOT = { has_ruler_flag = leader_has_been_pushed_out }
 		}
 		ai_chance = { 
 			factor = 60
 			modifier = {
 				factor = 0
-				NOT = { republican_tradition = 25 }
+				NOT = { republican_tradition = 0.25 }
 			}	
 			modifier = {
 				factor = 0.5
-				NOT = { republican_tradition = 50 }
+				NOT = { republican_tradition = 0.5 }
 			}				
 			modifier = {
 				factor = 0.5
-				NOT = { republican_tradition = 75 }
+				NOT = { republican_tradition = 0.75 }
 			}	
 			modifier = {
 				factor = 2.0
-				republican_tradition = 90
+				republican_tradition = 0.9
 			}		
 		}
 		custom_tooltip = remains_ruler
@@ -58,7 +48,7 @@ country_event = {
 			limit = { 
 				is_tribal = yes
 				government = republic
-				NOT = { republican_tradition = 20 }	
+				NOT = { republican_tradition = 0.20 }	
 			}	
 			change_government = tribal_despotism
 		}
@@ -66,7 +56,7 @@ country_event = {
 			limit = {
 				is_tribal = no 
 				government = republic
-				NOT = { republican_tradition = 20 }				
+				NOT = { republican_tradition = 0.20 }				
 				has_dlc = "Res Publica"
 			}
 			change_government = republican_dictatorship	
@@ -75,7 +65,7 @@ country_event = {
 			limit = {
 				is_tribal = no  
 				government = republic
-				NOT = { republican_tradition = 20 }
+				NOT = { republican_tradition = 0.20 }
 				NOT = { has_dlc = "Res Publica" }
 			}
 			change_government = despotic_monarchy
@@ -85,13 +75,13 @@ country_event = {
 			limit = {
 				NOT = { government = veche_republic }
 			}
-			add_scaled_republican_tradition = -10
+			add_scaled_republican_tradition = -0.10
 		}
 		if = {
 			limit = {
 				government = veche_republic
 			}
-			add_scaled_republican_tradition = -15
+			add_scaled_republican_tradition = -0.15
 		}
 		random_list = {
 			10 = {

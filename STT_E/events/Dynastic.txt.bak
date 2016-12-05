@@ -1183,16 +1183,6 @@ country_event = {
 	option = {
 		name = "EVTOPTA9476"
 		add_treasury = 100
-		if = {
-			limit = {
-				stability = 3
-			}
-			add_stability_or_adm_power = yes
-		}
-		if = {
-			limit = {
-				NOT = { stability = 3 }
-			}
 		random_list = {
 			10 = {
 				add_stability = 1
@@ -1206,7 +1196,6 @@ country_event = {
 			}
 		}
 	}
-}
 }
 
 # The Family Opt 2

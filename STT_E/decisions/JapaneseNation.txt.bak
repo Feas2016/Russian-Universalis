@@ -18,7 +18,7 @@ country_decisions = {
 			is_at_war = no
 			num_of_cities = 15
 		}
-		effect = {
+		effect = {		
 			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			custom_tooltip = unite_japan_subject_tooltip
@@ -181,7 +181,7 @@ country_decisions = {
 			num_of_cities = 15
 			OR = {
 				legitimacy = 75
-				republican_tradition = 75
+				republican_tradition = 0.75
 			}
 			adm_power = 200
 			mil_power = 200

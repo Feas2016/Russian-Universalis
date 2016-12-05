@@ -716,9 +716,15 @@ guiTypes = {
 		}		
 			
 		guiButtonType = {
+			name = "sort_receiver"
+			position = { x = 57 y = 182 }
+			quadTextureSprite = "GFX_sort_shield"
+		}
+
+		guiButtonType = {
 			name = "sort_text"
-			position = { x = 57 y = 184 }
-			quadTextureSprite ="GFX_sort_209"	
+			position = { x = 83 y = 184 }
+			quadTextureSprite ="GFX_sort_186"
 			buttonText = "PEACE_NAME"
 			buttonFont = "vic_18"
 		}
@@ -733,7 +739,7 @@ guiTypes = {
 	
 		guiButtonType = {
 			name = "sort_cost"
-			position = { x = 330 y = 184 }
+			position = { x = 329 y = 184 }
 			quadTextureSprite ="GFX_sort_64"	
 			buttonText = "PEACE_WARSCORE"
 			buttonFont = "vic_18"
@@ -741,13 +747,13 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "sort_dip_cost"
-			position = { x = 393  y = 185 }
+			position = { x = 391  y = 184 }
 			quadTextureSprite ="GFX_sort_diplomatic_cost"	
 		}			
 		
 		guiButtonType = {
 			name = "sort_prestige"
-			position = { x = 423 y = 185 }
+			position = { x = 420 y = 184 }
 			quadTextureSprite ="GFX_sort_prestige_cost"
 		}
 			
@@ -814,13 +820,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "text"
-			position = { x = 22 y = 7 }
+			position = { x = 32 y = 7 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "xxxx"
 			fixedsize = yes
-			maxWidth = 175
+			maxWidth = 125
 			maxHeight = 16
 			truncate = yes
 		}

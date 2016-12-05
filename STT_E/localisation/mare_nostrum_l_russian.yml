@@ -125,6 +125,7 @@
  WARALLY_GRANTED_ACCESS:1 "\nÎíè äàëè ïðàâî ïðîõîäà íàøåìó ñîþçíèêó, äåðæàâå $WARALLY$."
  IMPASSABLE_ACCESS:0 "\nÏóñòîøü.§!"
  COLONY_TO_SUBJECT_ACCESS:1 "\nÝòî êîëîíèÿ îäíîãî èç íàøèõ âàññàëîâ."
+ ACCESS_FORT_AREA:0 "\nÇîíà êîíòðîëÿ íå §Yíåéòðàëüíàÿ§!."
  ASK_FOR_ACCESS:0 "\nÑíà÷àëà ìû äîëæíû ñïðîñèòü ó íèõ."
  IS_EMPEROR_ACCESS:1 "\nÁóäó÷è èìïåðàòîðîì, ìû ïîëó÷àåì ïðàâî ïðîõîäà ñî âñåìè êíÿçüÿìè ÑÐÈ âî âðåìÿ âîéíû."
  NO_PORT_ACCESS:0 "\nÂ ýòîé ïðîâèíöèè íåò ïîðòà."
@@ -420,7 +421,7 @@
  espionage_events.10.b:0 "Âñå ìû øïèîíèì äðóã çà äðóãîì. Çàáûòü è ïðîñòèòü."
  counterintelligence_operation:0 "Êîíòððàçâåäûâàòåëüíàÿ îïåðàöèÿ"
  imprisoned_ambassador:0 "Ïîñîë â òþðüìå"
- ESTATE_OL_ENTRY:0 "Ë:§Y$LOYALTY$%§! Â:§Y$INFL$%§! Ç:§Y$TERR$%§!"
+ ESTATE_OL_ENTRY:0 "Ë:$LOYALTY$ Â:$INFL$ Ò:$TERR$"
  ESTATE_OL_TOOLTIP:0 "§Y$NAME$§!:\nËîÿëüíîñòü: §Y$LOYALTY$%§!\nÂëèÿíèå: §Y$INFL$%§!\nÇåìëè: §Y$TERR$%§!"
  CONDOTTIERI_PARTICIPATION_FAILURE1:0 "Îíè îæèäàëè îò íàñ áîëüøå áèòâ."
  CONDOTTIERI_PARTICIPATION_FAILURE2:0 "Íàøà ðåïóòàöèÿ áûëà óíè÷òîæåíà, ÷òî ñäåëàåò ñëîæíåå"
@@ -442,4 +443,5 @@
  EST_IS_TERRITORIAL_CORE:0 "Ïðîâèíöèÿ ÿâëÿåòñÿ òåððèòîðèàëüíîé"
  religious_turmoil_timelimit_tt:0 "Èìååò §Yðåëèãèîçíûå áåñïîðÿäêè§! íà 25 ëåò"
  custom_idea_slave_raiders:0 "Íàáåãè çà ðàáàìè"
+ 
  

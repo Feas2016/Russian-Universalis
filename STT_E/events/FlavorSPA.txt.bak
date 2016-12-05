@@ -18,51 +18,31 @@ country_event = {
 	
 	
 	trigger = {
-		NOT = { exists = SPA }
-		OR = {
-			AND = {
+		### STT
+		is_year = 1450
+		NOT = { is_year = 1530 }
 		tag = CAS
-				NOT = { war_with = ARA }
-				ARA = {
-					exists = yes
-					ai = yes
-					was_player = no
+		NOT = { exists = SPA }
 		is_subject = no
-					is_neighbor_of = ROOT
-				}
-			}
-			AND = {
-				tag = ARA
-				NOT = { war_with = CAS }
-				ai = no
-				CAS = {
+		num_of_cities = 10
+		ARA = {
 			exists = yes
 			ai = yes
 			was_player = no
 			is_subject = no
 			is_neighbor_of = ROOT
 		}
-			}
-		}
-		is_year = 1450
-		NOT = { is_year = 1530 }
-		is_subject = no
-		num_of_cities = 10
+		NOT = { war_with = ARA }
 		OR = {
 			AND = {
-				CAS = { is_female = yes }
+				is_female = yes
 				ARA = { is_female = no }
 			}
 			AND = {
-				CAS = { is_female = no }
+				is_female = no
 				ARA = { is_female = yes }
 			}
 			ARA = {
-				ai = yes
-				has_regency = yes
-			}
-			CAS = {
-				ai = yes
 				has_regency = yes
 			}
 		}
@@ -72,20 +52,7 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.1
-			OR = {
-				AND = {
-					tag = CAS
-					ARA = {
-						has_regency = no 
-					}
-				}
-				AND = {
-					tag = ARA
-					CAS = { 
-						has_regency = no 
-					}
-				}
-			}
+			ARA = { has_regency = no }
 		}
 	}
 	
@@ -93,8 +60,6 @@ country_event = {
 	option = {		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
 		ai_chance = { factor = 90 }
-		if = {
-			limit = { tag = CAS }
 		create_union = ARA
 		add_opinion = {
 			who = ARA
@@ -105,42 +70,7 @@ country_event = {
 				who = ROOT
 				modifier = spa_iberian_wedding
 			}
-				add_liberty_desire = -50
 		}
-			every_known_country = {
-			limit = {
-					marriage_with = ARA
-				}
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding_negative
-				}
-			}
-		}
-		if = {
-			limit = { tag = ARA }
-			create_union = CAS
-			add_opinion = {
-				who = CAS
-				modifier = spa_iberian_wedding
-			}
-			CAS = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_iberian_wedding
-			}
-				add_liberty_desire = -50
-		}
-		every_known_country = {
-			limit = {
-					marriage_with = CAS
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = spa_iberian_wedding_negative
-			}
-		}
-	}
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -150,37 +80,24 @@ country_event = {
 				size = 3
 			}
 		}
+		every_known_country = {
+			limit = {
+				marriage_with = ARA
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = spa_iberian_wedding_negative
+			}
+		}
 	}
 	option = {		# No let us marry a local talent instead
 		name = "flavor_spa.EVTOPTB3716"
 		ai_chance = { factor = 10 }
-		add_stability_or_adm_power = yes
-		if = {
-			limit = { tag = CAS }
+		add_stability = 1
 		ARA = {
 			add_opinion = {
 				who = ROOT
 				modifier = spa_declined_iberian_wedding
-			}
-		}
-	}
-		if = {
-			limit = { tag = ARA }
-			CAS = {
-				add_opinion = {
-					who = ROOT
-					modifier = spa_declined_iberian_wedding
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_consort = no
-			}
-			define_consort = {
-				ADM = 2
-				MIL = 2
-				DIP = 2
 			}
 		}
 	}
@@ -263,9 +180,8 @@ country_event = {
 	option = {		# Toleration is key to the nation's prosperity
 		name = "flavor_spa.EVTOPTC3150"
 		ai_chance = { factor = 0 }
-		custom_tooltip = flavor_spa.c.3150.tt
 		add_reform_desire = -0.01
-		add_stability_or_adm_power = yes
+		add_stability = 1
 		add_ruler_modifier = {
 			name = religious_tolerance
 		}
@@ -416,6 +332,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		### STT
+		is_year = 1521
+		NOT = { is_year = 1556 }
 		OR = {
 			AND = {
 				tag = CAS
@@ -424,8 +343,6 @@ country_event = {
 			tag = SPA
 		}
 		religion = catholic
-		is_year = 1521
-		NOT = { is_year = 1556 }
 	}
 
 	mean_time_to_happen = {
@@ -520,8 +437,19 @@ country_event = {
 			}
 			tag = SPA
 		}
+		NOT = {
+			iberia_region = {
+				religion_group = muslim
+			}
+			is_claim = 337
+			is_core = 337
+		}
 		337 = {
-			owned_by = ROOT
+			owner = {
+				religion_group = muslim
+				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
 		}
 	}
 
@@ -532,8 +460,9 @@ country_event = {
 
 	option = {		# Expansion in North Africa seems prosperous
 		name = "flavor_spa.EVTOPTA1000"
-		add_prestige = 10
-		add_years_of_income = 0.05
+		337 = {
+			add_claim = ROOT
+		}
 	}
 }
 
@@ -1840,7 +1769,14 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		add_stability_or_adm_power = yes
+		if = {
+			limit = { NOT = { stability = 3 } }
+			add_stability = 1
+		}
+		if = {
+			limit = { stability = 3 }
+			add_prestige = 15
+		}
 	}
 }
 
@@ -1896,7 +1832,10 @@ country_event = {
 					region = iberia_region
 					is_core = GRA
 					OR = {
-						fort_level = 1
+						has_building = fort_15th
+						has_building = fort_16th
+						has_building = fort_17th
+						has_building = fort_18th
 						province_id = 223
 					}
 				}
@@ -2025,7 +1964,7 @@ country_event = {
 		name = "flavor_spa.8.b"
 		if = {
 			limit = { NOT = { stability = 3 } }
-			add_stability_or_adm_power = yes
+			add_stability = 1
 		}
 		if = {
 			limit = { stability = 3 }
@@ -2304,211 +2243,6 @@ country_event = {
 		add_prestige = 25
 		ai_chance = {
 			factor = 0
-		}
-	}
-}
-
-
-#A Habsburg Heir in Spain
-country_event = {
-	id = flavor_spa.13
-	title = flavor_spa.13.t
-	desc = flavor_spa.13.d
-	picture = NEW_HEIR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				tag = CAS
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		has_heir = no
-		marriage_with = HAB
-		HAB = {
-			dynasty = "фон Габсург"
-			OR = {
-				NOT = {
-					has_country_flag = bur_marriage_successor
-				}
-				ai = no
-			}
-		}
-		NOT = {
-			dynasty = HAB
-		}
-		FRA = {
-			is_rival = HAB
-			is_rival = ROOT
-		}
-		NOT = {
-			OR = {
-				is_rival = HAB
-				war_with = HAB
-				HAB = {
-					is_rival = SPA
-				}
-				AND = {
-					HAB = {
-						is_rival = CAS
-					}
-					NOT = {
-						exists = SPA
-					}
-				}
-			}
-		}
-		NOT = {
-			dynasty = FRA
-		}
-		ruler_age = 20
-	}
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	option = {
-		name = flavor_spa.13.a
-		define_heir = {
-			claim = 100
-			dynasty = "фон Габсург"
-		}
-		hidden_effect = {
-			HAB = {
-				country_event = { id = flavor_spa.14 }
-			}
-		}
-	}
-}
-
-#Habsburg in Spain notification for Austria
-country_event = {
-	id = flavor_spa.14
-	title = flavor_spa.14.t
-	desc = flavor_spa.14.d
-	picture = NEW_HEIR_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = flavor_spa.14.a
-		add_prestige = 5
-	}
-}
-
-#The Low Countries Pass to Spain
-country_event = {
-	id = flavor_spa.15
-	title = flavor_spa.15.t
-	desc = flavor_spa.15.d
-	picture = NEW_HEIR_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = SPA
-			AND = {
-				tag = CAS
-				NOT = {
-					exists = SPA
-				}
-			}
-		}
-		has_heir = no
-		marriage_with = HAB
-		HAB = {
-			dynasty = "фон Габсург"
-			ai = yes
-			has_country_flag = bur_marriage_successor
-		}
-		NOT = {
-			dynasty = HAB
-		}
-		FRA = {
-			is_rival = HAB
-			is_rival = ROOT
-		}
-		NOT = {
-			OR = {
-				is_rival = HAB
-				war_with = HAB
-				HAB = {
-					is_rival = SPA
-				}
-				AND = {
-					HAB = {
-						is_rival = CAS
-					}
-					NOT = {
-						exists = SPA
-					}
-				}
-			}
-		}
-		NOT = {
-			dynasty = FRA
-		}
-		ruler_age = 20
-	}
-	
-	mean_time_to_happen = {
-		months = 6
-	}
-	
-	option = {
-		name = flavor_spa.15.a
-		ai_chance = {
-			factor = 85
-		}
-		define_heir = {
-			claim = 100
-			dynasty = "фон Габсург"
-			age = 15
-		}
-		custom_tooltip = flavor_spa.16.tt
-		hidden_effect = {
-			HAB = {
-				country_event = { id = flavor_spa.14 }
-				every_owned_province = {
-					limit = {
-						has_province_flag = bur_succession_province
-						OR = {
-							region = low_countries_region
-							area = picardy_area
-						}
-						NOT = {
-							culture = austrian
-						}
-					}
-					add_core = ROOT
-					remove_core = HAB
-					cede_province = ROOT
-				}
-			}
-		}
-	}
-
-	option = {
-		name = flavor_spa.15.a
-		ai_chance = {
-			factor = 15
-		}
-		define_heir = {
-			claim = 100
-			dynasty = "фон Габсург"
-			age = 15
-		}
-		hidden_effect = {
-			HAB = {
-				country_event = { id = flavor_spa.14 }
-			}
 		}
 	}
 }

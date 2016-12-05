@@ -12,4 +12,4 @@ tags={
  "Events" 
 }
 picture="Europa_Universalis_IV_extended.png"
-supported_version="1.18.*.*"
+supported_version="1.19.*.*"

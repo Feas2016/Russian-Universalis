@@ -53,7 +53,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "name"
-			position = { x = 23 y =-5 }
+			position = { x = 20 y =-8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -65,24 +65,36 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "religion"
-			position = { x = 170 y =-5 }
+			position = { x = 162 y =-8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Province religion"	
-			maxWidth = 112
+			maxWidth = 100
 			maxHeight = 32
 			format = left
 		}
 		
 		instantTextBoxType = {
-			name = "time"
-			position = { x = 317 y =-6 }
+			name = "unity"
+			position = { x = 290 y =-8 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "4.2%"
-			maxWidth = 64
+			maxWidth = 80
+			maxHeight = 32
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "time"
+			position = { x = 372 y =-8 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 4}	
+			text = "4.2%"
+			maxWidth = 60
 			maxHeight = 32
 			format = centre
 		}
@@ -91,14 +103,14 @@ guiTypes = {
 		{
 			name ="missionary_progress"
 			spriteType = "GFX_unitpanel_progressbar"
-			position = { x = 335 y =2 }
+			position = { x = 385 y =2 }
 		}
 		
 		iconType =
 		{
 			name ="province_religion"
 			spriteType = "GFX_icon_religion_small"
-			position = { x = 274 y =-9}
+			position = { x = 258 y =-9}
 			frame = 1
 			scale = 0.9
 		}		
@@ -107,18 +119,18 @@ guiTypes = {
 		{
 			name ="missionary_progress_frame"
 			spriteType = "GFX_provinceView_morale_frame"
-			position = { x = 328 y =-4 }
+			position = { x = 376  y =-2 }
 		}
 		
 		guiButtonType = {
 			name = "send_missionary"
-			position = { x=393 y = -11}
+			position = { x=431 y = -11}
 			quadTextureSprite ="GFX_button_straight_87_32_notext"	
 		}
 		
 		instantTextBoxType = {
 			name = "send_missionary_text"
-			position = { x = 393 y =-3 }
+			position = { x = 431 y =-3 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -290,21 +302,7 @@ guiTypes = {
 				clicksound = close_window
 			}
 		
-#		iconType =
-#		{
-#			name ="modifier_icon2"
-#			spriteType = "GFX_icon_missionary"
-#			position = { x= -250 y = -176 }
-#			Orientation = "CENTER"		
-#		}
-#	
-#		iconType =
-#		{
-#			name ="modifier_icon3"
-#			spriteType = "GFX_heretics_tolerance_icon"
-#			position = { x= -249 y = -149  }
-#			Orientation = "CENTER"		
-#		}
+
 		
 		instantTextBoxType = {
 			name = "window_title"
@@ -1283,6 +1281,28 @@ guiTypes = {
 			format = centre
 		}
 		
+		
+		###Missionary Strength
+		iconType =	{
+			name ="missionary_strength_icon"
+			spriteType = "GFX_icon_missionary"
+			position = { x= 393 y = 332 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			name = "missionary_strength_value"
+			position = { x = 434 y = 340 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "TEMP"
+			maxWidth = 60
+			maxHeight = 30
+			Orientation = "UPPER_LEFT"
+			format = centre
+		}			
+		
+		
 		instantTextBoxType = {
 			name = "conversion"
 			position = { x = 215 y = 339 }
@@ -1298,7 +1318,7 @@ guiTypes = {
 	
 		guiButtonType = {
 			name = "sort_name"
-			position = { x = 39 y =374 }
+			position = { x = 17 y =374 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -1310,32 +1330,46 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "sort_religion"
-			position = { x = 184 y =374 }
+			position = { x = 161 y =372 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonText = "RELIGION"
 			buttonFont = "vic_18"
-			quadTextureSprite ="GFX_sort_144"	
+			quadTextureSprite ="GFX_sort_126"	
 			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
-			name = "sort_time"
-			position = { x = 329 y =374 }
+			name = "sort_unity"
+			position = { x = 286 y =374 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
-			buttonText = "TIME"
+			buttonText = "UNITY"
 			buttonFont = "vic_18"
 			quadTextureSprite ="GFX_sort_84"	
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+		
+		guiButtonType = {
+			name = "sort_time"
+			position = { x = 370 y =374 }
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+#			buttonText = "TIME"
+#			buttonFont = "vic_18"
+			quadTextureSprite ="GFX_sort_time"	
 			Orientation = "UPPER_LEFT"
 		}
 
 # Needs location linking and button linking		
 		guiButtonType = {
 			name = "sort_mission"
-			position = { x = 414 y =374 }
+			position = { x = 430 y =374 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -1349,9 +1383,9 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="province_listbox"
-			position = { x=10 y = 402}
+			position = { x=-12 y = 402}
 			backGround=""
-			size = { x=490 y =150}
+			size = { x=530 y =120}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -1363,7 +1397,7 @@ guiTypes = {
 		{
 			name ="full_unity_bg"
 			spriteType = "GFX_country_religion_view_allreligion_bg"
-			position = { x= 34 y = 366 }
+			position = { x= 12 y = 365 }
 			Orientation = "UPPER_LEFT"
 
 		}		
@@ -1398,7 +1432,7 @@ guiTypes = {
 		{
 			name ="defender_of_the_faith_button"
 			quadTextureSprite = "button_defender_of_faith"
-			position = { x = 402 y = 258 }
+			position = { x = 414 y = 258 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
@@ -1409,12 +1443,13 @@ guiTypes = {
 		{
 			name ="defender_of_the_faith_shield"
 			quadTextureSprite = "GFX_shield_thin"
-			position = { x = 402 y = 258 }
+			position = { x = 401 y = 250 }
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
 			buttonFont = "vic_18"
 			Orientation = "UPPER_LEFT"
+	#		scale = 0.75
 		}
 	
 # Needs txt linking	
@@ -1429,18 +1464,7 @@ guiTypes = {
 				maxHeight = 32
 				format = center
 			}
-# Needs txt linking			
-			#instantTextBoxType = {
-			#	name = "defender_country"
-			#	position = { x = 999260 y = 360 }
-			#	textureFile = ""
-			#	font = "vic_18"
-			#	borderSize = {x = 4 y = 4}	
-			#	text = "Land of Example"	
-			#	maxWidth = 350
-			#	maxHeight = 32
-			#	format = center
-			#}
+
 		
 		
 		windowType = {

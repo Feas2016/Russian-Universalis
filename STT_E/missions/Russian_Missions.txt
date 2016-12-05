@@ -820,7 +820,7 @@ defend_russia_against_the_mongols = {
 	ai_mission = yes
 	
 	target_provinces = {
-		owned_by = BHO ###STT
+		owned_by = GOL ###STT
 		culture = russian
 	}
 	
@@ -835,8 +835,8 @@ defend_russia_against_the_mongols = {
 		}
 		is_subject = no
 		NOT = { has_country_modifier = controlling_the_steppes }
-		NOT = { has_country_flag = defended_against_BHO }
-		BHO = { ###STT
+		NOT = { has_country_flag = defended_against_GOL }
+		GOL = { ###STT
 			is_neighbor_of = ROOT
 			is_subject = no
 			any_owned_province = { culture = russian }
@@ -872,7 +872,7 @@ defend_russia_against_the_mongols = {
 		factor = 5000
 	}
 	effect = {
-		set_country_flag = defended_against_BHO ###STT
+		set_country_flag = defended_against_GOL ###STT
 		add_country_modifier = {
 			name = "controlling_the_steppes"
 			duration = 3650
@@ -888,7 +888,7 @@ cross_the_mongol_border = {
 	category = MIL
 	
 	target_provinces = {
-		owned_by = BHO ###STT
+		owned_by = GOL ###STT
 	}
 	
 	allow = {
@@ -900,7 +900,7 @@ cross_the_mongol_border = {
 			tag = RUS
 			tag = SLV
 		}
-		BHO = { ###STT
+		GOL = { ###STT
 			is_neighbor_of = ROOT
 			is_subject = no
 			NOT = { num_of_cities = ROOT }

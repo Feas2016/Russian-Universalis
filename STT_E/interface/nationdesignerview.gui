@@ -502,9 +502,9 @@ guiTypes = {
 			}
 		}
 
-		### Government Tab
+		### Court Tab
 		windowType = {
-			name = "government_tab"
+			name = "court_tab"
 			position = { x=0 y=30}
 			size = { x=273 y=640 }
 			moveable = 0
@@ -514,8 +514,8 @@ guiTypes = {
 			fullScreen = no
 			
 			iconType = {
-				name ="government_bg"
-				spriteType = "GFX_nation_designer_government_bg"
+				name ="court_bg"
+				spriteType = "GFX_nation_designer_court_bg"
 				position = { x= 11 y = 58 }
 			}
 			
@@ -563,7 +563,7 @@ guiTypes = {
 			editBoxType = {
 				name = "ruler_name"
 				font = "Main_16"
-				position = { x = 134 y = 98 }
+				position = { x = 134 y = 100 }
 				borderSize = {x = 4 y = 4}	
 				text = ""
 				size = { x=220 y=30 }
@@ -577,12 +577,12 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "ruler_gender_male"
-				position = { x = 310 y = 53 }
+				position = { x = 295 y = 53 }
 				spriteType = "GFX_nation_designer_gender_male"
 			}
 			guiButtonType = {
 				name = "ruler_gender_female"
-				position = { x = 350 y = 53 }
+				position = { x = 335 y = 53 }
 				spriteType = "GFX_nation_designer_gender_female"
 			}
 						
@@ -601,14 +601,14 @@ guiTypes = {
 			editBoxType = {
 				name = "ruler_dynasty"
 				font = "Main_16"
-				position = { x = 134 y = 136 }
+				position = { x = 134 y = 138 }
 				borderSize = {x =4 y = 4}	
 				text = ""
 				size = { x=220 y=30 }
 			}
 
 			guiButtonType = {
-				name = "random_dynasty"
+				name = "ruler_random_dynasty"
 				position = { x = 369 y = 133 }
 				spriteType = "GFX_nation_designer_random_button"
 			}
@@ -627,7 +627,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ruler_age"
-				position = { x = 286 y = 213 }
+				position = { x = 286 y = 212 }
 				font = "vic_22"
 				text = "0"
 				maxWidth = 100
@@ -638,20 +638,20 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "ruler_age_down"
-				position = { x = 291 y = 212 }
+				position = { x = 291 y = 211 }
 				quadTextureSprite ="GFX_arrow_left_big"	
 			}
 
 			guiButtonType = {
 				name = "ruler_age_up"
-				position = { x = 356 y = 212  }
+				position = { x = 356 y = 211  }
 				quadTextureSprite ="GFX_arrow_right_big"	
 			}
 		
 			listboxType = 
 			{
 				name ="monarch_ruler_personality_list"
-				position = {x=269 y=230}
+				position = {x=269 y=229}
 				backGround=""
 				size = {x=200 y=512}
 				Orientation = "UPPER_LEFT"
@@ -661,41 +661,6 @@ guiTypes = {
 				borderSize = {x = 10 y = 10}
 			}
 		
-			instantTextBoxType = {
-				name = "gov_rank_label"
-				position = { x = 18 y = 635 } #Сдвинул вправо
-				font = "vic_18"
-				text = "GOV_RANK"
-				maxWidth = 150
-				maxHeight = 20	
-				format = centre
-				fixedsize = yes
-			}		
-
-
-			instantTextBoxType = {
-				name = "gov_rank"
-				position = { x = 193 y = 630 }
-				font = "vic_22"
-				text = "0"
-				maxWidth = 180
-				maxHeight = 20	
-				format = centre
-				fixedsize = yes
-			}
-
-			guiButtonType = {
-				name = "gov_rank_down"
-				position = { x = 165 y = 630 }
-				quadTextureSprite ="GFX_arrow_left_big"	
-			}
-
-			guiButtonType = {
-				name = "gov_rank_up"
-				position = { x = 380 y = 630  }
-				quadTextureSprite ="GFX_arrow_right_big"	
-			}
-
 			### monarch stats
 			instantTextBoxType = {
 				name = "ruler_admin_label"
@@ -802,9 +767,14 @@ guiTypes = {
 			}
 
 			### HEIR
+			guiButtonType = {
+				name = "heir_enable"
+				position = { x = 371 y = 289 }
+				spriteType = "GFX_checkbox_gold_32"
+			}
 			windowType = {
 				name = "heir_window"
-				position = { x=0 y=211}
+				position = { x=0 y=222}
 				size = { x=273 y=150 }
 				moveable = 0
 				dontRender = ""
@@ -862,7 +832,7 @@ guiTypes = {
 				editBoxType = {
 					name = "heir_name"
 					font = "Main_16"
-					position = { x = 134 y = 108 }
+					position = { x = 134 y = 111 }
 					borderSize = {x = 4 y = 4}	
 					text = ""
 					size = { x=220 y=30 }
@@ -876,12 +846,12 @@ guiTypes = {
 				
 				guiButtonType = {
 					name = "heir_gender_male"
-					position = { x = 310 y = 65 }
+					position = { x = 295 y = 65 }
 					spriteType = "GFX_nation_designer_gender_male"
 				}
 				guiButtonType = {
 					name = "heir_gender_female"
-					position = { x = 350 y = 65 }
+					position = { x = 335 y = 65 }
 					spriteType = "GFX_nation_designer_gender_female"
 				}
 				
@@ -899,7 +869,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "heir_age"
-					position = { x = 286 y = 180 }
+					position = { x = 286 y = 179 }
 					font = "vic_22"
 					text = "0"
 					maxWidth = 100
@@ -910,20 +880,20 @@ guiTypes = {
 				
 				guiButtonType = {
 					name = "heir_age_down"
-					position = { x = 291 y = 179 }
+					position = { x = 291 y = 178 }
 					quadTextureSprite ="GFX_arrow_left_big"	
 				}
 
 				guiButtonType = {
 					name = "heir_age_up"
-					position = { x = 356 y = 179  }
+					position = { x = 356 y = 178  }
 					quadTextureSprite ="GFX_arrow_right_big"	
 				}
 				
 				listboxType = 
 				{
 					name ="monarch_heir_personality_list"
-					position = {x=269 y=198}
+					position = {x=269 y=197}
 					backGround=""
 					size = { x=160 y=512}
 					Orientation = "UPPER_LEFT"
@@ -1038,11 +1008,314 @@ guiTypes = {
 					quadTextureSprite ="GFX_arrow_right_big"	
 				}
 			}
+			### CONSORT
+			
+			iconType = {
+				name ="court_bg_overlay"
+				spriteType = "GFX_nation_designer_court_bg_overlay"
+				position = { x= 11 y = 479 }
+			}			
+			
+			guiButtonType = {
+				name = "consort_enable"
+				position = { x = 371 y = 478 }
+				spriteType = "GFX_checkbox_gold_32"
+			}
+
+			windowType = {
+				name = "consort_window"
+				position = { x=0 y=411}
+				size = { x=273 y=150 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+	
+				instantTextBoxType = {
+					name = "consort_label"
+					position = { x = 40 y = 73 }
+					font = "vic_22"
+					text = "CONSORT"
+					maxWidth = 90 #Увеличил длину
+					maxHeight = 24	
+					format = left
+					fixedsize = yes
+				}
+
+				iconType = {
+					name ="consort_edit_box"
+					spriteType = "GFX_nation_designer_edit_box"
+					position = { x= 129 y = 101 }
+				}
+
+				instantTextBoxType = {
+					name = "consort_pts_label"
+					position = { x = 100 y = 75 }
+					textureFile = ""
+					font = "vic_18"
+					text = "0"	
+					maxWidth = 35
+					maxHeight = 20	
+					format = right
+					fixedsize = yes
+				}
+
+				iconType = {
+					name = "consort_cost_icon"
+					position = { x = 140 y = 74 }
+					spriteType = "GFX_nation_designer_points_icon"
+				}
+				
+				###
+				instantTextBoxType = {
+					name = "consort_name_label"
+					position = { x = 40 y = 116 }
+					font = "vic_18"
+					text = "NAME"
+					maxWidth = 95
+					maxHeight = 20	
+					format = left
+					fixedsize = yes
+				}
+
+				editBoxType = {
+					name = "consort_name"
+					font = "Main_16"
+					position = { x = 134 y = 111 }
+					borderSize = {x = 4 y = 4}	
+					text = ""
+					size = { x=220 y=30 }
+				}
+
+				guiButtonType = {
+					name = "random_consort_name"
+					position = { x = 369 y = 105 }
+					spriteType = "GFX_nation_designer_random_button"
+				}
+				
+				guiButtonType = {
+					name = "consort_gender_male"
+					position = { x = 295 y = 65 }
+					spriteType = "GFX_nation_designer_gender_male"
+				}
+				guiButtonType = {
+					name = "consort_gender_female"
+					position = { x = 335 y = 65 }
+					spriteType = "GFX_nation_designer_gender_female"
+				}
+				
+				### age
+				instantTextBoxType = {
+					name = "consort_age_label"
+					position = { x = 286 y = 154 }
+					font = "vic_18"
+					text = "ND_AGE"
+					maxWidth = 100
+					maxHeight = 20	
+					format = centre
+					fixedsize = yes
+				}		
+
+				instantTextBoxType = {
+					name = "consort_age"
+					position = { x = 286 y = 179 }
+					font = "vic_22"
+					text = "0"
+					maxWidth = 100
+					maxHeight = 20	
+					format = centre
+					fixedsize = yes
+				}
+				
+				guiButtonType = {
+					name = "consort_age_down"
+					position = { x = 291 y = 178 }
+					quadTextureSprite ="GFX_arrow_left_big"	
+				}
+
+				guiButtonType = {
+					name = "consort_age_up"
+					position = { x = 356 y = 178  }
+					quadTextureSprite ="GFX_arrow_right_big"	
+				}
+
+				listboxType = 
+				{
+					name ="monarch_consort_personality_list"
+					position = {x=269 y=197}
+					backGround=""
+					size = { x=160 y=512}
+					Orientation = "UPPER_LEFT"
+					horizontal = 1
+					spacing = 2
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 10 y = 10}
+				}
+				
+				### monarch stats
+				instantTextBoxType = {
+					name = "consort_admin_label"
+					position = { x = 39 y = 157 }
+					font = "vic_18"
+					text = "MON_ADM_LONG"
+					maxWidth = 120
+					maxHeight = 20	
+					format = left
+					fixedsize = yes
+				}
+
+				instantTextBoxType = {
+					name = "consort_admin"
+					position = { x = 146 y = 158 }
+					font = "vic_18"
+					text = "0"	
+					maxWidth = 50
+					maxHeight = 20	
+					format = centre
+					fixedsize = yes
+				}		
+
+				guiButtonType = {
+					name = "consort_admin_down"
+					position = { x = 196 y = 154 }
+					quadTextureSprite ="GFX_arrow_left_big"	
+				}
+
+				guiButtonType = {
+					name = "consort_admin_up"
+					position = { x = 226 y = 154  }
+					quadTextureSprite ="GFX_arrow_right_big"	
+				}
+				
+				###
+				instantTextBoxType = {
+					name = "consort_diplo_label"
+					position = { x = 39 y = 187 }
+					font = "vic_18"
+					text = "MON_DIP_LONG"
+					maxWidth = 120
+					maxHeight = 20	
+					format = left
+					fixedsize = yes
+				}
+
+				instantTextBoxType = {
+					name = "consort_diplo"
+					position = { x = 146 y = 188 }
+					font = "vic_18"
+					text = "0"	
+					maxWidth = 50
+					maxHeight = 20	
+					format = centre
+					fixedsize = yes
+				}		
+
+				guiButtonType = {
+					name = "consort_diplo_down"
+					position = { x = 196 y = 184 }
+					quadTextureSprite ="GFX_arrow_left_big"	
+				}
+
+				guiButtonType = {
+					name = "consort_diplo_up"
+					position = { x = 226 y = 184  }
+					quadTextureSprite ="GFX_arrow_right_big"	
+				}
+				
+				###
+				instantTextBoxType = {
+					name = "consort_mil_label"
+					position = { x = 39 y = 217 }
+					font = "vic_18"
+					text = "MON_MIL_LONG"
+					maxWidth = 120
+					maxHeight = 20	
+					format = left
+					fixedsize = yes
+				}
+
+				instantTextBoxType = {
+					name = "consort_mil"
+					position = { x = 146 y = 218 }
+					font = "vic_18"
+					text = "0"	
+					maxWidth = 50
+					maxHeight = 20	
+					format = centre
+					fixedsize = yes
+				}		
+
+				guiButtonType = {
+					name = "consort_mil_down"
+					position = { x = 196 y = 214 }
+					quadTextureSprite ="GFX_arrow_left_big"	
+				}
+
+				guiButtonType = {
+					name = "consort_mil_up"
+					position = { x = 226 y = 214  }
+					quadTextureSprite ="GFX_arrow_right_big"	
+				}
+			}
+		}
+
+		### GOVERNMENT TAB
+		windowType = {
+			name = "government_tab"
+			position = { x=0 y=30}
+			size = { x=273 y=640 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+
+			iconType = {
+				name ="government_bg"
+				spriteType = "GFX_nation_designer_government_bg"
+				position = { x= 11 y = 58 }
+			}
+
+			instantTextBoxType = {
+				name = "gov_rank_label"
+				position = { x = 11 y = 235 }
+				font = "vic_18"
+				text = "GOV_RANK"
+				maxWidth = 150
+				maxHeight = 20	
+				format = centre
+				fixedsize = yes
+			}		
+
+
+			instantTextBoxType = {
+				name = "gov_rank"
+				position = { x = 193 y = 230 }
+				font = "vic_22"
+				text = "0"
+				maxWidth = 180
+				maxHeight = 20	
+				format = centre
+				fixedsize = yes
+			}
+
+			guiButtonType = {
+				name = "gov_rank_down"
+				position = { x = 165 y = 230 }
+				quadTextureSprite ="GFX_arrow_left_big"	
+			}
+
+			guiButtonType = {
+				name = "gov_rank_up"
+				position = { x = 380 y = 230  }
+				quadTextureSprite ="GFX_arrow_right_big"	
+			}
 			
 			### BUTTONS + LISTBOXES BOTTOM
 			instantTextBoxType = {
 				name = "culture_label"
-				position = { x = 35 y = 483 }
+				position = { x = 35 y = 83 }
 				font = "vic_18"
 				text = "CULTURE"	
 				maxWidth = 130
@@ -1053,20 +1326,20 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "culture_listbox_button"
-				position = { x = 155 y = 475 }
+				position = { x = 155 y = 75 }
 				buttonFont = "vic_18"
 				quadTextureSprite ="GFX_button_straight_255_32"
 			}
 			iconType = {
 				name ="culture_listbox_button_glow"
 				spriteType = "GFX_button_straight_255_32_glow"
-				position = { x= 153 y = 473 }
+				position = { x= 153 y = 73 }
 			}
 			
 			###
 			instantTextBoxType = {
 				name = "religion_label"
-				position = { x = 35 y = 513 }
+				position = { x = 35 y = 113 }
 				font = "vic_18"
 				text = "RELIGION"	
 				maxWidth = 130
@@ -1077,25 +1350,25 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "religion_listbox_button"
-				position = { x = 155 y = 505 }
+				position = { x = 155 y = 105 }
 				buttonFont = "vic_18"
 				quadTextureSprite ="GFX_button_straight_255_32"	
 			}
 			iconType = {
 				name ="religion_listbox_button_glow"
 				spriteType = "GFX_button_straight_255_32_glow"
-				position = { x= 153 y = 503 }
+				position = { x= 153 y = 103 }
 			}
 			iconType = {
 				name ="incompatible_religion_warning_icon"
 				spriteType = "GFX_incompatible_warning_icon"
-				position = { x= 390 y = 509 }
+				position = { x= 390 y = 109 }
 			}				
 			
 			###
 			instantTextBoxType = {
 				name = "gfx_culture_label"
-				position = { x = 35 y = 573 }
+				position = { x = 35 y = 173 }
 				font = "vic_18"
 				text = "ND_GRAPHICAL_CULTURE"	
 				maxWidth = 130
@@ -1106,20 +1379,20 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "gfx_culture_listbox_button"
-				position = { x = 155 y = 565 }
+				position = { x = 155 y = 165 }
 				buttonFont = "vic_18"
 				quadTextureSprite ="GFX_button_straight_255_32"	
 			}
 			iconType = {
 				name ="gfx_culture_listbox_button_glow"
 				spriteType = "GFX_button_straight_255_32_glow"
-				position = { x= 153 y = 563 }
+				position = { x= 153 y = 163 }
 			}
 			
 			###
 			instantTextBoxType = {
 				name = "tech_group_label"
-				position = { x = 35 y = 543 }
+				position = { x = 35 y = 143 }
 				font = "vic_18"
 				text = "ND_TECH_GROUP"	
 				maxWidth = 130
@@ -1130,25 +1403,25 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "tech_group_listbox_button"
-				position = { x = 155 y = 535 }
+				position = { x = 155 y = 135 }
 				buttonFont = "vic_18"
 				quadTextureSprite ="GFX_button_straight_255_32"	
 			}
 			iconType = {
 				name ="tech_group_listbox_button_glow"
 				spriteType = "GFX_button_straight_255_32_glow"
-				position = { x= 153 y = 533 }
+				position = { x= 153 y = 133 }
 			}
 			iconType = {
 				name ="incompatible_tech_warning_icon"
 				spriteType = "GFX_incompatible_warning_icon"
-				position = { x= 390 y = 539 }
+				position = { x= 390 y = 139 }
 			}			
 			
 			###
 			instantTextBoxType = {
 				name = "government_label"
-				position = { x = 35 y = 603 }
+				position = { x = 35 y = 203 }
 				font = "vic_18"
 				text = "ND_GOVERNMENT" #Сменил название
 				maxWidth = 130
@@ -1159,19 +1432,19 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "government_listbox_button"
-				position = { x = 155 y = 595 }
+				position = { x = 155 y = 195 }
 				buttonFont = "vic_18"
 				quadTextureSprite ="GFX_button_straight_255_32"	
 			}
 			iconType = {
 				name ="government_listbox_button_glow"
 				spriteType = "GFX_button_straight_255_32_glow"
-				position = { x= 153 y = 593 }
+				position = { x= 153 y = 193 }
 			}
 			iconType = {
 				name ="incompatible_gov_warning_icon"
 				spriteType = "GFX_incompatible_warning_icon"
-				position = { x= 390 y = 599 }
+				position = { x= 390 y = 199 }
 			}			
 			
 			### SELECT CULTURE ETC WINDOW
