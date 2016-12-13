@@ -14,7 +14,7 @@ country_decisions = {
 			NOT = { government_rank = 3 }
 			NOT = { is_year = 1550 }
 			faction_in_power = mr_aristocrats
-			republican_tradition = 0.45
+			republican_tradition = 45
 			mil_power = 25
 			adm_power = 200
 		}
@@ -35,7 +35,7 @@ country_decisions = {
 				NOT = { adm_power = 350 }
 			}
 			modifier = {
-				NOT = { republican_tradition = 0.65 }
+				NOT = { republican_tradition = 65 }
 				factor = 0
 			}
 			modifier = {

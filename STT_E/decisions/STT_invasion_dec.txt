@@ -46,104 +46,104 @@ country_decisions = {
 		}
     }
  
-    major_boost = {
-        potential = {
-		    ai = yes
-		    AND = {
-		         NOT = { has_country_modifier = help_to_osman }
-				 NOT = { has_country_modifier = help_to_russia }
-			}	 
-		    OR = {
-			   tag = TUR
-			   tag = TSR
-			   tag = RUS
-			   tag = RU2
-			   tag = MOS
-			}
-			NOT = { is_year = 1675 }
-		}
-		allow = {
-		    OR = {
-			NOT = { adm_power = 200 }
-            NOT = { dip_power = 200 }
-            }			
-		}
-		
-		effect = {
-		    if = { 
-			    limit = {
-				tag = TUR
-			    NOT = { has_idea = civil_servants }
-			    }
-			add_adm_power = 300
-			add_dip_power = 150
-			}
-		    if = { 
-			    limit = {
-				tag = TUR
-			    has_idea = civil_servants
-			    }
-			add_adm_power = 200
-			add_dip_power = 100
-			add_mil_power = 100
-			}
-			if = {
-			    limit = {
-				    OR = {
-				    tag = TSR
-			        tag = RUS
-			        tag = RU2
-			        tag = MOS
-				    }
-				NOT = { has_idea = inquisition }	
-				}
-			add_adm_power = 300
-			add_dip_power = 100
-			add_treasury = 300
-			}
-			if = {
-			    limit = {
-				    OR = {
-				    tag = TSR
-			        tag = RUS
-			        tag = RU2
-			        tag = MOS
-				    }
-				has_idea = inquisition 	
-				}
-			add_adm_power = 200
-			add_dip_power = 100
-			add_treasury = 300
-			}
-			if = {
-			    limit = {
-				    OR = {
-				    tag = TSR
-			        tag = RUS
-			        tag = RU2
-			        tag = MOS
-				    }
-			    }
-			add_country_modifier = {
-				name = "help_to_russia"
-				duration = 1825
-                }				
-			}
-			if = {
-			    limit = {
-				    tag = TUR
-			    }
-			add_country_modifier = {
-				name = "help_to_osman"
-				duration = 1825
-                }				
-			}
-		}
-		
-		ai_will_do = {
-		    factor = 1
-		}
-    }
+#    major_boost = {
+#        potential = {
+#		    ai = yes
+#		    AND = {
+#		         NOT = { has_country_modifier = help_to_osman }
+#				 NOT = { has_country_modifier = help_to_russia }
+#			}	 
+#		    OR = {
+#			   tag = TUR
+#			   tag = TSR
+#			   tag = RUS
+#			   tag = RU2
+#			   tag = MOS
+#			}
+#			NOT = { is_year = 1675 }
+#		}
+#		allow = {
+#		    OR = {
+#			NOT = { adm_power = 200 }
+#           NOT = { dip_power = 200 }
+#            }			
+#		}
+#		
+#		effect = {
+#		    if = { 
+#			    limit = {
+#				tag = TUR
+#			    NOT = { has_idea = civil_servants }
+#			    }
+#			add_adm_power = 300
+#			add_dip_power = 150
+#			}
+#		    if = { 
+#			    limit = {
+#				tag = TUR
+#			    has_idea = civil_servants
+#			    }
+#			add_adm_power = 200
+#			add_dip_power = 100
+#			add_mil_power = 100
+#			}
+#			if = {
+#			    limit = {
+#				    OR = {
+#				    tag = TSR
+#			        tag = RUS
+#			        tag = RU2
+#			        tag = MOS
+#				    }
+#				NOT = { has_idea = inquisition }	
+#				}
+#			add_adm_power = 300
+#			add_dip_power = 100
+#			add_treasury = 300
+#			}
+#			if = {
+#			    limit = {
+#				    OR = {
+#				    tag = TSR
+#			        tag = RUS
+#			        tag = RU2
+#			        tag = MOS
+#				    }
+#				has_idea = inquisition 	
+#				}
+#			add_adm_power = 200
+#			add_dip_power = 100
+#			add_treasury = 300
+#			}
+#			if = {
+#			    limit = {
+#				    OR = {
+#				    tag = TSR
+#			        tag = RUS
+#			        tag = RU2
+#			        tag = MOS
+#				    }
+#			    }
+#			add_country_modifier = {
+#				name = "help_to_russia"
+#				duration = 1825
+#               }				
+#			}
+#			if = {
+#			    limit = {
+#				    tag = TUR
+#			    }
+#			add_country_modifier = {
+#				name = "help_to_osman"
+#				duration = 1825
+#               }				
+#			}
+#		}
+#		
+#		ai_will_do = {
+#		    factor = 1
+#		}
+#    }
 	
     establish_baltic_fleet = {
         potential = {

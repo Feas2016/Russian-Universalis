@@ -255,7 +255,7 @@ guiTypes = {
 				font = "vic_22s"
 				borderSize = {x = 10 y = 8}
 				size = { x=180 y=32}
-				text = ""	
+				text = ""
 				ignore_tab_navigation = no
 			}
 			
@@ -266,7 +266,7 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 10 y = 8}	
 				size = { x=180 y=32}
-				text = ""	
+				text = ""
 				ignore_tab_navigation = no
 			}
 			
@@ -2039,37 +2039,37 @@ guiTypes = {
 				}
 				
 				instantTextBoxType = {
-						name = "Title"
-						position = { x = 64 y = 23 }
-						textureFile = ""
-						font = "vic_22"
-						text = "Title"	
-						maxWidth = 380
-						maxHeight = 24
-						fixedsize = yes
-						format = centre
-					}
+					name = "Title"
+					position = { x = 64 y = 23 }
+					textureFile = ""
+					font = "vic_22"
+					text = "Title"	
+					maxWidth = 380
+					maxHeight = 24
+					fixedsize = yes
+					format = centre
+				}
 				
 				instantTextBoxType = {
-						name = "Description"
-						position = { x = 64 y = 75 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 0 y = 0}
-						text = "Long text here!"	
-						maxWidth = 380
-						maxHeight = 170
-						format = centre
-						scrollbartype = "standardtext_slider"
-					}
+					name = "Description"
+					position = { x = 64 y = 75 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 0 y = 0}
+					text = "Long text here!"	
+					maxWidth = 380
+					maxHeight = 170
+					format = centre
+					scrollbartype = "standardtext_slider"
+				}
 					
 					OverlappingElementsBoxType = {
-						name = "client_states_box"
-						position = { x = 20 y = 170 }
-						size = { x = 440 y = 32 }
-						format = centre
-						spacing = 0
-					}
+					name = "client_states_box"
+					position = { x = 20 y = 170 }
+					size = { x = 440 y = 32 }
+					format = centre
+					spacing = 0
+				}
 								
 				guiButtonType = {
 					name = "close_button"
@@ -4410,7 +4410,7 @@ guiTypes = {
 				position = { x = 42 y = 227 }
 				textureFile = ""
 				font = "vic_18"
-				text = "CS_CHOOSE_GOV"	
+				text = "CS_CHOOSE_GOV"
 				maxWidth = 380
 				maxHeight = 170
 				format = left
@@ -5004,7 +5004,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000Â¤"	
+			text = "2000¤"	
 		}
 		
 		checkboxType = {
@@ -5020,7 +5020,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000Â¤"	
+			text = "2000¤"	
 		}
 		
 		iconType = {
@@ -5042,7 +5042,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000Â¤"	
+			text = "2000¤"	
 		}
 		
 		iconType = {

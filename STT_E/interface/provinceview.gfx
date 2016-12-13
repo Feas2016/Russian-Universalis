@@ -325,6 +325,13 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	
+	spriteType = {
+		name = "GFX_claim_province_button"
+		texturefile = "gfx/interface/claim_province_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
 		spriteType = {
 		name = "GFX_return_province_button"
 		texturefile = "gfx/interface/return_province_button.dds"
@@ -435,6 +442,14 @@ spriteTypes = {
 		loadType = "INGAME"
 		
 	}
+
+
+	spriteType = {
+		name = "GFX_hostile_attrition"
+		texturefile = "gfx//interface//ideas_EU4//hostile_attrition.tga"
+		loadType = "INGAME"
+		
+	}	
 	
 	spriteType = {
 		name = "GFX_province_history_entry_banner"
@@ -526,6 +541,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_build_cost"
 		texturefile = "gfx/interface/build_cost_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_build_time"
+		texturefile = "gfx/interface/build_time_icon.dds"
 	}
 	
 	####### COLONY TERRAIN PICTURES #########

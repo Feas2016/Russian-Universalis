@@ -16,7 +16,7 @@ byz_bride = {
 
 byz_europe = {
 	diplomatic_reputation = 2
-	relations_decay_of_me = 0.10
+	improve_relation_modifier = 0.10
 	diplomatic_upkeep = -1
 	icon = 6
 }
@@ -48,7 +48,7 @@ byz_senate = {
 
 byz_sacred = {
 	legitimacy = 1
-	relations_decay_of_me = 0.05
+	improve_relation_modifier = 0.05
 	stability_cost_modifier = 0.10
 	global_spy_defence = -0.10
 	icon = 5
@@ -88,14 +88,14 @@ byz_navy = {
 
 byz_council = {
 	tolerance_heretic = 1
-	relations_decay_of_me = 0.1
+	improve_relation_modifier = 0.1
 	icon = 10
 }
 
 byz_council2 = {
 	global_missionary_strength = 0.03
 	missionary = 2
-	relations_decay_of_me = 0.1
+	improve_relation_modifier = 0.1
 	icon = 10
 }
 
@@ -104,12 +104,12 @@ byz_council3 = {
 	stability_cost_modifier = -0.2
 	tolerance_heretic = 1
 	global_tax_modifier = 0.1
-	relations_decay_of_me = 0.1
+	improve_relation_modifier = 0.1
 	icon = 10
 }
 
 byz_ancestors = {
-	relations_decay_of_me = -0.3
+	improve_relation_modifier = -0.3
 	icon = 2
 }
 

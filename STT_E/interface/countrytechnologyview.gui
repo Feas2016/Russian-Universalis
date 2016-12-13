@@ -97,14 +97,14 @@ guiTypes = {
 				position = { x = 52 y = -28 }
 				textureFile = ""
 				font = "vic_22"
-			borderSize = {x = 4 y = 4}	
+				borderSize = {x = 4 y = 4}	
 				text = "INSTITUTIONS"	
 				maxWidth = 300
-			maxHeight = 32
-			format = left
-			fixedsize = yes
-		}
-		
+				maxHeight = 32
+				format = left
+				fixedsize = yes
+			}			
+			
 			OverlappingElementsBoxType = {
 				name = "institutions"
 				position = { x = -35 y = 79 }
@@ -159,16 +159,17 @@ guiTypes = {
 				text = "Embracement Cost: -20%"
 			}
 			
-		guiButtonType =
-		{
-				name ="embrace_button"
-			quadTextureSprite= "GFX_standard_button_105"
-				position = { x = 378 y = 308 }
-			Orientation = "UPPER_LEFT"
-				buttonText = "BUTTON_EMBRACE"
-			buttonFont = "vic_18"
-		}
+			guiButtonType =
 
+			{
+				name ="embrace_button"
+				quadTextureSprite= "GFX_standard_button_105"
+				position = { x = 378 y = 308 }
+				Orientation = "UPPER_LEFT"
+				buttonText = "BUTTON_EMBRACE"
+				buttonFont = "vic_18"
+			}			
+			
 			instantTextBoxType = {
 				name = "name"
 				position = { x = 28 y = 156 }
@@ -240,16 +241,17 @@ guiTypes = {
 				fixedsize = yes
 			}
 			
-		guiButtonType =
-		{
+			guiButtonType =
+
+			{
 				name ="goto_origin"
-			quadTextureSprite= "GFX_standard_button_105"
+				quadTextureSprite= "GFX_standard_button_105"
 				position = { x = 400 y = 185 }
-			Orientation = "UPPER_LEFT"
+				Orientation = "UPPER_LEFT"
 				buttonText = "GOTO_GOTO"
-			buttonFont = "vic_18"
-		}		
-		
+				buttonFont = "vic_18"
+			} 
+
 			iconType = {
 				name = "spread_info_icon"
 				spriteType = "GFX_institution_spread_conditions"
@@ -280,15 +282,15 @@ guiTypes = {
 			}
 			
 			guiButtonType =
-		{
+			{
 				name ="back_button"
 				quadTextureSprite= "GFX_standard_button_105"
 				position = { x = 214 y = 370 }
-			Orientation = "UPPER_LEFT"
+				Orientation = "UPPER_LEFT"
 				buttonText = "BACK"
 				buttonFont = "vic_18"
 				shortcut = "n"
-		}
+			}
 		}					
 	}
 	

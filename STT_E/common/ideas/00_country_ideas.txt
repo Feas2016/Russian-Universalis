@@ -522,7 +522,7 @@ POL_ideas = {
 HAB_ideas = {
 	start = {
 		land_morale = 0.10
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	
 	bonus = {
@@ -575,7 +575,7 @@ CHI_ideas = {
 	}
 	
 	bonus = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	
 	trigger = {
@@ -1452,7 +1452,7 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		relations_decay_of_me = 0.50
+		improve_relation_modifier = 0.50
 	}
 	
 	bonus = {
@@ -1542,7 +1542,7 @@ PAL_ideas = {
 	}
 	
 	bonus = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	
 	trigger = {
@@ -1596,7 +1596,7 @@ NOV_ideas = {
 		global_missionary_strength = 0.01
 	}
 	ivans_hundred = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 	control_of_the_hanseatic_kontor = {
 		merchants = 1
@@ -1700,7 +1700,7 @@ DAI_ideas = {
 SAV_ideas = {
 	start = {
 		diplomatic_upkeep = 1
-		relations_decay_of_me = 0.25
+		improve_relation_modifier = 0.25
 	}
 	
 	bonus = {
@@ -2273,7 +2273,7 @@ USA_ideas = {
 	}
 	
 	bonus = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 	
 	trigger = {
@@ -2587,7 +2587,7 @@ KON_ideas = {
 	}
 
 	bonus = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 
 	trigger = {	
@@ -2712,7 +2712,7 @@ IRO_ideas = {
 	}
 	
 	bonus = {
-		relations_decay_of_me = 0.5
+		improve_relation_modifier = 0.5
 	}
 	
 	trigger = {
@@ -3124,7 +3124,7 @@ GEO_ideas = {
 		heir_chance = 0.5
 	}
 	georgian_isolation = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	restoration_of_fortresses_and_churches = {
 		build_cost = -0.1
@@ -3549,7 +3549,7 @@ SIL_ideas = {
 	free = yes
 
 	under_the_infuence = {
-		relations_decay_of_me = 0.15
+		improve_relation_modifier = 0.15
 	}
 	silesian_duchies = {
 		stability_cost_modifier = -0.10
@@ -3928,7 +3928,7 @@ BOS_ideas = {
 MOL_ideas = {
 	start = {
 		land_morale = 0.10
-		relations_decay_of_me = 0.33
+		improve_relation_modifier = 0.33
 	}
 	bonus = {
 		defensiveness = 0.10
@@ -4232,7 +4232,7 @@ RMN_ideas = {
 	}
 
 	bonus = {
-		relations_decay_of_me = 0.25
+		improve_relation_modifier = 0.25
 	}
 
 	trigger = {
@@ -5459,7 +5459,7 @@ HAM_ideas = {
 		global_trade_power = 0.15
 	}		
 	hamburg_republic = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 	}
 	walls_of_hamburg = {
 		defensiveness = 0.25
@@ -5604,7 +5604,7 @@ CAN_ideas = {
 	}
 	
 	bonus = {
-		republican_tradition = 0.005
+		republican_tradition = 0.5
 		legitimacy = 1
 	}
 	
@@ -5800,7 +5800,7 @@ WBG_ideas = {
 	}
 	
 	bonus = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	
 	trigger = {
@@ -7550,7 +7550,7 @@ ROM_ideas = {
 	start = {
 		discipline = 0.05
 		legitimacy = 1
-		republican_tradition = 0.01
+		republican_tradition = 1 ###STT
 	}
 	
 	bonus = {
@@ -7566,7 +7566,7 @@ ROM_ideas = {
 	free = yes
 	
 	pax_romana = {
-		global_unrest = -2
+		global_unrest = -1
 	}
 	legacy_of_rome = {
 		diplomatic_reputation = 2
@@ -7582,7 +7582,7 @@ ROM_ideas = {
 		production_efficiency = 0.2
 	}
 	imperial_bureaucracy = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.1
 	}
 	imperium_sine_fine = {
 		core_creation = -0.20
@@ -7634,7 +7634,7 @@ SLN_ideas = {
 ANT_ideas = {
 	start = {  
 		diplomatic_upkeep = 1
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
   
 	bonus = {
@@ -7788,7 +7788,7 @@ TBK_ideas = {
 LUB_ideas = {
 	start = {  
 		hostile_attrition = 1
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
   
 	bonus = {
@@ -8168,7 +8168,7 @@ WUR_ideas = {
 		trade_efficiency = 0.1
 	}
 	bonus = {
-		relations_decay_of_me = 0.3
+		improve_relation_modifier = 0.3
 	}
 	trigger = {
 		tag = WUR
@@ -8234,3 +8234,113 @@ SLO_ideas = {
 		land_morale = 0.1
 	}
 }
+
+#GLH_ideas = {
+#	start = {
+#		global_manpower_modifier = 0.25
+#		land_maintenance_modifier = -0.10
+#	}
+#	bonus = {
+#		global_institution_spread = 0.1
+#	}
+#	trigger = {
+#		tag = GLH
+#	}
+#	free = yes
+#	
+#	glh_legacy_of_the_golden_horde = {
+#		horde_unity = 1
+#		legitimacy = 1
+#	}
+#	glh_perso_mongol_administration = {
+#		core_creation = -0.25
+#	}
+#	glh_tatar_traditions = {
+#		cavalry_power = 0.20
+#	}
+#	glh_secure_the_trade_routes = {
+#		global_prov_trade_power_modifier = 0.10
+#	}
+#	logistics_of_khan = { #Used by horde_ideas
+#		manpower_recovery_speed = 0.2
+#	}
+#	glh_populating_the_steppes = {
+#		development_cost = -0.1
+#	}
+#	glh_religious_pragmatism = {
+#		tolerance_heathen = 2
+#	}
+#}
+
+ANS_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		merc_maintenance_modifier = -0.25
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = ANS
+	}
+	free = yes
+	
+	ans_land_of_the_hohenzollerns = {
+		prestige = 1
+	}
+	ans_restore_the_burgraviate = {
+		ae_impact = -0.1
+	}
+	ans_plassenburg = {
+		diplomatic_reputation = 1
+	}
+	ans_franconian_reformers = {
+		religious_unity = 0.1
+		church_power_modifier = 0.1
+	}
+	ans_protestant_exiles = {
+		development_cost = -0.1
+	}
+	ans_wolf_of_ansbach = {
+		global_unrest = -1
+	}
+	ans_dragoons_of_ansbach = {
+		cavalry_power = 0.15
+	}
+}
+
+#OKA_ideas = {
+#	start = {
+#		defensiveness = 0.2
+#		diplomatic_reputation = 1
+#	}
+#	bonus = {
+#		merchants = 1
+#	}
+#	trigger = {
+#		tag = OKA
+#	}
+#	free = yes
+#	
+#	oka_heirs_of_chernigov = {
+#		legitimacy = 1
+#	}
+#	oka_dynamic_diplomacy = {
+#		diplomats = 1
+#	}
+#	oka_strengthen_our_tatar_ties = {
+#		cavalry_cost = -0.1
+#	}
+#	oka_safeguard_agnatic_seniority = {
+#		heir_chance = 0.5
+#	}
+#	oka_cities_of_the_upper_oka_valley = {
+#		infantry_cost = -0.1
+#	}
+#	oka_fortification_efforts = {
+#		fort_maintenance_modifier = -0.2
+#	}
+#	oka_strengthen_the_oka_river_trade = {
+#		caravan_power = 0.2
+#	}
+#}

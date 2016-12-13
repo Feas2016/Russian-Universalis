@@ -29,6 +29,7 @@ country_event = {
 			exists = RYA
 			RYA = {
 				NOT = { vassal_of = GOL }
+				NOT = { vassal_of = GHL }
 			}
 		}
 		define_ruler = {
@@ -284,7 +285,7 @@ country_event = {
 		name = veche.1.j # Местный
 		define_ruler = {
 		}
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 	}
 }
 
@@ -300,7 +301,7 @@ country_event = {
 	option = {
 		name = veche.2.a
 		change_government = veche_republic
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		add_stability = -1
 		country_event = { id = 701 }
 	}
@@ -332,7 +333,7 @@ country_event = {
 			factor = 10
 		}
 		name = veche.100.a # Позволить это
-		add_republican_tradition = -0.15
+		add_republican_tradition = -15
 		add_prestige = 10
 		310 = {
 			add_base_tax = 1
@@ -345,7 +346,7 @@ country_event = {
 			factor = 90
 		}
 		name = veche.100.b # No.
-		add_republican_tradition = 0.05
+		add_republican_tradition = 5
 		set_country_flag = knyaz_asked_about_residention
 	}
 }
