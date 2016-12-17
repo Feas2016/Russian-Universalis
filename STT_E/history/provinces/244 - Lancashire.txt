@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 5
 trade_goods = wool
 base_manpower = 3
-capital = "Lancaster"
+capital = "Chester"
 is_city = yes
 add_core = ENG
 seat_in_parliament = yes
@@ -28,8 +28,12 @@ discovered_by = eastern
 1644.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB }
 1645.1.1 = { revolt = {} controller = ENG }
 1700.1.1 = { capital = "Liverpool" } # Includes Manchester; Tax Assessor Estimated
-1707.5.12 = {	owner = GBR
+1707.5.12 = {	
+
+	seat_in_parliament = no
+	owner = GBR
 	controller = GBR
 	add_core = GBR
 	remove_core = ENG
+	seat_in_parliament = yes
 }

@@ -1,12 +1,13 @@
 #237 - Oxfordshire
+#Includes Bukinghamshire, Berkshire, Bedfordshire, Huntingdonshire, part of Cambridgeshire.
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 5 
-base_production = 4
+base_tax = 6 
+base_production = 5
 trade_goods = grain
 base_manpower = 3
 capital = "Oxford"
@@ -28,8 +29,13 @@ discovered_by = eastern
 1560.1.1 = { religion = protestant }
 1642.9.10 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
 1642.10.24 = { revolt = {} controller = ENG }
-1707.5.12 = {	owner = GBR
+1707.5.12 = {	
+
+
+	seat_in_parliament = yes
+	owner = GBR
 	controller = GBR
 	add_core = GBR
 	remove_core = ENG
+	seat_in_parliament = yes
 }

@@ -11,8 +11,12 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 is_city = yes
-fort_15th = yes
 add_core = SER
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -23,6 +27,7 @@ discovered_by = ottoman
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	capital = "Beograd"
 }
 1688.11.7 = { unrest = 12 } # Serb rebellion under D. Brankovic
 1717.8.22 = {

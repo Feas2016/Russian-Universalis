@@ -1,12 +1,13 @@
 #235 - Kent
+#Sussex+Kent
 
 owner = ENG
 controller = ENG
 culture = english
 religion = catholic
 hre = no
-base_tax = 4 
-base_production = 5
+base_tax = 5 
+base_production = 6
 trade_goods = grain
 base_manpower = 2
 capital = "Canterbury"
@@ -36,8 +37,10 @@ discovered_by = eastern
 1648.5.11 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
 1648.6.1 = { revolt = {} controller = ENG }
 1707.5.12 = {
+	seat_in_parliament = no
 	owner = GBR
 	controller = GBR
 	add_core = GBR
 	remove_core = ENG
+	seat_in_parliament = yes 
 }
