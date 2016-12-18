@@ -5569,7 +5569,13 @@ ZAZ_ideas = {
 	}
 	
 	trigger = {
-		tag = ZAZ
+		OR = {
+			tag = ZAZ
+			tag = HTM
+			tag = LHE
+			tag = OHE
+			tag = PHE
+		}
 	}
 	free = yes
 	
@@ -8309,38 +8315,4 @@ ANS_ideas = {
 	}
 }
 
-#OKA_ideas = {
-#	start = {
-#		defensiveness = 0.2
-#		diplomatic_reputation = 1
-#	}
-#	bonus = {
-#		merchants = 1
-#	}
-#	trigger = {
-#		tag = OKA
-#	}
-#	free = yes
-#	
-#	oka_heirs_of_chernigov = {
-#		legitimacy = 1
-#	}
-#	oka_dynamic_diplomacy = {
-#		diplomats = 1
-#	}
-#	oka_strengthen_our_tatar_ties = {
-#		cavalry_cost = -0.1
-#	}
-#	oka_safeguard_agnatic_seniority = {
-#		heir_chance = 0.5
-#	}
-#	oka_cities_of_the_upper_oka_valley = {
-#		infantry_cost = -0.1
-#	}
-#	oka_fortification_efforts = {
-#		fort_maintenance_modifier = -0.2
-#	}
-#	oka_strengthen_the_oka_river_trade = {
-#		caravan_power = 0.2
-#	}
-#}
+### OKA delete

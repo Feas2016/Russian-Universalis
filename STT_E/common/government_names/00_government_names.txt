@@ -1964,7 +1964,7 @@ russian_monarchy = {
 		technology_group = eastern
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 	}
 }
@@ -1993,7 +1993,7 @@ gov_rus_imperial_government = { ###STT
 		technology_group = western
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 	}
 }
@@ -2334,7 +2334,13 @@ zaporozhian_republic = {
 
 	trigger = {
 		government = republic
-		tag = ZAZ
+		OR = {
+			tag = ZAZ
+			tag = HTM
+			tag = OHE
+			tag = PHE
+			tag = LHE
+		}
 	}
 }
 
@@ -2413,7 +2419,7 @@ russian_republic = {
 		government = republic
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 		NOT = { government = revolutionary_republic }
 		NOT = { government = constitutional_republic }
@@ -3102,7 +3108,7 @@ veche_republic = {
 	trigger = {
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 		government = veche_republic
 	}
@@ -3130,7 +3136,7 @@ knyaz_veche_republic = {
 	trigger = {
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 		government = knyaz_veche_republic
 	}
@@ -3153,7 +3159,7 @@ udel_principality = {
 		government = udel_principality
 		OR = {
 			culture_group = east_slavic
-			tag = PRM
+			culture_group = uralic_g
 		}
 	}
 }
