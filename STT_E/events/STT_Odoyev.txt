@@ -112,6 +112,14 @@ country_event = {
 			modifier = help_of_moscow
 		}
 		LIT = {
+		    IF = {
+			    limit = {
+				    OKA = {
+				        is_march = yes
+				    }
+				}
+				vassalize = OKA
+			}
 		    free_vassal = OKA
 		}
 		MOS = {
