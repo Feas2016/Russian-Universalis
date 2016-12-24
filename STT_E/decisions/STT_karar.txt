@@ -16,9 +16,7 @@
 				name = "recruit_new_soldiers"
 				duration = -1
 			}		
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -28,7 +26,7 @@
 		}
 	}
 	
-		reform_the_kanun_system = {
+	reform_the_kanun_system = {
 		potential = {
 			tag = TUR
 			NOT = { has_country_modifier = reform_the_kanun_system }
@@ -43,9 +41,7 @@
 				name = "reform_the_kanun_system"
 				duration = -1
 			}		
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -72,9 +68,7 @@
 				name = "collect_extra_vergi"
 				duration = -1
 			}		
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
@@ -100,9 +94,7 @@
 				name = "culus_tip_to_jannissery"
 				duration = -1
 			}	
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -129,9 +121,7 @@
 				duration = -1
 			}	
 			add_piety = 0.3
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -163,9 +153,7 @@
 				name = "consruct_kulliye"
 				duration = -1
 			}		
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -191,9 +179,7 @@
 				name = "tedbiri_kiyafet"
 				duration = -1
 			}	
-			}
-
-		
+		}
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -219,9 +205,7 @@
 				name = "ban_alcohol_and_tobacco"
 				duration = -1
 			}	
-			}
-			
-
+		}
 		ai_will_do = {
 			factor = 0
 			modifier = {

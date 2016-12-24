@@ -19,13 +19,15 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			owns_core_province = 295	# Moskva
+			owns_core_province = 310	# Novgorod
+			owns_core_province = 301	# Ryazan
+			owns_core_province = 314	# Vologda
+			owns_core_province = 294	# Tver
+			owns_core_province = 308	# Yaroslavl
+			owns_core_province = 306	# Nijni-Novgorod
 			OR = {
-				owns = 294		# Tver
-				owns = 308		# Yaroslavl	
-				}
-			OR = {
-				owns = 306		# Nijni-Novgorod
-				owns = 307		# Vladimir	
+				owns_core_province = 1079		# Vyatka
+				owns_core_province = 274		# Pscov
 				}
 			}
 		effect = {
@@ -42,40 +44,13 @@ country_decisions = {
 				}
 				add_permanent_claim = TSR
 			}
-			### WANT WANT WANT!!! =)
-			### Livonia
 			estonia_ingria_area  = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_claim = TSR
 			}
-			livonia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = TSR
-			}
-			curonia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = TSR
-			}
-			### You take Astrahan? Kazan take, Arhangelsk take, Astrahan take. Shpake - don't take.
-			astrakhan_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = TSR
-			}
-			lower_don_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = TSR
-			}
-			saratov_area = {
+			white_ruthenia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -83,7 +58,7 @@ country_decisions = {
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
-				duration = 3300
+				duration = 1800 # 5 years
 			}
 			country_event = { id = ideagroups.1 } #Swap Ideas			
 		}
@@ -109,7 +84,8 @@ country_decisions = {
 			adm_tech = 8
 			is_subject = no
 			is_at_war = no
-			owns_core_province = 310			# Novgorod
+			owns_core_province = 310	# Novgorod
+			owns_core_province = 314	# Vologda
 			OR = {
 				owns = 294		# Tver
 				owns = 308		# Yaroslavl	
@@ -129,20 +105,8 @@ country_decisions = {
 				}
 				add_permanent_claim = VNO
 			}
-			### WANT WANT WANT!!! =)
+			### WANT!!!
 			estonia_ingria_area  = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = VNO
-			}
-			livonia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = VNO
-			}
-			curonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -151,7 +115,7 @@ country_decisions = {
 			### don't have interested in Crimea at this time.
 			add_country_modifier = {
 				name = "centralization_modifier"
-				duration = 3300
+				duration = 1800
 			}					
 		}
 		ai_will_do = {
@@ -208,44 +172,26 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
-			crimea_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			saratov_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			bashkiria_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
 			white_ruthenia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = RUS
+				add_claim = RUS
 			}
 			sloboda_ukraine_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = RUS
+				add_claim = RUS
 			}
 			east_dniepr_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = RUS
+				add_claim = RUS
 			}
 			280 = {
-				add_permanent_claim = RUS
+				add_claim = RUS
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"

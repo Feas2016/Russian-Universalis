@@ -21,10 +21,10 @@ country_event = {
 		add_piety = 0.1
 		add_treasury = -100
 		add_country_modifier = { 
-				name = ignored_ramadan_timer
-				duration = 1200
-				hidden = yes
-			}
+			name = ignored_ramadan_timer
+			duration = 1200
+			hidden = yes
+		}
 	}
 	option = {
 		name = "ramadan2"
@@ -71,12 +71,11 @@ country_event = {
 		name = "unrest2"		
 		ai_chance = { factor = 45 }
 		add_stability = -1
-			add_ruler_modifier = {
-				name = "collect_extra_vergi"
-				duration = -1
-			}	
+		add_ruler_modifier = {
+			name = "collect_extra_vergi"
+			duration = -1
+		}	
 	}
-
 }
 
 country_event = {
@@ -91,7 +90,6 @@ country_event = {
 
 	mean_time_to_happen = {
 	years = 50
-
 		modifier = {
 			factor = 0.1
 			NOT = { stability = 0 }
@@ -109,14 +107,11 @@ country_event = {
 		}
 		add_adm_power = -100
 		add_treasury = -100
-		add_country_modifier = 
-		{
+		add_country_modifier = {
 			name = "buyuk_aydin"
 			duration = 3000
-		}
-		
+		}		
 	}
-
 	option = {
 		name = "scholar2"	
 		ai_chance = {
@@ -144,7 +139,6 @@ country_event = {
 
 	mean_time_to_happen = {
 	years = 45
-
 		modifier = {
 			factor = 0.2
 			NOT = { stability = 0 }
@@ -154,10 +148,9 @@ country_event = {
 	option = {
 		name = "vakif1"		
 		ai_chance = { factor = 55 }
-		add_country_modifier = 
-		{
+		add_country_modifier = {
 			name = "vakif_devam"
-			duration = -1
+			duration = 1800
 		}
 		add_dip_power = 100
 		add_piety = -0.1
@@ -235,7 +228,7 @@ country_event = {
 		add_dip_power = 30
 	}
 	option = {
-		name = "jan2"		# 
+		name = "jan2"
 		ai_chance = { factor = 55 }
 		add_adm_power = 30
 	}
