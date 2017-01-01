@@ -151,4 +151,9 @@ capital = 1841	# Marienburg
 	government_rank = 2
 }
 
-1525.4.8 = { has_country_modifier = ger_hommage	}
+1525.4.8 = { 
+	add_country_modifier = {
+		name = ger_hommage
+		duration = -1
+	}
+}

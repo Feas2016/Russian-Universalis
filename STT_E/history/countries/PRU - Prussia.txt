@@ -277,11 +277,14 @@ capital = 41	# Kцnigsberg
 	}
 }
 
-1701.1.18 = { capital = 50 }	# Berlin
+1701.1.18 = { ### STT
+	capital = 50 # Berlin
+	remove_country_modifier = ger_hommage
+	elector = yes 
+	government_rank = 2
+}
 
-1701.1.18 = { elector = yes government_rank = 2 }
-
-1702.1.1 = { leader = {	name = "Леопольд фон Дессау"            	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
+1702.1.1 = { leader = {	name = "Леопольд фон Дессау" 	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 
 1708.11.28 = {
 	queen = {

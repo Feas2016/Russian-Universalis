@@ -49,7 +49,7 @@ country_decisions = {
 			south_german_region = { type = all country_or_vassal_holds = ROOT }
 		}
 		effect = {
-			north_germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

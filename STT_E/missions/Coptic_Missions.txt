@@ -1,0 +1,490 @@
+#Missions to steer players and AI to bonuses for conquering Holy Sites.
+
+coptic_conquest_of_alexandria = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 358 #Alexandria
+	}
+	allow = {
+		has_dlc = "Rights of Man"
+		religion = coptic
+		normal_or_historical_nations = yes
+		NOT = { has_global_flag = coptic_alexandria_liberated }
+		358 = {
+			OR = {
+				range = ROOT
+				owner = {
+					is_neighbor_of = ROOT
+				}
+			}
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { religion = coptic }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_subject = no
+		OR = {
+			ai = no
+			num_of_cities = 25
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { religion = coptic }
+			has_global_flag = coptic_alexandria_liberated
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					religion = coptic
+				}
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			358 = {
+				owner = {
+					NOT = { is_neighbor_of = ROOT }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				owns = 419 #Yerevan
+				owns = 1227 #Aksum
+				owns = 2313 #Antakya
+			}
+		}
+		modifier = {
+			factor = 4
+			owns = 1234 #Qasr Ibrim
+		}
+	}
+	effect = {
+		tooltip = {
+			add_prestige = 10
+			gharbia_area = {
+				add_province_modifier = {
+					name = "the_faithful_liberated"
+					duration = 3650
+				}
+			}
+		}
+		country_event = { id = coptic_flavor.3 }
+	}
+}
+
+coptic_conquest_of_yerevan = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 419 #Yerevan
+	}
+	allow = {
+		normal_or_historical_nations = yes'
+		has_dlc = "Rights of Man"
+		religion = coptic
+		NOT = { has_global_flag = coptic_yerevan_liberated }
+		419 = {
+			OR = {
+				range = ROOT
+				owner = {
+					is_neighbor_of = ROOT
+				}
+			}
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { religion = coptic }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_subject = no
+		OR = {
+			ai = no
+			num_of_cities = 25
+			419 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { num_of_cities = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { religion = coptic }
+			has_global_flag = coptic_yerevan_liberated
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					religion = coptic
+				}
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			419 = {
+				owner = {
+					NOT = { is_neighbor_of = ROOT }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				owns = 358 #Alexandria
+				owns = 1227 #Aksum
+				owns = 2313 #Antakya
+				owns = 1234 #Qasr Ibrim
+			}
+		}
+		modifier = {
+			factor = 4
+			owns = 358 #Alexandria
+			owns = 1227 #Aksum
+			owns = 2313 #Antakya
+			owns = 1234 #Qasr Ibrim
+		}
+	}
+	effect = {
+		tooltip = { add_prestige = 10 }
+		country_event = { id = coptic_flavor.5 }
+	}
+}
+
+#
+coptic_conquest_of_antioch = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 2313 #Antioch
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		has_dlc = "Rights of Man"
+		religion = coptic
+		NOT = { has_global_flag = coptic_conquest_of_antioch }
+		2313 = {
+			OR = {
+				range = ROOT
+				owner = {
+					is_neighbor_of = ROOT
+				}
+			}
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { religion = coptic }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_subject = no
+		OR = {
+			ai = no
+			num_of_cities = 25
+			2313 = {
+				owner = {
+					NOT = { num_of_cities = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { religion = coptic }
+			has_global_flag = coptic_conquest_of_antioch
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					religion = coptic
+				}
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			419 = {
+				owner = {
+					NOT = { is_neighbor_of = ROOT }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				owns = 358 #Alexandria
+				owns = 1227 #Aksum
+				owns = 419 #Yerevan
+				owns = 1234 #Qasr Ibrim
+			}
+		}
+		modifier = {
+			factor = 4
+			owns = 358 #Alexandria
+			owns = 1227 #Aksum
+			owns = 419 #Yerevan
+			owns = 1234 #Qasr Ibrim
+		}
+	}
+	effect = {
+		tooltip = { add_prestige = 10 }
+		country_event = { id = coptic_flavor.7 }
+	}
+}
+
+#
+coptic_conquest_of_qasr_ibrim = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 1234 #Qasr Ibrim
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		has_dlc = "Rights of Man"
+		religion = coptic
+		NOT = { has_global_flag = coptic_qasr_ibrim_liberated }
+		1234 = {
+			OR = {
+				range = ROOT
+				owner = {
+					is_neighbor_of = ROOT
+				}
+			}
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { religion = coptic }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_subject = no
+		OR = {
+			ai = no
+			num_of_cities = 25
+			1234 = {
+				owner = {
+					NOT = { num_of_cities = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { religion = coptic }
+			has_global_flag = coptic_qasr_ibrim_liberated
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					religion = coptic
+				}
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			419 = {
+				owner = {
+					NOT = { is_neighbor_of = ROOT }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				owns = 358 #Alexandria
+				owns = 1227 #Aksum
+				owns = 419 #Yerevan
+				owns = 2313 #Antioch
+			}
+		}
+		modifier = {
+			factor = 4
+			owns = 358 #Alexandria
+			owns = 1227 #Aksum
+			owns = 419 #Yerevan
+			owns = 2313 #Antioch
+		}
+	}
+	effect = {
+		tooltip = {
+			add_prestige = 10
+			lower_nubia_area = {
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+			###STT
+		}
+		country_event = { id = coptic_flavor.9 }
+	}
+}
+
+coptic_conquest_of_cairo = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 361 #Cairo
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		has_dlc = "Rights of Man"
+		religion = coptic
+		NOT = { has_global_flag = coptic_qasr_ibrim_liberated }
+		361 = {
+			OR = {
+				range = ROOT
+				owner = {
+					is_neighbor_of = ROOT
+				}
+			}
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { religion = coptic }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_subject = no
+		OR = {
+			ai = no
+			num_of_cities = 25
+			361 = {
+				owner = {
+					NOT = { num_of_cities = 1 }
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { religion = coptic }
+			has_global_flag = coptic_qasr_ibrim_liberated
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					religion = coptic
+				}
+			}
+		}
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 0.5
+			361 = {
+				owner = {
+					NOT = { is_neighbor_of = ROOT }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			mil = 5
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				owns = 358 #Alexandria
+				owns = 1227 #Aksum
+				owns = 419 #Yerevan
+				owns = 2313 #Antioch
+			}
+		}
+		modifier = {
+			factor = 4
+			owns = 358 #Alexandria
+			owns = 1227 #Aksum
+			owns = 419 #Yerevan
+			owns = 2313 #Antioch
+		}
+	}
+	effect = {
+		tooltip = {
+			add_prestige = 10
+			central_egypt_area = {
+				add_province_modifier = {
+					name = the_faithful_liberated
+					duration = 3650
+				}
+			}
+		}
+		country_event = { id = coptic_flavor.15 }
+	}
+}

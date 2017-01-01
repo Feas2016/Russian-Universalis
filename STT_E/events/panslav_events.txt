@@ -84,7 +84,7 @@ country_event = {
 					owns = ROOT
 					}
 				}
-				unrest = 10
+				average_unrest = 10
 			}
 			add_stability = -3
 			add_legitimacy = -50
@@ -192,7 +192,7 @@ country_event = {
 	trigger = {
 		tag = LIT
 		is_subject = no
-		NOT = { year = 1452 }
+		NOT = { is_year = 1452 }
 	}
 	mean_time_to_happen = {
 		months = 5
@@ -226,8 +226,8 @@ country_event = {
 
 	option = {	
 		name = "panslav.4.b"
-		prestige = 5
-		stability = 1
+		add_prestige = 5
+		add_stability = 1
 		POL = {
 			add_opinion = {
 				who = ROOT
@@ -249,7 +249,7 @@ country_event = {
 		tag = LUS
 		is_subject = no
 		any_owned_province = {
-			limit = { culture_group = german } 
+			culture_group = german 
 		}
 		is_at_war = yes
 		NOT = { stability = 1 }
@@ -365,7 +365,7 @@ country_event = { #Mangazea
 		tag = RUS
 		tag = TSR
 		}
-		NOT = { year = 1600 }
+		NOT = { is_year = 1600 }
 		owns = 2445
 	}
 	mean_time_to_happen = {
@@ -392,7 +392,7 @@ country_event = { #Mangazea
 		tag = RUS
 		tag = TSR
 			}
-		year = 1680
+		is_year = 1680
 		owns = 2445
 	}
 	mean_time_to_happen = {

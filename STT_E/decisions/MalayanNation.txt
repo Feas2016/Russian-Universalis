@@ -1,0 +1,162 @@
+country_decisions = {
+
+	malayan_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = MSA }
+			culture_group = malay
+			NOT = { government = steppe_horde }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 12
+			}
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			owns = 624 #Banten
+			owns = 2687 #Pakuan
+			owns = 629 #Demak
+			owns = 630 #Kalapa
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_malaya_borneo_tooltip
+					AND = { #Malay Peninsula and Borneo
+						malaya_area = {
+							type = all
+							owned_by = ROOT
+						}
+						### STT
+						kalimantan_area = {
+							type = all
+							owned_by = ROOT
+						}
+						brunei_area = {
+							type = all
+							owned_by = ROOT
+						}
+						kutai_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_malaya_sumatra_tooltip
+					AND = { #Malay Peninsula and Sumatra
+						malaya_area = {
+							type = all
+							owned_by = ROOT
+						}
+						### STT
+						north_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						### STT
+						central_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						###STT
+						south_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = malay_nation_borneo_sumatra_tooltip
+					AND = { #Borneo and Sumatra
+						kalimantan_area = {
+							type = all
+							owned_by = ROOT
+						}
+						brunei_area = {
+							type = all
+							owned_by = ROOT
+						}
+						kutai_area = {
+							type = all
+							owned_by = ROOT
+						}
+						north_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						central_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+						south_sumatra_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			change_tag = MSA
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			every_province ={
+				limit = {
+					OR = {
+						area = kutai_area
+						area = brunei_area
+						area = kalimantan_area
+						area = north_sumatra_area
+						area = central_sumatra_area
+						area = batak_area
+						area = minangkabau_area
+						area = south_sumatra_area
+						area = malaya_area
+						area = malacca_area
+					}
+				}
+				add_permanent_claim = MSA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

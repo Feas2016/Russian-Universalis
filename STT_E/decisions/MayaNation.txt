@@ -1,0 +1,78 @@
+country_decisions = {
+
+	maya_nation = {
+		major = yes
+		potential = {
+			is_random_new_world = no
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				num_of_cities = 6
+			}
+			culture_group = maya
+			religion = mesoamerican_religion
+			NOT = { exists = MAY }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+			is_religion_reformed = yes
+			owns_core_province = 842 #Petén
+			owns_core_province = 846 #Sotuta
+			owns_core_province = 2633 #Mani
+			owns_core_province = 2652 #Ecab
+			owns_core_province = 2636 #Chacuyal
+			owns_core_province = 2632 #Xicallanco
+		}
+		effect = {
+			change_tag = MAY
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			yucatan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MAY
+			}
+			### STT
+			add_prestige = 25
+			change_government = despotic_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

@@ -1,0 +1,88 @@
+country_decisions = {
+
+	sokoto_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SOK }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			religion = sunni
+			has_country_flag = sok_dan_fodio_happened
+		}
+		allow = {
+			is_subject = no
+			is_nomad = no
+			is_at_war = no
+			OR = {
+				piety = 0.5
+				has_idea_group = religious_ideas
+			}
+			owns_core_province = 1148 #Gobir
+		}
+		effect = {
+			hausa_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SOK
+			}
+			### -2 STT
+			niger_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { owner = { has_country_flag = fulani_jihad_state } }
+					OR = {
+						religion = sunni
+						religion = animism
+					}
+				}
+				add_permanent_claim = SOK
+			}
+			add_prestige = 25
+			add_piety = 0.25
+			change_tag = SOK
+			set_capital = 1148
+			if = {
+				limit = {
+					is_tribal = yes
+				}
+				change_government = theocratic_government
+			}
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_importance = 400 #The countries that qualify will hate the holder of Sokoto.
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

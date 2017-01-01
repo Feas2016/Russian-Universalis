@@ -402,7 +402,7 @@ country_event = {
 			stability = 0
 		}
 	}
-	option = {	
+	option = {
 		name = "flavor_steppe.7.a"
 		add_manpower = -2
 		2414 = {
@@ -450,7 +450,7 @@ country_event = {
 			}
 			AND = {
 				OR = { tag = RUS tag = MOS tag = TSR}
-				NOT = {	OIR = exists }
+				NOT = {	exists = OIR }
 			}
 		}
 	}

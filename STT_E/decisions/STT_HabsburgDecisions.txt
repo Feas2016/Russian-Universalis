@@ -1,5 +1,6 @@
 country_decisions = {
-	incorporate_styria = {
+
+incorporate_styria = {
 	major = yes
 		potential = {
 			tag = HAB
@@ -40,11 +41,10 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = {
-			ai_importance = 500
-		}
+		ai_importance = 500
 	}
-	incorporate_tirol = {
+
+incorporate_tirol = {
 	major = yes
 		potential = {
 			tag = HAB
@@ -85,8 +85,6 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = {
-			ai_importance = 500
-		}
+		ai_importance = 500
 	}
 }
