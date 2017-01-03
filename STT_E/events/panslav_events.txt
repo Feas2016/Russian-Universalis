@@ -35,6 +35,13 @@ country_event = {
 	}
 	option = {	# A stronger COUNTRY will emerge!
 		name = "panslav.1.a"
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 20
+				NOT = { stability = 0 }
+			}
+		}
 		every_owned_province = {
 			limit = {
 				AND = {
@@ -77,23 +84,17 @@ country_event = {
 		}
 	option = {	# A stronger COUNTRY will emerge!
 		name = "panslav.1.b"
-		every_owned_province = {
-			limit = {
-				AND = {
-					is_core = AST
-					owns = ROOT
-					}
-				}
-				average_unrest = 10
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 80
+				stability = 0
 			}
-			add_stability = -3
-			add_legitimacy = -50
 		}
-		modifier = {
-			factor = 0.75
-			stability = 0
-		}
+		add_stability = -3
+		add_legitimacy = -50
 	}
+}
 country_event = {
 	id = "panslav.2"
 	title = "panslav.2.t"
@@ -199,6 +200,7 @@ country_event = {
 	}
 	option = {
 		name = "panslav.4.a"
+		ai_chance = { factor = 10 }
 		change_primary_culture = byelorussian
 		add_stability = -3
 		add_prestige = -40
@@ -220,12 +222,11 @@ country_event = {
 				modifier = opinion_displeased
 				years = 50
 			}
-		}
-		ai_chance = { factor = 0 }
-	}		
-
+		}		
+	}
 	option = {	
 		name = "panslav.4.b"
+		ai_chance = { factor = 90 }
 		add_prestige = 5
 		add_stability = 1
 		POL = {
