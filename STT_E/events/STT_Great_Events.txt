@@ -524,3 +524,31 @@ province_event = {
 		}		
 	}
 }
+
+province_event = {
+	id = stt_great.564767
+	title = "stt_great.EN564767"
+	desc = "stt_great.ED564767"
+	picture = aachen_palace_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_great_project = aachen_palace
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {	
+		name = "stt_great.EA564767"
+		ai_chance = { factor = 100 }
+		1878 = {
+			add_province_modifier = {
+				name = "mod_aachen_palace"
+				duration = -1
+			}
+		}		
+	}
+}

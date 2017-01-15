@@ -335,7 +335,8 @@ catholic_rome = {
 		owns_or_vassal_of = 118 # Roma		
 		NOT = { tag = ITA }
 		NOT = { tag = ROM }
-		NOT = { tag = PQR } ###STT
+		NOT = { tag = PQR }
+        NOT = { tag = WEK }		###STT
 	}
 
 	papal_influence = -10

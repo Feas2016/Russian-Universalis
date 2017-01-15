@@ -205,5 +205,34 @@ country_decisions = {
 				duration = -1
             }
 		}
-    }	
+    }
+
+    wek_coronation = {
+	    potential = {
+		    tag = WEK
+			religion = catholic
+			government = monarchy
+			NOT = { has_country_modifier = restore_wek }
+		}
+		
+		allow = {
+		    stability = 1
+			is_papal_controller = yes
+			treasury = 500
+			1878 = {
+			    has_great_project = aachen_palace
+			}
+		}
+		
+		effect = {
+		    add_treasury = -500
+		    country_event = {
+			    id = stt_wek.2
+			}
+			add_country_modifier = { 
+			    name = restore_wek
+				duration = -1
+			}
+		}
+	}	
 }

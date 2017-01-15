@@ -1089,4 +1089,68 @@ country_decisions = {
 			factor = 0
 		}
 	}
+
+    construct_aachen_palace = {
+	    major = yes
+		potential = {
+			OR = {
+				ai = no
+				AND = {
+					treasury = 1500
+					owns = 1878
+				}
+			}
+			tag = WEK
+		    owns = 1878
+			1878 = {
+				owns = ROOT
+				NOT = { has_great_project = aachen_palace }
+				NOT = { has_construction = great_project }
+			}
+		}
+		allow = {
+			owns = 1878
+			treasury = 1500
+			adm_power = 100
+		}
+		effect = {
+			add_treasury = -1500
+			add_adm_power = -100
+			1878 = {
+				add_great_project = aachen_palace
+			}
+			add_country_modifier = {
+				name = "aachen_palace"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	
+	cancel_aachen_palace = {
+		major = yes
+		potential = {
+			ai = no
+			owns = 1878
+			1878 = {
+				has_construction = great_project
+			}
+		}
+		allow = {
+			1878 = {
+				has_construction = great_project
+			}
+		}
+		effect = {
+			1878 = {
+				cancel_construction = yes
+			}
+			remove_country_modifier = "aachen_palace"
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -185,3 +185,15 @@ mod2_zam_if = {
 	global_unrest = -1
 	legitimacy = 1
 }
+mod2_aachen_palace = {
+	potential = {
+		owns = 1878
+	}
+	trigger = {
+		owns = 1878
+		1878 = { has_great_project = aachen_palace }	
+	}	
+	prestige = 1.5
+	legitimacy = 1.5
+	diplomatic_upkeep = 1
+}

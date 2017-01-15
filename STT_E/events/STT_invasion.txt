@@ -1,0 +1,80 @@
+namespace = stt_wek
+normal_or_historical_nations = yes
+
+#monarchy in aachen
+country_event = {
+    id = stt_wek.1
+	title = stt_wek.t.1
+	desc = stt_wek.de.1
+	
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	fired_only_once = yes
+	
+	trigger = {
+	    tag = AAC
+		government = republic
+		num_of_cities = 25
+		stability = 1
+		prestige = 50
+		NOT = { republican_tradition = 50 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 36
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+	}
+	
+	option = {
+	    name = stt_wek.a.1    #accept crown, absolutely
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+		change_government = absolute_monarchy
+		if = {
+		    limit = {
+			   government_rank = 1
+			}
+			set_government_rank = 2
+		}
+	}
+	
+	option = {
+	    name = stt_wek.a.2    #no, it will be democracy
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_prestige = -30
+		add_republican_tradition = 0.3
+	}
+}
+
+country_event = {
+    id = stt_wek.2
+	title = stt_wek.t.2
+	desc = stt_wek.de.2
+	
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_wek.a.3    #one king to rule
+		add_legitimacy = 50
+		add_prestige = 50
+	}
+
+}
