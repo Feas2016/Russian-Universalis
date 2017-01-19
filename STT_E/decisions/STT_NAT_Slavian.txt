@@ -30,6 +30,9 @@ country_decisions = {
 			owns_core_province = 262
 			owns_core_province = 141			# Belgrad
 			owns_core_province = 140			# Bosnia
+			owns_core_province = 150			# Sofia
+			owns_core_province = 268 			# Suceava
+			owns_core_province = 161 			# Tоrgoviste
 		}
 		effect = {
 			change_tag = SLA
@@ -315,6 +318,42 @@ country_decisions = {
 					}
 				change_primary_culture = stt_sla_byelorussian
 				}
+			every_province = {
+				limit = {
+					culture = bulgarian
+					}	
+				change_culture = stt_sla_bulgarian
+				}
+			every_country = {
+				limit = {
+					primary_culture = bulgarian
+					}
+				change_primary_culture = stt_sla_bulgarian
+				}
+			every_province = {
+				limit = {
+					culture = wallahian
+					}	
+				change_culture = stt_sla_wallahian
+				}
+			every_country = {
+				limit = {
+					primary_culture = wallahian
+					}
+				change_primary_culture = stt_sla_wallahian
+				}
+			every_province = {
+				limit = {
+					culture = moldavian
+					}	
+				change_culture = stt_sla_moldavian
+				}
+			every_country = {
+				limit = {
+					primary_culture = moldavian
+					}
+				change_primary_culture = stt_sla_moldavian
+				}				
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

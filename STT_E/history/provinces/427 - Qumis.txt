@@ -42,6 +42,16 @@ discovered_by = indian
 1673.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
 1715.12.1 = { base_tax = 4 base_production = 4 } # Political fragmentation
-1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
-1748.1.1 = { revolt_risk = 4 } # The empire began to decline
-1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1747.1.1 = { unrest = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { unrest = 4 } # The empire began to decline
+1750.1.2 = {
+	owner = KHI
+	controller = KHI
+	add_core = KHI
+	unrest = 0
+} # Shahrokh is allowed to remain as ruler of Khurasan
+1796.1.1 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+} # Conquered by Agha Muhammad Khan

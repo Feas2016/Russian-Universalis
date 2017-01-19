@@ -1106,9 +1106,10 @@ east_china_sea_region = {
 	}
 }
 
-north_east_pacific_region = {
+north_west_pacific_region  = {
 	areas = {
 		east_pacific_ocean_area
+		berring_sea_area
 	}
 }
 
@@ -1127,11 +1128,10 @@ south_west_pacific_region = {
 	}
 }
 
-north_west_pacific_region = {
+north_east_pacific_region = {
 	areas = {
 		north_pacific_area
-		north_pacific_coast_area
-		berring_sea_area
+		north_pacific_coast_area		
 		gulf_of_alaska_area
 	}
 }
