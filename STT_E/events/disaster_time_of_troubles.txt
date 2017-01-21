@@ -684,19 +684,40 @@ country_event = {
 	picture = CITY_DEVELOPMENT_eventPicture
 	
 	trigger = { ##STT
-		has_ruler = {
-			name = "Семибоярщина"
-			regent = yes
-		}
+		has_regency = yes
+		NOT = { is_year = 1613 }
+		is_year = 1612
+		tag = TSR
 	}
-	
 	mean_time_to_happen = {
-		days = 10
-	}
-	
+		days = 60
+	}	
 	option = {		# A stronger COUNTRY will emerge!
 		name = "flavor_rus.EVTOPTA1110"
-		add_adm_power = 100
+		add_adm_power = 50
+		add_mil_power = 50
+		if = {
+			limit = {
+				has_regency = no
+			}
+			tooltip = {
+				kill_ruler = yes
+			}
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_heir = yes
+		}
+		define_ruler = {
+			name = "Владислав I"
+			dynasty = Ваза
+			adm = 4
+			dip = 5
+			mil = 4
+			claim = 40
+		}
 	}
 	option = {		# COUNTRY needs a new dynasty!
 		name = "flavor_rus.EVTOPTB1110"
@@ -721,6 +742,35 @@ country_event = {
 			adm = 4
 			dip = 2
 			mil = 3
+			claim = 95
 		}
+	}
+}
+country_event = { ##STT
+	id = time_of_troubles.12
+	title = "time_of_troubles.12.t"
+	desc = "time_of_troubles.12.de"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = { 
+		has_regency = yes
+		NOT = { is_year = 1613 }
+		is_year = 1612
+		tag = TSR
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {		# A stronger COUNTRY will emerge!
+		name = "time_of_troubles.12.a"
+		add_stability = -2
+		add_legitimacy = -50
+		add_prestige = -50
+		add_manpower = -50
+		add_years_of_income = -1
+		add_war_exhaustion = 4
+		remove_country_modifier = time_of_troubles_12
 	}
 }

@@ -450,6 +450,30 @@ country_decisions = {
 		}
 	}
 	
+	time_of_troubles_12_de = {
+		potential = {
+			has_regency = yes
+			is_year = 1612
+			NOT = { is_year = 1613 }
+			is_year = 1612
+			tag = TSR
+			ai = no
+			was_player = no
+		}
+		allow = {
+			tag = TSR
+		}
+		effect = {
+			add_country_modifier = {
+				name = time_of_troubles_12
+				duration = 2
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 #	rus_nothommage = { #не платить дань орде
 #		major = yes
 #		potential = {
@@ -653,4 +677,4 @@ country_decisions = {
 #			}
 #		}
 #	}
-#}	
+}

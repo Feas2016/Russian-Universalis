@@ -172,13 +172,15 @@ government_rank = 3
 
 1610.7.21 = {
 	monarch = {
-		name = "Семибоярщина"
+		monarch_name = "Семибоярщина"
 		adm = 1
 		dip = 1
 		mil = 1
 		regent = yes
 	}
 }
+
+1612.8.25 = { decision = time_of_troubles_12_de } # St. Petersburg
 
 1613.7.22 = { clr_country_flag = time_of_troubles }
 
