@@ -14,15 +14,10 @@ base_manpower = 1
 discovered_by = eastern
 discovered_by = nomad_group
 
-1631.1.1 = { discovered_by = RUS }
-1632.5.1 = {
-	owner = RUS
-	controller = RUS
-	is_city = yes
-}
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1593.1.1 = {
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
+	add_core = TSR
+} # Berezov founded
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

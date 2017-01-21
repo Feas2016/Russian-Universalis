@@ -23,10 +23,10 @@ unrest = 15
 	unrest = 0
 } # Sibir Khanate formed from northern Uzbek lands
 1582.10.23 = {
-	discovered_by = RUS
-	owner = RUS
-	controller = RUS
-	add_core = RUS 
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
+	add_core = TSR 
 } # Yermak Timofeevich
 1587.1.1 = { 
 	capital = "Tobolsk"
@@ -38,9 +38,4 @@ unrest = 15
 1610.1.1 = { unrest = 2 }
 1616.1.1 = { unrest = 6 }
 1620.1.1 = { unrest = 0 remove_core = SIB }
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

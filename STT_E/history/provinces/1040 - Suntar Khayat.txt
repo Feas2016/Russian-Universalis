@@ -16,7 +16,17 @@ discovered_by = CHU
 discovered_by = CHV
 discovered_by = KMC
 
-1638.1.1 = { discovered_by = RUS }
+1647.1.1 = {
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
+	religion = orthodox
+	culture = russian
+	is_city = yes
+	trade_goods = fish
+}
+1652.1.1 = { add_core = TSR }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
 1732.1.1 = {
 	owner = RUS
 	controller = RUS

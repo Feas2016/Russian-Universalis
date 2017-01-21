@@ -16,9 +16,9 @@ discovered_by = CHV
 discovered_by = KMC
 
 1643.1.1 = {
-	discovered_by = RUS
-	owner = RUS
-	controller = RUS
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
 	religion = orthodox
 	culture = russian
 	is_city = yes
@@ -26,13 +26,7 @@ discovered_by = KMC
 } # Founded by Pyotr Beketov
 1655.1.1 = { unrest = 7 } # Yakutsk rebellion
 1660.1.1 = { unrest = 0 }
-1668.1.1 = { add_core = RUS }
+1668.1.1 = { add_core = TSR }
 1684.1.1 = { unrest = 4 } # Yakut rebellion
 1686.1.1 = { unrest = 0 }
-
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

@@ -76,7 +76,9 @@ government_rank = 3
 }
 
 1539.1.1 = { leader = {	name = "Петр Шуйский"         	type = general		rank = 3	fire = 2	shock = 3	manuever = 2	siege = 1	death_date = 1564.1.1 } }
-1547.1.2  = { changed_tag_from = MOS }
+
+1547.1.16  = { changed_tag_from = MOS }
+
 1549.1.1 = { 
 	decision = establish_zemsky 
 	decision = establish_pomestie
@@ -383,8 +385,7 @@ government_rank = 3
 
 1721.1.1 = { decision = church_tax decision = dissolution_of_the_monasteries } # The reforms of Peter the great
 
-
-1721.1.3  = { changed_tag_from = TSR }
+1721.11.2  = { changed_tag_from = TSR }
 
 1725.1.1 = { leader = {	name = "Христофор Миних"                 	type = general	rank = 3	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1739.1.1 } }
 

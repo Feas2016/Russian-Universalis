@@ -64,7 +64,7 @@ time_of_troubles = {
 	can_end = {
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { has_ruler_modifier = usurper_on_the_throne }
-		stability = 1
+		stability = 0 #STT
 		capital_scope = {
 			controlled_by = ROOT
 		}

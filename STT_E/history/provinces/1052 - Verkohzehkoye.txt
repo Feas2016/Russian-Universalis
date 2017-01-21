@@ -16,21 +16,16 @@ discovered_by = CHU
 discovered_by = CHV
 discovered_by = KMC
 
-1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
-1653.1.1 = {
-	owner = RUS
-	controller = RUS
+1643.1.1 = { discovered_by = TSR } # Vasily Poyarkov
+1647.1.1 = {
+	owner = TSR
+	controller = TSR
 	religion = orthodox
-	culture = russian
+	culture = russian	
+	trade_goods = fur
 	is_city = yes
-} # Pyotr Beketov
-1678.1.1 = { add_core = RUS }
-1700.1.1 = { trade_goods = fur }
-
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
 }
+1652.1.1 = { add_core = TSR }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
+
  

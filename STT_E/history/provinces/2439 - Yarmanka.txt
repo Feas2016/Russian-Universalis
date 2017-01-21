@@ -18,18 +18,13 @@ discovered_by = KMC
 
 
 1643.1.1 = {
-	discovered_by = RUS
-	owner = RUS
-	controller = RUS
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
 	religion = orthodox
 	culture = russian
 	is_city = yes
 	trade_goods = gold
 }
-1657.1.1 = { add_core = RUS }
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1657.1.1 = { add_core = TSR }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

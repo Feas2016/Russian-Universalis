@@ -683,10 +683,15 @@ country_event = {
 	desc = "flavor_rus.EVTDESC1110"
 	picture = CITY_DEVELOPMENT_eventPicture
 	
-	is_triggered_only = yes
+	trigger = { ##STT
+		has_ruler = {
+			name = "Семибоярщина"
+			regent = yes
+		}
+	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 10
 	}
 	
 	option = {		# A stronger COUNTRY will emerge!

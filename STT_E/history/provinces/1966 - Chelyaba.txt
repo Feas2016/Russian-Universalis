@@ -29,12 +29,13 @@ unrest = 15
 	remove_core = NOG 
 } 
 1582.10.23 = {
-	discovered_by = RUS
-	owner = RUS 
-	controller = RUS
-	add_core = RUS 
+	discovered_by = TSR
+	owner = TSR 
+	controller = TSR
+	add_core = TSR 
 	remove_core = SIB 
 } # Yermak Timofeevich
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
 1736.1.1 = { capital = "Chelyabinsk" culture = russian religion = orthodox remove_core = BSH }
 1773.9.13 = { revolt = { type = anti_tax_rebels size = 1 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

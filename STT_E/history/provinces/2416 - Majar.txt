@@ -31,11 +31,12 @@ discovered_by = nomad_group
 	remove_core = AST 
 } # Nogais migrate to the area after Russian conquest of Astrakhan
 1634.1.1 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 	remove_core = NOG
 	culture = kalmyks
 	religion = vajrayana
 } # Nogais driven out by Buddhist Kalmuks, Russian protectorate
 1700.1.1 = { culture = russian religion = orthodox }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

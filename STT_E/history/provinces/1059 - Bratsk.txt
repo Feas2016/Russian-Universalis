@@ -12,21 +12,16 @@ native_size = 10
 native_ferocity = 1
 native_hostileness = 3
 
-1631.1.1 = { discovered_by = RUS }
+1631.1.1 = { discovered_by = TSR }
 1632.1.1 = {
-	owner = RUS
-	controller = RUS
+	owner = TSR
+	controller = TSR
 	religion = orthodox
 	culture = russian
 	is_city = yes
 	trade_goods = fur
 }
-1657.1.1 = { add_core = RUS }
+1657.1.1 = { add_core = TSR }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
 
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
  

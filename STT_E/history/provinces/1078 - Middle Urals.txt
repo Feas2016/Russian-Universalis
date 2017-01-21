@@ -18,9 +18,9 @@ discovered_by = eastern
 discovered_by = nomad_group
 
 1582.10.26 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 	culture = russian
 	religion = orthodox 
 } # Yermak Timofeevich
@@ -29,12 +29,7 @@ discovered_by = nomad_group
 1677.1.1 = { unrest = 0 }
 1707.1.1 = { unrest = 4 } # Bashkirs rebels
 1708.1.1 = { unrest = 0 }
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
 1723.5.17 = { capital = "Yekaterinburg" }
 1735.1.1 = { unrest = 6 } # Bashkirs rebels
 1741.1.1 = { unrest = 0 }

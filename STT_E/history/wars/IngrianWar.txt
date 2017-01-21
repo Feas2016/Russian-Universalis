@@ -1,0 +1,17 @@
+name = "Русско-шведская война"
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = TSR
+}
+
+1610.9.1 = {
+	add_attacker = SWE
+	add_defender = TSR
+}
+
+# Treaty of Stolbovo
+1617.2.27 = {
+	rem_attacker = SWE
+	rem_defender = TSR
+}

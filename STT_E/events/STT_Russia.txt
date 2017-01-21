@@ -144,29 +144,29 @@ province_event = {
 	}
 }
 	
-country_event = {
-	id = stt_rus.5
-	title = "stt_rus.t.5"
-	desc = "stt_rus.de.5"
-	picture = COLONIZATION_eventPicture
-
-	is_triggered_only = yes #off MTTH
-
-	option = { 
-		name = "stt_rus.a.5"
-		ai_chance = { factor = 90 }
-		add_casus_belli = {
-			target = FROM
-			type = cb_horde_vs_civ
-			months = 3650
-		}
-	}
-	option = { 
-		name = "stt_rus.b.5"
-		ai_chance = { factor = 10 }
-		add_prestige = -10
-	}
-}
+#country_event = {
+#	id = stt_rus.5
+#	title = "stt_rus.t.5"
+#	desc = "stt_rus.de.5"
+#	picture = COLONIZATION_eventPicture
+#
+#	is_triggered_only = yes #off MTTH
+#
+#	option = { 
+#		name = "stt_rus.a.5"
+#		ai_chance = { factor = 90 }
+#		add_casus_belli = {
+#			target = FROM
+#			type = cb_horde_vs_civ
+#			months = 3650
+#		}
+#	}
+#	option = { 
+#		name = "stt_rus.b.5"
+#		ai_chance = { factor = 10 }
+#		add_prestige = -10
+#	}
+#}
 
 country_event = {
 	id = stt_rus.6

@@ -23,16 +23,14 @@ discovered_by = nomad_group
 1404.1.1 = { owner = LIT controller = LIT add_core = LIT } # Vytautas strikes back once more
 1453.1.1 = { add_core = MOS }
 1494.1.1 = { controller = MOS owner = MOS }
-1503.3.22 = { remove_core = MOS add_core = RUS controller = RUS owner = RUS }
-1514.1.1 = { controller = RUS } # Captured by Vasili III
-1522.1.1 = { owner = RUS add_local_autonomy = -50 }
+1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
 1569.7.4 = { remove_core = LIT } # Polish-Lithuanian Commonwealth
 1602.1.1 = { fort_15th = no fort_16th = yes } # Heavily fortified
 1611.1.1 = { controller = PLC }
-1618.12.11 = { owner = PLC } # Truce of Deulino
-1654.9.23 = { owner = RUS controller = RUS } # Reqonquered
+1613.1.1 = { controller = TSR } # Poles driven out
+1618.12.11 = { owner = TSR owner = TSR controller = TSR } # Truce of Deulino
 1667.1.1 = { remove_core = LIT remove_core = PLC } # Treaty of Andrusovo
-1711.1.1 = { base_tax = 5 
-base_production = 5 } # Governmental reforms and the absolutism
+1711.1.1 = { base_tax = 5 base_production = 5 } # Governmental reforms and the absolutism
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
 1812.8.17 = { controller = FRA } # Battle of Smolensk
 1812.11.9 = { controller = RUS }

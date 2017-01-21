@@ -25,5 +25,6 @@ discovered_by = eastern
 1550.1.1 = { trade_goods = naval_supplies } #Estimated Date
 1598.8.1 = { controller = PLC } #Sigismund tries to reconquer his crown
 1599.9.17 = { controller = SWE } #Duke Karl get it back
-1710.6.10 = { controller = RUS } #The Great Nordic War-Captured Viborg
-1721.8.30 = { owner = RUS add_core = RUS remove_core = SWE } #The Peace of Nystad
+1710.6.10 = { controller = TSR } #The Great Nordic War-Captured Viborg
+1721.8.30 = { owner = TSR add_core = TSR remove_core = SWE } #The Peace of Nystad
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

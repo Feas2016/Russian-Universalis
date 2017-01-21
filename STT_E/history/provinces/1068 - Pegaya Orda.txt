@@ -17,18 +17,11 @@ native_hostileness = 3
 discovered_by = nomad_group
 is_city = yes
 
-
 1450.1.1 = { discovered_by = SIB }
-1585.1.1 = { discovered_by = RUS }
+1585.1.1 = { discovered_by = TSR }
 1586.1.2 = {
-	owner = RUS
-	controller = RUS
-        add_core = RUS
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 } # Yermak Timofeevich
-
-1721.11.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-	remove_core = RUS
-}
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
