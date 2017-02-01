@@ -1153,4 +1153,29 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	
+#	construct_volga_don_volok = { # Soon
+#		major = yes
+#		
+#		potential = {	
+#			owns = 1971			
+#			1971 = {
+#				NOT = { has_great_project = volga_don_volok } 
+#				NOT = { has_construction = great_project }
+#			}
+#		}	
+#		allow = {
+#			owns = 1971
+#			controls = 464
+#			controls = 286
+#			treasury = 300
+#		}
+#		effect = {
+#			add_treasury = -100
+#			1971 = {	add_great_project = volga_don_volok	}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
 }
