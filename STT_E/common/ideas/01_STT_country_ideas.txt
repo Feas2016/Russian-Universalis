@@ -1014,5 +1014,53 @@ UKR_ideas = {
 	    land_forcelimit_modifier = 0.30
 		core_creation = -0.15
 	}
- 
+}
+
+NDL_ideas = {
+    start = {
+	    land_morale = 0.20
+		may_perform_slave_raid = yes
+	}
+	
+	bonus = {
+	    army_tradition = 1.5
+	}
+	
+	trigger = {
+		tag = NDL
+	}
+	free = yes
+	
+	NDL_first_idea = {
+	    naval_morale = 0.20
+		ship_durability = 0.10
+	}
+	
+	NDL_second_idea = {
+	    discipline = 0.05
+	}
+	
+	NDL_third_idea = {
+	    infantry_power = 0.20
+		land_forcelimit_modifier = 0.20
+	}
+	
+	NDL_fourth_idea = {
+	    manpower_recovery_speed = 0.20
+		global_manpower_modifier = 0.20
+	}
+	
+	NDL_fifth_idea = {
+	    land_maintenance_modifier = -0.40
+	}
+	
+	NDL_sixth_idea = {
+	    leader_land_shock = 1
+		leader_land_manuever = 1
+	}
+	
+	NDL_seventh_idea = {
+	    colonists = 1
+		global_colonial_growth = 20
+	}
 }

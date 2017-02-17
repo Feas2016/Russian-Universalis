@@ -260,3 +260,859 @@ ROME_trade_provinces = {
         } 
     }
 }
+
+ndl_pomerania = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 1858
+			province_id = 2994
+			province_id = 47
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 47 }
+			NOT = { owns = 2994 }
+			NOT = { owns = 1858 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+	}
+}
+
+ndl_northumbry = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 244
+			province_id = 245
+			province_id = 246
+			province_id = 247
+			province_id = 3093
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 247 }
+			NOT = { owns = 3093 }
+			NOT = { owns = 246 }
+			NOT = { owns = 245 }
+			NOT = { owns = 244 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_northumbry
+	}
+}
+
+ndl_livonia = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 35
+			province_id = 38
+			province_id = 3210
+			province_id = 36
+			province_id = 1842
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 35 }
+			NOT = { owns = 36 }
+			NOT = { owns = 38 }
+			NOT = { owns = 3210 }
+			NOT = { owns = 1842 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_livonia
+	}
+}
+
+ndl_novgorod = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+	        area = novgorod_area
+		    area = ingria_area
+		}
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_livonia
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    novgorod_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		    ingria_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		add_country_modifier = { 
+            name = "boom_economy" 
+            duration = 3650 
+        }
+		set_country_flag = ndl_conquest_novgorod
+		clr_country_flag = ndl_conquest_livonia
+	}
+}
+
+ndl_dnepr = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+	        area = west_dniepr_area
+		    area = east_dniepr_area
+		}
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_novgorod
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    west_dniepr_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		    east_dniepr_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 7300
+		}
+	}
+}
+
+ndl_white_sea = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 1958
+			province_id = 1955
+			province_id = 313
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_novgorod
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 313 }
+			NOT = { owns = 1955 }
+			NOT = { owns = 1958 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		add_country_modifier = { 
+            name = "boom_economy" 
+            duration = 3650 
+        }
+	}
+}
+
+ndl_ireland = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 374
+			province_id = 373
+			province_id = 3626
+			province_id = 3273
+			province_id = 3026
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_northumbry
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 374 }
+			NOT = { owns = 373 }
+			NOT = { owns = 3626 }
+			NOT = { owns = 3273 }
+			NOT = { owns = 3026 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_ireland
+	}
+}
+
+ndl_islands = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 253
+			province_id = 3290
+			province_id = 3089
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_northumbry
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 253 }
+			NOT = { owns = 3290 }
+			NOT = { owns = 3089 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_islands
+	}
+}
+
+ndl_low_lands = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+	        area = frisia_area
+		    area = netherlands_area
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_northumbry
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    frisia_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		    netherlands_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		add_country_modifier = { 
+            name = "boom_economy" 
+            duration = 3650 
+        }
+		set_country_flag = ndl_conquest_lowlands
+	}
+}
+
+ndl_normandy = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    area = normandy_area
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_lowlands
+	    is_subject = no
+		tag = NDL
+		normandy_area = {
+			NOT = { owned_by = ROOT }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_normandy
+	}
+}
+
+ndl_picardia = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+		    province_id = 174
+			province_id = 3026
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_ireland
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    NOT = { owns = 174 }
+			NOT = { owns = 3026 }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = 3650
+		}
+		set_country_flag = ndl_conquest_picardia
+	}
+}
+
+ndl_sicily = {
+    
+	type = country
+    
+    category = MIL
+
+    target_provinces = {
+	    OR = {
+	        area = sicily_area
+		    area = naples_area
+		    area = calabria
+		    area = apulia_area
+		}
+		NOT = { owned_by = ROOT }
+	}
+
+    allow = {
+	    has_country_flag = ndl_conquest_lowlands
+	    is_subject = no
+		tag = NDL
+		OR = {
+		    sicily_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+			naples_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+			calabria = {
+			    NOT = { owned_by = ROOT }
+		    }
+			apulia_area = {
+			    NOT = { owned_by = ROOT }
+		    }
+		}
+	}	
+	
+	abort = {
+		is_subject = yes
+	}
+	
+	success = {
+	    all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	
+	effect = {
+	    add_country_modifier = {
+		    name = "tyur_bless"
+			duration = -1
+		}
+		add_country_modifier = { 
+            name = "boom_economy" 
+            duration = 3650 
+        }
+	}
+}

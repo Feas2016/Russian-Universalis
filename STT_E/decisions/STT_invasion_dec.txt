@@ -234,5 +234,153 @@ country_decisions = {
 				duration = -1
 			}
 		}
+	}
+
+    accept_norske_religion = {
+	    major = yes
+	    potential = {
+		    OR = {
+			    tag = NOR
+				tag = SWE
+			}
+			NOT = { is_year = 1550 }
+			NOT = { religion = norse_pagan_reformed }
+		}
+		
+		allow = {
+		    num_of_owned_provinces_with = {
+			    value = 3
+				religion = norse_pagan_reformed
+			}
+			is_subject = no
+			num_of_infantry = 20
+		}
+		
+		effect = {
+		    country_event = {
+			    id = stt_scan.3
+			}
+		}
+	}
+
+    build_hof = {
+	    potential = {
+		    OR = {
+			    tag = NOR
+				tag = SWE
+			}
+			religion = norse_pagan_reformed
+			NOT = {
+			    capital_scope = {
+				    has_province_modifier = great_hof
+				}
+			}
+			NOT = {
+			    has_country_flag = building_hof
+			}
+		}
+		
+		allow = { 
+		    treasury = 200
+			adm_power = 75
+		}
+		
+		effect = {
+		    add_treasury = -200
+			add_adm_power = -75
+			set_country_flag = building_hof
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			    factor = 0
+				NOT = {
+				    OR = {
+				        adm_power = 75
+						treasury = 200
+					}
+				}
+			}
+		}
+	}
+
+    start_missionary_mission = {
+	    potential = {
+		    capital_scope = {
+				has_province_modifier = great_hof
+			}
+			NOT = { has_country_modifier = norse_missionaries }
+		}
+		
+		allow = {
+		    advisor = inquisitor
+		    treasury = 50
+			adm_power = 100
+			capital_scope = {
+				has_province_modifier = great_hof
+			}
+		}
+		
+		effect = {
+		    add_treasury = -50
+			add_adm_power = -100
+			add_country_modifier = {
+			    name = norse_missionaries
+				duration = 2200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			    factor = 0
+				NOT = {
+				    OR = {
+				        adm_power = 100
+						treasury = 50
+					}
+				}
+			}
+		}
+	}
+
+    form_nordland = {
+	    major = yes
+	    potential = {
+		    religion = norse_pagan_reformed
+			culture_group = scandinavian
+			NOT = { exists = NDL }
+		}
+		
+		allow = {
+		    is_subject = no
+			is_at_war = no
+		    religious_unity = 0.80
+			OR = { 
+			    SWE = {
+			        NOT = {
+				        exists = NOR
+					    exists = DAN
+				    }
+			    }
+			    NOR = {
+				    NOT = {
+				        exists = SWE
+					    exists = DAN
+				    }
+			    }
+			}
+		}
+		
+		effect = {
+		    change_tag = NDL
+			add_country_modifier = {
+			    name = "centralization_modifier"
+			    duration = 7300
+		    }
+			add_prestige = 50
+			add_legitimacy = 20
+			culture_group_union = scandinavian
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
 	}	
 }

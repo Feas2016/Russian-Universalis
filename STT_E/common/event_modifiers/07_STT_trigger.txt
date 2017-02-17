@@ -59,3 +59,45 @@ restore_wek = {
     core_creation = -0.25
 	ae_impact = -0.15
 }
+
+pagans_was_supported = {
+    local_unrest = 2
+	local_manpower_modifier = 0.75
+	local_missionary_strength = -0.5
+}
+
+pagans_was_destroyed = {
+    local_unrest = -2
+	local_manpower_modifier = -0.50
+}
+
+catholic_resistance = {
+    diplomatic_reputation = -2
+	global_unrest = 3
+}
+
+great_hof = {
+    local_unrest = -2
+	prestige = 1
+	global_missionary_strength = 0.01
+	tolerance_own = 1
+}
+
+norse_missionaries = {
+    global_missionary_strength = 0.01
+	missionaries = 2
+}
+
+fail_norse_mission = {
+    local_missionary_strength = -0.99
+	local_unrest = 3
+}
+
+tyur_bless = {
+    army_tradition = 1
+	discipline = 0.025
+	infantry_power = 0.10
+	land_morale = 0.10
+	naval_morale = 0.10
+	navy_tradition = 1
+}
