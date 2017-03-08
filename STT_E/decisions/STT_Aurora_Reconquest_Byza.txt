@@ -1,0 +1,488 @@
+country_decisions = {
+
+	reconquest_byzantine_empire = {
+		potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs
+				}	
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 145	# Morea
+			owns = 1773	# Achea
+			owns = 3265	# Mytilene
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			set_country_flag = hs
+			change_tag = BYZ
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 142
+						province_id = 3033
+						province_id = 3003
+						province_id = 163
+						province_id = 164
+						province_id = 320
+					}
+					NOT = { is_core = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "reconquest_one"
+				duration = 7300
+			}
+			add_prestige = 10
+		}
+	}
+	reconquest_byzantine_empire_two = {
+		potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs_two
+				}	
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 145	# Morea
+			owns = 1773	# Achea
+			owns = 3265	# Mytilene
+			owns = 142
+			owns = 3033
+			owns = 3003
+			owns = 163
+			owns = 164
+			owns = 320
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			set_country_flag = hs_two
+			change_tag = BYZ
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 2348
+						province_id = 3032
+						province_id = 3031
+						province_id = 138
+						province_id = 1827
+						province_id = 1766
+						province_id = 3000
+						province_id = 141
+						province_id = 3097
+						province_id = 3100
+						province_id = 1831
+						province_id = 3099
+						province_id = 137
+						province_id = 3002
+						province_id = 139
+						province_id = 140
+						province_id = 1828
+						province_id = 136
+						province_id = 3128
+						province_id = 330
+						province_id = 2410
+						province_id = 285
+						province_id = 321
+						province_id = 2302
+						province_id = 3109
+						province_id = 324
+						province_id = 3261
+						province_id = 323
+						province_id = 3108
+						province_id = 3263
+						province_id = 2301
+						province_id = 3113
+						province_id = 327
+						province_id = 3262
+						province_id = 332
+						province_id = 3114
+						province_id = 2303
+						province_id = 325
+						province_id = 328
+					}
+					NOT = { is_core = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "reconquest_two"
+				duration = 7300
+			}
+			add_prestige = 20
+			add_army_tradition = 20
+		}
+	}
+	reconquest_byzantine_empire_athens = {
+		potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs_athens
+				}	
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 145	# Morea
+			owns = 1773	# Achea
+			owns = 3265	# Mytilene
+			owns = 142
+			owns = 3033
+			owns = 3003
+			owns = 163
+			owns = 164
+			owns = 320	
+			owns = 146
+			owns = 3104
+			owns = 3034
+			has_country_modifier = reconquest_two
+			religion = orthodox
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			set_country_flag = hs_athens
+			change_tag = BYZ
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 3036
+						province_id = 3103
+						province_id = 143
+						province_id = 3102
+						province_id = 3098
+						province_id = 3001
+						province_id = 1765
+						province_id = 2750
+						province_id = 3259
+						province_id = 1764
+						province_id = 3285
+						province_id = 159
+						province_id = 150
+						province_id = 3260
+						province_id = 2746
+						province_id = 2296
+						province_id = 317
+						province_id = 316
+						province_id = 3107
+						province_id = 318
+						province_id = 2297
+						province_id = 3110
+						province_id = 319
+						province_id = 2298
+						province_id = 2299
+						province_id = 2304
+					}
+					NOT = { is_core = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "reconquest_athens"
+				duration = 7300
+			}
+			define_general = {
+				name = "General"
+				shock = 4
+				fire = 0
+				manuever = 4
+				siege = 2
+			}
+			add_army_tradition = 15
+			add_manpower = 15
+		}
+	}
+	reconquest_byzantine_empire_greece = {
+	
+	potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs_greece
+				}	
+		}
+		allow = {
+			owns = 151 # Constantinople
+			owns = 145	# Morea
+			owns = 1773	# Achea
+			owns = 3265	# Mytilene
+			owns = 142	
+			owns = 3033
+			owns = 3003
+			owns = 163
+			owns = 164
+			owns = 320	
+			owns = 146
+			owns = 3036
+			owns = 3104
+			owns = 147
+			owns = 144
+			owns = 1853
+			owns = 148
+			owns = 3264
+			owns = 149
+			owns = 3105
+			owns = 3106
+			owns = 3034
+			religion = orthodox
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			set_country_flag = hs_greece
+			change_tag = BYZ
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 322
+						province_id = 1848
+						province_id = 3111
+						province_id = 326
+						province_id = 3112
+						province_id = 2300
+						province_id = 1846
+						province_id = 329
+						province_id = 2305
+						province_id = 3122
+						province_id = 331
+						province_id = 418
+						province_id = 2306
+						province_id = 2307
+						province_id = 3124
+						province_id = 2196
+						province_id = 462
+						province_id = 1856
+						province_id = 3101
+						province_id = 3283
+						province_id = 1826
+						province_id = 3284
+						province_id = 1767
+						province_id = 3035
+						province_id = 3151
+						province_id = 3150
+						province_id = 152
+						province_id = 131
+					}
+					NOT = { is_core = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "reconquest_greece"
+				duration = 1825
+			}
+		}
+	}
+	reconquest_byzantine_empire_three = {
+	potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs_three
+				}	
+		}
+		allow = {
+			owns = 151 # Constantinople
+			total_development = 800
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+		}
+		effect = {
+			set_country_flag = hs_three 
+			change_tag = BYZ
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 3118
+						province_id = 407
+						province_id = 2314
+						province_id = 405
+						province_id = 1849
+						province_id = 377
+						province_id = 3120
+						province_id = 2313
+						province_id = 378
+						province_id = 382
+						province_id = 1855
+						province_id = 1854
+						province_id = 381
+						province_id = 364
+						province_id = 379
+						province_id = 380
+						province_id = 3266
+						province_id = 365
+						province_id = 363
+						province_id = 2315
+						province_id = 3291
+						province_id = 2316
+						province_id = 358
+						province_id = 3292
+						province_id = 3293
+						province_id = 362
+						province_id = 361
+						province_id = 359
+						province_id = 2317
+						province_id = 2319
+						province_id = 2320
+						province_id = 360
+						province_id = 1231
+						province_id = 2321
+						province_id = 2325
+						province_id = 2326
+						province_id = 357
+						province_id = 356
+						province_id = 359		
+					}
+					NOT = { is_core = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			random_owned_province = {
+				limit = { culture = greek }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "reconquest_three"
+				duration = 7300
+			}
+		}
+	}
+	return_greeks = {
+	potential = {
+				tag = BYZ
+				is_year = 1444
+				NOT = {
+						has_country_flag = hs_greeks
+				}	
+		}
+		allow = {
+			primary_culture = greek
+			religion = orthodox
+			owns = 151 # Constantinople
+			owns = 318
+			owns = 3110
+			owns = 2297
+			owns = 319
+			owns = 2298
+			owns = 3107
+			owns = 317
+			owns = 322
+			owns = 316
+			owns = 2299
+			owns = 325
+			owns = 3111
+			owns = 1848
+			is_at_war = no
+			is_subject = no
+			is_nomad = no
+			DIP = 4
+			MIL = 3
+			treasury = 750
+			adm_power = 50
+			dip_power = 500
+			mil_power = 150
+			manpower = 35
+		}
+		effect = {
+			set_country_flag = hs_greeks
+			change_tag = BYZ
+			add_adm_power = -50
+			add_dip_power = -500
+			add_mil_power = -150
+			add_treasury = -750
+			add_manpower = -35
+			318 = {
+				change_culture = greek 
+			}
+			3110 = {
+				change_culture = greek 
+			}
+			2297 = {
+				change_culture = greek 
+			}
+			319 = {
+				change_culture = greek 
+			}
+			2298 = {
+				change_culture = greek 
+			}
+			3107 = {
+				change_culture = greek 
+			}
+			317 = {
+				change_culture = greek 
+			}
+			322 = {
+				change_culture = greek 
+			}
+			316 = {
+				change_culture = greek 
+			}
+			2299 = {
+				change_culture = greek 
+			}
+			325 = {
+				change_culture = greek 
+			}
+			3111 = {
+				change_culture = greek 
+			}
+			1848 = {
+				change_culture = greek 
+			}
+			add_country_modifier = {
+				name = "return_greeks"
+				duration = 1825
+			}
+		}
+	}
+	
+}
