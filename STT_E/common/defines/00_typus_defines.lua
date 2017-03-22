@@ -1,5 +1,6 @@
 -- Custom defines for Typus to fix the main menu camera:
-NDefines.NGame.END_DATE = "1850.1.1"
+NDefines.NGame.START_DATE = "1309.3.9"
+NDefines.NGame.END_DATE = "1914.1.1"
 
 NDefines.NFrontend.CAMERA_LOOKAT_X = 2787.0
 NDefines.NFrontend.CAMERA_LOOKAT_Z = 1845.0
