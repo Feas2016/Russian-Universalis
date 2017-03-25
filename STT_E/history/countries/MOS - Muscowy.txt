@@ -10,6 +10,29 @@ national_focus = ADM
 
 1252.1.1 = { decision = rus_hommage }
 
+1281.1.1 = {
+	monarch = {
+		name = "Юрий"
+		dynasty = "Рюрикович"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+1288.11.1 = {
+	heir = {
+		name = "Иван"
+		monarch_name = "Иван I Калита"
+		dynasty = Рюрикович
+		birth_date = 1288.11.1
+		death_date = 1340.3.31
+		claim = 95
+		adm = 3
+		dip = 6
+		mil = 5
+	}
+}
+
 1389.5.19 = {
 	monarch = {
 		name = "Василий I"

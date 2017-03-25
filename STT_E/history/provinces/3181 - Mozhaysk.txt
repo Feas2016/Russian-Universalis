@@ -1,7 +1,7 @@
 #1752 - Rzhev
 
-owner = VYA
-controller = VYA
+owner = MOS
+controller = MOS
 culture = russian
 religion = orthodox
 hre = no
@@ -11,12 +11,13 @@ trade_goods = grain
 base_manpower = 2
 capital = "Vereya"
 is_city = yes
-add_core = VYA
 add_core = MOS
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+
+1444.11.11 = { owner = VYA controller = VYA add_core = VYA } #vanilla date
 1450.1.1 = { discovered_by = SIB }
 1485.9.11 = { owner = MOS controller = MOS remove_core = TVE } # Passed to Muscovy
 1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
