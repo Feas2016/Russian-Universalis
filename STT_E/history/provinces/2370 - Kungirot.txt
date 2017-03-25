@@ -1,7 +1,7 @@
 # 2370 - Kungirot
 
-owner = TIM
-controller = TIM
+owner = GLH
+controller = GLH
 culture = nogaybak
 religion = sunni
 capital = "Kungirot"
@@ -12,11 +12,13 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = TIM
+add_core = GLH
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+1444.1.1 = { owner = TIM controller = TIM } #vanilla date
 1502.1.1 = { owner = NOG controller = NOG add_core = NOG }
 1520.1.1 = {
 	owner = KZH

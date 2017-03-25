@@ -6,6 +6,30 @@ technology_group = nomad_group
 capital = 303	# Saratov
 historical_rival = TUR
 
+1270.1.1 = {
+	monarch = {
+		name = "Тохта"
+		dynasty = "Чингизид"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1283.1.1 = {
+	heir = {
+		name = "Узбек"
+		monarch_name = "Узбек-хан"
+		dynasty = "Чингизид"
+		birth_date = 1283.1.1
+		death_date = 1341.1.1
+		claim = 90
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
 1432.1.1 = {
 	monarch = {
 		name = "Кычак-Мухаммед"

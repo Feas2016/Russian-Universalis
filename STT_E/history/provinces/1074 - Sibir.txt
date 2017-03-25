@@ -1,7 +1,7 @@
 #1074 - Sibir
 
-owner = SHY
-controller = SHY
+owner = GLH
+controller = GLH
 culture = siberian
 religion = siberian_shamanism
 capital = "Qashliq"
@@ -13,9 +13,12 @@ base_manpower = 2
 is_city = yes
 add_core = SIB
 add_core = SHY
+add_core = GLH
 discovered_by = nomad_group
 unrest = 15
 
+1428.1.1 = { owner = SIB controller = SIB } #vanilla date
+1428.1.1 = { owner = SHY controller = SHY } #vanilla date
 1468.1.1 = {
 	owner = SIB
 	controller = SIB

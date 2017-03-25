@@ -1,7 +1,7 @@
 #440 - Qaraqalpak
 
-owner = TIM
-controller = TIM
+owner = GLH
+controller = GLH
 culture = uzbehk
 religion = sunni
 capital = "Chimbay"
@@ -13,11 +13,14 @@ base_manpower = 3
 is_city = yes
 add_core = TIM
 add_core = KHI
+add_core = GLH
 discovered_by = KAS
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 
+
+1444.1.1 = { owner = TIM controller = TIM } #vanilla date
 1502.1.1 = { 
 	owner = BUK 
 	add_core = BUK 

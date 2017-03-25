@@ -1,7 +1,7 @@
 #286 - Azow
 
-owner = GEN
-controller = GEN
+owner = GLH
+controller = GLH
 culture = crimean
 religion = sunni
 hre = no
@@ -11,7 +11,8 @@ trade_goods = slaves
 base_manpower = 3
 capital = "Tana"
 is_city = yes
-add_core = GEN
+add_core = CRI
+add_core = GLH
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -28,6 +29,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1444.11.11 = { owner = GEN controller = GEN add_core = GEN } #vanilla date
 1471.1.1 = { fort_15th = yes owner = TUR controller = TUR add_core = TUR remove_core = GEN capital = "Azaq" } # End of prosperity, seized by the Turks, fortress established
 1637.6.1 = { owner = ZAZ controller = ZAZ add_core = ZAZ } # Held by the Don Cossacks and the Zaporozhian Cossacks
 1642.1.1 = { owner = TUR controller = TUR } # Decides to surrender to avoid war
