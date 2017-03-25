@@ -514,6 +514,10 @@ exploration_ideas = {
 			factor = 0
 			is_colonial_nation = yes
 		}
+		modifier = {          #STT
+		    factor = 0
+			NOT = { is_year = 1400 }
+		}
 		modifier = {
 			factor = 0
 			is_tribal = yes

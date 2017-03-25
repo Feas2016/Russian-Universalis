@@ -9,66 +9,23 @@ country_decisions = {
 				tag = ROM
 			}
 			NOT = { has_country_modifier = the_theme_system }
-			### STT
-			calc_true_if = {
-				owns = 151 # Constantinople
-				owns = 149 # Edirne
-				owns = 316 # Izmit
-				owns = 317 # Hudavendigar
-				owns = 318 # Sugla (Izmir)
-				owns = 319 # Mentese
-				owns = 322 # Kьtahya
-				owns = 323 # Konya
-				owns = 324 # Karaman
-				owns = 325 # Kastamonu
-				owns = 326 # Ankara
-				owns = 328 # Sinop
-				owns = 329 # Sivas
-				owns = 330 # Trebizond
-				owns = 327 # Adana
-				owns = 1846 # Amasya
-				owns = 1848 # Hamid
-				owns = 2296 # Biga
-				owns = 2297 # Saruhan
-				owns = 2298 # Tekke
-				owns = 2299 # Bolu
-				owns = 2300 # Bozok
-				owns = 2301 # Kayseri
-				owns = 2302 # Icel
-				owns = 2304 # Canik
-				owns = 2750 # Plovdiv
-				amount = 15
-
-
-			}
 		}
 		allow = {
-			owns = 151 # Constantinople
-			owns = 149 # Edirne
-			owns = 316 # Izmit
-			owns = 317 # Hudavendigar
-			owns = 318 # Sugla (Izmir)
-			owns = 319 # Mentese
-			owns = 322 # Kьtahya
-			owns = 323 # Konya
-			owns = 324 # Karaman
-			owns = 325 # Kastamonu
-			owns = 326 # Ankara
-			owns = 328 # Sinop
-			owns = 329 # Sivas
-			owns = 330 # Trebizond
-			owns = 327 # Adana
-			owns = 1846 # Amasya
-			owns = 1848 # Hamid
-			owns = 2296 # Biga
-			owns = 2297 # Saruhan
-			owns = 2298 # Tekke
-			owns = 2299 # Bolu
-			owns = 2300 # Bozok
-			owns = 2301 # Kayseri
-			owns = 2302 # Icel
-			owns = 2304 # Canik
-			owns = 2750 # Plovdiv
+			albania_area = { type = all owned_by = BYZ }
+			thrace_area = { type = all owned_by = BYZ }
+			macedonia_area = { type = all owned_by = BYZ }
+			morea_area = { type = all owned_by = BYZ }
+			northern_greece_area = { type = all owned_by = BYZ }
+			eastern_aegean_area = { type = all owned_by = BYZ }
+			western_aegean_area = { type = all owned_by = BYZ }
+			pontus_area = { type = all owned_by = BYZ }
+			aydin_area = { type = all owned_by = BYZ }
+			kastamonu_area = { type = all owned_by = BYZ }
+			rum_area = { type = all owned_by = BYZ }
+			karaman_area = { type = all owned_by = BYZ }
+			hudavendigar_area = { type = all owned_by = BYZ }
+			cilicia_area = { type = all owned_by = BYZ }
+			dulkadir_area = { type = all owned_by = BYZ }
 		}
 		effect = {
 			149 = { change_province_name = Адрианополь rename_capital = Адрианополь }
