@@ -650,6 +650,9 @@ christian = {
 	orthodox = {
 		color = { 0.7 0.5 0 }
 		icon = 4
+		allowed_conversion = { ###STT
+			grekocatholic
+		}
 		country = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
@@ -675,6 +678,8 @@ christian = {
 		icon = 22		
 		allowed_conversion = {
 			orthodox
+			catholic
+			protestant
 		}
 		country = {
 			tolerance_heretic = 2

@@ -1,8 +1,687 @@
 government = feudal_monarchy
+government_rank = 2
 technology_group = western
 primary_culture = prussian
 culture_group_union = germanic
 religion = catholic
-capital = 50	# Berlin
 
-1750.1.1 = { government = constitutional_republic }
+#Номинальный титул
+
+996.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1002.7.7 = {
+	monarch = {
+		name = "Генрих II Святой"
+		dynasty = "Людольфингер"
+		birth_date = 973.5.6
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1024.7.13 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1024.9.4 = {
+	monarch = {
+		name = "Конрад II"
+		dynasty = "Сальер"
+		birth_date = 990.5.6
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1039.6.4 = {
+	monarch = {
+		name = "Генрих III"
+		dynasty = "Сальер"
+		birth_date = 1017.10.28
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1054.11.1 = {
+	monarch = {
+		name = "Генрих IV"
+		dynasty = "Сальер"
+		birth_date = 1050.11.11
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1054.11.1 = {
+	monarch = {
+		name = "Генрих IV"
+		dynasty = "Сальер"
+		birth_date = 1050.11.11
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1106.1.6 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Сальер"
+		birth_date = 1081.8.11
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1125.5.23 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1125.8.24 = {
+	monarch = {
+		name = "Лотарь II"
+		dynasty = "фон Супплинбург"
+		birth_date = 1075.6.9
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1137.12.4 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1138.3.7 = {
+	monarch = {
+		name = "Конрад III"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1093.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1152.2.15 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1152.3.4 = {
+	monarch = {
+		name = "Фридрих I Барбаросса"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1122.10.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1190.6.10 = {
+	monarch = {
+		name = "Генрих VI"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1165.11.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1197.9.28 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1198.3.6 = {
+	monarch = {
+		name = "Филипп"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1177.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1208.6.21 = {
+	monarch = {
+		name = "Оттон IV"
+		dynasty = "Вельф"
+		birth_date = 1175.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1212.7.5 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1212.12.5 = {
+	monarch = {
+		name = "Фридрих II"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1194.12.26
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1250.12.13 = {
+	monarch = {
+		name = "Конрад IV"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1228.4.25
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1254.5.21 = {
+	monarch = {
+		name = "Виллем II"
+		dynasty = "Герульфинг"
+		birth_date = 1228.2.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1254.5.21 = {
+	monarch = {
+		name = "Виллем II"
+		dynasty = "Герульфинг"
+		birth_date = 1228.2.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1256.1.28 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1257.1.13 = {
+	monarch = {
+		name = "Ричард"
+		dynasty = "Плантагенет"
+		birth_date = 1209.1.5
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1272.4.2 = {
+	monarch = {
+		name = "Альфонсо X"
+		dynasty = "де Бургонь"
+		birth_date = 1221.11.23
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1273.10.1 = {
+	monarch = {
+		name = "Рудольф I"
+		dynasty = "фон Габсбург"
+		birth_date = 1218.5.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1291.7.15 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1292.5.5 = {
+	monarch = {
+		name = "Адольф"
+		dynasty = "фон Нассау"
+		birth_date = 1250.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1298.7.2 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1298.12.27 = {
+	monarch = {
+		name = "Альбрехт I"
+		dynasty = "фон Габсбург"
+		birth_date = 1255.7.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1308.5.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1308.11.27 = {
+	monarch = {
+		name = "Генрих VII"
+		dynasty = "фон Люксембург"
+		birth_date = 1275.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1313.8.24 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1314.10.19 = {
+	monarch = {
+		name = "Фридрих III Красивый"
+		dynasty = "фон Габсбург"
+		birth_date = 1289.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1314.10.20 = {
+	monarch = {
+		name = "Людвиг IV"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1289.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1347.10.11 = {
+	monarch = {
+		name = "Карл IV"
+		dynasty = "фон Люксембург"
+		birth_date = 1316.5.14
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1378.11.29 = {
+	monarch = {
+		name = "Венцель"
+		dynasty = "фон Люксембург"
+		birth_date = 1361.2.26
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1400.8.20 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1400.8.21 = {
+	monarch = {
+		name = "Рупрехт III"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1352.5.5
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1410.5.18 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1410.9.20 = {
+	monarch = {
+		name = "Сигизмунд"
+		dynasty = "фон Люксембург"
+		birth_date = 1368.2.15
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1437.12.9 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1438.5.19 = {
+	monarch = {
+		name = "Альбрехт II"
+		dynasty = "фон Габсбург"
+		birth_date = 1397.8.16
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1439.10.27 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1440.2.2 = {
+	monarch = {
+		name = "Фридрих III"
+		dynasty = "фон Габсбург"
+		birth_date = 1415.9.21
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1493.8.19 = {
+	monarch = {
+		name = "Максимилиан I"
+		dynasty = "фон Габсбург"
+		birth_date = 1459.3.22
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1519.1.12 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1519.10.23 = {
+	monarch = {
+		name = "Карл V"
+		dynasty = "фон Габсбург"
+		birth_date = 1500.2.24
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1530.2.24 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1531.1.5 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "фон Габсбург"
+		birth_date = 1503.3.10
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1564.7.25 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1575.10.27 = {
+	monarch = {
+		name = "Рудольф II"
+		dynasty = "фон Габсбург"
+		birth_date = 1552.7.18
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1576.10.2 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1636.1.1 = {
+	monarch = {
+		name = "Фердинанд III"
+		dynasty = "фон Габсбург"
+		birth_date = 1608.7.13
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1637.2.15 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1654.5.31 = {
+	monarch = {
+		name = "Фердинанд IV"
+		dynasty = "фон Габсбург"
+		birth_date = 1633.9.8
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1654.7.9 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1690.1.1 = {
+	monarch = {
+		name = "Леопольд I"
+		dynasty = "фон Габсбург"
+		birth_date = 1640.7.9
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1705.5.5 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1764.3.27 = {
+	monarch = {
+		name = "Иосиф II"
+		dynasty = "фон Габсбург"
+		birth_date = 1640.7.9
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1765.8.18 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1811.3.20 = {
+	monarch = {
+		name = "Наполеон II"
+		dynasty = "Бонапарт"
+		birth_date = 1811.3.20
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1832.7.22 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}

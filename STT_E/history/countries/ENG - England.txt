@@ -1,4 +1,4 @@
-government = english_monarchy
+government = feudal_monarchy
 mercantilism = 25
 technology_group = western
 primary_culture = english
@@ -8,6 +8,685 @@ add_accepted_culture = northumbrian
 religion = catholic
 capital = 236 # London
 national_focus = DIP
+
+978.3.18 = {
+	monarch = {
+		name = "Этельред II Неразумный"
+		dynasty = "Уэссекский"
+		birth_date = 968.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+989.1.1 = {
+	heir = {
+		name = "Эдмунд"
+		monarch_name = "Эдмунд II"
+		dynasty = "Уэссекский"
+		birth_date = 989.1.1
+		death_date = 1016.11.30
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1013.10.1 = {
+	monarch = {
+		name = "Свейн Вилобородый"
+		dynasty = "Кнютлинг"
+		birth_date = 960.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1014.2.3 = {
+	monarch = {
+		name = "Этельред II Неразумный"
+		dynasty = "Уэссекский"
+		birth_date = 968.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1014.2.3 = {
+	heir = {
+		name = "Эдмунд"
+		monarch_name = "Эдмунд II"
+		dynasty = "Уэссекский"
+		birth_date = 989.1.1
+		death_date = 1016.11.30
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1016.4.23 = {
+	monarch = {
+		name = "Эдмунд II"
+		dynasty = "Уэссекский"
+		birth_date = 989.1.1
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1016.4.23 = {
+	heir = {
+		name = "Эдуард"
+		monarch_name = "Эдуард Этелинг"
+		dynasty = "Уэссекский"
+		birth_date = 1016.1.1
+		death_date = 1057.2.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1016.11.30 = {
+	monarch = {
+		name = "Кнут I Великий"
+		dynasty = "Кнютлинг"
+		birth_date = 995.1.1
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
+
+1035.11.12 = {
+	monarch = {
+		name = "Гарольд I Хэрфут"
+		dynasty = "Кнютлинг"
+		birth_date = 1015.1.1
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+1035.11.13 = {
+	heir = {
+		name = "Кнуд"
+		monarch_name = "Хардекнуд"
+		dynasty = "Кнютлинг"
+		birth_date = 1018.1.1
+		death_date = 1142.6.8
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1040.3.17 = {
+	monarch = {
+		name = "Хардекнуд"
+		dynasty = "Кнютлинг"
+		birth_date = 1018.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1042.6.8 = {
+	monarch = {
+		name = "Эдуард Исповедник"
+		dynasty = "Уэссекский"
+		birth_date = 1003.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1066.1.5 = {
+	monarch = {
+		name = "Гарольд II"
+		dynasty = "Годвинсон"
+		birth_date = 1022.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1066.10.15 = {
+	monarch = {
+		name = "Эдгар II Этелинг"
+		dynasty = "Уэссекский"
+		birth_date = 1051.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1066.12.10 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1066.12.25 = {
+	monarch = {
+		name = "Вильгельм I Завоеватель"
+		dynasty = "де Норманди"
+		birth_date = 1027.6.1
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+1066.12.25 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм II Руфус"
+		dynasty = "де Норманди"
+		birth_date = 1058.1.1
+		death_date = 1100.8.2
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+1087.9.9 = {
+	monarch = {
+		name = "Вильгельм II Руфус"
+		dynasty = "де Норманди"
+		birth_date = 1058.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1087.9.9 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих I Боклерк"
+		dynasty = "де Норманди"
+		birth_date = 1068.9.1
+		death_date = 1135.12.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1100.8.2 = {
+	monarch = {
+		name = "Генрих I Боклерк"
+		dynasty = "де Норманди"
+		birth_date = 1068.9.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1103.1.1 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм III Аделин"
+		dynasty = "де Норманди"
+		birth_date = 1103.1.1
+		death_date = 1120.11.25
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1120.11.25 = {
+	heir = {
+		name = "Стефан"
+		monarch_name = "Стефан"
+		dynasty = "де Блуа-Шампань"
+		birth_date = 1096.1.1
+		death_date = 1154.10.25
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1066.12.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1135.12.22 = {
+	monarch = {
+		name = "Стефан"
+		dynasty = "де Блуа-Шампань"
+		birth_date = 1096.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1135.12.22 = {
+	heir = {
+		name = "Эсташ"
+		monarch_name = "Эсташ I"
+		dynasty = "де Блуа-Шампань"
+		birth_date = 1131.1.1
+		death_date = 1153.8.17
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1141.4.8 = {
+	monarch = {
+		name = "Матильда"
+		dynasty = "де Норманди"
+		birth_date = 1102.2.7
+		adm = 1
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}
+
+1141.4.8 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих II"
+		dynasty = "Плантагенет"
+		birth_date = 1133.3.5
+		death_date = 1189.7.6
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1141.12.7 = {
+	monarch = {
+		name = "Стефан"
+		dynasty = "де Блуа-Шампань"
+		birth_date = 1096.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1141.12.7 = {
+	heir = {
+		name = "Эсташ"
+		monarch_name = "Эсташ I"
+		dynasty = "де Блуа-Шампань"
+		birth_date = 1131.1.1
+		death_date = 1153.8.17
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1153.8.17 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих II"
+		dynasty = "Плантагенет"
+		birth_date = 1133.3.5
+		death_date = 1189.7.6
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1154.10.25 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "Плантагенет"
+		birth_date = 1133.3.5
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1154.10.25 = {
+	heir = {
+		name = "Уильям"
+		monarch_name = "Вильгельм III"
+		dynasty = "Плантагенет"
+		birth_date = 1152.1.1
+		death_date = 1156.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1156.1.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих Молодой Король"
+		dynasty = "Плантагенет"
+		birth_date = 1155.2.28
+		death_date = 1183.6.11
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1170.7.14 = {
+	monarch = {
+		name = "Генрих Молодой Король"
+		dynasty = "Плантагенет"
+		birth_date = 1155.2.28
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1170.7.14 = {
+	heir = {
+		name = "Генрих II"
+		monarch_name = "Генрих II"
+		dynasty = "Плантагенет"
+		birth_date = 1133.3.5
+		death_date = 1189.7.6
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1183.6.11 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "Плантагенет"
+		birth_date = 1133.3.5
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1183.6.11 = {
+	heir = {
+		name = "Ричард"
+		monarch_name = "Ричард I Львиное Сердце"
+		dynasty = "Плантагенет"
+		birth_date = 1157.9.8
+		death_date = 1199.4.6
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 6
+	}
+}
+
+1189.7.6 = {
+	monarch = {
+		name = "Ричард I Львиное Сердце"
+		dynasty = "Плантагенет"
+		birth_date = 1157.9.8
+		adm = 5
+		dip = 2
+		mil = 6
+	}
+}
+
+1189.7.6 = {
+	heir = {
+		name = "Джон"
+		monarch_name = "Иоанн I Безземельный"
+		dynasty = "Плантагенет"
+		birth_date = 1166.12.24
+		death_date = 1216.10.19
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1199.4.6 = {
+	monarch = {
+		name = "Иоанн I Безземельный"
+		dynasty = "Плантагенет"
+		birth_date = 1166.12.24
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1207.10.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих III"
+		dynasty = "Плантагенет"
+		birth_date = 1207.10.1
+		death_date = 1272.11.16
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1215.6.15 = {
+government = english_monarchy
+}
+
+1216.10.19 = {
+	monarch = {
+		name = "Генрих III"
+		dynasty = "Плантагенет"
+		birth_date = 1207.10.1
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1239.6.17 = {
+	heir = {
+		name = "Эдуард"
+		monarch_name = "Эдуард I"
+		dynasty = "Плантагенет"
+		birth_date = 1239.6.17
+		death_date = 1307.7.7
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1272.11.20 = {
+	monarch = {
+		name = "Эдуард I"
+		dynasty = "Плантагенет"
+		birth_date = 1239.6.17
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1284.4.25 = {
+	heir = {
+		name = "Эдуард"
+		monarch_name = "Эдуард II"
+		dynasty = "Плантагенет"
+		birth_date = 1284.4.25
+		death_date = 1327.9.21
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1307.7.7 = {
+	monarch = {
+		name = "Эдуард II"
+		dynasty = "Плантагенет"
+		birth_date = 1284.4.25
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1312.11.13 = {
+	heir = {
+		name = "Эдуард"
+		monarch_name = "Эдуард III"
+		dynasty = "Плантагенет"
+		birth_date = 1312.11.13
+		death_date = 1377.6.21
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1327.9.21 = {
+	monarch = {
+		name = "Эдуард III"
+		dynasty = "Плантагенет"
+		birth_date = 1312.11.13
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1367.1.6 = {
+	heir = {
+		name = "Ричард"
+		monarch_name = "Ричард II"
+		dynasty = "Плантагенет"
+		birth_date = 1367.1.6
+		death_date = 1400.2.14
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1377.6.21 = {
+	monarch = {
+		name = "Ричард II"
+		dynasty = "Плантагенет"
+		birth_date = 1367.1.6
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1399.9.12 = {
+	monarch = {
+		name = "Генрих IV"
+		dynasty = "Ланкастер"
+		birth_date = 1366.4.15
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1399.9.12 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих V"
+		dynasty = "Ланкастер"
+		birth_date = 1386.9.16
+		death_date = 1422.8.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1413.3.21 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Ланкастер"
+		birth_date = 1386.9.16
+		adm = 2
+		dip = 2
+		mil = 5
+		leader = { name = "Генрих V"		type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 1 }
+	}
+}
+
+1414.1.1 = { leader = {	name = "Ричард де Бошан"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1439.4.30 } }
+
+1414.2.1 = { leader = {	name = "Граф Шрусбери"	type = general	rank = 1	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1453.7.17 } }
+
+1418.1.1 = { leader = {	name = "Томас Ланкастер"	type = general	rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1421.3.22 } }
+
+1421.12.6 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих VI"
+		dynasty = "Ланкастер"
+		birth_date = 1421.12.6
+		death_date = 1471.5.21
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1422.8.31 = { leader = { name = "Джон Ланкастерский"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1435.9.14 } }
+
 
 1422.8.31 = {
 	monarch = {
@@ -22,7 +701,7 @@ national_focus = DIP
 	add_ruler_personality = infertile_personality
 }
 
-#1434.1.1 = { leader = {	name = "Ричард Невилл"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
+1434.1.1 = { leader = {	name = "Ричард Невилл"	type = general	rank = 5	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
 
 1435.1.1 = { leader = {	name = "Ричард Плантагенет"	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
 
@@ -42,7 +721,7 @@ national_focus = DIP
 
 1450.1.1 = { leader = {	name = "Джон Моубрэй"		type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }
 
-1453.10.13 = { # Edward of Westminster
+1453.10.13 = { # Эдуард of Westminster
 	heir = {
 		name = "Эдуард"
 		monarch_name = "Эдуард IV"
@@ -93,8 +772,8 @@ national_focus = DIP
 1465.5.1 = {
 	queen = {
 		country_of_origin = ENG
-		name = "Елисавета"
-		dynasty = "Woodville"
+		name = "Елизавета"
+		dynasty = "Вудвилль"
 		birth_date = 1437.1.1
 		death_date = 1492.6.8
 		female = yes
@@ -114,7 +793,7 @@ national_focus = DIP
 	}
 }
 
-1470.10.30 = { # Edward of Westminster
+1470.10.30 = { # Эдуард of Westminster
 	heir = {
 		name = "Эдуард"
 		monarch_name = "Эдуард V"
@@ -140,7 +819,7 @@ national_focus = DIP
 	}
 }
 
-1471.4.11 = { # Edward V
+1471.4.11 = { # Эдуард V
 	heir = {
 		name = "Эдуард"
 		monarch_name = "Эдуард V"
@@ -187,7 +866,7 @@ national_focus = DIP
 	monarch = {
 		name = "Ричард III"
 		dynasty = "Йорк"
-
+        birth_date = 1473.8.17
 		adm = 3
 		dip = 2
 		mil = 4
@@ -206,7 +885,7 @@ national_focus = DIP
 	}
 }
 
-1483.6.26 = { # Edward of Middleham
+1483.6.26 = { # Эдуард of Middleham
 	heir = {
 		name = "Эдуард"
 		monarch_name = "Эдуард VI"
@@ -236,7 +915,7 @@ national_focus = DIP
 1486.1.18 = {
 	queen = {
 		country_of_origin = ENG
-		name = "Елисавета"
+		name = "Елизавета"
 		dynasty = "Йорк"
 		birth_date = 1466.2.11
 		death_date = 1503.2.11
@@ -448,7 +1127,7 @@ national_focus = DIP
 
 1552.1.1 = { leader = {	name = "Hugh Willoughby"            	type = explorer	rank = 7	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1554.10.19 } }
 
-1552.1.1 = { leader = {	name = "Richard Chancellor"            	type = explorer	rank = 10	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1556.7.28 } }
+1552.1.1 = { leader = {	name = "Ричард Chancellor"            	type = explorer	rank = 10	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1556.7.28 } }
 
 1553.1.1 = { leader = {	name = "Martin Frobisher"             	type = explorer	rank = 9	fire = 5	shock = 2	manuever = 4	siege = 0	death_date = 1594.11.22 } }
 

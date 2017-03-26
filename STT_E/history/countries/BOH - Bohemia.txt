@@ -1,4 +1,5 @@
 government = feudal_monarchy
+government_rank = 1
 primary_culture = czech
 religion = catholic
 elector = yes
@@ -6,22 +7,864 @@ capital = 266 # Praha
 technology_group = western
 add_accepted_culture = saxon
 
-1378.11.29 = {
+999.2.7 = {
 	monarch = {
-		name = "Жигмонд IV"
-		dynasty = "фон Люксембург"
-		birth_date = 1361.2.26
+		name = "Болеслав III Рыжий"
+		dynasty = "Пржемыслович"
+		birth_date = 955.1.1
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
+999.2.7 = {
+	heir = {
+		name = "Владивой"
+		monarch_name = "Владивой I"
+		dynasty = "Пржемыслович"
+		birth_date = 980.1.1
+		death_date = 1003.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1002.1.1 = {
+	monarch = {
+		name = "Владивой"
+		dynasty = "Пржемыслович"
+		birth_date = 980.1.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1003.1.1 = {
+	monarch = {
+		name = "Яромир"
+		dynasty = "Пржемыслович"
+		birth_date = 970.1.1
 		adm = 2
 		dip = 2
-		mil = 0
+		mil = 4
+	}
+}
+
+1003.2.10 = {
+	monarch = {
+		name = "Болеслав III Рыжий"
+		dynasty = "Пржемыслович"
+		birth_date = 955.1.1
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
+1003.3.1 = {
+	monarch = {
+		name = "Болеслав IV Храбрый"
+		dynasty = "Пяст"
+		birth_date = 966.1.1
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+1004.1.1 = {
+	monarch = {
+		name = "Яромир"
+		dynasty = "Пржемыслович"
+		birth_date = 970.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1012.5.12 = {
+	monarch = {
+		name = "Ольдржих"
+		dynasty = "Пржемыслович"
+		birth_date = 997.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1033.1.1 = {
+	monarch = {
+		name = "Яромир I"
+		dynasty = "Пржемыслович"
+		birth_date = 970.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1033.6.1 = {
+	monarch = {
+		name = "Ольдржих"
+		dynasty = "Пржемыслович"
+		birth_date = 997.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1034.11.9 = {
+	monarch = {
+		name = "Бржетислав I Воин"
+		dynasty = "Пржемыслович"
+		birth_date = 1003.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1034.11.9 = {
+	heir = {
+		name = "Спытигнев"
+		monarch_name = "Спытигнев II"
+		dynasty = "Пржемыслович"
+		birth_date = 1031.1.1
+		death_date = 1061.1.28
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1055.3.1 = {
+	monarch = {
+		name = "Спытигнев II"
+		dynasty = "Пржемыслович"
+		birth_date = 1031.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1055.3.1 = {
+	heir = {
+		name = "Вратислав"
+		monarch_name = "Вратислав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1035.1.1
+		death_date = 1092.1.14
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1061.1.28 = {
+	monarch = {
+		name = "Вратислав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1035.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1061.1.28 = {
+	heir = {
+		name = "Конрад"
+		monarch_name = "Конрад I Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1036.1.1
+		death_date = 1092.9.6
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1086.6.15 = {
+government_rank = 2
+}
+
+1092.1.14 = {
+	monarch = {
+		name = "Конрад I Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1036.1.1
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1092.1.14 = {
+	heir = {
+		name = "Бржетислав"
+		monarch_name = "Бржетислав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1070.1.1
+		death_date = 1100.12.22
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1092.9.6 = {
+	monarch = {
+		name = "Бржетислав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1070.1.1
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1092.9.6 = {
+	heir = {
+		name = "Борживой"
+		monarch_name = "Борживой II"
+		dynasty = "Пржемыслович"
+		birth_date = 1065.1.1
+		death_date = 1124.2.2
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1100.12.22 = {
+	monarch = {
+		name = "Борживой II"
+		dynasty = "Пржемыслович"
+		birth_date = 1065.1.1
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1107.5.1 = {
+	monarch = {
+		name = "Сватоплук"
+		dynasty = "Пржемыслович"
+		birth_date = 1085.1.1
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1107.5.1 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Вацлав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1105.1.1
+		death_date = 1130.3.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1109.9.21 = {
+	monarch = {
+		name = "Владислав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1070.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1109.9.21 = {
+	heir = {
+		name = "Борживой"
+		monarch_name = "Борживой II"
+		dynasty = "Пржемыслович"
+		birth_date = 1065.1.1
+		death_date = 1124.2.2
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1117.12.1 = {
+	monarch = {
+		name = "Борживой II"
+		dynasty = "Пржемыслович"
+		birth_date = 1065.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1120.1.1 = {
+	monarch = {
+		name = "Владислав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1070.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1120.8.16 = {
+	heir = {
+		name = "Собеслав"
+		monarch_name = "Собеслав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1075.1.1
+		death_date = 1140.2.14
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1125.4.12 = {
+	monarch = {
+		name = "Собеслав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1075.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1125.4.12 = {
+	heir = {
+		name = "Владислав"
+		monarch_name = "Владислав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1110.1.1
+		death_date = 1174.1.18
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1140.2.14 = {
+	monarch = {
+		name = (Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1140.2.14 = {
+	monarch = {
+		name = "Владислав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1110.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1150.1.1 = {
+	heir = {
+		name = "Бедржих"
+		monarch_name = "Бедржих"
+		dynasty = "Пржемыслович"
+		birth_date = 1141.6.1
+		death_date = 1189.3.25
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1172.1.1 = {
+	monarch = {
+		name = "Бедржих"
+		dynasty = "Пржемыслович"
+		birth_date = 1141.6.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1172.1.1 = {
+	heir = {
+		name = "Собеслав"
+		monarch_name = "Собеслав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1128.1.1
+		death_date = 1180.1.9
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+1173.1.1 = {
+	monarch = {
+		name = "Собеслав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1128.1.1
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+1178.1.1 = {
+	monarch = {
+		name = "Бедржих"
+		dynasty = "Пржемыслович"
+		birth_date = 1141.6.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1178.1.1 = {
+	heir = {
+		name = "Конрад"
+		monarch_name = "Конрад II Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1138.1.1
+		death_date = 1191.9.6
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1182.1.1 = {
+	monarch = {
+		name = "Конрад II Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1138.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1182.6.1 = {
+	monarch = {
+		name = "Бедржих"
+		dynasty = "Пржемыслович"
+		birth_date = 1141.6.1
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1182.6.1 = {
+	heir = {
+		name = "Конрад"
+		monarch_name = "Конрад II Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1138.1.1
+		death_date = 1191.9.6
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1189.3.25 = {
+	monarch = {
+		name = "Конрад II Ота"
+		dynasty = "Пржемыслович"
+		birth_date = 1138.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1189.3.25 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Венцеслав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1137.1.1
+		death_date = 1192.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1191.9.6 = {
+	monarch = {
+		name = "Венцеслав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1137.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1191.9.6 = {
+	heir = {
+		name = "Пржемысл"
+		monarch_name = "Пржемысл Отакар I"
+		dynasty = "Пржемыслович"
+		birth_date = 1155.1.1
+		death_date = 1230.12.15
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1192.1.1 = {
+	monarch = {
+		name = "Пржемысл Отакар I"
+		dynasty = "Пржемыслович"
+		birth_date = 1155.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1193.6.1 = {
+	monarch = {
+		name = "Йиндржих Бржетислав III"
+		dynasty = "Пржемыслович"
+		birth_date = 1150.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1197.6.15 = {
+	monarch = {
+		name = (Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1197.6.23 = {
+	monarch = {
+		name = "Владислав Йиндржих"
+		dynasty = "Пржемыслович"
+		birth_date = 1160.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1197.12.6 = {
+	monarch = {
+		name = "Пржемысл Отакар I"
+		dynasty = "Пржемыслович"
+		birth_date = 1155.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1205.1.1 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Вацлав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1205.1.1
+		death_date = 1253.9.23
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1230.12.15 = {
+	monarch = {
+		name = "Вацлав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1205.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1233.1.1 = {
+	heir = {
+		name = "Пржемысл"
+		monarch_name = "Пржемысл Отакар II"
+		dynasty = "Пржемыслович"
+		birth_date = 1233.1.1
+		death_date = 1278.8.26
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 6
+	}
+}
+
+1253.9.22 = {
+	monarch = {
+		name = "Пржемысл Отакар II"
+		dynasty = "Пржемыслович"
+		birth_date = 1233.1.1
+		adm = 5
+		dip = 3
+		mil = 6
+	}
+}
+
+1271.9.27 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Вацлав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1271.9.27
+		death_date = 1305.6.21
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1278.8.26 = {
+	monarch = {
+		name = "Оттон V"
+		dynasty = "Аскания"
+		adm = 1
+		dip = 3
+		mil = 5
+		regent = yes
+	}
+}
+
+1278.8.26 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Вацлав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1271.9.27
+		death_date = 1305.6.21
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1283.9.27 = {
+	monarch = {
+		name = "Вацлав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1271.9.27
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1289.10.6 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Вацлав III"
+		dynasty = "Пржемыслович"
+		birth_date = 1289.10.6
+		death_date = 1306.8.4
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+1305.6.21 = {
+	monarch = {
+		name = "Вацлав III"
+		dynasty = "Пржемыслович"
+		birth_date = 1289.10.6
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+1306.8.4 = {
+	monarch = {
+		name = (Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1306.8.22 = {
+	monarch = {
+		name = "Генрих"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1306.9.1 = {
+	monarch = {
+		name = "Рудольф I"
+		dynasty = "фон Габсбург"
+		birth_date = 1281.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1307.6.4 = {
+	monarch = {
+		name = "Генрих"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1310.8.31 = {
+	monarch = {
+		name = "Ян I Слепой"
+		dynasty = "фон Люксембург"
+		birth_date = 1296.8.10
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1316.5.14 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл IV"
+		dynasty = "фон Люксембург"
+		birth_date = 1316.5.14
+		death_date = 1378.11.29
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1346.7.11 = { elector = yes }
+
+1346.8.26 = {
+	monarch = {
+		name = "Карл IV"
+		dynasty = "фон Люксембург"
+		birth_date = 1316.5.14
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1361.2.26 = {
+	heir = {
+		name = "Вацлав"
+		monarch_name = "Венцель"
+		dynasty = "фон Люксембург"
+		birth_date = 1361.2.26
+		death_date = 1419.8.16
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1378.11.29 = {
+	monarch = {
+		name = "Венцель"
+		dynasty = "фон Люксембург"
+		birth_date = 1361.2.26
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1419.8.16 = {
+	monarch = {
+		name = "Зикмунд"
+		dynasty = "фон Люксембург"
+		birth_date = 1368.2.14	
+		adm = 4
+		dip = 3
+		mil = 3
 	}
 }
 
 # Personal Union with Hungary under Sigismund I 1419-1437
 
-1419.1.1 = { leader = {	name = "Jan Zizka"	type = general	rank = 1	fire = 6	shock = 3	manuever = 5	siege = 0	death_date = 1424.10.11 } }
+1419.1.1 = { leader = {	name = "Ян Жижка"	type = general	rank = 1	fire = 6	shock = 3	manuever = 5	siege = 0	death_date = 1424.10.11 } }
 
 1419.1.1 = { leader = {	name = "Prokop Holэ"	type = general	rank = 1	fire = 4	shock = 3	manuever = 5	siege = 1	death_date = 1434.5.30 } }
+
+1437.12.12 = {
+	monarch = {
+		name = "Альбрехт"
+		dynasty = "фон Габсбург"
+		birth_date = 1397.8.10
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
 
 # Personal Union with Habsburg under Albrecht II 1437-1439
 
