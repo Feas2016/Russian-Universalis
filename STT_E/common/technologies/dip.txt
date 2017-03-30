@@ -32,6 +32,7 @@ technology = {
 	naval_morale = 0.2
 	trade_efficiency = 0.05
 	
+	marketplace = yes	
 	enable = barque
 	enable = cog
 	enable = galley
@@ -106,6 +107,8 @@ technology = {
 	range = 10
 	naval_morale = 0.1
 	trade_efficiency = 0.05
+	
+	trade_depot = yes
 }
 technology = {
 	# Tech 11
@@ -128,9 +131,7 @@ technology = {
 	year = 1445
 	
 	range = 10
-	naval_morale = 0.1
-	
-	marketplace = yes
+	naval_morale = 0.1	
 }
 technology = {
 	# Tech 14
@@ -230,7 +231,6 @@ technology = {
 	naval_morale = 0.1
 	naval_maintenance = 0.1
 	
-	tradecompany = yes
 	enable = galleass
 }
 technology = {
@@ -242,6 +242,7 @@ technology = {
 	range = 35
 	naval_morale = 0.1
 	
+	tradecompany = yes
 	enable = galleon
 	enable = early_frigate
 }
@@ -254,9 +255,8 @@ technology = {
 	trade_range = 10
 	range = 35
 	naval_morale = 0.1
-	
-	trade_depot = yes
-	enable = merchantman
+		
+	enable = merchantman	
 }
 technology = {
 	# Tech 25
@@ -302,6 +302,7 @@ technology = {
 	naval_morale = 0.1
 	
 	enable = chebeck
+	stock_exchange = yes
 }
 technology = {
 	# Tech 29
@@ -313,8 +314,7 @@ technology = {
 	naval_morale = 0.1
 	trade_efficiency = 0.05
 	
-	stock_exchange = yes	
-	enable = twodecker
+		enable = twodecker
 	enable = trabakul
 }
 technology = {
