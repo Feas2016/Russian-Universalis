@@ -3,6 +3,7 @@ time_of_troubles = {
 		is_year = 1550
 		NOT = { is_year = 1612 } ###STT
 		NOT = { has_country_flag = time_of_troubles }
+		is_free_or_tributary_trigger = yes
 		OR = {
 			AND = {
 				tag = MOS
@@ -20,6 +21,7 @@ time_of_troubles = {
 	
 	
 	can_start = {
+		current_age = age_of_reformation
 		NOT = { stability = 0 }
 	}
 	

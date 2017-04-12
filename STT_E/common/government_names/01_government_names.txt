@@ -244,6 +244,30 @@ gov_daimyo = {
 	}
 }
 
+gov_indep_daimyo = {
+	rank = {
+		1 = INDEP_DAIMYO
+		2 = GRAND_INDEP_DAIMYO
+		3 = GREAT_INDEP_DAIMYO
+	}
+	
+	ruler_male = {
+		1 = LORD
+		2 = LORD
+		3 = LORD
+	}
+	
+	ruler_female = {
+		1 = LADY
+		2 = LADY
+		3 = LADY
+	}
+	
+	trigger = {
+		government = indep_daimyo
+	}
+}
+
 gov_shogunate = {
 	rank = {
 		2 = SHOGUNATE

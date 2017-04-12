@@ -148,10 +148,10 @@ rajput_ideas = {
 	}
 	marwari_horses = {
 		cavalry_power = 0.1
-		movement_speed = 0.07
+		movement_speed = 0.1
 	}
 	rajput_resistance = {
-		war_exhaustion_cost = -0.10
+		war_exhaustion = -0.03
 	}
 	rajput_painting_school = {
 		prestige = 1
@@ -160,7 +160,7 @@ rajput_ideas = {
 		leader_land_fire = 1
 	}
 	marwari_trading_houses = {
-		trade_steering = 0.10
+		trade_efficiency = 0.10
 	}
 }
 
@@ -475,7 +475,11 @@ daimyo_ideas = {
 	}
 	
 	trigger = {
-		government = daimyo
+		OR = {
+			government = daimyo
+			government = indep_daimyo
+			government = shogunate
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -737,7 +741,7 @@ native_ideas = {
 	
 	
 	counting_coups = {
-		land_morale = 0.15
+		land_morale = 0.1
 	}
 	storytelling_tradition = {
 		idea_cost = -0.1
@@ -1225,7 +1229,10 @@ ruthenian_ideas = {
 	}
  
 	trigger = {
-		primary_culture = ruthenian
+		OR = {
+			primary_culture = ruthenian
+			primary_culture = byelorussian
+		}
 	}
 	free = yes
  
@@ -1689,14 +1696,14 @@ moluccan_ideas = {
 	moluccan_cultural_heritage = {
 		legitimacy = 1
 	}
-	moluccan_dominance_over_the_outer_islands = {
-		colonists = 1
-	}
 	moluccan_agents_of_trade = {
 		merchants = 1
 	}
 	moluccan_four_kingdoms = {
 		global_unrest = -2
+	}
+	moluccan_dominance_over_the_outer_islands = {
+		colonists = 1
 	}
 	moluccan_ally_papuan_raiders = {
 		light_ship_power = 0.15

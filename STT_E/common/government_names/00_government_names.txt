@@ -562,6 +562,44 @@ lithuanian_monarchy = {
 	}
 }
 
+cristopher_of_bavaria_monarchy = {
+	rank = {
+		1 = ARCHDUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = ARCHDUKE
+		2 = ARCHKING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = ARCHDUCHESS
+		2 = QUEEN	
+		3 = EMPRESS
+	}
+	
+	consort_male = {
+		1 = ARCHDUKE_CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
+	}
+
+	consort_female = {
+		1 = ARCHDUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		tag = DAN
+		government = monarchy
+		has_ruler = "Christopher III"
+	}
+}
+
 austrian_monarchy = {
 	rank = {
 		1 = ARCHDUCHY
@@ -718,7 +756,7 @@ croatian_monarchy = {
 	ruler_male = {
 		1 = BAN_TITLE
 		2 = KRALJ
-		3 = CARI
+		3 = CARI #STT
 	}
 
 	ruler_female = {

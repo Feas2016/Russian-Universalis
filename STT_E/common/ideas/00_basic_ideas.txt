@@ -158,9 +158,6 @@ religious_ideas = {
 		culture_conversion_cost = -0.25
 	}
 
-	deus_vult = {
-		cb_on_religious_enemies = yes
-	}
 	missionary_schools = {
 		missionaries = 1
 	}
@@ -182,6 +179,9 @@ religious_ideas = {
 	}
 	inquisition = {
 		global_heretic_missionary_strength = 0.02
+	}
+	deus_vult = {
+		cb_on_religious_enemies = yes
 	}
 
 	ai_will_do = {
@@ -289,7 +289,7 @@ diplomatic_ideas = {
 		}
 		modifier = {
 			factor = 1.5
-			num_of_vassals = 2
+			vassal = 2
 		}
 	}
 }
@@ -900,6 +900,7 @@ humanist_ideas = {
 
 	bonus = {
 		idea_cost = -0.1
+		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
 	}
 
 	tolerance_idea = {
@@ -975,11 +976,11 @@ influence_ideas = {
 		}
 		modifier = {
 			factor = 1.7
-			num_of_vassals = 1
+			vassal = 1
 		}
 		modifier = {
 			factor = 1.7
-			num_of_vassals = 2
+			vassal = 2
 		}
 	}
 }

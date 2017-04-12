@@ -702,7 +702,8 @@ christian = {
 		flags_with_emblem_percentage = 20
 		flag_emblem_index_range = { 1 4 }
 
-		color = { 0.7 0.5 0.5 }
+		#color = { 0.7 0.5 0.5 }
+		color = { 0.7 0.15 0.3 }		
 		icon = 14
 		country = {
 			defensiveness = 0.1
@@ -731,6 +732,8 @@ christian = {
 		}
 	}
 	
+	harmonized_modifier = harmonized_christian
+	
 	crusade_name = CRUSADE
 }
 
@@ -746,7 +749,7 @@ muslim = {
 		color = { 0 0.6 0 }
 		icon = 5
 		country = {
-			tolerance_own = 1
+			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0
 		}
 		country_as_secondary = {
@@ -802,6 +805,8 @@ muslim = {
 		uses_piety = yes				# Uses piety mechanics
 	}
 	
+	harmonized_modifier = harmonized_muslim
+	
 	crusade_name = JIHAD
 }
 
@@ -836,6 +841,8 @@ eastern = {
 		
 		heretic = { ZEN }
 		
+		harmonized_modifier = harmonized_buddhism
+		
 		uses_karma = yes
 	}
 	
@@ -866,6 +873,8 @@ eastern = {
 		heretic = { ZEN }
 		
 		uses_karma = yes
+	
+		harmonized_modifier = harmonized_vajrayana
 	}
 	
 	mahayana = {
@@ -892,6 +901,8 @@ eastern = {
 			}
 		}
 		
+		harmonized_modifier = harmonized_mahayana
+		
 		heretic = { ZEN }
 		
 		uses_karma = yes
@@ -909,6 +920,7 @@ eastern = {
 			stability_cost_modifier = -0.1
 		}
 		heretic = { TAOIST }
+		uses_harmony = yes
 	}
 
 	shinto = {
@@ -925,9 +937,14 @@ eastern = {
 			global_unrest = -1
 		}
 		heretic = { SHUGENDO }
+		uses_isolationism = yes
+		
+		harmonized_modifier = harmonized_shinto
+		
 	}
 	
 	crusade_name = CRUSADE
+	
 }
 
 dharmic = {
@@ -997,6 +1014,8 @@ dharmic = {
 
 		date = 1499.01.01
 	}
+	
+	harmonized_modifier = harmonized_dharmic
 	
 	crusade_name = CRUSADE
 }
@@ -1170,14 +1189,16 @@ pagan = {
 		icon = 27
 		color = { 0.1 0.3 0.85 }
 		country = {
-			global_unrest = -2
-			global_regiment_cost = -0.1
+			global_unrest = -1 ##STT
+			cav_to_inf_ratio = 0.25
+			global_regiment_cost = -0.2
 		}
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
 	}
 	
 	crusade_name = CRUSADE
+	harmonized_modifier = harmonized_pagan
 }
 
 jewish_group = {
@@ -1203,6 +1224,8 @@ jewish_group = {
 		heretic = { SAMARITAN KARAITE }
 	}
 	
+	harmonized_modifier = harmonized_jewish_group
+	
 	crusade_name = HOLY_WAR
 	
 }
@@ -1227,6 +1250,8 @@ zoroastrian_group = {
 		
 		heretic = { MAZDAKI MANICHEAN }	
 	}
+	
+	harmonized_modifier = harmonized_zoroastrian_group
 	
 	crusade_name = HOLY_WAR
 	
