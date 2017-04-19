@@ -12,6 +12,144 @@ historical_rival = HAB
 capital = 149 # Edirne
 national_focus = MIL
 
+1214.1.1 = {
+	monarch = {
+		name = "Сулейман Шах"
+		dynasty = "Кая Альп"
+		birth_date = 1178.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1227.1.1 = {
+	monarch = {
+		name = "Эртогрул"
+		dynasty = "Кая Альп"
+		birth_date = 1198.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1281.1.1 = {
+	monarch = {
+		name = "Осман"
+		dynasty = "Османоглу"
+		birth_date = 1258.1.1
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+1288.1.1 = {
+	heir = {
+		name = "Орхан"
+		monarch_name = "Орхан I Гази"
+		dynasty = "Османоглу"
+		birth_date = 1288.1.1
+		death_date = 1359.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1326.1.1 = {
+	monarch = {
+		name = "Орхан I Гази"
+		dynasty = "Османоглу"
+		birth_date = 1288.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1362.3.1 = {
+	monarch = {
+		name = "Мурад I"
+		dynasty = "Османоглу"
+		birth_date = 1326.6.29
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1362.3.1 = {
+	heir = {
+		name = "Баязид"
+		monarch_name = "Баязид I Йылдырым"
+		dynasty = "Османоглу"
+		birth_date = 1357.1.1
+		death_date = 1403.3.8
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1389.6.15 = {
+	monarch = {
+		name = "Баязид I Йылдырым"
+		dynasty = "Османоглу"
+		birth_date = 1357.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1402.7.20 = {
+	monarch = {
+		name = "Сулейман Челеби"
+		dynasty = "Османоглу"
+		birth_date = 1377.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1411.2.17 = {
+	monarch = {
+		name = "Муса Челяби"
+		dynasty = "Османоглу"
+		birth_date = 1380.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1413.7.5 = {
+	monarch = {
+		name = "Мехмед I Челеби"
+		dynasty = "Османоглу"
+		birth_date = 1387.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1421.5.26 = {
+	monarch = {
+		name = "Мурад II"
+		dynasty = "Османоглу"
+		birth_date = 1404.6.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
 1425.1.1 = { decision = sheikh_ul_islam }
 
 1439.1.1 = {
@@ -28,7 +166,7 @@ national_focus = MIL
 	}
 }
 	
-1444.1.1 = {
+1444.6.12 = {
 	monarch = {
 		name = "Мехмед II Фатих"
 		dynasty = "Османоглу"
@@ -42,7 +180,7 @@ national_focus = MIL
 	#add_ruler_personality = lawgiver_personality
 }
 
-1446.1.1 = {
+1446.3.1 = {
 	monarch = {
 		name = "Мурад II"
 		dynasty = "Османоглу"
@@ -58,7 +196,7 @@ national_focus = MIL
 	set_country_flag = janissary_timer
 }
 
-1446.1.1 = {
+1446.3.1 = {
 	heir = {
 		name = "Мехмед"
 		monarch_name = "Мехмед II Фатих"
@@ -69,11 +207,14 @@ national_focus = MIL
 		adm = 5
 		dip = 5
 		mil = 6
-		leader = { name = "Мехмед II"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
+		leader = { name = "Мехмед Фатих"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
 	add_heir_personality = lawgiver_personality
+}
+
+1451.2.3 = {
 	monarch = {
 		name = "Мехмед II Фатих"
 		dynasty = "Османоглу"
@@ -81,7 +222,10 @@ national_focus = MIL
 		adm = 5
 		dip = 5
 		mil = 6
-		leader = { name = "Мехмед II"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
+		leader = { name = "Мехмед Фатих"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
+		clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = lawgiver_personality
 	}
 }
 

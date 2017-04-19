@@ -6,62 +6,179 @@ technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
 
-
-1392.1.1 = {
+1232.1.1 = {
 	monarch = {
-		name = "Мухаммед VII"
+		name = "Мухаммад I аль-Галиб"
 		dynasty = "Насрид"
+		birth_date = 1194.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1273.1.22 = {
+	monarch = {
+		name = "Мухаммад II аль-Факих"
+		dynasty = "Насрид"
+		birth_date = 1235.1.1
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1302.4.7 = {
+	monarch = {
+		name = "Мухаммад III аль-Махлу"
+		dynasty = "Насрид"
+		birth_date = 1257.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1302.4.8 = {
+	heir = {
+		name = "Наср"
+		monarch_name = "Наср"
+		dynasty = "Насрид"
+		birth_date = 1287.11.2
+		death_date = 1322.11.16
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1309.3.14 = {
+	monarch = {
+		name = "Наср"
+		dynasty = "Насрид"
+		birth_date = 1287.11.2
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1314.2.8 = {
+	monarch = {
+		name = "Исмаил I ибн Фарадж"
+		dynasty = "Насрид"
+		birth_date = 1279.1.1
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+1325.7.6 = {
+	monarch = {
+		name = "Мухаммад IV"
+		dynasty = "Насрид"
+		birth_date = 1315.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1333.8.25 = {
+	monarch = {
+		name = "Юсуф I"
+		dynasty = "Насрид"
+		birth_date = 1318.6.29
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+1354.10.19 = {
+	monarch = {
+		name = "Мухаммад V аль-Гани"
+		dynasty = "Насрид"
+		birth_date = 1338.1.4
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1359.8.1 = {
+	monarch = {
+		name = "Исмаил II"
+		dynasty = "Насрид"
+		birth_date = 1338.10.2
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1360.6.1 = {
+	monarch = {
+		name = "Мухаммад VI аль-Ахмар"
+		dynasty = "Насрид"
+		birth_date = 1332.1.1
+		adm = 4
+		dip = 5
+		mil = 1
+	}
+}
+
+1362.4.25 = {
+	monarch = {
+		name = "Мухаммад V аль-Гани"
+		dynasty = "Насрид"
+		birth_date = 1338.1.4
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1391.1.16 = {
+	monarch = {
+		name = "Юсуф II аль-Мустагани"
+		dynasty = "Насрид"
+		birth_date = 1360.1.1
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1392.10.3 = {
+	monarch = {
+		name = "Мухаммад VII аль-Мустаин"
+		dynasty = "Насрид"
+		birth_date = 1370.1.1
 		adm = 1
 		dip = 2
 		mil = 3
 	}
-	add_piety = -0.3
 }
 
-1392.1.1 = {
-	heir = {
-		name = "Юсуф"
-		monarch_name = "Юсуф III"
+1408.5.1 = {
+	monarch = {
+		name = "Юсуф III ан-Насир"
 		dynasty = "Насрид"
 		birth_date = 1376.1.1
-		death_date = 1417.1.1
-		claim = 95
 		adm = 3
 		dip = 2
 		mil = 3
 	}
 }
 
-1408.1.1 = {
+1417.11.9 = {
 	monarch = {
-		name = "Юсуф III"
+		name = "Мухаммад VIII аль-Мутамассик"
 		dynasty = "Насрид"
-		birth_date = 1376.1.1
-		adm = 3
-		dip = 2
-		mil = 3
-	}
-}
-
-1411.1.1 = {
-	heir = {
-		name = "Мухаммед"
-		monarch_name = "Мухаммед VIII"
-		dynasty = "Насрид"
-		birth_date = 1411.1.1
-		death_date = 1431.1.1
-		claim = 95
-		adm = 1
-		dip = 2
-		mil = 0
-	}
-}
-
-1417.1.1 = {
-	monarch = {
-		name = "Мухаммед VIII"
-		dynasty = "Насрид"
-		birth_date = 1411.1.1
+		birth_date = 1409.1.1
 		adm = 1
 		dip = 2
 		mil = 0
@@ -70,28 +187,97 @@ government_rank = 1
 
 1419.1.1 = {
 	monarch = {
-		name = "Мухаммед IX"
+		name = "Мухаммад IX аль-Галиб"
 		dynasty = "Насрид"
+		birth_date = 1396.1.1
 		adm = 1
 		dip = 1
 		mil = 0
 	}
 }
 
-1446.1.1 = {
+1427.1.1 = {
 	monarch = {
-		name = "Мухаммед X"
+		name = "Мухаммад VIII аль-Мутамассик"
 		dynasty = "Насрид"
+		birth_date = 1409.1.1
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+}
+
+1429.1.1 = {
+	monarch = {
+		name = "Мухаммад IX аль-Галиб"
+		dynasty = "Насрид"
+		birth_date = 1396.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1431.7.1 = {
+	monarch = {
+		name = "Юсуф IV Абенальмао"
+		dynasty = "Насрид"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1432.4.1 = {
+	monarch = {
+		name = "Мухаммад IX аль-Галиб"
+		dynasty = "Насрид"
+		birth_date = 1396.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1445.1.1 = {
+	monarch = {
+		name = "Мухаммад X аль-Ахнаф"
+		dynasty = "Насрид"
+		birth_date = 1415.1.1
 		adm = 2
 		dip = 1
 		mil = 0
 	}
 }
 
-1451.1.1 = {
+1445.6.1 = {
 	monarch = {
-		name = "Мухаммед XI"
+		name = "Юсуф V"
 		dynasty = "Насрид"
+		birth_date = 1420.1.1
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1446.1.1 = {
+	monarch = {
+		name = "Мухаммад X аль-Ахнаф"
+		dynasty = "Насрид"
+		birth_date = 1415.1.1
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1447.12.1 = {
+	monarch = {
+		name = "Мухаммад IX аль-Галиб"
+		dynasty = "Насрид"
+		birth_date = 1396.1.1
 		adm = 1
 		dip = 1
 		mil = 0
@@ -100,38 +286,53 @@ government_rank = 1
 
 1454.1.1 = {
 	monarch = {
-		name = "Саад I Кириза"
+		name = "Мухаммад XI"
 		dynasty = "Насрид"
+		birth_date = 1410.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1454.6.1 = {
+	monarch = {
+		name = "Абу Наср Саид аль-Мустаин"
+		dynasty = "Насрид"
+		birth_date = 1410.1.1
 		adm = 0
 		dip = 1
 		mil = 0
 	}
 }
 
-1462.1.1 = {
+1462.11.1 = {
 	monarch = {
 		name = "Юсуф V"
 		dynasty = "Насрид"
+		birth_date = 1410.1.1
 		adm = 1
 		dip = 0
 		mil = 0
 	}
 }
 
-1463.1.1 = {
+1462.12.1 = {
 	monarch = {
-		name = "Саад I Кириза"
+		name = "Абу Наср Саид аль-Мустаин"
 		dynasty = "Насрид"
+		birth_date = 1410.1.1
 		adm = 0
 		dip = 1
 		mil = 0
 	}
 }
 
-1464.1.1 = {
+1464.8.1 = {
 	monarch = {
-		name = "Али I Абу-аль-Хасан"
+		name = "Абу-ль-Хасан Али"
 		dynasty = "Насрид"
+		birth_date = 1420.1.1
 		adm = 0
 		dip = 1
 		mil = 0
@@ -140,20 +341,22 @@ government_rank = 1
 
 1470.1.1 = { leader = {	name = "Ибрагим Али аль-Аттар"	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1483.1.1 } }
 
-1482.1.1 = {
+1482.7.5 = {
 	monarch = {
-		name = "Мухаммед XII Боабдил"
+		name = "Боабдиль"
 		dynasty = "Насрид"
+		birth_date = 1459.1.1
 		adm = 2
 		dip = 0
 		mil = 1
 	}
 }
 
-1483.1.1 = {
+1483.4.1 = {
 	monarch = {
-		name = "Али I Абу-аль-Хасан"
+		name = "Абу-ль-Хасан Али"
 		dynasty = "Насрид"
+		birth_date = 1420.1.1
 		adm = 2
 		dip = 0
 		mil = 1
@@ -162,22 +365,34 @@ government_rank = 1
 
 1485.1.1 = {
 	monarch = {
-		name = "Мухаммед XIII"
+		name = "Мухаммад XIII аз-Загалл"
 		dynasty = "Насрид"
+		birth_date = 1444.1.1
 		adm = 0
 		dip = 0
 		mil = 0
-		 leader = { name = "Мухаммед аль-Загал"	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
+		 leader = { name = "Мухаммад аз-Загалл"	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
-1489.1.1 = {
+1487.4.1 = {
 	monarch = {
-		name = "Мухаммед XII Боабдил"
+		name = "Боабдиль"
 		dynasty = "Насрид"
+		birth_date = 1459.1.1
 		adm = 2
 		dip = 0
 		mil = 1
+	}
+}
+
+1492.1.2 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }
 

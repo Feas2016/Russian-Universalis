@@ -10,11 +10,146 @@ capital = 227 # Lisboa
 
 national_focus = DIP
 
+1139.7.26 = {
+	monarch = {
+		name = "Афонсу I Великий"
+		dynasty = "де Бургонь"
+		birth_date = 1109.7.25
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
 
-1385.1.1 = {
+1185.12.6 = {
+	monarch = {
+		name = "Саншу I"
+		dynasty = "де Бургонь"
+		birth_date = 1154.11.11
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1212.3.26 = {
+	monarch = {
+		name = "Афонсу II"
+		dynasty = "де Бургонь"
+		birth_date = 1185.4.23
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1223.3.25 = {
+	monarch = {
+		name = "Саншу II"
+		dynasty = "де Бургонь"
+		birth_date = 1209.9.8
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1247.7.24 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1248.1.4 = {
+	monarch = {
+		name = "Афонсу III"
+		dynasty = "де Бургонь"
+		birth_date = 1210.5.5
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1279.2.16 = {
+	monarch = {
+		name = "Диниш I"
+		dynasty = "де Бургонь"
+		birth_date = 1261.10.9
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1291.2.8 = {
+	heir = {
+		name = "Афонсу"
+		monarch_name = "Афонсу IV"
+		dynasty = "де Бургонь"
+		birth_date = 1291.2.8
+		death_date = 1357.5.28
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1325.1.7 = {
+	monarch = {
+		name = "Афонсу IV"
+		dynasty = "де Бургонь"
+		birth_date = 1291.2.8
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1357.5.8 = {
+	monarch = {
+		name = "Педру I"
+		dynasty = "де Бургонь"
+		birth_date = 1320.4.19
+		adm = 5
+		dip = 1
+		mil = 5
+	}
+}
+
+1367.1.18 = {
+	monarch = {
+		name = "Фернанду I"
+		dynasty = "де Бургонь"
+		birth_date = 1345.10.31
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1383.10.22 = {
+	monarch = {
+		name = "Беатриса"
+		dynasty = "де Бургонь"
+		birth_date = 1373.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1383.12.16 = {
 	monarch = {
 		name = "Жуан I"
 		dynasty = "де Авис"
+		birth_date = 1357.4.11
 		adm = 2
 		dip = 2
 		mil = 2
@@ -22,20 +157,6 @@ national_focus = DIP
 }
 
 1385.4.1 = { leader = {	name = "Нуну Альвареш Перейра"	type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
-
-1391.10.31 = {
-	heir = {
-		name = "Дуарте"
-		monarch_name = "Дуарте"
-		dynasty = "де Авис"
-		birth_date = 1391.10.31
-		death_date = 1438.9.9
-		claim = 95
-		adm = 1
-		dip = 3
-		mil = 0
-	}
-}
 
 1415.4.1 = { leader = {	name = "Инфантес"		type = general	rank = 1	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
 
@@ -49,28 +170,14 @@ national_focus = DIP
 
 1432.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
 
-1433.1.1 = {
+1433.8.14 = {
 	monarch = {
-		name = "Дуарте"
+		name = "Дуарте I"
 		dynasty = "де Авис"
 		birth_date = 1391.10.31
 		adm = 1
 		dip = 3
 		mil = 0
-	}
-}
-
-1433.1.1 = {
-	heir = {
-		name = "Афонсу"
-		monarch_name = "Афонсу V"
-		dynasty = "де Авис"
-		birth_date = 1432.1.15
-		death_date = 1481.8.28
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 2
 	}
 }
 
@@ -82,9 +189,9 @@ national_focus = DIP
 
 1438.9.10 = {
 	monarch = {
-		name = "Инфанте Педро"
+		name = "Инфанте Педру"
 		dynasty = "де Авис"
-		birth_date = 1392.1.1
+		birth_date = 1392.12.9
 		regent = yes
 		adm = 4
 		dip = 2
@@ -204,8 +311,8 @@ national_focus = DIP
 
 1481.8.29 = {
 	heir = {
-		name = "Мануэль"
-		monarch_name = "Мануэль I"
+		name = "Мануэл"
+		monarch_name = "Мануэл I"
 		dynasty = "де Авис"
 		birth_date = 1469.5.31
 		death_date = 1521.12.13
@@ -224,7 +331,7 @@ national_focus = DIP
 
 1495.10.17 = {
 	monarch = {
-		name = "Мануэль I"
+		name = "Мануэл I"
 		dynasty = "де Авис"
 		birth_date = 1469.5.31
 		adm = 4
@@ -389,7 +496,7 @@ national_focus = DIP
 1557.6.13 = {
 	heir = {
 		name = "Энрике"
-		monarch_name = "Энрике I"
+		monarch_name = "Энрике"
 		dynasty = "де Авис"
 		birth_date = 1512.1.31
 		death_date = 1580.1.31
@@ -404,7 +511,7 @@ national_focus = DIP
 
 1578.8.6 = {
 	monarch = {
-		name = "Энрике I"
+		name = "Энрике"
 		dynasty = "де Авис"
 		birth_date = 1512.1.31
 		adm = 2
