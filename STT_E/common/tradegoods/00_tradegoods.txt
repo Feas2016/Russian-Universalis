@@ -156,7 +156,7 @@ wool = {
 		global_ship_cost = -0.05
 	}
 	province = {
-		local_ship_cost = -0.1
+		local_friendly_movement_speed = 0.10
 	}
 	chance = {
 		factor = 30
@@ -277,7 +277,7 @@ fish = {
 			}
 		}
 		modifier = {
-			factor = 5.5
+			factor = 15
 			area = newfoundland_area
 		}
 		modifier = {
@@ -498,9 +498,19 @@ copper = {
 		modifier = {
 			factor = 0
 			is_random_new_world = no
+			NOT = { province_id = 990 } #St Maurice ironworks
 			NOT = { area = minas_gerais_area }
 			NOT = { area = diamantina_area }
 			NOT = { area = mato_grosso_area }
+			NOT = { area = great_valley_area }
+			NOT = { area = susquehanna_area }
+			NOT = { area = hudson_valley_area }
+			NOT = { area = lake_superior_area }
+			NOT = { area = south_iroquoisia_area }
+			NOT = { area = upper_ontario_area }
+			NOT = { area = laurentian_area }
+			NOT = { area = inner_ontario_area }
+			NOT = { area = maryland_area }
 			NOT = { area = ofaie_area }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
@@ -532,6 +542,11 @@ copper = {
 				area = diamantina_area
 				area = mato_grosso_area
 				area = ofaie_area
+				area = great_valley_area
+				area = susquehanna_area
+				area = hudson_valley_area
+				area = lake_superior_area
+				area = south_iroquoisia_area
 				region = west_siberia_region
 				region = east_siberia_region
 			}
@@ -654,6 +669,17 @@ iron = {
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = central_africa_region }
+			NOT = { province_id = 990 }
+			NOT = { area = great_valley_area }
+			NOT = { area = susquehanna_area }
+			NOT = { area = hudson_valley_area }
+			NOT = { area = lake_superior_area }
+			NOT = { area = south_iroquoisia_area }
+			NOT = { area = upper_ontario_area }
+			NOT = { area = laurentian_area }
+			NOT = { area = inner_ontario_area }
+			NOT = { area = maryland_area }
+			NOT = { area = ofaie_area }
 			NOT = { province_id = 18 }
 		}
 		modifier = {
@@ -663,7 +689,12 @@ iron = {
 				has_terrain = mountain
 				has_terrain = hills
 				has_terrain = highlands
+				province_id = 990
 			}
+		}
+		modifier = {
+			factor = 20
+			province_id = 990
 		}
 		modifier = {
 			factor = 1.5
@@ -862,6 +893,10 @@ chinaware = {
 	color = { 0.18 0.57 0.8 }
 	modifier = {
 		legitimacy = 0.25
+		devotion = 0.25
+		horde_unity = 0.25
+		republican_tradition = 0.012
+		meritocracy = 0.1
 	}
 	province = {
 		local_autonomy = -0.1
@@ -891,7 +926,7 @@ spices = {
 		spy_offence = 0.25
 	}
 	province = {
-		local_core_creation = 0.20
+		local_monthly_devastation = -0.1
 	}
 	chance = {
 		factor = 25

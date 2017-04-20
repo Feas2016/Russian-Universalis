@@ -261,7 +261,7 @@ custodian_of_the_two_holy_mosques = {
 	}
 
 	trigger = {
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 385
 		owns = 384
 	}
@@ -335,7 +335,7 @@ catholic_rome = {
 		owns_or_vassal_of = 118 # Roma		
 		NOT = { tag = ITA }
 		NOT = { tag = ROM }
-		NOT = { tag = PQR }
+		NOT = { tag = PQR }		###STT
         NOT = { tag = WEK }		###STT
 	}
 
@@ -435,7 +435,7 @@ counter_revolution = {
 		capital_scope = { continent = europe }
 		revolution_target_exists = yes
 		is_revolution_target = no
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = {
 			revolution_target = {
 				war_with = ROOT
@@ -445,7 +445,6 @@ counter_revolution = {
 			} 
 		}
 		OR = {
-			government = absolute_monarchy
 			government = enlightened_despotism
 			government = despotic_monarchy
 			government = feudal_monarchy
@@ -476,10 +475,8 @@ reaction = {
 		capital_scope = { continent = europe }
 		revolution_target_exists = yes
 		is_revolution_target = no
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
-			government = absolute_monarchy
-			government = enlightened_despotism
 			government = despotic_monarchy
 			government = feudal_monarchy
 			government = administrative_monarchy
@@ -588,6 +585,7 @@ pentarchy_mod = {
 the_mandate_of_heaven = {
 	potential = {
 		government = celestial_empire
+		NOT = { has_dlc = "Mandate of Heaven" }
 	}
 	
 	trigger = {	
@@ -603,6 +601,7 @@ the_mandate_of_heaven = {
 the_mandate_of_heaven_lost = {
 	potential = {
 		government = celestial_empire
+		NOT = { has_dlc = "Mandate of Heaven" }
 	}
 
 	trigger = {

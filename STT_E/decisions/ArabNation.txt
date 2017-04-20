@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_arabia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -21,7 +22,7 @@ country_decisions = {
 			NOT = { primary_culture = turkish }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			adm_tech = 10
 			owns_core_province = 358			#Alexandria
@@ -83,6 +84,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			set_country_flag = formed_arabia_flag
 			change_tag = ARB
 			set_capital = 385	### STT
 			swap_free_idea_group = yes	 ### STT

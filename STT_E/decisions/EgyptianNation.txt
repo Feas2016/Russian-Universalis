@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_egypt_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -13,6 +14,7 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = ARB }
 			NOT = { exists = EGY }
+			NOT = { government = celestial_empire }
 			primary_culture = al_misr_arabic
 			capital = 361 # Cairo
 			OR = {
@@ -26,7 +28,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 20
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 361 # Cairo
@@ -66,6 +68,7 @@ country_decisions = {
 				limit = { culture = al_misr_arabic }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_egypt_flag
 		}
 		ai_will_do = {
 			factor = 1
