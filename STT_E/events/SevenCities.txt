@@ -3610,6 +3610,7 @@ province_event = {
 		FROM = {
 			NOT = {
 				has_country_modifier = sce_estevanico_timer
+				NOT = { capital_scope = { continent = africa } }
 			}
 		}
 	}

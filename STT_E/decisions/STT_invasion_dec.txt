@@ -252,7 +252,7 @@ country_decisions = {
 			    value = 3
 				religion = norse_pagan_reformed
 			}
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			num_of_infantry = 20
 		}
 		
@@ -356,7 +356,7 @@ country_decisions = {
 		}
 		
 		allow = {
-		    is_subject = no
+		    is_free_or_tributary_trigger = yes
 			is_at_war = no
 		    religious_unity = 0.80
 			OR = { 

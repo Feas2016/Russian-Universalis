@@ -24,7 +24,7 @@ recover_west_anatolia = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_west_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -41,7 +41,7 @@ recover_west_anatolia = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -113,7 +113,7 @@ recover_central_anatolia = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_central_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -134,7 +134,7 @@ recover_central_anatolia = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -205,7 +205,7 @@ recover_east_anatolia = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = byz_recovered_eastern_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -228,7 +228,7 @@ recover_east_anatolia = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -293,7 +293,7 @@ recover_crimea = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = byz_recovered_crimea }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -306,7 +306,7 @@ recover_crimea = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -373,7 +373,7 @@ recover_east_islands = {
 			tag = PQR
 			tag = ROM
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -387,7 +387,7 @@ recover_east_islands = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -454,7 +454,7 @@ recover_albania = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_albania }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -470,7 +470,7 @@ recover_albania = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -536,7 +536,7 @@ recover_isteria = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_isteria }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -550,7 +550,7 @@ recover_isteria = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -624,7 +624,7 @@ recover_north_italy = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_northern_italy_byz }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		owns = 118	
@@ -643,7 +643,7 @@ recover_north_italy = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -716,7 +716,7 @@ recover_lombardia = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_lombardia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -737,7 +737,7 @@ recover_lombardia = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -803,7 +803,7 @@ recover_west_islands = {
 			tag = PQR
 			tag = ROM
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -817,7 +817,7 @@ recover_west_islands = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -886,7 +886,7 @@ recover_south_spain = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_south_spain }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -904,7 +904,7 @@ recover_south_spain = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -974,7 +974,7 @@ recover_tripoli = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_tripoli }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -995,7 +995,7 @@ recover_tripoli = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1056,7 +1056,7 @@ recover_tunis = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_tunis }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1073,7 +1073,7 @@ recover_tunis = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1140,7 +1140,7 @@ recover_antioch = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_antiocha }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1156,7 +1156,7 @@ recover_antioch = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1223,7 +1223,7 @@ recover_jerusalem = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_jerusalem }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1240,7 +1240,7 @@ recover_jerusalem = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1307,7 +1307,7 @@ recover_alexandria = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_alexandria }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1322,7 +1322,7 @@ recover_alexandria = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {

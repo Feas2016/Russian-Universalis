@@ -12,7 +12,7 @@ FRA_conquer_algeria = {
 	    normal_or_historical_nations = yes
 		tag = FRA
 		is_year = 1820
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		algiers_area = {
 			NOT = { owned_by = ROOT }
@@ -21,7 +21,7 @@ FRA_conquer_algeria = {
 		
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -78,7 +78,7 @@ CAR_return_homeland = {
 	allow = {
 	    normal_or_historical_nations = yes
 		tag = CAR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		OR = {
 			NOT = { owns = 378 }	
@@ -89,7 +89,7 @@ CAR_return_homeland = {
 		
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -141,13 +141,13 @@ CAR_conquest_malta = {
 	allow = {
 	    normal_or_historical_nations = yes
 		tag = CAR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no	
 		NOT = { owns = 126 }		
 		NOT = { has_country_flag = CAR_conquered_malta }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -209,7 +209,7 @@ ROME_trade_provinces = {
 		    tag = PQR
 			tag = ROM
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		OR = {
 			NOT = { owns = 1751 }	
@@ -223,7 +223,7 @@ ROME_trade_provinces = {
 		
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -277,7 +277,7 @@ ndl_pomerania = {
 	}
 
     allow = {
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 47 }
@@ -287,7 +287,7 @@ ndl_pomerania = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -346,7 +346,7 @@ ndl_northumbry = {
 	}
 
     allow = {
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 247 }
@@ -358,7 +358,7 @@ ndl_northumbry = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -418,7 +418,7 @@ ndl_livonia = {
 	}
 
     allow = {
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 35 }
@@ -430,7 +430,7 @@ ndl_livonia = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -487,7 +487,7 @@ ndl_novgorod = {
 
     allow = {
 	    has_country_flag = ndl_conquest_livonia
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    novgorod_area = {
@@ -500,7 +500,7 @@ ndl_novgorod = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -562,7 +562,7 @@ ndl_dnepr = {
 
     allow = {
 	    has_country_flag = ndl_conquest_novgorod
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    west_dniepr_area = {
@@ -575,7 +575,7 @@ ndl_dnepr = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -633,7 +633,7 @@ ndl_white_sea = {
 
     allow = {
 	    has_country_flag = ndl_conquest_novgorod
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 313 }
@@ -643,7 +643,7 @@ ndl_white_sea = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -707,7 +707,7 @@ ndl_ireland = {
 
     allow = {
 	    has_country_flag = ndl_conquest_northumbry
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 374 }
@@ -719,7 +719,7 @@ ndl_ireland = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -778,7 +778,7 @@ ndl_islands = {
 
     allow = {
 	    has_country_flag = ndl_conquest_northumbry
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 253 }
@@ -788,7 +788,7 @@ ndl_islands = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -846,7 +846,7 @@ ndl_low_lands = {
 
     allow = {
 	    has_country_flag = ndl_conquest_northumbry
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    frisia_area = {
@@ -859,7 +859,7 @@ ndl_low_lands = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -918,7 +918,7 @@ ndl_normandy = {
 
     allow = {
 	    has_country_flag = ndl_conquest_lowlands
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		normandy_area = {
 			NOT = { owned_by = ROOT }
@@ -926,7 +926,7 @@ ndl_normandy = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -984,7 +984,7 @@ ndl_picardia = {
 
     allow = {
 	    has_country_flag = ndl_conquest_ireland
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    NOT = { owns = 174 }
@@ -993,7 +993,7 @@ ndl_picardia = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {
@@ -1055,7 +1055,7 @@ ndl_sicily = {
 	    has_country_flag = ndl_conquest_lowlands
 		has_country_flag = ndl_conquest_picardia
 		has_country_flag = ndl_conquest_normandy
-	    is_subject = no
+	    is_free_or_tributary_trigger = yes
 		tag = NDL
 		OR = {
 		    sicily_area = {
@@ -1074,7 +1074,7 @@ ndl_sicily = {
 	}	
 	
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	
 	success = {

@@ -8,13 +8,13 @@ defeat_the_byzantine_empire = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { owns = 151 }
 		NOT = { has_country_modifier = defeated_byzantine_empire }
 		NOT = { has_country_flag = defeated_BYZ }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 151
@@ -29,7 +29,7 @@ defeat_the_byzantine_empire = {
 			factor = 2
 			BYZ = {
 				owns = 151
-				is_subject = no			
+				is_free_or_tributary_trigger = yes			
 			}
 		}
 		modifier = {
@@ -76,17 +76,18 @@ conquer_the_byzantine_empire = {
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = defeated_byzantine_empire }
 		NOT = { has_country_flag = byz_empire_conquered }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151
 		BYZ = {
 			is_neighbor_of = ROOT
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 			NOT = { alliance_with = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = BYZ }
 			any_target_province = {
 				NOT = { owned_by = ROOT }
@@ -153,6 +154,7 @@ conquer_southern_greece = {
 		}
 		owner = {
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 			NOT = { alliance_with = ROOT }
 		}
 	}
@@ -165,6 +167,7 @@ conquer_southern_greece = {
 				NOT = { owned_by = ROOT }
 				owner = {
 					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
 					NOT = { alliance_with = ROOT }
 				}
 			}
@@ -172,6 +175,7 @@ conquer_southern_greece = {
 				NOT = { owned_by = ROOT }
 				owner = {
 					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
 					NOT = { alliance_with = ROOT }
 				}
 			}
@@ -179,16 +183,17 @@ conquer_southern_greece = {
 				NOT = { owned_by = ROOT }
 				owner = {
 					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
 					NOT = { alliance_with = ROOT }
 				}
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = military_victory }
 		NOT = { has_country_flag = southern_greece_TUR_taken }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -236,16 +241,17 @@ conquer_serbia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = military_victory }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		SER = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = SER }
 			any_target_province = {
 				NOT = { owned_by = ROOT }
@@ -306,16 +312,17 @@ conquer_bosnia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = military_victory }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		BOS = {
 			NOT = { alliance_with = ROOT }
 			is_neighbor_of = ROOT
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = BOS }
 			any_target_province = {
 				NOT = { owned_by = ROOT }
@@ -375,16 +382,17 @@ retake_smyrna = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		AYD = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = AYD }
 			any_target_province = {
 				NOT = { owned_by = ROOT }
@@ -455,9 +463,9 @@ vassalize_wallachia = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = WAL }
-			WAL = { is_subject = yes }
+			WAL = { is_subject_other_than_tributary_trigger = yes }
 			NOT = {
 				has_casus_belli = {
 					type = cb_vassalize_mission
@@ -526,9 +534,9 @@ vassalize_transylvania = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = TRA }
-			TRA = { is_subject = yes }
+			TRA = { is_subject_other_than_tributary_trigger = yes }
 			NOT = {
 				has_casus_belli = {
 					type = cb_vassalize_mission
@@ -585,24 +593,25 @@ defeat_the_knights = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = {
-			tag = TUR ###STT
+			tag = TUR
 			tag = TRK ###STT
 			tag = AYD
 			tag = MEN
 		}
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = defeat_the_knights_flag }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		KNI = {
 			owns = 320		# Rhodes
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			AND = {
 				KNI = { NOT = { owns = 320 } }
 				NOT = { owns = 320 }
@@ -657,17 +666,18 @@ take_crete_from_venice = {
 		owns = 151
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = take_crete_from_venice_flag }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		VEN = {
 			owns = 163
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			AND = {
 				VEN = { NOT = { owns = 163 } }
 				NOT = { owns = 163 }
@@ -718,7 +728,7 @@ muslim_asia_minor = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = {
-			tag = TUR 
+			tag = TUR
 			tag = TRK ###STT
 			tag = AYD 
 			tag = CND 
@@ -782,7 +792,7 @@ take_kaffa = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151
 		NOT = { owns = 285 }		# Kaffa
 		285 = {
@@ -791,13 +801,14 @@ take_kaffa = {
 				NOT = { alliance_with = ROOT }
 				NOT = { war_with = ROOT }
 				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
 		NOT = { has_country_modifier = black_sea_ambition }
 		NOT = { has_country_flag = take_kaffa_mission }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 285
@@ -851,12 +862,13 @@ conquer_levant = {
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
     allow = {
 		normal_or_historical_nations = yes
         OR = { tag = TUR tag = TRK } ###STT
-        is_subject = no
+        is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquest_of_levant_mission }
 		any_neighbor_country = {
@@ -874,7 +886,7 @@ conquer_levant = {
 		}
     }
     abort = {
-        is_subject = yes
+        is_subject_other_than_tributary_trigger = yes
     }
     success = {
 		all_target_province = {
@@ -929,19 +941,19 @@ conquer_egypt = {
 			area = upper_egypt_area
 			area = cyrenaica_area
 			area = libyan_desert_area
-			area = hejaz_area
 		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
     allow = {
 		normal_or_historical_nations = yes
         OR = { tag = TUR tag = TRK } ###STT
 		owns = 379 # Judea
-        is_subject = no
+        is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquest_of_egypt_mission }
 		any_neighbor_country = {
@@ -956,10 +968,11 @@ conquer_egypt = {
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
     }
     abort = {
-        is_subject = yes
+        is_subject_other_than_tributary_trigger = yes
     }
     success = {
 		all_target_province = {
@@ -1014,6 +1027,7 @@ safeguard_eastern_anatolia = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1025,17 +1039,19 @@ safeguard_eastern_anatolia = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			armenia_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1074,6 +1090,145 @@ safeguard_eastern_anatolia = {
 	}
 }
 
+vassalize_dulkadir = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = TUR
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_vassalization }
+		DUL = {
+			is_free_or_tributary_trigger = yes
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = DUL }
+			DUL = { is_free_or_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = DUL
+				}
+			}
+		}
+	}
+	success = {
+		DUL = { vassal_of = TUR }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = DUL value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = DUL
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = DUL
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = DUL
+			}
+		}
+	}
+}
+
+vassalize_ramazan = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = TUR
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_vassalization }
+		RAM = {
+			is_free_or_tributary_trigger = yes
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = RAM }
+			RAM = { is_free_or_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = RAM
+				}
+			}
+		}
+	}
+	success = {
+		RAM = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = RAM value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = RAM
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = RAM
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = RAM
+			}
+		}
+	}
+}
 conquer_mesopotamia = {
 	
 	type = country
@@ -1091,6 +1246,7 @@ conquer_mesopotamia = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1103,27 +1259,31 @@ conquer_mesopotamia = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			basra_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			al_jazira_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			rakka_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1179,6 +1339,7 @@ conquer_hedjaz = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1189,14 +1350,15 @@ conquer_hedjaz = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		###STT
-		is_subject = no
+		###STT -2 del
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = indian_ocean_ambition }
 		NOT = { has_country_flag = conquer_hedjaz_flag }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1257,24 +1419,28 @@ conquer_mocha = {
 		387 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		2346 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		391 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		386 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = indian_ocean_ambition }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 387 # Mocha
@@ -1361,18 +1527,20 @@ conquer_haasa = {
 		owns = 408
 		NOT = { owns = 394 } # Al Hasa
 		NOT = { owns = 2347 }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		394 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		2347 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 394
@@ -1435,13 +1603,14 @@ conquer_trebizond = {
 		330 = {
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = black_sea_ambition }
 		NOT = { has_country_flag = conquer_trebizond_flag }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 330
@@ -1489,6 +1658,7 @@ conquer_tripolitania = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1501,11 +1671,12 @@ conquer_tripolitania = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1561,6 +1732,7 @@ conquer_tunisia = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1576,11 +1748,12 @@ conquer_tunisia = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1645,9 +1818,9 @@ subjugate_algiers = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = ALG }
-			ALG = { is_subject = yes }
+			ALG = { is_subject_other_than_tributary_trigger = yes }
 			NOT = {
 				has_casus_belli = {
 					type = cb_vassalize_mission
@@ -1657,7 +1830,7 @@ subjugate_algiers = {
 		}
 	}
 	success = {
-		ALG = { vassal_of = ROOT }
+		ALG = { vassal_of = ROOT } #STT
 	}
 	chance = {
 		factor = 3000
@@ -1707,6 +1880,7 @@ conquer_algeria = {
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 		}
 	}
 	allow = {
@@ -1721,11 +1895,12 @@ conquer_algeria = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {

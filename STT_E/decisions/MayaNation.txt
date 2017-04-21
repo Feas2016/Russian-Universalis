@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			is_random_new_world = no
+			NOT = { has_country_flag = formed_mayapan_flag }
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -15,6 +16,7 @@ country_decisions = {
 			}
 			culture_group = maya
 			religion = mesoamerican_religion
+			NOT = { government = celestial_empire }
 			NOT = { exists = MAY }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }			
@@ -29,7 +31,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_religion_reformed = yes
 			owns_core_province = 842 #Petén
@@ -68,6 +70,7 @@ country_decisions = {
 			}
 			### STT
 			add_prestige = 25
+			set_country_flag = formed_mayapan_flag
 			change_government = despotic_monarchy
 		}
 		ai_will_do = {

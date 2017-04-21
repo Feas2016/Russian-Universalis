@@ -36,7 +36,7 @@ country_decisions = {
 				}
 			adm_tech = 12
 			government = monarchy
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			france_region = { type = all country_or_vassal_holds = ROOT }
 			lombardy_area = { type = all country_or_vassal_holds = ROOT }

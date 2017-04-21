@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_golden_horde_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -15,7 +16,7 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
 			NOT = { exists = GLH }
-			NOT = { exists = TGN }
+			NOT = { exists = TGN } #STT
 			culture_group = turkic #STT
 			government = steppe_horde
 			is_colonial_nation = no
@@ -63,7 +64,7 @@ country_decisions = {
 				country_or_vassal_holds = ROOT
 			}
 			num_of_cities = 30
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 		}
 		effect = {
@@ -96,6 +97,7 @@ country_decisions = {
 						}
 					}
 				}
+				set_country_flag = formed_golden_horde_flag
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			crimea_region = {

@@ -264,6 +264,7 @@ country_event = {
 
 		kazan_area = {
 			type = all
+			###STT repair
 			owned_by = ROOT
 			is_core = ROOT
 		}
@@ -299,6 +300,7 @@ country_event = {
 				NOT = { owned_by = ROOT }
 			}
 			add_permanent_claim = ROOT
+			###STT -1 del
 		}
 	}
 }
@@ -907,7 +909,6 @@ country_event = {
 	}
 	
 	
-
 	option = {		# The reforms are necessary
 		name = "flavor_rus.EVTOPTA1006"
 		ai_chance = {
@@ -1395,11 +1396,11 @@ country_event = {
 		is_year = 1680
 		NOT = { is_year = 1730 }
 		SWE = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			total_development = 200
-			is_neighbor_of = ROOT
+			is_neighbor_of = ROOT ###STT
 			NOT = {
-				alliance_with = ROOT
+				alliance_with = ROOT ##STT
 			}
 			any_enemy_country = {
 				NOT = { is_rival = ROOT }
@@ -1467,7 +1468,7 @@ country_event = {
 			tag = TSR
 			tag = RU2
 		}
-		is_year = 1700
+		is_year = 1680
 		NOT = { is_year = 1720 }
 		government = monarchy
 	}
@@ -1564,7 +1565,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		NOT = { has_country_flag = RUS_had_event_3430 }
 		is_year = 1500
 		NOT = { is_year = 1800 }
 		OR = {
@@ -1579,8 +1579,8 @@ country_event = {
 		exists = KUR
 		KUR = {
 			has_heir = no
-			is_neighbor_of = ROOT
-			is_subject = no
+			is_neighbor_of = ROOT ###STT
+			is_free_or_tributary_trigger = yes
 			government = monarchy
 		}
 	}

@@ -12,7 +12,8 @@ conquer_silesia = {
 		}
 		owner = {
 			NOT = { alliance_with = ROOT }
-			
+			NOT = { overlord_of = ROOT }
+			NOT = { is_subject_of = ROOT }
 		}
 	}
 	
@@ -27,17 +28,25 @@ conquer_silesia = {
 			264 = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
+				owner = {
+					NOT = { overlord_of = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 			2966 = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
+				owner = {
+					NOT = { overlord_of = ROOT }
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = prussian_ambition }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = { owned_by = ROOT }
@@ -86,7 +95,7 @@ conquer_warmia_pru = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = PRU
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = prussian_ambition }
 		NOT = { has_country_flag = conquered_warmia }
 		42 = {		# Warmia
@@ -94,11 +103,13 @@ conquer_warmia_pru = {
 			any_neighbor_province = { owned_by = ROOT }
 			owner = {
 				NOT = { alliance_with = ROOT }
+				NOT = { overlord_of = ROOT }
+				NOT = { is_subject_of = ROOT }
 			}
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 42
@@ -178,7 +189,7 @@ connect_brandenburg_and_prussia = {
 		normal_or_historical_nations = yes
 		tag = BRA
 		exists = PRU
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		PRU = { vassal_of = BRA }
 		NOT = { is_neighbor_of = PRU }
 		NOT = { has_country_modifier = prussian_ambition }
@@ -214,7 +225,7 @@ connect_brandenburg_and_prussia = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = PRU }
 			war_with = PRU
 		}
@@ -281,6 +292,7 @@ connect_the_prussian_lands = {
 		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -294,16 +306,20 @@ connect_the_prussian_lands = {
 				NOT = { exists = BRA }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 50			# Berlin
 		owns = 41			# Königsberg
 		west_prussia_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		east_prussia_area = {
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		###STT
 		NOT = { has_country_modifier = prussian_ambition }
@@ -311,7 +327,7 @@ connect_the_prussian_lands = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { owns = 50 }
 			NOT = { owns = 41 }
 		}
@@ -378,6 +394,7 @@ conquer_swedish_pomerania = {
 		}
 		owned_by = SWE
 		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
 	}
 	
 	allow = {
@@ -388,7 +405,9 @@ conquer_swedish_pomerania = {
 		}
 		exists = SWE
 		NOT = { alliance_with = SWE }
-		is_subject = no
+		NOT = { SWE = { is_subject_of = ROOT } }
+		NOT = { SWE = { overlord_of = ROOT } }
+		is_free_or_tributary_trigger = yes
 		OR = {
 			2995 = { owned_by = SWE }
 			48 = { owned_by = SWE }
@@ -401,7 +420,7 @@ conquer_swedish_pomerania = {
 		NOT = { has_opinion = { who = SWE value = 50 } }
 	}
 	abort = {
-		is_subject = yes		
+		is_subject_other_than_tributary_trigger = yes		
 	}
 	success = {
 		all_target_province = {
@@ -456,12 +475,14 @@ conquer_hinterpommern = {
 			tag = BRA
 			tag = PRU
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		48 = {		# Kolberg
 			NOT = { owned_by = ROOT }
 			any_neighbor_province = { owned_by = ROOT }
 			owner = {
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
 		2995 = {		# Stolp
@@ -469,11 +490,13 @@ conquer_hinterpommern = {
 			any_neighbor_province = { owned_by = ROOT }
 			owner = {
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
 	}
 	abort = {
-		is_subject = yes		
+		is_subject_other_than_tributary_trigger = yes		
 	}
 	success = {
 		owns = 48
@@ -553,9 +576,9 @@ vassalize_prussia = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = PRU }
-			PRU = { is_subject = yes }
+			PRU = { is_subject_other_than_tributary_trigger = yes }
 			NOT = {
 				has_casus_belli = {
 					type = cb_vassalize_mission
@@ -728,13 +751,14 @@ prussia_partitions_poland = {
 		normal_or_historical_nations = yes
 		num_of_cities = 15
 		tag = PRU
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_lesser_in_union = no
 		OR = {
 			PLC = {
 				is_neighbor_of = PRU
 				num_of_cities = 10
 				NOT = { alliance_with = PRU }
+				NOT = { is_subject_of = PRU }
 				any_owned_province = {
 					OR = {
 						area = east_prussia_area
@@ -750,6 +774,7 @@ prussia_partitions_poland = {
 					is_neighbor_of = PRU
 					num_of_cities = 10
 					NOT = { alliance_with = PRU }
+					NOT = { is_subject_of = PRU }
 					any_owned_province = {
 						OR = {
 							area = east_prussia_area
@@ -768,7 +793,7 @@ prussia_partitions_poland = {
 		owns = 42
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -855,18 +880,20 @@ conquer_ratibor = {
 			tag = BRA
 			tag = PRU
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		263 = {		# Ratibor
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 			any_neighbor_province = { owned_by = ROOT }
 			owner = {
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
 	}
 	abort = {
-		is_subject = yes		
+		is_subject_other_than_tributary_trigger = yes		
 	}
 	success = {
 		owns = 263
@@ -916,6 +943,7 @@ subjugate_westphalia = {
 		NOT = {
 			owner = {
 				alliance_with = ROOT
+				NOT = { is_subject_of = ROOT }
 			}
 		}
 	}
@@ -924,7 +952,7 @@ subjugate_westphalia = {
 		normal_or_historical_nations = yes
 		tag = PRU
 		exists = WES
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = {
 			westphalia_area = {
 				owned_by = ROOT
@@ -933,13 +961,15 @@ subjugate_westphalia = {
 		WES = {
 			is_neighbor_of = ROOT
 			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 			any_owned_province = {
 				area = westphalia_area
 			}
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = { owned_by = ROOT }

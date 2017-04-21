@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_scandinavia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -20,7 +21,7 @@ country_decisions = {
 					adm_tech = 20
 				}
 			}
-			NOT = { religion = norse_pagan_reformed }
+			NOT = { religion = norse_pagan_reformed } ###STT
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -32,7 +33,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 20
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 1		# Uppland
@@ -72,9 +73,8 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 10
+			set_country_flag = formed_scandinavia_flag
 			country_event = { id = ideagroups.1 } #Swap Ideas	### STT
-			
-			
 		}
 		ai_will_do = {
 			factor = 1

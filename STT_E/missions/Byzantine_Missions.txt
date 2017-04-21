@@ -18,17 +18,13 @@ recover_greece = {
 		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { vassal_of = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		### STT
-		OR = {
-			tag = BYZ
-			tag = PQR
-			tag = ROM
-		}
-		is_subject = no
+		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = byzantium_resurgent }
 		NOT = { has_country_flag = retook_greece_byz }
 		is_at_war = no
@@ -44,7 +40,7 @@ recover_greece = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -110,7 +106,7 @@ recover_the_coast_of_asia_minor = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BYZ
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -125,7 +121,7 @@ recover_the_coast_of_asia_minor = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -182,13 +178,8 @@ recover_the_balkans = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		### STT
-		OR = {
-			tag = BYZ
-			tag = PQR
-			tag = ROM
-		}
-		is_subject = no
+		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		bulgaria_area = {
 			NOT = { owned_by = ROOT }
@@ -197,7 +188,7 @@ recover_the_balkans = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -262,7 +253,7 @@ convert_asia_minor = {
 				owned_by = ROOT
 				NOT = { religion = orthodox }
 			}
-			eastern_aegean_area = {
+			eastern_aegean_area = { ###STT
 				owned_by = ROOT
 				NOT = { religion = orthodox }
 			}
@@ -274,7 +265,7 @@ convert_asia_minor = {
 			AND = {
 				NOT = { aydin_area = { owned_by = ROOT } }
 				NOT = { hudavendigar_area = { owned_by = ROOT } }
-				NOT = { eastern_aegean_area = { owned_by = ROOT } }
+				NOT = { eastern_aegean_area = { owned_by = ROOT } } ###STTT
 			}
 		}
 	}
@@ -289,7 +280,7 @@ convert_asia_minor = {
 			owned_by = ROOT
 			religion = orthodox
 		}
-		eastern_aegean_area = {
+		eastern_aegean_area = { ###STT
 			type = all
 			owned_by = ROOT
 			religion = orthodox
@@ -328,18 +319,14 @@ recover_south_italy = {
 		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { vassal_of = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	
 	allow = {
 		normal_or_historical_nations = yes
-		### STT
-		OR = {
-			tag = BYZ
-			tag = PQR
-			tag = ROM
-		}
-		is_subject = no
+		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		owns = 151
 		northern_greece_area = {
@@ -365,7 +352,7 @@ recover_south_italy = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -420,7 +407,7 @@ recover_rome = {
 	allow = {
 		normal_or_historical_nations = yes
 		tag = BYZ
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		NOT = { owns = 118 }	# Rome
 		naples_area = {
@@ -439,7 +426,7 @@ recover_rome = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		owns = 118 # Rome
@@ -492,18 +479,14 @@ recover_sicily = {
 		area = sicily_area
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { vassal_of = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	
 	allow = {
-		### STT
-		OR = {
-			tag = BYZ
-			tag = PQR
-			tag = ROM
-		}
+		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
 		normal_or_historical_nations = yes
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		naples_area = {
 			type = all
@@ -524,7 +507,7 @@ recover_sicily = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -590,7 +573,7 @@ the_pentarchy = {
 	allow = {
 		normal_or_historical_nations = yes
 		religion = orthodox
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		num_of_cities = 15
 		num_of_owned_provinces_with = {
@@ -613,7 +596,7 @@ the_pentarchy = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		118 = { religion = orthodox }
@@ -683,13 +666,8 @@ destroy_venice = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		### STT
-		OR = {
-			tag = BYZ
-			tag = PQR
-			tag = ROM
-		}
-		is_subject = no
+		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		owns = 151
 		owns = 146 # Athens
@@ -705,7 +683,7 @@ destroy_venice = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			112 = {
 				NOT = { owned_by = VEN }  
 			}

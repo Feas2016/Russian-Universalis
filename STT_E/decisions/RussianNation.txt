@@ -3,15 +3,32 @@ country_decisions = {
 	russian_nation = {
 		major = yes
 		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_russia_flag }
 			tag = TSR
 			NOT = { exists = RUS }
 			primary_culture = russian ### STT
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
 		}
 		allow = {
 			NOT = { exists = RUS }
 			adm_tech = 14 ### STT
+			is_free_or_tributary_trigger = yes
 			has_institution = manufactories ###STT
-			is_subject = no
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 295			# Moskva
@@ -108,6 +125,7 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			set_country_flag = formed_russia_flag
 			add_prestige = 25
 		}
 		ai_will_do = {

@@ -24,7 +24,7 @@ country_decisions = {
 		allow = {
 			owns_or_vassal_of = 13 ### STT
 			owns_or_vassal_of = 3218 ### STT
-			is_subject = no			
+			is_free_or_tributary_trigger = yes			
 			adm_tech = 26
 			treasury = 10000
 		}
@@ -60,7 +60,7 @@ country_decisions = {
 		allow = {
 			owns_or_vassal_of = 363
 			owns_or_vassal_of = 2315
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			adm_tech = 26
 			treasury = 20000
 		}
@@ -96,7 +96,7 @@ country_decisions = {
 		}
 		allow = {
 			owns_or_vassal_of = 835
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			adm_tech = 26
 			treasury = 30000
 		}
@@ -116,7 +116,7 @@ country_decisions = {
 		potential = {
 			ai = no
 			owns_or_vassal_of = 13
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			13 = {
 				has_construction = canal
 			}
@@ -141,7 +141,7 @@ country_decisions = {
 		potential = {
 			ai = no
 			owns_or_vassal_of = 363
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			363 = {
 				has_construction = canal
 			}
@@ -166,7 +166,7 @@ country_decisions = {
 		potential = {
 			ai = no
 			owns_or_vassal_of = 835
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			835 = {
 				has_construction = canal
 			}

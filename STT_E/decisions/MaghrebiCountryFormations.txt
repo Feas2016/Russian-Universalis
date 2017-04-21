@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_morocco_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -23,7 +24,11 @@ country_decisions = {
 				}
 				AND = {
 					primary_culture = berber
-					capital_scope = { area = fez_area }
+					capital_scope = { area = western_morocco_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = southern_morocco_area }
 				}
 				AND = {
 					primary_culture = berber
@@ -57,7 +62,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = MOR }
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 343 #Fez
 			owns_core_province = 344 #Marrekech
@@ -105,7 +110,13 @@ country_decisions = {
 				}
 				add_permanent_claim = MOR
 			}
-			fez_area = {
+			western_morocco_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MOR
+			}
+			southern_morocco_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -119,8 +130,12 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 344 #Marrekech
-			change_government = despotic_monarchy #Desert tribes settling down, theocracies become monarchies.
+			if = {
+				limit = { NOT = { government = celestial_empire } }
+				change_government = despotic_monarchy #Desert tribes settling down, theocracies become monarchies.
+			}
 			change_primary_culture = moroccan
+			set_country_flag = formed_morocco_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -136,6 +151,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_algiers_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -152,6 +168,14 @@ country_decisions = {
 				AND = {
 					primary_culture = berber
 					capital_scope = { area = algiers_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = hautes_plaines_area }
+				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = ouled_nail_area }
 				}
 				AND = {
 					primary_culture = berber
@@ -182,7 +206,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = ALG }
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 338 #Algiers
 			owns_core_province = 2461 #Dahra
@@ -193,8 +217,10 @@ country_decisions = {
 			owns_core_province = 2456
 			owns_core_province = 2457
 			owns_core_province = 350
-			owns_core_province = 336 #Tlemcen
-			owns_core_province = 339 #Kabylia
+			OR = {
+				owns_core_province = 336 #Tlemcen
+				owns_core_province = 339 #Kabylia
+			}
 		}
 		effect = {
 			change_tag = ALG
@@ -230,6 +256,18 @@ country_decisions = {
 				}
 				add_permanent_claim = ALG
 			}
+			hautes_plaines_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALG
+			}
+			ouled_nail_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ALG
+			}
 			kabylia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -244,6 +282,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 338 #Algiers
+			set_country_flag = formed_algiers_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -259,6 +298,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_tunisia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -284,6 +324,10 @@ country_decisions = {
 					primary_culture = berber
 					capital_scope = { area = tripolitania_area }
 				}
+				AND = {
+					primary_culture = berber
+					capital_scope = { area = djerba_area }
+				}
 			}
 			OR = {
 				ai = no
@@ -305,7 +349,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = TUN }
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 341 #Tunis
 			owns_core_province = 2473 #Souss
@@ -350,6 +394,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_capital = 341
+			set_country_flag = formed_tunisia_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -365,6 +410,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_tripoli_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -399,7 +445,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = TRP }
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 354 #Tripoli
 			owns_core_province = 2451 #Thubaqt
@@ -443,6 +489,7 @@ country_decisions = {
 				change_government = despotic_monarchy
 			}
 			add_prestige = 25
+			set_country_flag = formed_tripoli_flag
 			set_capital = 354 #Tripoli
 			if = {
 				limit = { has_custom_ideas = no }

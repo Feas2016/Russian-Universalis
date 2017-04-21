@@ -5,6 +5,7 @@ country_decisions = {
 		potential = {
 			is_random_new_world = no
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_inca_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -39,7 +40,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = INC }
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 808 #Qusqu
 			owns_core_province = 813 #Kashamarka
@@ -114,6 +115,12 @@ country_decisions = {
 				}
 				add_permanent_claim = INC
 			}
+			nehuenken_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = INC
+			}
 			### STT
 			cuyo_area = {
 				limit = {
@@ -135,6 +142,7 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			set_country_flag = formed_inca_flag
 		}
 		ai_will_do = {
 			factor = 1

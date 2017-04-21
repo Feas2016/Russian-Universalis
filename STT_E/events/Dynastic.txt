@@ -524,7 +524,8 @@ country_event = {
 	
 	trigger = {
 		government = monarchy
-		is_subject = no
+		is_free_or_tributary_trigger = yes
+		NOT = { government = celestial_empire }
 		adm_tech = 20
 		adm_power = 200
 		has_factions = no
@@ -543,9 +544,9 @@ country_event = {
 	option = {
 		name = "EVTOPTB9462"
 		ai_chance = { factor = 5 }
+		change_government = bureaucratic_despotism
 		kill_ruler = yes
 		add_stability = -6
-		change_government = bureaucratic_despotism
 	}
 }
 
@@ -1193,20 +1194,20 @@ country_event = {
 			limit = {
 				NOT = { stability = 3 }
 			}
-		random_list = {
-			10 = {
-				add_stability = 1
-			}
-			10 = {
-				add_stability = 2
-			}
-			
-			10 = { 
-				add_stability = 3
+			random_list = {
+				10 = {
+					add_stability = 1
+				}
+				10 = {
+					add_stability = 2
+				}
+				
+				10 = { 
+					add_stability = 3
+				}
 			}
 		}
 	}
-}
 }
 
 # The Family Opt 2
@@ -1913,7 +1914,7 @@ country_event = {
 			NOT = { government = ottoman_government }
 			NOT = { government = elective_monarchy }
 			has_regency = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			num_of_cities = ROOT
 			is_female = no
 			NOT = { has_country_flag = dyn_woman_pretender_flag }
@@ -1938,7 +1939,7 @@ country_event = {
 					NOT = { government = ottoman_government }
 					NOT = { government = elective_monarchy }
 					has_regency = no
-					is_subject = no
+					is_free_or_tributary_trigger = yes
 					num_of_cities = ROOT
 					is_female = no
 					religion_group = christian
@@ -2032,7 +2033,7 @@ country_event = {
 		NOT = { government = ottoman_government }
 		NOT = { government = elective_monarchy }
 		religion_group = christian
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		ruler_age = 16
 		NOT = {
 			ruler_age = 40
@@ -2079,7 +2080,7 @@ country_event = {
 			}
 			has_opinion = { who = ROOT value = 75 }
 			reverse_has_opinion = { who = ROOT value = 75 }
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 		}
 	}
 	
@@ -2120,7 +2121,7 @@ country_event = {
 				}
 				has_opinion = { who = ROOT value = 75 }
 				reverse_has_opinion = { who = ROOT value = 75 }
-				is_subject = no
+				is_free_or_tributary_trigger = yes
 			}
 			country_event = {
 				id = dynastic_events.6

@@ -11,14 +11,16 @@ annex_dai_viet = {
 		normal_or_historical_nations = yes
 		faction_in_power = temples
 		tag = MNG
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_lesser_in_union = no
 		exists = DAI
 		NOT = { alliance_with = DAI }
 		DAI = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_neighbor_of = ROOT
 			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
 			NOT = { num_of_cities = ROOT }
 		}
 	}
@@ -26,7 +28,7 @@ annex_dai_viet = {
 		OR = {
 			NOT = { faction_in_power = temples }
 			NOT = { exists = DAI }
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			is_lesser_in_union = yes
 			DAI = { NOT = { religion_group = ROOT } }
 		}
@@ -85,7 +87,7 @@ defend_korea = {
 		}
 		exists = KOR
 		exists = JAP
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_lesser_in_union = no
 		KOR = {
 			war_with = JAP
@@ -96,7 +98,7 @@ defend_korea = {
 	abort = {
 		OR = {
 			NOT = { war_with = JAP }
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			is_lesser_in_union = yes	
 		}
 	}
@@ -283,6 +285,7 @@ start_the_conquest_of_ming_china = {
 		exists = MNG
 		NOT = { war_with = MNG }
 		NOT = { alliance_with = MNG }
+		NOT = { overlord_of = MNG }
 		OR = {
 			NOT = { owns = 703 }	# Liaoxi
 			NOT = { owns = 704 }	# Liaoxi
@@ -299,7 +302,7 @@ start_the_conquest_of_ming_china = {
 	abort = {
 		OR = {
 			NOT = { exists = MNG }
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 		}
 	}
 	success = {
@@ -359,11 +362,11 @@ unite_manchu = {
 		NOT = { has_country_flag = united_manchus }
 		NOT = { exists = MCH }
 		OR = { 
-			tag = MJZ 
-			tag = MHX		
-			tag = MYR		
+			tag = MJZ
+			tag = MHX
+			tag = MYR
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			NOT = { owns = 730 }		#Girin
 			NOT = { owns = 1053 }		#Hinggan
@@ -371,7 +374,7 @@ unite_manchu = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {

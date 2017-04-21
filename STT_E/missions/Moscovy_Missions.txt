@@ -13,7 +13,7 @@ subjugate_viatka = {
 			tag = TSR
 			tag = RUS
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		VIA = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
@@ -25,7 +25,7 @@ subjugate_viatka = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = VIA }
 			NOT = { religion_group = ROOT }
 		}
@@ -105,20 +105,20 @@ subjugate_perm = {
 		PRM = {
 			ai = yes
 			exists = yes
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			num_of_cities = 2
 			is_neighbor_of = ROOT
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { war_with = PRM }
 		NOT = { has_country_flag = perm_mission_rus }
 		NOT = { last_mission = subjugate_perm }
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			PRM = {
-				is_subject = yes
+				is_subject_other_than_tributary_trigger = yes
 				NOT = { is_subject_of = ROOT }
 			}
 		}
@@ -167,7 +167,7 @@ subjugate_pronsk = {
 			tag = TSR
 			tag = RUS
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		PNS = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
@@ -179,7 +179,7 @@ subjugate_pronsk = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = PNS }
 			NOT = { religion_group = ROOT }
 		}
@@ -256,7 +256,7 @@ subjugate_odoev = {
 			tag = TSR
 			tag = RUS
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OKA = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
@@ -268,7 +268,7 @@ subjugate_odoev = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = OKA }
 			NOT = { religion_group = ROOT }
 		}

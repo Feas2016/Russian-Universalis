@@ -15,7 +15,7 @@ unite_austria = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		NOT = { has_country_flag = austria_reunited }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			exists = STY
 			exists = TIR
@@ -23,7 +23,7 @@ unite_austria = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			AND = {
 				NOT = { exists = STY }
 				NOT = { exists = TIR }
@@ -97,7 +97,7 @@ recover_silesia = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 266 #Prague
 		OR = {
 			owns = 60
@@ -110,6 +110,8 @@ recover_silesia = {
 			owner = {
 				NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
 				NOT = { OR = { vassal_of = HAB vassal_of = DUA vassal_of = AEM } } ### STT
+				NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
+
 			}
 		}
 		264 = {
@@ -117,6 +119,7 @@ recover_silesia = {
 			owner = { 
 				NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
 				NOT = { OR = { vassal_of = HAB vassal_of = DUA vassal_of = AEM } } ### STT
+				NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 			}
 		}
 		2966 = {
@@ -124,11 +127,12 @@ recover_silesia = {
 			owner = {
 				NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
 				NOT = { OR = { vassal_of = HAB vassal_of = DUA vassal_of = AEM } } ### STT
+				NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 			}
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -184,7 +188,7 @@ reclaim_the_empire = {
 			allows_female_emperor = yes
 			is_female = no
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_lesser_in_union = no
 		has_regency = no
 		government = monarchy
@@ -204,7 +208,7 @@ reclaim_the_empire = {
 				is_female = yes
 				allows_female_emperor = no
 			}
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			is_lesser_in_union = yes
 			NOT = { government = monarchy }
 			capital_scope = {
@@ -251,9 +255,9 @@ subjugate_bohemia = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = BOH }
-			BOH = { is_subject = yes }
+			BOH = { is_subject_other_than_tributary_trigger = yes }
 		}
 	}
 	success = {
@@ -315,33 +319,45 @@ subjugate_hungary = {
 		OR = {
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			slovakia_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			alfold_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
@@ -349,9 +365,9 @@ subjugate_hungary = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { exists = HUN }
-			HUN = { is_subject = yes }
+			HUN = { is_subject_other_than_tributary_trigger = yes }
 		}
 	}
 	success = {
@@ -375,17 +391,23 @@ subjugate_hungary = {
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
@@ -394,25 +416,34 @@ subjugate_hungary = {
 			factor = 2
 			slovakia_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
@@ -421,17 +452,23 @@ subjugate_hungary = {
 			factor = 2
 			alfold_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			slovakia_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
@@ -440,33 +477,45 @@ subjugate_hungary = {
 			factor = 3
 			alfold_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			transylvania_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
 			slovakia_area = {
 				NOT = { owned_by = HUN }
-				NOT = {
-					owner = {
+				owner = {
+					NOT = {
 						is_subject_of = HUN
+					}
+					NOT = {
+						overlord_of = HUN
 					}
 				}
 			}
@@ -515,7 +564,7 @@ no_ottomans_in_eastern_balkans = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = TUR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		num_of_cities = 25
 		OR = {
 			owns = 161
@@ -527,6 +576,8 @@ no_ottomans_in_eastern_balkans = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
 			NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
+			NOT = { OR = { is_subject_of = HAB is_subject_of = DUA is_subject_of = AEM } } ### STT
+			NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 		}
 		OR = {
 			wallachia_area = { owned_by = TUR }
@@ -536,7 +587,7 @@ no_ottomans_in_eastern_balkans = {
 		NOT = { has_country_modifier = drove_back_the_turk }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -584,8 +635,8 @@ no_ottomans_in_western_balkans = {
 		owned_by = TUR
 		OR = {
 			area = serbia_area
+			#STT -1 del
 			area = bosnia_area
-			### STT
 		}
 	}
 	
@@ -593,7 +644,7 @@ no_ottomans_in_western_balkans = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = TUR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		num_of_cities = 25
 		OR = {
 			owns = 1767
@@ -604,17 +655,19 @@ no_ottomans_in_western_balkans = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
 			NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
+			NOT = { OR = { is_subject_of = HAB is_subject_of = DUA is_subject_of = AEM } } ### STT
+			NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 		}
 		OR = {
 			bosnia_area = { owned_by = TUR }
 			serbia_area = { owned_by = TUR }
-			## STT
+			## STT -1 del
 		}
 		NOT = { has_country_modifier = drove_back_the_turk }
 		NOT = { has_country_flag = conquest_of_western_balkans }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -679,7 +732,7 @@ partition_poland = {
 		OR = {
 			owned_by = POL
 			owned_by = PLC
-			owned_by = JAG
+			owned_by = JAG ###STT
 		}
 		OR = {
 			area = malopolska_area
@@ -695,7 +748,7 @@ partition_poland = {
 		OR = {
 			is_neighbor_of = POL
 			is_neighbor_of = PLC
-			is_neighbor_of = JAG
+			is_neighbor_of = JAG ###STT
 		}
 		num_of_cities = 20
 		owns_core_province = 153 #Budapest
@@ -706,7 +759,7 @@ partition_poland = {
 		}
 		OR = {			
 			AND = {
-				OR = { tag = PLC tag = JAG}
+				OR = { tag = PLC tag = JAG } ###STT
 				is_neighbor_of = ROOT
 				num_of_cities = 10
 				NOT = { alliance_with = ROOT }
@@ -718,12 +771,14 @@ partition_poland = {
 				}
 			}
 			AND = {
-				NOT = { exists = JAG }
+				NOT = { exists = JAG } ###STT
 				NOT = { exists = PLC }
 				POL = {
 					is_neighbor_of = ROOT
 					num_of_cities = 10
 					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
 					any_owned_province = {
 						OR = {
 							area = malopolska_area
@@ -735,7 +790,7 @@ partition_poland = {
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -757,14 +812,14 @@ partition_poland = {
 				owned_by = HAB
 			}
 		}
-		modifier = {
+		modifier = { ###STT
 			factor = 5
 			alfold_area = {
 				type = all
 				owned_by = AEM
 			}
 		}
-		modifier = {
+		modifier = { ### STT
 			factor = 5
 			alfold_area = {
 				type = all
@@ -789,7 +844,7 @@ partition_poland = {
 				has_any_disaster = yes
 			}
 		}
-		modifier = {
+		modifier = { ### STT
 			factor = 2
 			exists = JAG
 			JAG = {
@@ -833,7 +888,7 @@ no_territory_to_the_ottomans = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = TUR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_neighbor_of = TUR
 		OR = {
 			inner_austria_area = { owned_by = TUR }
@@ -844,7 +899,7 @@ no_territory_to_the_ottomans = {
 		NOT = { has_country_modifier = drove_back_the_turk }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		NOT = { war_with = TUR }
@@ -884,15 +939,17 @@ protect_belgium_from_the_french = {
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = FRA
 		is_rival = FRA
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		FRA = { is_neighbor_of = ROOT }
 		NOT = { alliance_with = FRA }
+		NOT = { is_subject_of = FRA }
+		NOT = { overlord_of = FRA }
 		low_countries_region = { owned_by = ROOT }
 		low_countries_region = { owned_by = FRA }
 		NOT = { has_country_flag = protected_belgium_from_the_french }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -961,11 +1018,13 @@ protect_hungary_from_the_ottomans = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = TUR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		TUR = {
 			num_of_cities = 15
 			is_neighbor_of = ROOT
 			NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
+			NOT = { OR = { is_subject_of = HAB is_subject_of = DUA is_subject_of = AEM } } ### STT
+			NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 		}
 		OR = {
 			transylvania_area = { owned_by =  ROOT }
@@ -978,14 +1037,14 @@ protect_hungary_from_the_ottomans = {
 			slovakia_area = { owned_by =  TUR }
 			alfold_area = { owned_by =  TUR }
 			transylvania_area = { owned_by =  TUR }
-			transylvania_area = { owned_by =  TUR }
+			### STT -1
 			transdanubia_area = { owned_by =  TUR }
 		}
 		NOT = { has_country_modifier = drove_back_the_turk }
 		NOT = { has_country_flag = protected_hungary_from_ottomans }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1042,7 +1101,7 @@ free_croatia_from_the_ottomans = {
 		normal_or_historical_nations = yes
 		OR = { tag = HAB  tag = DUA tag = AEM } ### STT
 		exists = TUR
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			east_adriatic_coast_area = { owned_by = TUR }
 			croatia_area = { owned_by = TUR }
@@ -1053,13 +1112,14 @@ free_croatia_from_the_ottomans = {
 			is_neighbor_of = ROOT
 			NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
 			NOT = { OR = { vassal_of = HAB vassal_of = DUA vassal_of = AEM } } ### STT
+			NOT = { OR = { overlord_of = HAB overlord_of = DUA overlord_of = AEM } } ### STT
 		}
 		NOT = { war_with = TUR }
 		NOT = { has_country_modifier = drove_back_the_turk }
 		NOT = { has_country_flag = freed_croatia }
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {

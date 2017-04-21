@@ -21,13 +21,13 @@ country_event = {
 		NOT = { exists = SPA }
 		OR = {
 			AND = {
-		tag = CAS
+				tag = CAS
 				NOT = { war_with = ARA }
 				ARA = {
 					exists = yes
 					ai = yes
 					was_player = no
-		is_subject = no
+					is_subject = no
 					is_neighbor_of = ROOT
 				}
 			}
@@ -36,12 +36,12 @@ country_event = {
 				NOT = { war_with = CAS }
 				ai = no
 				CAS = {
-			exists = yes
-			ai = yes
-			was_player = no
-			is_subject = no
-			is_neighbor_of = ROOT
-		}
+					exists = yes
+					ai = yes
+					was_player = no
+					is_subject = no
+					is_neighbor_of = ROOT
+				}
 			}
 		}
 		is_year = 1450
@@ -95,20 +95,20 @@ country_event = {
 		ai_chance = { factor = 90 }
 		if = {
 			limit = { tag = CAS }
-		create_union = ARA
-		add_opinion = {
-			who = ARA
-			modifier = spa_iberian_wedding
-		}
-		ARA = {
+			create_union = ARA
 			add_opinion = {
-				who = ROOT
+				who = ARA
 				modifier = spa_iberian_wedding
 			}
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
 				add_liberty_desire = -50
-		}
+			}
 			every_known_country = {
-			limit = {
+				limit = {
 					marriage_with = ARA
 				}
 				add_opinion = {
@@ -128,19 +128,19 @@ country_event = {
 				add_opinion = {
 					who = ROOT
 					modifier = spa_iberian_wedding
-			}
+				}
 				add_liberty_desire = -50
-		}
-		every_known_country = {
-			limit = {
+			}
+			every_known_country = {
+				limit = {
 					marriage_with = CAS
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = spa_iberian_wedding_negative
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
 			}
 		}
-	}
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -157,13 +157,13 @@ country_event = {
 		add_stability_or_adm_power = yes
 		if = {
 			limit = { tag = CAS }
-		ARA = {
-			add_opinion = {
-				who = ROOT
-				modifier = spa_declined_iberian_wedding
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_declined_iberian_wedding
+				}
 			}
 		}
-	}
 		if = {
 			limit = { tag = ARA }
 			CAS = {
@@ -551,7 +551,7 @@ country_event = {
 
 		is_year = 1500
 		NOT = { is_year = 1600 }
-		num_of_colonial_subjects = 3
+		colony = 3
 		
 	}
 
@@ -674,7 +674,7 @@ country_event = {
 		tag = SPA
 
 		owns = 224	# Andalucia
-		num_of_colonial_subjects = 3
+		colony = 3
 	}
 
 	mean_time_to_happen = {
@@ -1294,6 +1294,7 @@ country_event = {
 		tag = SPA
 		is_year = 1800
 		NOT = { government = constitutional_monarchy }
+		NOT = { government = celestial_empire }
 		government = monarchy
 	}
 
@@ -1516,7 +1517,7 @@ country_event = {
 		religion = catholic
 		is_year = 1540
 		NOT = { is_year = 1570 }
-		num_of_colonial_subjects = 3 #colonial aristocracy exists
+		colony = 3 #colonial aristocracy exists
 		OR = {
 			north_america = {
 				country_or_vassal_holds = ROOT
@@ -2199,7 +2200,7 @@ country_event = {
 			government = constitutional_monarchy
 			government = enlightened_despotism
 		}
-		num_of_colonial_subjects = 3
+		colony = 3
 	}
 	
 	mean_time_to_happen = {
@@ -2261,7 +2262,7 @@ country_event = {
 	trigger = {
 		tag = SPA 
 		religion = catholic
-		num_of_colonial_subjects = 3
+		colony = 3
 		is_year = 1750
 		OR = {
 			government = constitutional_monarchy

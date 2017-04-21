@@ -12,7 +12,7 @@ country_decisions = {
 			NOT = { has_country_flag = volga_germans }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 2418 #Pokrovsk
 			treasury = 500
@@ -52,7 +52,7 @@ country_decisions = {
 			NOT = { has_country_flag = slaviano_serbia }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			adm_power = 15
 			dip_power = 15
@@ -88,7 +88,7 @@ country_decisions = {
 			NOT = { exists = PLA }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 43 			
 			owns_core_province = 45 
@@ -142,7 +142,7 @@ country_decisions = {
 			NOT = { exists = YUG }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 130
 			owns_core_province = 129
@@ -180,7 +180,7 @@ country_decisions = {
 			NOT = { has_country_flag = czh_union }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 266
 			owns_core_province = 265
@@ -214,7 +214,7 @@ country_decisions = {
 			NOT = { has_country_flag = celtic_union }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 252
 			owns_core_province = 373

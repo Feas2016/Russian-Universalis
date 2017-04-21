@@ -47,7 +47,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
-			adm_tech = 13
+			current_age = age_of_absolutism
 			adm = 5
 			monthly_income = 100
 		}
@@ -56,11 +56,7 @@ country_decisions = {
 				name = "the_state_is_me"
 				duration = -1
 			}
-			change_government = absolute_monarchy
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
+			add_absolutism = 10
 		}
 		ai_will_do = {
 			factor = 1

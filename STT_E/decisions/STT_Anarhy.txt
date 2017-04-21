@@ -13,7 +13,7 @@ country_decisions = {
 		}
 		allow =  {
 			stability = 0
-			is_subject = false
+			is_free_or_tributary_trigger = yes
 		}
 		effect = {
 			country_event  = { id = peasants_war.1 }

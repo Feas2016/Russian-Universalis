@@ -9,6 +9,7 @@ country_decisions = {
 				primary_culture = pontic_greek
 			}
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_byzantium_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -36,7 +37,7 @@ country_decisions = {
 			owns = 318	# Smyrna
 			owns = 1853	# Kozani
 			owns = 2296	# Biga
-			owns = 3105
+			owns = 3105 ### STT
 			owns = 3104
 			owns = 3034
 			owns = 3033
@@ -48,7 +49,7 @@ country_decisions = {
 			owns = 3265
 			owns = 3106
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -103,7 +104,7 @@ country_decisions = {
 						province_id = 2348	# Chios
 						province_id = 2410	# Theodoro
 						province_id = 2750	# Plovdiv
-						province_id = 3032
+						province_id = 3032	###STT
 						province_id = 3102
 						province_id = 3103
 						province_id = 3036
@@ -170,6 +171,7 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			set_country_flag = formed_byzantium_flag
 		}
 		ai_will_do = {
 			factor = 1

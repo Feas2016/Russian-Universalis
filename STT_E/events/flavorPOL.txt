@@ -1211,6 +1211,9 @@ country_event = {
 		has_country_flag = pol_pact_conventa_flag
 		is_year = 1600
 		government = monarchy
+		NOT = {
+			has_country_flag = pol_zebrzydowski_rebellion_flag
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -1231,14 +1234,21 @@ country_event = {
 			factor = 0
 		}
 		add_prestige = -100
-		change_government = oligarchic_republic
+		if = {
+			limit = { NOT = { government = celestial_empire } }
+			change_government = oligarchic_republic
+		}
 		define_ruler = {
 			name = "(Сейм)"
+			regency = yes
 			adm = 0
 			dip = 0
 			mil = 0
-			regency = yes
 		}
+		remove_country_modifier = pol_nieszawa_privileges
+		remove_country_modifier = pol_statute_piotrkow
+		remove_country_modifier = pol_pact_conventa
+		clr_country_flag = librium_veto
 	}
 	option = {
 		name = "flavor_pol.EVTOPTC3481" # Wage a war of extermination on the Nobility
@@ -1434,6 +1444,7 @@ country_event = {
 		remove_country_modifier = pol_sejm_veto
 		remove_country_modifier = pol_sejm_refuse_troops
 		remove_country_modifier = pol_sejm_comply_policies
+		remove_heir = yes
 		add_prestige = 50
 		add_stability = 3
 		add_legitimacy = 50
@@ -1441,7 +1452,8 @@ country_event = {
 			limit = {
 				government = elective_monarchy
 			}
-			change_government = absolute_monarchy
+			change_government = despotic_monarchy
+			add_absolutism = 10
 		}
 	}
 }
@@ -1470,7 +1482,8 @@ country_event = {
 		remove_country_modifier = pol_zebrzydowski_rebellion_flag
 		remove_country_modifier = pol_sejm_veto
 		remove_country_modifier = pol_sejm_refuse_troops
-		remove_country_modifier = pol_sejm_comply_policies		
+		remove_country_modifier = pol_sejm_comply_policies
+		clr_country_flag = pol_konfederacja_flag
 	}
 }
 

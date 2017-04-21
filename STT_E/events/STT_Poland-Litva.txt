@@ -14,11 +14,11 @@ country_event = {
 	
 	trigger = {
 		tag = LIT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { junior_union_with = POL }
 		POL = {
 			exists = yes
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			has_regency = yes
 		}
 		NOT = { is_year = 1450 }
@@ -222,7 +222,7 @@ country_event = {
 		tag = LIT
 		is_year = 1453
 		government = monarchy
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		has_regency = no
 	}
 	
@@ -292,7 +292,7 @@ country_event = {
 		has_country_flag = vitovt_was_right
 		government = monarchy
 		government_rank = 1
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		has_regency = no
 	}
 	

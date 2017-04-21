@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_malaya_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -25,7 +26,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns = 624 #Banten
@@ -152,6 +153,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			set_country_flag = formed_malaya_flag
 			add_prestige = 25
 		}
 		ai_will_do = {

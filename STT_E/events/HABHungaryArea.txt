@@ -11,7 +11,7 @@ country_event = {
 		tag = HUN
 		CIL = {
 			exists = yes
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			ai = yes
 			was_player = no
 		}
@@ -52,7 +52,7 @@ country_event = {
 			if = {
 				limit = {
 					CRO = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {
@@ -85,7 +85,7 @@ country_event = {
 			if = {
 				limit = {
 					STY = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {
@@ -123,7 +123,7 @@ country_event = {
 		if = {
 			limit = {
 				STY = {
-					is_subject = no
+					is_free_or_tributary_trigger = yes
 					}
 				}
 			CIL = {
@@ -162,7 +162,7 @@ country_event = {
 			if = {
 				limit = {
 					CRO = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {

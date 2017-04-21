@@ -4,10 +4,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			NOT = { government = celestial_empire } 
 			tag = BRA
 			NOT = { tag = PRU }
 			OR = {
@@ -91,6 +93,12 @@ country_decisions = {
 					change_culture = prussian
 				}
 			}
+			pomerelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -106,6 +114,7 @@ country_decisions = {
 			capital_scope = {
 				change_culture = prussian
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -116,12 +125,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			tag = TEU
 			NOT = { tag = PRU }
+			NOT = { government = celestial_empire } 
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
@@ -152,6 +163,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			pomerelia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -189,6 +206,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -199,6 +217,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -221,6 +240,7 @@ country_decisions = {
 			NOT = { tag = GER }
 			NOT = { tag = HLR }
 			NOT = { tag = BRA }
+			NOT = { government = celestial_empire } 
 			NOT = {
 				tag = TEU
 				government = monastic_order_government
@@ -229,7 +249,7 @@ country_decisions = {
 		allow = {
 			NOT = { exists = PRU }
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -263,6 +283,12 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			east_prussia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = PRU
+			}
+			pomerelia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -308,6 +334,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1

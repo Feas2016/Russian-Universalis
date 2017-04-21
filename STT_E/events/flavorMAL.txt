@@ -151,6 +151,12 @@ province_event = {
 				MIL = 4
 				claim = 100
 			}
+			if = {
+				limit = {
+					has_dlc = "Rights of Man" 
+				}
+				hidden_effect = { add_ruler_personality = conqueror_personality }
+			}
 		}
 	}
 }

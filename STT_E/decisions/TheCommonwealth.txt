@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -23,6 +24,7 @@ country_decisions = {
 				AND = {
 					senior_union_with = LIT
 					LIT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+					###STT
 						NOT = { num_of_cities = 52 } #Keep this number the same as in allow. Original 31 +10
 					}
 				}
@@ -31,6 +33,7 @@ country_decisions = {
 		allow = {
 			LIT = { was_player = no }
 			LIT = {
+				###STT
 				NOT = { num_of_cities = 52 } #Keep this number the same as in potential. Original 31 +10
 			}
 			adm_tech = 10
@@ -43,7 +46,7 @@ country_decisions = {
 			owns_core_province = 43					# Danzig
 			owns_core_province = 1841				# Marienburg
 			senior_union_with = LIT
-			NOT = { num_of_unions = 2 }
+			NOT = { num_of_unions = 2 } ###STT
 			MAZ = { exists = no }
 		}
 		effect = {
@@ -122,6 +125,7 @@ country_decisions = {
 				limit = { culture = polish }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -135,6 +139,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -171,7 +176,7 @@ country_decisions = {
 			owns_core_province = 280				# Kiev
 			owns_core_province = 1941				# Turov
 			senior_union_with = POL
-			NOT = { num_of_unions = 2 }
+			NOT = { num_of_unions = 2 } ###STT
 			MAZ = { exists = no }
 		}
 		effect = {
@@ -250,6 +255,7 @@ country_decisions = {
 				limit = { culture = lithuanian }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {
@@ -263,6 +269,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -290,7 +297,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			stability = 3
 			is_at_war = no
@@ -389,6 +396,7 @@ country_decisions = {
 				limit = { has_owner_culture = yes }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {

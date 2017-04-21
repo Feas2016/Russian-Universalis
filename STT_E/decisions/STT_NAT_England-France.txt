@@ -13,7 +13,7 @@ country_decisions = {
 		}
 		allow = {
 		    adm_tech = 8
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			stability = 1
 			is_at_war = no
 			OR = { 

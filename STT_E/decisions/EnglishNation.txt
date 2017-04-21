@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_england_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -25,7 +26,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no			
 			NOT = { exists = ENG }
 			owns_core_province = 236		# London
@@ -92,6 +93,7 @@ country_decisions = {
 			ENG = {
 				set_capital = 236
 			}
+			set_country_flag = formed_england_flag
 		}
 		ai_will_do = {
 			factor = 1

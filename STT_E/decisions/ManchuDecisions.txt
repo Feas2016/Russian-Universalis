@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_manchu_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -16,7 +17,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			
 			owns_core_province = 730		#Girin
@@ -43,6 +44,12 @@ country_decisions = {
 				}
 				add_core = MCH
 			}
+			central_heilongjiang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = MCH
+			}
 			heilongjiang_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -61,6 +68,7 @@ country_decisions = {
 			MCH = {
 				set_capital = 730 #Girin
 			}
+			set_country_flag = formed_manchu_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -95,7 +103,7 @@ country_decisions = {
 			owns = 726		# Liaodong
 			owns = 1816		# Beijing
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			NOT = {
 				has_ruler_modifier = tribal_succession_crisis
 			}
@@ -143,9 +151,13 @@ country_decisions = {
 					NOT = { religion = confucianism }
 				}
 				change_religion = confucianism
+				add_harmonized_religion = tengri_pagan_reformed
 			}
 			set_capital = 1816 # Beijing
-			1816 = { change_culture = ROOT }
+			1816 = {
+				change_culture = ROOT
+				add_core = ROOT
+			}
 			add_prestige = 10
 			set_country_flag = manchu_dynasty_formed
 		}
@@ -168,7 +180,7 @@ country_decisions = {
 			NOT = { has_country_flag = green_standard_army }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_monarch_leader = yes
 			has_idea = the_green_standard_army
 			owns = 725		# Hinggan
@@ -210,10 +222,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			NOT = { has_dlc = "Mandate of Heaven" }
 			NOT = { has_country_flag = eight_banners }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_monarch_leader = yes
 			has_idea = manchu_eight_banners
 			stability = 1

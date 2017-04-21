@@ -14,7 +14,7 @@ country_decisions = {
 			owns = 1773	# Achea
 			owns = 3265	# Mytilene
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -69,7 +69,7 @@ country_decisions = {
 			owns = 164
 			owns = 320
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -163,7 +163,7 @@ country_decisions = {
 			has_country_modifier = reconquest_two
 			religion = orthodox
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -260,7 +260,7 @@ country_decisions = {
 			owns = 3034
 			religion = orthodox
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -328,7 +328,7 @@ country_decisions = {
 			owns = 151 # Constantinople
 			total_development = 800
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
 		effect = {
@@ -421,7 +421,7 @@ country_decisions = {
 			owns = 3111
 			owns = 1848
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			DIP = 4
 			MIL = 3

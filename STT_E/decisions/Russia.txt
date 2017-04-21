@@ -18,17 +18,17 @@ country_decisions = {
 			has_institution = manufactories	###STT
 		}
 		effect = {
+			33 = {
+				change_province_name = "Санкт-Петербург"
+				rename_capital = "Санкт-Петербург"
+				add_base_tax = 6 
+				add_base_manpower = 3
+				change_culture = capital
+			}
 			set_country_flag = relocated_capital_st_petersburg
 			add_years_of_income = -1
 			set_capital = 33
 			add_prestige = 100
-			33 = {
-				change_province_name = "Санкт-Петербург"
-				rename_capital = "Санкт-Петербург"
-			 	add_base_tax = 6 
-			 	add_base_manpower = 3
-				change_culture = russian
-			 }
 		}
 		ai_will_do = {
 			factor = 1

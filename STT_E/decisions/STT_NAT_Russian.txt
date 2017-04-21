@@ -16,7 +16,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 7
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 295	# Moskva
 			owns_core_province = 310	# Novgorod
@@ -82,7 +82,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 8
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 310	# Novgorod
 			owns_core_province = 314	# Vologda
@@ -148,7 +148,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 12
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 295			# Moskva
 			owns_core_province = 310			# Novgorod

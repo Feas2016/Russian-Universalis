@@ -26,9 +26,11 @@ coptic_conquest_of_alexandria = {
 			owner = {
 				NOT = { religion = coptic }
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			ai = no
 			num_of_cities = 25
@@ -36,7 +38,7 @@ coptic_conquest_of_alexandria = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { religion = coptic }
 			has_global_flag = coptic_alexandria_liberated
 			any_target_province = {
@@ -119,9 +121,11 @@ coptic_conquest_of_yerevan = {
 			owner = {
 				NOT = { religion = coptic }
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			ai = no
 			num_of_cities = 25
@@ -135,7 +139,7 @@ coptic_conquest_of_yerevan = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { religion = coptic }
 			has_global_flag = coptic_yerevan_liberated
 			any_target_province = {
@@ -215,9 +219,11 @@ coptic_conquest_of_antioch = {
 			owner = {
 				NOT = { religion = coptic }
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			ai = no
 			num_of_cities = 25
@@ -230,7 +236,7 @@ coptic_conquest_of_antioch = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { religion = coptic }
 			has_global_flag = coptic_conquest_of_antioch
 			any_target_province = {
@@ -310,9 +316,11 @@ coptic_conquest_of_qasr_ibrim = {
 			owner = {
 				NOT = { religion = coptic }
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			ai = no
 			num_of_cities = 25
@@ -325,7 +333,7 @@ coptic_conquest_of_qasr_ibrim = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { religion = coptic }
 			has_global_flag = coptic_qasr_ibrim_liberated
 			any_target_province = {
@@ -413,9 +421,11 @@ coptic_conquest_of_cairo = {
 			owner = {
 				NOT = { religion = coptic }
 				NOT = { alliance_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
 			}
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
 			ai = no
 			num_of_cities = 25
@@ -428,7 +438,7 @@ coptic_conquest_of_cairo = {
 	}
 	abort = {
 		OR = {
-			is_subject = yes
+			is_subject_other_than_tributary_trigger = yes
 			NOT = { religion = coptic }
 			has_global_flag = coptic_qasr_ibrim_liberated
 			any_target_province = {

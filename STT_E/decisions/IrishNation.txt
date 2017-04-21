@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_ireland_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -30,7 +31,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns = 372			# Ulster
@@ -68,6 +69,7 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 10
+			set_country_flag = formed_ireland_flag
 		}
 		ai_will_do = {
 			factor = 1

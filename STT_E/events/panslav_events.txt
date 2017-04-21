@@ -14,7 +14,7 @@ country_event = {
 			tag = GOL
 			tag = BHO
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		government = steppe_horde
 		owns_core_province = 464 #Astrakhan
 		is_year = 1459
@@ -110,7 +110,7 @@ country_event = {
 			tag = KSB
 			tag = PLA
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		num_of_cities = 6
 		OR = {
@@ -156,7 +156,7 @@ country_event = {
 	
 	trigger = {
 		tag = LUS
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns_core_province = 46
 		owns_core_province = 1858
 		stability = 1
@@ -192,7 +192,7 @@ country_event = {
 	
 	trigger = {
 		tag = LIT
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = { is_year = 1452 }
 	}
 	mean_time_to_happen = {
@@ -248,7 +248,7 @@ country_event = {
 	
 	trigger = {
 		tag = LUS
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		any_owned_province = {
 			culture_group = german 
 		}
@@ -293,7 +293,7 @@ country_event = {
 			tag = PLC
 			tag = JAG
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 283
 		owns = 291
 		owns = 2411

@@ -9,7 +9,7 @@ country_decisions = {
 			NOT = { is_year = 1550 }
 		}
 		allow = {
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			government = veche_republic
 			NOT = { government_rank = 3 }
 			NOT = { is_year = 1550 }

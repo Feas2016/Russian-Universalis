@@ -41,6 +41,12 @@ country_event = {
 			regency = yes
 			attach_leader = "Янош Хуньяди"
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = bold_fighter_personality }
+		}
 		define_heir = {
 			name = "Ладислав Постум"
 			dynasty = "фон Габсбург"
@@ -126,6 +132,12 @@ country_event = {
 			mil = 5
 			claim = 25
 			birth_date = 1443.2.23
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_heir_personality = just_personality }
 		}
 		kill_ruler = yes
 		every_country = {

@@ -10,7 +10,7 @@ country_decisions = {
 			adm_power = 100
 			stability = 1
 			is_at_war = no 
-			is_subject = false
+			is_free_or_tributary_trigger = yes
 		}
 		effect = {
 			add_adm_power = -100

@@ -31,6 +31,12 @@ country_event = {
 			dynasty = "Ланкастер"
 			age = 31
 		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = well_connected_personality }
+		}
 		add_manpower = -0.25
 
 
@@ -87,6 +93,12 @@ country_event = {
 		define_ruler = {
 			dynasty = "Йорк"
 			age = 31
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = tactical_genius_personality }
 		}
 		add_manpower = -0.25
 		if = {

@@ -23,7 +23,7 @@ country_event = {
 		NOT = { is_year = 1457 }
 		is_at_war = no
 		religion = catholic
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 	}
 	
 	mean_time_to_happen = {
@@ -54,6 +54,12 @@ country_event = {
 			adm = 5
 			dip = 3
 			mil = 2
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = zealot_personality }
 		}
 		add_reform_desire = 0.03
 	}

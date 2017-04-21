@@ -12,7 +12,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			stability = 2
 			prestige = 50
 			owns_core_province = 465
