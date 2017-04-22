@@ -115,13 +115,7 @@ country_decisions = {
 				}
 				add_permanent_claim = INC
 			}
-			nehuenken_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = INC
-			}
-			### STT
+			### STT -2
 			cuyo_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

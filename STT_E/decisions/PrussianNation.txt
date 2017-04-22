@@ -93,12 +93,7 @@ country_decisions = {
 					change_culture = prussian
 				}
 			}
-			pomerelia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
-			}
+			###STT -1
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -163,12 +158,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			pomerelia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
-			}
+			###STT -1
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -288,12 +278,7 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
-			pomerelia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = PRU
-			}
+			###STT -1
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

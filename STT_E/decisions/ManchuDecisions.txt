@@ -31,7 +31,7 @@ country_decisions = {
 				}
 				add_core = MCH
 			}
-			### STT
+			### STT -1
 			jilin_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -44,12 +44,7 @@ country_decisions = {
 				}
 				add_core = MCH
 			}
-			central_heilongjiang_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = MCH
-			}
+			### STT -1
 			heilongjiang_area = {
 				limit = {
 					NOT = { is_core = ROOT }

@@ -1045,7 +1045,7 @@ ndl_sicily = {
 	    OR = {
 	        area = sicily_area
 		    area = naples_area
-		    area = calabria
+		    ###STT -1 del
 		    area = apulia_area
 		}
 		NOT = { owned_by = ROOT }

@@ -110,18 +110,7 @@ country_decisions = {
 				}
 				add_permanent_claim = MOR
 			}
-			western_morocco_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOR
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = MOR
-			}
+			###STT -2
 			northern_morocco_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -256,18 +245,7 @@ country_decisions = {
 				}
 				add_permanent_claim = ALG
 			}
-			hautes_plaines_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ALG
-			}
-			ouled_nail_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ALG
-			}
+			###STT -2
 			kabylia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
