@@ -1,0 +1,1122 @@
+#Ex: Добавляет -а в окончания
+defined_text = {
+    name = GetAAEndA
+
+    text = {
+        localisation_key = MALE_ENDING_A
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_A
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ла в окончания
+defined_text = {
+    name = GetAAEndLA
+
+    text = {
+        localisation_key = MALE_ENDING_LA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ая/ий в окончания
+defined_text = {
+    name = GetAAEndAYA
+
+    text = {
+        localisation_key = MALE_ENDING_IY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ая/ый в окончания
+defined_text = {
+    name = GetAAEndAYY
+
+    text = {
+        localisation_key = MALE_ENDING_YY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ым/ой в окончания
+defined_text = {
+    name = GetAAEndOY
+
+    text = {
+        localisation_key = MALE_ENDING_OY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ым/ей в окончания
+defined_text = {
+    name = GetAAEndEY
+
+    text = {
+        localisation_key = MALE_ENDING_EY
+       trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ся/ась в окончания
+defined_text = {
+    name = GetAAEndSYA
+
+    text = {
+        localisation_key = MALE_ENDING_SYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_SYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет его/её
+defined_text = {
+    name = GetAAEgoEyo
+
+    text = {
+        localisation_key = MALE_EGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EYO
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет Его/Её
+defined_text = {
+    name = GetAAEgoEyoCap
+
+    text = {
+        localisation_key = MALE_EGO_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EYO_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет ему/ей
+defined_text = {
+    name = GetAAEmuEy
+
+    text = {
+        localisation_key = MALE_EMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет Ему/Ей
+defined_text = {
+    name = GetAAEmuEyCap
+
+    text = {
+        localisation_key = MALE_EMU_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EY_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ен/на в окончания
+defined_text = {
+    name = GetAAEndEnNa
+
+    text = {
+        localisation_key = MALE_ENDING_EN
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -его/ей в окончания
+defined_text = {
+    name = GetAAEndEgoEy
+
+    text = {
+        localisation_key = MALE_ENDING_EGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ин/на в окончания
+defined_text = {
+    name = GetAAEndInNa
+
+    text = {
+        localisation_key = MALE_ENDING_IN
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -к/ца в окончания
+defined_text = {
+    name = GetAAEndTsaK
+
+    text = {
+        localisation_key = MALE_ENDING_TSAK
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAK
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ль/ница в окончания
+defined_text = {
+    name = GetAAEndTsaL
+
+    text = {
+        localisation_key = MALE_ENDING_TSAL
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAL
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ка/цу в окончания
+defined_text = {
+    name = GetAAEndTsuKa
+
+    text = {
+        localisation_key = MALE_ENDING_TSUKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSUKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ен/льна в окончания
+defined_text = {
+    name = GetAAEndLna
+
+    text = {
+        localisation_key = MALE_ENDING_LNA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LNA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ел/ла в окончания
+defined_text = {
+    name = GetAAEndEl
+
+    text = {
+        localisation_key = MALE_ENDING_EL
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EL
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ём/ей в окончания
+defined_text = {
+    name = GetAAEndEyEm
+
+    text = {
+        localisation_key = MALE_ENDING_EYEM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYEM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -им/ей в окончания
+defined_text = {
+    name = GetAAEndEyIm
+
+    text = {
+        localisation_key = MALE_ENDING_IM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYIM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -его/ю в окончания
+defined_text = {
+    name = GetAAEndEgoYu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -а/у в окончания
+defined_text = {
+    name = GetAAEndAU
+
+    text = {
+        localisation_key = MALE_ENDING_AU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -от/а в окончания
+defined_text = {
+    name = GetAAEndOTA
+
+    text = {
+        localisation_key = MALE_ENDING_OTA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OTA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ому/ой в окончания
+defined_text = {
+    name = GetAAEndOmu
+
+    text = {
+        localisation_key = MALE_ENDING_OMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -у/е в окончания
+defined_text = {
+    name = GetAAEndUE
+
+    text = {
+        localisation_key = MALE_ENDING_UE
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_UE
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ца/ку в окончания
+defined_text = {
+    name = GetAAEndTsaKu
+
+    text = {
+        localisation_key = MALE_ENDING_TSAKU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAKU
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ой/ая в окончания
+defined_text = {
+    name = GetAAEndOYY
+
+    text = {
+        localisation_key = MALE_ENDING_OYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ец/ка в окончания
+defined_text = {
+    name = GetAAEndEZ
+
+    text = {
+        localisation_key = MALE_ENDING_EZKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EZKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ой/оя в окончания
+defined_text = {
+    name = GetAAEndOYA
+
+    text = {
+        localisation_key = MALE_ENDING_OYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ся/лась в окончания
+defined_text = {
+    name = GetAAEndLAS
+
+    text = {
+        localisation_key = MALE_ENDING_LAS
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LAS
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ого/ой в окончания
+defined_text = {
+    name = GetAAEndOgoOy
+
+    text = {
+        localisation_key = MALE_ENDING_OGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ем/ьницой в окончания
+defined_text = {
+    name = GetAAEndEmLsoy
+
+    text = {
+        localisation_key = MALE_ENDING_EMLSOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EMLSOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -им/ой в окончания
+defined_text = {
+    name = GetAAEndOyIm
+
+    text = {
+        localisation_key = MALE_ENDING_OYIM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = yes }
+				employed_advisor = { type = natural_scientist is_male = yes }
+				employed_advisor = { type = artist is_male = yes }
+				employed_advisor = { type = treasurer is_male = yes }
+				employed_advisor = { type = theologian is_male = yes }
+				employed_advisor = { type = master_of_mint is_male = yes }
+				employed_advisor = { type = inquisitor is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYIM
+        trigger = {
+			OR = {
+				employed_advisor = { type = philosopher is_male = no }
+				employed_advisor = { type = natural_scientist is_male = no }
+				employed_advisor = { type = artist is_male = no }
+				employed_advisor = { type = treasurer is_male = no }
+				employed_advisor = { type = theologian is_male = no }
+				employed_advisor = { type = master_of_mint is_male = no }
+				employed_advisor = { type = inquisitor is_male = no }
+			}
+        }
+    }
+}

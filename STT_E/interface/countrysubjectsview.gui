@@ -12,9 +12,9 @@ guiTypes = {
 	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
 	positionType = {
 		name ="countrysubjectsview_scaling_huge_min_inc"
-		position = { x= 1080 y = 328 }
+		position = { x = 1080 y = 328 }
 	}
-
+	
 	positionType = {
 		name = "move_subject_focus_buttons_to_this_y_if_no_rights_of_man"
 		position = { x=1337 y=38 }
@@ -272,7 +272,7 @@ guiTypes = {
 			position = { x= 381 y = 6 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		
 		OverlappingElementsBoxType = {
 			name = "interaction_icons"
@@ -282,11 +282,11 @@ guiTypes = {
 			format = center
 			spacing = 8
 		}
-		
+
 		iconType = {
 			name ="icon_mil_focus"
 			spriteType = "GFX_subject_focus_icons"
-			position = { x= 488 y = 7 }
+			position = { x= 468 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
@@ -383,7 +383,13 @@ guiTypes = {
 			format = center
 		}
 		
-	OverlappingElementsBoxType = {
+		iconType = {
+			name = "isolationism_icon"
+			spriteType = "GFX_isolationism_icons"
+			position = { x = 385 y = 10 }
+		}
+
+		OverlappingElementsBoxType = {
 			name = "interaction_icons"
 			position = { x = 415 y = 7 }
 			size = { x = 64 y = 8 }
@@ -391,13 +397,13 @@ guiTypes = {
 			format = center
 			spacing = 8
 		}
-		
+
 		iconType = {
 			name ="icon_mil_focus"
 			spriteType = "GFX_subject_focus_icons"
-			position = { x= 488 y = 7 }
+			position = { x= 468 y = 7 }
 			Orientation = "UPPER_LEFT"
-		}
+		}		
 	}
 	
 	### MARCH
@@ -500,110 +506,15 @@ guiTypes = {
 			format = center
 			spacing = 8
 		}
-		
+
 		iconType = {
 			name ="icon_mil_focus"
 			spriteType = "GFX_subject_focus_icons"
-			position = { x= 488 y = 7 }
+			position = { x= 468 y = 7 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
 
-	### PROTECTORATE
-	windowType = {
-		name = "subject_protectorate_item"
-		position = { x=0 y=0 }	
-		size = { x=500 y=30 }
-		moveable = 0
-		Orientation = "UPPER_LEFT"
-
-		guiButtonType = {
-			name = "interactions_dropdown_button"
-			position = { x = -2 y = 6 }
-			quadTextureSprite ="GFX_subject_bg_tile"
-		}
-
-		iconType =
-		{
-			name ="flag"
-			spriteType = "GFX_shield_small"
-			position = { x= -2 y = 5 }
-			Orientation = "UPPER_LEFT"
-		}
-		
-		iconType =
-		{
-			name ="icon_protectorate"
-			spriteType = "GFX_icon_protectorate"
-			position = { x= 16 y = 5 }
-			Orientation = "UPPER_LEFT"
-		}		
-		
-		instantTextBoxType = {
-			name = "name"
-			position = { x = 51 y = 9 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "name"	
-			maxWidth = 132
-			maxHeight = 15
-			format = left
-			fixedsize = yes
-			alwaystransparent = yes
-		}
-		
-		instantTextBoxType = {
-			name = "relation"
-			position = { x = 181 y = 9 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "00"	
-			maxWidth = 40
-			maxHeight = 30
-			format = center
-		}
-
-		instantTextBoxType = {
-			name = "liberty_value"
-			position = { x = 304 y = 9 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "0"	
-			maxWidth = 50
-			maxHeight = 30
-			format = center
-		}		
-		
-		instantTextBoxType = {
-			name = "armysize"
-			position = { x = 345 y = 9 }
-			textureFile = ""
-			font = "vic_18"
-			borderSize = {x = 4 y = 4}	
-			text = "00"	
-			maxWidth = 30
-			maxHeight = 30
-			format = center
-		}
-		
-		OverlappingElementsBoxType = {
-			name = "interaction_icons"
-			position = { x = 415 y = 7 }
-			size = { x = 64 y = 8 }
-			Orientation = "UPPER_LEFT"
-			format = center
-			spacing = 8
-		}
-		iconType = {
-			name ="icon_mil_focus"
-			spriteType = "GFX_subject_focus_icons"
-			position = { x= 488 y = 7 }
-			Orientation = "UPPER_LEFT"
-		}
-	}
 
 	### UNION
 	windowType = {
@@ -693,11 +604,116 @@ guiTypes = {
 			format = center
 			spacing = 8
 		}
-		
+
 		iconType = {
 			name ="icon_mil_focus"
 			spriteType = "GFX_subject_focus_icons"
-			position = { x= 488 y = 7 }
+			position = { x= 468 y = 7 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+
+	### GENERIC SCRIPTED (e.g. Tributary State)
+	### Add to this when creating new subject types
+	windowType = {
+		name = "scripted_subject_item"
+		position = { x=0 y=0 }	
+		size = { x=500 y=30 }
+		moveable = 0
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "interactions_dropdown_button"
+			position = { x = -2 y = 6 }
+			quadTextureSprite ="GFX_subject_bg_tile"
+		}
+
+		iconType =
+		{
+			name ="flag"
+			spriteType = "GFX_shield_small"
+			position = { x= -2 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		iconType =
+		{
+			name ="subject_type_icon"
+			spriteType = "GFX_court_union"
+			position = { x= 18 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 51 y = 9 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "name"	
+			maxWidth = 132
+			maxHeight = 15
+			format = left
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "relation"
+			position = { x = 181 y = 9 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "00"	
+			maxWidth = 40
+			maxHeight = 30
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "liberty_value"
+			position = { x = 304 y = 9 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 2 y = 4}	
+			text = "0"	
+			maxWidth = 50
+			maxHeight = 30
+			format = center
+		}		
+		
+		instantTextBoxType = {
+			name = "armysize"
+			position = { x = 345 y = 9 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "00"	
+			maxWidth = 30
+			maxHeight = 30
+			format = center
+		}
+		
+		OverlappingElementsBoxType = {
+			name = "interaction_icons"
+			position = { x = 415 y = 7 }
+			size = { x = 64 y = 8 }
+			Orientation = "UPPER_LEFT"
+			format = center
+			spacing = 8
+		}
+
+		iconType = {
+			name ="icon_mil_focus"
+			spriteType = "GFX_subject_focus_icons"
+			position = { x= 468 y = 7 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="icon_tribute"
+			spriteType = "GFX_subject_tribute_icons"
+			position = { x= 466 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 	}
@@ -725,9 +741,9 @@ guiTypes = {
 
 		iconType =
 		{
-			name ="subjectspanel_bg_bottom"
+			name = "subjectspanel_bg_bottom"
 			spriteType = "GFX_country_subject_bg"
-			position = { x= -4 y = -10 }
+			position = { x = -4 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -744,12 +760,31 @@ guiTypes = {
 			name = "subjects_listbox"
 			backGround = ""
 			position = { x=18 y=160 }
-			size = { x=520 y=242 }
+			size = { x=500 y=242 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 2.5
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}
+		}
+
+		iconType = {
+			name = "liberty_desire_icon"
+			spriteType = "GFX_liberty_icon"
+			position = { x = 470 y = 136 }
+			Orientation = UPPER_LEFT
+		}
+
+		instantTextBoxType = {
+			name = "liberty_desire_value"
+			position = { x = 492 y = 137 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "-"	
+			maxHeight = 32
+			maxWidth = 50
+			format = left
 		}
 		
 		instantTextBoxType = {
@@ -759,10 +794,9 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "ONGOING_INTERACTIONS"	
-			maxHeight = 30
-			maxWidth = 480
+			maxHeight = 60
+			maxWidth = 450
 			format = left
-			fixedsize = yes			
 		}
 		
 		smoothListboxType = {
@@ -775,6 +809,32 @@ guiTypes = {
 			spacing = 2.5
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}
+		}
+
+		instantTextBoxType = {
+			name = "tribute_desc"
+
+            if_resolution = {
+                max_height = 867
+				position = { x = 20 y = 350 }
+            }
+            if_resolution = {
+                min_height = 868
+                max_height = 1047
+				position = { x = 20 y = 500 }
+            }
+            if_resolution = {
+                min_height = 1048
+				position = { x = 20 y = 680 }
+
+            }			
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""	
+			maxHeight = 60
+			maxWidth = 510
+			format = left
 		}
 
 		guiButtonType = {
@@ -977,7 +1037,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "toggle_overlord"
-				position = { x=39 y=427 }
+				position = { x=25 y=427 } # Сдвинул влево на 14
 				quadTextureSprite ="GFX_toggle_overlord_button"	
 				tooltip = ""
 				tooltipText =""
@@ -1078,7 +1138,7 @@ guiTypes = {
 			horizontalBorder= ""
 			verticalBorder= ""
 			fullScreen = yes
-
+			
 			# The "background" sprite will be replaced with the sprite used by this element in case the user does not have RoM
 			iconType = {
 				name = "hidden_size_of_window_without_rights_of_man"
@@ -1091,7 +1151,7 @@ guiTypes = {
 				spriteType = "GFX_subjects_buttons_bg"
 				position = { x= -4 y = -4 }
 			}
-
+			
 			guiButtonType =
 			{
 				name ="focus_select_button_no_focus"
@@ -1136,7 +1196,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 5
 			}
-
+			
 			guiButtonType =
 			{
 				name ="focus_select_button_siege"
@@ -1217,11 +1277,18 @@ guiTypes = {
 		
 			iconType = {
 				name ="subject_actions_bg"
-				spriteType = "GFX_subjects_extension_bg"
+				if_resolution = {
+					max_height = 1079
+					spriteType = "GFX_subjects_extension_bg"
+				}
+				if_resolution = {
+					min_height = 1080
+					spriteType = "GFX_subjects_extension_bg_huge"
+				}
 				position = { x= 0 y = 0 }
 				Orientation = "UPPER_LEFT"
-			}	
-			
+			}
+
 			iconType = {
 				name ="subject_actions_blank_bg"
 				spriteType = "GFX_subjects_extension_blank_bg"
@@ -1241,8 +1308,15 @@ guiTypes = {
 			smoothListboxType = {
 				name = "list"
 				backGround = ""
-				position = { x=12 y=210 }
-				size = { x=255 y=216 }
+				position = { x = 12 y = 210 }
+				if_resolution = {
+					max_height = 1079
+					size = { x = 255 y = 216 }
+				}
+				if_resolution = {
+					min_height = 1080
+					size = { x = 255 y = 396 }
+				}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2.5
@@ -1284,7 +1358,8 @@ guiTypes = {
 #				Orientation = "UPPER_LEFT"
 #				fixedsize = yes
 #			}
-			
+
+			# Military focus buttons
 			guiButtonType =
 			{
 				name ="focus_select_button_no_focus"
@@ -1334,6 +1409,56 @@ guiTypes = {
 			{
 				name ="focus_select_button_siege"
 				quadTextureSprite= "GFX_subject_focus"
+				position = { x = 240 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 6
+			}
+
+			# Tribute type buttons
+			guiButtonType =
+			{
+				name ="tribute_select_button_none"
+				quadTextureSprite= "GFX_subject_tribute"
+				position = { x = 15 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 1
+			}
+			guiButtonType =
+			{
+				name ="tribute_select_button_cash"
+				quadTextureSprite= "GFX_subject_tribute"
+				position = { x = 60 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 2
+			}
+			guiButtonType =
+			{
+				name ="tribute_select_button_adm"
+				quadTextureSprite= "GFX_subject_tribute"
+				position = { x = 105 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 3
+			}
+			guiButtonType =
+			{
+				name ="tribute_select_button_dip"
+				quadTextureSprite= "GFX_subject_tribute"
+				position = { x = 150 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 4
+			}
+			guiButtonType =
+			{
+				name ="tribute_select_button_mil"
+				quadTextureSprite= "GFX_subject_tribute"
+				position = { x = 195 y = 162 }
+				Orientation = "UPPER_LEFT"
+				frame = 5
+			}
+			guiButtonType =
+			{
+				name ="tribute_select_button_manpower"
+				quadTextureSprite= "GFX_subject_tribute"
 				position = { x = 240 y = 162 }
 				Orientation = "UPPER_LEFT"
 				frame = 6
@@ -1456,6 +1581,27 @@ guiTypes = {
 				format = right
 				font = "vic_22"
 				text = "100"
+				maxWidth = 70
+				maxHeight = 32	
+				Orientation = "UPPER_LEFT"
+				fixedsize = yes
+			}
+
+			iconType =
+			{
+				name ="meritocracy_icon"
+				spriteType = "GFX_icon_legitimacy"
+				position = { x= 22 y = 126 }
+				Orientation = "UPPER_LEFT"
+				frame = 5
+			}
+			
+			instantTextBoxType = {
+				name = "meritocracy_value"
+				position = { x = 46 y = 128 }
+				format = right
+				font = "vic_22"
+				text = "13"
 				maxWidth = 70
 				maxHeight = 32	
 				Orientation = "UPPER_LEFT"

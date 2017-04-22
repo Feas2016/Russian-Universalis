@@ -1,0 +1,765 @@
+#Ex: Добавляет -а в окончания
+defined_text = {
+    name = GetMEndA
+
+    text = {
+        localisation_key = MALE_ENDING_A
+        trigger = {
+			is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_A
+        trigger = {
+			is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ла в окончания
+defined_text = {
+    name = GetMEndLA
+
+    text = {
+        localisation_key = MALE_ENDING_LA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ая/ий в окончания
+defined_text = {
+    name = GetMEndAYA
+
+    text = {
+        localisation_key = MALE_ENDING_IY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ая/ый в окончания
+defined_text = {
+    name = GetMEndAYY
+
+    text = {
+        localisation_key = MALE_ENDING_YY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ым/ой в окончания
+defined_text = {
+    name = GetMEndOY
+
+    text = {
+        localisation_key = MALE_ENDING_OY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ым/ей в окончания
+defined_text = {
+    name = GetMEndEY
+
+    text = {
+        localisation_key = MALE_ENDING_EY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ся/ась в окончания
+defined_text = {
+    name = GetMEndSYA
+
+    text = {
+        localisation_key = MALE_ENDING_SYA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_SYA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет его/её
+defined_text = {
+    name = GetMEgoEyo
+
+    text = {
+        localisation_key = MALE_EGO
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EYO
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет Его/Её
+defined_text = {
+    name = GetMEgoEyoCap
+
+    text = {
+        localisation_key = MALE_EGO_Cap
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EYO_Cap
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет ему/ей
+defined_text = {
+    name = GetMEmuEy
+
+    text = {
+        localisation_key = MALE_EMU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет Ему/Ей
+defined_text = {
+    name = GetMEmuEyCap
+
+    text = {
+        localisation_key = MALE_EMU_Cap
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EY_Cap
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ен/на в окончания
+defined_text = {
+    name = GetMEndEnNa
+
+    text = {
+        localisation_key = MALE_ENDING_EN
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ей в окончания
+defined_text = {
+    name = GetMEndEgoEy
+
+    text = {
+        localisation_key = MALE_ENDING_EGO
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ин/на в окончания
+defined_text = {
+    name = GetMEndInNa
+
+    text = {
+        localisation_key = MALE_ENDING_IN
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -к/ца в окончания
+defined_text = {
+    name = GetMEndTsaK
+
+    text = {
+        localisation_key = MALE_ENDING_TSAK
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAK
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ль/ница в окончания
+defined_text = {
+    name = GetMEndTsaL
+
+    text = {
+        localisation_key = MALE_ENDING_TSAL
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAL
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ка/цу в окончания
+defined_text = {
+    name = GetMEndTsuKa
+
+    text = {
+        localisation_key = MALE_ENDING_TSUKA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSUKA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ен/льна в окончания
+defined_text = {
+    name = GetMEndLna
+
+    text = {
+        localisation_key = MALE_ENDING_LNA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LNA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ел/ла в окончания
+defined_text = {
+    name = GetMEndEl
+
+    text = {
+        localisation_key = MALE_ENDING_EL
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EL
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ём/ей в окончания
+defined_text = {
+    name = GetMEndEyEm
+
+    text = {
+        localisation_key = MALE_ENDING_EYEM
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYEM
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -им/ей в окончания
+defined_text = {
+    name = GetMEndEyIm
+
+    text = {
+        localisation_key = MALE_ENDING_IM
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYIM
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ю в окончания
+defined_text = {
+    name = GetMEndEgoYu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -а/у в окончания
+defined_text = {
+    name = GetMEndAU
+
+    text = {
+        localisation_key = MALE_ENDING_AU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -от/а в окончания
+defined_text = {
+    name = GetMEndOTA
+
+    text = {
+        localisation_key = MALE_ENDING_OTA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OTA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ому/ой в окончания
+defined_text = {
+    name = GetMEndOmu
+
+    text = {
+        localisation_key = MALE_ENDING_OMU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OMU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -у/е в окончания
+defined_text = {
+    name = GetMEndUE
+
+    text = {
+        localisation_key = MALE_ENDING_UE
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_UE
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ца/ку в окончания
+defined_text = {
+    name = GetMEndTsaKu
+
+    text = {
+        localisation_key = MALE_ENDING_TSAKU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAKU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ой/ая в окончания
+defined_text = {
+    name = GetMEndOYY
+
+    text = {
+        localisation_key = MALE_ENDING_OYY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ец/ка в окончания
+defined_text = {
+    name = GetMEndEZ
+
+    text = {
+        localisation_key = MALE_ENDING_EZKA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EZKA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ой/оя в окончания
+defined_text = {
+    name = GetMEndOYA
+
+    text = {
+        localisation_key = MALE_ENDING_OYA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ся/лась в окончания
+defined_text = {
+    name = GetMEndLAS
+
+    text = {
+        localisation_key = MALE_ENDING_LAS
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LAS
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ого/ой в окончания
+defined_text = {
+    name = GetMEndOgoOy
+
+    text = {
+        localisation_key = MALE_ENDING_OGO
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGO
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ем/ьницой в окончания
+defined_text = {
+    name = GetMEndEmLsoy
+
+    text = {
+        localisation_key = MALE_ENDING_EMLSOY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EMLSOY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -им/ой в окончания
+defined_text = {
+    name = GetMEndOyIm
+
+    text = {
+        localisation_key = MALE_ENDING_OYIM
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYIM
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -есса в окончания
+defined_text = {
+    name = GetMEndEssa
+
+    text = {
+        localisation_key = MALE_ENDING_ESSA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -а/ессы в окончания
+defined_text = {
+    name = GetMEndEssy
+
+    text = {
+        localisation_key = MALE_ENDING_ESSY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSY
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -у/ессе в окончания
+defined_text = {
+    name = GetMEndEsse
+
+    text = {
+        localisation_key = MALE_ENDING_ESSE
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSE
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ую в окончания
+defined_text = {
+    name = GetMEndEgoUyu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOUYU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOUYU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ого/ую в окончания
+defined_text = {
+    name = GetMEndOgoUyu
+
+    text = {
+        localisation_key = MALE_ENDING_OGOUYU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGOUYU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ов/ая в окончания
+defined_text = {
+    name = GetMEndOvAya
+
+    text = {
+        localisation_key = MALE_ENDING_OVAYA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OVAYA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ор/рица в окончания
+defined_text = {
+    name = GetMEndOrRit
+
+    text = {
+        localisation_key = MALE_ENDING_ORRIT
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRIT
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ора/рицы в окончания
+defined_text = {
+    name = GetMEndOrRita
+
+    text = {
+        localisation_key = MALE_ENDING_ORRITA
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRITA
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ору/рице в окончания
+defined_text = {
+    name = GetMEndOrRitu
+
+    text = {
+        localisation_key = MALE_ENDING_ORRITU
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRITU
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ку/це в окончания
+defined_text = {
+    name = GetMEndKuTse
+
+    text = {
+        localisation_key = MALE_ENDING_KUTSE
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_KUTSE
+        trigger = {
+            is_female = yes
+        }
+    }
+}
+#Ex: Добавляет -ка/цы в окончания
+defined_text = {
+    name = GetMEndKaTsy
+
+    text = {
+        localisation_key = MALE_ENDING_КАTSY
+        trigger = {
+            is_female = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_КАTSY
+        trigger = {
+            is_female = yes
+        }
+    }
+}

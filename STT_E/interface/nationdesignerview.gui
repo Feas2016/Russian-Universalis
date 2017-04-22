@@ -521,7 +521,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "ruler_label"
-				position = { x = 40 y = 61 }
+				position = { x = 25 y = 61 }
 				font = "vic_22"
 				text = "FE_RULER"
 				maxWidth = 90 ### Увеличил длину
@@ -532,7 +532,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "ruler_pts_label"
-				position = { x = 100 y = 63 }
+				position = { x = 104 y = 63 }
 				textureFile = ""
 				font = "vic_18"
 				text = "0"	
@@ -647,7 +647,7 @@ guiTypes = {
 				position = { x = 356 y = 211  }
 				quadTextureSprite ="GFX_arrow_right_big"	
 			}
-		
+
 			listboxType = 
 			{
 				name ="monarch_ruler_personality_list"
@@ -660,7 +660,7 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 10 y = 10}
 			}
-		
+
 			### monarch stats
 			instantTextBoxType = {
 				name = "ruler_admin_label"
@@ -784,7 +784,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "heir_label"
-					position = { x = 40 y = 73 }
+					position = { x = 25 y = 73 }
 					font = "vic_22"
 					text = "HEIR"
 					maxWidth = 90 ### Увеличил длину
@@ -801,7 +801,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "heir_pts_label"
-					position = { x = 100 y = 75 }
+					position = { x = 104 y = 75 }
 					textureFile = ""
 					font = "vic_18"
 					text = "0"	
@@ -889,7 +889,7 @@ guiTypes = {
 					position = { x = 356 y = 178  }
 					quadTextureSprite ="GFX_arrow_right_big"	
 				}
-				
+
 				listboxType = 
 				{
 					name ="monarch_heir_personality_list"
@@ -1034,7 +1034,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "consort_label"
-					position = { x = 40 y = 73 }
+					position = { x = 25 y = 73 }
 					font = "vic_22"
 					text = "CONSORT"
 					maxWidth = 90 #Увеличил длину
@@ -1051,7 +1051,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "consort_pts_label"
-					position = { x = 100 y = 75 }
+					position = { x = 104 y = 75 }
 					textureFile = ""
 					font = "vic_18"
 					text = "0"	
@@ -1311,7 +1311,7 @@ guiTypes = {
 				position = { x = 380 y = 230  }
 				quadTextureSprite ="GFX_arrow_right_big"	
 			}
-			
+
 			### BUTTONS + LISTBOXES BOTTOM
 			instantTextBoxType = {
 				name = "culture_label"
@@ -1416,12 +1416,12 @@ guiTypes = {
 				name ="incompatible_tech_warning_icon"
 				spriteType = "GFX_incompatible_warning_icon"
 				position = { x= 390 y = 139 }
-			}			
+			}
 			
 			###
 			instantTextBoxType = {
 				name = "government_label"
-				position = { x = 35 y = 203 }
+				position = { x = 45 y = 203 } #x = 35
 				font = "vic_18"
 				text = "ND_GOVERNMENT" #Сменил название
 				maxWidth = 130
@@ -1494,7 +1494,7 @@ guiTypes = {
 					shortcut = "ESCAPE"
 					clicksound=click
 				}
-			}
+			}	
 		}
 
 		### RELIGION MODIFIER ENTRY

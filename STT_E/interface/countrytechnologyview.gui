@@ -130,7 +130,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mod_institution_spread"
-				position = { x = 48 y = 23 }
+				position = { x = 48 y = 25 }
 				textureFile = ""
 				font = "vic_18" ### Уменьшил шрифт
 				borderSize = {x = 4 y = 4}	
@@ -149,7 +149,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "mod_embracement_cost"
-				position = { x = 299 y = 23 }
+				position = { x = 299 y = 25 }
 				textureFile = ""
 				font = "vic_18" ### Уменьшил шрифт
 				borderSize = {x = 4 y = 4}	
@@ -160,7 +160,6 @@ guiTypes = {
 			}
 			
 			guiButtonType =
-
 			{
 				name ="embrace_button"
 				quadTextureSprite= "GFX_standard_button_105"
@@ -242,7 +241,6 @@ guiTypes = {
 			}
 			
 			guiButtonType =
-
 			{
 				name ="goto_origin"
 				quadTextureSprite= "GFX_standard_button_105"
@@ -291,7 +289,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 				shortcut = "n"
 			}
-		}					
+		}
 	}
 	
 	### ------- Administrative Tech Research -------		
@@ -354,12 +352,12 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "tech_research_name"
-			position = { x = 35 y =60 }
+			position = { x = 32 y =60 } # Сместил влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Research Galloop Tactic"	
-			maxWidth = 165
+			maxWidth = 185 # Увеличил на 20
 			maxHeight = 42
 			format = left
 			allwaystransparent = yes
@@ -409,7 +407,7 @@ guiTypes = {
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
 			text = "+100%"	
-			maxWidth = 64
+			maxWidth = 84 # Увеличил на 20
 			maxHeight = 32
 			format = left
 		}	
@@ -1214,12 +1212,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_infantry_name"
-			position = { x = 238 y = 34 }
+			position = { x = 233 y = 34 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Maurician"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes
@@ -1288,12 +1286,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_cavalry_name"
-			position = { x = 238 y = 73 }
+			position = { x = 233 y = 73 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Knights"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes
@@ -1363,12 +1361,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_artillery_name"
-			position = { x = 238 y = 112 }
+			position = { x = 233 y = 112 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Bronze guns"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes

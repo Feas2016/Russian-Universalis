@@ -180,12 +180,54 @@ guiTypes = {
 		{
 			name ="strengthen_government"
 			quadTextureSprite= "GFX_standard_button_224"
-			position = { x= 44 y = 190 }
+			position = { x= 56 y = 188 }
 			buttonText = "STRENGTHEN_GOVERNMENT"
 			buttonFont = "vic_18"		
 		}
 		
 		
+		
+		iconType =
+		{
+			name ="absolutism_icon"
+			spriteType = "GFX_icon_absolutism"
+			position = { x= 294 y = 160 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+			
+		}
+		instantTextBoxType = {
+			name = "absolutism_value"
+			position = { x = 320 y = 160 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""	
+			maxWidth = 42
+			maxHeight = 32
+			format = right
+		}		
+		
+		iconType =
+		{
+			name ="max_absolutism_icon"
+			spriteType = "GFX_icon_max_absolutism"
+			position = { x= 294 y = 192 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+			
+		}
+		instantTextBoxType = {
+			name = "max_absolutism_value"
+			position = { x = 320 y = 192 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = ""	
+			maxWidth = 42
+			maxHeight = 32
+			format = right
+		}		
 		
 
 		instantTextBoxType = {
@@ -273,7 +315,7 @@ guiTypes = {
 		windowType = {
 			name = "prussian_monarchy"
 			backGround =""
-			position = { x=0 y=273 }	
+			position = { x=18 y=273 }	
 			size = { x=280 y=50 }
 			moveable = 0
 			dontRender = ""
@@ -311,15 +353,38 @@ guiTypes = {
 			guiButtonType =
 			{
 				name ="prussia_boost"
-				quadTextureSprite= "GFX_standard_button_105"
-				position = { x= 264 y = -83 }
-				buttonText = "PRUS_BOOST_TXT"
-				buttonFont = "vic_18"		
+				quadTextureSprite= "GFX_militarization_increase_button"
+				position = { x= -10 y = -15 }
+#				buttonText = "PRUS_BOOST_TXT"
+#				buttonFont = "vic_18"		
 			}
 
 			
 		}				
 		
+		windowType = {
+			name = "shogunate"
+			backGround =""
+			position = { x = 25 y = 150 }	
+			size = { x = 300 y = 300 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+
+			listboxType = {
+				name = "shogun_interaction_list"
+				position = { x = 32 y = 70 }
+				backGround = ""
+				size = { x = 300 y = 300 }
+				Orientation = "UPPER_LEFT"
+				horizontal = 1
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+		}
+
 		### -----------
 		
 		iconType =
@@ -599,6 +664,32 @@ guiTypes = {
 				extra_shortcut = "ESCAPE"
 				clicksound = back_click
 			}
+		}
+	}
+
+	################################################################################################
+	## --- The interactions in the shogunate sub window
+	windowType = {
+		name = "shogun_interaction"
+		backGround =""
+		position = { x = 0 y = 0 }	
+		size = { x = 40 y = 40 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "shogun_interaction_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_country_modifier_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
 		}
 	}
 

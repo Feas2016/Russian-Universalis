@@ -70,7 +70,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Province religion"	
-			maxWidth = 100
+			maxWidth = 120 #Увеличил
 			maxHeight = 32
 			format = left
 		}
@@ -204,7 +204,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Reformation center desc"	
-			maxWidth = 512
+			maxWidth = 300
 			maxHeight = 32
 			format = left
 		}
@@ -556,8 +556,283 @@ guiTypes = {
 				format = centre
 			}	
 		}
-		
-		
+
+		############## SHINTO ISOLATIONISM ###### 
+
+		windowType = {
+			name = "shinto_specific_window"
+			backGround =""
+			position = { x=0 y=0 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+			
+			iconType =
+			{
+				name ="religion_overlay_shinto_bg"
+				spriteType = "GFX_religion_overlay_shinto_bg"
+				position = { x= 5 y = 228 }
+			}
+
+			iconType =
+			{
+				name ="isolationism_icon"
+				spriteType = "GFX_isolationism_icons"
+				position = { x= 173 y = 236 }
+			}
+
+			instantTextBoxType = {
+				name = "isolationism_label"
+				position = { x = 38 y = 234 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "ISOLATIONISM"
+				maxWidth = 132
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}	
+
+			instantTextBoxType = {
+				name = "isolationism_value"
+				position = { x= 195 y = 239 } #Сместил влево на 4
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "0"
+				maxWidth = 184 #Увеличил на 40
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+
+			instantTextBoxType = {
+				name = "possible_incidents_label"
+				position = { x = 10 y = 259 } # Текст сдвинул влево на 20
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "POSSIBLE_INCIDENTS"
+				maxWidth = 188 # Текст увеличил на 50
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+
+			OverlappingElementsBoxType = {
+				name = "possible_incidents_box"
+				position = { x = 172 y = 259 }
+				size = { x = 200 y = 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 0
+			}
+
+			instantTextBoxType = {
+				name = "active_incidents_label"
+				position = { x = 10 y = 282 } # Текст сдвинул влево на 20
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "ACTIVE_INCIDENTS"
+				maxWidth = 188 # Текст увеличил на 50
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+
+			OverlappingElementsBoxType = {
+				name = "active_incidents_box"
+				position = { x = 172 y = 282 }
+				size = { x = 128 y = 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 0
+			}
+
+			instantTextBoxType = {
+				name = "past_incidents_label"
+				position = { x = 10 y = 305 } # Текст сдвинул влево на 20
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				text = "PAST_INCIDENTS"
+				maxWidth = 188 # Текст увеличил на 50
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+
+			OverlappingElementsBoxType = {
+				name = "past_incidents_box"
+				position = { x = 172 y = 305 }
+				size = { x = 128 y = 32 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 0
+			}
+		}
+	
+		############## CONFUCIANISM HARMONY ##############
+		windowType = {
+			name = "confucianism_specific_window"
+			backGround =""
+			position = { x=0 y=0 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+			
+			iconType =
+			{
+				name ="religion_overlay_confucianism_bg"
+				spriteType = "GFX_religion_overlay_big_bg"
+				position = { x= 26 y = 231 }
+			}
+
+			instantTextBoxType = {
+				name = "harmony_label"
+				position = { x = 40 y = 245 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "CURRENT_HARMONY"
+				maxWidth = 230
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = centre
+			}
+
+			iconType =
+			{
+				name ="current_harmony_progress_bg"
+				spriteType = "GFX_piety_bar_bg"
+				position = { x= 62 y = 276 }
+			}
+			
+			iconType =
+			{
+				name ="current_harmony_progress_frame"
+				spriteType = "GFX_ideaView_progress_frame_long"
+				position = { x= 55 y = 273 }
+			}
+			
+			iconType =
+			{
+				name ="low_harmony"
+				spriteType = "GFX_low_harmony"
+				position = { x= 38 y = 265 }
+			}
+			
+			iconType =
+			{
+				name ="high_harmony"
+				spriteType = "GFX_high_harmony"
+				position = { x= 238 y = 265 }
+			}
+			
+			iconType =
+			{
+				name ="current_harmony"
+				spriteType = "GFX_war_overview_indicator"
+				position = { x= 130 y = 273 }
+			}
+			
+			instantTextBoxType = {
+				name = "current_harmony_value"
+				position = { x= 150 y = 279 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "0"
+				maxWidth = 32
+				maxHeight = 24
+				Orientation = "UPPER_LEFT"
+				format = centre
+			}
+			
+			guiButtonType = {
+				name = "harmonizing_with_button"
+				position = { x = 275 y = 261 }
+				quadTextureSprite ="GFX_province_religion_button"
+				buttonFont = "vic_18"
+				Orientation = "LEFT"
+			}
+			
+			iconType = {
+				name ="harmonizing_with_icon"
+				spriteType = "GFX_icon_religion_small"
+				position = { x= 280 y = 265 }
+				allwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="harmonization_progress"
+				spriteType = "GFX_treasure_fleet_progressbar2"
+				position = { x= 322 y = 291 }
+				rotation = 1.5708
+			}
+
+			iconType = {
+				name ="harmonization_progress_frame"
+				spriteType = "GFX_treasure_fleet_progress_frame2"
+				position = { x= 315 y = 263 }
+			}
+
+			listboxType = 
+			{
+				name ="harmonized_listbox"
+				position = { x = 35 y = 300 }
+				backGround=""
+				size = { x=340 y = 300 }
+				Orientation = "UPPER_LEFT"
+				horizontal = 1
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 0 y = 0}
+			}
+			
+			windowType = {
+				name = "select_harmonize_religion_window"
+				backGround =""
+				position = { x=0 y=130 }
+				size = { x=280 y=150 }
+				moveable = 0
+				dontRender = ""
+				dontRender = ""
+				horizontalBorder = ""
+				Orientation = "UPPER_LEFT"
+
+				iconType = {
+					name ="harmonize_religion_window_bg"
+					spriteType = "GFX_country_religion_harmony_bg_standard"
+					position = { x= 13 y = 376 }
+				}
+				
+				listboxType = {
+					name = "religion_select_listbox"
+					backGround = ""
+					position = { x=7 y = 378 }
+					backGround=""
+					size = { x=516 y =154}
+					Orientation = "UPPER_LEFT"
+					horizontal = 0
+					spacing = 0
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 10 y = 10}
+				}
+				
+				guiButtonType = {
+					name = "back_button"
+					position = {  x=240 y =535}
+					quadTextureSprite ="GFX_standard_button_71"	
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "BACK"
+					buttonFont = "vic_18"
+					clicksound = back_click
+				}			
+			}
+		}
+
 ############## COPTIC HOLY SITES	###### 
 
 		windowType = {
@@ -841,7 +1116,7 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "CURRENT_KARMA"	
-				maxWidth = 256
+				maxWidth = 240
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = centre
@@ -926,7 +1201,7 @@ guiTypes = {
 				Orientation = "LEFT"
 			}
 		}
-		
+
 		################# Fetishist cults	
 		windowType = {
 			name = "fetishist_cult"
@@ -1351,7 +1626,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_sort_84"	
 			Orientation = "UPPER_LEFT"
 		}
-
+		
 		
 		
 		guiButtonType = {
@@ -1455,7 +1730,7 @@ guiTypes = {
 # Needs txt linking	
 		instantTextBoxType = {
 				name = "defender_title"
-				position = { x = 360 y = 235 }
+				position = { x = 360 y = 233 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
@@ -1576,7 +1851,7 @@ guiTypes = {
 				buttonFont = "vic_18"
 			}
 		}
-		
+
 		################# Cult SELECTION		
 		windowType = {
 			name = "cult_selection_screen"
@@ -1709,7 +1984,7 @@ guiTypes = {
 			Orientation = "LEFT"
 		}
 	}
-	
+
 	################# Cult item
 	windowType = {
 		name = "fetishist_cult_item"
@@ -1821,8 +2096,8 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 102
-			maxHeight = 24
+			maxWidth = 105 # Увеличил
+			maxHeight = 50 # Увеличил
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
@@ -1891,6 +2166,84 @@ guiTypes = {
 			spriteType = "GFX_idea_unknown"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
+		}
+	}
+
+	windowType = {
+		name = "religionview_incident_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=22 y= 22 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType = {
+			name = "incident_icon"
+			spriteType ="GFX_incident_icons"	
+			position = { x= 0 y = 0 }
+		}
+	}
+	
+	############## CONFUCIANISM RELIGION SELECT ##############
+	windowType = {
+		name = "religion_select_item"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=100 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+			
+		iconType =
+		{
+			name ="icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x= 0 y = -9 }
+			Orientation = "LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "religion_name"
+			position = { x= 40 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 300
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+
+		guiButtonType = {
+			name = "button"
+			position = { x=418 y = -9} #{ x = 115 y = 5 }
+			quadTextureSprite ="GFX_button_straight_87_32_notext"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+	############## CONFUCIANISM HARMONIZED RELIGIONS ##############
+	windowType = {
+		name = "harmonized_listbox_item"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=30 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+
+		iconType =
+		{
+			name ="icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x= 0 y = 0 }
+			Orientation = "LEFT"
+			#alwaystransparent = yes
+			#scale = 0.5
 		}
 	}	
 }

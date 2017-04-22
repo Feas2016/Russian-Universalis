@@ -1,0 +1,1122 @@
+#Ex: Добавляет -а в окончания
+defined_text = {
+    name = GetAMEndA
+
+    text = {
+        localisation_key = MALE_ENDING_A
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_A
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ла в окончания
+defined_text = {
+    name = GetAMEndLA
+
+    text = {
+        localisation_key = MALE_ENDING_LA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ая/ий в окончания
+defined_text = {
+    name = GetAMEndAYA
+
+    text = {
+        localisation_key = MALE_ENDING_IY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ая/ый в окончания
+defined_text = {
+    name = GetAMEndAYY
+
+    text = {
+        localisation_key = MALE_ENDING_YY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ым/ой в окончания
+defined_text = {
+    name = GetAMEndOY
+
+    text = {
+        localisation_key = MALE_ENDING_OY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ым/ей в окончания
+defined_text = {
+    name = GetAMEndEY
+
+    text = {
+        localisation_key = MALE_ENDING_EY
+       trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ся/ась в окончания
+defined_text = {
+    name = GetAMEndSYA
+
+    text = {
+        localisation_key = MALE_ENDING_SYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_SYA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет его/её
+defined_text = {
+    name = GetAMEgoEyo
+
+    text = {
+        localisation_key = MALE_EGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EYO
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет Его/Её
+defined_text = {
+    name = GetAMEgoEyoCap
+
+    text = {
+        localisation_key = MALE_EGO_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EYO_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет ему/ей
+defined_text = {
+    name = GetAMEmuEy
+
+    text = {
+        localisation_key = MALE_EMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет Ему/Ей
+defined_text = {
+    name = GetAMEmuEyCap
+
+    text = {
+        localisation_key = MALE_EMU_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_EY_Cap
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ен/на в окончания
+defined_text = {
+    name = GetAMEndEnNa
+
+    text = {
+        localisation_key = MALE_ENDING_EN
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -его/ей в окончания
+defined_text = {
+    name = GetAMEndEgoEy
+
+    text = {
+        localisation_key = MALE_ENDING_EGO
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ин/на в окончания
+defined_text = {
+    name = GetAMEndInNa
+
+    text = {
+        localisation_key = MALE_ENDING_IN
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -к/ца в окончания
+defined_text = {
+    name = GetAMEndTsaK
+
+    text = {
+        localisation_key = MALE_ENDING_TSAK
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAK
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ль/ница в окончания
+defined_text = {
+    name = GetAMEndTsaL
+
+    text = {
+        localisation_key = MALE_ENDING_TSAL
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAL
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ка/цу в окончания
+defined_text = {
+    name = GetAMEndTsuKa
+
+    text = {
+        localisation_key = MALE_ENDING_TSUKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSUKA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ен/льна в окончания
+defined_text = {
+    name = GetAMEndLna
+
+    text = {
+        localisation_key = MALE_ENDING_LNA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LNA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ел/ла в окончания
+defined_text = {
+    name = GetAMEndEl
+
+    text = {
+        localisation_key = MALE_ENDING_EL
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EL
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ём/ей в окончания
+defined_text = {
+    name = GetAMEndEyEm
+
+    text = {
+        localisation_key = MALE_ENDING_EYEM
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYEM
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -им/ей в окончания
+defined_text = {
+    name = GetAMEndEyIm
+
+    text = {
+        localisation_key = MALE_ENDING_IM
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYIM
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -его/ю в окончания
+defined_text = {
+    name = GetAMEndEgoYu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -а/у в окончания
+defined_text = {
+    name = GetAMEndAU
+
+    text = {
+        localisation_key = MALE_ENDING_AU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -от/а в окончания
+defined_text = {
+    name = GetAMEndOTA
+
+    text = {
+        localisation_key = MALE_ENDING_OTA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OTA
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ому/ой в окончания
+defined_text = {
+    name = GetAMEndOmu
+
+    text = {
+        localisation_key = MALE_ENDING_OMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OMU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -у/е в окончания
+defined_text = {
+    name = GetAMEndUE
+
+    text = {
+        localisation_key = MALE_ENDING_UE
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_UE
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ца/ку в окончания
+defined_text = {
+    name = GetAMEndTsaKu
+
+    text = {
+        localisation_key = MALE_ENDING_TSAKU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAKU
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ой/ая в окончания
+defined_text = {
+    name = GetAMEndOYY
+
+    text = {
+        localisation_key = MALE_ENDING_OYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+		}
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYY
+        trigger = {
+			OR = {
+				employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+		}
+    }
+}
+#Ex: Добавляет -ец/ка в окончания
+defined_text = {
+    name = GetAMEndEZ
+
+    text = {
+        localisation_key = MALE_ENDING_EZKA
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EZKA
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ой/оя в окончания
+defined_text = {
+    name = GetAMEndOYA
+
+    text = {
+        localisation_key = MALE_ENDING_OYA
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYA
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ся/лась в окончания
+defined_text = {
+    name = GetAMEndLAS
+
+    text = {
+        localisation_key = MALE_ENDING_LAS
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LAS
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ого/ой в окончания
+defined_text = {
+    name = GetAMEndOgoOy
+
+    text = {
+        localisation_key = MALE_ENDING_OGO
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGO
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -ем/ьницой в окончания
+defined_text = {
+    name = GetAMEndEmLsoy
+
+    text = {
+        localisation_key = MALE_ENDING_EMLSOY
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EMLSOY
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}
+#Ex: Добавляет -им/ой в окончания
+defined_text = {
+    name = GetAMEndOyIm
+
+    text = {
+        localisation_key = MALE_ENDING_OYIM
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = yes }
+				employed_advisor = { type = army_organiser is_male = yes }
+				employed_advisor = { type = commandant is_male = yes }
+				employed_advisor = { type = quartermaster is_male = yes }
+				employed_advisor = { type = recruitmaster is_male = yes }
+				employed_advisor = { type = fortification_expert is_male = yes }
+				employed_advisor = { type = grand_captain is_male = yes }
+			}
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYIM
+        trigger = {
+			OR = {
+                employed_advisor = { type = army_reformer is_male = no }
+				employed_advisor = { type = army_organiser is_male = no }
+				employed_advisor = { type = commandant is_male = no }
+				employed_advisor = { type = quartermaster is_male = no }
+				employed_advisor = { type = recruitmaster is_male = no }
+				employed_advisor = { type = fortification_expert is_male = no }
+				employed_advisor = { type = grand_captain is_male = no }
+			}
+        }
+    }
+}

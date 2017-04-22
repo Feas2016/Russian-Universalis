@@ -530,6 +530,13 @@ guiTypes = {
 			maxHeight = 32
 			format = right
 		}
+		iconType =
+		{
+			name ="coalition_icon"
+			spriteType = "GFX_diplomacy_coalitions_against"
+			position = { x= 500 y = 490 }
+			Orientation = "UPPER_LEFT"
+		}
 		
 		iconType =
 		{
@@ -626,7 +633,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "war_name"
-			position = { x = 100 y = 7 } #РџРѕРґРЅСЏР»
+			position = { x = 100 y = 5 } #Увеличил y = 15
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -714,7 +721,7 @@ guiTypes = {
 			delayedTooltipText = ""
 			buttonFont = "vic_18_black"
 		}		
-			
+
 		guiButtonType = {
 			name = "sort_receiver"
 			position = { x = 57 y = 182 }
@@ -732,9 +739,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "sort_overex"
 			position = { x = 267 y = 184 }
-			quadTextureSprite ="GFX_sort_64"	
-			buttonText = "OVEREX"
-			buttonFont = "vic_18"
+			quadTextureSprite ="GFX_sort_overex" #Иконка вместо текста
 		}
 	
 		guiButtonType = {
@@ -762,7 +767,7 @@ guiTypes = {
 			name ="peace_list"
 			position = { x = 55 y = 207 }
 			backGround=""
-			size = { x= 407 y = 150} #РЈРІРµР»РёС‡РёР»
+			size = { x= 407 y = 150} #Сдвинул
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 2
@@ -826,7 +831,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "xxxx"
 			fixedsize = yes
-			maxWidth = 125
+			maxWidth = 180
 			maxHeight = 16
 			truncate = yes
 		}
