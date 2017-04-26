@@ -10,6 +10,8 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = ARB }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no

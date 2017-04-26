@@ -2330,6 +2330,7 @@ country_event = {
 			}
 		}
 		has_heir = no
+		is_lesser_in_union = no
 		marriage_with = HAB
 		HAB = {
 			dynasty = "фон Габсург"
@@ -2423,6 +2424,7 @@ country_event = {
 			}
 		}
 		has_heir = no
+		is_lesser_in_union = no
 		marriage_with = HAB
 		HAB = {
 			dynasty = "фон Габсург"
@@ -2436,21 +2438,11 @@ country_event = {
 			is_rival = HAB
 			is_rival = ROOT
 		}
+		NOT = { is_rival = HAB }
+		NOT = { war_with = HAB }
 		NOT = {
-			OR = {
-				is_rival = HAB
-				war_with = HAB
-				HAB = {
-					is_rival = SPA
-				}
-				AND = {
-					HAB = {
-						is_rival = CAS
-					}
-					NOT = {
-						exists = SPA
-					}
-				}
+			HAB = {
+				is_rival = ROOT
 			}
 		}
 		NOT = {
@@ -2473,7 +2465,7 @@ country_event = {
 			dynasty = "фон Габсург"
 			age = 15
 		}
-		custom_tooltip = flavor_spa.16.tt
+		custom_tooltip = flavor_spa.15.tt
 		hidden_effect = {
 			HAB = {
 				country_event = { id = flavor_spa.14 }
@@ -2483,9 +2475,6 @@ country_event = {
 						OR = {
 							region = low_countries_region
 							area = picardy_area
-						}
-						NOT = {
-							culture = austrian
 						}
 					}
 					add_core = ROOT
@@ -2503,7 +2492,7 @@ country_event = {
 		}
 		define_heir = {
 			claim = 100
-			dynasty = "фон Габсург"
+dynasty = "фон Габсург"
 			age = 15
 		}
 		hidden_effect = {

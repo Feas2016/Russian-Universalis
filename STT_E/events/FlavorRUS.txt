@@ -1696,6 +1696,7 @@ country_event = {
 			name = liberal_constitution
 			duration = -1
 		}
+		add_absolutism = -25
 	}
 }
 
@@ -2372,6 +2373,7 @@ country_event = {
 		trigger = { has_country_flag = grand_embassy_government }
 		ai_chance = { factor = 50 }
 		add_years_of_income = -0.1
+		capital_scope = { add_next_institution_embracement = 10 }
 		hidden_effect = {
 			country_event = { id = flavor_rus.1015 days = 30 }
 		}
@@ -2381,6 +2383,7 @@ country_event = {
 		trigger = { has_country_flag = grand_embassy_army }
 		ai_chance = { factor = 50 }
 		add_years_of_income = -0.1
+		capital_scope = { add_next_institution_embracement = 10 }
 		hidden_effect = {
 			country_event = { id = flavor_rus.1015 days = 30 }
 		}
@@ -2390,6 +2393,7 @@ country_event = {
 		trigger = { has_country_flag = grand_embassy_navy }
 		ai_chance = { factor = 50 }
 		add_years_of_income = -0.1
+		capital_scope = { add_next_institution_embracement = 10 }
 		hidden_effect = {
 			country_event = { id = flavor_rus.1015 days = 30 }
 		}

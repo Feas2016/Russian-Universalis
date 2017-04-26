@@ -28,15 +28,21 @@ recover_greece = {
 		NOT = { has_country_modifier = byzantium_resurgent }
 		NOT = { has_country_flag = retook_greece_byz }
 		is_at_war = no
-		OR = {
-			NOT = { owns = 144 }	# Janina
-			NOT = { owns = 145 }	# Morea
-			NOT = { owns = 146 }	# Athens
-			NOT = { owns = 147 }	# Salonica
-			NOT = { owns = 148 }	# Selanik
-			NOT = { owns = 1773 }	# Achaea
-			NOT = { owns = 1853 }	# Monastir
-			NOT = { owns = 3003 }	# Monastir
+		any_province = {
+			OR = {
+				province_id = 144
+				province_id = 145
+				province_id = 146
+				province_id = 147
+				province_id = 148
+				province_id = 1773
+				province_id = 1853
+				province_id = 3003
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
@@ -102,6 +108,9 @@ recover_the_coast_of_asia_minor = {
 			province_id = 2348
 		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -109,13 +118,19 @@ recover_the_coast_of_asia_minor = {
 		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
-		OR = {
-			NOT = { owns = 316 }
-			NOT = { owns = 317 }
-			NOT = { owns = 318 }
-			NOT = { owns = 319 }
-			NOT = { owns = 2296 }
-			NOT = { owns = 2348 }
+		any_province = {
+			OR = {
+				province_id = 316
+				province_id = 317
+				province_id = 318
+				province_id = 319
+				province_id = 2296
+				province_id = 2348
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		NOT = { has_country_flag = BYZ_asia_minor }
 		NOT = { has_country_modifier = byzantium_resurgent }
@@ -175,6 +190,10 @@ recover_the_balkans = {
 	
 	target_provinces = {
 		area = bulgaria_area
+		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -183,6 +202,9 @@ recover_the_balkans = {
 		is_at_war = no
 		bulgaria_area = {
 			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		NOT = { has_country_flag = BYZ_recovered_balkans }
 		NOT = { has_country_modifier = byzantium_resurgent }
@@ -340,12 +362,21 @@ recover_south_italy = {
 		OR = {
 			naples_area = {
 				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			apulia_area = {
 				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 			calabria_area = {
 				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
 			}
 		}
 		NOT = { has_country_flag = BYZ_recovered_s_italy }
@@ -502,6 +533,9 @@ recover_sicily = {
 		}
 		sicily_area = {
 			not = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 		NOT = { has_country_flag = BYZ_recovered_sicily }
 		NOT = { has_country_modifier = byzantium_resurgent }
@@ -678,6 +712,8 @@ destroy_venice = {
 			army_size = VEN
 			navy_size = VEN
 		}
+		NOT = { alliance_with = VEN }
+		NOT = { overlord_of = VEN }
 		NOT = { has_country_flag = BYZ_destroyed_venice }
 		NOT = { has_country_modifier = byzantium_resurgent }
 	}

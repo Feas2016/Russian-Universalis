@@ -6,10 +6,7 @@ conquer_silesia = {
 	ai_mission = yes
 	
 	target_provinces = {
-		OR = {
-			province_id = 264 #Breslau
-			province_id = 2966 #Glogau
-		}
+		area = silesia_area
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { overlord_of = ROOT }
@@ -23,23 +20,13 @@ conquer_silesia = {
 			tag = BRA
 			tag = PRU
 		}
-		owns = 2969
-		OR = {
-			264 = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				owner = {
-					NOT = { overlord_of = ROOT }
-					NOT = { is_subject_of = ROOT }
-				}
-			}
-			2966 = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				owner = {
-					NOT = { overlord_of = ROOT }
-					NOT = { is_subject_of = ROOT }
-				}
+		owns = 2969 #Sternberg
+		silesia_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			owner = {
+				NOT = { overlord_of = ROOT }
+				NOT = { is_subject_of = ROOT }
 			}
 		}
 		is_free_or_tributary_trigger = yes
@@ -321,7 +308,7 @@ connect_the_prussian_lands = {
 			NOT = { owner = { is_subject_of = ROOT } }
 			NOT = { owner = { overlord_of = ROOT } }
 		}
-		###STT
+###STT
 		NOT = { has_country_modifier = prussian_ambition }
 		NOT = { has_country_flag = connected_prussian_lands }
 	}

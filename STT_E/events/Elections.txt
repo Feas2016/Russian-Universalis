@@ -314,24 +314,24 @@ country_event = {
 	}
 }
 
-# Winds of Liberty
-country_event = {
-	id = elections.712
-	title = "elections.EVTNAME712"
-	desc = "elections.EVTDESC712"
-	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	is_triggered_only = yes
-
-	option = {
-		name = "elections.EVTOPTB712"	# Most worrisome...
-		tooltip = {
-			FROM = {
-				add_liberty_desire = -25
-			}
-		}
-	}
-}
+## Winds of Liberty
+#country_event = {
+#	id = elections.712
+#	title = "elections.EVTNAME712"
+#	desc = "elections.EVTDESC712"
+#	picture = ELECTION_REPUBLICAN_eventPicture
+#	
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "elections.EVTOPTB712"	# Most worrisome...
+#		tooltip = {
+#			FROM = {
+#				add_liberty_desire = -25
+#			}
+#		}
+#	}
+#}
 
 
 

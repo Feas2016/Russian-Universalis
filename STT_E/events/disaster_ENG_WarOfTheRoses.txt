@@ -37,7 +37,7 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality = well_connected_personality }
 		}
-		add_manpower = -0.25
+		add_yearly_manpower = -2.5
 
 
 		if = {
@@ -100,7 +100,7 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality = tactical_genius_personality }
 		}
-		add_manpower = -0.25
+		add_yearly_manpower = -2.5
 		if = {
 			limit = {
 				owns = 244		# Lancashire
@@ -430,7 +430,7 @@ country_event = {
 	option = {		# There is nothing we can do
 		name = war_of_the_roses.7.a
 		ai_chance = { factor = 10 }
-		add_manpower = -0.25
+		add_yearly_manpower = -2.5
 		add_legitimacy = -5
 	}
 	option = {		# Import food from abroad

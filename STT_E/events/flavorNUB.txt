@@ -34,7 +34,7 @@ province_event = {
 		hidden_effect = {
 			every_province = {
 				limit = {
-					NOT = { tag = ROOT }
+					NOT = { owned_by = ROOT }
 					OR = {
 						area = kurdufan_area
 						area = upper_nubia_area

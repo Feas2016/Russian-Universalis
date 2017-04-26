@@ -14,11 +14,11 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 
 	desc = {
-		trigger = { TAG = ETH }
+		trigger = { tag = ETH }
 		desc = "coptic_flavor.1.da"
 	}
 	desc = {
-		trigger = { NOT = { TAG = ETH } }
+		trigger = { NOT = { tag = ETH } }
 		desc = "coptic_flavor.1.db"
 	}
 
@@ -161,11 +161,11 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 
 	desc = {
-		trigger = { TAG = ARM }
+		trigger = { tag = ARM }
 		desc = coptic_flavor.5.da
 	}
 	desc = {
-		trigger = { NOT = { TAG = ARM } }
+		trigger = { NOT = { tag = ARM } }
 		desc = coptic_flavor.5.db
 	}
 
@@ -783,6 +783,7 @@ country_event = {
   option = {
     name = coptic_flavor.30.b
     custom_tooltip = coptic_flavor.30.b.tt
+	add_meritocracy_effect = yes
     define_advisor = {
 		type = inquisitor
 		skill = 2
@@ -1586,7 +1587,9 @@ province_event = {
 			factor = 10
 			modifier = {
 				factor = 0
-				is_at_war = yes
+				owner = {
+					is_at_war = yes
+				}
 			}
 		}
 	}
@@ -1641,7 +1644,7 @@ country_event = {
 					NOT = { has_province_modifier = "scripture_studies" }
 					NOT = { has_province_modifier = "monastery_repaired" }
 				}
-				save_event_target_as = pious_province
+				save_event_target_as = scholarly_province
 			}
 			set_country_flag = a_new_era_happened
 		}
@@ -1696,6 +1699,9 @@ country_event = {
 		has_dlc = "Rights of Man"
 		358 = {
 			religion = coptic
+		}
+		capital_scope = {
+			continent = africa
 		}
 		NOT = { has_country_flag = reconnected_with_eastern_med_christians }
 	}

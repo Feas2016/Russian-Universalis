@@ -1074,6 +1074,12 @@ russia_partitions_poland = {
 		OR = {
 			owned_by = POL
 			owned_by = PLC
+			owner = {
+				is_subject_of = POL
+			}
+			owner = {
+				is_subject_of = PLC
+			}
 		}
 		OR = {
 			area = lithuania_area
@@ -1090,7 +1096,15 @@ russia_partitions_poland = {
 			is_neighbor_of = POL
 			is_neighbor_of = PLC
 		}
-		#NOT = { is_neighbor_of = LIT } ### STT
+		OR ={
+			NOT = { is_neighbor_of = LIT }
+			LIT = {
+				is_subject_of = POL
+			}
+			LIT = {
+				is_subject_of = PLC
+			}
+		}
 		OR = {
 			PLC = {
 				is_neighbor_of = ROOT
@@ -1210,7 +1224,7 @@ russia_partitions_poland = {
 		set_country_flag = partitioned_poland
 		add_country_modifier = {
 			name = "polish_partitions"
-			duration = 3650
+			duration = 5475
 		}
 	}
 }
@@ -1321,8 +1335,8 @@ russia_partitions_lithuania = {
 	effect = {
 		set_country_flag = partitioned_poland
 		add_country_modifier = {
-			name = "russian_ambition_modifier"
-			duration = 3650
+			name = "death_of_lithuania"
+			duration = 5475
 		}
 	}
 }

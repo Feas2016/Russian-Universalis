@@ -2324,6 +2324,7 @@ country_event = {
 		has_regency = no
 		has_heir = no
 		is_lesser_in_union = no
+		NOT = { ruler_has_personality = infertile_personality }
 		NOT = { has_country_flag = war_of_the_roses_ended }
 		NOT = { has_disaster = war_of_the_roses }
 		NOT = { is_year = 1500 }
@@ -2336,12 +2337,9 @@ country_event = {
 	
 	option = {		# Most troubling indeed
 		name = "flavor_eng.EVTOPTA9250"
-		if = {
-			limit = { NOT = { ruler_has_personality = infertile_personality } }
-			add_ruler_modifier = {
-				name = low_fertility
-				duration = -1
-			}
+		add_ruler_modifier = {
+			name = low_fertility
+			duration = -1
 		}
 	}
 }

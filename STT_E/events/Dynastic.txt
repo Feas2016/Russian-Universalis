@@ -618,11 +618,12 @@ country_event = {
 		stability = 3
 		NOT = {
 			overextension_percentage = 0.05
-			is_lesser_in_union = yes
 		}
+		is_lesser_in_union = no
 		government = monarchy
 		legitimacy_or_horde_unity = 100
 		NOT = { government = ottoman_government }
+		NOT = { government = celestial_empire }
 		has_regency = yes
 		has_consort_regency = no
 		has_heir = yes

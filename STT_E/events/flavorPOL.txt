@@ -1444,7 +1444,6 @@ country_event = {
 		remove_country_modifier = pol_sejm_veto
 		remove_country_modifier = pol_sejm_refuse_troops
 		remove_country_modifier = pol_sejm_comply_policies
-		remove_heir = yes
 		add_prestige = 50
 		add_stability = 3
 		add_legitimacy = 50
@@ -1453,6 +1452,7 @@ country_event = {
 				government = elective_monarchy
 			}
 			change_government = despotic_monarchy
+			remove_heir = yes
 			add_absolutism = 10
 		}
 	}
