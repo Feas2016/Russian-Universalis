@@ -403,6 +403,8 @@ technology = {
 	range = 35
 	naval_morale = 0.1
 	trade_efficiency = 0.05
+	
+	enable = parohod
 }
 technology = {
 	# Tech 38
@@ -422,6 +424,8 @@ technology = {
 	global_colonial_growth = 50
 	range = 35
 	naval_morale = 0.1
+	
+	enable = parahodofrigate
 }
 technology = {
 	# Tech 40
@@ -430,6 +434,8 @@ technology = {
 	trade_range = 10
 	range = 35
 	naval_morale = 0.1
+	
+	enable = cliper
 }
 technology = {
 	# Tech 41
@@ -438,6 +444,8 @@ technology = {
 	range = 35
 	naval_morale = 0.1
 	trade_efficiency = 0.05
+	
+	enable = bronenocec
 }
 technology = {
 	# Tech 42
@@ -447,6 +455,9 @@ technology = {
 	trade_range = 10
 	naval_morale = 0.1
 	naval_maintenance = 0.1
+	
+	enable = light_creiser
+	enable = heavy_creiser
 }
 technology = {
 	# Tech 43
@@ -463,4 +474,7 @@ technology = {
 	trade_range = 10
 	naval_morale = 0.1
 	trade_efficiency = 0.05
+	
+	enable = teplohod
+	enable = drednout
 }

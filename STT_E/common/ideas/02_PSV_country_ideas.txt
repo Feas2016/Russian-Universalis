@@ -33,7 +33,7 @@ LUS_ideas = {
 		
 	}
 	union_of_slavs = {
-		accepted_culture_threshold = -0.3
+		global_autonomy = 0.3
 		years_of_nationalism = -10
 	}
 	baltic_pirates = {
@@ -521,7 +521,7 @@ english_minor_ideas = {
 		fort_maintenance_modifier = -0.15
 	}
 	navigation_acts = {
-		global_trade_income_modifier = 0.10
+		trade_efficiency = 0.1
 	}
 	english_renaissance = {
 		technology_cost = -0.05
@@ -669,7 +669,7 @@ SLI_ideas = {
 		enemy_core_creation = 0.25
 	}
 	sln_galic_meets_norman = {
-		accepted_culture_threshold = -0.1	  
+		global_autonomy = 0.2	  
 	}
 	sln_a_different_way = {
 		spy_offence = 0.10

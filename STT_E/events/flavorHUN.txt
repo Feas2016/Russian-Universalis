@@ -123,7 +123,7 @@ country_event = {
 		remove_historical_friend = HAB
 		HAB = { remove_historical_friend = HUN }
 		define_heir = {
-			name = "Матиас"
+			name = "Матьяш"
 			dynasty = "Хуньяди"
 			adm = 4
 			dip = 5
@@ -800,7 +800,7 @@ limit = {
 spawn_rebels = {
 				type = nationalist_rebels
 				size = 2
-				leader = "Jan Jiskra z Brandэsa"
+				leader = "Ян Искра из Брандиса"
 }
 		}
 	}
@@ -1490,8 +1490,8 @@ is_core = TRA
 		set_global_flag = hungary_inherited
 change_tag = TRA
 		define_ruler = {
-			name = "Jбnos"
-			dynasty = "Zбpolya"
+			name = "Янош"
+			dynasty = "Запольяи"
 			claim = 95
 ADM = 3
 			DIP = 3
@@ -1822,7 +1822,7 @@ picture = ADVISOR_eventPicture
 	option = {
 name = flavor_hun.28.a
 		define_advisor = {
-			name = "Tamбs Erdцdy"
+			name = "Тамаш Эрдёди"
 			skill = 3
 			discount = yes
 			type = grand_captain
@@ -1832,7 +1832,7 @@ name = flavor_hun.28.a
 	option = {
 		name = flavor_hun.28.b
 define_general = {
-			name = "Tamбs Erdцdy"
+			name = "Тамаш Эрдёди"
 			shock = 3
 			fire = 3
 			manuever = 2
@@ -1896,7 +1896,7 @@ set_province_flag = hungarian_reform
 	option = {
 		name = flavor_hun.29.a
 define_advisor = {
-			name = "Matthias Dйvay"
+			name = "Матьяш Деваи"
 			skill = 3
 discount = yes
 			type = inquisitor
@@ -1916,7 +1916,7 @@ trigger = { religion = catholic }
 			clr_province_flag = hungarian_reform
 		}
 		define_advisor = {
-			name = "Thomas Szalahбzy"
+			name = "Томаш Залахеци"
 			skill = 3
 discount = yes
 			type = theologian
@@ -1971,7 +1971,7 @@ add_institution_embracement = {
 }
 		}
 		define_advisor = {
-			name = "Janus Pannonius"
+			name = "Янус Паннониус"
 			type = philosopher
 skill = 2
 			discount = yes
@@ -2195,7 +2195,7 @@ name = flavor_hun.34.a
 		}
 		define_ruler = {
 name = "Ferenc"
-			dynasty = "Rбkуczy"
+			dynasty = "Ракоци"
 			adm = 4
 			dip = 5
 			mil = 4
@@ -2212,7 +2212,7 @@ factor = 5
 spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader = "Ferenc II Rбkуczy"
+				leader = "Ференц II Ракоци"
 			}
 }
 	}
@@ -2257,8 +2257,8 @@ who = PREV
 			}
 }
 		define_ruler = {
-			name = "Ferenc"
-			dynasty = "Rбkуczy"
+			name = "Ференц"
+			dynasty = "Ракоци"
 			adm = 4
 dip = 5
 			mil = 4
@@ -2274,7 +2274,7 @@ limit = { is_in_capital_area = yes }
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 3
-				leader = "Ferenc II Rбkуczy"
+				leader = "Ференц II Ракоци"
 }
 		}
 	}
@@ -2364,7 +2364,7 @@ name = flavor_hun.36.a
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 3
-				leader = "Ferenc II Rбkуczy"
+				leader = "Ференц II Ракоци"
 }
 		}
 	}

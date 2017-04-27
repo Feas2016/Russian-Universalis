@@ -5,45 +5,38 @@
 
 byz_hexamilion = {
 	local_defensiveness = 0.25
-	icon = 7
 }
 
 byz_bride = {
 	heir_chance = 0.20
 	stability_cost_modifier = 0.1
-	icon = 7
 }
 
 byz_europe = {
 	diplomatic_reputation = 2
 	improve_relation_modifier = 0.10
 	diplomatic_upkeep = -1
-	icon = 6
 }
 
 byz_mirrors = {
 	idea_cost = -0.05
 	legitimacy = 1
-	icon = 5
 }
 
 byz_echinades = {
 	prestige_from_naval = 0.05
 	defensiveness = 0.10
-	icon = 8
 }
 
 byz_fire = {
 	naval_morale = 0.10
 	global_tax_modifier = -0.05
-	icon = 7
 }
 
 byz_senate = {
 	stability_cost_modifier = 0.15
 	core_creation = -0.1
 	diplomatic_upkeep = 1
-	icon = 2
 }
 
 byz_sacred = {
@@ -51,7 +44,6 @@ byz_sacred = {
 	improve_relation_modifier = 0.05
 	stability_cost_modifier = 0.10
 	global_spy_defence = -0.10
-	icon = 5
 }
 
 byz_uni = {
@@ -59,7 +51,6 @@ byz_uni = {
 	advisor_cost = -0.1
 	idea_cost = -0.05
 	global_tax_modifier = -0.05
-	icon = 9
 }
 
 byz_land = {
@@ -71,7 +62,6 @@ byz_land = {
 	mil_tech_cost_modifier = -0.1
 	dip_tech_cost_modifier = 0.1
 	prestige_from_land = 0.15
-	icon = 8
 }
 
 byz_navy = {
@@ -83,20 +73,16 @@ byz_navy = {
 	dip_tech_cost_modifier = -0.1
 	mil_tech_cost_modifier = 0.1
 	prestige_from_naval = 0.15
-	icon = 7
 }
 
 byz_council = {
 	tolerance_heretic = 1
 	improve_relation_modifier = 0.1
-	icon = 10
 }
 
 byz_council2 = {
-	global_missionary_strength = 0.03
-	missionary = 2
+	global_missionary_strength = 0.05
 	improve_relation_modifier = 0.1
-	icon = 10
 }
 
 byz_council3 = {
@@ -105,12 +91,10 @@ byz_council3 = {
 	tolerance_heretic = 1
 	global_tax_modifier = 0.1
 	improve_relation_modifier = 0.1
-	icon = 10
 }
 
 byz_ancestors = {
 	improve_relation_modifier = -0.3
-	icon = 2
 }
 
 byz_ceasar = {
