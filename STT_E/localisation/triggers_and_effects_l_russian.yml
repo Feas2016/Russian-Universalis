@@ -220,8 +220,8 @@
  ADVISOR_TYPE_EMPLOYED_1:0 "Íà äàííûé ìîìåíò ðàáîòàåò $TYPE$, ÷üÿ êóëüòóðà $ARG0$.\n" #Example: French Advisor is currently employed
  ADVISOR_TYPE_EMPLOYED_2:0 "Íà äàííûé ìîìåíò ðàáîòàåò $TYPE$, ÷üåé ðåëèãèåé ÿâëÿåòñÿ $ARG1$, à êóëüòóðà $ARG0$.\n" #Example: Protestant English Statesman is currently employed
  ADVISOR_TYPE_EMPLOYED_3:0 "Íà äàííûé ìîìåíò ðàáîòàåò $ARG2$-$TYPE$, ÷üåé ðåëèãèåé ÿâëÿåòñÿ $ARG1$, à êóëüòóðà $ARG0$.\n" #Example: Protestant English male Statesman is currently employed
- ADD_SPY_NETWORK_IN:0 "Ðàçìåð øïèîíñêîé ñåòè â äåðæàâå $TARGET$ èçìåíèòñÿ íà $VAL$.\n"
- ADD_SPY_NETWORK_FROM:0 "Äåðæàâà $TARGET$ óâåëè÷èò ñâîþ øïèîíñêóþ ñåòü íà $VAL$.\n"
+ ADD_SPY_NETWORK_IN:0 "Ðàçìåð øïèîíñêîé ñåòè â äåðæàâå $TARGET$ èçìåíèòñÿ íà $VAL|+$.\n"
+ ADD_SPY_NETWORK_FROM:0 "Äåðæàâà $TARGET$ èçìåíèò ñâîþ øïèîíñêóþ ñåòü íà $VAL|-$.\n"
  HAVE_SPY_NETWORK_IN:0 "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ïðåâûøàåò $VAL$.\n"
  NOT_HAVE_SPY_NETWORK_IN:0 "Øïèîíñêàÿ ñåòü â äåðæàâå $TARGET$ ÍÅ ïðåâûøàåò $VAL$.\n"
  HAVE_SPY_NETWORK_FROM:0 "Øïèîíñêàÿ ñåòü äåðæàâû $TARGET$ ïðåâûøàåò $VAL$.\n"
@@ -530,6 +530,17 @@
  HARMONY_AT_LEAST:0 "Ãàðìîíèÿ ïî êðàéíåé ìåðå §Y$VAL|Y$%§!"
  HARMONIZATION_PROGRESS_LESS_THAN:0 "Ïðîãðåññ ãàðìîíèçàöèè ìåíüøå §Y$VAL$%§!"
  HARMONIZATION_PROGRESS_AT_LEAST:0 "Ïðîãðåññ ãàðìîíèçàöèè ïî êðàéíåé ìåðå §Y$VAL$%§!"
+ ADD_ACTIVE_POLICY_EFFECT:0 "Ïðèíÿòà ïîëèòèêà §Y$POLICY$§!"
+ HAD_NOT_ACTIVE_POLICY_TRIGGER:0 "Ïîëèòèêà $POLICY|Y$ íå äåéñòâîâàëà ïîñëåäíèå $DAYS|Y$ äí."
+ HAD_ACTIVE_POLICY_TRIGGER:0 "Ïîëèòèêà $POLICY|Y$ äåéñòâîâàëà ïîñëåäíèå $DAYS|Y$ äí."
+ ADD_ADM_TECH_EFFECT_SINGULAR:0 "Îïåðåæåíèå àäìèíèñòðàòèâíûõ òåõíîëîãèé íà §G1§! óðîâåíü"
+ ADD_ADM_TECH_EFFECT_PLURAL:0 "Îïåðåæåíèå àäìèíèñòðàòèâíûõ òåõíîëîãèé íà $VAL|+$ óðîâ."
+ ADD_DIP_TECH_EFFECT_SINGULAR:0 "Îïåðåæåíèå äèïëîìàòè÷åñêèõ òåõíîëîãèé íà §G1§! óðîâåíü"
+ ADD_DIP_TECH_EFFECT_PLURAL:0 "Îïåðåæåíèå äèïëîìàòè÷åñêèõ òåõíîëîãèé íà $VAL|+$ óðîâ."
+ ADD_MIL_TECH_EFFECT_SINGULAR:0 "Îïåðåæåíèå âîåííûõ òåõíîëîãèé íà §G1§! óðîâåíü"
+ ADD_MIL_TECH_EFFECT_PLURAL:0 "Îïåðåæåíèå âîåííûõ òåõíîëîãèé íà $VAL|+$ óðîâ."
+ REVANCHISM_LOWER_THAN_TRIGGER:0 "Óðîâåíü ðåâàíøèçìà íèæå $VAL|Y$%"
+ REVANCHISM_HIGHER_THAN_TRIGGER:0 "Óðîâåíü ðåâàíøèçìà ïðåâûøàåò $VAL|Y$%"
  S_DYNAMIC_TAG:0 "ßâëÿåòñÿ äèíàìè÷åñêèì òåãîì"
  IS_NOT_DYNAMIC_TAG:0 "ÍÅ ÿâëÿåòñÿ äèíàìè÷åñêèì òåãîì"
  REMOVE_ADVISOR_OF_CATEGORY_ADM:0 "Íàø àäìèíèñòðàòèâíûé ñîâåòíèê $NAME|Y$ ïîêèíåò äâîð.\n"

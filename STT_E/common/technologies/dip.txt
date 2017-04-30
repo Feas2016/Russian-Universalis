@@ -43,9 +43,7 @@ technology = {
 
 	range = 80
 	naval_morale = 0.2
-	naval_maintenance = 0.1
-	
-	enable = early_carrack
+	naval_maintenance = 0.1	
 }
 technology = {
 	# Tech 4
@@ -117,6 +115,8 @@ technology = {
 	range = 10
 	naval_morale = 0.1
 	naval_maintenance = 0.1
+	
+	enable = early_carrack
 }
 technology = {
 	# Tech 12
@@ -131,7 +131,9 @@ technology = {
 	year = 1445
 	
 	range = 10
-	naval_morale = 0.1	
+	naval_morale = 0.1
+	
+	enable = caravel
 }
 technology = {
 	# Tech 14
@@ -153,6 +155,7 @@ technology = {
 	naval_maintenance = 0.1
 	
 	shipyard = yes
+	enable = carrack
 }
 technology = {
 	# Tech 16
@@ -184,9 +187,6 @@ technology = {
 	range = 50
 	naval_morale = 0.1
 	naval_maintenance = 0.1
-	
-	enable = carrack
-	enable = caravel
 }
 technology = {
 	# Tech 19
@@ -198,6 +198,7 @@ technology = {
 	wharf = yes
 	enable = flute
 	enable = war_galley
+	enable = galleon
 }
 technology = {
 	# Tech 20
@@ -219,6 +220,7 @@ technology = {
 	trade_efficiency = 0.05
 	
 	enable = brig
+	enable = wargalleon
 }
 technology = {
 	# Tech 22
@@ -242,8 +244,7 @@ technology = {
 	range = 35
 	naval_morale = 0.1
 	
-	tradecompany = yes
-	enable = galleon
+	tradecompany = yes	
 	enable = early_frigate
 }
 technology = {
@@ -279,9 +280,9 @@ technology = {
 	naval_morale = 0.1
 	naval_maintenance = 0.1
 	
-	grand_shipyard = yes
-	enable = wargalleon
+	grand_shipyard = yes	
 	enable = frigate
+	enable = twodecker
 }
 technology = {
 	# Tech 27
@@ -312,9 +313,8 @@ technology = {
 	
 	range = 35
 	naval_morale = 0.1
-	trade_efficiency = 0.05
+	trade_efficiency = 0.05	
 	
-		enable = twodecker
 	enable = trabakul
 }
 technology = {
@@ -330,6 +330,7 @@ technology = {
 	naval_maintenance = 0.1
 	
 	enable = heavy_frigate
+	enable = threedecker
 }
 technology = {
 	# Tech 31
@@ -342,7 +343,7 @@ technology = {
 	naval_morale = 0.1
 	
 	drydock = yes
-	enable = archipelago_frigate
+	enable = archipelago_frigate	
 }
 technology = {
 	# Tech 32
@@ -351,8 +352,6 @@ technology = {
 	trade_range = 10
 	range = 35
 	naval_morale = 0.1
-	
-	enable = threedecker
 }
 technology = {
 	# Tech 33
