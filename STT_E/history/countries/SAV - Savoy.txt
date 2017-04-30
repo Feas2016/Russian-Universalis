@@ -6,8 +6,56 @@ technology_group = western
 capital = 205 # Chambery
 add_accepted_culture = arpitan
 
+1343.1.1 = {
+	monarch = {
+		name = "Амадей VI"
+		dynasty = "ди Савойя"
+		birth_date = 1334.1.4
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
 
-1391.1.1 = {
+1360.2.24 = {
+	heir = {
+		name = "Амадей"
+		monarch_name = "Амадей VII"
+		dynasty = "ди Савойя"
+		birth_date = 1360.2.24
+		death_date = 1391.11.1
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1383.3.1 = {
+	monarch = {
+		name = "Амадей VII"
+		dynasty = "ди Савойя"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1383.9.4 = {
+	heir = {
+		name = "Амадей"
+		monarch_name = "Амадей VIII"
+		dynasty = "ди Савойя"
+		birth_date = 1383.9.4
+		death_date = 1451.1.7
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1391.11.1 = {
 	monarch = {
 		name = "Амадей VIII"
 		dynasty = "ди Савойя"
