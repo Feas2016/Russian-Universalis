@@ -49,11 +49,13 @@ age_of_discovery = {
 			calc_true_if = {
 				all_owned_province = {
 					OR = {
-						has_province_modifier = major_coastal_center_of_trade_modifier
 						has_province_modifier = center_of_trade_modifier
-						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = inland_center_of_trade_modifier
+						###STT
+						has_province_modifier = minor_coastal_center_of_trade_modifier
 						has_province_modifier = minor_inland_center_of_trade_modifier
-						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
 					}
 					controlled_by = owner
 					is_core = ROOT
