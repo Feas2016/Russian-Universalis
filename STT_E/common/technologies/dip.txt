@@ -51,15 +51,18 @@ technology = {
 	
 	num_accepted_cultures = 1
 	
-	trade_range = 10
-	range = 10
-	naval_morale = 0.1
+	trade_range = 20
+	range = 40
+	naval_morale = 0.4
+	global_colonial_growth = 15
+	trade_efficiency = 0.05
+	naval_maintenance = 0.1
 }
 technology = {
 	# Tech 5
 	year = 1325
 	
-	global_colonial_growth = 15
+	trade_range = 10
 	range = 10
 	naval_morale = 0.1
 }
@@ -67,40 +70,15 @@ technology = {
 	# Tech 6
 	year = 1340
 	
-	trade_range = 10
-	range = 10
-	naval_morale = 0.1
-	trade_efficiency = 0.05
-}
-technology = {
-	# Tech 7
-	year = 1355
-	
-	range = 10
-	naval_morale = 0.1
-	naval_maintenance = 0.1
-}
-technology = {
-	# Tech 8
-	year = 1370
-	
-	trade_range = 10
-	range = 10
-	naval_morale = 0.1
-}
-technology = {
-	# Tech 9
-	year = 1385
-	
 	num_accepted_cultures = 1
 	
 	range = 10
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 10
-	year = 1400
-
+	# Tech 7
+	year = 1355
+	
 	trade_range = 10
 	range = 10
 	naval_morale = 0.1
@@ -109,8 +87,8 @@ technology = {
 	trade_depot = yes
 }
 technology = {
-	# Tech 11
-	year = 1415
+	# Tech 8
+	year = 1370
 	
 	range = 10
 	naval_morale = 0.1
@@ -119,35 +97,35 @@ technology = {
 	enable = early_carrack
 }
 technology = {
-	# Tech 12
-	year = 1430
-
+	# Tech 9
+	year = 1385
+	
 	trade_range = 10
 	range = 10
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 13
-	year = 1445
-	
+	# Tech 10
+	year = 1400
+
 	range = 10
 	naval_morale = 0.1
 	
 	enable = caravel
 }
 technology = {
-	# Tech 14
-	year = 1460
-
+	# Tech 11
+	year = 1415
+	
 	trade_range = 10
 	range = 10
 	naval_morale = 0.1
 	trade_efficiency = 0.05
 }
 technology = {
-	# Tech 15
-	year = 1475
-	
+	# Tech 12
+	year = 1430
+
 	may_steal_maps = yes
 	
 	range = 10
@@ -158,8 +136,8 @@ technology = {
 	enable = carrack
 }
 technology = {
-	# Tech 16
-	year = 1490
+	# Tech 13
+	year = 1445
 	
 	trade_range = 10
 	range = 10
@@ -168,9 +146,9 @@ technology = {
 	dock = yes
 }
 technology = {
-	# Tech 17
-	year = 1505
-	
+	# Tech 14
+	year = 1460
+
 	may_study_technology = yes
 	num_accepted_cultures = 1
 	
@@ -179,8 +157,8 @@ technology = {
 	trade_efficiency = 0.05
 }
 technology = {
-	# Tech 18
-	year = 1520
+	# Tech 15
+	year = 1475
 	
 	global_colonial_growth = 20
 	trade_range = 10
@@ -189,8 +167,8 @@ technology = {
 	naval_maintenance = 0.1
 }
 technology = {
-	# Tech 19
-	year = 1535
+	# Tech 16
+	year = 1490
 	
 	range = 50
 	naval_morale = 0.1
@@ -201,8 +179,8 @@ technology = {
 	enable = galleon
 }
 technology = {
-	# Tech 20
-	year = 1550
+	# Tech 17
+	year = 1505
 	
 	may_slander_merchants = yes
 	
@@ -212,8 +190,8 @@ technology = {
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 21
-	year = 1565
+	# Tech 18
+	year = 1520
 	
 	range = 100
 	naval_morale = 0.1
@@ -223,8 +201,8 @@ technology = {
 	enable = wargalleon
 }
 technology = {
-	# Tech 22
-	year = 1580
+	# Tech 19
+	year = 1535
 	
 	global_colonial_growth = 10
 	
@@ -236,8 +214,8 @@ technology = {
 	enable = galleass
 }
 technology = {
-	# Tech 23
-	year = 1595
+	# Tech 20
+	year = 1550
 	
 	may_sabotage_recruitment = yes
 
@@ -248,8 +226,8 @@ technology = {
 	enable = early_frigate
 }
 technology = {
-	# Tech 24
-	year = 1610
+	# Tech 21
+	year = 1565
 	
 	num_accepted_cultures = 1
 
@@ -257,11 +235,11 @@ technology = {
 	range = 35
 	naval_morale = 0.1
 		
-	enable = merchantman	
+	enable = merchantman
 }
 technology = {
-	# Tech 25
-	year = 1625
+	# Tech 22
+	year = 1580
 	
 	may_sow_discontent = yes
 	
@@ -272,8 +250,8 @@ technology = {
 	enable = galiot
 }
 technology = {
-	# Tech 26
-	year = 1640
+	# Tech 23
+	year = 1595
 	
 	trade_range = 10
 	range = 35
@@ -285,16 +263,16 @@ technology = {
 	enable = twodecker
 }
 technology = {
-	# Tech 27
-	year = 1655
+	# Tech 24
+	year = 1610
 	
 	global_colonial_growth = 15
 	range = 35
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 28
-	year = 1670
+	# Tech 25
+	year = 1625
 	
 	may_sabotage_reputation = yes
 	
@@ -306,8 +284,8 @@ technology = {
 	stock_exchange = yes
 }
 technology = {
-	# Tech 29
-	year = 1685
+	# Tech 26
+	year = 1640
 	
 	reduced_naval_attrition = yes
 	
@@ -318,8 +296,8 @@ technology = {
 	enable = trabakul
 }
 technology = {
-	# Tech 30
-	year = 1700
+	# Tech 27
+	year = 1655
 	
 	allow_client_states = yes
 	
@@ -333,8 +311,8 @@ technology = {
 	enable = threedecker
 }
 technology = {
-	# Tech 31
-	year = 1715
+	# Tech 28
+	year = 1670
 	
 	may_corrupt_officials = yes
 	num_accepted_cultures = 1
@@ -346,16 +324,16 @@ technology = {
 	enable = archipelago_frigate	
 }
 technology = {
-	# Tech 32
-	year = 1730
+	# Tech 29
+	year = 1685
 	
 	trade_range = 10
 	range = 35
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 33
-	year = 1745
+	# Tech 30
+	year = 1700
 	
 	global_colonial_growth = 25
 	range = 35
@@ -366,8 +344,8 @@ technology = {
 	enable = great_frigate
 }
 technology = {
-	# Tech 34
-	year = 1760
+	# Tech 31
+	year = 1715
 	
 	may_agitate_for_liberty = yes
 
@@ -377,8 +355,8 @@ technology = {
 	naval_maintenance = 0.1
 }
 technology = {
-	# Tech 35
-	year = 1775
+	# Tech 32
+	year = 1730
 	
 	num_accepted_cultures = 1
 	
@@ -386,16 +364,16 @@ technology = {
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 36
-	year = 1790
+	# Tech 33
+	year = 1745
 	
 	trade_range = 10
 	range = 35
 	naval_morale = 0.1
 }
 technology = {
-	# Tech 37
-	year = 1805
+	# Tech 34
+	year = 1760
 	
 	may_infiltrate_administration = yes
 	
@@ -406,8 +384,8 @@ technology = {
 	enable = parohod
 }
 technology = {
-	# Tech 38
-	year = 1820
+	# Tech 35
+	year = 1775
 	
 	trade_range = 10
 	range = 35
@@ -415,8 +393,8 @@ technology = {
 	naval_maintenance = 0.1
 }
 technology = {
-	# Tech 39
-	year = 1835
+	# Tech 36
+	year = 1790
 	
 	num_accepted_cultures = 1
 
@@ -427,8 +405,8 @@ technology = {
 	enable = parahodofrigate
 }
 technology = {
-	# Tech 40
-	year = 1850
+	# Tech 37
+	year = 1805
 	
 	trade_range = 10
 	range = 35
@@ -437,8 +415,8 @@ technology = {
 	enable = cliper
 }
 technology = {
-	# Tech 41
-	year = 1865
+	# Tech 38
+	year = 1820
 	
 	range = 35
 	naval_morale = 0.1
@@ -447,8 +425,8 @@ technology = {
 	enable = bronenocec
 }
 technology = {
-	# Tech 42
-	year = 1880
+	# Tech 39
+	year = 1835
 	
 	global_colonial_growth = 50
 	trade_range = 10
@@ -457,6 +435,33 @@ technology = {
 	
 	enable = light_creiser
 	enable = heavy_creiser
+}
+technology = {
+	# Tech 40
+	year = 1850
+	
+	trade_range = 10
+	naval_morale = 0.1
+	trade_efficiency = 0.05
+}
+technology = {
+	# Tech 41
+	year = 1865
+	
+	trade_range = 10
+	naval_morale = 0.1
+	trade_efficiency = 0.05
+	
+	enable = teplohod
+	enable = drednout
+}
+technology = {
+	# Tech 42
+	year = 1880
+	
+	trade_range = 10
+	naval_morale = 0.1
+	trade_efficiency = 0.05
 }
 technology = {
 	# Tech 43
@@ -473,7 +478,4 @@ technology = {
 	trade_range = 10
 	naval_morale = 0.1
 	trade_efficiency = 0.05
-	
-	enable = teplohod
-	enable = drednout
 }

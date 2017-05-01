@@ -72,7 +72,7 @@ technology = {
 	year = 1340 #1390
 	
 	courthouse = yes
-	allowed_idea_groups = 2
+	
 	max_states = 1
 }
 technology = {
@@ -80,6 +80,7 @@ technology = {
 	year = 1355 #1410
 	
 	max_states = 1
+	allowed_idea_groups = 2
 }
 technology = {
 	# Tech 8
@@ -97,15 +98,15 @@ technology = {
 technology = {
 	# Tech 10
 	year = 1400 #1450
-
-	allowed_idea_groups = 3
-	max_states = 1
+	
+	max_states = 1	
 }
 technology = {
 	# Tech 11
 	year = 1415 #1470
 	
 	max_states = 1
+	allowed_idea_groups = 3
 }
 technology = {
 	# Tech 12
@@ -117,15 +118,14 @@ technology = {
 	# Tech 13
 	year = 1445 #1500
 	
-	production_efficiency =	0.05
-	max_states = 1
+	max_states = 1	
 }
 technology = {
 	# Tech 14
 	year = 1460 #1510
-
-	allowed_idea_groups = 4
+	
 	max_states = 1
+	production_efficiency =	0.05
 }
 technology = { #Textile Manufactory
 	# Tech 15
@@ -133,6 +133,7 @@ technology = { #Textile Manufactory
 	
 	textile = yes	
 	max_states = 1
+	allowed_idea_groups = 4
 }
 technology = {
 	# Tech 16
@@ -142,6 +143,7 @@ technology = {
 	administrative_republic	= yes
 	
 	max_states = 1
+	
 }
 technology = {
 	# Tech 17
@@ -154,8 +156,7 @@ technology = {
 	# Tech 18
 	year = 1520 #1570
 	
-	plantations = yes
-	allowed_idea_groups	= 5	
+	plantations = yes	
 	max_states = 1	
 }
 technology = {
@@ -163,6 +164,7 @@ technology = {
 	year = 1535 #1590
 	
 	max_states = 1
+	allowed_idea_groups	= 5	
 }
 technology = {
 	# Tech 20
