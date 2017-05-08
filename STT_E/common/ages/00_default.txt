@@ -1,8 +1,221 @@
+age_of_feudalism = {
+	start = 1300
+	
+	can_start = {
+		always = yes
+	}
+	
+	religious_conflicts = yes
+	
+
+	objectives = {
+		obj_high_prestige = {
+			prestige = 70
+		}
+			
+		obj_2_centers_of_trade = {
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_province_modifier = center_of_trade_modifier
+						has_province_modifier = inland_center_of_trade_modifier
+						###STT
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+					}
+					controlled_by = owner
+					is_core = ROOT
+				}
+				amount = 3
+			}
+		}
+		
+		obj_20_development_city = {
+			custom_trigger_tooltip = {
+				tooltip = obj_20_development_city_tooltip
+				any_owned_province = {
+					is_core = ROOT
+					controlled_by = owner
+					development = 20
+				}
+			}
+		}
+		
+		obj_papal_controller = {
+			allow = {
+				religion = catholic
+			}
+			is_papal_controller = yes
+	 	}
+
+		obj_royal_marriages = {
+			allow = {
+				NOT = { religion = catholic }
+			}
+			num_of_royal_marriages = 6
+	 	}		
+		
+		obj_one_union = {
+			allow = {
+				religion_group = christian
+			}
+			personal_union  = 1
+		}
+		
+		obj_many_vassals_f = {
+			vassal = 3
+		}		
+	
+		obj_two_continents_f = {
+			allow = {
+				NOT = { religion_group = christian }
+			}
+			num_of_continents = 2
+		}
+	
+		obj_introduce_cannon = {
+			artillery_fraction = 0.4
+			army_size_percentage = 0.8
+		}
+	}
+	
+
+	
+	
+	
+	abilities = {
+		ab_allow_feudal_de_jure_law_f = {
+			effect = {
+				custom_tooltip = feudal_de_jure_law
+				set_country_flag = feudal_de_jure_law
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_justified_wars_f = {
+			modifier = {
+				ae_impact = -0.1
+			}
+			ai_will_do = {
+				factor = 10
+			}			
+		}
+		
+
+		ab_transfer_vassal_wargoal_f = 
+		{
+			rule = {
+				can_transfer_vassal_wargoal = yes
+				can_chain_claim = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_free_war_taxes_f = {
+			modifier = {
+				war_taxes_cost_modifier = -1.0
+			}
+			ai_will_do = {
+				factor = 10
+			}	
+		}
+		
+
+		ab_cavalry_armies_f = {
+			modifier = {
+				cav_to_inf_ratio = 0.2
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		ab_chevauchee = {
+			modifier = {
+				shock_damage = 0.2
+				leader_land_shock = 1
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_attack_bonus_in_capital_terrain_f = {
+			rule = {
+				attack_bonus_in_capital_terrain = yes
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		
+		ab_ottoman_siege_ability_f = {
+			allow = {
+				tag = TUR
+			}
+			modifier = {
+				siege_ability = 0.33
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		
+		ab_england_longbowmen = {
+		
+			allow = {
+				tag = ENG
+			}
+			modifier = {
+				leader_land_fire = 1
+				infantry_power = 0.1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_viking_legacy = {
+		
+			allow = {
+				culture_group = scandinavian
+			}
+			modifier = {
+				global_ship_cost = -0.25
+				global_sailors_modifier = 0.25
+				naval_forcelimit_modifier = 0.25
+				naval_maintenance_modifier = -0.25
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		ab_bohemian_empire = {
+		
+			allow = {
+				tag = BOH
+			}
+			modifier = {
+				imperial_authority = 0.05
+				improve_relation_modifier = 0.25
+				diplomatic_reputation = 2
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+	}
+}
+
 age_of_discovery = {
 	start = 1400
 	
 	can_start = {
-		always = yes
+		any_country = { has_idea = quest_for_the_new_world }
 	}
 	
 	religious_conflicts = yes

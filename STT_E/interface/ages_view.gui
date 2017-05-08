@@ -26,6 +26,48 @@ guiTypes = {
 			position = { x= -42 y = -43 }
 			Orientation = "UPPER_LEFT"
 		}
+
+		WindowType = {
+			name = "age_of_feudalism"
+			position = { x= 35 y = -29}
+			#upsound = age_of_discovery
+
+			iconType = {
+				name ="frame"
+				spriteType = "GFX_age_indicator_5"
+				position = { x= 0 y = 7 }
+				}
+			iconType = {
+				name ="icon_age_of_feudalism"
+				spriteType = "GFX_icon_age_l"
+				position = { x= -30 y = 14 }
+				frame = 1
+				}
+			iconType = {
+				name ="icon_age_of_discovery"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 56 }
+				frame = 2
+				}
+			iconType = {
+				name ="icon_age_of_reformation"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 89 }
+				frame = 3
+				}
+			iconType = {
+				name ="icon_age_of_absolutism"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 122 }
+				frame = 4
+				}
+			iconType = {
+				name ="icon_age_of_revolutions"
+				spriteType = "GFX_icon_age_s"
+				position = { x= -15 y = 154 }
+				frame = 5
+				}
+		}
 		
 		WindowType = {
 			name = "age_of_discovery"
@@ -38,28 +80,33 @@ guiTypes = {
 				position = { x= 0 y = 7 }
 				}
 			iconType = {
+				name ="icon_age_of_feudalism"
+				spriteType = "GFX_icon_age_of_feudalism_g"
+				position = { x= -30 y = 18 }
+				}
+			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 18 }
-				frame = 1
+				position = { x= -30 y = 47 }
+				frame = 2
 				}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 70 }
-				frame = 2
+				position = { x= -15 y = 89 }
+				frame = 3
 				}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 111 }
-				frame = 3
+				position = { x= -15 y = 122 }
+				frame = 4
 				}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 152 }
-				frame = 4
+				position = { x= -15 y = 154 }
+				frame = 5
 				}
 		}			
 		
@@ -74,27 +121,32 @@ guiTypes = {
 				position = { x= 0 y = 7 }
 				}
 			iconType = {
+				name ="icon_age_of_feudalism"
+				spriteType = "GFX_icon_age_of_feudalism_g"
+				position = { x= -30 y = 18 }
+				}
+			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 50 }
 				}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 59 }
-				frame = 2
+				position = { x= -30 y = 80 }
+				frame = 3
 				}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 111 }
-				frame = 3
+				position = { x= -15 y = 122 }
+				frame = 4
 				}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 152 }
-				frame = 4
+				position = { x= -15 y = 154 }
+				frame = 5
 				}
 
 		}	
@@ -110,26 +162,31 @@ guiTypes = {
 				position = { x= 0 y = 7 }
 				}
 			iconType = {
+				name ="icon_age_of_feudalism"
+				spriteType = "GFX_icon_age_of_feudalism_g"
+				position = { x= -30 y = 18 }
+				}
+			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 50 }
 				}
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 100 }
-				frame = 3
+				position = { x= -30 y = 113 }
+				frame = 4
 				}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= -15 y = 63 }
+				position = { x= -15 y = 83 }
 				}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_s"
-				position = { x= -15 y = 152 }
-				frame = 4
+				position = { x= -15 y = 154 }
+				frame = 5
 				}
 		}		
 		
@@ -144,25 +201,30 @@ guiTypes = {
 				position = { x= 0 y = 7 }
 				}
 			iconType = {
+				name ="icon_age_of_feudalism"
+				spriteType = "GFX_icon_age_of_feudalism_g"
+				position = { x= -30 y = 18 }
+				}
+			iconType = {
 				name ="icon_age_of_discovery"
 				spriteType = "GFX_icon_age_of_discovery_g"
-				position = { x= -15 y = 22 }
+				position = { x= -15 y = 50 }
 				}
 			iconType = {
 				name ="icon_age_of_reformation"
 				spriteType = "GFX_icon_age_of_reformation_g"
-				position = { x= -15 y = 63 }
+				position = { x= -15 y = 83 }
 				}				
 			iconType = {
 				name ="icon_age_of_absolutism"
 				spriteType = "GFX_icon_age_of_absolutism_g"
-				position = { x= -15 y = 104 }
+				position = { x= -15 y = 116 }
 				}
 			iconType = {
 				name ="icon_age_of_revolutions"
 				spriteType = "GFX_icon_age_l"
-				position = { x= -30 y = 141 }
-				frame = 4
+				position = { x= -30 y = 142 }
+				frame = 5
 				}
 		}		
 		
@@ -243,11 +305,11 @@ guiTypes = {
 			
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = 100 y =175 } #y =180 Поднял, чтобы описание не налезало
+			position = { x = 100 y =180 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 480 #460 Увеличил ширину
+			maxWidth = 460
 			maxHeight = 50
 			format = left
 		}
