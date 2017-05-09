@@ -1005,7 +1005,7 @@ subjugate_novgorod = {
 		}
 	}
 	chance = {
-		factor = 3000 ###STT
+		factor = 2000 ###STT
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = NOV value = 0 } }
