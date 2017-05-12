@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 trade_goods = wool  
 base_manpower = 6
-capital = "Atemar"
+capital = "Атемар"
 is_city = yes
 add_core = GLH
 add_core = MOV
@@ -20,9 +20,9 @@ discovered_by = ottoman
 
 1444.11.11 = { owner = KAZ controller = KAZ add_core = KAZ } #vanilla date
 1552.10.2 = { owner = TSR controller = TSR add_core = TSR remove_core = KAZ } # Russian conquest of Kazan
-1641.1.1 = { religion = orthodox culture = russian capital = "Saransk" } # fortresses of Saransk and Penza founded
-1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 }
+1641.1.1 = { religion = orthodox culture = russian capital = "Саранск" } # fortresses of Saransk and Penza founded
+1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Степан Разин" } controller = REB unrest = 6 }
 1671.4.14 = { revolt = { } controller = TSR unrest = 0 } # Razin captured
 1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
-1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Емельян Пугачев" } controller = REB unrest = 6 } # Pugachev rebellion
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

@@ -2,7 +2,7 @@
 
 culture = aboriginal
 religion = animism
-capital = "Bundjalung"
+capital = "Бунджалгнг"
 trade_goods = unknown
 hre = no
 base_tax = 1
@@ -13,3 +13,13 @@ native_ferocity = 1
 native_hostileness = 2
 
 1770.1.1 = { discovered_by = GBR } # James Cook
+1804.1.1 = {
+	owner = GBR
+	controller = GBR
+	culture = english
+	religion = protestant
+	is_city = yes
+	trade_goods = coal
+	capital = "Ньюкасл"
+	add_core = GBR 
+}

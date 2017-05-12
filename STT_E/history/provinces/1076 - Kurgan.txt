@@ -2,7 +2,7 @@
 
 owner = GLH
 controller = GLH
-capital = "Kurgan"
+capital = "Курган"
 culture = siberian
 religion = sunni
 trade_goods = fur
@@ -32,6 +32,17 @@ unrest = 15
 	add_core = TSR
 	remove_core = SIB 
 } # Yermak Timofeevich
-1662.1.1 = { capital = "Tsaryovo Gorodische" culture = russian religion = orthodox }
-1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
-1782.1.1 = { capital = "Kurgan" }
+1662.1.1 = { 
+	capital = "Царево Городище" 
+	culture = russian 
+	religion = orthodox 
+}
+1721.11.2 = { 
+	owner = RUS 
+	controller = RUS 
+	add_core = RUS 
+	remove_core = TSR 
+} ## Potr I - imperator
+1782.1.1 = { capital = "Курган" }
+1790.1.1 = { trade_goods = coal }
+

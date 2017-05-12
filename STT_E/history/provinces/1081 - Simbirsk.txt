@@ -2,7 +2,7 @@
 
 owner = GLH
 controller = GLH
-capital = "Bolgar"
+capital = "Булгар"
 culture = kazani
 religion = sunni
 trade_goods = iron
@@ -28,10 +28,10 @@ discovered_by = ottoman
 1648.1.1 = {
 	culture = russian
 	religion = orthodox
-	capital = "Simbirsk" 
+	capital = "Симбирск" 
 } # Simbirsk founded as a strongpoint to defend Russia's southern front
-1670.3.1 = { revolt = { type = anti_tax_rebels size = 3 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+1670.3.1 = { revolt = { type = anti_tax_rebels size = 3 name = "Степан Разин" } controller = REB unrest = 6 } # Razin rebellion
 1671.4.14 = { revolt = { } controller = TSR unrest = 0 } # Razin captured
 1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
-1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Емельян Пугачев" } controller = REB unrest = 6 } # Pugachev rebellion
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

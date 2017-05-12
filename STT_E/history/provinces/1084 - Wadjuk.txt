@@ -2,7 +2,7 @@
 
 culture = aboriginal
 religion = animism
-capital = "Wadjuk"
+capital = "Ваджук"
 hre = no
 trade_goods = unknown
 base_manpower = 1
@@ -13,3 +13,15 @@ native_ferocity = 1
 native_hostileness = 9
 
 1619.1.10 = { discovered_by = NED } # Frederick de Houtman
+
+1829.6.12 = {
+	owner = GBR
+	controller = GBR
+	culture = english
+	religion = protestant
+	is_city = yes
+	trade_goods = naval_supplies
+	capital = "Перт"
+	add_core = GBR 
+}
+

@@ -32,8 +32,14 @@ discovered_by = ottoman
 } # Cisalpine Republic
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
+	owner = AEM
+	controller = AEM
+	add_core = AEM
 	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.6.9 = {
+	add_core = ITA
+	owner = ITA
+	controller = ITA
+	remove_core = AEM
+}

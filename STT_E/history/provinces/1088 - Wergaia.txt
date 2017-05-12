@@ -1,8 +1,8 @@
-#1088 - Wergaia
+#1088 - Swan Hill
 
 culture = aboriginal
 religion = animism
-capital = "Wergaia"
+capital = "Вергая"
 trade_goods = unknown
 hre = no
 base_tax = 1
@@ -11,3 +11,16 @@ base_manpower = 1
 native_size = 10
 native_ferocity = 7
 native_hostileness = 5
+
+1846.1.1 = {
+	discovered_by = GBR
+	owner = GBR
+	controller = GBR
+	culture = english
+	religion = protestant
+	is_city = yes
+	trade_goods = grain
+	capital = "Соун-Хилл"
+	add_core = GBR
+}
+
