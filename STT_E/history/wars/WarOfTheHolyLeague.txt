@@ -1,4 +1,4 @@
-name = "War of the Holy League"
+name = "Великая Турецкая война"
 
 war_goal = {
 	type = take_claim
@@ -12,6 +12,7 @@ war_goal = {
 	add_attacker = TRA
 	add_attacker = WAL
 	add_attacker = MOL
+	
 	add_defender = HAB
 	add_defender = PLC
 	add_defender = VEN
@@ -19,10 +20,10 @@ war_goal = {
 
 1683.9.12 = { 
 	battle = { 
-		name = "Vienna" 
+		name = "Битва при Вене" 
 		location = 134
 		attacker = { 
-			commander = "Merzifonlu Kara Mustafa Pasha"		# Merzifonlu Kara Mustafa Pasha
+			commander = "Мерзифонлу Кара Мустафа-паша"		# Merzifonlu Kara Mustafa Pasha
 			infantry = 75000
 			cavalry = 25000
 			artillery = 10
@@ -30,7 +31,7 @@ war_goal = {
 			country = TUR
 		} 
 		defender = { 
-			commander = "Jan III Sobieski"		# Jan III Sobieski
+			commander = "Ян III Собеский"		# Jan III Sobieski
 			infantry = 46000
 			cavalry = 28000
 			artillery = 10
@@ -48,10 +49,10 @@ war_goal = {
 
 1687.8.12 = {
 	battle = { 
-		name = "Mt. Harsan" 
+		name = "Битва при Мохаче" 
 		location = 153
 		attacker = { 
-			commander = "Muhammad IV"		# Muhammad IV
+			commander = "Сары Сулейман-паша"		# Muhammad IV
 			infantry = 38000
 			cavalry = 22000
 			artillery = 180
@@ -59,7 +60,7 @@ war_goal = {
 			country = TUR
 		} 
 		defender = { 
-			commander = "Charles V"		# Charles V
+			commander = "Карл V Лотарингский"		# Charles V
 			infantry = 33000
 			cavalry = 17000
 			artillery = 200
@@ -72,17 +73,17 @@ war_goal = {
 
 1691.8.19 = {
 	battle = { 
-		name = "Slankamen" 
+		name = "Битва при Сланкамене" 
 		location = 141
 		attacker = { 
-			commander = "Mustafa Kцprьlь"		# Mustafa Kцprьlь
+			commander = "Фазыл Мустафа-паша"		# Mustafa Kцprьlь
 			infantry = 26000
 			cavalry = 12000
 			losses = 25		# percent 
 			country = TUR
 		} 
 		defender = { 
-			commander = "Louis William"		# Louis William
+			commander = "Людвиг Вильгельм Баден-Баденский"		# Louis William
 			infantry = 14000
 			cavalry = 6000
 			losses = 15		# percent
@@ -97,7 +98,7 @@ war_goal = {
 		name = "Zenta" 
 		location = 141
 		attacker = { 
-			commander = "Mustafa II"		# Mustafa II
+			commander = "Мустафа II"		# Mustafa II
 			infantry = 52000
 			cavalry = 28000
 			artillery = 80
@@ -105,7 +106,7 @@ war_goal = {
 			country = TUR
 		} 
 		defender = { 
-			commander = "Francois Eugene of Savoy"		# Francois Eugene of Savoy
+			commander = "принц Евгений Савойский"		# Francois Eugene of Savoy
 			infantry = 35000
 			cavalry = 15000
 			artillery = 60
@@ -131,5 +132,6 @@ war_goal = {
 	rem_attacker = TRA
 	rem_attacker = WAL
 	rem_attacker = MOL
+	
 	rem_defender = TSR
 }

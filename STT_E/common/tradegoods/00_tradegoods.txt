@@ -1335,6 +1335,30 @@ tropical_wood = {
 }
 
 
+coal = {
+	color = { 0.1 0.1 0.1 }
+	modifier = {
+		production_efficiency = 0.10
+	}
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { is_year = 1720 }
+		}
+		modifier = {
+			factor = 1.5
+			is_random_new_world = yes
+			OR = {
+				has_terrain = mountain
+				has_terrain = hills
+				has_terrain = highlands
+			}
+			continent = new_world #Always in RNW
+		}
+	}
+}
+
 unknown = {
 	color = { 0.5 0.5 0.5 }
 }

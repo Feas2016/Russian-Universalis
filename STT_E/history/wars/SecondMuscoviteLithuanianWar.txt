@@ -8,9 +8,10 @@ war_goal = {
 1500.5.1 = {
 	add_attacker = MOS
 	add_attacker = CRI
+	add_attacker = TRU
+	
 	add_defender = LIT
 	add_defender = POL
-	add_attacker = TRU
 }
 
 1500.7.14 = {
@@ -37,6 +38,7 @@ war_goal = {
 
 1501.8.26 = {
 	add_defender = LVA
+	
 	add_attacker = PSK
 }
 
@@ -89,9 +91,10 @@ war_goal = {
 1503.3.25 = {
 	rem_attacker = MOS
 	rem_attacker = CRI
+	rem_attacker = TRU	
+	rem_attacker = PSK
+	
 	rem_defender = LIT
 	rem_defender = POL
-	rem_attacker = TRU
-	rem_defender = LVA
-	rem_attacker = PSK
+	rem_defender = LVA	
 }

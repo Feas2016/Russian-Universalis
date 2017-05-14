@@ -2,7 +2,7 @@
 
 owner = TEU
 controller = TEU
-capital = "Marienburg"
+capital = "Мариенбург"
 culture = prussian
 religion = catholic
 trade_goods = naval_supplies
@@ -51,3 +51,5 @@ discovered_by = ottoman
 	controller = PRU
 	remove_core = PLC
 } # First partition of Poland
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core = PRU }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB }

@@ -2,7 +2,7 @@
 
 owner = POL
 controller = POL
-capital = "Bydgoszcz"
+capital = "Будрожич"
 culture = kashubian
 religion = catholic
 trade_goods = grain
@@ -37,9 +37,12 @@ discovered_by = ottoman
 	controller = POL
 	add_core = POL
 	remove_core = PRU
+	remove_core = PLC
 } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
 1813.3.17 = { controller = PRU }
 1814.4.11 = {
 	owner = PRU
 	add_core = PRU
 } # Actually returned to Prussia after the Congress of Vienna
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core = PRU }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB }
