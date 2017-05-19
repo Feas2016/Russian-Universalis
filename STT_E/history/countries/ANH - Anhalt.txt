@@ -6,6 +6,152 @@ religion = catholic
 capital = 58	# Dessau
 fixed_capital = 58 # Cannot move capital away from this province & no power cost to move to it
 
+1298.1.1 = {
+	monarch = {
+		name = "Альберт I"
+		dynasty = "Аскания"
+		birth_date = 1261.1.1
+		death_date = 1316.8.17
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1302.1.1 = {
+	heir = {
+		name = "Альберт"
+		monarch_name = "Альберт II"
+		dynasty = "Аскания"
+		birth_date = 1302.1.1
+		death_date = 1362.7.17
+		claim = 85
+		adm = 3
+		dip = 3
+		mil = 0
+	}
+}
+
+1316.8.17 = {
+	monarch = {
+		name = "Альберт II"
+		dynasty = "Аскания"
+		birth_date = 1302.1.1
+		death_date = 1362.7.17
+		adm = 3
+		dip = 3
+		mil = 0
+	}
+}
+
+1345.1.1 = {
+	heir = {
+		name = "Альберт"
+		monarch_name = "Альберт III"
+		dynasty = "Аскания"
+		birth_date = 1341.1.1
+		death_date = 1359.8.2
+		claim = 85
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1359.8.2 = {
+	heir = {
+		name = "Иоганн"
+		monarch_name = "Иоганн II"
+		dynasty = "Аскания"
+		birth_date = 1345.1.1
+		death_date = 1382.4.11
+		claim = 90
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1362.7.17 = {
+	monarch = {
+		name = "Иоганн II"
+		dynasty = "Аскания"
+		birth_date = 1345.1.1
+		death_date = 1382.4.11		
+		adm = 2
+		dip = 0
+		mil = 1
+	}
+}
+
+1368.1.1 = {
+	heir = {
+		name = "Сигизмунд"
+		monarch_name = "Сигизмунд I"
+		dynasty = "Аскания"
+		birth_date = 1368.1.1
+		death_date = 1405.1.19
+		claim = 90
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1370.1.1 = {
+	heir = {
+		name = "Альберт"
+		monarch_name = "Альберт IV"
+		dynasty = "Аскания"
+		birth_date = 1370.1.1
+		death_date = 1396.1.1
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1382.4.11 = {
+	monarch = {
+		name = "Альберт IV"
+		dynasty = "Аскания"
+		birth_date = 1370.1.1
+		death_date = 1396.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1382.4.11 = {
+	heir = {
+		name = "Вальдемар"
+		monarch_name = "Вальдемар III"
+		dynasty = "Аскания"
+		birth_date = 1373.1.1
+		death_date = 1391.1.1
+		claim = 75
+		adm = 3
+		dip = 0
+		mil = 2
+	}
+}
+
+1391.1.1 = {
+	heir = {
+		name = "Сигизмунд"
+		monarch_name = "Сигизмунд I"
+		dynasty = "Аскания"
+		birth_date = 1368.1.1
+		death_date = 1405.1.19
+		claim = 90
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
 1396.1.1 = {
 	monarch = {
 		name = "Сигизмунд I"
@@ -75,7 +221,7 @@ fixed_capital = 58 # Cannot move capital away from this province & no power cost
 1504.9.4 = {
 	heir = {
 		name = "Иоганн"
-		monarch_name = "Иоганн II"
+		monarch_name = "Иоганн V"
 		dynasty = "Аскания"
 		birth_date = 1504.9.4
 		death_date = 1551.2.4
@@ -88,7 +234,7 @@ fixed_capital = 58 # Cannot move capital away from this province & no power cost
 
 1516.3.2 = {
 	monarch = {
-		name = "Иоганн II"
+		name = "Иоганн V"
 		dynasty = "Аскания"
 		birth_date = 1504.9.4
 		adm = 2
