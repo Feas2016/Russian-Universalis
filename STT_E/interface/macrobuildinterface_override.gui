@@ -275,7 +275,7 @@ guiTypes = {
 			position = {x = 152 y = 10 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 108
+			maxWidth = 150
 			maxHeight = 18
 		}
 
@@ -389,16 +389,16 @@ guiTypes = {
 		iconType = {
 			name ="bg"
 			spriteType = "onmap_builing_bg3"
-			position = { x= 232 y = 0 }
+			position = { x= 234 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "tax"
-			position = {x = 236 y = 8 }
+			position = {x = 241 y = 8 }
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 24
+			maxWidth = 22
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -408,7 +408,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "tax_button"
-			position = { x = 257 y = -2 }
+			position = { x = 260 y = -2 }
 			quadTextureSprite ="GFX_development_button_tax"
 			tooltip = ""
 			tooltipText =""
@@ -419,10 +419,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "production"
-			position = {x = 290 y = 8 }
+			position = {x = 293 y = 8 }
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 24
+			maxWidth = 22
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -432,7 +432,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "production_button"
-			position = { x = 311 y = -2 }
+			position = { x = 312 y = -2 }
 			quadTextureSprite ="GFX_development_button_production"
 			tooltip = ""
 			tooltipText =""
@@ -443,10 +443,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "manpower"
-			position = {x = 344 y = 8 }
+			position = {x = 345 y = 8 }
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 24
+			maxWidth = 22
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -543,7 +543,7 @@ guiTypes = {
 			maxWidth = 254
 			maxHeight = 18
 			format = center
-			allwaystransparent = yes
+#			allwaystransparent = yes
 		}		
 
 		guiButtonType =
@@ -588,7 +588,7 @@ guiTypes = {
 		hide_position = { x=-400 y = 150 }	
 		animation_type = "decelerated"
 		animation_time = 250	
-		size = { x=392 y = 568}
+		size = { x=510 y = 568}	#was x=392 y = 568
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -605,70 +605,70 @@ guiTypes = {
 
 		checkboxType = {
 			name = "land_units_button"
-			position = { x=420 y=58}
+			position = { x=484 y=58} #was x=420
 			quadTextureSprite ="GFX_build_interface_army_tab"
 			shortcut = "1"
 		}
 		
 		checkboxType = {
 			name = "navy_units_button"
-			position = { x=420 y=108}
+			position = { x=484 y=108} #was x=420
 			quadTextureSprite ="GFX_build_interface_navy_tab"
 			shortcut = "2"
 		}
 
 		checkboxType = {
 			name = "core_button"
-			position = { x=420 y=158}
+			position = { x=484 y=158} #was x=420
 			quadTextureSprite ="GFX_build_interface_core_tab"
 			shortcut = "3"
 		}
 		
 		checkboxType = {
 			name = "missionary_button"
-			position = { x=420 y=208}
+			position = { x=484 y=208} #was x=420
 			quadTextureSprite ="GFX_build_interface_missionary_tab"
 			shortcut = "4"
 		}
 		
 		checkboxType = {
 			name = "autonomy_button"
-			position = { x=420 y=258}
+			position = { x=483 y=258} #was x=420
 			quadTextureSprite ="GFX_build_interface_revolt_tab"
 			shortcut = "5"
 		}
 		
 		checkboxType = {
 			name = "culture_button"
-			position = { x=420 y=308}
+			position = { x=484 y=308} #was x=420
 			quadTextureSprite ="GFX_build_interface_culture_tab"
 			shortcut = "6"
 		}
 		
 		checkboxType = {
 			name = "buildings_button"
-			position = { x=420 y=358}
+			position = { x=484 y=358} #was x=420
 			quadTextureSprite ="GFX_build_interface_building_tab"
 			shortcut = "7"
 		}
 
 		checkboxType = {
 			name = "development_button"
-			position = { x=420 y=408}
+			position = { x=484 y=408} #was x=420
 			quadTextureSprite ="GFX_build_interface_development_tab"
 			shortcut = "8"
 		}
 
 		checkboxType = {
 			name = "estates_button"
-			position = { x=420 y=458}
+			position = { x=484 y=458} #was x=420
 			quadTextureSprite ="GFX_build_interface_estates_tab"
 			shortcut = "9"
 		}
 
 		checkboxType = {
 			name = "diplomacy_button"
-			position = { x=420 y=508 }
+			position = { x=484 y=508 }
 			quadTextureSprite ="GFX_build_interface_diplomacy_tab"
 			shortcut = "0"
 		}
@@ -677,21 +677,21 @@ guiTypes = {
 		{
 			name ="close_gold"
 			spriteType = "GFX_close_gold"
-			position = { x= 399 y = 11 }
+			position = { x= 463 y = 11 } #was x= 399
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 403 y = 14 }
+			position = { x = 467 y = 14 } #was x= 403
 			quadTextureSprite ="GFX_closebutton2"
 		}
 				
 		instantTextBoxType={
 			name = "macro_title"
-			position = {x = 68 y = 15 }
+			position = {x = 120 y = 15 } #was x= 68
 			font = "vic_22"
-			borderSize = {x = 0 y = 0}
+			borderSize = {x = 0 y = 0}	
 			maxWidth = 300
 			maxHeight = 18
 			text = "CV_BUILD_CORE"
@@ -716,7 +716,6 @@ guiTypes = {
 				buttonText = "NAME"
 				buttonFont = "vic_18"
 			}
-
 			guiButtonType = {
 				name = "development_button"
 				position = { x= 132 y = 9 }
@@ -724,7 +723,8 @@ guiTypes = {
 #				buttonText = "LEDGER_DEVELOPMENT"
 #				buttonFont = "vic_18"
 			}
-
+			
+			
 			guiButtonType = {
 				name = "overextension_button"
 				position = { x= 188 y = 9 }
@@ -732,7 +732,7 @@ guiTypes = {
 #				buttonText = "LEDGER_DEVELOPMENT"
 #				buttonFont = "vic_18"
 			}			
-
+			
 			guiButtonType = {
 				name = "cost_button"
 				position = { x= 244 y = 9 }
@@ -1020,7 +1020,7 @@ guiTypes = {
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
 			}
-
+			
 			guiButtonType = {
 				name = "cancel_button"
 				position = { x=100 y = 464 }
@@ -1031,7 +1031,7 @@ guiTypes = {
 				clicksound=click
 			}
 		}
-
+		
 		windowType = {
 			name = "building_province_list_header"
 			backGround=""
@@ -1227,7 +1227,7 @@ guiTypes = {
 				position = {x = 54 y = 473 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 208 # Увеличил на 60
+				maxWidth = 148
 				maxHeight = 18
 				text = "MACRO_BUILDR_INCL_TERRITORIES"
 				format = left
@@ -1300,43 +1300,43 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "alliances_button"
-				position = { x= 43 y = -6 }
+				position = { x= 52 y = -6 } #Was 43
 				quadTextureSprite = "GFX_macro_diplomacy_tab_alliance"
 				shortcut = "s"
 			}
 			guiButtonType = {
 				name = "influence_button"
-				position = { x= 94 y = -6 }
+				position = { x= 112 y = -6 } #was 94
 				quadTextureSprite ="GFX_macro_diplomacy_tab_influence"
 				shortcut = "d"
 			}
 			guiButtonType = {
 				name = "dynastic_button"
-				position = { x= 145 y = -6 }
+				position = { x= 172 y = -6 } #was 145
 				quadTextureSprite ="GFX_macro_diplomacy_tab_dynastic"
 				shortcut = "g"
 			}
 			guiButtonType = {
 				name = "economic_button"
-				position = { x= 196 y = -6 }
+				position = { x= 232 y = -6 } # was 196
 				quadTextureSprite ="GFX_macro_diplomacy_tab_economic"
 				shortcut = "z"
 			}
 			guiButtonType = {
 				name = "papal_button"
-				position = { x= 247 y = -6 }
+				position = { x= 292 y = -6 } #was 247
 				quadTextureSprite ="GFX_macro_diplomacy_tab_papal"
 				shortcut = "x"
 			}
 			guiButtonType = {
 				name = "hre_button"
-				position = { x= 298 y = -6 }
+				position = { x= 352 y = -6 } #was 298
 				quadTextureSprite ="GFX_macro_diplomacy_tab_hre"
 				shortcut = "c"
 			}
 			guiButtonType = {
 				name = "great_power_button"
-				position = { x= 349 y = -6 }
+				position = { x= 412 y = -6 } # was 349
 				quadTextureSprite ="GFX_macro_diplomacy_tab_great_power"
 				shortcut = "v"
 			}
@@ -2242,7 +2242,7 @@ guiTypes = {
 			name ="content_list"
 			position = { x = 5 y = 84 }
 			backGround=""
-			size = { x= 400 y = 426 }
+			size = { x= 460 y = 426 } # was x= 400
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
@@ -2252,10 +2252,10 @@ guiTypes = {
 		
 		instantTextBoxType={
 			name = "force_limit"
-			position = {x = 25 y = 526 }
+			position = {x = 25 y = 510 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 380
+			maxWidth = 180
 			maxHeight = 32
 			text = "Army force limit: xx/xx"
 		}

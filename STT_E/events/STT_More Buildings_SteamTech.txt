@@ -1,0 +1,133 @@
+namespace = steam_event
+
+country_event = { 
+    id = steam_event.1
+	title = "steam_event.EVTNAME1"
+	desc = "steam_event.EVTDESC1"
+    picture = STEAM_TECH_7_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "steam_event_idea_1"
+		trigger = { adm_power = 500 NOT = { has_country_flag = Idea_1 }  }
+		
+		add_country_modifier = {
+			name = steam_idea_1
+			duration = -1
+		}		
+		add_adm_power = -500		
+		set_country_flag = Idea_1 
+	}	
+	
+	option = {
+		name = "steam_event_idea_2"
+		trigger = { adm_power = 500 NOT = { has_country_flag = Idea_2 } has_country_flag = Idea_1  }
+		
+		add_country_modifier = {
+			name = steam_idea_2
+			duration = -1
+		}		
+		remove_country_modifier = steam_idea_1		
+		add_adm_power = -500		
+		set_country_flag = Idea_2 
+	}	
+	
+	option = {
+		name = "steam_event_idea_3"
+		trigger = { adm_power = 500 AND = { NOT = { has_country_flag = Idea_3 } has_country_flag = Idea_1 has_country_flag = Idea_2  }}
+		
+		add_country_modifier = {
+			name = steam_idea_3
+			duration = -1
+		}
+		
+		remove_country_modifier = steam_idea_2
+		
+		add_adm_power = -500
+		set_country_flag = railwaystrue
+		set_country_flag = Idea_3 
+	}	
+	
+	option = {
+		name = "steam_event_idea_4"
+		trigger = { mil_power = 500 AND = { NOT = { has_country_flag = Idea_4 } has_country_flag = Idea_1 has_country_flag = Idea_2 has_country_flag = Idea_3  }}
+		
+		add_country_modifier = {
+			name = steam_idea_4
+			duration = -1
+		}
+		
+		remove_country_modifier = steam_idea_3
+		
+		add_mil_power = -500
+		
+		set_country_flag = Idea_4
+	}	
+	
+	option = {
+		name = "steam_event_idea_5"
+		trigger = { dip_power = 500 AND = { NOT = { has_country_flag = Idea_5 } has_country_flag = Idea_1 has_country_flag = Idea_2 has_country_flag = Idea_3 has_country_flag = Idea_4  }}
+		
+		add_country_modifier = {
+			name = steam_idea_5
+			duration = -1
+		}
+		
+		remove_country_modifier = steam_idea_4
+		
+		add_dip_power = -500
+		
+		set_country_flag = Idea_5
+	}	
+	
+	option = {
+		name = "steam_event_idea_6"
+		trigger = { mil_power = 500 AND = { NOT = { has_country_flag = Idea_6 } has_country_flag = Idea_1 has_country_flag = Idea_2 has_country_flag = Idea_3 has_country_flag = Idea_4 has_country_flag = Idea_5  }}
+		
+		add_country_modifier = {
+			name = steam_idea_6
+			duration = -1
+		}
+		
+		remove_country_modifier = steam_idea_5
+		
+		add_mil_power = -500
+		
+		set_country_flag = Idea_6
+	}	
+	
+	option = {
+		name = "steam_event_idea_7"
+		trigger = { adm_power = 500 AND = { NOT = { has_country_flag = Idea_7 } has_country_flag = Idea_1 has_country_flag = Idea_2 has_country_flag = Idea_3 has_country_flag = Idea_4 has_country_flag = Idea_5 has_country_flag = Idea_6  }}
+		
+		add_country_modifier = {
+			name = steam_idea_7
+			duration = -1
+		}
+		
+		remove_country_modifier = steam_idea_6
+		
+		add_adm_power = -500
+		set_country_flag = factorytrue
+		set_country_flag = Idea_7
+	}	
+	
+	option = {
+		name = "steam_event_noclose"
+		trigger = { NOT = { OR = { adm_power = 500  dip_power = 500 mil_power = 500} } }
+		custom_tooltip = nopoints
+		highlight = yes
+	}	
+		
+	option = {
+		name = "steam_event_close"
+		trigger = { OR = { adm_power = 500 dip_power = 500 mil_power = 500 } }
+		highlight = yes
+	}	
+}
+
+
+
+
+

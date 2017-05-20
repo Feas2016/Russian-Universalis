@@ -20,6 +20,11 @@ NDefines.NCountry.RAZE_TECH_BASE_LEVEL = 18
 NDefines.NCountry.IDEA_TO_TECH = -0.004
 NDefines.NCountry.FREE_IDEA_GROUP_COST  = 7
 
+--  Marcin More Buildings	
+NDefines.NCountry.DEBT_LIMIT_ADM = -999						
+NDefines.NCountry.DEBT_LIMIT_DIP = -999							
+NDefines.NCountry.DEBT_LIMIT_MIL = -999		
+
 --NDefines.NCountry.ADVISOR_COST_INCREASE_PER_YEAR = 0.0005
 --NDefines.NCountry.MAX_TOLERANCE_HERETIC = 6
 --NDefines.NCountry.MAX_TOLERANCE_HEATHEN = 6

@@ -1,0 +1,60 @@
+#SerbiaGreeceTsardom
+
+government = feudal_monarchy
+government_rank = 3
+primary_culture = serbian
+add_accepted_culture = greek
+religion = orthodox
+technology_group = eastern
+capital = 3001	# Skopje
+historical_friend = BOS
+
+1346.4.16 = {
+	monarch = {
+		name = "Стефан Урош IV Душан"
+		dynasty = "Неманич"
+		birth_date = 1308.7.26
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1346.4.16 = {
+    queen = {
+        country_of_origin = BUL
+        name = "Елена Болгарская"
+        dynasty = "ди Кран"
+        birth_date = 1312.1.1
+        death_date = 1374.11.7
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 2
+    }
+}
+
+1346.4.16 = {
+	heir = {
+		name = "Стефан Урош"
+		monarch_name = "Стефан Урош V"
+		dynasty = "Неманич"
+		birth_date = 1336.9.1
+		death_date = 1371.12.2
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1355.12.20 = {
+	monarch = {
+		name = "Стефан Урош V"
+		dynasty = "Неманич"
+		birth_date = 1336.9.1
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}

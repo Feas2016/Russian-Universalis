@@ -1,6 +1,8 @@
 monarch_power = DIP
 
 # applied when a country is ahead of time in this technology
+
+
 ahead_of_time = {
 	trade_efficiency = 0.2
 	yearly_corruption = -0.05
@@ -14,6 +16,19 @@ technology = {
 	
 	range = 60
 	naval_morale = 0.2
+	
+	shipyard = yes	
+	dock = yes	
+	wharf = yes
+    customs_house = yes
+    spy_agency = yes	
+	trade_depot = yes 	
+	grand_shipyard = yes 
+    treasury_office = yes
+	drydock = yes 
+    stock_exchange = yes
+    naval_base = yes
+    naval_arsenal = yes
 }
 technology = {
 	# Tech 1
