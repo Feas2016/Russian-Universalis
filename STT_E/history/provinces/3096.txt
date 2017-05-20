@@ -1,6 +1,6 @@
 # - Buzau
 
-owner = BUl
+owner = BUL 
 controller = BUL 
 culture = moldavian
 religion = orthodox
@@ -22,7 +22,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1393.1.1 = { owner = TUR control = TUR add_core = TUR }
+1393.1.1 = { owner = TUR controller = TUR add_core = TUR }
 1593.1.1 = { unrest = 7 } # Wallachian rising, the Turks & Tatars are expelled
 1595.1.1 = { unrest = 0  } # The Turks take control of most of Wallachia again
 1650.1.1 = { revolt = { type = noble_rebels size = 1 } controller = REB } # Boyar rebellions

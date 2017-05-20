@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = rus_government
 government_rank = 1
 primary_culture = russian
 religion = orthodox
@@ -6,13 +6,47 @@ technology_group = eastern
 capital = 1754	# Murom
 fixed_capital = 1754 # Cannot move capital away from this province & no power cost to move to it
 
-1355.1.1 = { 
+1309.1.1 = { 
 	monarch = {
-		name = "Vladimir II"
-		dynasty = "Murometsk"
+		name = "Василий"
+		dynasty = "Муромский"
+		birth_date = 1290.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1345.1.1 = { 
+	monarch = {
+		name = "Юрий"
+		dynasty = "Муромский"
 		birth_date = 1320.1.1
 		adm = 3
 		dip = 2
 		mil = 4
 	}
 }
+
+1354.1.1 = { 
+	monarch = {
+		name = "Федор"
+		dynasty = "Муромский"
+		birth_date = 1330.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1375.1.1 = { 
+	monarch = {
+		name = "Владимир II"
+		dynasty = "Муромский"
+		birth_date = 1340.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
