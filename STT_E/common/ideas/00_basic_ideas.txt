@@ -482,6 +482,10 @@ exploration_ideas = {
 	category = DIP
 	important = yes
 
+	trigger = {
+		current_age = age_of_discovery
+	}
+	
 	bonus = {
 		cb_on_primitives = yes
 	}
