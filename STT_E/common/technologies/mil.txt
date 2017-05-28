@@ -2,102 +2,63 @@ monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
-
 # ahead_of_time = {
 # }
 
 # Pre-era techs
 technology = {
 	# Tech 0
-	year = 1110
+	year = 1210
 	
 	sprite_level = 1
-
-	infantry_fire		= 	0.25
-	infantry_shock 		= 	0.20	
-	cavalry_shock  		= 	0.8	
-	land_morale 		= 	2.0
 	
-	fort_15th = yes
-    armory = yes
-	regimental_camp = yes
-    barracks = yes
-	weapons = yes
-	fort_16th = yes
-    conscription_center = yes
-	training_fields = yes
-	fort_17th = yes
-    arsenal = yes 	
-	mint = yes
-	fort_18th	= yes
+	enable = western_medieval_knights
+	enable = eastern_knights
+	enable = indian_horsemen
+	enable = steppe_cavalry
+	enable = mongol_bow
+
+	infantry_fire		= 	0.1
+	infantry_shock 		= 	0.1	
+	cavalry_shock  		= 	0.5	
+	land_morale 		= 	1.0
 }
 
 technology = {
 	# Tech 1
-	year = 1160
+	year = 1240
 	
 	infantry_shock		= 	0.1
 	infantry_fire 		= 	0.1
 	
-	fort_15th = yes
-	
-	enable = south_american_spearmen
+	enable = south_american_spearmen	
+	enable = mesoamerican_spearmen	
 	enable = native_indian_archer
-	enable = native_clubmen
 	enable = african_spearmen
 	enable = african_clubmen
-	enable = indian_archers
-	enable = mesoamerican_spearmen
-	enable = halberd_infantry
-	enable = chevauchee
-	enable = western_medieval_knights
-	enable = bardiche_infantry
-	enable = muslim_cavalry_archers
-	enable = western_medieval_infantry
-	enable = eastern_medieval_infantry
-	enable = ottoman_yaya
-	enable = chinese_longspear
-	enable = japanese_archer
-	enable = persian_footsoldier
-	enable = east_asian_spearmen
-	enable = mongolian_bow	
-	enable = indian_footsoldier	
-	enable = rajput_hill_fighters	
-	enable = eastern_bow	
-	enable = persian_cavalry_charge
-	enable = african_mandelaku
-	enable = african_abyssinian_light_cavalry
-	enable = mongol_swarm
-	enable = mongol_steppe	
-	enable = mongol_bow	
-	enable = eastern_knights
-	enable = druzhina_cavalry	
-	enable = ottoman_musellem	
-	enable = mamluk_archer	
-	enable = mamluk_cavalry_charge	
-	enable = south_american_warfare	
-	enable = ha_xantican_warrior
 }
 
 technology = {
 	# Tech 2
-	year = 1210
+	year = 1270
 	
-	infantry_shock		= 	0.2
-	cavalry_shock		= 	0.2
+	combat_width = 1
 	
-	combat_width = 5
 }
 
 # The 30 big techs from here on
 
 technology = {
 	# Tech 3
-	year = 1260
+	year = 1300
 	
-	land_morale = 	0.8
-	infantry_shock		= 	0.4
-	cavalry_shock		= 	0.4
+	land_morale = 	0.3
+	
+	enable = eastern_pike
+	enable = western_pike
+	enable = ghazi_warriors
+	enable = ashigaru
+	enable = guandao
 }
 
 technology = {
@@ -106,69 +67,123 @@ technology = {
 	
 	infantry_shock		= 	0.1
 	cavalry_shock		= 	0.1
+	
 }
 technology = {
 	# Tech 5
 	year = 1325
 	
-	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.1
+	barracks = yes
+	
+	
+	enable = halberd_infantry
+	enable = bardiche_infantry
+	enable = western_medieval_infantry
+	enable = eastern_medieval_infantry
+	enable = persian_footsoldier
+	enable = indian_footsoldier	
+	enable = indian_archers
+	enable = chinese_longspear
+	enable = japanese_archer
 }
 technology = {
 	# Tech 6
 	year = 1340
 	
-	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.1
-	land_morale = 0.1
+	land_morale = 0.2
 }
 technology = {
 	# Tech 7
 	year = 1355
 	
-	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.1	
+	enable = late_eastern_knights
+	enable = late_western_knights
+	enable = muslim_cavalry_archers
+	enable = african_abyssinian_light_cavalry
+	enable = persian_cavalry_charge
+	enable = druzhina_cavalry
+	enable = chevauchee
 }
 technology = {
 	# Tech 8
 	year = 1370	
 	
-	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.1
+	military_tactics 	= 	0.25
+	
+	enable = bombard #Все
+	fort_15th = yes
+	
 }
 technology = {
 	# Tech 9
 	year = 1385
 	
-	infantry_shock		= 	0.1
-	cavalry_shock		= 	0.1
+	combat_width = 1
+	
+	enable = ottoman_yaya
+	enable = east_asian_spearmen
+	enable = rajput_hill_fighters	
+	enable = eastern_bow
+	enable = ottoman_musellem	
+	enable = mamluk_archer	
+	enable = mamluk_cavalry_charge	
+	enable = mongol_swarm
+	enable = late_mongol_bow
+	enable = mongol_steppe
 }
 technology = {
 	# Tech 10
 	year = 1400
 	
-	land_morale = 	0.5
-	military_tactics 	= 	0.25
+	infantry_shock		= 	0.2
+	cavalry_shock		= 	0.2
 }
+
 technology = {
 	# Tech 11
-	year = 1415
+	year = 1420
+	
+	combat_width = 5
+	
+	enable = culebrina #Все
+}
+
+# The 30 big techs from here on
+
+technology = {
+	# Tech 12
+	year = 1440
+	
+	land_morale = 	0.5
+}
+
+technology = {
+	# Tech 13
+	year = 1453
+	
+	#Pike Square
+	
+	military_tactics 	= 	0.25
+}
+
+technology = {
+	# Tech 14
+	year = 1466
 	
 	#Standardised Pikes
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
 	cavalry_shock		= 	0.2
 
-	enable = western_men_at_arms
-	enable = western_longbow
-	enable = gaelic_galloglaigh
-	enable = aztec_tribal_warfare
-	enable = zapotec_tribal_warfare
-	enable = songhai_tribal_warfare
-	enable = niger_kongolese_tribal_warfare	
-	enable = bantu_tribal_warfare
-	enable = mali_tribal_warfare
-	enable = pueblo_ambush
+	enable = western_men_at_arms		
+	enable = gaelic_galloglaigh				
+	enable = aztec_tribal_warfare	
+	enable = zapotec_tribal_warfare		
+	enable = songhai_tribal_warfare		
+	enable = niger_kongolese_tribal_warfare		
+	enable = bantu_tribal_warfare	
+	enable = mali_tribal_warfare	
+	enable = pueblo_ambush	
 	enable = native_indian_tribal_warfare
 	enable = algonkin_tomahawk_charge	
 	enable = indian_arquebusier	
@@ -184,18 +199,22 @@ technology = {
 	enable = japanese_footsoldier	
 	enable = ha_reformed_xantican_warrior
 	
-	combat_width = 2
+	enable = cannon #все
+	
 }
-technology = {
-	# Tech 12
-	year = 1430
 
+technology = {
+	# Tech 15
+	year = 1479
+	
 	#Arquebus
 	military_tactics 	= 	0.25
 	infantry_shock		= 	0.30
 	infantry_fire 		= 	0.20
-		
+	
+	
 	barracks = yes
+
 
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry
@@ -214,9 +233,10 @@ technology = {
 }
 
 technology = {
-	# Tech 13
-	year = 1445
+	# Tech 16
+	year = 1492
 	
+	#The limber
 	artillery_fire 		= 	1
 	artillery_shock 	=	0.05
 	military_tactics 	= 	0.25
@@ -225,18 +245,23 @@ technology = {
 }
 
 technology = {
-	# Tech 14
-	year = 1460
+	# Tech 17
+	year = 1505
 	
+	#Pike and Shot
 	infantry_fire		= 	0.25
 	cavalry_shock		=	0.8
+
 	
 	regimental_camp = yes
 }
 
 technology = {
-	# Tech 15
-	year = 1475
+	# Tech 18
+	
+	year = 1518
+	
+	#Ditch
 	
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
@@ -250,13 +275,14 @@ technology = {
 	enable = steppe_raiders
 	enable = ha_xiuhtecuhtli_soldier
 	military_tactics 	= 	0.25
-	combat_width = 1
+	combat_width = 1	
 }
 
 technology = {
-	# Tech 16
-	year = 1490
+	# Tech 19
+	year = 1531
 	
+	#Reiter
 	maneuver_value 		= 	0.25
 
 	enable = hungarian_hussar
@@ -283,21 +309,24 @@ technology = {
 }
 
 technology = {
-	# Tech 17
-	year = 1505
+	# Tech 20
+	year = 1544
 	
+	#Matchlock Musket
 	infantry_shock		= 	0.20
 	cavalry_fire		= 	0.5
+
 	
-	weapons = yes	
+	weapons = yes
+	
 	combat_width = 2
 }
-
+	
 technology = {
-	# Tech 18
+	# Tech 21
+	year = 1557
 	
-	year = 1520
-	
+	#Spanish Square
 	sprite_level = 2
 	
 	supply_limit 		= 	0.5
@@ -317,13 +346,14 @@ technology = {
 	enable = african_hill_warfare	
 	enable = ethiopian_mountain_warfare		
 	enable = steppe_footmen
-	enable = ha_xiuhtecuhtlian_infantry	
+	enable = ha_xiuhtecuhtlian_infantry
 }
 
 technology = {
-	# Tech 19
-	year = 1535
+	# Tech 22
+	year = 1570
 	
+	#Trunnions
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	0.4
 	
@@ -332,9 +362,10 @@ technology = {
 }
 
 technology = {
-	# Tech 20
-	year = 1550
+	# Tech 23
+	year = 1583
 	
+	#Star Bastions
 	fort_16th = yes
 	infantry_fire		=	0.3
 	
@@ -360,13 +391,16 @@ technology = {
 	
 	combat_width = 2
 }
-	
+
 technology = {
-	# Tech 21
-	year = 1565
+	# Tech 24
+	year = 1596
 	
+	#Maurician Infantry
 	land_morale 		=	1.0
 	military_tactics	=	0.25
+	
+
 	
 	enable = irish_charge 
 	enable = dutch_maurician	
@@ -382,20 +416,24 @@ technology = {
 }
 
 technology = {
-	# Tech 22
-	year = 1580
+	# Tech 25
+	year = 1609
 	
+	#Standardisation of Calibre
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	1.0	
 
-	training_fields = yes	
-	combat_width = 1	
+
+	training_fields = yes
+	
+	combat_width = 1
+	
 	enable = chambered_demi_cannon
 }
 
 technology = {
-	# Tech 23
-	year = 1595
+	# Tech 26
+	year = 1622
 	
 	cavalry_shock		=	1.0
 	supply_limit		= 	0.5	
@@ -406,11 +444,13 @@ technology = {
 }
 
 technology = {
-	# Tech 24
-	year = 1610
+	# Tech 27
+	year = 1635
 	
+	#Carbine
 	maneuver_value 		= 	0.25
 
+		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
 	enable = bhonsle_infantry	
@@ -425,16 +465,15 @@ technology = {
 }
 
 technology = {
-	# Tech 25
-	year = 1625
-	
-	sprite_level = 3
+	# Tech 28
+	year = 1648
 	
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
 	supply_limit		=	0.5
 
 	fort_17th = yes
+
 	
 	enable = austrian_tercio   
 	enable = swedish_gustavian		
@@ -455,21 +494,54 @@ technology = {
 }
 
 technology = {
-	# Tech 26
-	year = 1640
+	# Tech 29
+	year = 1661
+	
+	#Killing Grounds
 	
 	infantry_fire		= 	0.5
-	enable = swivel_cannon
+		
+	enable = swivel_cannon		
+
 	combat_width = 2
-	
-	enable = polish_winged_hussar
-	enable = muscovite_cossack
-	enable = coehorn_mortar	
 }
 
 technology = {
-	# Tech 27
-	year = 1655
+	# Tech 30
+	year = 1674
+	
+	#Line Infantry
+	sprite_level = 3
+	military_tactics 	= 	0.25
+	
+	infantry_shock 		=	0.5
+}
+
+technology = {
+	# Tech 31
+	year = 1687
+	
+	#Cartridge	(1620)?)
+	cavalry_fire		=	0.5
+	artillery_shock 	=	0.1
+	artillery_fire		=	2.0
+	
+	combat_width = 2
+	
+	conscription_center = yes
+
+	
+	enable = polish_winged_hussar	
+	enable = muscovite_cossack	
+
+	enable = coehorn_mortar		
+}
+
+technology = {
+	# Tech 32
+	year = 1700
+	
+	#Light Cavalry
 	
 	cavalry_shock		=	1.0
 	military_tactics 	= 	0.25
@@ -497,32 +569,26 @@ technology = {
 	enable = indian_shock_cavalry	
 	enable = chinese_dragoon	
 	enable = russian_petrine	
-	enable = steppe_cavalry
 	enable = ha_foreign_influenced_infantry
 	enable = high_american_dragoon
 }
 
 technology = {
-	# Tech 28
-	year = 1670
+	# Tech 33
+	year = 1713
 	
-	fort_18th	= yes
-	cavalry_fire		=	0.5
-	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
-	
-	combat_width = 2
+	#Covered Way
+	fort_18th	= yes	
 	military_tactics 	= 	0.25
-	conscription_center = yes
+
+	combat_width = 2
 }
 
 technology = {
-	# Tech 29
-	year = 1685
+	# Tech 34
+	year = 1726
 	
-	military_tactics 	= 	0.25	
-	infantry_shock 		=	0.5
-	combat_width = 2
+	#Metallurgy
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
@@ -530,13 +596,22 @@ technology = {
 }
 
 technology = {
-	# Tech 30
-	year = 1700	
+	# Tech 35
+	year = 1739
 	
+	#Light Infantry Companies
 	sprite_level = 4
 
 	land_morale			=	1.0
+	combat_width = 2
+}
 
+technology = {
+	# Tech 36
+	year = 1752
+	
+	#Bayonet
+	
 	enable = austrian_white_coat	
 	enable = french_bluecoat	
 	enable = british_redcoat	
@@ -564,25 +639,24 @@ technology = {
 	enable = eastern_skirmisher
 	enable = steppe_rifles
 	enable = ha_reformed_influenced_infantry
-	
-	combat_width = 2
-}
-
-technology = {
-	# Tech 31
-	year = 1715
-	
 	supply_limit		=	0.5
 	infantry_fire		= 	0.5	
 }
 
 technology = {
-	# Tech 32
-	year = 1730
+	# Tech 37
+	year = 1765
 	
+	#Cuirassier
 	maneuver_value 		= 	0.25
 	infantry_shock		=	0.5	
+}
+
+technology = {
+	# Tech 38
+	year = 1778
 	
+	#Defense in Depth
 	enable = african_cuirassier
 	enable = russian_cuirassier	
 	enable = russian_cossack
@@ -599,21 +673,24 @@ technology = {
 	enable = reformed_asian_cavalry		
 	enable = french_impulse
 	enable = british_square
-	enable = steppe_uhlans
+	enable = steppe_uhlans 
 }
 
-
 technology = {
-	# Tech 33
-	year = 1745
+	# Tech 39
+	year = 1791
 	
+	#
+	land_morale			=	0.5
+	military_tactics 	= 	0.25
 	enable = flying_battery  
 }
 
 technology = {
-	# Tech 34
-	year = 1760
+	# Tech 40
+	year = 1804
 	
+	#Impulse Warfare
 	sprite_level = 5	
 	
 	military_tactics	=	0.25
@@ -637,108 +714,121 @@ technology = {
 }
 
 technology = {
-	# Tech 35
-	year = 1775
+	# Tech 41
+	year = 1817
 	
+	#Rifle
 	cavalry_shock		=	1.0
 	infantry_fire		=	1.0
 	supply_limit		=	0.5
 }
 
 technology = {
-	# Tech 36
-	year = 1790
+	# Tech 42
+	year = 1827
 	
+	#Field Howitzer
 	military_tactics	=	0.25
 	artillery_shock		=	0.1
-	artillery_fire		=	2.0
-	supply_limit		=	0.5
+	artillery_fire		=	2.0	
+}
+
+technology = {
+	# Tech 43
+	year = 1837
+	#vulcanization
+	supply_limit		=	0.6
+	military_tactics 	= 	0.25
+	land_morale = 	0.5
+}
 	
-	enable = field_howitzer
+technology = {
+	# Tech 44
+	year = 1847
+	#revolver
+	infantry_fire		=	1.0
+	maneuver_value 		= 	0.5
+	cavalry_shock		=	1.0
+	cavalry_fire		= 	0.5
+	combat_width = 1
+	
 	enable = percussion_cap_musket
 }
-
-technology = {
-	# Tech 37
-	year = 1805
 	
-	military_tactics	=	0.25
-	land_morale			=	1.0
-	maneuver_value = 0.25	
-}
-
 technology = {
-	# Tech 38
-	year = 1820
-	
-	infantry_fire		= 	0.5
-	supply_limit		=	0.2
-	land_morale			=	1.0
+	# Tech 45
+	year = 1857
+	#magazine rifle
+	artillery_shock		=	0.1
+	artillery_fire		=	2.0	
+	infantry_shock		=	0.3
+	infantry_fire		=	2.0
+	combat_width = 2
 	
 	enable = armstrong_gun
-	enable = chassepot_rifle
-	enable = lever_action_rifle
 }
 
 technology = {
-	# Tech 39
-	year = 1835
+	# Tech 46
+	year = 1867
+	#track vehicle
+	supply_limit		=	0.8
+	maneuver_value = 0.5
 	
-	infantry_fire		=	0.5
-	supply_limit		=	0.2
-	land_morale			=	1.0
-	
+	enable = needle_gun
+	enable = chassepot_rifle
+	enable = lever_action_rifle
 	enable = modern_cavalry
 }
 technology = {
-	# Tech 40
-	year = 1850
+	# Tech 47
+	year = 1877
+	#machine gun
+	infantry_fire		=	3.0
+	artillery_fire		=	2.0	
 	
-	infantry_fire		=	1.0
-	supply_limit		=	0.2
-	artillery_shock		=	0.1
-	artillery_fire		=	2.0
-	cavalry_fire		=	2.0
-}
-technology = {
-	# Tech 41
-	year = 1865
-
-	infantry_fire		=	1.0
-	supply_limit		=	0.2
-	maneuver_value = 0.25
-	cavalry_fire		=	2.0
-	
-	enable = big_power_gun
 	enable = bolt_action_rifle
 }
 technology = {
-	# Tech 42
-	year = 1880
+	# Tech 48
+	year = 1887
+	#diesel
+	infantry_shock		=	0.5
+	infantry_fire		=	2.0
+	cavalry_shock		=	1.0
+	cavalry_fire		= 	0.5
 	
-	infantry_fire		=	1.0
-	supply_limit		=	0.2
-	maneuver_value = 0.25
-	cavalry_fire		=	2.0
-	
-	enable = fiat3000
-}
-technology = {
-	# Tech 43
-	year = 1895
-	
-	infantry_fire		=	1.0
-	supply_limit		=	0.2
-	maneuver_value = 0.25
-	cavalry_fire		=	2.0
-}
-technology = {
-	# Tech 44
-	year = 1910
-	
-	infantry_fire		=	1.0
-	supply_limit		=	0.2
-	maneuver_value = 0.25
-	cavalry_fire		=	2.0
+	enable = french_75
 }
 
+technology = {
+	# Tech 49
+	year = 1897
+	#duraluminum
+	supply_limit		=	0.6
+	military_tactics 	= 	0.30
+	
+	enable = machine_gun
+}
+
+technology = {
+	# Tech 50
+	year = 1907
+	#trench war
+	artillery_shock		=	0.2
+	infantry_fire		=	2.0
+	maneuver_value = 0.25
+}
+
+technology = {
+	# Tech 51
+	year = 1917
+	#tank
+	artillery_fire		=	2.0
+	land_morale			=	1.0
+	combat_width = 2	
+	
+	enable = mark_heavy_tank
+	enable = renault_light_tank
+	enable = fiat3000
+}

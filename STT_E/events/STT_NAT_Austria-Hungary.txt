@@ -1,9 +1,9 @@
-namespace = STT_NAT_Austria-Hungary.
+namespace = STT_NAT_Austria_Hungary
 
 country_event = {
-	id = STT_NAT_Austria-Hungary.1
-	title = "STT_NAT_Austria-Hungary.n.1"
-	desc = "STT_NAT_Austria-Hungary.de.1"
+	id = STT_NAT_Austria_Hungary.1
+	title = "STT_NAT_Austria_Hungary.n.1"
+	desc = "STT_NAT_Austria_Hungary.de.1"
 	picture = AUSHUNG_eventPicture
 	
 	fire_only_once = yes
@@ -44,7 +44,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "STT_NAT_Austria-Hungary.a.1"
+		name = "STT_NAT_Austria_Hungary.a.1"
 		add_stability = 1
 		add_prestige = -50
 		change_tag = DUA
@@ -64,7 +64,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "STT_NAT_Austria-Hungary.b.1"
+		name = "STT_NAT_Austria_Hungary.b.1"
 		add_stability = -1
 		add_legitimacy = -25
 		every_owned_province = {
@@ -87,9 +87,9 @@ country_event = {
 }
 
 country_event = {
-	id = STT_NAT_Austria-Hungary.2
-	title = "STT_NAT_Austria-Hungary.n.2"
-	desc = "STT_NAT_Austria-Hungary.de.2"
+	id = STT_NAT_Austria_Hungary.2
+	title = "STT_NAT_Austria_Hungary.n.2"
+	desc = "STT_NAT_Austria_Hungary.de.2"
 	picture = AUSHUNG_eventPicture
 	
 	fire_only_once = yes
@@ -107,7 +107,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "STT_NAT_Austria-Hungary.a.1"
+		name = "STT_NAT_Austria_Hungary.a.1"
 		add_stability = 1
 		add_legitimacy = 15
 		change_tag = AEM
