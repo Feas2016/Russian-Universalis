@@ -1,7 +1,7 @@
 #3189 - Toropets
 
-owner = SMO
-controller = SMO
+owner = TOR
+controller = TOR
 culture = novgorodian
 religion = orthodox
 hre = no
@@ -11,17 +11,12 @@ trade_goods = fur
 base_manpower = 1
 capital = "Toropets"
 is_city = yes
-add_core = SMO
+add_core = TOR
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1444.1.1 = {
-	owner = LIT
-	controller = LIT 
-	add_core = LIT
-	add_core = NOV
-}
+1404.1.1 = { owner = LIT controller = LIT add_core = LIT }
 1503.4.1 = {
 	owner = MOS
 	controller = MOS

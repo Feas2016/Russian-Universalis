@@ -1,8 +1,9 @@
 #2446 - Chara
 
-owner = BRT
-controller = BRT
+owner = YUA
+controller = YUA
 add_core = BRT
+add_core = YUA
 culture = buryat
 religion = tengri_pagan_reformed
 capital = "Chara"
@@ -17,6 +18,12 @@ native_hostileness = 3
 is_city = yes
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = BRT add_core = BRT controller = BRT }
 1635.1.1 = {
 	discovered_by = TSR
 	owner = TSR

@@ -31,6 +31,13 @@ add_permanent_province_modifier = {
 
 1335.1.1 = { owner = JAL controller = JAL add_core = JAL }
 1393.1.1 = { owner = TIM add_core = TIM controller = TIM }
+1411.1.1 = {
+	owner = QAR
+	controller = QAR
+	add_core = QAR
+	remove_core = TIM
+}
+1450.1.1 = { owner = QAR add_core = QAR controller = QAR }
 1469.2.4 = {
 	owner = AKK
 	controller = AKK

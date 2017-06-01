@@ -1,7 +1,7 @@
 #2424 - Przemysl
 
-owner = VOL
-controller = VOL
+owner = HEM
+controller = HEM
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -11,17 +11,14 @@ trade_goods = grain
 base_manpower = 1
 capital = "Chelm"
 is_city = yes
-add_core = VOL
+add_core = HEM
 discovered_by = eastern
 discovered_by = western
 discovered_by = ottoman
 discovered_by = muslim
 
-1444.1.1 = {
-	owner = POL
-	controller = POL
-	add_core = POL
-}
+1340.1.1 = { owner = LIT add_core = LIT controller = LIT }
+1377.1.1 = { owner = POL controller = POL add_core = POL }
 1492.1.1 = { unrest = 0 } 
 1569.7.1 = {
 	owner = PLC

@@ -1,7 +1,7 @@
 #3194 - Trubetsk
 
-owner = TRU
-controller = TRU
+owner = BRY
+controller = BRY
 culture = russian
 religion = orthodox
 hre = no
@@ -11,11 +11,12 @@ trade_goods = grain
 base_manpower = 2
 capital = "Trubetsk"
 is_city = yes
-add_core = TRU
+add_core = BRY
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+1356.1.1 = { owner = LIT add_core = LIT controller = LIT }
 1450.1.1 = { discovered_by = SIB }
 1566.1.1 = { owner = TSR controller = TSR add_core = TSR remove_core = TRU }
 1598.1.7 = { unrest = 5 } # "Time of troubles"

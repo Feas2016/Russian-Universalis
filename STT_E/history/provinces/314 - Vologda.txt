@@ -1,7 +1,7 @@
 #314 - Vologda
 
-owner = GLC
-controller = GLC
+owner = NOV
+controller = NOV
 culture = novgorodian
 religion = orthodox
 hre = no
@@ -11,12 +11,12 @@ trade_goods = iron
 base_manpower = 2
 capital = "Vologda"
 is_city = yes
-add_core = GLC
+add_core = NOV
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1444.11.11 = { owner = MOS controller = MOS add_core = MOS add_core = NOV} #vanilla date
+1368.11.11 = { owner = MOS controller = MOS add_core = MOS add_core = NOV } #vanilla date
 1478.1.15 = { remove_core = NOV } # Novgorod conquered
 1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
 1598.1.7 = { unrest = 5 } # "Time of troubles"

@@ -1,7 +1,7 @@
 #Belz
 
-owner = VOL
-controller = VOL
+owner = BLZ
+controller = BLZ
 capital= "Belz"
 culture = ruthenian
 religion = orthodox
@@ -11,17 +11,13 @@ base_tax = 4
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = VOL
+add_core = BLZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1444.1.1 = {
-	owner = MAZ
-	controller = MAZ
-	add_core = MAZ
-}
+1340.1.1 = { owner = LIT add_core = LIT controller = LIT }
 1462.7.1 = { owner = POL controller = POL add_core = POL remove_core = MAZ } # Belz incorporated into Poland
 1569.7.1 = {
 	owner = PLC

@@ -6,11 +6,197 @@ religion = orthodox
 technology_group = eastern
 capital = 161 # Tоrgoviste
 
-
-1386.1.1 = {
+1241.1.1 = {
 	monarch = {
-		name = "Мирча I"
+		name = "Миселав"
+		dynasty = "Арджешин"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1247.1.1 = {
+	monarch = {
+		name = "Сенеслау"
+		dynasty = "Арджешин"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1272.1.1 = {
+	monarch = {
+		name = "Литовой"
+		dynasty = "Арджешин"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1279.1.1 = {
+	monarch = {
+		name = "Бербат"
+		dynasty = "Арджешин"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1290.1.1 = {
+	monarch = {
+		name = "Раду Негру"
+		dynasty = "Арджешин"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1300.1.1 = {
+	monarch = {
+		name = "Токомерий"
+		dynasty = "Арджешин"
+		birth_date = 1270.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1309.1.1 = {
+	heir = {
+		name = "Басараб"
+		monarch_name = "Басараб I Основатель"
 		dynasty = "Басараб"
+		birth_date = 1309.1.1
+		death_date = 1352.1.1
+		claim = 95
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1310.1.1 = {
+	monarch = {
+		name = "Басараб I Основатель"
+		dynasty = "Басараб"
+		birth_date = 1310.1.1
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1330.1.1 = {
+	heir = {
+		name = "Николае Александру"
+		monarch_name = "Николае I Александру"
+		dynasty = "Басараб"
+		birth_date = 1330.1.1
+		death_date = 1364.11.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1352.1.1 = {
+	monarch = {
+		name = "Николае I Александру"
+		dynasty = "Басараб"
+		birth_date = 1330.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1352.1.1 = {
+	heir = {
+		name = "Влайку"
+		monarch_name = "Владислав I"
+		dynasty = "Басараб"
+		birth_date = 1325.1.1
+		death_date = 1377.1.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+1364.11.16 = {
+	monarch = {
+		name = "Владислав I"
+		dynasty = "Басараб"
+		birth_date = 1346.1.1
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+1364.11.16 = {
+	heir = {
+		name = "Раду"
+		monarch_name = "Раду I"
+		dynasty = "Басараб"
+		birth_date = 1330.1.1
+		death_date = 1383.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 1
+	}
+}
+
+1377.1.1 = {
+	monarch = {
+		name = "Раду I"
+		dynasty = "Басараб"
+		birth_date = 1330.1.1
+		adm = 4
+		dip = 4
+		mil = 1
+	}
+}
+
+1377.1.1 = {
+	heir = {
+		name = "Дан"
+		monarch_name = "Дан I"
+		dynasty = "Данешти"
+		birth_date = 1354.1.1
+		death_date = 1386.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1383.1.1 = {
+	monarch = {
+		name = "Дан I"
+		dynasty = "Данешти"
+		birth_date = 1354.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1386.9.23 = {
+	monarch = {
+		name = "Мирча I Старый"
+		dynasty = "Басараб"
+		birth_date = 1355.1.1
 		adm = 2
 		dip = 2
 		mil = 1
@@ -33,7 +219,7 @@ capital = 161 # Tоrgoviste
 
 1408.1.1 = {
 	monarch = {
-		name = "Михай I"
+		name = "Михаил I"
 		dynasty = "Басараб"
 		birth_date = 1390.1.1
 		adm = 1
@@ -45,7 +231,7 @@ capital = 161 # Tоrgoviste
 1408.1.1 = {
 	heir = {
 		name = "Раду"
-		monarch_name = "Раду II"
+		monarch_name = "Раду II Праснаглава"
 		dynasty = "Басараб"
 		birth_date = 1400.1.1
 		death_date = 1427.1.1
@@ -56,9 +242,9 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1420.1.1 = {
+1420.8.1 = {
 	monarch = {
-		name = "Раду II"
+		name = "Раду II Праснаглава"
 		dynasty = "Басараб"
 		birth_date = 1400.1.1
 		adm = 0
@@ -67,20 +253,87 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1422.1.1 = {
+1422.3.1 = {
 	monarch = {
 		name = "Дан II"
 		dynasty = "Данешти"
+		birth_date = 1400.1.1
 		adm = 2
 		dip = 1
 		mil = 1
 	}
 }
 
-1431.1.1 = {
+1423.6.1 = {
 	monarch = {
-		name = "Александр I"
-		dynasty = "Алдея"
+		name = "Раду II Праснаглава"
+		dynasty = "Басараб"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 3
+		mil = 0
+	}
+}
+
+1423.9.1 = {
+	monarch = {
+		name = "Дан II"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1424.9.1 = {
+	monarch = {
+		name = "Раду II Праснаглава"
+		dynasty = "Басараб"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 3
+		mil = 0
+	}
+}
+
+1424.11.1 = {
+	monarch = {
+		name = "Дан II"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1427.1.1 = {
+	monarch = {
+		name = "Раду II Праснаглава"
+		dynasty = "Басараб"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 3
+		mil = 0
+	}
+}
+
+1427.3.1 = {
+	monarch = {
+		name = "Дан II"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1431.2.1 = {
+	monarch = {
+		name = "Александр I Алдя"
+		dynasty = "Басараб"
 		birth_date = 1397.1.1
 		adm = 3
 		dip = 4
@@ -90,7 +343,7 @@ capital = 161 # Tоrgoviste
 
 1436.12.1 = {
 	monarch = {
-		name = "Влад II"
+		name = "Влад II Дракул"
 		dynasty = "Дракулешти"
 		birth_date = 1390.1.1
 		adm = 2
@@ -104,7 +357,8 @@ capital = 161 # Tоrgoviste
 1442.1.1 = {
 	monarch = {
 		name = "Мирча II"
-		dynasty = "Данешти"
+		dynasty = "Дракулешти"
+		birth_date = 1422.1.1
 		adm = 2
 		dip = 1
 		mil = 2
@@ -115,6 +369,7 @@ capital = 161 # Tоrgoviste
 	monarch = {
 		name = "Басараб II"
 		dynasty = "Данешти"
+		birth_date = 1423.1.1
 		adm = 4
 		dip = 1
 		mil = 2
@@ -123,12 +378,13 @@ capital = 161 # Tоrgoviste
 
 1443.1.1 = {
 	monarch = {
-		name = "Влад II"
+		name = "Влад II Дракул"
 		dynasty = "Дракулешти"
 		birth_date = 1390.1.1
 		adm = 2
 		dip = 1
 		mil = 1
+		leader = { name = "Влад II"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -136,9 +392,9 @@ capital = 161 # Tоrgoviste
 	heir = {
 		name = "Мирча"
 		monarch_name = "Мирча II"
-		dynasty = "Басараб"
+		dynasty = "Дракулешти"
 		birth_date = 1428.1.1
-		death_date = 1447.1.1 #Buried Alive
+		death_date = 1447.1.1
 		claim = 95
 		adm = 2
 		dip = 1
@@ -146,17 +402,18 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1447.1.1 = {
+1447.12.2 = {
 	monarch = {
 		name = "Владислав II"
 		dynasty = "Данешти"
+		birth_date = 1420.1.1
 		adm = 3
 		dip = 1
 		mil = 2
 	}
 }
 
-1456.4.1 = {
+1448.10.1 = {
 	monarch = {
 		name = "Влад III Цепеш"
 		dynasty = "Дракулешти"
@@ -164,14 +421,104 @@ capital = 161 # Tоrgoviste
 		adm = 1
 		dip = 0
 		mil = 5
-		leader = { name = "Влад III Цепеш"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
+		leader = { name = "Влад Дракула"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
 	}
 }
 
-1462.11.1 = {
+1448.12.1 = {
+	monarch = {
+		name = "Владислав II"
+		dynasty = "Данешти"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1456.8.20 = {
+	monarch = {
+		name = "Влад III Цепеш"
+		dynasty = "Дракулешти"
+		birth_date = 1431.11.1
+		adm = 1
+		dip = 0
+		mil = 5
+		leader = { name = "Влад Дракула"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1462.12.1 = {
 	monarch = {
 		name = "Раду III Красивый"
 		dynasty = "Дракулешти"
+		birth_date = 1438.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1473.11.1 = {
+	monarch = {
+		name = "Басараб III Старый"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1473.12.1 = {
+	monarch = {
+		name = "Раду III Красивый"
+		dynasty = "Дракулешти"
+		birth_date = 1438.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1474.3.1 = {
+	monarch = {
+		name = "Басараб III Старый"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1474.5.1 = {
+	monarch = {
+		name = "Раду III Красивый"
+		dynasty = "Дракулешти"
+		birth_date = 1438.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1474.9.1 = {
+	monarch = {
+		name = "Басараб III Старый"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1474.10.1 = {
+	monarch = {
+		name = "Раду III Красивый"
+		dynasty = "Дракулешти"
+		birth_date = 1438.1.1
 		adm = 1
 		dip = 1
 		mil = 0
@@ -180,8 +527,32 @@ capital = 161 # Tоrgoviste
 
 1475.1.1 = {
 	monarch = {
-		name = "Басараб II Старый"
+		name = "Басараб III Старый"
 		dynasty = "Данешти"
+		birth_date = 1400.1.1
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1476.11.26 = {
+	monarch = {
+		name = "Влад III Цепеш"
+		dynasty = "Дракулешти"
+		birth_date = 1431.11.1
+		adm = 1
+		dip = 0
+		mil = 5
+		leader = { name = "Влад Дракула"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
+	}
+}
+
+1476.12.15 = {
+	monarch = {
+		name = "Басараб III Старый"
+		dynasty = "Данешти"
+		birth_date = 1400.1.1
 		adm = 0
 		dip = 0
 		mil = 0
@@ -190,17 +561,18 @@ capital = 161 # Tоrgoviste
 
 1477.11.1 = {
 	monarch = {
-		name = "Басараб III Молодой"
+		name = "Басараб IV Цепелюш Тынэр"
 		dynasty = "Данешти"
+		birth_date = 1450.1.1
 		adm = 1
 		dip = 0
 		mil = 1
 	}
 }
 
-1482.3.1 = {
+1481.9.1 = {
 	monarch = {
-		name = "Влад IV Монах"
+		name = "Влад IV Калугарул"
 		dynasty = "Дракулешти"
 		birth_date = 1425.1.1
 		adm = 3
@@ -209,7 +581,29 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1495.9.17 = {
+1481.11.1 = {
+	monarch = {
+		name = "Басараб IV Цепелюш Тынэр"
+		dynasty = "Данешти"
+		birth_date = 1450.1.1
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1482.4.1 = {
+	monarch = {
+		name = "Влад IV Калугарул"
+		dynasty = "Дракулешти"
+		birth_date = 1425.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1495.11.1 = {
 	monarch = {
 		name = "Раду IV Великий"
 		dynasty = "Дракулешти"
@@ -220,29 +614,250 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1509.4.2 = {
+1508.4.1 = {
 	monarch = {
-		name = "Нягое Басараб"
-		dynasty = "Крайовешти"
+		name = "Михня I Ингерас Рэу"
+		dynasty = "Дракулешти"
+		birth_date = 1448.4.21
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1509.10.29 = {
+	monarch = {
+		name = "Мирча III"
+		dynasty = "Дракулешти"
+		birth_date = 1470.1.1
+		adm = 0
+		dip = 1
+		mil = 3
+	}
+}
+
+1510.2.1 = {
+	monarch = {
+		name = "Влад V Тынэр"
+		dynasty = "Дракулешти"
+		birth_date = 1488.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1512.1.23 = {
+	monarch = {
+		name = "Нягое I Басараб"
+		dynasty = "Крайовеску"
+		birth_date = 1459.1.1
 		adm = 4
 		dip = 1
 		mil = 2
 	}
 }
 
-1521.9.16 = {
+1521.9.15 = {
 	monarch = {
-		name = "Раду V"
+		name = "Тедош I"
+		dynasty = "Крайовеску"
+		birth_date = 1480.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1521.10.1 = {
+	monarch = {
+		name = "Влад VI Драгомир Калугарул"
 		dynasty = "Дракулешти"
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1521.11.5 = {
+	monarch = {
+		name = "Тедош I"
+		dynasty = "Крайовеску"
+		birth_date = 1480.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1522.12.1 = {
+	monarch = {
+		name = "Раду V Афумати"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
 		adm = 0
 		dip = 2
 		mil = 5
 	}
 }
 
-1545.3.18 = {
+1523.4.1 = {
 	monarch = {
-		name = "Мирча III Пастушок"
+		name = "Владислав III"
+		dynasty = "Данешти"
+		birth_date = 1480.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1523.11.1 = {
+	monarch = {
+		name = "Раду VI Бадика"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1524.1.1 = {
+	monarch = {
+		name = "Раду V Афумати"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}
+
+1524.6.1 = {
+	monarch = {
+		name = "Владислав III"
+		dynasty = "Данешти"
+		birth_date = 1480.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1524.9.1 = {
+	monarch = {
+		name = "Раду V Афумати"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}
+
+1525.4.1 = {
+	monarch = {
+		name = "Владислав III"
+		dynasty = "Данешти"
+		birth_date = 1480.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1525.8.1 = {
+	monarch = {
+		name = "Раду V Афумати"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}
+
+1529.1.2 = {
+	monarch = {
+		name = "Басараб V"
+		dynasty = "Крайовеску"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1529.3.1 = {
+	monarch = {
+		name = "Мойзе I"
+		dynasty = "Данешти"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1530.6.1 = {
+	monarch = {
+		name = "Влад VII Инекатул"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1532.9.18 = {
+	monarch = {
+		name = "Влад VIII Винтила"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1534.9.1 = {
+	monarch = {
+		name = "Раду VII Паисий"
+		dynasty = "Дракулешти"
+		birth_date = 1500.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1534.11.1 = {
+	monarch = {
+		name = "Влад VIII Винтила"
+		dynasty = "Дракулешти"
+		birth_date = 1480.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1535.6.10 = {
+	monarch = {
+		name = "Раду VII Паисий"
+		dynasty = "Дракулешти"
+		birth_date = 1500.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1545.3.1 = {
+	monarch = {
+		name = "Мирча V Чобанул"
 		dynasty = "Дракулешти"
 		adm = 0
 		dip = 0
@@ -250,9 +865,49 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1559.9.22 = {
+1552.11.16 = {
 	monarch = {
-		name = "Петр I Молодой"
+		name = "Раду VIII Илие Хайдеул"
+		dynasty = "Дракулешти"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1553.5.1 = {
+	monarch = {
+		name = "Мирча V Чобанул"
+		dynasty = "Дракулешти"
+		adm = 0
+		dip = 0
+		mil = 4
+	}
+}
+
+1554.2.28 = {
+	monarch = {
+		name = "Петру I Добрый"
+		dynasty = "Дракулешти"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1557.12.26 = {
+	monarch = {
+		name = "Мирча V Чобанул"
+		dynasty = "Дракулешти"
+		adm = 0
+		dip = 0
+		mil = 4
+	}
+}
+
+1559.9.21 = {
+	monarch = {
+		name = "Петру II Молодой"
 		dynasty = "Дракулешти"
 		birth_date = 1546.1.1
 		adm = 1
@@ -261,9 +916,9 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1568.6.15 = {
+1568.6.1 = {
 	monarch = {
-		name = "Александр II"
+		name = "Александру II Мирча"
 		dynasty = "Дракулешти"
 		birth_date = 1529.1.1
 		adm = 2
@@ -272,9 +927,31 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1577.6.26 = {
+1574.4.1 = {
 	monarch = {
-		name = "Михня II Турок"
+		name = "Винтила I"
+		dynasty = "Дракулешти"
+		birth_date = 1529.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1574.5.1 = {
+	monarch = {
+		name = "Александру II Мирча"
+		dynasty = "Дракулешти"
+		birth_date = 1529.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1577.9.1 = {
+	monarch = {
+		name = "Михня II Таркитул"
 		dynasty = "Дракулешти"
 		birth_date = 1564.1.1
 		adm = 2
@@ -283,7 +960,48 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1591.2.1 = {
+1583.8.29 = {
+	monarch = {
+		name = "Петру III Церцел"
+		dynasty = "Дракулешти"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1585.4.16 = {
+	monarch = {
+		name = "Михня II Таркитул"
+		dynasty = "Дракулешти"
+		birth_date = 1564.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1591.5.1 = {
+	monarch = {
+		name = "Штефан I Глухой"
+		dynasty = "Мушат"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1592.8.1 = {
+	monarch = {
+		name = "Александру III Злой"
+		dynasty = "Мушат"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1593.9.1 = {
 	monarch = {
 		name = "Михай II Храбрый"
 		dynasty = "Дракулешти"
@@ -291,11 +1009,22 @@ capital = 161 # Tоrgoviste
 		adm = 4
 		dip = 6
 		mil = 6
-		leader = { name = "Михай II Храбрый"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
+		leader = { name = "Михай Храбрый"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0}
 	}
 }
 
-1602.8.20 = {
+1600.10.1 = {
+	monarch = {
+		name = "Симион I"
+		dynasty = "Могила"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1601.7.3 = {
 	monarch = {
 		name = "Раду IX Михня"
 		dynasty = "Дракулешти"
@@ -306,7 +1035,117 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1623.8.2 = {
+1602.3.1 = {
+	monarch = {
+		name = "Симион I"
+		dynasty = "Могила"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1602.8.1 = {
+	monarch = {
+		name = "Раду X Щербан"
+		dynasty = "Крайовеску"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1610.12.1 = {
+	monarch = {
+		name = "Габриэль I"
+		dynasty = "Баторий"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1611.3.1 = {
+	monarch = {
+		name = "Раду IX Михня"
+		dynasty = "Дракулешти"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1611.5.1 = {
+	monarch = {
+		name = "Раду X Щербан"
+		dynasty = "Крайовеску"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1611.9.12 = {
+	monarch = {
+		name = "Раду IX Михня"
+		dynasty = "Дракулешти"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1616.8.1 = {
+	monarch = {
+		name = "Гаврил II"
+		dynasty = "Могила"
+		birth_date = 1585.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1616.9.1 = {
+	monarch = {
+		name = "Александру IV Ильяш"
+		dynasty = "Мушат"
+		birth_date = 1585.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1618.5.1 = {
+	monarch = {
+		name = "Гаврил II"
+		dynasty = "Могила"
+		birth_date = 1585.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1620.8.1 = {
+	monarch = {
+		name = "Раду IX Михня"
+		dynasty = "Дракулешти"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1623.8.14 = {
 	monarch = {
 		name = "Александр V Князек"
 		dynasty = "Дракулешти"
@@ -316,9 +1155,20 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1627.11.14 = {
+1627.11.3 = {
 	monarch = {
-		name = "Леон"
+		name = "Александру IV Ильяш"
+		dynasty = "Мушат"
+		birth_date = 1585.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1629.10.1 = {
+	monarch = {
+		name = "Леон I"
 		dynasty = "Томша"
 		adm = 2
 		dip = 1
@@ -326,10 +1176,21 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1632.7.30 = {
+1632.7.1 = {
+	monarch = {
+		name = "Раду XI Ильяш"
+		dynasty = "Дракулешти"
+		birth_date = 1585.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1632.9.1 = {
 	monarch = {
 		name = "Матей I Басараб"
-		dynasty = "Бранковенешти"
+		dynasty = "Брынковяну"
 		birth_date = 1588.1.1
 		adm = 1
 		dip = 3
@@ -337,19 +1198,29 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1654.4.20 = {
+1654.4.9 = {
 	monarch = {
-		name = "Константин I"
-		dynasty = "Сербан"
+		name = "Константин I Щербан Басараб"
+		dynasty = "Крайовеску"
 		adm = 0
 		dip = 1
 		mil = 0
 	}
 }
 
-1658.3.2 = {
+1658.1.26 = {
 	monarch = {
-		name = "Григорий I"
+		name = "Михня III"
+		dynasty = "Дракулешти"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1659.11.20 = {
+	monarch = {
+		name = "Георгий I"
 		dynasty = "Гика"
 		birth_date = 1600.3.3
 		adm = 1
@@ -358,9 +1229,49 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1674.11.2 = {
+1660.9.1 = {
 	monarch = {
-		name = "Григорий II"
+		name = "Григорий I"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1664.11.1 = {
+	monarch = {
+		name = "Раду XII Леон"
+		dynasty = "Томша"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1669.3.1 = {
+	monarch = {
+		name = "Антоний I"
+		dynasty = "Попешти"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1672.2.1 = {
+	monarch = {
+		name = "Григорий I"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1673.11.1 = {
+	monarch = {
+		name = "Георгий II"
 		dynasty = "Дука"
 		adm = 1
 		dip = 1
@@ -368,10 +1279,10 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1678.11.2 = {
+1678.11.1 = {
 	monarch = {
-		name = "Сербан II"
-		dynasty = "Кантакузин"
+		name = "Щербан I"
+		dynasty = "Кантакузен"
 		birth_date = 1640.1.1
 		adm = 1
 		dip = 4
@@ -379,10 +1290,10 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1688.11.10 = {
+1688.10.1 = {
 	monarch = {
 		name = "Константин II"
-		dynasty = "Бранковенешти"
+		dynasty = "Брынковяну"
 		birth_date = 1654.1.1
 		adm = 1
 		dip = 2
@@ -390,10 +1301,10 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1714.4.7 = {
+1714.3.25 = {
 	monarch = {
-		name = "Николай II"
-		dynasty = "Маврокордат"
+		name = "Штефан II"
+		dynasty = "Кантакузен"
 		birth_date = 1670.5.3
 		adm = 2
 		dip = 3
@@ -401,10 +1312,43 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1730.9.15 = {
+1715.12.25 = {
+	monarch = {
+		name = "Николай II"
+		dynasty = "Маврокордатоо"
+		birth_date = 1670.5.3
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1716.11.25 = {
+	monarch = {
+		name = "Иоанн I"
+		dynasty = "Маврокордатоо"
+		birth_date = 1670.5.3
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1719.3.6 = {
+	monarch = {
+		name = "Николай II"
+		dynasty = "Маврокордатоо"
+		birth_date = 1670.5.3
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1730.9.3 = {
 	monarch = {
 		name = "Константин III"
-		dynasty = "Маврокордат"
+		dynasty = "Маврокордато"
 		birth_date = 1711.2.27
 		adm = 3
 		dip = 3
@@ -412,9 +1356,31 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1763.3.21 = {
+1730.10.4 = {
 	monarch = {
-		name = "Александр VI"
+		name = "Михай II"
+		dynasty = "Раковица"
+		birth_date = 1660.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1731.10.2 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Маврокордато"
+		birth_date = 1711.2.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1733.4.5 = {
+	monarch = {
+		name = "Григорий II"
 		dynasty = "Гика"
 		adm = 2
 		dip = 2
@@ -422,7 +1388,142 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1768.10.29 = {
+1735.11.16 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Маврокордато"
+		birth_date = 1711.2.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1741.9.1 = {
+	monarch = {
+		name = "Михай II"
+		dynasty = "Раковица"
+		birth_date = 1660.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1744.7.1 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Маврокордато"
+		birth_date = 1711.2.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1748.4.1 = {
+	monarch = {
+		name = "Григорий II"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1752.9.11 = {
+	monarch = {
+		name = "Матей II"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1753.6.22 = {
+	monarch = {
+		name = "Константин IV"
+		dynasty = "Раковица"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1756.2.28 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Маврокордато"
+		birth_date = 1711.2.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1758.8.3 = {
+	monarch = {
+		name = "Скарлат I"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1761.6.5 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Маврокордато"
+		birth_date = 1711.2.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1763.3.9 = {
+	monarch = {
+		name = "Константин IV"
+		dynasty = "Раковица"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1764.2.8 = {
+	monarch = {
+		name = "Штефан III"
+		dynasty = "Раковица"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1765.8.18 = {
+	monarch = {
+		name = "Скарлат I"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1766.2.12 = {
+	monarch = {
+		name = "Александру VI"
+		dynasty = "Гика"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1768.10.28 = {
 	monarch = {
 		name = "Григорий III"
 		dynasty = "Гика"
@@ -432,9 +1533,39 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1774.9.27 = {
+1769.11.5 = {
 	monarch = {
-		name = "Александр VII"
+		name = "(Русская военная администрация)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1770.5.1 = {
+	monarch = {
+		name = "Эммануил I"
+		dynasty = "Джани-Русет"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1771.10.1 = {
+	monarch = {
+		name = "(Русская военная администрация)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1774.7.21 = {
+	monarch = {
+		name = "Александру VII Старший"
 		dynasty = "Ипсиланти"
 		birth_date = 1725.1.1
 		adm = 2
@@ -443,13 +1574,53 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1782.1.1 = {
+1781.1.15 = {
 	monarch = {
-		name = "Михай IV Суту"
-		dynasty = "Суту"
+		name = "Николай III"
+		dynasty = "Караджа"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1783.7.17 = {
+	monarch = {
+		name = "Михай III Дракон"
+		dynasty = "Суцу"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1786.3.26 = {
+	monarch = {
+		name = "Николай IV"
+		dynasty = "Маврогени"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1790.6.19 = {
+	monarch = {
+		name = "(Русско-австрийская оккупация)"
+		dip = 3
 		adm = 3
-		dip = 1
 		mil = 3
+		regent = yes
+	}
+}
+
+1791.7.24 = {
+	monarch = {
+		name = "Михай III Дракон"
+		dynasty = "Суцу"
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -464,9 +1635,9 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1796.8.30 = {
+1796.8.28 = {
 	monarch = {
-		name = "Александр VII"
+		name = "Александру VII Старший"
 		dynasty = "Ипсиланти"
 		birth_date = 1725.1.1
 		adm = 2
@@ -475,7 +1646,7 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1797.12.5 = {
+1797.11.28 = {
 	monarch = {
 		name = "Константин V"
 		dynasty = "Хангерли"
@@ -485,7 +1656,7 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1799.3.3 = {
+1799.2.10 = {
 	monarch = {
 		name = "Александр VIII"
 		dynasty = "Морузи"
@@ -496,21 +1667,72 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1801.10.22 = {
+1801.10.8 = {
 	monarch = {
-		name = "Константин VI"
-		dynasty = "Ипсиланти"
-		birth_date = 1760.1.1
+		name = "Михай III Дракон"
+		dynasty = "Суцу"
 		adm = 2
-		dip = 1
+		dip = 2
 		mil = 2
 	}
 }
 
-1812.9.10 = {
+1802.5.10 = {
 	monarch = {
-		name = "Ион II"
-		dynasty = "Царагя"
+		name = "Александр IX"
+		dynasty = "Суцу"
+		birth_date = 1758.1.18
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1802.8.30 = {
+	monarch = {
+		name = "Константин VI"
+		dynasty = "Ипсиланти"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1806.8.24 = {
+	monarch = {
+		name = "Александр IX"
+		dynasty = "Суцу"
+		birth_date = 1758.1.18
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1806.10.15 = {
+	monarch = {
+		name = "Константин VI"
+		dynasty = "Ипсиланти"
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1807.8.17 = {
+	monarch = {
+		name = "(Русская военная администрация)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1812.5.16 = {
+	monarch = {
+		name = "Иоанн II"
+		dynasty = "Караджа"
 		birth_date = 1754.1.1
 		adm = 3
 		dip = 1
@@ -518,13 +1740,203 @@ capital = 161 # Tоrgoviste
 	}
 }
 
-1818.10.14 = {
+1818.9.29 = {
 	monarch = {
 		name = "Александр IX"
-		dynasty = "Суту"
+		dynasty = "Суцу"
 		birth_date = 1758.1.18
 		adm = 0
 		dip = 0
 		mil = 0
+	}
+}
+
+1821.2.1 = {
+	monarch = {
+		name = "Скарлат II"
+		dynasty = "Каллимаки"
+		birth_date = 1773.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1821.3.21 = {
+	monarch = {
+		name = "Тудор"
+		dynasty = "Владимиреску"
+		birth_date = 1780.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1821.6.9 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1822.6.30 = {
+	monarch = {
+		name = "Александр X"
+		dynasty = "Гика"
+		birth_date = 1807.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1828.4.2 = {
+	monarch = {
+		name = "(Русская военная администрация)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1834.4.2 = {
+	monarch = {
+		name = "Александр XI Дмитрий"
+		dynasty = "Гика"
+		birth_date = 1816.5.31
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1842.10.7 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1842.12.20 = {
+	monarch = {
+		name = "Георгий III"
+		dynasty = "Бибеску"
+		birth_date = 1804.4.26
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1848.9.13 = {
+	monarch = {
+		name = "Константин"
+		dynasty = "Кантакузен"
+		birth_date = 1800.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1849.6.1 = {
+	monarch = {
+		name = "Барбу I Дмитрий"
+		dynasty = "Штирбей"
+		birth_date = 1799.8.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1848.6.13 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1854.10.5 = {
+	monarch = {
+		name = "Барбу I Дмитрий"
+		dynasty = "Штирбей"
+		birth_date = 1799.8.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1856.7.29 = {
+	monarch = {
+		name = "Александр XI Дмитрий"
+		dynasty = "Гика"
+		birth_date = 1816.5.31
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1859.1.23 = {
+	monarch = {
+		name = "Александру Ион"
+		dynasty = "Куза"
+		birth_date = 1820.3.8
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1861.11.20 = {
+government_rank = 2
+}
+
+
+1866.5.10 = {
+	monarch = {
+		name = "Кароль I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1839.4.20
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1866.5.10 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1365.8.24
+		death_date = 1827.7.20
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1881.5.22 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }
