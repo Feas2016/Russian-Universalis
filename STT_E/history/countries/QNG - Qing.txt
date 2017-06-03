@@ -33,6 +33,7 @@ government_rank = 3
 	monarch = {
 		name = "Дуду Ментему"
 		dynasty = "Айсин Гёро"
+		birth_date = 1370.1.1
 		adm = 2
 		dip = 2
 		mil = 3
@@ -57,6 +58,7 @@ government_rank = 3
 	monarch = {
 		name = "Цунсан"
 		dynasty = "Айсин Гёро"
+		birth_date = 1405.1.1
 		adm = 2
 		dip = 1
 		mil = 3
@@ -81,6 +83,7 @@ government_rank = 3
 	monarch = {
 		name = "Толо"
 		dynasty = "Айсин Гёро"
+		birth_date = 1433.1.1
 		adm = 3
 		dip = 3
 		mil = 4
@@ -105,6 +108,7 @@ government_rank = 3
 	monarch = {
 		name = "Сибучи Фянгу"
 		dynasty = "Айсин Гёро"
+		birth_date = 1467.1.1
 		adm = 3
 		dip = 4
 		mil = 3
@@ -129,6 +133,7 @@ government_rank = 3
 	monarch = {
 		name = "Фумань"
 		dynasty = "Айсин Гёро"
+		birth_date = 1481.1.1
 		adm = 3
 		dip = 3
 		mil = 4
@@ -153,6 +158,7 @@ government_rank = 3
 	monarch = {
 		name = "Гёцанга"
 		dynasty = "Айсин Гёро"
+		birth_date = 1522.1.1
 		adm = 2
 		dip = 1
 		mil = 2
@@ -161,8 +167,8 @@ government_rank = 3
 
 1542.1.1 = {
 	heir = {
-		name = "Такси"
-		monarch_name = "Такси"
+		name = "Такши"
+		monarch_name = "Такши"
 		dynasty = "Айсин Гёро"
 		birth_date = 1532.1.1
 		death_date = 1583.1.1
@@ -175,8 +181,9 @@ government_rank = 3
 
 1571.1.1 = {
 	monarch = {
-		name = "Такси"
+		name = "Такши"
 		dynasty = "Айсин Гёро"
+		birth_date = 1532.1.1
 		adm = 0
 		dip = 0
 		mil = 2
@@ -210,6 +217,7 @@ government_rank = 3
 	monarch = {
 		name = "Нурхаци"
 		dynasty = "Айсин Гёро"
+		birth_date = 1559.2.21
 		adm = 5
 		dip = 4
 		mil = 6
@@ -219,8 +227,8 @@ government_rank = 3
 
 1592.11.28 = {
 	heir = {
-		name = "Хуантайцзи"
-		monarch_name = "Хуантайцзи"
+		name = "Абахай"
+		monarch_name = "Абахай"
 		dynasty = "Айсин Гёро"
 		birth_date = 1592.11.28
 		death_date = 1643.9.21
@@ -229,7 +237,7 @@ government_rank = 3
 		dip = 4
 		mil = 5
 		leader = { 
-			name = "Хуантайцзи"
+			name = "Абахай-хан"
 			type = general
 			rank = 0
 			fire = 0
@@ -242,12 +250,13 @@ government_rank = 3
 
 1626.9.30 = {
 	monarch = {
-		name = "Хуантайцзи"
+		name = "Абахай"
 		dynasty = "Айсин Гёро"
+		birth_date = 1592.11.28
 		adm = 4
 		dip = 4
 		mil = 5
-		leader = { name = "Хуантайцзи"   	type = general		rank = 0	fire = 0	shock = 5	manuever = 3	siege = 0 }
+		leader = { name = "Абахай-хан"   	type = general		rank = 0	fire = 0	shock = 5	manuever = 3	siege = 0 }
 	}
 }
 
@@ -258,10 +267,10 @@ government_rank = 3
 1638.3.15 = {
 	heir = {
 		name = "Фулинь"
-		monarch_name = "Фулинь"
+		monarch_name = "Шуньчжи"
 		dynasty = "Айсин Гёро"
 		birth_date = 1638.3.15
-		death_date = 1661.2.5
+		death_date = 1661.2.18
 		claim = 95
 		adm = 4
 		dip = 4
@@ -271,20 +280,21 @@ government_rank = 3
 
 1643.9.22 = {
 	monarch = {
-		name = "Фулинь"  #Shunzhi Emperor
+		name = "Шуньчжи"
 		dynasty = "Айсин Гёро"
+		birth_date = 1638.3.15
 		adm = 4
 		dip = 4
 		mil = 4
 	}
 }
 
-1645.7.1 = { capital = 1816 } # Beijing
+1645.7.1 = { capital = 1816 } # Пекин
 
 1654.5.4 = {
 	heir = {
 		name = "Сюанье"
-		monarch_name = "Сюанье"
+		monarch_name = "Канси"
 		dynasty = "Айсин Гёро"
 		birth_date = 1654.5.4
 		death_date = 1722.12.20
@@ -295,10 +305,11 @@ government_rank = 3
 	}
 }
 
-1661.2.5 = {
+1661.2.18 = {
 	monarch = {
-		name = "Сюанье" #Kangxi Emperor
+		name = "Канси"
 		dynasty = "Айсин Гёро"
+		birth_date = 1654.5.4
 		adm = 6
 		dip = 5
 		mil = 5
@@ -308,7 +319,7 @@ government_rank = 3
 1678.12.13 = {
 	heir = {
 		name = "Иньчжэнь"
-		monarch_name = "Иньчжэнь"
+		monarch_name = "Юнчжэн"
 		dynasty = "Айсин Гёро"
 		birth_date = 1678.12.13
 		death_date = 1735.10.8
@@ -319,20 +330,21 @@ government_rank = 3
 	}
 }
 
-1722.12.21 = {
+1722.12.20 = {
 	monarch = {
-		name = "Иньчжэнь" #Yongzheng Emperor
+		name = "Юнчжэн"
 		dynasty = "Айсин Гёро"
+		birth_date = 1678.12.13
 		adm = 5
 		dip = 5
 		mil = 4
 	}
 }
 
-1722.12.21 = {
+1722.12.20 = {
 	heir = {
 		name = "Хунли"
-		monarch_name = "Хунли"
+		monarch_name = "Цяньлун"
 		dynasty = "Айсин Гёро"
 		birth_date = 1711.9.25
 		death_date = 1799.2.7
@@ -343,10 +355,11 @@ government_rank = 3
 	}
 }
 
-1735.10.10 = {
+1735.10.8 = {
 	monarch = {
-		name = "Хунли" #Qianlong Emperor
+		name = "Цяньлун"
 		dynasty = "Айсин Гёро"
+		birth_date = 1711.9.25
 		adm = 4
 		dip = 4
 		mil = 5
@@ -358,7 +371,7 @@ government_rank = 3
 1760.11.13 = {
 	heir = {
 		name = "Юнъянь"
-		monarch_name = "Юнъянь"
+		monarch_name = "Цзяцин"
 		dynasty = "Айсин Гёро"
 		birth_date = 1760.11.13
 		death_date = 1820.9.2
@@ -369,20 +382,21 @@ government_rank = 3
 	}
 }
 
-1796.2.9 = {
+1796.2.1 = {
 	monarch = {
-		name = "Юнъянь" #Jiaqing Emperor
+		name = "Цзяцин"
 		dynasty = "Айсин Гёро"
+		birth_date = 1760.11.13
 		adm = 3
 		dip = 3
 		mil = 2
 	}
 }
 
-1796.2.9 = {
+1796.2.1 = {
 	heir = {
-		name = "Миньнин"
-		monarch_name = "Миньнин"
+		name = "Мяньнин"
+		monarch_name = "Даогуан"
 		dynasty = "Айсин Гёро"
 		birth_date = 1782.9.16
 		death_date = 1850.2.25
@@ -393,12 +407,175 @@ government_rank = 3
 	}
 }
 
-1820.9.3 = {
+1820.9.2 = {
 	monarch = {
-		name = "Миньнин" #Daoguang Emperor
+		name = "Даогуан"
 		dynasty = "Айсин Гёро"
+		birth_date = 1782.9.16
 		adm = 1
 		dip = 1
 		mil = 0
+	}
+}
+
+1831.7.17 = {
+	heir = {
+		name = "Ичжу"
+		monarch_name = "Сяньфэн"
+		dynasty = "Айсин Гёро"
+		birth_date = 1831.7.17
+		death_date = 1861.8.22
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1837.1.1 = { leader = { name = "Линь Цзэсюй"	type = general	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 2	death_date = 1850.11.22 } }
+
+1850.2.25 = {
+	monarch = {
+		name = "Сяньфэн"
+		dynasty = "Айсин Гёро"
+		birth_date = 1831.7.17
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1856.4.27 = {
+	heir = {
+		name = "Цзайчунь"
+		monarch_name = "Тунчжи"
+		dynasty = "Айсин Гёро"
+		birth_date = 1856.4.27
+		death_date = 1875.1.12
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1861.8.22 = {
+	monarch = {
+		name = "Тунчжи"
+		dynasty = "Айсин Гёро"
+		birth_date = 1856.4.27
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1871.8.14 = {
+	heir = {
+		name = "Цзайтянь"
+		monarch_name = "Гуансюй"
+		dynasty = "Айсин Гёро"
+		birth_date = 1871.8.14
+		death_date = 1908.11.14
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1875.1.12 = {
+	monarch = {
+		name = "Гуансюй"
+		dynasty = "Айсин Гёро"
+		birth_date = 1871.8.14
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1906.2.7 = {
+	heir = {
+		name = "Пу И"
+		monarch_name = "Сюаньтун"
+		dynasty = "Айсин Гёро"
+		birth_date = 1906.2.7
+		death_date = 1967.10.17
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1908.11.14 = {
+	monarch = {
+		name = "Сюаньтун"
+		dynasty = "Айсин Гёро"
+		birth_date = 1906.2.7
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1908.11.14 = {
+	heir = {
+		name = "Пу Цзе"
+		monarch_name = "Пуцзе"
+		dynasty = "Айсин Гёро"
+		birth_date = 1907.4.16
+		death_date = 1994.2.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1912.2.12 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1917.7.1 = {
+	monarch = {
+		name = "Сюаньтун"
+		dynasty = "Айсин Гёро"
+		birth_date = 1906.2.7
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+
+1908.11.14 = {
+	heir = {
+		name = "Пу Цзе"
+		monarch_name = "Пуцзе"
+		dynasty = "Айсин Гёро"
+		birth_date = 1907.4.16
+		death_date = 1994.2.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1917.7.12 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

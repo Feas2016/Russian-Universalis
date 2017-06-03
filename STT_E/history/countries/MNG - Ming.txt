@@ -5,20 +5,36 @@ religion = confucianism
 primary_culture = jianghuai
 capital = 1821	# Nanjing
 
-1368.1.1 = {
+1368.1.23 = {
 	monarch = {
-		name = "Õóíúó" # Hongwu Emperor
+		name = "Õóíúó"
 		dynasty = "×æó"
+		birth_date = 1328.10.21
 		adm = 6
 		dip = 4
 		mil = 6
 	}
 }
 
+1368.1.23 = {
+	heir = {
+		name = "Şíüâıíü"
+		monarch_name = "Öçÿíüâıíü"
+		dynasty = "×æó"
+		birth_date = 1377.12.5
+		death_date = 1402.7.13
+		claim = 95
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+
 1398.6.24 = {
 	monarch = {
-		name = "Öçÿíüâıíü" # Jianwen Emperor
+		name = "Öçÿíüâıíü"
 		dynasty = "×æó"
+		birth_date = 1377.12.5
 		adm = 3
 		dip = 1
 		mil = 1
@@ -28,7 +44,7 @@ capital = 1821	# Nanjing
 1398.6.24 = {
 	heir = {
 		name = "Şíëı" #Yongle Emperor
-		monarch_name = "Şíëı"
+		monarch_name = "Äè"
 		dynasty = "×æó"
 		birth_date = 1360.5.2
 		death_date = 1424.8.12
@@ -36,24 +52,25 @@ capital = 1821	# Nanjing
 		adm = 5
 		dip = 6
 		mil = 6
-		leader = { name = "Şíëı ×æó"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0 }
+		leader = { name = "×æó Äè"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0 }
 	}
 }
 
 1402.7.13 = {
 	monarch = {
-		name = "Şíëı" #Yongle Emperor
+		name = "Äè"
 		dynasty = "×æó"
+		birth_date = 1360.5.2
 		adm = 5
 		dip = 6
 		mil = 6
-		leader = { name = "Şíëı ×æó"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0 }
+		leader = { name = "×æó Äè"	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0 }
 	}
 }
 
 1402.7.13 = {
 	heir = {
-		name = "Õóíñè" #Hongxi Emperor
+		name = "Ãàî÷è"
 		monarch_name = "Õóíñè"
 		dynasty = "×æó"
 		birth_date = 1378.8.16
@@ -67,12 +84,13 @@ capital = 1821	# Nanjing
 
 1405.1.1 = { leader = {	name = "×æıí Õı"	type = explorer	rank = 6	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1433.1.1 } }
 
-1421.1.1 = { capital = 1816 } # Beijing
+1421.1.1 = { capital = 1816 } # Ïåêèí
 
 1424.8.12 = {
 	monarch = {
-		name = "Õóíñè" #Hongxi Emperor
+		name = "Õóíñè"
 		dynasty = "×æó"
+		birth_date = 1378.8.16
 		adm = 4
 		dip = 2
 		mil = 2
@@ -81,10 +99,10 @@ capital = 1821	# Nanjing
 
 1424.8.12 = {
 	heir = {
-		name = "Ñşàíüäı" #Xuande Emperor
+		name = "×æàíüöçè"
 		monarch_name = "Ñşàíüäı"
 		dynasty = "×æó"
-		birth_date = 1398.2.25
+		birth_date = 1399.3.16
 		death_date = 1435.1.31
 		claim = 95
 		adm = 4
@@ -95,8 +113,9 @@ capital = 1821	# Nanjing
 		
 1425.5.29 = {
 	monarch = {
-		name = "Ñşàíüäı" #Xuande Emperor
+		name = "Ñşàíüäı"
 		dynasty = "×æó"
+		birth_date = 1399.3.16
 		adm = 4
 		dip = 4
 		mil = 4
@@ -105,7 +124,7 @@ capital = 1821	# Nanjing
 
 1427.11.29 = {
 	heir = {
-		name = "×æıíòóí" #Zhengtong Emperor
+		name = "×æıíòóí"
 		monarch_name = "×æıíòóí"
 		dynasty = "×æó"
 		birth_date = 1427.11.29
@@ -119,8 +138,9 @@ capital = 1821	# Nanjing
 
 1435.1.31 = {
 	monarch = {
-		name = "×æıíòóí" #Zhengtong Emperor
+		name = "×æıíòóí"
 		dynasty = "×æó"
+		birth_date = 1427.11.29
 		adm = 1
 		dip = 1
 		mil = 1
@@ -129,57 +149,9 @@ capital = 1821	# Nanjing
 	add_ruler_personality = naive_personality
 }
 
-1435.1.31 = {
+1447.12.9 = {
 	heir = {
-		name = "Öçèíòàé" #Jingtai Emperor
-		monarch_name = "Öçèíòàé"
-		dynasty = "×æó"
-		birth_date = 1428.9.21
-		death_date = 1457.3.14
-		claim = 95
-		adm = 1
-		dip = 1
-		mil = 2
-	}
-}
-
-1449.11.23 = {
-	monarch = {
-		name = "Öçèíòàé" #Jingtai Emperor
-		dynasty = "×æó"
-		adm = 1
-		dip = 1
-		mil = 2
-	}
-}
-
-1449.11.23 = {
-	heir = {
-		name = "×æıíòóí" #Tianshu Emperor
-		monarch_name = "×æıíòóí"
-		dynasty = "×æó"
-		birth_date = 1427.11.29
-		death_date = 1464.2.23
-		claim = 95
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-
-1457.2.23 = {
-	monarch = {
-		name = "×æıíòóí" #Tianshu Emperor
-		dynasty = "×æó"
-		adm = 2
-		dip = 2
-		mil = 1
-	}
-}
-
-1457.2.23 = {
-	heir = {
-		name = "×ıíõóà" #Chenghua Emperor
+		name = "Öçÿíüøıíü"
 		monarch_name = "×ıíõóà"
 		dynasty = "×æó"
 		birth_date = 1447.12.9
@@ -191,10 +163,63 @@ capital = 1821	# Nanjing
 	}
 }
 
-1464.3.24 = {
+1449.11.23 = {
 	monarch = {
-		name = "×ıíõóà" #Chenghua Emperor
+		name = "Öçèíòàé"
 		dynasty = "×æó"
+		birth_date = 1428.9.21
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1449.11.23 = {
+	heir = {
+		name = "×æàíüå"
+		monarch_name = "×æàíüå"
+		dynasty = "×æó"
+		birth_date = 1448.1.1
+		death_date = 1453.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1457.2.11 = {
+	monarch = {
+		name = "×æıíòóí"
+		dynasty = "×æó"
+		birth_date = 1427.11.29
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+}
+
+1457.2.11 = {
+	heir = {
+		name = "Öçÿíüøıíü"
+		monarch_name = "×ıíõóà"
+		dynasty = "×æó"
+		birth_date = 1447.12.9
+		death_date = 1487.9.9
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1464.2.23 = {
+	monarch = {
+		name = "×ıíõóà"
+		dynasty = "×æó"
+		birth_date = 1447.12.9
 		adm = 1
 		dip = 0
 		mil = 2
@@ -203,7 +228,7 @@ capital = 1821	# Nanjing
 
 1470.7.30 = {
 	heir = {
-		name = "Õóí÷æè" #Hongchi Emperor
+		name = "Şòàí"
 		monarch_name = "Õóí÷æè"
 		dynasty = "×æó"
 		birth_date = 1470.7.30
@@ -215,10 +240,11 @@ capital = 1821	# Nanjing
 	}
 }
 
-1487.9.10 = {
+1487.9.9 = {
 	monarch = {
-		name = "Õóí÷æè" #Hongchi Emperor
+		name = "Õóí÷æè"
 		dynasty = "×æó"
+		birth_date = 1470.7.30
 		adm = 1
 		dip = 3
 		mil = 4
@@ -227,7 +253,7 @@ capital = 1821	# Nanjing
 
 1491.10.26 = {
 	heir = {
-		name = "×æıíäı" #Zhengde Emperor
+		name = "Õîó÷æàî"
 		monarch_name = ×æıíäı"
 		dynasty = "×æó"
 		birth_date = 1491.10.26
@@ -239,10 +265,11 @@ capital = 1821	# Nanjing
 	}
 }
 
-1505.6.9 = {
+1505.6.8 = {
 	monarch = {
-		name = "Öçÿöçèí" #Zhengde Emperor
+		name = "×æıíäı"
 		dynasty = "×æó"
+		birth_date = 1491.10.26
 		adm = 1
 		dip = 4
 		mil = 0
@@ -251,7 +278,7 @@ capital = 1821	# Nanjing
 
 1507.9.16 = {
 	heir = {
-		name = "Öçÿöçèí" #Jiajing Emperor
+		name = "Õîóöóí"
 		monarch_name = "Öçÿöçèí"
 		dynasty = "×æó"
 		birth_date = 1507.9.16
@@ -263,10 +290,11 @@ capital = 1821	# Nanjing
 	}
 }
 
-1521.4.21 = {
+1521.4.20 = {
 	monarch = {
-		name = "Öçÿöçèí" #Jiajing Emperor
+		name = "Öçÿöçèí"
 		dynasty = "×æó"
+		birth_date = 1507.9.16
 		adm = 3
 		dip = 4
 		mil = 3
@@ -277,7 +305,7 @@ capital = 1821	# Nanjing
 
 1537.3.4 = {
 	heir = {
-		name = "Ëóíöèí" #Longqing Emperor
+		name = "Öçàéõîó"
 		monarch_name = "Ëóíöèí"
 		dynasty = "×æó"
 		birth_date = 1537.3.4
@@ -289,19 +317,20 @@ capital = 1821	# Nanjing
 	}
 }
 
-1567.1.24 = {
+1567.1.23 = {
 	monarch = {
-		name = "Ëóíöèí" #Longqing Emperor
+		name = "Ëóíöèí"
 		dynasty = "×æó"
+		birth_date = 1537.3.4
 		adm = 3
 		dip = 1
 		mil = 2
 	}
 }
 
-1567.1.24 = {
+1567.1.23 = {
 	heir = {
-		name = "Âàíüëè" #Wanli Emperor
+		name = "Èöçşíü"
 		monarch_name = "Âàíüëè"
 		dynasty = "×æó"
 		birth_date = 1563.9.4
@@ -315,8 +344,9 @@ capital = 1821	# Nanjing
 
 1572.7.5 = {
 	monarch = {
-		name = "Âàíüëè" #Wanli Emperor
+		name = "Âàíüëè"
 		dynasty = "×æó"
+		birth_date = 1563.9.4
 		adm = 0
 		dip = 3
 		mil = 4
@@ -325,7 +355,7 @@ capital = 1821	# Nanjing
 
 1582.8.28 = {
 	heir = {
-		name = "Òàé÷àí" #Taichang Emperor
+		name = "×àíëî"
 		monarch_name = "Òàé÷àí"
 		dynasty = "×æó"
 		birth_date = 1582.8.28
@@ -343,10 +373,11 @@ capital = 1821	# Nanjing
 
 1619.1.1 = { leader = {	name = "Şàíü ×óíõóàíü"		type = general		rank = 4	fire = 4	shock = 5	manuever = 6	siege = 0	death_date = 1630.1.12 } }
 
-1620.8.27 = {
+1620.8.18 = {
 	monarch = {
-		name = "Òàé÷àí" #Taichang Emperor
+		name = "Òàé÷àí"
 		dynasty = "×æó"
+		birth_date = 1582.8.28
 		adm = 4
 		dip = 3
 		mil = 4
@@ -355,7 +386,7 @@ capital = 1821	# Nanjing
 
 1620.8.27 = {
 	heir = {
-		name = "Òÿíüöè" #Tianqi Emperor
+		name = "Şöçÿî"
 		monarch_name = "Òÿíüöè"
 		dynasty = "×æó"
 		birth_date = 1605.12.23
@@ -369,8 +400,9 @@ capital = 1821	# Nanjing
 
 1620.9.28 = {
 	monarch = {
-		name = "Òÿíüöè" #Tianqi Emperor
+		name = "Òÿíüöè"
 		dynasty = "×æó"
+		birth_date = 1605.12.23
 		adm = 3
 		dip = 2
 		mil = 0
@@ -379,10 +411,10 @@ capital = 1821	# Nanjing
 
 1620.9.28 = {
 	heir = {
-		name = "×óí÷æıíü" #Chongzhen Emperor
+		name = "Şöçÿíü"
 		monarch_name = "×óí÷æıíü"
 		dynasty = "×æó"
-		birth_date =  1611.2.6
+		birth_date = 1611.2.6
 		death_date = 1644.4.25
 		claim = 95
 		adm = 0
@@ -391,23 +423,24 @@ capital = 1821	# Nanjing
 	}
 }
 
-1627.10.2 = {
+1627.9.30 = {
 	monarch = {
 		name = "×óí÷æıíü" #Chongzhen Emperor
 		dynasty = "×æó"
+		birth_date = 1611.2.6
 		adm = 0
 		dip = 2
 		mil = 0
 	}
 }
 
-1627.10.2 = {
+1627.9.30 = {
 	heir = {
-		name = "Şñóí" #Hongguang Emperor
+		name = "Şñóí"
 		monarch_name = "Şñóí"
 		dynasty = "×æó"
-		birth_date = 1607.1.1
-		death_date = 1645.8.1
+		birth_date = 1607.9.5
+		death_date = 1646.5.23
 		claim = 95
 		adm = 2
 		dip = 3
@@ -415,23 +448,24 @@ capital = 1821	# Nanjing
 	}
 }
 
-1644.1.1 = {
+1644.6.19 = {
 	monarch = {
-		name = "Şñóí" #Hongguang Emperor
+		name = "Şñóí"
 		dynasty = "×æó"
+		birth_date = 1607.9.5
 		adm = 2
 		dip = 3
 		mil = 3
 	}
 }
 
-1644.1.1 = {
+1644.6.19 = {
 	heir = {
-		name = "×àíôàí" #Longwu Emperor
+		name = "×àíôàí"
 		monarch_name = "×àíôàí"
 		dynasty = "×æó"
-		birth_date = 1602.1.1
-		death_date = 1646.11.18
+		birth_date = 1608.1.1
+		death_date = 1646.5.23
 		claim = 95
 		adm = 1
 		dip = 1
@@ -443,10 +477,11 @@ capital = 1821	# Nanjing
 	government = feudal_monarchy
 }
 
-1645.8.1 = {
+1645.6.15 = {
 	monarch = {
-		name = "×àíôàí" #Longwu Emperor
+		name = "×àíôàí"
 		dynasty = "×æó"
+		birth_date = 1608.1.1
 		adm = 1
 		dip = 1
 		mil = 0
@@ -458,8 +493,8 @@ capital = 1821	# Nanjing
 		name = "Èõàé"
 		monarch_name = "Èõàé"
 		dynasty = "×æó"
-		birth_date = 1623.1.1
-		death_date = 1662.6.6
+		birth_date = 1618.7.6
+		death_date = 1662.12.23
 		claim = 95
 		adm = 3
 		dip = 1
@@ -467,10 +502,11 @@ capital = 1821	# Nanjing
 	}
 }
 
-1646.11.18 = {
+1645.7.23 = {
 	monarch = {
 		name = "Èõàé"
 		dynasty = "×æó"
+		birth_date = 1618.7.6
 		adm = 3
 		dip = 1
 		mil = 0
@@ -479,13 +515,39 @@ capital = 1821	# Nanjing
 
 1650.1.1 = { leader = {	name = "×æıí ×ıíãóí"	type = admiral	rank = 3	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1662.6.23 } }
 
-1662.2.1 = {
+1655.3.1 = {
 	monarch = {
-		name = "Êîêñèíãà" # a.k.a Koxinga
-		dynasty = "×æıí"
+		name = "Şíëè"
+		dynasty = "×æó"
+		birth_date = 1623.11.1
 		adm = 5
 		dip = 5
 		mil = 1
+	}
+}
+
+1662.2.1 = {
+	heir = {
+		name = "×ıíãóí"
+		monarch_name = "×ıíãóí"
+		dynasty = "×æıí"
+		birth_date = 1624.8.28
+		death_date = 1662.6.23
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 0
+	}
+}
+
+1662.2.1 = {
+	monarch = {
+		name = "×ıíãóí"
+		dynasty = "×æıí"
+		birth_date = 1617.1.1
+		adm = 3
+		dip = 3
+		mil = 6
 	}
 }
 
@@ -503,23 +565,25 @@ capital = 1821	# Nanjing
 	}
 }
 
-1662.6.23 = {
+1662.5.1 = {
 	monarch = {
 		name = "Öçèí"
 		dynasty = "×æıí"
+		birth_date = 1642.11.4
 		adm = 3
 		dip = 3
 		mil = 0
 	}
 }
 
-1670.8.13 = {
+
+1662.5.1 = {
 	heir = {
 		name = "Êıöçàí"
 		monarch_name = "Êıöçàí"
 		dynasty = "×æıí"
-		birth_date = 1670.8.13
-		death_date = 1717.9.22
+		birth_date = 1664.1.1
+		death_date = 1681.7.1
 		claim = 95
 		adm = 2
 		dip = 2
@@ -527,12 +591,47 @@ capital = 1821	# Nanjing
 	}
 }
 
-1681.1.1 = {
+1681.3.17 = {
 	monarch = {
 		name = "Êıöçàí"
 		dynasty = "×æıí"
 		adm = 2
 		dip = 2
 		mil = 3
+	}
+}
+
+1681.3.17 = {
+	heir = {
+		name = "Êıøóàí"
+		monarch_name = "Êıøóàí"
+		dynasty = "×æıí"
+		birth_date = 1670.8.13
+		death_date = 1717.9.22
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1681.3.17 = {
+	monarch = {
+		name = "Êıøóàí"
+		dynasty = "×æıí"
+		birth_date = 1670.8.13
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1683.6.1 = {
+	monarch = {
+		name = "(Âàêàíòíî)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

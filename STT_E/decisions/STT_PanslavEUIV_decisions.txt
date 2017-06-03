@@ -29,10 +29,10 @@ country_decisions = {
 				change_religion = catholic 
  			}
 			add_prestige = 20
-			add_country_modifier = {
-				name = "Volga_germans"
-				duration = 1825
-			}
+			# add_country_modifier = { #Нет пока такого!
+				# name = "Volga_germans"
+				# duration = 1825
+			# }
 			set_country_flag = volga_germans
 		}
 		ai_will_do = {
