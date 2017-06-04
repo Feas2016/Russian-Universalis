@@ -1,7 +1,7 @@
 #262 - Krakow
 
-owner = POL
-controller = POL
+owner = KRA
+controller = KRA
 culture = polish
 religion = catholic
 capital = "Kraków"
@@ -14,7 +14,6 @@ is_city = yes
 fort_15th = yes
  #Jagiellonian University established in 1364 by Casimir III the Great
 add_core = KRA
-add_core = POL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -26,6 +25,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1320.1.1 = [ owner = POL add_core = POL add_core = POL }
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

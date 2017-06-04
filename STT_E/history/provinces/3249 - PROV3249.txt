@@ -1,7 +1,7 @@
 #254 - Notec
 
-owner = POL
-controller = POL
+owner = GNE
+controller = GNE
 capital = "Пила"
 culture = polish
 religion = catholic
@@ -11,12 +11,13 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = POL
+add_core = GNE
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1320.1.1 = [ owner = POL add_core = POL controller = POL }
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

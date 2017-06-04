@@ -1,8 +1,9 @@
 #731 - Ilan Hala
 
-owner = MJZ
-controller = MJZ
+owner = YUA
+controller = YUA
 add_core = MJZ
+add_core = YUA
 culture = manchu
 religion = confucianism
 capital = "Ilan Hala"
@@ -15,6 +16,12 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = MJZ add_core = MJZ controller = MJZ }
 1616.1.1 = {
 	owner = MCH
 	controller = MCH

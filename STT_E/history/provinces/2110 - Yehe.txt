@@ -1,7 +1,8 @@
 # 2110 - Yehe
 
-owner = MHX
-controller = MHX
+owner = YUA
+controller = YUA
+add_core = YUA
 add_core = MHX
 culture = manchu
 religion = confucianism
@@ -15,6 +16,12 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = MHX add_core = MHX controller = MHX }
 1619.9.1 = {
 	owner = MCH
 	controller = MCH

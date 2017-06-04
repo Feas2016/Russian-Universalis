@@ -1,8 +1,9 @@
 # 2102 - Urkan
 
-owner = MYR
-controller = MYR
-add_core = MYR
+owner = YUA
+controller = YUA
+add_core = YUA
+add_core  = MYR
 culture = manchu
 religion = siberian_shamanism
 capital = "Urkantun"
@@ -15,6 +16,12 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = MYR add_core = MYR controller = MYR }
 1653.1.1 = {
 	owner = TSR
 	controller = TSR

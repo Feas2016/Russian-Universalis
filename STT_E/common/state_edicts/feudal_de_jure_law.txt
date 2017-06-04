@@ -7,10 +7,6 @@ edict_feudal_de_jure_law = {
 	}
 	
 	allow = {
-		custom_trigger_tooltip = {
-			tooltip = edict_feudal_de_jure_law_tooltip
-			has_country_flag = feudal_de_jure_law
-		}
 		OR = {
 			current_age = age_of_feudalism #STT
 			current_age = age_of_discovery #STT
