@@ -13,19 +13,19 @@ technology = {
 	sprite_level = 1
 	
 	enable = western_medieval_knights
+	enable = eastern_medieval_infantry
 	enable = eastern_knights
 	enable = indian_horsemen
 	enable = steppe_cavalry
 	enable = mongol_bow
+	enable = western_medieval_infantry
 
 	infantry_fire		= 	0.1
 	infantry_shock 		= 	0.1	
 	cavalry_shock  		= 	0.5	
 	land_morale 		= 	1.0
 	
-    armory = yes
-    arsenal = yes 	
-	mint = yes
+	fort_15th = yes
 }
 
 technology = {
@@ -42,7 +42,6 @@ technology = {
 	enable = african_clubmen
 	enable = south_american_warfare
 	enable = african_mandelaku
-	enable = western_longbow
 }
 
 technology = {
@@ -61,8 +60,6 @@ technology = {
 	
 	land_morale = 	0.3
 	
-	enable = eastern_pike
-	enable = western_pike
 	enable = ghazi_warriors
 	enable = ashigaru
 	enable = guandao
@@ -80,13 +77,13 @@ technology = {
 	# Tech 5
 	year = 1325
 	
-	barracks = yes
-	
+	armory = yes
 	
 	enable = halberd_infantry
+	enable = western_longbow
+	enable = western_pike
 	enable = bardiche_infantry
-	enable = western_medieval_infantry
-	enable = eastern_medieval_infantry
+	enable = eastern_pike
 	enable = persian_footsoldier
 	enable = indian_footsoldier	
 	enable = indian_archers
@@ -115,11 +112,11 @@ technology = {
 	# Tech 8
 	year = 1370	
 	
+	barracks = yes
+	
 	military_tactics 	= 	0.25
 	
 	enable = bombard #Все
-	fort_15th = yes
-	
 }
 technology = {
 	# Tech 9
@@ -142,6 +139,8 @@ technology = {
 	# Tech 10
 	year = 1400
 	
+	regimental_camp = yes
+	
 	infantry_shock		= 	0.2
 	cavalry_shock		= 	0.2
 }
@@ -162,6 +161,8 @@ technology = {
 	year = 1440
 	
 	land_morale = 	0.5
+	
+	training_fields = yes
 }
 
 technology = {
@@ -171,6 +172,7 @@ technology = {
 	#Pike Square
 	
 	military_tactics 	= 	0.25
+	fort_16th = yes
 }
 
 technology = {
@@ -257,8 +259,7 @@ technology = {
 	infantry_fire		= 	0.25
 	cavalry_shock		=	0.8
 
-	
-	regimental_camp = yes
+	arsenal = yes
 }
 
 technology = {
@@ -321,7 +322,7 @@ technology = {
 	infantry_shock		= 	0.20
 	cavalry_fire		= 	0.5
 
-	
+	conscription_center = yes
 	weapons = yes
 	
 	combat_width = 2
@@ -371,7 +372,7 @@ technology = {
 	year = 1583
 	
 	#Star Bastions
-	fort_16th = yes
+	fort_17th = yes
 	infantry_fire		=	0.3
 	
 	enable = african_hussar
@@ -427,9 +428,6 @@ technology = {
 	#Standardisation of Calibre
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	1.0	
-
-
-	training_fields = yes
 	
 	combat_width = 1
 	
@@ -476,9 +474,6 @@ technology = {
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
 	supply_limit		=	0.5
-
-	fort_17th = yes
-
 	
 	enable = austrian_tercio   
 	enable = swedish_gustavian		
@@ -514,11 +509,11 @@ technology = {
 technology = {
 	# Tech 30
 	year = 1674
-	
-	#Line Infantry
 	sprite_level = 3
-	military_tactics 	= 	0.25
 	
+	mint = yes #военный центр
+	
+	military_tactics 	= 	0.25	
 	infantry_shock 		=	0.5
 }
 
@@ -533,12 +528,8 @@ technology = {
 	
 	combat_width = 2
 	
-	conscription_center = yes
-
-	
 	enable = polish_winged_hussar	
-	enable = muscovite_cossack	
-
+	enable = muscovite_cossack
 	enable = coehorn_mortar		
 }
 

@@ -434,6 +434,72 @@ railroad = {
 armory = {
 	cost = 100
 	time = 12
+	modifier = { land_forcelimit = 1 }
+	ai_will_do = {
+		factor = 1250
+		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
+	}
+}
+barracks = {
+	cost = 300
+	time = 12
+	make_obsolete = armory	
+	modifier = { land_forcelimit = 2 }
+	ai_will_do = {
+		factor = 1250
+		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
+	}
+}	
+
+training_fields = {
+	cost = 600
+	time = 12
+	make_obsolete = barracks
+	modifier = { land_forcelimit = 3 }
+	ai_will_do = {
+		factor = 1250
+		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
+		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
+		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
+	}
+}
+regimental_camp = {
+	cost = 100
+	time = 12
 	modifier = { local_manpower_modifier = 0.50 }
 	ai_will_do = {
 		factor = 1000
@@ -458,40 +524,16 @@ armory = {
         modifier = { factor = 1.10 FROM = { personality = ai_militarist } }
 	}
 }
-barracks = {
+
+conscription_center = {
 	cost = 300
 	time = 12
-	modifier = { local_manpower_modifier = 1.0 }
-	make_obsolete = armory	
-	ai_will_do = {
-		factor = 1000
-		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
-		modifier = { factor = 1.10 base_manpower = 3 }
-		modifier = { factor = 1.10 base_manpower = 4 }
-		modifier = { factor = 1.10 base_manpower = 5 }
-		modifier = { factor = 1.10 base_manpower = 6 }
-		modifier = { factor = 1.10 base_manpower = 7 }
-		modifier = { factor = 1.10 base_manpower = 8 }
-		modifier = { factor = 1.10 base_manpower = 9 }
-		modifier = { factor = 1.10 base_manpower = 10 }
-		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
-        modifier = { factor = 1.10 FROM = { personality = ai_militarist } }	
+	
+	make_obsolete = regimental_camp
+	
+	modifier = {
+		modifier = { local_manpower_modifier = 1.00 }
 	}
-}	
-
-training_fields = {
-	cost = 600
-	time = 12
-	make_obsolete = barracks
-	modifier = { local_manpower_modifier = 1.50 }
 	ai_will_do = {
 		factor = 1000
 		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
@@ -515,62 +557,23 @@ training_fields = {
         modifier = { factor = 1.10 owner = { personality = ai_militarist } }
 	}
 }
-regimental_camp = {
-	cost = 100
-	time = 12
-	modifier = { land_forcelimit = 1 }
-	ai_will_do = {
-		factor = 1250
-		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
-	}
-}
-
-conscription_center = {
-	cost = 300
-	time = 12
-	
-	make_obsolete = regimental_camp
-	
-	modifier = {
-		land_forcelimit = 2
-	}
-	ai_will_do = {
-		factor = 1250
-		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 40 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 50 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 60 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
-		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
-	}
-}
 
 mint = {
 	cost = 600
 	time = 12
     make_obsolete = conscription_center
-	modifier = { land_forcelimit = 3 }
+	modifier = { local_manpower_modifier = 1.50 }
 	ai_will_do = {
-		factor = 1250
+		factor = 1000
+		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
+		modifier = { factor = 1.10 base_manpower = 3 }
+		modifier = { factor = 1.10 base_manpower = 4 }
+		modifier = { factor = 1.10 base_manpower = 5 }
+		modifier = { factor = 1.10 base_manpower = 6 }
+		modifier = { factor = 1.10 base_manpower = 7 }
+		modifier = { factor = 1.10 base_manpower = 8 }
+		modifier = { factor = 1.10 base_manpower = 9 }
+		modifier = { factor = 1.10 base_manpower = 10 }
 		modifier = { factor = 0.95 local_autonomy = 10 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
 		modifier = { factor = 0.95 local_autonomy = 20 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
 		modifier = { factor = 0.95 local_autonomy = 30 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
@@ -580,10 +583,7 @@ mint = {
 		modifier = { factor = 0.95 local_autonomy = 70 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
 		modifier = { factor = 0.95 local_autonomy = 80 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}
 		modifier = { factor = 0.95 local_autonomy = 90 NOT = { has_estate = estate_nobles} NOT = { has_estate = estate_nomadic_tribes} NOT = { has_estate = estate_cossacks}}	
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.75 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 0.90 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.00 } }
-		modifier = { factor = 1.2 owner = { army_size_percentage = 1.10 } }		
+        modifier = { factor = 1.10 owner = { personality = ai_militarist } }
 	}
 }
 ################################################

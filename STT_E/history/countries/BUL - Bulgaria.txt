@@ -3,7 +3,7 @@ government_rank = 3
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 150	# Sofia
+capital = 150	# Тырново
 
 969.1.1 = {
 	monarch = {
@@ -114,10 +114,6 @@ capital = 150	# Sofia
 		regent= yes
 	}
 }
-
-1020.1.1 = { capital = 150 } #Tarnovo
-
-1100.1.1 = { government = feudal_monarchy }
 
 1185.1.1 = {
 	monarch = {
@@ -269,20 +265,6 @@ capital = 150	# Sofia
 	}
 }
 
-1292.1.1 = {
-	heir = {
-		name = "Иван Асень"
-		monarch_name = "Иван Асень IV"
-		dynasty = "Тертер"
-		birth_date = 1270.1.1
-		death_date = 1330.1.1
-		claim = 95
-		adm = 4
-		dip = 2
-		mil = 1
-	}
-}
-
 1298.1.1 = {
 	monarch = {
 		name = "Иван II"
@@ -416,7 +398,7 @@ capital = 150	# Sofia
 
 1371.2.17 = {
 	monarch = {
-		name = "Иван Асень"
+		name = "Иван III"
 		dynasty = "Шишман"
 		birth_date = 1350.1.1
 		adm = 3
@@ -426,6 +408,77 @@ capital = 150	# Sofia
 }
 
 1395.6.3 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent= yes
+	}
+}
+
+1598.1.1 = {
+	monarch = {
+		name = "Шишман III"
+		dynasty = "Шишман"
+		birth_date = 1350.1.1
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+1598.9.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent= yes
+	}
+}
+
+1686.1.1 = {
+	monarch = {
+		name = "Ростислав Страшимирович"
+		dynasty = "Шишман"
+		birth_date = 1630.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1686.1.1 = {
+government_rank = 1
+}
+
+1686.9.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent= yes
+	}
+}
+
+1689.10.1 = {
+	monarch = {
+		name = "Пётр Карпош"
+		dynasty = "Карпош"
+		birth_date = 1650.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1689.10.1 = {
+government_rank = 2
+}
+
+1689.11.14 = {
 	monarch = {
 		name = "(Вакантно)"
 		dip = 3

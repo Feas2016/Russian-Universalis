@@ -1,5 +1,153 @@
 government = feudal_monarchy
+government_rank = 2
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 2746	
+capital = 2746	#Видин
+
+1261.1.1 = {
+	monarch = {
+		name = "Яков Святослав"
+		dynasty = "Рюрикович"
+		birth_date = 1220.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1276.1.1 = {
+	monarch = {
+		name = "Шишман I"
+		dynasty = "Шишман"
+		birth_date = 1250.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1280.1.1 = {
+	heir = {
+		name = "Михаил"
+		monarch_name = "Михаил I"
+		dynasty = "Шишман"
+       	birth_date = 1280.1.1
+		death_date = 1330.7.31
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1313.1.1 = {
+	monarch = {
+		name = "Михаил I"
+		dynasty = "Шишман"
+		birth_date = 1280.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1313.1.1 = {
+	heir = {
+		name = "Белаур"
+		monarch_name = "Белаур"
+		dynasty = "Шишман"
+       	birth_date = 1285.1.1
+		death_date = 1337.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1323.1.1 = {
+	monarch = {
+		name = "Белаур"
+		dynasty = "Шишман"
+		birth_date = 1285.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1323.1.1 = {
+	heir = {
+		name = "Кераца Петрица"
+		monarch_name = "Кераца Петрица"
+		dynasty = "Шишман"
+       	birth_date = 1290.1.1
+		death_date = 1337.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 1
+		female = yes
+	}
+}
+
+1336.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1356.1.1 = {
+	monarch = {
+		name = "Иван Срацимир"
+		dynasty = "Шишман"
+		birth_date = 1324.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1356.1.1 = {
+government_rank = 3
+}
+
+1369.1.1 = {
+	heir = {
+		name = "Константин"
+		monarch_name = "Константин I Асень"
+		dynasty = "Шишман"
+       	birth_date = 1369.1.1
+		death_date = 1422.9.17
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1396.1.1 = {
+	monarch = {
+		name = "Константин II Асень"
+		dynasty = "Шишман"
+		birth_date = 1369.1.1
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1422.9.17 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

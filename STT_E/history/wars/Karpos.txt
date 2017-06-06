@@ -1,0 +1,16 @@
+name = "Восстание Карпоша"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = BUL
+}
+
+1689.10.1 = {
+	add_attacker = BUL
+	add_defender = TUR
+}
+
+1689.11.14 = {
+	rem_attacker = BUL
+	rem_attacker = TUR
+}
