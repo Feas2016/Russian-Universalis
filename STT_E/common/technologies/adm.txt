@@ -24,15 +24,12 @@ technology = {
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
 	
-	road_network = yes
-    monastery = yes
-	storehouse = yes
 	glorious_monument = yes
 	canal_system = yes      
     tax_office = yes
-    steam_factory = yes
 	railroad = yes
 	capitol = yes
+	workshop = yes
 }
 technology = {
 	# Tech 1
@@ -62,15 +59,14 @@ technology = {
 	# Tech 4
 	year = 1310
 	
-	allowed_idea_groups = 1
-	
+	allowed_idea_groups = 1	
 }
 technology = {
 	# Tech 5
 	year = 1325
 	
 	max_states = 1
-	workshop = yes
+	monastery = yes
 }
 technology = {
 	# Tech 6
@@ -101,6 +97,7 @@ technology = {
 	year = 1400
 	
 	max_states = 1
+	counting_house = yes
 }
 
 technology = {
@@ -143,7 +140,8 @@ technology = {
 	year = 1492
 	
 	#Noble Republic
-	allowed_idea_groups = 4	
+	allowed_idea_groups = 4
+	customs_house = yes
 }
 
 technology = {
@@ -161,8 +159,7 @@ technology = {
 	
 	#The Scythe
 	production_efficiency 	=	0.05
-	
-
+	storehouse = yes
 }
 
 technology = {
@@ -216,12 +213,9 @@ technology = {
 
 technology = {
 	# Tech 25
-	year = 1609
-	
+	year = 1609	
 	
 	production_efficiency 	=	0.05
-
-
 }
 
 technology = {
@@ -290,7 +284,6 @@ technology = {
 	# Tech 33
 	year = 1713
 	
-	counting_house = yes  
 	max_states = 5
 }
 
@@ -324,7 +317,7 @@ technology = {
 	
 	#Rotherham Plough
 	production_efficiency 	=	0.05
-	factory = yes
+	steam_factory = yes
 }
 
 technology = {
@@ -397,6 +390,7 @@ technology = {
 	
 	#Oil well
 	production_efficiency 	=	0.05
+	factory = yes
 }
 technology = {
 	# Tech 46
