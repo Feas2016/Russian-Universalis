@@ -796,6 +796,19 @@ national_focus = ADM
 1540.1.1 = {
 	set_global_flag = new_draperies_happened
 	set_global_flag = japanese_tea_happened
+	set_global_flag = cotton_imports_global
+	change_price = {
+			trade_goods = wool
+			key = COTTON_IMPORTS
+			value = -0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = cotton
+			key = COTTON_IMPORTS
+			value = 0.20
+			duration = -1
+		}
 	change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
@@ -829,7 +842,7 @@ national_focus = ADM
 
 1551.7.19 = { add_accepted_culture = transylvanian }
 
-1556.10.2 = { government = absolute_monarchy }
+#1556.10.2 = { government = despotic_monarchy }
 
 1560.1.1 = { leader = {	name = "Франц Иосиф"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
 

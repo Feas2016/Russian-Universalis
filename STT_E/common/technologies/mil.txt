@@ -16,6 +16,7 @@ technology = {
 	enable = eastern_medieval_infantry
 	enable = eastern_knights
 	enable = indian_horsemen
+	enable = indian_pike
 	enable = steppe_cavalry
 	enable = mongol_bow
 	enable = western_medieval_infantry
@@ -23,6 +24,15 @@ technology = {
 	enable = african_abyssinian_light_cavalry
 	enable = muslim_cavalry_archers
 	enable = african_clubmen
+	enable = ashigaru
+	enable = guandao
+	enable = south_american_spearmen	
+	enable = mesoamerican_spearmen	
+	enable = native_indian_archer
+	enable = south_american_warfare
+	enable = east_asian_cavalry
+	enable = ottoman_medieval_infantry
+	enable = ottoman_medieval_cavalry
 
 	infantry_fire		= 	0.1
 	infantry_shock 		= 	0.1	
@@ -38,11 +48,6 @@ technology = {
 	
 	infantry_shock		= 	0.1
 	infantry_fire 		= 	0.1
-	
-	enable = south_american_spearmen	
-	enable = mesoamerican_spearmen	
-	enable = native_indian_archer
-	enable = south_american_warfare
 }
 
 technology = {
@@ -60,9 +65,6 @@ technology = {
 	year = 1300
 	
 	land_morale = 	0.3
-	
-	enable = ashigaru
-	enable = guandao
 }
 
 technology = {
@@ -89,6 +91,8 @@ technology = {
 	enable = indian_archers
 	enable = chinese_longspear
 	enable = japanese_archer
+	enable = ottoman_pike
+	enable = anatolian_pike
 }
 technology = {
 	# Tech 6
@@ -124,7 +128,6 @@ technology = {
 	combat_width = 1
 	
 	enable = ottoman_yaya
-	enable = east_asian_spearmen
 	enable = rajput_hill_fighters	
 	enable = eastern_bow
 	enable = ottoman_musellem	
@@ -207,6 +210,7 @@ technology = {
 	enable = chinese_footsoldier		
 	enable = japanese_footsoldier	
 	enable = ha_reformed_xantican_warrior
+	enable = east_asian_spearmen
 	
 	enable = cannon #все
 	

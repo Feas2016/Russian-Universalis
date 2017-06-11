@@ -1,9 +1,10 @@
 name = "Австро-Прусско-Датская война"
 war_goal = { 
-type = take_claim 
-casus_belli = cb_nationalist
-province = 1775
+	type = take_claim 
+	casus_belli = cb_nationalist
+	province = 1775
 }
+
 1864.2.1 = {
 	add_attacker = PRU add_attacker = HAB
 	add_defender = DAN

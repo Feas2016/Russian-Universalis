@@ -290,9 +290,11 @@ customs_house = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
-	modifier = { colonists = 1
-	global_colonial_growth = 10
-	range = 0.2 }
+	modifier = { 
+		colonists = 1
+		global_colonial_growth = 10
+		range = 0.2 
+	}
 	ai_will_do = {
 		factor = 5000
 		modifier = { factor = 0 NOT = { num_of_ports = 1 } }
@@ -305,9 +307,11 @@ arsenal = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
-	modifier = { army_tradition = 1
-	free_leader_pool = 1
-	discipline = 0.025 }
+	modifier = { 
+		army_tradition = 1
+		free_leader_pool = 1
+		discipline = 0.025 
+	}
 	ai_will_do = {
 		factor = 10000	
         modifier = { factor = 0.95 	NOT = { personality = ai_militarist } }	
@@ -354,9 +358,9 @@ road_network = {
 	cost = 90
 	time = 8
 	modifier = {
-	local_friendly_movement_speed = 0.40
-	trade_value_modifier = 0.25
-	allowed_num_of_buildings = 1
+		local_friendly_movement_speed = 0.40
+		trade_value_modifier = 0.25
+		allowed_num_of_buildings = 1
 	}
 	ai_will_do = {
 		factor = 500
@@ -372,8 +376,8 @@ canal_system = {
 	time = 12
 
 	modifier = {
-    trade_value = 1 
-	province_trade_power_modifier = 0.25
+		trade_value = 1 
+		province_trade_power_modifier = 0.25
 	}
 	ai_will_do = {
 		factor = 500
@@ -534,9 +538,8 @@ conscription_center = {
 	
 	make_obsolete = regimental_camp
 	
-	modifier = {
-		modifier = { local_manpower_modifier = 1.00 }
-	}
+	modifier = { local_manpower_modifier = 1.00 }
+	
 	ai_will_do = {
 		factor = 1000
 		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }

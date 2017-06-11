@@ -1,7 +1,7 @@
-#312 - Beloozero
+#3192 - Rostov
 
-owner = MOS
-controller = MOS
+owner = ROS
+controller = ROS
 culture = russian
 religion = orthodox
 hre = no
@@ -9,15 +9,15 @@ base_tax = 6
 base_production = 6
 trade_goods = grain 
 base_manpower = 4
-capital = "Rostov"
+capital = "Ростов"
 is_city = yes
-add_core = MOS
+add_core = ROS
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
 1450.1.1 = { discovered_by = SIB }
-1485.9.11 = { owner = MOS controller = MOS } # Passed to Muscovy
+1485.9.11 = { owner = MOS controller = MOS add_core = MOS } # Passed to Muscovy
 1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
 1613.3.3 = { unrest = 0 } # Order returned, Romanov dynasty
 1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
