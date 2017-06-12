@@ -344,7 +344,10 @@ horde_ideas = {
 	}
 	
 	trigger = {
-		government = steppe_horde
+		OR = {
+			government = steppe_horde
+			tag = HUL
+		}
 	}
 	free = yes
 	

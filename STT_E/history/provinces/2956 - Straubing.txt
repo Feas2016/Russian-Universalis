@@ -1,8 +1,8 @@
 #64 - Straubing (includes Passau)
 
-owner = BMU
-controller = BMU
-add_core = BMU
+owner = BAV
+controller = BAV
+add_core = BAV
 culture = bavarian
 religion = catholic
 base_tax = 5 
@@ -17,6 +17,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1392.1.1 = { owner = BMU add_core = BMU controller = BMU remove_core = BAV }
 1704.8.13 = {
 	owner = HAB
 	controller = HAB
