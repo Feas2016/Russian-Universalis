@@ -165,6 +165,7 @@ cb_trade_war_triggered = {
 		po_become_vassal
 		po_become_tributary_state
 		po_form_personal_union
+		po_transfer_vassals
 	}
 }
 
@@ -186,6 +187,7 @@ cb_trade_conflict = {
 		po_become_vassal
 		po_form_personal_union
 		po_become_tributary_state
+		po_transfer_vassals
 	}
 }
 
@@ -210,6 +212,7 @@ cb_trade_league_conflict = {
 		po_become_vassal
 		po_become_tributary_state
 		po_form_personal_union
+		po_transfer_vassals
 	}
 }
 
@@ -619,6 +622,7 @@ cb_trade_war = {
 		po_become_vassal
 		po_become_tributary_state
 		po_form_personal_union
+		po_transfer_vassals
 	}
 }
 
@@ -644,6 +648,7 @@ cb_trade_league_dispute = {
 		po_become_vassal
 		po_become_tributary_state
 		po_form_personal_union
+		po_transfer_vassals
 	}
 }
 
@@ -953,6 +958,7 @@ cb_humiliate_rotw = {
 		po_become_vassal
 		po_become_tributary_state
 		po_form_personal_union
+		po_transfer_vassals
 	}
 
 	war_goal = humiliate_rotw

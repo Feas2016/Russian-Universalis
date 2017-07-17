@@ -27,7 +27,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		WindowType = {
+		WindowType = { ###STT
 			name = "age_of_feudalism"
 			position = { x= 35 y = -29}
 			#upsound = age_of_discovery
@@ -79,7 +79,7 @@ guiTypes = {
 				spriteType = "GFX_age_indicator_4"
 				position = { x= 0 y = 7 }
 				}
-			iconType = {
+			iconType = { ###STT 5
 				name ="icon_age_of_feudalism"
 				spriteType = "GFX_icon_age_of_feudalism_g"
 				position = { x= -30 y = 18 }
@@ -120,7 +120,7 @@ guiTypes = {
 				spriteType = "GFX_age_indicator_3"
 				position = { x= 0 y = 7 }
 				}
-			iconType = {
+			iconType = { ###STT 5
 				name ="icon_age_of_feudalism"
 				spriteType = "GFX_icon_age_of_feudalism_g"
 				position = { x= -30 y = 18 }
@@ -161,7 +161,7 @@ guiTypes = {
 				spriteType = "GFX_age_indicator_2"
 				position = { x= 0 y = 7 }
 				}
-			iconType = {
+			iconType = { #STT 5
 				name ="icon_age_of_feudalism"
 				spriteType = "GFX_icon_age_of_feudalism_g"
 				position = { x= -30 y = 18 }
@@ -200,7 +200,7 @@ guiTypes = {
 				spriteType = "GFX_age_indicator_1"
 				position = { x= 0 y = 7 }
 				}
-			iconType = {
+			iconType = { #STT 5
 				name ="icon_age_of_feudalism"
 				spriteType = "GFX_icon_age_of_feudalism_g"
 				position = { x= -30 y = 18 }
@@ -292,24 +292,24 @@ guiTypes = {
 			alwaystransparent = yes 
 		}
 
-		instantTextBoxType = {
+		instantTextBoxType = { ###STT (GEKS)
 			name = "in_or_after_golden_age_text"
-			position = { x = 124 y =134 }
+			position = { x = 114 y =134 } #Переместил влево x = 124
 			font = "vic_22s"
 			borderSize = {x = 4 y = 4}
 			text = ""
-			maxWidth = 330
+			maxWidth = 350 #Увеличил 330
 			maxHeight = 30
 			format = center
 		}
 			
 		instantTextBoxType = {
 			name = "desc"
-			position = { x = 100 y =180 }
+			position = { x = 100 y =175 } #y =180 Поднял, чтобы описание не налезало
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = ""
-			maxWidth = 460
+			maxWidth = 480 #460 Увеличил ширину
 			maxHeight = 50
 			format = left
 		}

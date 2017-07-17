@@ -175,27 +175,27 @@ guiTypes = {
 		{
 			name ="player_shield"
 			spriteType = "GFX_shield_thin"
-			position = { x= 40 y = 5 }
+			position = { x= 20 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name ="player_shield_AL"
 			spriteType = "GFX_alliance_leader"
-			position = { x= 92 y = 66 }
+			position = { x= 72 y = 66 }
 			Orientation = "UPPER_LEFT"
 		}
 
-		guiButtonType =
+`		guiButtonType =
 		{
 			name ="opponent_shield"
 			spriteType = "GFX_shield_thin"
-			position = { x= 370 y = 5 }
+			position = { x= 390 y = 5 }
 			Orientation = "UPPER_LEFT"
 		}
 		iconType = {
 			name ="opponent_shield_AL"
 			spriteType = "GFX_alliance_leader"
-			position = { x= 422 y = 66 }
+			position = { x= 442 y = 66 }
 			Orientation = "UPPER_LEFT"
 		}		
 
@@ -412,7 +412,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "cancel"
-			position = { x = 463 y = 4 }
+			position = { x = 472 y = 4 }
 			spriteType ="GFX_closebutton2"	
 			shortcut = "ESCAPE"
 			clicksound = close_window

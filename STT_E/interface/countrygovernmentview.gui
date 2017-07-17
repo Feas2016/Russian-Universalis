@@ -385,6 +385,30 @@ guiTypes = {
 			}
 		}
 
+		
+		windowType = {
+			name = "russian_gov"
+			backGround =""
+			position = { x = -4 y = 146 }	
+			size = { x = 300 y = 300 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+
+			listboxType = {
+				name = "russian_list"
+				position = { x = 32 y = 70 }
+				backGround = ""
+				size = { x = 200 y = 300 }
+				Orientation = "UPPER_LEFT"
+				horizontal = 1
+				spacing = 0
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+		}
+
 		### -----------
 		
 		iconType =
@@ -692,6 +716,56 @@ guiTypes = {
 			text = ""
 		}
 	}
+
+
+
+	################################################################################################
+	## --- The interactions in the russian ability window
+	windowType = {
+		name = "russian_ability"
+		backGround =""
+		position = { x = 0 y = 0 }	
+		size = { x = 118 y = 70 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		guiButtonType = {
+			name = "russian_ability_button"
+			position = { x = 6 y = 0 }
+			quadTextureSprite ="GFX_russian_ability_ADM"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		
+		iconType =
+		{
+			name ="progress"
+			spriteType = "GFX_russian_government_bar"
+			position = { x= 0 y = 75 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType =
+		{
+			name ="progress_frame"
+			spriteType = "GFX_russian_government_bar_frame"
+			position = { x= -13 y = 52 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+			
+		}
+	}
+	
+	
+	
+
 
 	################################################################################################
 	### --- Modifier view item

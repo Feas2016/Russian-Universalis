@@ -1223,6 +1223,15 @@ guiTypes = {
 			buttonFont = "vic_18"
 		}
 		
+		iconType =
+		{
+			name = "area_icon"
+			spriteType = "GFX_estate_territory_L"
+			position = { x= 10 y = 7 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.75
+		}
+
 		instantTextBoxType = {
 			name = "title"
 			position = { x = 34 y = 7 }

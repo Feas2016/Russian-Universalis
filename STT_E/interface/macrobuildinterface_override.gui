@@ -275,7 +275,7 @@ guiTypes = {
 			position = {x = 152 y = 10 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 150
+			maxWidth = 150 ###STT
 			maxHeight = 18
 		}
 
@@ -389,16 +389,16 @@ guiTypes = {
 		iconType = {
 			name ="bg"
 			spriteType = "onmap_builing_bg3"
-			position = { x= 234 y = 0 }
+			position = { x= 234 y = 0 } ###STT
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "tax"
-			position = {x = 241 y = 8 }
+			position = {x = 241 y = 8 } ###STT
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 22
+			maxWidth = 22 ###STT
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -408,7 +408,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "tax_button"
-			position = { x = 260 y = -2 }
+			position = { x = 260 y = -2 } ###STT
 			quadTextureSprite ="GFX_development_button_tax"
 			tooltip = ""
 			tooltipText =""
@@ -419,10 +419,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "production"
-			position = {x = 293 y = 8 }
+			position = {x = 293 y = 8 } ###STT
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 22
+			maxWidth = 22 ###STT
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -432,7 +432,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "production_button"
-			position = { x = 312 y = -2 }
+			position = { x = 312 y = -2 } ###STT
 			quadTextureSprite ="GFX_development_button_production"
 			tooltip = ""
 			tooltipText =""
@@ -443,10 +443,10 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "manpower"
-			position = {x = 345 y = 8 }
+			position = {x = 345 y = 8 } ###STT
 			font = "Arial12"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 22
+			maxWidth = 22 ###STT
 			maxHeight = 18
 			text = ""
 			orientation = "UPPER_LEFT"
@@ -543,7 +543,7 @@ guiTypes = {
 			maxWidth = 254
 			maxHeight = 18
 			format = center
-#			allwaystransparent = yes
+			allwaystransparent = yes
 		}		
 
 		guiButtonType =
@@ -588,7 +588,7 @@ guiTypes = {
 		hide_position = { x=-400 y = 150 }	
 		animation_type = "decelerated"
 		animation_time = 250	
-		size = { x=510 y = 568}	#was x=392 y = 568
+		size = { x=510 y = 568}	#was x=392 y = 568  ###STT
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -605,70 +605,70 @@ guiTypes = {
 
 		checkboxType = {
 			name = "land_units_button"
-			position = { x=484 y=58} #was x=420
+			position = { x=484 y=58} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_army_tab"
 			shortcut = "1"
 		}
 		
 		checkboxType = {
 			name = "navy_units_button"
-			position = { x=484 y=108} #was x=420
+			position = { x=484 y=108} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_navy_tab"
 			shortcut = "2"
 		}
 
 		checkboxType = {
 			name = "core_button"
-			position = { x=484 y=158} #was x=420
+			position = { x=484 y=158} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_core_tab"
 			shortcut = "3"
 		}
 		
 		checkboxType = {
 			name = "missionary_button"
-			position = { x=484 y=208} #was x=420
+			position = { x=484 y=208} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_missionary_tab"
 			shortcut = "4"
 		}
 		
 		checkboxType = {
 			name = "autonomy_button"
-			position = { x=483 y=258} #was x=420
+			position = { x=483 y=258} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_revolt_tab"
 			shortcut = "5"
 		}
 		
 		checkboxType = {
 			name = "culture_button"
-			position = { x=484 y=308} #was x=420
+			position = { x=484 y=308} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_culture_tab"
 			shortcut = "6"
 		}
 		
 		checkboxType = {
 			name = "buildings_button"
-			position = { x=484 y=358} #was x=420
+			position = { x=484 y=358} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_building_tab"
 			shortcut = "7"
 		}
 
 		checkboxType = {
 			name = "development_button"
-			position = { x=484 y=408} #was x=420
+			position = { x=484 y=408} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_development_tab"
 			shortcut = "8"
 		}
 
 		checkboxType = {
 			name = "estates_button"
-			position = { x=484 y=458} #was x=420
+			position = { x=484 y=458} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_estates_tab"
 			shortcut = "9"
 		}
 
 		checkboxType = {
 			name = "diplomacy_button"
-			position = { x=484 y=508 }
+			position = { x=484 y=508 }  ###STT
 			quadTextureSprite ="GFX_build_interface_diplomacy_tab"
 			shortcut = "0"
 		}
@@ -677,19 +677,19 @@ guiTypes = {
 		{
 			name ="close_gold"
 			spriteType = "GFX_close_gold"
-			position = { x= 463 y = 11 } #was x= 399
+			position = { x= 463 y = 11 } #was x= 399  ###STT
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 467 y = 14 } #was x= 403
+			position = { x = 467 y = 14 } #was x= 403  ###STT
 			quadTextureSprite ="GFX_closebutton2"
 		}
 				
 		instantTextBoxType={
 			name = "macro_title"
-			position = {x = 120 y = 15 } #was x= 68
+			position = {x = 120 y = 15 } #was x= 68  ###STT
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 300
@@ -723,7 +723,6 @@ guiTypes = {
 #				buttonText = "LEDGER_DEVELOPMENT"
 #				buttonFont = "vic_18"
 			}
-			
 			
 			guiButtonType = {
 				name = "overextension_button"
@@ -1227,7 +1226,7 @@ guiTypes = {
 				position = {x = 54 y = 473 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 148
+				maxWidth = 208 # Увеличил на 60
 				maxHeight = 18
 				text = "MACRO_BUILDR_INCL_TERRITORIES"
 				format = left
@@ -1300,43 +1299,43 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "alliances_button"
-				position = { x= 52 y = -6 } #Was 43
+				position = { x= 52 y = -6 } #Was 43  ###STT
 				quadTextureSprite = "GFX_macro_diplomacy_tab_alliance"
 				shortcut = "s"
 			}
 			guiButtonType = {
 				name = "influence_button"
-				position = { x= 112 y = -6 } #was 94
+				position = { x= 112 y = -6 } #was 94  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_influence"
 				shortcut = "d"
 			}
 			guiButtonType = {
 				name = "dynastic_button"
-				position = { x= 172 y = -6 } #was 145
+				position = { x= 172 y = -6 } #was 145  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_dynastic"
 				shortcut = "g"
 			}
 			guiButtonType = {
 				name = "economic_button"
-				position = { x= 232 y = -6 } # was 196
+				position = { x= 232 y = -6 } # was 196  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_economic"
 				shortcut = "z"
 			}
 			guiButtonType = {
 				name = "papal_button"
-				position = { x= 292 y = -6 } #was 247
+				position = { x= 292 y = -6 } #was 247  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_papal"
 				shortcut = "x"
 			}
 			guiButtonType = {
 				name = "hre_button"
-				position = { x= 352 y = -6 } #was 298
+				position = { x= 352 y = -6 } #was 298  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_hre"
 				shortcut = "c"
 			}
 			guiButtonType = {
 				name = "great_power_button"
-				position = { x= 412 y = -6 } # was 349
+				position = { x= 412 y = -6 } # was 349  ###STT
 				quadTextureSprite ="GFX_macro_diplomacy_tab_great_power"
 				shortcut = "v"
 			}
@@ -2242,7 +2241,7 @@ guiTypes = {
 			name ="content_list"
 			position = { x = 5 y = 84 }
 			backGround=""
-			size = { x= 460 y = 426 } # was x= 400
+			size = { x= 460 y = 426 } # was x= 400  ###STT
 			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
@@ -2252,10 +2251,10 @@ guiTypes = {
 		
 		instantTextBoxType={
 			name = "force_limit"
-			position = {x = 25 y = 510 }
+			position = {x = 25 y = 510 }  ###STT
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 180
+			maxWidth = 180  ###STT
 			maxHeight = 32
 			text = "Army force limit: xx/xx"
 		}

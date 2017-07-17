@@ -22,8 +22,7 @@ conquer_finland = {
 		NOT = { overlord_of = SWE }
 		NOT = { is_subject_of = SWE }
 		finland_area = { owned_by = SWE }
-		### STT
-		NOT = { finland_area = { owned_by = ROOT }	}
+		NOT = { finland_area = { owned_by = ROOT }	} ### STT
 		NOT = { has_country_modifier = baltic_ambition }
 		NOT = { has_country_flag = conquered_finland_rus }
 		NOT = { last_mission = conquer_finland }
@@ -34,7 +33,7 @@ conquer_finland = {
 	success = {
 		NOT = { war_with = SWE }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -105,11 +104,11 @@ subjugate_tver = {
 	success = {
 		NOT = { exists = TVE }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 5000
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = TVE value = 0 } }
@@ -199,7 +198,7 @@ annex_yaroslavl = {
 	success = {
 		NOT = { exists = YAR }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -297,7 +296,7 @@ annex_ryazan = {
 	success = {
 		NOT = { exists = RYA }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -458,11 +457,11 @@ access_to_the_baltic_sea = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 4000
 		modifier = {
 			factor = 2
 			dip = 4
@@ -514,16 +513,29 @@ russia_discovers_western_siberia = {
 			tag = RUS
 			tag = SLV
 		}
-		num_of_colonists = 1
+		OR = {
+			num_of_colonists = 1
+			has_idea = siberian_frontier
+		}
+		### STT 4 string
 		NOT = { central_siberia_area = { has_discovered =  ROOT } }
 		NOT = { ishim_area = { has_discovered =  ROOT } }
 		central_siberia_area = { range = ROOT }
 		ishim_area = { range = ROOT }
-		NOT = { has_country_modifier = colonial_enthusiasm }
+		OR = {
+			AND = {
+				NOT = { has_country_modifier = colonial_enthusiasm }
+				NOT = { has_idea = siberian_frontier }
+			}
+			AND = {
+				has_idea = siberian_frontier
+				NOT = { has_country_modifier = conquest_of_siberia }
+			}
+		}
 		NOT = { last_mission = russia_discovers_western_siberia }
 	}
 	abort = {
-		NOT = { num_of_colonists = 1 }
+
 	}
 	success = { ##STT
 		OR = {
@@ -543,9 +555,21 @@ russia_discovers_western_siberia = {
 		}
 	}
 	effect = {
+		if = {
+			limit = {
+				has_dlc = "Third Rome"
+				has_idea = siberian_frontier
+			}
+			add_country_modifier = {
+				name = "conquest_of_siberia"
+				duration = 3650
+			}
+			else = {
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
 			duration = 3650
+		}
+	}
 		}
 	}
 }
@@ -573,22 +597,31 @@ russian_colony_in_west_siberia = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
-		num_of_colonists = 1
+		OR = {
+			num_of_colonists = 1
+			has_idea = siberian_frontier
+		}
 		###STT 
 		NOT = { ishim_area = { owned_by = ROOT } }
 		NOT = { central_siberia_area = { owned_by = ROOT } }
-		NOT = { has_country_modifier = colonial_enthusiasm }
+		OR = {
+			AND = {
+				NOT = { has_country_modifier = colonial_enthusiasm }
+				NOT = { has_idea = siberian_frontier }
+			}
+			AND = {
+				has_idea = siberian_frontier
+				NOT = { has_country_modifier = conquest_of_siberia }
+			}
+		}
 		NOT = { last_mission = russian_colony_in_west_siberia }
 	}
 	abort = {
-		OR = {
-			NOT = { num_of_colonists = 1 }
-			AND = { ###STT
-				NOT = { ishim_area = { is_empty = yes } }
-				NOT = { central_siberia_area = { is_empty = yes } }
-				NOT = { ishim_area = { owned_by = ROOT } }
-				NOT = { central_siberia_area = { owned_by = ROOT } }
-			}	
+		AND = { ###STT
+			NOT = { ishim_area = { is_empty = yes } }
+			NOT = { central_siberia_area = { is_empty = yes } }
+			NOT = { ishim_area = { owned_by = ROOT } }
+			NOT = { central_siberia_area = { owned_by = ROOT } }
 		}
 	}
 	success = { ###STT
@@ -602,7 +635,6 @@ russian_colony_in_west_siberia = {
 				colonysize = 400
 			}
 		}
-	}
 	chance = {
 		factor = 1000
 		modifier = {
@@ -615,9 +647,21 @@ russian_colony_in_west_siberia = {
 		}
 	}
 	effect = {
+		if = {
+			limit = {
+				has_dlc = "Third Rome"
+				has_idea = siberian_frontier
+			}
+			add_country_modifier = {
+				name = "conquest_of_siberia"
+				duration = 3650
+			}
+			else = {
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
 			duration = 3650
+		}
+	}
 		}
 	}
 }
@@ -638,15 +682,27 @@ russia_discovers_eastern_siberia = {
 			tag = RUS
 			tag = SLV
 		}
+		OR = {
 		num_of_colonists = 1
+			has_idea = siberian_frontier
+		}
 		central_siberia_area = { has_discovered =  ROOT }
 		NOT = { tunguska_area = { has_discovered =  ROOT } }
 		tunguska_area = { range = ROOT }
+		OR = {
+			AND = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
+				NOT = { has_idea = siberian_frontier }
+			}
+			AND = {
+				has_idea = siberian_frontier
+				NOT = { has_country_modifier = conquest_of_siberia }
+			}
+		}
 		NOT = { last_mission = russia_discovers_eastern_siberia }
 	}
 	abort = {
-		NOT = { num_of_colonists = 1 }
+
 	}
 	success = {
 		tunguska_area = { has_discovered =  ROOT }
@@ -659,9 +715,21 @@ russia_discovers_eastern_siberia = {
 		}
 	}
 	effect = {
+		if = {
+			limit = {
+				has_dlc = "Third Rome"
+				has_idea = siberian_frontier
+			}
+			add_country_modifier = {
+				name = "conquest_of_siberia"
+				duration = 3650
+			}
+			else = {
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
 			duration = 3650
+		}
+	}
 		}
 	}
 }
@@ -681,26 +749,29 @@ russian_colony_in_east_siberia = {
 			tag = RUS
 			tag = SLV
 		}
-		num_of_colonists = 1
 		central_siberia_area = { owned_by = ROOT }
 		tunguska_area = {
 			has_discovered = ROOT
 			is_empty = yes
 		}
 		NOT = { tunguska_area = { owned_by = ROOT } }
+		OR = {
+			AND = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
+				NOT = { has_idea = siberian_frontier }
+			}
+			AND = {
+				has_idea = siberian_frontier
+				NOT = { has_country_modifier = conquest_of_siberia }
+			}
+		}
 		NOT = { last_mission = russian_colony_in_east_siberia }
 	}
 	abort = {
-		OR = {
-			NOT = { num_of_colonists = 1 }
-			AND = {
 				NOT = { tunguska_area = { is_empty = yes } }
 				NOT = { tunguska_area = { owned_by = ROOT } }
-			}
 			NOT = { central_siberia_area = { owned_by = ROOT } }
 		}
-	}
 	success = {
 		tunguska_area = {
 			owned_by = ROOT
@@ -719,9 +790,21 @@ russian_colony_in_east_siberia = {
 		}
 	}
 	effect = {
+		if = {
+			limit = {
+				has_dlc = "Third Rome"
+				has_idea = siberian_frontier
+			}
+			add_country_modifier = {
+				name = "conquest_of_siberia"
+				duration = 3650
+			}
+			else = {
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
 			duration = 3650
+		}
+	}
 		}
 	}
 }
@@ -761,7 +844,7 @@ annex_the_qasim_khanate = {
 	success = {
 		NOT = { exists = QAS }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -834,7 +917,7 @@ defend_russia_against_the_mongols = {
 	
 	target_provinces = {
 		owned_by = GOL
-		culture = russian
+		culture = russian ### STT
 	}
 	
 	allow = {
@@ -878,7 +961,7 @@ defend_russia_against_the_mongols = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -921,7 +1004,7 @@ cross_the_mongol_border = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -984,6 +1067,7 @@ subjugate_novgorod = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = MOS tag = TSR tag = RUS tag = SLV } ### STT
+		num_of_cities = 20
 		is_free_or_tributary_trigger = yes
 		NOT = { has_country_flag = novogorod_subjugated }
 		NOT = { has_country_modifier = military_victory }
@@ -993,7 +1077,7 @@ subjugate_novgorod = {
 			#NOT = { num_of_cities = ROOT } ## STT 
 			NOT = { alliance_with = ROOT }
 		}
-		NOT = { last_mission = subjugate_novgorod }
+		NOT = { last_mission = subjugate_novgorod } ## STT 
 	}
 	abort = {
 		is_subject_other_than_tributary_trigger = yes
@@ -1001,7 +1085,7 @@ subjugate_novgorod = {
 	success = {
 		NOT = { exists = NOV }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1051,6 +1135,7 @@ subjugate_novgorod = {
 				}
 			}
 			random_target_province = {
+				limit = { owned_by = ROOT }
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
@@ -1151,7 +1236,7 @@ russia_partitions_poland = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1273,7 +1358,7 @@ russia_partitions_lithuania = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1377,7 +1462,7 @@ subjugate_crimea = {
 	success = {
 		NOT = { exists = CRI }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1463,7 +1548,7 @@ subjugate_kazan = {
 	success = {
 		NOT = { exists = KAZ }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1551,7 +1636,7 @@ subjugate_the_siberian_khanate = {
 	success = {
 		NOT = { exists = SIB }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1639,7 +1724,7 @@ subjugate_astrakhan = {
 	success = {
 		NOT = { exists = AST }
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1765,7 +1850,7 @@ conquer_nogai_area = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1868,7 +1953,7 @@ conquer_western_siberia_region = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {
@@ -1950,7 +2035,7 @@ conquer_east_siberia_region = {
 	}
 	success = {
 		all_target_province = {
-			owned_by = ROOT
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 	}
 	chance = {

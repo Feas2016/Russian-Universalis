@@ -1,4 +1,4 @@
-age_of_feudalism = {
+age_of_feudalism = { ###STT
 	start = 1300
 	
 	can_start = {
@@ -215,7 +215,7 @@ age_of_discovery = {
 	start = 1400
 	
 	can_start = {
-		any_country = { has_idea = quest_for_the_new_world }
+		any_country = { has_idea = quest_for_the_new_world } ###STT
 	}
 	
 	religious_conflicts = yes
@@ -425,6 +425,14 @@ age_of_discovery = {
 			}
 			ai_will_do = {
 				factor = 100
+				modifier = {
+					factor = 0
+					NOT = {
+						any_subject_country = {
+							liberty_desire = 20
+						}
+					}
+				}
 			}
 		}
 		ab_venice_ship_trade = {
@@ -677,7 +685,7 @@ age_of_absolutism = {
 		}
 		
 		obj_universities = {
-			university = 1 ###STT many houses
+			university = 3 ###STT many houses
 		}
 	
 		obj_large_forcelimit = {
@@ -774,7 +782,7 @@ age_of_absolutism = {
 				yearly_absolutism = 1
 			}
 			ai_will_do = {
-				factor = 10
+				factor = 100
 			}
 		}
 	

@@ -9,7 +9,7 @@ country_event = {
 	id = time_of_troubles.1
 	title = "flavor_rus.EVTNAME1101"
 	desc = "flavor_rus.EVTDESC1101"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -32,7 +32,7 @@ country_event = {
 	id = time_of_troubles.2
 	title = "flavor_rus.EVTNAME1102"
 	desc = "flavor_rus.EVTDESC1102"
-	picture = COURT_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -214,7 +214,7 @@ country_event = {
 	id = time_of_troubles.6
 	title = "flavor_rus.EVTNAME1106"
 	desc = "flavor_rus.EVTDESC1106"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -299,7 +299,7 @@ country_event = {
 	id = time_of_troubles.7
 	title = "flavor_rus.EVTNAME1107"
 	desc = "flavor_rus.EVTDESC1107"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -421,7 +421,7 @@ country_event = {
 	id = time_of_troubles.11
 	title = "flavor_rus.EVTNAME1107"
 	desc = "flavor_rus.EVTDESC1111"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -543,7 +543,7 @@ country_event = {
 	id = time_of_troubles.8
 	title = "flavor_rus.EVTNAME1108"
 	desc = "flavor_rus.EVTDESC1108"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -611,7 +611,7 @@ country_event = {
 	id = time_of_troubles.9
 	title = "flavor_rus.EVTNAME1109"
 	desc = "flavor_rus.EVTDESC1109"
-	picture = ANGRY_MOB_eventPicture
+	picture = ACCUSATION_eventPicture
 	
 	trigger = {
 		NOT = { has_country_flag = RUS_had_event_1109 }
@@ -677,7 +677,7 @@ country_event = {
 }
 
 # End of the Time of Troubles
-country_event = {
+country_event = { ##STT
 	id = time_of_troubles.10
 	title = "flavor_rus.EVTNAME1110"
 	desc = "flavor_rus.EVTDESC1110"

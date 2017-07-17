@@ -385,8 +385,8 @@ country_event = {
 		}
 		#Adding these areas entirely into the Empire prevents this event.
 		OR = {
-			tuscany_area = {	
-				owner = { is_part_of_hre = no }
+			tuscany_area = {
+				owner = { is_part_of_hre = no }	###STT fix
 			}
 			emilia_romagna_area = {	
 				owner = { is_part_of_hre = no }
@@ -400,7 +400,13 @@ country_event = {
 			lombardy_area = {	
 				owner = { is_part_of_hre = no }
 			}
-			central_italy_area = {	
+			2977 = {
+				owner = { is_part_of_hre = no }
+			}
+			119 = {
+				owner = { is_part_of_hre = no }
+			}
+			2976 = {
 				owner = { is_part_of_hre = no }
 			}
 			108 = {	

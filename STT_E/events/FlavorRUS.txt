@@ -8,9 +8,6 @@ normal_or_historical_nations = yes
 # The Pomjestija Reform
 country_event = {
 	id = flavor_rus.1
-	
-	
-	
 	title = "flavor_rus.EVTNAME3401"
 	desc = "flavor_rus.EVTDESC3401"
 	picture = REFORM_eventPicture
@@ -59,7 +56,6 @@ country_event = {
 # Malyuta Skuratov
 country_event = {
 	id = flavor_rus.2
-	
 	
 	title = "flavor_rus.EVTNAME3202"
 	desc = "flavor_rus.EVTDESC3202"
@@ -138,10 +134,12 @@ country_event = {
 	option = {		# It all belongs to Mother Russia
 		name = "flavor_rus.EVTOPTA3404"
 		ai_chance = { factor = 100 }
-		
+		add_prestige = 10
 		ural_region = {
 			limit = {
 				NOT = { owned_by = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
 			}
 			add_permanent_claim = ROOT ###STT
 		}
@@ -169,11 +167,6 @@ country_event = {
 				owned_by = LIT
 				owned_by = PLC
 			}
-		}
-		OR = {
-			tag = RUS
-			tag = TSR ###STT
-			tag = RU2 ###STT
 		}
 		
 		smolensk_area = {
@@ -267,6 +260,7 @@ country_event = {
 			###STT repair
 			owned_by = ROOT
 			is_core = ROOT
+			###STT del samara
 		}
 		tambov_area = {
 			type = all
@@ -293,13 +287,13 @@ country_event = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_permanent_claim = ROOT ###STT fix
 		}
 		nogai_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = ROOT
+			add_permanent_claim = ROOT	###STT fix
 			###STT -1 del
 		}
 	}
@@ -1565,8 +1559,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 1500
-		NOT = { is_year = 1800 }
 		OR = {
 			AND = {
 				tag = MOS

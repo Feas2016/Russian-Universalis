@@ -1757,6 +1757,7 @@ country_event = {
 		government = monarchy
 		NOT = { government = ottoman_government }
 		NOT = { government = elective_monarchy }
+		NOT = { government = shogunate }
 		is_lesser_in_union = no
 		NOT = {
 			has_country_modifier = dyn_newborn_daughter
@@ -1764,7 +1765,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 600
 	}
 	
 	option = {
@@ -1812,6 +1813,7 @@ country_event = {
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
+		NOT = { government = shogunate }
 		is_lesser_in_union = no
 		NOT = { has_ruler_flag = talented_daughter_happened }
 	}

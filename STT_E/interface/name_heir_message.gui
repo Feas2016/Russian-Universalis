@@ -74,15 +74,15 @@ guiTypes = {
 			name = "Line3"
 			font = "vic_22"
 			#position = { x= 96 y= 87 }
-			position = { x= 96 y= 122 }
+			position = { x= 96 y= 135 } #Починил
 			borderSize = { x = 0 y = 0 }	
 			text = ""
-			size = { x=307 y=20 }
+			size = { x=307 y=32 } #Починил
 		}
 		
 		guiButtonType = {
 			name = "random_heir_name"
-			position = { x = 406 y = 122 } #Починил
+			position = { x = 406 y = 111 }
 			spriteType = "GFX_nation_designer_random_button"
 		}
 			

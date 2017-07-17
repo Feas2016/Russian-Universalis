@@ -1620,6 +1620,13 @@ country_event = {
 		any_owned_province = {
 			religion = coptic
 		}
+		any_owned_province = {
+			is_capital = no
+			religion = coptic
+			NOT = { has_province_modifier = "songs_of_the_pious" }
+			NOT = { has_province_modifier = "scripture_studies" }
+			NOT = { has_province_modifier = "monastery_repaired" }
+		}
 		NOT = {
 			any_owned_province = {
 				OR = {

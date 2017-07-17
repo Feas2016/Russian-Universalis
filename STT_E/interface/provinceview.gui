@@ -866,7 +866,7 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}	
 				text = "Heretic"
-				maxWidth = 96
+				maxWidth = 126 # Óâåëè÷èë 96
 				maxHeight = 20
 				format = left
 				fixedsize = yes
@@ -2601,7 +2601,7 @@ guiTypes = {
 				name = "provinces_listbox"
 				backGround = ""
 				position = { x= 20 y = 250 }
-				size = { x=320 y=550 } #STT
+				size = { x=320 y=550 } ###STT Pochinil
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"
@@ -2618,7 +2618,7 @@ guiTypes = {
 			
 			guiButtonType = {
 				name ="raise_banners_button"
-				quadTextureSprite = "button_type_1"
+				quadTextureSprite = "button_type_4"
 				buttonFont = "vic_18"
 				buttonText = "RAISE_MANCHU_BANNERS"
 
@@ -2629,21 +2629,47 @@ guiTypes = {
 			{
 				name = "manchu_banner"
 				spriteType = "GFX_amount_of_banners"
-				position = { x = 176 y = 416 }
+				position = { x = 250 y = 416 }
 				scale = 0.85
 			}
 
 			instantTextBoxType = {
 				name = "banner_number"
-				position = { x = 254 y = 430 }
+				position = { x = 302 y = 431 }
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 2 y = 2}	
 				text = "x of y"
-				maxWidth = 120
+				maxWidth = 100
 				maxHeight = 20
-				format = center
+				format = right
 			}	
+			
+			
+			# Orthodox Patriarch - TODO
+			iconType = {
+				name = "patriarch_bg"
+				spriteType = "GFX_patriarchy_slot"
+				position = { x = 12 y = 419 }
+			}			
+	
+			guiButtonType = {
+				name ="consecrate_patriarch_button"
+				quadTextureSprite = "button_type_4"
+				buttonFont = "vic_18"
+				buttonText = "CONSECRATE_BUTTON"
+
+				position = { x = 24 y = 427 }
+			}
+
+			iconType =
+			{
+				name = "consecrate_patriarch"
+				spriteType = "GFX_patriarch_icon"
+				position = { x = 258 y = 426 }
+			}	
+			
+
 			
 		}
 		
@@ -5486,7 +5512,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5502,7 +5528,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5518,7 +5544,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5534,7 +5560,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5550,7 +5576,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -5599,7 +5625,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5615,7 +5641,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -5637,7 +5663,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 
 		iconType = {
@@ -5659,7 +5685,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}	
 
 		checkboxType = {
@@ -5675,7 +5701,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"		
 		}
 
 		iconType = {
@@ -5697,7 +5723,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}	
 
         iconType = {
@@ -5729,7 +5755,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5745,7 +5771,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"		
 		}
 		
 		checkboxType = {
@@ -5761,7 +5787,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"		
 		}
 		
 		checkboxType = {
@@ -5777,7 +5803,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -5836,7 +5862,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5852,7 +5878,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5868,7 +5894,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"		
 		}
 		##################################
 		#Infrastructure Buildings End
@@ -5900,7 +5926,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5916,7 +5942,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5932,7 +5958,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -5965,7 +5991,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -5981,7 +6007,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -6025,7 +6051,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}	
 
 		checkboxType = {
@@ -6041,7 +6067,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 
 		iconType = {
@@ -6095,7 +6121,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6111,7 +6137,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		iconType = {
@@ -6155,7 +6181,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}		
 		
 		iconType = {
@@ -6189,7 +6215,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6205,7 +6231,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 				
 		checkboxType = {
@@ -6237,7 +6263,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}		
 		
 		checkboxType = {
@@ -6253,7 +6279,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}	
 
 
@@ -6374,7 +6400,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 				
 		checkboxType = {
@@ -6390,7 +6416,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6406,7 +6432,13 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
+		}
+		
+		iconType = {
+			name = "fort_16th_to_fort_17th_arrow"
+			position = { x = 105 y = 332 }
+			spriteType = "GFX_building_upgrade_icon"
 		}
 		
 		checkboxType = {
@@ -6422,7 +6454,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 
 		
@@ -6465,7 +6497,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6481,7 +6513,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6497,7 +6529,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 		
 		checkboxType = {
@@ -6513,7 +6545,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}		
 		
 		checkboxType = {
@@ -6529,7 +6561,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000Â¤"	
 		}
 	}
 	
@@ -6680,13 +6712,13 @@ guiTypes = {
 			
 		instantTextBoxType = {
 			name = "culture"
-			position = { x = 246 y = 6 }
+			position = { x = 244 y = 6 } #
 			textureFile = ""
 			font = "vic_18"
-			borderSize = {x = 2 y = 2}	
+			borderSize = {x = 4 y = 2} #
 			text = "Culturesname"
-			maxWidth = 82
-			maxHeight = 16
+			maxWidth = 100 #
+			maxHeight = 7 #
 			format = left
 			fixedsize = yes	
 		}	

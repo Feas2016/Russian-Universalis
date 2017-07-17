@@ -3,6 +3,55 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+yuan_empire = {
+	rank = {
+		1 = HORDE
+		2 = KHANATE
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		1 = JINONG
+		2 = KHAN
+		3 = KHAGAN
+	}
+	
+	ruler_female = {
+		1 = JINONG
+		2 = KHATUN
+		3 = GREAT_KHATUN
+	}
+	
+	consort_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = YEKHE_KHAGAN
+	}
+
+	consort_female = {
+		1 = GEGE
+		2 = KHANUM
+		3 = YEKHE_KHANUM
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHANUM
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	trigger = {
+		tag = YUA
+		government = monarchy
+	}
+}
+
 ottoman_marches = {
 	rank = {
 		1 = PASHALIK
@@ -122,7 +171,8 @@ march_christian_monarchy = {
 
 march_eastern_christian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 	}
 	
 	ruler_male = {
@@ -137,6 +187,7 @@ march_eastern_christian_monarchy = {
 	
 	trigger = {
 		government = monarchy
+		NOT = { government = principality }
 		OR = {
 			religion = coptic
 			religion = orthodox
@@ -163,7 +214,6 @@ holy_roman_electors_monarchy = {
 		2 = QUEEN_ELECTOR	
 		3 = EMPRESS
 	}
-
 	
 	consort_male  = {
 		1 = ELECTOR
@@ -278,7 +328,8 @@ sharifs_of_mecca = {
 
 malian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -632,10 +683,12 @@ austrian_monarchy = {
 	}
 
 	trigger = {
-		tag = HAB
-		### STT
-		tag = AEM
-		tag = DUA
+		OR = {
+			tag = HAB
+			### STT
+			tag = AEM
+			tag = DUA
+		}
 		government = monarchy
 	}
 }
@@ -723,7 +776,8 @@ gov_turkey_republic = {
 
 theodoro_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -748,7 +802,8 @@ theodoro_monarchy = {
 
 croatian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -911,7 +966,8 @@ grand_duchy_of_luxembourg = {
 
 serbian_feudal_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = DESPOTATE
 		3 = EMPIRE
 	}
@@ -940,7 +996,8 @@ serbian_feudal_monarchy = {
 
 serbian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -965,7 +1022,8 @@ serbian_monarchy = {
 
 byzantine_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1026,7 +1084,8 @@ gov_spqr_republic = {
 
 greek_monarchy = {	#Greeks without Byzantine Ties
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1079,7 +1138,8 @@ arakanese_monarchy = { #Buddhist state that used Muslim titles.
 
 albanian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1104,7 +1164,8 @@ albanian_monarchy = {
 
 qing_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KHANATE
 		3 = KHAGANATE
 	}
@@ -1153,9 +1214,35 @@ egyptian_monarchy = {
 	}
 }
 
+scanian_peasant_republic = {
+	rank = {
+		1 = SOGN
+		2 = HERRED
+		3 = BONDEVALDE
+	}
+
+	ruler_male = {
+		1 = OLDERMAND
+		2 = STORBONDE
+		3 = LANDSBONDE
+	}
+
+	ruler_female = {
+		1 = OLDERMAND_fem
+		2 = STORBONDE_fem
+		3 = LANDSBONDE_fem
+	}
+
+	trigger = {
+		government = peasants_republic
+		primary_culture = scanian
+	}
+}
+
 pagan_egyptian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1186,7 +1273,8 @@ pagan_egyptian_monarchy = {
 
 pagan_greek_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1219,7 +1307,8 @@ pagan_greek_monarchy = {
 
 pagan_roman_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1250,7 +1339,8 @@ pagan_roman_monarchy = {
 
 jurchen_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KHANATE
 		3 = KHAGANATE
 	}
@@ -1287,7 +1377,8 @@ jurchen_monarchy = {
 
 romanian_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY #STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1929,7 +2020,8 @@ betsimisaraka_monarchy = {
 
 south_slavic_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY ###STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1977,6 +2069,34 @@ irish_monarchy = {
 	}
 }
 
+muscovite_monarchy = {
+	rank = {
+		1 = GRAND_PRINCIPALITY
+		2 = GRAND_PRINCIPALITY
+		3 = TSARDOM
+	}
+
+	ruler_male = {
+		1 = GREAT_KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	ruler_female = {
+		1 = GREAT_KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+
+	trigger = {
+		OR = {
+			government = principality
+			government = tsardom
+		}
+		tag = MOS
+	}
+}
+
 russian_monarchy = {
 	rank = {
 		1 = PRINCIPALITY
@@ -1993,23 +2113,31 @@ russian_monarchy = {
 	ruler_female = {
 		1 = KNIAGINIA
 		2 = GREAT_KNIAGINIA
-		3 = TSARITSA
+3 = TSARITSA
 	}
 
 	trigger = {
-		government = monarchy
-### STT
-		technology_group = eastern
-		OR = {
-			culture_group = east_slavic
-			culture_group = uralic_g
+		OR = { ###STT
+			AND = {
+				government = monarchy
+				technology_group = eastern
+				OR = {
+					culture_group = east_slavic
+					culture_group = uralic_g
+				}
+			}
+			AND = {
+				government = principality
+				government = tsardom
+			}
 		}
 	}
 }
 
 gov_rus_imperial_government = { ###STT
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY ###STT
+		1 = PRINCEDOM
 		2 = GRAND_PRINCIPALITY
 		3 = EMPIRE
 	}
@@ -2028,17 +2156,18 @@ gov_rus_imperial_government = { ###STT
 
 	trigger = {
 		government = monarchy
-		technology_group = western
+		technology_group = western ###STT
 		OR = {
 			culture_group = east_slavic
-			culture_group = uralic_g
+			culture_group = uralic_g ###STT
 		}
 	}
 }
 
 inti_monarchy = {
 	rank = {
-		1 = PRINCIPALITY
+		#1 = PRINCIPALITY ###STT
+		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -2372,7 +2501,7 @@ zaporozhian_republic = {
 
 	trigger = {
 		government = republic
-		OR = {
+		OR = { ###STT
 			tag = ZAZ
 			tag = HTM
 			tag = OHE
@@ -2457,7 +2586,7 @@ russian_republic = {
 		government = republic
 		OR = {
 			culture_group = east_slavic
-			culture_group = uralic_g
+			culture_group = uralic_g ###STT
 		}
 		NOT = { government = revolutionary_republic }
 		NOT = { government = constitutional_republic }
@@ -2593,7 +2722,7 @@ gov_reich_government = {
 		tag = BRA
 		tag = PRU
 		tag = GER
-	}
+}
 }
 
 italian_republic = {

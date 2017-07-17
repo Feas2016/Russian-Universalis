@@ -58,7 +58,7 @@ guiTypes = {
 		{
 			name ="hre_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 43 y = 103 }
+			position = { x= 43 y = 103 } ###STT
 			hint_tag = "hint_religion"
 			allwaystransparent = yes
 		}	
@@ -67,7 +67,7 @@ guiTypes = {
 		{
 			name ="hre_heretic_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 653 y = 103 }
+			position = { x= 653 y = 103 } ###STT
 			hint_tag = "hint_religion"
 			allwaystransparent = yes			
 		}			
@@ -94,7 +94,7 @@ guiTypes = {
 		{
 			name ="hre_religion_icon_2"
 			spriteType = "GFX_province_view_religion"
-			position = { x= 346 y = 98 }
+			position = { x= 346 y = 98 } ###STT
 			hint_tag = "hint_religion"
 			allwaystransparent = yes
 		}		
@@ -137,7 +137,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "members_label"
-			position = { x = 302 y = 484 }
+			position = { x = 302 y = 484 } ###STT
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
@@ -150,12 +150,12 @@ guiTypes = {
 		#### AUTHORITY
 		instantTextBoxType = {
 			name = "influence_label"
-			position = { x = 135 y = 105 }
+			position = { x = 135 y = 105 } ###STT
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
 			text = "HRE_INFLUENCE"	
-			maxWidth = 148
+			maxWidth = 148 ###STT
 			maxHeight = 32	
 			format = centre
 		}
@@ -217,12 +217,12 @@ guiTypes = {
 		#### REFORM DECISIONS
 		instantTextBoxType = {
 			name = "decisions_label"
-			position = { x = 469 y = 106 }
+			position = { x = 469 y = 106 } ###STT
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
 			text = "HRE_DECISIONS"	
-			maxWidth = 128
+			maxWidth = 128 ###STT
 			maxHeight = 32	
 			format = centre
 		}
@@ -241,7 +241,7 @@ guiTypes = {
 			
 		guiButtonType = {
 			name = "close_button"
-			position = { x=302 y =32}
+			position = { x=302 y =32} ###STT
 			quadTextureSprite ="button_type_1"	
 			tooltip = ""
 			tooltipText =""
@@ -254,7 +254,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "vote_button"
-			position = { x=302 y =450}
+			position = { x=302 y =450} ###STT
 			quadTextureSprite ="button_type_1"	
 			tooltip = ""
 			tooltipText =""
@@ -266,7 +266,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "dismantel_button"
-			position = { x= 467 y = 450}
+			position = { x= 467 y = 450} ###STT
 			quadTextureSprite ="button_type_1"	
 			buttonText = "HRE_DISMANTLE"
 			buttonFont = "vic_18"
@@ -274,7 +274,7 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "leave_button"
-			position = { x= 132 y = 450}
+			position = { x= 132 y = 450} ###STT
 			quadTextureSprite ="button_type_1"	
 			buttonText = "HRE_LEAVE"
 			buttonFont = "vic_18"
@@ -342,7 +342,7 @@ guiTypes = {
 
 	positionType = {
 		name = "member_shield_position"
-		position = { x = 358 y = 511 }
+		position = { x = 358 y = 511 } ###STT
 	}
 	
 	positionType = {

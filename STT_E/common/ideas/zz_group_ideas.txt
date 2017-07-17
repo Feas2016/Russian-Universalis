@@ -344,7 +344,7 @@ horde_ideas = {
 	}
 	
 	trigger = {
-		OR = {
+		OR = { ###STT
 			government = steppe_horde
 			tag = HUL
 		}
@@ -428,17 +428,7 @@ anatolian_beyliks_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = AYD
-			tag = CND
-			tag = DUL
-			tag = KAR
-			tag = SRU
-			tag = MEN
-			tag = RAM
-			tag = ERE	#Eretna, Middle East addition
-			tag = GRM	#Germiyan, Middle East addition
-		}
+		primary_culture = turkish
 	}
 	free = yes
 	
@@ -453,7 +443,7 @@ anatolian_beyliks_ideas = {
 		loot_amount = 0.10
 	}
 	ghazi = {
-		#uses ottoman ideas
+		manpower_recovery_speed = 0.2 ###STT
 	}
 	caravanserais = {
 		trade_efficiency = 0.1
@@ -600,17 +590,8 @@ malayan_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = MSA
-			tag = SUL
-			tag = PAT
-			tag = BEI
-			tag = MLC
-			tag = BAN
-			tag = CRB
-			tag = DMK
-			primary_culture = malayan
-		}
+		religion_group = muslim
+		culture_group = malay
 	}
 	free = yes
 	
@@ -628,6 +609,7 @@ malayan_ideas = {
 	}
 	trading_fleets = {
 		naval_maintenance_modifier = -0.2
+		sailor_maintenance_modifer = -0.1
 	}
 	heirs_of_pasai = {
 		prestige = 1
@@ -823,6 +805,7 @@ swahili_ideas = {
 
 	swa_indian_ocean_trade = {
 		trade_efficiency = 0.1
+		sailor_maintenance_modifer = -0.1
 	}
 	monsoon_season = {
 		leader_naval_manuever = 1
@@ -896,7 +879,7 @@ siberian_ideas = {
 	}
 	
 	trigger = {
-		OR = {
+		OR = { ###STT
 			government = siberian_native_council
 			tag = CHU
 			tag = KMC
@@ -905,7 +888,7 @@ siberian_ideas = {
 			tag = HOD
 		}
 	}
-		
+
 	free = yes
 	
 	siberian_hunt_north = {
@@ -1191,8 +1174,8 @@ caucasus_ideas = {
 	
 	trigger = {
 		OR = {
+			culture_group = caucasian
 			tag = SRV
-			tag = GAZ
 		}
 	}
 	free = yes
@@ -1598,7 +1581,7 @@ somali_ideas = {
 sulawesi_ideas = {
 	start = {
 		naval_forcelimit_modifier = 0.25
-		trade_range_modifier = 0.2
+		sailor_maintenance_modifer = -0.1
 	}
 	
 	bonus = {
@@ -1685,7 +1668,7 @@ moluccan_ideas = {
 	}
 	
 	bonus = {
-		hostile_attrition = 1.0
+		sailor_maintenance_modifer = -0.1
 	}
 	
 	trigger = {
@@ -1719,7 +1702,7 @@ moluccan_ideas = {
 greek_ideas = {
 	start = {
 		galley_cost = -0.2
-		defensiveness = 0.2
+		sailor_maintenance_modifer = -0.1
 	}
 	
 	bonus = {

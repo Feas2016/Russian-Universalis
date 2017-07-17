@@ -711,7 +711,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 200
+			maxWidth = 250
 			maxHeight = 26
 			format = left
 			fixedsize = yes
@@ -719,7 +719,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "monarch_heir_info"
-			position = { x =100 y = 215 } #x =200 y = 227 Поднял под правителя
+			position = { x =100 y = 213 } #x =200 y = 227 Поднял под правителя
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -2780,7 +2780,7 @@ guiTypes = {
 		iconType = {
 			name ="banner"
 			spriteType = "GFX_banner_green_194"
-			position = { x= -25 y = -3 }
+			position = { x= -17 y = -3 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -5026,12 +5026,12 @@ guiTypes = {
 		}
 				
 		instantTextBoxType={
-			position = {x = 287 y = 325 }
+			position = {x = 287 y = 285 }
 			name = "Description"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 220
-			maxHeight = 160
+			maxHeight = 200
 			text = "SP_PRICE"	
 			orientation = "UPPER_LEFT"
 			format = centre
@@ -5067,7 +5067,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 295 y = 425 }
+			position = { x = 297 y = 423 }
 		}
 				
 		

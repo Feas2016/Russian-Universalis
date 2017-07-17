@@ -69,12 +69,12 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "text"
-				position = { x = -400 y = -111 }
+				position = { x = -420 y = -111 } # Сдвинул влево
 				textureFile = ""
 				font = "vic_36"
 				borderSize = {x = 0 y = 0}
 				text = ""	
-				maxWidth = 800
+				maxWidth = 840 # Расширил
 				maxHeight =200
 				fixedsize = yes
 				format = centre

@@ -11,7 +11,7 @@ aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		free_leader_pool = 1
+		leader_siege = 1
 	}
 
 	trigger = {
@@ -20,42 +20,40 @@ aristocracy_ideas = {
 			government = noble_republic
 			government = theocracy
 		}
-
-
 	}
-
+	
 	noble_knights = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.10
 	}
+	military_traditions = {
+		mil_tech_cost_modifier  = -0.1
+	}
 	local_nobility = {
-		enemy_core_creation = 0.5
-		vassal_income = 0.10
+		global_autonomy = -0.025
+		yearly_absolutism = 0.1
 	}
 	serfdom = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.33
 	}
-
 	noble_officers = {
 		army_tradition_decay = -0.01
 		navy_tradition_decay = -0.01
 	}
-
 	international_nobility = {
 		diplomats = 1
+		free_leader_pool = 1
 	}
 	noble_resilience = {
-		war_exhaustion_cost = -0.20
+		possible_mercenaries = 0.20
 	}
-	military_traditions = {
-		mil_tech_cost_modifier  = -0.1
-	}
+	
 
 	ai_will_do = {
-		factor = 0.25
+		factor = 0.45
 		
 		modifier = {
-			factor = 0
+			factor = 0.5
 			is_subject = yes
 		}	
 	}
@@ -76,7 +74,8 @@ plutocracy_ideas = {
 	}
 
 	tradition_of_payment = {
-		possible_mercenaries = 0.25
+		possible_mercenaries = 0.10
+		mercenary_discipline = 0.025
 	}
 	abolished_serfdom = {
 		land_morale = 0.10
@@ -117,7 +116,7 @@ innovativeness_ideas = {
 		merc_maintenance_modifier = -0.25
 	}
 	scientific_revolution = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 		embracement_cost = -0.1
 	}
 	dynamic_court = {
@@ -482,7 +481,7 @@ exploration_ideas = {
 	category = DIP
 	important = yes
 
-	trigger = {
+	trigger = { ###STT
 		is_year = 1400
 	}
 	
@@ -540,8 +539,8 @@ exploration_ideas = {
 			NOT = { 
 				any_owned_province = { 
 					is_in_capital_area = yes
-					any_neighbor_province = {
-						is_empty = yes
+					any_owned_province = {
+						has_empty_adjacent_province = yes
 					}
 				} 
 			}
@@ -552,11 +551,11 @@ exploration_ideas = {
 			NOT = { 
 				any_owned_province = { 
 					is_in_capital_area = yes
-					any_neighbor_province = {
-						is_empty = yes
+					any_owned_province = {
+						has_empty_adjacent_province = yes
 					}
-				} 
-			}			
+				}
+			}
 		}
 		modifier = {
 			factor = 0.1
@@ -649,7 +648,8 @@ maritime_ideas = {
 		global_sailors_modifier = 0.5
 	}
 	sheltered_ports = {
-		global_ship_repair = 0.2
+		global_ship_repair = 0.1
+		sailor_maintenance_modifer = -0.1
 	}
 	grand_navy = {
 		naval_forcelimit_modifier = 0.5
@@ -816,11 +816,11 @@ expansion_ideas = {
 			       tag = RUS
 			       tag = RU2
 			   }
+			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+			tag = RUS
 			num_of_cities = 20
 			any_owned_province = {
-				any_neighbor_province = {
-					is_empty = yes
-				}
+				has_empty_adjacent_province = yes
 			}
 		}
 		###STT
@@ -838,9 +838,7 @@ expansion_ideas = {
 			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {
-					any_neighbor_province = {
-						is_empty = yes
-					}
+					has_empty_adjacent_province = yes
 				}
 			}
 		}
@@ -1008,18 +1006,21 @@ naval_ideas = {
 	}
 	naval_cadets = {
 		leader_naval_fire = 1
+		sunk_ship_morale_hit_recieved = -0.33
 	}
 	naval_glory = {
 		prestige_from_naval = 1.0
+		naval_tradition_from_battle = 0.5
 	}
 	press_gangs = {
-		sailors_recovery_speed = 0.2
+		sailors_recovery_speed = 0.25
 	}
 	oak_forests_for_ships = {
 		heavy_ship_power = 0.20
 	}
 	superior_seamanship = {
-		naval_morale = 0.15
+		naval_morale = 0.1
+		global_naval_engagement_modifier = 0.1
 	}
 
 	ai_will_do = {

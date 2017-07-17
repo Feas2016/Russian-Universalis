@@ -20,6 +20,10 @@ conquer_silesia = {
 			tag = BRA
 			tag = PRU
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		owns = 2969 #Sternberg
 		silesia_area = {
 			NOT = { owned_by = ROOT }
@@ -177,6 +181,10 @@ connect_brandenburg_and_prussia = {
 		tag = BRA
 		exists = PRU
 		is_free_or_tributary_trigger = yes
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		PRU = { vassal_of = BRA }
 		NOT = { is_neighbor_of = PRU }
 		NOT = { has_country_modifier = prussian_ambition }
@@ -293,6 +301,10 @@ connect_the_prussian_lands = {
 				NOT = { exists = BRA }
 			}
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		is_free_or_tributary_trigger = yes
 		owns = 50			# Berlin
 		owns = 41			# Königsberg
@@ -390,6 +402,10 @@ conquer_swedish_pomerania = {
 			tag = BRA
 			tag = PRU
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		exists = SWE
 		NOT = { alliance_with = SWE }
 		NOT = { SWE = { is_subject_of = ROOT } }
@@ -461,6 +477,10 @@ conquer_hinterpommern = {
 		OR = {
 			tag = BRA
 			tag = PRU
+		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
 		}
 		is_free_or_tributary_trigger = yes
 		48 = {		# Kolberg
@@ -557,6 +577,10 @@ vassalize_prussia = {
 			NOT = { total_development = 50 }
 			NOT = { government = imperial_city }
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		NOT = {
 			has_country_modifier = military_vassalization
 		}
@@ -631,6 +655,10 @@ brandenburg_breaks_free_from_poland = {
 				vassal_of = PLC
 			}
 		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		NOT = {
 			has_country_modifier = prussian_ambition
 		}
@@ -682,6 +710,10 @@ prussia_breaks_free_from_poland = {
 				exists = PLC
 				vassal_of = PLC
 			}
+		}
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
 		}
 		NOT = {
 			has_country_modifier = prussian_ambition
@@ -740,6 +772,10 @@ prussia_partitions_poland = {
 		tag = PRU
 		is_free_or_tributary_trigger = yes
 		is_lesser_in_union = no
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		OR = {
 			PLC = {
 				is_neighbor_of = PRU
@@ -868,6 +904,10 @@ conquer_ratibor = {
 			tag = PRU
 		}
 		is_free_or_tributary_trigger = yes
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		263 = {		# Ratibor
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
@@ -940,6 +980,10 @@ subjugate_westphalia = {
 		tag = PRU
 		exists = WES
 		is_free_or_tributary_trigger = yes
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_level = 5 }
+		}
 		NOT = {
 			westphalia_area = {
 				owned_by = ROOT

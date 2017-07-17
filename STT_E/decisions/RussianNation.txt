@@ -48,7 +48,11 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUS
-			change_government = rus_imperial_government ### STT
+			#change_government = rus_imperial_government ### STT
+			set_government_and_rank = {
+				government = tsardom
+				rank = 3
+			}
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -62,7 +66,7 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			set_government_rank = 3
+			
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -115,13 +119,6 @@ country_decisions = {
 			if = {
 				limit = {
 					has_custom_ideas = no
-					OR = {
-						ai = no
-						AND = {
-							ai = yes
-							has_idea_group = default_ideas
-						}
-					}
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
