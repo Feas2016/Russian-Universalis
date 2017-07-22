@@ -6,22 +6,33 @@ add_accepted_culture = flemish
 religion = catholic
 capital = 92 # Brabant
 
-#1477.1.5 = {
-#	government_rank = 1
-#}
-
 1559.1.1 = {
 	monarch = {
-		name = "Виллем I"
+		name = "Вильгельм I"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1533.4.24
 		adm = 5
 		dip = 4
 		mil = 5
-		leader = { name = "Виллем ван Оранье-Нассау"	type = general		rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
+		leader = { name = "Вильгельм ван Оранье-Нассау"	type = general		rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
 	}
 }
 
 1565.1.1 = { leader = {	name = "Блойс ван Треслонг"	type = admiral		rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1594.1.1 } }
+
+1567.11.14 = {
+	heir = {
+		name = "Мориц"
+		monarch_name = "Мориц"
+		dynasty = "ван Оранье-Нассау"
+		birth_date = 1567.11.14
+		death_date = 1625.4.23
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
 
 1568.5.23 = { leader = { name = "Людовик ван Нассау"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1574.4.14 } }
 
@@ -55,11 +66,12 @@ capital = 92 # Brabant
 1585.11.14 = {
 	monarch = {
 		name = "Мориц I"
-		dynasty = "ван Нассау"
+		dynasty = "ван Оранье-Нассау"
+		birth_date = 1567.11.14
 		adm = 5
 		dip = 5
 		mil = 6
-		leader = { name = "Мориц ван Нассау"	type = general		rank = 0	fire = 5	shock = 5	manuever = 5	siege = 2 }
+		leader = { name = "Мориц"	type = general		rank = 0	fire = 5	shock = 5	manuever = 5	siege = 2 }
 	}
 }
 
@@ -101,12 +113,13 @@ capital = 92 # Brabant
 
 1625.4.23 = {
 	monarch = {
-		name = "Фредрик Хенрик I"
+		name = "Фредерик-Генрих"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1584.1.29
 		adm = 3
 		dip = 2
 		mil = 3
-		leader = { name = "Фредрик Хенрик ван Оранье-Нассау"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 2 }
+		leader = { name = "Фредерик-Генрих"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 2 }
 	}
 }
 
@@ -124,12 +137,13 @@ capital = 92 # Brabant
 
 1647.3.14 = {
 	monarch = {
-		name = "Виллем II"
+		name = "Вильгельм II"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1626.5.27
 		adm = 5
 		dip = 3
 		mil = 3
-		leader = { name = "Виллем II"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0 }
+		leader = { name = "Вильгельм II"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 }
 
@@ -163,14 +177,15 @@ capital = 92 # Brabant
 
 1668.1.17 = { leader = { name = "Пауль Виртц"		type = general		rank = 1	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1675.3.26 } }
 
-1672.6.28 = {
+1650.11.6 = {
 	monarch = {
-		name = "Виллем III"
+		name = "Вильгельм III"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1650.11.4
 		adm = 6
 		dip = 4
 		mil = 4
-		leader = { name = "Виллем III"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = { name = "Вильгельм III"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -204,8 +219,9 @@ capital = 92 # Brabant
 
 1747.4.1 = {
 	monarch = {
-		name = "Виллем IV"
+		name = "Вильгельм IV"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1711.9.1
 		adm = 3
 		dip = 1
 		mil = 2
@@ -217,8 +233,9 @@ capital = 92 # Brabant
 
 1751.10.22 = {
 	monarch = {
-		name = "Виллем V"
+		name = "Вильгельм V"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1748.4.8
 		adm = 3
 		dip = 2
 		mil = 2
@@ -240,10 +257,11 @@ capital = 92 # Brabant
 	government_rank = 1
 }
 
-1805.1.1 = {
+1805.4.29 = {
 	monarch = {
 		name = "Рутгер Ян"
 		dynasty = "Шиммельпенинг"
+		birth_date = 1761.10.31
 		adm = 2
 		dip = 2
 		mil = 2
@@ -255,7 +273,8 @@ capital = 92 # Brabant
 1806.6.5 = {
 	monarch = {
 		name = "Людовик I"
-		dynasty = "Бонапарт" 
+		dynasty = "Бонапарт"
+		birth_date = 1778.9.5
 		adm = 3
 		dip = 3
 		mil = 2
@@ -264,10 +283,25 @@ capital = 92 # Brabant
 	government_rank = 2
 }
 
+1806.6.5 = {
+	heir = {
+		name = "Наполеон Луи"
+		monarch_name = "Людовик II"
+		dynasty = "Бонапарт"
+		birth_date = 1804.10.1
+		death_date = 1831.3.17
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
 1810.7.1 = {
 	monarch = {
 		name = "Людовик II"
 		dynasty = "Бонапарт"
+		birth_date = 1804.10.1
 		adm = 3
 		dip = 3
 		mil = 2
@@ -304,6 +338,7 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Виллем II"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1792.12.6
 		adm = 3
 		dip = 2
 		mil = 6
@@ -328,6 +363,7 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Виллем III"
 		dynasty = "ван Оранье-Нассау"
+		birth_date = 1817.2.19
 		adm = 5
 		dip = 1
 		mil = 5

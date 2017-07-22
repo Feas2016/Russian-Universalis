@@ -6,11 +6,110 @@ technology_group = ottoman
 historical_rival = MAM
 capital = 332	# Dulkadir
 
+1337.1.1 = {
+	monarch = {
+		name = "Караджа Заин ад-Дин"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1300.1.1
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+1337.1.1 = {
+	heir = {
+		name = "Халил Чарс ад-Дин"
+		monarch_name = "Халил Чарс ад-Дин"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1320.1.1
+		death_date = 1386.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1353.12.11 = {
+	monarch = {
+		name = "Халил Чарс ад-Дин"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1320.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1356.1.1 = {
+	heir = {
+		name = "Сули Шабан"
+		monarch_name = "Сули Шабан"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1356.1.1
+		death_date = 3000.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1386.1.1 = {
+	monarch = {
+		name = "Сули Шабан"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1320.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1386.1.1 = {
+	heir = {
+		name = "Садака"
+		monarch_name = "Садака"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1340.1.1
+		death_date = 1399.1.1
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
 
 1398.1.1 = {
 	monarch = {
-		name = "Мехмед"
-		dynasty = Дулкадироглу
+		name = "Садака"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1340.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1386.1.1 = {
+	heir = {
+		name = "Мухаммад"
+		monarch_name = "Мухаммад Насир ад-Дин"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1366.1.1
+		death_date = 1442.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1398.1.1 = {
+	monarch = {
+		name = "Мухаммад Насир ад-Дин"
+		dynasty = Зуль-Кадар
 		birth_date = 1366.1.1
 		adm = 3
 		dip = 1
@@ -21,9 +120,9 @@ capital = 332	# Dulkadir
 
 1398.1.1 = {
 	heir = {
-		name = "Сулейман"
-		monarch_name = "Сулейман"
-		dynasty = "Дулкадироглу"
+		name = "Сулайман"
+		monarch_name = "Сулайман"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1398.1.1
 		death_date = 1454.1.1
 		claim = 95
@@ -35,8 +134,8 @@ capital = 332	# Dulkadir
 
 1442.1.1 = {
 	monarch = {
-		name = "Сулейман"
-		dynasty = Дулкадироглу
+		name = "Сулайман"
+		dynasty = Зуль-Кадар
 		birth_date = 1398.1.1
 		adm = 2
 		dip = 4
@@ -46,9 +145,9 @@ capital = 332	# Dulkadir
 
 1442.1.1 = {
 	heir = {
-		name = "Малик"
-		monarch_name = "Малик Арслан Бек"
-		dynasty = "Дулкадироглу"
+		name = "Арслан"
+		monarch_name = "Арслан Малик"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1428.1.1
 		death_date = 1465.1.1     
 		claim = 90
@@ -61,8 +160,8 @@ capital = 332	# Dulkadir
 
 1454.1.1 = {
 	monarch = {
-		name = "Малик Арслан Бек"
-		dynasty = Дулкадироглу
+		name = "Арслан Малик"
+		dynasty = Зуль-Кадар
 		birth_date = 1428.1.1
 		adm = 2
 		dip = 2
@@ -73,8 +172,8 @@ capital = 332	# Dulkadir
 1454.1.1 = {
 	heir = {
 		name = "Будак"
-		monarch_name = "Будак Бек"
-		dynasty = "Дулкадироглу"
+		monarch_name = "Шах-Будак"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1430.1.1
 		death_date = 1492.10.1
 		claim = 75
@@ -86,8 +185,8 @@ capital = 332	# Dulkadir
 
 1465.1.1 = {
 	monarch = {
-		name = "Будак Бек"
-		dynasty = Дулкадироглу
+		name = "Шах-Будак"
+		dynasty = Зуль-Кадар
 		birth_date = 1430.1.1
 		adm = 1
 		dip = 0
@@ -97,9 +196,9 @@ capital = 332	# Dulkadir
 
 1465.1.1 = {
 	heir = {
-		name = "Шах-Сувар"
+		name = "Сувар"
 		monarch_name = "Шах-Сувар"
-		dynasty = "Дулкадироглу"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1430.1.1
 		death_date = 1472.1.1    
 		claim = 75
@@ -112,7 +211,7 @@ capital = 332	# Dulkadir
 1466.10.1 = {
 	monarch = {
 		name = "Шах-Сувар"
-		dynasty = Дулкадироглу
+		dynasty = Зуль-Кадар
 		birth_date = 1430.1.1
 		adm = 2
 		dip = 2
@@ -123,9 +222,9 @@ capital = 332	# Dulkadir
 1466.10.1 = {
 	heir = {
 		name = "Будак"
-		monarch_name = "Будак Бек"
-		dynasty = "Дулкадироглу"
-		birth_date = 1450.1.1
+		monarch_name = "Шах-Будак"
+		dynasty = "Зуль-Кадар"
+		birth_date = 1430.1.1
 		death_date = 1492.1.1
 		claim = 95
 		adm = 1
@@ -136,9 +235,9 @@ capital = 332	# Dulkadir
 
 1472.1.1 = {
 	monarch = {
-		name = "Будак Бек"
-		dynasty = Дулкадироглу
-		birth_date = 1450.1.1
+		name = "Шах-Будак"
+		dynasty = Зуль-Кадар
+		birth_date = 1430.1.1
 		adm = 1
 		dip = 0
 		mil = 2
@@ -147,11 +246,11 @@ capital = 332	# Dulkadir
 
 1472.1.1 = {
 	heir = {
-		name = "Ала ад-Дин Бузкурд"
-		monarch_name = "Ала ад-Дин Бузкурд"
-		dynasty = "Дулкадироглу"
+		name = "Бузкурд"
+		monarch_name = "Бузкурд Ала ад-Дин-Даула"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1460.1.1
-		death_date = 1515.6.1
+		death_date = 1515.6.12
 		claim = 95
 		adm = 4
 		dip = 1
@@ -161,8 +260,8 @@ capital = 332	# Dulkadir
 
 1479.1.1 = {
 	monarch = {
-		name = "Ала ад-Дин Бузкурд"
-		dynasty = Дулкадироглу
+		name = "Бузкурд Ала ад-Дин-Даула"
+		dynasty = Зуль-Кадар
 		birth_date = 1460.1.1
 		adm = 4
 		dip = 1
@@ -173,8 +272,8 @@ capital = 332	# Dulkadir
 1479.1.1 = {
 	heir = {
 		name = "Али"
-		monarch_name = "Али Бек II"
-		dynasty = "Дулкадироглу"
+		monarch_name = "Али"
+		dynasty = "Зуль-Кадар"
 		birth_date = 1479.1.1
 		death_date = 1540.1.1
 		claim = 95
@@ -184,10 +283,10 @@ capital = 332	# Dulkadir
 	}
 }
 
-1515.6.1 = {
+1515.6.12 = {
 	monarch = {
-		name = "Али Бек II"
-		dynasty = Дулкадироглу
+		name = "Али"
+		dynasty = Зуль-Кадар
 		birth_date = 1479.1.1
 		adm = 1
 		dip = 1
@@ -195,4 +294,14 @@ capital = 332	# Dulkadir
 	}
 }
 
-# Annexed by the Ottoman Empire
+# Завоёвано Портой
+
+1522.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

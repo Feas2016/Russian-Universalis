@@ -1,0 +1,17 @@
+name = "Война Сен-Сардо"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 174
+}
+
+1324.8.1 = {
+	add_attacker = FRA
+	add_defender = ENG
+}
+
+
+1327.3.31 = {
+	rem_attacker = FRA
+	rem_defender = ENG
+}

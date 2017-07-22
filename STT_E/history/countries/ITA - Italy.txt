@@ -9,7 +9,7 @@ capital = 118		# Roma
 
 1797.6.29 = {
 	monarch = {
-		name = "Цезальпийская республика"
+		name = "Цизальпинская республика"
 		adm = 4
 		dip = 0
 		mil = 0
@@ -30,11 +30,133 @@ capital = 118		# Roma
 1805.3.18 = { government = constitutional_monarchy }
 
 1805.3.18 = {
+    government_rank = 2
 	monarch = {
 		name = "Наполеон I"
 		dynasty = "Бонапарт"
+		birth_date = 1769.8.15
 		adm = 6
 		dip = 3
 		mil = 6
+	}
+}
+
+1814.4.6 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1861.3.17 = {
+	monarch = {
+		name = "Виктор Эммануил II"
+		dynasty = "ди Савойя"
+		birth_date = 1820.3.14
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1861.3.17 = {
+	heir = {
+		name = "Умберто"
+		monarch_name = "Умберто I"
+		dynasty = "ди Савойя"
+		birth_date = 1844.3.14
+		death_date = 1900.7.29
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1878.1.9 = {
+	monarch = {
+		name = "Умберто I"
+		dynasty = "ди Савойя"
+		birth_date = 1844.3.14
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1878.1.9 = {
+	heir = {
+		name = "Виктор Эммануил"
+		monarch_name = "Виктор Эммануил III"
+		dynasty = "ди Савойя"
+		birth_date = 1869.11.11
+		death_date = 1946.5.9
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1900.7.29 = {
+	monarch = {
+		name = "Виктор Эммануил III"
+		dynasty = "ди Савойя"
+		birth_date = 1869.11.11
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1904.9.15 = {
+	heir = {
+		name = "Умберто"
+		monarch_name = "Умберто II"
+		dynasty = "ди Савойя"
+		birth_date = 1904.9.15
+		death_date = 1983.3.18
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1946.5.9 = {
+	monarch = {
+		name = "Умберто II"
+		dynasty = "ди Савойя"
+		birth_date = 1904.9.15
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1946.5.9 = {
+	heir = {
+		name = "Виктор Эммануил"
+		monarch_name = "Виктор Эммануил IV"
+		dynasty = "ди Савойя"
+		birth_date = 1937.2.13
+		death_date = 2020.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1946.6.12 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

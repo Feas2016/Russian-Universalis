@@ -1,29 +1,567 @@
 government = feudal_monarchy
-government_rank = 1
+government_rank = 2
 primary_culture = champenois
 religion = catholic
 technology_group = western
 capital = 189	# Nancy
 
-
-1390.1.1 = {
+843.8.11 = {
 	monarch = {
-		name = "Карл I"
-		dynasty = "де Мец"
-		birth_date = 1364.1.1
+		name = "Лотарь I"
+		dynasty = "Каролинг"
+		birth_date = 795.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+855.9.30 = {
+	monarch = {
+		name = "Лотарь II"
+		dynasty = "Каролинг"
+		birth_date = 835.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+869.9.6 = {
+	monarch = {
+		name = "Карл I Лысый"
+		dynasty = "Каролинг"
+		birth_date = 823.6.13
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+870.8.8 = {
+	monarch = {
+		name = "Людовик I Немецкий"
+		dynasty = "Каролинг"
+		birth_date = 805.1.1
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+876.8.28 = {
+	monarch = {
+		name = "Карл I Лысый"
+		dynasty = "Каролинг"
+		birth_date = 823.6.13
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+877.10.6 = {
+	monarch = {
+		name = "Людовик II Заика"
+		dynasty = "Каролинг"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+879.4.10 = {
+	monarch = {
+		name = "Людовик III Младший"
+		dynasty = "Каролинг"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+881.1.20 = {
+	monarch = {
+		name = "Карл III Толстый"
+		dynasty = "Каролинг"
+		birth_date = 839.6.13
+		adm = 4
+		dip = 6
+		mil = 5
+	}
+}
+
+887.11.11 = {
+	monarch = {
+		name = "Арнульф Каринтийский"
+		dynasty = "Каролинг"
+		birth_date = 850.1.1
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+
+895.5.1 = {
+	monarch = {
+		name = "Цвентибольд"
+		dynasty = "Каролинг"
+		birth_date = 871.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+900.8.13 = {
+	monarch = {
+		name = "Людовик IV Дитя"
+		dynasty = "Каролинг"
+		birth_date = 893.10.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+903.1.1 = {
+    government_rank = 1
+	monarch = {
+		name = "Гебхард I"
+		dynasty = "Конрадин"
+		birth_date = 888.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+910.6.22 = {
+	monarch = {
+		name = "Ренье I"
+		dynasty = "Регинарид"
+		birth_date = 850.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+915.8.25 = {
+	monarch = {
+		name = "Вигерих"
+		dynasty = "Вигерихид"
+		birth_date = 870.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+919.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 5
+		dip = 2
+		mil = 5
+		regent = yes
+	}
+}
+
+925.1.1 = {
+	monarch = {
+		name = "Гизельберт"
+		dynasty = "Регинарид"
+		birth_date = 880.1.1
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+939.10.2 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "Людольфинг"
+		birth_date = 919.1.1
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+940.10.1 = {
+	monarch = {
+		name = "Оттон I"
+		dynasty = "де Верден"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+944.1.1 = {
+	monarch = {
+		name = "Конрад I Рыжий"
+		dynasty = "Сальер"
+		birth_date = 910.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+953.1.1 = {
+	monarch = {
+		name = "Бруно I Великий"
+		dynasty = "Людольфинг"
+		birth_date = 925.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+959.1.1 = {
+	monarch = {
+		name = "Ферри I"
+		dynasty = "де Барруа"
+		birth_date = 910.1.1
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+978.1.1 = {
+	monarch = {
+		name = "Тьерри I"
+		dynasty = "де Бар"
+		birth_date = 965.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1026.4.11 = {
+	monarch = {
+		name = "Ферри II"
+		dynasty = "де Бар"
+		birth_date = 995.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1026.5.1 = {
+	monarch = {
+		name = "Ферри III"
+		dynasty = "де Бар"
+		birth_date = 1015.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1033.5.2 = {
+	monarch = {
+		name = "Гозело I"
+		dynasty = "Вигерихид"
+		birth_date = 968.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1044.4.19 = {
+	monarch = {
+		name = "Готфрид II"
+		dynasty = "Вигерихид"
+		birth_date = 997.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1047.1.1 = {
+	monarch = {
+		name = "Адальберт I"
+		dynasty = "де Шатенуа"
+		birth_date = 1000.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1048.11.11 = {
+	monarch = {
+		name = "Герхард I"
+		dynasty = "де Шатенуа"
+		birth_date = 1015.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1070.4.14 = {
+	monarch = {
+		name = "Тьерри II"
+		dynasty = "де Шатенуа"
+		birth_date = 1055.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1115.12.30 = {
+	monarch = {
+		name = "Симон I"
+		dynasty = "де Шатенуа"
+		birth_date = 1080.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1138.4.13 = {
+	monarch = {
+		name = "Матьё I"
+		dynasty = "де Шатенуа"
+		birth_date = 1119.1.1
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1176.5.13 = {
+	monarch = {
+		name = "Симон II"
+		dynasty = "де Шатенуа"
+		birth_date = 1140.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1206.4.1 = {
+	monarch = {
+		name = "Ферри I"
+		dynasty = "де Шатенуа"
+		birth_date = 1143.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+1207.4.7 = {
+	monarch = {
+		name = "Ферри II"
+		dynasty = "де Шатенуа"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1213.10.10 = {
+	monarch = {
+		name = "Тибо I"
+		dynasty = "де Шатенуа"
+		birth_date = 1191.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1220.2.17 = {
+	monarch = {
+		name = "Матьё II"
+		dynasty = "де Шатенуа"
+		birth_date = 1193.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1251.6.24 = {
+	monarch = {
+		name = "Ферри III"
+		dynasty = "де Шатенуа"
+		birth_date = 1240.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1302.12.31 = {
+	monarch = {
+		name = "Тибо II"
+		dynasty = "де Шатенуа"
+		birth_date = 1263.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1302.12.31 = {
+	heir = {
+		name = "Ферри"
+		monarch_name = "Ферри IV"
+		dynasty = "де Шатенуа"
+		birth_date = 1282.4.15
+		death_date = 1329.8.23
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1312.5.13 = {
+	monarch = {
+		name = "Ферри IV"
+		dynasty = "де Шатенуа"
+		birth_date = 1282.4.15
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1320.1.1 = {
+	heir = {
+		name = "Рауль"
+		monarch_name = "Рауль I"
+		dynasty = "де Шатенуа"
+		birth_date = 1320.1.1
+		death_date = 1346.8.26
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1329.8.23 = {
+	monarch = {
+		name = "Рауль I"
+		dynasty = "де Шатенуа"
+		birth_date = 1320.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1346.2.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан I"
+		dynasty = "де Шатенуа"
+		birth_date = 1346.2.1
+		death_date = 1390.9.23
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1346.8.26 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де Шатенуа"
+		birth_date = 1346.2.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1364.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "де Шатенуа"
+		birth_date = 1364.9.11
+		death_date = 1431.1.25
+		claim = 95
 		adm = 1
 		dip = 1
 		mil = 3
 	}
 }
 
-# 1431.1.25: Personal Union under Renй of Anjou
+1390.9.23 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Шатенуа"
+		birth_date = 1364.9.11
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1400.1.1 = {
+	heir = {
+		name = "Изабель"
+		monarch_name = "Изабель I"
+		dynasty = "де Шатенуа"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1431.1.25 = {
+	monarch = {
+		name = "Изабель I"
+		dynasty = "де Шатенуа"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+		femal = yes
+	}
+}
 
 1453.2.28 = {
 	monarch = {
+		name = "Рене I Добрый"
+		dynasty = "де Валуа-Анжу"
+		birth_date = 1409.1.16
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+}
+
+1453.3.1 = {
+	monarch = {
 		name = "Жан II"
-		dynasty = "де Валуа"
-		birth_date = 1424.8.2
+		dynasty = "де Валуа-Анжу"
+		birth_date = 1425.8.2
 		adm = 1
 		dip = 4
 		mil = 2
@@ -32,9 +570,9 @@ capital = 189	# Nancy
 
 1453.2.28 = {
 	heir = {
-		name = "Николя"
-		monarch_name = "Николя I"
-		dynasty = "де Валуа"
+		name = "Никола"
+		monarch_name = "Никола I"
+		dynasty = "де Валуа-Анжу"
 		birth_date = 1448.1.1
 		death_date = 1473.8.25
 		claim = 95
@@ -46,8 +584,8 @@ capital = 189	# Nancy
 
 1470.12.16 = {
 	monarch = {
-		name = "Николя I"
-		dynasty = "де Валуа"
+		name = "Никола I"
+		dynasty = "де Валуа-Анжу"
 		birth_date = 1448.1.1
 		adm = 1
 		dip = 4
@@ -71,6 +609,18 @@ capital = 189	# Nancy
 
 1473.7.24 = {
 	monarch = {
+		name = "Иоланда I"
+		dynasty = "де Валуа-Анжу"
+		birth_date = 1428.11.2
+		adm = 3
+		dip = 4
+		mil = 1
+		female = yes
+	}
+}
+
+1473.8.1 = {
+	monarch = {
 		name = "Рене II"
 		dynasty = "де Водемон"
 		birth_date = 1451.5.2
@@ -83,7 +633,7 @@ capital = 189	# Nancy
 1489.6.4 = {
 	heir = {
 		name = "Антуан"
-		monarch_name = "Антуан I"
+		monarch_name = "Антуан I Добрый"
 		dynasty = "де Водемон"
 		birth_date = 1489.6.4
 		death_date = 1544.6.14
@@ -91,19 +641,19 @@ capital = 189	# Nancy
 		adm = 4
 		dip = 1
 		mil = 4
-		leader = {	name = "Антуан I"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
+		leader = {	name = "Антуан Добрый"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
 	}
 }
 
 1508.12.10 = {
 	monarch = {
-		name = "Антуан I"
+		name = "Антуан I Добрый"
 		dynasty = "де Водемон"
 		birth_date = 1489.6.4
 		adm = 4
 		dip = 1
 		mil = 4
-		leader = {	name = "Антуан I"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
+		leader = {	name = "Антуан Добрый"            	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 0 }
 	}
 }
 
@@ -135,7 +685,7 @@ capital = 189	# Nancy
 1544.6.15 = {
 	heir = {
 		name = "Карл"
-		monarch_name = "Карл III"
+		monarch_name = "Карл II"
 		dynasty = "де Водемон"
 		birth_date = 1543.2.18
 		death_date = 1608.5.14
@@ -148,7 +698,7 @@ capital = 189	# Nancy
 
 1545.6.13 = {
 	monarch = {
-		name = "Карл III"
+		name = "Карл II"
 		dynasty = "де Водемон"
 		birth_date = 1543.2.18
 		adm = 6
@@ -157,12 +707,12 @@ capital = 189	# Nancy
 	}
 }
 
-1556.10.2 = { government = despotic_monarchy }
+1556.10.2 = { government = absolute_monarchy }
 
 1563.11.8 = {
 	heir = {
-		name = "Анри"
-		monarch_name = "Анри I"
+		name = "Генрих"
+		monarch_name = "Генрих II"
 		dynasty = "де Водемон"
 		birth_date = 1563.11.8
 		death_date = 1624.7.31
@@ -175,7 +725,7 @@ capital = 189	# Nancy
 
 1608.5.15 = {
 	monarch = {
-		name = "Анри I"
+		name = "Генрих II"
 		dynasty = "де Водемон"
 		birth_date = 1563.11.8
 		adm = 4
@@ -198,8 +748,34 @@ capital = 189	# Nancy
 	}
 }
 
+1624.7.31 = {
+	monarch = {
+		name = "Николь"
+		dynasty = "де Водемон"
+		birth_date = 1608.10.3
+		adm = 4
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}
 
-1624.1.1 = {
+1624.7.31 = {
+	heir = {
+		name = "Франсуа"
+		monarch_name = "Франсуа II"
+		dynasty = "де Водемон"
+		birth_date = 1572.2.27
+		death_date = 1632.10.14
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+
+1625.11.21 = {
 	monarch = {
 		name = "Франсуа II"
 		dynasty = "де Водемон"
@@ -210,10 +786,10 @@ capital = 189	# Nancy
 	}
 }
 
-1624.1.1 = {
+1625.11.21 = {
 	heir = {
 		name = "Карл"
-		monarch_name = "Карл IV"
+		monarch_name = "Карл III"
 		dynasty = "де Водемон"
 		birth_date = 1604.4.5
 		death_date = 1674.9.18
@@ -221,26 +797,26 @@ capital = 189	# Nancy
 		adm = 2
 		dip = 0
 		mil = 0
-		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+		leader = {	name = "Карл III"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
 	}
 }
 
-1624.5.1 = {
+1625.11.26 = {
 	monarch = {
-		name = "Карл IV"
+		name = "Карл III"
 		dynasty = "де Водемон"
 		birth_date = 1604.4.5
 		adm = 2
 		dip = 0
 		mil = 0
-		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+		leader = {	name = "Карл III"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
 	}
 }
 
-1624.5.1 = {
+1625.11.26 = {
 	heir = {
-		name = "Николя"
-		monarch_name = "Николя II"
+		name = "Никола"
+		monarch_name = "Никола II"
 		dynasty = "де Водемон"
 		birth_date = 1612.12.12
 		death_date = 1670.1.25
@@ -259,7 +835,7 @@ capital = 189	# Nancy
 
 1634.1.20 = {
 	monarch = {
-		name = "Николя II"
+		name = "Никола II"
 		dynasty = "де Водемон"
 		birth_date = 1612.12.12
 		adm = 1
@@ -271,7 +847,7 @@ capital = 189	# Nancy
 1634.1.20 = {
 	heir = {
 		name = "Карл"
-		monarch_name = "Карл IV"
+		monarch_name = "Карл III"
 		dynasty = "де Водемон"
 		birth_date = 1604.4.5
 		death_date = 1674.9.18
@@ -279,7 +855,7 @@ capital = 189	# Nancy
 		adm = 2
 		dip = 0
 		mil = 0
-		leader = {	name = "Карл IV"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
+		leader = {	name = "Карл III"            	type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 1}
 	}
 }
 
@@ -289,7 +865,7 @@ capital = 189	# Nancy
 
 1641.1.30 = {
 	monarch = {
-		name = "Карл IV"
+		name = "Карл III"
 		dynasty = "де Водемон"
 		birth_date = 1604.4.5
 		adm = 2
@@ -301,7 +877,7 @@ capital = 189	# Nancy
 1643.4.3 = {
 	heir = {
 		name = "Карл Леопольд"
-		monarch_name = "Карл V Леопольд"
+		monarch_name = "Карл IV Леопольд"
 		dynasty = "де Водемон"
 		birth_date = 1643.4.3
 		death_date = 1690.4.18
@@ -314,7 +890,7 @@ capital = 189	# Nancy
 
 1675.10.19 = {
 	monarch = {
-		name = "Карл V Леопольд"
+		name = "Карл IV Леопольд"
 		dynasty = "де Водемон"
 		birth_date = 1643.4.3
 		adm = 1
@@ -350,8 +926,8 @@ capital = 189	# Nancy
 
 1708.12.8 = {
 	heir = {
-		name = "Франц Стефан"
-		monarch_name = "Франц III Стефан"
+		name = "Франсуа Этьен"
+		monarch_name = "Франсуа III Этьен"
 		dynasty = "де Водемон"
 		birth_date = 1708.12.8
 		death_date = 1737.7.9
@@ -384,4 +960,4 @@ capital = 189	# Nancy
 	}
 }
 
-1766.2.22 = { government = despotic_monarchy }
+1766.2.22 = { government = absolute_monarchy }

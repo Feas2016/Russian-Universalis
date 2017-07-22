@@ -1,4 +1,5 @@
 government = feudal_monarchy
+government_rank = 1
 primary_culture = polish
 religion = catholic
 technology_group = eastern
@@ -8,15 +9,174 @@ capital = 262 # Krakow
 
 national_focus = ADM
 
+480.1.1 = {
+	monarch = {
+		name = "Лех I"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+520.1.1 = {
+	monarch = {
+		name = "Крак I"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+560.1.1 = {
+	monarch = {
+		name = "Крак II"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+600.1.1 = {
+	monarch = {
+		name = "Лех II"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+640.1.1 = {
+	monarch = {
+		name = "Ванда"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+680.1.1 = {
+	monarch = {
+		name = "Лешко I"
+		dynasty = "Лех"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+720.1.1 = {
+	monarch = {
+		name = "Лешко II"
+		dynasty = "Попелид"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+740.1.1 = {
+	monarch = {
+		name = "Лешко III"
+		dynasty = "Попелид"
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+780.1.1 = {
+	monarch = {
+		name = "Попел I"
+		dynasty = "Попелид"
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+820.1.1 = {
+	monarch = {
+		name = "Попел II"
+		dynasty = "Попелид"
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+830.1.1 = {
+	monarch = {
+		name = "Пяст"
+		dynasty = "Пяст"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+850.1.1 = {
+	monarch = {
+		name = "Земовит"
+		dynasty = "Пяст"
+		birth_date = 835.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+892.1.1 = {
+	monarch = {
+		name = "Лешек"
+		dynasty = "Пяст"
+		birth_date = 870.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+940.1.1 = {
+	monarch = {
+		name = "Земомысл"
+		dynasty = "Пяст"
+		birth_date = 930.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+960.1.1 = {
+	monarch = {
+		name = "Мешко I"
+		dynasty = "Пяст"
+		birth_date = 930.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
 992.5.25 = {
 	monarch = {
 		name = "Болеслав I Храбрый"
 		dynasty = "Пяст"
-		birth_date = 966.1.1
+		birth_date = 967.1.1
 		adm = 1
 		dip = 5
 		mil = 5
 	}
+}
+
+1025.1.1 = {
+government_rank = 2
 }
 
 1025.6.17 = {
@@ -28,6 +188,10 @@ national_focus = ADM
 		dip = 3
 		mil = 5
 	}
+}
+
+1031.1.1 = {
+government_rank = 2
 }
 
 1031.1.1 = {
@@ -53,6 +217,16 @@ national_focus = ADM
 }
 
 1034.5.10 = {
+	monarch = {
+		name = "Болеслав Забытый"
+		dynasty = "Пяст"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1039.1.1 = {
 	monarch = {
 		name = "Казимир I Восстановитель"
 		dynasty = "Пяст"
@@ -85,7 +259,13 @@ national_focus = ADM
 	}
 }
 
+1076.1.1 = {
+government_rank = 2
+}
+
+
 1079.4.11 = {
+    government_rank = 1
 	monarch = {
 		name = "Владислав I Герман"
 		dynasty = "Пяст"
@@ -283,7 +463,7 @@ national_focus = ADM
 	}
 }
 
-1290.6.23 = {
+1290.5.20 = {
 	monarch = {
 		name = "Пшемысл II"
 		dynasty = "Пяст"
@@ -292,6 +472,10 @@ national_focus = ADM
 		dip = 4
 		mil = 2
 	}
+}
+
+1290.5.20 = {
+government_rank = 2
 }
 
 1296.2.8 = {
@@ -318,12 +502,70 @@ national_focus = ADM
 
 1306.8.4 = {
 	monarch = {
+		name = "Генрих V"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1306.10.16 = {
+	monarch = {
+		name = "Рудольф I"
+		dynasty = "фон Габсбург"
+		birth_date = 1281.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1307.7.4 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1310.12.9 = {
+	monarch = {
+		name = "Ян I"
+		dynasty = "фон Люксембург"
+		birth_date = 1296.8.10
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1320.1.20 = {
+	monarch = {
 		name = "Владислав I Локетек"
 		dynasty = "Пяст"
 		birth_date = 1260.3.3
 		adm = 3
 		dip = 4
 		mil = 4
+	}
+}
+
+1459.12.27 = {
+	heir = {
+		name = "Казимир"
+		monarch_name = "Казимир III Великий"
+		dynasty = "Пяст"
+		birth_date = 1310.4.10
+		death_date = 1370.11.7
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 5
 	}
 }
 
@@ -372,6 +614,20 @@ national_focus = ADM
 	}
 }
 
+1459.12.27 = {
+	heir = {
+		name = "Владислав"
+		monarch_name = "Владислав III Варненчик"
+		dynasty = "Ягеллон"
+		birth_date = 1424.10.31
+		death_date = 1444.11.10
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
 1434.6.1 = {
 	monarch = {
 		name = "Владислав III Варненчик"
@@ -410,8 +666,8 @@ national_focus = ADM
 
 1454.2.10 = {
 	queen = {
-		country_of_origin = SAX
-		name = "Эльжбета"
+		country_of_origin = HAB
+		name = "Елизавета"
 		dynasty = "фон Габсбург"
 		birth_date = 1437.1.1
 		death_date = 1505.8.30
@@ -530,7 +786,7 @@ national_focus = ADM
 	queen = {
 		country_of_origin = TRA
 		name = "Барбара"
-		dynasty = "Заполя"
+		dynasty = "Запольяи"
 		birth_date = 1490.1.1
 		death_date = 1515.10.2
 		female = yes
@@ -576,7 +832,7 @@ national_focus = ADM
 1543.5.6 = {
 	queen = {
 		country_of_origin = HAB
-		name = "Эльжбета"
+		name = "Елизавета"
 		dynasty = "фон Габсбург"
 		birth_date = 1526.7.9
 		death_date = 1545.6.15

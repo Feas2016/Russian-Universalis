@@ -1,0 +1,23 @@
+name = "Война восьми святых"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 116
+}
+
+1375.3.1 = {
+	add_attacker = PAP
+	
+	add_defender = LAN
+	add_defender = MLO
+	add_defender = SIE
+}
+
+
+1378.7.1 = {
+	rem_attacker = PAP
+	
+	rem_defender = LAN
+	rem_defender = MLO
+	rem_defender = SIE
+}

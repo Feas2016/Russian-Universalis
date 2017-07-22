@@ -3,15 +3,222 @@ government_rank = 1
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
-capital = 2298	# Antalya
+capital = 319	# Antalya
 
-1399.1.1 = {
+1261.1.1 = {
 	monarch = {
-		name = "Ильяс I"
-		dynasty = "Ментешоглу"
+		name = "Ментеше"
+		dynasty = "Ментешеогуллар"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1295.1.1 = {
+	monarch = {
+		name = "Ментеше Масуд"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1260.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1295.1.1 = {
+	heir = {
+		name = "Орхан"
+		monarch_name = "Орхан Шуджа ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1290.1.1
+		death_date = 1337.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1319.1.1 = {
+	monarch = {
+		name = "Орхан Шуджа ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1290.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1319.1.1 = {
+	heir = {
+		name = "Ибрахим"
+		monarch_name = "Ибрахим"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1310.1.1
+		death_date = 1354.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1337.1.1 = {
+	monarch = {
+		name = "Ибрахим"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1310.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1337.1.1 = {
+	heir = {
+		name = "Муса"
+		monarch_name = "Муса"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1330.1.1
+		death_date = 1375.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1354.1.1 = {
+	monarch = {
+		name = "Муса"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1330.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1354.1.1 = {
+	heir = {
+		name = "Ахмад"
+		monarch_name = "Ахмад Гази Тадж ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1350.1.1
+		death_date = 1391.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+
+1375.1.1 = {
+	monarch = {
+		name = "Ахмад Гази Тадж ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1350.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1375.1.1 = {
+	heir = {
+		name = "Мухаммад"
+		monarch_name = "Мухаммад"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1355.1.1
+		death_date = 1391.6.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1391.1.1 = {
+	monarch = {
+		name = "Мухаммад"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1355.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1391.1.1 = {
+	heir = {
+		name = "Илйас"
+		monarch_name = "Илйас Музаффар ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1375.1.1
+		death_date = 1391.6.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1391.6.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1402.1.1 = {
+	monarch = {
+		name = "Илйас Музаффар ад-Дин"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1375.1.1
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 	add_piety = 0.2
+}
+
+1402.1.1 = {
+	heir = {
+		name = "Лайс"
+		monarch_name = "Лайс"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1395.1.1
+		death_date = 1424.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1421.1.1 = {
+	monarch = {
+		name = "Лайс"
+		dynasty = "Ментешеогуллар"
+		birth_date = 1395.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
 }

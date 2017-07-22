@@ -6,62 +6,234 @@ technology_group = western
 capital = 205 # Chambery
 add_accepted_culture = arpitan
 
-1285.8.16 = {
+1032.1.1 = {
 	monarch = {
-		name = "Амадей V"
+		name = "Гумберт I Белорукий"
 		dynasty = "ди Савойя"
-		birth_date = 1249.9.4
+		birth_date = 970.1.1
 		adm = 3
-		dip = 3
+		dip = 2
+		mil = 0
+	}
+}
+
+1047.1.1 = {
+	monarch = {
+		name = "Амадей I Хвост"
+		dynasty = "ди Савойя"
+		birth_date = 995.1.1
+		adm = 0
+		dip = 1
 		mil = 3
 	}
 }
 
-1285.2.24 = {
+1051.1.1 = {
+	monarch = {
+		name = "Оттон I"
+		dynasty = "ди Савойя"
+		birth_date = 1021.1.1
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+1060.3.16 = {
+	monarch = {
+		name = "Пьер I"
+		dynasty = "ди Савойя"
+		birth_date = 1048.1.1
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1078.8.9 = {
+	monarch = {
+		name = "Амадей II"
+		dynasty = "ди Савойя"
+		birth_date = 1050.1.1
+		adm = 5
+		dip = 4
+		mil = 0
+	}
+}
+
+1080.1.26 = {
+	monarch = {
+		name = "Гумберт II Сильный"
+		dynasty = "ди Савойя"
+		birth_date = 1065.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1103.10.14 = {
+	monarch = {
+		name = "Амадей III"
+		dynasty = "ди Савойя"
+		birth_date = 1095.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}
+
+1148.8.1 = {
+	monarch = {
+		name = "Гумберт III"
+		dynasty = "ди Савойя"
+		birth_date = 1136.8.4
+		adm = 0
+		dip = 5
+		mil = 1
+	}
+}
+
+1189.3.4 = {
+	monarch = {
+		name = "Томас I"
+		dynasty = "ди Савойя"
+		birth_date = 1178.5.20
+		adm = 0
+		dip = 4
+		mil = 3
+	}
+}
+
+1233.3.6 = {
+	monarch = {
+		name = "Амадей IV"
+		dynasty = "ди Савойя"
+		birth_date = 1197.1.1
+		adm = 0
+		dip = 4
+		mil = 1
+	}
+}
+
+1253.7.13 = {
+	monarch = {
+		name = "Бонифаций I"
+		dynasty = "ди Савойя"
+		birth_date = 1244.12.1
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1263.6.7 = {
+	monarch = {
+		name = "Пьер II Маленький Карл Великий"
+		dynasty = "ди Савойя"
+		birth_date = 1203.1.1
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1263.1.1 = {
+	heir = {
+		name = "Филипп"
+		monarch_name = "Филипп I"
+		dynasty = "ди Савойя"
+		birth_date = 1207.1.1
+		death_date = 1285.8.16
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 5
+	}
+}
+
+1268.5.15 = {
+	monarch = {
+		name = "Филипп I"
+		dynasty = "ди Савойя"
+		birth_date = 1207.1.1
+		adm = 1
+		dip = 0
+		mil = 5
+	}
+}
+
+1285.8.16 = {
+	monarch = {
+		name = "Амадей V Великий"
+		dynasty = "ди Савойя"
+		birth_date = 1253.1.1
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+1285.8.16 = {
 	heir = {
 		name = "Эдуард"
-		monarch_name = "Эдуард I"
+		monarch_name = "Эдуард I Либерал"
 		dynasty = "ди Савойя"
 		birth_date = 1284.2.8
 		death_date = 1329.11.4
 		claim = 95
-		adm = 4
-		dip = 2
-		mil = 3
+		adm = 2
+		dip = 4
+		mil = 5
 	}
 }
 
 1323.10.16 = {
 	monarch = {
-		name = "Эдуард I"
+		name = "Эдуард I Либерал"
 		dynasty = "ди Савойя"
-		adm = 4
-		dip = 2
-		mil = 3
-	}
-}
-
-1323.10.16 = {
-	heir = {
-		name = "Аймон"
-		monarch_name = "Аймон"
-		dynasty = "ди Савойя"
-		birth_date = 1291.12.15
-		death_date = 1343.6.22
-		claim = 95
-		adm = 3
+		birth_date = 1284.2.8
+		adm = 2
 		dip = 4
-		mil = 2
+		mil = 5
 	}
 }
 
 1329.11.4 = {
 	monarch = {
-		name = "Аймон"
+		name = "Жанна"
 		dynasty = "ди Савойя"
+		birth_date = 1310.1.1
 		adm = 3
-		dip = 4
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1323.10.16 = {
+	heir = {
+		name = "Жанна Византийская"
+		monarch_name = "Анна"
+		dynasty = "ди Савойя"
+		birth_date = 1306.1.1
+		death_date = 1329.11.22 #1359.1.1
+		claim = 95
+		adm = 1
+		dip = 1
 		mil = 2
+		female = yes
+	}
+}
+
+1329.11.22 = {
+	monarch = {
+		name = "Аймон I"
+		dynasty = "ди Савойя"
+		birth_date = 1291.12.15
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
@@ -73,20 +245,20 @@ add_accepted_culture = arpitan
 		birth_date = 1334.1.4
 		death_date = 1383.3.1
 		claim = 95
-		adm = 2
-		dip = 3
-		mil = 5
+		adm = 3
+		dip = 2
+		mil = 3
 	}
 }
-
 
 1343.6.22 = {
 	monarch = {
 		name = "Амадей VI"
 		dynasty = "ди Савойя"
-		adm = 2
-		dip = 3
-		mil = 5
+		birth_date = 1334.1.4
+		adm = 3
+		dip = 2
+		mil = 3
 	}
 }
 
@@ -98,9 +270,9 @@ add_accepted_culture = arpitan
 		birth_date = 1360.2.24
 		death_date = 1391.11.1
 		claim = 95
-		adm = 2
-		dip = 3
-		mil = 3
+		adm = 5
+		dip = 2
+		mil = 0
 	}
 }
 
@@ -108,9 +280,10 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Амадей VII"
 		dynasty = "ди Савойя"
-		adm = 2
-		dip = 3
-		mil = 3
+		birth_date = 1360.2.24
+		adm = 5
+		dip = 2
+		mil = 0
 	}
 }
 
@@ -157,6 +330,7 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Людовик I"
 		dynasty = "ди Савойя"
+		birth_date = 1413.2.21
 		adm = 3
 		dip = 5
 		mil = 2
@@ -177,10 +351,11 @@ add_accepted_culture = arpitan
 	}
 }
 
-1465.1.30 = {
+1465.1.29 = {
 	monarch = {
 		name = "Амадей IX"
 		dynasty = "ди Савойя"
+		birth_date = 1435.2.1
 		adm = 3
 		dip = 2
 		mil = 0
@@ -201,20 +376,21 @@ add_accepted_culture = arpitan
 	}
 }
 
-1472.3.31 = {
+1472.3.30 = {
 	monarch = {
 		name = "Филиберт I"
 		dynasty = "ди Савойя"
+		birth_date = 1465.8.17
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1472.3.31 = {
+1472.3.30 = {
 	heir = {
-		name = "Карло"
-		monarch_name = "Карло I"
+		name = "Карл"
+		monarch_name = "Карл I"
 		dynasty = "ди Савойя"
 		birth_date = 1468.3.29
 		death_date = 1490.3.13
@@ -225,10 +401,11 @@ add_accepted_culture = arpitan
 	}
 }
 
-1482.9.23 = {
+1482.9.22 = {
 	monarch = {
-		name = "Карло I"
+		name = "Карл I"
 		dynasty = "ди Савойя"
+		birth_date = 1468.3.29
 		adm = 2
 		dip = 2
 		mil = 3
@@ -237,7 +414,7 @@ add_accepted_culture = arpitan
 
 1489.6.23 = {
 	heir = {
-		name = "Карло"
+		name = "Карл"
 		monarch_name = "Карл II"
 		dynasty = "ди Савойя"
 		birth_date = 1489.6.23
@@ -249,17 +426,18 @@ add_accepted_culture = arpitan
 	}
 }
 
-1490.3.14 = {
+1490.3.13 = {
 	monarch = {
 		name = "Карл II"
 		dynasty = "ди Савойя"
+		birth_date = 1489.6.23
 		adm = 2
 		dip = 2
 		mil = 1
 	}
 }
 
-1490.3.14 = {
+1490.3.13 = {
 	heir = {
 		name = "Филипп"
 		monarch_name = "Филипп II"
@@ -273,17 +451,18 @@ add_accepted_culture = arpitan
 	}
 }
 
-1496.4.17 = {
+1496.4.16 = {
 	monarch = {
 		name = "Филипп II"
 		dynasty = "ди Савойя"
+		birth_date = 1438.2.5
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1496.4.17 = {
+1496.4.16 = {
 	heir = {
 		name = "Филиберт"
 		monarch_name = "Филиберт II"
@@ -297,20 +476,21 @@ add_accepted_culture = arpitan
 	}
 }
 
-1497.11.8 = {
+1497.11.7 = {
 	monarch = {
 		name = "Филиберт II"
 		dynasty = "ди Савойя"
+		birth_date = 1480.4.10
 		adm = 3
 		dip = 2
 		mil = 1
 	}
 }
 
-1497.11.8 = {
+1497.11.7 = {
 	heir = {
-		name = "Карло"
-		monarch_name = "Карло II"
+		name = "Карл"
+		monarch_name = "Карл II"
 		dynasty = "ди Савойя"
 		birth_date = 1486.10.10
 		death_date = 1553.8.1
@@ -323,10 +503,11 @@ add_accepted_culture = arpitan
 1499.1.1 = {
 	capital = 1875 # Cuneo
 }
-1504.9.11 = {
+1504.9.10 = {
 	monarch = {
-		name = "Карло II"
+		name = "Карл II"
 		dynasty = "ди Савойя"
+		birth_date = 1486.10.10
 		adm = 2
 		dip = 4
 		mil = 2
@@ -369,6 +550,7 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Эммануил Филиберт I"
 		dynasty = "ди Савойя"
+		birth_date = 1528.7.8
 		adm = 5
 		dip = 5
 		mil = 4
@@ -407,6 +589,7 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Карл Эммануил I"
 		dynasty = "ди Савойя"
+		birth_date = 1562.1.12
 		adm = 2
 		dip = 3
 		mil = 3
@@ -433,6 +616,7 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Виктор Амадей I"
 		dynasty = "ди Савойя"
+		birth_date = 1587.5.8
 		adm = 4
 		dip = 4
 		mil = 2
@@ -443,7 +627,7 @@ add_accepted_culture = arpitan
 1632.9.14 = {
 	heir = {
 		name = "Франциск Гиацинт"
-		monarch_name = "Франциск Гиацинт"
+		monarch_name = "Франциск Гиацинт I"
 		dynasty = "ди Савойя"
 		birth_date = 1632.9.14
 		death_date = 1638.10.4
@@ -456,8 +640,9 @@ add_accepted_culture = arpitan
 
 1637.10.8 = {
 	monarch = {
-		name = "Франциск Гиацинт"
+		name = "Франциск Гиацинт I"
 		dynasty = "ди Савойя"
+		birth_date = 1632.9.14
 		adm = 2
 		dip = 2
 		mil = 2
@@ -484,6 +669,7 @@ add_accepted_culture = arpitan
 	monarch = {
 		name = "Карл Эммануил II"
 		dynasty = "ди Савойя"
+		birth_date = 1634.6.20
 		adm = 3
 		dip = 2
 		mil = 3
@@ -505,13 +691,28 @@ add_accepted_culture = arpitan
 	}
 }
 
-1675.1.1 = {
+1675.6.12 = {
 	monarch = {
 		name = "Виктор Амадей II"
 		dynasty = "ди Савойя"
+		birth_date = 1666.5.14
 		adm = 4
 		dip = 6
 		mil = 5
 		leader = { name = "Виктор Амадей II"	type = general	rank = 0	fire = 4	shock = 4	manuever = 2	siege = 2 }
+	}
+}
+
+1699.6.5 = {
+	heir = {
+		name = "Виктор Амадей"
+		monarch_name = "Виктор Амадей III"
+		dynasty = "ди Савойя"
+		birth_date = 1699.6.5
+		death_date = 1715.3.22
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }

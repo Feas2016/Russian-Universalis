@@ -7,6 +7,103 @@ technology_group = eastern
 capital = 153 # Buda
 historical_friend = HAB
 
+750.1.1 = {
+	monarch = {
+		name = "Идьек"
+		dynasty = "Арпад"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+800.1.1 = {
+	monarch = {
+		name = "Курсан"
+		dynasty = "Арпад"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+825.1.1 = {
+	monarch = {
+		name = "Лебедий"
+		dynasty = "Арпад"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+850.1.1 = {
+	monarch = {
+		name = "Альмош"
+		dynasty = "Арпад"
+		birth_date = 820.1.1
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+
+895.1.1 = {
+	monarch = {
+		name = "Арпад"
+		dynasty = "Арпад"
+		birth_date = 850.1.1
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}
+
+907.1.1 = {
+	monarch = {
+		name = "Жольт"
+		dynasty = "Арпад"
+		birth_date = 896.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+947.1.1 = {
+	monarch = {
+		name = "Файс"
+		dynasty = "Арпад"
+		birth_date = 920.1.1
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+955.1.1 = {
+	monarch = {
+		name = "Такшонь"
+		dynasty = "Арпад"
+		birth_date = 931.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+972.1.1 = {
+	monarch = {
+		name = "Геза"
+		dynasty = "Арпад"
+		birth_date = 949.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
 997.2.1 = {
 	monarch = {
 		name = "Иштван I Святой"
@@ -18,20 +115,6 @@ historical_friend = HAB
 	}
 }
 
-1011.1.1 = {
-	heir = {
-		name = "Пётр"
-		monarch_name = "Пётр Орсеоло"
-		dynasty = "Арпад"
-		birth_date = 1011.1.1
-		death_date = 1059.1.1
-		claim = 95
-		adm = 3
-		dip = 5
-		mil = 5
-	}
-}
-
 1038.8.15 = {
 	monarch = {
 		name = "Пётр Орсеоло"
@@ -40,20 +123,6 @@ historical_friend = HAB
 		adm = 3
 		dip = 5
 		mil = 5
-	}
-}
-
-1038.8.15 = {
-	heir = {
-		name = "Андраш"
-		monarch_name = "Андраш I"
-		dynasty = "Арпад"
-		birth_date = 1015.1.1
-		death_date = 1060.12.6
-		claim = 95
-		adm = 5
-		dip = 1
-		mil = 1
 	}
 }
 
@@ -79,21 +148,8 @@ historical_friend = HAB
 	}
 }
 
-1044.7.5 = {
-	heir = {
-		name = "Андраш"
-		monarch_name = "Андраш I"
-		dynasty = "Арпад"
-		birth_date = 1015.1.1
-		death_date = 1060.12.6
-		claim = 95
-		adm = 5
-		dip = 1
-		mil = 1
-	}
-}
 
-1046.6.1 = {
+1046.9.1 = {
 	monarch = {
 		name = "Андраш I"
 		dynasty = "Арпад"
@@ -114,20 +170,6 @@ historical_friend = HAB
 	}
 }
 
-1060.12.6 = {
-	heir = {
-		name = "Шаламон"
-		monarch_name = "Шаламон"
-		dynasty = "Арпад"
-		birth_date = 1052.1.1
-		death_date = 1087.3.1
-		claim = 95
-		adm = 2
-		dip = 5
-		mil = 1
-	}
-}
-
 1063.9.11 = {
 	monarch = {
 		name = "Шаламон"
@@ -139,7 +181,7 @@ historical_friend = HAB
 	}
 }
 
-1074.8.1 = {
+1074.3.14 = {
 	monarch = {
 		name = "Геза I"
 		dynasty = "Арпад"
@@ -147,20 +189,6 @@ historical_friend = HAB
 		adm = 3
 		dip = 4
 		mil = 3
-	}
-}
-
-1074.8.1 = {
-	heir = {
-		name = "Ласло"
-		monarch_name = "Ласло I Святой"
-		dynasty = "Арпад"
-		birth_date = 1046.6.27
-		death_date = 1095.7.29
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 4
 	}
 }
 
@@ -175,20 +203,6 @@ historical_friend = HAB
 	}
 }
 
-1077.4.25 = {
-	heir = {
-		name = "Кальман"
-		monarch_name = "Кальман I Книжник"
-		dynasty = "Арпад"
-		birth_date = 1070.1.1
-		death_date = 1116.2.3
-		claim = 95
-		adm = 5
-		dip = 4
-		mil = 3
-	}
-}
-
 1095.7.29 = {
 	monarch = {
 		name = "Кальман I Книжник"
@@ -197,20 +211,6 @@ historical_friend = HAB
 		adm = 5
 		dip = 4
 		mil = 3
-	}
-}
-
-1101.1.1 = {
-	heir = {
-		name = "Иштван"
-		monarch_name = "Иштван II"
-		dynasty = "Арпад"
-		birth_date = 1101.1.1
-		death_date = 1131.3.1
-		claim = 95
-		adm = 4
-		dip = 5
-		mil = 2
 	}
 }
 
@@ -236,20 +236,6 @@ historical_friend = HAB
 	}
 }
 
-1131.3.1 = {
-	heir = {
-		name = "Геза"
-		monarch_name = "Геза II"
-		dynasty = "Арпад"
-		birth_date = 1130.1.1
-		death_date = 1162.5.31
-		claim = 95
-		adm = 1
-		dip = 3
-		mil = 5
-	}
-}
-
 1141.2.13 = {
 	monarch = {
 		name = "Геза II"
@@ -257,20 +243,6 @@ historical_friend = HAB
 		birth_date = 1130.1.1
 		adm = 1
 		dip = 3
-		mil = 5
-	}
-}
-
-1147.7.1 = {
-	heir = {
-		name = "Иштван"
-		monarch_name = "Иштван III"
-		dynasty = "Арпад"
-		birth_date = 1147.7.1
-		death_date = 1172.3.4
-		claim = 95
-		adm = 5
-		dip = 4
 		mil = 5
 	}
 }
@@ -286,19 +258,6 @@ historical_friend = HAB
 	}
 }
 
-1162.5.31 = {
-	heir = {
-		name = "Бела"
-		monarch_name = "Бела III"
-		dynasty = "Арпад"
-		birth_date = 1148.1.1
-		death_date = 1196.4.23
-		claim = 95
-		adm = 4
-		dip = 1
-		mil = 1
-	}
-}
 
 1172.3.4 = {
 	monarch = {
@@ -311,20 +270,6 @@ historical_friend = HAB
 	}
 }
 
-1174.1.1 = {
-	heir = {
-		name = "Имре"
-		monarch_name = "Имре"
-		dynasty = "Арпад"
-		birth_date = 1174.1.1
-		death_date = 1204.10.27
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 2
-	}
-}
-
 1196.4.23 = {
 	monarch = {
 		name = "Имре"
@@ -333,20 +278,6 @@ historical_friend = HAB
 		adm = 4
 		dip = 4
 		mil = 2
-	}
-}
-
-1199.1.1 = {
-	heir = {
-		name = "Ласло"
-		monarch_name = "Ласло III"
-		dynasty = "Арпад"
-		birth_date = 1199.1.1
-		death_date = 1205.5.7
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 5
 	}
 }
 
@@ -372,20 +303,6 @@ historical_friend = HAB
 	}
 }
 
-1206.11.29 = {
-	heir = {
-		name = "Бела"
-		monarch_name = "Бела IV"
-		dynasty = "Арпад"
-		birth_date = 1206.11.29
-		death_date = 1270.5.3
-		claim = 95
-		adm = 4
-		dip = 1
-		mil = 5
-	}
-}
-
 1235.9.21 = {
 	monarch = {
 		name = "Бела IV"
@@ -394,20 +311,6 @@ historical_friend = HAB
 		adm = 4
 		dip = 1
 		mil = 5
-	}
-}
-
-1239.10.18 = {
-	heir = {
-		name = "Иштван"
-		monarch_name = "Иштван V"
-		dynasty = "Арпад"
-		birth_date = 1239.10.18
-		death_date = 1272.8.6
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 4
 	}
 }
 
@@ -422,26 +325,23 @@ historical_friend = HAB
 	}
 }
 
-1270.5.3 = {
-	heir = {
-		name = "Ласло"
-		monarch_name = "Ласло IV Кун"
-		dynasty = "Арпад"
-		birth_date = 1260.8.5
-		death_date = 1290.7.13
-		claim = 95
-		adm = 2
-		dip = 3
-		mil = 3
-	}
-}
-
 1272.8.6 = {
 	monarch = {
 		name = "Ласло IV Кун"
 		dynasty = "Арпад"
 		birth_date = 1260.8.5
 		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1290.7.10 = {
+	monarch = {
+		name = "Карл Мартелл"
+		dynasty = "д'Анжу"
+		birth_date = 1271.9.8	
+		adm = 3
 		dip = 3
 		mil = 3
 	}
@@ -480,7 +380,7 @@ historical_friend = HAB
 	}
 }
 
-1307.10.1 = {
+1307.10.10 = {
 	monarch = {
 		name = "Карл I Роберт"
 		dynasty = "д'Анжу"
@@ -490,6 +390,63 @@ historical_friend = HAB
 		mil = 4
 	}
 }
+
+1307.10.10 = 
+	queen = {
+		country_of_origin = NAP
+		name = "Мария Бытомская"
+		dynasty = "Пяст"
+		birth_date = 1295.1.1
+		death_date = 1317.12.15
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1318.6.24 = 
+	queen = {
+		country_of_origin = LUX
+		name = "Беатриса"
+		dynasty = "фон Люксембург"
+		birth_date = 1305.1.1
+		death_date = 1319.11.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1320.7.6 = 
+	queen = {
+		country_of_origin = POL
+		name = "Елизавета Локотковна"
+		dynasty = "Пяст"
+		birth_date = 1305.1.1
+		death_date = 1342.7.16 #1380.12.29
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1321.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карой II"
+		dynasty = "д'Анжу"
+		birth_date = 1321.1.1
+		death_date = 1321.12.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
 
 1324.11.1 = {
 	heir = {
@@ -513,9 +470,9 @@ historical_friend = HAB
 		birth_date = 1326.3.5
 		death_date = 1382.9.11
 		claim = 95
-		adm = 5
-		dip = 5
-		mil = 5
+		adm = 6
+		dip = 6
+		mil = 6
 	}
 }
 
@@ -524,18 +481,61 @@ historical_friend = HAB
 		name = "Лайош I Великий"
 		dynasty = "д'Анжу"
 		birth_date = 1326.3.5	
-		adm = 5
-		dip = 5
-		mil = 5
+		adm = 6
+		dip = 6
+		mil = 6
 	}
 }
 
-1371.1.1 = {
+1342.7.16 = 
+	queen = {
+		country_of_origin = BOH
+		name = "Маргарита"
+		dynasty = "фон Люксембург"
+		birth_date = 1335.5.24
+		death_date = 1349.1.1 #1349.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1342.7.16 = 
+	queen = {
+		country_of_origin = BOS
+		name = "Елизавета"
+		dynasty = "Котроманич"
+		birth_date = 1340.1.1
+		death_date = 1382.9.11 #1387.11.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1370.1.1 = {
+	heir = {
+		name = "Екатерина"
+		monarch_name = "Екатерина"
+		dynasty = "д'Анжу"
+        birth_date = 1370.1.1
+		death_date = 1377.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1377.1.1 = {
 	heir = {
 		name = "Мария"
 		monarch_name = "Мария"
 		dynasty = "д'Анжу"
-        birth_date = 1371.1.1
+        birth_date = 1371.4.14
 		death_date = 1395.5.17
 		claim = 95
 		adm = 3
@@ -549,10 +549,34 @@ historical_friend = HAB
 	monarch = {
 		name = "Мария"
 		dynasty = "д'Анжу"
-		birth_date = 1371.1.1	
-		adm = 5
-		dip = 5
-		mil = 5
+		birth_date = 1371.4.14	
+		adm = 3
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}
+
+1385.12.1 = {
+	monarch = {
+		name = "Карой II"
+		dynasty = "д'Анжу"
+		birth_date = 1345.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1386.2.24 = {
+	monarch = {
+		name = "Мария"
+		dynasty = "д'Анжу"
+		birth_date = 1371.4.14	
+		adm = 3
+		dip = 3
+		mil = 2
+		female = yes
 	}
 }
 
@@ -566,6 +590,7 @@ historical_friend = HAB
 		mil = 3
 	}
 }
+
 
 1437.1.1 = { leader = {	name = "Янош Хуньяди"         	type = general	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1445.1.1 } }
 
@@ -684,7 +709,7 @@ historical_friend = HAB
 	}
 }
 
-1540.8.30 = { government = despotic_monarchy }
+1540.8.30 = { government = absolute_monarchy }
 
 1541.1.1 = { capital = 154 } # Pressburg
 

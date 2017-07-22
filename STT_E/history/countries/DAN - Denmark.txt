@@ -5,6 +5,222 @@ technology_group = western
 historical_friend = NOR
 capital = 12 #Sjaelland
 
+510.1.1 = {
+	monarch = {
+		name = "Хьюглаук"
+		dynasty = "Скьёльдунг"
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+521.1.1 = {
+	monarch = {
+		name = "Хардред"
+		dynasty = "Скьёльдунг"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+600.1.1 = {
+	monarch = {
+		name = "Ивар Широкие Объятья"
+		dynasty = "Скьёльдунг"
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+650.1.1 = {
+	monarch = {
+		name = "Хрёрик Метатель Колец"
+		dynasty = "Скьёльдунг"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+700.1.1 = {
+	monarch = {
+		name = "Харальд Боезуб"
+		dynasty = "Скьёльдунг"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+700.1.1 = {
+	monarch = {
+		name = "Сигурд Кольцо"
+		dynasty = "ав Мунсё"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+777.1.1 = {
+	monarch = {
+		name = "Сигифрид"
+		dynasty = "Сигифридинг"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+804.1.1 = {
+	monarch = {
+		name = "Годфред"
+		dynasty = "Сигифридинг"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+811.1.1 = {
+	monarch = {
+		name = "Хемминг"
+		dynasty = "Сигифридинг"
+		adm = 5
+		dip = 1
+		mil = 5
+	}
+}
+
+
+812.1.1 = {
+	monarch = {
+		name = "Харальд Клак"
+		dynasty = "Сигифридинг"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+826.1.1 = {
+	monarch = {
+		name = "Хорик I"
+		dynasty = "Сигифридинг"
+		adm = 5
+		dip = 5
+		mil = 2
+	}
+}
+
+854.1.1 = {
+	monarch = {
+		name = "Хорик II"
+		dynasty = "Сигифридинг"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+
+864.1.1 = {
+	monarch = {
+		name = "Рёрик Ютландский"
+		dynasty = "Сигифридинг"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+873.1.1 = {
+	monarch = {
+		name = "Хальвдан"
+		dynasty = "Сигифридинг"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+891.1.1 = {
+	monarch = {
+		name = "Sigfred"
+		dynasty = "Сигифридинг"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+873.1.1 = {
+	heir = {
+		name = "Gudfred"
+		monarch_name = "Gudfred"
+		dynasty = "Сигифридинг"
+		birth_date = 850.1.1
+		death_date = 890.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+880.1.1 = {
+	monarch = {
+		name = "Олаф Груда Развалин"
+		dynasty = "Сигифридинг"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+890.1.1 = {
+	monarch = {
+		name = "Гнупа"
+		dynasty = "Сигифридинг"
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+916.1.1 = {
+	monarch = {
+		name = "Кнуд I Хардекнуд"
+		dynasty = "Кнютлинг"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+948.1.1 = {
+	monarch = {
+		name = "Горм Старый"
+		dynasty = "Кнютлинг"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+958.1.1 = {
+	monarch = {
+		name = "Харальд I Синезубый"
+		dynasty = "Кнютлинг"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
 985.11.1 = {
 	monarch = {
 		name = "Свен I Вилобородый"
@@ -835,7 +1051,7 @@ capital = 12 #Sjaelland
 	}
 }
 
-1670.2.10 = { government = despotic_monarchy }
+1670.2.10 = { government = absolute_monarchy }
 
 1671.10.11 = {
 	heir = {

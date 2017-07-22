@@ -1,15 +1,527 @@
 government = feudal_monarchy
 primary_culture = scottish
-add_accepted_culture = highlander
+add_accepted_culture = highland_scottish
 religion = catholic
 technology_group = western
 capital = 248 # Edinburgh
 
+843.1.1 = {
+	monarch = {
+		name = "Кеннет I"
+		dynasty = "МакАльпин"
+		birth_date = 810.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
 
-1390.1.1 = {
+858.2.13 = {
+	monarch = {
+		name = "Дональд I"
+		dynasty = "МакАльпин"
+		birth_date = 812.1.1
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+862.4.13 = {
+	monarch = {
+		name = "Константин I"
+		dynasty = "МакАльпин"
+		birth_date = 836.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+877.1.1 = {
+	monarch = {
+		name = "Эд"
+		dynasty = "МакАльпин"
+		birth_date = 858.1.1
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+878.1.1 = {
+	monarch = {
+		name = "Эохейд"
+		dynasty = "Клайд"
+		birth_date = 850.1.1
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+}
+
+889.1.1 = {
+	monarch = {
+		name = "Гирик"
+		dynasty = "Клайд"
+		birth_date = 870.1.1
+		adm = 0
+		dip = 4
+		mil = 2
+	}
+}
+
+889.1.6 = {
+	monarch = {
+		name = "Дональд II"
+		dynasty = "МакАльпин"
+		birth_date = 860.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+900.1.1 = {
+	monarch = {
+		name = "Константин II"
+		dynasty = "МакАльпин"
+		birth_date = 879.1.1
+		adm = 0
+		dip = 4
+		mil = 0
+	}
+}
+
+943.1.1 = {
+	monarch = {
+		name = "Малькольм I"
+		dynasty = "МакАльпин"
+		birth_date = 900.1.1
+		adm = 2
+		dip = 4
+		mil = 5
+	}
+}
+
+954.1.1 = {
+	monarch = {
+		name = "Индульф"
+		dynasty = "МакАльпин"
+		birth_date = 920.1.1
+		adm = 2
+		dip = 5
+		mil = 0
+	}
+}
+
+962.1.1 = {
+	monarch = {
+		name = "Дуфф"
+		dynasty = "МакАльпин"
+		birth_date = 930.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+967.1.1 = {
+	monarch = {
+		name = "Кулен"
+		dynasty = "МакАльпин"
+		birth_date = 940.1.1
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+971.1.1 = {
+	monarch = {
+		name = "Кеннет II"
+		dynasty = "МакАльпин"
+		birth_date = 954.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+995.1.1 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "МакАльпин"
+		birth_date = 971.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+997.1.1 = {
+	monarch = {
+		name = "Кеннет III"
+		dynasty = "МакАльпин"
+		birth_date = 967.1.1
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+}
+
+1005.3.25 = {
+	monarch = {
+		name = "Малькольм II"
+		dynasty = "МакАльпин"
+		birth_date = 980.1.1
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+
+1034.11.25 = {
+	monarch = {
+		name = "Дункан I"
+		dynasty = "Данкельд"
+		birth_date = 1001.1.1
+		adm = 3
+		dip = 0
+		mil = 0
+	}
+}
+
+1040.8.14 = {
+	monarch = {
+		name = "Макбет"
+		dynasty = "Морей"
+		birth_date = 1001.1.1
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1057.8.15 = {
+	monarch = {
+		name = "Лулах"
+		dynasty = "Морей"
+		birth_date = 1030.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1058.3.17 = {
+	monarch = {
+		name = "Малькольм III"
+		dynasty = "Данкельд"
+		birth_date = 1031.3.26
+		adm = 4
+		dip = 0
+		mil = 3
+	}
+}
+
+1093.11.13 = {
+	monarch = {
+		name = "Дональд III"
+		dynasty = "Данкельд"
+		birth_date = 1040.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+	}
+}
+
+1094.5.1 = {
+	monarch = {
+		name = "Дункан II"
+		dynasty = "Данкельд"
+		birth_date = 1060.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+	}
+}
+
+1094.11.12 = {
+	monarch = {
+		name = "Дональд III"
+		dynasty = "Данкельд"
+		birth_date = 1040.1.1
+		adm = 1
+		dip = 0
+		mil = 4
+	}
+}
+
+1097.10.1 = {
+	monarch = {
+		name = "Эдгар"
+		dynasty = "Данкельд"
+		birth_date = 1074.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1107.1.8 = {
+	monarch = {
+		name = "Александр I"
+		dynasty = "Данкельд"
+		birth_date = 1078.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1124.4.23 = {
+	monarch = {
+		name = "Давид I"
+		dynasty = "Данкельд"
+		birth_date = 1082.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1153.5.24 = {
+	monarch = {
+		name = "Малькольм IV"
+		dynasty = "Данкельд"
+		birth_date = 1141.4.23
+		adm = 0
+		dip = 5
+		mil = 4
+	}
+}
+
+1165.12.9 = {
+	monarch = {
+		name = "Вильгельм I Лев"
+		dynasty = "Данкельд"
+		birth_date = 1143.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1214.12.4 = {
+	monarch = {
+		name = "Александр II"
+		dynasty = "Данкельд"
+		birth_date = 1198.8.24
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1249.7.6 = {
+	monarch = {
+		name = "Александр III"
+		dynasty = "Данкельд"
+		birth_date = 1241.9.4
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1286.3.19 = {
+	monarch = {
+		name = "Маргарита Норвежская Дева"
+		dynasty = "Сверре"
+		birth_date = 1283.4.9
+		adm = 4
+		dip = 2
+		mil = 4
+		female = yes
+	}
+}
+
+1290.9.26 = {
+	monarch = {
+		name = "(Вакантно)"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1292.11.17 = {
+	monarch = {
+		name = "Иоанн I"
+		dynasty = "Баллиоль"
+		birth_date = 1248.1.1
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1296.7.10 = {
+	monarch = {
+		name = "(Вакантно)"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1306.3.25 = {
+	monarch = {
+		name = "Роберт I"
+		dynasty = "Брюс"
+		birth_date = 1274.7.11
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1306.3.25 = {
+	queen = {
+		country_of_origin = SCO
+		name = "Елизавета"
+		dynasty = "де Бург"
+		birth_date = 1289.1.1
+		death_date = 1327.10.27
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1324.3.5 = {
+	heir = {
+		name = "Давид"
+		monarch_name = "Давид II"
+		dynasty = "Брюс"
+		birth_date = 1324.3.5
+		death_date = 1371.2.22
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1329.6.7 = {
+	monarch = {
+		name = "Давид II"
+		dynasty = "Брюс"
+		birth_date = 1324.3.5
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1331.11.1 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Джоан"
+		dynasty = "Плантагенет"
+		birth_date = 1321.7.5
+		death_date = 1362.9.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1332.12.16 = {
+	monarch = {
+		name = "Эдуард"
+		dynasty = "Баллиоль"
+		birth_date = 1283.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1332.12.16 = {
+	queen = {
+		country_of_origin = ACH
+		name = "Маргарита"
+		dynasty = "де Анжу"
+		birth_date = 1325.1.1
+		death_date = 1380.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1336.1.20 = {
+	monarch = {
+		name = "Давид II"
+		dynasty = "Брюс"
+		birth_date = 1324.3.5
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1336.1.20 = {
+	queen = {
+		country_of_origin = ENG
+		name = "Джоан"
+		dynasty = "Плантагенет"
+		birth_date = 1321.7.5
+		death_date = 1362.9.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1371.2.22 = {
+	monarch = {
+		name = "Роберт II"
+		dynasty = "Стюарт"
+		birth_date = 1316.3.2
+		adm = 4
+		dip = 3
+		mil = 0
+	}
+}
+
+1371.2.22 = {
+	heir = {
+		name = "Роберт"
+		monarch_name = "Роберт III"
+		dynasty = "Стюарт"
+		birth_date = 1337.1.1
+		death_date = 1406.4.4
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1390.4.19 = {
 	monarch = {
 		name = "Роберт III"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1337.1.1
 		adm = 1
 		dip = 2
 		mil = 2
@@ -30,12 +542,11 @@ capital = 248 # Edinburgh
 	}
 }
 
-1400.12.24 = { leader = { name = "Арчибальд Дуглас"	type = general	rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1424.8.17 } }
-
-1406.1.1 = {
+1406.4.4 = {
 	monarch = {
 		name = "Яков I"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1394.12.10
 		adm = 3
 		dip = 1
 		mil = 2
@@ -56,11 +567,12 @@ capital = 248 # Edinburgh
 	}
 }
 
-1437.2.20 = {
-	#decision = use_highland_charge
+1437.2.21 = {
+	decision = use_highland_charge
 	monarch = {
 		name = "Яков II"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1430.10.16
 		adm = 3
 		dip = 2
 		mil = 2
@@ -72,7 +584,7 @@ capital = 248 # Edinburgh
 1449.7.3 = {
 	queen = {
 		country_of_origin = GEL
-		name = "Мэри"
+		name = "Мария"
 		dynasty = "ван Эгмонд"
 		birth_date = 1434.1.1
 		death_date = 1460.8.3
@@ -100,7 +612,8 @@ capital = 248 # Edinburgh
 1460.8.3 = {
 	monarch = {
 		name = "Яков III"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1451.7.10
 		adm = 0
 		dip = 2
 		mil = 2
@@ -118,14 +631,15 @@ capital = 248 # Edinburgh
 		adm = 3
 		dip = 4
 		mil = 1
-		leader = { name = "Яков IV"		type = general	rank = 0	fire = 1	shock = 3	manuever = 2	siege = 0 }
+		leader = { name = "Принц Яков"		type = general	rank = 0	fire = 1	shock = 3	manuever = 2	siege = 0 }
 	}
 }
 	
 1488.6.12 = {
 	monarch = {
 		name = "Яков IV"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1473.3.17
 		adm = 3
 		dip = 4
 		mil = 1
@@ -150,7 +664,8 @@ capital = 248 # Edinburgh
 1513.9.10 = {
 	monarch = {
 		name = "Яков V"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1512.4.10
 		adm = 3
 		dip = 1
 		mil = 2
@@ -175,7 +690,8 @@ capital = 248 # Edinburgh
 1542.12.15 = {
 	monarch = {
 		name = "Мария I"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1542.12.8
 		adm = 2
 		dip = 3
 		mil = 3
@@ -206,7 +722,8 @@ capital = 248 # Edinburgh
 1567.7.15 = {
 	monarch = {
 		name = "Яков VI"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1566.6.19
 		adm = 2
 		dip = 3
 		mil = 4
@@ -234,7 +751,8 @@ capital = 248 # Edinburgh
 1625.3.28 = {
 	monarch = {
 		name = "Карл I"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1600.11.19
 		adm = 2
 		dip = 1
 		mil = 4
@@ -264,7 +782,8 @@ capital = 248 # Edinburgh
 1649.1.30 = {
 	monarch = {
 		name = "Александр"
-		dynasty = Лесли
+		dynasty = "Лесли"
+		birth_date = 1580.1.1
 		adm = 4
 		dip = 3
 		mil = 5
@@ -274,7 +793,8 @@ capital = 248 # Edinburgh
 1660.4.24 = {
 	monarch = {
 		name = "Карл II"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1630.5.29
 		adm = 0
 		dip = 3
 		mil = 3
@@ -301,7 +821,8 @@ capital = 248 # Edinburgh
 1685.2.6 = {
 	monarch = {
 		name = "Яков VII"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1633.10.14
 		adm = 1
 		dip = 3
 		mil = 3
@@ -310,7 +831,7 @@ capital = 248 # Edinburgh
 
 1688.2.15 = {
 	monarch = {
-		name = "Виллем III"
+		name = "Вильгельм III"
 		dynasty = "ван Оранье-Нассау"
 		adm = 3
 		dip = 5
@@ -323,7 +844,8 @@ capital = 248 # Edinburgh
 1701.9.7 = {
 	monarch = {
 		name = "Яков VIII"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1688.6.10
 		adm = 3
 		dip = 5
 		mil = 4
@@ -333,7 +855,8 @@ capital = 248 # Edinburgh
 1702.3.20 = {
 	monarch = {
 		name = "Анна"
-		dynasty = Стюарт
+		dynasty = "Стюарт"
+		birth_date = 1665.2.6
 		adm = 3
 		dip = 5
 		mil = 4

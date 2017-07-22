@@ -1,9 +1,248 @@
 government = feudal_monarchy
-government_rank = 3
+government_rank = 2
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 150	# Тырново
+capital = 150	# Sofia
+
+632.1.1 = {
+	monarch = {
+		name = "Кубрат"
+		dynasty = "Дуло"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+665.1.1 = {
+	monarch = {
+		name = "Батбаян"
+		dynasty = "Дуло"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+668.1.1 = {
+	monarch = {
+		name = "Аспарух"
+		dynasty = "Дуло"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+
+700.1.1 = {
+	monarch = {
+		name = "Тервел"
+		dynasty = "Дуло"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}
+
+721.1.1 = {
+	monarch = {
+		name = "Кормесий"
+		dynasty = "Дуло"
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+738.1.1 = {
+	monarch = {
+		name = "Севар"
+		dynasty = "Дуло"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+753.1.1 = {
+	monarch = {
+		name = "Кормисош"
+		dynasty = "Вокил"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+756.1.1 = {
+	monarch = {
+		name = "Винех"
+		dynasty = "Вокил"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+762.1.1 = {
+	monarch = {
+		name = "Телец"
+		dynasty = "Угаин"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+765.1.1 = {
+	monarch = {
+		name = "Сабин"
+		dynasty = "Вокил"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+766.1.1 = {
+	monarch = {
+		name = "Умор"
+		dynasty = "Вокил"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+766.6.1 = {
+	monarch = {
+		name = "Токту"
+		dynasty = "Крум"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+767.1.1 = {
+	monarch = {
+		name = "Паган"
+		dynasty = "Паган"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+768.1.1 = {
+	monarch = {
+		name = "Телериг"
+		dynasty = "Телериг"
+		adm = 5
+		dip = 1
+		mil = 5
+	}
+}
+
+777.1.1 = {
+	monarch = {
+		name = "Кардам"
+		dynasty = "Кардам"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+803.1.1 = {
+	monarch = {
+		name = "Крум"
+		dynasty = "Крум"
+		adm = 4
+		dip = 4
+		mil = 6
+	}
+}
+
+814.4.13 = {
+	monarch = {
+		name = "Омуртаг"
+		dynasty = "Крум"
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+831.1.1 = {
+	monarch = {
+		name = "Маламир"
+		dynasty = "Крум"
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+836.1.1 = {
+	monarch = {
+		name = "Пресиан"
+		dynasty = "Крум"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+852.1.1 = {
+	monarch = {
+		name = "Борис I"
+		dynasty = "Крум"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+864.1.1 = {
+government_rank = 1
+}
+
+889.1.1 = {
+	monarch = {
+		name = "Владимир-Расате"
+		dynasty = "Крум"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+893.1.1 = {
+	monarch = {
+		name = "Симеон I"
+		dynasty = "Крум"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+919.1.1 = {
+government_rank = 3
+}
+
+927.5.27 = {
+	monarch = {
+		name = "Пётр I"
+		dynasty = "Крум"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
 
 969.1.1 = {
 	monarch = {
@@ -398,7 +637,7 @@ capital = 150	# Тырново
 
 1371.2.17 = {
 	monarch = {
-		name = "Иван III"
+		name = "Иван Асень"
 		dynasty = "Шишман"
 		birth_date = 1350.1.1
 		adm = 3

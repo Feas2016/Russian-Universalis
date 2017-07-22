@@ -6,6 +6,141 @@ capital = 266 # Praha
 technology_group = western
 add_accepted_culture = saxon
 
+623.1.1 = {
+    government_rank = 2
+	monarch = {
+		name = "Само"
+		dynasty = "Само"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+658.1.1 = {
+    government_rank = 1
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+818.1.1 = {
+    government_rank = 2
+	monarch = {
+		name = "Моймир I"
+		dynasty = "Моймирович"
+		birth_date = 795.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+846.1.1 = {
+	monarch = {
+		name = "Ростислав"
+		dynasty = "Моймирович"
+		birth_date = 820.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+870.1.1 = {
+	monarch = {
+		name = "Славомир"
+		dynasty = "Моймирович"
+		birth_date = 820.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+872.1.1 = {
+	monarch = {
+		name = "Святополк I"
+		dynasty = "Моймирович"
+		birth_date = 850.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+894.1.1 = {
+	monarch = {
+		name = "Моймир II"
+		dynasty = "Моймирович"
+		birth_date = 870.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+906.1.1 = {
+    government_rank = 1
+	monarch = {
+		name = "Спытигнев I"
+		dynasty = "Пржемыслович"
+		birth_date = 875.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+915.1.1 = {
+	monarch = {
+		name = "Вратислав I"
+		dynasty = "Пржемыслович"
+		birth_date = 888.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+921.2.13 = {
+	monarch = {
+		name = "Вацлав I Святой"
+		dynasty = "Пржемыслович"
+		birth_date = 907.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+935.9.28 = {
+	monarch = {
+		name = "Болеслав I Грозный"
+		dynasty = "Пржемыслович"
+		birth_date = 910.1.1
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+967.7.15 = {
+	monarch = {
+		name = "Болеслав II"
+		dynasty = "Пржемыслович"
+		birth_date = 932.1.1
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}
+
+
 999.2.7 = {
 	monarch = {
 		name = "Болеслав III Рыжий"
@@ -17,21 +152,7 @@ add_accepted_culture = saxon
 	}
 }
 
-999.2.7 = {
-	heir = {
-		name = "Владивой"
-		monarch_name = "Владивой I"
-		dynasty = "Пржемыслович"
-		birth_date = 980.1.1
-		death_date = 1003.1.1
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
-
-1002.1.1 = {
+1002.2.10 = {
 	monarch = {
 		name = "Владивой"
 		dynasty = "Пржемыслович"
@@ -75,7 +196,7 @@ add_accepted_culture = saxon
 	}
 }
 
-1004.1.1 = {
+1004.9.8 = {
 	monarch = {
 		name = "Яромир"
 		dynasty = "Пржемыслович"
@@ -130,21 +251,7 @@ add_accepted_culture = saxon
 	}
 }
 
-1034.11.9 = {
-	heir = {
-		name = "Спытигнев"
-		monarch_name = "Спытигнев II"
-		dynasty = "Пржемыслович"
-		birth_date = 1031.1.1
-		death_date = 1061.1.28
-		claim = 95
-		adm = 4
-		dip = 5
-		mil = 3
-	}
-}
-
-1055.3.1 = {
+1055.1.10 = {
 	monarch = {
 		name = "Спытигнев II"
 		dynasty = "Пржемыслович"
@@ -152,20 +259,6 @@ add_accepted_culture = saxon
 		adm = 4
 		dip = 5
 		mil = 3
-	}
-}
-
-1055.3.1 = {
-	heir = {
-		name = "Вратислав"
-		monarch_name = "Вратислав II"
-		dynasty = "Пржемыслович"
-		birth_date = 1035.1.1
-		death_date = 1092.1.14
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 2
 	}
 }
 
@@ -180,43 +273,16 @@ add_accepted_culture = saxon
 	}
 }
 
-1061.1.28 = {
-	heir = {
-		name = "Конрад"
-		monarch_name = "Конрад I Ота"
-		dynasty = "Пржемыслович"
-		birth_date = 1036.1.1
-		death_date = 1092.9.6
-		claim = 95
-		adm = 4
-		dip = 1
-		mil = 3
-	}
-}
-
 1086.6.15 = {
 government_rank = 2
 }
 
 1092.1.14 = {
+    government_rank = 1
 	monarch = {
 		name = "Конрад I Ота"
 		dynasty = "Пржемыслович"
 		birth_date = 1036.1.1
-		adm = 4
-		dip = 1
-		mil = 3
-	}
-}
-
-1092.1.14 = {
-	heir = {
-		name = "Бржетислав"
-		monarch_name = "Бржетислав II"
-		dynasty = "Пржемыслович"
-		birth_date = 1070.1.1
-		death_date = 1100.12.22
-		claim = 95
 		adm = 4
 		dip = 1
 		mil = 3
@@ -231,20 +297,6 @@ government_rank = 2
 		adm = 4
 		dip = 1
 		mil = 3
-	}
-}
-
-1092.9.6 = {
-	heir = {
-		name = "Борживой"
-		monarch_name = "Борживой II"
-		dynasty = "Пржемыслович"
-		birth_date = 1065.1.1
-		death_date = 1124.2.2
-		claim = 95
-		adm = 2
-		dip = 5
-		mil = 4
 	}
 }
 
@@ -270,20 +322,6 @@ government_rank = 2
 	}
 }
 
-1107.5.1 = {
-	heir = {
-		name = "Вацлав"
-		monarch_name = "Вацлав I"
-		dynasty = "Пржемыслович"
-		birth_date = 1105.1.1
-		death_date = 1130.3.1
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
-
 1109.9.21 = {
 	monarch = {
 		name = "Владислав I"
@@ -291,20 +329,6 @@ government_rank = 2
 		birth_date = 1070.1.1
 		adm = 4
 		dip = 5
-		mil = 2
-	}
-}
-
-1109.9.21 = {
-	heir = {
-		name = "Борживой"
-		monarch_name = "Борживой II"
-		dynasty = "Пржемыслович"
-		birth_date = 1065.1.1
-		death_date = 1124.2.2
-		claim = 95
-		adm = 1
-		dip = 4
 		mil = 2
 	}
 }
@@ -331,20 +355,6 @@ government_rank = 2
 	}
 }
 
-1120.8.16 = {
-	heir = {
-		name = "Собеслав"
-		monarch_name = "Собеслав I"
-		dynasty = "Пржемыслович"
-		birth_date = 1075.1.1
-		death_date = 1140.2.14
-		claim = 95
-		adm = 2
-		dip = 1
-		mil = 2
-	}
-}
-
 1125.4.12 = {
 	monarch = {
 		name = "Собеслав I"
@@ -356,33 +366,9 @@ government_rank = 2
 	}
 }
 
-1125.4.12 = {
-	heir = {
-		name = "Владислав"
-		monarch_name = "Владислав I"
-		dynasty = "Пржемыслович"
-		birth_date = 1110.1.1
-		death_date = 1174.1.18
-		claim = 95
-		adm = 5
-		dip = 4
-		mil = 4
-	}
-}
-
 1140.2.14 = {
 	monarch = {
-		name = "(Вакантно)"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}
-
-1140.2.14 = {
-	monarch = {
-		name = "Владислав I"
+		name = "Владислав II"
 		dynasty = "Пржемыслович"
 		birth_date = 1110.1.1
 		adm = 5
@@ -391,21 +377,12 @@ government_rank = 2
 	}
 }
 
-1150.1.1 = {
-	heir = {
-		name = "Бедржих"
-		monarch_name = "Бедржих"
-		dynasty = "Пржемыслович"
-		birth_date = 1141.6.1
-		death_date = 1189.3.25
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
+1158.1.11 = {
+government_rank = 2
 }
 
 1172.1.1 = {
+    government_rank = 1
 	monarch = {
 		name = "Бедржих"
 		dynasty = "Пржемыслович"
@@ -413,20 +390,6 @@ government_rank = 2
 		adm = 4
 		dip = 4
 		mil = 3
-	}
-}
-
-1172.1.1 = {
-	heir = {
-		name = "Собеслав"
-		monarch_name = "Собеслав II"
-		dynasty = "Пржемыслович"
-		birth_date = 1128.1.1
-		death_date = 1180.1.9
-		claim = 95
-		adm = 5
-		dip = 5
-		mil = 2
 	}
 }
 
@@ -452,20 +415,6 @@ government_rank = 2
 	}
 }
 
-1178.1.1 = {
-	heir = {
-		name = "Конрад"
-		monarch_name = "Конрад II Ота"
-		dynasty = "Пржемыслович"
-		birth_date = 1138.1.1
-		death_date = 1191.9.6
-		claim = 95
-		adm = 5
-		dip = 4
-		mil = 4
-	}
-}
-
 1182.1.1 = {
 	monarch = {
 		name = "Конрад II Ота"
@@ -488,20 +437,6 @@ government_rank = 2
 	}
 }
 
-1182.6.1 = {
-	heir = {
-		name = "Конрад"
-		monarch_name = "Конрад II Ота"
-		dynasty = "Пржемыслович"
-		birth_date = 1138.1.1
-		death_date = 1191.9.6
-		claim = 95
-		adm = 5
-		dip = 4
-		mil = 4
-	}
-}
-
 1189.3.25 = {
 	monarch = {
 		name = "Конрад II Ота"
@@ -513,20 +448,6 @@ government_rank = 2
 	}
 }
 
-1189.3.25 = {
-	heir = {
-		name = "Вацлав"
-		monarch_name = "Венцеслав II"
-		dynasty = "Пржемыслович"
-		birth_date = 1137.1.1
-		death_date = 1192.1.1
-		claim = 95
-		adm = 2
-		dip = 1
-		mil = 5
-	}
-}
-
 1191.9.6 = {
 	monarch = {
 		name = "Венцеслав II"
@@ -535,20 +456,6 @@ government_rank = 2
 		adm = 2
 		dip = 1
 		mil = 5
-	}
-}
-
-1191.9.6 = {
-	heir = {
-		name = "Пржемысл"
-		monarch_name = "Пржемысл Отакар I"
-		dynasty = "Пржемыслович"
-		birth_date = 1155.1.1
-		death_date = 1230.12.15
-		claim = 95
-		adm = 3
-		dip = 5
-		mil = 1
 	}
 }
 
@@ -606,18 +513,8 @@ government_rank = 2
 	}
 }
 
-1205.1.1 = {
-	heir = {
-		name = "Вацлав"
-		monarch_name = "Вацлав I"
-		dynasty = "Пржемыслович"
-		birth_date = 1205.1.1
-		death_date = 1253.9.23
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 5
-	}
+1198.8.15 = {
+government_rank = 2
 }
 
 1230.12.15 = {
@@ -681,20 +578,6 @@ government_rank = 2
 	}
 }
 
-1278.8.26 = {
-	heir = {
-		name = "Вацлав"
-		monarch_name = "Вацлав II"
-		dynasty = "Пржемыслович"
-		birth_date = 1271.9.27
-		death_date = 1305.6.21
-		claim = 95
-		adm = 1
-		dip = 3
-		mil = 5
-	}
-}
-
 1283.9.27 = {
 	monarch = {
 		name = "Вацлав II"
@@ -703,20 +586,6 @@ government_rank = 2
 		adm = 1
 		dip = 3
 		mil = 5
-	}
-}
-
-1289.10.6 = {
-	heir = {
-		name = "Вацлав"
-		monarch_name = "Вацлав III"
-		dynasty = "Пржемыслович"
-		birth_date = 1289.10.6
-		death_date = 1306.8.4
-		claim = 95
-		adm = 5
-		dip = 2
-		mil = 4
 	}
 }
 
@@ -993,7 +862,7 @@ government_rank = 2
 	}
 }
 
-1556.10.2 = { government = despotic_monarchy }
+1556.10.2 = { government = absolute_monarchy }
 
 1562.9.17 = {
 	monarch = {

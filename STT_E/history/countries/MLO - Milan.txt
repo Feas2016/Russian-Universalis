@@ -1,4 +1,4 @@
-government = feudal_monarchy
+government = oligarchic_republic
 government_rank = 1
 primary_culture = lombard
 religion = catholic
@@ -6,21 +6,213 @@ technology_group = western
 capital = 104 # Milano
 fixed_capital = 104 # Cannot move capital away from this province & no power cost to move to it
 
-1395.1.1 = {
+1197.1.1 = {
 	monarch = {
-		name = "Джан Галеаццо I"
+		name = "Пагано I"
+		dynasty = "делла Торре"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1240.1.1 = {
+	monarch = {
+		name = "Пагано II"
+		dynasty = "делла Торре"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1247.1.1 = {
+	monarch = {
+		name = "Манфреди"
+		dynasty = "Ланчиа"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1256.1.1 = {
+	monarch = {
+		name = "Пагано II"
+		dynasty = "делла Торре"
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1259.1.1 = {
+	monarch = {
+		name = "Мартино"
+		dynasty = "делла Торре"
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+1259.1.1 = {
+	monarch = {
+		name = "Оберто"
+		dynasty = "Паллавичино"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1263.11.20 = {
+	monarch = {
+		name = "Филиппо"
+		dynasty = "делла Торре"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1265.12.24 = {
+	monarch = {
+		name = "Наполеоне"
+		dynasty = "делла Торре"
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+1277.1.21 = {
+	monarch = {
+		name = "Оттоне"
 		dynasty = "Висконти"
-		birth_date = 1347.10.15
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+1295.8.8 = {
+	monarch = {
+		name = "Маттео I"
+		dynasty = "Висконти"
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1302.6.1 = {
+	monarch = {
+		name = "Гвидо"
+		dynasty = "делла Торре"
+		birth_date = 1259.9.27
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1311.2.1 = {
+	monarch = {
+		name = "Маттео I"
+		dynasty = "Висконти"
+		birth_date = 1250.8.15
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1322.6.24 = {
+	monarch = {
+		name = "Галеаццо I"
+		dynasty = "Висконти"
+		birth_date = 1277.1.21
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1328.8.6 = {
+	monarch = {
+		name = "Аццоне"
+		dynasty = "Висконти"
+		birth_date = 1302.12.7
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1339.8.16 = {
+	monarch = {
+		name = "Лукино"
+		dynasty = "Висконти"
+		birth_date = 1287.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1349.1.24 = {
+	monarch = {
+		name = "Джованни"
+		dynasty = "Висконти"
+		birth_date = 1290.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1354.10.5 = {
+	monarch = {
+		name = "Галеаццо II"
+		dynasty = "Висконти"
+		birth_date = 1320.1.1
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1378.8.4 = {
+	monarch = {
+		name = "Бернабо"
+		dynasty = "Висконти"
+		birth_date = 1323.1.1
+		adm = 5
+		dip = 2
+		mil = 2
+	}
+}
+
+1385.12.18 = {
+	monarch = {
+		name = "Джан Галеаццо"
+		dynasty = "Висконти"
+		birth_date = 1347.11.1
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 }
 
-1395.1.1 = {
+1395.5.1 = {
+    government = feudal_monarchy
+}
+
+1395.5.1 = {
 	heir = {
-		name = "Джованни Мария"
-		monarch_name = "Джованни Мария I"
+		name = "Джан Мария"
+		monarch_name = "Джан Мария"
 		dynasty = "Висконти"
 		birth_date = 1388.9.7
 		death_date = 1412.5.16
@@ -33,7 +225,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1402.9.3 = {
 	monarch = {
-		name = "Джованни Мария I"
+		name = "Джан Мария"
 		dynasty = "Висконти"
 		birth_date = 1388.9.7
 		adm = 2
@@ -45,7 +237,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 1402.9.3 = {
 	heir = {
 		name = "Филиппо Мария"
-		monarch_name = "Филиппо Мария I"
+		monarch_name = "Филиппо Мария"
 		dynasty = "Висконти"
 		birth_date = 1392.9.23
 		death_date = 1447.8.13
@@ -58,7 +250,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1412.5.16 = {
 	monarch = {
-		name = "Филиппо Мария I"
+		name = "Филиппо Мария"
 		dynasty = "Висконти"
 		birth_date = 1392.9.23
 		adm = 1
@@ -67,17 +259,27 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1418.1.1 = { leader = {	 name = "Carmagnola"     	type = general	rank = 1	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1432.5.5 } }
+1418.1.1 = { leader = {	 name = "Карманьола"     	type = general	rank = 1	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1432.5.5 } }
 
 1447.8.13 = { government = ambrosian_republic } # The Ambrosian Republic
 
-1450.3.27 = { government = feudal_monarchy }
+1447.8.13 = {
+    government = ambrosian_republic # Амброзианская республика
+	monarch = {
+		name = "Золотая Амброзианская республика"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
 
-1450.3.27 = {
+1450.2.27 = {
+    government = feudal_monarchy
 	monarch = {
 		name = "Франческо I"
 		dynasty = "Сфорца"
-		birth_date = 1401.6.23
+		birth_date = 1401.7.23
 		adm = 5
 		dip = 5
 		mil = 5
@@ -87,7 +289,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 1450.3.27 = {
 	heir = {
 		name = "Галеаццо Мария"
-		monarch_name = "Галеаццо Мария I"
+		monarch_name = "Галеаццо Мария"
 		dynasty = "Сфорца"
 		birth_date = 1444.1.24
 		death_date = 1476.12.26
@@ -100,7 +302,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1466.3.7 = {
 	monarch = {
-		name = "Галеаццо Мария I"
+		name = "Галеаццо Мария"
 		dynasty = "Сфорца"
 		birth_date = 1444.1.24
 		adm = 5
@@ -111,8 +313,8 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1469.6.20 = {
 	heir = {
-		name = "Джованни Галеаццо"
-		monarch_name = "Джованни Галеаццо II"
+		name = "Джан Галеаццо"
+		monarch_name = "Джан Галеаццо"
 		dynasty = "Сфорца"
 		birth_date = 1469.6.20
 		death_date = 1494.10.21
@@ -125,7 +327,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1476.12.27 = {
 	monarch = {
-		name = "Джованни Галеаццо II"
+		name = "Джан Галеаццо"
 		dynasty = "Сфорца"
 		birth_date = 1469.6.20
 		adm = 3
@@ -136,8 +338,8 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 
 1476.12.27 = {
 	heir = {
-		name = "Лодовико"
-		monarch_name = "Лодовико I"
+		name = "Лодовико Мария"
+		monarch_name = "Лодовико Мария"
 		dynasty = "Сфорца"
 		birth_date = 1452.7.27
 		death_date = 1508.5.27
@@ -145,26 +347,26 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		adm = 5
 		dip = 5
 		mil = 4
-		leader = { name = "Лодовико Сфорца"       	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1}
+		leader = { name = "Лодовико Мария"       	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1}
 	}
 }
-		
+
 1494.10.23 = {
 	monarch = {
-		name = "Лодовико I"
+		name = "Лодовико Мария"
 		dynasty = "Сфорца"
 		birth_date = 1452.7.27
 		adm = 5
 		dip = 5
 		mil = 4
-		leader = { name = "Лодовико Сфорца"       	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1}
+		leader = { name = "Лодовико Мария"       	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1}
 	}
 }
 
 1494.10.23 = {
 	heir = {
 		name = "Массимилиано"
-		monarch_name = "Массимилиано I"
+		monarch_name = "Массимилиано"
 		dynasty = "Сфорца"
 		birth_date = 1493.1.1
 		death_date = 1530.1.1
@@ -175,10 +377,59 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		leader = { name = "Массимилиано Сфорца"       	type = general	rank = 1	fire = 1	shock = 1	manuever = 2	siege = 0 }
 	}	
 }
-	
-1508.1.1 = {
+
+1499.9.6 = {
 	monarch = {
-		name = "Массимилиано I"
+		name = "Людовик XII"
+		dynasty = "де Валуа"
+		birth_date = 1462.6.27
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1500.2.5 = {
+	monarch = {
+		name = "Лодовико Мария"
+		dynasty = "Сфорца"
+		birth_date = 1452.7.27
+		adm = 5
+		dip = 5
+		mil = 4
+		leader = { name = "Лодовико Мария"       	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1}
+	}
+}
+
+1500.2.5 = {
+	heir = {
+		name = "Массимилиано"
+		monarch_name = "Массимилиано"
+		dynasty = "Сфорца"
+		birth_date = 1493.1.1
+		death_date = 1530.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 1
+		leader = { name = "Массимилиано Сфорца"       	type = general	rank = 1	fire = 1	shock = 1	manuever = 2	siege = 0 }
+	}	
+}
+
+1500.4.10 = {
+	monarch = {
+		name = "Людовик XII"
+		dynasty = "де Валуа"
+		birth_date = 1462.6.27
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1512.6.16 = {
+	monarch = {
+		name = "Массимилиано"
 		dynasty = "Сфорца"
 		birth_date = 1493.1.25
 		adm = 2
@@ -188,7 +439,33 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1515.10.6 = {
+1512.6.16 = {
+	heir = {
+		name = "Франческо Мария"
+		monarch_name = "Франческо II Мария"
+		dynasty = "Сфорца"
+		birth_date = 1495.2.4
+		death_date = 1535.10.24
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		leader = { name = "Франческо Мария Сфорца"       	type = general	rank = 0	fire = 1	shock = 1	manuever = 2	siege = 0 }
+	}	
+}
+
+1515.10.8 = {
+	monarch = {
+		name = "Франциск I"
+		dynasty = "де Валуа"
+		birth_date = 1494.9.12
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1521.11.19 = {
 	monarch = {
 		name = "Франческо II Мария"
 		birth_date = 1495.2.4
@@ -196,11 +473,98 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		adm = 4
 		dip = 2
 		mil = 1
-		leader = { name = "Франческо Сфорца"       	type = general	rank = 0	fire = 1	shock = 1	manuever = 2	siege = 0 }
+		leader = { name = "Франческо Мария Сфорца"       	type = general	rank = 0	fire = 1	shock = 1	manuever = 2	siege = 0 }
 	}
 }
 
+1521.11.19 = {
+	heir = {
+		name = "Джованни Паоло"
+		monarch_name = "Джованни Паоло"
+		dynasty = "Сфорца"
+		birth_date = 1497.3.1
+		death_date = 1535.12.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}	
+}
+
+1524.10.3 = {
+	monarch = {
+		name = "Франциск I"
+		dynasty = "де Валуа"
+		birth_date = 1494.9.12
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1525.2.24 = {
+	monarch = {
+		name = "Франческо II Мария"
+		birth_date = 1495.2.4
+		dynasty = "Сфорца"
+		adm = 4
+		dip = 2
+		mil = 1
+		leader = { name = "Франческо Мария Сфорца"       	type = general	rank = 0	fire = 1	shock = 1	manuever = 2	siege = 0 }
+	}
+}
+
+1525.2.24 = {
+	heir = {
+		name = "Джованни Паоло"
+		monarch_name = "Джованни Паоло"
+		dynasty = "Сфорца"
+		birth_date = 1497.3.1
+		death_date = 1535.12.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}	
+}
+
 1535.1.1 = { leader = {	 name = "Маркиз дель Васто"     	type = general	rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1546.3.31 } }
+
+1535.10.24 = {
+	monarch = {
+		name = "Джованни Паоло"
+		birth_date = 1497.3.1
+		dynasty = "Сфорца"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1535.10.24 = {
+	heir = {
+		name = "Муцио"
+		monarch_name = "Муцио"
+		dynasty = "Сфорца"
+		birth_date = 1531.1.1
+		death_date = 1553.11.23
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}	
+}
+
+1535.12.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
 
 1796.11.15 = { government = constitutional_republic }
 
@@ -210,5 +574,49 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		adm = 3
 		dip = 4
 		mil = 1
+		regent = yes
+	}
+}
+
+1797.6.29 = {
+	monarch = {
+		name = "Цизальпинская республика"
+		adm = 3
+		dip = 4
+		mil = 1
+		regent = yes
+	}
+}
+
+1799.4.29 = {
+    government = feudal_monarchy
+	monarch = {
+		name = "Франц II"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1768.2.12
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1800.4.29 = {
+    government = constitutional_republic
+	monarch = {
+		name = "Итальянская республика"
+		adm = 3
+		dip = 4
+		mil = 1
+		regent = yes
+	}
+}
+
+1805.3.18 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

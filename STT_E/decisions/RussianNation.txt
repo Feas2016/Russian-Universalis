@@ -48,9 +48,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUS
-			#change_government = rus_imperial_government ### STT
 			set_government_and_rank = {
-				government = tsardom
+				government = rus_imperial_government
 				rank = 3
 			}
 			if = {

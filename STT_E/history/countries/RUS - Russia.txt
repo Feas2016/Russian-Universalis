@@ -494,8 +494,8 @@ government_rank = 3
 
 1598.2.11 = {
 	heir = {
-		name = "Федор"
-		monarch_name = "Федор II"
+		name = "Фёдор"
+		monarch_name = "Фёдор II"
 		dynasty = "Годунов"
 		birth_date = 1589.1.1
 		death_date = 1605.6.10
@@ -774,7 +774,7 @@ government_rank = 3
 	}
 }
 
-1650.1.1 = { leader = {	name = "Федор Ромодановский"          	type = general		rank = 2	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1682.1.1 } }
+1650.1.1 = { leader = {	name = "Фёдор Ромодановский"          	type = general		rank = 2	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1682.1.1 } }
 
 1650.1.1 = { 
 	decision = establish_rasko
@@ -994,14 +994,14 @@ government_rank = 3
 	}
 }
 
-#1682.4.29 = { government = despotic_monarchy }
+1682.4.29 = { government = absolute_monarchy }
 
 1685.1.1 = { leader = {	name = "Борис Шереметев"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1719.1.1 } }
 
 1687.7.1 = {
 	queen = {
 		country_of_origin = RUS
-		name = "Федор"
+		name = "Фёдор"
 		dynasty = "Шакловитый"
 		birth_date = 1640.1.1
 		death_date = 1689.9.7
@@ -1109,7 +1109,7 @@ government_rank = 3
 
 1700.1.1 = { leader = {	name = "Матвей Гагарин"        	type = conquistador	rank = 8	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1715.1.1 } }
 
-1700.1.1 = { leader = {	name = "Федор Апраксин"	type = admiral		rank = 0	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1728.11.10 } }
+1700.1.1 = { leader = {	name = "Фёдор Апраксин"	type = admiral		rank = 0	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1728.11.10 } }
 
 1700.1.1 = { leader = {	name = "Михаил Голицын"           	type = general		rank = 2	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1730.1.1 } }
 
@@ -1177,7 +1177,7 @@ government_rank = 3
 
 1725.1.28 = {
 	queen = {
-		country_of_origin = RU2
+		country_of_origin = RUS
 		name = "Александр"
 		dynasty = "Меншиков"
 		birth_date = 1673.12.6
@@ -1215,7 +1215,7 @@ government_rank = 3
 
 1727.5.25 = {
 	queen = {
-		country_of_origin = RU2
+		country_of_origin = RUS
 		name = "Мария Александровна"
 		dynasty = "Меншиков"
 		birth_date = 1711.12.26
@@ -1301,24 +1301,62 @@ government_rank = 3
 	}
 }
 
-1741.1.1 = { leader = {	name = "Пётр Салтыков"           	type = general	rank = 4	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1760.1.1 } }
-
-1741.11.25 = {
-	heir = {
-		name = "Елизавета Петровна"
-		monarch_name = "Елизавета Петровна"
-		dynasty = "Романов"
-		birth_date = 1709.12.18
-		death_date = 1761.12.25
-		claim = 50
-		adm = 3
-		dip = 4
-		mil = 3
-		female = yes
+1740.10.28 = {
+	monarch = {
+		name = "Эрнст Иоганн"
+		dynasty = "фон Бирон"
+		birth_date = 1690.11.13
+		regent = yes
+		adm = 0
+		dip = 2
+		mil = 0
 	}
 }
 
-1741.12.6 = {
+1740.10.28 = {
+	heir = {
+		name = "Иоанн VI Антонович"
+		monarch_name = "Иван VI"
+		dynasty = "Романов"
+		birth_date = 1740.8.12
+		death_date = 1764.7.5
+		claim = 50
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1740.11.9 = {
+	monarch = {
+		name = "Анна Леопольдовна"
+		dynasty = "Романов"
+		birth_date = 1718.12.18
+		regent = yes
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1740.11.9 = {
+	heir = {
+		name = "Иоанн VI Антонович"
+		monarch_name = "Иван VI"
+		dynasty = "Романов"
+		birth_date = 1740.8.12
+		death_date = 1764.7.5
+		claim = 50
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1741.1.1 = { leader = {	name = "Пётр Салтыков"           	type = general	rank = 4	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1760.1.1 } }
+
+1741.11.25 = {
 	monarch = {
 		name = "Елизавета Петровна"
 		dynasty = "Романов"
@@ -1332,7 +1370,7 @@ government_rank = 3
 
 1741.12.6 = {
 	queen = {
-		country_of_origin = RU2
+		country_of_origin = RUS
 		name = "Алексей"
 		dynasty = "Разумовский"
 		birth_date = 1709.3.17
@@ -1369,7 +1407,7 @@ government_rank = 3
 
 1761.12.25 = {
 	monarch = {
-		name = "Петр III"
+		name = "Пётр III"
 		dynasty = "Романов"
 		birth_date = 1728.2.10
 		adm = 1
@@ -1451,7 +1489,7 @@ government_rank = 3
 
 1770.1.1 = { leader = {	name = "Алексей Орлов"                 	type = admiral		rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1795.1.1 } }
 
-1770.1.1 = { leader = {	name = "Федор Ушаков"		type = admiral		rank = 0	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1817.10.2 } }
+1770.1.1 = { leader = {	name = "Фёдор Ушаков"		type = admiral		rank = 0	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1817.10.2 } }
 
 1770.1.1 = { leader = {	name = "Суворов"	type = general		rank = 0	fire = 5	shock = 6	manuever = 6	siege = 1	death_date = 1800.5.18 } }
 
@@ -1459,7 +1497,7 @@ government_rank = 3
 
 1775.1.1 = {
 	queen = {
-		country_of_origin = RU2
+		country_of_origin = RUS
 		name = "Григорий"
 		dynasty = "Потемкин-Таврический"
 		birth_date = 1739.9.13
@@ -1498,7 +1536,7 @@ government_rank = 3
 1796.11.6 = {
 	queen = {
 		country_of_origin = WUR
-		name = "Мария Федоровна"
+		name = "Мария Фёдоровна"
 		dynasty = "фон Вюртемберг"
 		birth_date = 1759.10.14
 		death_date = 1801.3.12
@@ -1631,7 +1669,7 @@ government_rank = 3
 1825.12.13 = {
 	queen = {
 		country_of_origin = PRU
-		name = "Александра Федоровна"
+		name = "Александра Фёдоровна"
 		dynasty = "фон Гогенцоллерн"
 		birth_date = 1798.7.13
 		death_date = 1855.3.2
@@ -1711,7 +1749,7 @@ government_rank = 3
 
 1880.7.6 = {
 	queen = {
-		country_of_origin = RU2
+		country_of_origin = RUS
 		name = "Мария Александровна"
 		dynasty = "Долгоруков"
 		birth_date = 1847.11.14
@@ -1737,7 +1775,7 @@ government_rank = 3
 1881.3.1 = {
 	queen = {
 		country_of_origin = DAN
-		name = "Мария Федоровна"
+		name = "Мария Фёдоровна"
 		dynasty = "фон Глюксбург"
 		birth_date = 1847.11.26
 		death_date = 1894.10.20
@@ -1776,7 +1814,7 @@ government_rank = 3
 1894.10.20 = {
 	queen = {
 		country_of_origin = HES
-		name = "Александра Федоровна"
+		name = "Александра Фёдоровна"
 		dynasty = "фон Гессен-Дармштадт"
 		birth_date = 1872.6.6
 		death_date = 1918.7.17

@@ -5,9 +5,9 @@ religion = catholic
 technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
-historical_rival = TUR
-historical_rival = FRA
+
 national_focus = ADM
+
 
 976.1.1 = {
 	monarch = {
@@ -796,19 +796,6 @@ national_focus = ADM
 1540.1.1 = {
 	set_global_flag = new_draperies_happened
 	set_global_flag = japanese_tea_happened
-	set_global_flag = cotton_imports_global
-	change_price = {
-			trade_goods = wool
-			key = COTTON_IMPORTS
-			value = -0.10
-			duration = -1
-		}
-		change_price = {
-			trade_goods = cotton
-			key = COTTON_IMPORTS
-			value = 0.20
-			duration = -1
-		}
 	change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
@@ -842,7 +829,7 @@ national_focus = ADM
 
 1551.7.19 = { add_accepted_culture = transylvanian }
 
-#1556.10.2 = { government = despotic_monarchy }
+1556.10.2 = { government = absolute_monarchy }
 
 1560.1.1 = { leader = {	name = "Франц Иосиф"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
 
@@ -1361,7 +1348,7 @@ national_focus = ADM
 		name = "Вильгельмина Амалия"
 		dynasty = "фон Вельф"
 		birth_date = 1673.4.21
-		death_date = 1742.4.42
+		death_date = 1742.4.10
 		female = yes
 		adm = 3
 		dip = 3
@@ -1385,7 +1372,7 @@ national_focus = ADM
 	set_global_flag = bottger_happened
 	change_price = {
 				trade_goods = chinaware
-				key = JOHAN_Фридрих_BOTTGER
+				key = JOHAN_FRIEDRICH_BOTTGER
 				value = -0.5
 				duration = -1
 			}
@@ -1416,7 +1403,7 @@ national_focus = ADM
 1717.5.13 = {
 	heir = {
 		name = "Мария Терезия"
-		monarch_name = "Мария I Терезия"
+		monarch_name = "Мария Терезия"
 		dynasty = "фон Габсбург"
 		birth_date = 1717.5.13
 		death_date = 1780.11.29
@@ -1448,7 +1435,7 @@ national_focus = ADM
 
 1740.10.22 = {
 	monarch = {
-		name = "Мария I Терезия"
+		name = "Мария Терезия"
 		dynasty = "фон Габсбург"
 		birth_date = 1717.5.13
 		adm = 5
@@ -1458,7 +1445,7 @@ national_focus = ADM
 	}
 	queen = {
 		country_of_origin = LOR
-		name = "Фрэнсис"
+		name = "Франц I Стефан"
 		dynasty = "де Водемон"
 		birth_date = 1708.12.8
 		death_date = 1765.8.12
@@ -1477,7 +1464,7 @@ national_focus = ADM
 	heir = {
 		name = "Иосиф"
 		monarch_name = "Иосиф II"
-		dynasty = "фон Габсбург"
+		dynasty = "фон Габсбург-Лотаринген"
 		birth_date = 1741.3.13
 		death_date = 1790.2.20
 		claim = 95
@@ -1630,38 +1617,38 @@ national_focus = ADM
 		government_rank = 3
 }
 
-1808.1.6 = {
+1808.1.16 = {
 	queen = {
-		country_of_origin = HAB
-		name = "Мария-Терезия"
-		dynasty = "фон Габсбург"
-		birth_date = 1787.12.14
+		country_of_origin = MLO
+		name = "Мария Людовика"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1787.2.14
 		death_date = 1816.4.7
 		female = yes
-		adm = 4
-		dip = 5
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }
 
-1816.10.29 = {
+1816.11.10 = {
 	queen = {
 		country_of_origin = BAV
-		name = "Кэролайн Огаста"
-		dynasty = "фон Виттельсбах"
+		name = "Каролина Шарлотта Августа"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1792.2.8
-		death_date = 1835.3.2
+		death_date = 1873.2.9
 		female = yes
 		adm = 2
 		dip = 2
-		mil = 1
+		mil = 2
 	}
 }
 
 1835.3.2 = {
 	monarch = {
 		name = "Фердинанд I"
-		dynasty = "фон Габсбург"
+		dynasty = "фон Габсбург-Лотаринген"
 		birth_date = 1793.4.19
 		adm = 3
 		dip = 4
@@ -1669,10 +1656,24 @@ national_focus = ADM
 	}
 }
 
+1835.3.2 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Анна"
+		dynasty = "ди Савойя"
+		birth_date = 1793.4.19
+		death_date = 1884.5.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
 1848.12.2 = {
 	monarch = {
 		name = "Франц Иосиф I"
-		dynasty = "фон Габсбург"
+		dynasty = "фон Габсбург-Лотаринген"
 		birth_date = 1830.8.18
 		adm = 3
 		dip = 4
@@ -1683,13 +1684,122 @@ national_focus = ADM
 1848.12.2 = {
 	heir = {
 		name = "Максимилиан"
-		monarch_name = "Максимилиан III"	
-		dynasty = "фон Габсбург"
+		monarch_name = "Максимилиан I"	
+		dynasty = "фон Габсбург-Лотаринген"
 		birth_date = 1832.7.6
 		death_date = 1867.6.19
 		claim = 95
 		adm = 4
 		dip = 2
 		mil = 5
+	}
+}
+
+1854.4.24 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Елизавета"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1837.12.24
+		death_date = 1898.9.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1859.9.12 = {
+	heir = {
+		name = "Рудольф"
+		monarch_name = "Рудольф I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1858.8.21
+		death_date = 1867.6.19
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1889.1.30 = {
+	heir = {
+		name = "Карл Людвиг"
+		monarch_name = "Карл Людвиг I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1833.7.30
+		death_date = 1896.5.19
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1896.5.19 = {
+	heir = {
+		name = "Франц Фердинанд"
+		monarch_name = "Франц II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1863.12.19
+		death_date = 1914.6.28
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1914.6.28 = {
+	heir = {
+		name = "Карл Франц Иосиф"
+		monarch_name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		death_date = 1922.4.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	monarch = {
+		name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	queen = {
+		country_of_origin = PAR
+		name = "Цита"
+		dynasty = "де Бурбон-Парма"
+		birth_date = 1892.5.9
+		death_date = 1989.3.14
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	heir = {
+		name = "Отто"
+		monarch_name = "Отто I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1912.11.20
+		death_date = 2011.6.4
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
 	}
 }

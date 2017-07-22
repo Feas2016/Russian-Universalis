@@ -23,7 +23,7 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Тройнат"
 		dynasty = "Палемонович"
-		birth_date = 1220.1.1
+		birth_date = 1210.1.1
 		adm = 3
 		dip = 3
 		mil = 4
@@ -42,7 +42,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1267.4.21 = {
+1267.4.18 = {
 	monarch = {
 		name = "Шварн"
 		dynasty = "Рюрикович"
@@ -64,7 +64,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1282.1.1 = {
+1282.3.1 = {
 	monarch = {
 		name = "Довмонт"
 		dynasty = "Витович"
@@ -75,7 +75,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1285.1.1 = {
+1285.8.5 = {
 	monarch = {
 		name = "Будикид"
 		dynasty = "Сколомендович"
@@ -127,20 +127,62 @@ capital = 272 # Vilnius
 		name = "Гедимин"
 		dynasty = "Гедиминович"
 		birth_date = 1275.1.1
-		adm = 5
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1316.1.1 = {
+	queen = {
+		country_of_origin = PLT
+		name = "Евна"
+		dynasty = "Рюрикович"
+		birth_date = 1290.1.1
+		death_date = 1341.12.1 #1344.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1316.1.1 = {
+	heir = {
+		name = "Евнутий"
+		monarch_name = "Евнутий"
+		dynasty = "Гедиминович"
+		birth_date = 1308.1.1
+		death_date = 1366.1.1
+		claim = 95
+		adm = 4
 		dip = 1
 		mil = 2
 	}
 }
 
-1341.1.1 = {
+1341.12.1 = {
 	monarch = {
 		name = "Евнутий"
 		dynasty = "Гедиминович"
-		birth_date = 1300.1.1
+		birth_date = 1308.1.1
 		adm = 4
 		dip = 1
 		mil = 2
+	}
+}
+
+1316.1.1 = {
+	heir = {
+		name = "Ольгерд"
+		monarch_name = "Ольгерд"
+		dynasty = "Гедиминович"
+		birth_date = 1296.1.1
+		death_date = 1377.5.24
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 6
 	}
 }
 
@@ -149,11 +191,96 @@ capital = 272 # Vilnius
 		name = "Ольгерд"
 		dynasty = "Гедиминович"
 		birth_date = 1296.1.1
-		adm = 2
-		dip = 1
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1345.1.1 = {
+	heir = {
+		name = "Андрей"
+		monarch_name = "Андрей"
+		dynasty = "Гедиминович"
+		birth_date = 1320.1.1
+		death_date = 1399.8.12
+		claim = 95
+		adm = 4
+		dip = 4
 		mil = 2
 	}
 }
+
+1345.1.1 = {
+	queen = {
+		country_of_origin = VIT
+		name = "Мария"
+		dynasty = "Рюрикович"
+		birth_date = 1300.1.1
+		death_date = 1346.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1345.1.1 = {
+	queen = {
+		country_of_origin = TVE
+		name = "Иулиания"
+		dynasty = "Рюрикович"
+		birth_date = 1330.1.1
+		death_date = 1377.5.24 #1399.3.17
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1350.1.1 = {
+	heir = {
+		name = "Корибут"
+		monarch_name = "Корибут"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		death_date = 1404.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1354.1.1 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1362.1.1 = {
+	heir = {
+		name = "Ягайло"
+		monarch_name = "Ягайло"
+		dynasty = "Гедиминович"
+		birth_date = 1362.1.1
+		death_date = 1434.6.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
 
 1377.5.24 = {
 	monarch = {
@@ -166,7 +293,21 @@ capital = 272 # Vilnius
 	}
 }
 
-1345.10.1 = {
+1377.5.24 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1381.10.1 = {
 	monarch = {
 		name = "Кейстут"
 		dynasty = "Гедиминович"
@@ -177,12 +318,54 @@ capital = 272 # Vilnius
 	}
 }
 
+1381.10.1 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Бирута"
+		dynasty = "Вайделот"
+		birth_date = 1317.1.1
+		death_date = 1382.8.15 #1389.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1381.10.1 = {
+	heir = {
+		name = "Витовт"
+		monarch_name = "Витовт"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		death_date = 1430.10.27
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
 1382.8.15 = {
 	monarch = {
 		name = "Ягайло"
 		dynasty = "Ягеллон"
 		birth_date = 1362.1.1
 		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1382.8.15 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
 		dip = 4
 		mil = 4
 	}
@@ -206,8 +389,50 @@ capital = 272 # Vilnius
 		birth_date = 1350.1.1
 		adm = 2
 		dip = 3
-		mil = 0
+		mil = 5
 		leader = { name = "Витовт"	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0 }
+	}
+}
+
+1392.8.4 = {
+	queen = {
+		country_of_origin = SMO
+		name = "Анна"
+		dynasty = "Рюрикович"
+		birth_date = 1370.1.1
+		death_date = 1418.7.31
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1392.8.4 = {
+	heir = {
+		name = "Свидригайло"
+		monarch_name = "Свидригайло"
+		dynasty = "Гедиминович"
+		birth_date = 1370.1.1
+		death_date = 1452.2.10
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1418.10.1 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Юлиана"
+		dynasty = "Гольшанский"
+		birth_date = 1390.1.1
+		death_date = 1430.10.27 #1448.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -223,7 +448,21 @@ capital = 272 # Vilnius
 	religion = orthodox
 }
 
-1432.1.1 = {
+1430.10.27 = {
+	heir = {
+		name = "Сигизмунд"
+		monarch_name = "Сигизмунд"
+		dynasty = "Гедиминович"
+		birth_date = 1365.1.1
+		death_date = 1440.3.20
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1432.9.1 = {
 	monarch = {
 		name = "Сигизмунд"
 		dynasty = "Гедиминович"
@@ -233,6 +472,20 @@ capital = 272 # Vilnius
 		mil = 1
 	}
 	religion = catholic
+}
+
+1432.9.1 = {
+	heir = {
+		name = "Михаил"
+		monarch_name = "Михаил"
+		dynasty = "Гедиминович"
+		birth_date = 1380.1.1
+		death_date = 1451.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
 }
 
 1440.3.20 = {
