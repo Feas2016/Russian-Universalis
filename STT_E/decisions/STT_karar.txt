@@ -11,7 +11,7 @@
 		}
 		effect = {
 			add_mil_power = -100
-			add_manpower = 20
+			add_yearly_manpower = 3.5
 			add_ruler_modifier = {
 				name = "recruit_new_soldiers"
 				duration = -1
@@ -62,7 +62,7 @@
 		}
 		effect = {
 			add_adm_power = -200
-			add_treasury = 2000
+			add_years_of_income = 2.0
 			add_piety = -0.2
 			add_ruler_modifier = {
 				name = "collect_extra_vergi"
@@ -82,14 +82,16 @@
 		potential = {
 			tag = TUR
 			NOT = { has_ruler_modifier = culus_tip_to_jannissery }
+			has_country_modifier = tur_janissary
 		}
 		allow = {
 			dip = 4
 			dip_power = 200
+			years_of_income = 0.5
 		}
 		effect = {
 			add_dip_power = -200
-			add_treasury = -1200
+			add_years_of_income = -0.5
 			add_ruler_modifier = {
 				name = "culus_tip_to_jannissery"
 				duration = -1
@@ -108,14 +110,16 @@
 		potential = {
 			tag = TUR
 			NOT = { has_ruler_modifier = give_zekat }
+			government_rank = 3
 		}
 		allow = {
 			adm = 4
 			adm_power = 75
+			years_of_income = 0.25
 		}
 		effect = {
 			add_adm_power = -75
-			add_treasury = -800
+			add_years_of_income = -0.25
 			add_ruler_modifier = {
 				name = "give_zekat"
 				duration = -1
@@ -135,6 +139,7 @@
 		potential = {
 			tag = TUR
 			NOT = { has_ruler_modifier = consruct_kulliye }
+			government_rank = 3
 		}
 		allow = {
 			adm = 4

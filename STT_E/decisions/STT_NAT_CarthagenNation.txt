@@ -2,7 +2,9 @@ country_decisions = {
 
 	carthagen_nation = {
 		major = yes
+		
 		potential = {
+			NOT = { is_year = 1520 }
 			NOT = { exists = CAR }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -49,7 +51,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
+		    NOT = {is_year = 1520}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 344			# Marrakesh

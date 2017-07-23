@@ -43,4 +43,44 @@ uralic_g_ideas = {
 	}
 }	
 
+russian_culture_ideas = {
+	start = {
+		cavalry_power = 0.15
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		culture_group = east_slavic
+		NOT = { tag = VIA }
+	}
+	free = yes
+	
+	orthodox_traditions = {
+		tolerance_own = 2
+	}
+	the_old_kingdoms = {
+		diplomatic_reputation = 2
+	}
+	multinational = {
+		num_accepted_cultures = 1
+	}
+	desire_for_freedom = {
+		enemy_core_creation = 0.5
+	}
+	forest_trails = {
+		land_attrition = -0.15
+		movement_speed = 0.1
+	}
+	stand_up_to_the_last = {
+		defensiveness = 0.2
+	}
+	russian_pride = {
+		land_morale = 0.15
+	}
+}
+
 

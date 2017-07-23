@@ -122,6 +122,7 @@ country_decisions = {
 		major = yes
 		potential = {
 		capital = 33
+		is_year = 1650
 			OR = {
 				ai = no
 				AND = {
@@ -432,7 +433,7 @@ country_decisions = {
 					owns = 507
 				}
 			}
-			adm_tech = 15
+			adm_tech = 22
 			507 = {
 				owns = ROOT
 				NOT = { has_great_project = tajh_mahal }
@@ -866,6 +867,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+		    is_year = 1450
 			owns = 104
 			treasury = 1500
 			adm_power = 300

@@ -8,6 +8,7 @@ defeat_the_byzantine_empire = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
+		government_rank = 2 #STT
 		is_free_or_tributary_trigger = yes
 		NOT = { owns = 151 }
 		NOT = { has_country_modifier = defeated_byzantine_empire }
@@ -74,6 +75,7 @@ conquer_the_byzantine_empire = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
+		government_rank = 3 #STT
 		NOT = { has_country_modifier = defeated_byzantine_empire }
 		NOT = { has_country_flag = byz_empire_conquered }
 		is_free_or_tributary_trigger = yes
@@ -162,6 +164,7 @@ conquer_southern_greece = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
+		government_rank = 3 #STT
 		OR = {
 			145 = {
 				NOT = { owned_by = ROOT }
@@ -241,6 +244,7 @@ conquer_serbia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = military_victory }
+		government_rank = 3 #STT
 		is_free_or_tributary_trigger = yes
 		SER = {
 			is_neighbor_of = ROOT
@@ -311,6 +315,7 @@ conquer_bosnia = {
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
+		government_rank = 3 #STT
 		NOT = { has_country_modifier = military_victory }
 		is_free_or_tributary_trigger = yes
 		BOS = {
@@ -452,6 +457,7 @@ vassalize_wallachia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		is_subject = no
+		government_rank = 3 #STT
 		NOT = { has_country_modifier = military_vassalization }
 		WAL = {
 			is_subject = no
@@ -523,6 +529,7 @@ vassalize_transylvania = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		is_subject = no
+		government_rank = 3 #STT
 		NOT = { has_country_modifier = military_vassalization }
 		TRA = {
 			is_subject = no
@@ -598,6 +605,7 @@ defeat_the_knights = {
 			tag = AYD
 			tag = MEN
 		}
+		num_of_ports = 1 #STT
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = defeat_the_knights_flag }
 		is_free_or_tributary_trigger = yes
@@ -1031,6 +1039,7 @@ safeguard_eastern_anatolia = {
 		}
 	}
 	allow = {
+		government_rank = 2 #STT
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = military_victory }
@@ -1100,6 +1109,7 @@ vassalize_dulkadir = {
 		normal_or_historical_nations = yes
 		tag = TUR
 		is_free_or_tributary_trigger = yes
+		government_rank = 2 #STT
 		NOT = { has_country_modifier = military_vassalization }
 		DUL = {
 			is_free_or_tributary_trigger = yes
@@ -1169,6 +1179,7 @@ vassalize_ramazan = {
 		normal_or_historical_nations = yes
 		tag = TUR
 		is_free_or_tributary_trigger = yes
+		government_rank = 2 #STT
 		NOT = { has_country_modifier = military_vassalization }
 		RAM = {
 			is_free_or_tributary_trigger = yes

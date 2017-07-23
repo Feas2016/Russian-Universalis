@@ -3,11 +3,7 @@
 ###########################################
 ger_truedynasty = {
 	potential = {
-		OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-		}
+		culture_group = germanic
 	}
 	trigger = {
 		government = monarchy
@@ -25,6 +21,8 @@ ger_truedynasty = {
 			dynasty = "фон Брауншвейг-Люнебург"
 			dynasty = "фон Ганновер"
 			dynasty = "фон Веттин"
+			dynasty = "фон Ансбах"
+			dynasty = "Вельф"
 		}
 	}
 	prestige = 1

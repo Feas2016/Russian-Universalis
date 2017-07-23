@@ -290,6 +290,11 @@ customs_house = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	trigger = {
+	    owner = {
+		    full_idea_group = exploration_ideas
+		}
+	}
 	modifier = { 
 		colonists = 1
 		global_colonial_growth = 10
@@ -307,6 +312,11 @@ arsenal = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	trigger = {
+	    owner = {
+		    full_idea_group = offensive_ideas
+		}
+	}
 	modifier = { 
 		army_tradition = 1
 		free_leader_pool = 1
@@ -321,6 +331,11 @@ spy_agency = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	trigger = {
+	    owner = {
+		    full_idea_group = trade_ideas
+		}
+	}
 	modifier = { global_trade_power = 0.1 merchants = 1 }
 	ai_will_do = {
 		factor = 5000
@@ -333,6 +348,11 @@ tax_office = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	trigger = {
+	    owner = {
+		    full_idea_group = economic_ideas
+		}
+	}
 	modifier = { global_tax_modifier = 0.20 stability_cost_modifier = -0.1 }
 	ai_will_do = {
 		factor = 5000
@@ -347,6 +367,11 @@ glorious_monument = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	trigger = {
+	    owner = {
+		    government_rank = 3
+		}
+	}
 	
 	modifier = { idea_cost = -0.1 prestige = 1 }
 	ai_will_do = { factor = 10000 }
@@ -798,6 +823,11 @@ monastery = {
 	cost = 1500
 	time = 12
     one_per_country = yes
+	trigger = {
+	    owner = {
+		    full_idea_group = religious_ideas
+		}
+	}
 	modifier = {  global_missionary_strength = 0.02 missionaries = 1 }	
 	ai_will_do = {
 		factor = 3000

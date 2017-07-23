@@ -5,12 +5,13 @@ country_decisions = {
 		potential = {
 		    NOT = { exists = WEK }
 			NOT = { exists = HLR }
-		OR = {
-			tag = FRA
-			tag = BUR
-			tag = LOR
-			tag = AAC
+		    OR = {
+			    tag = FRA
+			    tag = BUR
+			    tag = LOR
+			    tag = AAC
 			}
+			NOT = { is_year = 1680 }
 		}
 		allow = { OR = {
 			AND = { tag = FRA 
@@ -34,7 +35,7 @@ country_decisions = {
 				NOT = { exists = FRA }
 				}
 				}
-			adm_tech = 12
+			NOT = { is_year = 1680 }	
 			government = monarchy
 			is_free_or_tributary_trigger = yes
 			is_at_war = no

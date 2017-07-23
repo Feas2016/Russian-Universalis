@@ -33,13 +33,10 @@ age_of_feudalism = { ###STT
 		}
 		
 		obj_20_development_city = {
-			custom_trigger_tooltip = {
-				tooltip = obj_20_development_city_tooltip
-				any_owned_province = {
-					is_core = ROOT
-					controlled_by = owner
-					development = 20
-				}
+			any_owned_province = {
+				is_core = ROOT
+				controlled_by = owner
+				development = 20
 			}
 		}
 		
@@ -72,6 +69,7 @@ age_of_feudalism = { ###STT
 			allow = {
 				NOT = { religion_group = christian }
 			}
+			custom_tooltip = obj_two_continents_f.tt
 			num_of_continents = 2
 		}
 	
@@ -284,7 +282,7 @@ age_of_discovery = {
 					controlled_by = owner
 					development = 30
 				}
-			}
+				}
 		}
 		obj_renaissance = {
 	 		has_institution = renaissance

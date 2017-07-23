@@ -635,6 +635,7 @@ russian_colony_in_west_siberia = {
 				colonysize = 400
 			}
 		}
+	}
 	chance = {
 		factor = 1000
 		modifier = {
@@ -656,12 +657,12 @@ russian_colony_in_west_siberia = {
 				name = "conquest_of_siberia"
 				duration = 3650
 			}
-			else = {
-		add_country_modifier = {
-			name = "colonial_enthusiasm"
-			duration = 3650
-		}
-	}
+		else = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 3650
+				}
+			}
 		}
 	}
 }

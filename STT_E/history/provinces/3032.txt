@@ -13,13 +13,14 @@ base_manpower = 4
 is_city = yes
 add_core = ALB
 add_core = VEN
+add_core = BYZ
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
 1333.1.1 = { add_core = ACH owner = ACH controller = ACH }
-1336.1.1 = { add_core = SER owner = SER add_core = SER }
+1336.1.1 = { add_core = SER owner = SER controller = SER }
 1355.1.1 = { owner = ALB controller = ALB add_core = ALB }
 1392.1.1 = { owner = VEN controller = VEN }
 1478.6.16 = { add_core = TUR owner = TUR controller = TUR }

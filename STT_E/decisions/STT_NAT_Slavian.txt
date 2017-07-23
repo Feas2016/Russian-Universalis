@@ -10,7 +10,7 @@ country_decisions = {
 				culture_group = south_slavic
 				culture_group = stt_plu
 			}
-			adm_tech = 24
+			adm_tech = 30
 			OR = {
 				ai = no
 				AND = {
@@ -20,7 +20,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 27
+			adm_tech = 34
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 295			# Moskva
