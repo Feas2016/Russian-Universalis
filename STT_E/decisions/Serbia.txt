@@ -1,0 +1,34 @@
+country_decisions = {
+
+	capital_in_belgrade = {
+		potential = {
+			tag = SER
+			NOT = { capital = 141 } #STT
+			NOT = { has_country_flag = moved_capital_to_belgrade }
+		}
+		allow = {
+			owns_core_province = 141 #STT
+			stability = 1
+			adm_power = 50
+			141 = { #STT
+				religion = orthodox
+				culture = serbian
+			}
+		}
+		effect = {
+			add_adm_power = -50
+			set_capital = 141 #STT
+			set_country_flag = moved_capital_to_belgrade
+			141 = { #STT
+				add_base_tax = 1
+				add_base_production = 1
+				rename_capital = "Белград" 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}
