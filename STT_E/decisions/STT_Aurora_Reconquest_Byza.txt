@@ -11,11 +11,11 @@ country_decisions = {
 		allow = {
 			owns = 151 # Constantinople
 			owns = 145	# Morea
-			owns = 1773	# Achea
 			owns = 3265	# Mytilene
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { total_development = 50}		
 		}
 		effect = {
 			set_country_flag = hs
@@ -63,7 +63,6 @@ country_decisions = {
 			owns = 1773	# Achea
 			owns = 3265	# Mytilene
 			owns = 142
-			owns = 3033
 			owns = 3003
 			owns = 163
 			owns = 164
@@ -71,6 +70,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { total_development = 180}
 		}
 		effect = {
 			set_country_flag = hs_two
@@ -102,9 +102,7 @@ country_decisions = {
 						province_id = 285
 						province_id = 321
 						province_id = 2302
-						province_id = 3109
 						province_id = 324
-						province_id = 3261
 						province_id = 323
 						province_id = 3108
 						province_id = 3263
@@ -115,7 +113,6 @@ country_decisions = {
 						province_id = 332
 						province_id = 3114
 						province_id = 2303
-						province_id = 325
 						province_id = 328
 					}
 					NOT = { is_core = BYZ }
@@ -152,7 +149,6 @@ country_decisions = {
 			owns = 1773	# Achea
 			owns = 3265	# Mytilene
 			owns = 142
-			owns = 3033
 			owns = 3003
 			owns = 163
 			owns = 164
@@ -165,6 +161,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { total_development = 350}
 		}
 		effect = {
 			set_country_flag = hs_athens
@@ -198,6 +195,12 @@ country_decisions = {
 						province_id = 2298
 						province_id = 2299
 						province_id = 2304
+						province_id = 325
+						province_id = 2304
+						province_id = 3109
+						province_id = 3261
+						province_id = 2304
+						province_id = 3033
 					}
 					NOT = { is_core = BYZ }
 				}
@@ -262,6 +265,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { total_development = 500}
 		}
 		effect = {
 			set_country_flag = hs_greece
@@ -269,6 +273,7 @@ country_decisions = {
 			every_province = {
 				limit = {
 					OR = {
+						province_id = 3096
 						province_id = 322
 						province_id = 1848
 						province_id = 3111
@@ -330,6 +335,7 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { total_development = 1100}
 		}
 		effect = {
 			set_country_flag = hs_three 
@@ -430,6 +436,8 @@ country_decisions = {
 			dip_power = 500
 			mil_power = 150
 			manpower = 35
+			NOT = { total_development = 1500}
+			NOT = {is_year = 1520	}
 		}
 		effect = {
 			set_country_flag = hs_greeks
