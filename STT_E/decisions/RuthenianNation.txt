@@ -37,7 +37,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -93,10 +92,7 @@ country_decisions = {
 			}
 			if = { #STT
 				limit = {
-					AND = { 
-						NOT = {	government_rank = 2	}
-						NOT = {	government_rank = 3	}
-					}
+					government_rank = 1
 				}
 				set_government_rank = 2
 			}

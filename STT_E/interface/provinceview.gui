@@ -2601,7 +2601,7 @@ guiTypes = {
 				name = "provinces_listbox"
 				backGround = ""
 				position = { x= 20 y = 250 }
-				size = { x=320 y=550 } ###STT Pochinil
+				size = { x=466 y=270 } #STT
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"
@@ -2613,7 +2613,7 @@ guiTypes = {
 			iconType = {
 				name = "banner_bg"
 				spriteType = "GFX_banners_slot"
-				position = { x = 12 y = 610 } ###STT Pochinil
+				position = { x = 12 y = 519 } #STT
 			}			
 			
 			guiButtonType = {
@@ -2622,20 +2622,20 @@ guiTypes = {
 				buttonFont = "vic_18"
 				buttonText = "RAISE_MANCHU_BANNERS"
 
-				position = { x = 24 y = 620 } ###STT Pochinil
+				position = { x = 24 y = 527 } #STT
 			}
 
 			iconType =
 			{
 				name = "manchu_banner"
 				spriteType = "GFX_amount_of_banners"
-				position = { x = 250 y = 610 } ###STT Pochinil
+				position = { x = 250 y = 516 } #STT
 				scale = 0.85
 			}
 
 			instantTextBoxType = {
 				name = "banner_number"
-				position = { x = 302 y = 620 } ###STT Pochinil
+				position = { x = 302 y = 531 } #STT
 				textureFile = ""
 				font = "vic_22"
 				borderSize = {x = 2 y = 2}	
@@ -2650,7 +2650,7 @@ guiTypes = {
 			iconType = {
 				name = "patriarch_bg"
 				spriteType = "GFX_patriarchy_slot"
-				position = { x = 12 y = 610 } ###STT Pochinil
+				position = { x = 12 y = 519 } #STT
 			}			
 	
 			guiButtonType = {
@@ -2659,16 +2659,16 @@ guiTypes = {
 				buttonFont = "vic_18"
 				buttonText = "CONSECRATE_BUTTON"
 
-				position = { x = 24 y = 620 } ###STT Pochinil
+				position = { x = 24 y = 527 } #STT
 			}
 
 			iconType =
 			{
 				name = "consecrate_patriarch"
 				spriteType = "GFX_patriarch_icon"
-				position = { x = 258 y = 620 } ###STT Pochinil
-			}	
-			
+				position = { x = 258 y = 526 } #STT
+			}
+
 
 			
 		}

@@ -203,7 +203,7 @@ courthouse = {
 	time = 6
 	modifier = { allowed_num_of_buildings = 1
 		local_development_cost = -0.15
-        state_maintenance_modifier = -0.15 }
+        local_state_maintenance_modifier = -0.15 }
 	ai_will_do = {
 		factor = 4000
 		# modifier = { factor = 0.95 NOT = { local_development_cost = 0.90 } }
@@ -224,7 +224,7 @@ town_hall = {
 	make_obsolete = courthouse
 	modifier = { allowed_num_of_buildings = 2
 		local_development_cost = -0.20
-        state_maintenance_modifier = -0.20 }
+        local_state_maintenance_modifier = -0.20 }
 	ai_will_do = {
 		factor = 4000
 		# modifier = { factor = 0.95 NOT = { local_development_cost = 0.90 } }
@@ -247,7 +247,7 @@ capitol = {
 	modifier = {
 		allowed_num_of_buildings = 3
 		local_development_cost = -0.25
-		state_maintenance_modifier = -0.30
+		local_state_maintenance_modifier = -0.30
 	}
 	ai_will_do = {
 		factor = 4000

@@ -1,0 +1,223 @@
+golden_horde_disaster = {
+	potential = {
+		tag = GLH
+		normal_or_historical_nations = yes
+		uses_doom = no
+		NOT = { has_country_flag = GLH_collapse_ended  }
+		government = steppe_horde
+	}
+
+	can_start = {
+		NOT = { horde_unity = 60 } 
+		OR = { 
+		    war_exhaustion = 5
+		    num_of_owned_provinces_with = {
+			    value = 20
+				local_autonomy = 60
+			}
+			AND = { 
+			    num_of_loans = 2
+				inflation = 5
+			}
+		}
+	}
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.10
+			NOT = { legitimacy_or_horde_unity = 90 }
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { legitimacy_or_horde_unity = 60 }
+		}
+		modifier = {
+			factor = 0.25
+			num_of_cities = 75
+		}
+		modifier = {
+			factor = 0.15
+			num_of_cities = 50
+		}
+		modifier = {
+			factor = 0.10
+			num_of_cities = 25
+		}
+		modifier = {
+			factor = 1
+			has_regency = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = -0.25
+			MIL = 4
+		}		
+		modifier = {
+			factor = -0.25
+			MIL = 5
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { MIL = 3 }
+		}		
+		modifier = {
+			factor = 1
+			NOT = { MIL = 2 }
+		}		
+		modifier = {
+			factor = -0.25
+			is_at_war = yes
+			war_score = 20
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+			NOT = { war_score = -10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 40 }
+		}
+	}
+	
+	# At least one breakaway has occurred and been re-taken, and it's been 10 years.
+	can_end = {
+		custom_trigger_tooltip = {
+			had_country_flag = { flag = GLH_disaster_pause days = 3650 } # 10 years
+			tooltip = no_recent_breakaway
+		}
+		NOT = { exists = SIB }
+		NOT = { exists = NOG }
+		NOT = { exists = CRI }
+		NOT = { exists = KAZ }
+		NOT = { exists = KZH }
+	}
+
+	modifier = {
+		stability_cost_modifier = 0.25
+		legitimacy = -0.5
+		horde_unity = -0.5
+		cavalry_power = -0.10
+		global_unrest = 5
+	}	
+
+	on_start = stt_flavor_horde.1
+	on_end = stt_flavor_horde.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+		}
+	}
+}
+
+ilkhanate_disaster = {
+	potential = {
+		tag = HUL
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = HUL_collapse_ended  }
+		uses_doom = no
+	}
+
+	can_start = {
+		NOT = { legitimacy_or_horde_unity = 60 } 
+		OR = { 
+		    war_exhaustion = 5
+			num_of_owned_provinces_with = {
+			    value = 20
+				local_autonomy = 60
+			}
+			NOT = { religious_unity = 0.40 }
+			NOT = { num_of_subjects = 4 }
+			AND = { 
+			    num_of_loans = 2
+				inflation = 5
+			}
+		}
+	}
+	
+	can_stop = {
+		every_owned_province = {
+		    NOT = { local_unrest = 8 }
+		}
+		stability = 3
+		legitimacy_or_horde_unity = 90
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			has_regency = yes
+		}
+		modifier = {
+			factor = 0.50
+			any_owned_province = { unrest = 20 }
+		}
+		modifier = {
+			factor = 1
+			vassal = 1
+		}
+		modifier = {
+			factor = 0.25
+			num_of_cities = 75
+		}
+		modifier = {
+			factor = 1
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { ADM = 4 }
+		}		
+		modifier = {
+			factor = 0.25
+			NOT = { ADM = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { ADM = 2 }
+		}		
+		modifier = {
+			factor = 1.0
+			is_at_war = yes
+			NOT = { war_score = -10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 40 }
+		}
+	}
+	
+	# only for player
+	can_end = {
+		NOT = { num_of_cities = 20 }
+		ai = no
+	}
+
+	modifier = {
+		stability_cost_modifier = 0.50
+		global_manpower_modifier = -0.25
+		global_unrest = 15
+	}	
+
+	on_start = stt_flavor_horde.8
+	on_end = stt_flavor_horde.9
+	
+	on_monthly = {
+		events = {
+			stt_flavor_horde.10	# Remove HUA cores and lower unrest
+		}
+		random_events = { 
+			1000 = 0
+			100 = stt_flavor_horde.11 # pain MUAHAHA
+		}
+	}
+}
