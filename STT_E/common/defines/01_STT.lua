@@ -6,10 +6,10 @@ NDefines.NGame.START_DATE = "1309.3.9"
 NDefines.NGame.END_DATE = "1914.1.1"
 NDefines.NGame.MAX_RANDOM_NEW_WORLD = "1600.01.01"
 NDefines.NFrontend.CAMERA_MIN_HEIGHT = 35.0
-NDefines.NDiplomacy.PO_DEMAND_PROVINCES_AE = 0.50 				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
-NDefines.NDiplomacy.PO_RETURN_CORES_AE = 0.25 					-- (Per core, only applied if returning cores to vassals of winner)
-NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 0.75					-- Demand a province (scales by province wealth, also used for annex)
-NDefines.NDiplomacy.PEACE_COST_CONCEDE_PROVINCE = 0.75
+NDefines.NDiplomacy.PO_DEMAND_PROVINCES_AE = 0.60 --0.75				-- _DDEF_PO_DEMAND_PROVINCES_AE = 10, (Per development)
+NDefines.NDiplomacy.PO_RETURN_CORES_AE = 0.35 	--0.5			-- (Per core, only applied if returning cores to vassals of winner)
+NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 0.85 --1					-- Demand a province (scales by province wealth, also used for annex)
+NDefines.NDiplomacy.PEACE_COST_CONCEDE_PROVINCE = 0.85 --1
 NDefines.NDiplomacy.PS_MAKE_PROVINCE_CORE = 15
 NDefines.NCountry.MIN_TECH_FOR_CIRCUMNAVIGATE = 18
 NDefines.NCountry.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1
