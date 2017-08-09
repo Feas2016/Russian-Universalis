@@ -267,10 +267,13 @@ university = {
 	cost = 2000
 	time = 12
 	
+	trigger = {
+	    development = 30
+	}
 	modifier = {
-		adm_tech_cost_modifier = -0.1
-        dip_tech_cost_modifier = -0.1
-        mil_tech_cost_modifier = -0.1
+		adm_tech_cost_modifier = -0.05
+        dip_tech_cost_modifier = -0.05
+        mil_tech_cost_modifier = -0.05
 	}
 	ai_will_do = {
 		factor = 10000

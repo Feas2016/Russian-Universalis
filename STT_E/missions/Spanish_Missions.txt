@@ -1,0 +1,1119 @@
+finish_reconquista = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_group = iberia_land_region
+		owner = { religion_group = muslim }
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = completing_the_reconquista }
+		NOT = { has_country_flag = granada_gone }
+		NOT = { is_year = 1600 }
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		religion = catholic
+		iberia_land_region = {
+			owned_by = ROOT
+		}
+		iberia_land_region = {
+			owner = { religion_group = muslim }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { religion = catholic }
+			NOT = { iberia_land_region = { owned_by = ROOT } }
+		}
+	}
+	success = {
+		iberia_land_region = {
+			type = all
+			owner = { NOT = { religion_group = muslim } }
+		}
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 10
+			exists = GRA
+			iberia_land_region = {
+				owned_by = GRA
+			}
+		}
+		modifier = {
+			factor = 1000
+			is_tutorial_active = yes
+		}
+	}
+	effect = {
+		set_country_flag = granada_gone
+		add_country_modifier = {
+			name = "completing_the_reconquista"
+			duration = 3650
+		}
+	}
+}
+
+spain_must_be_christian = {
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		religion = catholic
+		is_at_war = no
+		NOT = {	exists = GRA }
+		iberia_region = {
+			owned_by =  ROOT
+			NOT = { religion_group = christian }
+		}
+		NOT = { has_country_modifier = achieved_religious_unity_mission }
+	}
+	abort = {
+		NOT = {	religion = catholic  }
+	}	
+	success = {
+		NOT = {
+			any_owned_province = {
+				region = iberia_region
+				NOT = { religion_group = christian }
+			}
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "achieved_religious_unity_mission"
+			duration = 3650
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					region = iberia_region
+					any_core_country = {
+						NOT = { religion_group = christian }
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					region = iberia_region
+					any_core_country = {
+						NOT = { religion_group = christian }
+					}
+				}
+				every_core_country = {
+					limit = {
+						NOT = { religion_group = christian }
+					}
+					remove_core = PREV
+				}
+			}
+		}
+	}
+}
+
+
+continue_reconquista = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 334	# Tangiers
+			province_id = 335	# Melilla
+			province_id = 337	# Oran
+			province_id = 1751	# Ceuta
+		}
+		owner = {
+			NOT = { religion_group = christian }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_modifier = completing_the_reconquista }
+		NOT = { has_country_flag = continued_the_reconquista }
+		OR = {
+			tag = CAS
+			tag = SPA
+		}		
+		religion = catholic
+		NOT = {
+			iberia_region = {
+				owner = { religion_group = muslim }
+			}
+		}
+		226 = { owned_by = ROOT }	# Gibraltar.
+		OR = {
+			334 = {
+				owner = {
+					NOT = { religion_group = christian }
+					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+			}
+			335 = {
+				owner = {
+					NOT = { religion_group = christian }
+					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+			}
+			337 = {
+				owner = {
+					NOT = { religion_group = christian }
+					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+			}
+			1751 = {
+				owner = {
+					NOT = { religion_group = christian }
+					NOT = { alliance_with = ROOT }
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+				}
+			}
+		}
+	}
+	abort = {
+		all_target_province = {
+			owner = {
+				religion_group = christian
+				NOT = { tag = ROOT }
+			}
+		}
+	}
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 3
+		}
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+		modifier = {
+			factor = 10
+			has_idea = deus_vult
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = continued_the_reconquista
+		add_country_modifier = {
+			name = "completing_the_reconquista"
+			duration = 3650
+		}
+	}	
+}
+
+
+spain_discover_america = {
+
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		num_of_ports = 1
+		NOT = {
+			carribeans_region = {
+				has_discovered = ROOT
+			}
+		}
+		carribeans_region = { range = ROOT }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		carribeans_region = {
+			has_discovered = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}		
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+establish_spanish_carribean = {
+
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		NOT = {
+			colonial_the_carribean = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			colonial_the_carribean = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		colonial_the_carribean = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }
+				NOT = { colonial_the_carribean = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		colonial_the_carribean = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+		modifier = {
+			factor = 0.1
+			is_at_war = yes
+		}		
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+discover_spanish_main = {
+
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		carribeans_region = {
+			has_discovered = ROOT
+		}	
+		NOT = {
+			colombia_region = {
+				has_discovered = ROOT
+			}
+		}
+		colombia_region = { range = ROOT }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		colombia_region = {
+			has_discovered = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}		
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+establish_spanish_main = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		num_of_ports = 1
+		NOT = {
+			colonial_colombia = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			colonial_colombia = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		colonial_colombia = {
+			has_discovered = ROOT
+			is_empty = yes
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_colombia = { owned_by = ROOT } }
+				NOT = { colonial_colombia = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		colonial_colombia = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+		modifier = {
+			factor = 0.1
+			is_at_war = yes
+		}		
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+discover_la_plata = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		num_of_ports = 1
+		NOT = {
+			la_plata_region = {
+				has_discovered = ROOT
+			}
+		}
+		la_plata_region = { range = ROOT }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		la_plata_region = {
+			has_discovered = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 3
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}		
+		modifier = {
+			factor = 2
+			adm = 5
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+establish_spanish_la_plata = {
+
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		has_idea = quest_for_the_new_world
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		num_of_ports = 1
+		NOT = {
+			colonial_la_plata = {
+				owned_by =  ROOT
+			}
+		}
+		NOT = {
+			colonial_la_plata = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		colonial_la_plata = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = {	has_idea = quest_for_the_new_world  }
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_la_plata = { owned_by = ROOT } }
+				NOT = { colonial_la_plata = { is_empty = yes } }
+			}
+		}
+	}
+	success = {
+		colonial_la_plata = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_incas = {
+
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+
+	target_provinces = {
+		owned_by = INC
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		is_neighbor_of = INC
+		INC = {
+			num_of_cities = 10
+		}
+		NOT = { alliance_with = INC }
+		NOT = { has_country_flag = conquered_incas }
+		INC = { religion_group = pagan }
+	}
+	abort = {
+		NOT = { exists = INC }
+		OR = {
+			NOT = {
+				any_target_province = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			ai = yes
+		}
+	}
+	success = {
+		NOT = { exists = INC }
+		all_target_province = {
+			country_or_vassal_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}		
+		modifier = {
+			factor = 2
+			adm = 4
+		}	
+	}
+	effect = {
+		add_treasury = 2000
+		set_country_flag = conquered_incas
+	}
+}
+
+
+conquer_aztecs = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		is_neighbor_of = AZT
+		AZT = {
+			num_of_cities = 10
+		}
+		NOT = { alliance_with = AZT }
+		AZT = { religion_group = pagan }
+		NOT = { has_country_flag = conquered_aztecs }
+	}
+	abort = {
+		NOT = { exists = AZT }
+		OR = {
+			NOT = {
+				any_target_province = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			ai = yes
+		}
+	}
+	success = {
+		NOT = { exists = AZT }
+		all_target_province = {
+			country_or_vassal_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}		
+		modifier = {
+			factor = 2
+			adm = 4
+		}	
+	}
+	effect = {
+		add_treasury = 1000
+		set_country_flag = conquered_aztecs
+	}
+}
+
+
+conquer_zapotecs = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = ZAP
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		is_neighbor_of = ZAP
+		ZAP = {
+			num_of_cities = 10
+		}
+		NOT = { alliance_with = ZAP }
+		ZAP = { religion_group = pagan }
+		NOT = { has_country_flag = conquered_zapotecs }
+	}
+	abort = {
+		NOT = { exists = ZAP }
+		OR = {
+			NOT = {
+				any_target_province = {
+					country_or_vassal_holds = ROOT
+				}
+			}
+			ai = yes
+		}
+	}
+	success = {
+		NOT = { exists = ZAP }
+		all_target_province = {
+			country_or_vassal_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+		modifier = {
+			factor = 2
+			adm = 4
+		}	
+	}
+	effect = {
+		add_treasury = 1000
+		set_country_flag = conquered_zapotecs
+	}
+}
+
+
+no_surrender_to_the_dutch = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1648 }
+		tag = SPA
+		NOT = { has_country_flag = freed_low_countries }
+		is_free_or_tributary_trigger = yes
+		is_neighbor_of = NED
+		NOT = { alliance_with = NED }
+		NOT = { war_with = NED }
+		NED = {
+			is_free_or_tributary_trigger = yes
+		}
+		low_countries_region = {
+			owned_by = ROOT
+		}
+		low_countries_region = {
+			owned_by = NED
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { war_with = NED }
+			NED = {
+				is_subject_other_than_tributary_trigger = yes
+			}
+			AND = {
+				NOT = { low_countries_region = { owned_by = NED } }
+				NOT = { low_countries_region = { owned_by = SPA } }
+			}
+		}
+	}
+	success = {
+		NOT = { war_with = NED }
+		NOT = {
+			low_countries_region = {
+				owned_by = NED
+			}
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	effect = {
+		add_war_exhaustion = -5
+		add_adm_power = 100
+		add_prestige = 10
+		set_country_flag = freed_low_countries
+	}
+}
+
+
+bring_the_dutch_back_to_catholisism = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1648 }
+		tag = SPA
+		is_free_or_tributary_trigger = yes
+		religion = catholic
+		is_neighbor_of = NED
+		NED = {
+			is_subject = no
+			religion_group = ROOT
+			NOT = { religion = ROOT }
+		}
+		low_countries_region = {
+			owned_by = ROOT
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { religion = catholic }
+			NOT = {
+				low_countries_region = {
+					owned_by = ROOT
+				}
+			}
+		}
+	}
+	success = {
+		NED = { religion = ROOT }
+	}
+	chance = {
+		factor = 2000
+	}
+	effect = {
+		add_prestige = 50
+		add_stability = 2
+	}	
+}
+
+
+spanish_netherlands_should_be_catholic = {
+
+	type = country
+	
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SPA
+		is_at_war = no
+		religion = catholic
+		low_countries_region = {
+			owned_by = ROOT
+			religion_group = christian
+			NOT = { religion = catholic }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { religion = catholic }
+			NOT = {
+				low_countries_region = {
+					owned_by = ROOT
+				}
+			}
+		}
+	}
+	success = {
+		NOT = {
+			low_countries_region = {
+				owned_by = ROOT
+				NOT = { religion = catholic }
+			}
+		}	
+	}
+	chance = {
+		factor = 3000
+	}
+	effect = {
+		add_stability = 1
+		add_prestige = 5
+	}
+}
+
+
+mediterranean_christian_fleet = {
+
+	type = country
+	
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SPA
+		NOT = { is_year = 1700 }
+		exists = TUR
+		126 = {
+			OR = {
+				owned_by = ROOT
+				owned_by = KNI
+			}
+		}
+		TUR = {
+			num_of_galley = 10
+			num_of_ports = 10
+			num_of_galley = ROOT
+		}		
+	}
+	abort = {
+		NOT = { exists = TUR }
+	}
+	success = {
+		num_of_galley = TUR
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+no_territory_to_france = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = SPA
+		iberia_region = { owned_by = FRA }
+		NOT = { alliance_with = FRA }
+		FRA = {
+			is_neighbor_of = ROOT
+			num_of_infantry = ROOT
+			num_of_cavalry = ROOT
+		}
+	}
+	abort = {
+		NOT = { iberia_region = { owned_by = FRA } }
+	}
+	success = {
+		NOT = { war_with = FRA }
+		NOT = { iberia_region = { owned_by = FRA } }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = {
+		add_prestige = 10
+		add_war_exhaustion = -5
+	}
+}
