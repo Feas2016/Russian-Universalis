@@ -6,7 +6,7 @@ finish_reconquista = {
 	ai_mission = yes
 	
 	target_provinces = {
-		province_group = iberia_land_region
+		province_group = iberia_land_region #STT
 		owner = { religion_group = muslim }
 	}
 	allow = {
@@ -21,21 +21,21 @@ finish_reconquista = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		religion = catholic
-		iberia_land_region = {
+		iberia_land_region = { #STT
 			owned_by = ROOT
 		}
-		iberia_land_region = {
+		iberia_land_region = { #STT
 			owner = { religion_group = muslim }
 		}
 	}
 	abort = {
 		OR = {
 			NOT = { religion = catholic }
-			NOT = { iberia_land_region = { owned_by = ROOT } }
+			NOT = { iberia_land_region = { owned_by = ROOT } } #STT
 		}
 	}
 	success = {
-		iberia_land_region = {
+		iberia_land_region = { #STT
 			type = all
 			owner = { NOT = { religion_group = muslim } }
 		}
@@ -65,7 +65,7 @@ finish_reconquista = {
 		modifier = {
 			factor = 10
 			exists = GRA
-			iberia_land_region = {
+			iberia_land_region = { #STT
 				owned_by = GRA
 			}
 		}
@@ -98,7 +98,7 @@ spain_must_be_christian = {
 		religion = catholic
 		is_at_war = no
 		NOT = {	exists = GRA }
-		iberia_region = {
+		iberia_land_region = { #STT
 			owned_by =  ROOT
 			NOT = { religion_group = christian }
 		}
@@ -110,7 +110,7 @@ spain_must_be_christian = {
 	success = {
 		NOT = {
 			any_owned_province = {
-				region = iberia_region
+				province_group = iberia_land_region #STT
 				NOT = { religion_group = christian }
 			}
 		}
@@ -130,7 +130,7 @@ spain_must_be_christian = {
 		if = {
 			limit = {
 				any_owned_province = {
-					region = iberia_region
+					province_group = iberia_land_region #STT
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}
@@ -138,7 +138,7 @@ spain_must_be_christian = {
 			}
 			every_owned_province = {
 				limit = {
-					region = iberia_region
+					province_group = iberia_land_region #STT
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}

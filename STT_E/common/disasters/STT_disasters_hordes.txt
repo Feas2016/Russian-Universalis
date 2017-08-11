@@ -145,9 +145,7 @@ ilkhanate_disaster = {
 	}
 	
 	can_stop = {
-		every_owned_province = {
-		    NOT = { local_unrest = 8 }
-		}
+		NOT = { average_unrest = 5 }
 		stability = 3
 		legitimacy_or_horde_unity = 90
 	}
