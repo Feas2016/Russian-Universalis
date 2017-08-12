@@ -425,7 +425,7 @@ subjugate_rostov = {
 	category = MIL
 	
 	target_provinces = {
-		owned_by = ROS
+		owned_by = RSO
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -435,7 +435,7 @@ subjugate_rostov = {
 			tag = RUS
 		}
 		is_free_or_tributary_trigger = yes
-		ROS = {
+		RSO = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
 			religion_group = ROOT
@@ -447,15 +447,15 @@ subjugate_rostov = {
 	abort = {
 		OR = {
 			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = ROS }
+			NOT = { exists = RSO }
 			NOT = { religion_group = ROOT }
 		}
 	}
 	success = {
 		OR = {
-			ROS = { is_subject_of = ROOT }
+			RSO = { is_subject_of = ROOT }
 			AND = {
-				NOT = { exists = ROS }
+				NOT = { exists = RSO }
 				3192 = { owned_by = ROOT }
 			}
 		}
@@ -464,7 +464,7 @@ subjugate_rostov = {
 		factor = 5000
 		modifier = {
 			factor = 2
-			NOT = { has_opinion = { who = ROS value = 0 } }
+			NOT = { has_opinion = { who = RSO value = 0 } }
 		}
 	}
 	immediate = {
