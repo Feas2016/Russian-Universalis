@@ -72,11 +72,12 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
-	NOT = { has_country_modifier = aus_maius }	
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
+		has_global_flag = golden_bulla
+	    NOT = { has_country_modifier = aus_maius }	
 	}
 
 	option = {
@@ -107,5 +108,69 @@ country_event = {
 				name = "aus_aulic"
 				duration = 3650
 		}
+	}
+}
+
+#by invasion
+country_event = {
+	id = aus_main.56475
+	title = "aus_main.t.56475"
+	desc = "aus_main.d.56475"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	major = yes
+	
+	trigger = {
+	    is_year = 1350
+		is_emperor = yes
+	}
+	
+	mean_time_to_happen = {
+	    months = 24
+	}
+	
+	option = {
+	    name = "aus_main.a.56475"
+		add_legitimacy = 20
+		set_global_flag = golden_bulla
+		hidden_effect = { 
+		    every_elector = {
+		        add_prestige = 30
+			    add_legitimacy = 30
+		    }
+		}	
+	}
+}
+
+#by invasion
+country_event = {
+	id = aus_main.56476
+	title = "aus_main.t.56476"
+	desc = "aus_main.d.56476"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	
+	trigger = {
+	    NOT = { has_global_flag = golden_bulla }
+		is_emperor = yes
+	}
+	
+	mean_time_to_happen = {
+	    months = 80
+		modifier = {
+		    factor = 0.75
+			NOT = { prestige = 75 }
+		}
+		modifier = {
+		    factor = 0.75
+			NOT = { legitimacy = 75 }
+		}
+	}
+	
+	option = {
+	    name = "aus_main.a.56476"
+		add_legitimacy = -5
+		add_prestige = -5
+		add_imperial_influence = -10
 	}
 }

@@ -8,6 +8,7 @@ country_decisions = {
 			tag = AEM
 			tag = DUA
 			}
+			has_global_flag = golden_bulla
 			NOT = { has_country_modifier = aus_maius }
 			is_emperor = yes
 		}
@@ -45,7 +46,8 @@ country_decisions = {
 			tag = HAB
 			tag = AEM
 			tag = DUA
-		}
+		    }
+			is_year = 1360
 			NOT = { has_country_modifier = aus_aulic }
 		}
 		allow = {
