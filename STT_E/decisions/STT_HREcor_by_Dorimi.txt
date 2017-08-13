@@ -134,7 +134,10 @@ country_decisions = {
 			is_at_war = no
 			dip_power = 100
 			stability = 2
-			is_papal_controller = yes
+			OR = {
+			    is_papal_controller = yes
+				papal_influence = 200
+			}
 			is_defender_of_faith = yes
 		}
 		effect = {
