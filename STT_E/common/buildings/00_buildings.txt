@@ -391,7 +391,7 @@ road_network = {
 		allowed_num_of_buildings = 1
 	}
 	ai_will_do = {
-		factor = 500
+		factor = 3500
         modifier = {
 			factor = 2
 			FROM = { ruler_has_personality = entrepreneur_personality }	
@@ -537,7 +537,7 @@ regimental_camp = {
 	time = 12
 	modifier = { local_manpower_modifier = 0.50 }
 	ai_will_do = {
-		factor = 1000
+		factor = 2000
 		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
 		modifier = { factor = 1.10 base_manpower = 3 }
 		modifier = { factor = 1.10 base_manpower = 4 }
@@ -569,7 +569,7 @@ conscription_center = {
 	modifier = { local_manpower_modifier = 1.00 }
 	
 	ai_will_do = {
-		factor = 1000
+		factor = 2000
 		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
 		modifier = { factor = 1.10 base_manpower = 3 }
 		modifier = { factor = 1.10 base_manpower = 4 }
@@ -598,7 +598,7 @@ mint = {
     make_obsolete = conscription_center
 	modifier = { local_manpower_modifier = 1.50 }
 	ai_will_do = {
-		factor = 1000
+		factor = 2000
 		modifier = { factor = 0.01 NOT = { base_manpower = 2 } }
 		modifier = { factor = 1.10 base_manpower = 3 }
 		modifier = { factor = 1.10 base_manpower = 4 }

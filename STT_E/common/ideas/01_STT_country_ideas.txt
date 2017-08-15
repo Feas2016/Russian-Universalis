@@ -1153,3 +1153,44 @@ NDL_ideas = {
 		global_colonial_growth = 20
 	}
 }
+
+ANR_ideas = {
+	start = {
+		heir_chance = 0.5
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ANR
+	}
+	free = yes		#will be added at load.
+	
+	Consell_de_la_Terra = {
+		stability_cost_modifier = -0.1
+	}
+	diplomacy_with_european_monarchs = {
+		diplomatic_reputation = 1
+		envoy_travel_time = -0.25
+	}
+	free_trade = {
+		global_institution_spread = 0.15
+		trade_steering = 0.25
+	}
+	save_nature = {
+		production_efficiency = 0.2
+	}
+	anr_independence = {
+		enemy_core_creation = 0.25
+	}
+	politar_andorra = {
+		global_unrest = -2
+	}
+	anr_tax = {
+		global_tax_modifier = 0.20
+	}
+}
+

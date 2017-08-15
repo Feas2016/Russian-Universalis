@@ -1,16 +1,16 @@
 #1750 - Alàcant
 
-owner = ARA		#Martí I of Aragon
-controller = ARA
-add_core = ARA
+owner = CAS
+controller = CAS
+add_core = CAS
 add_core = CAT
 culture = catalan
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 trade_goods = wine
-base_manpower = 3 
+base_manpower = 2
 capital = "Alàcant" 
 is_city = yes
 discovered_by = western
@@ -29,7 +29,7 @@ discovered_by = ottoman
 1609.11.1 = { unrest = 0 } # The morisque mutiny is finally controlled. (economic consequences should be added)
 1705.12.16 = { controller = HAB } # Alicante joins the Austrian side in the War of the Spanish Succession
 1707.5.8 = { controller = SPA } # Alicante falls to the Borbonic troops
-1713.7.13 = { remove_core = ARA }
+1713.4.11 = { remove_core = CAS }
 1808.6.6 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
 1812.1.1 = { revolt = {} controller = SPA }
 1813.3.19 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
