@@ -1,7 +1,8 @@
 government = steppe_horde
 government_rank = 2
 primary_culture = mishary
-religion = sunni
+religion = tengri_pagan_reformed
+secondary_religion = sunni
 technology_group = nomad_group
 capital = 303	# Saratov
 historical_rival = TUR
@@ -83,9 +84,7 @@ historical_rival = TUR
 	}
 }
 
-1269.1.1 = {
-government_rank = 3
-}
+1269.1.1 = { government_rank = 3 }
 
 1282.1.1 = {
 	monarch = {
@@ -144,6 +143,8 @@ government_rank = 3
 		mil = 6
 	}
 }
+
+1320.1.1 = { religion = sunni }
 
 1341.1.1 = {
 	monarch = {
