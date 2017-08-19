@@ -45,105 +45,6 @@ country_decisions = {
 		    factor = 1
 		}
     }
- 
-#    major_boost = {
-#        potential = {
-#		    ai = yes
-#		    AND = {
-#		         NOT = { has_country_modifier = help_to_osman }
-#				 NOT = { has_country_modifier = help_to_russia }
-#			}	 
-#		    OR = {
-#			   tag = TUR
-#			   tag = TSR
-#			   tag = RUS
-#			   tag = RU2
-#			   tag = MOS
-#			}
-#			NOT = { is_year = 1675 }
-#		}
-#		allow = {
-#		    OR = {
-#			NOT = { adm_power = 200 }
-#           NOT = { dip_power = 200 }
-#            }			
-#		}
-#		
-#		effect = {
-#		    if = { 
-#			    limit = {
-#				tag = TUR
-#			    NOT = { has_idea = civil_servants }
-#			    }
-#			add_adm_power = 300
-#			add_dip_power = 150
-#			}
-#		    if = { 
-#			    limit = {
-#				tag = TUR
-#			    has_idea = civil_servants
-#			    }
-#			add_adm_power = 200
-#			add_dip_power = 100
-#			add_mil_power = 100
-#			}
-#			if = {
-#			    limit = {
-#				    OR = {
-#				    tag = TSR
-#			        tag = RUS
-#			        tag = RU2
-#			        tag = MOS
-#				    }
-#				NOT = { has_idea = inquisition }	
-#				}
-#			add_adm_power = 300
-#			add_dip_power = 100
-#			add_treasury = 300
-#			}
-#			if = {
-#			    limit = {
-#				    OR = {
-#				    tag = TSR
-#			        tag = RUS
-#			        tag = RU2
-#			        tag = MOS
-#				    }
-#				has_idea = inquisition 	
-#				}
-#			add_adm_power = 200
-#			add_dip_power = 100
-#			add_treasury = 300
-#			}
-#			if = {
-#			    limit = {
-#				    OR = {
-#				    tag = TSR
-#			        tag = RUS
-#			        tag = RU2
-#			        tag = MOS
-#				    }
-#			    }
-#			add_country_modifier = {
-#				name = "help_to_russia"
-#				duration = 1825
-#               }				
-#			}
-#			if = {
-#			    limit = {
-#				    tag = TUR
-#			    }
-#			add_country_modifier = {
-#				name = "help_to_osman"
-#				duration = 1825
-#               }				
-#			}
-#		}
-#		
-#		ai_will_do = {
-#		    factor = 1
-#		}
-#    }
 	
     establish_baltic_fleet = {
         potential = {
@@ -385,6 +286,88 @@ country_decisions = {
 			add_legitimacy = 20
 			culture_group_union = scandinavian
 			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+
+    BYZ_army_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_army_crisis
+		}
+		
+		allow = {
+		    mil_power = 500
+			MIL = 4
+		}
+		
+		effect = {
+		    add_mil_power = -500
+			remove_country_modifier = BYZ_army_crisis
+			add_country_modifier = {
+			    name = BYZ_army_crisis2
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_army_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_army_crisis2
+		}
+		
+		allow = {
+		    mil_power = 600
+			adm_power = 300
+			MIL = 4
+			ADM = 3
+		}
+		
+		effect = {
+		    add_adm_power = -300
+		    add_mil_power = -600
+			add_prestige = 25
+			remove_country_modifier = BYZ_army_crisis2
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_economic_reform = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_economic_crisis
+		}
+		
+		allow = {
+		    adm_power = 500
+			dip_power = 250
+			ADM = 4
+			DIP = 3
+		}
+		
+		effect = {
+		    add_adm_power = -500
+			add_dip_power = -250
+			add_prestige = 25
+			remove_country_modifier = BYZ_economic_crisis
+        }
+		
+		ai_will_do = {
+		    factor = 1000
 		}
 	}	
 }

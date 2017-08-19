@@ -1194,3 +1194,50 @@ ANR_ideas = {
 	}
 }
 
+ORK_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.20
+		privateer_efficiency = 0.20
+	}
+	
+	bonus = {
+	    navy_tradition = 1
+	}
+	
+	trigger = {
+		tag = ORK
+	}
+	
+	free = yes		#will be added at load.
+	
+	ORK_production = {
+	    production_efficiency = 0.15
+	}
+	
+	ORK_analitic = {
+	    army_tradition = 0.25
+		army_tradition_from_battle = 1
+	}
+	
+	ORK_with_sea = {
+	    global_sailors_modifier = 0.25
+	}
+	
+	ORK_rebellion = {
+	    prestige = 1
+	}
+	
+	ORK_castles = {
+	    defensiveness = 0.15
+		fort_maintenance_modifier = -0.2
+	}
+	
+	ORK_cultures = { 
+	    num_accepted_cultures = 2
+	}
+	
+	ORK_logistic = {
+	    development_cost = -0.15
+	}
+}	
+

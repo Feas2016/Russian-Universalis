@@ -8,7 +8,7 @@ country_event = {
 	title = "stt_flavor_horde.1.t"
 	desc = "stt_flavor_horde.1.d"
 
-	picture = qqq_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
@@ -34,7 +34,7 @@ country_event = {
 	title = "stt_flavor_horde.2.t"
 	desc = "stt_flavor_horde.2.d"
 
-	picture = qqq_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes 
 
@@ -68,7 +68,7 @@ country_event = {
 	title = "stt_flavor_horde.3.t"
 	desc = "stt_flavor_horde.3.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -97,7 +97,7 @@ country_event = {
 
 	immediate = {
 		release = KAZ
-		add_country_modifier = { name = "GLH_broken" duration = 1825 }
+		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -125,7 +125,7 @@ country_event = {
 	title = "stt_flavor_horde.4.t"
 	desc = "stt_flavor_horde.4.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -158,7 +158,7 @@ country_event = {
 		2410 = { add_core = CRI }
 		290 = { add_core = CRI }# Core on Azov
 		release = CRI
-		add_country_modifier = { name = "GLH_broken" duration = 1825 }
+		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -186,7 +186,7 @@ country_event = {
 	title = "stt_flavor_horde.5.t"
 	desc = "stt_flavor_horde.5.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 	fire_only_once = yes
 
 	trigger = {
@@ -214,7 +214,7 @@ country_event = {
 
 	immediate = {
 		release = NOG
-		add_country_modifier = { name = "GLH_broken" duration = 1825 }
+		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -242,7 +242,7 @@ country_event = {
 	title = "stt_flavor_horde.6.t"
 	desc = "stt_flavor_horde.6.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -271,7 +271,7 @@ country_event = {
 
 	immediate = {
 		release = KZH
-		add_country_modifier = { name = "GLH_broken" duration = 1825 }
+		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -299,7 +299,7 @@ country_event = {
 	title = "stt_flavor_horde.7.t"
 	desc = "stt_flavor_horde.7.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -328,7 +328,7 @@ country_event = {
 
 	immediate = {
 		release = SIB
-		add_country_modifier = { name = "GLH_broken" duration = 1825 }
+		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -356,7 +356,7 @@ country_event = {
 	title = "stt_flavor_horde.8.t"
 	desc = "stt_flavor_horde.8.d"
 
-	picture = "qqq_eventPicture"
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -380,7 +380,7 @@ country_event = {
 	title = "stt_flavor_horde.9.t"
 	desc = "stt_flavor_horde.9.d"
 
-	picture = "qqq_eventPicture"
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -411,7 +411,7 @@ country_event = {
 	title = "stt_flavor_horde.10.t"
 	desc = "stt_flavor_horde.10.d"
 
-	picture = "qqq_eventPicture"
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -439,7 +439,7 @@ country_event = {
 	title = "stt_flavor_horde.11.t"
 	desc = "stt_flavor_horde.11.d"
 
-	picture = "qqq_eventPicture"
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -470,7 +470,7 @@ country_event = {
 	title = "stt_flavor_horde.12.t"
 	desc = "stt_flavor_horde.12.d"
 
-	picture = "qqq_eventPicture"
+	picture = BATTLE_eventPicture
 
 	
 	trigger = {
@@ -502,7 +502,7 @@ country_event = {
 	title = "stt_flavor_horde.13.t"
 	desc = "stt_flavor_horde.13.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -563,7 +563,7 @@ country_event = {
 			release = SAB
 			SAB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -590,7 +590,7 @@ country_event = {
 	title = "stt_flavor_horde.14.t"
 	desc = "stt_flavor_horde.14.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -639,7 +639,7 @@ country_event = {
 			release = CHB
 			CHB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -666,7 +666,7 @@ country_event = {
 	title = "stt_flavor_horde.15.t"
 	desc = "stt_flavor_horde.15.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -713,7 +713,7 @@ country_event = {
 			release = AKK
 			AKK = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -740,7 +740,7 @@ country_event = {
 	title = "stt_flavor_horde.16.t"
 	desc = "stt_flavor_horde.16.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -789,7 +789,7 @@ country_event = {
 			release = KRT
 			KRT = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -816,7 +816,7 @@ country_event = {
 	title = "stt_flavor_horde.17.t"
 	desc = "stt_flavor_horde.17.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -862,7 +862,7 @@ country_event = {
 			release = SDB
 			SDB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -889,7 +889,7 @@ country_event = {
 	title = "stt_flavor_horde.18.t"
 	desc = "stt_flavor_horde.18.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -933,7 +933,7 @@ country_event = {
 			release = MUZ
 			MUZ = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -960,7 +960,7 @@ country_event = {
 	title = "stt_flavor_horde.19.t"
 	desc = "stt_flavor_horde.19.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -1004,7 +1004,7 @@ country_event = {
 			release = INJ
 			INJ = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -1031,7 +1031,7 @@ country_event = {
 	title = "stt_flavor_horde.20.t"
 	desc = "stt_flavor_horde.20.d"
 
-	picture = qqq_eventPicture
+	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
 
@@ -1093,7 +1093,7 @@ country_event = {
 			release = JAL
 			JAL = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1825 }
+		add_country_modifier = { name = "HUL_broken" duration = 1300 }
 	}
 
 	option = {
@@ -1111,5 +1111,80 @@ country_event = {
 		add_legitimacy = -10
 		add_horde_unity = -10
 		add_stability = -1
+	}
+}
+
+#death of tohtam
+country_event = {
+	id = stt_flavor_horde.21
+	title = "stt_flavor_horde.21.t"
+	desc = "stt_flavor_horde.21.d"
+	
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = GLH
+		is_year = 1311
+		NOT = { is_year = 1320 }
+		has_ruler = "Тохта"
+		religion = tengri_pagan_reformed
+	}
+	
+	mean_time_to_happen = {
+	    months = 20
+	}
+	
+	option = {
+	    name = "stt_flavor_horde.21.a"
+	    set_country_flag = tohtam_died
+	    kill_ruler = yes
+	}
+	
+}
+
+#accept islam
+country_event = {
+	id = stt_flavor_horde.22
+	title = "stt_flavor_horde.22.t"
+	desc = "stt_flavor_horde.22.d"
+
+	picture = RAMADAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+	    religion = tengri_pagan_reformed
+		tag = GLH
+		is_year = 1318
+		NOT = { is_year = 1325 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 20
+	}
+	
+	option = {
+	    ai_chance = {
+		    factor = 100
+		}
+	    name = "stt_flavor_horde.22.a1"
+		change_religion = sunni
+		capital_scope = {
+		    tribal_rebels = 5
+		}
+		add_country_modifier = {
+		    name = GLH_sunni
+			duration = 1825
+		}
+	}
+	
+	option = {
+	    ai_chance = {
+		    factor = 0
+		}
+	    name = "stt_flavor_horde.22.a2"
+		add_prestige = -10
 	}
 }

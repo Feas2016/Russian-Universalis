@@ -1994,7 +1994,7 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		name = "Андроник II"
 		dynasty = "Палеолог"
 		birth_date = 1259.3.25
-		adm = 5
+		adm = 3
 		dip = 3
 		mil = 3
 	}
@@ -2011,6 +2011,17 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		adm = 4
 		dip = 4
 		mil = 2
+	}
+}
+
+1308.1.1 = {
+    add_country_modifier = {
+	    name = "BYZ_army_crisis"
+		duration = -1
+	}
+	add_country_modifier = {
+	    name = "BYZ_economic_crisis"
+		duration = -1
 	}
 }
 
@@ -2287,6 +2298,11 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		dip = 3
 		mil = 2
 	}
+}
+
+1430.1.1 = {
+    remove_country_modifier = BYZ_army_crisis
+	remove_country_modifier = BYZ_economic_crisis
 }
 
 1443.1.1 = {

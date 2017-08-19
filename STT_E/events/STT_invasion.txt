@@ -78,3 +78,126 @@ country_event = {
 	}
 
 }
+
+country_event = {
+    id = stt_wek.3
+	title = stt_wek.t.3
+	desc = stt_wek.de.3
+	
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = BYZ
+		NOT = { war_with = TUR }
+		NOT = { started_in = 1330.1.1 }
+		TUR = {
+		    exists = yes
+			NOT = { num_of_cities = 2 } 
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	immediate  = {
+	    hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						    province_id = 317
+				            province_id = 322
+				            province_id = 3107
+				            province_id = 3110
+						    province_id = 2297
+				    }
+				}
+				add_claim = TUR
+			}
+		}
+		   
+		TUR = {
+			country_event = { id = stt_wek.4 }
+	    }
+	}
+	
+	option = {
+	    name = stt_wek.3.a
+	}
+}
+
+country_event = {
+    
+	id = stt_wek.4
+	title = stt_wek.t.4
+	desc = stt_wek.de.4
+	
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_wek.4.a
+	    add_country_modifier = {
+		    name = "TUR_war_time"
+            duration = 1825
+		}
+		3111 = {
+		    infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+		}
+		declare_war_with_cb = {
+            who = BYZ
+            casus_belli = cb_imperial
+        }
+	}
+}
+
+#timariot system
+country_event = {
+    
+	id = stt_wek.5
+	title = stt_wek.t.5
+	desc = stt_wek.de.5
+
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = TUR
+		NOT = { is_year = 1350 }
+		NOT = { has_country_modifier = TUR_timariot_system }
+	}
+	
+	mean_time_to_happen = {
+	    months = 145
+		modifier = {
+		    factor = 0.75
+			MIL = 4
+		}
+	}
+	
+	option = {
+	    name = stt_wek.5.a
+		add_adm_power = 400
+		add_mil_power = 200
+	    add_country_modifier = {
+		    name = TUR_timariot_system
+			duration = 7000
+		}
+	}
+}	

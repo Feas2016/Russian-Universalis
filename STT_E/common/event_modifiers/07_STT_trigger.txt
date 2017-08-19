@@ -113,3 +113,17 @@ GLH_broken = {
 HUL_broken = {
     global_unrest = 2
 }
+
+GLH_sunni = {
+    global_unrest = 2
+	global_missionary_strength = 0.04
+	missionaries = 2
+}
+
+TUR_timariot_system = {
+    global_unrest = -4
+    manpower_recovery_speed = 0.10
+	land_maintenance_modifier = -0.33
+	land_forcelimit_modifier = 0.20
+	global_manpower_modifier = 0.25
+}
