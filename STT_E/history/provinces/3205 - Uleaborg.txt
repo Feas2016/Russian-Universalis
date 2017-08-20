@@ -1,6 +1,8 @@
 #Österbotten, down to Vasa.
 
-add_core = FIN
+owner = NOV
+controller = NOV
+add_core = NOV
 culture = finnish
 religion = catholic
 hre = no
@@ -9,13 +11,10 @@ base_production = 1
 trade_goods = fur
 base_manpower = 1
 capital = "Uleåborg"
+add_core = FIN
 is_city = yes
 discovered_by = eastern
 discovered_by = western
-is_city = yes
-controller = NOV
-add_core = NOV
-owner = NOV
 
 1370.1.1 = { owner = SWE add_core = SWE controller = SWE }
 1527.6.1 = { religion = protestant}

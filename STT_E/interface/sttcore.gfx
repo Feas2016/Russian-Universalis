@@ -14,23 +14,23 @@ spriteTypes = {
 		texturefile = "gfx//interface//sort_giveupcore.dds"
 		loadType = "INGAME"
 	}
-	textSpriteType = {	
-		name = "GFX_button_straight_132_32_notext"
-		texturefile = "gfx/interface/button_straight_132_32.dds"
-	}
+	# textSpriteType = {	
+		# name = "GFX_button_straight_132_32_notext"
+		# texturefile = "gfx/interface/button_straight_132_32.dds"
+	# }
 	spriteType = {
 		name = "GFX_overex_entry_frame_stt"
 		texturefile = "gfx/interface/overex_entry_frame_stt.dds"
 	}
-	progressbartype = {
-		name = "GFX_province_coreprogress_bar_stt"
-		color = { 0.0 0.5 0.0 }
-		colortwo = { 1.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/province_coreprogress_green_stt.dds"
-		texturefile2 = "gfx/interface/province_coreprogress_black_stt.dds"
-		size = { x = 112 y = 28 }
-		effectFile = "gfx/FX/progress.lua"
-	}
+	# progressbartype = {
+		# name = "GFX_province_coreprogress_bar_stt"
+		# color = { 0.0 0.5 0.0 }
+		# colortwo = { 1.0 0.0 0.0 }
+		# textureFile1 = "gfx/interface/province_coreprogress_green_stt.dds"
+		# texturefile2 = "gfx/interface/province_coreprogress_black_stt.dds"
+		# size = { x = 112 y = 28 }
+		# effectFile = "gfx/FX/progress.lua"
+	# }
 	spriteType = {
 		name = "GFX_province_coreprogress_frame_stt"
 		texturefile = "gfx/interface/province_coreprogress_frame_stt.dds"

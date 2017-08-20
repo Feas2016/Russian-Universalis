@@ -112,7 +112,7 @@ wine = {
 			NOT = { continent = south_america }
 			NOT = { region = south_africa_region }
 			NOT = { area = cuyo_area }
-			NOT = { area = nehuenken_area }
+			#NOT = { area = nehuenken_area } #STT
 			NOT = { area = california_area }
 			NOT = { area = central_valley_area }
 		}
@@ -500,18 +500,18 @@ copper = {
 			is_random_new_world = no
 			NOT = { province_id = 990 } #St Maurice ironworks
 			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
+			#NOT = { area = diamantina_area }
 			NOT = { area = mato_grosso_area }
 			NOT = { area = great_valley_area }
 			NOT = { area = susquehanna_area }
 			NOT = { area = hudson_valley_area }
 			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
+			# NOT = { area = south_iroquoisia_area }
 			NOT = { area = upper_ontario_area }
 			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
+			#NOT = { area = inner_ontario_area }
+			#NOT = { area = maryland_area }
+			#NOT = { area = ofaie_area }
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = central_africa_region }
@@ -539,14 +539,14 @@ copper = {
 			factor = 1.5
 			OR = {
 				area = minas_gerais_area
-				area = diamantina_area
+				#area = diamantina_area
 				area = mato_grosso_area
-				area = ofaie_area
+				#area = ofaie_area
 				area = great_valley_area
 				area = susquehanna_area
 				area = hudson_valley_area
 				area = lake_superior_area
-				area = south_iroquoisia_area
+				# area = south_iroquoisia_area
 				region = west_siberia_region
 				region = east_siberia_region
 			}
@@ -575,14 +575,14 @@ gold = {
 			NOT = { region = mexico_region }
 			NOT = { region = central_america_region }
 			NOT = { area = goias_area }
-			NOT = { area = pontal_area }
+			#NOT = { area = pontal_area }
 			NOT = { area = mato_grosso_area }
-			NOT = { area = ofaie_area }
+			#NOT = { area = ofaie_area }
 			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
+			#NOT = { area = diamantina_area }
 			NOT = { area = guapore_area }
 			NOT = { area = grao_para_area }
-			NOT = { area = amapa_area }
+			#NOT = { area = amapa_area }
 			NOT = { area = ucayali_area }
 			NOT = { area = amazon_area }
 		}
@@ -643,11 +643,11 @@ gold = {
 			factor = 3.5
 			OR = {
 				area = minas_gerais_area
-				area = diamantina_area
+				#area = diamantina_area
 				area = mato_grosso_area
-				area = ofaie_area
+				#area = ofaie_area
 				area = goias_area
-				area = pontal_area
+				#area = pontal_area
 			}
 		}
 	}
@@ -674,12 +674,12 @@ iron = {
 			NOT = { area = susquehanna_area }
 			NOT = { area = hudson_valley_area }
 			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
+			#NOT = { area = south_iroquoisia_area }
 			NOT = { area = upper_ontario_area }
 			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
+			#NOT = { area = inner_ontario_area }
+			#NOT = { area = maryland_area }
+			#NOT = { area = ofaie_area }
 			NOT = { province_id = 18 }
 		}
 		modifier = {
@@ -736,7 +736,7 @@ slaves = {
 				region = kongo_region
 				area = west_africa_coast_area
 				area = gulf_of_guinea_area
-				area = benin_area
+				#area = benin_area
 			}
 		}
 		modifier = {
@@ -823,12 +823,12 @@ tea = {
 			NOT = { area = banda_oriental_area } #Yerba Mate
 			NOT = { area = rio_grande_do_sol_area } #Yerba Mate
 			NOT = { area = buenos_aires_area } #Yerba Mate
-			NOT = { area = misiones_area } #Yerba Mate
+			#NOT = { area = misiones_area } #Yerba Mate
 			NOT = { area = beni_area } #Yerba Mate
-			NOT = { area = moxos_area } #Yerba Mate
+			#NOT = { area = moxos_area } #Yerba Mate
 			NOT = { area = paraguay_area } #Yerba Mate
 			NOT = { area = sao_paolo_area } #Yerba Mate
-			NOT = { area = west_sao_paolo_area } #Yerba Mate
+			#NOT = { area = west_sao_paolo_area } #Yerba Mate
 		}
 		modifier = {
 			factor = 0
@@ -878,12 +878,12 @@ tea = {
 				area = banda_oriental_area #Yerba Mate
 				area = rio_grande_do_sol_area #Yerba Mate
 				area = buenos_aires_area #Yerba Mate
-				area = misiones_area #Yerba Mate
+				#area = misiones_area #Yerba Mate
 				area = beni_area #Yerba Mate
-				area = moxos_area #Yerba Mate
+				#area = moxos_area #Yerba Mate
 				area = paraguay_area #Yerba Mate
 				area = sao_paolo_area  #Yerba Mate
-				area = west_sao_paolo_area  #Yerba Mate
+				#area = west_sao_paolo_area  #Yerba Mate
 			}
 		}
 	}
@@ -975,8 +975,8 @@ coffee = {
 			is_random_new_world = no
 			NOT = { area = southern_ethiopia_area }
 			NOT = { area = hadiya_area }
-			NOT = { area = damot_area }
-			NOT = { area = shewa_area }
+			#NOT = { area = damot_area }
+			#NOT = { area = shewa_area }
 			NOT = {	region = malaya_region }
 			NOT = { region = indonesia_region }
 			NOT = { region = moluccas_region }
@@ -1122,11 +1122,11 @@ sugar = {
 			NOT = { province_id = 481 }
 			OR = {
 				region = carribeans_region
-				area = ceara_area
+				#area = ceara_area
 				area = pernambuco_area
 				area = bahia_area
 				area = guyana_area
-				area = suriname_area
+				#area = suriname_area
 			}
 		}
 	}
@@ -1151,7 +1151,7 @@ tobacco = {
 			NOT = { region = brazil_region }
 			NOT = { region = carribeans_region }
 			NOT = { area = appalachia_area }
-			NOT = { area = south_appalachia_area }
+			#NOT = { area = south_appalachia_area }
 		}
 		modifier = {
 			factor = 0
