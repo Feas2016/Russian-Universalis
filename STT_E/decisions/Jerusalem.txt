@@ -1,0 +1,87 @@
+country_decisions = {
+
+	kingdom_of_jerusalem = {
+		major = yes
+		potential = {
+			NOT = { exists = KOJ }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion = catholic
+			NOT = { government = republic }
+			NOT = { government = celestial_empire }
+			OR = {
+				owns = 379
+				AND = {
+					ai = no
+					tag = KNI
+				}
+				AND = {
+					ai = no
+					tag = CYP
+				}
+			}
+			OR = {
+				current_age = age_of_feudalism
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+			}
+		}
+		allow = {
+			is_at_war = no
+			owns_core_province = 1854
+			owns_core_province = 364
+			owns_core_province = 379
+		}
+		effect = {
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { tag = KNI }
+					NOT = { tag = CYP }
+				}
+				KOJ = {
+					add_core = 379
+					add_core = 1854
+					add_core = 364
+				}
+				release = KOJ
+				KOJ = { change_primary_culture = ROOT }
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = KNI
+						tag = CYP
+					}
+				}
+				change_tag = KOJ
+				if = {
+					limit = { has_custom_ideas = no }
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			if = {
+				limit = { tag = KNI }
+				set_country_flag = knights_formed_jerusalem
+			}
+			KOJ = {
+				set_capital = 379
+				change_religion = catholic
+				change_government = feudal_monarchy
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank = 2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+}

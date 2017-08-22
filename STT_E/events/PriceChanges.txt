@@ -1,0 +1,1463 @@
+####################################################
+# Price Change Events
+#
+# written by Johan Andersson & Henrik Lohmander
+####################################################
+
+namespace = prices
+
+# Triangle Trade
+country_event = {
+	id = prices.1
+	title = prices.1.t
+	desc = prices.1.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		colony = 1
+		NOT = { has_global_flag = triangle_happened }
+		any_subject_country = {
+			is_colonial_nation = yes
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
+			}
+			OR = {
+				tobacco = 4
+				sugar = 4
+				cotton = 4
+			}
+		}
+		
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.1.a
+		change_price = {
+			trade_goods = slaves
+			key = TRIANGLE_TRADE
+			value = 0.5
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
+
+
+# Europeans in China
+country_event = {
+	id = prices.2
+	title = prices.2.t
+	desc = prices.2.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		OR = {
+			1371 = {	# Canton
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+			684 = {  #Hangzhou
+				trade_share = {
+					country = ROOT
+					share = 5
+				}
+			}
+		}
+		NOT = { has_global_flag = europeans_in_china_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = europeans_in_china_happened
+		}
+	}	
+	
+	option = {
+		name = prices.2.a
+		change_price = {
+			trade_goods = chinaware
+			key = EUROPEANS_IN_CHINA
+			value = 0.5
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
+
+#Johann Friedrich Böttger
+country_event = {
+	id = prices.3
+	title = prices.3.t
+	desc = prices.3.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		owns = 61
+		adm_tech = 24
+		NOT = { has_global_flag = bottger_happened }
+		has_global_flag = europeans_in_china_happened
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.3.a
+		change_price = {
+			trade_goods = chinaware
+			key = JOHAN_FRIEDRICH_BOTTGER
+			value = -0.5
+			duration = -1
+		}
+		61 = {
+			add_base_tax = 2
+		}
+		add_prestige = 20
+	}
+}
+
+#Lots of Protestants, less demand for fish
+country_event = {
+	id = prices.4
+	title = prices.4.t
+	desc = prices.4.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		religion = catholic
+		is_religion_enabled = protestant
+		is_papal_controller = yes
+		
+		calc_true_if = {
+			all_country = {
+				religion = protestant
+			}
+			amount = 5
+		}
+		NOT = { has_global_flag = protestant_fish_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.4.a
+		change_price = {
+			trade_goods = fish
+			key = PROTESTANT_DONT_EAT_FISH
+			value = -0.1
+			duration = -1
+		}
+	}
+}
+
+
+
+# Coffee Boom
+country_event = {
+	id = prices.5
+	title = prices.5.t
+	desc = prices.5.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			capital_scope = { continent = europe }
+			AND = {
+				any_owned_province = {
+					continent =  europe
+				}
+				dip_tech = 20
+			}
+		}
+		NOT = { has_global_flag = coffee_boom_happened }
+		OR = {
+			any_owned_province = {
+				region = malaya_region
+				trade_goods = coffee
+			}
+			any_subject_country = {
+				is_colonial_nation = yes
+				coffee = 4
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	
+	option = {
+		name = prices.5.a
+		change_price = {
+			trade_goods = coffee
+			key = COFFEE_BOOM
+			value = 0.5
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
+
+
+# Cotton Imports
+country_event = {
+	id = prices.6
+	title = prices.6.t
+	desc = prices.6.d
+	picture = TRADEGOODS_eventPicture
+
+	
+	major = yes
+
+	trigger = {
+		is_great_power = yes
+		capital_scope = { continent = europe }
+		any_owned_province = {
+			trade_goods = wool
+			continent = europe
+		} 
+		OR = {
+			504 = { #Indus
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			2030 = { #Goa
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1340 = { #Ceylon
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1343 = { #Bengal
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		NOT = { has_country_flag = cotton_imports }
+		NOT = { has_global_flag = cotton_imports_global }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		set_global_flag = cotton_imports_global
+	}
+	
+	option = {
+		name = prices.6.a
+		change_price = {
+			trade_goods = wool
+			key = COTTON_IMPORTS
+			value = -0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = cotton
+			key = COTTON_IMPORTS
+			value = 0.20
+			duration = -1
+		}
+		add_mercantilism = -2
+	}
+	option = {
+		name = prices.6.b
+		set_country_flag = cotton_imports
+		504 = { #Indus
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = -10
+				key = COTTON_IMPORTS_BANNED
+			}
+		}
+		2030 = { #Goa
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = -10
+				key = COTTON_IMPORTS_BANNED
+			}
+		}
+		1340 = { #Ceylon
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = -10
+				key = COTTON_IMPORTS_BANNED
+			}
+		}
+		1343 = { #Bengal
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = -10
+				key = COTTON_IMPORTS_BANNED
+			}
+		}
+	}
+}
+
+
+
+# Of Tea and Sugar
+country_event = {
+	id = prices.7
+	title = prices.7.t
+	desc = prices.7.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			capital_scope = { continent = europe }
+			AND = {
+				any_owned_province = { continent = europe }
+				dip_tech = 20
+			}
+		}
+		OR = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				any_owned_province = {
+					trade_goods = sugar
+				}
+			}
+			any_owned_province = {
+				trade_goods = sugar
+				continent = new_world
+			}
+			any_owned_province = {
+				trade_goods = sugar
+				continent = north_america
+			}
+			any_owned_province = {
+				trade_goods = sugar
+				continent = south_america
+			}
+		}
+		OR = {
+			1371 = {	# Canton
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			684 = {  #Hangzhou
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			any_owned_province = {
+				trade_goods = tea
+			}
+		}
+		NOT = { has_global_flag = tea_and_sugar_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	
+	option = {
+		name = prices.7.a
+		change_price = {
+			trade_goods = tea
+			key = TEA_AND_SUGAR
+			value = 0.25
+			duration = -1
+		}
+		change_price = {
+			trade_goods = sugar
+			key = TEA_AND_SUGAR
+			value = 0.25
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
+
+
+
+# Spice Trade
+country_event = {
+	id = prices.8
+	title = prices.8.t
+	desc = prices.8.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_idea = quest_for_the_new_world
+		num_of_ports = 4
+		NOT = {
+			capital_scope = {
+				continent = asia
+			}
+		}
+		NOT = {
+			capital_scope = {
+				continent = oceania
+			}
+		}
+		has_discovered = 1460 # Cape of Good Hope
+		technology_group = western
+		any_active_trade_node = {
+			has_merchant = PREV
+			OR = {
+				province_id = 1361 # Straits of Johor
+				province_id = 1343 # Ganges Delta
+				province_id = 504 # Thatta
+				province_id = 1340 # Comorin Cape
+				province_id = 2030 # Goa
+			}
+		}
+		NOT = { has_global_flag = spice_trade_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	
+	option = {
+		name = prices.8.a
+		change_price = {
+			trade_goods = spices
+			key = SPICE_TRADE
+			value = 0.5
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
+
+
+# Abolitionism
+country_event = {
+	id = prices.9
+	title = prices.9.t
+	desc = prices.9.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		has_country_modifier = the_abolish_slavery_act
+		NOT = { has_global_flag = abolitionism_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.9.a
+		change_price = {
+			trade_goods = slaves
+			key = ABOLITIONISM
+			value = -0.4
+			duration = -1
+		}
+		add_prestige = 10
+	}
+}
+
+
+
+# Eruption of Huaynaputina
+country_event = {
+	id = prices.10
+	title = prices.10.t
+	desc = prices.10.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			owns = 805 
+			owns = 2828 
+			owns = 804   #Provinces next to volcano location in Peru
+		}
+		is_year = 1600
+		not = { is_year = 1610 }
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	
+	option = {
+		name = prices.10.a
+		change_price = {
+			trade_goods = grain
+			key = HUAYNAPUTINA
+			value = -0.75
+			duration = 730
+		}
+		change_price = {
+			trade_goods = wine
+			key = HUAYNAPUTINA
+			value = -0.75
+			duration = 730
+		}
+	}
+}
+
+# Coldest Period of the  Little Ice Age 
+country_event = {
+	id = prices.11
+	title = prices.11.t
+	desc = prices.11.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			owns = 371 #Iceland was hit badly by the Little Ice Age
+			owns = 370 #Iceland was hit badly by the Little Ice Age
+		}
+		is_year = 1650
+		not = { is_year = 1660 }
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	
+	option = {
+		name = prices.11.a
+		change_price = {
+			trade_goods = grain #Agriculture is having a hard time coping.
+			key = LITTLE_ICE_AGE
+			value = -0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = wine #Spoiled by the cold
+			key = LITTLE_ICE_AGE
+			value = -0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = fish #Fishing fleets are having a hard time to coping.
+			key = LITTLE_ICE_AGE
+			value = -0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = salt	#Food Preservation.
+			key = LITTLE_ICE_AGE
+			value = 0.25
+			duration = 3650
+		}
+		change_price = {
+			trade_goods = fur #Increased demand due to colder climate.
+			key = LITTLE_ICE_AGE
+			value = 0.25
+			duration = 3650
+		}
+	}
+}
+ 
+# Cork Bottle Stoppers
+country_event = {
+	id = prices.12
+	title = prices.12.t
+	desc = prices.12.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 20
+		wine = 1
+		NOT = { has_global_flag = wine_corks_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.12.a
+		change_price = {
+			trade_goods = wine
+			key = WINE_CORKS
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+# New Draperies
+country_event = {
+	id = prices.13
+	title = prices.13.t
+	desc = prices.13.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 11
+		cloth = 1
+		NOT = { has_global_flag = new_draperies_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.13.a
+		change_price = {
+			trade_goods = cloth
+			key = NEW_DRAPERIES
+			value = 0.20
+			duration = -1
+		}
+		change_price = {
+			trade_goods = wool
+			key = NEW_DRAPERIES
+			value = -0.20
+			duration = -1
+		}
+	}
+}
+
+# Uniform Regulations
+country_event = {
+	id = prices.14
+	title = prices.14.t
+	desc = prices.14.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		mil_tech = 21
+		NOT = { has_global_flag = regulated_uniforms_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.14.a
+		change_price = {
+			trade_goods = cloth
+			key = REGULATED_UNIFORMS
+			value = 0.15
+			duration = -1
+		}
+		change_price = {
+			trade_goods = dyes
+			key = REGULATED_UNIFORMS
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+# Great Banks Fisheries
+country_event = {
+	id = prices.15
+	title = prices.15.t
+	desc = prices.15.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			owns_core_province = 980
+			owns_core_province = 2573
+			owns_core_province = 981
+			any_owned_province = {
+				continent = new_world
+				trade_goods = fish
+			}
+		}
+		NOT = { has_global_flag = great_fisheries_happened }
+		capital_scope = { NOT = { continent = north_america } }
+		capital_scope = { NOT = { continent = new_world } }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.15.a
+		change_price = {
+			trade_goods = fish
+			key = GREAT_FISHERIES
+			value = -0.1
+			duration = -1
+		}
+		change_price = {
+			trade_goods = salt
+			key = GREAT_FISHERIES
+			value = 0.1
+			duration = -1
+		}
+	}
+}
+
+# Surging demand for Calicoes & Other Cotton Cloths
+country_event = {
+	id = prices.16
+	title = prices.16.t
+	desc = prices.16.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		dip_tech = 22
+		OR = {
+			504 = { #Indus
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			2030 = { #Goa
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1340 = { #Ceylon
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1343 = { #Bengal
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		NOT = { has_country_flag = cotton_imports }	#Shouldn't trigger for someone that already disallowed Cotton imports
+		NOT = { has_global_flag = calicoes_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.16.a
+		change_price = {
+			trade_goods = cotton
+			key = CALICOES
+			value = 0.45
+			duration = -1
+		}
+	}
+}
+
+
+# Depletion of the European Beaver
+country_event = {
+	id = prices.17
+	title = prices.17.t
+	desc = prices.17.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		owns = 61
+		NOT = { has_global_flag = depleted_beaver_happened }
+		is_year = 1570
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	
+	option = {
+		name = prices.17.a
+		change_price = {
+			trade_goods = fur
+			key = DEPLETION_OF_EUROPEAN_BEAVER
+			value = 0.4
+			duration = -1
+		}
+	}
+}
+
+# Felt Hats
+country_event = {
+	id = prices.18
+	title = prices.18.t
+	desc = prices.18.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			capital_scope = { continent = europe }
+			is_colonial_nation = yes
+		}
+		OR = {
+			any_owned_province = {
+				trade_goods = fur
+				continent = north_america
+			}
+			any_owned_province = {
+				trade_goods = fur
+				continent = new_world
+			}
+		}
+		NOT = { has_global_flag = felt_hats_happened }
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	
+	option = {
+		name = prices.18.a
+		change_price = {
+			trade_goods = fur
+			key = FELT_HATS
+			value = 0.35
+			duration = -1
+		}
+	}
+}
+
+# Permanent Navies
+country_event = {
+	id = prices.19
+	title = prices.19.t
+	desc = prices.19.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 22
+		num_of_ports = 3
+		NOT = { has_global_flag = permanent_navies_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.19.a
+		change_price = {
+			trade_goods = naval_supplies
+			key = PERMANENT_NAVIES
+			value = 0.5
+			duration = -1
+		}
+	}
+}
+
+# Bronze Cannons
+country_event = {
+	id = prices.20
+	title = prices.20.t
+	desc = prices.20.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		mil_tech = 11 #STT
+		copper = 1
+		NOT = { has_global_flag = bronze_cannons_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.20.a
+		change_price = {
+			trade_goods = copper
+			key = BRONZE_CANNONS
+			value = 0.5
+			duration = -1
+		}
+	}
+}
+
+# Japanese Tea Culture
+country_event = {
+	id = prices.21
+	title = prices.21.t
+	desc = prices.21.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 8
+		government = shogunate
+		NOT = { has_global_flag = japanese_tea_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.21.a
+		change_price = {
+			trade_goods = tea
+			key = JAPANESE_TEA_CULTURE
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+# Decline of the Spice Trade
+country_event = {
+	id = prices.22
+	title = prices.22.t
+	desc = prices.22.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1600
+		capital_scope = { continent = europe }
+		spices = 3
+		any_known_country = {
+			capital_scope = { continent = europe }
+			spices = 3
+		}
+		NOT = { has_global_flag = decline_of_spices_happened }
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	
+	option = {
+		name = prices.22.a
+		change_price = {
+			trade_goods = spices
+			key = DECLINE_OF_SPICE_TRADE
+			value = -0.4
+			duration = -1
+		}
+	}
+}
+
+# Changing Patterns of Consumption
+country_event = {
+	id = prices.23
+	title = prices.23.t
+	desc = prices.23.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		OR = {
+			capital_scope = { continent = europe }
+			AND = {
+				any_owned_province = { continent = europe }
+				dip_tech = 25
+			}
+		}
+		sugar = 5
+		dip_tech = 20
+		OR = {
+			trading_part = {
+				trade_goods = cocoa
+				value = 0.05
+			}
+			trading_part = {
+				trade_goods = tea
+				value = 0.05
+			}
+			trading_part = {
+				trade_goods = coffee
+				value = 0.05
+			}
+		}
+		NOT = { has_global_flag = popularization_of_sugar_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.23.a
+		change_price = {
+			trade_goods = sugar
+			key = POPULARIZATION_OF_SUGAR
+			value = 0.5
+			duration = -1
+		}
+	}
+}
+
+# Popularization of Silk Fabrics
+country_event = {
+	id = prices.24
+	title = prices.24.t
+	desc = prices.24.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		dip_tech = 18
+		OR = {
+			current_age = age_of_absolutism #Not before this
+			current_age = age_of_revolutions
+		}
+		OR = {
+			504 = { #Indus
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			2030 = { #Goa
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1340 = { #Ceylon
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1343 = { #Bengal
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1371 = { #Guanghzou
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			684 = { #Hangzhou
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		NOT = { has_global_flag = popular_silk_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.24.a
+		change_price = {
+			trade_goods = silk
+			key = POPULAR_SILK_FABRICS
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+# Expansion of the Bengali Dye Production
+country_event = {
+	id = prices.25
+	title = prices.25.t
+	desc = prices.25.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		owns = 2047 #Tirhut
+		owns = 2063 #Central Doabd
+		bengal_region = { type = all owned_by = ROOT }
+		bihar_area = { type = all owned_by = ROOT }
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	
+	option = {
+		name = prices.25.a
+		random_owned_province = {
+			limit = {
+				region = bengal_region
+				NOT = { trade_goods = silk }
+				NOT = { trade_goods = dyes }
+			}
+			change_trade_goods = dyes
+		}
+		random_owned_province = {
+			limit = {
+				area = bihar_area
+				NOT = { trade_goods = silk }
+				NOT = { trade_goods = dyes }
+			}
+			change_trade_goods = dyes
+		}
+		every_owned_province = {
+			limit = { trade_goods = dyes }
+			add_unrest = 5
+		}
+		change_price = {
+			trade_goods = dyes
+			key = BENGALI_INDIGO_PRODUCTION
+			value = -0.25
+			duration = -1
+		}
+	}
+	option = {
+		name = prices.25.b
+		add_stability = -1
+	}
+}
+
+# Development of Veneering
+country_event = {
+	id = prices.26
+	title = prices.26.t
+	desc = prices.26.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = { continent = europe }
+		dip_tech = 12
+		OR = {
+			current_age = age_of_reformation #Not before this
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		OR = {
+			2030 = { #Goa
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1340 = { #Ceylon
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1343 = { #Bengal
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1361 = { #Malacca
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1365 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		trading_part = {
+			trade_goods = tropical_wood
+			value = 0.05
+		}
+		NOT = { has_global_flag = veneering_happened }
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	
+	option = {
+		name = prices.26.a
+		change_price = {
+			trade_goods = tropical_wood
+			key = VENEERING
+			value = 0.35
+			duration = -1
+		}
+	}
+}
+
+# Ivory Shortage in East Asia
+country_event = {
+	id = prices.27
+	title = prices.27.t
+	desc = prices.27.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		is_year = 1750
+		capital_scope = { region = indo_china_region }
+		NOT = { has_global_flag = ivory_shortage_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.27.a
+		change_price = {
+			trade_goods = ivory
+			key = IVORY_SHORTAGE
+			value = 0.25
+			duration = -1
+		}
+	}
+}
+
+# Development of Ironworking
+country_event = {
+	id = prices.28
+	title = prices.28.t
+	desc = prices.28.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		mil_tech = 18
+		NOT = { has_global_flag = iron_working_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.28.a
+		change_price = {
+			trade_goods = iron
+			key = IRON_WORKING
+			value = 0.5
+			duration = -1
+		}
+		change_price = {
+			trade_goods = copper
+			key = IRON_WORKING
+			value = -0.35
+			duration = -1
+		}
+	}
+}
+
+# Hot Chocolate
+country_event = {
+	id = prices.29
+	title = prices.29.t
+	desc = prices.29.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 16
+		colony = 1
+		any_subject_country = {
+			is_colonial_nation = yes
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
+			}
+			cocoa = 7
+			sugar = 1
+		}
+		NOT = { has_global_flag = hot_chocolate_happened }
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.29.a
+		change_price = {
+			trade_goods = cocoa
+			key = HOT_CHOCOLATE
+			value = 0.4
+			duration = -1
+		}
+	}
+}
+
+# Popularization of Tobacco
+country_event = {
+	id = prices.30
+	title = prices.30.t
+	desc = prices.30.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		dip_tech = 16
+		colony = 1
+		NOT = { has_global_flag = popularization_of_tobacco_happened }
+		any_subject_country = {
+			is_colonial_nation = yes
+			OR = {
+				capital_scope = { continent = north_america }
+				capital_scope = { continent = south_america }
+				capital_scope = { continent = new_world }
+			}
+			tobacco = 4
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {
+		name = prices.30.a
+		change_price = {
+			trade_goods = tobacco
+			key = POPULARIZATION_OF_TOBACCO
+			value = 0.5
+			duration = -1
+		}
+	}
+}
