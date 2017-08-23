@@ -108,10 +108,8 @@ country_event = {
 				limit = {
 					OR = {
 						    province_id = 317
-				            province_id = 322
-				            province_id = 3107
-				            province_id = 3110
-						    province_id = 2297
+				            province_id = 316
+				            province_id = 2299
 				    }
 				}
 				add_claim = TUR
@@ -150,19 +148,12 @@ country_event = {
 		    infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			infantry = ROOT
-			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 		}
-		declare_war_with_cb = {
-            who = BYZ
-            casus_belli = cb_imperial
-        }
+		declare_war = BYZ
 	}
 }
 
@@ -199,5 +190,91 @@ country_event = {
 		    name = TUR_timariot_system
 			duration = 7000
 		}
+	}
+}	
+
+#siege of rhodos
+country_event = {
+    id = stt_wek.6
+	title = stt_wek.t.6
+	desc = stt_wek.de.6
+	
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BYZ
+		is_year = 1308
+		NOT = { is_year = 1310 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 2
+	}
+	
+	option = {
+	    name = stt_wek.6.a1
+		ai_chance = { factor = 90 }
+		add_prestige = -10
+        320 = {
+		    cede_province = KNI
+			hidden_effect = {
+			    build_to_forcelimit = {
+                    galley = 0.33
+                    light_ship = 0.17
+                    transport = 0.5
+                }
+			}	
+		}
+        hidden_effect = {    
+		    KNI = {
+			    define_ruler = {
+			        name = "Фульк"
+					dynasty = "де Вилларе"
+				    age = 32
+			        claim = 100
+			        regency = no
+			        female = no
+				    attach_leader = "Фульк де Вилларе"
+			    }
+			}	
+		}	
+	}
+	
+	option = {
+	    name = stt_wek.6.a2
+		ai_chance = { factor = 10 }
+		add_prestige = 10
+	    hidden_effect = {
+		    release = KNI
+            320 = {
+				infantry = KNI
+			    infantry = KNI
+			    infantry = KNI
+			    infantry = KNI
+			    infantry = KNI
+			    cavalry = KNI
+			    cavalry = KNI
+			    cavalry = KNI
+				build_to_forcelimit = {
+                    galley = 0.33
+                    light_ship = 0.17
+                    transport = 0.5
+                }
+		    }
+			KNI = {
+			    define_ruler = {
+			        name = "Фульк"
+					dynasty = "де Вилларе"
+				    age = 32
+				    claim = 100
+				    regency = no
+				    female = no
+					attach_leader = "Фульк де Вилларе"
+				}
+			}
+		}
+		declare_war = KNI
 	}
 }	

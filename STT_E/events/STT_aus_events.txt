@@ -158,7 +158,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 80
+	    months = 100
 		modifier = {
 		    factor = 0.75
 			NOT = { prestige = 75 }
@@ -171,8 +171,6 @@ country_event = {
 	
 	option = {
 	    name = "aus_main.a.56476"
-		add_legitimacy = -5
-		add_prestige = -5
-		add_imperial_influence = -10
+		add_imperial_influence = -5
 	}
 }
