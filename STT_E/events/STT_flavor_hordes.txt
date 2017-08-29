@@ -153,10 +153,15 @@ country_event = {
 	}
 
 	immediate = {
-		640 = { add_core = CRI } # Core on Kefe
-		643 = { add_core = CRI }
+		285 = { add_core = CRI } # Core on Kefe
 		2410 = { add_core = CRI }
-		290 = { add_core = CRI }# Core on Azov
+		2447 = { add_core = CRI }
+		286 = { add_core = CRI }
+		2195 = { add_core = CRI }
+		463 = { add_core = CRI }
+		282 = { add_core = CRI }
+		2406 = { add_core = CRI }
+		283 = { add_core = CRI }
 		release = CRI
 		add_country_modifier = { name = "GLH_broken" duration = 1300 }
 		set_country_flag = GLH_disaster_pause

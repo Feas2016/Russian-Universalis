@@ -76,7 +76,9 @@ western_unit = {
 		major = yes
 		potential = {
 			NOT = { unit_type = western }
-			technology_group = western			
+			mil_tech = 12
+			any_neighbor_country = { technology_group = western }
+			#technology_group = western
 		}
 		allow = {
 			mil_power = 900
