@@ -4,8 +4,9 @@ country_decisions = {
 		potential = {
 				tag = BYZ
 				is_year = 1444
+				NOT = { num_of_cities = 10 }
 				NOT = {
-						has_country_flag = hs
+					has_country_flag = hs
 				}	
 		}
 		allow = {
@@ -51,11 +52,12 @@ country_decisions = {
 	}
 	reconquest_byzantine_empire_two = {
 		potential = {
-				tag = BYZ
-				is_year = 1444
-				NOT = {
-						has_country_flag = hs_two
-				}	
+			tag = BYZ
+			is_year = 1444
+			NOT = {
+				has_country_flag = hs_two
+			}
+			has_country_flag = hs
 		}
 		allow = {
 			owns = 151 # Constantinople
@@ -137,11 +139,12 @@ country_decisions = {
 	}
 	reconquest_byzantine_empire_athens = {
 		potential = {
-				tag = BYZ
-				is_year = 1444
-				NOT = {
-						has_country_flag = hs_athens
-				}	
+			tag = BYZ
+			is_year = 1444
+			NOT = {
+				has_country_flag = hs_athens
+			}
+			has_country_flag = hs_two
 		}
 		allow = {
 			owns = 151 # Constantinople
@@ -229,14 +232,14 @@ country_decisions = {
 			add_manpower = 15
 		}
 	}
-	reconquest_byzantine_empire_greece = {
-	
-	potential = {
-				tag = BYZ
-				is_year = 1444
-				NOT = {
-						has_country_flag = hs_greece
-				}	
+	reconquest_byzantine_empire_greece = {	
+		potential = {
+			tag = BYZ
+			is_year = 1444
+			NOT = {
+				has_country_flag = hs_greece
+			}
+			has_country_flag = hs_athens
 		}
 		allow = {
 			owns = 151 # Constantinople
@@ -322,12 +325,13 @@ country_decisions = {
 		}
 	}
 	reconquest_byzantine_empire_three = {
-	potential = {
-				tag = BYZ
-				is_year = 1444
-				NOT = {
-						has_country_flag = hs_three
-				}	
+		potential = {
+			tag = BYZ
+			is_year = 1444
+			NOT = {
+					has_country_flag = hs_three
+			}
+			has_country_flag = hs_greece
 		}
 		allow = {
 			owns = 151 # Constantinople
@@ -403,11 +407,12 @@ country_decisions = {
 	}
 	return_greeks = {
 	potential = {
-				tag = BYZ
-				is_year = 1444
-				NOT = {
-						has_country_flag = hs_greeks
-				}	
+			tag = BYZ
+			is_year = 1444
+			NOT = {
+					has_country_flag = hs_greeks
+			}
+			has_country_flag = hs_three
 		}
 		allow = {
 			primary_culture = greek
