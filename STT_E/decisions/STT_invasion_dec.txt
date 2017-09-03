@@ -292,6 +292,10 @@ country_decisions = {
 		    factor = 1000
 		}
 	}
+	
+	#########
+	## BYZ ##
+	#########
 
     BYZ_army_reform1 = {
 	    major = yes
@@ -369,5 +373,118 @@ country_decisions = {
 		ai_will_do = {
 		    factor = 1000
 		}
-	}	
+	}
+
+    ##########
+	## YUAN ##
+	##########
+
+    YUA_ketzuy = {
+	    major = yes
+		potential = {
+		    tag = YUA
+			NOT = { has_country_modifier = YUA_returned_ketzuy }
+		}
+		
+		allow = {
+		    ADM = 4
+			adm_power = 500
+		}
+		
+		effect = {
+		    add_adm_power = -500
+			add_meritocracy = 5
+			add_country_modifier = {
+			    name = YUA_returned_ketzuy
+				duration = -1
+			}
+		}
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	YUA_type_money = {
+	    potential = {
+		    OR = {
+			    tag = YUA
+				tag = MNG
+			}
+			NOT = { has_country_modifier = CHN_type_money }
+		}
+		
+		allow = {
+		    adm_power = 200
+			dip_power = 200
+		}
+		
+		effect = {
+		    add_years_of_income = 1.25
+		    add_adm_power = -200
+			add_dip_power = -200
+			add_meritocracy = -10
+			add_corruption = 5
+			add_country_modifier = {
+			    name = CHN_type_money
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+		    factor = 100
+			modifier = {
+			    factor = 0
+				NOT = { num_of_loans = 2 }
+			}
+		}
+	}
+	
+	YUA_accept_confu = {
+	    potential = {
+		    tag = YUA
+			NOT = { religion = confucianism } 
+		}
+		
+		allow = {
+		    DIP = 3
+		}
+		
+		effect = {
+		    change_religion = confucianism
+			add_meritocracy = 5
+			add_dip_power = 300
+		}
+		
+		ai_will_do = {
+		    factor = 100
+		}
+	}
+	
+	YUA_repair_irrigation = {
+	    potential = {
+		    tag = YUA
+			has_country_flag = YUA_destructions
+		}
+		
+		allow = {
+		    years_of_income = 2.0
+			ADM = 3
+		}
+		
+		effect = {
+		    add_years_of_income = -2.0
+			add_country_modifier = {
+			    name = "YUA_working_process"
+				duration = 1825
+			}
+			hidden_effect = {
+			    country_event = { id = STT_flavorYUA.8 days = 1826}
+			}
+			clr_country_flag = YUA_destructions
+			
+		}
+		
+		ai_will_do = {
+		    factor = 100
+		}
+	}
 }

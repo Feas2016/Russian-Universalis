@@ -2,7 +2,7 @@ government = celestial_empire
 government_rank = 3
 technology_group = chinese
 religion = buddhism
-primary_culture = chihan
+primary_culture = mongol
 capital = 1271	#Ханбалык(Даду)
 
 1271.2.18 = {
@@ -29,26 +29,27 @@ capital = 1271	#Ханбалык(Даду)
 
 1307.3.10 = {
 	monarch = {
-		name = "Хайсан"
+		name = "Кулуг Хайсан"
 		dynasty = "Борджигин"
 		birth_date = 1281.8.4
+		claim = 75
 		adm = 3
-		dip = 2
-		mil = 3
+		dip = 5
+		mil = 1
 	}
 }
 
 1307.3.10 = {
 	heir = {
-		name = "Туг-Тэмур"
-		monarch_name = "Туг-Тэмур"
+		name = "Буянту"
+		monarch_name = "Аюрбарибада"
 		dynasty = "Борджигин"
-        birth_date = 1304.2.16
-		death_date = 1332.9.2
-		claim = 95
-		adm = 3
+        birth_date = 1285.4.9
+		death_date = 1320.3.1
+		claim = 80
+		adm = 5
 		dip = 1
-		mil = 2
+		mil = 4
 	}
 }
 
@@ -57,9 +58,9 @@ capital = 1271	#Ханбалык(Даду)
 		name = "Аюрбарибада"
 		dynasty = "Борджигин"
 		birth_date = 1285.4.9
-		claim = 95
-		adm = 2
-		dip = 2
+		claim = 85
+		adm = 5
+		dip = 1
 		mil = 4
 	}
 }
