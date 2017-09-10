@@ -264,16 +264,16 @@ capitol = {
 	}
 }
 university = {
-	cost = 2000
+	cost = 5000
 	time = 12
 	
 	trigger = {
 	    development = 30
 	}
 	modifier = {
-		adm_tech_cost_modifier = -0.05
-        dip_tech_cost_modifier = -0.05
-        mil_tech_cost_modifier = -0.05
+		adm_tech_cost_modifier = -0.02
+        dip_tech_cost_modifier = -0.02
+        mil_tech_cost_modifier = -0.02
 	}
 	ai_will_do = {
 		factor = 10000
