@@ -31,4 +31,9 @@ discovered_by = ottoman
 1515.10.1 = { unrest = 0 }
 1525.5.1 = { unrest = 8 } # serious Farmer insurrections 
 1526.1.1 = { unrest = 0 }
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1806.7.12 = { hre = no 
+    owner = AEM 
+    controller = AEM
+    add_core = AEM 
+}
+	# The Holy Roman Empire is dissolved 
