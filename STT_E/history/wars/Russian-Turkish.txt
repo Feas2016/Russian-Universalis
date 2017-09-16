@@ -1,0 +1,41 @@
+name = "Русско-турецкая война"
+war_goal = {
+	type = take_border
+	casus_belli = cb_insult
+}
+
+1828.4.26 = {
+	add_attacker = RUS
+	add_defender = TUR
+	add_defender = MOL
+	add_defender = WAL
+}
+
+1828.9.26 = {
+	battle = {
+		name = "Boelshty"
+		location = 257
+		attacker = {
+			infantry = 3000
+			cavalry =  1500
+			artillery = 14
+			losses = 12	#percent
+			country = RUS
+		}
+		defender = {
+			infantry = 16000
+			cavalry = 13000
+			artillery = 30
+			losses = 14	#percent
+			country = TUR
+		}
+		result = yes
+	}
+}
+
+1829.9.14 = {
+	rem_attacker = RUS
+	rem_defender = TUR
+	rem_defender = MOL
+	rem_defender = WAL
+}

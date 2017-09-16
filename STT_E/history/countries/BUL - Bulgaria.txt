@@ -714,7 +714,7 @@ government_rank = 1
 }
 
 1689.10.1 = {
-government_rank = 2
+government_rank = 1
 }
 
 1689.11.14 = {
@@ -736,7 +736,7 @@ government_rank = 2
 		adm = 2
 		dip = 4
 		mil = 3
-	}
+	} government = administrative_monarchy
 }
 
 1886.9.19 = {
@@ -763,7 +763,7 @@ government_rank = 2
 
 1894.1.30 = {
 	heir = {
-		name = "Борис
+		name = "Борис"
 		monarch_name = "Борис III"
 		dynasty = "Саксен-Кобург-Гота"
 		birth_date = 1894.1.30
@@ -774,3 +774,5 @@ government_rank = 2
 		mil = 1
 	}
 }
+
+1908.10.5 = { government_rank = 3  }

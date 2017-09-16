@@ -30,5 +30,5 @@ base_production = 10} # Stock Exchange established in Frankfurt
 1792.12.3 = { controller = FRN } # Prussian troops take control
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1810.1.1 = { fort_15th = no fort_18th = yes }
-1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core FRN }
-1871.1.18 = { owner = GER controller = GER add_core = GER }
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core = FRN }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB }

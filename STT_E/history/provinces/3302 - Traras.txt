@@ -27,5 +27,28 @@ discovered_by = ottoman
 	controller = ALG
 	add_core = ALG
 }
+
+
+1570.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+}
+
 1659.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Janissary revolt
-1660.1.1 = { revolt = {} controller = ALG }
+1660.1.1 = { revolt = {} controller = TUR }
+
+1711.1.1 = {
+	owner = ALG
+	controller = ALG
+	remove_core = TUR
+}
+
+1836.1.1 = {
+	controller = FRA
+}
+
+1847.12.22 = {
+	owner = FRA
+	add_core = FRA
+}
