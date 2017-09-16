@@ -361,6 +361,9 @@ capital = 236	# London
 	monarch = {
 		name = "Виктория"
 		dynasty = "фон Ганновер"
+		birth_date = 1819.5.24
+		death_date = 1901.1.22
+		claim = 95
 		adm = 6
 		dip = 6
 		mil = 5
@@ -379,5 +382,57 @@ capital = 236	# London
 		adm = 4
 		dip = 4
 		mil = 5
+	}
+}
+
+1901.1.22 = {
+		name = "Эдуард VII"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1841.11.9
+		death_date = 1910.5.6
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1901.1.22 = {
+	heir = {
+		name = "Георг"
+		monarch_name = "Георг V"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1865.6.3
+		death_date = 1936.1.20
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1910.5.6 = {
+		name = "Георг V"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1841.11.9
+		death_date = 1910.5.6
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1910.5.6 = {
+	heir = {
+		name = "Эдуард"
+		monarch_name = "Эдуард VIII"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1894.6.23
+		death_date = 1972.5.28
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 }

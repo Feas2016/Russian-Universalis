@@ -3,7 +3,7 @@ government_rank = 2
 technology_group = eastern
 primary_culture = bulgarian
 religion = orthodox
-capital = 150	# Sofia
+capital = 1765	# Sofia
 
 632.1.1 = {
 	monarch = {
@@ -724,5 +724,53 @@ government_rank = 2
 		adm = 3
 		mil = 3
 		regent= yes
+	}
+}
+
+1879.5.11 = {
+	monarch = {
+		name = "Александр I"
+		dynasty = "Баттенберг"
+		birth_date = 1857.4.17
+		death_date = 1893.11.4
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1886.9.19 = {
+	monarch = {
+		name = "Междуцарствие"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1887.7.7 = {
+	monarch = {
+		name = "Фердинант I"
+		dynasty = "Саксен-Кобург-Гота"
+		birth_date = 1861.2.26
+		death_date = 1948.9.10
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1894.1.30 = {
+	heir = {
+		name = "Борис
+		monarch_name = "Борис III"
+		dynasty = "Саксен-Кобург-Гота"
+		birth_date = 1894.1.30
+		death_date = 1943.8.28
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }

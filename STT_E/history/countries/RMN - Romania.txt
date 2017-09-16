@@ -1,5 +1,33 @@
 government = feudal_monarchy
 primary_culture = romanian
+add_accepted_culture = wallahian
+add_accepted_culture = moldavian
 religion = orthodox
 technology_group = eastern
 capital = 161	# Tоrgoviste
+
+1866.5.10 = {
+	monarch = {
+		name = "Кароль I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1839.4.20
+		death_date = 1914.10.10
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1866.5.10 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1865.8.24
+		death_date = 1927.7.20
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
