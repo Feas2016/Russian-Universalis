@@ -222,7 +222,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 2200
+	    months = 2500
 		modifier = {
 		    factor = 0.75
 			has_owner_accepted_culture = no
@@ -242,7 +242,7 @@ province_event = {
 	    add_nationalism = 10
 		spawn_rebels = {
 		    type = nationalist_rebels
-			size = 2
+			size = 1
 		}
 		add_province_modifier = {
 		    name = YUA_discrimination
@@ -254,7 +254,7 @@ province_event = {
 			        culture_group = east_asian
 				    has_owner_accepted_culture = no
 			    }
-			    add_unrest = 2
+			    add_unrest = 1
 		    }
 		}
 	}

@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { exists = SLA }
+			NOT = { tag = HRE }
 			OR = {
 				culture_group = west_slavic
 				culture_group = east_slavic

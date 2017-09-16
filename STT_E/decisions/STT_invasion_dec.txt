@@ -419,7 +419,7 @@ country_decisions = {
 		}
 		
 		effect = {
-		    add_years_of_income = 1.25
+		    add_years_of_income = 1.75
 		    add_adm_power = -200
 			add_dip_power = -200
 			add_meritocracy = -10
@@ -466,12 +466,12 @@ country_decisions = {
 		}
 		
 		allow = {
-		    years_of_income = 2.0
+		    years_of_income = 1.75
 			ADM = 3
 		}
 		
 		effect = {
-		    add_years_of_income = -2.0
+		    add_years_of_income = -1.75
 			add_country_modifier = {
 			    name = "YUA_working_process"
 				duration = 1825
