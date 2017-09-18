@@ -21,7 +21,7 @@ discovered_by = ottoman
 1408.1.1 = { controller = PAP owner = PAP }
 1414.8.6 = { controller = RMG owner = RMG }
 1503.9.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Loss of Papal authority after the death of Alexander III, Venetian influence
-1506.1.1 = { controller = PAP owner = PAP }
+1506.1.1 = { controller = PAP owner = PAP revolt = { } }
 1797.6.29 = {
 	owner = FRA
 	controller = FRA
@@ -38,6 +38,7 @@ discovered_by = ottoman
 	controller = PAP
 	add_core = PAP
 	remove_core = ITA
+	remove_core = FRA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 1861.3.14 = {
 	add_core = ITA

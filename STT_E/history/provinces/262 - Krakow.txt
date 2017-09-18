@@ -43,11 +43,17 @@ add_permanent_province_modifier = {
 1794.3.24 = { unrest = 5 } # Kosciuszko uprising
 1794.11.16 = { unrest = 0 } # The end of the uprising
 1795.10.24 = { owner = HAB controller = HAB add_core = HAB } # Third partition
+1806.7.12 = {
+	owner = AEM
+	controller = AEM
+	add_core = AEM
+	remove_core = HAB
+}
 1807.7.9 = {
 	owner = POL
 	controller = POL
 	add_core = POL
-	remove_core = HAB
+	remove_core = AEM
 } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
 1815.5.3 = {
 	owner = KRA

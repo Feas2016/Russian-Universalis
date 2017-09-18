@@ -1241,3 +1241,82 @@ ORK_ideas = {
 	}
 }	
 
+BLG_ideas = {
+	start = {
+		legitimacy = 1
+		stability_cost_modifier = -0.10
+	}
+
+	bonus = {
+		trade_steering = 0.33
+	}
+	
+	trigger = {
+		tag = BLG
+	}
+	free = yes		#wibe added at load.
+	
+	good_relationship = {
+		diplomatic_upkeep = 1
+		diplomatic_reputation = 1
+	}
+	german_workshop = {
+		production_efficiency = 0.15
+	}
+	new_coast = {
+		global_colonial_growth = 20
+	}
+	german_tradition = {
+		infantry_power = 0.10
+		army_tradition = 0.5
+	}
+	desire_for_freedom = {
+		enemy_core_creation = 0.5
+	}
+	neutrality = {
+		improve_relation_modifier = 0.2
+	}
+	universities = {
+		global_institution_spread = 0.15
+		idea_cost = -0.05
+	}
+}
+
+JPE_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		discipline = 0.05
+	}
+	
+	bonus = {
+		infantry_power = 0.15
+	}
+	
+	trigger = {
+		tag = JAP
+	}
+	free = yes
+	
+	jap_unification_under_the_emperor = {
+		global_unrest = -2
+	}
+	reformed_land_holding = {
+		global_manpower_modifier = 0.2
+	}
+	jap_modernization = {
+		technology_cost = -0.05
+		global_institution_spread = 0.1
+	}
+	jap_maritime_legacy = {
+		ship_durability = 0.1
+	}
+	jap_land_of_the_rising_sun = {
+		prestige = 1
+	}
+	jap_kaitakudan = {
+		global_colonial_growth = 20
+	}
+	jap_great_power_diplomacy = {
+		ae_impact = -0.15
+	}
+}

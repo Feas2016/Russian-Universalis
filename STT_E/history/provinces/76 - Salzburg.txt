@@ -29,7 +29,10 @@ discovered_by = ottoman
 	add_core = HAB
 	remove_core = ETR
 } # Treaty of Pressburg, annexed by Habsburg
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1806.7.12 = { hre = no 
+    owner = AEM
+	controller = AEM
+	add_core = AEM } # The Holy Roman Empire is dissolved
 1809.10.14 = {
 	owner = BAV
 	controller = BAV

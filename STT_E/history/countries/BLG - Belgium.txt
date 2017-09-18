@@ -1,0 +1,58 @@
+government = constitutional_republic
+government_rank = 2
+technology_group = western
+primary_culture = flemish
+add_accepted_culture = wallonian
+religion = catholic
+capital = 92	# Brussel
+
+1830.8.25 = {
+	monarch = {
+		name = "Временное правительство"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1831.6.4 = {
+	monarch = {
+		name = "Леопольд I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1790.12.16
+		dip = 4
+		adm = 3
+		mil = 5
+	}
+}
+
+1831.6.4 = {
+	government = constitutional_monarchy
+}
+
+1835.4.9 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name = "Леопольд II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1835.4.9
+		death_date = 1909.12.17
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1865.12.17 = {
+	monarch = {
+		name = "Леопольд II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1835.4.9
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
