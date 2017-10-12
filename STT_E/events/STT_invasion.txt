@@ -90,9 +90,9 @@ country_event = {
 	
 	trigger = {
 	    tag = BYZ
-		NOT = { war_with = TUR }
+		NOT = { war_with = TU0 }
 		NOT = { started_in = 1330.1.1 }
-		TUR = {
+		TU0 = {
 		    exists = yes
 			NOT = { num_of_cities = 2 } 
 		}
@@ -112,11 +112,11 @@ country_event = {
 				            province_id = 2299
 				    }
 				}
-				add_claim = TUR
+				add_claim = TU0
 			}
 		}
 		   
-		TUR = {
+		TU0 = {
 			country_event = { id = stt_wek.4 }
 	    }
 	}
@@ -169,7 +169,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    tag = TUR
+	    tag = TU0
 		NOT = { is_year = 1350 }
 		NOT = { has_country_modifier = TUR_timariot_system }
 	}
@@ -278,3 +278,113 @@ country_event = {
 		declare_war = KNI
 	}
 }	
+
+#colonial growth
+
+province_event = {
+    id = stt_wek.7
+	title = stt_wek.7.t
+	desc = stt_wek.7.d
+	
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+	    OR = {
+		    continent = north_america
+			continent = south_america
+		}
+		NOT = { development = 25 }
+		OR = {
+		    owner = {
+			    is_colonial_nation = yes
+			}
+			is_colony = yes
+			AND = {
+			    owner = {
+				    OR = {
+			            capital_scope = {
+				            continent = north_america
+				        }
+					    capital_scope = {
+				            continent = south_america
+				        }
+				    }
+					technology_group = western
+			    }
+			}
+	    }
+	}
+	
+	mean_time_to_happen = {
+	    months = 7500
+		modifier = {
+		    factor = 0.30
+			has_province_modifier = important_natural_harbor
+		}
+		modifier = {
+		    factor = 0.60
+			has_province_modifier = minor_river_estuary_modifier
+		}
+		modifier = {
+		    factor = 0.50
+			has_province_modifier = minor_coastal_center_of_trade_modifier
+		}
+		modifier = {
+		    factor = 0.30
+			has_province_modifier = major_coastal_center_of_trade_modifier
+		}
+		modifier = {
+		    factor = 0.50
+			has_province_modifier = major_river_estuary_modifier
+		}
+		modifier = {
+		    factor = 0.50
+			has_province_modifier = major_inland_center_of_trade_modifier
+		}
+		modifier = {
+		    factor = 0.60
+			has_province_modifier = minor_inland_center_of_trade_modifier
+		}
+		modifier = {
+		    factor = 0.70
+			OR = {
+			    has_terrain = coastline
+				has_terrain = farmlands
+				has_terrain = grasslands
+				has_terrain = steppe
+				has_terrain = savannah
+			}
+		}
+		modifier = {
+		    factor = 4
+			OR = {
+			    has_terrain = hills
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = desert_mountain
+			}
+		}
+		modifier = {
+		    factor = 4000
+			OR = {
+			    has_terrain = glacier
+				has_terrain = desert
+			}
+		}
+		modifier = {
+		    factor = 0.75
+			NOT = { development = 10 }
+		}
+		modifier = {
+		    factor = 0.80
+			has_port = yes
+		}
+	}
+	
+	option = {
+	    name = stt_wek.7.a
+		add_base_manpower = 1
+	    add_base_tax = 1
+	    add_base_production = 1
+	}
+}

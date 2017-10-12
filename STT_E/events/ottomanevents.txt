@@ -7,7 +7,7 @@ country_event = {
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	trigger = {		
-		tag = TUR
+		OR = { tag = TUR tag = TU0 }
 		religion_group = muslim
 		is_month = 7		
 		NOT = { is_month = 9 }
@@ -48,7 +48,7 @@ country_event = {
 
 
 	trigger = { 
-		tag = TUR	
+		OR = { tag = TUR tag = TU0 }
 	}
 
 	mean_time_to_happen = {
@@ -85,7 +85,7 @@ country_event = {
 	picture = INVENTION_eventPicture
 	
 	trigger = { 
-		tag = TUR	
+		OR = { tag = TUR tag = TU0 }	
 	}
 
 	mean_time_to_happen = {
@@ -172,7 +172,7 @@ country_event = {
 	
 
 	trigger = { 
-		tag = TUR	
+		OR = { tag = TUR tag = TU0 }	
 	}
 
 	mean_time_to_happen = {

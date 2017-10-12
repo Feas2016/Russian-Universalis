@@ -227,11 +227,11 @@ country_event = {
 			owns = 148
 		}
 		started_in = 1400.1.1 #STT
-		serbia_area = { type = all NOT = { owned_by = TUR }}
+		serbia_area = { type = all NOT = { owned_by = TU0 }}
 		### STT
-		bosnia_area = { type = all NOT = { owned_by = TUR }}
-		croatia_area = { type = all NOT = { owned_by = TUR }}
-		east_adriatic_coast_area = { type = all NOT = { owned_by = TUR }}
+		bosnia_area = { type = all NOT = { owned_by = TU0 }}
+		croatia_area = { type = all NOT = { owned_by = TU0 }}
+		east_adriatic_coast_area = { type = all NOT = { owned_by = TU0 }}
 	}
 	
 	mean_time_to_happen = {
@@ -263,10 +263,10 @@ country_event = {
 			owns = 1764
 		}
 		started_in = 1400.1.1 #STT
-		bulgaria_area = { type = all NOT = { owned_by = TUR }}
-		wallachia_area = { type = all NOT = { owned_by = TUR }}
-		macedonia_area = { type = all NOT = { owned_by = TUR }}
-		albania_area = { type = all NOT = { owned_by = TUR }}
+		bulgaria_area = { type = all NOT = { owned_by = TU0 }}
+		wallachia_area = { type = all NOT = { owned_by = TU0 }}
+		macedonia_area = { type = all NOT = { owned_by = TU0 }}
+		albania_area = { type = all NOT = { owned_by = TU0 }}
 	}
 	
 	mean_time_to_happen = {
@@ -299,7 +299,7 @@ country_event = {
 			owns = 326
 			owns = 329
 		}
-		anatolia_region = { type = all NOT = { owned_by = TUR }}
+		anatolia_region = { type = all NOT = { owned_by = TU0 }}
 	}
 	
 	mean_time_to_happen = {

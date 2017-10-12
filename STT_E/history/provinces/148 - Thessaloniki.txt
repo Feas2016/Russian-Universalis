@@ -10,8 +10,8 @@ hre = no
 base_tax = 5 
 base_production = 5
 base_manpower = 3
-is_city = yes
 fort_15th = yes
+is_city = yes
 add_core = BYZ
 discovered_by = western
 discovered_by = eastern
@@ -28,10 +28,11 @@ add_permanent_province_modifier = {
 	duration = -1
 } 
  
-1387.1.1 = { owner = TUR controller = TUR add_core = TUR }  
+1387.1.1 = { owner = TU0 controller = TU0 add_core = TU0 }  
 1405.1.1 = { owner = BYZ controller = BYZ } # Restored to the Byzantines
 1423.1.1 = { owner = VEN controller = VEN } # Sold to Venice by the weakening Byzantines
-1430.3.29 = { owner = TUR controller = TUR } # Finally conquered by Murad II 
+1430.3.29 = { owner = TU0 controller = TU0 } # Finally conquered by Murad II 
+1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 }
 1502.1.1 = { remove_core = BYZ }
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance
 1556.1.1 = { unrest = 0 }
@@ -42,4 +43,3 @@ base_production = 4 } # The Decentralizing Effect of the Provincial System
  # The situation began to stabilize, Greek pop. returned
 1689.1.1 = { revolt = { type = nationalist_rebels size = 1.5 } controller = REB } # Karposh uprising against Ottoman rule
 1690.1.1 = { revolt = {} controller = TUR }
-1913.5.30 = { add_core = GRE owner = GRE controller = GRE remove_core = TUR }
