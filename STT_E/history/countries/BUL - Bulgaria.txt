@@ -231,7 +231,7 @@ government_rank = 1
 }
 
 919.1.1 = {
-government_rank = 3
+government_rank = 2
 }
 
 927.5.27 = {
@@ -730,34 +730,60 @@ government_rank = 1
 1879.5.11 = {
 	monarch = {
 		name = "Александр I"
-		dynasty = "Баттенберг"
+		dynasty = "фон Баттенберг"
 		birth_date = 1857.4.17
-		death_date = 1893.11.4
 		adm = 2
 		dip = 4
 		mil = 3
 	} government = administrative_monarchy
 }
 
+1879.5.11 = {
+	queen = {
+		country_of_origin = DUA
+		name = "Иоганна"
+		dynasty = "Лойзингер"
+		birth_date = 1865.4.18
+		death_date = 1886.9.19 #1951.7.11
+		female = yes
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
 1886.9.19 = {
 	monarch = {
-		name = "Междуцарствие"
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
 		regent = yes
-		adm = 2
-		dip = 2
-		mil = 2
 	}
 }
 
 1887.7.7 = {
 	monarch = {
-		name = "Фердинант I"
-		dynasty = "Саксен-Кобург-Гота"
+		name = "Фердинанд I"
+		dynasty = "фон Саксен-Кобург-Гота"
 		birth_date = 1861.2.26
-		death_date = 1948.9.10
 		adm = 3
 		dip = 3
 		mil = 4
+	}
+}
+
+1893.4.20 = {
+	queen = {
+		country_of_origin = ITA
+		name = "Мария Луиза"
+		dynasty = "де Бурбон-Парма"
+		birth_date = 1870.1.17
+		death_date = 1899.1.31
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
 	}
 }
 
@@ -765,16 +791,80 @@ government_rank = 1
 	heir = {
 		name = "Борис"
 		monarch_name = "Борис III"
-		dynasty = "Саксен-Кобург-Гота"
+		dynasty = "фон Саксен-Кобург-Гота"
 		birth_date = 1894.1.30
 		death_date = 1943.8.28
 		claim = 95
-		adm = 1
-		dip = 1
+		adm = 3
+		dip = 3
 		mil = 1
 	}
 }
 
-1908.10.5 = {
-    government_rank = 3
+1908.2.28 = {
+	queen = {
+		country_of_origin = PRU
+		name = "Элеонора"
+		dynasty = "фон Рейсс-Кёстриц"
+		birth_date = 1860.8.22
+		death_date = 1917.9.12
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1908.9.22 = {
+government_rank = 2
+}
+
+1918.10.3 = {
+	monarch = {
+		name = "Борис III"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1894.1.30
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1930.10.1 = {
+	queen = {
+		country_of_origin = ITA
+		name = "Йоанна"
+		dynasty = "ди Савойя"
+		birth_date = 1907.11.17
+		death_date = 1943.8.28 #2000.2.26
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1937.6.16 = {
+	heir = {
+		name = "Симеон"
+		monarch_name = "Симеон II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1937.6.16
+		death_date = 3000.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1943.8.28 = {
+	monarch = {
+		name = "Симеон II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1937.6.16
+		adm = 4
+		dip = 2
+		mil = 3
+	}
 }

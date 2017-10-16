@@ -68,14 +68,40 @@ capital = 143 # Durrлs,Tirana
 	}
 }
 
-1912.11.17 = { religion = sunni government = administrative_monarchy }
+1912.11.17 = { religion = sunni government = administrative_republic }
 
 1912.11.28 = {
 	monarch = {
-		name = "Междуцарствие"
-		regent = yes
-		adm = 2
-		dip = 2
+		name = "Исмаил Кемали"
+		birth_date = 1844.1.16		
+		adm = 4
+		dip = 4
 		mil = 2
 	}
 }
+
+1914.3.7 = {
+	monarch = {
+		name = "Скандербег II"
+		dynasty = "цу Вид"
+		birth_date = 1876.3.26		
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1914.3.7 = {
+	heir = {
+		name = "Кароль Виктор"
+		monarch_name = "Скандер I"
+		birth_date = 1913.5.13
+		death_date = 1973.12.8
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1914.3.7 = { government_rank = 1 government = administrative_monarchy }

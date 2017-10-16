@@ -17,7 +17,49 @@ capital = 161	# Tоrgoviste
 	}
 }
 
+1869.1.1 = {
+	queen = {
+		country_of_origin = PRU
+		name = "Елизавета"
+		dynasty = "цу Вид"
+		birth_date = 1843.12.29
+		death_date = 1914.10.10 #1916.2.18
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
 1866.5.10 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name = "Леопольд I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1835.9.22
+		death_date = 1905.6.8
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1880.11.22 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1864.3.7
+		death_date = 1927.10.22
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1886.12.20 = {
 	heir = {
 		name = "Фердинанд"
 		monarch_name = "Фердинанд I"
@@ -28,5 +70,105 @@ capital = 161	# Tоrgoviste
 		adm = 3
 		dip = 5
 		mil = 3
+	}
+}
+
+1914.10.10 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1865.8.24
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1914.10.10 = {
+	queen = {
+		country_of_origin = GBR
+		name = "Мария"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1875.10.29
+		death_date = 1927.7.20 #1938.7.18
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1914.10.10 = {
+	heir = {
+		name = "Кароль"
+		monarch_name = "Кароль II"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1893.10.15
+		death_date = 1953.4.4
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1925.12.28 = {
+	heir = {
+		name = "Михай"
+		monarch_name = "Михай I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1921.10.25
+		death_date = 3000.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1927.7.20 = {
+	monarch = {
+		name = "Михай I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1921.10.25
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1930.6.8 = {
+	monarch = {
+		name = "Кароль II"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1893.10.15
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1930.6.8 = {
+	heir = {
+		name = "Михай"
+		monarch_name = "Михай I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1921.10.25
+		death_date = 3000.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1940.9.6 = {
+	monarch = {
+		name = "Михай I"
+		dynasty = "фон Гогенцоллерн-Зигмаринген"
+		birth_date = 1921.10.25
+		adm = 1
+		dip = 3
+		mil = 1
 	}
 }

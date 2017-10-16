@@ -945,17 +945,142 @@ national_focus = DIP
 	}
 }
 
-1834.5.26 = {
+1836.4.9 = {
+	queen = {
+		country_of_origin = AEM
+		name = "Фердинанд"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1816.10.29
+		death_date = 1885.12.15
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1837.9.16 = {
+	queen = {
+		country_of_origin = AEM
+		name = "Фернанду II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1816.10.29
+		death_date = 1885.12.15
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1837.9.16 = {
 	heir = {
 		name = "Педру"
 		monarch_name = "Педру V"
-		dynasty = "фон Саксен-Кобург-Гота"
-		birth_date = 1834.5.26
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1837.9.16
 		death_date = 1861.11.11
 		claim = 75
 		adm = 2
 		dip = 2
 		mil = 3
-		female = yes
+	}
+}
+
+1853.11.15 = {
+	monarch = {
+		name = "Педру V"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1837.9.16
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1837.9.16 = {
+	heir = {
+		name = "Луиш"
+		monarch_name = "Луиш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1838.10.31
+		death_date = 1889.10.19
+		claim = 75
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1861.11.11 = {
+	monarch = {
+		name = "Луиш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1837.9.16
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1863.9.28 = {
+	heir = {
+		name = "Карлуш"
+		monarch_name = "Карлуш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1863.9.28
+		death_date = 1908.2.1
+		claim = 75
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1889.10.19 = {
+	monarch = {
+		name = "Карлуш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1863.9.28
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1889.10.19 = {
+	heir = {
+		name = "Луиш Филипе"
+		monarch_name = "Луиш II"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1887.3.21
+		death_date = 1908.2.1
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1908.2.1 = {
+	monarch = {
+		name = "Мануэл II"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1889.3.19
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1908.2.1 = {
+	heir = {
+		name = "Афонсу"
+		monarch_name = "Афонсу VII"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1865.7.31
+		death_date = 1920.2.21
+		claim = 75
+		adm = 4
+		dip = 5
+		mil = 3
 	}
 }

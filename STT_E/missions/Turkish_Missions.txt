@@ -2030,39 +2030,38 @@ conquer_bulgaria = {
 }
 
 conquer_angora = {
-	
-	type = country
+type = country
 
 	category = MIL
 	ai_mission = yes
 	
 	target_provinces = {
-		owned_by = TNA
+		province_id = 326
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
 	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
-		NOT = { has_country_modifier = military_victory }
-		is_free_or_tributary_trigger = yes
-		TNA = {
-			is_neighbor_of = ROOT
-			NOT = { alliance_with = ROOT }
-			NOT = { is_subject_of = ROOT }
-			NOT = { overlord_of = ROOT }
-		}
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = TNA }
-			any_target_province = {
-				NOT = { owned_by = ROOT }
-				NOT = { owned_by = TNA }
+		OR = { owns = 316 owns = 2296}
+		326 = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
+				NOT = { alliance_with = ROOT }
 			}
 		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
-		NOT = { exists = TNA }
 		all_target_province = {
 			owned_by = ROOT
 		}
@@ -2070,9 +2069,17 @@ conquer_angora = {
 	chance = {
 		factor = 2500
 		modifier = {
-			factor = 3
-			NOT = { has_opinion = { who = TNA value = 0 } }
+			factor = 5
+			owns = 316
 		}
+		modifier = {
+			factor = 10
+			owns = 2299
+		}
+		modifier = {
+			factor = 10
+			owns = 323
+		}		
 	}
 	immediate = {
 		every_target_province = {
@@ -2081,14 +2088,7 @@ conquer_angora = {
 	}
 	abort_effect = {
 		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
+			remove_claim = ROOT
 		}
 	}
 	effect = {
@@ -2327,9 +2327,9 @@ conquer_kastamonu = {
 	
 	target_provinces = {
 		OR = {
-			province_id = 2296
-			province_id = 3107
-			province_id = 3107
+			province_id = 2299
+			province_id = 316
+			province_id = 325
 		}
 		owner = {
 			NOT = { is_subject_of = ROOT }

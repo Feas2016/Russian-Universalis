@@ -12,6 +12,7 @@ capital = 465	# Saraycik
 	monarch = {
 		name = "Едигей"
 		dynasty = "Едигеид"
+		birth_date = 1352.1.1
 		adm = 0
 		dip = 3
 		mil = 2
@@ -21,7 +22,7 @@ capital = 465	# Saraycik
 
 1412.1.1 = {
 	monarch = {
-		name = "Батыр"
+		name = "Нураддин"
 		dynasty = "Едигеид"
 		adm = 3
 		dip = 2
@@ -36,7 +37,7 @@ capital = 465	# Saraycik
 		adm = 2
 		dip = 3
 		mil = 3
-		leader = { name = "Мансур"		type = general	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 1 }
+		leader = { name = "Мансур-бий"		type = general	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 1 }
 	}
 }
 
@@ -47,7 +48,7 @@ capital = 465	# Saraycik
 		adm = 1
 		dip = 3
 		mil = 2
-		leader = { name = "Гази"		type = general	rank = 0	fire = 2	shock = 1	manuever = 2	siege = 1 }
+		leader = { name = "Гази-бий"		type = general	rank = 0	fire = 2	shock = 1	manuever = 2	siege = 1 }
 	}
 }
 
@@ -55,9 +56,24 @@ capital = 465	# Saraycik
 	monarch = {
 		name = "Ваккас"
 		dynasty = "Едигеид"
+		birth_date = 1400.1.1
 		adm = 2
 		dip = 2
 		mil = 1
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Хорезми"
+		monarch_name = "Хорезми"
+		dynasty = "Едигеид"
+		birth_date = 1440.1.1
+		death_date = 1473.1.1
+		claim = 75
+		dip = 3
+		adm = 2
+		mil = 2
 	}
 }
 
@@ -65,6 +81,7 @@ capital = 465	# Saraycik
 	monarch = {
 		name = "Хорезми"
 		dynasty = "Едигеид"
+		birth_date = 1440.1.1
 		adm = 3
 		dip = 2
 		mil = 2
@@ -75,13 +92,14 @@ capital = 465	# Saraycik
 	monarch = {
 		name = "Аббас"
 		dynasty = "Едигеид"
+		birth_date = 1300.1.1
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 }
 
-1491.1.1 = {
+1492.6.1 = {
 	monarch = {
 		name = "Муса"
 		dynasty = "Едигеид"
@@ -113,7 +131,7 @@ capital = 465	# Saraycik
 
 1508.1.1 = {
 	monarch = {
-		name = "Шейх Мухаммед"
+		name = "Шейх Мухаммад"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -133,7 +151,17 @@ capital = 465	# Saraycik
 
 1516.1.1 = {
 	monarch = {
-		name = "Шейх Мухамад"
+		name = "Шейх Мухаммад"
+		dynasty = "Едигеид"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1521.1.1 = {
+	monarch = {
+		name = "Агиш"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -143,7 +171,7 @@ capital = 465	# Saraycik
 
 1524.1.1 = {
 	monarch = {
-		name = "Сеид-Ахмед"
+		name = "Сайид Ахмад"
 		dynasty = "Едигеид"
 		adm = 3
 		dip = 2
@@ -183,7 +211,7 @@ capital = 465	# Saraycik
 
 1563.1.1 = {
 	monarch = {
-		name = "Дин Ахмед"
+		name = "Тинехмат"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -203,7 +231,7 @@ capital = 465	# Saraycik
 
 1590.1.1 = {
 	monarch = {
-		name = "Ураз Мухаммед"
+		name = "Ураз Мухаммад"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -213,7 +241,7 @@ capital = 465	# Saraycik
 
 1598.1.1 = {
 	monarch = {
-		name = "Дин Мухаммед"
+		name = "Дин Мухаммад"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -223,7 +251,7 @@ capital = 465	# Saraycik
 
 1600.1.1 = {
 	monarch = {
-		name = "Иштерек"
+		name = "Иштеряк"
 		dynasty = "Едигеид"
 		adm = 1
 		dip = 1
@@ -231,7 +259,7 @@ capital = 465	# Saraycik
 	}
 }
 
-1619.11.1 = {
+1619.3.1 = {
 	monarch = {
 		name = "Канай"
 		dynasty = "Едигеид"
@@ -242,3 +270,13 @@ capital = 465	# Saraycik
 }
 
 # Nogai Horde destroyed by Kalmuks in 1634
+
+1635.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
