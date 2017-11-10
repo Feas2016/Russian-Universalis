@@ -29,8 +29,12 @@ estate_cossacks =
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { government = celestial_empire }
-		unit_type = eastern
 		religion_group = christian
+		OR = {
+			has_country_flag = oldcossacks			
+			unit_type = eastern				
+		}
+		
 	}
 	
 	# If true, province can be granted to estate

@@ -89,10 +89,14 @@ western_unit = {
 		effect = {
 			add_treasury = -2500
 			add_mil_power = -500
+			if = { 
+					limit = { has_estate = estate_cossacks }
+					set_country_flag = oldcossacks
+				}			
 			add_country_modifier = {
 				name = "westernised"
 				duration = 3650
-			}
+			}			
 			random_list = {
                 25 = {
                     country_event  = { id = STT_new_engine.60010 }
