@@ -32,7 +32,9 @@ rus_government = {
 			yearly_absolutism = 0.3
 		}
 	}
-	has_russian_abilities = yes
+	government_abilities = {
+		russian_mechanic
+	}
 	claim_states = yes
 }
 rus_imperial_government = {
@@ -70,8 +72,9 @@ rus_imperial_government = {
 			yearly_absolutism = 0.3
 		}
 	}
-	
-	has_russian_abilities = yes
+	government_abilities = {
+		russian_mechanic
+	}
 	claim_states = yes
 }
 

@@ -241,7 +241,25 @@ guiTypes = {
 			}
 			position = { x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
-
+		}
+		iconType =
+		{
+			name ="CoCbackground"
+			if_resolution = {
+            max_height = 867
+			spriteType = "GFX_country_military_view_bg_ap"
+            }
+            if_resolution = {
+			min_height = 868
+			max_height = 1047
+			spriteType = "GFX_country_military_view_bg_ap_large"
+            }
+            if_resolution = {
+			min_height = 1048
+			spriteType = "GFX_country_military_view_bg_ap_huge"
+			}
+			position = { x= -7 y = -10 }
+			Orientation = "UPPER_LEFT"
 		}
 		
 		guiButtonType = {
@@ -1602,20 +1620,68 @@ guiTypes = {
 		guiButtonType =	{
 			name = "mothball_all"
 			quadTextureSprite= "GFX_mothball_all_forts_button"
-			position = { x= 21 y = 510 } # Сдвинул вправо
+			
+			if_resolution = {
+            max_height = 867
+			position = { x=60 y =507 }
+            }
+            if_resolution = {
+			min_height = 868
+			max_height = 1047
+			position = { x=11 y =511 }
+            }
+            if_resolution = {
+			min_height = 1048
+			position = { x=11 y =511 }
+			}			
+			
 		}
 		
 		guiButtonType =	{
 			name = "activate_all"
 			quadTextureSprite= "GFX_activate_all_forts_button"
-			position = { x= 73 y = 510 } # Сдвинул вправо
-		}
 
+			if_resolution = {
+            max_height = 867
+			position = { x=108 y =507 }
+            }
+            if_resolution = {
+			min_height = 868
+			max_height = 1047
+			position = { x=61 y =511 }
+            }
+            if_resolution = {
+			min_height = 1048
+			position = { x=61 y =511 }
+			}
+			
+		}
+		
+		guiButtonType =	{
+			name = "slacken_button"
+			quadTextureSprite= "GFX_slacken_button"
+
+			if_resolution = {
+            max_height = 867
+			position = { x=157 y =507 }
+            }
+            if_resolution = {
+			min_height = 868
+			max_height = 1047
+			position = { x=111 y =511 }
+            }
+            if_resolution = {
+			min_height = 1048
+			position = { x=111 y =511 }
+			}
+			
+		}
+		
 		guiButtonType = {
 			name ="automatic_full_maintenance_checkbox"
 			if_resolution = {
             max_height = 867
-			position = { x=208 y =524 }
+			position = { x=208 y =514 }
             }
             if_resolution = {
 			min_height = 868
@@ -1638,7 +1704,7 @@ guiTypes = {
 			name = "automatic_full_maintenance_label"
 			if_resolution = {
             max_height = 867
-			position = { x=228 y =524 }
+			position = { x=228 y =513 }
 			maxWidth = 300
 			maxHeight = 40
             }
@@ -1646,13 +1712,13 @@ guiTypes = {
 			min_height = 868
 			max_height = 1047
 			position = { x=32 y =560 }
-			maxWidth = 160
+			maxWidth = 164
 			maxHeight = 120			
             }
             if_resolution = {
 			min_height = 1048
 			position = { x=32 y =560 }
-			maxWidth = 160
+			maxWidth = 164
 			maxHeight = 120
 			}				
 			textureFile = ""
@@ -1661,6 +1727,40 @@ guiTypes = {
 			text = "AUTOMATIC_MAINTENANCE"	
 			format = left
 			fixedsize = yes
+		}
+
+		windowType = {
+			name = "army_professionalism"
+			backGround =""
+			position = { x=32 y=96 }	
+			size = { x=280 y=16 } # Most of the rest of the military view will move down by the vertical size of this window if Cradle is enabled
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+
+			iconType = {
+				name ="army_professionalism_progress"
+				spriteType = "GFX_army_professionalism_bar"
+				position = { x= 16 y = 4 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			iconType = {
+				name ="army_professionalism_progress_frame"
+				spriteType = "GFX_army_professionalism_bar_frame"
+				position = { x= -20 y = -24 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType = {
+				name ="army_professionalism_icon"
+				spriteType = "GFX_army_professionalism_icon"
+				position = { x= -14 y = -16 }
+				Orientation = "UPPER_LEFT"
+			}
+
+
 		}
 	}
 
@@ -1740,7 +1840,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "MILVIEW_SHOW_OUTDATED_UNITS"	
-			maxWidth = 180 # Увеличил на 20
+			maxWidth = 180 # РЈРІРµР»РёС‡РёР» РЅР° 20
 			maxHeight = 20
 			format = left
 			fixedsize = yes
@@ -1887,5 +1987,13 @@ guiTypes = {
 			fixedsize = yes
 		
 		}
+	}
+
+	iconType = 
+	{
+		name = "professionalism_marker_template"
+		spriteType = "GFX_professionalism_marker"
+		position = { x = 5 y = -1 }
+		Orientation = "UPPER_LEFT"
 	}
 }

@@ -48,6 +48,9 @@ country_decisions = {
 			owns_core_province = 186	# Champagne		
 		}
 		effect = {
+			183 = { #Paris
+				move_capital_effect = yes
+			}
 			change_tag = FRA
 			if = {
 				limit = {
@@ -79,9 +82,6 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			FRA = {
-				set_capital = 183
-			}
 			if = {
 				limit = {
 					has_custom_ideas = no

@@ -335,7 +335,7 @@ national_focus = MIL
 	}
 }
 
-1422.1.1 = { leader = {	name = "Альваро де Луна"	type = general	rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }
+1422.1.1 = { leader = {	name = "Альваро де Луна"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.6.2 } }
 
 
 1425.1.5 = {
@@ -409,10 +409,10 @@ national_focus = MIL
 	}
 }
 
-1491.1.1 = { leader = {	name = "Фадрике Ал. де Толедо"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
+1491.1.1 = { leader = {	name = "Фадрике Ал. де Толедо"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
 1492.1.1 = {
-	leader = {	name = "Христофор Колумб"       	type = explorer	rank = 7	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 }
+	leader = {	name = "Христофор Колумб"       	type = explorer	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1506.5.20 }
 	set_global_flag = columbus_happened
 }
 
@@ -422,15 +422,15 @@ national_focus = MIL
 
 #1493.1.1 = { decision = colonial_expansion }
 
-1495.1.1 = { leader = {	name = "Гонсало Великий Капитан"       	type = general	rank = 1	fire = 6	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.2 } }
+1495.1.1 = { leader = {	name = "Гонсало Великий Капитан"       	type = general	fire = 6	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.2 } }
 
-#1499.1.1 = { leader = {	name = "Висенте Яньес Пинсон"	type = explorer	rank = 8	fire = 2	shock = 3	manuever = 6	siege = 0	death_date = 1516.1.23 } } # Removed /SWЦ
+#1499.1.1 = { leader = {	name = "Висенте Яньес Пинсон"	type = explorer	fire = 2	shock = 3	manuever = 6	siege = 0	death_date = 1516.1.23 } } # Removed /SWЦ
 
-1499.1.1 = { leader = {	name = "Алонсо де Охеда"       	type = conquistador	rank = 7	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1515.1.1 } }
+1499.1.1 = { leader = {	name = "Алонсо де Охеда"       	type = conquistador	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1515.1.1 } }
 
-1499.1.1 = { leader = {	name = "Америго Веспуччи"      	type = explorer	rank = 11	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1500.12.30 } }
+1499.1.1 = { leader = {	name = "Америго Веспуччи"      	type = explorer1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1500.12.30 } }
 
-#1499.1.1 = { leader = {	name = "Хуан де ла Коса"       	type = explorer	rank = 9	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1510.2.28 } } # Removed /SWЦ
+#1499.1.1 = { leader = {	name = "Хуан де ла Коса"       	type = explorer	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1510.2.28 } } # Removed /SWЦ
 
 #1503.1.1 = { decision = house_of_trade }
 
@@ -457,7 +457,7 @@ national_focus = MIL
 	}
 }
 
-#1506.1.1 = { leader = {	name = "Хуан Диас де Солис"    	type = explorer		rank = 9	fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1516.1.23 } } # Removed /SWЦ
+#1506.1.1 = { leader = {	name = "Хуан Диас де Солис"    	type = explorer		fire = 3	shock = 2	manuever = 5	siege = 0	death_date = 1516.1.23 } } # Removed /SWЦ
 
 1506.9.25 = { capital = 219 } # Toledo
 
@@ -472,11 +472,11 @@ national_focus = MIL
 	}
 }
 
-1509.1.1 = { leader = {	name = "Панфило де Нарваэс"    	type = conquistador	rank = 6	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1509.1.1 = { leader = {	name = "Панфило де Нарваэс"    	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
-1510.1.1 = { leader = {	name = "Васко Нуньес де Бальбоа"	type = conquistador	rank = 7	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
+1510.1.1 = { leader = {	name = "Васко Нуньес де Бальбоа"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
-1512.3.4 = { leader = {	name = "Хуан Понсе де Леон"	type = conquistador	rank = 11	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1512.3.4 = { leader = {	name = "Хуан Понсе де Леон"	type = conquistador1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
 1516.1.23 = { government = despotic_monarchy }
 

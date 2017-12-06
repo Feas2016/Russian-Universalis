@@ -2,7 +2,10 @@ country_decisions = {
 
 	make_constantinople_capital = {
 		potential = {
-			tag = TU0
+			OR = {
+				tag = TU0 #STT
+				tag = RUM
+			}
 			owns = 151
 			NOT = { capital = 151 }
 			NOT = { has_country_flag = relocated_capital_constantinople }
@@ -24,11 +27,11 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = relocated_capital_constantinople
-			change_tag = TUR
+			change_tag = TUR #STT
 			add_stability = 1
-			set_capital = 151
 			add_core = 151
 			151 = {
+				move_capital_effect = yes
 				change_culture = turkish 
 				change_religion = sunni
 				rename_capital = Kostantiniyye
@@ -86,11 +89,14 @@ country_decisions = {
 
 	devshirme_system = {
 		potential = {
-			OR = {
+			OR = { #STT
 				tag = TUR
 				tag = TU0
 			}
+			government = ottoman_government
+			NOT = { has_disaster = janissary_decadence }
 			NOT = { has_country_modifier = the_devshirme_system }
+			NOT = { has_country_flag = lapse_of_devshirme }
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -98,20 +104,20 @@ country_decisions = {
 			}
 		}
 		allow = {
-			MIL = 4
+			MIL = 4 #STT
 			mil_power = 100
-			NOT = {
-				num_of_religion = {
-								religion = sunni
-								value = 0.75
-								}
-			}
 		}
 		effect = {
 			add_mil_power = -100
 			add_country_modifier = {
 				name = "the_devshirme_system"
 				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Cradle of Civilization" }
+				}
+				country_event = { id = flavor_tur.100 days = 4380 }
 			}
 		}
 		ai_will_do = {
@@ -125,21 +131,34 @@ country_decisions = {
 
 
 	disband_the_janissaries = {
+		major = yes
 		potential = {
-			has_country_modifier = tur_janissary
+			has_disaster = janissary_decadence
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
 		}
 		allow = {
 			has_disaster = janissary_decadence
-			
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+			OR = {
+					NOT = { janissary_percentage = 0.05 }
+					NOT = { num_of_janissaries = 3 }
+			}
+		}
 		}
 		effect = {
+			if = {
+				limit = {
+					has_country_modifier = tur_janissary
+				}
 			remove_country_modifier = tur_janissary
+			}
+			else = {
+				set_country_flag = yoklama
+				custom_tooltip = yoklama_effect_tooltip
+			}
 			end_disaster = janissary_decadence
+			country_event = { id = janissary_decadence.100 }
 		}
 		ai_will_do = {
 			factor = 1

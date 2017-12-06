@@ -94,29 +94,17 @@ country_decisions = {
 			adm_power = 200
 			legitimacy = 60
 			stability = 3
-			OR = {
-				full_idea_group = economic_ideas
-				full_idea_group = innovativeness_ideas
-				full_idea_group = administrative_ideas
-			}
-			custom_trigger_tooltip = {
-				tooltip = dlc_or_feudalism_tooltip
-				OR = {
-					AND = {
-						NOT = { has_dlc = "El Dorado" }
-						OR = {
-							religion = nahuatl
-							religion = mesoamerican_religion
-							religion = inti
-						}
-					}
-					NOT = { has_dlc = "Conquest of Paradise" }
+			adm_tech = 8
 					has_institution = feudalism
 				}
-			}
-		}
 		effect = {
-			change_government = feudal_monarchy
+			if = {
+				limit = { religion_group = muslim }
+				change_government = iqta
+			}
+			else = {
+				change_government = despotic_monarchy
+		}
 			add_stability = -5
 			add_adm_power = -200
 			set_country_flag = recently_changed_government_flag
@@ -179,7 +167,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-		    is_year = 1440
+		    is_year = 1440 #STT
 			adm_power = 200
 			legitimacy_or_horde_unity = 60
 			stability = 3

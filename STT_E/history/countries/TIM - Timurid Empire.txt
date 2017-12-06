@@ -1,15 +1,15 @@
-#######################################
-# Timurid Empire
-#######################################
-technology_group = nomad_group
+technology_group = muslim
 primary_culture = uzbehk
+add_accepted_culture = khorasani
 add_accepted_culture = persian
 religion = sunni
-government = steppe_horde
+government = iqta
+government_rank = 3
 capital = 454 # Samarkand 
-historical_rival = TUR
+historical_rival = TUR #STT
 historical_rival = DLH
 historical_rival = MUL
+religious_school = hanafi_school
 
 1370.1.1 = {
 	monarch = {
@@ -18,12 +18,12 @@ historical_rival = MUL
 		adm = 4	
 		dip = 4	
 		mil = 5
-		leader = { name = "Тимур"	type = general	rank = 1	fire = 6	shock = 6	manuever = 6	siege = 2 }
+		leader = { name = "Тимур"	type = general	fire = 6	shock = 6	manuever = 6	siege = 2 }
 	}
 	add_piety = 0.5
 }
 
-1383.1.1 = { leader = {	name = "Мираншах"	type = general	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1408.1.1 } }
+1383.1.1 = { leader = {	name = "Мираншах"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1408.1.1 } }
 
 1384.1.1 = {
 	heir = {
@@ -128,7 +128,7 @@ historical_rival = MUL
 		leader = {	
 			name = "Абу-Саид"
 			type = general
-			rank = 0
+		
 			fire = 3
 			shock = 3
 			manuever = 3
@@ -195,7 +195,7 @@ historical_rival = MUL
 		adm = 5	
 		dip = 5	
 		mil = 6
-		leader = {	name = "Бабур"	type = general	rank = 0	fire = 5	shock = 5	manuever = 3	siege = 1 }
+		leader = {	name = "Бабур"	type = general	fire = 5	shock = 5	manuever = 3	siege = 1 }
 	}
 }
 

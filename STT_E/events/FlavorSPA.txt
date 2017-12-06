@@ -147,7 +147,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels
-				size = 3
+				size = 2
 			}
 		}
 	}
@@ -439,6 +439,8 @@ country_event = {
 		add_papal_influence = 25
 		define_advisor = {
 			type = theologian 
+			culture = basque
+			religion = catholic
 			name = "Игнатий де Лойола"
 			discount = yes
 			skill = 2
@@ -957,6 +959,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Гаспар де Гусман Оливарес"
+			culture = umbrian
 			discount = yes
 			skill = 3
 		}
@@ -1241,6 +1244,8 @@ country_event = {
 		add_dip_power = 100
 		define_advisor = {
 			type = statesman
+			culture = romagnan
+			religion = catholic
 			name = "Хулио Альберони"
 			discount = yes
 			skill = 2
@@ -1274,6 +1279,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Хосе Моньино"
+			culture = andalucian
 			discount = yes
 			skill = 3
 		}
@@ -1725,6 +1731,7 @@ country_event = {
 						province_id = 217
 					}
 					has_seat_in_parliament = no
+					has_estate = yes
 				}
 				set_seat_in_parliament = yes #Has to placate all the local Cortes from now on.
 			}
@@ -2486,13 +2493,13 @@ country_event = {
 	}
 
 	option = {
-		name = flavor_spa.15.a
+		name = flavor_spa.15.b
 		ai_chance = {
 			factor = 15
 		}
 		define_heir = {
 			claim = 100
-dynasty = "фон Габсург"
+			dynasty = "фон Габсург"
 			age = 15
 		}
 		hidden_effect = {

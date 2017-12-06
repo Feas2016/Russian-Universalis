@@ -348,8 +348,8 @@ portugal_discovers_south_america = {
 			num_of_explorers = 1
 		}
 		num_of_ports = 1
-		NOT = { brazil_region = { has_discovered = ROOT } }
-		brazil_region = { range = ROOT }
+		NOT = { colonial_brazil = { has_discovered = ROOT } }
+		colonial_brazil = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -361,7 +361,7 @@ portugal_discovers_south_america = {
 		}
 	}
 	success = {
-		brazil_region = {
+		colonial_brazil = {
 			has_discovered = ROOT
 		}
 	}
@@ -416,7 +416,7 @@ portuguese_brazil = {
 				is_religion_grant_colonial_claim = ROOT
 			}
 		}
-		NOT = { brazil_region = { country_or_vassal_holds = ROOT } }
+		NOT = { colonial_brazil = { country_or_vassal_holds = ROOT } }
 	}
 	abort = {
 		OR = {
@@ -426,13 +426,13 @@ portuguese_brazil = {
 			}
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { brazil_region = { owned_by = ROOT } }
-				NOT = { brazil_region = { is_empty = yes } }
+				NOT = { colonial_brazil = { owned_by = ROOT } }
+				NOT = { colonial_brazil = { is_empty = yes } }
 			}
 		}
 	}
 	success = {
-		brazil_region = {
+		colonial_brazil = {
 			owned_by = ROOT
 			colonysize = 400
 		}
@@ -442,6 +442,16 @@ portuguese_brazil = {
 		modifier = {
 			factor = 2
 			adm = 4
+		}
+		
+		modifier = {
+			factor = 0.5
+			colonial_brazil = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
 		}
 	}
 	effect = {
@@ -459,8 +469,11 @@ brazil_belongs_to_portugal = {
 	
 	category = MIL
 	
+	target_colonial_region_list = {
+		colonial_brazil
+	}
+	
 	target_provinces = {
-		region = brazil_region
 		owned_by = CAS
 	}
 	allow = {
@@ -468,22 +481,22 @@ brazil_belongs_to_portugal = {
 		tag = POR
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		is_free_or_tributary_trigger = yes
-		brazil_region = { owned_by = ROOT }
-		brazil_region = { owned_by = CAS }
+		colonial_brazil = { owned_by = ROOT }
+		colonial_brazil = { owned_by = CAS }
 		NOT = { alliance_with = CAS }
 		NOT = { war_with = CAS }
 	}
 	abort = {
 		OR = {
 			is_subject_other_than_tributary_trigger = yes
-			NOT = { brazil_region = { owned_by = ROOT } }
-			NOT = { brazil_region = { owned_by = CAS } }
+			NOT = { colonial_brazil = { owned_by = ROOT } }
+			NOT = { colonial_brazil = { owned_by = CAS } }
 		}
 	}
 	success = {
 		NOT = { war_with = CAS }
-		NOT = { brazil_region = { owned_by = CAS } }
-		brazil_region = { owned_by = ROOT }
+		NOT = { colonial_brazil = { owned_by = CAS } }
+		colonial_brazil = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 3000
@@ -524,8 +537,11 @@ brazil_to_portugal = {
 	
 	category = MIL
 	
+	target_colonial_region_list = {
+		colonial_brazil
+	}
+	
 	target_provinces = {
-		region = brazil_region
 		owned_by = SPA
 	}
 	allow = {
@@ -533,22 +549,22 @@ brazil_to_portugal = {
 		tag = POR
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		is_free_or_tributary_trigger = yes
-		brazil_region = { owned_by = ROOT }
-		brazil_region = { owned_by = SPA }
+		colonial_brazil = { owned_by = ROOT }
+		colonial_brazil = { owned_by = SPA }
 		NOT = { alliance_with = SPA }
 		NOT = { war_with = SPA }
 	}
 	abort = {
 		OR = {
 			is_subject_other_than_tributary_trigger = yes
-			NOT = { brazil_region = { owned_by = ROOT } }
-			NOT = { brazil_region = { owned_by = SPA } }
+			NOT = { colonial_brazil = { owned_by = ROOT } }
+			NOT = { colonial_brazil = { owned_by = SPA } }
 		}
 	}
 	success = {
 		NOT = { war_with = SPA }
-		NOT = { brazil_region = { owned_by = SPA } }
-		brazil_region = { owned_by = ROOT }
+		NOT = { colonial_brazil = { owned_by = SPA } }
+		colonial_brazil = { owned_by = ROOT }
 	}
 	chance = {
 		factor = 3000
@@ -631,7 +647,7 @@ portugal_discovers_india = {
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			has_idea = land_of_opportunity
@@ -685,7 +701,7 @@ portugal_discovers_indonesia = {
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			innovativeness_ideas = 4
@@ -711,8 +727,20 @@ portuguese_colony_in_indonesia = {
 	
 	category = MIL
 	
+	target_areas_list = {
+		north_sumatra_area
+		central_sumatra_area
+		south_sumatra_area
+		indian_ocean_islands_area
+		tenasserim_area
+		malaya_area
+		north_tenasserim_area
+		malacca_area
+		batak_area
+		minangkabau_area
+	}
+	
 	target_provinces = {
-		region = malaya_region
 		has_discovered = ROOT
 		range = ROOT
 		has_port = yes
@@ -756,7 +784,7 @@ portuguese_colony_in_indonesia = {
 		malaya_region = { owned_by = ROOT }
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			has_idea = land_of_opportunity
@@ -828,7 +856,7 @@ establish_trade_in_indonesian_cot_por = {
 		}
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			has_idea = land_of_opportunity
@@ -884,7 +912,7 @@ portugal_discovers_the_far_east = {
 		south_china_region = { has_discovered = ROOT }
 	}
 	chance = {
-		factor = 1000
+		factor = 2000
 		modifier = {
 			factor = 2
 			innovativeness_ideas = 4
@@ -943,7 +971,7 @@ portugal_discovers_central_africa = { #Actually Kongo
 	}
 	
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			num_of_explorers = 2
@@ -966,8 +994,16 @@ portugal_colonizes_central_africa = { #Kongo or Angola
 	category = DIP
 	ai_mission = yes
 	
+	target_areas_list = {
+		coastal_kongo
+		kongo_area
+		angola_namibia_area
+		matamba_area
+		lower_kasai
+		kasai_area
+	}
+	
 	target_provinces = {
-		region = kongo_region
 		has_port = yes
 		is_empty = yes
 	}
@@ -1000,7 +1036,7 @@ portugal_colonizes_central_africa = { #Kongo or Angola
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			south_africa_region = {
@@ -1060,7 +1096,7 @@ portugal_rounds_cape_of_good_hope = {
 	}
 	
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			num_of_explorers = 1
@@ -1083,8 +1119,16 @@ portugal_trading_post_in_south_africa = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		south_african_plateau_area
+		cape_of_good_hope_area
+		zimbabwe_area
+		quelimane_area
+		butua_area
+		limpopo_area
+	}
+	
 	target_provinces = {
-		region = south_africa_region
 		has_port = yes
 	}
 	allow = {
@@ -1116,7 +1160,7 @@ portugal_trading_post_in_south_africa = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			east_africa_region =  {
@@ -1177,7 +1221,7 @@ portugal_explore_east_africa = {
 	}
 	
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			num_of_explorers = 1
@@ -1200,11 +1244,12 @@ portugal_establish_naval_base_mozambique = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		mozambique_area
+		quelimane_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = mozambique_area
-			area = quelimane_area
-		}
 		has_port = yes
 		is_empty = no
 	}
@@ -1259,7 +1304,7 @@ portugal_establish_naval_base_mozambique = {
 	}
 	
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			NOT = {
@@ -1293,12 +1338,13 @@ portugal_establish_naval_base_zanzibar = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		central_swahili_coast_area
+		northern_swahili_coast_area
+		#mombasa_area STT
+	}
+	
 	target_provinces = {
-		OR = {
-			area = central_swahili_coast_area
-			area = northern_swahili_coast_area
-			#area = mombasa_area #STT
-		}
 		has_port = yes
 	}
 	
@@ -1345,7 +1391,7 @@ portugal_establish_naval_base_zanzibar = {
 	}
 	
 	chance = {
-			factor = 2000
+			factor = 3000
 			modifier = {
 				factor = 2
 				NOT = {
@@ -1417,7 +1463,7 @@ portugal_explore_horn_of_africa = {
 	}
 	
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			num_of_explorers = 1
@@ -1441,12 +1487,13 @@ portugal_establish_naval_base_horn_of_africa = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		mogadishu_area
+		majarteen_area
+		somaliland_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = mogadishu_area
-			area = majarteen_area
-			area = somaliland_area
-		}
 		has_port = yes
 	}
 	
@@ -1494,7 +1541,7 @@ portugal_establish_naval_base_horn_of_africa = {
 	}
 	
 	chance = {
-			factor = 2000
+			factor = 3000
 			modifier = {
 				factor = 2
 				NOT = {
@@ -1516,6 +1563,93 @@ portugal_establish_naval_base_horn_of_africa = {
 		add_country_modifier = {
 			name = sea_route_to_india
 			duration = 3650
+		}
+	}
+}
+
+portugal_conquest_of_hormuz = {
+	
+	type = country
+	
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = {
+		2999
+	}
+	
+	target_provinces = {
+		always = yes
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = POR
+		NOT = { has_country_flag = hormuz_conquered }
+		is_subject = no
+		NOT = {
+			owns = 2999
+		}
+		2999 = {
+			has_discovered = ROOT
+			range = ROOT
+			owner = {
+				is_subject = no
+				NOT = { alliance_with = ROOT }
+				NOT = { num_of_cities = ROOT } #Let's not suicide
+			}
+		}
+	}
+	
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	
+	success = {
+		any_target_province = {
+			owned_by = ROOT
+		}
+	}
+	
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			arabia_region = {
+				owned_by = ROOT
+			}
+		}
+		modifier = {
+			factor = 2
+			horn_of_africa_region = {
+				owned_by = ROOT
+			}
+		}
+	}
+	
+	effect = {
+		set_country_flag = hormuz_conquered
+		add_country_modifier = {
+			name = "por_conquest_of_hormuz"
+			duration = 10950
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = dhofar_area
+					area = mascat_area
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_claim = ROOT }
+			}
+			add_claim = POR
 		}
 	}
 }

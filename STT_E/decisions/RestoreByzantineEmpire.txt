@@ -53,6 +53,9 @@ country_decisions = {
 			is_nomad = no
 		}
 		effect = {
+			151 = {
+				move_capital_effect = yes
+			}
 			change_tag = BYZ
 			every_province = {
 				limit = {
@@ -144,7 +147,6 @@ country_decisions = {
 			}
 			add_prestige = 10
 			BYZ = {
-				set_capital = 151 # Constantinople
 				add_core = 151 # Constantinople
 			}
 			if = {

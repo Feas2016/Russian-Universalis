@@ -96,7 +96,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = streltsy_events.1.b.tt
-		add_support_for_mil_action = -15
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = -15
+		}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -148,7 +152,11 @@ country_event = {
 			factor = 0
 		}
 		custom_tooltip = streltsy_events.1.c.tt
-		add_support_for_mil_action = -15
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = -15
+		}
 		hidden_effect = {
 			country_event = { id = streltsy_events.2 }
 		}
@@ -686,13 +694,18 @@ country_event = {
 		}
 		add_years_of_income = -0.25
 		add_army_tradition = 10
+		add_army_professionalism = 0.01
 	}
 	option = { 
 		name = streltsy_events.3.b #There is no need to be alarmed.
 		ai_chance = {
 			factor = 20
 		}
-		add_support_for_mil_action = -25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = -25
+		}
 	}
 }
 
@@ -732,7 +745,12 @@ country_event = {
 			}
 		} 
 		add_years_of_income = -0.25
-		add_support_for_mil_action = 10
+		add_army_professionalism = 0.01
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 10
+		}
 		add_country_modifier = {
 			name = "streltsy_inspection"
 			duration = 3650
@@ -743,7 +761,11 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		add_support_for_mil_action = -15
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = -15
+		}
 	}
 }
 
@@ -797,11 +819,16 @@ country_event = {
 
 	option = {
 		name = streltsy_events.5.a #
+		add_army_professionalism = 0.01
 		add_country_modifier = {
 			name = "streltsy_garrison"
 			duration = 3650
 		}
-		add_support_for_mil_action = 15
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 15
+		}
 	}
 }
 
@@ -831,12 +858,20 @@ country_event = {
 
 	option = {
 		name = streltsy_events.6.a #
-		add_support_for_mil_action = 25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 25
+		}
 		add_mil_power = -40
 	}
 	option = {
 		name = streltsy_events.6.b #
-		add_support_for_mil_action = 25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 25
+		}
 		add_years_of_income = -0.25
 	}
 	option = {

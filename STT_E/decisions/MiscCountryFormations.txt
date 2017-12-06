@@ -49,6 +49,9 @@ country_decisions = {
 			owns_core_province = 2971	# Hoya
 		}
 		effect = {
+			1758 = {
+				move_capital_effect = yes
+			}
 			change_tag = HAN
 			1758 = {
 				add_base_tax = 1
@@ -82,8 +85,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			HAN = {
-				set_capital = 1758 # Hannover
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {
@@ -160,6 +166,9 @@ country_decisions = {
 			owns_core_province = 2972	# Paderborn
 		}
 		effect = {
+			1762 = {
+				move_capital_effect = yes
+			}
 			change_tag = WES
 			set_country_flag = formed_westphalia_flag
 			if = {
@@ -201,9 +210,6 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_government = administrative_monarchy
-			WES = {
-				set_capital = 1762 # Kassel
-			}
 			set_country_flag = formed_westphalia
 		}
 		ai_will_do = {
@@ -380,6 +386,14 @@ country_decisions = {
 			owns_core_province = 371
 		}
 		effect = {
+			if = {
+				limit = {
+					capital_scope = { NOT = { area = subarctic_islands_area } }
+				}
+				370 = {
+					move_capital_effect = yes
+				}
+			}
 			hidden_effect = {
 				every_province = {
 					limit = {
@@ -403,12 +417,6 @@ country_decisions = {
 			}		
 			change_tag = ICE
 			set_country_flag = formed_iceland
-			if = {
-				limit = {
-					capital_scope = { NOT = { area = subarctic_islands_area } }
-				}
-				set_capital = 370
-			}
 			if = {
 				limit = { NOT = { primary_culture = norwegian } }
 				change_primary_culture = CAPITAL

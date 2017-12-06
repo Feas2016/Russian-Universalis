@@ -465,6 +465,124 @@ guiTypes = {
 #			scale = 0.85
 		}
 	}
+	
+	
+		windowType = {
+		name = "exploit_entry"
+		backGround=""
+		position = { x=0 y =0}	
+		size = { x=320 y = 36}
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullscreen = no
+
+		guiButtonType = {
+			name = "category_banner_icon"
+			position = { x = 6 y = 0 }
+			quadTextureSprite = "GFX_macrobuild_entry_frame_390_thin"
+		}
+		
+		instantTextBoxType={
+			name = "province_name"
+			position = {x = 12 y = 8 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 110
+			maxHeight = 18
+			fixedsize = yes
+		}
+
+
+		instantTextBoxType={
+			name = "development"
+			position = {x = 124 y = 8 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			format = center
+			maxWidth = 44
+			maxHeight = 18
+		}
+		
+
+		#Note: The following is similar to development_mapicon in mapicons.gui
+		iconType = {
+			name ="bg"
+			spriteType = "GFX_exploit_bg"
+			position = { x= 169 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "tax"
+			position = {x = 172 y = 8 }
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 44
+			maxHeight = 18
+			text = ""
+			orientation = "UPPER_LEFT"
+			format = center
+			#allwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "sailor"
+			position = {x = 246 y = 8 }
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 44
+			maxHeight = 18
+			text = ""
+			orientation = "UPPER_LEFT"
+			format = center
+			#allwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "manpower"
+			position = {x = 320 y = 8 }
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 44
+			maxHeight = 18
+			text = ""
+			orientation = "UPPER_LEFT"
+			format = center
+			#allwaystransparent = yes
+		}
+
+		guiButtonType = {
+			name = "tax_button"
+			position = { x = 213 y = -2 }
+			quadTextureSprite ="GFX_exploit_button_tax"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		guiButtonType = {
+			name = "sailor_button"
+			position = { x = 288 y = -2 }
+			quadTextureSprite ="GFX_exploit_button_production"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "Main_14_black"
+		}
+		
+		guiButtonType = {
+			name = "manpower_button"
+			position = { x = 362 y = -2 }
+			quadTextureSprite ="GFX_exploit_button_manpower"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "Main_14_black"
+		}
+	}
 
 	##### Diplomatic Action Type Item #####
 	windowType = 
@@ -605,73 +723,79 @@ guiTypes = {
 
 		checkboxType = {
 			name = "land_units_button"
-			position = { x=484 y=58} #was x=420  ###STT
+			position = { x=484 y=62} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_army_tab"
 			shortcut = "1"
 		}
 		
 		checkboxType = {
 			name = "navy_units_button"
-			position = { x=484 y=108} #was x=420  ###STT
+			position = { x=484 y=106} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_navy_tab"
 			shortcut = "2"
 		}
 
 		checkboxType = {
 			name = "core_button"
-			position = { x=484 y=158} #was x=420  ###STT
+			position = { x=484 y=150} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_core_tab"
 			shortcut = "3"
 		}
 		
 		checkboxType = {
 			name = "missionary_button"
-			position = { x=484 y=208} #was x=420  ###STT
+			position = { x=484 y=194} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_missionary_tab"
 			shortcut = "4"
 		}
 		
 		checkboxType = {
 			name = "autonomy_button"
-			position = { x=483 y=258} #was x=420  ###STT
+			position = { x=483 y=238} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_revolt_tab"
 			shortcut = "5"
 		}
 		
 		checkboxType = {
 			name = "culture_button"
-			position = { x=484 y=308} #was x=420  ###STT
+			position = { x=484 y=282} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_culture_tab"
 			shortcut = "6"
 		}
 		
 		checkboxType = {
 			name = "buildings_button"
-			position = { x=484 y=358} #was x=420  ###STT
+			position = { x=484 y=326} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_building_tab"
 			shortcut = "7"
 		}
 
 		checkboxType = {
 			name = "development_button"
-			position = { x=484 y=408} #was x=420  ###STT
+			position = { x=484 y=370} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_development_tab"
 			shortcut = "8"
 		}
 
 		checkboxType = {
 			name = "estates_button"
-			position = { x=484 y=458} #was x=420  ###STT
+			position = { x=484 y=414} #was x=420  ###STT
 			quadTextureSprite ="GFX_build_interface_estates_tab"
 			shortcut = "9"
 		}
 
 		checkboxType = {
 			name = "diplomacy_button"
-			position = { x=484 y=508 }  ###STT
+			position = { x=484 y=458 }  ###STT
 			quadTextureSprite ="GFX_build_interface_diplomacy_tab"
 			shortcut = "0"
 		}
+		checkboxType = {
+			name = "exploit_button"
+			position = { x=484 y=502} ###STT
+			quadTextureSprite ="GFX_build_interface_exploit_tab"
+		}
+		
 
 		iconType =
 		{
@@ -691,7 +815,7 @@ guiTypes = {
 			name = "macro_title"
 			position = {x = 120 y = 15 } #was x= 68  ###STT
 			font = "vic_22"
-			borderSize = {x = 0 y = 0}	
+			borderSize = {x = 0 y = 0}
 			maxWidth = 300
 			maxHeight = 18
 			text = "CV_BUILD_CORE"
@@ -716,6 +840,7 @@ guiTypes = {
 				buttonText = "NAME"
 				buttonFont = "vic_18"
 			}
+
 			guiButtonType = {
 				name = "development_button"
 				position = { x= 132 y = 9 }
@@ -723,7 +848,7 @@ guiTypes = {
 #				buttonText = "LEDGER_DEVELOPMENT"
 #				buttonFont = "vic_18"
 			}
-			
+
 			guiButtonType = {
 				name = "overextension_button"
 				position = { x= 188 y = 9 }
@@ -731,7 +856,7 @@ guiTypes = {
 #				buttonText = "LEDGER_DEVELOPMENT"
 #				buttonFont = "vic_18"
 			}			
-			
+
 			guiButtonType = {
 				name = "cost_button"
 				position = { x= 244 y = 9 }
@@ -809,6 +934,22 @@ guiTypes = {
 #				text = "TIME"
 #				format = left
 #			}
+
+			checkboxType = {
+				name = "show_subjects"
+				position = { x= -7 y=466 }
+				quadTextureSprite ="GFX_checkbox_gold_32"
+			}
+			instantTextBoxType={
+				name = "show_subjects_title"
+				position = {x = 27 y = 470 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 160
+				maxHeight = 18
+				text = "MACRO_BUILDR_INCL_SUBJ"
+				format = left
+			}
 		}
 		
 		windowType = {
@@ -1019,7 +1160,7 @@ guiTypes = {
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
 			}
-			
+
 			guiButtonType = {
 				name = "cancel_button"
 				position = { x=100 y = 464 }
@@ -1030,7 +1171,6 @@ guiTypes = {
 				clicksound=click
 			}
 		}
-		
 		windowType = {
 			name = "building_province_list_header"
 			backGround=""
@@ -1094,7 +1234,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "close_button"
-				position = { x = 54 y = 472 }
+				position = { x = 40 y = 472 } # STT { x = 54 y = 472 }
 				quadTextureSprite ="button_type_1"
 				buttonFont = "vic_18"
 				buttonText = "CLOSE"
@@ -1200,16 +1340,16 @@ guiTypes = {
 			
 			checkboxType = {
 				name = "show_subjects"
-				position = { x=220 y=470 }
+				position = { x=196 y=467 }
 				quadTextureSprite ="GFX_checkbox_gold_32"
 			}
 
 			instantTextBoxType={
 				name = "show_subjects_title"
-				position = {x = 254 y = 473 }
+				position = {x = 230 y = 470 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
-				maxWidth = 148
+				maxWidth = 160
 				maxHeight = 18
 				text = "MACRO_BUILDR_INCL_SUBJ"
 				format = left
@@ -1217,13 +1357,13 @@ guiTypes = {
 
 			checkboxType = {
 				name = "show_territories"
-				position = { x=20 y=470 }
+				position = { x=-11 y=467 }
 				quadTextureSprite ="GFX_checkbox_gold_32"
 			}
 
 			instantTextBoxType={
 				name = "show_territories_title"
-				position = {x = 54 y = 473 }
+				position = {x = 23 y = 470 }
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 208 # Увеличил на 60
@@ -1270,6 +1410,72 @@ guiTypes = {
 				quadTextureSprite ="GFX_sort_territory"
 			}
 			#################################
+			}
+		windowType = {
+			name = "exploit_header"
+			backGround=""
+			position = { x = 20 y = 50 }
+			size = { x=342 y = 568}
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullscreen = no
+
+			guiButtonType = {
+				name = "name_button"
+				position = { x= -8 y = 11 }
+				quadTextureSprite ="GFX_sort_114"
+				buttonText = "NAME"
+				buttonFont = "vic_18"
+			}
+
+
+			guiButtonType = {
+				name = "development_button"
+				position = { x= 106 y = 11 }
+				quadTextureSprite ="GFX_sort_total_49"
+			}
+
+			
+
+			guiButtonType = {
+				name = "tax_button"
+				position = { x= 156 y = 11 }
+				quadTextureSprite ="GFX_sort_exploit_tax_64"
+			}
+
+
+			guiButtonType = {
+				name = "sailor_button"
+				position = { x= 231 y = 11 }
+				quadTextureSprite ="GFX_sort_exploit_production_64"
+			}
+
+			guiButtonType = {
+				name = "manpower_button"
+				position = { x= 306 y = 11 }
+				quadTextureSprite ="GFX_sort_exploit_manpower_64"
+			}
+			
+
+
+			checkboxType = {
+				name = "show_territories"
+				position = { x=-11 y=467 }
+				quadTextureSprite ="GFX_checkbox_gold_32"
+			}
+
+			instantTextBoxType={
+				name = "show_territories_title"
+				position = {x = 23 y = 470 }
+				font = "vic_22"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 170 #увеличил ширину
+				maxHeight = 18
+				text = "MACRO_BUILDR_INCL_TERRITORIES"
+				format = left
+			}
 		}
 
 		windowType = {

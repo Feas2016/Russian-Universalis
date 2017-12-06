@@ -37,6 +37,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			#STT delete
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -58,6 +59,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			280 = {
+				move_capital_effect = yes
+			}
 			ruthenia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -74,9 +78,6 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = UKR
-			UKR = {
-				set_capital = 280 #Kiev
-			}
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -90,17 +91,29 @@ country_decisions = {
 					set_in_empire = no
 				}
 			}
-			if = { #STT
+			if = {
 				limit = {
+					OR = {
+						government = veche_republic
+						government = principality
+					}
+				}
+				set_government_and_rank = {
+					government = tsardom
+					rank = 2 #stt
+				}
+			}
+			else_if = {
+				limit = { #STT
 					government_rank = 1
 				}
-				set_government_rank = 2
+				set_government_rank = 2 #STT
 			}
+			set_country_flag = formed_ruthenia_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			set_country_flag = formed_ruthenia_flag
 		}
 		ai_importance = 500		
 	}

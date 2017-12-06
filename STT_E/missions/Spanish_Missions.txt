@@ -5,8 +5,12 @@ finish_reconquista = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		lower_andalucia_area #STT
+		upper_andalucia_area #STT
+	}
+	
 	target_provinces = {
-		province_group = iberia_land_region #STT
 		owner = { religion_group = muslim }
 	}
 	allow = {
@@ -21,21 +25,28 @@ finish_reconquista = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		religion = catholic
-		iberia_land_region = { #STT
+		lower_andalucia_area = { #STT
 			owned_by = ROOT
+			owner = { religion_group = muslim }
 		}
-		iberia_land_region = { #STT
+		upper_andalucia_area = { #STT
+			owned_by = ROOT
 			owner = { religion_group = muslim }
 		}
 	}
 	abort = {
 		OR = {
 			NOT = { religion = catholic }
-			NOT = { iberia_land_region = { owned_by = ROOT } } #STT
+			NOT = { lower_andalucia_area = { owned_by = ROOT } } #STT
+			NOT = { upper_andalucia_area = { owned_by = ROOT } } #STT
 		}
 	}
 	success = {
-		iberia_land_region = { #STT
+		lower_andalucia_area = { #STT
+			type = all
+			owner = { NOT = { religion_group = muslim } }
+		}
+		upper_andalucia_area = { #STT
 			type = all
 			owner = { NOT = { religion_group = muslim } }
 		}
@@ -162,13 +173,11 @@ continue_reconquista = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		334 335 338 1751
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 334	# Tangiers
-			province_id = 335	# Melilla
-			province_id = 337	# Oran
-			province_id = 1751	# Ceuta
-		}
 		owner = {
 			NOT = { religion_group = christian }
 			NOT = { alliance_with = ROOT }
@@ -303,11 +312,11 @@ spain_discover_america = {
 		NOT = { has_country_modifier = colonial_enthusiasm }
 		num_of_ports = 1
 		NOT = {
-			carribeans_region = {
+			colonial_the_carribean = {
 				has_discovered = ROOT
 			}
 		}
-		carribeans_region = { range = ROOT }
+		colonial_the_carribean = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -317,7 +326,7 @@ spain_discover_america = {
 		}
 	}
 	success = {
-		carribeans_region = {
+		colonial_the_carribean = {
 			has_discovered = ROOT
 		}
 	}
@@ -439,12 +448,13 @@ discover_spanish_main = {
 		carribeans_region = {
 			has_discovered = ROOT
 		}	
+		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = {
-			colombia_region = {
+			colonial_colombia = {
 				has_discovered = ROOT
 			}
 		}
-		colombia_region = { range = ROOT }
+		colonial_colombia = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -454,7 +464,7 @@ discover_spanish_main = {
 		}
 	}
 	success = {
-		colombia_region = {
+		colonial_colombia = {
 			has_discovered = ROOT
 		}
 	}
@@ -471,6 +481,15 @@ discover_spanish_main = {
 		modifier = {
 			factor = 2
 			adm = 5
+		}
+		modifier = {
+			factor = 0.5
+			colonial_colombia = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
 		}
 	}
 	effect = {
@@ -572,12 +591,13 @@ discover_la_plata = {
 		is_free_or_tributary_trigger = yes
 		has_idea = quest_for_the_new_world
 		num_of_ports = 1
+		NOT = { has_country_modifier = colonial_enthusiasm }
 		NOT = {
-			la_plata_region = {
+			colonial_la_plata = {
 				has_discovered = ROOT
 			}
 		}
-		la_plata_region = { range = ROOT }
+		colonial_la_plata = { range = ROOT }
 	}
 	abort = {
 		OR = {
@@ -587,7 +607,7 @@ discover_la_plata = {
 		}
 	}
 	success = {
-		la_plata_region = {
+		colonial_la_plata = {
 			has_discovered = ROOT
 		}
 	}
@@ -677,7 +697,17 @@ establish_spanish_la_plata = {
 			factor = 2
 			adm = 4
 		}
+		modifier = {
+			factor = 0.5
+			colonial_la_plata = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
 	}
+		}
+	}
+	
 	effect = {
 		add_country_modifier = {
 			name = "colonial_enthusiasm"

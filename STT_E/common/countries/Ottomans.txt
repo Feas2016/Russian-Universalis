@@ -2,10 +2,14 @@
 
 graphical_culture = muslimgfx
 
-color = { 126  232  141 }
+color = { 126  203  120 }
+
+revolutionary_colors = { 5  9  5 } #Ottoman Civil Ensign
+
+historical_score = 5500
 
 historical_idea_groups = {
-	maritime_ideas
+	maritime_ideas #STT
 	humanist_ideas
 	offensive_ideas
 	administrative_ideas
@@ -100,6 +104,18 @@ monarch_names = {
 	"Хатидже #0" = -1
 	"Сафийе #0" = -1
 	"Зайнаб #0" = -1
+	"Хурема #0" = -1
+	"Михрима #0" = -1
+	"Нурбану #0" = -1
+	"Хандана #0" = -1
+	"Альма #0" = -1
+	"Хума #0" = -1
+	"Нигара #0" = -1
+	"Эмине #0" = -1
+	"Махпеке #0" = -1
+	"Гульфина #0" = -1
+	"Рабия #0" = -1
+	"Турхана #0" = -1
 }
 
 leader_names = {
@@ -242,4 +258,9 @@ army_names = {
 fleet_names = {
 	"Османли донанмаси"
 	"Анатоли донанмаси"
+	"Караненис донанмаси"
+	"Эге донанмаси"
+	"Акденис донанмаси"
+	"Козолденис донанмаси"
+	"$PROVINCE$ донанмаси"
 }

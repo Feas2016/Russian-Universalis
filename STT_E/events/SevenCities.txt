@@ -1023,6 +1023,7 @@ province_event = {
 	immediate = {
 		FROM = {
 			set_country_flag = sce_action06_flag
+			save_event_target_as = long_pig_country
 		}
 	}
 	
@@ -1043,7 +1044,6 @@ province_event = {
 				hidden_effect = {
 					country_event = {
 						id = seven_cities_events.500
-						days = 1
 					}
 				}
 			}
@@ -4251,7 +4251,7 @@ country_event = {
 		name = seven_cities_events.500.a
 		tooltip = {
 			add_opinion = {
-				who = FROM
+				who = event_target:foreign_province_owner
 				modifier = cannibal_conquistador
 			}
 		}

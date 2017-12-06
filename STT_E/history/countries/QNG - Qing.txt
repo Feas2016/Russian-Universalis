@@ -204,7 +204,7 @@ government_rank = 3
 		leader = {	
 			name = "Нурхаци"
 			type = general
-			rank = 0
+		
 			fire = 2
 			shock = 5
 			manuever = 4
@@ -221,7 +221,7 @@ government_rank = 3
 		adm = 5
 		dip = 4
 		mil = 6
-		leader = {	name = "Нурхаци"   	type = general		rank = 0	fire = 2	shock = 5	manuever = 4	siege = 2 }
+		leader = {	name = "Нурхаци"   	type = general		fire = 2	shock = 5	manuever = 4	siege = 2 }
 	}
 }
 
@@ -239,7 +239,7 @@ government_rank = 3
 		leader = { 
 			name = "Абахай-хан"
 			type = general
-			rank = 0
+		
 			fire = 0
 			shock = 5
 			manuever = 3
@@ -256,13 +256,13 @@ government_rank = 3
 		adm = 4
 		dip = 4
 		mil = 5
-		leader = { name = "Абахай-хан"   	type = general		rank = 0	fire = 0	shock = 5	manuever = 3	siege = 0 }
+		leader = { name = "Абахай-хан"   	type = general		fire = 0	shock = 5	manuever = 3	siege = 0 }
 	}
 }
 
-1628.1.1 = { leader = {	name = "Доргон"			type = general		rank = 1	fire = 4	shock = 4	manuever = 5	siege = 2	death_date = 1650.12.31 } }
+1628.1.1 = { leader = {	name = "Доргон"			type = general		fire = 4	shock = 4	manuever = 5	siege = 2	death_date = 1650.12.31 } }
 
-1636.1.1 = { leader = {	name = "Хооцзи"			type = general		rank = 1	fire = 3	shock = 4	manuever = 4	siege = 2	death_date = 1647.12.31 } }
+1636.1.1 = { leader = {	name = "Хооцзи"			type = general		fire = 3	shock = 4	manuever = 4	siege = 2	death_date = 1647.12.31 } }
 
 1638.3.15 = {
 	heir = {
@@ -371,7 +371,7 @@ government_rank = 3
 	}
 }
 
-1736.1.1 = { leader = { name = "Лун"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1761.1.1 } }
+1736.1.1 = { leader = { name = "Лун"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1761.1.1 } }
 
 1760.11.13 = {
 	heir = {
@@ -437,7 +437,7 @@ government_rank = 3
 	}
 }
 
-1837.1.1 = { leader = { name = "Линь Цзэсюй"	type = general	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 2	death_date = 1850.11.22 } }
+1837.1.1 = { leader = { name = "Линь Цзэсюй"	type = general	fire = 1	shock = 2	manuever = 3	siege = 2	death_date = 1850.11.22 } }
 
 1850.2.25 = {
 	monarch = {

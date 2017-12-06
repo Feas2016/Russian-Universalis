@@ -66,7 +66,7 @@ guiTypes = {
 		name = "outliner_configuration"
 		backGround="Background"
 			position = { x=-430 y= 91 }	
-			size = { x=192 y=345 }
+			size = { x=242 y=345 }
 			moveable = 0
 			dontRender = ""
 			horizontalBorder= ""
@@ -89,7 +89,7 @@ guiTypes = {
 				name ="outliner_configuration_list"
 				position = { x = 30 y = 40 }
 				backGround=""
-				size = { x= 135 y = 255}
+				size = { x= 185 y = 255}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2
@@ -101,7 +101,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "close_button"	
-				position = {x = 22 y = 294 }
+				position = {x = 47 y = 294 }
 				quadTextureSprite ="button_type_7"
 				tooltip = ""	
 				tooltipText =""
@@ -156,7 +156,7 @@ guiTypes = {
 				name = "outliner_list_text"
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}	
-				maxWidth = 172
+				maxWidth = 192
 				maxHeight = 18
 				text = ""	
 				orientation = "UPPER_LEFT"
@@ -188,12 +188,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "entry_text"
-				position = { x = 76 y = 0 }
+				position = { x = 86 y = 0 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 0}
 				text = ""	
-				maxWidth = 154
+				maxWidth = 164
 				maxHeight = 14
 				alwaystransparent = yes
 				format = right
@@ -585,19 +585,19 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "entry_text"
-				position = { x = 119 y = 0 }
+				position = { x = 110 y = 0 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 0}
 				text = ""	
-				maxWidth = 110
-				maxHeight = 10
+				maxWidth = 140
+				maxHeight = 32
 				alwaystransparent = yes
 				format = right
 				fixedsize = yes
 				truncate = yes
 		}
-		
+
 		instantTextBoxType = {
 				name = "info_text"
 				position = { x = 34 y = 0 }
@@ -605,14 +605,21 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 4 y = 0}
 				text = ""	
-				maxWidth = 80
-				maxHeight = 10
+				maxWidth = 130
+				maxHeight = 32
 				alwaystransparent = yes
 				format = left
 				fixedsize = yes
 				truncate = yes
 		}
-
+		iconType = {
+			name ="action"
+			spriteType = "GFX_outliner_action"
+			position = { x= 26 y = -14 }
+			Orientation = "LOWER_LEFT"
+			frame = 1
+			alwaystransparent = yes
+		}
 	}
 	
 	windowType = 
@@ -639,13 +646,13 @@ guiTypes = {
 
 		instantTextBoxType = {
 				name = "entry_text"
-				position = { x = 76 y = 0 }
+				position = { x = 56 y = 0 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 0}
 				text = ""	
-				maxWidth = 154
-				maxHeight = 10
+				maxWidth = 186
+				maxHeight = 32
 				alwaystransparent = yes
 				format = right
 				fixedsize = yes
@@ -660,7 +667,7 @@ guiTypes = {
 				borderSize = {x = 4 y = 0}
 				text = ""	
 				maxWidth = 100
-				maxHeight = 10
+				maxHeight = 32
 				alwaystransparent = yes
 				format = left
 		}
@@ -710,12 +717,12 @@ guiTypes = {
 			
 		instantTextBoxType = {
 			name = "entry_text"
-			position = { x = 106 y = 0 }
+			position = { x = 100 y = 0 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 0}
 			text = ""	
-			maxWidth = 136
+			maxWidth = 150
 			maxHeight = 26
 			format = right
 			fixedsize = yes

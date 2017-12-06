@@ -9,7 +9,7 @@ defeat_the_byzantine_empire = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
 		government_rank = 2 #STT
-		149 = { is_capital = yes }
+		149 = { is_capital = yes } #STT
 		is_free_or_tributary_trigger = yes
 		NOT = { owns = 151 }
 		NOT = { has_country_modifier = defeated_byzantine_empire }
@@ -149,12 +149,11 @@ conquer_southern_greece = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		145 146 1773
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 145
-			province_id = 146
-			province_id = 1773
-		}
 		owner = {
 			NOT = { is_subject_of = ROOT }
 			NOT = { overlord_of = ROOT }
@@ -607,7 +606,6 @@ defeat_the_knights = {
 			tag = AYD
 			tag = MEN
 		}
-		owns = 319
 		num_of_ports = 1 #STT
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = defeat_the_knights_flag }
@@ -863,13 +861,13 @@ conquer_levant = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		aleppo_area
+		syria_area
+		palestine_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = aleppo_area
-			area = syria_area
-			area = palestine_area
-			area = rakka_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
@@ -889,7 +887,6 @@ conquer_levant = {
 					area = aleppo_area
 					area = syria_area
 					area = palestine_area
-					area = rakka_area
 				}
 			}
 			NOT = { alliance_with = ROOT }
@@ -945,15 +942,17 @@ conquer_egypt = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		delta_area
+		bahari_area
+		said_area
+		vostani_area
+		al_wahat_area
+		gulf_of_arabia_area
+		cyrenaica_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = gharbia_area
-			area = sharqiya_area
-			area = central_egypt_area
-			area = upper_egypt_area
-			area = cyrenaica_area
-			area = libyan_desert_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { war_with = ROOT }
@@ -971,10 +970,13 @@ conquer_egypt = {
 		any_neighbor_country = {
 			any_owned_province = {
 				OR = {
-					area = gharbia_area
-					area = sharqiya_area
-					area = central_egypt_area
-					area = upper_egypt_area
+					area = delta_area
+					area = bahari_area
+					area = vostani_area
+					area = said_area
+					area = al_wahat_area
+					area = gulf_of_arabia_area
+					area = cyrenaica_area
 				}
 			}
 			NOT = { alliance_with = ROOT }
@@ -1031,11 +1033,14 @@ safeguard_eastern_anatolia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		north_kurdistan_area
+		armenia_area
+		erzurum_area
+		dulkadir_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = north_kurdistan_area
-			area = armenia_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1047,6 +1052,7 @@ safeguard_eastern_anatolia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = military_victory }
+		owns = 329
 		OR = {
 			north_kurdistan_area = {
 				NOT = { owned_by = ROOT }
@@ -1055,6 +1061,18 @@ safeguard_eastern_anatolia = {
 				NOT = { owner = { overlord_of = ROOT } }
 			}
 			armenia_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			erzurum_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			dulkadir_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
@@ -1074,7 +1092,7 @@ safeguard_eastern_anatolia = {
 	chance = {
 		factor = 2000
 		modifier = {
-			factor = 2
+			factor = 5
 			owns = 151 # Constantinople
 		}
 	}
@@ -1137,9 +1155,9 @@ vassalize_dulkadir = {
 		}
 	}
 	success = {
-		OR = {
+		OR = { #STT
 		DUL = { vassal_of = TUR }
-		DUL = { vassal_of = TUO }
+		DUL = { vassal_of = TU0 }
 		}
 	}
 	chance = {
@@ -1255,13 +1273,13 @@ conquer_mesopotamia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		iraq_arabi_area
+		basra_area
+		al_jazira_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = iraq_arabi_area
-			area = basra_area
-			area = al_jazira_area
-			area = rakka_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1272,7 +1290,7 @@ conquer_mesopotamia = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_modifier = indian_ocean_ambition }
-		owns = 382
+		owns = 382 #Damascus
 		OR = {
 			iraq_arabi_area = {
 				NOT = { owned_by = ROOT }
@@ -1287,12 +1305,6 @@ conquer_mesopotamia = {
 				NOT = { owner = { overlord_of = ROOT } }
 			}
 			al_jazira_area = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				NOT = { owner = { is_subject_of = ROOT } }
-				NOT = { owner = { overlord_of = ROOT } }
-			}
-			rakka_area = {
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
@@ -1349,12 +1361,13 @@ conquer_hedjaz = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		hejaz_area #STT
+		#tabuk_area #STT
+		#sarat_area #STT
+	}
+	
 	target_provinces = {
-		OR = {
-			area = hejaz_area
-			area = tabuk_area
-			area = sarat_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1365,13 +1378,24 @@ conquer_hedjaz = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		owns = 358
-		hejaz_area = {
+		hejaz_area = { #STT
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
 			NOT = { owner = { overlord_of = ROOT } }
 		}
-		###STT -2 del
+		# tabuk_area = { #STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
+		# sarat_area = { #STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
 		is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = indian_ocean_ambition }
 		NOT = { has_country_flag = conquer_hedjaz_flag }
@@ -1424,33 +1448,35 @@ conquer_mocha = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		tihama_al_yemen_area
+		yemen_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		OR = {
+			owns_core_province = 2315
+			owns_core_province = 2321
 			owns_core_province = 2331
-			owns_core_province = 2332
 		}
-		NOT = { owns = 387 } # Mocha
-		NOT = { owns = 2346 } # Jazan
-		NOT = { owns = 391 } # Najran
-		NOT = { owns = 386 } # Asir
-		387 = {
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		2346 = {
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		391 = {
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		386 = {
+		# tihama_al_yemen_area = { #STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
+		yemen_area = {
+			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
 			NOT = { owner = { overlord_of = ROOT } }
@@ -1462,56 +1488,28 @@ conquer_mocha = {
 		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
-		owns = 387 # Mocha
-		owns = 2346 # Jazan
-		owns = 391 # Najran
-		owns = 386 # Asir
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 3000
 		modifier = {
 			factor = 2
-			owns = 386 # Asir
+			owns = 386 # Bishah
+		}
+		modifier = {
+			factor = 2
+			owns = 4278 # Qunfudah
 		}
 	}
 	immediate = {
-		add_claim = 387
-		add_claim = 2346
-		add_claim = 391
-		add_claim = 386
+		every_target_province = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		387 = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-		2346 = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-		391 = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-		386 = {
+		every_target_province = {
 			if = {
 				limit = {
 					NOT = {
@@ -1538,21 +1536,27 @@ conquer_haasa = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		bahrain_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = TUR tag = TRK } ###STT
 		NOT = { has_country_flag = conquer_haasa_flag }
 		NOT = { has_country_modifier = indian_ocean_ambition }
-		owns = 408
-		NOT = { owns = 394 } # Al Hasa
-		NOT = { owns = 2347 }
+		owns = 408 #Basrah
 		is_free_or_tributary_trigger = yes
-		394 = {
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		2347 = {
+		bahrain_area = {
+			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
 			NOT = { owner = { overlord_of = ROOT } }
@@ -1562,8 +1566,9 @@ conquer_haasa = {
 		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
-		owns = 394
-		owns = 2347
+		all_target_province = {
+			owned_by = ROOT
+		}
 	}
 	chance = {
 		factor = 3000
@@ -1573,21 +1578,12 @@ conquer_haasa = {
 		}
 	}
 	immediate = {
-		add_claim = 394
-		add_claim = 2347
+		every_target_province = {
+			add_claim = ROOT
+		}
 	}
 	abort_effect = {
-		394 = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-		2347 = {
+		every_target_province = {
 			if = {
 				limit = {
 					NOT = {
@@ -1672,8 +1668,11 @@ conquer_tripolitania = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		tripolitania_area
+	}
+	
 	target_provinces = {
-		area = tripolitania_area
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1742,12 +1741,13 @@ conquer_tunisia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		tunisia_area
+		djerba_area
+		kabylia_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = tunisia_area
-			area = djerba_area
-			area = kabylia_area
-		}
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1894,8 +1894,11 @@ conquer_algeria = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		algiers_area
+	}
+	
 	target_provinces = {
-		area = algiers_area
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { is_subject_of = ROOT }
@@ -1959,7 +1962,7 @@ conquer_algeria = {
 	}
 }
 
-conquer_bulgaria = {
+conquer_bulgaria = { #STT 11 missions
 	
 	type = country
 

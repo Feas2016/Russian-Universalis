@@ -5,22 +5,18 @@ recover_greece = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		144 145 146 147 148
+		1773 1853 3003
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 144
-			province_id = 145
-			province_id = 146
-			province_id = 147
-			province_id = 148
-			province_id = 1773
-			province_id = 1853
-			province_id = 3003
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
 		NOT = { owner = { overlord_of = ROOT } }
 	}
+	
 	allow = {
 		normal_or_historical_nations = yes
 		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
@@ -98,15 +94,13 @@ recover_the_coast_of_asia_minor = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		#hudavendigar_area #STT
+		aydin_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 316
-			province_id = 317
-			province_id = 318
-			province_id = 319
-			province_id = 2296
-			province_id = 2348
-		}
+		has_port = yes
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -120,12 +114,8 @@ recover_the_coast_of_asia_minor = {
 		is_at_war = no
 		any_province = {
 			OR = {
-				province_id = 316
-				province_id = 317
-				province_id = 318
-				province_id = 319
-				province_id = 2296
-				province_id = 2348
+				#area = hudavendigar_area #STT
+				area = aydin_area
 			}
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
@@ -144,7 +134,7 @@ recover_the_coast_of_asia_minor = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 8000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -188,8 +178,11 @@ recover_the_balkans = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		bulgaria_area
+	}
+	
 	target_provinces = {
-		area = bulgaria_area
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -218,7 +211,7 @@ recover_the_balkans = {
 		}
 	}
 	chance = {
-		factor = 3000
+		factor = 5000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -266,47 +259,29 @@ convert_asia_minor = {
 		tag = BYZ
 		religion = orthodox
 		is_at_war = no
-		OR = {
-			aydin_area = {
-				owned_by = ROOT
-				NOT = { religion = orthodox }
+		any_owned_province = {
+			OR = {
+				area = aydin_area
+				#area = hudavendigar_area #STT
+				#area = eastern_aegean_area #STT
+				}
+			has_owner_religion = no
 			}
-			hudavendigar_area = {
-				owned_by = ROOT
-				NOT = { religion = orthodox }
-			}
-			eastern_aegean_area = { ###STT
-				owned_by = ROOT
-				NOT = { religion = orthodox }
-			}
+		aydin_area = {
+			type = all
+			owned_by = ROOT
 		}
+		#STT -2 del
 	}
 	abort = {
-		OR = {
 			NOT = { religion = orthodox }
-			AND = {
-				NOT = { aydin_area = { owned_by = ROOT } }
-				NOT = { hudavendigar_area = { owned_by = ROOT } }
-				NOT = { eastern_aegean_area = { owned_by = ROOT } } ###STTT
-			}
-		}
 	}
 	success = {
 		aydin_area = {
 			type = all
-			owned_by = ROOT
 			religion = orthodox
 		}
-		hudavendigar_area = {
-			type = all
-			owned_by = ROOT
-			religion = orthodox
-		}
-		eastern_aegean_area = { ###STT
-			type = all
-			owned_by = ROOT
-			religion = orthodox
-		}
+		#STT -2 del
 	}
 	chance = {
 		factor = 3000
@@ -333,12 +308,14 @@ recover_south_italy = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		naples_area
+		apulia_area
+		calabria_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = naples_area
-			area = apulia_area
-			area = calabria_area
-		}
+		NOT = { province_id = 118 }
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -361,6 +338,7 @@ recover_south_italy = {
 		}
 		OR = {
 			naples_area = {
+				NOT = { province_id = 118 }
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
@@ -428,7 +406,7 @@ recover_south_italy = {
 }
 
 
-recover_rome = {
+recover_rome = { #This one does not care who the current owner is.
 	
 	type = country
 
@@ -506,8 +484,11 @@ recover_sicily = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		sicily_area
+	}
+	
 	target_provinces = {
-		area = sicily_area
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -586,23 +567,24 @@ recover_sicily = {
 }
 
 
-the_pentarchy = {
+the_pentarchy = { #Regardless of who owns.
 	
 	type = country
 
 	category = DIP
 	ai_mission = yes
 	
+	target_provinces_list = {
+		118
+		151
+		377
+		2313
+		379
+		358
+	}
+	
 	target_provinces = {
 		NOT = { owned_by = ROOT }
-		OR = {
-			province_id = 118
-			province_id = 151
-			province_id = 377
-			province_id = 2313
-			province_id = 379
-			province_id = 358
-		}
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -643,27 +625,27 @@ the_pentarchy = {
 	chance = {
 		factor = 3000
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 118
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 151
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 377
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 2313
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 379
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5.5
 			owns = 358
 		}
 	}

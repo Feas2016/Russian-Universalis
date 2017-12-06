@@ -10,7 +10,6 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = MCH }
-			NOT = { exists = QNG }
 			primary_culture = manchu
 		}
 		allow = {
@@ -22,6 +21,9 @@ country_decisions = {
 			owns_core_province = 2108		#Huncun
 		}
 		effect = {
+			730 = {
+				move_capital_effect = yes
+			}
 			ilan_hala_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -56,9 +58,6 @@ country_decisions = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
-			}
-			MCH = {
-				set_capital = 730 #Girin
 			}
 			set_country_flag = formed_manchu_flag
 			if = {
@@ -101,6 +100,11 @@ country_decisions = {
 			}
 		}
 		effect = {
+			1816 = {
+				move_capital_effect = yes
+				change_culture = ROOT
+				add_core = QNG
+			}
 			change_tag = QNG
 			set_government_rank = 3
 			south_china_region = {
@@ -144,11 +148,6 @@ country_decisions = {
 				}
 				change_religion = confucianism
 				add_harmonized_religion = tengri_pagan_reformed
-			}
-			set_capital = 1816 # Beijing
-			1816 = {
-				change_culture = ROOT
-				add_core = QNG
 			}
 			add_prestige = 10
 			set_country_flag = manchu_dynasty_formed

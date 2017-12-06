@@ -7,9 +7,10 @@ coptic_conquest_of_alexandria = {
 	category = MIL
 	ai_mission = yes
 	
-	target_provinces = {
-		province_id = 358 #Alexandria
+	target_provinces_list = {
+		358
 	}
+	
 	allow = {
 		has_dlc = "Rights of Man"
 		religion = coptic
@@ -102,8 +103,12 @@ coptic_conquest_of_yerevan = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		419 #Yerevan
+	}
+	
 	target_provinces = {
-		province_id = 419 #Yerevan
+		always = yes
 	}
 	allow = {
 		normal_or_historical_nations = yes'
@@ -200,8 +205,11 @@ coptic_conquest_of_antioch = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		2313 #Antioch
+	}
 	target_provinces = {
-		province_id = 2313 #Antioch
+		always = yes
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -297,8 +305,11 @@ coptic_conquest_of_qasr_ibrim = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		1234 #Qasr Ibrim
+	}
 	target_provinces = {
-		province_id = 1234 #Qasr Ibrim
+		always = yes
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -402,8 +413,11 @@ coptic_conquest_of_cairo = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		361 #Cairo
+	}
 	target_provinces = {
-		province_id = 361 #Cairo
+		always = yes
 	}
 	allow = {
 		normal_or_historical_nations = yes

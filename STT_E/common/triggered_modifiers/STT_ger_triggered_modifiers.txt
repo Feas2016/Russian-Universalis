@@ -1,33 +1,7 @@
 ###########################################
 # Triggered modifiers for Kaisertum by dorimi
 ###########################################
-ger_truedynasty = {
-	potential = {
-		culture_group = germanic
-	}
-	trigger = {
-		government = monarchy
-		OR = {
-			dynasty = "фон Ольденбург"
-			dynasty = "фон Мекленбург"
-			dynasty = "фон Гогенцоллерн"
-			dynasty = "фон Габсбург"
-			dynasty = "фон Цвайбрюккен"
-			dynasty = "фон Виттельсбах"
-			dynasty = "фон Гольштейн"
-			dynasty = "фон Гессен-Кассель"
-			dynasty = "фон Гольштейн-Готторп"
-			dynasty = "фон Пфальц-Ноймаркт"
-			dynasty = "фон Брауншвейг-Люнебург"
-			dynasty = "фон Ганновер"
-			dynasty = "фон Веттин"
-			dynasty = "фон Ансбах"
-			dynasty = "Вельф"
-		}
-	}
-	prestige = 1
-	legitimacy = 1
-}
+
 
 ger_yearhommage = {
 	potential = {

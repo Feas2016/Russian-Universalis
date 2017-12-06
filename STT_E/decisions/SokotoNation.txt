@@ -32,6 +32,9 @@ country_decisions = {
 			owns_core_province = 1148 #Gobir
 		}
 		effect = {
+			1148 = {
+				move_capital_effect = yes
+			}
 			hausa_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -53,13 +56,7 @@ country_decisions = {
 			add_prestige = 25
 			add_piety = 0.25
 			change_tag = SOK
-			set_capital = 1148
-			if = {
-				limit = {
-					is_tribal = yes
-				}
-				change_government = theocratic_government
-			}
+			change_government = feudal_theocracy
 			if = {
 				limit = {
 					is_part_of_hre = yes

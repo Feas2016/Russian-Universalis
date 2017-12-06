@@ -64,7 +64,7 @@ guiTypes = {
 		}
 		
 		### ------- Government -------	
-		
+
 		iconType =
 		{
 			name ="revolution_target_icon"
@@ -240,9 +240,17 @@ guiTypes = {
 			maxWidth = 300
 			maxHeight = 16
 			format = centre
-		}			
+		}	
 
-	
+		listboxType = {
+			name = "specific_governments_list"
+			position = { x = 10 y = 220 }
+			size = { x = 360 y = 100 }
+			#position = { x = 600 y = 0 }
+			#size = { x = 400 y = 1000 }
+			scrollbartype = "standardlistbox_slider"
+		}
+		
 		windowType = {
 			name = "dutch_republic"
 			backGround =""
@@ -308,7 +316,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				format = centre
 			}
-			
 		}
 		
 		
@@ -372,11 +379,18 @@ guiTypes = {
 			horizontalBorder = ""
 			Orientation = "UPPER_LEFT"
 
+			iconType ={
+				name ="japanese_bg"
+				spriteType = "GFX_japanese_bg"
+				position = { x= -8 y = 68 }
+				Orientation = "UPPER_LEFT"
+			}			
+			
 			listboxType = {
 				name = "shogun_interaction_list"
-				position = { x = 32 y = 70 }
+				position = { x = 39 y = 78 }
 				backGround = ""
-				size = { x = 300 y = 300 }
+				size = { x = 200 y = 120 }
 				Orientation = "UPPER_LEFT"
 				horizontal = 1
 				spacing = 0
@@ -384,31 +398,7 @@ guiTypes = {
 				borderSize = { x = 0 y = 0 }
 			}
 		}
-
 		
-		windowType = {
-			name = "russian_gov"
-			backGround =""
-			position = { x = -4 y = 146 }	
-			size = { x = 300 y = 300 }
-			moveable = 0
-			dontRender = ""
-			horizontalBorder = ""
-			Orientation = "UPPER_LEFT"
-
-			listboxType = {
-				name = "russian_list"
-				position = { x = 32 y = 70 }
-				backGround = ""
-				size = { x = 200 y = 300 }
-				Orientation = "UPPER_LEFT"
-				horizontal = 1
-				spacing = 0
-				scrollbartype = "standardlistbox_slider"
-				borderSize = { x = 0 y = 0 }
-			}
-		}
-
 		### -----------
 		
 		iconType =
@@ -697,7 +687,7 @@ guiTypes = {
 		name = "shogun_interaction"
 		backGround =""
 		position = { x = 0 y = 0 }	
-		size = { x = 40 y = 40 }
+		size = { x = 90 y = 40 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -717,23 +707,23 @@ guiTypes = {
 		}
 	}
 
-
-
 	################################################################################################
-	## --- The interactions in the russian ability window
+	## --- The special governments with interactions and powers. They will be added to "specific_governments_list" from code
+
+	# Russian
 	windowType = {
-		name = "russian_ability"
+		name = "russian_mechanic"
 		backGround =""
 		position = { x = 0 y = 0 }	
-		size = { x = 118 y = 70 }
+		size = { x = 300 y = 100 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
 		Orientation = "UPPER_LEFT"
 
 		guiButtonType = {
-			name = "russian_ability_button"
-			position = { x = 6 y = 0 }
+			name = "RUSABIL_SUDEBNIK_button"
+			position = { x = 24 y = -4 }
 			quadTextureSprite ="GFX_russian_ability_ADM"	
 			tooltip = ""
 			tooltipText =""
@@ -743,29 +733,360 @@ guiTypes = {
 			clicksound = back_click
 			text = ""
 		}
-		
-		iconType =
-		{
-			name ="progress"
+		guiButtonType = {
+			name = "RUSABIL_OPRICHNINA_button"
+			position = { x = 142 y = -4 }
+			quadTextureSprite ="GFX_russian_ability_DIP"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "RUSABIL_STRELTSY_button"
+			position = { x = 260 y = -4 }
+			quadTextureSprite ="GFX_russian_ability_MIL"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+
+		iconType = {
+			name ="russian_adm_power_bar"
 			spriteType = "GFX_russian_government_bar"
-			position = { x= 0 y = 75 }
+			position = { x = 18 y = 71 }
 			Orientation = "UPPER_LEFT"
 			
 		}
-		iconType =
-		{
-			name ="progress_frame"
+		iconType = {
+			name ="russian_adm_power_frame"
 			spriteType = "GFX_russian_government_bar_frame"
-			position = { x= -13 y = 52 }
+			position = { x = 5 y = 48 }
 			Orientation = "UPPER_LEFT"
 			allwaystransparent = yes
+		}
+
+		iconType = {
+			name ="russian_dip_power_bar"
+			spriteType = "GFX_russian_government_bar"
+			position = { x = 136 y = 71 }
+			Orientation = "UPPER_LEFT"
 			
+		}
+		iconType = {
+			name ="russian_dip_power_frame"
+			spriteType = "GFX_russian_government_bar_frame"
+			position = { x = 123 y = 48 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		iconType = {
+			name ="russian_mil_power_bar"
+			spriteType = "GFX_russian_government_bar"
+			position = { x = 254 y = 71 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType = {
+			name ="russian_mil_power_frame"
+			spriteType = "GFX_russian_government_bar_frame"
+			position = { x = 241 y = 48 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+	}
+
+	# Mamluk
+	windowType = {
+		name = "mamluk_mechanic"
+		backGround =""
+		position = { x = 0 y = 0 }	
+		size = { x = 300 y = 100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		iconType = {
+			name ="mamluk_mechanic_bg"
+			spriteType = "GFX_mamluk_mechanic_bg"
+			position = { x = 4 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}			
+		
+		guiButtonType = {
+			name = "promote_culture_in_government_button"
+			position = { x = 32 y = -4 }
+			quadTextureSprite ="GFX_promote_culture_in_government_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "sell_off_culture_slaves_button"
+			position = { x = 142 y = -4 }
+			quadTextureSprite ="GFX_sell_off_culture_slaves_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "recruit_from_culture_lands_button"
+			position = { x = 252 y = -4 }
+			quadTextureSprite ="GFX_recruit_from_culture_lands_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+
+		iconType = {
+			name ="mamluk_adm_power_bar"
+			spriteType = "GFX_russian_government_bar"
+			position = { x = 27 y = 74 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType = {
+			name ="mamluk_adm_power_frame"
+			spriteType = "GFX_mamluk_mechanic_bar_frame"
+			position = { x = 14 y = 70 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		iconType = {
+			name ="mamluk_dip_power_bar"
+			spriteType = "GFX_russian_government_bar"
+			position = { x = 138 y = 74 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType = {
+			name ="mamluk_dip_power_frame"
+			spriteType = "GFX_mamluk_mechanic_bar_frame"
+			position = { x = 124 y = 70 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+
+		iconType = {
+			name ="mamluk_mil_power_bar"
+			spriteType = "GFX_russian_government_bar"
+			position = { x = 248 y = 74 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType = {
+			name ="mamluk_mil_power_frame"
+			spriteType = "GFX_mamluk_mechanic_bar_frame"
+			position = { x = 234 y = 70 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
 		}
 	}
 	
-	
-	
+	# Feudal Theocracy
+	windowType = {
+		name = "feudal_theocracy_mechanic"
+		backGround =""
+		position = { x = 16 y = 0 }	
+		size = { x = 300 y = 100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType = {
+			name ="feudal_theocracy_bg"
+			spriteType = "GFX_feudal_theocracy_bg"
+			position = { x = 6 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
 
+		guiButtonType = {
+			name = "seize_clerical_holdings_button"
+			position = { x = 41 y = 0 }
+			quadTextureSprite ="GFX_seize_clerical_holdings_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "invite_minorities_button"
+			position = { x = 133 y = 0 }
+			quadTextureSprite ="GFX_invite_minorities_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "sanction_holy_war_button"
+			position = { x = 225 y = 0 }
+			quadTextureSprite ="GFX_sanction_holy_war_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
+	
+	# Tribal Federation
+	windowType = {
+		name = "tribal_federation_mechanic"
+		backGround =""
+		position = { x = 0 y = 0 }	
+		size = { x = 300 y = 100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		iconType = {
+			name ="tribal_federation_bg"
+			spriteType = "GFX_tribal_federation_bg"
+			position = { x = 16 y = -5 }
+			Orientation = "UPPER_LEFT"
+		}		
+		
+		guiButtonType = {
+			name = "enlist_general_button"
+			position = { x = 41 y = -3 }
+			quadTextureSprite ="GFX_enlist_general_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "train_horsemanship_button"
+			position = { x = 138 y = -3 }
+			quadTextureSprite ="GFX_train_horsemanship_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "conscript_from_tribes_button"
+			position = { x = 235 y = -3 }
+			quadTextureSprite ="GFX_conscript_from_tribes_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+
+		iconType = {
+			name ="tribal_allegiance_bar"
+			spriteType = "GFX_tribal_allegiance_bar"
+			position = { x = 64 y = 71 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		iconType = {
+			name ="tribal_allegiance_frame"
+			spriteType = "GFX_tribal_federation_bar_frame"
+			position = { x = 53 y = 68 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}
+	}
+	
+	# Iqta
+	windowType = {
+		name = "iqta_mechanic"
+		backGround =""
+		position = { x = 0 y = 0 }	
+		size = { x = 300 y = 100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+
+		iconType = {
+			name ="iqta_bg"
+			spriteType = "GFX_iqta_bg"
+			position = { x = 14 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}			
+		
+		guiButtonType = {
+			name = "efficient_tax_farming_button"
+			position = { x = 47 y = 4 }
+			quadTextureSprite ="GFX_efficient_tax_farming_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "land_acquisition_button"
+			position = { x = 134 y = 4 }
+			quadTextureSprite ="GFX_land_acquisition_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+		guiButtonType = {
+			name = "lenient_taxation_button"
+			position = { x = 221 y = 4 }
+			quadTextureSprite ="GFX_lenient_taxation_button"	
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "vic_18"
+			Orientation = "UPPER_LEFT"
+			clicksound = back_click
+			text = ""
+		}
+	}
 
 	################################################################################################
 	### --- Modifier view item

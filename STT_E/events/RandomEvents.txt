@@ -2895,7 +2895,6 @@ country_event = {
 			}
 		}
 		add_stability_or_adm_power = yes
-		add_papal_influence = -20
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
@@ -3828,6 +3827,18 @@ country_event = {
 
 	trigger = {
 		capital_scope = { continent = europe }
+		any_known_country = {
+			culture_group = latin
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = { culture_group = latin }
+				save_event_target_as = italian_engineer_country
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -3853,12 +3864,19 @@ country_event = {
 			}
 		}
 		add_mil_power = 40
-		add_years_of_income = -0.15
+		define_advisor = {
+			type = fortification_expert
+			culture = event_target:italian_engineer_country
+			religion = event_target:italian_engineer_country
+			skill = 2
+			discount = yes
+		}
+		add_years_of_income = -0.25
 	}
 	option = {
 		name = "EVTOPTB5083"		# Decline the offer
 		ai_chance = { factor = 45 }
-		add_prestige = -10
+		add_prestige = -5
 	}
 	option = {
 		name = "personality_options.5083.a"		# Renegotiate his price
@@ -3868,7 +3886,14 @@ country_event = {
 		}
 		required_personality = fierce_negotiator_personality
 		add_mil_power = 40
-		add_years_of_income = -0.1
+		define_advisor = {
+			type = fortification_expert
+			culture = event_target:italian_engineer_country
+			religion = event_target:italian_engineer_country
+			skill = 2
+			discount = yes
+		}
+		add_years_of_income = -0.15
 	}
 }
 
@@ -3885,6 +3910,18 @@ country_event = {
 
 	trigger = {
 		capital_scope = { continent = europe }
+		any_known_country = {
+			primary_culture = dutch
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = { primary_culture = dutch }
+				save_event_target_as = drill_instructor_country
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -3908,32 +3945,39 @@ country_event = {
 		name = "EVTOPTA5084"		# Hire him
 		ai_chance = {
 			factor = 55
-			modifier = {
-				factor = 0.5
-				NOT = { years_of_income = 0.3 }
 			}
-			modifier = {
-				factor = 0.5
-				army_tradition = 90
-			}
-		}
-		add_army_tradition = 20
+		add_army_professionalism = 0.02
 		add_years_of_income = -0.25
+		define_advisor = {
+			type = army_reformer
+			culture = event_target:drill_instructor_country
+			religion = event_target:drill_instructor_country
+			skill = 2
+			discount = yes
+		}
 	}
 	option = {
 		name = "EVTOPTB5084"		# Decline the offer
 		ai_chance = { factor = 45 }
-		add_prestige = -10
+		add_prestige = -5
 	}
 	option = {
 		name = "personality_options.5083.a"		# Renegotiate his price
+		ai_chance = { factor = 100 }
 		highlight = yes
 		trigger = {
 			ruler_has_personality = fierce_negotiator_personality
 		}
 		required_personality = fierce_negotiator_personality
-		add_army_tradition = 20
+		add_army_professionalism = 0.02
 		add_years_of_income = -0.15
+		define_advisor = {
+			type = army_reformer
+			culture = event_target:drill_instructor_country
+			religion = event_target:drill_instructor_country
+			skill = 2
+			discount = yes
+		}
 	}
 }
 
@@ -5551,7 +5595,7 @@ country_event = {
 		add_prestige = -5
 	}
 	option = {
-		name = "EVTOPTA6013"		# Arrange a ball
+		name = "personality_options.6013.a"		# Arrange a ball
 		highlight = yes
 		trigger = { ruler_has_personality = well_connected_personality }
 		required_personality = well_connected_personality
@@ -7410,11 +7454,26 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		religion_group = christian
+		always = yes
 	}
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden scripted effect, is used by scripted effect and must always be cleared in after = { } using erase_advisor_flags_effect.
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 10
+			chance_of_secondary = 25
+		}
+		hidden_effect = {
+			random_list = {
+				33 = { set_country_flag = theologian_flag }
+				33 = { set_country_flag = artist_flag }
+				33 = { set_country_flag = philosopher_flag }
+			}
+		}
 	}
 
 	option = {
@@ -7430,10 +7489,35 @@ country_event = {
 			factor = 50
 		}
 		add_meritocracy_effect = yes
-		random_list = {
-			10 = { create_advisor = theologian }
-			10 = { create_advisor = artist }
-			10 = { create_advisor = philosopher }
+		trigger_switch = {
+			on_trigger = has_country_flag
+			theologian_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=theologian
+					advisor_type_if_not_state=natural_scientist
+					skill=1
+					scaled_skill = no
+					discount=yes
+				}
+			}
+			artist_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=artist
+					advisor_type_if_not_state=artist
+					scaled_skill = no
+					skill=1
+					discount=yes
+				}
+			}
+			philosopher_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=philosopher
+					advisor_type_if_not_state=philosopher
+					skill=1
+					scaled_skill = no
+					discount=yes
+				}
+			}
 		}
 		add_prestige = 15
 	}
@@ -7446,32 +7530,20 @@ country_event = {
 		trigger = {
 			OR = {
 				ruler_has_personality = zealot_personality
-				ruler_has_personality = humanist_personality
+				ruler_has_personality = tolerant_personality
 			}
+			monthly_income = 16
 		}
 		required_personality = zealot_personality
-		required_personality = humanist_personality
+		required_personality = tolerant_personality
 		add_prestige = 15
 		add_meritocracy_effect = yes
-		if = {
-			limit = { monthly_income = 25 }			
-			define_advisor = {
-				type = theologian
-				skill = 3
-				discount = yes
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					monthly_income = 25
-				}
-			}
-			define_advisor = {
-				type = theologian
-				skill = 2
-				discount = yes
-			}
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=theologian
+			advisor_type_if_not_state=artist
+			scaled_skill = yes
+			skill = 0
+			discount=yes
 		}
 	}
 	option = {
@@ -7485,30 +7557,27 @@ country_event = {
 				ruler_has_personality = free_thinker_personality
 				ruler_has_personality = well_advised_personality
 			}
+			monthly_income = 16
 		}
 		required_personality = free_thinker_personality
 		required_personality = well_advised_personality
 		add_prestige = 15
 		add_meritocracy_effect = yes
-		if = {
-			limit = { monthly_income = 25 }			
-			define_advisor = {
-				type = philosopher
-				skill = 3
-				discount = yes
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=philosopher
+			advisor_type_if_not_state=philosopher
+			scaled_skill = yes
+			skill = 0
+			discount=yes
 			}
 		}
-		if = {
-			limit = {
-				NOT = {
-					monthly_income = 25
-				}
-			}
-			define_advisor = {
-				type = philosopher
-				skill = 2
-				discount = yes
-			}
+	after = {
+		erase_advisor_flags_effect = yes
+		trigger_switch = {
+			on_trigger = has_country_flag
+			theologian_flag = { clr_country_flag = theologian_flag }
+			artist_flag = { clr_country_flag = artist_flag }
+			philosopher_flag = { clr_country_flag = philosopher_flag }
 		}
 	}
 }
@@ -7532,6 +7601,20 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_capital = no
+					fort_level = 1
+					NOT = { has_province_modifier = "local_fortress" }
+				}
+				save_event_target_as = local_fortification_expert_province
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -7546,20 +7629,20 @@ country_event = {
 			}
 		}
 		add_meritocracy_effect = yes
-		create_advisor = fortification_expert
+		define_advisor = {
+			type = fortification_expert
+			skill = 2
+			culture = event_target:local_fortification_expert_province
+			religion = event_target:local_fortification_expert_province
+			discount = yes
+		}
 	}
 	option = {
 		name = "EVTOPTB737"
 		ai_chance = {
 			factor = 65
 		}
-		random_owned_province = {
-			limit = {
-				is_overseas = no
-				is_capital = no
-				fort_level = 1
-				NOT = { has_province_modifier = local_fortress }
-			}
+		event_target:local_fortification_expert_province = {
 			add_province_modifier = {
 				name = "local_fortress"
 				duration = -1
@@ -7577,8 +7660,10 @@ country_event = {
 		add_meritocracy_effect = yes
 		define_advisor = {
 			type = fortification_expert
+			culture = event_target:local_fortification_expert_province
+			religion = event_target:local_fortification_expert_province
 			discount = yes
-			skill = 2
+			skill = 3
 		}
 	}
 }
@@ -7894,7 +7979,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = "EVTOPTB850"
+		name = "personality_options.850.a"
 		highlight = yes
 		trigger = { ruler_has_personality = well_connected_personality }
 		required_personality = well_connected_personality
@@ -8080,13 +8165,23 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 10
+			chance_of_secondary = 25
+		}
+	}
+	
 	option = {
 		name = "EVTOPTA854"
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = artist
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=artist
+			advisor_type_if_not_state=artist
+			scaled_skill = no
 			skill = 2
-			discount = yes
+			discount=yes
 		}
 	}
 	option = {
@@ -8096,11 +8191,16 @@ country_event = {
 		required_personality = well_connected_personality
 		add_prestige = 10
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = artist
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=artist
+			advisor_type_if_not_state=artist
+			scaled_skill = no
 			skill = 3
-			discount = yes
+			discount=yes
 		}
+		}
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -9001,13 +9101,19 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		any_known_country = {
-			exists = yes
-		}
+		always = yes
 	}
 	
 	mean_time_to_happen = {
 		days = 1
+	}
+	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 5
+			chance_of_secondary = 25
+		}
 	}
 	
 	option = {
@@ -9018,9 +9124,12 @@ country_event = {
 		name = "EVTOPTB872"
 		add_prestige = 10
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = artist
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=artist
+			advisor_type_if_not_state=artist
+			scaled_skill = no
 			skill = 2
+			discount=no
 		}
 	}
 	option = {
@@ -9030,12 +9139,15 @@ country_event = {
 		required_personality = well_connected_personality
 		add_prestige = 10
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = artist
-			skill = 2
-			discount = yes
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=artist
+			advisor_type_if_not_state=artist
+			scaled_skill = no
+			skill = 3
+			discount=yes
 		}
 	}
+	after = { erase_advisor_flags_effect = yes }
 }
 
 # A bountiful harvest
@@ -9412,6 +9524,15 @@ country_event = {
 		}
 	}
 	
+	immediate = {
+		hidden_effect = {
+			random_rival_country = {
+				limit = { has_country_modifier = hire_privateers }
+				save_event_target_as = rival_country
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -9435,6 +9556,8 @@ country_event = {
 		add_meritocracy_effect = yes
 		define_advisor = { 
 			type = naval_reformer
+			culture = event_target:rival_country
+			religion = event_target:rival_country
 			skill = 2
 		}
 	}
@@ -9968,7 +10091,7 @@ country_event = {
 		add_navy_tradition = -10
 	}
 	option = {
-		name = "EVTOPTB837A"
+		name = "personality_options.837.a"
 		highlight = yes
 		trigger = { ruler_has_personality = navigator_personality }
 		required_personality = navigator_personality
@@ -9993,10 +10116,28 @@ country_event = {
 		}
 	}	
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden scripted effect, is used by scripted effect and must always be cleared in after = { } using erase_advisor_flags_effect.
+			chance_of_primary = 95 #Not percentages!
+			chance_of_tertiary = 3
+			chance_of_secondary = 10
+		}
+	}
+	
 	option = {
 		name = "EVTOPTB838A"
-		create_advisor = grand_captain
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=grand_captain
+			advisor_type_if_not_state=grand_captain
+			skill=1
+			scaled_skill = no
+			discount=yes
+		}
 		add_meritocracy_effect = yes
+	}
+	
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -10515,6 +10656,30 @@ country_event = {
 		}
 	}
 	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_dlc = "The Cossacks" }
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_estate = estate_church
+					}
+					save_event_target_as = origin_of_bishop
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						has_owner_religion = yes
+						has_building = temple
+					}
+					save_event_target_as = origin_of_bishop
+				}
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -10524,7 +10689,20 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		create_advisor = inquisitor
+		if = {
+			limit = { has_saved_event_target = origin_of_bishop }
+			define_advisor = {
+				type = inquisitor
+				skill = 1
+				culture = event_target:origin_of_bishop
+			}
+		}
+		else = {
+			define_advisor = {
+				type = inquisitor
+				skill = 1
+			}
+		}
 		add_papal_influence = 10
 		if = {
 			limit = {
@@ -10901,14 +11079,15 @@ country_event = {
 		name = "random_event.EVTOPTB14"
 		ai_chance = {
 			factor = 5
-			modifier = {
-				factor = 0
-				advisor = theologian
-			}
 		}
 		add_prestige = 5
 		add_meritocracy_effect = yes
-		create_advisor = theologian
+		define_advisor = {
+			female = yes
+			skill = 1
+			type = artist
+			discount = yes
+		}
 	}
 	option = {
 		name = "personality_options.random.14.a"
@@ -11309,15 +11488,6 @@ province_event = {
 				}
 			}
 			custom_tooltip = random_events.23.b.tt
-			hidden_effect = {
-				every_neighbor_province = {
-					limit = {
-						NOT = { has_province_modifier = quarantined_influenza }
-						NOT = { has_province_modifier = influenza }
-						NOT = { has_province_flag = province_had_influenza }
-					}
-				}
-			}
 		}
 	}
 }
@@ -11344,7 +11514,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 45
+		months = 120
 	}
 	
 	immediate = {
@@ -11356,10 +11526,35 @@ province_event = {
 		ai_chance = {
 			factor = 50
 		}
-		owner = { add_adm_power = -50 }
 		add_province_modifier = {
 			name = "quarantined_influenza"
 			duration = 3650
+		}
+		every_neighbor_province = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = "quarantined_influenza"
+				duration = 3650
+			}
+		}
+		owner = {
+			if = {
+				limit = {
+					any_owned_province = { has_province_modifier = influenza }
+				}
+				every_owned_province = {
+					limit = {
+						has_province_modifier = influenza
+					}
+					remove_province_modifier = influenza
+					add_province_modifier = {
+						name = "quarantined_influenza"
+						duration = 3650
+					}
+				}
+			}
 		}
 	}
 	option = {
@@ -11787,7 +11982,7 @@ country_event = {
 
 	trigger = {
 		copper = 1
-		mil_tech = 11 #STT
+		mil_tech = 12 #STT
 		NOT = { has_country_modifier = poor_copper }
 	}
 

@@ -38,6 +38,9 @@ country_decisions = {
 			owns_core_province = 1756	# Budjak
 		}
 		effect = {
+			161 = {
+				move_capital_effect = yes
+			}
 			change_tag = RMN
 			if = {
 				limit = {
@@ -68,9 +71,6 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			RMN = {
-				set_capital = 161
-			}
 			change_primary_culture = romanian	### STT
 			country_event = { id = flavor_alb.2 tooltip = "romanian_nation_tooltip" }	### STT
 			if = {

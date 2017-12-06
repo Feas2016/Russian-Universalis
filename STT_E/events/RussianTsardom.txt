@@ -122,7 +122,11 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_support_for_dip_action = -30
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = -30
+		}
 	}
 }
 
@@ -217,7 +221,11 @@ country_event = {
 		name = russian_tsardom_events.2.b #
 		add_estate_nobles_loyalty_effect = yes
 		add_legitimacy = 5 #Support from the families
-		add_support_for_dip_action = 30
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = 30
+		}
 		trigger_switch = {
 			on_trigger = has_country_flag
 			treasurer_flag = {
@@ -325,7 +333,7 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		change_culture = owner #Todo; Improve?
+		change_culture = owner
 		event_target:steppe_province = {
 			add_base_production = 1
 			add_province_modifier = {
@@ -360,7 +368,7 @@ country_event = {
 				}
 				else = {
 					set_estate = estate_cossacks
-					add_estate_cossacks_loyalty_effect = yes
+					owner = { add_estate_cossacks_loyalty_effect = yes }
 				}
 			}
 		}
@@ -582,7 +590,11 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		add_support_for_adm_action = 35
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = ADM
+			amount = 35
+		}
 		add_estate_nobles_loyalty_effect = yes
 	}
 }
@@ -612,7 +624,11 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_support_for_adm_action = 25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = ADM
+			amount = 25
+		}
 		add_adm_power = -50
 		add_years_of_income = -0.05
 	}
@@ -676,7 +692,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_support_for_dip_action = 35
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = 35
+		}
 		reduce_estate_nobles_loyalty_effect = yes
 		if = {
 			limit = { has_country_flag = only_one_province }
@@ -704,7 +724,11 @@ country_event = {
 		}
 		add_legitimacy = 5
 		add_estate_nobles_loyalty_effect = yes
-		add_support_for_dip_action = -15
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = -15
+		}
 	}
 }
 
@@ -749,7 +773,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_support_for_adm_action = 10
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = ADM
+			amount = 10
+		}
 		event_target:state_with_problems = {
 			area = {
 				limit = { owned_by = ROOT }
@@ -765,7 +793,11 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_support_for_mil_action = 10
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 10
+		}
 		event_target:state_with_problems = {
 			area = {
 				limit = { owned_by = ROOT }
@@ -819,7 +851,11 @@ country_event = {
 			factor = 50
 		}
 		add_estate_nobles_loyalty_effect = yes
-		add_support_for_mil_action = 25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 25
+		}
 	}
 }
 

@@ -56,6 +56,7 @@ country_event = {
 		has_regency = no
 		government = monarchy
 		NOT = { government = elective_monarchy }
+		NOT = { government = mamluk_government }
 		NOT = { government = ottoman_government }
 		any_owned_province = {
 			num_free_building_slots = 1
@@ -110,6 +111,7 @@ country_event = {
 		}
 		has_regency = no
 		government = monarchy
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
 	}
@@ -158,6 +160,7 @@ country_event = {
 			}
 		}
 		government = monarchy
+		NOT = { government = mamluk_government }
 		heir_age = 4
 		NOT = { government = elective_monarchy }
 	}
@@ -188,6 +191,7 @@ country_event = {
 	trigger = {
 		government = monarchy
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		is_month = 3
 		NOT = { is_month = 6 }
 		has_heir = no
@@ -255,6 +259,8 @@ country_event = {
 			}
 			define_consort = {
 				country_of_origin = event_target:bargaining_chip_country
+				culture = event_target:bargaining_chip_country
+				religion = event_target:bargaining_chip_country
 			}
 		}
 	}
@@ -273,10 +279,27 @@ country_event = {
 		government = monarchy
 		has_regency = no
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 	}
 	
 	mean_time_to_happen = {
 		months = 800
+	}
+	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden scripted effect, is used by scripted effect and must always be cleared in after = { } using erase_advisor_flags_effect.
+			chance_of_primary = 85 #Not percentages!
+			chance_of_tertiary = 5
+			chance_of_secondary = 15
+		}
+		hidden_effect = {
+			random_list = {
+				33 = { set_country_flag = treasurer_flag }
+				33 = { set_country_flag = philosopher_flag }
+				33 = { set_country_flag = diplomat_flag }
+			}
+		}
+		
 	}
 	
 	option = {
@@ -303,12 +326,46 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTC9455"
-		random_list = {
-			10 = { create_advisor = theologian }
-			10 = { create_advisor = artist }
-			10 = { create_advisor = philosopher }
+		trigger_switch = {
+			on_trigger = has_country_flag
+			treasurer_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=treasurer
+					advisor_type_if_not_state=trader
+					skill=1
+					scaled_skill = no
+					discount=yes
+				}
+			}
+			philosopher_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=philosopher
+					advisor_type_if_not_state=artist
+					scaled_skill = no
+					skill=1
+					discount=yes
+				}
+			}
+			diplomat_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=diplomat
+					advisor_type_if_not_state=spymaster
+					skill=1
+					scaled_skill = no
+					discount=yes
+				}
+			}
 		}
 		add_prestige = -5
+	}
+	after = {
+		erase_advisor_flags_effect = yes
+		trigger_switch = {
+			on_trigger = has_country_flag
+			treasurer_flag = { clr_country_flag = treasurer_flag }
+			philosopher_flag = { clr_country_flag = philosopher_flag }
+			diplomat_flag = { clr_country_flag = diplomat_flag }
+		}
 	}
 }
 
@@ -368,6 +425,7 @@ country_event = {
 		religion_group = christian
 		has_regency = no
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 	}
 	
@@ -415,6 +473,7 @@ country_event = {
 		is_lesser_in_union = no
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = {
 			is_year = 1450
 		}
@@ -497,6 +556,7 @@ country_event = {
 		heir_age = 15
 		is_lesser_in_union = no
 		government = monarchy
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 	}
 	
@@ -525,6 +585,8 @@ country_event = {
 	trigger = {
 		government = monarchy
 		is_free_or_tributary_trigger = yes
+		NOT = { government = mamluk_government }
+		NOT = { government = ottoman_government }
 		NOT = { government = celestial_empire }
 		adm_tech = 20
 		adm_power = 200
@@ -537,13 +599,13 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA9462"
-		ai_chance = { factor = 95 }
+		ai_chance = { factor = 100 }
 		add_adm_power = -100
 		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB9462"
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 0 }
 		change_government = bureaucratic_despotism
 		kill_ruler = yes
 		add_stability = -6
@@ -561,6 +623,7 @@ country_event = {
 		stability = 3
 		treasury = 100
 		government = monarchy
+		NOT = { government = mamluk_government }
 		has_regency = no
 		any_known_country = {
 			dynasty = ROOT
@@ -615,15 +678,13 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	trigger = {
-		stability = 3
-		NOT = {
-			overextension_percentage = 0.05
-		}
+		NOT = { stability = -1 }
 		is_lesser_in_union = no
 		government = monarchy
-		legitimacy_or_horde_unity = 100
+		NOT = { legitimacy_or_horde_unity = 50 }
 		NOT = { government = ottoman_government }
 		NOT = { government = celestial_empire }
+		NOT = { government = mamluk_government }
 		has_regency = yes
 		has_consort_regency = no
 		has_heir = yes
@@ -637,25 +698,13 @@ country_event = {
 		name = "EVTOPTA9468"
 		kill_heir = yes
 		define_ruler = {
-			adm = 0
-			dip = 0
-			mil = 0
 		}
-		add_stability = -3
-		add_legitimacy = -90
-		add_horde_unity = -90
-		add_country_modifier = {
-			name = "plutocracy_modifier"
-			duration = 7300
-		}
-		add_country_modifier = {
-			name = "centralization_modifier"
-			duration = 3650
-		}
+		add_stability = -1
 	}
 	option = {
 		name = "EVTOPTB9468"
-		add_stability = -1
+		add_stability = -2
+		add_heir_claim = 30
 	}
 }
 
@@ -669,6 +718,7 @@ country_event = {
 	trigger = {
 		government = monarchy
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		is_lesser_in_union = no
 		has_heir = no
@@ -1105,13 +1155,14 @@ country_event = {
 	id = 9470
 	title = "EVTNAME9470"
 	desc = "EVTDESC9470"
-	picture = NEW_HEIR_eventPicture
+	picture = DIPLOMACY_eventPicture
 	
 	trigger = {
 		religion_group = christian
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		has_regency = no
 		is_lesser_in_union = no
 		num_of_royal_marriages = 4
@@ -1120,10 +1171,26 @@ country_event = {
 			government = monarchy
 			NOT = { government = elective_monarchy }
 			NOT = { government = ottoman_government }
+			NOT = { government = mamluk_government }
 			marriage_with = ROOT
 			NOT = { dynasty = ROOT }
 			has_heir = no
 			is_lesser_in_union = no
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					government = monarchy
+					marriage_with = ROOT
+					NOT = { dynasty = ROOT }
+					has_heir = no
+					is_lesser_in_union = no
+				}
+				save_event_target_as = marriage_policy_paid_off_here
+			}
 		}
 	}
 	
@@ -1140,16 +1207,15 @@ country_event = {
 		trigger = {
 			NOT = { dynasty = "фон Габсбург" }
 		}
-		random_country = {
-			limit = {
-				government = monarchy
-				marriage_with = ROOT
-				NOT = { dynasty = ROOT }
-				has_heir = no
-				is_lesser_in_union = no
-			}
-			define_heir = {
+		event_target:marriage_policy_paid_off_here = {
+			define_heir = { #Generated immediately, rather than in the followup event, so that the actual heir matches the tooltip for ROOT.
 				dynasty = ROOT
+				age = 14
+			}
+			hidden_effect = {
+				country_event = { id = dynastic_events.8 }
+				set_heir_culture = FROM
+				set_heir_religion = FROM
 			}
 		}
 	}
@@ -1158,16 +1224,15 @@ country_event = {
 		trigger = {
 			dynasty = "фон Габсбург"
 		}
-		random_country = {
-			limit = {
-				government = monarchy
-				marriage_with = ROOT
-				NOT = { dynasty = ROOT }
-				has_heir = no
-				is_lesser_in_union = no
-			}
-			define_heir = {
+		event_target:marriage_policy_paid_off_here = {
+			define_heir = { #Generated immediately, rather than in the followup event, so that the actual heir matches the tooltip for ROOT.
 				dynasty = ROOT
+				age = 14
+			}
+			hidden_effect = {
+				country_event = { id = dynastic_events.8 }
+				set_heir_culture = FROM
+				set_heir_religion = FROM
 			}
 		}
 	}
@@ -1221,7 +1286,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "EVTOPTA9476"
+		name = "EVTOPTA9477"
 		random_list = {
 			10 = {
 				add_stability_or_adm_power = yes
@@ -1497,6 +1562,8 @@ country_event = {
 			}
 			define_consort = {
 				country_of_origin = FROM
+				culture = FROM
+				religion = FROM
 			}
 		}
 		create_marriage = FROM
@@ -1527,6 +1594,8 @@ country_event = {
 			}
 			define_consort = {
 				country_of_origin = FROM
+				culture = FROM
+				religion = FROM
 			}
 		}
 		create_marriage = FROM
@@ -1617,6 +1686,7 @@ country_event = {
 		is_lesser_in_union = no
 		government = monarchy
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		has_heir = no
 		is_female = no
@@ -1665,6 +1735,7 @@ country_event = {
 		government = monarchy
 		religion_group = christian
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		is_lesser_in_union = no
 	}
@@ -1755,7 +1826,9 @@ country_event = {
 		has_heir = no
 		ruler_age = 20
 		government = monarchy
+		NOT = { religion_group = muslim }
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		NOT = { government = shogunate }
 		is_lesser_in_union = no
@@ -1812,7 +1885,9 @@ country_event = {
 		ruler_age = 40
 		government = monarchy
 		NOT = { government = elective_monarchy }
+		NOT = { religion_group = muslim }
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = shogunate }
 		is_lesser_in_union = no
 		NOT = { has_ruler_flag = talented_daughter_happened }
@@ -1907,6 +1982,7 @@ country_event = {
 		government = monarchy
 		NOT = { government = ottoman_government }
 		NOT = { government = elective_monarchy }
+		NOT = { government = mamluk_government }
 		religion_group = christian
 		capital_scope = {
 			continent = europe
@@ -2034,6 +2110,7 @@ country_event = {
 		has_heir = no
 		government = monarchy
 		NOT = { government = ottoman_government }
+		NOT = { government = mamluk_government }
 		NOT = { government = elective_monarchy }
 		religion_group = christian
 		is_free_or_tributary_trigger = yes
@@ -2098,6 +2175,7 @@ country_event = {
 				government = monarchy
 				NOT = { government = ottoman_government }
 				NOT = { government = elective_monarchy }
+				NOT = { government = mamluk_government }
 				has_heir = no
 				ruler_age = 16
 				religion_group = christian
@@ -2218,5 +2296,34 @@ country_event = {
 				months = 12
 			}
 		}
+	}
+}
+
+# Marriage Policies paid off
+country_event = {
+	id = dynastic_events.8
+	title = dynastic_events.8.t
+	desc = dynastic_events.8.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = dynastic_events.8.a
+		trigger = {
+			FROM = {
+				NOT = { dynasty = "фон Габсбург" }
+			}
+		}
+		custom_tooltip = dynastic_events.8.a.tt
+	}
+	option = {
+		name = dynastic_events.8.b
+		trigger = {
+			FROM = {
+				dynasty = "фон Габсбург"
+			}
+		}
+		custom_tooltip = dynastic_events.8.a.tt
 	}
 }

@@ -50,7 +50,7 @@ national_focus = MIL
 		adm = 5
 		dip = 4
 		mil = 6
-		leader = { name = "Осман Османоглу"            type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 2}
+		leader = { name = "Осман Османоглу"            type = general	fire = 3	shock = 3	manuever = 3	siege = 2}
 	}
 }
 
@@ -65,7 +65,7 @@ national_focus = MIL
 		adm = 4
 		dip = 4
 		mil = 5
-		leader = { name = "Орхан Гази"            type = general	rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0}
+		leader = { name = "Орхан Гази"            type = general	fire = 2	shock = 2	manuever = 3	siege = 0}
 	}
 }
 
@@ -170,7 +170,7 @@ government_rank = 2
 	leader = {
 		name = "Хадым Шехабеддин"
 		type = general
-		rank = 0
+	
 		fire = 3
 		shock = 3
 		manuever = 3
@@ -221,7 +221,7 @@ government_rank = 2
 		adm = 5
 		dip = 5
 		mil = 6
-		leader = { name = "Мехмед Фатих"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
+		leader = { name = "Мехмед Фатих"            type = general	fire = 6	shock = 4	manuever = 5	siege = 2}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
@@ -236,7 +236,7 @@ government_rank = 2
 		adm = 5
 		dip = 5
 		mil = 6
-		leader = { name = "Мехмед Фатих"            type = general	rank = 0	fire = 6	shock = 4	manuever = 5	siege = 2}
+		leader = { name = "Мехмед Фатих"            type = general	fire = 6	shock = 4	manuever = 5	siege = 2}
 		clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
 	add_ruler_personality = lawgiver_personality
@@ -263,7 +263,7 @@ government_rank = 2
 		capital = 151
 } # Thrace
 
-1460.1.1 = { leader = {	name = "Гедик Ахмед"           	type = general	rank = 0	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1482.1.1 } }
+1460.1.1 = { leader = {	name = "Гедик Ахмед"           	type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1482.1.1 } }
 
 1481.5.4 = {
 	monarch = {
@@ -273,7 +273,7 @@ government_rank = 2
 		adm = 3
 		dip = 3
 		mil = 5
-		leader = { name = "Баязид II"            type = general	rank = 0	fire = 3	shock = 2	manuever = 2	siege = 0}
+		leader = { name = "Баязид II"            type = general	fire = 3	shock = 2	manuever = 2	siege = 0}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = zealot_personality
@@ -293,15 +293,15 @@ government_rank = 2
 	}
 }
 
-1487.1.1 = { leader = {	name = "Кемаль Реис"            	type = admiral	rank = 5	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1511.1.1 } }
+1487.1.1 = { leader = {	name = "Кемаль Реис"            	type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1511.1.1 } }
 
-1490.1.1 = { leader = {	name = "Хадым Синан"           	type = general	rank = 1	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1517.1.1 } }
+1490.1.1 = { leader = {	name = "Хадым Синан"           	type = general	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1517.1.1 } }
 
 1492.1.1 = { add_accepted_culture = serbian }
 
-1492.1.1 = { leader = {	name = "Хадым Али"             	type = general	rank = 3	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1511.1.1 } }
+1492.1.1 = { leader = {	name = "Хадым Али"             	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1511.1.1 } }
 
-1493.1.1 = { leader = {	name = "Кучук Дауд"           	type = admiral	rank = 0	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1506.1.1 } }
+1493.1.1 = { leader = {	name = "Кучук Дауд"           	type = admiral	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1506.1.1 } }
 
 1512.5.2 = {
 	monarch = {
@@ -311,7 +311,7 @@ government_rank = 2
 		adm = 2
 		dip = 4
 		mil = 5
-		leader = { name = "Селим I"         type = general	rank = 0	fire = 5	shock = 4	manuever = 5	siege = 1}
+		leader = { name = "Селим I"         type = general	fire = 5	shock = 4	manuever = 5	siege = 1}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
@@ -331,13 +331,13 @@ government_rank = 2
 	}
 }
 		
-1513.1.1 = { leader = {	name = "Пири Реис"             	type = admiral	rank = 4	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1553.1.1 } }
+1513.1.1 = { leader = {	name = "Пири Реис"             	type = admiral	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1553.1.1 } }
 
 1514.1.1 = { decision = the_khalifah }
 
-1518.1.1 = { leader = {	name = "Бали Малкочоглу"                  	type = general	rank = 2	fire = 1	shock = 4	manuever = 4	siege = 0	death_date = 1541.1.1 } }
+1518.1.1 = { leader = {	name = "Бали Малкочоглу"                  	type = general	fire = 1	shock = 4	manuever = 4	siege = 0	death_date = 1541.1.1 } }
 
-1520.1.1 = { leader = {	name = "Гази Хасрев"           	type = general	rank = 3	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1541.1.1 } }
+1520.1.1 = { leader = {	name = "Гази Хасрев"           	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1541.1.1 } }
 
 1520.9.23 = {
 	monarch = {
@@ -347,7 +347,7 @@ government_rank = 2
 		adm = 6
 		dip = 5
 		mil = 6
-		leader = { name = "Сулейман I"     type = general	rank = 0	fire = 5	shock = 3	manuever = 4	siege = 2}
+		leader = { name = "Сулейман I"     type = general	fire = 5	shock = 3	manuever = 4	siege = 2}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = lawgiver_personality
@@ -365,15 +365,15 @@ government_rank = 2
 		adm = 5
 		dip = 3
 		mil = 5
-		leader = { name = "Мустафа"     type = general	rank = 0	fire = 6	shock = 4	manuever = 4	siege = 0}
+		leader = { name = "Мустафа"     type = general	fire = 6	shock = 4	manuever = 4	siege = 0}
 	}
 }
 
-1523.1.1 = { leader = {	name = "Ибрагим"               	type = general		rank = 0	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1536.1.1 } }
+1523.1.1 = { leader = {	name = "Ибрагим"               	type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1536.1.1 } }
 
-1525.1.1 = { leader = {	name = "Барбаросса"              	type = admiral		rank = 0	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1546.1.1 } }
+1525.1.1 = { leader = {	name = "Барбаросса"              	type = admiral		fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1546.1.1 } }
 
-1538.1.1 = { leader = {	name = "Оздемир"               	type = conquistador	rank = 4	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1561.1.1 } }
+1538.1.1 = { leader = {	name = "Оздемир"               	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1561.1.1 } }
 
 1541.5.27 = {
 	heir = {
@@ -386,13 +386,13 @@ government_rank = 2
 		adm = 4
 		dip = 5
 		mil = 6
-		leader = { name = "Мехмед"     type = general	rank = 0	fire = 3	shock = 4	manuever = 5	siege = 1}
+		leader = { name = "Мехмед"     type = general	fire = 3	shock = 4	manuever = 5	siege = 1}
 	}
 }
 
-1541.5.27 = { leader = { name = "Шехзаде Мустафа"     type = general	rank = 0	fire = 6	shock = 4	manuever = 4	siege = 0	death_date = 1553.10.6 } }
+1541.5.27 = { leader = { name = "Шехзаде Мустафа"     type = general	fire = 6	shock = 4	manuever = 4	siege = 0	death_date = 1553.10.6 } }
 
-1543.1.1 = { leader = {	name = "Салих Реис"            	type = admiral		rank = 4	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1566.1.1 } }
+1543.1.1 = { leader = {	name = "Салих Реис"            	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1566.1.1 } }
 
 1543.4.5 = {
 	heir = {
@@ -408,19 +408,19 @@ government_rank = 2
 	}
 }
 
-1546.5.20 = { leader = { name = "Шехзаде Баязид"     type = general	rank = 0	fire = 3	shock = 6	manuever = 2	siege = 1	death_date = 1561.9.25 } }
+1546.5.20 = { leader = { name = "Шехзаде Баязид"     type = general	fire = 3	shock = 6	manuever = 2	siege = 1	death_date = 1561.9.25 } }
 
-1551.1.1 = { leader = {	name = "Улуч Али"           	type = admiral		rank = 4	fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1587.1.1 } }
+1551.1.1 = { leader = {	name = "Улуч Али"           	type = admiral		fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1587.1.1 } }
 
-1551.1.1 = { leader = {	name = "Тургут Реис"		type = admiral		rank = 3	fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1565.6.23 } }
+1551.1.1 = { leader = {	name = "Тургут Реис"		type = admiral		fire = 2	shock = 4	manuever = 5	siege = 0	death_date = 1565.6.23 } }
 
-1554.1.1 = { leader = {	name = "Пиали"                 type = admiral		rank = 1	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1590.1.1 } }
+1554.1.1 = { leader = {	name = "Пиали"                 type = admiral		fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1590.1.1 } }
 
-1560.1.1 = { leader = {	name = "Лала Мустафа"         	type = general		rank = 2	fire = 2	shock = 4	manuever = 2	siege = 0	death_date = 1580.1.1 } }
+1560.1.1 = { leader = {	name = "Лала Мустафа"         	type = general		fire = 2	shock = 4	manuever = 2	siege = 0	death_date = 1580.1.1 } }
 
-1560.1.1 = { leader = {	name = "Оздемироглу Османоглу"     	type = general		rank = 3	fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1585.1.1 } }
+1560.1.1 = { leader = {	name = "Оздемироглу Османоглу"     	type = general		fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1585.1.1 } }
 
-1561.1.1 = { leader = {	name = "Соколлу Мехмед"        	type = general		rank = 0	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1579.1.1 } }
+1561.1.1 = { leader = {	name = "Соколлу Мехмед"        	type = general		fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1579.1.1 } }
 
 1566.9.8 = {
 	monarch = {
@@ -477,7 +477,7 @@ government_rank = 2
 	}
 }
 
-1594.1.1 = { leader = {	name = "Лала Мустафа"           	type = general	rank = 0	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1606.1.1 } }
+1594.1.1 = { leader = {	name = "Лала Мустафа"           	type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1606.1.1 } }
 
 1595.1.16 = {
 	monarch = {
@@ -573,7 +573,7 @@ government_rank = 2
 	}
 }
 
-1620.1.1 = { leader = {	name = "Сиссау"               	type = admiral	rank = 0	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1640.1.1 } }
+1620.1.1 = { leader = {	name = "Сиссау"               	type = admiral	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1640.1.1 } }
 
 1622.5.20 = {
 	monarch = {
@@ -610,7 +610,7 @@ government_rank = 2
 		adm = 4
 		dip = 2
 		mil = 4
-		leader = { name = "Мурад IV"              type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
+		leader = { name = "Мурад IV"              type = general	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
@@ -688,11 +688,11 @@ government_rank = 2
 	}
 }
 
-1661.1.1 = { leader = {	name = "Кёпрюлю Фазыл Ахмед"   	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1676.1.1 } }
+1661.1.1 = { leader = {	name = "Кёпрюлю Фазыл Ахмед"   	type = general	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1676.1.1 } }
 
-1676.1.1 = { leader = {	name = "Кара Мустафа"         	type = general	rank = 1	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1683.1.1 } }
+1676.1.1 = { leader = {	name = "Кара Мустафа"         	type = general	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1683.1.1 } }
 
-1686.1.1 = { leader = {	name = " Мезаморто Хусейн"	type = admiral	rank = 1	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1701.1.1 } }
+1686.1.1 = { leader = {	name = " Мезаморто Хусейн"	type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1701.1.1 } }
 
 1687.11.8 = {
 	monarch = {
@@ -795,9 +795,9 @@ government_rank = 2
 	}
 }
 
-1704.1.1 = { leader = {	name = "Силахдар Али"          	type = general	rank = 1	fire = 1	shock = 3	manuever = 2	siege = 0	death_date = 1716.1.1 } }
+1704.1.1 = { leader = {	name = "Силахдар Али"          	type = general	fire = 1	shock = 3	manuever = 2	siege = 0	death_date = 1716.1.1 } }
 
-1728.1.1 = { leader = {	name = "Хекимоглу Али"         	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1758.1.1 } }
+1728.1.1 = { leader = {	name = "Хекимоглу Али"         	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1758.1.1 } }
 
 1730.10.2 = {
 	monarch = {
@@ -874,7 +874,7 @@ government_rank = 2
 	}
 }
 
-1766.1.1 = { leader = {	name = "Хассан Алжирский"       	type = admiral	rank = 0	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1790.1.1 } }
+1766.1.1 = { leader = {	name = "Хассан Алжирский"       	type = admiral	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1790.1.1 } }
 
 1774.1.22 = {
 	monarch = {
@@ -926,7 +926,7 @@ government_rank = 2
 	}
 }
 
-1792.1.1 = { leader = {	name = "Джаззар Паша"         	type = general	rank = 1	fire = 4	shock = 2	manuever = 2	siege = 0	death_date = 1804.1.1 } }
+1792.1.1 = { leader = {	name = "Джаззар Паша"         	type = general	fire = 4	shock = 2	manuever = 2	siege = 0	death_date = 1804.1.1 } }
 
 1807.5.30 = {
 	monarch = {
@@ -961,7 +961,7 @@ government_rank = 2
 		adm = 3
 		dip = 1
 		mil = 1
-		leader = {	name = "Махмуд"         	type = general	rank = 0	fire = 2	shock = 1	manuever = 1	siege = 0	}
+		leader = {	name = "Махмуд"         	type = general	fire = 2	shock = 1	manuever = 1	siege = 0	}
 	}
 }
 
@@ -979,7 +979,7 @@ government_rank = 2
 	}
 }
 
-1825.12.12 = { leader = {	name = "Решид Мехмед-паша"	type = general	rank = 0	fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1839.1.1 } }
+1825.12.12 = { leader = {	name = "Решид Мехмед-паша"	type = general	fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1839.1.1 } }
 		
 1839.7.1 = {
 	monarch = {
@@ -989,7 +989,7 @@ government_rank = 2
 		adm = 2
 		dip = 2
 		mil = 1
-		leader = {	name = "Абдул-Меджид I"         	type = general	rank = 0	fire = 2	shock = 1	manuever = 1	siege = 0	}
+		leader = {	name = "Абдул-Меджид I"         	type = general	fire = 2	shock = 1	manuever = 1	siege = 0	}
 	}
 }
 
@@ -1007,6 +1007,6 @@ government_rank = 2
 	}
 }
 
-1839.7.12 = { leader = { name = "Омер Лютфи-паша"         	type = general	rank = 0	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1868.1.1 } }
+1839.7.12 = { leader = { name = "Омер Лютфи-паша"         	type = general	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1868.1.1 } }
 
-1841.7.2 = { leader = {	name = "Абдулкерим Надир-паша"         	type = general	rank = 0	fire = 3	shock = 0	manuever = 1	siege = 0	death_date = 1877.7.23 } }
+1841.7.2 = { leader = {	name = "Абдулкерим Надир-паша"         	type = general	fire = 3	shock = 0	manuever = 1	siege = 0	death_date = 1877.7.23 } }

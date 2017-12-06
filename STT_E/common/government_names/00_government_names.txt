@@ -52,6 +52,7 @@ yuan_empire = {
 	}
 }
 
+#Subject Specific
 ottoman_marches = {
 	rank = {
 		1 = PASHALIK
@@ -171,7 +172,6 @@ march_christian_monarchy = {
 
 march_eastern_christian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 	}
 	
@@ -195,6 +195,8 @@ march_eastern_christian_monarchy = {
 		is_march = yes
 	}
 }
+
+#HRE
 
 holy_roman_electors_monarchy = {
 	rank = {
@@ -263,6 +265,8 @@ holy_roman_electors_bishoprics = {
 	}
 }
 
+#Shogunate
+
 japanese_shogunate = {
 	rank = {
 		3 = EMPIRE
@@ -301,6 +305,530 @@ japanese_shogunate = {
 	}
 }
 
+#Theocracies - Specified Religion / Culture
+teutonic_monastic_order = {
+	rank = {
+		1 = MONASTIC_ORDER
+	}
+
+	ruler_male = {
+		1 = HOCHMEISTER
+	}
+
+	ruler_female = {
+		1 = HOCHMEISTER
+	}
+
+	trigger = {
+		government = monastic_order_government
+		tag = TEU
+	}
+}
+
+#Theocracies - Specified Religion / Culture
+livonian_monastic_order = {
+	rank = {
+		1 = MONASTIC_ORDER
+	}
+
+	ruler_male = {
+		1 = LANDMEISTER
+	}
+
+	ruler_female = {
+		1 = LANDMEISTER
+	}
+
+	trigger = {
+		government = monastic_order_government
+		tag = LIV
+	}
+}
+
+germanic_monastic_order = {
+	rank = {
+		1 = MONASTIC_ORDER
+		#2 = SOVREIGN_MONASTIC_ORDER
+		#3 = SOVREIGN_MONASTIC_CONFEDERATION
+	}
+
+	ruler_male = {
+		1 = GROSSMEISTER
+	}
+
+	ruler_female = {
+		1 = GROSSMEISTER
+	}
+
+	trigger = {
+		government = monastic_order_government
+		culture_group = germanic
+	}
+}
+
+jewish_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = RABBI
+		2 = GRAND_RABBI
+		3 = KOHEN_GADOL
+	}
+
+	ruler_female = {
+		1 = RABBI
+		2 = GRAND_RABBI
+		3 = KOHEN_GADOL
+	}
+
+	trigger = {
+		religion = jewish
+		government = theocracy
+	}
+}
+
+zoroastrian_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = HERBAD
+		2 = MOBED
+		3 = MOABADAN_MOABAD
+	}
+
+	ruler_female = {
+		1 = HERBAD
+		2 = MOBEDYAR
+		3 = MOABADAN_MOABAD
+	}
+
+	trigger = {
+		religion = zoroastrian
+		government = theocracy
+	}
+}
+
+sikh_theocracy = {
+	rank = {
+		1 = HOLY_STATE
+		2 = MISL
+		3 = CONFEDERATION
+	}
+
+	ruler_male = {
+		1 = JATHEDAR
+		2 = MISLDAR
+		3 = GREAT_MISLDAR
+	}
+
+	ruler_female = {
+		1 = JATHEDAR
+		2 = MISLDAR
+		3 = GREAT_MISLDAR
+	}
+
+	trigger = {
+		religion = sikhism
+		government = theocracy
+	}
+}
+
+hindu_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = PANDIT
+		2 = PANDITRAO
+		3 = HIGH_GURU
+	}
+
+	ruler_female = {
+		1 = PANDIT
+		2 = PANDITRAO
+		3 = HIGH_GURU
+	}
+
+	trigger = {
+		religion = hinduism
+		government = theocracy
+	}
+}
+
+shinto_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = O_KANNUSHI
+		2 = O_KANNUSHI
+		3 = O_KANNUSHI
+	}
+
+	ruler_female = {
+		1 = O_KANNUSHI
+		2 = O_KANNUSHI
+		3 = O_KANNUSHI
+	}
+
+	trigger = {
+		religion = shinto
+		government = theocracy
+	}
+}
+
+buddhist_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = LAMA
+		2 = TULKU
+		3 = GREAT_TULKU
+	}
+
+	ruler_female = {
+		1 = LAMA
+		2 = TULKU
+		3 = GREAT_TULKU
+	}
+
+	trigger = {
+		OR = {
+			religion = buddhism #Theravada
+			religion = vajrayana
+			religion = mahayana
+		}
+		government = theocracy
+	}
+}
+
+confucian_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = ELDER
+		2 = HIGH_ELDER
+		3 = SON_OF_HEAVEN
+	}
+
+	ruler_female = {
+		1 = ELDER_fem
+		2 = HIGH_ELDER_fem
+		3 = DAUGHTER_OF_HEAVEN
+	}
+
+	trigger = {
+		religion = confucianism
+		government = theocracy
+	}
+}
+
+ibadi_theocracy = {
+	rank = {
+		1 = IMAMATE
+		2 = GREAT_IMAMATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = IMAM
+		2 = GREAT_IMAM
+		3 = HIGH_IMAM
+	}
+
+	ruler_female = {
+		1 = IMAM
+		2 = GREAT_IMAM
+		3 = HIGH_IMAM
+	}
+
+	trigger = {
+		religion = ibadi
+		OR = {
+			government = theocracy
+			government = feudal_theocracy
+		}
+	}
+}
+
+yemenite_theocracy = {
+	rank = {
+		1 = IMAMATE
+		2 = GREAT_IMAMATE
+		3 = HIGH_IMAMATE
+	}
+
+	ruler_male = {
+		1 = IMAM
+		2 = GREAT_IMAM
+		3 = HIGH_IMAM
+	}
+
+	ruler_female = {
+		1 = IMAM
+		2 = GREAT_IMAM
+		3 = HIGH_IMAM
+	}
+
+	trigger = {
+		religion = shiite
+		primary_culture = yemeni_culture
+		OR = {
+			government = theocracy
+			government = feudal_theocracy
+		}
+	}
+}
+
+shiite_theocracy = {
+	rank = {
+		1 = SHEIKHDOM
+		2 = HOLY_STATE
+		3 = HIGH_IMAMATE
+	}
+
+	ruler_male = {
+		1 = SHEIKH
+		2 = AYATOLLAH
+		3 = IMAM
+	}
+
+	ruler_female = {
+		1 = SHEIKHA
+		2 = AYATOLLAH
+		3 = IMAM
+	}
+
+	trigger = {
+		religion = shiite
+		government = theocracy
+	}
+}
+
+uyghur_theocracy = {
+	rank = {
+		1 = SHEIKHDOM
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = SHEIKH
+		2 = KHOJA
+		3 = GREAT_KHOJA
+	}
+
+	ruler_female = {
+		1 = SHEIKH
+		2 = KHOJA
+		3 = GREAT_KHOJA
+	}
+
+	trigger = {
+		religion = sunni
+		government = theocracy
+		OR = {
+			primary_culture = uyghur
+			has_country_flag = end_of_khojas
+		}
+	}
+}
+
+sunni_theocracy = {
+	rank = {
+		1 = SHEIKHDOM
+		2 = IMAMATE
+		3 = HIGH_IMAMATE
+	}
+
+	ruler_male = {
+		1 = SHEIKH
+		2 = IMAM
+		3 = HIGH_IMAM
+	}
+
+	ruler_female = {
+		1 = SHEIKHA
+		2 = IMAM
+		3 = HIGH_IMAM
+	}
+
+	trigger = {
+		religion = sunni
+		OR = {
+			government = feudal_theocracy
+			government = theocracy
+		}
+	}
+}
+
+orthodox_theocracy = {
+	rank = {
+		1 = METROPOLIS
+		2 = GREAT_METROPOLIS
+		3 = PATRIARCHATE
+	}
+
+	ruler_male = {
+		1 = BISHOP
+		2 = ARCHBISHOP
+		3 = PATRIARCH
+	}
+
+	ruler_female = {
+		1 = BISHOP_fem
+		2 = ARCHBISHOP_fem
+		3 = MATRIARCH
+	}
+
+	trigger = {
+		OR = {
+			religion = orthodox
+			religion = coptic
+		}
+		government = theocracy
+	}
+}
+
+inti_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = MICHOQ
+		2 = HIGH_PRIEST
+		3 = WILLAQ_UMU
+	}
+
+	ruler_female = {
+		1 = MICHOQ
+		2 = HIGH_PRIESTESS
+		3 = SARPAY
+	}
+
+	trigger = {
+		religion = inti
+		government = theocracy
+	}
+}
+
+pagan_theocracy = {
+	rank = {
+		1 = HOLY_PRINCIPALITY
+		2 = HOLY_STATE
+		3 = HOLY_EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRIEST
+		2 = HIGH_PRIEST
+		3 = PARAMOUNT_PRIEST
+	}
+
+	ruler_female = {
+		1 = PRIESTESS
+		2 = HIGH_PRIESTESS
+		3 = PARAMOUNT_PRIESTESS
+	}
+
+	trigger = {
+		religion_group = pagan
+		government = theocracy
+	}
+}
+
+islamic_syncretism_kingdoms = { #For countries in a node being converted to islam.
+	rank = {
+		1 = EMIRATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = EMIR
+		2 = SULTAN
+		3 = GREAT_SULTAN
+	}
+
+	ruler_female = {
+		1 = EMIRA
+		2 = SULTANA
+		3 = GREAT_SULTANA
+	}
+
+	trigger = {
+		government = monarchy
+		NOT = { religion_group = muslim }
+		has_country_flag = sultan_titles_for_non_muslims
+	}
+}
+
+french_kingdom = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	heir_male = {
+		1 = DAUPHIN
+		2 = DAUPHIN
+		3 = DAUPHIN
+	}
+	
+	heir_female = {
+		1 = DAUPHINE
+		2 = DAUPHINE
+		3 = DAUPHINE
+	}
+
+	trigger = {
+		government = monarchy
+		NOT = { government = revolutionary_empire }
+		OR = {
+			tag = FRA
+			tag = AUV
+		}
+	}
+}
+
 sharifs_of_mecca = {
 	rank = {
 		1 = SHARIFATE
@@ -322,13 +850,91 @@ sharifs_of_mecca = {
 	
 	trigger = {
 		religion_group = muslim
-		tag = HED
+		OR = {
+			tag = HED
+			tag = MDA
+			tag = MFL
+		}
+	}
+}
+
+avar_nutsals = {
+	rank = {
+		1 = KHANATE
+		2 = KHANATE
+		3 = KHAGANATE
+	}
+
+	ruler_male = {
+		1 = NUTSAL
+		2 = KHAN
+		3 = KHAGAN
+	}
+
+	ruler_female = {
+		1 = NUTSAL_fem
+		2 = KHAN
+		3 = KHAGAN
+	}
+	
+	trigger = {
+		tag = AVR
+		government = monarchy
+	}
+}
+
+georgian_monarchy = {
+	rank = {
+		1 = KHANATE
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = ATABEG
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = ATABEG_fem
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	trigger = {
+		government = monarchy
+		primary_culture = georgian
+	}
+}
+
+dais_of_najran = {
+	rank = {
+		1 = EMIRATE
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DAI_male
+		2 = SULTAN
+		3 = PADISHAH
+	}
+
+	ruler_female = {
+		1 = DAI_female
+		2 = SULTANA
+		3 = PADISHAH
+	}
+	
+	trigger = {
+		religion_group = muslim
+		tag = NJR
 	}
 }
 
 malian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -486,6 +1092,55 @@ kathiawar_tribal_monarchy = { #Sammas of Sindh are also Jams
 			tag = KAT
 			primary_culture = sindhi
 		}
+	}
+}
+
+sistan_monarchy = {
+	rank = {
+		1 = MALIKATE
+		2 = SHAHDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = MALIK
+		2 = SHAH
+		3 = SHAHANSHAH
+	}
+
+	ruler_female = {
+		1 = MALIKAH
+		2 = SHAH
+		3 = SHAHANSHAH
+	}
+	
+	consort_male = {
+		1 = MIRZA
+		2 = SHAH_CONSORT
+		3 = SHAH_CONSORT
+	}
+
+	consort_female = {
+		1 = MALIKAH
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	heir_male = {
+		1 = MIRZA
+		2 = SHAHZADE
+		3 = SHAHZADE
+	}
+
+	heir_female = {
+		1 = SHEIKHA
+		2 = SHAHDOKHT
+		3 = SHAHDOKHT
+	}
+
+	trigger = {
+		government = monarchy
+		tag = SIS
 	}
 }
 
@@ -722,40 +1377,6 @@ turkish_monarchy = {
 		2 = VALI_AHAD
 		3 = VALI_AHAD
 	}
-	consort_male = {
-		1 = BEY
-		2 = SULTAN
-		3 = PADISHAH
-	}
-	consort_female = {
-		1 = HATUN
-		2 = HASEKI_SULTAN
-		3 = HASEKI_SULTAN
-	}
-	trigger = {
-		government = monarchy
-		primary_culture = turkish
-	}
-}
-### STT
-gov_turkey_republic = {
-	rank = {
-		1 = PASHALIK
-		2 = VISIRLIK
-		3 = VEL_VISIRLIK
-	}	
-
-	ruler_male = {
-		1 = PASHA
-		1 = VISIR
-		1 = VEL_VISIR
-	}
-
-	ruler_female = {
-		1 = PASHA
-		1 = VISIR
-		1 = VEL_VISIRIN
-	}
 	
 	consort_male = {
 		1 = BEY
@@ -769,14 +1390,13 @@ gov_turkey_republic = {
 	}
 
 	trigger = {
-		government = republic
+		government = monarchy
 		primary_culture = turkish
 	}
 }
 
 theodoro_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -802,7 +1422,6 @@ theodoro_monarchy = {
 
 croatian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -966,7 +1585,6 @@ grand_duchy_of_luxembourg = {
 
 serbian_feudal_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = DESPOTATE
 		3 = EMPIRE
@@ -996,7 +1614,6 @@ serbian_feudal_monarchy = {
 
 serbian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1022,7 +1639,6 @@ serbian_monarchy = {
 
 byzantine_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1062,30 +1678,10 @@ byzantine_monarchy = {
 		}
 	}
 }
-### STT
-gov_spqr_republic = {
-	rank = {
-		2 = SENATE
-	}
-
-	ruler_male = {
-		2 = CONSUL
-	}
-
-	ruler_female = {
-		2 = CONSUL
-	}
-
-	trigger = {
-		government = republic
-		tag = PQR
-	}
-}
 
 greek_monarchy = {	#Greeks without Byzantine Ties
 	rank = {
-		#1 = PRINCIPALITY #STT
-		1 = PRINCEDOM
+		1 = DUCHY
 		2 = KINGDOM
 		3 = EMPIRE
 	}
@@ -1138,7 +1734,6 @@ arakanese_monarchy = { #Buddhist state that used Muslim titles.
 
 albanian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1164,7 +1759,6 @@ albanian_monarchy = {
 
 qing_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KHANATE
 		3 = KHAGANATE
@@ -1241,7 +1835,6 @@ scanian_peasant_republic = {
 
 pagan_egyptian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1273,7 +1866,6 @@ pagan_egyptian_monarchy = {
 
 pagan_greek_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1307,7 +1899,6 @@ pagan_greek_monarchy = {
 
 pagan_roman_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1339,7 +1930,6 @@ pagan_roman_monarchy = {
 
 jurchen_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KHANATE
 		3 = KHAGANATE
@@ -1377,7 +1967,6 @@ jurchen_monarchy = {
 
 romanian_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY #STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -1742,7 +2331,7 @@ ethiopian_monarchies = {
 	}
 
 	ruler_male = {
-		1 = RAS
+		1 = RAS_title
 		2 = NEGUS
 		3 = NEGUSA_NEGAST
 	}
@@ -2020,7 +2609,6 @@ betsimisaraka_monarchy = {
 
 south_slavic_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY ###STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -2113,7 +2701,7 @@ russian_monarchy = {
 	ruler_female = {
 		1 = KNIAGINIA
 		2 = GREAT_KNIAGINIA
-3 = TSARITSA
+		3 = TSARITSA
 	}
 
 	trigger = {
@@ -2134,9 +2722,8 @@ russian_monarchy = {
 	}
 }
 
-gov_rus_imperial_government = { ###STT
+russian_feudal_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY ###STT
 		1 = PRINCEDOM
 		2 = GRAND_PRINCIPALITY
 		3 = EMPIRE
@@ -2156,7 +2743,6 @@ gov_rus_imperial_government = { ###STT
 
 	trigger = {
 		government = monarchy
-		technology_group = western ###STT
 		OR = {
 			culture_group = east_slavic
 			culture_group = uralic_g ###STT
@@ -2166,7 +2752,6 @@ gov_rus_imperial_government = { ###STT
 
 inti_monarchy = {
 	rank = {
-		#1 = PRINCIPALITY ###STT
 		1 = PRINCEDOM
 		2 = KINGDOM
 		3 = EMPIRE
@@ -2698,32 +3283,6 @@ german_republic = {
 		culture_group = germanic
 	}
 }
-### STT
-gov_reich_government = {
-	rank = {
-		1 = MARGRAVIATE
-		2 = KONIGREICH
-		3 = REICH
-	}
-	ruler_male = {
-		1 = MARGRAVE
-		2 = KONIG
-		3 = CAISER
-	}
-
-	ruler_female = {
-		1 = MARGRAVINE
-		2 = KONIGINE
-		3 = CAISERINE
-	}
-
- 	trigger = {
-		government = monarchy
-		tag = BRA
-		tag = PRU
-		tag = GER
-}
-}
 
 italian_republic = {
 	rank = {
@@ -2830,522 +3389,116 @@ muslim_republic = {
 	}
 }
 
-#Theocracies - Specified Religion / Culture
-teutonic_monastic_order = {
+### STT
+gov_turkey_republic = {
 	rank = {
-		1 = MONASTIC_ORDER
-	}
+		1 = PASHALIK
+		2 = VISIRLIK
+		3 = VEL_VISIRLIK
+	}	
 
 	ruler_male = {
-		1 = HOCHMEISTER
+		1 = PASHA
+		1 = VISIR
+		1 = VEL_VISIR
 	}
 
 	ruler_female = {
-		1 = HOCHMEISTER
+		1 = PASHA
+		1 = VISIR
+		1 = VEL_VISIRIN
+	}
+	
+	consort_male = {
+		1 = BEY
+		2 = SULTAN
+		3 = PADISHAH
+	}
+	consort_female = {
+		1 = HATUN
+		2 = HASEKI_SULTAN
+		3 = HASEKI_SULTAN
 	}
 
 	trigger = {
-		government = monastic_order_government
-		tag = TEU
+		government = republic
+		primary_culture = turkish
 	}
 }
 
-#Theocracies - Specified Religion / Culture
-livonian_monastic_order = {
+### STT
+gov_spqr_republic = {
 	rank = {
-		1 = MONASTIC_ORDER
+		2 = SENATE
 	}
 
 	ruler_male = {
-		1 = LANDMEISTER
+		2 = CONSUL
 	}
 
 	ruler_female = {
-		1 = LANDMEISTER
+		2 = CONSUL
 	}
 
 	trigger = {
-		government = monastic_order_government
-		tag = LIV
+		government = republic
+		tag = PQR
 	}
 }
 
-germanic_monastic_order = {
+gov_rus_imperial_government = { ###STT
 	rank = {
-		1 = MONASTIC_ORDER
-		#2 = SOVREIGN_MONASTIC_ORDER
-		#3 = SOVREIGN_MONASTIC_CONFEDERATION
+		#1 = PRINCIPALITY ###STT
+		1 = PRINCEDOM
+		2 = GRAND_PRINCIPALITY
+		3 = EMPIRE
 	}
 
 	ruler_male = {
-		1 = GROSSMEISTER
-	}
-
-	ruler_female = {
-		1 = GROSSMEISTER
-	}
-
-	trigger = {
-		government = monastic_order_government
-		culture_group = germanic
-	}
-}
-
-jewish_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = RABBI
-		2 = GRAND_RABBI
-		3 = KOHEN_GADOL
-	}
-
-	ruler_female = {
-		1 = RABBI
-		2 = GRAND_RABBI
-		3 = KOHEN_GADOL
-	}
-
-	trigger = {
-		religion = jewish
-		government = theocracy
-	}
-}
-
-zoroastrian_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = HERBAD
-		2 = MOBED
-		3 = MOABADAN_MOABAD
-	}
-
-	ruler_female = {
-		1 = HERBAD
-		2 = MOBEDYAR
-		3 = MOABADAN_MOABAD
-	}
-
-	trigger = {
-		religion = zoroastrian
-		government = theocracy
-	}
-}
-
-sikh_theocracy = {
-	rank = {
-		1 = HOLY_STATE
-		2 = MISL
-		3 = CONFEDERATION
-	}
-
-	ruler_male = {
-		1 = JATHEDAR
-		2 = MISLDAR
-		3 = GREAT_MISLDAR
-	}
-
-	ruler_female = {
-		1 = JATHEDAR
-		2 = MISLDAR
-		3 = GREAT_MISLDAR
-	}
-
-	trigger = {
-		religion = sikhism
-		government = theocracy
-	}
-}
-
-hindu_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = PANDIT
-		2 = PANDITRAO
-		3 = HIGH_GURU
-	}
-
-	ruler_female = {
-		1 = PANDIT
-		2 = PANDITRAO
-		3 = HIGH_GURU
-	}
-
-	trigger = {
-		religion = hinduism
-		government = theocracy
-	}
-}
-
-shinto_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = O_KANNUSHI
-		2 = O_KANNUSHI
-		3 = O_KANNUSHI
-	}
-
-	ruler_female = {
-		1 = O_KANNUSHI
-		2 = O_KANNUSHI
-		3 = O_KANNUSHI
-	}
-
-	trigger = {
-		religion = shinto
-		government = theocracy
-	}
-}
-
-buddhist_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = LAMA
-		2 = TULKU
-		3 = GREAT_TULKU
-	}
-
-	ruler_female = {
-		1 = LAMA
-		2 = TULKU
-		3 = GREAT_TULKU
-	}
-
-	trigger = {
-		OR = {
-			religion = buddhism #Theravada
-			religion = vajrayana
-			religion = mahayana
-		}
-		government = theocracy
-	}
-}
-
-confucian_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = ELDER
-		2 = HIGH_ELDER
-		3 = SON_OF_HEAVEN
-	}
-
-	ruler_female = {
-		1 = ELDER_fem
-		2 = HIGH_ELDER_fem
-		3 = DAUGHTER_OF_HEAVEN
-	}
-
-	trigger = {
-		religion = confucianism
-		government = theocracy
-	}
-}
-
-ibadi_theocracy = {
-	rank = {
-		1 = IMAMATE
-		2 = GREAT_IMAMATE
-		3 = HIGH_IMAMATE
-	}
-
-	ruler_male = {
-		1 = IMAM
-		2 = GREAT_IMAM
-		3 = HIGH_IMAM
-	}
-
-	ruler_female = {
-		1 = IMAM
-		2 = GREAT_IMAM
-		3 = HIGH_IMAM
-	}
-
-	trigger = {
-		religion = ibadi
-		government = theocracy
-	}
-}
-
-shiite_theocracy = {
-	rank = {
-		1 = SHEIKHDOM
-		2 = HOLY_STATE
-		3 = HIGH_IMAMATE
-	}
-
-	ruler_male = {
-		1 = SHEIKH
-		2 = AYATOLLAH
-		3 = IMAM
-	}
-
-	ruler_female = {
-		1 = SHEIKHA
-		2 = AYATOLLAH
-		3 = IMAM
-	}
-
-	trigger = {
-		religion = shiite
-		government = theocracy
-	}
-}
-
-uyghur_theocracy = {
-	rank = {
-		1 = SHEIKHDOM
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = SHEIKH
-		2 = KHOJA
-		3 = GREAT_KHOJA
-	}
-
-	ruler_female = {
-		1 = SHEIKH
-		2 = KHOJA
-		3 = GREAT_KHOJA
-	}
-
-	trigger = {
-		religion = sunni
-		government = theocracy
-		OR = {
-			primary_culture = uyghur
-			has_country_flag = end_of_khojas
-		}
-	}
-}
-
-sunni_theocracy = {
-	rank = {
-		1 = SHEIKHDOM
-		2 = IMAMATE
-		3 = HIGH_IMAMATE
-	}
-
-	ruler_male = {
-		1 = SHEIKH
-		2 = IMAM
-		3 = HIGH_IMAM
-	}
-
-	ruler_female = {
-		1 = SHEIKHA
-		2 = IMAM
-		3 = HIGH_IMAM
-	}
-
-	trigger = {
-		religion = sunni
-		government = theocracy
-	}
-}
-
-orthodox_theocracy = {
-	rank = {
-		1 = METROPOLIS
-		2 = GREAT_METROPOLIS
-		3 = PATRIARCHATE
-	}
-
-	ruler_male = {
-		1 = BISHOP
-		2 = ARCHBISHOP
-		3 = PATRIARCH
-	}
-
-	ruler_female = {
-		1 = BISHOP_fem
-		2 = ARCHBISHOP_fem
-		3 = MATRIARCH
-	}
-
-	trigger = {
-		OR = {
-			religion = orthodox
-			religion = coptic
-		}
-		government = theocracy
-	}
-}
-
-inti_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = MICHOQ
-		2 = HIGH_PRIEST
-		3 = WILLAQ_UMU
-	}
-
-	ruler_female = {
-		1 = MICHOQ
-		2 = HIGH_PRIESTESS
-		3 = SARPAY
-	}
-
-	trigger = {
-		religion = inti
-		government = theocracy
-	}
-}
-
-pagan_theocracy = {
-	rank = {
-		1 = HOLY_PRINCIPALITY
-		2 = HOLY_STATE
-		3 = HOLY_EMPIRE
-	}
-
-	ruler_male = {
-		1 = PRIEST
-		2 = HIGH_PRIEST
-		3 = PARAMOUNT_PRIEST
-	}
-
-	ruler_female = {
-		1 = PRIESTESS
-		2 = HIGH_PRIESTESS
-		3 = PARAMOUNT_PRIESTESS
-	}
-
-	trigger = {
-		religion_group = pagan
-		government = theocracy
-	}
-}
-
-#Novgorod_mode
-veche_republic = {
-	rank = {
-		1 = VECHE_REPUBLIC
-		2 = VECHE_REPUBLIC
-		3 = GREAT_VECHE_REPUBLIC
-	}
-
-	ruler_male = {
-		1 = POSADNIK
-		2 = POSADNIK
-		3 = GREAT_POSADNIK
-	}
-
-	ruler_female = {
-		1 = POSADNITSA
-		2 = POSADNITSA
-		3 = GREAT_POSADNITSA
-	}
-
-	trigger = {
-		OR = {
-			culture_group = east_slavic
-			culture_group = uralic_g
-		}
-		government = veche_republic
-	}
-}
-
-knyaz_veche_republic = {
-	rank = {
-		1 = VECHE_REPUBLIC
-		2 = VECHE_REPUBLIC
-		3 = GREAT_VECHE_REPUBLIC
-	}
-
-	ruler_male = {
-		1 = KNYAZ
+		1 = KNIAZ
 		2 = GREAT_KNIAZ
-		3 = TSAR
+		3 = EMPEROR
 	}
 
 	ruler_female = {
 		1 = KNIAGINIA
 		2 = GREAT_KNIAGINIA
-		3 = TSARITSA
+		3 = EMPRESS
 	}
 
 	trigger = {
+		government = monarchy
+		technology_group = western ###STT
 		OR = {
 			culture_group = east_slavic
-			culture_group = uralic_g
+			culture_group = uralic_g ###STT
 		}
-		government = knyaz_veche_republic
 	}
 }
 
-udel_principality = {
+### STT
+gov_reich_government = {
 	rank = {
-		1 = UDEL_PRINCIPALITY
+		1 = MARGRAVIATE
+		2 = KONIGREICH
+		3 = REICH
 	}
-
 	ruler_male = {
-		1 = UDEL_KNIAZ
+		1 = MARGRAVE
+		2 = KONIG
+		3 = CAISER
 	}
 
 	ruler_female = {
-		1 = UDEL_KNIAGINIA
+		1 = MARGRAVINE
+		2 = KONIGINE
+		3 = CAISERINE
 	}
 
-	trigger = {
-		government = udel_principality
-		OR = {
-			culture_group = east_slavic
-			culture_group = uralic_g
-		}
-	}
-}
-
-carthage_republic = {
-    rank = {
-	    3 = CARTHAGE_REPUBLIC_NAME
-	}
-
-    ruler_male = {
-	    3 = SUFFET
-	}
-	
-	ruler_female = {
-	    3 = SUFFET
-	}
-	
-	trigger = {
-	    government = carthage_republic
-		tag = CAR
+ 	trigger = {
+		government = monarchy
+		tag = BRA
+		tag = PRU
+		tag = GER
 	}
 }

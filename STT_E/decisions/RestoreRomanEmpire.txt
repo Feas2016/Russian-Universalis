@@ -52,6 +52,9 @@ country_decisions = {
 			is_nomad = no
 		}
 		effect = {
+			118 = {
+				move_capital_effect = yes
+			}
 			change_tag = ROM
 			custom_tooltip = roman_culture_provinces_tooltip
 			hidden_effect = {
@@ -76,7 +79,6 @@ country_decisions = {
 			change_government = rome_government ### STT
 			add_legitimacy = 50 ### STT
 			add_prestige = 50
-			set_capital = 118 # Rome
 			add_core = 118 # Rome
 			#if = {
 			#	limit = {

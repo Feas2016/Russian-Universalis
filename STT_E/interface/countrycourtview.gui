@@ -11,7 +11,7 @@ guiTypes = {
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
-		upsound = tab_government
+		upsound = tab_court
 		
 		iconType =
 		{
@@ -174,7 +174,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="monarch_ruler_personality_list"
-			position = { x=160 y =130}
+			position = { x=160 y =128}
 			backGround=""
 			size = { x=300 y =300}
 			Orientation = "UPPER_LEFT"
@@ -214,7 +214,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = ""	
 			maxWidth = 400
-			maxHeight = 14
+			maxHeight = 32
 			format = left
 			fixedsize = yes
 		}		
@@ -320,7 +320,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="monarch_heir_personality_list"
-			position = { x=160 y =193}
+			position = { x=160 y =191}
 			backGround=""
 			size = { x=220 y =100}
 			Orientation = "UPPER_LEFT"
@@ -372,7 +372,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = ""	
 			maxWidth = 400
-			maxHeight = 14
+			maxHeight = 32
 			format = left
 			fixedsize = yes
 		}		
@@ -465,7 +465,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="monarch_queen_personality_list"
-			position = { x=160 y =256}
+			position = { x=160 y =254}
 			backGround=""
 			size = { x=220 y =100}
 			Orientation = "UPPER_LEFT"
@@ -699,7 +699,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "Charles Darwin"	
 			maxWidth = 160
-			maxHeight = 16
+			maxHeight = 32
 			format = center
 			fixedsize = yes
 		}
@@ -752,6 +752,38 @@ guiTypes = {
 			hint_tag = "hint_advisor"
 		}		
 		
+		
+
+
+		iconType ={
+			name ="advisor_indicator_religion"
+			spriteType = "GFX_advisor_indicator_religion"
+			position = { x= -18 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType ={
+			name ="advisor_indicator_religion_icon"
+			spriteType = "GFX_province_view_religion"
+			position = { x= -24 y = -1 } #STT
+			Orientation = "UPPER_LEFT"
+			scale = 0.9
+			allwaystransparent = yes
+			frame = 17
+		}
+
+		iconType ={
+			name ="advisor_indicator_culture"
+			spriteType = "GFX_advisor_indicator_culture"
+			position = { x= -18 y = 39 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}		
+		
+
+
+		
+		
 		guiButtonType = {
 			name = "advisor_sack"
 			position = { x=326 y = -1 }
@@ -759,6 +791,16 @@ guiTypes = {
 			tooltip = ""
 			tooltipText =""
 			delayedTooltipText = ""
+			buttonFont = "vic_18"
+		}
+			
+		guiButtonType = {
+			name = "advisor_promote"
+			position = { x=299 y = -1 }
+			quadTextureSprite ="GFX_promote_advisor"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText= ""
 			buttonFont = "vic_18"
 		}
 
@@ -906,13 +948,35 @@ guiTypes = {
 			delayedTooltipText = ""
 		}
 		
-		iconType =
-		{
-			name ="exclusive_overlay"
-			spriteType = "GFX_great_men_exclusive_overlay"
-			position = { x= -5 y = 0 }
+		
+				
+		iconType ={
+			name ="advisor_indicator_religion"
+			spriteType = "GFX_advisor_indicator_religion"
+			position = { x= -41 y = 4 } #STT
 			Orientation = "UPPER_LEFT"
 		}
+
+		iconType ={
+			name ="advisor_indicator_religion_icon"
+			spriteType = "GFX_province_view_religion"
+			position = { x= -47 y = -2 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.9
+			allwaystransparent = yes
+			frame = 17
+		}
+
+		iconType ={
+			name ="advisor_indicator_culture"
+			spriteType = "GFX_advisor_indicator_culture"
+			position = { x= -42 y = 37 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+		}		
+		
+		
+		
 
 		instantTextBoxType = {
 			name = "name"

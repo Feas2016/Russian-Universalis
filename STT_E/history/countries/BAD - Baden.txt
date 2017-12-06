@@ -145,7 +145,7 @@ capital = 74	# Baden
 	}
 }
 
-1519.1.1 = { leader = {	name = "Георг Тручесс"       	type = general	rank = 0	fire = 1	shock = 2	manuever = 3	siege = 1	death_date = 1531.5.29 } }
+1519.1.1 = { leader = {	name = "Георг Тручесс"       	type = general	fire = 1	shock = 2	manuever = 3	siege = 1	death_date = 1531.5.29 } }
 
 1536.1.22 = {
 	heir = {
@@ -311,7 +311,7 @@ capital = 74	# Baden
 		leader = { 
 			name = "Людвиг-Вильгельм I"
 			type = general
-			rank = 0
+		
 			fire = 2
 			shock = 3
 			manuever = 2
@@ -327,7 +327,7 @@ capital = 74	# Baden
 		adm = 2
 		dip = 4
 		mil = 4
-		leader = { name = "Людвиг-Вильгельм I"	type = general	rank = 0	fire = 2	shock = 3	manuever = 2	siege = 0}
+		leader = { name = "Людвиг-Вильгельм I"	type = general	fire = 2	shock = 3	manuever = 2	siege = 0}
 		dynasty = "фон Церинген"
 	}
 }

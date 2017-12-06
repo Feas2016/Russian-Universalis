@@ -14,7 +14,9 @@ veche_republic = {
 	#boost_income = yes
 	can_use_trade_post = yes
 	can_form_trade_league = yes
-	has_russian_abilities = yes
+	government_abilities = {
+		russian_mechanic
+	}
 		
 	faction = mr_aristocrats
 	faction = mr_traders
@@ -61,7 +63,9 @@ knyaz_veche_republic = {
 	#boost_income = yes
 	can_use_trade_post = yes
 	#can_form_trade_league = yes
-	has_russian_abilities = yes
+	government_abilities = {
+		russian_mechanic
+	}
 	
 	faction = mr_aristocrats
 	faction = mr_traders
@@ -105,7 +109,9 @@ knyaz_veche_republic = {
 #	royal_marriage = no
 #	
 #	has_parliament = yes
-#	has_russian_abilities = yes
+#	government_abilities = {
+#		russian_mechanic
+#	}
 #
 #	rank = {
 #		1 = {

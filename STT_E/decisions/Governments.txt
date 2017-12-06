@@ -63,12 +63,20 @@ country_decisions = {
 			NOT = { government = merchant_republic }
 			NOT = { government = steppe_horde }
 			NOT = { government = iqta }
+			NOT = { government = feudal_theocracy }
+			NOT = { government = mamluk_government }
 			NOT = { government = tribal_despotism }
 			NOT = { government = tribal_kingdom }
 			NOT = { government = tribal_federation }
 			NOT = { government = native_council }
 			NOT = { government = siberian_native_council }
+			OR = {
 			NOT = { government = english_monarchy }
+				AND = {
+					NOT = { tag = ENG }
+					NOT = { tag = GBR }
+				}
+			}
 			NOT = { government = elective_monarchy }
 			NOT = { government = celestial_empire }
 			NOT = { government = daimyo }
@@ -137,8 +145,16 @@ country_decisions = {
 			NOT = { government = tribal_kingdom }
 			NOT = { government = tribal_federation }
 			NOT = { government = native_council }
+			NOT = { government = feudal_theocracy }
+			NOT = { government = mamluk_government }
 			NOT = { government = siberian_native_council }
+			OR = {
 			NOT = { government = english_monarchy }
+				AND = {
+					NOT = { tag = ENG }
+					NOT = { tag = GBR }
+				}
+			}
 			NOT = { government = elective_monarchy }
 			NOT = { government = celestial_empire }
 			NOT = { government = daimyo }
@@ -218,7 +234,15 @@ country_decisions = {
 			NOT = { government = tribal_democracy }
 			NOT = { government = native_council }
 			NOT = { government = siberian_native_council }
+			NOT = { government = feudal_theocracy }
+			NOT = { government = mamluk_government }
+			OR = {
 			NOT = { government = english_monarchy }
+				AND = {
+					NOT = { tag = ENG }
+					NOT = { tag = GBR }
+				}
+			}
 			NOT = { government = elective_monarchy }
 			NOT = { government = imperial_city }
 			NOT = { government = ambrosian_republic }

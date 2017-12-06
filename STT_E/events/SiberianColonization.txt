@@ -22,6 +22,7 @@ country_event = {
 			government = rus_imperial_government
 		}
 		any_owned_province = {
+			is_colony = yes
 			OR = {
 				region = east_siberia_region
 				region = west_siberia_region
@@ -172,7 +173,11 @@ country_event = {
 	}
 	option = {
 		name = siberian_events.1.b #Refuse to allow it
-		add_support_for_dip_action = 25
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = 25
+		}
 		add_legitimacy = 5
 	}
 }
@@ -447,7 +452,11 @@ country_event = {
 			estate = estate_cossacks
 			loyalty = -5
 		}
-		add_support_for_dip_action = 10
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = DIP
+			amount = 10
+		}
 		event_target:cossack_exploration_province = {
 			area = {
 				ROOT = {

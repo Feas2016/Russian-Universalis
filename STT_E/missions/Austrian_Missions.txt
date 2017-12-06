@@ -82,12 +82,13 @@ recover_silesia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		263
+		264
+		2966
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 263
-			province_id = 264
-			province_id = 2966
-		}
 		owner = {
 			NOT = { OR = { vassal_of = HAB vassal_of = DUA vassal_of = AEM } } ### STT
 			NOT = { OR = { alliance_with = HAB alliance_with = DUA alliance_with = AEM } } ### STT
@@ -328,17 +329,7 @@ subjugate_hungary = {
 					}
 				}
 			}
-			transylvania_area = {
-				NOT = { owned_by = HUN }
-				owner = {
-					NOT = {
-						is_subject_of = HUN
-					}
-					NOT = {
-						overlord_of = HUN
-					}
-				}
-			}
+			#STT del 1
 			slovakia_area = {
 				NOT = { owned_by = HUN }
 				owner = {
@@ -400,17 +391,7 @@ subjugate_hungary = {
 					}
 				}
 			}
-			transylvania_area = {
-				NOT = { owned_by = HUN }
-				owner = {
-					NOT = {
-						is_subject_of = HUN
-					}
-					NOT = {
-						overlord_of = HUN
-					}
-				}
-			}
+			#STT del 1
 		}
 		modifier = {
 			factor = 2
@@ -436,17 +417,17 @@ subjugate_hungary = {
 					}
 				}
 			}
-			transylvania_area = {
-				NOT = { owned_by = HUN }
-				owner = {
-					NOT = {
-						is_subject_of = HUN
-					}
-					NOT = {
-						overlord_of = HUN
-					}
-				}
-			}
+			#transylvania_area = { #STT
+			#	NOT = { owned_by = HUN }
+			#	owner = {
+			#		NOT = {
+			#			is_subject_of = HUN
+			#		}
+			#		NOT = {
+			#			overlord_of = HUN
+			#		}
+			#	}
+			#}
 		}
 		modifier = {
 			factor = 2
@@ -497,17 +478,17 @@ subjugate_hungary = {
 					}
 				}
 			}
-			transylvania_area = {
-				NOT = { owned_by = HUN }
-				owner = {
-					NOT = {
-						is_subject_of = HUN
-					}
-					NOT = {
-						overlord_of = HUN
-					}
-				}
-			}
+			#transylvania_area = { #STT
+			#	NOT = { owned_by = HUN }
+			#	owner = {
+			#		NOT = {
+			#			is_subject_of = HUN
+			#		}
+			#		NOT = {
+			#			overlord_of = HUN
+			#		}
+			#	}
+			#}
 			slovakia_area = {
 				NOT = { owned_by = HUN }
 				owner = {
@@ -552,12 +533,13 @@ no_ottomans_in_eastern_balkans = {
 
 	category = MIL
 	
+	target_areas_list = {
+		wallachia_area
+		bulgaria_area
+	}
+	
 	target_provinces = {
 		owned_by = TUR
-		OR = {
-			area = wallachia_area
-			area = bulgaria_area
-		}
 	}
 	
 	allow = {
@@ -631,13 +613,14 @@ no_ottomans_in_western_balkans = {
 
 	category = MIL
 	
+	target_areas_list = {
+		serbia_area
+		#STT -1 del
+		bosnia_area
+	}
+	
 	target_provinces = {
 		owned_by = TUR
-		OR = {
-			area = serbia_area
-			#STT -1 del
-			area = bosnia_area
-		}
 	}
 	
 	allow = {
@@ -728,15 +711,22 @@ partition_poland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		malopolska_area
+		transdanubia_area
+		alfold_area
+		slovakia_area
+		transylvania_area
+		#southern_transylvania_area #STT
+		wallachia_area
+		moldavia_area
+	}
+	
 	target_provinces = {
 		OR = {
 			owned_by = POL
 			owned_by = PLC
 			owned_by = JAG ###STT
-		}
-		OR = {
-			area = malopolska_area
-			region = carpathia_region
 		}
 	}
 	
@@ -929,8 +919,16 @@ protect_belgium_from_the_french = {
 
 	category = MIL
 	
+	target_areas_list = {
+		wallonia_area
+		flanders_area
+		brabant_area
+		netherlands_area
+		frisia_area
+		luxemburg_liege_area
+	}
+	
 	target_provinces = {
-		region = low_countries_region
 		owned_by = FRA
 	}
 	
@@ -1004,14 +1002,15 @@ protect_hungary_from_the_ottomans = {
 
 	category = MIL
 	
+	target_areas_list = {
+		alfold_area
+		transdanubia_area
+		transylvania_area
+		#southern_transylvania_area #STT
+		slovakia_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = alfold_area
-			area = transdanubia_area
-			area = transylvania_area
-			area = transylvania_area
-			area = slovakia_area
-		}
 		owned_by = TUR
 	}
 	allow = {
@@ -1031,7 +1030,7 @@ protect_hungary_from_the_ottomans = {
 			slovakia_area = { owned_by =  ROOT }
 			alfold_area = { owned_by =  ROOT }
 			transdanubia_area = { owned_by =  ROOT }
-			transylvania_area = { owned_by =  ROOT }
+			### STT -1
 		}
 		OR = {
 			slovakia_area = { owned_by =  TUR }
@@ -1090,11 +1089,12 @@ free_croatia_from_the_ottomans = {
 
 	category = MIL
 	
+	target_areas_list = {
+		east_adriatic_coast_area
+		croatia_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = east_adriatic_coast_area
-			area = croatia_area
-		}
 		owned_by = TUR
 	}
 	allow = {

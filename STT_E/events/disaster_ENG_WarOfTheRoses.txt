@@ -18,7 +18,7 @@ country_event = {
 	
 
 	
-	option = {		# Support the House of Ланкастер
+	option = {		# Support the House of Lancaster
 		name = war_of_the_roses.1.a
 
 		set_country_flag = war_of_the_roses
@@ -42,7 +42,7 @@ country_event = {
 
 		if = {
 			limit = {
-				owns = 245		# Йоркshire
+				owns = 245		# Yorkshire
 				245 = {
 					units_in_province = 1
 				}
@@ -66,7 +66,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				owns = 245		# Йоркshire
+				owns = 245		# Yorkshire
 				245 = {
 					NOT = { units_in_province = 1 }
 				}
@@ -86,7 +86,7 @@ country_event = {
 		}
 	}
 	
-	option = {		# Support the House of Йорк
+	option = {		# Support the House of York
 		name = war_of_the_roses.1.b
 
 		set_country_flag = supports_house_of_york
@@ -209,7 +209,7 @@ country_event = {
 	}
 }
 
-# Province Declares for Ланкастер!
+# Province Declares for Lancaster!
 country_event = {
 	id = war_of_the_roses.3
 	title = war_of_the_roses.3.t
@@ -265,7 +265,7 @@ country_event = {
 	}
 }
 
-# Province Declares for Йорк!
+# Province Declares for York!
 country_event = {
 	id = war_of_the_roses.4
 	title = war_of_the_roses.4.t
@@ -552,7 +552,7 @@ country_event = {
 	}
 }
 
-# Ланкастер Stronghold
+# Lancaster Stronghold
 province_event = {
 	id = war_of_the_roses.10
 	title = war_of_the_roses.10.t
@@ -578,7 +578,7 @@ province_event = {
 	}
 }
 
-# Йорк Stronghold
+# York Stronghold
 province_event = {
 	id =   war_of_the_roses.11
 	title =  war_of_the_roses.11.t
@@ -609,7 +609,7 @@ province_event = {
 # Foreign Support
 ########################################
 
-# Support House of Ланкастер
+# Support House of Lancaster
 country_event = {
 	id = war_of_the_roses.12
 	title = war_of_the_roses.12.t
@@ -682,7 +682,7 @@ country_event = {
 	}
 }
 
-# Support House of Йорк
+# Support House of York
 country_event = {
 	id = war_of_the_roses.13
 	title = war_of_the_roses.13.t
@@ -917,7 +917,7 @@ country_event = {
 	}
 }
 
-# House of Ланкастер wins the War of the Roses
+# House of Lancaster wins the War of the Roses
 country_event = {
 	id = war_of_the_roses.101
 	title = war_of_the_roses.101.t
@@ -962,7 +962,7 @@ country_event = {
 		end_disaster = war_of_the_roses
 	}
 	
-	option = {		# Long live the House of Ланкастер!
+	option = {		# Long live the House of Lancaster!
 		name = war_of_the_roses.101.a
 		add_stability_or_adm_power = yes
 		add_prestige = -50
@@ -977,7 +977,7 @@ country_event = {
 	}
 }
 
-# House of Йорк wins the War of the Roses
+# House of York wins the War of the Roses
 country_event = {
 	id = war_of_the_roses.102
 	title = war_of_the_roses.102.t
@@ -1017,7 +1017,7 @@ country_event = {
 		end_disaster = war_of_the_roses
 	}
 	
-	option = {		# Long live the House of Йорк!
+	option = {		# Long live the House of York!
 		name = war_of_the_roses.102.a
 		add_stability_or_adm_power = yes
 		add_prestige = -50
@@ -1174,7 +1174,7 @@ country_event = {
 	}
 	
 	option = {		# Long Live the X dynasty
-		name = war_of_the_roses.102.a
+		name = war_of_the_roses.106.a
 		add_stability = -1
 		add_prestige = -50
 		every_owned_province = {

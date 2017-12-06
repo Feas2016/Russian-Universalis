@@ -100,7 +100,7 @@ estate_dhimmi = {
 		}
 		influence = -40
 	}
-	influence_modifier = {
+	influence_modifier = { # STT
 		desc = dhimmi_government
 		trigger = {
 			has_country_modifier = dhimmi_government
@@ -184,6 +184,14 @@ estate_dhimmi = {
 			has_owner_religion = no
 			tolerance_to_this = 1
 		}		
+		modifier = {
+			factor = 4
+			local_autonomy = 25
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { local_autonomy = 25 }
+		}
 	}	
 	
 	# Special interactions
@@ -207,9 +215,32 @@ estate_dhimmi = {
 		}
 		
 		effect = {
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						has_estate = estate_dhimmi
+					}
+					save_event_target_as = estate_dhimmi_province
+				}
+			}
 			if = {
 				limit = {
 					monthly_income = 25
+					has_saved_event_target = estate_dhimmi_province
+				}
+				define_advisor = {
+					type = trader
+					skill = 3
+					culture = event_target:estate_dhimmi_province
+					religion = event_target:estate_dhimmi_province
+					location = event_target:estate_dhimmi_province
+					discount = yes
+				}
+			}
+			else_if = {
+				limit = {
+					monthly_income = 25
+					NOT = { has_saved_event_target = estate_dhimmi_province }
 				}
 				define_advisor = {
 					type = trader
@@ -217,14 +248,32 @@ estate_dhimmi = {
 					discount = yes
 				}
 			}
-			if = {
-				limit = { NOT = { monthly_income = 25 } }
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 25 }
+					has_saved_event_target = estate_dhimmi_province
+				}
+				define_advisor = {
+					type = trader
+					skill = 2
+					discount = yes
+					culture = event_target:estate_dhimmi_province
+					religion = event_target:estate_dhimmi_province
+					location = event_target:estate_dhimmi_province
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { monthly_income = 25 }
+					NOT = { has_saved_event_target = estate_dhimmi_province }
+				}
 				define_advisor = {
 					type = trader
 					skill = 2
 					discount = yes
 				}
 			}
+			
 			add_estate_influence_modifier = {
 				estate = estate_dhimmi
 				desc = EST_VAL_DHIMMI_MINISTER

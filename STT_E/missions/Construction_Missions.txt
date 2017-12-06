@@ -223,6 +223,7 @@ construct_navy = {
 		NOT = { technology_group = mesoamerican }
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = nomad_group }
+		NOT = { has_country_modifier = thriving_ship_building_sector }
 	}
 	abort = {
 		NOT = {

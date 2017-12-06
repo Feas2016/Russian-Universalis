@@ -5,8 +5,11 @@ conquer_silesia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		silesia_area
+	}
+	
 	target_provinces = {
-		area = silesia_area
 		owner = {
 			NOT = { alliance_with = ROOT }
 			NOT = { overlord_of = ROOT }
@@ -144,6 +147,10 @@ connect_brandenburg_and_prussia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		43 2995
+	}
+	
 	target_provinces = {
 		OR = {
 			AND = {
@@ -279,12 +286,13 @@ connect_the_prussian_lands = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		west_prussia_area
+		east_prussia_area
+		#pomerelia_area #STT
+	}
+	
 	target_provinces = {
-		OR = {
-			area = west_prussia_area
-			area = east_prussia_area
-			area = pomerelia_area
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -381,16 +389,17 @@ conquer_swedish_pomerania = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		46
+		47
+		48
+		1858
+		2994
+		2995
+		2996
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 2995
-			province_id = 48
-			province_id = 1858
-			province_id = 2994
-			province_id = 47
-			province_id = 46
-			province_id = 2996
-		}
 		owned_by = SWE
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -753,16 +762,17 @@ prussia_partitions_poland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		west_prussia_area
+		pomerelia_area
+		east_prussia_area
+		wielkopolska_area
+	}
+	
 	target_provinces = {
 		OR = {
 			owned_by = POL
 			owned_by = PLC
-		}
-		OR = {
-			area = west_prussia_area
-			area = pomerelia_area
-			area = east_prussia_area
-			area = wielkopolska_area
 		}
 	}
 	
@@ -964,8 +974,11 @@ subjugate_westphalia = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		westphalia_area
+	}
+	
 	target_provinces = {
-		area = westphalia_area
 		NOT = { owned_by = ROOT }
 		NOT = {
 			owner = {

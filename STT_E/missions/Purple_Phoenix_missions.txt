@@ -4,14 +4,11 @@ recover_west_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		germiyan_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 322
-			province_id = 1848
-			province_id = 2297
-			province_id = 2298
-			province_id = 2299
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -31,25 +28,19 @@ recover_west_anatolia = {
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 316
-			owns = 317
-			owns = 318
+			owns = 316 #Kocaeli
+			owns = 317 #Bursa
+			owns = 318 #Sugla
 		}
 		calc_true_if = {
 			all_province = {
-				OR = {
-					province_id = 322
-					province_id = 1848
-					province_id = 2297
-					province_id = 2298
-					province_id = 2299
-				}
+				area = germiyan_area
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
 				NOT = { owner = { overlord_of = ROOT } }
 			}
-			amount = 3
+			amount = 2
 		}
 	}
 	abort = {
@@ -61,7 +52,7 @@ recover_west_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -101,18 +92,14 @@ recover_central_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		rum_area
+		ankara_area
+		karaman_area
+		kastamonu_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 323
-			province_id = 324
-			province_id = 325
-			province_id = 326
-			province_id = 328
-			province_id = 1846
-			province_id = 2300
-			province_id = 2301
-			province_id = 2302
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -132,22 +119,17 @@ recover_central_anatolia = {
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 319
-			owns = 322
-			owns = 1848
+			owns = 319 #Menteshe
+			owns = 322 #Kuthaya
+			owns = 1848 #Hamid
 		}
 		calc_true_if = {
 			all_province = {
 				OR = {
-					province_id = 323
-					province_id = 324
-					province_id = 325
-					province_id = 326
-					province_id = 328
-					province_id = 1846
-					province_id = 2300
-					province_id = 2301
-					province_id = 2302
+					area = rum_area
+					area = ankara_area
+					area = karaman_area
+					area = kastamonu_area
 				}
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
@@ -166,7 +148,7 @@ recover_central_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -206,17 +188,13 @@ recover_east_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		erzurum_area
+		dulkadir_area
+		north_kurdistan_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 327
-			province_id = 329
-			province_id = 330
-			province_id = 331		
-			province_id = 332
-			province_id = 2303
-			province_id = 2304
-			province_id = 2305
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -236,24 +214,17 @@ recover_east_anatolia = {
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 323	
-			owns = 324	
-			owns = 325	
-			owns = 326	
-			owns = 328	
-			owns = 1846
+			owns = 325	#Kastamonu
+			owns = 328	#Sinop
+			owns = 1846 #Amasya
+			owns = 2301	#Kayseri
 		}
 		calc_true_if = {
 			all_province = {
 				OR = {
-					province_id = 327
-					province_id = 329
-					province_id = 330
-					province_id = 331		
-					province_id = 332
-					province_id = 2303
-					province_id = 2304
-					province_id = 2305
+					area = erzurum_area
+					area = dulkadir_area
+					area = north_kurdistan_area
 				}
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
@@ -272,7 +243,7 @@ recover_east_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -312,11 +283,12 @@ recover_crimea = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		285
+		2410
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 285
-			province_id = 2410
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -399,13 +371,14 @@ recover_east_islands = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		163
+		164
+		320
+		321
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 163
-			province_id = 164
-			province_id = 320
-			province_id = 321
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -493,13 +466,14 @@ recover_albania = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		137
+		138
+		143
+		1766
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 137
-			province_id = 138
-			province_id = 143
-			province_id = 1766
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -588,12 +562,13 @@ recover_isteria = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		130
+		136
+		1826
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 136
-			province_id = 1826
-			province_id = 130
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -637,7 +612,7 @@ recover_isteria = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -677,28 +652,22 @@ recover_north_italy = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		106
+		113
+		114
+		115
+		116
+		117
+		119
+		2976
+		2977
+		2978
+		2980
+		3005 3013 3014 3015 3030 3037 3038 #STT
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 119
-			province_id = 117
-			province_id = 114
-			province_id = 115
-			province_id = 116
-			province_id = 113
-			province_id = 106
-			province_id = 2976
-			province_id = 2977
-			province_id = 2978
-			province_id = 2980
-			# STT
-			province_id = 3038
-			province_id = 3037
-			province_id = 3030
-			province_id = 3015
-			province_id = 3014
-			province_id = 3013
-			province_id = 3005
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -758,7 +727,7 @@ recover_north_italy = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -798,19 +767,20 @@ recover_lombardia = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		101
+		104
+		105
+		107
+		108
+		109
+		1862
+		2976
+		2981
+		2992
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 101
-			province_id = 104
-			province_id = 105
-			province_id = 107
-			province_id = 108
-			province_id = 109
-			province_id = 1862
-			province_id = 2976
-			province_id = 2981
-			province_id = 2992
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -864,7 +834,7 @@ recover_lombardia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -904,12 +874,13 @@ recover_west_islands = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		127
+		333
+		1247
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 1247
-			province_id = 127
-			province_id = 333
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -993,15 +964,16 @@ recover_south_spain = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		226
+		223
+		222
+		221
+		224
+		1749
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 226
-			province_id = 223
-			province_id = 222
-			province_id = 221
-			province_id = 224
-			province_id = 1749
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1052,7 +1024,7 @@ recover_south_spain = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1092,16 +1064,12 @@ recover_tripoli = {
 
 	category = MIL
 	
+	target_areas_list = {
+		tripolitania_area
+		cyrenaica_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 354
-			province_id = 355
-			province_id = 356
-			province_id = 357
-			province_id = 2326
-			province_id = 2451
-			province_id = 2452
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1120,23 +1088,13 @@ recover_tripoli = {
 		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
-		OR = {
-			owns = 327	
-			owns = 329	
-			owns = 330	
-			owns = 331	
-			owns = 332	
-		}
+		owns = 163 #Crete
+		owns = 358 #Alexandria
 		calc_true_if = {
 			all_province = {
 				OR = {
-					province_id = 354
-					province_id = 355
-					province_id = 356
-					province_id = 357
-					province_id = 2326
-					province_id = 2451
-					province_id = 2452
+					area = tripolitania_area
+					area = cyrenaica_area
 				}
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
@@ -1155,7 +1113,7 @@ recover_tripoli = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1195,8 +1153,11 @@ recover_tunis = {
 
 	category = MIL
 	
+	target_areas_list = {
+		tunisia_area
+	}
+	
 	target_provinces = {
-		area = tunisia_area
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1240,7 +1201,7 @@ recover_tunis = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1280,13 +1241,11 @@ recover_antioch = {
 
 	category = MIL
 	
+	target_areas_list = {
+		aleppo_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 377
-			province_id = 378
-			province_id = 1849
-			province_id = 2313
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1312,12 +1271,7 @@ recover_antioch = {
 		}
 		calc_true_if = {
 			all_province = {
-				OR = {
-					province_id = 377
-					province_id = 378
-					province_id = 1849
-					province_id = 2313
-				}
+				area = aleppo_area
 				NOT = { owned_by = ROOT }
 				NOT = { owner = { alliance_with = ROOT } }
 				NOT = { owner = { is_subject_of = ROOT } }
@@ -1335,7 +1289,7 @@ recover_antioch = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1375,13 +1329,11 @@ recover_jerusalem = {
 
 	category = MIL
 	
+	target_areas_list = {
+		palestine_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 364
-			province_id = 379
-			province_id = 1854
-			province_id = 1855
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1406,12 +1358,7 @@ recover_jerusalem = {
 			owns = 358		
 		}
 		any_province = {
-			OR = {
-				province_id = 364
-				province_id = 379
-				province_id = 1854
-				province_id = 1855
-			}
+			area = palestine_area
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
@@ -1427,7 +1374,7 @@ recover_jerusalem = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1467,13 +1414,12 @@ recover_alexandria = {
 
 	category = MIL
 	
+	target_areas_list = {
+		delta_area
+		bahari_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 358
-			province_id = 2325
-			province_id = 362
-			province_id = 363
-		}
 		NOT = { owned_by = ROOT }
 		NOT = { owner = { alliance_with = ROOT } }
 		NOT = { owner = { is_subject_of = ROOT } }
@@ -1498,10 +1444,8 @@ recover_alexandria = {
 		}
 		any_province = {
 			OR = {
-				province_id = 358
-				province_id = 2325
-				province_id = 362
-				province_id = 363
+				area = bahari_area
+				area = delta_area
 			}
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
@@ -1518,7 +1462,7 @@ recover_alexandria = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4

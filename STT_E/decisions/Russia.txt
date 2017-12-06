@@ -27,8 +27,10 @@ country_decisions = {
 			}
 			set_country_flag = relocated_capital_st_petersburg
 			add_years_of_income = -1
-			set_capital = 33
 			add_prestige = 100
+			33 = {
+				move_capital_effect = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1

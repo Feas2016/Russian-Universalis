@@ -58,7 +58,11 @@ province_event = {
 		is_overseas = yes
 		is_colony = no
 		religion_group = christian
-		owner = { religion_group = christian }
+		owner = {
+			religion_group = christian
+			NOT = { has_country_modifier = narrowminded_modifier }
+			NOT = { has_country_modifier = serfdom_modifier }
+		}
 		NOT = { has_province_modifier = founding_father }
 		NOT = { has_province_modifier = loyalist_stronghold }
 	}
@@ -181,62 +185,29 @@ province_event = {
 		is_overseas = yes
 		is_colony = yes
 		colonysize = 600
-		OR = {
-			religion = catholic
-			religion = protestant
-		}
+		religion_group = christian
+		NOT = { has_province_modifier = religious_migration }
 		owner = { 
-			OR = {
-				religion = catholic
-				religion = protestant
-			}
+			religion_group = christian
 			any_owned_province = {
 				is_overseas = no
-				religion = reformed
+				religion_group = ROOT
+				NOT = { religion = ROOT }
 			}
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 1
+	immediate = {
+		hidden_effect = {
+			owner = {
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						religion_group = ROOT
+						NOT = { religion = ROOT }
 	}
-
-	option = {
-		name = "EVTOPTA1423"
-		change_religion = reformed
-		change_culture = owner
-		add_colonysize = 400
-		add_province_modifier = {
-			name = "religious_migration"
-			duration = 8760
-		}
-	}
-}
-
-province_event = {
-	id =  colonial.6
-	title = "EVTNAME1423"
-	desc = "EVTDESC1424"
-	picture = REFORM_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		is_overseas = yes
-		is_colony = yes
-		colonysize = 600
-		OR = {
-			religion = catholic
-			religion = reformed
-		}
-		owner = { 
-			OR = {
-				religion = catholic
-				religion = reformed
+					save_event_target_as = heretics_from_here
 			}
-			any_owned_province = {
-				is_overseas = no
-				religion = protestant
 			}
 		}
 	}
@@ -247,7 +218,7 @@ province_event = {
 	
 	option = {
 		name = "EVTOPTA1423"
-		change_religion = protestant
+		change_religion = event_target:heretics_from_here
 		change_culture = owner
 		add_colonysize = 400
 		add_province_modifier = {
@@ -255,51 +226,99 @@ province_event = {
 			duration = 8760
 		}
 	}
-}
-
-province_event = {
-	id =  colonial.7
-	title = "EVTNAME1423"
-	desc = "EVTDESC1425"
-	picture = REFORM_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		is_overseas = yes
-		is_colony = yes
-		colonysize = 600
-		OR = {
-			religion = protestant
-			religion = reformed
-		}
-		owner = { 
-			OR = {
-				religion = protestant
-				religion = reformed
-			}
-			any_owned_province = {
-				is_overseas = no
-				religion = catholic
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
-		name = "EVTOPTA1423"
-		change_religion = catholic
-		change_culture = owner
-		add_colonysize = 400
-		add_province_modifier = {
-			name = "religious_migration"
-			duration = 8760
-		}
+		name = "colonial.5.b"
+		add_colonysize = -400
 	}
 }
+
+# province_event = {
+	# id =  colonial.6
+	# title = "EVTNAME1423"
+	# desc = "EVTDESC1424"
+	# picture = REFORM_eventPicture
+	
+	# is_triggered_only = yes
+
+	# trigger = {
+		# is_overseas = yes
+		# is_colony = yes
+		# colonysize = 600
+		# OR = {
+			# religion = catholic
+			# religion = reformed
+		# }
+		# owner = { 
+			# OR = {
+				# religion = catholic
+				# religion = reformed
+			# }
+			# any_owned_province = {
+				# is_overseas = no
+				# religion = protestant
+			# }
+		# }
+	# }
+
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+
+	# option = {
+		# name = "EVTOPTA1423"
+		# change_religion = protestant
+		# change_culture = owner
+		# add_colonysize = 400
+		# add_province_modifier = {
+			# name = "religious_migration"
+			# duration = 8760
+		# }
+	# }
+# }
+
+# province_event = {
+	# id =  colonial.7
+	# title = "EVTNAME1423"
+	# desc = "EVTDESC1425"
+	# picture = REFORM_eventPicture
+	
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# is_overseas = yes
+		# is_colony = yes
+		# colonysize = 600
+		# OR = {
+			# religion = protestant
+			# religion = reformed
+		# }
+		# owner = { 
+			# OR = {
+				# religion = protestant
+				# religion = reformed
+			# }
+			# any_owned_province = {
+				# is_overseas = no
+				# religion = catholic
+			# }
+		# }
+	# }
+
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+
+	# option = {
+		# name = "EVTOPTA1423"
+		# change_religion = catholic
+		# change_culture = owner
+		# add_colonysize = 400
+		# add_province_modifier = {
+			# name = "religious_migration"
+			# duration = 8760
+		# }
+	# }
+# }
 
 province_event = {
 	id =  colonial.20
@@ -308,33 +327,44 @@ province_event = {
 	picture = STREET_SPEECH_eventPicture
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		is_colony = yes
 		colonysize = 600
+		NOT = { has_province_modifier = religious_migration }
 		OR = {
 			continent = north_america
 			continent = south_america
+			continent = new_world
 		}
-		OR = {
-			religion = catholic
-			religion = protestant
-		}
+		religion_group = christian
 		owner = {
 			is_colonial_nation = yes
-			OR = {
-				religion = catholic
-				religion = protestant
-			}
+			religion_group = christian
 			colonial_parent = {
-				OR = {
-					religion = catholic
-					religion = protestant
-				}
-			}
+				religion = PREV
 			any_owned_province = {
 				is_overseas = no
-				religion = reformed
+					religion_group = ROOT
+					NOT = { religion = ROOT }
+			}
+		}
+	}
+	}
+	
+	immediate = {
+		hidden_effect = {
+		owner = {
+				colonial_parent = {
+					random_owned_province = {
+						limit = {
+							is_overseas = no
+							religion_group = ROOT
+							NOT = { religion = ROOT }
+			}
+						save_event_target_as = heretics_from_here
+				}
+			}
 			}
 		}
 	}
@@ -353,119 +383,123 @@ province_event = {
 			duration = 8760
 		}
 	}
-}
-
-province_event = {
-	id =  colonial.21
-	title = "EVTNAME1423"
-	desc = "colonial.EVTDESC21"
-	picture = REFORM_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		is_overseas = yes
-		is_colony = yes
-		colonysize = 600
-		OR = {
-			continent = north_america
-			continent = south_america
-			continent = new_world
-		}
-		OR = {
-			religion = catholic
-			religion = reformed
-		}
-		owner = {
-			is_colonial_nation = yes
-			OR = {
-				religion = catholic
-				religion = reformed
-			}
-			colonial_parent = {
-				OR = {
-					religion = catholic
-					religion = protestant
-				}
-			}
-			any_owned_province = {
-				is_overseas = no
-				religion = protestant
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-	
 	option = {
-		name = "EVTOPTA1423"
-		change_religion = protestant
-		change_culture = owner
-		add_colonysize = 400
-		add_province_modifier = {
-			name = "religious_migration"
-			duration = 8760
-		}
+		name = "colonial.5.b"
+		add_colonysize = -400
 	}
 }
 
-province_event = {
-	id = colonial.22
-	title = "EVTNAME1423"
-	desc = "colonial.EVTDESC22"
-	picture = REFORM_eventPicture
+# province_event = {
+	# id =  colonial.21
+	# title = "EVTNAME1423"
+	# desc = "colonial.EVTDESC21"
+	# picture = REFORM_eventPicture
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 
-	trigger = {
-		is_overseas = yes
-		is_colony = yes
-		colonysize = 600
-		OR = {
-			continent = north_america
-			continent = south_america
-			continent = new_world
-		}
-		OR = {
-			religion = protestant
-			religion = reformed
-		}
-		owner = {
-			is_colonial_nation = yes
-			OR = {
-				religion = protestant
-				religion = reformed
-			}
-			colonial_parent = {
-				OR = {
-					religion = catholic
-					religion = protestant
-				}
-			}
-			any_owned_province = {
-				is_overseas = no
-				religion = catholic
-			}
-		}
-	}
+	# trigger = {
+		# is_overseas = yes
+		# is_colony = yes
+		# colonysize = 600
+		# OR = {
+			# continent = north_america
+			# continent = south_america
+			# continent = new_world
+		# }
+		# OR = {
+			# religion = catholic
+			# religion = reformed
+		# }
+		# owner = {
+			# is_colonial_nation = yes
+			# OR = {
+				# religion = catholic
+				# religion = reformed
+			# }
+			# colonial_parent = {
+				# OR = {
+					# religion = catholic
+					# religion = protestant
+				# }
+			# }
+			# any_owned_province = {
+				# is_overseas = no
+				# religion = protestant
+			# }
+		# }
+	# }
 
-	mean_time_to_happen = {
-		days = 1
-	}
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+	
+	# option = {
+		# name = "EVTOPTA1423"
+		# change_religion = protestant
+		# change_culture = owner
+		# add_colonysize = 400
+		# add_province_modifier = {
+			# name = "religious_migration"
+			# duration = 8760
+		# }
+	# }
+# }
 
-	option = {
-		name = "EVTOPTA1423"
-		change_religion = catholic
-		change_culture = owner
-		add_colonysize = 400
-		add_province_modifier = {
-			name = "religious_migration"
-			duration = 8760
-		}
-	}
-}
+# province_event = {
+	# id = colonial.22
+	# title = "EVTNAME1423"
+	# desc = "colonial.EVTDESC22"
+	# picture = REFORM_eventPicture
+	
+	# is_triggered_only = yes
+
+	# trigger = {
+		# is_overseas = yes
+		# is_colony = yes
+		# colonysize = 600
+		# OR = {
+			# continent = north_america
+			# continent = south_america
+			# continent = new_world
+		# }
+		# OR = {
+			# religion = protestant
+			# religion = reformed
+		# }
+		# owner = {
+			# is_colonial_nation = yes
+			# OR = {
+				# religion = protestant
+				# religion = reformed
+			# }
+			# colonial_parent = {
+				# OR = {
+					# religion = catholic
+					# religion = protestant
+				# }
+			# }
+			# any_owned_province = {
+				# is_overseas = no
+				# religion = catholic
+			# }
+		# }
+	# }
+
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+
+	# option = {
+		# name = "EVTOPTA1423"
+		# change_religion = catholic
+		# change_culture = owner
+		# add_colonysize = 400
+		# add_province_modifier = {
+			# name = "religious_migration"
+			# duration = 8760
+		# }
+	# }
+# }
 
 ### Scripted by Sara Wendel-Örtqvist ###
 

@@ -1,0 +1,212 @@
+oma_conquest_of_batinah = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = { #STT
+		400
+	}
+	
+	target_provinces = {
+		owner = {
+			is_subject = no
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = OMA
+		NOT = { has_country_flag = oma_conquered_batinah }
+		is_free_or_tributary_trigger = yes
+		400 = { #STT
+			owner = {
+				is_subject = no
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			is_at_war = no
+		}
+	}
+	immediate = {
+		every_target_province = {
+			limit = {
+				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = oma_conquered_batinah
+		add_country_modifier = {
+			name = "sultan_of_muscat"
+			duration = 9125
+		}
+	}
+}
+
+oma_conquest_of_dhofar = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = { #STT
+		401
+	}
+	
+	target_provinces = {
+		owner = {
+			is_subject = no
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = OMA
+		NOT = { has_country_flag = oma_conquered_dhofar }
+		NOT = { has_country_modifier = omani_ambition }
+		is_free_or_tributary_trigger = yes
+		401 = { #STT
+			range = ROOT
+			owner = {
+				is_subject = no
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			is_at_war = no
+		}
+	}
+	immediate = {
+		every_target_province = {
+			limit = {
+				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = oma_conquered_dhofar
+		add_country_modifier = {
+			name = "omani_ambition"
+			duration = 9125
+		}
+	}
+}
+
+oma_conquest_of_zanzibar = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = {
+		1201
+	}
+	
+	target_provinces = {
+		owner = {
+			is_subject = no
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = OMA
+		NOT = { has_country_modifier = omani_ambition }
+		NOT = { has_country_flag = oma_conquered_zanzibar }
+		is_free_or_tributary_trigger = yes
+		1201 = {
+			range = ROOT
+			owner = {
+				is_subject = no
+				NOT = { alliance_with = ROOT }
+			}
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			is_at_war = no
+		}
+	}
+	immediate = {
+		every_target_province = {
+			limit = {
+				NOT = { is_claim = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = oma_conquered_zanzibar
+		add_country_modifier = {
+			name = "omani_ambition"
+			duration = 9125
+		}
+		every_province = {
+			limit = {
+				area = central_swahili_coast_area
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_claim = ROOT }
+			}
+			add_claim = ROOT
+		}
+	}
+}
+
+

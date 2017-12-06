@@ -502,6 +502,11 @@ country_event = {
 		}
 		add_mil_power = 50
 	}
+	option = {
+		name = ideagroups.111.b
+		trigger = { has_dlc = "Cradle of Civilization" }
+		add_army_professionalism = 0.01
+	}
 }
 
 # Increased Recruitment
@@ -603,6 +608,21 @@ country_event = {
 		has_idea_group = plutocracy_ideas
 	}	
 
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 5
+			chance_of_secondary = 25
+		}
+		hidden_effect = {
+			random_list = {
+				33 = { set_country_flag = treasurer_flag }
+				33 = { set_country_flag = master_of_mint_flag }
+				33 = { set_country_flag = trader_flag }
+			}
+		}
+	}
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -610,10 +630,45 @@ country_event = {
 	option = {
 		name = "EVTOPTB802A"
 		add_meritocracy_effect = yes
-		random_list = {
-			10 = { define_advisor = { type = treasurer skill = 2 }  }
-			10 = { define_advisor = { type = trader skill = 2 }  }
-			10 = { define_advisor = { type = master_of_mint skill = 2 }  }
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			treasurer_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=treasurer
+					advisor_type_if_not_state=treasurer
+					scaled_skill = no
+					skill = 2
+					discount=yes
+				}
+			}
+			master_of_mint_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=master_of_mint
+					advisor_type_if_not_state=master_of_mint
+					scaled_skill = no
+					skill = 2
+					discount=yes
+				}
+			}
+			trader_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=trader
+					advisor_type_if_not_state=trader
+					scaled_skill = no
+					skill = 2
+					discount=yes
+				}
+			}
+		}
+	}
+	after = {
+		erase_advisor_flags_effect = yes
+		trigger_switch = {
+			on_trigger = has_country_flag
+			treasurer_flag = { clr_country_flag = treasurer_flag }
+			master_of_mint_flag = { clr_country_flag = master_of_mint_flag }
+			trader_flag = { clr_country_flag = trader_flag }
 		}
 	}
 }
@@ -1239,6 +1294,23 @@ country_event = {
 		has_idea_group = innovativeness_ideas	
 	}		
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden scripted effect, is used by scripted effect and must always be cleared in after = { } using erase_advisor_flags_effect.
+			chance_of_primary = 85 #Not percentages!
+			chance_of_tertiary = 15
+			chance_of_secondary = 35
+		}
+		hidden_effect = {
+			random_list = {
+				20 = { set_country_flag = natural_scientist_flag }
+				20 = { set_country_flag = statesman_flag }
+				20 = { set_country_flag = treasurer_flag }
+				20 = { set_country_flag = naval_reformer_flag }
+				20 = { set_country_flag = army_reformer_flag }
+			}
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -1246,12 +1318,64 @@ country_event = {
 	option = {
 		name = "EVTOPTB820A"
 		add_meritocracy_effect = yes
-		random_list = {
-			10 = { create_advisor = natural_scientist }
-			10 = { create_advisor = statesman }
-			10 = { create_advisor = treasurer }
-			10 = { create_advisor = naval_reformer }
-			10 = { create_advisor = army_reformer }
+		trigger_switch = {
+			on_trigger = has_country_flag
+			natural_scientist_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=natural_scientist
+					advisor_type_if_not_state=natural_scientist
+					scaled_skill = yes
+					skill = 0
+					discount=yes
+				}
+			}
+			statesman_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=statesman
+					advisor_type_if_not_state=statesman
+					scaled_skill = yes
+					skill = 0
+					discount=yes
+				}
+			}
+			treasurer_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=treasurer
+					advisor_type_if_not_state=treasurer
+					scaled_skill = yes
+					skill = 0
+					discount=yes
+				}
+			}
+			naval_reformer_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=naval_reformer
+					advisor_type_if_not_state=naval_reformer
+					scaled_skill = yes
+					skill = 0
+					discount=yes
+				}
+			}
+			army_reformer_flag = {
+				generate_advisor_of_type_and_semi_random_religion_effect = {
+					advisor_type=army_reformer
+					advisor_type_if_not_state=army_reformer
+					scaled_skill = yes
+					skill = 0
+					discount=yes
+				}
+			}
+		}
+	}
+	after = {
+		erase_advisor_flags_effect = yes
+		trigger_switch = {
+			on_trigger = has_country_flag
+			natural_scientist_flag = { clr_country_flag = natural_scientist_flag }
+			statesman_flag = { clr_country_flag = statesman_flag }
+			treasurer_flag = { clr_country_flag = treasurer_flag }
+			naval_reformer_flag = { clr_country_flag = naval_reformer_flag }
+			army_reformer_flag = { clr_country_flag = army_reformer_flag }
 		}		
 	}
 }
@@ -1482,6 +1606,7 @@ country_event = {
 	option = {
 		name = ideagroups.310.a
 		add_mil_power = 50
+		add_army_professionalism = 0.01
 	}
 }
 
@@ -1740,15 +1865,28 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 100 #Not percentages!
+			chance_of_tertiary = 0
+			chance_of_secondary = 5
+		}
+	}
+	
 	option = {
 		name = "EVTOPTB823A"
 		add_piety = 0.05
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = theologian
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=theologian
+			advisor_type_if_not_state=theologian
+			scaled_skill = no
 			skill = 2
-			discount = yes
+			discount=yes
 		}
+	}
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -2970,6 +3108,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB831A"
 		add_yearly_manpower = -1
+		add_army_professionalism = -0.01
 	}
 }
 
@@ -2993,6 +3132,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB832A"
 		add_prestige = 5
+		add_army_professionalism = 0.01
 	}
 }
 
@@ -3406,6 +3546,14 @@ country_event = {
 		has_idea_group = defensive_ideas
 	}
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 65 #Not percentages!
+			chance_of_tertiary = 5
+			chance_of_secondary = 15
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -3413,10 +3561,12 @@ country_event = {
 	option = {
 		name = "EVTOPTB835A"
 		add_meritocracy_effect = yes
-		define_advisor = {
-			type = fortification_expert
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=fortification_expert
+			advisor_type_if_not_state=fortification_expert
+			scaled_skill = no
 			skill = 2
-			discount = yes
+			discount=yes
 		}
 	}
 	option = {
@@ -3438,6 +3588,7 @@ country_event = {
 			}
 		}
 	}
+	after = { erase_advisor_flags_effect = yes }
 }
 
 # Promising General
@@ -3544,6 +3695,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6116"
+		add_army_professionalism = 0.01
 		add_country_modifier = {
 			name = "military_improvements"
 			duration = 3650
@@ -3572,6 +3724,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA6117"
+		add_army_professionalism = -0.01
 		add_country_modifier = {
 			name = "military_complacency"
 			duration = 3650
@@ -3725,6 +3878,7 @@ country_event = {
 
 	option = {
 		name = ideagroups.811.a
+		add_army_professionalism = 0.01
 		add_country_modifier = {
 			name = "relentless_drill"
 			duration = 3650
@@ -4651,6 +4805,15 @@ country_event = {
 		has_idea_group = maritime_ideas
 		primitives = no
 	}
+	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden scripted effect, is used by scripted effect and must always be cleared in after = { } using erase_advisor_flags_effect.
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 5
+			chance_of_secondary = 15
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -4658,7 +4821,17 @@ country_event = {
 	option = {
 		name = "EVTOPTB841A"
 		add_meritocracy_effect = yes
-		create_advisor = naval_reformer
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=naval_reformer
+			advisor_type_if_not_state=naval_reformer
+			scaled_skill = yes
+			skill = 0
+			discount=yes
+		}
+	}
+	
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -5662,6 +5835,14 @@ country_event = {
 		days = 1
 	}
 
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 75 #Not percentages!
+			chance_of_tertiary = 0
+			chance_of_secondary = 15
+		}
+	}
+
 	trigger = {
 		has_idea_group = quality_ideas
 		NOT = { has_idea_group = quantity_ideas }
@@ -5670,7 +5851,17 @@ country_event = {
 	option = {
 		name = "EVTOPTB844A"
 		add_meritocracy_effect = yes
-		create_advisor = commandant
+		add_army_professionalism = 0.01
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=commandant
+			advisor_type_if_not_state=commandant
+			scaled_skill = no
+			skill = 2
+			discount=yes
+		}
+	}
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -5696,10 +5887,12 @@ country_event = {
 	option = {
 		name = "EVTOPTA6305"
 		add_prestige = -25
+		add_army_professionalism = -0.01
 	}
 
 	option = {
 		name = "EVTOPTB6305"
+		add_army_professionalism = 0.01
 		add_country_modifier = {
 			name = quality_modifier
 			duration = 3650
@@ -5751,6 +5944,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA6307"
 		add_prestige = -10
+		add_army_professionalism = -0.01
 	}
 
 	option = {
@@ -5956,6 +6150,7 @@ country_event = {
 	option = {
 		name = "EVTOPTB846A"
 		add_army_tradition = -5
+		add_army_professionalism = -0.01
 	}
 }
 
@@ -5973,6 +6168,14 @@ country_event = {
 		NOT = { has_idea_group = quality_ideas }
 	}
 	
+	immediate = {
+		check_if_non_state_advisor_effect = { #Hidden, must be followed by erase_advisor_flags_effect
+			chance_of_primary = 100 #Not percentages!
+			chance_of_tertiary = 0
+			chance_of_secondary = 5
+		}
+	}
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -5980,7 +6183,17 @@ country_event = {
 	option = {
 		name = "EVTOPTB847A"
 		add_meritocracy_effect = yes
-		create_advisor = army_organiser
+		add_army_professionalism = 0.01
+		generate_advisor_of_type_and_semi_random_religion_effect = {
+			advisor_type=army_organiser
+			advisor_type_if_not_state=army_organiser
+			scaled_skill = no
+			skill = 2
+			discount=yes
+		}
+	}
+	after = {
+		erase_advisor_flags_effect = yes
 	}
 }
 
@@ -6022,6 +6235,7 @@ country_event = {
 	trigger = {
 		has_idea_group = quantity_ideas
 		NOT = { has_country_modifier = "horse_population_boom" }
+		livestock = 1
 	}
 	
 	mean_time_to_happen = {
@@ -6075,7 +6289,7 @@ country_event = {
 	
 	trigger = {
 		has_idea_group = quantity_ideas
-		mil_tech = 11 #STT
+		mil_tech = 12 #STT
 		NOT = { has_country_modifier = "cheap_iron" }
 	}	
 

@@ -51,6 +51,7 @@ country_event = {
 		define_heir = {
 			name = "Ладислав Постум"
 			dynasty = "фон Габсбург"
+			culture = austrian
 			adm = 1
 			dip = 2
 			mil = 1
@@ -78,6 +79,7 @@ country_event = {
 		define_heir = {
 			name = "Ладислав Постум"
 			dynasty = "фон Габсбург"
+			culture = austrian
 			adm = 1
 			dip = 2
 			mil = 1
@@ -124,6 +126,7 @@ country_event = {
 		HAB = { remove_historical_friend = HUN }
 		define_heir = {
 			name = "Матьяш"
+			culture = hungarian
 			dynasty = "Хуньяди"
 			adm = 4
 			dip = 5
@@ -213,7 +216,7 @@ country_event = {
 	}
 }
 
-# The Hungarian Throne
+# The magyar Throne
 country_event = {
 	id = flavor_hun.10
 	title = flavor_hun.10.t
@@ -474,7 +477,7 @@ country_event = {
 	
 }
 
-#Hungarian Peasant Revolt
+#magyar Peasant Revolt
 #Gyцrgy Dуzsa
 country_event = {
 	id = flavor_hun.11
@@ -567,6 +570,7 @@ country_event = {
 		define_advisor = {
 			type = statesman
 			name = "Тамаш Бакоц"
+			culture = hungarian
 			discount = yes
 			skill = 2
 		}
@@ -802,7 +806,7 @@ country_event = {
 				type = nationalist_rebels
 				size = 2
 				leader = "Ян Искра из Брандиса"
-}
+			}
 		}
 	}
 	option = {
@@ -850,6 +854,7 @@ country_event = {
 	option = {
 		name = flavor_hun.16.a
 		add_years_of_income = -0.75
+		add_army_professionalism = 0.05
 		add_country_modifier = {
 			name = hun_black_army
 			duration = -1
@@ -890,7 +895,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-has_regency = no
+		tag = HUN
+		has_regency = no
 		has_country_modifier = hun_black_army
 	}
 	
@@ -1407,6 +1413,7 @@ country_event = {
 		add_adm_power = 50
 		define_advisor = {
 			name = "Томаш Надашдь"
+			culture = hungarian
 			type = master_of_mint
 			skill = 3
 			discount = yes
@@ -1417,6 +1424,7 @@ country_event = {
 		add_dip_power = 50
 		define_advisor = {
 			name = "Томаш Надашдь"
+			culture = hungarian
 			type = diplomat
 			skill = 3
 			discount = yes
@@ -1428,6 +1436,7 @@ country_event = {
 		define_advisor = {
 			name = "Томаш Надашдь"
 			type = fortification_expert
+			culture = hungarian
 			skill = 3
 			discount = yes
 		}
@@ -1492,6 +1501,7 @@ country_event = {
 		change_tag = TRA
 		define_ruler = {
 			name = "Янош"
+			culture = hungarian
 			dynasty = "Запольяи"
 			claim = 95
 			ADM = 3
@@ -1524,7 +1534,7 @@ country_event = {
 	}
 }
 
-#Hungarian Estates elect X to lead them
+#magyar Estates elect X to lead them
 country_event = {
 	id = flavor_hun.25
 	title = flavor_hun.25.t
@@ -1824,6 +1834,7 @@ country_event = {
 		name = flavor_hun.28.a
 		define_advisor = {
 			name = "Тамаш Эрдёди"
+			culture = hungarian
 			skill = 3
 			discount = yes
 			type = grand_captain
@@ -1876,7 +1887,7 @@ country_event = {
 					religion = catholic
 					culture = hungarian
 				}
-				set_province_flag = hungarian_reform
+				set_province_flag = magyar_reform
 			}
 			random_owned_province = {
 				limit = {
@@ -1885,9 +1896,9 @@ country_event = {
 						culture = hungarian
 						culture = slovak
 					}
-					NOT = { has_province_flag = hungarian_reform }
+					NOT = { has_province_flag = magyar_reform }
 				}
-				set_province_flag = hungarian_reform
+				set_province_flag = magyar_reform
 			}
 		}
 	}
@@ -1900,12 +1911,14 @@ country_event = {
 			name = "Матьяш Деваи"
 			skill = 3
 			discount = yes
+			religion = protestant
+			culture = hungarian
 			type = inquisitor
 		}
 		every_owned_province = {
-			limit = { has_province_flag = hungarian_reform }
+			limit = { has_province_flag = magyar_reform }
 			change_religion = protestant
-			clr_province_flag = hungarian_reform
+			clr_province_flag = magyar_reform
 		}
 	}
 	
@@ -1913,11 +1926,13 @@ country_event = {
 		name = flavor_hun.29.b
 		trigger = { religion = catholic }
 		every_owned_province = {
-			limit = { has_province_flag = hungarian_reform }
-			clr_province_flag = hungarian_reform
+			limit = { has_province_flag = magyar_reform }
+			clr_province_flag = magyar_reform
 		}
 		define_advisor = {
 			name = "Томаш Залахеци"
+			culture = hungarian
+			religion = catholic
 			skill = 3
 			discount = yes
 			type = theologian
@@ -1974,6 +1989,7 @@ country_event = {
 		define_advisor = {
 			name = "Янус Паннониус"
 			type = philosopher
+			culture = croatian
 			skill = 2
 			discount = yes
 		}
@@ -2197,6 +2213,7 @@ country_event = {
 		define_ruler = {
 			name = "Ференц"
 			dynasty = "Ракоци"
+			culture = hungarian
 			adm = 4
 			dip = 5
 			mil = 4
@@ -2213,9 +2230,10 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
+				culture = hungarian
 				leader = "Ференц II Ракоци"
 			}
-}
+		}
 	}
 }
 
@@ -2260,6 +2278,7 @@ country_event = {
 		define_ruler = {
 			name = "Ференц"
 			dynasty = "Ракоци"
+			culture = hungarian
 			adm = 4
 			dip = 5
 			mil = 4
@@ -2274,6 +2293,7 @@ country_event = {
 			limit = { is_in_capital_area = yes }
 			spawn_rebels = {
 				type = pretender_rebels
+				culture = hungarian
 				size = 3
 				leader = "Ференц II Ракоци"
 			}

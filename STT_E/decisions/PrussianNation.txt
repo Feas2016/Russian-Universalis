@@ -157,6 +157,9 @@ country_decisions = {
 			owns_core_province = 41 # Königsberg
 		}
 		effect = {
+			41 = {
+				move_capital_effect = yes
+			}
 			change_tag = PRU
 			###STT -1
 			east_prussia_area = {
@@ -184,7 +187,6 @@ country_decisions = {
 				limit = { government = monarchy }
 				add_opinion = { who = ROOT modifier = secularized_monastic_order }
 			}
-			set_capital = 41		# Ostpreussen
 			if = {
 				limit = {
 					has_custom_ideas = no
@@ -238,7 +240,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			adm_tech = 18
+			adm_tech = 18 #STT
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

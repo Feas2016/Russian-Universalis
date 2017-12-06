@@ -5,8 +5,11 @@ conquer_finland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		finland_area
+	}
+	
 	target_provinces = {
-		area = finland_area
 		owned_by = SWE
 	}
 	allow = {
@@ -202,7 +205,7 @@ annex_yaroslavl = {
 		}
 	}
 	chance = {
-		factor = 3000 ###STT
+		factor = 3000
 		modifier = {
 			factor = 2
 			NOT = { has_opinion = { who = YAR value = 0 } }
@@ -382,15 +385,23 @@ access_to_the_baltic_sea = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		33 34
+	}
+	
+	target_areas_list = {
+		lithuania_area
+		livonia_area
+		estonia_ingria_area
+		curonia_area
+		west_prussia_area
+		east_prussia_area
+		pomerelia_area
+		samogitia_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 33
-			province_id = 34
-			AND = {
-				region = baltic_region
 				has_port = yes
-			}
-		}
 		NOT = { owned_by = ROOT }
 		any_neighbor_province = {
 			owned_by = ROOT
@@ -580,6 +591,8 @@ russian_colony_in_west_siberia = {
 	type = country
 	
 	category = DIP
+	
+	
 	
 	allow = {
 		normal_or_historical_nations = yes
@@ -1095,7 +1108,7 @@ subjugate_novgorod = {
 			factor = 2
 			NOT = { has_opinion = { who = NOV value = 0 } }
 		}
-		modifier = {
+		modifier = { #STT
 			factor = 9
 			is_year = 1444
 		}
@@ -1160,6 +1173,34 @@ russia_partitions_poland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		lithuania_area
+		west_dniepr_area
+		east_dniepr_area
+		sloboda_ukraine_area
+		white_ruthenia_area
+		podolia_volhynia_area
+		pripyat_area
+		smolensk_area
+		minsk_area
+		moscow_area
+		suzdal_area
+		novgorod_area
+		pskov_area
+		beloozero_area
+		pomor_area
+		karelia_area
+		ryazan_area
+		tambov_area
+		north_karelia
+		tver_area
+		yaroslavl_area
+		vladimir_area
+		oka_area
+		arkhangelsk_area
+		vologda_area
+	}
+	
 	target_provinces = {
 		OR = {
 			owned_by = POL
@@ -1170,11 +1211,6 @@ russia_partitions_poland = {
 			owner = {
 				is_subject_of = PLC
 			}
-		}
-		OR = {
-			area = lithuania_area
-			region = ruthenia_region
-			region = russia_region
 		}
 	}
 	
@@ -1326,13 +1362,36 @@ russia_partitions_lithuania = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		lithuania_area
+		west_dniepr_area
+		east_dniepr_area
+		sloboda_ukraine_area
+		white_ruthenia_area
+		podolia_volhynia_area
+		pripyat_area
+		smolensk_area
+		minsk_area
+		moscow_area
+		suzdal_area
+		novgorod_area
+		pskov_area
+		beloozero_area
+		pomor_area
+		karelia_area
+		ryazan_area
+		tambov_area
+		north_karelia
+		tver_area
+		yaroslavl_area
+		vladimir_area
+		oka_area
+		arkhangelsk_area
+		vologda_area
+	}
+	
 	target_provinces = {
 		owned_by = LIT
-		OR = {
-			area = lithuania_area
-			region = ruthenia_region
-			region = russia_region
-		}
 	}
 	
 	allow = {
@@ -1787,13 +1846,14 @@ conquer_nogai_area = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		nogai_area
+		#lower_yik_area #STT
+		bashkiria_area
+		saratov_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = nogai_area
-			###STT
-			area = bashkiria_area
-			area = saratov_area
-		}
 		owner = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
@@ -1899,11 +1959,26 @@ conquer_western_siberia_region = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		ural_area
+		perm_area
+		kazan_area
+		galich_area
+		saratov_area
+		kama_area
+		bashkiria_area
+		samara_area
+		volga_area
+		yrtesh_area
+		ob_area
+		central_siberia_area
+		tunguska_area
+		irkutsk_area
+		ishim_area
+		kara_area
+	}
+	
 	target_provinces = {
-		OR = {
-			region = west_siberia_region
-			region = ural_region
-		}
 		owner = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }
@@ -1998,8 +2073,17 @@ conquer_east_siberia_region = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		yakutia_area
+		sakha_area
+		okhotsk_area
+		magadan_area
+		kamchatka_area
+		buryatia_area
+		kolyma_area
+	}
+	
 	target_provinces = {
-		region = east_siberia_region
 		owner = {
 			is_neighbor_of = ROOT
 			NOT = { num_of_cities = ROOT }

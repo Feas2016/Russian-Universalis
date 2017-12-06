@@ -23,9 +23,6 @@ feudalism = {
 
 	history = {
 		is_year = 1000
-		NOT = {
-			province_id = 2214 #Golestan
-		}
 		OR = {
 			AND = { #If this is changed costs for Nation Designer may also need to be changed.
 				OR = {
@@ -824,6 +821,10 @@ printing_press = {
 	history = {
 		OR = {
 			AND = {
+				province_id = 1876
+				is_year = 1550
+			}
+			AND = {
 				is_year = 1560
 				OR = {
 					religion = protestant
@@ -902,6 +903,7 @@ printing_press = {
 		OR = {
 			development = 15
 			is_capital = yes
+			trade_goods = paper
 		}
 		OR = {
 			religion = protestant
@@ -1481,6 +1483,7 @@ manufactories = {
 			has_building = textile
 			has_building = plantations
 			has_building = tradecompany
+			has_building = mills
 		}
 	}
 	start_chance = 10		#in 100 for when a province can_start
@@ -1568,8 +1571,8 @@ manufactories = {
 					trade_goods = cotton
 					trade_goods = sugar
 					trade_goods = tobacco
+					trade_goods = tea
 					trade_goods = cocoa
-					trade_goods = grain
 				}
 			}
 			has_building = plantations
@@ -1580,16 +1583,39 @@ manufactories = {
 			potential = {
 				OR = {
 					trade_goods = ivory
-					trade_goods = tea
-					trade_goods = chinaware
 					trade_goods = slaves
 					trade_goods = spices
 					trade_goods = fur
-					trade_goods = wine
-					trade_goods = tropical_wood
+					trade_goods = incense
 				}
 			}
 			has_building = tradecompany
+		}
+		modifier = {
+			factor = 1
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wine
+				}
+			}
+			has_building = farm_estate
+		}
+		modifier = {
+			factor = 1
+			scale = yes
+			potential = {
+				OR = {
+					trade_goods = paper
+					trade_goods = gems
+					trade_goods = tropical_wood
+					trade_goods = glass
+					trade_goods = chinaware
+				}
+			}
+			has_building = mills
 		}
 		modifier = {
 			factor = 5

@@ -262,11 +262,11 @@ custodian_of_the_two_holy_mosques = {
 
 	trigger = {
 		is_free_or_tributary_trigger = yes
-		owns = 385
-		owns = 384
+		owns_or_vassal_of = 385
+		owns_or_vassal_of = 384
 	}
 
-	prestige = 0.5
+	legitimacy = 0.5
 	missionaries = 1
 }
 

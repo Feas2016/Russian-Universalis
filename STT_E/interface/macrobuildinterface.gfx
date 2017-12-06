@@ -98,6 +98,58 @@ spriteTypes = {
 		texturefile = "gfx//interface//culture_selection_bg.dds"
 	}		
 		
+	
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_exploit_button_manpower"
+		texturefile = "gfx//interface//exploit_button_manpower.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_exploit_button_production"
+		texturefile = "gfx//interface//exploit_button_production.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_exploit_button_tax"
+		texturefile = "gfx//interface//exploit_button_tax.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_exploit_bg"
+		texturefile = "gfx//interface//exploit_bg.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_sort_exploit_manpower_64"
+		texturefile = "gfx//interface//sort_exploit_manpower_64.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_sort_exploit_production_64"
+		texturefile = "gfx//interface//sort_exploit_production_64.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_sort_exploit_tax_64"
+		texturefile = "gfx//interface//sort_exploit_tax_64.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_sort_total_49"
+		texturefile = "gfx//interface//sort_total_49.dds"
+	}		
+
+
+	
+	
+	
+	
+	
+	
 	spriteType = {
 		name = "GFX_close_gold"
 		texturefile = "gfx//interface//close_gold.dds"
@@ -189,6 +241,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_build_interface_diplomacy_tab"
 		texturefile = "gfx//interface//build_interface_diplomacy_tab.dds"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_build_interface_exploit_tab"
+		texturefile = "gfx//interface//build_interface_exploit_tab.dds"
 		noOfFrames = 2
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}

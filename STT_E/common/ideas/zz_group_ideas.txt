@@ -237,7 +237,7 @@ bengali_ideas = {
 		war_exhaustion_cost = -0.10
 	}
 	jute_production = {
-		production_efficiency = 0.1
+		production_efficiency = 0.1 #STT #Uses bonus from Tripuran ideas
 	}
 	opium_fields = {
 		global_tax_modifier = 0.1
@@ -652,8 +652,8 @@ arabian_ideas = {
 	bedouin_traders = {
 		global_trade_power = 0.1
 	}
-	coffea_arabica = {
-		production_efficiency = 0.1
+	arab_clan_loyalties = {
+		leader_land_manuever = 1
 	}
 	arabia = {
 		prestige = 1
@@ -1164,8 +1164,8 @@ tupi_ideas = {
 
 caucasus_ideas = {
 	start = {
-		land_attrition = -0.1
-		enemy_core_creation = 0.5
+		hostile_attrition = 1
+		global_manpower_modifier = 0.15
 	}
 	
 	bonus = {
@@ -1175,7 +1175,7 @@ caucasus_ideas = {
 	trigger = {
 		OR = {
 			culture_group = caucasian
-			tag = SRV
+			primary_culture = azerbaijani
 		}
 	}
 	free = yes
@@ -1976,5 +1976,43 @@ congolese_minor_ideas = {
 	}
 	congolese_minor_ivory_trade = {
 		trade_efficiency = 0.1
+	}
+}
+
+caspian_ideas = {
+	start = {
+		merc_maintenance_modifier = -0.25
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		primary_culture = mazandarani
+	}
+	free = yes
+	
+	caspian_riches_of_tabarestan = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	caspian_time_of_turmoil = {
+		infantry_power = 0.1
+	}
+	caspian_silk = {
+		production_efficiency = 0.1
+	}
+	caspian_sea_trade = {
+		caravan_power = 0.2
+	}
+	caspian_unite_minor_states = {
+		global_tax_modifier = 0.1
+	}
+	caspian_safe_haven = {
+		defensiveness = 0.2
+	}
+	caspian_promote_foreign_trade = {
+		merchants = 1
 	}
 }

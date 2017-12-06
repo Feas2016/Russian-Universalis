@@ -9,6 +9,10 @@ country_decisions = {
 				tag = ROM
 			}
 			NOT = { has_country_modifier = the_theme_system }
+			OR = {
+				ai = no
+				num_of_cities = 3
+			}
 		}
 		allow = {
 			albania_area = { type = all owned_by = BYZ }

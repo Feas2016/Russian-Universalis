@@ -1,20 +1,5 @@
 guiTypes = {
 
-	#x is minimum resolution height for this country view to increase to large size
-	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
-	positionType =
-	{
-		name ="countryreligionview_scaling_large_min_inc"
-		position = { x= 900 y = 150 }
-	}
-	
-	#x is minimum resolution height for this country view to increase to huge size
-	#y is the size increase for lists and distance to move for buttons at the bottom of the country view
-	positionType = {
-		name ="countryreligionview_scaling_huge_min_inc"
-		position = { x= 1080 y = 330 }
-	}
-
 	windowType = {
 		name = "fervor_power_entry"
 		backGround=""
@@ -70,7 +55,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Province religion"	
-			maxWidth = 120 #Увеличил
+			maxWidth = 120 #РЈРІРµР»РёС‡РёР»
 			maxHeight = 32
 			format = left
 		}
@@ -102,7 +87,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="missionary_progress"
-			spriteType = "GFX_unitpanel_progressbar"
+			spriteType = "GFX_convert_progressbar"
 			position = { x = 385 y =2 }
 		}
 		
@@ -264,6 +249,25 @@ guiTypes = {
 			format = left
 		}
 	}
+
+	windowType = {
+		name = "religion_sub_modifier_item"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=30 y= 30 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		
+		iconType =
+		{
+			name ="modifier_icon"
+			spriteType = "GFX_heretics_tolerance_icon"
+			position = { x= 13 y = 5 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
+		}
+	}
 		
 	windowType = {
 		name = "countryreligionview"
@@ -279,6 +283,8 @@ guiTypes = {
 
 		iconType =
 		{
+			# This background will be hidden beneath religionpanel_bg_bottom
+			# in the smallest resolution in most cases (but not harmonization view for example)
 			name ="religionpanel_bg_top"
 			spriteType = "GFX_country_religion_view_bg_bottom_standard"
 			position = { x= -7 y = -10 }
@@ -288,7 +294,19 @@ guiTypes = {
 		iconType =
 		{
 			name ="religionpanel_bg_bottom"
-			spriteType = "GFX_country_religion_view_bg_bottom_standard"
+			if_resolution = {
+				max_height = 899
+				spriteType = "GFX_country_religion_view_bg_bottom_standard"
+			}
+			if_resolution = {
+				max_height = 1079
+				min_height = 900
+				spriteType = "GFX_country_religion_view_bg_bottom_large"
+			}
+			if_resolution = {
+				min_height = 1080
+				spriteType = "GFX_country_religion_view_bg_bottom_huge"
+			}
 			position = { x= -7 y = -10 }
 			Orientation = "UPPER_LEFT"
 		}
@@ -335,10 +353,10 @@ guiTypes = {
 			spriteType = "GFX_secondary_religion_banner"
 			position = { x = 80 y = 152 }
 		}		
-		
+
 		instantTextBoxType = {
 			name = "secondary_religion_name"
-			position = { x = 80 y = 156 }
+			position = { x = 50 y = 156 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
@@ -347,6 +365,56 @@ guiTypes = {
 			maxHeight = 32
 			format = right
 			fixedsize = yes
+		}
+
+
+		windowType = {
+			name = "religious_school_window"
+
+			iconType = {
+				name ="religious_school_banner"
+				spriteType = "GFX_secondary_religion_banner"
+				position = { x = 80 y = 152 }
+			}
+
+			instantTextBoxType = {
+				name = "religious_school_name"
+				position = { x = 50 y = 156 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}	
+				text = ""
+				maxWidth = 100
+				maxHeight = 32
+				format = right
+				fixedsize = yes
+			}
+
+			guiButtonType = 
+			{
+				name ="invite_scholar_button"
+				quadTextureSprite = "GFX_muslim_school_button"
+				position = { x= 180 y = 148 }
+				tooltip = ""
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "Main_14"
+				Orientation = "UPPER_LEFT"
+				hint_tag = "hint_changereligion"
+			}
+		}
+
+		listboxType = 
+		{
+			name ="religion_sub_modifiers_listbox"
+			position = { x=80 y = 188 }
+			backGround=""
+			size = { x=100 y =80}
+			Orientation = "UPPER_LEFT"
+			horizontal = 1
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 1 y = 1}
 		}
 		
 		listboxType = 
@@ -360,6 +428,7 @@ guiTypes = {
 			spacing = 1
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 10 y = 10}
+			alwaystransparent=yes
 		}
 		
 		guiButtonType = 
@@ -625,11 +694,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "isolationism_value"
-				position = { x= 195 y = 239 } #Сместил влево на 4
+				position = { x= 195 y = 239 } #РЎРјРµСЃС‚РёР» РІР»РµРІРѕ РЅР° 4
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "0"
-				maxWidth = 184 #Увеличил на 40
+				maxWidth = 184 #РЈРІРµР»РёС‡РёР» РЅР° 40
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -637,11 +706,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "possible_incidents_label"
-				position = { x = 10 y = 259 } # Текст сдвинул влево на 20
+				position = { x = 10 y = 259 } # РўРµРєСЃС‚ СЃРґРІРёРЅСѓР» РІР»РµРІРѕ РЅР° 20
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				text = "POSSIBLE_INCIDENTS"
-				maxWidth = 188 # Текст увеличил на 50
+				maxWidth = 188 # РўРµРєСЃС‚ СѓРІРµР»РёС‡РёР» РЅР° 50
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -658,11 +727,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "active_incidents_label"
-				position = { x = 10 y = 282 } # Текст сдвинул влево на 20
+				position = { x = 10 y = 282 } # РўРµРєСЃС‚ СЃРґРІРёРЅСѓР» РІР»РµРІРѕ РЅР° 20
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				text = "ACTIVE_INCIDENTS"
-				maxWidth = 188 # Текст увеличил на 50
+				maxWidth = 188 # РўРµРєСЃС‚ СѓРІРµР»РёС‡РёР» РЅР° 50
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -679,11 +748,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "past_incidents_label"
-				position = { x = 10 y = 305 } # Текст сдвинул влево на 20
+				position = { x = 10 y = 305 } # РўРµРєСЃС‚ СЃРґРІРёРЅСѓР» РІР»РµРІРѕ РЅР° 20
 				font = "vic_22"
 				borderSize = {x = 0 y = 0}
 				text = "PAST_INCIDENTS"
-				maxWidth = 188 # Текст увеличил на 50
+				maxWidth = 188 # РўРµРєСЃС‚ СѓРІРµР»РёС‡РёР» РЅР° 50
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -1014,44 +1083,44 @@ guiTypes = {
 				position = { x= 0 y = -70 }
 			}
 			
-			iconType =
-			{
+			iconType ={
 				name ="current_piety_progress_bg"
 				spriteType = "GFX_piety_bar_bg"
-				position = { x= 66 y = -10 }
+				position = { x= 68 y = -30 }
 			}
 			
-			iconType =
-			{
+			iconType ={
 				name ="current_piety_progress_frame"
-				spriteType = "GFX_ideaView_progress_frame_long"
-				position = { x= 63 y = -14 }
+				spriteType = "GFX_piety_bar_frame"
+				position = { x= 52 y = -68 }
 			}
 			
 			iconType =
 			{
 				name ="low_piety"
-				spriteType = "GFX_low_piety"
-				position = { x= 43 y = -21 }
+				spriteType = "GFX_piety_icon_low"
+				position = { x= -8 y = -66 }
+				Orientation = "CENTER_LEFT"
 			}
 			
 			iconType =
 			{
 				name ="high_piety"
-				spriteType = "GFX_high_piety"
-				position = { x= 243 y = -21 }
+				spriteType = "GFX_piety_icon_high"
+				position = { x= 242 y = -66 }
+				Orientation = "CENTER_LEFT"
 			}
 			
 			iconType =
 			{
 				name ="current_piety"
 				spriteType = "GFX_war_overview_indicator"
-				position = { x= 133 y = -15 }
+				position = { x= 135 y = -5 }
 			}
 			
 			instantTextBoxType = {
 				name = "current_piety_value"
-				position = { x= 148 y = -21 }
+				position = { x= 152 y = -21 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = ""	
@@ -1063,15 +1132,33 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "current_piety_text"
-				position = { x = 40 y = -45 }
+				position = { x = 78 y = -60 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "CURRENT_PIETY"	
-				maxWidth = 256
+				maxWidth = 160
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = centre
 			}
+			
+			
+			guiButtonType = {
+				name = "low_piety_action"
+				position = { x=71 y = -11}
+				quadTextureSprite ="GFX_low_piety_action"
+				Orientation = "LEFT"
+			}
+			
+			guiButtonType = {
+				name = "high_piety_action"
+				position = { x=200 y = -11}
+				quadTextureSprite ="GFX_high_piety_action"
+				Orientation = "LEFT"
+			}
+			
+
+
 		}
 ################# BUDDHIST KARMA		
 		windowType = {
@@ -1422,11 +1509,11 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "church_name"
-				position = { x = 26 y = -65 } ### Сдвинул вправо
+				position = { x = 26 y = -65 } ### РЎРґРІРёРЅСѓР» РІРїСЂР°РІРѕ
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "Church of Nothingland"
-				maxWidth = 350 ### Увеличил длину
+				maxWidth = 350 ### РЈРІРµР»РёС‡РёР» РґР»РёРЅСѓ
 				maxHeight = 25
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -1441,7 +1528,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "church_power_label"
-				position = { x = 10 y = -40 } ### Сдвинул
+				position = { x = 10 y = -40 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "CHURCH_POWER"
@@ -1453,7 +1540,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "church_power_value"
-				position = { x = 120 y = -40 } ### Сдвинул
+				position = { x = 120 y = -40 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "123"
@@ -1466,7 +1553,7 @@ guiTypes = {
 			OverlappingElementsBoxType = {
 				name = "unlocked_aspects"
 				position = { x = 50 y = -30 }
-				size = { x = 263 y = 83 } ### Увеличил
+				size = { x = 263 y = 83 } ### РЈРІРµР»РёС‡РёР»
 				Orientation = "UPPER_LEFT"
 				format = left
 				spacing = 14
@@ -1508,11 +1595,11 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "fervor_monthly_change"
-				position = { x = -10 y = -20 } ### Сдвинул
+				position = { x = -10 y = -20 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "FERVOR_CHANGE"
-				maxWidth = 228 ### Увеличил длину
+				maxWidth = 228 ### РЈРІРµР»РёС‡РёР» РґР»РёРЅСѓ
 				maxHeight = 25
 				Orientation = "UPPER_LEFT"
 				format = left
@@ -1520,19 +1607,19 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_change"
-				position = { x = 31 y = -17 } ### Сдвинул
+				position = { x = 31 y = -17 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "123"
-				maxWidth = 150 ### Увеличил длину
+				maxWidth = 150 ### РЈРІРµР»РёС‡РёР» РґР»РёРЅСѓ
 				maxHeight = 25
 				Orientation = "UPPER_LEFT"
-				format = right ### Сдвинул
+				format = right ### РЎРґРІРёРЅСѓР»
 			}
 
 			instantTextBoxType = {
 				name = "fervor_value"
-				position = { x = 32 y = 5 } ### Сдвинул
+				position = { x = 32 y = 5 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "FERVOR_VALUE2"
@@ -1544,14 +1631,14 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_value"
-				position = { x = 50 y = 5 } ### Сдвинул
+				position = { x = 50 y = 5 } ### РЎРґРІРёРЅСѓР»
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "3,1"
-				maxWidth = 128 ### Увеличил
+				maxWidth = 128 ### РЈРІРµР»РёС‡РёР»
 				maxHeight = 25
 				Orientation = "UPPER_LEFT"
-				format = right ### Сдвинул
+				format = right ### РЎРґРІРёРЅСѓР»
 			}
 			
 		}
@@ -1562,7 +1649,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "religiousunity_label"
 			position = { x = 38 y = 337 }
-			font = "vic_18" ### Уменьшил шрифт
+			font = "vic_18" ### РЈРјРµРЅСЊС€РёР» С€СЂРёС„С‚
 			borderSize = {x = 0 y = 0}
 			text = "religious_unity"
 			maxWidth = 120
@@ -1655,8 +1742,6 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 		
-		
-		
 		guiButtonType = {
 			name = "sort_time"
 			position = { x = 370 y =374 }
@@ -1688,18 +1773,81 @@ guiTypes = {
 			name ="province_listbox"
 			position = { x=-12 y = 402}
 			backGround=""
-			size = { x=530 y =120}
+			if_resolution = {
+				max_height = 899
+				size = { x=530 y =120}
+			}
+			if_resolution = {
+				max_height = 1079
+				min_height = 900
+				size = { x=530 y =270}
+			}
+			if_resolution = {
+				min_height = 1080
+				size = { x=530 y =450}
+			}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 10 y = 10}
 		}
+		checkboxType = {
+			name = "show_subjects"
+			if_resolution = {
+				max_height = 899
+				position = { x=40 y=529 }
+			}
+			if_resolution = {
+				max_height = 1079
+				min_height = 900
+				position = { x=40 y=679 }
+			}
+			if_resolution = {
+				min_height = 1080
+				position = { x=40 y=859 }
+			}
+			quadTextureSprite ="GFX_checkbox_gold_32"
+		}
+		instantTextBoxType={
+			name = "show_subjects_title"
+			if_resolution = {
+				max_height = 899
+				position = {x = 74 y = 534 }
+			}
+			if_resolution = {
+				max_height = 1079
+				min_height = 900
+				position = {x = 74 y = 684 }
+			}
+			if_resolution = {
+				min_height = 1080
+				position = {x = 74 y = 864 }
+			}
+			font = "vic_22"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 160
+			maxHeight = 18
+			text = "MACRO_BUILDR_INCL_SUBJ"
+			format = left
+		}
 		
 		iconType =
 		{
 			name ="full_unity_bg"
-			spriteType = "GFX_country_religion_view_allreligion_bg"
+			if_resolution = {
+				max_height = 899
+				spriteType = "GFX_country_religion_view_allreligion_bg"
+			}
+			if_resolution = {
+				max_height = 1079
+				min_height = 900
+				spriteType = "GFX_country_religion_view_allreligion_bg_large"
+			}
+			if_resolution = {
+				min_height = 1080
+				spriteType = "GFX_country_religion_view_allreligion_bg_huge"
+			}
 			position = { x= 12 y = 365 }
 			Orientation = "UPPER_LEFT"
 
@@ -1921,6 +2069,47 @@ guiTypes = {
 			}
 		}
 
+		################# scholar SELECTION		
+		windowType = {
+			name =  "invite_scholar_selection_screen"
+			backGround =""
+			position = { x=32 y=300 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+
+			iconType =
+			{
+				name ="religion_overlay_bg"
+				spriteType = "GFX_icon_selection_overlay_bg"
+				position = { x= -27 y = -72 }
+				#position = { x= -39 y = -310 }
+			}
+
+			listboxType = 
+			{
+				name ="listbox"
+				position = { x=56 y = -60}
+				backGround=""
+				size = { x=398 y =290}
+				Orientation = "UPPER_LEFT"
+				horizontal = 0
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = {x = 10 y = 10}
+			}
+
+			guiButtonType = {
+				name = "cancel"
+				position = { x=190 y = 234 }
+				quadTextureSprite ="GFX_standard_button_71"
+				buttonText = "BACK"
+				buttonFont = "vic_18"
+			}
+		}
+
 		################# Cult SELECTION		
 		windowType = {
 			name = "cult_selection_screen"
@@ -2107,6 +2296,78 @@ guiTypes = {
 		}
 	}
 
+	################# religious school
+	windowType = {
+		name = "religious_school_item"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=58 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+				
+		iconType =
+		{
+			name ="school_icon"
+			spriteType = "GFX_heretics_tolerance_icon"
+			position = { x= -48 y = -7 }
+		}
+
+		# Delete school_relation Please
+		instantTextBoxType = {
+			name = "school_relation"
+			position = { x= -4600 y = 28 }
+			font = "Arial12"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 50
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = center
+		}
+
+		iconType = {
+			name ="muslim_school_banner"
+			spriteType = "GFX_muslim_school_banner"
+			position = { x= 1 y = -10 }
+			alwaystransparent = yes
+		}
+		
+		instantTextBoxType = {
+			name = "school_name"
+			position = { x= 18 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "DeityName"	
+			maxWidth = 280
+			maxHeight = 24
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "school_effect"
+			position = { x = 18 y = 14 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "DeityEffect"	
+			maxWidth = 280
+			maxHeight = 40
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_school"
+			position = { x=306 y = 6}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
+		}
+	}
+
 	################# Cult item
 	windowType = {
 		name = "fetishist_cult_item"
@@ -2218,8 +2479,8 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
-			maxWidth = 105 # Увеличил
-			maxHeight = 50 # Увеличил
+			maxWidth = 105 # РЈРІРµР»РёС‡РёР»
+			maxHeight = 50 # РЈРІРµР»РёС‡РёР»
 			Orientation = "UPPER_LEFT"
 			format = left
 		}

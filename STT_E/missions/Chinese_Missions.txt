@@ -15,6 +15,7 @@ annex_dai_viet = {
 		is_lesser_in_union = no
 		exists = DAI
 		NOT = { alliance_with = DAI }
+		NOT = { has_country_modifier = military_victory }
 		DAI = {
 			is_free_or_tributary_trigger = yes
 			is_neighbor_of = ROOT
@@ -259,17 +260,18 @@ start_the_conquest_of_ming_china = {
 	
 	category = MIL
 	
+	target_provinces_list = {
+		703
+		704
+		723
+		726
+		722
+		2112
+		2113
+		2115
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 703
-			province_id = 704
-			province_id = 723
-			province_id = 726
-			province_id = 722
-			province_id = 2112
-			province_id = 2113
-			province_id = 2115
-		}
 		NOT = { owned_by = ROOT }
 		owner = {
 			NOT = { war_with = ROOT }
@@ -348,12 +350,12 @@ unite_manchu = {
 	category = MIL
 	ai_mission = yes
 	
+	target_provinces_list = {
+		730 1053 2108
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 730		#Girin
-			province_id = 1053		#Hinggan
-			province_id = 2108		#Huncun
-		}
+		always = yes
 	}
 	allow = {
 		normal_or_historical_nations = yes

@@ -72,6 +72,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			344 = {
+				move_capital_effect = yes
+			}
 			change_tag = MOR
 			if = {
 				limit = {
@@ -118,7 +121,6 @@ country_decisions = {
 				add_permanent_claim = MOR
 			}
 			add_prestige = 25
-			set_capital = 344 #Marrekech
 			if = {
 				limit = { NOT = { government = celestial_empire } }
 				change_government = despotic_monarchy #Desert tribes settling down, theocracies become monarchies.
@@ -212,6 +214,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			338 = {
+				move_capital_effect = yes
+			}
 			change_tag = ALG
 			if = {
 				limit = {
@@ -259,7 +264,6 @@ country_decisions = {
 				change_government = despotic_monarchy
 			}
 			add_prestige = 25
-			set_capital = 338 #Algiers
 			set_country_flag = formed_algiers_flag
 			if = {
 				limit = { has_custom_ideas = no }
@@ -337,6 +341,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			341 = {
+				move_capital_effect = yes
+			}
 			change_tag = TUN
 			if = {
 				limit = {
@@ -371,7 +378,6 @@ country_decisions = {
 				change_government = despotic_monarchy #Desert tribes settling down.
 			}
 			add_prestige = 25
-			set_capital = 341
 			set_country_flag = formed_tunisia_flag
 			if = {
 				limit = { has_custom_ideas = no }
@@ -433,6 +439,9 @@ country_decisions = {
 			}
 		}
 		effect = {
+			354 = {
+				move_capital_effect = yes
+			}
 			change_tag = TRP
 			if = {
 				limit = {
@@ -468,7 +477,6 @@ country_decisions = {
 			}
 			add_prestige = 25
 			set_country_flag = formed_tripoli_flag
-			set_capital = 354 #Tripoli
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

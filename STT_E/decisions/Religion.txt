@@ -63,7 +63,12 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
+			factor = 1
+			modifier = {
 			factor = 0
+				NOT = { full_idea_group = religious_ideas  }
+				NOT = { government = theocracy }
+			}
 		}
 	}
 	
@@ -135,6 +140,11 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { full_idea_group = religious_ideas  }
+				NOT = { government = theocracy }
+			}
 		}
 	}
 	
@@ -340,6 +350,7 @@ country_decisions = {
 	sheikh_ul_islam = {
 		potential = {
 			NOT = { has_ruler_modifier = the_sheikh_ul_islam }
+			NOT = { has_dlc = "Cradle of Civilization" } #On new ruler event instead
 			religion_group = muslim
 		}
 		allow = {
@@ -365,24 +376,19 @@ country_decisions = {
 	the_khalifah = {
 			potential = {
 				NOT = { has_ruler_modifier = khalifah }
-				NOT = {is_female = yes}
 				religion = sunni
+			NOT = { tag = MAM } #Controls the Caliph already.
 			}
 			allow = {
-				NOT = { government = republic
-				}
+			mil = 3
 				has_regency = no
-				owns_core_province = 385 #Mekka
-				owns_core_province = 384 #Medina
 			}
 			effect = {	
 				add_ruler_modifier = {
 					name = "khalifah"
 					duration = -1
 				}
-				add_piety = 0.20
-				add_adm_power = 100
-				add_legitimacy = 5			
+			add_piety = 0.10
 			}
 			ai_will_do = {
 				factor = 1
@@ -462,7 +468,7 @@ country_decisions = {
 				name = "per_capita_tax"
 				duration = -1
 			}
-			add_piety = -0.15
+			add_piety = 0.15
 		}
 		ai_will_do = {
 			factor = 1
@@ -496,6 +502,75 @@ country_decisions = {
 			modifier = {
 				NOT = { treasury = 100 }
 				factor = 0
+			}
+		}
+	}
+	
+	adopt_wahabism = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = sunni
+			government = tribal_federation
+			has_global_flag = wahabism_founded
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = hanbali_school
+				}
+			}
+		}
+		allow = {
+			piety = 1.0 #100 Legalism
+		}
+		effect = {
+			add_stability = -3
+			add_legitimacy = 30
+			set_religious_school = {
+				group = muslim
+				school = hanbali_school
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	trade_propagation_convert_to_islam = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { religion_group = muslim }
+			capital_scope = {
+				religion_group = muslim
+				is_node_in_trade_company_region = yes
+			}
+		}
+		allow = {
+			legitimacy = 100
+			has_regency = no
+			custom_trigger_tooltip = {
+				tooltip = the_dominant_religion_is_a_form_of_islam_tooltip
+				OR = {
+					dominant_religion = sunni
+					dominant_religion = shiite
+					dominant_religion = ibadi
+				}
+			}
+		}
+		effect = {
+			change_religion = capital
+			add_stability = 1
+			add_legitimacy = 10
+			clr_country_flag = sultan_titles_for_non_muslims
+			remove_country_modifier = islamic_titles
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_country_flag = sultan_titles_for_non_muslims
+				NOT = { had_country_flag = { flag = sultan_titles_for_non_muslims days = 10950 } } #After 30 years
+				NOT = { tag = ARK }
 			}
 		}
 	}
@@ -1607,6 +1682,11 @@ country_decisions = {
 			stability = 2
 		}
 		effect = {
+			set_ruler_religion = catholic
+			if = {
+				limit = { has_heir = yes }
+				set_heir_religion = catholic
+			}
 			add_ruler_modifier = {
 				name = "christian_ruler"
 				duration = -1
@@ -1632,6 +1712,45 @@ country_decisions = {
 				factor = 0
 				NOT = { has_ruler_flag = christian_tutors }
 				NOT = { primary_culture = togoku }
+			}
+		}
+	}
+	
+	conversion_of_convenience = {
+		potential = {
+			NOT = { ruler_religion = ROOT }
+			OR = {
+				ai = no
+				has_idea_group = religious_ideas
+			}
+		}
+		allow = {
+			stability = 1
+			capital_scope = {
+				has_owner_religion = yes
+			}
+		}
+		effect = {
+			add_stability = -2
+			add_legitimacy = 10
+			set_ruler_religion = ROOT
+			if = {
+				limit = {
+					has_heir = yes
+					NOT = { heir_religion = ROOT }
+				}
+				set_heir_religion = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					government = daimyo
+					has_ruler_modifier = christian_ruler
+					has_country_flag = a_kirishitan_realm
+				}
 			}
 		}
 	}

@@ -157,7 +157,7 @@ guiTypes = {
 		size = { x=500 y=30 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
-
+		
 		
 		instantTextBoxType = {
 			name = "name"
@@ -178,7 +178,7 @@ guiTypes = {
 			position = { x = -2 y = 6 }
 			quadTextureSprite ="GFX_subject_bg_tile"
 		}
-
+		
 		iconType = {
 			name ="flag"
 			spriteType = "GFX_shield_small"
@@ -213,7 +213,7 @@ guiTypes = {
 			maxWidth = 50
 			maxHeight = 30
 			format = center
-		}		
+		}
 		
 		instantTextBoxType = {
 			name = "armysize"
@@ -235,13 +235,13 @@ guiTypes = {
 			format = center
 			spacing = 8
 		}
-
+		
 		iconType = {
 			name ="icon_mil_focus"
 			spriteType = "GFX_subject_focus_icons"
 			position = { x= 468 y = 7 }
 			Orientation = "UPPER_LEFT"
-		}		
+		}
 		
 		instantTextBoxType = {
 			name = "income"
@@ -260,7 +260,7 @@ guiTypes = {
 			spriteType = "GFX_isolationism_icons"
 			position = { x = 385 y = 10 }
 		}
-
+		
 		iconType = {
 			name ="icon_tribute"
 			spriteType = "GFX_subject_tribute_icons"
@@ -274,7 +274,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_icon_merchant"
 			position = { x= 381 y = 6 }
 			Orientation = "UPPER_LEFT"
-		}		
+		}
 		
 		instantTextBoxType = {
 			name = "tariff_efficiency"
@@ -294,7 +294,7 @@ guiTypes = {
 			position = { x= 47 y = 27 }
 			rotation = 1.5708
 		}
-
+		
 		iconType = {
 			name ="treasure_fleet_progressframe"
 			spriteType = "GFX_treasure_fleet_progress_frame"
@@ -313,7 +313,7 @@ guiTypes = {
 		size = { x=1024 y=100 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
-		upsound = tab_government
+		upsound = tab_subjects
 		
 		iconType =
 		{

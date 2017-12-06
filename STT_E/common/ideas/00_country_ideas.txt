@@ -91,49 +91,6 @@ SWE_ideas = {
 }
 
 
-# RUS_ideas = {
-	# start = {
-		# global_manpower_modifier = 0.25
-		# infantry_cost = -0.20
-	# }
-
-	# bonus = {
-		# global_manpower_modifier = 0.50
-	# }
-
-	# trigger = {
-		# OR = {
-			# tag = RUS
-			# tag = MOS
-		# }
-	# }
-	# free = yes		#will be added at load.
-
-	# sudebnik = {
-		# core_creation = -0.15
-	# }
-	# the_streltsy = {
-		# land_forcelimit_modifier = 0.50
-	# }
-	# opprichnina = {
-		# culture_conversion_cost = -0.2
-		# manpower_recovery_speed = 0.10
-	# }
-	# abolish_the_mestnichestvo = {
-		# production_efficiency = 0.1
-	# }
-	# siberian_frontier = {
-		# colonists = 1
-		# auto_explore_adjacent_to_colony = yes
-	# }
-	# table_of_ranks = {
-		# army_tradition = 0.5
-	# }	
-	# curriculum_of_the_cadet_corps = {
-		# global_institution_spread = 0.2
-	# }
-# }
-
 MOS_ideas = {
 	start = {
 		diplomatic_upkeep = 1
@@ -493,8 +450,8 @@ PRU_ideas = {
 		OR = {
 			tag = PRU
 			tag = BRA
-			tag = GER
-			tag = NDB
+			tag = GER #STT
+			tag = NDB #STT
 		}
 	}
 	free = yes		#will be added at load.
@@ -744,7 +701,7 @@ BAV_ideas = {
 PER_ideas = {
 	start = {
 		land_morale = 0.1
-		cavalry_power = 0.10
+		cavalry_power = 0.15
 	}
 	
 	bonus = {
@@ -752,10 +709,7 @@ PER_ideas = {
 	}
 	
 	trigger = {
-		OR = {
 			tag = PER
-			tag = TAB
-		}
 	}
 	free = yes
 
@@ -1144,7 +1098,7 @@ MUG_ideas = {
 
 TIM_ideas = {
 	start = {
-		vassal_income = 0.25
+		diplomatic_upkeep = 1
 		years_of_nationalism = -5
 	}
 	
@@ -1158,13 +1112,13 @@ TIM_ideas = {
 	free = yes
 	
 	timurid_architecture = {
-		prestige_decay = -0.01
+		prestige = 1
 	}
 	the_mantle_of_the_great_khan = {
 		cavalry_power = 0.20
 	}
 	unleash_the_tiger = {
-		war_exhaustion_cost = -0.10
+		shock_damage = 0.1
 	}
 	chagatai_literature = {
 		legitimacy = 1
@@ -1176,8 +1130,8 @@ TIM_ideas = {
 	riches_of_the_silk_road = {
 		global_own_trade_power = 0.25
 	}
-	largest_mosque_in_the_world = {
-		prestige = 1
+	reform_the_diwan = {
+		yearly_corruption = -0.1
  	}
 }
 
@@ -2535,7 +2489,7 @@ NAJ_ideas = {
 	bedouin_poets = {
 		army_tradition = 0.5
 	}
-	hanbali_school = {
+	hanbali_school_ni = {
 		missionaries = 1
 	}
 	ships_of_the_desert = {
@@ -2567,7 +2521,10 @@ HED_ideas = {
 	}
 	
 	trigger = {
+		OR = {
 		tag = HED
+			tag = MDA
+		}
 	}
 	free = yes
 	
@@ -2591,6 +2548,7 @@ HED_ideas = {
 	}
 	successor_to_the_caliphate = {
 		prestige = 1
+		monthly_piety = 0.05
 	}
 }
 
@@ -3198,8 +3156,8 @@ TRE_ideas = {
 
 GEO_ideas = {
 	start = {
-		enemy_core_creation = 0.5
-		shock_damage_received = -0.1
+		defensiveness = 0.25
+		infantry_power = 0.1
 	}
 	
 	bonus = {
@@ -3216,21 +3174,22 @@ GEO_ideas = {
 	
 	bagrationi_dynasty = {
 		heir_chance = 0.5
+		legitimacy = 0.5
 	}
 	georgian_isolation = {
 		improve_relation_modifier = 0.3
 	}
+	geo_legacy_of_saint_nino = {
+		tolerance_own = 2
+	}
 	restoration_of_fortresses_and_churches = {
 		build_cost = -0.1
 	}
-	georgian_protectorates = {
-		vassal_income = 0.2
-	}
-	samouravo_counties = {
-		stability_cost_modifier = -0.1
-	}
 	sadrosho_districts = {
 		manpower_recovery_speed = 0.2
+	}
+	geo_dasturlamali = {
+		war_exhaustion = -0.02
 	}
 	georgian_embassies = {
 		diplomatic_reputation = 1
@@ -5097,7 +5056,7 @@ KAZ_ideas = {
 
 ARM_ideas = {
 	start = {
-		war_exhaustion_cost = -0.1
+		war_exhaustion = -0.02
 		recover_army_morale_speed = 0.05
 	}
 
@@ -5106,7 +5065,10 @@ ARM_ideas = {
 	}
 	
 	trigger = {
+		OR = {
 		tag = ARM
+			tag = MLK
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -5114,7 +5076,7 @@ ARM_ideas = {
 		global_missionary_strength = 0.02
 	}
 	land_reclamation = {
-		build_cost = -0.1
+		development_cost = -0.1
 	}
 	border_nation = {
 		diplomatic_reputation = 1
@@ -5126,7 +5088,7 @@ ARM_ideas = {
 		global_regiment_cost = -0.1
 	}
 	nakharar_titles = {
-		enemy_core_creation = 0.25
+		army_tradition = 0.5
 	}
 	end_of_armenian_diaspora = {
 		production_efficiency = 0.1
@@ -9777,5 +9739,778 @@ EST_ideas = {
 	}
 	est_national_awakening = {
 		global_unrest = -1
+	}
+}
+###STT 1.23
+TPR_ideas = {
+	start = {
+		infantry_power = 0.1
+		hostile_attrition = 1
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	trigger = {
+		tag = TPR
+	}
+	free = yes
+	
+	tpr_rajmala = {
+		legitimacy = 1
+	}
+	tpr_adaptive_administration = {
+		global_tax_modifier = 0.1
+	}
+	tpr_religious_syncretism = {
+		tolerance_heathen = 2
+	}
+	tpr_extended_army_control = {
+		land_forcelimit_modifier = 0.25
+	}
+	tpr_appointment_of_missips = {
+		state_maintenance_modifier = -0.15
+	}
+	jute_production = {
+		production_efficiency = 0.1 #also used by Bengali Ideas
+	}
+	tpr_strenghten_local_defences = {
+		defensiveness = 0.2
+	}
+}
+
+HAN_ideas = {
+	start = {
+		cavalry_power = 0.1
+		build_cost = -0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HAN
+	}
+	free = yes
+	
+	han_niedersachsicher_reichskreis = {
+		state_maintenance_modifier = -0.15
+	}
+	han_weser_renaissance = {
+		development_cost = -0.1
+	}
+	han_shutzenfest = {
+		land_maintenance_modifier = -0.1
+	}
+	han_herrenhausen_gardens = {
+		prestige = 1
+	}
+	han_strengthen_the_meiertum = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	han_hanoverian_chancery = {
+		diplomatic_reputation = 1
+	}
+	han_kings_legion = {
+		fire_damage_received = -0.1
+	}
+}
+
+AKK_ideas = {
+	start = {
+		cavalry_power = 0.2
+		land_morale = 0.1
+	}
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+	trigger = {
+		tag = AKK
+	}
+	free = yes
+	
+	akk_white_sheep = {
+		leader_land_shock = 1
+	}
+	akk_unite_the_federation = {
+		yearly_tribal_allegiance = 1
+		cavalry_cost = -0.2
+	}
+	akk_turko_iranian_bureaucracy = {
+		core_creation = -0.2
+	}
+	akk_apanages = {
+		global_manpower_modifier = 0.25
+	}
+	akk_expansive_diplomacy = {
+		diplomats = 1
+	}
+	akk_religious_pragmatism = {
+		stability_cost_modifier = -0.1
+	}
+	akk_qanun_nama_ye_hasan = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
+
+KHO_ideas = {
+	start = {
+		cavalry_power = 0.15
+		land_morale = 0.1
+	}
+	bonus = {
+		technology_cost = -0.05
+	}
+	trigger = {
+		tag = KHO
+	}
+	free = yes
+	
+	kho_land_of_the_rising_sun = {
+		diplomatic_reputation = 1
+	}
+	kho_rein_in_the_turko_mongol_emirs = {
+		army_tradition = 0.5
+	}
+	kho_princely_appanages = {
+		global_manpower_modifier = 0.1
+	}
+	kho_dynastic_chronicles = {
+		legitimacy = 1
+	}
+	kho_irrigation_network = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	kho_great_sheiks_of_khorasan = {
+		tolerance_own = 2
+	}
+	kho_protect_the_caravan_routes = {
+		trade_efficiency = 0.10
+	}
+}
+
+TRS_ideas = {
+	start = {
+		land_morale = 0.1
+		cavalry_cost = -0.1
+	}
+	bonus = {
+		idea_cost = -0.1
+	}
+	trigger = {
+		tag = TRS
+	}
+	free = yes
+	
+	trs_mawarannahr = {
+		cavalry_power = 0.2
+	}
+	trs_threshold_of_paradise = {
+		prestige = 1
+	}
+	trs_adept_diplomacy = {
+		spy_offence = 0.2
+	}
+	trs_turkoman_cannoneers = { #Babur's ambition
+		artillery_cost = -0.15
+	}
+	trs_scientific_patronage = {
+		technology_cost = -0.05
+	}
+	trs_entrepot_of_the_silk_road = {
+		global_own_trade_power = 0.25
+	}
+	chagatai_literature = {
+		#Same as Timurids
+	}
+}
+
+QOM_ideas = {
+	start = {
+		diplomats = 1
+		production_efficiency = 0.1
+	}
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	trigger = {
+		tag = QOM
+	}
+	free = yes
+	
+	qom_jibal = {
+		defensiveness = 0.2
+	}
+	in_honor_of_ali = {
+		tolerance_heretic = 3
+	}
+	qom_legacy_of_the_ilkhans = {
+		land_morale = 0.1
+	}
+	qom_persian_language_and_court_culture = {
+		diplomatic_reputation = 1
+		envoy_travel_time = -0.25
+	}
+	qom_tribes_of_iraq_e_ajam = {
+		fort_maintenance_modifier = -0.1
+		global_manpower_modifier = 0.1
+	}
+	reform_the_diwan = {
+		#Same as Timurids
+	}
+	qom_shahanshah = {
+		reduced_liberty_desire = 10
+	}
+}
+
+FRS_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		idea_cost = -0.1
+	}
+	bonus = {
+		dip_tech_cost_modifier = -0.1
+	}
+	trigger = {
+		tag = FRS
+	}
+	free = yes
+	
+	frs_land_of_the_persians = {
+		tolerance_own = 2
+	}
+	frs_center_of_religion_and_philosophy = {
+		adm_tech_cost_modifier = -0.1
+	}
+	frs_diplomatic_prudence = {
+		improve_relation_modifier = 0.2
+	}
+	frs_shirazi_wine = {
+		production_efficiency = 0.1
+	}
+	frs_shirazi_school = {
+		embracement_cost = -0.1
+		prestige = 0.5
+	}
+	frs_integrate_the_qashqai = {
+		global_manpower_modifier = 0.15
+	}
+	frs_capital_for_an_empire = { #The Zand Ambition
+		development_cost = -0.1
+	}
+}
+
+LRI_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.2
+		infantry_power = 0.1
+	}
+	bonus = {
+		global_regiment_cost = -0.1
+	}
+	trigger = {
+		tag = LRI
+	}
+	free = yes
+	
+	lri_kingdom_in_the_zagros_mountains = {
+		shock_damage_received = -0.1
+	}
+	lri_jadda_ye_atabak = {
+		global_own_trade_power = 0.25
+	}
+	lri_haven_for_dissenters = {
+		global_manpower_modifier = 0.2
+	}
+	lri_popular_religion = {
+		tolerance_heretic = 2
+	}
+	lri_looms_of_the_lurs = {
+		production_efficiency = 0.1
+	}
+	lri_rise_of_the_lurs = { #Zand Empire
+		land_morale = 0.1
+	}
+	lri_foreign_trade = {
+		diplomatic_upkeep = 1
+	}
+}
+
+QAR_ideas = {
+	start = {
+		leader_land_shock = 1
+		cavalry_power = 0.2
+	}
+	bonus = {
+		leader_land_fire = 1
+	}
+	trigger = {
+		tag = QAR
+	}
+	free = yes
+	
+	qar_black_sheep = {
+		global_manpower_modifier = 0.25
+	}
+	qar_governor_of_azerbaijan = {
+		province_warscore_cost = -0.05
+		core_creation = -0.1
+	}
+	in_honor_of_ali = {
+		#Same as Ajam
+	}
+	qar_dynamic_warfare = {
+		leader_land_manuever = 1
+	}
+	qar_freedom_with_responsibility = {
+		reduced_liberty_desire = 10
+	}
+	qar_patron_of_iranian_culture = {
+		global_unrest = -1
+	}
+	qar_irrigation_and_public_works = {
+		global_tax_modifier = 0.1
+	}
+}
+
+MHR_ideas = {
+	start = {
+		ship_durability = 0.05
+		navy_tradition = 1
+	}
+	bonus = {
+		naval_maintenance_modifier = -0.2
+	}
+	trigger = {
+		tag = MHR
+	}
+	free = yes
+	
+	mhr_lands_of_frankincense_and_the_khareef = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	mhr_mercenary_traditions = {
+		merc_maintenance_modifier = -0.2
+	}
+	mhr_mahra_tribes = {
+		global_manpower_modifier = 0.1
+	}
+	mhr_pilots_of_the_arabian_sea = {
+		leader_naval_manuever = 1
+	}
+	mhr_camels = {
+		movement_speed = 0.15
+		cavalry_cost = -0.05
+	}
+	mhr_book_of_navigation = {
+		navy_tradition_decay = -0.01
+	}
+	mhr_rein_in_the_chiefs = {
+		global_autonomy = -0.05
+	}
+}
+
+YEM_ideas = {
+	start = {
+		infantry_power = 0.1
+		global_institution_spread = 0.1
+	}
+	bonus = {
+		production_efficiency = 0.1
+	}
+	trigger = {
+		OR = {
+			tag = YEM
+			tag = ADE
+		}
+	}
+	free = yes
+	
+	yem_al_yaman = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	coffea_arabica = {
+		global_trade_power = 0.1
+	}
+	yem_control_of_the_red_sea = {
+		trade_efficiency = 0.1
+	}
+	yem_yemeni_architecture = {
+		prestige = 1
+	}
+	yem_uniting_yemeni_tribes = {
+		global_manpower_modifier = 0.1
+	}
+	yem_promoting_yemeni_trade_ports = {
+		merchants = 1
+	}
+	yem_foreign_embassies = {
+		diplomats = 1
+	}
+}
+
+RAS_ideas = {
+	start = {
+		infantry_power = 0.1
+		global_manpower_modifier = 0.2
+	}
+	bonus = {
+		defensiveness = 0.2
+	}
+	trigger = {
+		tag = RAS
+	}
+	free = yes
+	
+	ras_living_imam = {
+		land_morale = 0.1
+	}
+	ras_yemeni_highlands = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	coffea_arabica = {
+		#See Yemeni Ideas
+	}
+	ras_unite_rassid_state = {
+		legitimacy = 1
+	}
+	ras_mountain_strongholds = {
+		shock_damage_received = -0.15
+	}
+	ras_salt_in_water = {
+		leader_land_shock = 1
+	}
+	ras_secure_trade_monopolies = {
+		trade_efficiency = 0.1
+	}
+}
+
+MSY_ideas = {
+	start = {
+		defensiveness = 0.2
+		infantry_power = 0.1
+	}
+	bonus = {
+		tolerance_own = 2
+	}
+	trigger = {
+		tag = MSY
+	}
+	free = yes
+	
+	msy_fervent_millenarianism = {
+		land_morale = 0.1
+		monthly_piety = -0.05
+	}
+	msy_messianic_legacy = {
+		missionaries = 1
+	}
+	msy_swamp_warfare = {
+		hostile_attrition = 1
+	}
+	msy_arabistan = {
+		global_manpower_modifier = 0.15
+	}
+	msy_house_united = {
+		legitimacy = 1
+	}
+	msy_outward_pragmatism = {
+		diplomats = 1
+	}
+	msy_sufis_shias_middle_east = {
+		global_heretic_missionary_strength = 0.02
+	}
+}
+
+SIS_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		infantry_cost = -0.1
+	}
+	bonus = {
+		infantry_power = 0.1
+	}
+	trigger = {
+		tag = SIS
+	}
+	free = yes
+	
+	sis_lake_hamun = {
+		production_efficiency = 0.1
+	}
+	sis_saffarid_legacy = {
+		prestige = 1
+	}
+	sis_subjugation_of_tribes = {
+		global_autonomy = -0.05
+	}
+	sis_loyal_service = {
+		army_tradition = 0.5
+	}
+	sis_overland_trade_routes = {
+		global_own_trade_power = 0.1
+	}
+	sis_chronicles_of_sistan = {
+		legitimacy = 1
+	}
+	sis_scholars_of_sistan = {
+		global_institution_spread = 0.1
+	}
+}
+
+RUM_ideas = {
+	start = {
+		manpower_recovery_speed = 0.2
+		land_morale = 0.1
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	trigger = {
+		tag = RUM
+	}
+	free = yes
+	
+	rum_abul_fath = {
+		discipline = 0.05
+	}
+	rum_king_of_the_east_and_west = {
+		core_creation = -0.20
+		num_accepted_cultures = 1
+	}
+	rum_shahanshah = {
+		legitimacy = 1
+	}
+	rum_sultan_of_rum = {
+		tolerance_heathen = 3
+	}
+	rum_sulan_al_bahrayn = {
+		naval_maintenance_modifier = -0.15
+	}
+	rum_sultan_al_muazzam = {
+		build_cost = -0.15
+	}
+	rum_protector_of_dar_al_islam = {
+		global_heretic_missionary_strength = 0.03
+	}
+}
+
+ARL_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.1
+	}
+	bonus = {
+		prestige = 1
+	}
+	trigger = {
+		tag = ARL
+		religion = shiite
+	}
+	free = yes
+	
+	arl_safavid_order = {
+		land_morale = 0.1
+		monthly_piety = -0.05
+	}
+	arl_qizilbash = {
+		cavalry_power = 0.15
+	}
+	arl_shiite_leadership = {
+		tolerance_own = 2
+	}
+	arl_conversion_of_the_masses = {
+		global_heretic_missionary_strength = 0.02
+	}
+	arl_religious_war = {
+		spy_offence = 0.2
+	}
+	arl_amili_mujtahids = {
+		stability_cost_modifier = -0.1
+	}
+	arl_shahs_of_iran = {
+		legitimacy = 1
+	}
+}
+
+SME_ideas = {
+	start = {
+		rebel_support_efficiency = 0.25
+		diplomats = 1
+	}
+	bonus = {
+		tolerance_heathen = 2
+	}
+	trigger = {
+		tag = SME
+	}
+	free = yes
+	
+	sme_atabegs_of_samtskhe = {
+		legitimacy = 1
+	}
+	sme_proactive_diplomacy = {
+		spy_offence = 0.2
+	}
+	sme_fortresses_of_samtskhe = {
+		defensiveness = 0.2
+	}
+	sme_independent_ambitions = {
+		land_morale = 0.1
+	}
+	sme_protect_trade_routes = {
+		trade_efficiency = 0.1
+	}
+	sme_frontier_warriors = {
+		cavalry_cost = -0.1
+	}
+	sme_sacred_land = {
+		tolerance_own = 2
+	}
+}
+
+SRV_ideas = {
+	start = {
+		leader_land_shock = 1
+		global_prov_trade_power_modifier = 0.1
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	trigger = {
+		tag = SRV
+	}
+	free = yes
+	
+	srv_khalwati_order = {
+		legitimacy = 1
+		monthly_piety = -0.05
+	}
+	srv_fortresses_of_shirvan = {
+		defensiveness = 0.2
+	}
+	srv_tribesmen_of_the_caucasus = {
+		cavalry_power = 0.15
+	}
+	srv_persianate_patronage = {
+		same_culture_advisor_cost = -0.2
+	}
+	srv_caspian_trade = {
+		caravan_power = 0.2
+	}
+	srv_shirvani_architecture = {
+		build_cost = -0.1
+		prestige = 1
+	}
+	srv_merchants_of_baku = {
+		merchants = 1
+	}
+}
+
+ALH_ideas = {
+	start = {
+		tolerance_heretic = 2
+		cavalry_power = 0.1
+	}
+	bonus = {
+		naval_forcelimit_modifier = 0.2
+	}
+	trigger = {
+		tag = ALH
+	}
+	free = yes
+	
+	alh_desert_warfare = {
+		cavalry_cost = -0.1
+	}
+	alh_lord_of_the_eastern_bedouin = {
+		tolerance_own = 2
+	}
+	alh_pearls_of_the_persian_gulf = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	alh_fortify_the_coastline = {
+		defensiveness = 0.2
+	}
+	alh_entrepot_of_india = {
+		trade_efficiency = 0.1
+	}
+	alh_a_modern_navy = {
+		ship_durability = 0.05
+	}
+	alh_legacy_of_rahmah_ibn_jabir = {
+		navy_tradition = 1
+		privateer_efficiency = 0.15
+	}
+}
+
+HDR_ideas = {
+	start = {
+		navy_tradition = 1
+		global_foreign_trade_power = 0.10
+	}
+	bonus = {
+		colonists = 1
+	}
+	trigger = {
+		tag = HDR
+	}
+	free = yes
+	
+	hdr_death_has_come = {
+		hostile_attrition = 1
+	}
+	hdr_tribes_of_hadramut = {
+		global_manpower_modifier = 0.15
+	}
+	hdr_hawtas = {
+		global_unrest = -1
+	}
+	hdr_encouraging_the_incense_trade = {
+		trade_efficiency = 0.1
+	}
+	hdr_sailors_of_the_indian_ocean = {
+		naval_forcelimit_modifier = 0.25
+		sailors_recovery_speed = 0.05
+	}
+	hdr_hadramhi_diaspora = {
+		technology_cost = -0.05
+	}
+	hdr_distant_diplomacy = {
+		improve_relation_modifier = 0.3
+	}
+}
+
+HSN_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		global_tax_modifier = 0.1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = HSN
+	}
+	free = yes
+	
+	hsn_citadels_and_fortesses = {
+		defensiveness = 0.2
+	}
+	hsn_ayyubid_heritage = {
+		global_manpower_modifier = 0.15
+	}
+	hsn_righteousness_of_the_faith = {
+		land_morale = 0.1
+	}
+	hsn_elite_warriors = {
+		cavalry_power = 0.1
+	}
+	hsn_rise_of_the_eagle = {
+		core_creation = -0.15
+	}
+	hsn_strenghten_central_authority = {
+		stability_cost_modifier = -0.1
+	}
+	hsn_state_economics = {
+		global_trade_goods_size_modifier = 0.1
 	}
 }

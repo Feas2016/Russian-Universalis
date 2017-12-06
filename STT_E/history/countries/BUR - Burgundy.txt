@@ -60,7 +60,7 @@ capital = 192	# Dijon
 }
 
 
-1408.1.1 = { leader = {	name = "Жан де Пресси"   	type = general	rank = 3	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1437.1.1 } }
+1408.1.1 = { leader = {	name = "Жан де Пресси"   	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1437.1.1 } }
 
 1419.9.11 = {
 	monarch = {
@@ -70,7 +70,7 @@ capital = 192	# Dijon
 		adm = 5
 		dip = 5
 		mil = 5
-		leader = { name = "Филипп III"   	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
+		leader = { name = "Филипп III"   	type = general	fire = 3	shock = 3	manuever = 3	siege = 1 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = calm_personality
@@ -117,7 +117,7 @@ capital = 192	# Dijon
 		adm = 2
 		dip = 0
 		mil = 4
-		leader = { name = "Карл I Смелый"	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1}
+		leader = { name = "Карл I Смелый"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality

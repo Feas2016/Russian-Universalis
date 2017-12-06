@@ -645,10 +645,10 @@ guiTypes = {
 
 			guiButtonType = {
 				name ="sort_overext_tax"
-				quadTextureSprite = "GFX_sort_62"
+				quadTextureSprite = "GFX_sort_62_dev"
 				position = { x = 114 y = 46 }
-				buttonFont = "vic_18"
-				buttonText = "LEDGER_DEVELOPMENT"
+#				buttonFont = "vic_18"
+#				buttonText = "LEDGER_DEVELOPMENT"
 				pdx_tooltip = "SORT_BY_DEVELOPMENT"
 				pdx_tooltip_delayed = ""
 			}
@@ -771,15 +771,17 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "rebels_info"
-				position = { x = 290 y = 356}
+				position = { x = 290 y = 355}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
 				text = "..."	
-				maxWidth = 210 # Увеличил
-				maxHeight = 94 # Увеличил
-				format = left
-				fixedsize = yes
+				maxWidth = 170 # Увеличил
+				maxHeight = 20 # Увеличил
+				#format = left
+				#Orientation = "Center_center"
+				vertical_alignment = center
+				fixedsize = no
 			}	
 			
 			
@@ -842,14 +844,14 @@ guiTypes = {
 			{
 				name ="enforcedemands_icon"
 				spriteType = "GFX_icon_rebel_enforced_demands"
-				position = { x= 30 y = 438 }
+				position = { x= 30 y = 458 }
 				Orientation = "UPPER_LEFT"
 			}	
 			
 			listboxType = {
 				name = "demands_listbox"
 				backGround = ""
-				position = { x=60 y=438 }
+				position = { x=60 y=458 }
 				size = { x=227 y=87 }
 				horizontal = 0
 				spacing = 1

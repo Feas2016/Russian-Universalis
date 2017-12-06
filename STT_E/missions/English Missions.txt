@@ -92,11 +92,12 @@ conquer_scotland = {
 	category = MIL
 	ai_mission = yes
 	
+	target_areas_list = {
+		highlands_area
+		lowlands_area
+	}
+	
 	target_provinces = {
-		OR = {
-			area = highlands_area
-			area = lowlands_area
-		}
 		owned_by = SCO
 	}
 	allow = {
@@ -263,8 +264,13 @@ england_discovers_north_america = {
 		num_of_ports = 3
 		is_year = 1449 #STT
 		num_of_heavy_ship = 1
+		OR = {
 		northeast_america_region = { range = ROOT }
+			colonial_canada = { range = ROOT }
+		}
 		NOT = { northeast_america_region = { has_discovered = ROOT } }
+		NOT = { colonial_canada = { has_discovered = ROOT } }
+		NOT = { has_country_modifier = "colonial_enthusiasm" }
 	}
 	abort = {
 		OR = {
@@ -273,7 +279,10 @@ england_discovers_north_america = {
 		}
 	}
 	success = {
+		OR = {
 		northeast_america_region = { has_discovered = ROOT }
+			colonial_canada = { has_discovered = ROOT }
+		}
 	}
 	chance = {
 		factor = 2000
@@ -330,9 +339,9 @@ english_colony_in_north_america = {
 				is_religion_grant_colonial_claim = ROOT
 			}
 		}
-		NOT = { northeast_america_region = { owned_by = ROOT } }
+		NOT = { colonial_eastern_america = { owned_by = ROOT } }
 		NOT = {
-			northeast_america_region = {
+			colonial_eastern_america = {
 				owner = {
 					is_subject_of = ROOT
 				}
@@ -343,8 +352,8 @@ english_colony_in_north_america = {
 		OR = {
 			NOT = { num_of_ports = 1 }
 			AND = {
-				NOT = { northeast_america_region = { is_empty = yes } }
-				NOT = { northeast_america_region = { owned_by = ROOT } }
+				NOT = { colonial_eastern_america = { is_empty = yes } }
+				NOT = { colonial_eastern_america = { owned_by = ROOT } }
 			}
 		}
 	}
@@ -372,6 +381,15 @@ english_colony_in_north_america = {
 			factor = 2
 			num_of_colonists = 3
 		}
+		modifier = {
+			factor = 0.5
+			northeast_america_region = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
 	}
 	effect = {
 		add_country_modifier = {
@@ -398,9 +416,8 @@ england_discovers_the_carribean = {
 		is_year = 1449 #STT
 		has_idea = quest_for_the_new_world
 		NOT = { has_country_modifier = colonial_enthusiasm }
-		northeast_america_region = { has_discovered = ROOT }
-		carribeans_region = { range = ROOT }
-		NOT = { carribeans_region = { has_discovered = ROOT } }
+		colonial_the_carribean = { range = ROOT }
+		NOT = { colonial_the_carribean = { has_discovered = ROOT } }
 	}
 	abort = {
 		OR = {
@@ -409,7 +426,7 @@ england_discovers_the_carribean = {
 		}
 	}
 	success = {
-		carribeans_region = { has_discovered = ROOT }
+		colonial_the_carribean = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -501,8 +518,11 @@ english_colony_in_the_carribean = {
 		}
 		modifier = {
 			factor = 0.5
-			any_subject_country = {
-				colonial_the_carribean = { owned_by = PREV }
+			colonial_the_carribean = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 		}
 	}
@@ -530,8 +550,6 @@ england_discovers_india = {
 		num_of_ports = 3
 		has_idea = quest_for_the_new_world
 		is_year = 1449 #STT
-		northeast_america_region = { has_discovered = ROOT }
-		carribeans_region = { has_discovered = ROOT }
 		NOT = { west_india_region = { has_discovered = ROOT } }
 		NOT = { coromandel_region = { has_discovered = ROOT } }
 		NOT = { deccan_region = { has_discovered = ROOT } }
@@ -592,10 +610,10 @@ england_discovers_australia = {
 		num_of_ports = 3
 		is_year = 1549 #STT
 		has_idea = quest_for_the_new_world
-		northeast_america_region = { has_discovered = ROOT }
 		bengal_region = { has_discovered = ROOT }
-		australia_region = { range = ROOT }
-		NOT = { australia_region = { has_discovered = ROOT } }
+		colonial_australia = { range = ROOT }
+		NOT = { colonial_australia = { has_discovered = ROOT } }
+		NOT = { has_country_modifier = colonial_enthusiasm }
 	}
 	abort = {
 		OR = {
@@ -604,7 +622,7 @@ england_discovers_australia = {
 		}
 	}
 	success = {
-		australia_region = { has_discovered = ROOT }
+		colonial_australia = { has_discovered = ROOT }
 	}
 	chance = {
 		factor = 2000
@@ -694,6 +712,15 @@ english_colony_in_australia = {
 		modifier = {
 			factor = 2
 			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 0.5
+			colonial_australia = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
 		}
 	}
 	effect = {
