@@ -15,9 +15,10 @@ capital = 552	# Cuttack
 		MIL = 6
 		leader = { name = "Капилендра"	type = general	fire = 3	shock = 5	manuever = 2	siege = 1 }
 	}
-}
-
-1434.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_heir_personality = bold_fighter_personality
 	heir = {
 		name = "Хамвира"
 		monarch_name = "Пурушоттама"
@@ -28,6 +29,17 @@ capital = 552	# Cuttack
 		ADM = 3
 		DIP = 2
 		MIL = 2
+	}
+	queen = {
+		country_of_origin = ORI
+		name = "Парвати Дэви" #Mother of Purushottama
+		dynasty = "Дасш" #Unkown Brahmin family
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -86,6 +98,20 @@ capital = 552	# Cuttack
 		ADM = 1
 		DIP = 3
 		MIL = 1
+	}
+}
+
+1489.1.1 = {
+	queen = {
+		country_of_origin = VIJ
+		name = "Падмавати Дэви"
+		dynasty = "Салува"
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
 	}
 }
 

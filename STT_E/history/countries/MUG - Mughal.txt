@@ -1,15 +1,13 @@
 government = feudal_monarchy
-government_rank = 2
 technology_group = muslim
 religion = sunni
 primary_culture = afghani
-capital = 524 #Агра
+capital = 524 #Agra
 
-1526.4.21 = {
+1494.6.6 = {
 	monarch = {
 		name = "Бабур"
 		dynasty = "Бабурид"
-		birth_date = 1483.2.14
 		adm = 5
 		dip = 5
 		mil = 6
@@ -21,12 +19,12 @@ capital = 524 #Агра
 	leader = {	name = "Раджа Сангхар Алихан" type = general	fire = 1	shock = 2	manuever = 1	siege = 1 death_date = 1531.1.1 }
 }
 
-1508.3.17 = {
+1508.3.6 = {
 	heir = {
 		name = "Хумаюн"
 		monarch_name = "Хумаюн"
 		dynasty = "Бабурид"
-		birth_date = 1508.3.17
+		birth_date = 1508.3.6
 		death_date = 1556.1.1
 		claim = 95
 		adm = 5
@@ -39,13 +37,13 @@ capital = 524 #Агра
 	capital = 522
 	change_unit_type = indian
 	government_rank = 3
+	primary_culture = kanauji
 }
 
 1530.12.27 = {
 	monarch = {
 		name = "Хумаюн"
 		dynasty = "Бабурид"
-		birth_date = 1508.3.17
 		adm = 5
 		dip = 2
 		mil = 3
@@ -53,16 +51,16 @@ capital = 524 #Агра
 }
 
 1540.1.1 = {
-	capital = 451 #Кабул
+	capital = 451 #Kabul
 }
 
-1542.10.14 = {
+1542.11.14 = {
 	heir = {
 		name = "Джалалуддин"
 		monarch_name = "Акбар I Великий"
 		dynasty = "Бабурид"
-		birth_date = 1542.10.14
-		death_date = 1605.10.17
+		birth_date = 1542.11.14
+		death_date = 1605.10.27
 		claim = 95
 		adm = 6
 		dip = 6
@@ -71,7 +69,7 @@ capital = 524 #Агра
 }
 
 1555.7.23 = {
-	capital = 522 #Дели
+	capital = 522 #Delhi
 	primary_culture = kanauji
 }
 
@@ -79,7 +77,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Акбар I Великий"
 		dynasty = "Бабурид"
-		birth_date = 1542.10.14
 		dip = 6
 		adm = 6
 		mil = 6
@@ -98,8 +95,8 @@ capital = 524 #Агра
 		name = "Мухаммад"
 		monarch_name = "Джахангир"
 		dynasty = "Бабурид"
-		birth_date = 1569.8.30
-		death_date = 1627.11.8
+		birth_date = 1569.10.1
+		death_date = 1605.10.26
 		claim = 95
 		adm = 3
 		dip = 5
@@ -107,7 +104,7 @@ capital = 524 #Агра
 	}
 }
 
-1571.1.1 = { capital = 524 } #Агра
+1571.1.1 = { capital = 524 } # Agra
 
 1573.6.1 = {
 	add_accepted_culture = gujarati
@@ -117,22 +114,21 @@ capital = 524 #Агра
 
 1581.1.1 = { decision = din_i_illahi }
 
-1584.1.1 = { capital = 507 } #Лахор
+1584.1.1 = { capital = 507 } # Lahore
 	
-1598.1.1 = { capital = 524 } #Агра
+1598.1.1 = { capital = 524 } # Agra
 	
-1605.10.17 = {
+1605.10.26 = {
 	monarch = {
 		name = "Джахангир"
 		dynasty = "Бабурид"
-		birth_date = 1569.8.30
 		adm = 3
 		dip = 5
 		mil = 1
 	}
 }
 
-1605.10.17 = {
+1605.10.26 = {
 	heir = {
 		name = "Хуррам"
 		monarch_name = "Шах-Джахан I"
@@ -146,11 +142,10 @@ capital = 524 #Агра
 	}
 }
 
-1627.11.8 = {
+1627.10.28 = {
 	monarch = { 
 		name = "Шах-Джахан I"
 		dynasty = "Бабурид"
-		birth_date = 1592.1.5
 		adm = 5
 		dip = 4
 		mil = 3
@@ -171,13 +166,12 @@ capital = 524 #Агра
 	}
 }
 
-1638.1.1 = { capital = 522 } #Дели
+1638.1.1 = { capital = 522 } # Delhi
 
-1658.3.8 = { #Шах-Джахан отрёкся в сторону Аурангзеба и попал на нары.
+1658.6.8 = { #Shah Jahan surrenders to Aurangzeb and becomes his prisoner.
 	monarch = {
 		name = "Аламгир I" #Тронное имя Аурангзеба
 		dynasty = "Бабурид"
-		birth_date = 1618.11.3
 		dip = 6
 		adm = 4
 		mil = 6
@@ -185,41 +179,10 @@ capital = 524 #Агра
 	}
 }
 
-1658.3.8 = {
+1658.6.8 = {
 	heir = {
-		name = ""Мухаммад"
+		name = "Мухаммад"
 		monarch_name = "Азам Шах"
-		dynasty = "Бабурид"
-		birth_date = 1653.7.8
-		death_date = 1707.6.19
-		claim = 95
-		adm = 4
-		dip = 2
-		mil = 2
-	}
-}
-
-1681.1.1 = { capital = 545 } #Аурангабад
-
-1686.1.1 = {
-	leader = { name = "Якут Хан" 	type = admiral  	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1733.1.1	}
-}
-
-1707.3.14 = {
-	monarch = {
-		name = "Азам Шах"
-		dynasty = "Бабурид"
-		birth_date = 1653.7.8
-		dip = 4
-		adm = 2
-		mil = 2
-	}
-}
-
-1707.3.14 = {
-	heir = {
-		name = "Муаззам"
-		monarch_name = "Бахадур Шах I"
 		dynasty = "Бабурид"
 		birth_date = 1643.10.14
 		death_date = 1712.2.27
@@ -230,24 +193,29 @@ capital = 524 #Агра
 	}
 }
 
-1707.6.19 = {
+1681.1.1 = { capital = 545 } # Aurangabad
+
+1686.1.1 = {
+	leader = { name = "Якут Хан" 	type = admiral  	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1733.1.1	}
+}
+
+1707.3.15 = {
 	monarch = {
 		name = "Бахадур Шах I"
 		dynasty = "Бабурид"
-		birth_date = 1643.10.14
 		adm = 2
 		dip = 2
 		mil = 1
 	}
-	capital = 522 #Дели
+	capital = 522 # Delhi
 }
 
-1707.6.19 = {
+1707.3.15 = {
 	heir = {
 		name = "Джахандар"
 		monarch_name = "Джахандар Шах"
 		dynasty = "Бабурид"
-		birth_date = 1661.5.9
+		birth_date = 1661.5.10
 		death_date = 1713.2.11
 		claim = 95
 		adm = 1
@@ -260,7 +228,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Джахандар Шах"
 		dynasty = "Бабурид"
-		birth_date = 1661.5.9
 		dip = 0
 		adm = 1
 		mil = 0
@@ -285,7 +252,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Фарук Сийяр"
 		dynasty = "Бабурид"
-		birth_date = 1685.9.11
 		dip = 1
 		adm = 2
 		mil = 1
@@ -298,7 +264,7 @@ capital = 524 #Агра
 		monarch_name = "Рафи уд-Дараджат"
 		dynasty = "Бабурид"
 		birth_date = 1699.11.30
-		death_date = 1719.6.9
+		death_date = 1723.1.1
 		claim = 95
 		adm = 1
 		dip = 0
@@ -310,7 +276,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Рафи уд-Дараджат"
 		dynasty = "Бабурид"
-		birth_date = 1699.11.30
 		dip = 0
 		adm = 1
 		mil = 0
@@ -322,8 +287,8 @@ capital = 524 #Агра
 		name = "Шах-Джахан II"
 		monarch_name = "Шах-Джахан II"
 		dynasty = "Бабурид"
-		birth_date = 1696.6.1
-		death_date = 1719.9.19
+		birth_date = 1680.1.1
+		death_date = 1719.5.1
 		claim = 95
 		adm = 0
 		dip = 1
@@ -331,11 +296,10 @@ capital = 524 #Агра
 	}
 }
 
-1719.6.6 = {
+1719.4.1 = {
 	monarch = {
 		name = "Шах-Джахан II"
 		dynasty = "Бабурид"
-		birth_date = 1696.6.1
 		dip = 0
 		adm = 1
 		mil = 0
@@ -344,10 +308,34 @@ capital = 524 #Агра
 
 1719.4.1 = {
 	heir = {
+		name = "Мухаммад Ибрагим"
+		monarch_name = "Мухаммад Ибрагим"
+		dynasty = "Бабурид"
+		birth_date = 1710.1.1
+		death_date = 1744.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1720.1.1 = {
+	monarch = {
+		name = "Мухаммад Ибрагим"
+		dynasty = "Бабурид"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1720.1.1 = {
+	heir = {
 		name = "Абу-л-Фатх Мухаммад"
 		monarch_name = "Мухаммад Шах"
 		dynasty = "Бабурид"
-		birth_date = 1702.8.17
+		birth_date = 1702.1.1
 		death_date = 1748.4.26
 		claim = 95
 		adm = 3
@@ -356,11 +344,10 @@ capital = 524 #Агра
 	}
 }
 
-1719.9.19 = {
+1720.2.1 = {
 	monarch = {
 		name = "Мухаммад Шах"
 		dynasty = "Бабурид"
-		birth_date = 1702.8.17
 		adm = 3
 		dip = 2
 		mil = 1
@@ -373,8 +360,8 @@ capital = 524 #Агра
 		name = "Ахмад"
 		monarch_name = "Ахмад Шах"
 		dynasty = "Бабурид"
-		birth_date = 1725.12.23
-		death_date = 1775.1.1
+		birth_date = 1725.1.1
+		death_date = 1754.6.3
 		claim = 95
 		adm = 0
 		dip = 1
@@ -386,7 +373,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Ахмад Шах"
 		dynasty = "Бабурид"
-		birth_date = 1725.12.23
 		adm = 0
 		dip = 1
 		mil = 0
@@ -398,8 +384,8 @@ capital = 524 #Агра
 		name = "Адль Мухаммед"
 		monarch_name = "Аламгир II"
 		dynasty = "Бабурид"
-		birth_date = 1699.6.16
-		death_date = 1759.11.29
+		birth_date = 1699.1.1
+		death_date = 1759.12.11
 		claim = 95
 		adm = 1
 		dip = 1
@@ -411,7 +397,6 @@ capital = 524 #Агра
 	monarch = {
 		name = "Аламгир II"
 		dynasty = "Бабурид"
-		birth_date = 1699.6.16
 		dip = 1
 		adm = 1
 		mil = 1
@@ -423,8 +408,8 @@ capital = 524 #Агра
 		name = "Шах Джахан"
 		monarch_name = "Шах Джахан III"
 		dynasty = "Бабурид"
-		birth_date = 1711.1.1
-		death_date = 1772.1.1
+		birth_date = 1750.1.1
+		death_date = 1770.1.1
 		claim = 95
 		adm = 0
 		dip = 0
@@ -432,24 +417,23 @@ capital = 524 #Агра
 	}
 }
 
-1759.11.29 = {
+1759.12.11 = {
 	monarch = {
 		name = "Шах Джахан III"
 		dynasty = "Бабурид"
-		birth_date = 1711.1.1
 		dip = 0
 		adm = 0
 		mil = 1
 	}
 }
 
-1759.11.29 = {
+1759.12.11 = {
 	heir = {
 		name = "Алам"
 		monarch_name = "Шах Алам II"
 		dynasty = "Бабурид"
-		birth_date = 1728.6.25
-		death_date = 1806.11.19
+		birth_date = 1728.1.1
+		death_date = 1806.1.1
 		claim = 95
 		adm = 1
 		dip = 2
@@ -457,18 +441,17 @@ capital = 524 #Агра
 	}
 }
 
-1760.10.10 = {
+1760.10.11 = {
 	monarch = {
 		name = "Шах Алам II"
 		dynasty = "Бабурид"
-		birth_date = 1728.6.25
 		dip = 2
 		adm = 1
 		mil = 2
 	}
 }
 
-1760.10.10 = {
+1760.10.11 = {
 	heir = {
 		name = "Акбар"
 		monarch_name = "Акбар Шах II"
@@ -486,27 +469,26 @@ capital = 524 #Агра
 	government_rank = 1
 }
 
-1803.8.1 = {
+1803.8.1 = { ### STT
 	government_rank = 3
 }
 
-1806.11.19 = {
+1806.11.18 = {
 	monarch = {
 		name = "Акбар Шах II"
 		dynasty = "Бабурид"
-		birth_date = 1760.4.22
 		adm = 1
 		dip = 1
 		mil = 0
 	}
 }
 
-1806.11.19 = {
+1806.11.18 = {
 	heir = {
 		name = "Абу-л-Музаффар"
 		monarch_name = "Бахадур Шах II"
 		dynasty = "Бабурид"
-		birth_date = 1775.10.24
+		birth_date = 1775.10.1
 		death_date = 1862.11.7
 		claim = 95
 		adm = 1

@@ -340,6 +340,7 @@ country_decisions = {
 		}
 		effect = {
 			change_government = administrative_monarchy
+			set_country_flag = reformed_iqta
 			add_adm_power = -100
 		}
 		ai_will_do = {
@@ -510,4 +511,117 @@ country_decisions = {
 		}
 	}
 	
-### STT -2 del
+	reform_into_iqta = {
+		major = yes
+		potential = {
+			NOT = { government = steppe_horde }
+			#NOT = { government = principality } ### STT
+			#NOT = { government = tsardom } ### STT
+			NOT = { government = iqta }
+			NOT = { government = ottoman_government }
+			NOT = { government = feudal_theocracy }
+			NOT = { government = tribal_despotism }
+			NOT = { government = tribal_kingdom }
+			NOT = { government = tribal_federation }
+			NOT = { government = native_council }
+			NOT = { government = feudal_theocracy }
+			NOT = { government = siberian_native_council }
+			NOT = { government = mamluk_government }
+			NOT = { government = english_monarchy }
+			NOT = { government = elective_monarchy }
+			NOT = { government = celestial_empire }
+			NOT = { government = daimyo }
+			NOT = { government = shogunate }
+			NOT = { government = revolutionary_empire }
+			religion_group = muslim
+			NOT = { has_country_flag = reformed_iqta }
+		}
+		allow = {
+			religion_group = muslim #for clarity
+			government = monarchy
+			has_institution = feudalism
+			stability = 1
+			legitimacy = 90
+			adm_power = 100
+		}
+		effect = {
+			change_government = iqta
+			add_adm_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+###########################################STT
+	# become_russian_principality = {
+		# major = yes
+		# potential = {
+			# NOT = { government = steppe_horde }
+			# NOT = { government = principality }
+			# NOT = { government = iqta }
+			# NOT = { government = feudal_theocracy }
+			# NOT = { government = tribal_despotism }
+			# NOT = { government = tribal_kingdom }
+			# NOT = { government = tribal_federation }
+			# NOT = { government = native_council }
+			# NOT = { government = siberian_native_council }
+			# NOT = { government = english_monarchy }
+			# NOT = { government = elective_monarchy }
+			# NOT = { government = celestial_empire }
+			# NOT = { government = daimyo }
+			# NOT = { government = shogunate }
+			# NOT = { government = revolutionary_empire }
+			# NOT = { government_rank = 3 }
+			# culture_group = east_slavic
+		# }
+		# allow = {
+			# NOT = { government_rank = 3 }
+			# religion = orthodox
+			# culture_group = east_slavic
+			# government = monarchy
+			# stability = 1
+			# legitimacy = 90
+		# }
+		# effect = {
+			# set_government_and_rank = { 
+				# government = principality
+				# rank = 2
+			# }
+		# }
+		# ai_will_do = {
+			# factor = 1
+			# modifier = {
+				# factor = 0
+				# government_rank = 2
+			# }
+		# }
+	# }
+	
+	# custom_tsardom = {
+		# major = yes
+		# potential = {
+			# is_playing_custom_nation = yes
+			# ai = no
+			# is_colonial_nation = no
+			# is_former_colonial_nation = no
+			# government = principality
+		# }
+		# allow = {
+			# adm_tech = 10
+			# is_subject = no
+			# is_nomad = no
+			# is_at_war = no
+			# total_development = 1000			
+		# }
+		# effect = {
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# change_government = tsardom
+			# set_government_rank = 3
+			# add_prestige = 25
+		# }
+		# ai_will_do = {
+			# factor = 0
+		# }
+	# }
+	
+}

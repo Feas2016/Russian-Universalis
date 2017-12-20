@@ -6,13 +6,11 @@ primary_culture = piedmontese
 capital = 103 # Piedomont
 
 
-
-1720.2.17 = {
+1720.1.1 = {
 	government_rank = 2
 	monarch = {
 		name = "Виктор Амадей II"
 		dynasty = "ди Савойя"
-		birth_date = 1666.5.14
 		adm = 4
 		dip = 6
 		mil = 5
@@ -20,7 +18,7 @@ capital = 103 # Piedomont
 	}
 }
 
-1720.2.17 = {
+1720.1.1 = {
 	heir = {
 		name = "Карл Эммануил"
 		monarch_name = "Карл Эммануил III"
@@ -35,13 +33,12 @@ capital = 103 # Piedomont
 	}
 }
 
-#1730.9.4 = { government = absolute_monarchy }
+1730.9.4 = { government = despotic_monarchy }
 
 1730.9.4 = {
 	monarch = {
 		name = "Карл Эммануил III"
 		dynasty = "ди Савойя"
-		birth_date = 1701.4.27
 		adm = 4
 		dip = 5
 		mil = 6
@@ -70,7 +67,6 @@ capital = 103 # Piedomont
 	monarch = {
 		name = "Виктор Амадей III"
 		dynasty = "ди Савойя"
-		birth_date = 1726.6.26
 		adm = 1
 		dip = 0
 		mil = 2
@@ -100,7 +96,6 @@ capital = 103 # Piedomont
 	monarch = {
 		name = "Карл Эммануил IV"
 		dynasty = "ди Савойя"
-		birth_date = 1751.5.24
 		adm = 1
 		dip = 0
 		mil = 1
@@ -125,7 +120,6 @@ capital = 103 # Piedomont
 	monarch = {
 		name = "Виктор Эммануил I"
 		dynasty = "ди Савойя"
-		birth_date = 1759.7.24
 		adm = 1
 		dip = 1
 		mil = 1
@@ -140,9 +134,9 @@ capital = 103 # Piedomont
 		birth_date = 1765.4.4
 		death_date = 1831.4.27
 		claim = 95
-		adm = 3
-		dip = 3
-		mil = 4
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 

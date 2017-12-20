@@ -3,8 +3,8 @@ technology_group = nomad_group
 religion = sunni
 primary_culture = crimean
 capital = 284	# Crimea
-
-historical_friend = TUR
+religious_school = hanafi_school
+historical_friend = TUR ### STT
 
 1441.1.1 = {
 	monarch = {
@@ -41,7 +41,7 @@ historical_friend = TUR
 		dip = 0
 		mil = 2
 	}
-
+	set_global_flag = death_of_haji_giray #Blocks succession event after this point.
 }
 
 1469.1.1 = {

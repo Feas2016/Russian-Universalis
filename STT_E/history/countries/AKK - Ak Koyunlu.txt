@@ -1,9 +1,12 @@
-government = steppe_horde
+government = tribal_federation
 primary_culture = turkish
+add_accepted_culture = kurdish
+add_accepted_culture = armenian
 religion = sunni
-technology_group = nomad_group
-historical_rival = MAM
+technology_group = muslim
+historical_rival = MAM ### STT
 capital = 418
+religious_school = hanafi_school
 
 1348.1.1 = {
 	monarch = {
@@ -62,9 +65,8 @@ capital = 418
 		dip = 1
 		mil = 2
 	}
+	add_piety = 0.3
 }
-
-add_piety = 0.3
 
 1396.1.1 = {
 	heir = {
@@ -93,7 +95,6 @@ add_piety = 0.3
 
 1435.1.1 = {
 	heir = {
-
 		name = "Джахангир Муизз"
 		monarch_name = "Джахангир Муизз"
 		dynasty = "Ак-Коюнлу"
@@ -108,7 +109,6 @@ add_piety = 0.3
 
 1444.1.1 = {
 	monarch = {
-
 		name = "Джахангир Муизз"
 		dynasty = "Ак-Коюнлу"
 		birth_date = 1424.1.1
@@ -116,6 +116,7 @@ add_piety = 0.3
 		dip = 3
 		mil = 2
 	}
+	add_piety = -0.6
 }
 
 1444.1.1 = {
@@ -127,18 +128,19 @@ add_piety = 0.3
 		death_date = 1478.1.5
 		claim = 95
 		adm = 4
-		dip = 4
-		mil = 5
+		dip = 5
+		mil = 6
 		leader = {	
 			name = "Узун Хасан"
 			type = general
-			
 			fire = 4	
 			shock = 5	
 			manuever = 5	
 			siege = 0
 		}
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = bold_fighter_personality
 }
 
 1453.1.1 = {
@@ -147,10 +149,12 @@ add_piety = 0.3
 		dynasty = "Ак-Коюнлу"
 		birth_date = 1433.1.1
 		adm = 4
-		dip = 4
-		mil = 5
+		dip = 5
+		mil = 6
 		leader = {	name = "Узун Хасан"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0}
 	}
+	add_ruler_personality = bold_fighter_personality
+	clear_scripted_personalities = yes
 }
 
 1453.1.1 = {

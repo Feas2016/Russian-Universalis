@@ -5,6 +5,7 @@ add_accepted_culture = berber
 technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
+religious_school = maliki_school
 
 1232.1.1 = {
 	monarch = {
@@ -37,6 +38,7 @@ government_rank = 1
 		dip = 5
 		mil = 5
 	}
+	add_piety = -0.3
 }
 
 1302.4.8 = {
@@ -266,18 +268,16 @@ government_rank = 1
 	monarch = {
 		name = "Мухаммад X аль-Ахнаф"
 		dynasty = "Насрид"
-		birth_date = 1415.1.1
 		adm = 2
 		dip = 1
 		mil = 0
 	}
 }
 
-1447.12.1 = {
+1451.1.1 = {
 	monarch = {
 		name = "Мухаммад IX аль-Галиб"
 		dynasty = "Насрид"
-		birth_date = 1396.1.1
 		adm = 1
 		dip = 1
 		mil = 0
@@ -286,53 +286,38 @@ government_rank = 1
 
 1454.1.1 = {
 	monarch = {
-		name = "Мухаммад XI"
-		dynasty = "Насрид"
-		birth_date = 1410.1.1
-		adm = 1
-		dip = 1
-		mil = 0
-	}
-}
-
-1454.6.1 = {
-	monarch = {
 		name = "Абу Наср Саид аль-Мустаин"
 		dynasty = "Насрид"
-		birth_date = 1410.1.1
 		adm = 0
 		dip = 1
 		mil = 0
 	}
 }
 
-1462.11.1 = {
+1462.1.1 = {
 	monarch = {
 		name = "Юсуф V"
 		dynasty = "Насрид"
-		birth_date = 1410.1.1
 		adm = 1
 		dip = 0
 		mil = 0
 	}
 }
 
-1462.12.1 = {
+1463.1.1 = {
 	monarch = {
 		name = "Абу Наср Саид аль-Мустаин"
 		dynasty = "Насрид"
-		birth_date = 1410.1.1
 		adm = 0
 		dip = 1
 		mil = 0
 	}
 }
 
-1464.8.1 = {
+1464.1.1 = {
 	monarch = {
 		name = "Абу-ль-Хасан Али"
 		dynasty = "Насрид"
-		birth_date = 1420.1.1
 		adm = 0
 		dip = 1
 		mil = 0
@@ -341,22 +326,20 @@ government_rank = 1
 
 1470.1.1 = { leader = {	name = "Ибрагим Али аль-Аттар"	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1483.1.1 } }
 
-1482.7.5 = {
+1482.1.1 = {
 	monarch = {
 		name = "Боабдиль"
 		dynasty = "Насрид"
-		birth_date = 1459.1.1
 		adm = 2
 		dip = 0
 		mil = 1
 	}
 }
 
-1483.4.1 = {
+1483.1.1 = {
 	monarch = {
 		name = "Абу-ль-Хасан Али"
 		dynasty = "Насрид"
-		birth_date = 1420.1.1
 		adm = 2
 		dip = 0
 		mil = 1
@@ -367,7 +350,6 @@ government_rank = 1
 	monarch = {
 		name = "Мухаммад XIII аз-Загалл"
 		dynasty = "Насрид"
-		birth_date = 1444.1.1
 		adm = 0
 		dip = 0
 		mil = 0
@@ -375,11 +357,10 @@ government_rank = 1
 	}
 }
 
-1487.4.1 = {
+1489.1.1 = {
 	monarch = {
 		name = "Боабдиль"
 		dynasty = "Насрид"
-		birth_date = 1459.1.1
 		adm = 2
 		dip = 0
 		mil = 1

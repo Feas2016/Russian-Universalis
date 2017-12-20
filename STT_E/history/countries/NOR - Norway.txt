@@ -3,7 +3,7 @@ primary_culture = norwegian
 religion = catholic
 technology_group = western
 historical_friend = DAN
-capital = 17 #Oslo
+capital = 17 #Akershus
 
 872.1.1 = {
 	monarch = {
@@ -536,20 +536,21 @@ capital = 17 #Oslo
 	} 
 }
 
-1521.1.1 = { leader = { name = "Энгельбриктссон"         type = general rank = 2 fire = 1 shock = 1 manuever = 3 siege = 0 death_date = 1538.2.7 } }
+1521.1.1 = { leader = { name = "Энгельбриктссон"         type = general fire = 1 shock = 1 manuever = 3 siege = 0 death_date = 1538.2.7 } }
 
 1537.1.1 = { religion = protestant } # Christian III decrees Lutheranism as State Church
 
-#1814.5.19 = { government = absolute_monarchy }
+1670.2.10 = { government = despotic_monarchy }
 
-1814.5.19 = {
+1814.2.16 = {
 	monarch = {
 		name = "Кристиан Фредерик"
 		dynasty = "фон Ольденбург"
+		culture = danish
 		birth_date = 1786.9.18
-		adm = 4
-		dip = 4
-		mil = 3
+		adm = 0
+		dip = 0
+		mil = 0
 	}
 }
 
@@ -641,198 +642,198 @@ capital = 17 #Oslo
 	}
 }
 
-1957.9.21 = {
-	heir = {
-		name = "Харальд"
-		monarch_name = "Харальд V"
-		dynasty = "фон Глюксбург"
-		birth_date = 1937.2.21
-		death_date = 3000.1.1
-		claim = 95
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-}
+# 1957.9.21 = {
+	# heir = {
+		# name = "Харальд"
+		# monarch_name = "Харальд V"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1937.2.21
+		# death_date = 3000.1.1
+		# claim = 95
+		# adm = 3
+		# dip = 5
+		# mil = 2
+	# }
+# }
 
-1991.1.17 = {
-	monarch = {
-		name = "Харальд V"
-		dynasty = "фон Глюксбург"
-		birth_date = 1937.2.21
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-}
+# 1991.1.17 = {
+	# monarch = {
+		# name = "Харальд V"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1937.2.21
+		# adm = 3
+		# dip = 5
+		# mil = 2
+	# }
+# }
 
-1991.1.17 = {
-	queen = {
-		country_of_origin = NOR
-		name = "Соня"
-		dynasty = "Харальдсен"
-		birth_date = 1937.6.4
-		death_date = 3000.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# 1991.1.17 = {
+	# queen = {
+		# country_of_origin = NOR
+		# name = "Соня"
+		# dynasty = "Харальдсен"
+		# birth_date = 1937.6.4
+		# death_date = 3000.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
 
-1991.1.17 = {
-	heir = {
-		name = "Хокон"
-		monarch_name = "Хокон VIII"
-		dynasty = "фон Глюксбург"
-		birth_date = 1973.7.20
-		death_date = 3000.1.1
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
+# 1991.1.17 = {
+	# heir = {
+		# name = "Хокон"
+		# monarch_name = "Хокон VIII"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1973.7.20
+		# death_date = 3000.1.1
+		# claim = 95
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
 
-2003.11.25 = {
-	monarch = {
-		name = "Хокон VIII"
-		dynasty = "фон Глюксбург"
-		birth_date = 1973.7.20
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
+# 2003.11.25 = {
+	# monarch = {
+		# name = "Хокон VIII"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1973.7.20
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
 
-2003.11.25 = {
-	queen = {
-		country_of_origin = NOR
-		name = "Метте-Марит"
-		dynasty = "Тьессем Хёйби"
-		birth_date = 1973.8.19
-		death_date = 3000.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# 2003.11.25 = {
+	# queen = {
+		# country_of_origin = NOR
+		# name = "Метте-Марит"
+		# dynasty = "Тьессем Хёйби"
+		# birth_date = 1973.8.19
+		# death_date = 3000.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
 
-2004.4.12 = {
-	monarch = {
-		name = "Харальд V"
-		dynasty = "фон Глюксбург"
-		birth_date = 1937.2.21
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-}
+# 2004.4.12 = {
+	# monarch = {
+		# name = "Харальд V"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1937.2.21
+		# adm = 3
+		# dip = 5
+		# mil = 2
+	# }
+# }
 
-2004.4.12 = {
-	queen = {
-		country_of_origin = NOR
-		name = "Соня"
-		dynasty = "Харальдсен"
-		birth_date = 1937.6.4
-		death_date = 3000.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# 2004.4.12 = {
+	# queen = {
+		# country_of_origin = NOR
+		# name = "Соня"
+		# dynasty = "Харальдсен"
+		# birth_date = 1937.6.4
+		# death_date = 3000.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
 
-2004.4.12 = {
-	heir = {
-		name = "Хокон"
-		monarch_name = "Хокон VIII"
-		dynasty = "фон Глюксбург"
-		birth_date = 1973.7.20
-		death_date = 3000.1.1
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
+# 2004.4.12 = {
+	# heir = {
+		# name = "Хокон"
+		# monarch_name = "Хокон VIII"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1973.7.20
+		# death_date = 3000.1.1
+		# claim = 95
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
 
-2005.3.29 = {
-	monarch = {
-		name = "Хокон VIII"
-		dynasty = "фон Глюксбург"
-		birth_date = 1973.7.20
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
+# 2005.3.29 = {
+	# monarch = {
+		# name = "Хокон VIII"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1973.7.20
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
 
-2005.3.29 = {
-	queen = {
-		country_of_origin = NOR
-		name = "Метте-Марит"
-		dynasty = "Тьессем Хёйби"
-		birth_date = 1973.8.19
-		death_date = 3000.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# 2005.3.29 = {
+	# queen = {
+		# country_of_origin = NOR
+		# name = "Метте-Марит"
+		# dynasty = "Тьессем Хёйби"
+		# birth_date = 1973.8.19
+		# death_date = 3000.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
 
-2005.3.29 = {
-	heir = {
-		name = "Ингрид Александра"
-		monarch_name = "Ингрид Александра"
-		dynasty = "фон Глюксбург"
-		birth_date = 2004.1.21
-		death_date = 3000.1.1
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-		female = yes
-	}
-}
+# 2005.3.29 = {
+	# heir = {
+		# name = "Ингрид Александра"
+		# monarch_name = "Ингрид Александра"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 2004.1.21
+		# death_date = 3000.1.1
+		# claim = 95
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# female = yes
+	# }
+# }
 
-2005.4.1 = {
-	monarch = {
-		name = "Харальд V"
-		dynasty = "фон Глюксбург"
-		birth_date = 1937.2.21
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-}
+# 2005.4.1 = {
+	# monarch = {
+		# name = "Харальд V"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1937.2.21
+		# adm = 3
+		# dip = 5
+		# mil = 2
+	# }
+# }
 
-2005.4.1 = {
-	queen = {
-		country_of_origin = NOR
-		name = "Соня"
-		dynasty = "Харальдсен"
-		birth_date = 1937.6.4
-		death_date = 3000.1.1
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
+# 2005.4.1 = {
+	# queen = {
+		# country_of_origin = NOR
+		# name = "Соня"
+		# dynasty = "Харальдсен"
+		# birth_date = 1937.6.4
+		# death_date = 3000.1.1
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
 
-2005.4.1 = {
-	heir = {
-		name = "Хокон"
-		monarch_name = "Хокон VIII"
-		dynasty = "фон Глюксбург"
-		birth_date = 1973.7.20
-		death_date = 3000.1.1
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
+# 2005.4.1 = {
+	# heir = {
+		# name = "Хокон"
+		# monarch_name = "Хокон VIII"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1973.7.20
+		# death_date = 3000.1.1
+		# claim = 95
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }

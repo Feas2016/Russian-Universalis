@@ -3,7 +3,7 @@ technology_group = indian
 primary_culture = sindhi
 religion = sunni
 capital = 504	# Thatta
-
+religious_school = shafii_school
 
 #Jams of Sindh
 1393.1.1 = {
@@ -62,14 +62,17 @@ capital = 504	# Thatta
 		DIP = 0
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+	add_ruler_personality = naive_personality
 }
 
-1423.1.1 = {
+1444.1.1 = {
 	heir = {
 		name = "Сикандар"
 		monarch_name = "Сикандар"
 		dynasty = "Самма"
-		birth_date = 1400.1.1
+		birth_date = 1444.1.1
 		death_date = 1449.1.1
 		claim = 95
 		ADM = 1
@@ -82,6 +85,7 @@ capital = 504	# Thatta
 	monarch = {
 		name = "Сикандар"
 		dynasty = "Самма"
+		birth_date = 1444.1.1
 		ADM = 1
 		DIP = 0
 		MIL = 1
@@ -120,8 +124,8 @@ capital = 504	# Thatta
 		birth_date = 1453.1.1
 		death_date = 1508.1.1
 		claim = 95
-		ADM = 2
-		DIP = 2
+		ADM = 6
+		DIP = 4
 		MIL = 2
 	}
 }
@@ -131,10 +135,18 @@ capital = 504	# Thatta
 	monarch = {
 		name = "Низамаддин II Нанда"
 		dynasty = "Самма"
-		ADM = 2
-		DIP = 2
+		ADM = 6
+		DIP = 4
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = just_personality
+	#add_ruler_personality = zealot_personality
+	#add_ruler_personality = righteous_personality
+	#add_ruler_personality = well_advised_personality
+	#add_ruler_personality = just_personality
 }
 
 1490.1.1 = {

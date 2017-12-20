@@ -1732,6 +1732,32 @@ arakanese_monarchy = { #Buddhist state that used Muslim titles.
 	}
 }
 
+pangasinan_monarchy = { #Buddhist state that used Muslim titles.
+	rank = {
+		1 = BARANGAY
+		2 = GRAND_BARANGAY
+		3 = GREAT_BARANGAY
+	}
+
+	ruler_male = {
+		1 = DATU
+		2 = WANG
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = DATU
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		tag = PGS
+		religion_group = eastern
+	}
+}
+
 albanian_monarchy = {
 	rank = {
 		1 = PRINCEDOM
@@ -2605,7 +2631,66 @@ betsimisaraka_monarchy = {
 	}
 }
 
+filipino_rajanate = {
+	rank = {
+		1 = BARANGAY
+		2 = GRAND_BARANGAY
+		3 = GREAT_BARANGAY
+	}
+
+	ruler_male = {
+		1 = DATU
+		2 = RAJA
+		3 = MAHARAJA
+	}
+
+	ruler_female = {
+		1 = DATU
+		2 = RANI
+		3 = MAHARANI
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			tag = BTU
+			tag = MNA
+			tag = CEB
+		}
+	}
+}
+
 #Less Specific Monarchies
+
+barangay_polity = {
+	rank = {
+		1 = BARANGAY
+		2 = GRAND_BARANGAY
+		3 = GREAT_BARANGAY
+	}
+
+	ruler_male = {
+		1 = DATU
+		2 = LAKAN
+		3 = GREAT_LAKAN
+	}
+
+	ruler_female = {
+		1 = DATU
+		2 = LAKAN
+		3 = GREAT_LAKAN
+	}
+
+	trigger = {
+		OR = {
+			government = monarchy
+			government = republic
+		}
+		NOT = { tag = SUL }
+		NOT = { tag = MGD }
+		primary_culture = filipino
+	}
+}
 
 south_slavic_monarchy = {
 	rank = {

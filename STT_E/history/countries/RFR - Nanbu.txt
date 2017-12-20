@@ -3,16 +3,19 @@ government_rank = 1
 primary_culture = togoku
 religion = shinto
 technology_group = chinese
-capital = 3623 # Mutsu
+capital = 3623 # Mutsu ### STT
 
 1430.1.1 = {
 	monarch = {
 		name = "Токимаса" 
 		dynasty = "Нанбу"
+		birth_date = 1410
 		adm = 3
 		dip = 4
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = industrious_personality
 }
 
 1430.1.1 = {

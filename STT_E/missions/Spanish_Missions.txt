@@ -6,8 +6,8 @@ finish_reconquista = {
 	ai_mission = yes
 	
 	target_areas_list = {
-		lower_andalucia_area #STT
-		upper_andalucia_area #STT
+		lower_andalucia_area ### STT
+		upper_andalucia_area ### STT
 	}
 	
 	target_provinces = {
@@ -25,11 +25,11 @@ finish_reconquista = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		religion = catholic
-		lower_andalucia_area = { #STT
+		lower_andalucia_area = { ### STT
 			owned_by = ROOT
 			owner = { religion_group = muslim }
 		}
-		upper_andalucia_area = { #STT
+		upper_andalucia_area = { ### STT
 			owned_by = ROOT
 			owner = { religion_group = muslim }
 		}
@@ -37,16 +37,16 @@ finish_reconquista = {
 	abort = {
 		OR = {
 			NOT = { religion = catholic }
-			NOT = { lower_andalucia_area = { owned_by = ROOT } } #STT
-			NOT = { upper_andalucia_area = { owned_by = ROOT } } #STT
+			NOT = { lower_andalucia_area = { owned_by = ROOT } } ### STT
+			NOT = { upper_andalucia_area = { owned_by = ROOT } } ### STT
 		}
 	}
 	success = {
-		lower_andalucia_area = { #STT
+		lower_andalucia_area = { ### STT
 			type = all
 			owner = { NOT = { religion_group = muslim } }
 		}
-		upper_andalucia_area = { #STT
+		upper_andalucia_area = { ### STT
 			type = all
 			owner = { NOT = { religion_group = muslim } }
 		}
@@ -76,7 +76,7 @@ finish_reconquista = {
 		modifier = {
 			factor = 10
 			exists = GRA
-			iberia_land_region = { #STT
+			iberia_land_region = { ### STT
 				owned_by = GRA
 			}
 		}
@@ -109,7 +109,7 @@ spain_must_be_christian = {
 		religion = catholic
 		is_at_war = no
 		NOT = {	exists = GRA }
-		iberia_land_region = { #STT
+		iberia_land_region = { ### STT
 			owned_by =  ROOT
 			NOT = { religion_group = christian }
 		}
@@ -121,7 +121,7 @@ spain_must_be_christian = {
 	success = {
 		NOT = {
 			any_owned_province = {
-				province_group = iberia_land_region #STT
+				province_group = iberia_land_region ### STT
 				NOT = { religion_group = christian }
 			}
 		}
@@ -141,7 +141,7 @@ spain_must_be_christian = {
 		if = {
 			limit = {
 				any_owned_province = {
-					province_group = iberia_land_region #STT
+					province_group = iberia_land_region ### STT
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}
@@ -149,7 +149,7 @@ spain_must_be_christian = {
 			}
 			every_owned_province = {
 				limit = {
-					province_group = iberia_land_region #STT
+					province_group = iberia_land_region ### STT
 					any_core_country = {
 						NOT = { religion_group = christian }
 					}
@@ -178,6 +178,7 @@ continue_reconquista = {
 	}
 	
 	target_provinces = {
+		NOT = { owned_by = ROOT }
 		owner = {
 			NOT = { religion_group = christian }
 			NOT = { alliance_with = ROOT }
@@ -200,33 +201,15 @@ continue_reconquista = {
 			}
 		}
 		226 = { owned_by = ROOT }	# Gibraltar.
+		any_province = {
 		OR = {
-			334 = {
-				owner = {
-					NOT = { religion_group = christian }
-					NOT = { alliance_with = ROOT }
-					NOT = { is_subject_of = ROOT }
-					NOT = { overlord_of = ROOT }
-				}
+				province_id = 334
+				province_id = 335
+				province_id = 338
+				province_id = 1751
 			}
-			335 = {
 				owner = {
-					NOT = { religion_group = christian }
-					NOT = { alliance_with = ROOT }
-					NOT = { is_subject_of = ROOT }
-					NOT = { overlord_of = ROOT }
-				}
-			}
-			337 = {
-				owner = {
-					NOT = { religion_group = christian }
-					NOT = { alliance_with = ROOT }
-					NOT = { is_subject_of = ROOT }
-					NOT = { overlord_of = ROOT }
-				}
-			}
-			1751 = {
-				owner = {
+				NOT = { tag = ROOT }
 					NOT = { religion_group = christian }
 					NOT = { alliance_with = ROOT }
 					NOT = { is_subject_of = ROOT }
@@ -234,7 +217,6 @@ continue_reconquista = {
 				}
 			}
 		}
-	}
 	abort = {
 		all_target_province = {
 			owner = {

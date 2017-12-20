@@ -7,9 +7,9 @@ defeat_the_byzantine_empire = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
-		government_rank = 2 #STT
-		149 = { is_capital = yes } #STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 2 ### STT
+		149 = { is_capital = yes } ### STT
 		is_free_or_tributary_trigger = yes
 		NOT = { owns = 151 }
 		NOT = { has_country_modifier = defeated_byzantine_empire }
@@ -22,7 +22,7 @@ defeat_the_byzantine_empire = {
 		owns = 151
 	}
 	chance = {
-		factor = 5000
+		factor = 8000
 		modifier = {
 			factor = 2
 			is_monarch_leader = yes
@@ -75,8 +75,8 @@ conquer_the_byzantine_empire = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
-		government_rank = 3 #STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 3 ### STT
 		NOT = { has_country_modifier = defeated_byzantine_empire }
 		NOT = { has_country_flag = byz_empire_conquered }
 		is_free_or_tributary_trigger = yes
@@ -163,8 +163,8 @@ conquer_southern_greece = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
-		government_rank = 3 #STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 3 ### STT
 		OR = {
 			145 = {
 				NOT = { owned_by = ROOT }
@@ -242,9 +242,9 @@ conquer_serbia = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		NOT = { has_country_modifier = military_victory }
-		government_rank = 3 #STT
+		government_rank = 3 ### STT
 		is_free_or_tributary_trigger = yes
 		SER = {
 			is_neighbor_of = ROOT
@@ -314,8 +314,8 @@ conquer_bosnia = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
-		government_rank = 3 #STT
+		OR = { tag = TUR tag = TRK } ### STT
+		government_rank = 3 ### STT
 		NOT = { has_country_modifier = military_victory }
 		is_free_or_tributary_trigger = yes
 		BOS = {
@@ -386,7 +386,7 @@ retake_smyrna = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
 		is_free_or_tributary_trigger = yes
 		AYD = {
 			is_neighbor_of = ROOT
@@ -455,9 +455,9 @@ vassalize_wallachia = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
 		is_subject = no
-		government_rank = 2 #STT
+		government_rank = 2 ### STT
 		NOT = { has_country_modifier = military_vassalization }
 		WAL = {
 			is_subject = no
@@ -527,9 +527,9 @@ vassalize_transylvania = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		is_subject = no
-		government_rank = 3 #STT
+		government_rank = 3 ### STT
 		NOT = { has_country_modifier = military_vassalization }
 		TRA = {
 			is_subject = no
@@ -602,11 +602,11 @@ defeat_the_knights = {
 		OR = {
 			tag = TUR
 			tag = TU0
-			tag = TRK ###STT
+			tag = TRK ### STT
 			tag = AYD
 			tag = MEN
 		}
-		num_of_ports = 1 #STT
+		num_of_ports = 1 ### STT
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = defeat_the_knights_flag }
 		is_free_or_tributary_trigger = yes
@@ -671,7 +671,7 @@ take_crete_from_venice = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		owns = 151
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = take_crete_from_venice_flag }
@@ -738,8 +738,8 @@ muslim_asia_minor = {
 		normal_or_historical_nations = yes
 		OR = {
 			tag = TUR
-			tag = TU0
-			tag = TRK ###STT
+			tag = TU0 ### STT
+			tag = TRK ### STT
 			tag = AYD 
 			tag = CND 
 			tag = DUL 
@@ -801,7 +801,7 @@ take_kaffa = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		is_free_or_tributary_trigger = yes
 		owns = 151
 		NOT = { owns = 285 }		# Kaffa
@@ -877,7 +877,7 @@ conquer_levant = {
 	}
     allow = {
 		normal_or_historical_nations = yes
-        OR = { tag = TUR tag = TRK } ###STT
+        OR = { tag = TUR tag = TRK } ### STT
         is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquest_of_levant_mission }
@@ -903,10 +903,10 @@ conquer_levant = {
 		}
     }
     chance = {
-        factor = 2000
+        factor = 10000
         modifier = {
-           factor = 10
-           owns = 151 # Constantinople
+           factor = 2
+           num_of_cities = 40
         }
     }
     immediate = {
@@ -962,7 +962,7 @@ conquer_egypt = {
 	}
     allow = {
 		normal_or_historical_nations = yes
-        OR = { tag = TUR tag = TRK } ###STT
+        OR = { tag = TUR tag = TRK } ### STT
 		owns = 379 # Judea
         is_free_or_tributary_trigger = yes
 		NOT = { has_country_modifier = mediterranean_ambition }
@@ -1048,9 +1048,9 @@ safeguard_eastern_anatolia = {
 		}
 	}
 	allow = {
-		government_rank = 2 #STT
+		government_rank = 2 ### STT
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		NOT = { has_country_modifier = military_victory }
 		owns = 329
 		OR = {
@@ -1129,9 +1129,9 @@ vassalize_dulkadir = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0}
+		OR = { tag = TUR tag = TU0} ### STT
 		is_free_or_tributary_trigger = yes
-		government_rank = 2 #STT
+		government_rank = 2 ### STT
 		NOT = { has_country_modifier = military_vassalization }
 		DUL = {
 			is_free_or_tributary_trigger = yes
@@ -1155,9 +1155,9 @@ vassalize_dulkadir = {
 		}
 	}
 	success = {
-		OR = { #STT
-		DUL = { vassal_of = TUR }
-		DUL = { vassal_of = TU0 }
+		OR = { ### STT
+			DUL = { vassal_of = TUR }
+			DUL = { vassal_of = TU0 }
 		}
 	}
 	chance = {
@@ -1202,9 +1202,9 @@ vassalize_ramazan = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0}
+		OR = { tag = TUR tag = TU0} ### STT
 		is_free_or_tributary_trigger = yes
-		government_rank = 2 #STT
+		government_rank = 2 ### STT
 		NOT = { has_country_modifier = military_vassalization }
 		RAM = {
 			is_free_or_tributary_trigger = yes
@@ -1288,7 +1288,7 @@ conquer_mesopotamia = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		NOT = { has_country_modifier = indian_ocean_ambition }
 		owns = 382 #Damascus
 		OR = {
@@ -1376,21 +1376,21 @@ conquer_hedjaz = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		owns = 358
-		hejaz_area = { #STT
+		hejaz_area = { ### STT -2
 			NOT = { owned_by = ROOT }
 			NOT = { owner = { alliance_with = ROOT } }
 			NOT = { owner = { is_subject_of = ROOT } }
 			NOT = { owner = { overlord_of = ROOT } }
 		}
-		# tabuk_area = { #STT
+		# tabuk_area = { ### STT
 			# NOT = { owned_by = ROOT }
 			# NOT = { owner = { alliance_with = ROOT } }
 			# NOT = { owner = { is_subject_of = ROOT } }
 			# NOT = { owner = { overlord_of = ROOT } }
 		# }
-		# sarat_area = { #STT
+		# sarat_area = { ### STT
 			# NOT = { owned_by = ROOT }
 			# NOT = { owner = { alliance_with = ROOT } }
 			# NOT = { owner = { is_subject_of = ROOT } }
@@ -1463,13 +1463,13 @@ conquer_mocha = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		OR = {
 			owns_core_province = 2315
 			owns_core_province = 2321
 			owns_core_province = 2331
 		}
-		# tihama_al_yemen_area = { #STT
+		# tihama_al_yemen_area = { ### STT
 			# NOT = { owned_by = ROOT }
 			# NOT = { owner = { alliance_with = ROOT } }
 			# NOT = { owner = { is_subject_of = ROOT } }
@@ -1550,7 +1550,7 @@ conquer_haasa = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		NOT = { has_country_flag = conquer_haasa_flag }
 		NOT = { has_country_modifier = indian_ocean_ambition }
 		owns = 408 #Basrah
@@ -1612,7 +1612,7 @@ conquer_trebizond = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
 		owns = 328
 		NOT = { owns = 330 } # Trebizond
 		330 = {
@@ -1681,7 +1681,7 @@ conquer_tripolitania = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		owns = 358
 		NOT = { has_country_modifier = mediterranean_ambition }
 		NOT = { has_country_flag = conquer_tripolitania_flag }
@@ -1756,7 +1756,7 @@ conquer_tunisia = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		OR = {
 			owns = 358 #Tripoli
 			owns = 2954 #Djerba
@@ -1821,7 +1821,7 @@ subjugate_algiers = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		owns = 341 # Tunis
 		owns = 354 # Tripoli
 		is_subject = no
@@ -1849,7 +1849,7 @@ subjugate_algiers = {
 		}
 	}
 	success = {
-		ALG = { vassal_of = ROOT } #STT
+		ALG = { vassal_of = ROOT } ### STT
 	}
 	chance = {
 		factor = 3000
@@ -1907,7 +1907,7 @@ conquer_algeria = {
 	}
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag = TRK } ###STT
+		OR = { tag = TUR tag = TRK } ### STT
 		owns = 341 # Tunis
 		owns = 354 # Tripoli
 		NOT = { has_country_modifier = mediterranean_ambition }
@@ -1962,7 +1962,7 @@ conquer_algeria = {
 	}
 }
 
-conquer_bulgaria = { #STT 11 missions
+conquer_bulgaria = { ### STT 11 missions
 	
 	type = country
 
@@ -2528,7 +2528,7 @@ conquer_southern_bolgaria = {
 	
 	allow = {
 		normal_or_historical_nations = yes
-		OR = { tag = TUR tag TU0 tag = TRK } ###STT
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
 		owns = 149
 		OR = {
 			1764 = {

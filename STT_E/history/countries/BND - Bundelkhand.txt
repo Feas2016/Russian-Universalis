@@ -17,6 +17,7 @@ capital = 559	# Bundelkhand
 	capital = 2059 #Kalpi
 	government = iqta
 	religion = sunni
+	religious_school = shafii_school
 }
 
 1399.1.1 = {
@@ -89,6 +90,8 @@ capital = 559	# Bundelkhand
 		dip = 4
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
 }
 
 #Rajas of Orchha & Mahoba
@@ -103,6 +106,8 @@ capital = 559	# Bundelkhand
 	capital = 559
 	religion = hinduism
 	government = feudal_monarchy
+	clear_scripted_personalities = yes
+	add_ruler_personality = fertile_personality
 }
 
 1479.1.1 = {

@@ -1,10 +1,11 @@
-government = oligarchic_republic
+government = oligarchic_republic ### STT
 government_rank = 1
 primary_culture = lombard
 religion = catholic
 technology_group = western
 capital = 104 # Milano
 fixed_capital = 104 # Cannot move capital away from this province & no power cost to move to it
+add_army_professionalism = 0.05
 
 1197.1.1 = {
 	monarch = {
@@ -214,7 +215,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		name = "Джан Мария"
 		monarch_name = "Джан Мария"
 		dynasty = "Висконти"
-		birth_date = 1388.9.7
+		birth_date = 1392.9.3
 		death_date = 1412.5.16
 		claim = 95
 		adm = 2
@@ -248,18 +249,59 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 	}
 }
 
+1408.7.1 = {
+	queen = {
+		country_of_origin = PAP #Rimini, Romagna province
+		name = "Антония"
+		dynasty = "Малатеста" #di Cesena
+		birth_date = 1390.1.1
+		death_date = 1450.1.1
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
 1412.5.16 = {
 	monarch = {
 		name = "Филиппо Мария"
 		dynasty = "Висконти"
-		birth_date = 1392.9.23
+		birth_date = 1392.9.3
 		adm = 1
 		dip = 2
 		mil = 2
 	}
 }
+1412.7.24 = {
+	queen = {
+		country_of_origin = SAV #Ventimiglia, Albenga/Nizza province
+		name = "Беатрис"
+		dynasty = "Ласкарис"
+		birth_date = 1372.1.1
+		death_date = 1418.9.13
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 1418.1.1 = { leader = {	 name = "Карманьола"     	type = general	fire = 4	shock = 5	manuever = 5	siege = 1	death_date = 1432.5.5 } }
+
+1427.12.2 = {
+	queen = {
+		country_of_origin = SAV 
+		name = "Мария"
+		dynasty = "ди Савойя"
+		birth_date = 1411.1.1
+		death_date = 1469.2.22
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 1447.8.13 = { government = ambrosian_republic } # The Ambrosian Republic
 
@@ -274,12 +316,13 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1450.2.27 = {
-    government = feudal_monarchy
+1450.3.27 = { government = feudal_monarchy }
+
+1450.3.27 = {
 	monarch = {
 		name = "Франческо I"
 		dynasty = "Сфорца"
-		birth_date = 1401.7.23
+		birth_date = 1401.6.23
 		adm = 5
 		dip = 5
 		mil = 5
@@ -606,7 +649,7 @@ fixed_capital = 104 # Cannot move capital away from this province & no power cos
 		name = "Итальянская республика"
 		adm = 3
 		dip = 4
-		mil = 1
+		mil = 2
 		regent = yes
 	}
 }

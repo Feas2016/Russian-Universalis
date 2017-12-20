@@ -2,10 +2,14 @@
 ##################################################################
 ### Terrain Categories
 ###
+### Terrain types: plains, mountains, hills, desert, artic, forest, jungle, marsh, pti
+### Types are used by the game to apply certain bonuses/maluses on movement/combat etc.
 ###
+### Sound types: plains, forest, desert, sea, jungle, mountains
 
 categories =  {
 	pti = {
+		type = pti
 	}
 
 	ocean = {
@@ -166,6 +170,7 @@ categories =  {
 		}		
 	}
 
+
 	drylands = {
 		movement_cost = 1.00
 		supply_limit = 7
@@ -261,6 +266,7 @@ categories =  {
 			823 824 827 2835 2836 2887 2916 #South America
 			3068 3069 3633 3634
 		}
+
 
 	}
 
@@ -401,11 +407,13 @@ categories =  {
 		}
 	}
 
+
 	jungle = {
 		movement_cost = 1.5
 		defence = 1
 		combat_width = -0.25
 		supply_limit = 5
+
 
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.8
@@ -469,8 +477,7 @@ categories =  {
 ### 	color 	= 	index in bitmap color table (see terrain.bmp)
 ###
 
-terrain
-{
+terrain = {
 	plains				= { type = grasslands		color = { 	0	 } }
 	hills				= { type = hills			color = { 	1	 } }
 	desert_mountain		= { type = desert_mountain			color = { 	2	 } }
@@ -514,8 +521,7 @@ terrain
 ### 	color 	= 	index in bitmap color table (see tree.bmp)
 ###
 
-tree
-{
+tree = {
 	forest				= { terrain = forest 			color = { 	3 4 6 7 19 20	} }
 	woods				= { terrain = woods 			color = { 	2 5 8 18	} }
 	jungle				= { terrain = jungle 			color = { 	13 14 15	} }

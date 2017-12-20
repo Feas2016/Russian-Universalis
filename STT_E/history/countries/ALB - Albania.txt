@@ -3,8 +3,7 @@ government_rank = 1
 primary_culture = albanian
 religion = catholic
 technology_group = eastern
-capital = 143 # Durrës,Tirana
-
+capital = 143 # Durrës,Tirana ### STT
 
 # The League of Lezhe
 1443.3.4 = {
@@ -17,6 +16,9 @@ capital = 143 # Durrës,Tirana
 		mil = 6
 		leader = {	name = "Ñêàíäåğáåã"            	type = general	fire = 5	shock = 5	manuever = 5	siege = 0}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = silver_tongue_personality
 }
 
 1443.3.4 = {

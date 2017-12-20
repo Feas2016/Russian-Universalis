@@ -428,7 +428,7 @@ national_focus = MIL
 
 1499.1.1 = { leader = {	name = "Алонсо де Охеда"       	type = conquistador	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1515.1.1 } }
 
-1499.1.1 = { leader = {	name = "Америго Веспуччи"      	type = explorer1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1500.12.30 } }
+1499.1.1 = { leader = {	name = "Америго Веспуччи"      	type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1500.12.30 } }
 
 #1499.1.1 = { leader = {	name = "Хуан де ла Коса"       	type = explorer	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1510.2.28 } } # Removed /SWЦ
 
@@ -470,13 +470,17 @@ national_focus = MIL
 		dip = 6
 		mil = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = martial_educator_personality
 }
 
 1509.1.1 = { leader = {	name = "Панфило де Нарваэс"    	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
 1510.1.1 = { leader = {	name = "Васко Нуньес де Бальбоа"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1516.1.23 } }
 
-1512.3.4 = { leader = {	name = "Хуан Понсе де Леон"	type = conquistador1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1512.3.4 = { leader = {	name = "Хуан Понсе де Леон"	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
 1516.1.23 = { government = despotic_monarchy }
 

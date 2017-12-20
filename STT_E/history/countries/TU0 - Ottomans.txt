@@ -177,9 +177,6 @@ government_rank = 2
 		mil = 6
 		leader = { name = "Мехмед Фатих"            type = general	fire = 6	shock = 4	manuever = 5	siege = 2}
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = conqueror_personality
-	add_heir_personality = lawgiver_personality
 }
 
 1439.1.1 = {
@@ -192,7 +189,7 @@ government_rank = 2
 		manuever = 3
 		siege = 1
 		death_date = 1453.9.9
-		trait = inspirational_leader_general_personality
+		#trait = inspirational_leader_general_personality #STT
 	}
 }
 	

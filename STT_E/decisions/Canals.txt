@@ -24,13 +24,13 @@ country_decisions = {
 		allow = {
 			owns_or_vassal_of = 13 ### STT
 			owns_or_vassal_of = 3218 ### STT
-			is_free_or_tributary_trigger = yes			
+			is_subject = no		
 			adm_tech = 26
 			treasury = 10000
 		}
 		effect = {
 			add_treasury = -10000
-			13 = {	# Holstein
+			13 = {	# Holstein ### STT
 				add_great_project = kiel_canal
 			}
 		}
@@ -46,11 +46,11 @@ country_decisions = {
 				ai = no
 				AND = {
 					treasury = 40000
-					owns_or_vassal_of = 363
+					owns_or_vassal_of = 363 ### STT
 				}
 			}
-			has_discovered = 363
-			363 = {
+			has_discovered = 363 ### STT
+			363 = { ### STT
 				range = ROOT
 				NOT = { has_great_project = suez_canal }
 				NOT = { has_construction = canal }
@@ -58,15 +58,15 @@ country_decisions = {
 			adm_tech = 20
 		}
 		allow = {
-			owns_or_vassal_of = 363
+			owns_or_vassal_of = 363 ### STT
 			owns_or_vassal_of = 2315
-			is_free_or_tributary_trigger = yes
+			is_subject = no
 			adm_tech = 26
 			treasury = 20000
 		}
 		effect = {
 			add_treasury = -20000
-			363 = {	# Dumyat
+			363 = {	# Dumyat ### STT
 				add_great_project = suez_canal
 			}
 		}
@@ -96,7 +96,7 @@ country_decisions = {
 		}
 		allow = {
 			owns_or_vassal_of = 835
-			is_free_or_tributary_trigger = yes
+			is_subject = no
 			adm_tech = 26
 			treasury = 30000
 		}
@@ -115,19 +115,19 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			owns_or_vassal_of = 13
-			is_free_or_tributary_trigger = yes
-			13 = {
+			owns_or_vassal_of = 13 ### STT
+			is_subject = no
+			13 = { ### STT
 				has_construction = canal
 			}
 		}
 		allow = {
-			13 = {
+			13 = { ### STT
 				has_construction = canal
 			}
 		}
 		effect = {
-			13 = {	# Holstein
+			13 = {	# Holstein ### STT
 				cancel_construction = yes
 			}
 		}
@@ -140,19 +140,19 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			owns_or_vassal_of = 363
-			is_free_or_tributary_trigger = yes
-			363 = {
+			owns_or_vassal_of = 363 ### STT
+			is_subject = no
+			363 = { ### STT
 				has_construction = canal
 			}
 		}
 		allow = {
-			363 = {
+			363 = { ### STT
 				has_construction = canal
 			}
 		}
 		effect = {
-			363 = {	# Diamientia
+			363 = {	# Diamientia ### STT
 				cancel_construction = yes
 			}
 		}
@@ -166,7 +166,7 @@ country_decisions = {
 		potential = {
 			ai = no
 			owns_or_vassal_of = 835
-			is_free_or_tributary_trigger = yes
+			is_subject = no
 			835 = {
 				has_construction = canal
 			}

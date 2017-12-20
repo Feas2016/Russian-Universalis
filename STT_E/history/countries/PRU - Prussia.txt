@@ -18,13 +18,11 @@ capital = 41	# Königsberg
 
 1525.1.1 = { religion = protestant }
 
-1525.1.1  = { 
+1525.1.1  = { ### STT
 	changed_tag_from = TEU
 	government = prussian_monarchy
+	add_country_modifier = { name = ger_hommage    duration = -1 } 
 }
-
-1525.1.1 = { add_country_modifier = { name = ger_hommage    duration = -1 } } ### STT
-### 1525.4.8
 
 1526.2.12 = {
 	queen = {
@@ -188,6 +186,7 @@ capital = 41	# Königsberg
 		mil = 5
 		leader = {	name = "Ôğèäğèõ Âèëüãåëüì"     	type = general	fire = 3	shock = 3	manuever = 2	siege = 0 }
 	}
+	add_army_professionalism = 0.2
 }
 
 1646.12.7 = {
@@ -319,6 +318,7 @@ capital = 41	# Königsberg
 		dip = 3
 		mil = 3
 	}
+	add_army_professionalism = 0.25
 	clear_scripted_personalities = yes
 	add_ruler_personality = martial_educator_personality
 	add_ruler_personality = lawgiver_personality
@@ -368,6 +368,7 @@ capital = 41	# Königsberg
 		dip = 5
 		mil = 1
 	}
+	add_army_professionalism = 0.3
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
 	add_ruler_personality = martial_educator_personality

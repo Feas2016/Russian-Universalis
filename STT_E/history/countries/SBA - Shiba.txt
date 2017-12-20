@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = togoku
 religion = shinto
 technology_group = chinese
-capital = 1030	# Owari
+capital = 1023	# Echizen
 
 1330.1.1 = { 
 	monarch = {
@@ -57,8 +57,8 @@ capital = 1030	# Owari
 	monarch = {
 		name = "Ёсисигэ" 
 		dynasty = "Сиба"
-#		birth_date = 1371.1.1
-#		death_date = 1418.9.10
+		birth_date = 1371.1.1
+		death_date = 1418.9.10
 		adm = 3
 		dip = 3
 		mil = 3
@@ -83,8 +83,8 @@ capital = 1030	# Owari
 	monarch = {
 		name = "Ёсиацу" 
 		dynasty = "Сиба"
-#		birth_date = 1397.1.1
-#		death_date = 1434.1.11
+		birth_date = 1397.1.1
+		death_date = 1434.1.11
 		adm = 2
 		dip = 2
 		mil = 2
@@ -119,12 +119,14 @@ capital = 1030	# Owari
 	monarch = {
 		name = "Ёситакэ" 
 		dynasty = "Сиба"
-#		birth_date = 1435.1.1
+		birth_date = 1435.1.1
 #		death_date = 1452.10.3
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
 }
 
 1452.10.1 = {
@@ -161,25 +163,61 @@ capital = 1030	# Owari
 	}
 }
 
-1485.1.1 = {
+1471.7.1 = {
+	capital = 1025 #Uzen # The Shiba clan acturally turns (in game) into it's sub-branch Mogami
+}
+
+1471.1.1 = {
 	monarch = {
 		name = "Ёсихиро" 
-		dynasty = "Сиба"
-#		birth_date = 1457.1.1
-#		death_date = 1514.5.21
+		dynasty = "Могами"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1471.1.1 = {
+	heir = {
+		name = "Ёшиаки"
+		monarch_name = "Ёшиаки"
+		dynasty = "Могами"
+		birth_date = 1420.1.1
+		death_date = 1480.4.15
+		claim = 90
 		adm = 3
 		dip = 3
 		mil = 3
 	}
 }
 
-1485.1.1 = {
+1474.4.7 = {
+	monarch = {
+		name = "Ёшиаки" 
+		dynasty = "Могами"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1480.4.15 = {
+	monarch = {
+		name = "Митцсуджи" 
+		dynasty = "Могами"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1480.4.15 = {
 	heir = {
 		name = "Ёситацу"
 		monarch_name = "Ёситацу"
-		dynasty = "Сиба"
-		birth_date = 1480.1.1
-		death_date = 1521.1.1
+		dynasty = "Могами"
+		birth_date = 1465.1.1
+		death_date = 1504.10.6
 		claim = 90
 		adm = 3
 		dip = 3
@@ -187,51 +225,55 @@ capital = 1030	# Owari
 	}
 }
 
-1514.5.21 = {
+1494.8.14 = {
 	monarch = {
 		name = "Ёситацу" 
-		dynasty = "Сиба"
-#		birth_date = 1480.1.1
-#		death_date = 1521.1.1
+		dynasty = "Могами"
 		adm = 3
 		dip = 3
 		mil = 3
 	}
 }
 
-1514.5.21 = {
+1494.8.14 = {
 	heir = {
-		name = "Ёсимунэ"
-		monarch_name = "Ёсимунэ"
-		dynasty = "Сиба"
-		birth_date = 1513.1.1
-		death_date = 1554.8.10
+		name = "Ёшисада"
+		monarch_name = "Ёшисада"
+		dynasty = "Могами"
+		birth_date = 1492.1.1
+		death_date = 1520.2.20
 		claim = 90
 		adm = 2
-		dip = 3
-		mil = 1
+		dip = 2
+		mil = 2
 	}
 }
 
-1515.1.1 = {
+1504.10.6 = {
 	monarch = {
-		name = "Ёсимунэ" 
-		dynasty = "Сиба"
-#		birth_date = 1513.1.1
-#		death_date = 1554.8.10
+		name = "Ёшисада" 
+		dynasty = "Могами"
 		adm = 2
-		dip = 3
-		mil = 1
+		dip = 2
+		mil = 2
 	}
 }
 
-1532.1.1 = { capital = 1025	} # Dewa
+1520.2.20 = {
+	monarch = {
+		name = "Кокужин Икки"
+		adm = 1
+		mil = 3
+		dip = 2
+		regent = yes
+	}
+}
 
-1532.1.1 = {
+1521.1.1 = {
 	monarch = {
 		name = "Ёсимори"
 		dynasty = "Могами"
-#		birth_date = 1521.1.1
+		birth_date = 1521.1.1
 #		death_date = 1590.6.19
 		adm = 2
 		dip = 2
@@ -257,7 +299,7 @@ capital = 1030	# Owari
 	monarch = {
 		name = "Ёсиаки"
 		dynasty = "Могами"
-#		birth_date = 1546.2.1
+		birth_date = 1546.2.1
 #		death_date = 1614.2.26
 		adm = 6
 		dip = 5

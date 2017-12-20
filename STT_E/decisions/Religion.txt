@@ -98,11 +98,11 @@ country_decisions = {
 
 	declaration_of_indulgence = {
 		potential = {
-			NOT = { has_country_modifier = the_declaration_of_indulgence }
-			NOT = { has_country_modifier = the_test_act }
 			religion_group = christian
+			NOT = { has_country_modifier = the_declaration_of_indulgence }
 		}
 		allow = {
+			NOT = { has_country_modifier = the_test_act }
 			adm_tech = 10
 		}
 		effect = {	

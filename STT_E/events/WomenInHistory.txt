@@ -179,7 +179,6 @@ country_event = {
 			is_year = 1655
 		}
 		is_female = no
-		has_regency = yes
 		has_consort = no
 		is_lesser_in_union = no
 		government = monarchy
@@ -219,9 +218,10 @@ country_event = {
 				female = yes
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				has_dlc = "Rights of Man"
+				NOT = { has_regency = yes }
 			}
 			define_consort = {
 				name = "Кёсем Султан"
@@ -233,6 +233,18 @@ country_event = {
 			}
 			hidden_effect = {
 				add_queen_personality = incorruptible_personality
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Кёсем Султан"
+				dynasty = "Осман"
+				culture = ruthenian
+				fixed = yes
+				adm = 5
+				dip = 4
+				mil = 5
+				female = yes
 			}
 		}
 	}
@@ -717,7 +729,7 @@ country_event = {
 		define_heir = {
 			name = "Изабелла"
 			dynasty = "де Трастамара"
-			culture = castilian
+			culture = castillian
 			claim = 95
 			adm = 5
 			dip = 6
@@ -743,7 +755,7 @@ country_event = {
 			type = statesman
 			discount = yes
 			skill = 2
-			culture = castilian
+			culture = castillian
 			name = "Изабелла Астурийская"
 		}
 	}
@@ -1135,7 +1147,7 @@ country_event = {
 			female = yes
 			type = statesman
 			discount = yes
-			culture = castilian
+			culture = castillian
 			skill = 2
 			name = "Хуана Инес де ла Крус"
 		}
@@ -1681,7 +1693,7 @@ country_event = {
 		define_advisor = {
 			female = yes
 			type = diplomat
-			culture = castilian
+			culture = castillian
 			skill = 2
 			name = "Екатерина Арагонская"
 			discount = yes
@@ -3141,7 +3153,7 @@ country_event = {
 		define_advisor = {
 			female = yes
 			type = colonial_governor
-			culture = castilian
+			culture = castillian
 			discount = yes
 			skill = 2
 			name = "Инес де Суарез"
@@ -4125,7 +4137,7 @@ country_event = {
 		define_advisor = {
 			name = "Изабелла Клара Евгения"
 			discount = yes
-			culture = castilian
+			culture = castillian
 			type = diplomat
 			skill = 2
 			female = yes
@@ -4136,7 +4148,7 @@ country_event = {
 		define_ruler = {
 			name = "Изабелла Клара Евгения"
 			dynasty = "фон Габсбург"
-			culture = castilian
+			culture = castillian
 			fixed = yes
 			adm = 4
 			dip = 3

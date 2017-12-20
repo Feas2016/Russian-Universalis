@@ -6,7 +6,7 @@ technology_group = western
 capital = 134 # Wien
 historical_friend = HUN
 historical_rival = TUR
-historical_rival = TU0
+historical_rival = TU0 ### STT
 national_focus = ADM
 
 
@@ -539,7 +539,6 @@ national_focus = ADM
 	monarch = {
 		name = "Альбрехт IV"
 		dynasty = "фон Габсбург"
-		birth_date = 1377.9.19
 		adm = 1
 		dip = 1
 		mil = 3
@@ -571,19 +570,6 @@ national_focus = ADM
 	}
 }
 
-1431.1.1 = {
-	heir = {
-		name = "Георг"
-		monarch_name = "Георг I"
-		dynasty = "фон Габсбург"
-		birth_date = 1431.1.1
-		death_date = 1435.1.1
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
 
 1439.10.27 = {
 	monarch = {
@@ -594,29 +580,16 @@ national_focus = ADM
 		dip = 5
 		mil = 1
 	}
+	
 	clear_scripted_personalities = yes
 	add_ruler_personality = careful_personality
-}
-
-1440.2.22 = {
-	heir = {
-		name = "Ладислав"
-		monarch_name = "Ладислав Постум"
-		dynasty = "фон Габсбург"
-		birth_date = 1440.2.22
-		death_date = 1457.11.24
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 2
-	}
 }
 
 #1450.1.1 = { decision = court_of_wards_and_liveries }
 
 #Ladislaus is freed.
 
-1452.3.19 = {
+1452.1.1 = {
 	monarch = {
 		name = "Ладислав Постум"
 		dynasty = "фон Габсбург"
@@ -663,6 +636,18 @@ national_focus = ADM
 	}
 }
 
+#Trade Good Events
+
+1485.1.1 = {
+	set_global_flag = faceting_happened
+	change_price = {
+		trade_goods = gems
+		key = FACETING
+		value = 0.25
+		duration = -1
+	}
+}
+
 1493.8.21 = {
 	monarch = {
 		name = "Максимилиан I"
@@ -671,6 +656,16 @@ national_focus = ADM
 		adm = 2
 		dip = 4
 		mil = 2
+	}
+}
+
+1490.1.1 = {
+	set_global_flag = paper_in_bureaucracies
+	change_price = {
+		trade_goods = paper
+		key = PAPER_IN_BUREAUCRACY
+		value = 0.25
+		duration = -1
 	}
 }
 
@@ -778,6 +773,10 @@ national_focus = ADM
 	}
 }
 
+1526.8.30 = {
+	add_accepted_culture = hungarian
+	add_accepted_culture = slovak
+}
 
 1527.7.31 = {
 	heir = {
@@ -797,6 +796,20 @@ national_focus = ADM
 1540.1.1 = {
 	set_global_flag = new_draperies_happened
 	set_global_flag = japanese_tea_happened
+	set_global_flag = cotton_imports_global
+	set_global_flag = incense_rejected
+	change_price = {
+		trade_goods = wool
+		key = COTTON_IMPORTS
+		value = -0.10
+		duration = -1
+	}
+	change_price = {
+		trade_goods = cotton
+		key = COTTON_IMPORTS
+		value = 0.20
+		duration = -1
+	}
 	change_price = {
 			trade_goods = cloth
 			key = NEW_DRAPERIES
@@ -815,6 +828,18 @@ national_focus = ADM
 			value = 0.25
 			duration = -1
 		}
+	change_price = {
+		trade_goods = incense
+		key = JAPANESE_TEA_CULTURE
+		value = 0.10
+		duration = -1
+	}
+	change_price = {
+		trade_goods = incense
+		key = REFORMED_REJECTION_OF_INCENSE
+		value = -0.25
+		duration = -1
+	}
 }
 
 #Trade Good Events
@@ -830,9 +855,36 @@ national_focus = ADM
 
 1551.7.19 = { add_accepted_culture = transylvanian }
 
-#1556.10.2 = { government = absolute_monarchy }
+1555.1.1 = {
+	set_global_flag = printing_paper_prices_rise
+	change_price = {
+		trade_goods = paper
+		key = INCREASED_PRINTING
+		value = 0.25
+		duration = -1
+	}
+}
 
-1560.1.1 = { leader = {	name = "Франц Иосиф"           	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1580.1.1 } }
+1556.10.2 = { government = despotic_monarchy }
+
+1560.1.1 = {
+	leader = {
+		name = "Франц Иосиф"
+		type = general
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1580.1.1
+	}
+	set_global_flag = columbian_exchange_happened
+	change_price = {
+			trade_goods = grain
+			key = COLUMBIAN_EXCHANGE
+			value = -0.20
+			duration = -1
+	}
+}
 
 1564.7.27 = {
 	monarch = {
@@ -908,6 +960,7 @@ national_focus = ADM
 		dip = 3
 		mil = 2
 	}
+	#Never Married
 }
 
 1576.10.14 = {
@@ -933,6 +986,7 @@ national_focus = ADM
 	set_global_flag = coffee_boom_happened
 	set_global_flag = felt_hats_happened
 	set_global_flag = popularization_of_tobacco_happened
+	set_global_flag = bohemian_glass
 	change_price = {
 			trade_goods = coffee
 			key = COFFEE_BOOM
@@ -951,7 +1005,12 @@ national_focus = ADM
 			value = 0.5
 			duration = -1
 		}
-
+	change_price = {
+		trade_goods = glass
+		key = BOHEMIAN_GLASS
+		value = 0.25
+		duration = -1
+	}
 }
 
 1608.5.14 = {
@@ -1064,6 +1123,7 @@ national_focus = ADM
 1635.1.1 = {
 	set_global_flag = popular_silk_happened
 	set_global_flag = iron_working_happened
+	set_global_flag = development_of_optics
 	change_price = {
 			trade_goods = silk
 			key = POPULAR_SILK_FABRICS
@@ -1082,6 +1142,12 @@ national_focus = ADM
 			value = -0.35
 			duration = -1
 		}
+	change_price = {
+		trade_goods = glass
+		key = MODERN_OPTICS
+		value = 0.25
+		duration = -1
+	}
 }
 
 1637.2.15 = {
@@ -1186,6 +1252,17 @@ national_focus = ADM
 		dip = 4
 		mil = 5
 	}
+	
+}
+
+1650.1.1 = {
+	set_global_flag = mocha_killed
+	change_price = {
+		trade_goods = coffee
+		key = JAVA_COFFEE
+		value = -0.4
+		duration = -1
+	}
 }
 
 #Trade Good Events
@@ -1224,10 +1301,18 @@ national_focus = ADM
 1670.1.1 = {
 	set_global_flag = wine_corks_happened
 	set_global_flag = regulated_uniforms_happened
+	set_global_flag = hollender_beater_flag
+	set_global_flag = lead_crystal_happened
 	change_price = {
 			trade_goods = wine
 			key = WINE_CORKS
-			value = 0.50
+		value = 0.25
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = WINE_CORKS
+		value = 0.25
 			duration = -1
 		}
 	change_price = {
@@ -1237,16 +1322,36 @@ national_focus = ADM
 			duration = -1
 		}
 	change_price = {
+		trade_goods = wool
+		key = REGULATED_UNIFORMS
+		value = 0.1
+		duration = -1
+	}
+	change_price = {
 			trade_goods = dyes
 			key = REGULATED_UNIFORMS
 			value = 0.25
 			duration = -1
 		}
+	change_price = {
+		trade_goods = paper
+		key = HOLLENDER_BEATER
+		value = -0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = glass
+		key = LEAD_CRYSTAL
+		value = 0.25
+		duration = -1
+	}
 }
 
 1670.1.1 = { leader = {	name = "Эрцгерцог Фердинанд"             	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1695.1.1 } }
 
 1670.1.1 = { leader = {	name = "Георг Вальдек"		type = general	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1692.11.19 } }
+
+
 
 1673.10.15 = {
 	queen = {
@@ -1278,6 +1383,7 @@ national_focus = ADM
 	}
 }
 
+
 1678.7.26 = {
 	heir = {
 		name = "Иосиф"
@@ -1308,6 +1414,18 @@ national_focus = ADM
 			value = 0.5
 			duration = -1
 		}
+	change_price = {
+		trade_goods = glass
+		key = PERMANENT_NAVIES
+		value = 0.15
+		duration = -1
+	}
+	change_price = {
+		trade_goods = livestock
+		key = PERMANENT_NAVIES
+		value = 0.10
+		duration = -1
+	}
 }
 
 1685.1.1 = { leader = {	name = "Евгений Савойский"           	type = general	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1730.1.1 } }
@@ -1355,6 +1473,9 @@ national_focus = ADM
 		dip = 3
 		mil = 1
 	}
+}
+
+1705.5.7 = {
 	heir = {
 		name = "Карл"
 		monarch_name = "Карл II"
@@ -1371,12 +1492,39 @@ national_focus = ADM
 #Trade Good Events
 1710.1.1 = {
 	set_global_flag = bottger_happened
+	set_global_flag = popular_literacy
+	set_global_flag = brazilian_gems_happened
+	set_global_flag = selective_breeding_happened
 	change_price = {
 				trade_goods = chinaware
 				key = JOHAN_FRIEDRICH_BOTTGER
 				value = -0.5
 				duration = -1
 			}
+	change_price = {
+		trade_goods = paper
+		key = LENDING_LIBRARIES
+		value = 0.35
+		duration = -1
+	}
+	change_price = {
+		trade_goods = gems
+		key = BRAZILIAN_DIAMONDS
+		value = -0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = livestock
+		key = SELECTIVE_BREEDING
+		value = 0.5
+		duration = -1
+	}
+	change_price = {
+		trade_goods = wool
+		key = SELECTIVE_BREEDING
+		value = 0.25
+		duration = -1
+	}
 }
 
 1711.4.19 = {
@@ -1480,12 +1628,19 @@ national_focus = ADM
 #Trade Good Events
 1750.1.1 = {
 	set_global_flag = ivory_shortage_happened
+	set_global_flag = perfume_industry
 	change_price = {
 			trade_goods = ivory
 			key = IVORY_SHORTAGE
 			value = 0.25
 			duration = -1
 		}
+	change_price = {
+		trade_goods = incense
+		key = GROWTH_OF_PERFUME_BUSINESS
+		value = 0.35
+		duration = -1
+	}
 }
 
 1760.1.1 = { leader = {	name = "Надашдь"                	type = general	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1785.1.1 } }
@@ -1614,35 +1769,35 @@ national_focus = ADM
 
 1805.1.1 = { leader = {	name = "Шварценберг"         	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1817.1.1 } }
 
-1806.8.6 = { 
+1806.8.6 = { ### STT
 		government_rank = 3
 }
 
-1808.1.16 = {
+1808.1.6 = {
 	queen = {
-		country_of_origin = MLO
+		country_of_origin = HAB
 		name = "Мария Людовика"
 		dynasty = "фон Габсбург-Лотаринген"
 		birth_date = 1787.2.14
 		death_date = 1816.4.7
 		female = yes
-		adm = 2
-		dip = 2
+		adm = 4
+		dip = 5
 		mil = 2
 	}
 }
 
-1816.11.10 = {
+1816.10.29 = {
 	queen = {
 		country_of_origin = BAV
 		name = "Каролина Шарлотта Августа"
 		dynasty = "фон Пфальц-Цвейнбрюккен"
 		birth_date = 1792.2.8
-		death_date = 1873.2.9
+		death_date = 1835.3.2
 		female = yes
 		adm = 2
 		dip = 2
-		mil = 2
+		mil = 1
 	}
 }
 

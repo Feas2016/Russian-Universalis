@@ -3,18 +3,17 @@ primary_culture = malvi
 religion = sunni
 technology_group = indian
 capital = 526	# Mandu
+add_accepted_culture = rajput
+religious_school = hanafi_school
  
-1401.1.1 = {
-	government_rank = 1
-}
- 
+#Sultans of Malwa
 1390.1.1 = {
 	monarch = {
 		name = "Амид-шах Дауд"
 		dynasty = "Гури"
-		ADM = 3
+		ADM = 1
 		DIP = 2
-		MIL = 3
+		MIL = 2
 	}
 }
 
@@ -26,26 +25,25 @@ capital = 526	# Mandu
 		birth_date = 1380.1.1
 		death_date = 1435.1.1
 		claim = 95
-		ADM = 4
+		ADM = 3
 		DIP = 3
-		MIL = 2
+		MIL = 0
 	}
 }
 
  
 
-1406.1.1 = {
+1405.1.1 = {
 	monarch = {
 		name = "Хушанг-шах"
 		dynasty = "Гури"
-		ADM = 4
+		ADM = 3
 		DIP = 3
-		MIL = 2
-		leader = {	name = "Хушанг-шах"             	type = general	fire = 4	shock = 2	manuever = 3	siege = 2 }
+		MIL = 0
 	}
 }
 
-1406.1.1 = {
+1405.1.1 = {
 	heir = {
 		name = "Мухаммед"
 		monarch_name = "Мухаммед-шах"
@@ -55,7 +53,7 @@ capital = 526	# Mandu
 		claim = 95
 		ADM = 2
 		DIP = 1
-		MIL = 3
+		MIL = 2
 	}
 }
 
@@ -65,22 +63,7 @@ capital = 526	# Mandu
 		dynasty = "Гури"
 		ADM = 2
 		DIP = 1
-		MIL = 3
-		leader = {	name = "Мухаммед-шах"             	type = general	fire = 2	shock = 4	manuever = 2	siege = 1 }
-	}
-}
-
-1435.1.1 = {
-	heir = {
-		name = "Масуд"
-		monarch_name = "Масуд-шах"
-		dynasty = "Гури"
-		birth_date = 1400.1.1
-		# no death date information
-		claim = 95
-		ADM = 2
-		DIP = 1
-		MIL = 3
+		MIL = 2
 	}
 }
 
@@ -88,11 +71,15 @@ capital = 526	# Mandu
 	monarch = {
 		name = "Мухаммед I"
 		dynasty = "Халджи"
-		ADM = 4
-		DIP = 3
+		ADM = 5
+		DIP = 5
 		MIL = 6
-		leader = {	name = "Мухаммед-шах"             	type = general	fire = 2	shock = 4	manuever = 5	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	#add_ruler_personality = just_personality
+	add_ruler_personality = careful_personality #Most dominant Personality aspect
+	#add_ruler_personality = well_connected_personality
+	#add_ruler_personality = tolerant_personality
 }
 
 1450.1.1 = {
@@ -103,9 +90,9 @@ capital = 526	# Mandu
 		birth_date = 1450.1.1
 		death_date = 1500.11.18
 		claim = 95
-		ADM = 2
+		ADM = 1
 		DIP = 3
-		MIL = 2
+		MIL = 1
 	}
 }
 
@@ -113,10 +100,14 @@ capital = 526	# Mandu
 	monarch = {
 		name = "Гийас-шах"
 		dynasty = "Халджи"
-		ADM = 2
+		ADM = 1
 		DIP = 3
-		MIL = 2
+		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	#add_ruler_personality = just_personality
+	#add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = sinner_personality
 }
 
 1469.5.30 = {
@@ -124,8 +115,8 @@ capital = 526	# Mandu
 		name = "Абдул Кадир"
 		monarch_name = "Насир-шах"
 		dynasty = "Халджи"
-		# no birth date information
-		death_date = 1510.12.1
+		birth_date = 1469.5.30
+		death_date = 1511.4.30
 		claim = 95
 		ADM = 1
 		DIP = 0
@@ -133,71 +124,181 @@ capital = 526	# Mandu
 	}
 }
 
-1500.11.20 = {
+1500.11.18 = {
 	monarch = {
 		name = "Насир-шах"
 		dynasty = "Халджи"
 		ADM = 1
 		DIP = 0
 		MIL = 3
-		leader = {	name = "Насир-шах"             	type = general	fire = 1	shock = 4	manuever = 4	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
+	#add_ruler_personality = tolerant_personality
+	#add_ruler_personality = intricate_web_weaver_personality
 }
 
-1500.11.20 = {
+1500.11.18 = {
 	heir = {
 		name = "Шихаб"
 		monarch_name = "Шихаб-шах"
 		dynasty = "Халджи"
-		# no birth date information
-		death_date = 1511.7.1
+		birth_date = 1490.1.1
+		death_date = 1531.3.29
 		claim = 95
-		ADM = 1
-		DIP = 2
-		MIL = 4
+		ADM = 0
+		DIP = 0
+		MIL = 2
 	}
 }
 
-1510.1.1 = {
+1511.4.30 = {
+	monarch = {
+		name = "Махмуд-шах"
+		dynasty = "Халджи"
+		ADM = 0
+		DIP = 0
+		MIL = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+	#add_ruler_personality = babbling_buffoon_personality
+	#add_ruler_personality = bold_fighter_personality
+}
+
+1519.1.1 = {
+	remove_accepted_culture = rajput
+}
+#1531.3.29 = {
+#	monarch = {
+#		name = "Гаджарат оккупация"
+#		ADM = 2
+#		DIP = 2
+#		MIL = 0
+#	}
+#}
+
+1536.1.1 = {
+	monarch = {
+		name = "Кадир-шах"
+		dynasty = "Кадирид"
+		ADM = 2
+		DIP = 1
+		MIL = 0
+	}
+}
+
+#1542.1.1 = {
+#	monarch = {
+#		name = "Мунгальская оккупация"
+#		ADM = 2
+#		DIP = 2
+#		MIL = 2
+#	}
+#}
+
+1554.1.1 = {
+	monarch = {
+		name = "Салим-шах"
+		dynasty = "Шаяатид"
+		ADM = 1
+		DIP = 1
+		MIL = 0
+	}
+}
+
+1554.1.1 = {
 	heir = {
-		name = "Азам-Хумаюм"
-		monarch_name = "Мухаммед-шах II"
-		dynasty = "Халджи"
-		# no birth date information
-		death_date = 1531.3.1
+		name = "Баз-Бахадур-шах"
+		monarch_name = "Баз-Бахадур-шах"
+		dynasty = "Шаяатид"
+		birth_date = 1534.1.1
+		death_date = 1562.1.1
 		claim = 95
-		ADM = 1
-		DIP = 1
-		MIL = 3
-	}
-}
-
-1510.12.1 = {
-	monarch = {
-		name = "Шихаб-шах"
-		dynasty = "Халджи"
-		ADM = 1
-		DIP = 2
-		MIL = 4
-	}
-}
-
-1511.6.2 = {
-	monarch = {
-		name = "Мухаммед-шах II"
-		dynasty = "Халджи"
-		ADM = 1
-		DIP = 1
-		MIL = 3
-		leader = {	name = "Мухаммед-шах II"             	type = general	fire = 1	shock = 2	manuever = 1	siege = 0 }
+		ADM = 2
+		DIP = 0
+		MIL = 0
 	}
 }
 
 1555.1.1 = {
 	monarch = {
-		name = "Баз-Бахадур-шах"
+		name = "Шихаб-шах"
+		dynasty = "Шаяатид"
 		ADM = 2
-		DIP = 2
+		DIP = 0
+		MIL = 0
+	}
+}
+
+#1562.1.1 = {
+#	monarch = {
+#		name = "Мунгальская оккупация"
+#		ADM = 2
+#		DIP = 2
+#		MIL = 2
+#	}
+#}
+
+
+#Maharajas of Indore
+
+1728.1.1 = {
+	monarch = {
+		name = "Малхар Рао I"
+		dynasty = "Холкар"
+		ADM = 2
+		DIP = 3
+		MIL = 5
+	}
+}
+
+1740.1.1 = {
+	heir = {
+		name = "Мали"
+		monarch_name = "Мали Рао"
+		dynasty = "Холкар"
+		birth_date = 1740.1.1
+		death_date = 1767.4.5
+		claim = 95
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1766.5.19 = {
+	monarch = {
+		name = "Мали Рао"
+		dynasty = "Холкар"
+		ADM = 0
+		DIP = 0
+		MIL = 1
+	}
+}
+
+1766.5.19 = {
+	heir = {
+		name = "Ахаля Баи"
+		monarch_name = "Ахаля Баи"
+		dynasty = "Холкар"
+		birth_date = 1740.1.1
+		death_date = 1818.1.1
+		claim = 95
+		ADM = 6
+		DIP = 4
 		MIL = 2
+		female = yes
+	}
+}
+
+1767.4.5 = {
+	monarch = {
+		name = "Ахаля Баи"
+		dynasty = "Холкар"
+		ADM = 6
+		DIP = 4
+		MIL = 2
+		female = yes
 	}
 }

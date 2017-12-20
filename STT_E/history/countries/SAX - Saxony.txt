@@ -6,6 +6,7 @@ elector = yes
 technology_group = western
 capital = 62 # Leipzig
 
+
 #Elector
 
 1355.3.12 = {
@@ -51,23 +52,24 @@ capital = 62 # Leipzig
 		birth_date = 1366.1.1
 		death_date = 1419.7.11
 		claim = 95
-		adm = 3
-		dip = 1
+		adm = 1
+		dip = 3
 		mil = 1
 	}
 }
 
-1388.5.11 = {
+1388.5.11 = { ### STT
 	monarch = {
 		name = "Рудольф III"
 		dynasty = "Аскания"
+		birth_date = 1366.1.1 ### STT
 		dip = 1
 		adm = 3
 		mil = 1
 	}
 }
 
-1388.5.11 = {
+1388.5.11 = {	### STT
 	heir = {
 		name = "Альбрехт"
 		monarch_name = "Альбрехт III"
@@ -81,7 +83,7 @@ capital = 62 # Leipzig
 	}
 }
 
-1419.7.11 = {
+1419.7.11 = {	### STT
 	monarch = {
 		name = "Альбрехт III"
 		dynasty = "Аскания"
@@ -480,6 +482,7 @@ capital = 62 # Leipzig
 		name = "Фридрих Август I"
 		dynasty = "фон Веттин"
 		birth_date = 1670.5.12
+		religion = catholic
 		adm = 2
 		dip = 1
 		mil = 0
@@ -505,8 +508,24 @@ capital = 62 # Leipzig
 		name = "Фридрих Август II"
 		dynasty = "фон Веттин"
 		birth_date = 1696.10.17
+		culture = saxon
+		religion = catholic
 		adm = 1
 		dip = 3
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = industrious_personality
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Джозефа"
+		dynasty = "фон Габсбург"
+		birth_date = 1699.12.8
+		death_date = 1757.11.17
+		female = yes
+		adm = 3
+		dip = 1
 		mil = 0
 	}
 }

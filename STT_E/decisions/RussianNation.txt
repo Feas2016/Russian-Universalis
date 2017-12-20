@@ -5,7 +5,7 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_russia_flag }
-			tag = TSR
+			tag = TSR	### STT
 			NOT = { exists = RUS }
 			primary_culture = russian ### STT
 			OR = {
@@ -48,24 +48,10 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUS
-			set_government_and_rank = {
+			set_government_and_rank = { 	### STT
 				government = rus_imperial_government
 				rank = 3
 			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
-			
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -78,13 +64,13 @@ country_decisions = {
 				}
 				add_permanent_claim = RUS
 			}
-			saratov_area = {
+			saratov_area = {	### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = RUS
 			}
-			bashkiria_area = {
+			bashkiria_area = {	### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

@@ -1,9 +1,10 @@
 government = iqta
 technology_group = indian
 religion = sunni
-primary_culture = bihari
+primary_culture = bihari ### STT
 capital = 555	# Jaunpur
 fixed_capital = 555 # Cannot move capital away from this province & no power cost to move to it
+religious_school = hanafi_school
 
 #Sultans of Jaunpur
 1399.1.1 = {
@@ -76,9 +77,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 2
 		MIL = 2
 	}
-}
-
-1436.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 	heir = {
 		name = "Бхикан"
 		monarch_name = "Мухаммед Шах"
@@ -90,6 +90,7 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 1
 		MIL = 2
 	}
+	add_heir_personality = naive_personality
 }
 
 1457.1.1 = {
@@ -100,6 +101,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 1
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 #While Muhammad Shah is away his brother hussain usurps the throne
@@ -116,6 +119,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 0
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = strict_personality
 }
 
 1458.6.1 = {
@@ -126,6 +131,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 0
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
 }
 
 #Delhi sultan inserts his own son on the throne of Jaunpur 1486, annexation in anything but name

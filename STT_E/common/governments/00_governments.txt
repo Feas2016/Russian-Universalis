@@ -782,6 +782,7 @@ steppe_horde = {
 			global_institution_spread = -0.15
 			reinforce_cost_modifier = -0.5
 			cav_to_inf_ratio = 0.25
+			movement_speed = 0.2
 		}
 		2 = {
 			global_manpower_modifier = 0.2
@@ -790,6 +791,7 @@ steppe_horde = {
 			global_institution_spread = -0.15
 			reinforce_cost_modifier = -0.5
 			cav_to_inf_ratio = 0.25
+			movement_speed = 0.2
 		}
 		3 = {
 			global_manpower_modifier = 0.3
@@ -798,6 +800,7 @@ steppe_horde = {
 			global_institution_spread = -0.15
 			reinforce_cost_modifier = -0.5
 			cav_to_inf_ratio = 0.25
+			movement_speed = 0.2
 		}
 	}
 }
@@ -1101,7 +1104,7 @@ mamluk_government = {
 	foreign_slave_rulers = yes
 	
 	valid_for_nation_designer = yes
-	nation_designer_cost = 15
+	nation_designer_cost = 60
 
 	max_states = 1
 	
@@ -1689,8 +1692,11 @@ american_republic = {
 	valid_for_new_country = no
 	allow_convert = no
 	has_parliament = yes
-	
-
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
 	rank = {
 		1 = {
 			stability_cost_modifier = -0.1
@@ -1723,6 +1729,11 @@ federal_republic = {
 	valid_for_new_country = no
 	allow_convert = no
 	has_parliament = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		has_dlc = "American Dream"
+	}
 	
 	rank = {
 		1 = {

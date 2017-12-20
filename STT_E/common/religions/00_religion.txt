@@ -264,42 +264,12 @@ christian = {
 		
 		hre_heretic_religion = yes
 		
-		will_get_center = {
+		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
-				OR = {
-					religion = protestant
-					religion = catholic
-					religion = reformed
-				}
-				not = { province_id = 118 }
-				is_in_capital_area = yes
-				is_reformation_center = no
-				is_island = no
-				OR = {
-					has_province_flag = start_of_protestant_reformation
-					development = 10
-				}
-				NOT = {
-					any_neighbor_province = {
-						is_reformation_center = yes
+				can_have_center_of_reformation_trigger = {
+						RELIGION = protestant
 					}
 				}
-				NOT = {
-					any_province = {
-						area = PREV
-						is_reformation_center = yes
-						religion = protestant
-					}
-				}
-				NOT = { has_climate = arctic }
-				NOT = { has_climate = arid }
-				NOT = { has_terrain = coastline }
-				NOT = { has_terrain = coastal_desert }
-				NOT = { has_terrain = steppe }
-				NOT = { has_terrain = desert }
-				NOT = { has_terrain = glacier }
-				NOT = { has_climate = tropical }
-			}
 		}
 
 		on_convert = {
@@ -329,36 +299,9 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
-							OR = {
-								religion = protestant
-								religion = catholic
-								religion = reformed
+							can_have_center_of_reformation_trigger = {
+								RELIGION = protestant
 							}
-							is_in_capital_area = yes
-							is_reformation_center = no
-							development = 10
-							is_island = no
-							NOT = {
-								any_neighbor_province = {
-									is_reformation_center = yes
-								}
-							}
-							NOT = {
-								any_province = {
-									area = PREV
-									is_reformation_center = yes
-									religion = protestant
-								}
-							}
-							not = { province_id = 118 }
-							NOT = { has_climate = arctic }
-							NOT = { has_climate = arid }
-							NOT = { has_terrain = coastline }
-							NOT = { has_terrain = coastal_desert }
-							NOT = { has_terrain = steppe }
-							NOT = { has_terrain = desert }
-							NOT = { has_terrain = glacier }
-							NOT = { has_climate = tropical }
 						}
 						change_religion = protestant
 						add_reform_center = protestant
@@ -383,36 +326,9 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
-							OR = {
-								religion = protestant
-								religion = catholic
-								religion = reformed
+							can_have_center_of_reformation_trigger = {
+									RELIGION = protestant
 							}
-							is_in_capital_area = yes
-							is_reformation_center = no
-							not = { province_id = 118 }
-							development = 10
-							is_island = no
-							NOT = {
-								any_neighbor_province = {
-									is_reformation_center = yes
-								}
-							}
-							NOT = {
-								any_province = {
-									area = PREV
-									religion = protestant
-									is_reformation_center = yes
-								}
-							}
-							NOT = { has_climate = arctic }
-							NOT = { has_climate = arid }
-							NOT = { has_terrain = coastline }
-							NOT = { has_terrain = coastal_desert }
-							NOT = { has_terrain = steppe }
-							NOT = { has_terrain = desert }
-							NOT = { has_terrain = glacier }
-							NOT = { has_climate = tropical }
 						}
 						change_religion = protestant
 						add_reform_center = protestant
@@ -465,41 +381,11 @@ christian = {
 			advisor_cost = -0.1
 		}
 
-		will_get_center = {
+		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
-				OR = {
-					religion = protestant
-					religion = catholic
-					religion = reformed
+				can_have_center_of_reformation_trigger = {
+					RELIGION = protestant
 				}
-				not = { province_id = 118 }
-				is_in_capital_area = yes
-				is_reformation_center = no
-				OR = {
-					has_province_flag = start_of_reformed_reformation
-					development = 10
-				}
-				is_island = no
-				NOT = {
-					any_neighbor_province = {
-						is_reformation_center = yes
-					}
-				}
-				NOT = {
-					any_province = {
-						area = PREV
-						religion = reformed
-						is_reformation_center = yes
-					}
-				}
-				NOT = { has_climate = arctic }
-				NOT = { has_climate = arid }
-				NOT = { has_terrain = coastline }
-				NOT = { has_terrain = coastal_desert }
-				NOT = { has_terrain = steppe }
-				NOT = { has_terrain = desert }
-				NOT = { has_terrain = glacier }
-				NOT = { has_climate = tropical }
 			}
 		}
 		
@@ -530,36 +416,9 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
-							OR = {
-								religion = protestant
-								religion = catholic
-								religion = reformed
+							can_have_center_of_reformation_trigger = {
+								RELIGION = protestant
 							}
-							not = { province_id = 118 }
-							is_in_capital_area = yes
-							is_reformation_center = no
-							is_island = no
-							development = 10
-							NOT = {
-								any_neighbor_province = {
-									is_reformation_center = yes
-								}
-							}
-							NOT = {
-								any_province = {
-									area = PREV
-									religion = reformed
-									is_reformation_center = yes
-								}
-							}
-							NOT = { has_climate = arctic }
-							NOT = { has_climate = arid }
-							NOT = { has_terrain = coastline }
-							NOT = { has_terrain = coastal_desert }
-							NOT = { has_terrain = steppe }
-							NOT = { has_terrain = desert }
-							NOT = { has_terrain = glacier }
-							NOT = { has_climate = tropical }
 						}
 						change_religion = reformed
 						add_reform_center = reformed
@@ -584,36 +443,9 @@ christian = {
 				hidden_effect = {
 					random_owned_province = {
 						limit = {
-							OR = {
-								religion = protestant
-								religion = catholic
-								religion = reformed
+							can_have_center_of_reformation_trigger = {
+								RELIGION = protestant
 							}
-							is_in_capital_area = yes
-							is_reformation_center = no
-							is_island = no
-							not = { province_id = 118 }
-							development = 10
-							NOT = {
-								any_neighbor_province = {
-									is_reformation_center = yes
-								}
-							}
-							NOT = {
-								any_province = {
-									area = PREV
-									religion = reformed
-									is_reformation_center = yes
-								}
-							}
-							NOT = { has_climate = arctic }
-							NOT = { has_climate = arid }
-							NOT = { has_terrain = coastline }
-							NOT = { has_terrain = coastal_desert }
-							NOT = { has_terrain = steppe }
-							NOT = { has_terrain = desert }
-							NOT = { has_terrain = glacier }
-							NOT = { has_climate = tropical }
 						}
 						change_religion = reformed
 						add_reform_center = reformed
@@ -1261,6 +1093,9 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
+		allowed_conversion = {
+			sikhism
+		}
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0

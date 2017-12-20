@@ -199,21 +199,8 @@ capital = 99	# Coevorde
 
 1379.1.1 = {
 	monarch = {
-		name = "Мария I"
-		dynasty = "фон Вассенберг"
-		birth_date = 1325.1.1
-		adm = 4
-		dip = 2
-		mil = 1
-		female = yes
-	}
-}
-
-
-1380.1.1 = {
-	monarch = {
 		name = "Вильгельм I"
-		dynasty= "фон Генгебах"
+		dynasty = "фон Генгебах"
 		birth_date = 1364.3.5
 		adm = 4
 		dip = 2
@@ -253,6 +240,20 @@ capital = 99	# Coevorde
 		birth_date = 1410.7.14
 		adm = 3
 		dip = 3
+		mil = 3
+	}
+}
+
+1438.2.12 = {
+	heir = {
+		name = "Адольф"
+		monarch_name = "Адольф I"
+		dynasty = "ван Эгмонт"
+		birth_date = 1438.2.12
+		death_date = 1471.7.23
+		claim = 95
+		adm = 2
+		dip = 1
 		mil = 3
 	}
 }
@@ -315,7 +316,7 @@ capital = 99	# Coevorde
 	}
 }
 
-1520.1.1 = { leader = { name = "Маартен ван Россум" type = general rank = 1 fire = 2 shock = 3 manuever = 3 siege = 0 death_date = 1555.6.7 } }
+1520.1.1 = { leader = { name = "Маартен ван Россум" type = general fire = 2 shock = 3 manuever = 3 siege = 0 death_date = 1555.6.7 } }
 
 1538.6.30 = {
 	monarch = {

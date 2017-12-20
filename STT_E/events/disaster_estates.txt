@@ -47,8 +47,8 @@ country_event = {
 				NOT = {
 					government = indep_daimyo
 				}
-				NOT = { government = rus_government } #STT
-				NOT = { government = rus_imperial_government } #STT
+				NOT = { government = rus_government } ### STT
+				NOT = { government = rus_imperial_government } ### STT
 				NOT = {
 					government = principality
 				}
@@ -112,7 +112,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				OR = { #STT
+				OR = { ### STT
 					#government = tsardom
 					#government = principality
 					government = rus_government

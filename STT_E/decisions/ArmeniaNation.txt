@@ -42,27 +42,15 @@ country_decisions = {
 			owns_core_province = 4302	# Manzikert
 			OR = {
 				owns_core_province = 2306 #Mush
-				owns_core_province = 2037 #Van
+				owns_core_province = 2307 #Van
 			}
 		}
 		effect = {
 			change_tag = ARM
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
-			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
 			}
 			armenia_area = {
 				limit = {

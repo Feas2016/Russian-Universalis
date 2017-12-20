@@ -230,20 +230,32 @@ capital = 50	# Berlin
 		dip = 3
 		mil = 2
 	}
-}
-
-1440.9.21 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = incorruptible_personality
+	add_heir_personality = inspiring_leader_personality
+	queen = {
+		country_of_origin = SAX
+		name = "Катерина"
+		dynasty = "фон Веттин"
+		birth_date = 1421.1.1
+		death_date = 1476.8.23
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
 	heir = {
 		name = "Альбрехт Ахиллес"
 		monarch_name = "Альбрехт III Ахиллес"
 		dynasty = "фон Гогенцоллерн"
 		birth_date = 1414.11.9
 		death_date = 1486.3.11
-		claim = 77
+		claim = 95
 		adm = 2
 		dip = 2
 		mil = 1
 	}
+	set_country_flag = albrecht_achilles_flag
 }
 
 1470.2.10 = {
@@ -255,6 +267,19 @@ capital = 50	# Berlin
 		dip = 2
 		mil = 1
 	}
+	queen = {
+		country_of_origin = SAX
+		name = "Анна"
+		dynasty = "фон Веттин"
+		birth_date = 1437.3.7
+		death_date = 1512.10.31
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
 }
 
 1470.8.2 = {
@@ -279,6 +304,17 @@ capital = 50	# Berlin
 		adm = 2
 		dip = 5
 		mil = 4
+	}
+	queen = {
+		country_of_origin = SAX
+		name = "Маргарет"
+		dynasty = "фон Веттин"
+		birth_date = 1449.1.1
+		death_date = 1501.7.13
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -309,6 +345,20 @@ capital = 50	# Berlin
 	}
 }
 
+1502.4.10 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Элизабет"
+		dynasty = "фон Ольденбург"
+		birth_date = 1485.6.24
+		death_date = 1555.6.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1505.1.13 = {
 	heir = {
 		name = "Иоахим Гектор"
@@ -333,6 +383,17 @@ capital = 50	# Berlin
 		adm = 3
 		dip = 2
 		mil = 2
+	}
+	queen = {
+		country_of_origin = POL
+		name = "Ядвига"
+		dynasty = "Ягеллон"
+		birth_date = 1513.3.15
+		death_date = 1573.2.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -366,6 +427,17 @@ capital = 50	# Berlin
 		mil = 3
 		leader = { name = "Иоганн Георг I"	type = general	fire = 2	shock = 3	manuever = 3	siege = 1}
 	}
+	queen = {
+		country_of_origin = ANS
+		name = "Сабина"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1529.5.12
+		death_date = 1575.11.2
+		female = yes
+		adm = 3
+		dip = 1
+		mil = 1
+	}
 }
 
 1571.1.3 = {
@@ -382,6 +454,20 @@ capital = 50	# Berlin
 	}
 }
 
+1577.10.6 = {
+	queen = {
+		country_of_origin = ANS
+		name = "Элизабет"
+		dynasty = "Аскани"
+		birth_date = 1563.9.15
+		death_date = 1607.11.8
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1598.1.9 = {
 	monarch = {
 		name = "Иоахим III Фридрих"
@@ -390,6 +476,18 @@ capital = 50	# Berlin
 		adm = 5
 		dip = 1
 		mil = 3
+	}
+
+	queen = {
+		country_of_origin = BRA
+		name = "Катерина"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1549.8.10
+		death_date = 1602.9.30
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -407,6 +505,20 @@ capital = 50	# Berlin
 	}
 }
 	
+1603.11.2 = {
+	queen = {
+		country_of_origin = PRU
+		name = "Элеанор"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1583.8.21
+		death_date = 1607.4.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+	
 1608.5.14 = {
 	join_league = protestant
 }
@@ -418,6 +530,17 @@ capital = 50	# Berlin
 		birth_date = 1572.11.8
 		adm = 3
 		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = PRU
+		name = "Анна"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1576.7.3
+		death_date = 1625.8.30
+		female = yes
+		adm = 3
+		dip = 4
 		mil = 2
 	}
 }
@@ -447,6 +570,17 @@ capital = 50	# Berlin
 		mil = 3
 		leader = { name = "Георг Вильгельм"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0}
 	}
+	queen = {
+		country_of_origin = PAL
+		name = "Элизабет Шарлотта"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1597.11.19
+		death_date = 1660.4.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
 
 1620.2.16 = {
@@ -474,9 +608,24 @@ capital = 50	# Berlin
 		mil = 5
 		leader = { name = "Георг Вильгельм I Великий Курфюрст"	type = general	fire = 3	shock = 3	manuever = 2	siege = 0}
 	}
+	add_army_professionalism = 0.2
 }
 
 1645.1.1 = { leader = {	name = "Отто фон Шпарр"		type = general	fire = 3	shock = 2	manuever = 2	siege = 2	death_date = 1668.5.9 } }
+
+1646.12.7 = {
+	queen = {
+		country_of_origin = NSA
+		name = "Луиза Генриетта"
+		dynasty = "фон Нассау"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
 
 1650.1.1 = { primary_culture = prussian }
 
@@ -498,6 +647,20 @@ capital = 50	# Berlin
 	}
 }
 
+1668.6.14 = {
+	queen = {
+		country_of_origin = SHL
+		name = "София Доротея"
+		dynasty = "фон Гольштейн-Готторп"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
 1670.1.1 = { leader = {	name = "Ф. фон Гессен-Гомбург"	type = general	fire = 2	shock = 4	manuever = 3	siege = 2	death_date = 1708.1.24 } }
 
 1688.5.10 = {
@@ -509,6 +672,17 @@ capital = 50	# Berlin
 		dip = 4
 		mil = 4
 		leader = { name = "Фридрих III"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0}
+	}
+	queen = {
+		country_of_origin = HAN
+		name = "София Шарлотта"
+		dynasty = "фон Ганновер"
+		birth_date = 1668.10.30
+		death_date = 1705.2.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
 	}
 }
 

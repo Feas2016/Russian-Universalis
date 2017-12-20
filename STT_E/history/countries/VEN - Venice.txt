@@ -10,6 +10,7 @@ fixed_capital = 112 # Cannot move capital away from this province & no power cos
 historical_friend = KNI
 
 national_focus = DIP
+add_army_professionalism = 0.05
 
 1289.11.25 = {
 	monarch = {
@@ -144,32 +145,29 @@ national_focus = DIP
 	}
 }
 
-1382.10.21 = {
+1382.1.1 = {
 	monarch = {
 		name = "Антонио Веньеро"
-		birth_date = 1330.1.1
 		adm = 2
 		dip = 2
 		mil = 3
 	}
 }
 
-1400.12.1 = {
+1400.1.1 = {
 	monarch = {
 		name = "Микеле Стено"
-		birth_date = 1331.1.1
 		adm = 3
 		dip = 1
 		mil = 2
 	}
 }
 
-1414.1.7 = {
+1414.1.1 = {
 	monarch = {
 		name = "Томассо Мочениго"
-		birth_date = 1343.1.1
 		adm = 2
-		dip = 2
+		dip = 1
 		mil = 0
 	}
 }
@@ -186,15 +184,15 @@ national_focus = DIP
 	}
 }
 
-1425.1.1 = { leader = {	name = "Франческо Карманьола" type = general rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1432.5.5 } }
+1425.1.1 = { leader = {	name = "Франческо Карманьола" type = general 	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1432.5.5 } }
 
-1438.1.1 = { leader = {	name = "Эразмо Гаттамелата"	type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1443.1.1 } }
+1438.1.1 = { leader = {	name = "Эразмо Гаттамелата"	type = admiral		fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1443.1.1 } }
 
 1451.1.1 = { leader = {	name = "Коллеони"              	type = general	fire = 5	shock = 3	manuever = 4	siege = 0	death_date = 1475.11.2 } }
 
-1453.1.1 = { leader = {	name = "Дж. Лоредан"            	type = admiral	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1467.1.1 } }
+1453.1.1 = { leader = {	name = "Дж. Лоредан"            type = admiral	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1467.1.1 } }
 
-1454.1.1 = { leader = {	name = "Каналь"                 	type = admiral	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1471.1.1 } }
+1454.1.1 = { leader = {	name = "Каналь"                 type = admiral	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1471.1.1 } }
 
 1457.10.24 = {
 	monarch = {

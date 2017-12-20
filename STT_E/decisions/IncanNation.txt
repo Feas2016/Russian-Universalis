@@ -60,18 +60,7 @@ country_decisions = {
 				limit = { tag = CHM }
 				set_country_flag = INC_used_to_be_CHM
 			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_rank = 3
 			change_tag = INC
 			change_religion = inti
@@ -115,7 +104,7 @@ country_decisions = {
 				}
 				add_permanent_claim = INC
 			}
-			### STT -2
+			### STT -1
 			cuyo_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

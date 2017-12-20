@@ -24,29 +24,28 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			###STT
-			num_of_owned_provinces_with = {
+			num_of_owned_provinces_with = {	### STT
 			    value = 30
 			    region = france_region
 			}
-			num_of_owned_provinces_with = {
+			num_of_owned_provinces_with = {	### STT
 			    value = 20
 			    region = balkan_region
 			}
-			num_of_owned_provinces_with = {
+			num_of_owned_provinces_with = {	### STT
 			    value = 20
 			    region = anatolia_region
 			}
-			num_of_owned_provinces_with = {
+			num_of_owned_provinces_with = {	### STT
 			    value = 20
 			    region = iberia_region
 			}
 ### delete nooooooob paradox's fantasy
 			owns = 341 # Tunis
-			owns = 358 # Alexandria
-			owns = 379 # Jerusalem
-			owns = 151 # Constantinople
-			owns = 146 # Athens
+			owns = 358 # Alexandria	### STT
+			owns = 379 # Jerusalem 	### STT
+			owns = 151 # Constantinople	### STT
+			owns = 146 # Athens	### STT
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -98,8 +97,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			### STT
-			add_ruler_modifier = {
+			add_ruler_modifier = {	### STT
 				name = "byz_ceasar"
 				duration = -1
 			}
@@ -110,7 +108,7 @@ country_decisions = {
 		}
 	}
 	
-form_the_latin_empire = {
+form_the_latin_empire = { 	### STT
 	major = yes
 	potential = {
 		owns = 151	# Constantinople
@@ -153,7 +151,7 @@ form_the_latin_empire = {
 	ai_importance = 10
 }
 
-byz_spqr = {
+byz_spqr = { 	### STT
 	major = yes
 	potential = {
 		OR = {

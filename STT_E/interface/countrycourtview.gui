@@ -765,7 +765,7 @@ guiTypes = {
 		iconType ={
 			name ="advisor_indicator_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= -24 y = -1 } #STT
+			position = { x= -24 y = -1 } ### STT
 			Orientation = "UPPER_LEFT"
 			scale = 0.9
 			allwaystransparent = yes
@@ -953,14 +953,14 @@ guiTypes = {
 		iconType ={
 			name ="advisor_indicator_religion"
 			spriteType = "GFX_advisor_indicator_religion"
-			position = { x= -41 y = 4 } #STT
+			position = { x= -41 y = 4 } ### STT
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType ={
 			name ="advisor_indicator_religion_icon"
 			spriteType = "GFX_province_view_religion"
-			position = { x= -47 y = -2 }
+			position = { x= -47 y = -2 } ### STT
 			Orientation = "UPPER_LEFT"
 			scale = 0.9
 			allwaystransparent = yes

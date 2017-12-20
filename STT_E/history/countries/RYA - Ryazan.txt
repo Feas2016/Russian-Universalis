@@ -1,10 +1,10 @@
-government = rus_government
-primary_culture = russian
+government = rus_government ### STT
+government_rank = 1
+primary_culture = russian ### STT
 religion = orthodox
 technology_group = eastern
 capital = 301	# Ryazan
 fixed_capital = 301 # Cannot move capital away from this province & no power cost to move to it
-government_rank = 1
 
 1372.1.1 = {
 	monarch = {
@@ -64,6 +64,9 @@ government_rank = 1
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = craven_personality
 }
 
 1454.1.1 = {

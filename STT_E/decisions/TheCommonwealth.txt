@@ -36,7 +36,7 @@ country_decisions = {
 				###STT
 				NOT = { num_of_cities = 52 } #Keep this number the same as in potential. Original 31 +10
 			}
-			adm_tech = 20
+			adm_tech = 20 #STT
 			is_subject = no
 			is_nomad = no
 			stability = 1
@@ -56,19 +56,7 @@ country_decisions = {
 				limit = { NOT = { accepted_culture = lithuanian } }
 				add_accepted_culture = lithuanian
 			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -166,7 +154,7 @@ country_decisions = {
 		}
 		allow = {
 			POL = { NOT = { num_of_cities = 24 } } #Keep this number the same as in potential. Original 14+10
-			adm_tech = 20
+			adm_tech = 20 #STT
 			is_subject = no
 			is_nomad = no
 			stability = 3
@@ -186,19 +174,7 @@ country_decisions = {
 				limit = { NOT = { accepted_culture = polish } }
 				add_accepted_culture = polish
 			}
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -296,7 +272,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 20 #STT
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			stability = 3
@@ -313,19 +289,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2

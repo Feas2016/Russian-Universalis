@@ -11,10 +11,10 @@ country_decisions = {
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			NOT = { tag = LIT } #STT
-			NOT = { tag = PLC } #STT
-			NOT = { tag = JAG } #STT
-			NOT = { tag = PLU } #STT
+			NOT = { tag = LIT }	### STT
+			NOT = { tag = PLC }	### STT
+			NOT = { tag = JAG }	### STT
+			NOT = { tag = PLU }	### STT
 			NOT = { exists = UKR }
 			OR = {
 				primary_culture = byelorussian
@@ -37,7 +37,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			#STT delete
+			### STT delete
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -78,19 +78,7 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = UKR
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					OR = {
@@ -100,14 +88,14 @@ country_decisions = {
 				}
 				set_government_and_rank = {
 					government = tsardom
-					rank = 2 #stt
+					rank = 2	### STT
 				}
 			}
 			else_if = {
-				limit = { #STT
+				limit = {	### STT
 					government_rank = 1
 				}
-				set_government_rank = 2 #STT
+				set_government_rank = 2	### STT
 			}
 			set_country_flag = formed_ruthenia_flag
 			if = {

@@ -1,20 +1,21 @@
-government = iqta
+government = feudal_theocracy
 primary_culture = omani_culture
 religion = ibadi
 technology_group = muslim
-capital = 400	# Muscat
+capital = 400	# Muscat ### STT
+government_rank = 1
+religious_school = hanbali_school
 
-#Rulers of Suhar
+#Nabhan dynasty
 
-1380.1.1 = {
+1406.1.1 = {
 	monarch = {
 		name = "Махзум"
 		dynasty = "Набхан"
-		adm = 1
+		adm = 3
 		dip = 1
 		mil = 2
 	}
-	add_piety = -0.1
 }
 
 1430.1.1 = {
@@ -167,13 +168,11 @@ capital = 400	# Muscat
 	monarch = {
 		name = "Баракат"
 		dynasty = "Набхан"
-		adm = 3
-		dip = 3
+		adm = 0
+		dip = 2
 		mil = 2
 	}
 }
-
-#Rulers of Suhar
 
 1560.1.1 = {
 	monarch = {

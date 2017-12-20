@@ -35,7 +35,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 18
+			adm_tech = 18 #STT
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -46,20 +46,11 @@ country_decisions = {
 			owns_core_province = 251		# Aberdeen
 		}
 		effect = {
-			change_tag = GBR
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+			236 = {
+				move_capital_effect = yes
 			}
+			change_tag = GBR
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -73,10 +64,6 @@ country_decisions = {
 				add_permanent_claim = GBR
 			}
 			add_prestige = 25
-			
-			GBR = {
-				set_capital = 236
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
@@ -176,18 +163,7 @@ country_decisions = {
 				inherit = ENG
 			}
 			change_tag = GBR
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }

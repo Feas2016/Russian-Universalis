@@ -3,11 +3,9 @@ primary_culture = portugese
 religion = catholic
 technology_group = western
 historical_friend = SPA
-historical_neutral = ARA
 historical_friend = CAS
 capital = 227 # Lisboa
-
-
+add_army_professionalism = 0.05
 national_focus = DIP
 
 1139.7.26 = {
@@ -158,19 +156,19 @@ national_focus = DIP
 
 1385.4.1 = { leader = {	name = "Нуну Альвареш Перейра"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
 
-1415.4.1 = { leader = {	name = "Инфантес"		type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
+1415.4.1 = { leader = {	name = "Инфантес"		type = general			fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
 
-1417.1.1 = { leader = {	name = "Жуан Гонсалвиш Зарку"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1417.1.1 = { leader = {	name = "Жуан Гонсалвиш Зарку"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
-1417.1.1 = { leader = {	name = "Тристау Ваш Тейксейра"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
+1417.1.1 = { leader = {	name = "Тристау Ваш Тейксейра"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
 
-1418.1.1 = { leader = {	name = "Бартоломеу Перестрелу"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1418.1.1 = { leader = {	name = "Бартоломеу Перестрелу"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
-1426.1.1 = { leader = {	name = "Диогу де Силвеш"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1426.1.1 = { leader = {	name = "Диогу де Силвеш"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
-1432.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
+1432.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
 
-1433.8.14 = {
+1433.8.14 = { ### STT
 	monarch = {
 		name = "Дуарте I"
 		dynasty = "де Авис"
@@ -181,17 +179,31 @@ national_focus = DIP
 	}
 }
 
-1433.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
+1433.1.1 = {
+	heir = {
+		name = "Альфонсо"
+		monarch_name = "Альфонсо V"
+		dynasty = "де Авис"
+		birth_date = 1432.1.15
+		death_date = 1481.8.28
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
 
-1434.1.1 = { leader = {	name = "Афонсу Гонсалвиш Балдая" type = explorer rank = 6	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1433.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
 
-1435.1.1 = { leader = {	name = "Уир из Авранша"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
+1434.1.1 = { leader = {	name = "Афонсу Гонсалвиш Балдая" type = explorer	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+
+1435.1.1 = { leader = {	name = "Уир из Авранша"	type = general				fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 
 1438.9.10 = {
 	monarch = {
 		name = "Инфанте Педру"
 		dynasty = "де Авис"
-		birth_date = 1392.12.9
+		birth_date = 1392.12.9 ### STT
 		regent = yes
 		adm = 4
 		dip = 2
@@ -212,9 +224,11 @@ national_focus = DIP
 		mil = 2
 		leader = {	name = "Афонсу V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = expansionist_personality
 }
 
-1443.1.1 = { leader = {	name = "Диогу Гомеш"		type = explorer 	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
+1443.1.1 = { leader = {	name = "Диогу Гомеш"	type = explorer 	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
 
 1448.6.9 = {
 	monarch = {
@@ -237,6 +251,8 @@ national_focus = DIP
 		dip = 1
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = expansionist_personality
 }
 
 #1441.1.1 = { leader = {	name = "Нуну Триштан"		type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
@@ -265,9 +281,9 @@ national_focus = DIP
 
 1460.1.1 = { leader = { name = "Педро де Синтра"	type = explorer		fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1463.1.1 } }
 
-1469.1.1 = { leader = {	name = "Фернанду Пессоа"          	type = explorer	0	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
+1469.1.1 = { leader = {	name = "Фернанду Пессоа"    type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
 
-1471.1.1 = { leader = { name = "Руй де Секейра"	type = explorer		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
+1471.1.1 = { leader = { name = "Руй де Секейра"		type = explorer		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
 
 1475.5.30 = {
 	queen = {
@@ -283,7 +299,7 @@ national_focus = DIP
 	}
 }
 
-1480.1.1 = { leader = {	name = "Диогу Кан"             	type = explorer	0	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
+1480.1.1 = { leader = {	name = "Диогу Кан"          type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
 
 1481.1.1 = { government = despotic_monarchy }
 
@@ -325,9 +341,9 @@ national_focus = DIP
 
 1482.1.1 = { leader = { name = "Диогу де Азамбужа"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1486.1.1 } }
 
-1487.1.1 = { leader = {	name = "Бартоломеу Диаш"       	type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
+1487.1.1 = { leader = {	name = "Бартоломеу Диаш"    type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
 
-1487.5.7 = { leader = {	name = "Перу да Ковильян"       	type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
+1487.5.7 = { leader = {	name = "Перу да Ковильян"   type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
 
 1495.10.17 = {
 	monarch = {
@@ -340,7 +356,7 @@ national_focus = DIP
 	}
 }
 
-1497.7.8 = { leader = {	name = "Васко да Гама"         	type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
+1497.7.8 = { leader = {	name = "Васко да Гама"      type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
 
 1497.9.30 = {
 	queen = {
@@ -382,7 +398,7 @@ national_focus = DIP
 
 #1501.1.1 = { decision = house_of_trade }
 
-1501.1.1 = { leader = { name = "Америго Веспуччи"	type = explorer	1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1501.1.1 = { leader = { name = "Америго Веспуччи"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
 1502.1.1 = { leader = { name = "Гашпар де Лемуш"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
@@ -996,7 +1012,7 @@ national_focus = DIP
 	}
 }
 
-1837.9.16 = {
+1853.11.15 = {
 	heir = {
 		name = "Луиш"
 		monarch_name = "Луиш I"
@@ -1014,7 +1030,7 @@ national_focus = DIP
 	monarch = {
 		name = "Луиш I"
 		dynasty = "де Браганса-Кобург"
-		birth_date = 1837.9.16
+		birth_date = 1838.10.31
 		adm = 1
 		dip = 2
 		mil = 2

@@ -119,18 +119,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = JAP
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			add_legitimacy = 100
@@ -303,7 +292,7 @@ country_decisions = {
 	restore_the_shrine_of_ise = {
 		potential = {
 			religion = shinto
-			1030 = {
+			1030 = { #STT
 				NOT = {
 					has_province_modifier = ise_grand_shrine
 				}
@@ -311,8 +300,8 @@ country_decisions = {
 		}
 		allow = {
 			treasury = 300
-			owns = 1030
-			1030 = {
+			owns = 1030 #STT
+			1030 = { #STT
 				NOT = {
 					has_province_modifier = ise_grand_shrine
 				}
@@ -321,7 +310,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -300
 			add_prestige = 20
-			1030 = {
+			1030 = { #STT
 				if = {
 					limit = {
 						has_province_modifier = religious_center

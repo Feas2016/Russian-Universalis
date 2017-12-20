@@ -87,6 +87,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 1487.7.16 = {
 	monarch = {
 		name = "Иоганн III фон Гран"
+		culture = hungarian
 		birth_date = 1435.1.1
 		adm = 3
 		dip = 3
@@ -126,6 +127,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 	monarch = {
 		name = "Маттиас фон Велленбург"
 		birth_date = 1468.1.1
+		culture = swabian
 		adm = 2
 		dip = 3
 		mil = 2
@@ -137,6 +139,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 	monarch = {
 		name = "Эрнст Баварский"
 		birth_date = 1500.6.13
+		culture = bavarian
 		adm = 0
 		dip = 2
 		mil = 0
@@ -293,12 +296,12 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 	}
 }
 
-1803.2.11 = { government = constitutional_monarchy }
+1803.2.11 = { government = constitutional_monarchy } ### STT
 
 1803.2.11 = {
 	monarch = {
 		name = "Фердинанд III"
-		dynasty = "фон Габсбург-Лотаринген"
+		dynasty = "фон Габсбург-Лотаринген" ### STT
 		birth_date = 1769.5.6
 		adm = 0
 		dip = 1

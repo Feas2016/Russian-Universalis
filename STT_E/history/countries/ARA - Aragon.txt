@@ -1,12 +1,12 @@
 government = feudal_monarchy
-government_rank = 1
+government_rank = 1 ### STT
 primary_culture = aragonese
 add_accepted_culture = catalan
 add_accepted_culture = sicilian
 religion = catholic
 technology_group = western
-historical_neutral = POR
 capital = 220 # Valencia
+add_army_professionalism = 0.05
 
 781.1.1 = {
 	monarch = {
@@ -388,7 +388,6 @@ capital = 220 # Valencia
 	monarch = {
 		name = "Мартин I"
 		dynasty = "де Барселона"
-		birth_date = 1356.7.29
 		adm = 2
 		dip = 2
 		mil = 3
@@ -409,7 +408,6 @@ capital = 220 # Valencia
 	monarch = {
 		name = "Фердинанд I"
 		dynasty = "де Трастамара"
-		birth_date = 1380.11.27
 		adm = 2
 		dip = 1
 		mil = 2
@@ -440,9 +438,10 @@ capital = 220 # Valencia
 		mil = 6
 		leader = {	name = "Альфонсо V"	type = general	fire = 4	shock = 3	manuever = 4	siege = 1 }
 	}
-}
 
-1416.4.2 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = architectural_visionary_personality
 	heir = {
 		name = "Хуан"
 		monarch_name = "Хуан II"
@@ -453,6 +452,17 @@ capital = 220 # Valencia
 		adm = 4
 		dip = 1
 		mil = 0
+	}
+	queen = {
+		country_of_origin = CAS
+		name = "Мария"
+		dynasty = "де Трастамара"
+		birth_date = 1401.9.14
+		death_date = 1458.9.7
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 3
 	}
 }
 
@@ -466,6 +476,17 @@ capital = 220 # Valencia
 		adm = 4
 		dip = 1
 		mil = 0
+	}
+	queen = {
+		country_of_origin = CAS
+		name = "Жуана Энриез"
+		dynasty = "де Курдоба"
+		birth_date = 1425.1.1
+		death_date = 1468.2.13
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -493,6 +514,21 @@ capital = 220 # Valencia
 		mil = 5
 		leader = {	name = "Фердинанд II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	queen = {
+		country_of_origin = CAS
+		name = "Изабелла"
+		dynasty = "де Трастамара"
+		birth_date = 1451.4.22
+		death_date = 1504.11.26
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = martial_educator_personality
 }
 
 1495.7.1 = { leader = {	name = "Просперо Колонна"      	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1516.1.23 } }
@@ -507,4 +543,4 @@ capital = 220 # Valencia
 
 1724.1.20 = { government = administrative_monarchy }
 
-#1759.8.12 = { government = absolute_monarchy }
+1759.8.12 = { government = despotic_monarchy }

@@ -6,11 +6,15 @@ add_accepted_culture = flemish
 religion = catholic
 capital = 92 # Brabant
 
+#1477.1.5 = {
+#	government_rank = 1
+#}
+
 1559.1.1 = {
 	monarch = {
 		name = "Вильгельм I"
+		culture = hessian
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1533.4.24
 		adm = 5
 		dip = 4
 		mil = 5
@@ -19,20 +23,6 @@ capital = 92 # Brabant
 }
 
 1565.1.1 = { leader = {	name = "Блойс ван Треслонг"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1594.1.1 } }
-
-1567.11.14 = {
-	heir = {
-		name = "Мориц"
-		monarch_name = "Мориц"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1567.11.14
-		death_date = 1625.4.23
-		claim = 95
-		adm = 5
-		dip = 5
-		mil = 6
-	}
-}
 
 1568.5.23 = { leader = { name = "Людовик ван Нассау"	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1574.4.14 } }
 
@@ -67,7 +57,7 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Мориц I"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1567.11.14
+		culture = hessian
 		adm = 5
 		dip = 5
 		mil = 6
@@ -115,7 +105,6 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Фредерик-Генрих"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1584.1.29
 		adm = 3
 		dip = 2
 		mil = 3
@@ -139,7 +128,6 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Вильгельм II"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1626.5.27
 		adm = 5
 		dip = 3
 		mil = 3
@@ -177,11 +165,10 @@ capital = 92 # Brabant
 
 1668.1.17 = { leader = { name = "Пауль Виртц"		type = general		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1675.3.26 } }
 
-1650.11.6 = {
+1672.6.28 = {
 	monarch = {
 		name = "Вильгельм III"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1650.11.4
 		adm = 6
 		dip = 4
 		mil = 4
@@ -221,7 +208,6 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Вильгельм IV"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1711.9.1
 		adm = 3
 		dip = 1
 		mil = 2
@@ -235,7 +221,6 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Вильгельм V"
 		dynasty = "ван Оранье-Нассау"
-		birth_date = 1748.4.8
 		adm = 3
 		dip = 2
 		mil = 2
@@ -257,11 +242,12 @@ capital = 92 # Brabant
 	government_rank = 1
 }
 
-1805.4.29 = {
+1799.1.1 = { leader = { name = "Давид Хендрик Чассы"		type = general	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
+
+1805.1.1 = {
 	monarch = {
 		name = "Рутгер Ян"
 		dynasty = "Шиммельпенинг"
-		birth_date = 1761.10.31
 		adm = 2
 		dip = 2
 		mil = 2
@@ -274,7 +260,8 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Людовик I"
 		dynasty = "Бонапарт"
-		birth_date = 1778.9.5
+		culture = sardinian #Corsican
+		religion = catholic
 		adm = 3
 		dip = 3
 		mil = 2
@@ -283,25 +270,12 @@ capital = 92 # Brabant
 	government_rank = 2
 }
 
-1806.6.5 = {
-	heir = {
-		name = "Наполеон Луи"
-		monarch_name = "Людовик II"
-		dynasty = "Бонапарт"
-		birth_date = 1804.10.1
-		death_date = 1831.3.17
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-}
-
 1810.7.1 = {
 	monarch = {
 		name = "Людовик II"
+		culture = sardinian #Corsican
+		religion = catholic
 		dynasty = "Бонапарт"
-		birth_date = 1804.10.1
 		adm = 3
 		dip = 3
 		mil = 2
@@ -312,7 +286,6 @@ capital = 92 # Brabant
 	monarch = {
 		name = "Виллем I"
 		dynasty = "ван Оранье-Нассау"
-        birth_date = 1772.8.24
 		adm = 3
 		dip = 3
 		mil = 2
@@ -436,85 +409,6 @@ capital = 92 # Brabant
 		adm = 3
 		dip = 4
 		mil = 2
-		female = yes
-	}
-}
-
-1948.9.4 = {
-	monarch = {
-		name = "Юлиана"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1909.4.30
-		adm = 3
-		dip = 4
-		mil = 2
-		female = yes
-	}
-}
-
-1948.9.4 = {
-	heir = {
-		name = "Беатрикс"
-		monarch_name = "Беатрикс"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1938.1.31
-		death_date = 3000.1.1
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-		female = yes
-	}
-}
-
-1980.4.30 = {
-	monarch = {
-		name = "Беатрикс"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1938.1.31
-		adm = 4
-		dip = 4
-		mil = 3
-		female = yes
-	}
-}
-
-1980.4.30 = {
-	heir = {
-		name = "Виллем-Александр"
-		monarch_name = "Виллем-Александр"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1967.4.27
-		death_date = 3000.1.1
-		claim = 95
-		adm = 3
-		dip = 5
-		mil = 3
-	}
-}
-
-2013.4.30 = {
-	monarch = {
-		name = "Виллем-Александр"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 1967.4.27
-		adm = 3
-		dip = 5
-		mil = 3
-	}
-}
-
-2013.4.30 = {
-	heir = {
-		name = "Катарина-Амалия"
-		monarch_name = "Катарина-Амалия"
-		dynasty = "ван Оранье-Нассау"
-		birth_date = 2003.12.7
-		death_date = 3000.1.1
-		claim = 95
-		adm = 4
-		dip = 3
-		mil = 3
 		female = yes
 	}
 }

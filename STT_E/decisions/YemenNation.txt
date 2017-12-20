@@ -47,38 +47,26 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = YEM
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			yemen_area = {
+			yemen_area = {	### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = YEM
 			}
-			# upper_yemen_area = { #STT
+			# upper_yemen_area = {	### STT
 				# limit = {
 					# NOT = { owned_by = ROOT }
 					# NOT = { is_core = ROOT }
 				# }
 				# add_permanent_claim = YEM
 			# }
-			# tihama_al_yemen_area = { #STT
+			# tihama_al_yemen_area = {	### STT
 				# limit = {
 					# NOT = { owned_by = ROOT }
 					# NOT = { is_core = ROOT }

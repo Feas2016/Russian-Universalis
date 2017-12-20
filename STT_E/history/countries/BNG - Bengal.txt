@@ -3,6 +3,7 @@ primary_culture = bengali
 religion = sunni
 technology_group = indian
 capital = 563	# Pandua
+religious_school = hanafi_school
 
 #Sultans of Bengal
 1390.1.1 = {
@@ -156,9 +157,9 @@ capital = 563	# Pandua
 		DIP = 2
 		MIL = 2
 	}
-}
-
-1435.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = architectural_visionary_personality
+	add_heir_personality = bold_fighter_personality
 	heir = {
 		name = "Рукн ад-Дин Барбак"
 		monarch_name = "Рукн ад-Дин Барбак"
@@ -166,9 +167,9 @@ capital = 563	# Pandua
 		birth_date = 1430.1.1
 		death_date = 1474.1.1
 		claim = 95
-		ADM = 0
-		DIP = 1
-		MIL = 0
+		ADM = 4
+		DIP = 4
+		MIL = 5
 	}
 }
 
@@ -176,10 +177,14 @@ capital = 563	# Pandua
 	monarch = {
 		name = "Рукн ад-Дин Барбак"
 		dynasty = "Ильяс"
-		ADM = 0
-		DIP = 1
-		MIL = 0
+		ADM = 4
+		DIP = 4
+		MIL = 5
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = tolerant_personality
 }
 
 1459.1.1 = {
@@ -204,9 +209,9 @@ capital = 563	# Pandua
 		DIP = 1
 		MIL = 2
 	}
-}
-
-1474.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_heir_personality = babbling_buffoon_personality
 	heir = {
 		name = "Сикандар"
 		monarch_name = "Сикандар II"
@@ -228,9 +233,9 @@ capital = 563	# Pandua
 		DIP = 1
 		MIL = 1
 	}
-}
-
-1481.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
+	add_heir_personality = tolerant_personality
 	heir = {
 		name = "Джалаль ад-Дин Фатх"
 		monarch_name = "Джалаль ад-Дин Фатх"
@@ -252,6 +257,9 @@ capital = 563	# Pandua
 		DIP = 2
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = tolerant_personality
 }
 
 1487.1.1 = {
@@ -262,6 +270,8 @@ capital = 563	# Pandua
 		DIP = 0
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
 }
 
 1487.1.1 = {
@@ -286,6 +296,8 @@ capital = 563	# Pandua
 		DIP = 0
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
 }
 
 1488.1.1 = {
@@ -334,6 +346,9 @@ capital = 563	# Pandua
 		DIP = 0
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = malevolent_personality
 }
 
 #Coup by Wazir of Shams-ud-Din Muzaffar Shah
@@ -346,6 +361,10 @@ capital = 563	# Pandua
 		DIP = 2
 		MIL = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = tolerant_personality
 }
 
 1500.1.1 = {
@@ -370,6 +389,8 @@ capital = 563	# Pandua
 		DIP = 2
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
 }
 
 1519.1.1 = {
@@ -418,6 +439,8 @@ capital = 563	# Pandua
 		DIP = 1
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 #Suri Dynasty
@@ -426,17 +449,24 @@ capital = 563	# Pandua
 	monarch = {
 		name = "Шер Шах"
 		dynasty = "Сури"
+		culture = afghani
 		ADM = 6
 		DIP = 4
 		MIL = 6
 	leader = {	name = "Шер Шах"	type = general	fire = 2	shock = 5	manuever = 5	siege = 2}
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = strict_personality
+	add_accepted_culture = avadhi
 }
 
 1538.4.1 = {
 	heir = {
 		name = "Ислам Шах"
 		monarch_name = "Ислам Шах"
+		culture = afghani
 		dynasty = "Сури"
 		birth_date = 1510.1.1
 		death_date = 1545.4.23
@@ -445,6 +475,14 @@ capital = 563	# Pandua
 		DIP = 2
 		MIL = 3
 	}
+}
+
+1540.1.1 = {
+	add_accepted_culture = kanauji
+}
+
+1544.1.1 = {
+	add_accepted_culture = panjabi
 }
 
 1545.5.22 = {
@@ -479,6 +517,9 @@ capital = 563	# Pandua
 		DIP = 3
 		MIL = 1
 	}
+	remove_accepted_culture = panjabi
+	remove_accepted_culture = avadhi
+	remove_accepted_culture = kanauji
 }
 
 1553.1.1 = {

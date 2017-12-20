@@ -3,17 +3,179 @@ government_rank = 1
 primary_culture = japanese
 religion = shinto
 technology_group = chinese
-capital = 1839	# Suruga
+capital = 1839	# Suruga ### STT
 	
-1575.7.9 = { 
+1440.6.14 = { 
 	monarch = {
+		name = "Нобумитсу"
+		dynasty = "Матсудайра"
+		birth_date = 1404.1.1
+		death_date = 1488.8.29
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = tactical_genius_personality
+}
+
+1440.6.14 = {
+	heir = {
+		name = "Чикатэда"
+		monarch_name = "Чикатэда"
+		dynasty = "Матсудайра"
+		birth_date = 1431.1.1
+		death_date = 1501.9.22
+		claim = 90
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1488.8.29 = { 
+	monarch = {
+		name = "Чикатэда"
+		dynasty = "Матсудайра"
+		birth_date = 1431.1.1
+		death_date = 1501.9.22
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1488.8.29 = {
+	heir = {
+		name = "Нагачика"
+		monarch_name = "Нагачика"
+		dynasty = "Матсудайра"
+		birth_date = 1473.1.1
+		death_date = 1544.9.9
+		claim = 90
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1501.9.22 = { 
+	monarch = {
+		name = "Нагачика"
+		dynasty = "Матсудайра"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1501.9.22 = {
+	heir = {
+		name = "Нобутада"
+		monarch_name = "Нобутада"
+		dynasty = "Матсудайра"
+		birth_date = 1490.1.1
+		death_date = 1531.9.8
+		claim = 90
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1503.1.1 = { 
+	monarch = {
+		name = "Нобутада"
+		dynasty = "Матсудайра"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1511.9.28 = {
+	heir = {
+		name = "Киёясу"
+		monarch_name = "Киёясу"
+		dynasty = "Матсудайра"
+		birth_date = 1511.9.28
+		death_date = 1535.12.29
+		claim = 90
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1523.1.1 = { 
+	monarch = {
+		name = "Киёясу"
+		dynasty = "Матсудайра"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1526.6.9 = {
+	heir = {
+		name = "Хиротада"
+		monarch_name = "Хиротада"
+		dynasty = "Матсудайра"
+		birth_date = 1526.6.9
+		death_date = 1549.4.3
+		claim = 90
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1535.12.29 = { 
+	monarch = {
+		name = "Хиротада"
+		dynasty = "Матсудайра"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1543.1.31 = {
+	heir = {
 		name = "Иэясу"
+		monarch_name = "Иэясу"
 		dynasty = "Токугава"
-#		birth_date = 1543.1.31
-#		death_date = 1616.5.22
+		birth_date = 1543.1.31
+		death_date = 1616.5.22
+		claim = 90
 		adm = 6
 		dip = 5
 		mil = 5
+	}
+}
+
+1549.4.3 = { 
+	monarch = {
+		name = "Иэясу"
+		dynasty = "Токугава"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}
+
+1559.4.13 = {
+	heir = {
+		name = "Нобуяси"
+		monarch_name = "Нобуяси"
+		dynasty = "Токугава"
+		birth_date = 1559.4.13
+		death_date = 1579.10.5
+		claim = 90
+		adm = 4
+		dip = 3
+		mil = 4
 	}
 }
 
@@ -33,11 +195,16 @@ capital = 1839	# Suruga
 
 1590.8.10   = { capital = 1028 } # Musashi (Edo)
 
+1603.3.24 = {
+	government = shogunate
+	government_rank = 2
+}
+
 1616.5.22 = { 
 	monarch = {
 		name = "Хидэтада"
 		dynasty = "Токугава"
-#		birth_date = 1579.5.2
+		birth_date = 1579.5.2
 #		death_date = 1632.3.14
 		adm = 5
 		dip = 4
@@ -63,7 +230,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэмицу"
 		dynasty = "Токугава"
-#		birth_date = 1604.8.12
+		birth_date = 1604.8.12
 #		death_date = 1651.6.8
 		adm = 4
 		dip = 3
@@ -89,7 +256,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэцуна"
 		dynasty = "Токугава"
-#		birth_date = 1641.9.7
+		birth_date = 1641.9.7
 #		death_date = 1680.6.4
 		adm = 3
 		dip = 3
@@ -115,7 +282,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Цунаёси"
 		dynasty = "Токугава"
-#		birth_date = 1646.2.23
+		birth_date = 1646.2.23
 #		death_date = 1709.2.9
 		adm = 4
 		dip = 3
@@ -141,7 +308,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэнобу"
 		dynasty = "Токугава"
-#		birth_date = 1662.6.11
+		birth_date = 1662.6.11
 #		death_date = 1712.11.12
 		adm = 4
 		dip = 3
@@ -167,7 +334,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэцугу"
 		dynasty = "Токугава"
-#		birth_date = 1709.8.8
+		birth_date = 1709.8.8
 #		death_date = 1716.6.19
 		adm = 3
 		dip = 3
@@ -179,7 +346,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Ёсимунэ"
 		dynasty = "Токугава"
-#		birth_date = 1684.11.17
+		birth_date = 1684.11.17
 #		death_date = 1751.7.12
 		adm = 4
 		dip = 3
@@ -205,7 +372,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэсигэ"
 		dynasty = "Токугава"
-#		birth_date = 1712.7.28
+		birth_date = 1712.7.28
 #		death_date = 1761.7.13
 		adm = 2
 		dip = 2
@@ -231,7 +398,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэхару"
 		dynasty = "Токугава"
-#		birth_date = 1737.6.20
+		birth_date = 1737.6.20
 #		death_date = 1786.9.17
 		adm = 2
 		dip = 2
@@ -257,7 +424,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэнари"
 		dynasty = "Токугава"
-#		birth_date = 1773.11.18
+		birth_date = 1773.11.18
 #		death_date = 1841.2.27
 		adm = 2
 		dip = 2
@@ -283,7 +450,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэёси"
 		dynasty = "Токугава"
-#		birth_date = 1793.6.22
+		birth_date = 1793.6.22
 #		death_date = 1853.7.27
 		adm = 2
 		dip = 2
@@ -309,7 +476,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэёси"
 		dynasty = "Токугава"
-#		birth_date = 1824.5.6
+		birth_date = 1824.5.6
 #		death_date = 1858.8.14
 		adm = 2
 		dip = 2
@@ -321,7 +488,7 @@ capital = 1839	# Suruga
 	monarch = {
 		name = "Иэсигэ"
 		dynasty = "Токугава"
-#		birth_date = 1846.7.17
+		birth_date = 1846.7.17
 #		death_date = 1866.8.29
 		adm = 2
 		dip = 2

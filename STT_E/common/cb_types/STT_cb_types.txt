@@ -22,16 +22,19 @@ cb_panslavism = {
 		OR = {
 			culture_group = west_slavic
 			culture_group = east_slavic
+			culture_group = stt_sla
 		}
 		FROM = {
 			NOT = { culture_group = west_slavic }
 			NOT = { culture_group = east_slavic }
 			NOT = { culture_group = south_slavic }
+			NOT = { culture_group = stt_sla }
 			any_owned_province = {
 				OR = {
 					culture_group = west_slavic
 					culture_group = east_slavic
 					culture_group = south_slavic
+					culture_group = stt_sla
 				}
 			}
 		}
@@ -53,7 +56,7 @@ cb_sack_of_rome = {
 	}
 	
 	attacker_disabled_po = {
-		po_annex
+		po_release_annexed
 		po_demand_provinces
 		po_become_vassal
 		po_become_tributary_state

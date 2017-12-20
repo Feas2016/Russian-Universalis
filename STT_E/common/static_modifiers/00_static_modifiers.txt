@@ -68,7 +68,7 @@ difficulty_hard_ai = {
 	manpower_recovery_speed = 0.50
 	global_unrest = -1
 	war_exhaustion = -0.05
-	interest = -2
+	interest = -1
 	ae_impact = -0.33
 }
 
@@ -84,7 +84,7 @@ difficulty_very_hard_ai = {
 	war_exhaustion = -0.05
 	core_creation = -0.25
 	idea_cost = -0.25
-	interest = -2
+	interest = -1
 	improve_relation_modifier = 0.5
 	development_cost = -0.2
 	build_cost = -0.25
@@ -549,6 +549,8 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	global_trade_goods_size_modifier = -0.5
 	fire_damage_received = 0.5
 	shock_damage_received = 0.5
+	global_unrest = 5
+	possible_mercenaries = -1
 }
 
 lost_mandate_of_heaven = {
@@ -560,6 +562,7 @@ lost_mandate_of_heaven = {
 	shock_damage_received = 0.5
 	reduced_liberty_desire = -50
 	legitimacy = -1
+	possible_mercenaries = -1
 }
 
 cancelled_loan = {
@@ -828,7 +831,7 @@ recovery_motivation = {
 	army_tradition = 1
 	navy_tradition = 1
 	global_unrest = -5
-	interest = -2
+	interest = -1
 	horde_unity = 10
 }
 
@@ -1500,11 +1503,15 @@ zaidi_scholar_modifier = {
 ########################################
 # Regiment Types Modifiers
 ########################################
-army_drill_modifier = {
+regiment_drill_modifier = { # Used by individual regiments
 	shock_damage = 0.1
 	fire_damage = 0.1
 	fire_damage_received = -0.1
 	shock_damage_received = -0.1
+}
+
+army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
+	movement_speed = 0.2
 }
 
 janissary_regiment = {

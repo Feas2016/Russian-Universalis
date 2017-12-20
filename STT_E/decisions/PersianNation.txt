@@ -60,19 +60,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PER
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_and_rank = {
 				government = feudal_theocracy
 				rank = 2 #STT
@@ -89,14 +77,11 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			
-			change_primary_culture = persian
 			if = {
 				limit = {
-					technology_group = nomad_group
+					NOT = { primary_culture = persian }
 				}
-				change_technology_group = muslim
-				change_unit_type = muslim
+				change_primary_culture = persian
 			}
 			set_country_flag = formed_persia_flag
 			if = {

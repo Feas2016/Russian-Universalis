@@ -1,5 +1,4 @@
 government = feudal_monarchy
-government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = sicilian
@@ -39,7 +38,7 @@ capital = 125	# Palermo
 }
 
 1130.9.27 = {
-government_rank = 2
+	government_rank = 2
 }
 
 1154.2.26 = {
@@ -254,11 +253,10 @@ government_rank = 2
 	}
 }
 
-1377.1.27 = {
+1377.1.28 = {
 	monarch = {
 		name = "Мария I"
 		dynasty = "де Барселона"
-		birth_date = 1363.6.2
 		adm = 3
 		dip = 4
 		mil = 2
@@ -312,7 +310,7 @@ government_rank = 2
 
 1458.7.28 = {
 	monarch = {
-		name = "(Вакантно)
+		name = "(Вакантно)"
 		adm = 3
 		dip = 3
 		mil = 3
@@ -327,7 +325,7 @@ government_rank = 2
 		adm = 4
 		dip = 6
 		mil = 5
-		leader = { name = "Виктор Амадей II" type = general rank = 0 fire = 4 shock = 4 manuever = 2 siege = 2 }
+		leader = { name = "Виктор Амадей II" type = general fire = 4 shock = 4 manuever = 2 siege = 2 }
 	}
 }
 

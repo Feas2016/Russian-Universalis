@@ -18,6 +18,9 @@ fixed_capital = 533 # Cannot move capital away from this province & no power cos
 		DIP = 1
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = intricate_web_weaver_personality
 }
 
 #Wodeyar dynasty before gaining control of Mysore:
@@ -454,10 +457,12 @@ fixed_capital = 533 # Cannot move capital away from this province & no power cos
 		ADM = 3
 		DIP = 3
 		MIL = 5
+		religion = sunni
 		leader = {	name = "Хайдар Али"          	type = general	fire = 4	shock = 4	manuever = 3	siege = 1 }
 	}
 	religion = sunni
 	government = iqta
+	religious_school = hanafi_school
 }
 
 1761.6.3 = {
@@ -485,6 +490,7 @@ fixed_capital = 533 # Cannot move capital away from this province & no power cos
 		MIL = 6
 		leader = {	name = "Типу Султан"          	type = general	fire = 5	shock = 5	manuever = 3	siege = 1 }
 	}
+	add_army_professionalism = 0.3
 }
 
 1799.5.5 = {

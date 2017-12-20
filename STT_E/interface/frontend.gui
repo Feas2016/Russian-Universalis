@@ -1403,41 +1403,6 @@ guiTypes = {
 			}
 			
 			windowType = {
-			name ="important_message_window"
-			backGround=""
-			position = { x = -170 y = 300 }
-			size = { x=340 y =100}
-			moveable = 0
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			upsound = ""
-			downsound = ""
-			fullscreen=no
-			Orientation = "CENTER_UP"	
-			
-				iconType =
-				{
-					name ="frontend_paper_bg"
-					spriteType = "GFX_hotjoininfo_bg"
-					position = { x= 6 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
-				
-				instantTextBoxType = {
-					name = "important_message"
-					position = { x = 0 y = 20 }
-					
-					font = "vic_22s"
-					borderSize = {x = 4 y = 4}
-					text = "HOST_PREPARING_GAME"	
-					maxWidth = 340
-					maxHeight = 30	
-					format = centre
-				}	
-			}
-				
-			windowType = {		
 				name ="top"
 				backGround=""
 				position = { x=0 y =0}
@@ -1665,6 +1630,14 @@ guiTypes = {
 						maxWidth = 180
 						maxHeight = 24	
 						format = centre
+					}					
+					
+					guiButtonType = {
+						name = "create_team_button"
+						position = { x = -20 y = 20 }
+						quadTextureSprite = "GFX_frontend_create_team"
+						Orientation = "UPPER_LEFT"
+						clicksound = click
 					}					
 					
 					listboxType = 
@@ -2353,7 +2326,39 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+}
 
+	windowType = {
+		name = "team_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 38 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			position = { x= -36 y = -24 }
+			name = "join_button"	
+			quadTextureSprite ="GFX_frontend_create_team"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 20 y =0 }
+			format = left
+			font = "Main_16"
+			maxWidth = 196
+			maxHeight = 26
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+			truncate = yes
+		}
 
 	}
 	
@@ -2423,6 +2428,39 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+	}
+
+	windowType = {
+		name = "team_entry"
+		backGround=""
+		position = { x=0 y=0 }	
+		size = { x=150 y= 38 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		guiButtonType = {
+			position = { x= -36 y = -24 }
+			name = "join_button"	
+			quadTextureSprite ="GFX_frontend_create_team"
+			tooltip = ""	
+			tooltipText =""
+			delayedTooltipText = ""
+		}
+	
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 20 y =0 }
+			format = left
+			font = "Main_16"
+			maxWidth = 196
+			maxHeight = 26
+			Orientation = "UPPER_LEFT"
+			fixedsize = yes
+			truncate = yes
+		}
 	}
 	
 	

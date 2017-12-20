@@ -1059,7 +1059,10 @@ country_event = {
 
 	trigger = {
 		dip_tech = 8
+		OR = {
 		government = shogunate
+			tag = JAP
+		}
 		NOT = { has_global_flag = japanese_tea_happened }
 	}
 	mean_time_to_happen = {
@@ -2405,13 +2408,13 @@ country_event = {
 		change_price = {
 			trade_goods = livestock
 			key = SELECTIVE_BREEDING
-			value = 0.5
+			value = 0.35
 			duration = -1
 		}
 		change_price = {
 			trade_goods = wool
 			key = SELECTIVE_BREEDING
-			value = 0.5
+			value = 0.35
 			duration = -1
 		}
 		random_owned_province = {

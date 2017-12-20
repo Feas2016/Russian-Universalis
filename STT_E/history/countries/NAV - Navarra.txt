@@ -157,8 +157,6 @@ capital = 210	# Pamplona
 		adm = 0
 		dip = 1
 		mil = 3
-		clear_scripted_personalities = yes
-		add_heir_personality = malevolent_personality
 	}
 }
 
@@ -171,8 +169,6 @@ capital = 210	# Pamplona
 		adm = 0
 		dip = 1
 		mil = 3
-		clear_scripted_personalities = yes
-		add_ruler_personality = malevolent_personality
 	}
 }
 
@@ -194,11 +190,9 @@ capital = 210	# Pamplona
 		name = "Карлос III"
 		dynasty = "де Дрё"
 		birth_date = 1361.1.1
-		adm = 2
-		dip = 4
-		mil = 1
-		clear_scripted_personalities = yes
-		add_ruler_personality = architectural_visionary_personality
+		adm = 1
+		dip = 2
+		mil = 2
 	}
 }
 

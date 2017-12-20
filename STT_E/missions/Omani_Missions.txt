@@ -5,7 +5,7 @@ oma_conquest_of_batinah = {
 	category = MIL
 	ai_mission = yes
 	
-	target_provinces_list = { #STT
+	target_provinces_list = { ### STT
 		400
 	}
 	
@@ -20,8 +20,9 @@ oma_conquest_of_batinah = {
 		tag = OMA
 		NOT = { has_country_flag = oma_conquered_batinah }
 		is_free_or_tributary_trigger = yes
-		400 = { #STT
+		400 = { ### STT
 			owner = {
+				NOT = { tag = ROOT }
 				is_subject = no
 				NOT = { alliance_with = ROOT }
 			}
@@ -71,7 +72,7 @@ oma_conquest_of_dhofar = {
 	category = MIL
 	ai_mission = yes
 	
-	target_provinces_list = { #STT
+	target_provinces_list = { ### STT
 		401
 	}
 	
@@ -87,9 +88,10 @@ oma_conquest_of_dhofar = {
 		NOT = { has_country_flag = oma_conquered_dhofar }
 		NOT = { has_country_modifier = omani_ambition }
 		is_free_or_tributary_trigger = yes
-		401 = { #STT
+		401 = { ### STT
 			range = ROOT
 			owner = {
+				NOT = { tag = ROOT }
 				is_subject = no
 				NOT = { alliance_with = ROOT }
 			}
@@ -158,6 +160,7 @@ oma_conquest_of_zanzibar = {
 		1201 = {
 			range = ROOT
 			owner = {
+				NOT = { tag = ROOT }
 				is_subject = no
 				NOT = { alliance_with = ROOT }
 			}

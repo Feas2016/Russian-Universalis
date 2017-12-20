@@ -1,5 +1,5 @@
 government = feudal_monarchy
-government_rank = 1
+government_rank = 1 ### STT
 primary_culture = polish
 religion = catholic
 technology_group = eastern
@@ -663,7 +663,7 @@ government_rank = 2
 
 1454.2.10 = {
 	queen = {
-		country_of_origin = HAB
+		country_of_origin = SAX
 		name = "Елизавета"
 		dynasty = "фон Габсбург"
 		birth_date = 1437.1.1
@@ -691,11 +691,45 @@ government_rank = 2
 	add_heir_personality = silver_tongue_personality
 }
 
-1461.1.1 = { leader = {	name = "Петр Дунин"           	type = general	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1484.1.1 } }
+1461.1.1 = {
+	leader = {
+		name = "Петр Дунин"
+		type = general
 
-1465.1.1 = { leader = {	name = "Феликс Паневский"      	type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1488.1.1 } }
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1484.1.1
+	}
+}
 
-1475.1.1 = { leader = {	name = "Добислав Курожецкий"  	type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1496.1.1 } }
+1465.1.1 = {
+	leader = {
+		name = "Феликс Паневский"
+		type = general
+
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 1488.1.1
+	}
+}
+
+
+1475.1.1 = {
+	leader = {
+		name = "Добислав Курожецкий"
+		type = general
+
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 1496.1.1
+	}
+}
 
 1492.6.8 = {
 	monarch = {
@@ -706,9 +740,6 @@ government_rank = 2
 		dip = 0
 		mil = 1
 	}
-}
-
-1492.6.8 = {
 	heir = {
 		name = "Александр"
 		monarch_name = "Александр I"
@@ -779,7 +810,7 @@ government_rank = 2
 	add_ruler_personality = charismatic_negotiator_personality
 }
 
-1495.2.15 = {
+1512.2.8 = {
 	queen = {
 		country_of_origin = TRA
 		name = "Барбара"
@@ -824,19 +855,16 @@ government_rank = 2
 	add_heir_personality = industrious_personality
 }
 
-1521.1.1 = { leader = {	name = "Ян Тарновский"		type = general	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1561.5.16 } }
+1521.1.1 = {
+	leader = {
+		name = "Ян Тарновский"
+		type = general
 
-1543.5.6 = {
-	queen = {
-		country_of_origin = HAB
-		name = "Елизавета"
-		dynasty = "фон Габсбург"
-		birth_date = 1526.7.9
-		death_date = 1545.6.15
-		female = yes
-		adm = 0
-		dip = 0
-		mil = 0
+		fire = 2
+		shock = 4
+		manuever = 4
+		siege = 1
+		death_date = 1561.5.16
 	}
 }
 
@@ -852,6 +880,20 @@ government_rank = 2
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
 	add_ruler_personality = industrious_personality
+}
+
+1543.5.6 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Елизавета"
+		dynasty = "фон Габсург"
+		birth_date = 1526.7.9
+		death_date = 1545.6.15
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
 }
 
 1550.12.7 = {
@@ -882,9 +924,31 @@ government_rank = 2
 	}
 }
 
-1560.1.1 = { leader = {	name = "Себастьян Любомирский"  	type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1613.7.20 } }
+1560.1.1 = {
+	leader = {
+		name = "Себастьян Любомирский"  	
+		type = general
 
-1565.1.1 = { leader = {	name = "Курбский"               	type = general	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1575.1.1 } }
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 0
+		death_date = 1613.7.20
+	}
+}
+
+1565.1.1 = {
+	leader = {
+		name = "Анжей Курбский"
+		type = general
+
+		fire = 2
+		shock = 1
+		manuever = 3
+		siege = 0
+		death_date = 1575.1.1
+	}
+}
 
 1572.1.1 = { leader = {	name = "Кристоф Радзивилл"   	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1603.11.20 } }
 

@@ -576,21 +576,6 @@ national_focus = MIL
 	}
 }
 
-1448.6.20 = {
-	heir = {
-		name = "Магдалена"
-		monarch_name = "Магдалена"
-		dynasty = "Бонде"
-		birth_date = 1445.1.1
-		death_date = 1495.8.1
-		claim = 75
-		adm = 4
-		dip = 4
-		mil = 3
-		female = yes
-	}
-}
-
 1457.2.25 = { government = noble_republic }
 
 1457.2.25 = {
@@ -609,7 +594,6 @@ national_focus = MIL
 	monarch = {
 		name = "Тур Туррсон"
 		dynasty = "Бьелке"
-		birth_date = 1400.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -620,7 +604,6 @@ national_focus = MIL
 	monarch = {
 		name = "Кеттил Карлссон"
 		dynasty = "Ваза"
-		birth_date = 1400.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -638,21 +621,6 @@ national_focus = MIL
 		leader = {	name = "Карл VIII"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 }
-
-1464.9.2 = {
-	heir = {
-		name = "Магдалена"
-		monarch_name = "Магдалена"
-		dynasty = "Бонде"
-		birth_date = 1445.1.1
-		death_date = 1495.8.1
-		claim = 75
-		adm = 4
-		dip = 4
-		mil = 3
-		female = yes
-	}
-}
 	
 1464.9.2 = { government = feudal_monarchy }
 
@@ -660,7 +628,6 @@ national_focus = MIL
 	monarch = {
 		name = "Кеттил Карлссон"
 		dynasty = "Ваза"
-		birth_date = 1400.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -673,7 +640,6 @@ national_focus = MIL
 	monarch = {
 		name = "Йонс Бенгтссон"
 		dynasty = "Оксеншерна"
-		birth_date = 1417.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -684,7 +650,6 @@ national_focus = MIL
 	monarch = {
 		name = "Эрик Акселльсон"
 		dynasty = "Тотт"
-		birth_date = 1420.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -714,21 +679,6 @@ national_focus = MIL
 	}
 }
 
-1467.11.12 = {
-	heir = {
-		name = "Магдалена"
-		monarch_name = "Магдалена"
-		dynasty = "Бонде"
-		birth_date = 1445.1.1
-		death_date = 1495.8.1
-		claim = 75
-		adm = 4
-		dip = 4
-		mil = 3
-		female = yes
-	}
-}
-
 1467.11.12 = { government = feudal_monarchy }
 
 1470.1.1 = {
@@ -749,7 +699,6 @@ national_focus = MIL
 	monarch = {
 		name = "Стен Густавссон"
 		dynasty = "Стуре"
-		birth_date = 1440.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -773,7 +722,6 @@ national_focus = MIL
 	monarch = {
 		name = "Арвид"
 		dynasty = "Тролле"
-		birth_date = 1440.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -797,7 +745,6 @@ national_focus = MIL
 	monarch = {
 		name = "Стен Густавссон"
 		dynasty = "Стуре"
-		birth_date = 1440.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -819,7 +766,6 @@ national_focus = MIL
 	monarch = {
 		name = "Сванте Нилльсон"
 		dynasty = "Стуре"
-		birth_date = 1460.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -840,7 +786,6 @@ national_focus = MIL
 	monarch = {
 		name = "Стен Свантессон"
 		dynasty = "Стуре"
-		birth_date = 1480.1.1
 		adm = 1
 		dip = 1
 		mil = 1
@@ -939,8 +884,6 @@ national_focus = MIL
 	}
 }
 
-1551.1.1 = { leader = {	name = "Клас Хорн"             	type = admiral	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1566.9.9 } }
-
 1552.8.22 = {
 	queen = {
 		country_of_origin = SWE
@@ -955,7 +898,13 @@ national_focus = MIL
 	}
 }
 
-#1555.1.1 = { leader = {	name = "Клас Флеминг"       	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
+1561.1.1 = {
+	add_accepted_culture = estonian
+}
+
+1555.1.1 = { leader = {	name = "Клас Хорн"       		type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
+
+#1555.1.1 = { leader = {	name = "Клас Е. Флеминг"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1597.4.13 } }
 
 1560.1.1 = { leader = {	name = "Ганс Боджи аф Геннес"  	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1573.1.1 } }
 
@@ -986,10 +935,6 @@ national_focus = MIL
 	}
 }
 
-1561.1.1 = {
-	add_accepted_culture = estonian
-}
-
 1561.1.1 = { leader = {	name = "Бу Грип"               	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1569.1.1 } }
  
 1563.1.1 = { leader = {	name = "Карл де Морне"	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1574.9.4 } }
@@ -997,20 +942,6 @@ national_focus = MIL
 1563.1.1 = { leader = {	name = "Хенрик Хорн"           	type = general	fire = 3	shock = 2	manuever = 3	siege = 1	death_date = 1693.1.1 } }
 
 1565.1.1 = { leader = {	name = "Понтус де ла Гарди"	type = general	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1585.11.5 } }
-
-1568.1.28 = {
-	heir = {
-		name = "Густав"
-		monarch_name = "Густав II"
-		dynasty = "Васа"
-		birth_date = 1568.1.28
-		death_date = 1607.2.22
-		claim = 90
-		adm = 2
-		mil = 4
-		dip = 3
-	}
-}
 
 1568.7.4 = {
 	queen = {
@@ -1026,7 +957,7 @@ national_focus = MIL
 	}
 }
 
-1569.1.26 = {
+1568.9.30 = {
 	monarch = {
 		name = "Юхан III"
 		dynasty = "Васа"
@@ -1064,7 +995,7 @@ national_focus = MIL
 	}
 }
 
-1569.1.26 = {
+1568.9.30 = {
 	heir = {
 		name = "Сигизмунд"
 		monarch_name = "Сигизмунд III"
@@ -1078,7 +1009,7 @@ national_focus = MIL
 	}
 }
 
-1570.1.1 = { leader = {	name = "Гертих Карл"           	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1607.3.15 } } # Removed /SWЦ
+#1570.1.1 = { leader = {	name = "Гертих Карл"           	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1607.3.15 } } # Removed /SWЦ
 
 1575.1.1 = { leader = {	name = "Карл Хорн"             	type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1601.5.16 } }
 
@@ -1102,8 +1033,8 @@ national_focus = MIL
 		dynasty = "Ваза"
 		birth_date = 1566.6.20
 		adm = 2
-		dip = 3
-		mil = 4
+		dip = 2
+		mil = 3
 	}
 	queen = {
 		country_of_origin = HAB
@@ -1118,23 +1049,9 @@ national_focus = MIL
 	}
 }
 
-1592.11.19 = {
-	heir = {
-		name = "Карл"
-		monarch_name = "Карл IX"
-		dynasty = "Ваза"
-		birth_date = 1550.10.4
-		death_date = 1611.10.30
-		claim = 95
-		adm = 5
-		dip = 4
-		mil = 0
-	}
-}
-
 1595.1.1 = { leader = {	name = "Карл Гилленхейм"	type = admiral	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1650.1.1 } }
 
-1599.7.24 = {
+1598.8.1 = {
 	monarch = {
 		name = "Карл IX"
 		dynasty = "Ваза"
@@ -1156,7 +1073,7 @@ national_focus = MIL
 	}
 }
 
-1599.7.24  = {
+1598.8.1 = {
 	heir = {
 		name = "Густав Афольф"
 		monarch_name = "Густав II Адольф"
@@ -1171,13 +1088,13 @@ national_focus = MIL
 	}
 }
 
-1600.1.1 = { leader = {	name = "Герман Врангель"        	type = general	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1643.12.11 } }
+1600.1.1 = { leader = {	name = "Герман Врангель"    type = general	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1643.12.11 } }
 
 1604.1.1 = { leader = {	name = "Иоганн де ла Гарди"	type = general	fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1642.3.10 } } # Removed /SWЦ
 
-1605.1.1 = { leader = {	name = "Эверт Хорн"            	type = general	fire = 4	shock = 3	manuever = 3	siege = 2	death_date = 1615.7.30 } }
+1605.1.1 = { leader = {	name = "Эверт Хорн"         type = general	fire = 4	shock = 3	manuever = 3	siege = 2	death_date = 1615.7.30 } }
 
-1610.1.1 = { leader = {	name = "Клас Флеминг"	type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1644.7.26 } }
+1610.1.1 = { leader = {	name = "Клас Флеминг"		type = admiral	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1644.7.26 } }
 
 1611.10.30 = {
 	monarch = {
@@ -1189,6 +1106,7 @@ national_focus = MIL
 		mil = 6
 		leader = {	name = "Густав II Адольф"       	type = general	fire = 6	shock = 5	manuever = 6	siege = 1 }
 	}
+	add_army_professionalism = 0.3
 	clear_scripted_personalities = yes
 	add_ruler_personality = strict_personality
 	add_ruler_personality = tactical_genius_personality
@@ -1257,26 +1175,11 @@ national_focus = MIL
 	add_ruler_personality = well_connected_personality
 }
 
-1632.11.8 = {
-	heir = {
-		name = "Карл Густав"
-		monarch_name = "Карл X Густав"
-		dynasty = "фон Пфальц-Цвейнбрюккен"
-		birth_date = 1622.11.8
-		death_date = 1660.2.14
-		claim = 95
-		adm = 3
-		dip = 1
-		mil = 6
-		leader = {	name = "Карл X Густав"               	type = general	fire = 3	shock = 3	manuever = 5	siege = 0 }
-	}
-}
+1634.1.1 = { leader = {	name = "Арвид Виттенбергский"	type = general	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1657.9.7 } }
 
-1634.1.1 = { leader = {	name = "Арвид Виттенбергский"	type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1657.9.7 } }
+1635.1.1 = { leader = {	name = "фон Кёнигсмарк"	type = general			fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
 
-1635.1.1 = { leader = {	name = "фон Кёнигсмарк"	type = general		fire = 2	shock = 4	manuever = 6	siege = 0	death_date = 1694.7.12 } }
-
-1639.1.1 = { leader = {	name = "Юхан Бьорнссон"	type = conquistador0	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
+1639.1.1 = { leader = {	name = "Юхан Бьорнссон"	type = conquistador		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1663.5.3 } }
 
 1648.10.24 = {
 	leave_league = protestant
@@ -1292,25 +1195,10 @@ national_focus = MIL
 		adm = 3
 		dip = 1
 		mil = 6
-		leader = {	name = "Карл X Густав"         	type = general	fire = 4	shock = 4	manuever = 5	siege = 1 }
+		leader = {	name = "Карл X Густав"         	type = general		fire = 4	shock = 4	manuever = 5	siege = 1 }
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
-}
-
-1654.6.8 = {
-	heir = {
-		name = "Адольф Иоганн I"
-		monarch_name = "Адольф I Юхан"
-		dynasty = "фон Пфальц-Цвейнбрюккен"
-		birth_date = 1629.10.21
-		death_date = 1689.10.24
-		claim = 95
-		adm = 3
-		dip = 4
-		mil = 4
-		leader = {	name = "Адольф Иоганн Пфальц-Клебургский"               	type = general	fire = 3	shock = 3	manuever = 5	siege = 0 }
-	}
 }
 
 1654.10.24 = {
@@ -1354,28 +1242,14 @@ national_focus = MIL
 		mil = 2
 		leader = {	name = "Карл XI"               	type = general	fire = 3	shock = 3	manuever = 5	siege = 0 }
 	}
+	add_army_professionalism = 0.1
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = lawgiver_personality
 	add_ruler_personality = righteous_personality
 }
 
-1660.2.14 = {
-	heir = {
-		name = "Адольф Иоганн I"
-		monarch_name = "Адольф I Юхан"
-		dynasty = "фон Пфальц-Цвейнбрюккен"
-		birth_date = 1629.10.21
-		death_date = 1689.10.24
-		claim = 95
-		adm = 3
-		dip = 4
-		mil = 4
-		leader = {	name = "Адольф Иоганн Пфальц-Клебургский"               	type = general	fire = 3	shock = 3	manuever = 5	siege = 0 }
-	}
-}
-
-1680.1.1 = { leader = {	name = "Густав Армфельд"              	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1736.10.24 } }
+1680.1.1 = { leader = {	name = "Густав Армфельд" 	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1736.10.24 } }
 
 1680.5.6 = {
 	queen = {
@@ -1417,6 +1291,7 @@ national_focus = MIL
 		mil = 6
 		leader = {	name = "Карл XII"	type = general	fire = 6	shock = 6	manuever = 5	siege = 1 }
 	}
+	add_army_professionalism = 0.1
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = strict_personality
@@ -1463,29 +1338,16 @@ national_focus = MIL
 	}
 	queen = {
 		country_of_origin = HES
-		name = "Фредрик"
-		dynasty = "фон Гессен-Кассель"
+		name = "Fredrik"
+		dynasty = "von Hesse-Kassel"
 		birth_date = 1676.4.18
 		death_date = 1751.3.27
+		female = no
 		adm = 3
 		dip = 2
 		mil = 4
 	}
-}
-
-1718.12.2 = {
-	heir = {
-		name = "Фредрик"
-		monarch_name = "Фредрик I"
-		dynasty = "фон Гессен-Кассель"
-		birth_date = 1676.4.18
-		death_date = 1751.3.27
-		claim = 80
-		female = yes
-		adm = 3
-		dip = 2
-		mil = 4
-	}
+	add_army_professionalism = -0.2
 }
 
 1720.5.4 = {
@@ -1511,20 +1373,6 @@ national_focus = MIL
 }
 
 1722.1.1 = { leader = {	name = "Карл Левенхаупт"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1743.8.4 } }
-
-1735.3.17 = {
-	heir = {
-		name = "Фридрих Вильгельм"
-		monarch_name = "Фридрих I Вильгельм"
-		dynasty = "фон Гольштейн-Готторп"
-		birth_date = 1735.3.17
-		death_date = 1808.7.27
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 3
-	}
-}
 
 1747.1.1 = { leader = {	name = "Августин Эренсверд"	type = general	fire = 4	shock = 4	manuever = 3	siege = 2	death_date = 1772.10.4 } }
 
@@ -1630,12 +1478,12 @@ national_focus = MIL
 		name = "Густав"
 		monarch_name = "Густав V"
 		dynasty = "фон Гольштейн-Готторп"
-		birth_date = 1781.3.12
-		death_date = 1877.9.5
+		birth_date = 1748.10.7
+		death_date = 1818.2.5
 		claim = 80
-		adm = 4
+		adm = 2
 		dip = 5
-		mil = 3
+		mil = 2
 	}
 }
 
@@ -1644,7 +1492,7 @@ national_focus = MIL
 		country_of_origin = BAD
 		name = "Фредрика"
 		dynasty = "фон Церинген"
-		birth_date = 1781.1.12
+		birth_date = 1781.3.12
 		death_date = 1800.4.3
 		female = yes
 		adm = 2
@@ -1657,7 +1505,7 @@ national_focus = MIL
 
 1801.1.1 = { leader = {	name = "Тролль"                  	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1817.1.1 } }
 
-1809.6.5 = {
+1809.5.1 = {
 	monarch = {
 		name = "Карл XIII"
 		dynasty = "фон Гольштейн-Готторп"
@@ -1679,40 +1527,14 @@ national_focus = MIL
 	}
 }
 
-1809.6.5 = {
-	heir = {
-		name = "Карл Август"
-		monarch_name = "Карл IV Август"
-		dynasty = "фон Гольштейн-Готторп"
-		birth_date = 1768.7.9
-		death_date = 1810.5.28
-		claim = 25
-		adm = 4
-		dip = 5
-		mil = 3
-	}
-}
+1810.8.21 = { leader = { name = "Жан-Батист Жюль Бернадот"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1818.2.5 } }
 
-1810.5.28 = {
-	heir = {
-		name = "Жан-Батист Жюль"
-		monarch_name = "Карл XIV Юхан"
-		dynasty = "Бернадот"
-		birth_date = 1763.1.26
-		death_date = 1844.3.8
-		claim = 25
-		adm = 2
-		dip = 2
-		mil = 4
-		leader = {	name = "Жан-Батист Жюль Бернадот"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1 		}
-	}
-}
-
-1818.2.5 = {
+1818.2.6 = {
 	monarch = {
 		name = "Карл XIV Юхан"
 		dynasty = "Бернадот"
 		birth_date = 1763.1.26
+		culture = gascon
 		adm = 2
 		dip = 2
 		mil = 4
@@ -1914,83 +1736,3 @@ national_focus = MIL
 		mil = 1
 	}
 }
-
-1950.10.29 = {
-	monarch = {
-		name = "Густав VI Адольф"
-		dynasty = "Бернадот"
-		birth_date = 1882.11.11
-		adm = 4
-		dip = 5
-		mil = 1
-	}
-}
-
-1950.10.29 = {
-	queen = {
-		country_of_origin = HES
-		name = "Луиза Маунтбеттен"
-		dynasty = "фон Баттенберг"
-		birth_date = 1889.7.13
-		death_date = 1965.3.7
-		female = yes
-		adm = 2
-		dip = 2
-		mil = 2
-	}
-}
-
-1950.10.29 = {
-	heir = {
-		name = "Карл Густав"
-		monarch_name = "Карл XVI Густав"
-		dynasty = "Бернадот"
-		birth_date = 1946.4.30
-		death_date = 3000.1.1
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 3
-	}
-}
-
-1973.9.15 = {
-	monarch = {
-		name = "Карл XVI Густав"
-		dynasty = "Бернадот"
-		birth_date = 1946.4.30
-		adm = 3
-		dip = 2
-		mil = 3
-	}
-}
-
-1979.5.13 = {
-	heir = {
-		name = "Карл Филипп"
-		monarch_name = "Карл XVII Филипп"
-		dynasty = "Бернадот"
-		birth_date = 1979.5.13
-		death_date = 3000.1.1
-		claim = 95
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
-
-1980.1.1 = {
-	heir = {
-		name = "Виктория"
-		monarch_name = "Виктория I"
-		dynasty = "Бернадот"
-		birth_date = 1977.7.14
-		death_date = 3000.1.1
-		claim = 95
-		adm = 2
-		dip = 4
-		mil = 2
-		female = yes
-	}
-}
-

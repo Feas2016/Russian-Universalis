@@ -452,7 +452,7 @@ guiTypes = {
 		name = "new_buildings_entry"
 		backGround=""
 		position = { x=0 y =0}	
-		size = { x=400 y = 320}
+		size = { x=400 y = 570} ### STT 320
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -1549,7 +1549,38 @@ guiTypes = {
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
-		}			
+		}
+		checkboxType = {
+			name = "build_farm_estate"
+			position = { x = 9 y = 490 } #STT 269 420
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+
+		instantTextBoxType={
+			name = "farm_estate_cost"
+			position = {x = 9 y = 540 } #STT 269 470
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+
+		checkboxType = {
+			name = "build_mills"
+			position = { x = 61 y = 490 } #STT 321 420
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+
+		instantTextBoxType={
+			name = "mills_cost"
+			position = {x = 61 y = 540 } #STT 321 470
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
 		##################################################################################
 		iconType = {
 			name = "current_building"

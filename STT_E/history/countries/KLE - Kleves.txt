@@ -15,6 +15,10 @@ capital = 2975	# Cleves
 		dip = 4
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = architectural_visionary_personality
 }
 
 1419.2.16 = {
@@ -29,6 +33,11 @@ capital = 2975	# Cleves
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = architectural_visionary_personality
+	add_heir_personality = well_connected_personality
 }
 
 1448.9.24 = {
@@ -40,6 +49,8 @@ capital = 2975	# Cleves
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
 }
 
 1458.4.13 = {
