@@ -3,30 +3,38 @@
 owner = ALO
 controller = ALO
 add_core = ALO
+add_core = ABB
 culture = nubian 
-religion = coptic
-capital = "Al-Qadarif"
+religion = sunni
+capital = "Аль Кадарри"	### STT
 base_manpower = 1
-base_tax = 3
-base_production = 3
+base_tax = 1 
+base_production = 1
 is_city = yes
 trade_goods = ivory
 hre = no
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
-discovered_by = ZIM
+add_local_autonomy = 60
+discovered_by = east_african
+discovered_by = ETH	### STT
+discovered_by = ADA	### STT
+discovered_by = NUB	### STT
+discovered_by = ZAN	### STT
+discovered_by = AJU	### STT
+discovered_by = MBA	### STT
+discovered_by = MDI	### STT
+discovered_by = MLI	### STT
+discovered_by = SFA	### STT
+discovered_by = ZIM	### STT
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = east_african
 
-1470.1.1 = { capital = "Qarri" } #Establishment of the Abdallabi state
+
+1470.1.1 = {
+	owner = ABB
+	controller = ABB
+	remove_core = ALO
+	capital = "Карри"	### STT
+} #Establishment of the Abdallabi state
 1503.1.1 = {
 	owner = NUB
 	controller = NUB

@@ -4,7 +4,7 @@ owner = LXA
 controller = LXA
 culture = lao
 religion = buddhism
-capital = "Muang Khoun"
+capital = "Муанг Кхон"	### STT
 trade_goods = grain
 hre = no
 base_tax = 2 
@@ -12,8 +12,13 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = LXA
+add_core = MPH
+
+
+
 discovered_by = chinese
 discovered_by = indian
+
 
 1483.1.1 = { add_core = DAI } # Vietnamese Invasion
 1579.1.1 = { unrest = 5 } # Revolt against vassalization
@@ -27,7 +32,6 @@ discovered_by = indian
 1707.1.1 = {
 	owner = MPH
 	controller = MPH
-	add_core = MPH
 	remove_core = LXA
 	remove_core = DAI
 	remove_core = TOK

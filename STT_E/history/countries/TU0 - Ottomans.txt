@@ -78,9 +78,7 @@ capital = 3111 # Karashibar
 	}
 }
 
-1327.1.1 = {
-government_rank = 2
-}
+1327.1.1 = { government_rank = 2 }
 
 1362.3.1 = {
 	monarch = {
@@ -204,7 +202,7 @@ government_rank = 2
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = conqueror_personality
-	#add_ruler_personality = lawgiver_personality
+	add_ruler_personality = lawgiver_personality
 }
 
 1446.3.1 = {
@@ -251,8 +249,8 @@ government_rank = 2
 		mil = 6
 		leader = { name = "Мехмед Фатих"            type = general	fire = 6	shock = 4	manuever = 5	siege = 2}
 		clear_scripted_personalities = yes
-	add_ruler_personality = conqueror_personality
-	add_ruler_personality = lawgiver_personality
+		add_ruler_personality = conqueror_personality
+		add_ruler_personality = lawgiver_personality
 	}
 }
 

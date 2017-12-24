@@ -1,11 +1,11 @@
 # 2129 - Changtang
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = YUA				### STT
+controller = YUA		### STT
+add_core = YUA			### STT
 culture = tibetan
 religion = vajrayana
-capital = "Changtang"
+capital = "Чангтанг"	### STT
 trade_goods = wool
 hre = no
 base_tax = 1 
@@ -16,7 +16,7 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = nomad_group
 
-1368.1.1 = { owner = UTS controller = UTS remove_core = YUA add_core = UTS }
+1368.1.1 = { owner = UTS controller = UTS add_core = UTS remove_core = YUA capital = "Балкхудук" }	### STT
 1642.6.1 = {
 	controller = KSD
 	owner = KSD

@@ -12,6 +12,9 @@ owner = ANU
 controller = ANU
 add_core = ANU
 is_city = yes
+
+
+
 discovered_by = JAP
 discovered_by = AMA
 discovered_by = ASA
@@ -39,15 +42,15 @@ discovered_by = CHU
 discovered_by = CHV
 discovered_by = KMC
 
-1640.1.1 = { discovered_by = TSR } # Ivan Moskvitin
+1640.1.1 = { discovered_by = TSR } # Ivan Moskvitin ### STT
+
 1679.1.1 = {	
-	owner = JAP
-	controller = JAP
-	culture = japanese
+	owner = TKG
+	controller = TKG
+	culture = japanese	### STT
 	religion = shinto
 	trade_goods = fish
 } # Russian & Japanese attemps at colonization
-1704.1.1 = { add_core = JAP }
+1704.1.1 = { add_core = TKG }
 1767.1.1 = { add_core = RUS }
 1787.1.1 = { discovered_by = FRA } # Jean-Francois de La Pérouse
-1830.1.1 = { trade_goods = coal }

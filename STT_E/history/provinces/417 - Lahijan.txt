@@ -1,18 +1,17 @@
-#417 - Gilan
+#417 - Lahijan
 
-owner = HUL
-controller = HUL
+owner = HUL			### STT
+controller = HUL	### STT
 culture = mazandarani
 religion = shiite
-capital = "Rasht"
+capital = "ะเ๘๒"	### STT
 trade_goods = silk
 hre = no
 base_tax = 5
 base_production = 5
-base_manpower = 3
+base_manpower = 2
 is_city = yes
-add_core = PER
-add_core = HUL
+add_core = HUL		### STT
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -24,16 +23,17 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1335.1.1 = { owner = CHB add_core = CHB controller = CHB }
-1357.1.1 = { owner = JAL add_core = JAL controller = JAL }
-1382.1.1 = { owner = QAR controller = QAR add_core = QAR }
-1386.1.1 = { owner = TIM add_core = TIM controller = TIM }
-1406.1.1 = { owner = QAR controller = QAR }
-1468.1.1 = { owner = TAB controller = TAB add_core = TAB }
-1504.1.1 = {
+1335.1.1 = { owner = CHB add_core = CHB controller = CHB }	### STT
+1357.1.1 = { owner = JAL add_core = JAL controller = JAL }	### STT
+1382.1.1 = { owner = QAR controller = QAR add_core = QAR }	### STT
+1386.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1406.1.1 = { owner = QAR controller = QAR }					### STT
+1440.1.1 = { owner = KRY controller = KRY add_core = KRY }	### STT
+1592.1.1 = {
 	owner = PER
 	controller = PER		
-} # The Safavids took over
+	add_core = PER
+} # Safavid Conquest
 1669.1.1 = { unrest = 3 } # Plundered by Stenka Razin
 1673.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }

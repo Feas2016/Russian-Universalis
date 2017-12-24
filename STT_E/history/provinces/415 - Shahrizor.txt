@@ -1,31 +1,39 @@
 #415 - Sharazor
 
-owner = HUL
-controller = HUL
+owner = HUL			### STT
+controller = HUL	### STT
 culture = kurdish
 religion = sunni
-capital = "Rawandiz"
+capital = "Киркук"	### STT
 trade_goods = grain
 hre = no
-base_tax = 6 
-base_production = 6
+base_tax = 3 
+base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = IRQ
-add_core = HUL
+add_core = HUL		### STT
 add_core = BHT
 add_core = ARD
+
+
+discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = indian
 discovered_by = nomad_group
 
-1335.1.1 = { owner = CHB add_core = CHB controller = CHB }
-1357.1.1 = { owner = JAL add_core = JAL controller = JAL }
-1382.1.1 = { owner = QAR controller = QAR add_core = QAR }
-1401.1.1 = { owner = TIM add_core = TIM controller = TIM }
-1406.1.1 = { owner = QAR controller = QAR }
+1335.1.1 = { owner = CHB add_core = CHB controller = CHB }	### STT
+1357.1.1 = { owner = JAL add_core = JAL controller = JAL }	### STT
+1382.1.1 = { owner = QAR controller = QAR add_core = QAR }	### STT
+1401.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1405.1.1 = {
+	owner = QAR
+	controller = QAR
+	add_core = QAR
+	remove_core = TIM
+} # The Qara Koyunlu
 1469.2.4 = {
 	owner = AKK
 	controller = AKK

@@ -1,17 +1,18 @@
 #2229 - Bust
 
-owner = HUL
-controller = HUL
+owner = HUL			### STT
+controller = HUL	### STT
 culture = afghani
 religion = sunni
-capital = "Kandahar"
-trade_goods = wool
+capital = "Буст"	### STT
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 3
 is_city = yes
-add_core = HUL
+add_core = HUL		### STT
+add_core = SIS
 add_core = AFG
 add_core = KHO
 discovered_by = muslim
@@ -19,13 +20,20 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1335.1.1 = { owner = SAB add_core = SAB controller = SAB }
-1387.1.1 = { owner = TIM add_core = TIM controller = TIM }
+1335.1.1 = { owner = SAB add_core = SAB controller = SAB }	### STT
+1387.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1444.1.1 = { owner = SIS add_core = SIS controller = SIS }	### STT
 1449.1.1 = {
 	owner = KHO
 	controller = KHO
 	remove_core = TIM
 } # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+1460.1.1 = {
+	controller = TIM
+}
+1461.1.1 = {
+	owner = SIS controller = SIS	### STT
+}
 1507.1.1 = { controller = BUK }
 1507.7.1 = { owner = BUK } # Shaybanids
 1510.1.1 = {

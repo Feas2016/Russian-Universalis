@@ -1,17 +1,17 @@
 #447 - Kandahar
 
-owner = HUL
-controller = HUL
+owner = HUL			### STT
+controller = HUL	### STT
 culture = afghani
 religion = sunni
-capital = "Kandahar"
+capital = "Кандагар"	### STT
 trade_goods = cotton
 hre = no
 base_tax = 2 
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = HUL
+add_core = HUL		### STT
 add_core = AFG
 add_core = KHO
 discovered_by = KAS
@@ -21,13 +21,14 @@ discovered_by = indian
 discovered_by = nomad_group
 fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortress in Western Asia
 
-1335.1.1 = { owner = SAB add_core = SAB controller = SAB }
-1387.1.1 = { owner = TIM add_core = TIM controller = TIM }
-1449.1.1 = {
+1335.1.1 = { owner = SAB add_core = SAB controller = SAB }	### STT
+1387.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1444.1.1 = { owner = AFG add_core = AFG controller = AFG }	### STT
+1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO
 	controller = KHO
 	remove_core = TIM
-} # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+}
 1507.1.1 = { controller = BUK }
 1507.7.1 = { owner = BUK } # Shaybanids
 1510.1.1 = {
@@ -49,12 +50,16 @@ fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortr
 1638.1.1 = { owner = MUG } #Restored to Mughal Empire
 1649.1.1 = { controller = PER } #Recaptured by Safavids
 1653.1.1 = { owner = PER remove_core = MUG }
+
+
+
 1673.1.1 = { discovered_by = ENG }
 1677.1.1 = { discovered_by = FRA }
-1704.1.1 = { unrest = 5 } # Afghanian revolts
+
+1704.1.1 = { revolt_risk = 5 } # Afghanian revolts
 1707.5.12 = { discovered_by = GBR }
-1708.1.1 = { unrest = 8 } # Mir Wais rebelled against Persian rule
-1736.1.1 = { unrest = 0 } # Persia reasserts control over Qandahar
+1708.1.1 = { revolt_risk = 8 } # Mir Wais rebelled against Persian rule
+1736.1.1 = { revolt_risk = 0 } # Persia reasserts control over Qandahar
 1747.6.1 = {
 	owner = AFG
 	controller = AFG

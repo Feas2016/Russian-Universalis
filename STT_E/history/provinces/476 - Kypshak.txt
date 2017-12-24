@@ -7,8 +7,8 @@ religion = sunni
 capital = "Orda-Bazar"
 trade_goods = grain
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 6 
+base_production = 6
 base_manpower = 6
 is_city = yes
 add_core = SHY
@@ -23,6 +23,6 @@ discovered_by = ottoman
 1465.1.1 = { controller = KZH }
 1468.1.1 = { owner = KZH remove_core = SHY } # Kazakhs take over
 1622.1.1 = { discovered_by = TSR }
-1740.1.1 = { owner = ZUN controller = ZUN add_core = ZUN } # Dzungarian invasion
+1740.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion
 1755.1.1 = { owner = KZH controller = KZH }
 1847.1.1 = { owner = RUS controller = RUS add_core = RUS }

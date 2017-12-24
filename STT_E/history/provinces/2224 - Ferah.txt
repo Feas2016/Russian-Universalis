@@ -1,17 +1,18 @@
 #2224 - Ferah
 
-owner = HUL
-controller = HUL
+owner = HUL			### STT
+controller = HUL	### STT
 culture = khorasani
 religion = sunni
 capital = "Ferah"
-trade_goods = wool
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = HUL
+add_core = HUL		### STT
+add_core = SIS
 add_core = AFG
 add_core = KHO
 discovered_by = muslim
@@ -19,9 +20,9 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = nomad_group
 
-1335.1.1 = { owner = KRT add_core = KRT controller = KRT }
-1387.1.1 = { owner = TIM add_core = TIM controller = TIM }
-1449.1.1 = { 
+1335.1.1 = { owner = KRT add_core = KRT controller = KRT }	### STT
+1387.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1449.2.1 = { #Conquered by Babur bin Baysunkur	### STT
 	owner = KHO
 	controller = KHO
 	remove_core = TIM

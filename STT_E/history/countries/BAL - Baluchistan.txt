@@ -1,12 +1,88 @@
 government = tribal_kingdom
+government_rank = 1
 primary_culture = baluchi
 religion = sunni
 technology_group = muslim
-capital = 576	# Kalat
+capital = 577	# Quetta
+religious_school = shafii_school
+
+#Mirwaris, ancestors of later Kambarani dynasty:
+
+1444.1.1 = {
+	monarch = {
+	name = "Кумбар"
+		dynasty = "Мирвари"
+		dip = 1
+		adm = 1 
+		mil = 1
+	}
+}
+
+#Rind kingdom:
+
+1468.1.1 = { 
+	monarch = {
+	name = "Мир Чакар"
+		dynasty = "Ринд"
+		dip = 2
+		adm = 1 
+		mil = 3
+	}
+}
+
+1468.1.1 = {
+	heir = {
+		name = "Мир Шахрзад"
+		monarch_name = "Мир Шахрзад"
+		dynasty = "Ринд"
+		birth_date = 1450.1.1
+		death_Date = 1580.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1547.1.1 = { capital = 576 } # Kalat
+
+1565.1.1 = { 
+	monarch = {
+	name = "Мир Шахрзад"
+		dynasty = "Ринд"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+#Rinds migrate into Multan and become Mughal jagirholders after helping Humayun retake Hindusthan from Sher Shah
+
+#Kambaranis (kingdom of Kalat)
+
+1580.1.1 = {
+	monarch = {
+	name = "Кумбар"
+		dynasty = "Камбарани"
+		dip = 2
+		adm = 1 
+		mil = 2
+	}
+}
+
+
+1638.1.1 = {
+	monarch = {
+	name = "Хасан"
+		dynasty = "Камбарани"
+		dip = 2
+		adm = 1 
+		mil = 2
+	}
+}
 
 1666.1.1 = {
-	government = steppe_horde
-    government_rank = 2
+	government = despotic_monarchy
 	monarch = { 
 		name = "Ахмад I"
 		dynasty = "Ахмаджи"
@@ -14,7 +90,7 @@ capital = 576	# Kalat
 		adm = 2 
 		mil = 3
 	}
-} #Калатское ханство
+} #Kingdom of Kalat
 
 1670.1.1 = {
 	heir = {
@@ -46,7 +122,7 @@ capital = 576	# Kalat
 		monarch_name = "Самандар"
 		dynasty = "Ахмаджи"
 		birth_date = 1675.1.1
-		death_Date = 1714.1.1
+		death_Date = 1713.1.1
 		claim = 95
 		adm = 1
 		dip = 2
@@ -54,7 +130,7 @@ capital = 576	# Kalat
 	}
 }
 
-1697.1.1 = {
+1696.1.1 = {
 	monarch = { 
 		name = "Самандар"
 		dynasty = "Ахмаджи"
@@ -64,7 +140,7 @@ capital = 576	# Kalat
 	}
 }
 
-1697.1.1 = {
+1696.1.1 = {
 	heir = {
 		name = "Ахмад"
 		monarch_name = "Ахмад II"
@@ -78,7 +154,7 @@ capital = 576	# Kalat
 	}
 }
 
-1714.1.1 = {
+1713.1.1 = {
 	monarch = { 
 		name = "Ахмад II"
 		dynasty = "Ахмаджи"
@@ -88,13 +164,13 @@ capital = 576	# Kalat
 	}
 }
 
-1714.1.1 = {
+1713.1.1 = {
 	heir = {
 		name = "Абдулла"
 		monarch_name = "Абдулла"
 		dynasty = "Ахмаджи"
 		birth_date = 1690.1.1
-		death_Date = 1731.1.1
+		death_Date = 1730.1.1
 		claim = 95
 		adm = 0
 		dip = 0
@@ -102,7 +178,7 @@ capital = 576	# Kalat
 	}
 }
 
-1716.1.1 = {
+1715.1.1 = {
 	monarch = { 
 		name = "Абдулла"
 		dynasty = "Ахмаджи"
@@ -112,7 +188,7 @@ capital = 576	# Kalat
 	}
 }
 
-1716.1.1 = {
+1715.1.1 = {
 	heir = {
 		name = "Мухаббат"
 		monarch_name = "Мухаббат"
@@ -126,7 +202,7 @@ capital = 576	# Kalat
 	}
 }
 
-1731.1.1 = {
+1730.1.1 = {
 	monarch = { 
 		name = "Мухаббат"
 		dynasty = "Ахмаджи"
@@ -136,7 +212,7 @@ capital = 576	# Kalat
 	}
 }
 
-1731.1.1 = {
+1730.1.1 = {
 	heir = {
 		name = "Насир"
 		monarch_name = "Насир I"
@@ -166,7 +242,7 @@ capital = 576	# Kalat
 		monarch_name = "Мухамед I"
 		dynasty = "Ахмаджи"
 		birth_date = 1760.1.1
-		death_Date = 1817.1.1
+		death_Date = 1831.1.1
 		claim = 95
 		adm = 3
 		dip = 2

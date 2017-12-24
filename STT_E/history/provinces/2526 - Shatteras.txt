@@ -2,7 +2,7 @@
 
 culture = shawnee
 religion = totemism
-capital = "Shatteras"
+capital = "Шаттерас"	### STT
 trade_goods = unknown
 hre = no
 base_tax = 1
@@ -11,7 +11,11 @@ base_manpower = 1
 native_size = 5
 native_ferocity = 1
 native_hostileness = 2
+
+
+
 discovered_by = north_american
+
 
 1650.1.1 = {
 	owner = SHA
@@ -27,8 +31,8 @@ discovered_by = north_american
 	culture = iroquois 
 } #Taken by Iroquois in Beaver Wars.
 1701.8.14 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	remove_core = SHA
 	is_city = no
 	culture = shawnee 
@@ -41,8 +45,8 @@ discovered_by = north_american
 	is_city = yes 
 } #Shawnee begins drifting northward again, back toward Ohio
 1730.1.1 = {
-	owner = XXX
-	controller = XXX
+	owner = ---
+	controller = ---
 	is_city = no 
 	remove_core = SHA 
 } #Shawnees continue drifting northward

@@ -9,15 +9,18 @@ base_tax = 3
 base_production = 3
 trade_goods = wine #Would shift to beer over time
 base_manpower = 1
-capital	= "Ingolstadt" 
+capital	= "Èםדמכרעאהע" 	### STT
 is_city = yes
 hre = yes
+
+
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1392.1.1 = { owner = BIN add_core = BIN controller = BIN remove_core = BAV }
+1392.1.1 = { owner = BIN add_core = BIN controller = BIN remove_core = BAV }	### STT
 1537.1.1 = { fort_16th = yes } #Landesfestung Ingolstadt
 1546.1.1 = { trade_goods = grain } #Beer
 1654.1.1 = { fort_16th = no fort_17th = yes } #Modernized
@@ -25,6 +28,6 @@ discovered_by = ottoman
 	owner = HAB
 	controller = HAB
 } # Bavaria is conquered by the Emperor, is however later restored for the balance of power
-1714.9.7 = { owner = BAV controller = BAV add_core = BAV }
+1714.9.7 = { owner = BAV controller = BAV add_core = BAV remove_core = BIN }	### STT
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }	### STT

@@ -5,7 +5,6 @@ controller = BUR
 add_core = BUR
 capital = "Монс"
 is_city = yes
-
 culture = wallonian
 religion = catholic
 hre = yes
@@ -14,9 +13,6 @@ base_production = 6
 trade_goods = cloth
 base_manpower = 3
 add_core = HAI
-
-
-
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -67,7 +63,7 @@ discovered_by = ottoman
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
-1830.8.25 = {
+1830.8.25 = { ### STT
 	owner = BLG
 	controller = BLG
 	add_core = BLG
