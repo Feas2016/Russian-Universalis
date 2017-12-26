@@ -2,7 +2,7 @@
 
 owner = FRA
 controller = FRA 
-capital = "Caen"
+capital = "Канны" ### STT
 is_city = yes
 culture = normand
 religion = catholic
@@ -19,8 +19,10 @@ add_core = FRA
 add_core = NRM
 fort_15th = yes
 
+1346.1.1 = { owner = ENG add_core = ENG controller = ENG } ### STT
+1365.1.1 = { owner = FRA controller = FRA } ### STT
 1415.10.25 = { controller = ENG } # The Battle of Agincourt
-1420.5.12 = { owner = ENG add_core = ENG } # Treaty of Troyes
+1420.5.12 = { owner = ENG } # Treaty of Troyes
 1450.1.1 = { owner = FRA controller = FRA } # Retaken by France
 1465.8.15 = { owner = NRM controller = NRM } # Treaty of Conflans
 1466.3.6 = { owner = FRA controller = FRA } # Louis XI reincorporates Normandy into the French crown

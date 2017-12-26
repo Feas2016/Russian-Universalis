@@ -1,8 +1,8 @@
 # - Wismar
 
-owner = MKL
-controller = MKL
-add_core = MKL
+owner = SHV			### STT
+controller = SHV	### STT
+add_core = SHV		### STT
 culture = pommeranian
 religion = catholic
 hre = yes
@@ -10,13 +10,14 @@ base_tax = 4
 base_production = 4
 trade_goods = cloth
 base_manpower = 3
-capital = "Шверин"
+capital = "Шверин"	### STT
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1358.1.1 = { owner = MKL add_core = MKL controller = MKL }	### STT
 1531.1.1  = { religion = protestant }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1866.8.1 = { owner = NDB controller = NDB add_core = NDB }

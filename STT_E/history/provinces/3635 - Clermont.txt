@@ -6,7 +6,7 @@ add_core = CLR
 add_core = PIC
 add_core = FRA
 add_local_autonomy = 25
-capital = "Клермон"
+capital = "Клермон" 	### STT
 is_city = yes
 culture = picard
 religion = catholic
@@ -21,6 +21,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1421.1.1 = { controller = ENG }  ### STT
 1327.1.1 = {
 	owner = FRA
 	controller = FRA

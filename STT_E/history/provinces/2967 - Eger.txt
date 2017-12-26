@@ -1,9 +1,9 @@
 # - Eger
 
-owner = BOH
-controller = BOH
-add_core = BOH
-capital = "Karlsbad"
+owner = EGR			### STT
+controller = EGR	### STT
+add_core = EGR		### STT
+capital = "Карлсбад"### STT
 culture = saxon
 religion = catholic
 trade_goods = gold #Joachimstal mines
@@ -39,10 +39,11 @@ discovered_by = ottoman
 	remove_core = BOH
 } # Tilly beats the Winterking. Deus Vult!
 1627.1.1 = { religion = catholic } # Order from Ferdinand II to reconvert to Catholicism, many Protestant leave the country
-1806.7.12 = { hre = no 
+1806.7.12 = { 	### STT
+	hre = no 
     owner = AEM 
     controller = AEM
     add_core = AEM 
 }
 	# The Holy Roman Empire is dissolved 
-1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }	### STT

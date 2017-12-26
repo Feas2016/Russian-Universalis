@@ -1,10 +1,10 @@
 # 1744 Antwerp - Principal cities: Antwerp
 
-owner = BRB
-controller = BRB
-add_core = BRB
+owner = AVP			### STT
+controller = AVP	### STT
+add_core = AVP		### STT
 is_city = yes
-capital = "Antwerp"
+capital = "Антверпен"	### STT
 culture = flemish
 religion = catholic
 hre = yes
@@ -32,6 +32,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1430.1.1 = { owner = BRB add_core = BRB controller = BRB }	### STT
 1477.1.5 = {owner = NED controller = NED add_core = NED }
 1548.6.26 = { hre = yes } # Flanders incorporated into the Holy Roman Empire
 1572.1.1 = { religion = reformed }
@@ -66,7 +67,7 @@ add_permanent_province_modifier = {
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
-1830.8.25 = {
+1830.8.25 = {	### STT
 	owner = BLG
 	controller = BLG
 	add_core = BLG

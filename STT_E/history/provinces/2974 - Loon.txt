@@ -1,9 +1,9 @@
 # Loon
-owner = LIE
-controller = LIE
-add_core = LIE
+owner = LOO			### STT
+controller = LOO	### STT
+add_core = LOO		### STT
 is_city = yes
-capital = "Loon"
+capital = "Лоон"	### STT
 culture = flemish
 religion = catholic
 hre = yes
@@ -16,6 +16,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1366.1.1 = { owner = LIE add_core = LIE controller = LIE }	### STT
 1453.1.1 = { add_core = BUR }
 1465.1.1 = { unrest = 4 } # Revolt imminent
 1465.4.22 = { unrest = 8 } # Citizens revolt
@@ -37,7 +38,7 @@ discovered_by = ottoman
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
-1830.8.25 = {
+1830.8.25 = {	### STT
 	owner = BLG
 	controller = BLG
 	add_core = BLG

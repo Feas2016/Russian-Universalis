@@ -7,7 +7,7 @@ culture = franconian
 religion = catholic
 hre = yes
 trade_goods = salt
-capital = "Hall"
+capital = "Халл"	### STT
 is_city = yes
 base_manpower = 1
 base_tax = 3
@@ -17,6 +17,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1420.1.1 = { owner = BRA add_core = BRA controller = BRA }	### STT
+1440.1.1 = { owner = ANS add_core = ANS controller = ANS }	### STT
 1522.1.1 = { religion = protestant }
 1525.1.1 = { unrest = 6 }
 1526.1.1 = { unrest = 0 }
@@ -36,4 +38,4 @@ discovered_by = ottoman
 	remove_core = FRA
 } # Ceded to Bavaria
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }	### STT

@@ -1,26 +1,28 @@
 #108 - Verona
 
-owner = MLO
-controller = MLO
+owner = VRN			### STT
+controller = VRN	### STT
 culture = venetian 
 religion = catholic 
-hre = no 
+hre = yes			### STT
 base_tax = 6 
 base_production = 6   
 trade_goods = grain
 base_manpower = 4
-capital = "Verona" 
+capital = "Верона"	### STT
 is_city = yes 
-add_core = MLO
+add_core = VRN		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1387.1.1 = { owner = MLO add_core = MLO controller = MLO }	### STT
 1405.1.1 = {	owner = VEN
 	controller = VEN
 	add_core = VEN
 	remove_core = MLO
+	hre = no	### STT
 } # To Milano
 1508.12.10 = { add_core = HAB } # War of the League of Cambrai 
 1509.6.1 = { controller = HAB } # Venice collapses

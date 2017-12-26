@@ -4,7 +4,7 @@ culture = maipurean
 discovered_by = south_american
 discovered_by = andean
 religion = animism
-capital = "Madre de Dios"
+capital = "Мадре де Диос"	### STT
 trade_goods = unknown
 hre = no
 base_tax = 1 
@@ -18,7 +18,6 @@ native_hostileness = 1
 	owner = SPA
 	controller = SPA
 	add_core = SPA
-	capital = "Madre de Dios"
 	is_city = yes
 	culture = castillian
 	religion = catholic
@@ -30,13 +29,13 @@ native_hostileness = 1
 	owner = PEU
 	controller = PEU
 	add_core = PEU
-	add_core = SPU
+#	add_core = SPU
 }
-1836.5.9 = {
-	owner = SPU
-	controller = SPU
-	add_core = SPU
-}
+# 1836.5.9 = {
+	# owner = SPU
+	# controller = SPU
+	# add_core = SPU
+# }
 1839.8.25 = {
 	owner = BLV
 	controller = BLV

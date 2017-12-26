@@ -1,6 +1,6 @@
-owner = BUR
-controller = BUR 
-capital = "Charolles"
+owner = SHE			### STT
+controller = SHE 	### STT
+capital = "Шароллес"	### STT
 is_city = yes
 culture = burgundian
 religion = catholic
@@ -9,12 +9,14 @@ base_tax = 4
 base_production = 4
 trade_goods = salt
 base_manpower = 3
-add_core = BUR
+add_core = SHE		### STT
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1310.1.1 = { owner = AMG add_core = AMG controller = AMG }	### STT
+1391.1.1 = { owner = BUR add_core = BUR controller = BUR }	### STT
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA } # Charles the Bold dies and Louis XII of France takes the province
 1493.8.19 = { owner = HAB controller = HAB add_core = HAB remove_core = FRA } # Frederick III dies and Charles VII cedes the province to Maximilian I von Habsburg
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance

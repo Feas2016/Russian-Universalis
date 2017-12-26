@@ -1,26 +1,29 @@
 #107 - Brescia
 
-owner = MLO		# From 1426
-controller = MLO
+owner = BYA	# From 1426	### STT
+controller = BYA		### STT
 culture = lombard 
 religion = catholic 
-hre = no 
+hre = yes				### STT
 base_tax = 8 
 base_production = 8    
 trade_goods = cloth
 base_manpower = 4    
-capital = "Brescia" 
+capital = "Брешия"		### STT
 is_city = yes
-add_core = MLO
+add_core = BYA			### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1339.1.1 = { owner = MLO add_core = MLO controller = MLO }	### STT
 1426.1.1 = {	owner = VEN
 	controller = VEN
 	add_core = VEN
+	hre = no	### STT
 }
+
 1495.1.1 = { hre = no }
 1509.6.1 = { controller = FRA } # Venice collapses
 1512.1.1 = { controller = VEN } # Brescia revolts

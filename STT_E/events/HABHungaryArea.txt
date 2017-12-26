@@ -265,10 +265,10 @@ country_event = {
 	option = {
 		name = HAB_HungaryArea.3.op2
 		ai_chance = { factor = 0 }
-			add_prestige = -5
-			hidden_effect = {
-				set_country_flag = gorz_not_claimed
-			}
+		add_prestige = -5
+		hidden_effect = {
+			set_country_flag = gorz_not_claimed
+		}
 	}
 }
 
@@ -278,7 +278,7 @@ country_event = {
 	title = "HAB_HungaryArea_4_title"
 	desc = "HAB_HungaryArea_4_desc"
 	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
@@ -295,18 +295,18 @@ country_event = {
 		name = HAB_HungaryArea.4.op1
 		ai_chance = { factor = 100 }
 			GOR = {
-					every_owned_province = {
-						add_claim = ROOT
-					}
-				}
+				every_owned_province = {
+				add_claim = ROOT
+			}
+		}
 	}
 	option = {
 		name = HAB_HungaryArea.4.op2
 		ai_chance = { factor = 0 }
-			add_prestige = -5
-			hidden_effect = {
-				set_country_flag = gorz_not_claimed
-			}
+		add_prestige = -5
+		hidden_effect = {
+			set_country_flag = gorz_not_claimed
+		}
 	}
 }
 
@@ -316,7 +316,7 @@ country_event = {
 	title = "HAB_HungaryArea_5_title"
 	desc = "HAB_HungaryArea_5_desc"
 	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 		NOT = {

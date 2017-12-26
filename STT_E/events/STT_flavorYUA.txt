@@ -125,10 +125,7 @@ country_event = {
 	trigger = {
 	    tag = YUA
 		any_owned_province = {
-		    limit = {
-		        region = mongolia_region
-			}
-			owned_by = ROOT
+		    region = mongolia_region
 		}
 	}
 	

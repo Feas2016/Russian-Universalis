@@ -1,7 +1,7 @@
 #114 - Romagna
 
-owner = VEN		#Bologna was independent until 1506, but the rest of Romagna was mainly under Papal control.
-controller = VEN
+owner = RNN	#Bologna was independent until 1506, but the rest of Romagna was mainly under Papal control.
+controller = RNN	### STT
 culture = romagnan 
 religion = catholic 
 hre = no 
@@ -9,10 +9,10 @@ base_tax = 5
 base_production = 5 
 trade_goods = salt
 base_manpower = 3   
-capital = "Ravenna" 
+capital = "Равенна"	### STT
 is_city = yes	# Estimated 
 add_core = PAP
-add_core = VEN
+add_core = RNN		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -23,6 +23,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1440.1.1 = { owner = VEN add_core = VEN controller = VEN }	### STT
 1509.1.1 = { remove_core = VEN controller = PAP owner = PAP }
 1805.12.26 = {
 	owner = ITA
@@ -36,7 +37,7 @@ add_permanent_province_modifier = {
 	add_core = PAP
 	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
-1861.3.14 = {
+1861.3.14 = {	### STT
 	add_core = ITA
 	owner = ITA
 	controller = ITA

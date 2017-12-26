@@ -1,8 +1,8 @@
 # 184 Orléannais - Principal cities: Orléans
 
-owner = ORL
-controller = ORL
-capital = "Blois"
+owner = FRA ### STT
+controller = FRA ### STT
+capital = "Áüåéñ" ### STT
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
@@ -19,6 +19,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1344.1.1 = { owner = ORL add_core = ORL controller = ORL } ### STT
 1462.6.26 = { owner = FRA controller = FRA add_core = FRA }
 1560.1.1 = { religion = reformed }
 1562.3.1 = { unrest = 5 }

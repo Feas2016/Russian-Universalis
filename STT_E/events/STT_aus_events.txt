@@ -10,10 +10,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
 	}
 
 	mean_time_to_happen = {
@@ -26,9 +26,9 @@ country_event = {
 		add_legitimacy = 10
 		add_imperial_influence = 10
 		add_country_modifier = {
-				name = "aus_maius"
-				duration = -1
-			}
+			name = "aus_maius"
+			duration = -1
+		}
 	}
 }
 
@@ -42,10 +42,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
 	}
 
 	mean_time_to_happen = {

@@ -1,9 +1,9 @@
 # 1866 -- Namur
 
-owner = BUR
-controller = BUR
-add_core = BUR
-capital = "Namur"
+owner = NAM			### STT
+controller = NAM	### STT
+add_core = NAM		### STT
+capital = "Неймар"	### STT
 is_city = yes
 culture = wallonian
 religion = catholic
@@ -19,6 +19,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1421.1.1 = { owner = BUR add_core = BUR controller = BUR }	### STT
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
 1559.5.12 = { unrest = 3 } # New bishoprics established in the Lowlands create an outrage
@@ -63,7 +64,7 @@ discovered_by = ottoman
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
-1830.8.25 = {
+1830.8.25 = {	### STT
 	owner = BLG
 	controller = BLG
 	add_core = BLG

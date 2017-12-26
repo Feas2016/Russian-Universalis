@@ -1,7 +1,7 @@
 # - Arezzo
 
-owner = LAN
-controller = LAN
+owner = AZZ			### STT
+controller = AZZ	### STT
 culture = tuscan 
 religion = catholic 
 hre = yes 
@@ -9,14 +9,15 @@ base_tax = 6
 base_production = 6
 trade_goods = livestock
 base_manpower = 2
-capital = "Arezzo" 
+capital = "Àðåççî" 	### STT
 is_city = yes # Estimated 
-add_core = LAN
+add_core = AZZ		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1384.1.1 = { owner = LAN add_core = LAN controller = LAN }	### STT
 1495.1.1 = { hre = no }
 1527.1.1 = { controller = SPA } # War of the League of Cognac
 1529.8.3 = { controller = LAN } # Treaty of Cambrai
@@ -48,7 +49,7 @@ discovered_by = ottoman
 	controller = TUS
 	remove_core = FRA
 } # Napoleon abdicates and Tuscany is restored
-1861.3.14 = {
+1861.3.14 = {	### STT
 	add_core = ITA
 	owner = ITA
 	controller = ITA

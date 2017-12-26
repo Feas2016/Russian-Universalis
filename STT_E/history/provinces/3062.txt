@@ -1,8 +1,8 @@
 # 180 Poitou - Principal cities: Poitiers
 
-owner = FRA
-controller = FRA
-capital = "Saintes"
+owner = ENG ### STT
+controller = ENG ### STT
+capital = "Сайнтес" ### STT
 is_city = yes
 culture = angevin
 religion = catholic 
@@ -11,12 +11,13 @@ base_tax = 3
 base_production = 3
 trade_goods = wool
 base_manpower = 2
-add_core = FRA
+add_core = ENG ### STT
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1375.1.1 = { owner = FRA add_core = FRA controller = FRA } ### STT
 1560.1.1 = { religion = reformed }
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks
