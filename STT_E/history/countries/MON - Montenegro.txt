@@ -550,6 +550,20 @@ capital = 138	# Zabljak
 
 1852.3.1 = { government = administrative_monarchy }
 
+1855.1.12 = {
+	queen = {
+		country_of_origin = SER
+		name = "Даринка"
+		dynasty = "Квекич"
+		birth_date = 1838.12.19
+		death_date = 1860.8.13 #1892.2.2
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 1
+	}
+}
+
 1860.8.13 = {
 	monarch = {
 		name = "Никола I"
@@ -561,12 +575,26 @@ capital = 138	# Zabljak
 	}
 }
 
-1860.8.13 = {
+1860.11.8 = {
+	queen = {
+		country_of_origin = SER
+		name = "Милена"
+		dynasty = "Вукотич"
+		birth_date = 1847.4.27
+		death_date = 1921.3.1 #1923.3.16
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1871.6.29 = {
 	heir = {
 		name = "Данило Александр"
-		monarch_name = "Данило II"
+		monarch_name = "Данило II Александр"
 		dynasty = "Петрович-Негош"
-		birth_date = 1841.10.7
+		birth_date = 1871.6.29
 		death_date = 1939.9.24
 		claim = 95
 		adm = 4

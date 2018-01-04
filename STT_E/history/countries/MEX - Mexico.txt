@@ -8,6 +8,7 @@ capital = 852	# Mexico
 1810.9.16 = {
 	monarch = {
 		name = "Мигель Идальго"
+		birth_date = 1753.5.8
 		adm = 3
 		dip = 2
 		mil = 3
@@ -17,17 +18,945 @@ capital = 852	# Mexico
 1811.7.30 = {
 	monarch = {
 		name = "Хосе Мария Морелос"
+		birth_date = 1765.9.30
 		adm = 4
 		dip = 3
 		mil = 4
 	}
 }
 
-1815.12.2 = {
+1815.12.22 = {
 	monarch = {
 		name = "Висенте Герреро"
+		birth_date = 1782.8.10
 		adm = 2
 		dip = 2
 		mil = 4
 	}
 }
+
+1821.9.15 = { government = revolutionary_empire  government_rank = 3 }
+
+1821.9.15 = {
+	monarch = {
+		name = "Агустин I"
+		dynasty = "де Итурбиде"
+		birth_date = 1783.8.27
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1821.9.15 = {
+	queen = {
+		country_of_origin = MEX
+		name = "Анна Мария"
+		dynasty = "Уэрти"
+		birth_date = 1786.1.17
+		death_date = 1861.3.21
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1821.9.15 = {
+	heir = {
+		name = "Агустин Херонимо"
+		monarch_name = "Агустин II"
+		dynasty = "де Итурбиде"
+		birth_date = 1807.8.30
+		death_date = 1866.12.11
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1823.3.19 = { government = constitutional_republic }
+
+1823.3.19 = {
+	monarch = {
+		name = "(Временное правительство)"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1824.10.10 = {
+	monarch = {
+		name = "Гуадалупе Виктория"
+		birth_date = 1786.9.29
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1829.4.1 = {
+	monarch = {
+		name = "Висенте Герреро"
+		birth_date = 1782.8.10
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1829.12.17 = {
+	monarch = {
+		name = "Хосе Мария Боканегра"
+		birth_date = 1787.5.25
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1829.12.23 = {
+	monarch = {
+		name = "Педро Велес"
+		birth_date = 1787.7.28
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1830.1.1 = {
+	monarch = {
+		name = "Анастасио Бустаманте"
+		birth_date = 1780.7.17
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1832.8.14 = {
+	monarch = {
+		name = "Мельчор Мускис"
+		birth_date = 1790.1.5
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1832.12.24 = {
+	monarch = {
+		name = "Мануэль Гомес Педраса"
+		birth_date = 1789.4.22
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1833.4.1 = {
+	monarch = {
+		name = "Валентин Гомес Фариас"
+		birth_date = 1781.2.14
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1833.5.16 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1833.6.3 = {
+	monarch = {
+		name = "Валентин Гомес Фариас"
+		birth_date = 1781.2.14
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1833.6.18 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1833.7.5 = {
+	monarch = {
+		name = "Валентин Гомес Фариас"
+		birth_date = 1781.2.14
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1833.10.27 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1833.12.16 = {
+	monarch = {
+		name = "Валентин Гомес Фариас"
+		birth_date = 1781.2.14
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1834.4.24 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1835.1.28 = {
+	monarch = {
+		name = "Мигель Барраган"
+		birth_date = 1789.3.8
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1836.2.27 = {
+	monarch = {
+		name = "Хосе Хусто Корро"
+		birth_date = 1794.7.19
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1837.4.19 = {
+	monarch = {
+		name = "Анастасио Бустаманте"
+		birth_date = 1780.7.17
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1839.3.18 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1839.7.11 = {
+	monarch = {
+		name = "Николас Браво"
+		birth_date = 1786.9.10
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1839.7.19 = {
+	monarch = {
+		name = "Анастасио Бустаманте"
+		birth_date = 1780.7.17
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1841.9.22 = {
+	monarch = {
+		name = "Франсиско Хавьер Эчеверрия"
+		birth_date = 1797.7.2
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1841.10.10 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1842.10.26 = {
+	monarch = {
+		name = "Николас Браво"
+		birth_date = 1786.9.10
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1843.3.4 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1843.10.4 = {
+	monarch = {
+		name = "Валентин Каналисо"
+		birth_date = 1794.1.14
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1844.6.4 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1844.9.12 = {
+	monarch = {
+		name = "Хосе Хоакин де Эррера"
+		birth_date = 1792.2.23
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1844.9.21 = {
+	monarch = {
+		name = "Валентин Каналисо"
+		birth_date = 1794.1.14
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1844.12.6 = {
+	monarch = {
+		name = "Хосе Хоакин де Эррера"
+		birth_date = 1792.2.23
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1845.12.31 = {
+	monarch = {
+		name = "Мариано Паредес"
+		birth_date = 1797.1.7
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1846.7.28 = {
+	monarch = {
+		name = "Николас Браво"
+		birth_date = 1786.9.10
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1846.8.5 = {
+	monarch = {
+		name = "Хосе Мариано Салас"
+		birth_date = 1797.5.11
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1846.12.23 = {
+	monarch = {
+		name = "Валентин Гомес Фариас"
+		birth_date = 1781.2.14
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1847.3.21 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1847.4.2 = {
+	monarch = {
+		name = "Педро Мария де Анайя"
+		birth_date = 1795.5.20
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1847.5.20 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1847.9.16 = {
+	monarch = {
+		name = "Мануэль де ла Пенья"
+		birth_date = 1789.3.10
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1847.11.13 = {
+	monarch = {
+		name = "Педро Мария де Анайя"
+		birth_date = 1795.5.20
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1848.1.8 = {
+	monarch = {
+		name = "Мануэль де ла Пенья"
+		birth_date = 1789.3.10
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1848.6.3 = {
+	monarch = {
+		name = "Хосе Хоакин де Эррера"
+		birth_date = 1792.2.23
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1851.1.15 = {
+	monarch = {
+		name = "Мариано Ариста"
+		birth_date = 1802.7.26
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1853.1.5 = {
+	monarch = {
+		name = "Хуан Баутиста Себальос"
+		birth_date = 1811.5.13
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1853.2.8 = {
+	monarch = {
+		name = "Мануэль Мария Ломбардини"
+		birth_date = 1802.7.23
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1853.4.20 = {
+	monarch = {
+		name = "Антонио Лопез де Санта-Анна"
+		birth_date = 1794.2.27
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1855.8.9 = {
+	monarch = {
+		name = "Мартин Каррера"
+		birth_date = 1806.12.20
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1855.9.12 = {
+	monarch = {
+		name = "Ромуло Диас де ла Вега"
+		birth_date = 1800.5.23
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1855.10.4 = {
+	monarch = {
+		name = "Хуан Альварес"
+		birth_date = 1790.1.27
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}
+
+1855.12.11 = {
+	monarch = {
+		name = "Игнасио Комонфорт"
+		birth_date = 1812.3.12
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1857.12.18 = {
+	monarch = {
+		name = "Бенито Хуарес"
+		birth_date = 1806.3.21
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+1863.7.11 = { government = revolutionary_empire government_rank = 3 }
+
+1863.7.11 = {
+	monarch = {
+		name = "(Регентский совет)"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1864.4.10 = {
+	monarch = {
+		name = "Максимилиан I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1832.7.6
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1864.4.10 = {
+	queen = {
+		country_of_origin = BLG
+		name = "Шарлотта"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1840.6.7
+		death_date = 1927.1.16
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1864.4.10 = {
+	heir = {
+		name = "Карл Людвиг"
+		monarch_name = "Карл Людвиг I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1833.7.30
+		death_date = 1896.5.19
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1867.6.19 = { government = constitutional_republic }
+
+1867.6.19 = {
+	monarch = {
+		name = "Бенито Хуарес"
+		birth_date = 1806.3.21
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+1872.7.18 = {
+	monarch = {
+		name = "Себастьян Лердо де Техада"
+		birth_date = 1827.4.24
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1876.10.26 = {
+	monarch = {
+		name = "Порфирио Диас"
+		birth_date = 1830.9.15
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1876.12.6 = {
+	monarch = {
+		name = "Хуан Непомусено Мендес"
+		birth_date = 1820.7.2
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1877.2.17 = {
+	monarch = {
+		name = "Порфирио Диас"
+		birth_date = 1830.9.15
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1880.12.1 = {
+	monarch = {
+		name = "Мануэль Гонсалес"
+		birth_date = 1833.6.18
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1884.12.1 = {
+	monarch = {
+		name = "Порфирио Диас"
+		birth_date = 1830.9.15
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+1911.5.25 = {
+	monarch = {
+		name = "Франсиско Леон де ла Барра"
+		birth_date = 1863.6.16
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1911.11.6 = {
+	monarch = {
+		name = "Франсиско Мадеро"
+		birth_date = 1873.10.30
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1913.2.18 = {
+	monarch = {
+		name = "Викториано Уэрта"
+		birth_date = 1850.12.23
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1914.7.15 = {
+	monarch = {
+		name = "Франсиско Карвахаль"
+		birth_date = 1870.12.9
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1914.8.14 = {
+	monarch = {
+		name = "Венустиано Карранса"
+		birth_date = 1870.12.9
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+# 1920.6.1 = {
+	# monarch = {
+		# name = "Адольфо де ла Уэрта"
+		# birth_date = 1881.5.29
+		# adm = 4
+		# dip = 2
+		# mil = 2
+	# }
+# }
+
+# 1920.12.1 = {
+	# monarch = {
+		# name = "Альваро Обрегон"
+		# birth_date = 1880.2.19
+		# adm = 4
+		# dip = 5
+		# mil = 2
+	# }
+# }
+
+# 1924.12.1 = {
+	# monarch = {
+		# name = "Плутарко Элиас Кальес"
+		# birth_date = 1877.9.25
+		# adm = 5
+		# dip = 3
+		# mil = 2
+	# }
+# }
+
+# 1928.12.1 = {
+	# monarch = {
+		# name = "Эмилио Портес Хиль"
+		# birth_date = 1890.10.3
+		# adm = 4
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1930.2.5 = {
+	# monarch = {
+		# name = "Паскуаль Ортис Рубио"
+		# birth_date = 1877.3.10
+		# adm = 4
+		# dip = 3
+		# mil = 2
+	# }
+# }
+
+# 1932.9.4 = {
+	# monarch = {
+		# name = "Абелардо Родригес"
+		# birth_date = 1889.5.12
+		# adm = 3
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 1934.12.1 = {
+	# monarch = {
+		# name = "Ласаро Карденас дель Рио"
+		# birth_date = 1895.5.21
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 1940.12.1 = {
+	# monarch = {
+		# name = "Мануэль Авила Камачо"
+		# birth_date = 1894.4.24
+		# adm = 5
+		# dip = 3
+		# mil = 2
+	# }
+# }
+
+# 1946.12.1 = {
+	# monarch = {
+		# name = "Мигель Алеман Вальдес"
+		# birth_date = 1900.9.29
+		# adm = 3
+		# dip = 5
+		# mil = 3
+	# }
+# }
+
+# 1952.12.1 = {
+	# monarch = {
+		# name = "Адольфо Руис Кортинес"
+		# birth_date = 1890.12.30
+		# adm = 4
+		# dip = 3
+		# mil = 4
+	# }
+# }
+
+# 1958.12.1 = {
+	# monarch = {
+		# name = "Адольфо Лопес Матеос"
+		# birth_date = 1910.5.26
+		# adm = 5
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1964.12.1 = {
+	# monarch = {
+		# name = "Густаво Диас Ордас"
+		# birth_date = 1911.3.12
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 1970.12.1 = {
+	# monarch = {
+		# name = "Луис Эчеверрия"
+		# birth_date = 1922.1.17
+		# adm = 4
+		# dip = 5
+		# mil = 2
+	# }
+# }
+
+# 1976.12.1 = {
+	# monarch = {
+		# name = "Хосе Лопес Портильо"
+		# birth_date = 1920.6.16
+		# adm = 3
+		# dip = 4
+		# mil = 4
+	# }
+# }
+
+# 1982.12.1 = {
+	# monarch = {
+		# name = "Мигель де ла Мадрид"
+		# birth_date = 1934.12.12
+		# adm = 5
+		# dip = 4
+		# mil = 2
+	# }
+# }
+
+# 1988.12.1 = {
+	# monarch = {
+		# name = "Карлос Салинас де Гортари"
+		# birth_date = 1948.4.3
+		# adm = 3
+		# dip = 5
+		# mil = 3
+	# }
+# }
+
+# 1994.12.1 = {
+	# monarch = {
+		# name = "Эрнесто Седильо"
+		# birth_date = 1951.12.27
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 2000.12.1 = {
+	# monarch = {
+		# name = "Винсенте Фокс"
+		# birth_date = 1942.7.2
+		# adm = 5
+		# dip = 5
+		# mil = 1
+	# }
+# }
+
+# 2006.12.1 = {
+	# monarch = {
+		# name = "Фелипе Кальдерон"
+		# birth_date = 1962.8.18
+		# adm = 4
+		# dip = 3
+		# mil = 4
+	# }
+# }
+
+# 2012.12.1 = {
+	# monarch = {
+		# name = "Энрике Пенья Ньето"
+		# birth_date = 1966.7.20
+		# adm = 3
+		# dip = 5
+		# mil = 3
+	# }
+# }

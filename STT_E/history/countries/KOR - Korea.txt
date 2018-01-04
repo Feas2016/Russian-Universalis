@@ -4,45 +4,72 @@ religion = confucianism
 technology_group = chinese
 capital = 735	# Hanseong
 
-1393.1.1 = {
+1392.1.1 = {
 	monarch = {
-		name = "Чонджон" #Taejo
-		dynasty = "Чосон"
+		name = "Тхэджо"
+		dynasty = "Ли"
+		birth_date = 1335.11.23
+		adm = 1
+		dip = 3
+		mil = 6
+	}
+}
+
+1392.1.1 = {
+	heir = {
+		name = "Пангва"
+		monarch_name = "Чонджон"
+		dynasty = "Ли"
+		birth_date = 1357.7.1
+		death_date = 1419.9.26
+		claim = 95
 		adm = 5
 		dip = 4
 		mil = 5
 	}
 }
 
-1398.9.1 = {
+1398.10.14 = {
 	monarch = {
-		name = "Таеджон" #Jeongjong
-		dynasty = "Чосон"
+		name = "Чонджон" #Taejo
+		dynasty = "Ли"
+		birth_date = 1357.7.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1398.10.14 = {
+	heir = {
+		name = "Банвон"
+		monarch_name = "Тхэджон"
+		dynasty = "Ли"
+		birth_date = 1367.5.18
+		death_date = 1422.5.10
+		claim = 95
 		adm = 3
 		dip = 3
 		mil = 3
 	}
 }
 
-1398.9.1 = {
-	heir = {
-		name = "Таеджон"
-		monarch_name = "Таеджон"
-		dynasty = "Чосон"
-		birth_date = 1367.6.13
-		death_date = 1422.5.30
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 5
+1400.11.28 = {
+	monarch = {
+		name = "Тхэджон" #Jeongjong
+		dynasty = "Ли"
+		birth_date = 1367.5.18
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
 1400.11.13 = {
 	heir = {
-		name = "Седжон"
+		name = "То"
 		monarch_name = "Седжон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
 		birth_date = 1397.5.7
 		death_date = 1450.5.18
 		claim = 95
@@ -52,34 +79,36 @@ capital = 735	# Hanseong
 	}
 }
 
-1418.1.1 = {
+1418.9.18 = {
 	monarch = {
 		name = "Седжон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1397.5.7
 		adm = 6
 		dip = 5
 		mil = 5
 	}
 }
 
-1418.1.1 = {
+1418.9.18 = {
 	heir = {
+		name = "Хян"
+		monarch_name = "Мунджон"
+		dynasty = "Ли"
+		birth_date = 1414.10.3
+		death_date = 1452.5.14
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1450.5.18 = {
+	monarch = {
 		name = "Мунджон"
-		monarch_name = "Мунджон II"
-		dynasty = "Чосон"
-		birth_date = 1414.11.15
-		death_date = 1452.6.1
-		claim = 95
-		adm = 2
-		dip = 1
-		mil = 1
-	}
-}
-
-1450.5.18 = {
-	monarch = {
-		name = "Мунджон II"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1414.10.3
 		adm = 2
 		dip = 1
 		mil = 1
@@ -88,11 +117,11 @@ capital = 735	# Hanseong
 
 1450.5.18 = {
 	heir = {
-		name = "Танджон"
+		name = "Хонхви"
 		monarch_name = "Танджон"
-		dynasty = "Чосон"
-		birth_date = 1441.1.1
-		death_date = 1457.1.1
+		dynasty = "Ли"
+		birth_date = 1441.7.23
+		death_date = 1457.12.24
 		claim = 95
 		adm = 3
 		dip = 1
@@ -100,23 +129,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1452.6.12 = {
+1452.5.14 = {
 	monarch = {
 		name = "Танджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1441.7.23
 		adm = 3
 		dip = 1
 		mil = 4
 	}
 }
 
-1452.6.12 = {
+1452.5.14 = {
 	heir = {
-		name = "Седжо"
+		name = "Ю"
 		monarch_name = "Седжо"
-		dynasty = "Чосон"
-		birth_date = 1417.1.1
-		death_date = 1468.1.1
+		dynasty = "Ли"
+		birth_date = 1417.9.29
+		death_date = 1468.9.8
 		claim = 95
 		adm = 1
 		dip = 1
@@ -124,23 +154,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1456.1.1 = {
+1455.6.11 = {
 	monarch = {
 		name = "Седжо"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1417.9.29
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1456.1.1 = {
+1455.6.11 = {
 	heir = {
-		name = "Йеджон"
+		name = "Хван"
 		monarch_name = "Йеджон"
-		dynasty = "Чосон"
-		birth_date = 1450.1.1
-		death_date = 1469.1.10
+		dynasty = "Ли"
+		birth_date = 1450.2.12
+		death_date = 1469.12.31
 		claim = 95
 		adm = 2
 		dip = 1
@@ -148,23 +179,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1468.10.2 = {
+1468.9.8 = {
 	monarch = {
 		name = "Йеджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1450.2.12
 		adm = 2
 		dip = 1
 		mil = 2
 	}
 }
 
-1468.10.2 = {
+1468.9.8 = {
 	heir = {
-		name = "Сонджон"
+		name = "Хёль"
 		monarch_name = "Сонджон"
-		dynasty = "Чосон"
-		birth_date = 1457.1.1
-		death_date = 1494.1.1
+		dynasty = "Ли"
+		birth_date = 1457.8.20
+		death_date = 1494.1.20
 		claim = 95
 		adm = 3
 		dip = 3
@@ -172,10 +204,11 @@ capital = 735	# Hanseong
 	}
 }
 
-1469.1.10 = {
+1469.12.31 = {
 	monarch = {
 		name = "Сонджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1457.8.20
 		adm = 3
 		dip = 3
 		mil = 2
@@ -184,11 +217,11 @@ capital = 735	# Hanseong
 
 1476.1.1 = {
 	heir = {
-		name = "Йи Юнг"
-		monarch_name = "Йонсангун"
-		dynasty = "Чосон"
-		birth_date = 1476.1.1
-		death_date = 1506.1.1
+		name = "Юн"
+		monarch_name = "Ёнсан-гун"
+		dynasty = "Ли"
+		birth_date = 1476.10.24
+		death_date = 1506.11.20
 		claim = 95
 		adm = 0
 		dip = 0
@@ -196,23 +229,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1495.1.30 = {
+1494.1.20 = {
 	monarch = {
-		name = "Йонсангун"
-		dynasty = "Чосон"
+		name = "Ёнсан-гун"
+		dynasty = "Ли"
+		birth_date = 1476.10.24
 		adm = 0
 		dip = 0
 		mil = 0
 	}
 }
 
-1495.1.30 = {
+1494.1.20 = {
 	heir = {
-		name = "Йи Йеок"
+		name = "Ёк"
 		monarch_name = "Чунджон"
-		dynasty = "Чосон"
-		birth_date = 1488.1.1
-		death_date = 1544.12.5
+		dynasty = "Ли"
+		birth_date = 1488.4.16
+		death_date = 1544.11.29
 		claim = 95
 		adm = 1
 		dip = 1
@@ -220,23 +254,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1506.1.1 = {
+1506.11.20 = {
 	monarch = {
 		name = "Чунджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1488.4.16
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1515.1.1 = {
+1515.3.10 = {
 	heir = {
-		name = "Инджон"
+		name = "Хо"
 		monarch_name = "Инджон"
-		dynasty = "Чосон"
-		birth_date = 1515.1.1
-		death_date = 1545.8.18
+		dynasty = "Ли"
+		birth_date = 1515.3.10
+		death_date = 1545.8.8
 		claim = 95
 		adm = 2
 		dip = 1
@@ -247,7 +282,8 @@ capital = 735	# Hanseong
 1544.12.5 = {
 	monarch = {
 		name = "Инджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1515.3.10
 		adm = 2
 		dip = 1
 		mil = 1
@@ -256,11 +292,11 @@ capital = 735	# Hanseong
 
 1544.12.5 = {
 	heir = {
-		name = "Мёнджон"
+		name = "Хван"
 		monarch_name = "Мёнджон"
-		dynasty = "Чосон"
-		birth_date = 1534.1.1
-		death_date = 1567.8.13
+		dynasty = "Ли"
+		birth_date = 1534.7.3
+		death_date = 1567.8.3
 		claim = 95
 		adm = 2
 		dip = 1
@@ -268,10 +304,11 @@ capital = 735	# Hanseong
 	}
 }
 
-1545.8.18 = {
+1545.8.8 = {
 	monarch = {
 		name = "Мёнджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1534.7.3
 		adm = 2
 		dip = 1
 		mil = 2
@@ -280,11 +317,11 @@ capital = 735	# Hanseong
 
 1552.1.1 = {
 	heir = {
-		name = "Йи Гюн"
+		name = "Кюн"
 		monarch_name = "Сонджо"
-		dynasty = "Чосон"
-		birth_date = 1552.1.1
-		death_date = 1608.3.7
+		dynasty = "Ли"
+		birth_date = 1552.11.26
+		death_date = 1608.3.16
 		claim = 95
 		adm = 2
 		dip = 1
@@ -292,23 +329,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1567.8.13 = {
+1567.8.3 = {
 	monarch = {
 		name = "Сонджо"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1552.11.26
 		adm = 2
 		dip = 1
 		mil = 0
 	}
 }
 
-1574.1.1 = {
+1575.4.25 = {
 	heir = {
-		name = "Кванхэгун"
+		name = "Хон"
 		monarch_name = "Кванхэгун"
-		dynasty = "Чосон"
-		birth_date = 1574.1.1
-		death_date = 1641.1.1
+		dynasty = "Ли"
+		birth_date = 1575.4.25
+		death_date = 1641.8.7
 		claim = 95
 		adm = 1
 		dip = 4
@@ -316,24 +354,54 @@ capital = 735	# Hanseong
 	}
 }
 
-1576.1.1 = { leader = {	name = "И Сунсин"		type = admiral	fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1598.11.1 } }
+1576.1.1 = { leader = {	name = "Ли Сунсин"		type = admiral	rank = 1	fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1598.12.16 } }
 
-1608.3.7 = {
+1608.3.16 = {
 	monarch = {
 		name = "Кванхэгун"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1575.4.25
 		adm = 1
 		dip = 4
 		mil = 2
+	}
+}
+
+1608.3.16 = {
+	heir = {
+		name = "Пу"
+		monarch_name = "Вонджон"
+		dynasty = "Ли"
+		birth_date = 1580.8.2
+		death_date = 1619.12.29
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1608.3.16 = {
+	heir = {
+		name = "Чон"
+		monarch_name = "Инджо"
+		dynasty = "Ли"
+		birth_date = 1595.12.17
+		death_date = 1649.6.17
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
 	}
 }
 
 # Coup
 
-1623.4.13 = {
+1623.4.12 = {
 	monarch = {
 		name = "Инджо"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1595.12.17
 		adm = 0
 		dip = 0
 		mil = 0
@@ -342,11 +410,11 @@ capital = 735	# Hanseong
 
 1623.4.13 = {
 	heir = {
-		name = "Хёджон"
+		name = "Хо"
 		monarch_name = "Хёджон"
-		dynasty = "Чосон"
-		birth_date = 1619.1.1
-		death_date = 1659.6.24
+		dynasty = "Ли"
+		birth_date = 1619.7.3
+		death_date = 1659.6.23
 		claim = 95
 		adm = 3
 		dip = 0
@@ -369,7 +437,8 @@ capital = 735	# Hanseong
 1649.7.5 = {
 	monarch = {
 		name = "Хёджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1619.7.3
 		adm = 3
 		dip = 0
 		mil = 2
@@ -378,11 +447,11 @@ capital = 735	# Hanseong
 
 1649.7.5 = {
 	heir = {
-		name = "Хёнджон"
+		name = "Ён"
 		monarch_name = "Хёнджон"
-		dynasty = "Чосон"
-		birth_date = 1641.1.1
-		death_date = 1674.9.19
+		dynasty = "Ли"
+		birth_date = 1641.3.15
+		death_date = 1674.9.17
 		claim = 95
 		adm = 1
 		dip = 0
@@ -390,10 +459,10 @@ capital = 735	# Hanseong
 	}
 }
 
-1659.6.24 = {
+1659.6.23 = {
 	monarch = {
 		name = "Хёнджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
 		adm = 1
 		dip = 0
 		mil = 2
@@ -402,35 +471,36 @@ capital = 735	# Hanseong
 
 1661.8.15 = {
 	heir = {
-		name = "Сукчон"
+		name = "Тхве"
 		monarch_name = "Сукчон"
-		dynasty = "Чосон"
-		birth_date = 1661.8.15
+		dynasty = "Ли"
+		birth_date = 1661.9.8
 		death_date = 1720.7.13
 		claim = 95
-		adm = 3
-		dip = 0
+		adm = 6
+		dip = 5
 		mil = 2
 	}
 }
 
-1674.9.19 = {
+1674.9.17 = {
 	monarch = {
 		name = "Сукчон"
-		dynasty = "Чосон"
-		adm = 3
-		dip = 0
+		dynasty = "Ли"
+		birth_date = 1661.9.8
+		adm = 6
+		dip = 5
 		mil = 2
 	}
 }
 
-1688.1.1 = {
+1688.11.20 = {
 	heir = {
-		name = "Кёнджон"
+		name = "Кюн"
 		monarch_name = "Кёнджон"
-		dynasty = "Чосон"
-		birth_date = 1688.1.1
-		death_date = 1724.10.7
+		dynasty = "Ли"
+		birth_date = 1688.11.20
+		death_date = 1724.10.11
 		claim = 95
 		adm = 1
 		dip = 0
@@ -441,7 +511,8 @@ capital = 735	# Hanseong
 1720.7.13 = {
 	monarch = {
 		name = "Кёнджон"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1688.11.20
 		adm = 1
 		dip = 0
 		mil = 1
@@ -450,11 +521,11 @@ capital = 735	# Hanseong
 
 1720.7.13 = {
 	heir = {
-		name = "Йонджо"
-		monarch_name = "Йонджо"
-		dynasty = "Чосон"
-		birth_date = 1694.9.13
-		death_date = 1776.3.5
+		name = "Кым"
+		monarch_name = "Ёнджо"
+		dynasty = "Ли"
+		birth_date = 1694.10.31
+		death_date = 1776.4.22
 		claim = 95
 		adm = 4
 		dip = 2
@@ -462,23 +533,24 @@ capital = 735	# Hanseong
 	}
 }
 
-1724.10.7 = {
+1724.10.11 = {
 	monarch = {
-		name = "Йонджо"
-		dynasty = "Чосон"
+		name = "Ёнджо"
+		dynasty = "Ли"
+		birth_date = 1694.10.31
 		adm = 4
 		dip = 2
 		mil = 2
 	}
 }
 
-1752.9.22 = {
+1752.10.28 = {
 	heir = {
-		name = "Чонджо"
+		name = "Сан"
 		monarch_name = "Чонджо"
-		dynasty = "Чосон"
-		birth_date = 1752.9.22
-		death_date = 1800.6.28
+		dynasty = "Ли"
+		birth_date = 1752.10.28
+		death_date = 1800.8.18
 		claim = 95
 		adm = 1
 		dip = 0
@@ -487,10 +559,11 @@ capital = 735	# Hanseong
 }
 
 
-1776.1.1 = {
+1776.4.22 = {
 	monarch = {
 		name = "Чонджо"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1752.10.28
 		adm = 1
 		dip = 0
 		mil = 1
@@ -499,11 +572,11 @@ capital = 735	# Hanseong
 
 1790.1.1 = {
 	heir = {
-		name = "Сунджо"
+		name = "Кон"
 		monarch_name = "Сунджо"
-		dynasty = "Чосон"
-		birth_date = 1790.1.1
-		death_date = 1834.1.1
+		dynasty = "Ли"
+		birth_date = 1790.7.29
+		death_date = 1834.12.13
 		claim = 95
 		adm = 2
 		dip = 0
@@ -511,13 +584,129 @@ capital = 735	# Hanseong
 	}
 }
 
-
-1800.8.19 = {
+1800.8.18 = {
 	monarch = {
 		name = "Сунджо"
-		dynasty = "Чосон"
+		dynasty = "Ли"
+		birth_date = 1790.7.29
 		adm = 2
 		dip = 0
 		mil = 1
+	}
+}
+
+1827.9.8 = {
+	heir = {
+		name = "Хван"
+		monarch_name = "Хонджон"
+		dynasty = "Ли"
+		birth_date = 1827.9.8
+		death_date = 1849.7.25
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1834.12.13 = {
+	monarch = {
+		name = "Хонджон"
+		dynasty = "Ли"
+		birth_date = 1827.9.8
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1834.12.13 = {
+	heir = {
+		name = "Пён"
+		monarch_name = "Чхольчон"
+		dynasty = "Ли"
+		birth_date = 1831.7.25
+		death_date = 1864.1.16
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1849.7.25 = {
+	monarch = {
+		name = "Чхольчон"
+		dynasty = "Ли"
+		birth_date = 1831.7.25
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1852.9.8 = {
+	heir = {
+		name = "Мёнбок"
+		monarch_name = "Коджон"
+		dynasty = "Ли"
+		birth_date = 1852.9.8
+		death_date = 1919.1.21
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1864.1.16 = {
+	monarch = {
+		name = "Коджон"
+		dynasty = "Ли"
+		birth_date = 1852.9.8
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1874.3.25 = {
+	heir = {
+		name = "Сунджон"
+		monarch_name = "Сунджон"
+		dynasty = "Ли"
+		birth_date = 1874.3.25
+		death_date = 1926.4.24
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1897.8.17 = { government_rank = 3 }
+
+1907.7.20 = {
+	monarch = {
+		name = "Сунджон"
+		dynasty = "Ли"
+		birth_date = 1874.3.25
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+1907.7.20 = {
+	heir = {
+		name = "Кан"
+		monarch_name = "Кан"
+		dynasty = "Ли"
+		birth_date = 1877.1.1
+		death_date = 1955.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }

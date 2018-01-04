@@ -1004,6 +1004,170 @@ government_rank = 2
 	}
 }
 
-1839.7.12 = { leader = { name = "Омер Лютфи-паша"         	type = general	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1868.1.1 } }
+1839.7.12 = { leader = { name = "Омер Лютфи-паша"		type = general	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1868.1.1 } }
 
-1841.7.2 = { leader = {	name = "Абдулкерим Надир-паша"         	type = general	fire = 3	shock = 0	manuever = 1	siege = 0	death_date = 1877.7.23 } }
+1841.7.2 = { leader = {	name = "Абдулкерим Надир-паша"	type = general	fire = 3	shock = 0	manuever = 1	siege = 0	death_date = 1877.7.23 } }
+
+1861.6.25 = {
+	monarch = {
+		name = "Абдул-Азиз I"
+		dynasty = "Османоглу"
+		birth_date = 1830.2.18
+		adm = 0
+		dip = 0
+		mil = 5
+	}
+}
+
+1861.6.25 = {
+	heir = {
+		name = "Мурад"
+		monarch_name = "Мурад V"
+		dynasty = "Османоглу"
+		birth_date = 1840.9.1
+		death_date = 1904.8.29
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 0
+	}
+}
+
+1876.5.30 = {
+	monarch = {
+		name = "Мурад V"
+		dynasty = "Османоглу"
+		birth_date = 1840.9.1
+		adm = 5
+		dip = 1
+		mil = 0
+	}
+}
+
+1876.5.30 = {
+	heir = {
+		name = "Абдул-Хамид"
+		monarch_name = "Абдул-Хамид II"
+		dynasty = "Османоглу"
+		birth_date = 1842.9.22
+		death_date = 1918.2.10
+		claim = 95
+		adm = 0
+		dip = 5
+		mil = 0
+	}
+}
+
+1876.8.31 = {
+	monarch = {
+		name = "Абдул-Хамид II"
+		dynasty = "Османоглу"
+		birth_date = 1842.9.22
+		adm = 0
+		dip = 5
+		mil = 0
+	}
+}
+
+1876.8.31 = {
+	heir = {
+		name = "Мехмед"
+		monarch_name = "Мехмед V Решад"
+		dynasty = "Османоглу"
+		birth_date = 1844.11.3
+		death_date = 1918.7.4
+		claim = 95
+		adm = 0
+		dip = 5
+		mil = 5
+	}
+}
+
+1907.10.13    = { leader = {	name = "Мустафа Кемаль Ататюрк"	type = general	rank = 6	fire = 3	shock = 3	manuever = 2	siege = 1	death_date = 1938.11.10 } }
+
+1909.4.27 = {
+	monarch = {
+		name = "Мехмед V Решад"
+		dynasty = "Османоглу"
+		birth_date = 1844.11.3
+		adm = 0
+		dip = 5
+		mil = 5
+	}
+}
+
+1909.4.27 = {
+	heir = {
+		name = "Мехмед"
+		monarch_name = "Мехмед VI Вахидеддин"
+		dynasty = "Османоглу"
+		birth_date = 1861.1.14
+		death_date = 1926.5.16
+		claim = 95
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1918.7.4 = {
+	monarch = {
+		name = "Мехмед VI Вахидеддин"
+		dynasty = "Османоглу"
+		birth_date = 1861.1.14
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1918.7.4 = {
+	heir = {
+		name = "Абдул-Меджид"
+		monarch_name = "Абдул-Меджид II"
+		dynasty = "Османоглу"
+		birth_date = 1868.5.30
+		death_date = 1944.8.23
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+#ИСЛАМСКИЙ ХАЛИФАТ
+
+1922.11.18 = {
+	monarch = {
+		name = "Абдул-Меджид II"
+		dynasty = "Османоглу"
+		birth_date = 1868.5.30
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1922.11.18 = {
+	heir = {
+		name = "Омер Фарук"
+		monarch_name = "Омер Фарук"
+		dynasty = "Османоглу"
+		birth_date = 1898.2.27
+		death_date = 1969.3.28
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1924.3.3 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
