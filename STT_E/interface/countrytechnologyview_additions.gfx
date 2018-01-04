@@ -1,0 +1,56 @@
+spriteTypes = {
+
+### Institutions individual graphics
+
+	spriteType = {
+		name = "GFX_icon_institution_hhh_dt_f"
+		texturefile = "gfx//interface//institutions//hhh_dt_f.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_icon_institution_hhh_dt_s"
+		texturefile = "gfx//interface//institutions//hhh_dt_s.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_icon_institution_hhh_dt_t"
+		texturefile = "gfx//interface//institutions//hhh_dt_t.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_icon_institution_hhh_dt_l"
+		texturefile = "gfx//interface//institutions//hhh_dt_l.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+### Institutions tab graphics
+	
+	spriteType = {
+		name = "GFX_institution_tab_hhh_dt_f"
+		texturefile = "gfx/interface/institutions//institution_tab_hhh_dt_f.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}		
+    spriteType = {
+		name = "GFX_institution_tab_hhh_dt_s"
+		texturefile = "gfx/interface/institutions//institution_tab_hhh_dt_s.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_institution_tab_hhh_dt_t"
+		texturefile = "gfx/interface/institutions//institution_tab_hhh_dt_t.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_institution_tab_hhh_dt_l"
+		texturefile = "gfx/interface/institutions//institution_tab_hhh_dt_l.dds"
+		noOfFrames = 2
+		transparencecheck = yes
+	}
+}

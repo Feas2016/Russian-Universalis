@@ -1,0 +1,50 @@
+namespace = chosearch
+country_event = {
+	id = chosearch.1
+	title = chosearch.t
+	desc = chosearch.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		government = greek_monarchy	
+	}
+	is_triggered_only = yes
+	
+	option = {
+		name = chosearch.a
+		change_adm = 1
+		add_ruler_modifier = {
+				name = "Archon_adm"
+				duration = -1
+			}
+			add_ruler_modifier = {
+				name = "archon_elect"
+				duration = 5475
+			}
+	}
+	option = {
+		name = chosearch.b
+		change_dip = 1
+		add_ruler_modifier = {
+				name = "Archon_dip"
+				duration = -1
+			}
+		add_ruler_modifier = {
+				name = "archon_elect"
+				duration = 5475
+			}	
+	}
+	option = {
+		name = chosearch.c
+		change_mil = 1
+		add_ruler_modifier = {
+				name = "Archon_mil"
+				duration = -1
+			}
+		add_ruler_modifier = {
+				name = "archon_elect"
+				duration = 5475
+			}
+	}
+}
+#5475

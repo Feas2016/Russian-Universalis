@@ -13,17 +13,18 @@ base_production = 6
 base_manpower = 4
 is_city = yes
 add_core = GOC
+add_core = MUS
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1365.1.1 = {
-	owner = BAH
-	controller = BAH
-}
-1405.1.1 = { add_core = BAH }
+1200.1.1 = { owner = KAK controller = KAK add_core = KAK }
+1322.1.1 = { owner = DLH controller = DLH add_core = DLH }
+1323.1.1 = { remove_core = KAK }
+1344.1.1 = { owner = MUS controller = MUS add_core = MUS remove_core = DLH }
+1368.1.1 = { owner = BAH controller = BAH add_core = BAH remove_core = MUS }
 1453.1.1 = {
 	controller = REB
 	revolt = {
@@ -32,7 +33,7 @@ discovered_by = chinese
 } #Governor of Telingana revolts, invites Kalji intervention
 1456.1.1 = { controller = BAH revolt = { } }	#End of Revolt
 1490.1.1 = {
-	remove_core = BAH 
+	remove_core = BAH
 	owner = GOC
 	controller = GOC
 } # The Breakup of the Bahmani sultanate # Qutb Shahi dynasty

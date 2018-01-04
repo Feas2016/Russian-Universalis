@@ -1,0 +1,69 @@
+# For specific combinations of culture, religion and other such triggers
+# Will pick the first valid one it finds in list
+
+#Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
+
+greek_monarchy = {
+	rank = {
+		1 = DUAL_REP
+		2 = DUAL_REP2
+		3 = DUAL_REP3
+	}
+
+	ruler_male = {
+		1 = GREEK_MONARCH
+		2 = GREEK_MONARCH2
+		3 = GREEK_MONARCH3
+	}
+
+	ruler_female = {
+		1 = GREEK_MONARCH
+		2 = GREEK_MONARCH2 
+		3 = GREEK_MONARCH3
+	}
+
+	trigger = {
+		government = greek_monarchy
+	}
+}
+
+greek_vassals = {
+	rank = {
+		1 = DUAL_REP
+	}
+
+	ruler_male = {
+		1 = GREEK_MONARCH
+	}
+
+	ruler_female = {
+		1 = GREEK_MONARCH
+	}
+
+	trigger = {
+		overlord = {
+			government = greek_monarchy
+		}
+	}
+}
+
+greek_march = {
+	rank = {
+		1 = DUAL_REP
+	}
+
+	ruler_male = {
+		1 = GREEK_WAR_ARCHON
+	}
+
+	ruler_female = {
+		1 = GREEK_WAR_ARCHON
+	}
+
+	trigger = {
+		is_march = yes
+		overlord = {
+			government = greek_monarchy
+		}
+	}
+}

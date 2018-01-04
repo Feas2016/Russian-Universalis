@@ -1,0 +1,55 @@
+country_decisions = {
+
+	chola_nation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = telegu
+				primary_culture = tamil
+				}
+			NOT = { tag = PND }
+			NOT = { tag = BHA }
+			NOT = { tag = VIJ }
+			NOT = { exists = BHA }
+			NOT = { exists = CLH }
+			religion = hinduism
+		}
+		allow = {
+			NOT = { is_year = 1400 }
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = BHA }	
+			religion = hinduism			
+            owns_core_province = 3417
+            owns_core_province = 2101
+            owns_core_province = 2026
+			owns_core_province = 3401
+            owns_core_province = 536
+		}
+		effect = {
+			change_tag = CLH
+			change_government = despotic_monarchy
+			add_prestige = 25
+			coromandel_region = { 
+                  add_core = CLH
+                  }
+			define_ruler = {
+				name = "Раджендра"
+				dynasty = "Чола"
+				adm = 5
+				dip = 2
+				mil = 5
+			}
+			define_heir = {
+				name = "Раджарая"
+				dynasty = "Чола"
+				adm = 2
+				dip = 3
+				mil = 2
+			}
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

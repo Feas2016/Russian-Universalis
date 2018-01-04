@@ -1,0 +1,403 @@
+annex_paramaras = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = PRA
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+		is_free_or_tributary_trigger = yes
+		PRA = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = paramara_subjugated }
+		NOT = { last_mission = annex_paramaras }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = PRA }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PRA value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PRA value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = paramara_subjugated
+	}
+}
+annex_gangas = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = EGA
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+		is_free_or_tributary_trigger = yes
+		EGA = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = gangas_subjugated }
+		NOT = { last_mission = annex_gangas }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = EGA }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = EGA value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = EGA value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = gangas_subjugated
+	}
+}
+annex_yadavas = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = YAD
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+
+		is_free_or_tributary_trigger = yes
+		YAD = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = yadavas_subjugated }
+		NOT = { last_mission = annex_yadavas }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = YAD }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = YAD value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = YAD value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = yadavas_subjugated
+	}
+}
+annex_hoisala = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = HOI
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+		is_free_or_tributary_trigger = yes
+		HOI = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = hoisala_subjugated }
+		NOT = { last_mission = annex_hoisala }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = HOI }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = HOI value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = HOI value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = hoisala_subjugated
+	}
+}
+annex_kakatyas = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = KAK
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+		is_free_or_tributary_trigger = yes
+		KAK = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = kakatyas_subjugated }
+		NOT = { last_mission = annex_kakatyas }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = KAK }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = KAK value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = KAK value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = kakatyas_subjugated
+	}
+}
+annex_pandya = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = PND
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = DLH
+		is_free_or_tributary_trigger = yes
+		PND = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { has_country_flag = pandya_subjugated }
+		NOT = { last_mission = annex_pandya }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = PND }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PND value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PND value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = pandya_subjugated
+	}
+}

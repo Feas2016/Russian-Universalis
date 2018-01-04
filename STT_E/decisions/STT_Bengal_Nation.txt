@@ -1,0 +1,37 @@
+country_decisions = {
+
+	bengal_nation = {
+		major = yes
+		potential = {
+			primary_culture = bengali
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = BNG }
+                        owns_core_province = 3414
+                        owns_core_province = 3422
+                        owns_core_province = 3421
+						owns_core_province = 2039
+                        owns_core_province = 2081
+						owns_core_province = 561
+		}
+	 	effect = {
+			change_tag = BNG
+			change_government = despotic_monarchy
+			add_prestige = 25
+			bengal_region = { add_core = BNG }
+		}
+		ai_will_do = {
+				factor = 400
+		}
+	}
+}

@@ -20,6 +20,11 @@ discovered_by = nomad_group
 discovered_by = chinese
 extra_cost = 10
 
+1200.1.1 = { owner = KAK controller = KAK add_core = KAK }
+
+1323.1.1 = { owner = DLH controller = DLH add_core = DLH remove_core = KAK }
+
+1344.1.1 = { owner = YOR controller = YOR add_core = YOR }
 
 1405.1.1 = { discovered_by = MNG }
 1445.1.1 = { controller = ORI } # Conquered by Gajapatis

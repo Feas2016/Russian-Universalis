@@ -1,0 +1,38 @@
+##################################################
+# Dark Times Mechanics for early dates
+#
+# Choose Difficulty
+##################################################
+
+namespace = hhh_choose_difficulty
+
+country_event = {
+	id = hhh_choose_difficulty.0
+	title = hhh_choose_difficulty.0.t
+	desc = hhh_choose_difficulty.0.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+
+	trigger = {
+		always = yes
+        ai = no		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = hhh_choose_difficulty.0.a
+		custom_tooltip = tooltip_hhh_choose_difficulty_l.0.a.tt
+		set_global_flag = hhh_default
+	}
+	option = {
+		name = hhh_choose_difficulty.0.b
+		custom_tooltip = tooltip_hhh_choose_difficulty_l.0.a.tt
+		set_global_flag = hhh_light
+	}
+}

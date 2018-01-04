@@ -1,0 +1,21 @@
+# Sind vassal of Delhi
+vassal = {
+	first = DLH
+	second = SND
+	start_date = 1309.1.1
+	end_date = 1414.1.1
+}
+# Gujarat vassal of Delhi (removed)
+#vassal = {
+#	first = DLH
+#	second = GUJ
+#	start_date = 1309.1.1
+#	end_date = 1317.1.1
+#}
+# I made an alliance with the DEV so that Delhi does not expand eastward. This is not a historical alliance
+alliance = {
+	first = DLH
+	second = DEV
+	start_date = 1290.1.1
+	end_date = 1360.1.1
+}

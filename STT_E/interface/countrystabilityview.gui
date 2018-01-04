@@ -105,7 +105,7 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
-			text = "EXPENSESTAB" # Заменил текст	
+			text = "Stability"	
 			maxWidth = 130
 			maxHeight = 32
 			format = left
@@ -639,16 +639,16 @@ guiTypes = {
 				position = { x = 7 y = 46 }
 				buttonFont = "vic_18"
 				buttonText = "LEDGER_PROVINCE"
-				pdx_tooltip = "SORT_BY_NAME_STT" # Заменил для единообразия
+				pdx_tooltip = "SORT_BY_NAME"
 				pdx_tooltip_delayed = ""
 			}
 
 			guiButtonType = {
 				name ="sort_overext_tax"
-				quadTextureSprite = "GFX_sort_62_dev"
+				quadTextureSprite = "GFX_sort_62"
 				position = { x = 114 y = 46 }
-#				buttonFont = "vic_18"
-#				buttonText = "LEDGER_DEVELOPMENT"
+				buttonFont = "vic_18"
+				buttonText = "LEDGER_DEVELOPMENT"
 				pdx_tooltip = "SORT_BY_DEVELOPMENT"
 				pdx_tooltip_delayed = ""
 			}
@@ -665,8 +665,10 @@ guiTypes = {
 			
 			guiButtonType = {
 				name ="sort_overext_overext"
-				quadTextureSprite = "GFX_sort_overex_88" #Иконка вместо текста
+				quadTextureSprite = "GFX_sort_88"
 				position = { x = 268 y = 46 }
+				buttonFont = "vic_18"
+				buttonText = "over_extension"
 				pdx_tooltip = "SORT_OVEREXT"
 				pdx_tooltip_delayed = ""
 			}			
@@ -677,15 +679,17 @@ guiTypes = {
 				position = { x = 358 y = 46 }
 				buttonFont = "vic_18"
 				buttonText = "PEACE_COST"
-				pdx_tooltip = "SORT_BY_COST_STT" # Заменил для единообразия
+				pdx_tooltip = "SORT_BY_COST"
 				pdx_tooltip_delayed = ""
 			}
 			
 			guiButtonType = {
 				name ="sort_cores"
-				quadTextureSprite = "GFX_sort_giveupcore" #Иконка вместо текста
+				quadTextureSprite = "GFX_sort_79"
 				position = { x = 404 y = 46 }
-				pdx_tooltip = "GIVE_UP_CORES_STT" # Заменил для единообразия
+				buttonFont = "vic_18"
+				buttonText = "GIVE_UP_CORES"
+				pdx_tooltip = "GIVE_UP_CORES"
 				pdx_tooltip_delayed = ""
 			}
 					
@@ -771,17 +775,15 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "rebels_info"
-				position = { x = 290 y = 355}
+				position = { x = 290 y = 356}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
 				text = "..."	
-				maxWidth = 170 # Увеличил
-				maxHeight = 20 # Увеличил
-				#format = left
-				#Orientation = "Center_center"
-				vertical_alignment = center
-				fixedsize = no
+				maxWidth = 180
+				maxHeight = 64
+				format = left
+				fixedsize = yes
 			}	
 			
 			
@@ -834,8 +836,8 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}	
 				text = ""	
-				maxWidth = 248 # Увеличил
-				maxHeight = 64 # Увеличил
+				maxWidth = 248
+				maxHeight = 48
 				format = left
 				fixedsize = yes
 			}	
@@ -844,14 +846,14 @@ guiTypes = {
 			{
 				name ="enforcedemands_icon"
 				spriteType = "GFX_icon_rebel_enforced_demands"
-				position = { x= 30 y = 458 }
+				position = { x= 30 y = 438 }
 				Orientation = "UPPER_LEFT"
 			}	
 			
 			listboxType = {
 				name = "demands_listbox"
 				backGround = ""
-				position = { x=60 y=458 }
+				position = { x=60 y=438 }
 				size = { x=227 y=87 }
 				horizontal = 0
 				spacing = 1
@@ -1567,7 +1569,7 @@ guiTypes = {
 		font = "vic_18"
 		borderSize = {x = 0 y = 0}	
 		text = ""	
-		maxWidth = 200
+		maxWidth = 245
 		maxHeight = 20
 		format = left
 		fixedsize = yes

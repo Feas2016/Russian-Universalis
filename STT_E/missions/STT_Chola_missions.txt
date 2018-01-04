@@ -1,0 +1,348 @@
+chola_annex_pandya = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = PND
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		PND = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+		NOT = { last_mission = chola_annex_pandya }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		NOT = { exists = PND }
+		all_target_province = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+	chance = {
+		factor = 3000 ###STT
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PND value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PND value = -100 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_prestige = 5
+		add_adm_power = 400
+		set_country_flag = pandya_subjugated
+	}
+}
+chola_conquer_lanka = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+	    area = algiers_area
+	}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		lanka_area = {
+			NOT = { owned_by = ROOT }
+		}
+		
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+		add_adm_power = 25
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}
+chola_conquer_bengal = {
+    
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	is_year = 1380
+
+    target_provinces = {
+			province_id = 561
+			NOT = { owned_by = ROOT }
+		}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		is_at_war = no	
+		NOT = { owns = 561 }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}
+chola_conquer_pegu = {
+    
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	is_year = 1390
+
+    target_provinces = {
+			province_id = 586
+			NOT = { owned_by = ROOT }
+		}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		is_at_war = no	
+		NOT = { owns = 586 }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}
+chola_conquer_malacca = {
+    
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	is_year = 1400
+
+    target_provinces = {
+			province_id = 597
+			NOT = { owned_by = ROOT }
+		}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		is_at_war = no	
+		NOT = { owns = 597 }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}
+chola_conquer_siak = {
+    
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	is_year = 1410
+
+    target_provinces = {
+			province_id = 620
+			NOT = { owned_by = ROOT }
+		}
+	allow = {
+	    normal_or_historical_nations = yes
+		tag = CLH
+		is_free_or_tributary_trigger = yes
+		is_at_war = no	
+		NOT = { owns = 620 }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 6
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 10
+        add_country_modifier = { 
+        name = "military_victory" 
+        duration = 3650 
+        } 
+    }
+}

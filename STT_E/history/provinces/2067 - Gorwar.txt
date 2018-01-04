@@ -1,7 +1,7 @@
 #2067 - Gorwar
 
-owner = MAW
-controller = MAW
+owner = DLH
+controller = DLH
 culture = rajput
 religion = hinduism
 capital = "ялор"	### STT
@@ -14,6 +14,7 @@ is_city = yes
 estate = estate_nobles
 add_core = MAW
 add_core = GUJ
+add_core = DLH
 
 
 
@@ -23,6 +24,7 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
+1406.1.1 = { controller = MAW owner = MAW add_core = MAW }
 
 1438.1.1 = {
 	owner = MER

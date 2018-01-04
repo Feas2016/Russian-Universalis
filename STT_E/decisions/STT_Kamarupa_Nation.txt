@@ -1,0 +1,41 @@
+country_decisions = {
+
+	kamarupa_nation = {
+		major = yes
+		potential = {
+			OR = {
+				tag = KMT
+				tag = ASS
+				tag = SDY
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+			adm_tech = 5
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = KMR }			
+                        owns_core_province = 2040
+                        owns_core_province = 566
+                        owns_core_province = 571
+						owns_core_province = 2042
+                        owns_core_province = 562
+						owns_core_province = 2071
+		}
+	 	effect = {
+			change_tag = KMR
+			change_government = despotic_monarchy
+			add_prestige = 25
+			bengal_region = { add_core = BNG }			
+		}
+		ai_will_do = {
+				factor = 400
+		}
+	}
+}

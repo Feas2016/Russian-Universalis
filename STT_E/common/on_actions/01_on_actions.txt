@@ -1,17 +1,35 @@
 # country 
+on_new_monarch = {
+     country_event = {
+		id = chosearch.1
+	 }
+}
+# country 
 on_new_term_election = {
-	events = {
-		700		# Election event
-		elections.720		# Dutch Republic
-		elections.820       # Carthage Republic
+	country_event = {
+		id = elections_hhh.1
 	}
 }
 
 # country 
 on_death_election = {
+	country_event = {
+		id = chosearch.1
+	}
+}
+
+# country 
+on_replace_governor = {
 	events = {
-		701		# Election event
-		elections.721		# Dutch Republic
-		elections.821    # Carthage Republic
+		elections.707
+	}
+}
+
+on_five_year_pulse_2 = {
+	random_events = {	
+		100 = event_estate_hhh.4
+		100 = event_estate_hhh.5
+		100 = event_estate_hhh.5
+		1000 = 0              
 	}
 }
