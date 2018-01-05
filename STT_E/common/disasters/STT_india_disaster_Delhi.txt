@@ -4,7 +4,7 @@ delhi_disaster = {
 		normal_or_historical_nations = yes
 		is_year = 1360
 		NOT = { is_year = 1390 }
-		num_of_cities = 20
+		num_of_cities = 40
 		NOT = { has_country_flag = DLH_collapse_ended }
 	}
 
@@ -87,14 +87,12 @@ delhi_disaster = {
 		}
 	}
 	
-	# At least one breakaway has occurred and been re-taken, and it's been 3 years.
 	can_end = {
-		custom_trigger_tooltip = {
-			had_country_flag = { flag = DLH_disaster_pause days = 1095 } # 3 years
-		}
 		OR = {
 			is_year = 1430
-			num_of_cities = 25		
+			NOT = {
+			    num_of_cities = 25
+			}		
 		}
 	}
 

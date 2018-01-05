@@ -165,7 +165,7 @@ country_event = {
 		tag = DLH
 		has_disaster = delhi_disaster
 		NOT = { has_country_modifier = DLH_broken }
-		NOT = { exist = SAT }
+		NOT = { exists = SAT }
 	}
 
 	mean_time_to_happen = { 

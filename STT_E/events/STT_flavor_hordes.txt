@@ -80,7 +80,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		months = 120 
+		months = 50 
 		modifier = {
 			factor = 0.80
 			is_at_war = yes
@@ -97,7 +97,7 @@ country_event = {
 
 	immediate = {
 		release = KAZ
-		add_country_modifier = { name = "GLH_broken" duration = 1300 }
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -137,7 +137,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		months = 120 
+		months = 50 
 		modifier = {
 			factor = 0.80
 			is_at_war = yes
@@ -163,7 +163,7 @@ country_event = {
 		2406 = { add_core = CRI }
 		283 = { add_core = CRI }
 		release = CRI
-		add_country_modifier = { name = "GLH_broken" duration = 1300 }
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -202,7 +202,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		months = 120 
+		months = 50 
 		modifier = {
 			factor = 0.80
 			is_at_war = yes
@@ -219,7 +219,7 @@ country_event = {
 
 	immediate = {
 		release = NOG
-		add_country_modifier = { name = "GLH_broken" duration = 1300 }
+		add_country_modifier = { name = "GLH_broken" duration = 500 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -259,7 +259,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		months = 120
+		months = 50
 		modifier = {
 			factor = 0.80
 			is_at_war = yes
@@ -276,7 +276,7 @@ country_event = {
 
 	immediate = {
 		release = KZH
-		add_country_modifier = { name = "GLH_broken" duration = 1300 }
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -316,7 +316,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = { 
-		months = 120
+		months = 50
 		modifier = {
 			factor = 0.80
 			is_at_war = yes
@@ -333,7 +333,7 @@ country_event = {
 
 	immediate = {
 		release = SIB
-		add_country_modifier = { name = "GLH_broken" duration = 1300 }
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
 
@@ -568,7 +568,7 @@ country_event = {
 			release = SAB
 			SAB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -644,7 +644,7 @@ country_event = {
 			release = CHB
 			CHB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -718,7 +718,7 @@ country_event = {
 			release = AKK
 			AKK = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -794,7 +794,7 @@ country_event = {
 			release = KRT
 			KRT = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -867,7 +867,7 @@ country_event = {
 			release = SDB
 			SDB = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -938,7 +938,7 @@ country_event = {
 			release = MUZ
 			MUZ = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -1009,7 +1009,7 @@ country_event = {
 			release = INJ
 			INJ = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {
@@ -1098,7 +1098,7 @@ country_event = {
 			release = JAL
 			JAL = { every_owned_province = { add_unrest = -25 }}
 		}
-		add_country_modifier = { name = "HUL_broken" duration = 1300 }
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
 	}
 
 	option = {

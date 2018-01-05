@@ -4,38 +4,36 @@ country_decisions = {
 		potential = {
 			ai = no
 			government = monarchy
-			NOT = {
-			government = greek_monarchy
-			}
+			NOT = { government = greek_monarchy }
 			OR = {
-			italy_region = {
-			    owned_by = ROOT
-			    is_capital = yes
+				italy_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
+				balkan_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
 			}
-			balkan_region = {
-			    owned_by = ROOT
-			    is_capital = yes
-			}
-		  }
 		}
 		allow = {
 			legitimacy = 100
 			stability  = 2
 			OR = {
-			italy_region = {
-			    owned_by = ROOT
-			    is_capital = yes
+				italy_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
+				balkan_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
 			}
-			balkan_region = {
-			    owned_by = ROOT
-			    is_capital = yes
-			}
-		  }
 		}
 		effect = {
-		country_event = {
-	        id = chosearch.1
-			days = 2
+			country_event = {
+				id = chosearch.1
+				days = 2
 	        }
 		    add_legitimacy = -60
 			add_stability = -2
@@ -54,17 +52,16 @@ country_decisions = {
 			}
 			set_country_flag = purple_palace_begin
 			hidden_effect = {
-			add_ruler_modifier = {
-				name = "archon_elect"
-				duration = 5475
+				add_ruler_modifier = {
+					name = "archon_elect"
+					duration = 5475
+				}
+				country_event = {
+				id = event_estate_hhh.3
+				days = 1825
+				}			
 			}
-		    country_event = {
-			id = event_estate_hhh.3
-			days = 1825
-			}			
-		}
-		}
-		
+		}		
 		ai_will_do = {
 			factor = 0
 		}
@@ -74,9 +71,7 @@ country_decisions = {
 		potential = {
 			ai = no
             has_country_flag = purple_palace_begin
-			NOT = {
-			has_country_flag = purple_palace
-			}
+			NOT = {	has_country_flag = purple_palace }
 		}
 		allow = {
 			legitimacy = 100
@@ -107,18 +102,16 @@ country_decisions = {
 		potential = {
 			ai = no
 			government = greek_monarchy
-			NOT = {
-			religion = hellenic_pagan
-			}
+			NOT = {	religion = hellenic_pagan }
 		}
 		allow = {
 			stability = 3
 		}
 		effect = {
 		    add_ruler_modifier = {
-		            name = "hellenic_ruler"
+				name = "hellenic_ruler"
 				duration = -1
-		}		
+			}		
 		}
 		ai_will_do = {
 			factor = 1
@@ -129,23 +122,21 @@ country_decisions = {
 		potential = {
 			ai = no
 			religion = hellenic_pagan
-				NOT = { 
-		has_country_modifier = "christian_opinions"
-		}
+			NOT = { has_country_modifier = "christian_opinions"	}
 		}
 		allow = {
 			stability = 1
 			has_church_aspect = christian_cult_aspect
 		}
 		effect = {
-	    country_event = {
-			id = hhh_religion.0
-			days = 1
+			country_event = {
+				id = hhh_religion.0
+				days = 1
 			}	
-		add_dip_power = -50
+			add_dip_power = -50
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		}
- }
+	}
+}
