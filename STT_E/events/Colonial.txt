@@ -1005,12 +1005,14 @@ province_event = {
 	
 	trigger = {
 		has_province_modifier = important_natural_harbor
-		is_overseas = yes #STT
+		is_overseas = yes	### STT
 		OR = {
 			development = 15
 			has_building = marketplace
 			feudalism = 100
 		}
+		NOT = { region = anatolia_region }	### STT
+		NOT = { region = maghreb_region }	### STT
 		owner = {
 			stability = 1
 		}
