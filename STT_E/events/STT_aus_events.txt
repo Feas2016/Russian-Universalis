@@ -77,7 +77,7 @@ country_event = {
 			tag = DUA
 		}
 		has_global_flag = golden_bulla
-	    NOT = { has_country_modifier = aus_maius }	
+	    NOT = { has_country_modifier = ger_yeslandtag }	
 	}
 
 	option = {
@@ -89,27 +89,27 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = aus_main.56474
-	title = "aus_main.t.56474"
-	desc = "aus_main.d.56474"
-	picture = BYZ_COURT_eventPicture
+# country_event = {
+	# id = aus_main.56474
+	# title = "aus_main.t.56474"
+	# desc = "aus_main.d.56474"
+	# picture = BYZ_COURT_eventPicture
 
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	trigger = {
-		government = monarchy
-		ai = no
-	}
+	# trigger = {
+		# government = monarchy
+		# ai = no
+	# }
 	
-	option = {
-		name = "aus_main.a.56474"
-		add_country_modifier = {
-				name = "aus_aulic"
-				duration = 3650
-		}
-	}
-}
+	# option = {
+		# name = "aus_main.a.56474"
+		# add_country_modifier = {
+				# name = "aus_aulic"
+				# duration = 3650
+		# }
+	# }
+# }
 
 #by invasion
 country_event = {

@@ -39,33 +39,33 @@ country_decisions = {
 		}
 	}
 	
-	establish_aulic = {
+	# establish_aulic = {
 		
-		potential = {
-			OR = {
-			tag = HAB
-			tag = AEM
-			tag = DUA
-		    }
-			is_year = 1360
-			NOT = { has_country_modifier = aus_aulic }
-		}
-		allow = {
-			is_at_war = no
-			adm = 2
-			adm_power = 30
-			legitimacy = 95
-			stability = 2
-		}
-		effect = {
-			country_event  = { id = aus_main.56474 }
-			add_stability = -1
-			add_prestige = 10
-			add_treasury = -100
-			add_adm_power = -30
-			}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+		# potential = {
+			# OR = {
+			# tag = HAB
+			# tag = AEM
+			# tag = DUA
+		    # }
+			# is_year = 1360
+			# NOT = { has_country_modifier = aus_aulic }
+		# }
+		# allow = {
+			# is_at_war = no
+			# adm = 2
+			# adm_power = 30
+			# legitimacy = 95
+			# stability = 2
+		# }
+		# effect = {
+			# country_event  = { id = aus_main.56474 }
+			# add_stability = -1
+			# add_prestige = 10
+			# add_treasury = -100
+			# add_adm_power = -30
+			# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 }

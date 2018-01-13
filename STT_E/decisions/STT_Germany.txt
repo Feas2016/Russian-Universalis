@@ -35,13 +35,22 @@ country_decisions = {
 	}
 	
 	establish_landtag = {
-		major = yes
 		potential = {
+			culture_group = germanic
+			# OR = {
+				# tag = PRU
+				# tag = TEU
+				# tag = HAB
+				# tag = AEM
+				# tag = GER
+			# }
 			OR = {
-				tag = PRU
-				tag = TEU
-			}			
-			NOT = { has_country_modifier = ger_landtag }
+				has_country_modifier = ger_nolandtag
+				AND = { 
+					NOT = { has_country_modifier = ger_yeslandtag }
+					NOT = { has_country_modifier = ger_nolandtag }
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
@@ -51,14 +60,46 @@ country_decisions = {
 			stability = 2
 		}
 		effect = {
-			add_stability = -1
 			add_prestige = 10
 			add_treasury = -100
 			add_adm_power = -30
 			add_country_modifier = {
-				name = "ger_landtag"
-				duration = 3650
-			}	
+				name = "ger_yeslandtag"
+				duration = -1
+			}
+			remove_country_modifier = ger_nolandtag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	close_landtag = {
+		potential = {
+			culture_group = germanic
+			# OR = {
+				# tag = PRU
+				# tag = TEU
+				# tag = HAB
+				# tag = AEM
+				# tag = GER
+			# }	
+			has_country_modifier = ger_yeslandtag
+		}
+		allow = {
+			adm_power = 30
+			legitimacy = 95
+			stability = 2
+		}
+		effect = {
+			add_prestige = -20
+			add_adm_power = -50
+			add_stability = -1
+			add_country_modifier = {
+				name = "ger_nolandtag"
+				duration = -1
+			}
+			remove_country_modifier = ger_yeslandtag
 		}
 		ai_will_do = {
 			factor = 1
