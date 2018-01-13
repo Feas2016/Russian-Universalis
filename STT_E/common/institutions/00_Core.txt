@@ -391,7 +391,7 @@ hhh_dt_f = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
@@ -548,7 +548,7 @@ hhh_dt_s = {
 	embracement_speed = {
 	    modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.15
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hight_cities_hhh_dt_f
 						    OR = {
@@ -566,12 +566,9 @@ hhh_dt_s = {
 				province_id = 534 #malabar
 				province_id = 1948 #Bahmani
 				province_id = 522 #Dheli
-				province_id = 586 #Pegu
 				province_id = 1816 #Bejing
 				province_id = 667 #Kanton
-				province_id = 597 #Jahor
 				province_id = 125 #Palermo
-				province_id = 1124 #mali
 				province_id = 12 #Denmark
 				}
 			}
@@ -618,7 +615,7 @@ hhh_dt_s = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
@@ -645,7 +642,7 @@ hhh_dt_s = {
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 0.05
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_development_15
@@ -656,16 +653,16 @@ hhh_dt_s = {
 			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1360
-				is_year = 1360
+				tooltip = tooltip_post_1365
+				is_year = 1365
 			}
 		}
 		modifier = {
-			factor = 0.35
+			factor = 0.25
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1370
-				is_year = 1370
+				tooltip = tooltip_post_1375
+				is_year = 1375
 			}
 		}
 		modifier = {
@@ -775,7 +772,7 @@ hhh_dt_t = {
 	embracement_speed = {
 	    modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.15
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hight_cities_hhh_dt_f
 						    OR = {
@@ -793,12 +790,9 @@ hhh_dt_t = {
 				province_id = 534 #malabar
 				province_id = 1948 #Bahmani
 				province_id = 522 #Dheli
-				province_id = 586 #Pegu
 				province_id = 1816 #Bejing
 				province_id = 667 #Kanton
-				province_id = 597 #Jahor
 				province_id = 125 #Palermo
-				province_id = 1124 #mali
 				province_id = 12 #Denmark
 				}
 			}
@@ -814,7 +808,7 @@ hhh_dt_t = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_f_impcity
@@ -845,7 +839,7 @@ hhh_dt_t = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
@@ -854,8 +848,6 @@ hhh_dt_t = {
 		        region = south_german_region
 		        region = italy_region
 				region = hindusthan_region
-				region = coromandel_region
-				region = south_china_region
 				region = north_china_region
 				region = low_countries_region
 				}
@@ -872,7 +864,7 @@ hhh_dt_t = {
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 0.05
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_development_15
@@ -883,16 +875,16 @@ hhh_dt_t = {
 			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1400
-				is_year = 1400
+				tooltip = tooltip_post_1405
+				is_year = 1405
 			}
 		}
 		modifier = {
-			factor = 0.35
+			factor = 0.25
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1410
-				is_year = 1410
+				tooltip = tooltip_post_1415
+				is_year = 1415
 			}
 		}
 		modifier = {
@@ -1002,7 +994,7 @@ hhh_dt_l = {
 	embracement_speed = {
 	    modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.15
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hight_cities_hhh_dt_f
 						    OR = {
@@ -1020,12 +1012,9 @@ hhh_dt_l = {
 				province_id = 534 #malabar
 				province_id = 1948 #Bahmani
 				province_id = 522 #Dheli
-				province_id = 586 #Pegu
 				province_id = 1816 #Bejing
 				province_id = 667 #Kanton
-				province_id = 597 #Jahor
 				province_id = 125 #Palermo
-				province_id = 1124 #mali
 				province_id = 12 #Denmark
 				}
 			}
@@ -1072,17 +1061,14 @@ hhh_dt_l = {
 			}
 		}
 		modifier = {
-			factor = 0.15
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
-				region = france_region
 		        region = british_isles_region
 		        region = south_german_region
 		        region = italy_region
 				region = hindusthan_region
-				region = coromandel_region
-				region = south_china_region
 				region = north_china_region
 				region = low_countries_region
 				}
@@ -1099,7 +1085,7 @@ hhh_dt_l = {
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 0.05
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_development_15
@@ -1110,16 +1096,16 @@ hhh_dt_l = {
 			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1435
-				is_year = 1435
+				tooltip = tooltip_post_1440
+				is_year = 1440
 			}
 		}
 		modifier = {
 			factor = 0.35
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1450
-				is_year = 1450
+				tooltip = tooltip_post_1455
+				is_year = 1455
 			}
 		}
 		modifier = {

@@ -43,8 +43,8 @@ country_event = {
 			limit = {
 				NOT = { government = elective_monarchy }
 			}
-		}
-		change_government = elective_monarchy
+			change_government = elective_monarchy
+		}		
 	}
 	option = {
 		name = "flavor_pol.EVTOPTB3467" # Refuse to sign it and defy the Magnates
