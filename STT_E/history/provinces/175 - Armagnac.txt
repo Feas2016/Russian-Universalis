@@ -13,7 +13,6 @@ trade_goods = wool
 base_manpower = 5
 add_core = AMG
 add_core = GUY
-add_core = FRA
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -36,7 +35,7 @@ discovered_by = ottoman
 1584.1.1 = { unrest = 12 } # Situation heats up again
 1588.12.1 = { unrest = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1589.1.5 = { owner = NAV controller = NAV add_core = NAV remove_core = AUV }
-1589.8.2 = { owner = FRA controller = FRA } # Armagnac to France proper, after Henri IV, King of France & Duke of Armagnac
+1589.8.2 = { owner = FRA controller = FRA add_core = FRA} # Armagnac to France proper, after Henri IV, King of France & Duke of Armagnac	### STT
 1594.1.1 = { unrest = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1598.4.13 = { unrest = 3 } # Edict of Nantes, alot more freedom to the protestants
 1598.5.2 = { unrest = 0 } # Peace of Vervins, formal end to the Wars of Religion

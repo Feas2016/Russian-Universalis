@@ -1,29 +1,32 @@
 # - Glogau 
 
-owner = BEG
-controller = BEG
+owner = KRA			### STT
+controller = KRA	### STT
 culture = schlesian
 religion = catholic
-capital = "Ѕжег"
+capital = "Ѕжег"	### STT
 trade_goods = grain
 hre = yes
 base_tax = 3
 base_production = 3
 is_city = yes
 base_manpower = 2
-add_core = BEG
+add_core = BEG		### STT
+add_core = KRA		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1311.1.1 = { owner = BEG controller = BEG }	### STT
 1419.12.1 = { revolt = { type = heretic_rebels size = 0 } controller = REB } # Hussite Wars, Battle of Nekmir
 1436.7.5 = { revolt = {} controller = BEG } # Peace is signed in Jihlava
 1526.1.1 = {
 	owner = BOH
 	controller = BOH
 	unrest = 1
-	remove_core = BOH
+	add_core = BOH		### STT
+	remove_core = KRA	### STT
 }
 1620.11.8 = {
 	owner = HAB

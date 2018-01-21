@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 trade_goods = livestock
 base_manpower = 2
-add_core = FRA
+#add_core = FRA	### STT
 add_core = ABT
 add_core = GUY
 discovered_by = eastern
@@ -23,7 +23,7 @@ discovered_by = ottoman
 1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
 1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks
 1570.8.8 = { unrest = 10 } # Edict of Saint-Germain: temporary pacification
-1572.1.1 = { owner = FRA controller = FRA }
+1572.1.1 = { owner = FRA controller = FRA add_core = FRA }	###	STT
 1573.9.1 = { unrest = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
 1574.5.1 = { unrest = 7 } # Charles IX dies, situation cools a bit	
 1584.1.1 = { unrest = 12 } # Situation heats up again

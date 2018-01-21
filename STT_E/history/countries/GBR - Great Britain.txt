@@ -32,6 +32,8 @@ capital = 236	# London
 	monarch = {
 		name = "Анна I"
 		dynasty = "Стюарт"
+		birth_date = 1665.2.6
+		death_date = 1714.8.1
 		adm = 3
 		dip = 5
 		mil = 4
@@ -39,7 +41,7 @@ capital = 236	# London
 	}
 	queen = {
 		country_of_origin = DAN
-		name = "Джордж"
+		name = "Георг"
 		dynasty = "фон Ольденбург"
 		birth_date = 1653.4.2
 		death_date = 1708.10.28
@@ -83,6 +85,8 @@ capital = 236	# London
 	monarch = {
 		name = "Георг I"
 		dynasty = "фон Ганновер"
+		birth_date = 1660.5.28
+		death_date = 1727.6.11
 		adm = 3
 		dip = 3
 		mil = 5
@@ -103,23 +107,25 @@ capital = 236	# London
 	}
 }
 
-#1718.1.1 = { leader = {	name = "Георг Бинг"		type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1750.4.7 } } # Removed /SWГ–
+#1718.1.1 = { leader = {	name = "Джордж Бинг"		type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1750.4.7 } } # Removed /SWГ–
 
 1725.1.1 = { 
 		decision = acknowledge_britanna_rules_the_waves
-		leader = {	name = "Эдвард Боускэвен"	type = admiral	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1761.1.10 } }
+		leader = {	name = "Эдвард Боскауэн"	type = admiral	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1761.1.10 } }
 
 1727.6.11 = {
 	monarch = {
 		name = "Георг II"
 		dynasty = "фон Ганновер"
+		birth_date = 1683.11.9
+		death_date = 1760.10.25
 		adm = 4
 		dip = 3
 		mil = 4
 	}
 	queen = {
 		country_of_origin = ANS
-		name = "Кэролайн"
+		name = "Каролина"
 		dynasty = "фон Гогенцоллерн"
 		birth_date = 1683.3.1
 		death_date = 1737.11.20
@@ -146,31 +152,29 @@ capital = 236	# London
 	}
 }
 
-1740.1.1 = { leader = {	name = "Джордж Энсон"		type = admiral	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1762.1.1 } }
+1740.1.1 = { leader = {	name = "Джордж Ансон"		type = admiral	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1762.6.6 } }
 
-#1740.1.1 = { leader = {	name = "Чарльз Чемберлен"	type = general	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1765.10.31 } } # Removed /SWГ–
+1740.1.1 = { leader = {	name = "Уильям Ширли"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1771.3.24 } }
 
-#1740.1.1 = { leader = {	name = "Уильям Ширли"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1771.3.24 } } # Removed /SWГ–
+1744.1.1 = { leader = {	name = "Джеймс Вольф"		type = general	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1759.9.13 } }
 
-1744.1.1 = { leader = {	name = "Джеймс Вульф"		type = general	fire = 5	shock = 5	manuever = 4	siege = 0	death_date = 1759.9.13 } }
+1748.1.1 = { leader = {	name = "Роберт Клайв"		type = conquistador	fire = 6	shock = 6	manuever = 6	siege = 1 	death_date = 1774.11.22 } }
 
-1748.1.1 = { leader = {	name = "Роберт Клив"		type = conquistador	fire = 6	shock = 6	manuever = 6	siege = 1 	death_date = 1774.11.22 } }
+1748.1.1 = { leader = {	name = "Эдвард Хоук"		type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1781.10.16 } }
 
-#1748.1.1 = { leader = {	name = "Эдвард Хоук"		type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1781.10.16 } } # Removed /SWГ–
+1750.1.1 = { leader = {	name = "Джон Бергойн"		type = general		fire = 3	shock = 2	manuever = 2	siege = 1	death_date = 1792.8.4 } }
 
-#1750.1.1 = { leader = {	name = "Джон Бергойн"		type = general		fire = 3	shock = 2	manuever = 2	siege = 1	death_date = 1792.8.4 } } # Removed /SWГ–
+1750.1.1 = { leader = {	name = "Уоррен Гастингс"	type = conquistador	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1818.8.22 } }
 
-#1750.1.1 = { leader = {	name = "Уоррен Гастингс"	type = conquistador	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1818.8.22 } } # Removed /SWГ–
-
-#1750.1.1 = { leader = {	name = "Чарльз Сандерс"	type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1775.12.7 } } # Removed /SWГ–
+1750.1.1 = { leader = {	name = "Чарльз Сондерс"	type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1775.12.7 } }
 
 1750.1.1 = { set_country_flag = american_revolution }
 
 1751.3.20 = {
 	heir = {
-		name = "георг"
+		name = "Георг"
 		monarch_name = "Георг III"
-		dynasty = "John Burgoyne"
+		dynasty = "фон Ганновер"
 		birth_date = 1738.6.4
 		death_date = 1820.1.29
 		claim = 95
@@ -182,20 +186,22 @@ capital = 236	# London
 
 1752.1.1 = { leader = {	name = "Эдвард Брэддок"	type = general		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1755.7.13 } }
 
-#1755.1.1 = { leader = {	name = "Ричард Хоув"		type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1799.8.5 } } # Removed /SWГ–
+1755.1.1 = { leader = {	name = "Ричард Хоув"		type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1799.8.5 } }
 
-#1755.1.1 = { leader = {	name = "Джордж Роднэй"		type = admiral	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1792.5.24 } } # Removed /SWГ–
+1755.1.1 = { leader = {	name = "Джордж Родни"		type = admiral	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1792.5.24 } }
 
 1756.1.1 = { leader = {	name = "Джордж Вашингтон"	type = general	fire = 2	shock = 1	manuever = 5	siege = 0	death_date = 1764.12.30 } }
 
-#1756.1.1 = { leader = {	name = "Уильям Хоув"		type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1814.7.12 } } # Removed /SWГ–
+1756.1.1 = { leader = {	name = "Уильям Хоув"		type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1814.7.12 } }
 
-#1758.1.1 = { leader = {	name = "Джоффри Амхерст"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1797.8.3 } } # Removed /SWГ–
+1758.1.1 = { leader = {	name = "Джеффри Амхерст"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1797.8.3 } }
 
 1760.10.25 = {
 	monarch = {
 		name = "Георг III"
 		dynasty = "фон Ганновер"
+		birth_date = 1738.6.4
+		death_date = 1820.1.29
 		adm = 1
 		dip = 1
 		mil = 4
@@ -205,8 +211,8 @@ capital = 236	# London
 1761.9.8 = {
 	queen = {
 		country_of_origin = MKL
-		name = "Шарлотт"
-		dynasty = "фон Мекленбург"
+		name = "Шарлотта"
+		dynasty = "фон Мекленбург-Стерлиц"
 		birth_date = 1683.3.1
 		death_date = 1737.11.20
 		female = yes
@@ -230,33 +236,29 @@ capital = 236	# London
 	}
 }
 
-#1764.1.1 = { leader = {	name = "Джон Бирон"		type = explorer	fire = 1	shock = 2	manuever = 1	siege = 0	death_date = 1786.4.10 } } # Removed /SWГ–
+1764.1.1 = { leader = {	name = "Джон Байрон" type = explorer	fire = 1	shock = 2	manuever = 1	siege = 0	death_date = 1786.4.10 } }
 
-#1767.1.1 = { leader = {	name = "Сэмюэль Худ" type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1816.1.27 } } # Removed /SWГ–
+1767.1.1 = { leader = { name = "Самуэль Худ" type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1816.1.27 } }
 
-1768.1.1 = { leader = {	name = "Джеймс Кук"		type = explorer	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1779.2.14 } }
+1768.1.1 = { leader = {	name = "Джеймс Кук" type = explorer	fire = 1	shock = 1	manuever = 6	siege = 0	death_date = 1779.2.14 } }
 
 1769.1.1 = { decision = sunday_school }
 
-1775.1.1 = { leader = {	name = "Джеймс Карлтон"		type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1790.1.1 } }
+1775.1.1 = { leader = {	name = "Джеймс Чарльтон" type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1790.1.1 } }
 
-#1775.1.1 = { leader = {	name = "Чарльз Корнуэллис"	type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1805.10.5 } } # Removed /SWГ–
+1775.1.1 = { leader = {	name = "Чарльз Корнуоллис" type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1805.10.5 } }
 
-1777.1.1 = { leader = {	name = "Банастр Тэрлтон"	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1833.1.25 } }
+1777.1.1 = { leader = {	name = "Банастр Тарлетон" type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1833.1.25 } }
 
-1778.1.1 = { leader = {	name = "Август Кеппел"	type = admiral		fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1786.10.2 } }
+1778.1.1 = { leader = {	name = "Огастес Кеппель" type = admiral		fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1786.10.2 } }
 
-#1778.1.1 = { leader = {	name = "Джордж Клинтон"		type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1812.4.20 } } # Removed /SWГ–
+1778.1.1 = { leader = {	name = "Джордж Клинтон" type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1812.4.20 } }
 
-#1780.1.1 = { leader = {	name = "Эдвард Хугс"		type = admiral		fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1790.1.1 } } # Removed /SWГ–
+1783.1.1 = { leader = { name = "Катберт Коллингвуд"	type = admiral		fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1810.3.7 } }
 
-1783.1.1 = { leader = { name = "Кутберт Куллингвуд"	type = admiral		fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1810.3.7 } }
-
-1790.1.1 = { leader = {	name = "Гораций Нельсон"		type = admiral		fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1805.10.21 } }
+1790.1.1 = { leader = {	name = "Горацио Нельсон"		type = admiral		fire = 6	shock = 6	manuever = 6	siege = 0	death_date = 1805.10.21 } }
 
 1791.1.1 = { leader = {	name = "Джордж Ванкувер"	type = explorer		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1798.5.12 } }
-
-1793.1.1 = { leader = {	name = "Джеймс МакДональд"	type = general		fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1830.1.1 } }
 
 1793.12.1 = { 
 	leader = { 
@@ -271,11 +273,11 @@ capital = 236	# London
 	} 
 }
 
-1794.1.1 = { leader = { name = "Дук Веллингтонский"	type = general		fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1819.1.1 } }
+1794.1.1 = { leader = { name = "Артур Уэлсли"	type = general		fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1819.10.9 } }
 
 #1799.1.1 = { decision = combination_act }
 
-1804.1.1 = { leader = { name = "Томас Кохрейн"	type = admiral		fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1810.1.1 } }
+1804.1.1 = { leader = { name = "Томас Кокрейн"	type = admiral		fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1810.1.1 } }
 
 1807.1.1 = { decision = abolish_slavery_act }
 
@@ -283,9 +285,25 @@ capital = 236	# London
 	monarch = {
 		name = "Георг IV"
 		dynasty = "фон Ганновер"
+		birth_date = 1762.8.12
+		death_date = 1830.6.26
 		adm = 2
 		dip = 3
 		mil = 3
+	}
+}
+
+1811.1.5 = {
+	queen = {
+		country_of_origin = WLF
+		name = "Каролина"
+		dynasty = "Вельф"
+		birth_date = 1768.5.17
+		death_date = 1821.7.8
+		female = yes
+		adm = 0
+		dip = 1
+		mil = 1
 	}
 }
 
@@ -336,6 +354,8 @@ capital = 236	# London
 	monarch = {
 		name = "Вильгельм IV"
 		dynasty = "фон Ганновер"
+		birth_date = 1765.8.21
+		death_date = 1837.6.20
 		adm = 6
 		dip = 4
 		mil = 4
@@ -343,8 +363,22 @@ capital = 236	# London
 }
 
 1830.6.26 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Аделаида"
+		dynasty = "фон Веттин"
+		birth_date = 1792.8.13
+		death_date = 1837.6.26
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1830.6.26 = {
 	heir = {
-		name = "Виктория"
+		name = "Александрина Виктория"
 		monarch_name = "Виктория"
 		dynasty = "фон Ганновер"
 		birth_date = 1819.5.24
@@ -357,17 +391,58 @@ capital = 236	# London
 	}
 }
 
-1837.6.26 = {
+1837.6.20 = {
 	monarch = {
 		name = "Виктория"
 		dynasty = "фон Ганновер"
 		birth_date = 1819.5.24
 		death_date = 1901.1.22
-		claim = 95
 		adm = 6
 		dip = 6
 		mil = 5
 		female = yes
+	}
+}
+
+1837.6.20 = {
+	heir = {
+		name = "Эрнст Август"
+		monarch_name = "Эрнст I"
+		dynasty = "фон Ганновер"
+		birth_date = 1771.6.5
+		death_date = 1840.11.21
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1840.2.10 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Альберт"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1819.8.26
+		death_date = 1861.12.14
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1840.11.21 = {
+	heir = {
+		name = "Виктория"
+		monarch_name = "Виктория II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1840.11.21
+		death_date = 1901.8.5
+		female = yes
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
 	}
 }
 
@@ -385,43 +460,68 @@ capital = 236	# London
 	}
 }
 
-1901.1.22 = {
-    monarch = {
+1901.8.5 = {
+	monarch = {
 		name = "Эдуард VII"
 		dynasty = "фон Саксен-Кобург-Гота"
 		birth_date = 1841.11.9
 		death_date = 1910.5.6
-		claim = 95
 		adm = 4
 		dip = 4
 		mil = 5
 	}
 }
 
-1901.1.22 = {
+1901.8.5 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Александра"
+		dynasty = "фон Глюксбург"
+		birth_date = 1844.12.1
+		death_date = 1910.5.6
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1901.8.5 = {
 	heir = {
 		name = "Георг"
 		monarch_name = "Георг V"
-		dynasty = "фон Саксен-Кобург-Гота"
+		dynasty = "Виндзор"
 		birth_date = 1865.6.3
 		death_date = 1936.1.20
 		claim = 95
-		adm = 4
-		dip = 4
-		mil = 4
+		adm = 3
+		dip = 3
+		mil = 5
 	}
 }
 
 1910.5.6 = {
-    monarch = {
+	monarch = {
 		name = "Георг V"
-		dynasty = "фон Саксен-Кобург-Гота"
+		dynasty = "Виндзор"
 		birth_date = 1841.11.9
-		death_date = 1910.5.6
-		claim = 95
-		adm = 4
-		dip = 4
-		mil = 4
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1910.5.6 = {
+	queen = {
+		country_of_origin = GBR
+		name = "Мария"
+		dynasty = "фон Тек"
+		birth_date = 1867.5.26
+		death_date = 1936.1.20
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -429,12 +529,12 @@ capital = 236	# London
 	heir = {
 		name = "Эдуард"
 		monarch_name = "Эдуард VIII"
-		dynasty = "фон Саксен-Кобург-Гота"
-		birth_date = 1894.6.23
+		dynasty = "Виндзор"
+		birth_date = 1894.6.24
 		death_date = 1972.5.28
 		claim = 95
-		adm = 4
-		dip = 4
-		mil = 4
+		adm = 3
+		dip = 3
+		mil = 2
 	}
 }

@@ -6,6 +6,26 @@ add_accepted_culture = wallonian
 religion = catholic
 capital = 92	# Brussel
 
+1790.1.11 = {
+	monarch = {
+		name = "Хендрик ван дер Ноот"
+		birth_date = 1731.1.7
+		dip = 4
+		adm = 4
+		mil = 2
+	}
+}
+
+1790.12.2 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
 1830.8.25 = {
 	monarch = {
 		name = "Временное правительство"
@@ -31,6 +51,20 @@ capital = 92	# Brussel
 	government = constitutional_monarchy
 }
 
+1832.8.9 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Луиза Мария"
+		dynasty = "д'Орлеан"
+		birth_date = 1812.4.3
+		death_date = 1850.10.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
 1835.4.9 = {
 	heir = {
 		name = "Леопольд"
@@ -45,7 +79,7 @@ capital = 92	# Brussel
 	}
 }
 
-1865.12.17 = {
+1865.12.10 = {
 	monarch = {
 		name = "Леопольд II"
 		dynasty = "фон Саксен-Кобург-Гота"
@@ -56,7 +90,21 @@ capital = 92	# Brussel
 	}
 }
 
-1865.12.17 = {
+1865.12.10 = {
+	queen = {
+		country_of_origin = DUA
+		name = "Мария Генриетта"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1836.8.23
+		death_date = 1902.9.19
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1865.12.10 = {
 	heir = {
 		name = "Леопольд"
 		monarch_name = "Леопольд III"
@@ -98,7 +146,7 @@ capital = 92	# Brussel
 	}
 }
 
-1909.12.23 = {
+1909.12.17 = {
 	monarch = {
 		name = "Альберт I"
 		dynasty = "фон Саксен-Кобург-Гота"
@@ -109,7 +157,21 @@ capital = 92	# Brussel
 	}
 }
 
-1909.12.23 = {
+1909.12.17 = {
+	queen = {
+		country_of_origin = GER
+		name = "Елизавета"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1876.7.25
+		death_date = 1934.2.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1909.12.17 = {
 	heir = {
 		name = "Леопольд"
 		monarch_name ="Леопольд III"
@@ -123,17 +185,32 @@ capital = 92	# Brussel
 	}
 }
 
-1934.2.23 = {
+1934.2.17 = {
 	monarch = {
 		name = "Леопольд III"
 		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1901.11.3
 		adm = 3
 		dip = 4
 		mil = 4
 	}
 }
 
-1934.2.23 = {
+1934.2.17 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Астрид"
+		dynasty = "Бернадот"
+		birth_date = 1905.11.17
+		death_date = 1935.8.29
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1934.2.17 = {
 	heir = {
 		name = "Бодуэн"
 		monarch_name = "Бодуэн"
@@ -144,6 +221,20 @@ capital = 92	# Brussel
 		adm = 3
 		dip = 3
 		mil = 3
+	}
+}
+
+1934.2.17 = {
+	queen = {
+		country_of_origin = GBR
+		name = "Лилиан"
+		dynasty = "Байльс"
+		birth_date = 1916.11.28
+		death_date = 1951.7.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -172,6 +263,20 @@ capital = 92	# Brussel
 	}
 }
 
+1960.12.15 = {
+	queen = {
+		country_of_origin = SPA
+		name = "Фабиола"
+		dynasty = "де Мора и Арагон"
+		birth_date = 1928.6.11
+		death_date = 1993.8.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
 1993.8.9 = {
 	monarch = {
 		name = "Альберт II"
@@ -180,6 +285,20 @@ capital = 92	# Brussel
 		adm = 4
 		dip = 3
 		mil = 1
+	}
+}
+
+1993.8.9 = {
+	queen = {
+		country_of_origin = ITA
+		name = "Паола"
+		dynasty = "Руффо ди Калабриа"
+		birth_date = 1937.9.10
+		death_date = 2013.7.21
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 
@@ -205,6 +324,20 @@ capital = 92	# Brussel
 		adm = 3
 		dip = 3
 		mil = 3
+	}
+}
+
+2013.7.21 = {
+	queen = {
+		country_of_origin = BLG
+		name = "Матильда"
+		dynasty = "д’Удекем д’Акоз"
+		birth_date = 1973.1.20
+		death_date = 3000.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }
 

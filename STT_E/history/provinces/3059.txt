@@ -2,7 +2,7 @@
 
 owner = TRN			### STT
 controller = TRN	### STT
-capital = "Твуа"	### STT
+capital = "Турень"	### STT
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
@@ -14,7 +14,7 @@ base_manpower = 3
 add_local_autonomy = 10
 add_core = TRN 		### STT
 add_core = ORL
-add_core = FRA
+	### STT
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -29,7 +29,7 @@ discovered_by = ottoman
 1570.8.8 = { unrest = 10 } # Edict of Saint-Germain: temporary pacification
 1573.9.1 = { unrest = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
 1574.5.1 = { unrest = 7 } # Charles IX dies, situation cools a bit	
-1584.5.3 = { owner = FRA controller = FRA }	### STT
+1584.5.3 = { owner = FRA controller = FRA add_core = FRA }	### STT
 1584.1.1 = { unrest = 12 } # Situation heats up again
 1588.12.1 = { unrest = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
 1589.1.1 = { base_tax = 9 

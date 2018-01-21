@@ -4,6 +4,28 @@ religion = catholic
 technology_group = eastern
 capital = 262	# Krakow
 fixed_capital = 262 # Cannot move capital away from this province & no power cost to move to it
+historical_rival = GNE
+
+1305.1.1 = {
+	monarch = {
+		name = "Вацлав III"
+		dynasty = "Пржемыслович"
+		birth_date = 1289.10.6
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+1306.1.1 = {
+	monarch = {
+		name = "Владислав I Локетек"
+		dynasty = "Пяст"
+		birth_date = 1261.1.19
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
 
 1530.1.1 = { government = administrative_monarchy }
 

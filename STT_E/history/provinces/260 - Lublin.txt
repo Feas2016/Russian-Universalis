@@ -1,8 +1,8 @@
 #260 - Lublin
 
-owner = SAN
-controller = SAN
-capital= "Lublin"
+owner = KRA			### STT
+controller = KRA	### STT
+capital= "Люблин"	### STT
 culture = polish
 religion = catholic
 trade_goods = cloth
@@ -11,13 +11,14 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = SAN
+add_core = KRA		### STT
+add_core = SAN		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1320.1.1 = { owner = POL add_core = POL controller = POL }
+1320.1.1 = { owner = POL add_core = POL controller = POL remove_core = KRA }	### STT
 1490.1.1 = { unrest = 6 } # Uprising led by Mukha
 1492.1.1 = { unrest = 0 } 
 1550.1.1 = { religion = reformed }

@@ -10,3 +10,17 @@ YUA_undersky_empire = {
 	
 	num_accepted_cultures = 2
 }
+
+feodal_fix_minor = {
+    potential = {
+	    NOT = { num_of_cities = 6 }
+		NOT = { is_year = 1550 }
+	}
+	
+	trigger = {
+		NOT = { num_of_cities = 6 }
+		NOT = { is_year = 1550 }
+	}
+	
+	development_cost = 5
+}

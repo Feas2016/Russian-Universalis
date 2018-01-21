@@ -1,8 +1,8 @@
 #254 - Notec
 
-owner = KUJ
-controller = KUJ
-capital = "Будрожич"
+owner = KRA			### STT
+controller = KRA	### STT
+capital = "Будрожич"### STT
 culture = kashubian
 religion = catholic
 trade_goods = livestock
@@ -11,13 +11,14 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = KUJ
+add_core = KUJ		### STT
+add_core = KRA		### STT
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-1320.1.1 = { owner = POL add_core = POL controller = POL } 
+1320.1.1 = { owner = POL add_core = POL controller = POL remove_core = KRA }	### STT
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

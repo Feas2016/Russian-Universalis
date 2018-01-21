@@ -2,7 +2,7 @@
 
 owner = ATC
 controller = ATC
-capital = "Îø"
+capital = "Îø"	### STT
 is_city = yes
 culture = gascon
 religion = catholic
@@ -13,7 +13,6 @@ trade_goods = wool
 base_manpower = 1
 add_core = ATC
 add_core = GUY
-add_core = FRA
 add_core = AMG
 discovered_by = eastern
 discovered_by = western
@@ -31,6 +30,7 @@ discovered_by = ottoman
 1593.2.13 = {	
 	owner = FRA
 	controller = FRA
+	add_core = FRA	### STT
 }
 1594.1.1 = { unrest = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1598.4.13 = { unrest = 3 } # Edict of Nantes, alot more freedom to the protestants

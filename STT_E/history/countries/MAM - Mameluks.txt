@@ -5,10 +5,6 @@ religion = sunni
 technology_group = muslim
 historical_rival = TUR
 historical_rival = TU0 #STT
-historical_rival = AKK #STT
-historical_rival = DUL #STT
-historical_rival = RAM #STT
-historical_rival = KAR #STT
 capital = 361 # Cairo
 add_army_professionalism = 0.1
 religious_school = shafii_school
@@ -362,6 +358,13 @@ religious_school = shafii_school
 		mil = 1
 	}
 }
+
+1425.1.1 = {				#STT
+	historical_rival = AKK  #STT
+	historical_rival = DUL  #STT
+	historical_rival = RAM  #STT
+	historical_rival = KAR  #STT
+}							#STT
 
 1438.6.8 = {
 	monarch = {
