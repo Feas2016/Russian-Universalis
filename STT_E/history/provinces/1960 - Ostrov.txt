@@ -1,7 +1,7 @@
 #Ostrov
 
-owner = PSK
-controller = PSK
+owner = NPV
+controller = NOV
 culture = novgorodian
 religion = orthodox
 hre = no
@@ -11,10 +11,11 @@ trade_goods = naval_supplies
 base_manpower = 2
 capital = "Ostrov"
 is_city = yes
-add_core = PSK
+add_core = NOV
 discovered_by = western
 discovered_by = eastern
 
+1343.1.13 = {	owner = PSK controller = PSK add_core = PSK remove_core = NOV } # 
 1510.1.13 = {	owner = MOS controller = MOS add_core = MOS remove_core = PSK } # Pskov annexed by Russia
 1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
 1581.9.1 = { controller = PLC } # Ostrov conquered by Stefan Bathory

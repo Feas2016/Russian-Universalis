@@ -1,7 +1,7 @@
 #274 - Pskov
 
-owner = PSK
-controller = PSK
+owner = NOV
+controller = NOV
 culture = novgorodian
 religion = orthodox
 hre = no
@@ -12,10 +12,11 @@ base_manpower = 2
 capital = "Gdov"
 is_city = yes
 fort_15th = yes
-add_core = PSK
+add_core = NOV
 discovered_by = western
 discovered_by = eastern
 
+1343.1.13 = {	owner = PSK controller = PSK add_core = PSK remove_core = NOV }
 1470.1.1 = { unrest = 5 } # Struggles between the boyars and smerds
 1490.1.1 = { unrest = 0 } 
 1510.1.13 = {
