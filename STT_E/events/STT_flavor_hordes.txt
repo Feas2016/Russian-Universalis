@@ -153,15 +153,18 @@ country_event = {
 	}
 
 	immediate = {
-		285 = { add_core = CRI } # Core on Kefe
-		2410 = { add_core = CRI }
-		2447 = { add_core = CRI }
-		286 = { add_core = CRI }
-		2195 = { add_core = CRI }
-		463 = { add_core = CRI }
-		282 = { add_core = CRI }
-		2406 = { add_core = CRI }
-		283 = { add_core = CRI }
+		hidden_effect = {
+		    285 = { add_core = CRI } # Core on Kefe
+		    2410 = { add_core = CRI }
+		    2447 = { add_core = CRI }
+		    286 = { add_core = CRI }
+		    2195 = { add_core = CRI }
+		    463 = { add_core = CRI }
+		    282 = { add_core = CRI }
+		    2406 = { add_core = CRI }
+		    283 = { add_core = CRI }
+		    290 = { add_core = CRI }
+		}
 		release = CRI
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
@@ -218,6 +221,10 @@ country_event = {
 	}
 
 	immediate = {
+	    hidden_effect = {
+		    2370 = { add_core = NOG }
+		    2362 = { add_core = NOG }  
+		}
 		release = NOG
 		add_country_modifier = { name = "GLH_broken" duration = 500 }
 		set_country_flag = GLH_disaster_pause
@@ -241,7 +248,7 @@ country_event = {
 	}
 }
 
-# Kazakh Khanate breaks away - released and war starterd
+# Uzbeki Khanate breaks away - released and war starterd
 country_event = {
 	id = stt_flavor_horde.6
 	title = "stt_flavor_horde.6.t"
@@ -254,7 +261,7 @@ country_event = {
 	trigger = {
 		tag = GLH
 		has_disaster = golden_horde_disaster
-		any_owned_province = { is_core = KZH }
+		any_owned_province = { is_core = SHY }
 		NOT = { has_country_modifier = GLH_broken }
 	}
 
@@ -275,7 +282,15 @@ country_event = {
 	}
 
 	immediate = {
-		release = KZH
+	    hidden_effect = {
+		    1973 = { add_core = SHY }  
+			2356 = { add_core = SHY }
+			1076 = { remove_core = SHY }
+			1075 = { remove_core = SHY }
+			1074 = { remove_core = SHY }
+			1071 = { remove_core = SHY }
+		}
+		release = SHY
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
@@ -283,7 +298,7 @@ country_event = {
 	option = {
 		name = "stt_flavor_horde.6.a1"
 		trigger = { ai = no }
-		declare_war_with_cb = { who = KZH casus_belli = cb_imperial }
+		declare_war_with_cb = { who = SHY casus_belli = cb_imperial }
 		add_prestige = 30
 		add_legitimacy = 10
 		add_horde_unity = 10
@@ -333,6 +348,7 @@ country_event = {
 
 	immediate = {
 		release = SIB
+		release = SKW
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
 	}
@@ -341,6 +357,7 @@ country_event = {
 		name = "stt_flavor_horde.7.a1"
 		trigger = { ai = no }
 		declare_war_with_cb = { who = SIB casus_belli = cb_imperial }
+		declare_war_with_cb = { who = SKW casus_belli = cb_imperial }
 		add_prestige = 30
 		add_legitimacy = 10
 		add_horde_unity = 10

@@ -1335,3 +1335,47 @@ JPE_ideas = {
 		ae_impact = -0.15
 	}
 }
+
+SGT_ideas = {
+    start = {
+	    global_unrest = -2
+		core_creation = -0.20
+	}
+	
+	bonus = {
+	    discipline = 0.05
+	}
+	
+	trigger = {
+		tag = SGT
+	}
+	free = yes
+	
+	sgt_orthodox_bastion = {
+	    tolerance_own = 3
+	}
+	
+	sgt_greek_school = {
+	    mil_tech_cost_modifier = -0.1
+	}
+	
+	sgt_memories_past = {
+	    siege_ability = 0.2
+	}
+	
+	sgt_dushan_law = {
+	    global_missionary_strength = 0.03
+	}
+	
+	sgt_three_crowns = {
+	    global_tax_modifier = 0.15
+	}
+	
+	sgt_third_rome = {
+	    num_accepted_cultures = 2
+	}
+	
+	sgt_king_romania = {
+	    stability_cost_modifier = -0.15
+	}
+}

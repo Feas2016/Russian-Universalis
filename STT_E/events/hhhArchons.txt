@@ -7,8 +7,12 @@ country_event = {
 	
 	trigger = {
 		government = greek_monarchy	
+		NOT = {
+		    has_ruler_modifier = Archon_adm
+			has_ruler_modifier = Archon_dip
+			has_ruler_modifier = Archon_mil
+		}
 	}
-	is_triggered_only = yes
 	
 	option = {
 		name = chosearch.a

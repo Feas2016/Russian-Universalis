@@ -4,24 +4,24 @@ purple_palace = {
 	local_development_cost = -0.05
 	local_defensiveness = 0.5
 	local_manpower_modifier = 0.1
-	local_hostile_attrition = 2
+	local_hostile_attrition = 1
 	picture = "province_trade_power_value"
 }
 
 purple_palace_2 = {
 	local_institution_spread = 0.10
-	province_trade_power_modifier = 0.25
+	province_trade_power_modifier = 0.20
 	province_trade_power_value = 20
-	local_development_cost = -0.10
+	local_development_cost = -0.075
 	local_defensiveness = 1.0
 	local_manpower_modifier = 0.25
-	local_hostile_attrition = 3
+	local_hostile_attrition = 2
 	picture = "province_trade_power_value"
 }
 
 Archon_resists = {
-   diplomatic_reputation = -0.5
-   diplomatic_annexation_cost = 0.15
+   diplomatic_reputation = -1.0
+   diplomatic_annexation_cost = 0.25
    vassal_income = -0.1
    legitimacy = -0.5
    }

@@ -17,12 +17,14 @@ country_event = {
 	trigger = {
 		has_country_flag = hhh_disaster
 		government = greek_monarchy
-	}	
+	}
+	
 	immediate = {
 		set_country_flag = hhh_estate_triggered
-	}	
+	}
+	
 	option = {
-		name = estate_disasters.10.a
+		name = estate_disasters.10.a	
 		create_independent_estate = estate_hhh
 		clr_country_flag = hhh_disaster 
 	}

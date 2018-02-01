@@ -13,8 +13,8 @@ stable_government = {
     trigger = {
 	    stability = 3
 		faction_influence = {
-			faction = royalists
-			influence = 30
+         faction = royalists
+         influence = 30
         }
 	}
     royalists_influence = 0.06
@@ -27,10 +27,12 @@ war_government = {
 		government = greek_monarchy
 	}
     trigger = {
-	    NOT = {	stability = 3 }
+	    NOT = {
+		stability = 3
+		}
 		is_at_war = yes
 	}
-    royalists_influence = 0.1
+    royalists_influence = 0.15
 	stability_cost_modifier = 0.05
 }
 
@@ -40,9 +42,11 @@ unstable_government = {
 		government = greek_monarchy
 	}
     trigger = {
-	    NOT = {	stability = 3 }
+	    NOT = {
+		stability = 3
+		}
 		is_at_war = no
 	}
-    republicans_influence = 0.06
+    republicans_influence = 0.1
 	stability_cost_modifier = 0.025
 }

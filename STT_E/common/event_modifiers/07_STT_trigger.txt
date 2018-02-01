@@ -132,3 +132,34 @@ TUR_timariot_system = {
 	land_forcelimit_modifier = 0.20
 	global_manpower_modifier = 0.25
 }
+
+HUN_economic_reform = {
+    global_tax_modifier = 0.20
+	inflation_reduction = 0.10
+	global_own_trade_power = 0.20
+	trade_efficiency = 0.2
+}
+
+HUN_union = {
+    diplomatic_reputation = -4
+	ae_impact = 0.10
+	improve_relation_modifier = -0.2
+}
+
+HUN_foreign_ruler = {
+    diplomatic_reputation = -2
+	improve_relation_modifier = -0.1
+	global_unrest = 2
+	stability_cost_modifier = 0.20
+}
+
+HUN_religion_process = {
+    global_unrest = 5
+	global_heretic_missionary_strength = 0.04
+	missionaries = 2
+}
+
+HUN_religion_tolerance = {
+    global_unrest = -2
+	tolerance_heretic = 3
+}

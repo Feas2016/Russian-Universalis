@@ -219,3 +219,45 @@ ilkhanate_disaster = {
 		}
 	}
 }
+
+hungarian_magnats = {
+    potential = {
+	    tag = HUN
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = HUN_collapse_ended }
+	}
+	
+	can_start = {
+	    always = yes
+	}
+	
+	can_stop = {
+	    always = no
+	}
+	
+	progress = {
+	
+	}
+	
+	can_end = {
+		is_year = 1318
+	}
+	
+	modifier = {
+		stability_cost_modifier = 0.25
+		global_manpower_modifier = -0.25
+		global_unrest = 5
+		local_autonomy = 0.05
+	}
+	
+	on_start = stt_wek.10
+	on_end = stt_wek.11
+	
+	on_monthly = {
+		random_events = { 
+			2 = stt_wek.12 # Matush Chuk
+			2 = stt_wek.13 # Kopash Borsch
+			2 = stt_wek.17 # Ban of Croatia and Bosnia
+		}
+	}
+}

@@ -26,6 +26,7 @@ country_event = {
 		limit = {
 		faction_in_power = republicans
 		}
+		add_legitimacy = -60
 		add_ruler_modifier = {
 				name = "Archon_resists"
 				duration = 1595
@@ -88,7 +89,7 @@ country_event = {
 			}
         add_faction_influence = {
 		    faction = republicans
-			influence = 20 
+			influence = 60 
 			}			
 	}
 	option = {
@@ -97,7 +98,7 @@ country_event = {
 		}
 		name = hhh.elections.c
 		add_stability = 1
-		kill_ruler = yes
+		exile_ruler_as = ROOT
 	}
 	
 	mean_time_to_happen = {

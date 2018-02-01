@@ -486,4 +486,54 @@ country_decisions = {
 		    factor = 100
 		}
 	}
+	
+	HUN_accept_orthodox = {
+	    potential = {
+		    tag = HUN
+			dynasty = "Романович"
+			NOT = { religion = orthodox }
+			NOT = { has_country_flag = HUN_orthodox }
+		}
+		
+		allow = {
+		    NOT = { has_disaster = hungarian_magnats }
+		}
+		
+		effect = {
+		    change_religion = orthodox
+			add_country_modifier = {
+			    name = "HUN_religion_process"
+				duration = 3650
+			}
+			set_country_flag = HUN_orthodox
+		}
+		ai_will_do = {
+	        factor = 0
+        }
+	}
+	
+	HUN_catholic_tolerance = {
+	    potential = {
+		    tag = HUN
+		    dynasty = "Романович"
+			NOT = { religion = orthodox }
+			NOT = { has_country_flag = HUN_tolerance }
+		}
+		
+		allow = {
+		    NOT = { has_disaster = hungarian_magnats }
+		}
+		
+		effect = {
+		    add_country_modifier = {
+			    name = "HUN_religion_tolerance"
+				duration = -1
+			}
+			set_country_flag = HUN_tolerance
+		}
+		
+		ai_will_do = {
+	        factor = 1
+        }
+	}
 }

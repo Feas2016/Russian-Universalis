@@ -148,6 +148,7 @@ country_event = {
 		    infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
+			infantry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
@@ -175,7 +176,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 145
+	    months = 250
 		modifier = {
 		    factor = 0.75
 			MIL = 4
@@ -388,3 +389,350 @@ province_event = {
 	    add_base_production = 1
 	}
 }
+
+#Tsara Moldovey
+country_event = {
+    id = stt_wek.8
+	title = stt_wek.8.t
+	desc = stt_wek.8.d
+	
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+	    tag = HUN
+		any_owned_province = {
+	        is_core = MOL
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	option = {
+	    name = stt_wek.8.a1
+		ai_chance = { factor = 90 }
+        release = MOL
+		create_march = MOL
+	}
+	
+	option = {
+	    name = stt_wek.8.a2
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+		    limit = {
+			    is_core = MOL
+			}
+			add_unrest = 10
+			add_local_autonomy = 30
+		}
+	}
+}
+
+country_event = {
+    id = stt_wek.9
+	title = stt_wek.9.t
+	desc = stt_wek.9.d
+	
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = HUN
+		NOT = { started_in = 1312.6.6 }
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	immediate = {
+	    hidden_effect = {
+		    add_disaster_progress = {
+                disaster = hungarian_magnats
+                value = 100
+            }
+		}
+	}
+	
+	option = {
+	    name = stt_wek.9.a
+	}
+}
+
+#beginning of the disaster
+country_event = {
+    id = stt_wek.10
+	title = stt_wek.10.t
+	desc = stt_wek.10.d
+	
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_wek.10.a
+	}
+}
+
+#end of the disaster
+country_event = {
+    id = stt_wek.11
+	title = stt_wek.11.t
+	desc = stt_wek.11.d
+	
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = stt_wek.11.a
+		add_stability = 3
+		add_prestige = 20
+		add_legitimacy = 20
+		set_country_flag = HUN_collapse_ended
+	}
+}
+
+country_event = {
+    id = stt_wek.12
+	title = stt_wek.12.t
+	desc = stt_wek.12.d
+    
+	picture = BATTLE_eventPicture
+	
+    fire_only_once = yes
+
+    is_triggered_only = yes	
+	
+	option = {
+	    name = stt_wek.12.a
+	    154 = {
+		    spawn_rebels = {
+                type = noble_rebels
+                size = 3
+                leader = "Матуш Чак Тречинский" 
+				win = yes
+            }
+		}
+		3240 = {
+		    spawn_rebels = {
+                type = noble_rebels
+                size = 3
+				win = yes
+            }
+		}
+	}
+}	
+
+country_event = {
+    id = stt_wek.13
+	title = stt_wek.13.t
+	desc = stt_wek.13.d
+    
+	picture = CONQUEST_eventPicture
+	
+    fire_only_once = yes
+
+    is_triggered_only = yes	
+	
+	option = {
+	    name = stt_wek.13.a
+	    162 = {
+		    spawn_rebels = {
+                type = pretender_rebels
+                size = 4
+                leader = "Копаш Борш"
+				win = yes
+				friend = VOL
+            }
+		}
+		1952 = {
+		    spawn_rebels = {
+                type = pretender_rebels
+                size = 4
+                leader = "Копаш Борш"
+				win = yes
+				friend = VOL
+            }
+		}
+		if = {
+		    limit = {
+			    ai = no
+			}
+			3286 = {
+		        spawn_rebels = {
+                    type = pretender_rebels
+                    size = 4
+                    leader = "Копаш Борш"
+				    win = yes
+				    friend = VOL
+                }    
+		    }
+		}
+		
+	}
+}	
+
+#Kopash win and crown to the Andrey Galitskiy
+country_event = {
+    id = stt_wek.14
+	title = stt_wek.14.t
+	desc = stt_wek.14.d
+    
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    fire_only_once = yes
+	
+	trigger = {
+	    tag = HUN
+		has_ruler = "Копаш"
+		NOT = { is_year = 1340 }
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	immediate = {
+	    VOL = {
+		    define_ruler = {
+                name = "Лев II"
+                dynasty = "Романович"
+                adm = 2
+                dip = 2
+                mil = 3
+                age = 35
+                claim = 95
+           }
+		   inherit = VVL
+		}
+	}
+	
+	option = {
+	    hidden_effect = {
+		    kill_heir = yes
+		}
+	    define_ruler = {
+		    religion = orthodox
+			culture = ruthenian
+            name = "Андрей"
+            dynasty = "Романович"
+            adm = 2
+            dip = 3
+            mil = 1
+            age = 30
+            claim = 30
+        }
+	    name = stt_wek.14.a
+		add_stability = -1
+		add_country_modifier = {
+		    name = HUN_foreign_ruler
+			duration = 3650
+		}
+	}
+	
+}
+
+#Recover economy
+country_event = {
+    id = stt_wek.15
+	title = stt_wek.15.t
+	desc = stt_wek.15.d
+	
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    fire_only_once = yes
+	
+	trigger = {
+	    tag = HUN
+		has_ruler = "Карл I Роберт"
+		NOT = { has_disaster = hungarian_magnats }
+	}
+	
+	mean_time_to_happen = {
+	    months = 180
+	}
+	
+	option = {
+	    name = stt_wek.15.a
+	    add_country_modifier = {
+		    name = HUN_economic_reform
+			duration = 3650
+		}
+	}
+}
+
+#Hungary-Naple union
+country_event = {
+    id = stt_wek.16
+	title = stt_wek.16.t
+	desc = stt_wek.16.d
+	
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+    fire_only_once = yes
+	
+	trigger = {
+	    tag = HUN
+		NOT = { has_disaster = hungarian_magnats }
+		dynasty = "д'Анжу"
+		NAP = {
+		    dynasty = "д'Анжу"
+		    OR = {
+			    AND = {
+				    is_female = no
+				    OR = {
+					    has_female_heir = yes
+					    has_heir = no
+					}
+		            ruler_age = 40
+				}
+				AND = {
+				    is_female = yes
+					has_heir = no
+				}
+			}
+		}
+		marriage_with = NAP
+	}
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+	
+	option = {
+	    name = stt_wek.16.a
+		create_union = NAP
+		add_country_modifier = {
+		    name = HUN_union
+			duration = 1800
+		}
+	}
+}
+
+country_event = {
+    id = stt_wek.17
+	title = stt_wek.17.t
+	desc = stt_wek.17.d
+	
+	picture = BATTLE_eventPicture 
+	
+    fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    is_year = 1310
+	}
+	
+	option = {
+        name = stt_wek.17.a
+		CRO = {
+		    declare_war_with_cb = { who = HUN casus_belli = "cb_independence_war" }
+		}
+	}
+}
+
+

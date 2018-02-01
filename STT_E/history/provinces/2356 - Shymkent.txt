@@ -11,7 +11,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TIM
 add_core = GLH		### STT
 discovered_by = KAS
 discovered_by = muslim
@@ -24,6 +23,7 @@ discovered_by = indian
 	controller = TRS
 }
 1448.3.1 = { #Ulugh Beg takes Herat and reunites the core of the Timurid Empire
+    add_core = TIM
 	owner = TIM
 	controller = TIM
 }
