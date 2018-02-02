@@ -250,6 +250,14 @@ country_event = {
 	    hidden_effect = {
 		    release = KNI
             320 = {
+			    if = {
+		            limit = {
+			        NOT = {
+				    fort_level = 2
+				    }
+			        }
+				    add_building = fort_15th
+		        }
 				infantry = KNI
 			    infantry = KNI
 			    infantry = KNI
