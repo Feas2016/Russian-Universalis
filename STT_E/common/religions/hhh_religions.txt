@@ -1,6 +1,6 @@
 pagan = {
 	hellenic_pagan = {
-		icon = 58
+		icon = 30
 		color = { 1.0 1.0 0.7 }
 		country = {
 			tolerance_own = 3
@@ -30,14 +30,14 @@ pagan = {
 		}
 		
 		heretic = { GOAT_SKULL }
-    crusade_name = CRUSADE
-	harmonized_modifier = harmonized_pagan		
+		crusade_name = CRUSADE
+		harmonized_modifier = harmonized_pagan		
 	}
 }
 
 christian = {
     synhellenic_pagan = {
-		icon = 58
+		icon = 30
 		color = { 61 8 81 }
 		country = {
 			tolerance_heretic = 2
@@ -64,7 +64,7 @@ christian = {
 		}
 		
 		heretic = { GOAT_SKULL }
-    crusade_name = CRUSADE
-	harmonized_modifier = harmonized_christian		
+		crusade_name = CRUSADE
+		harmonized_modifier = harmonized_christian		
 	}
 }
