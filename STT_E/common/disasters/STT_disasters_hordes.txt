@@ -225,6 +225,8 @@ hungarian_magnats = {
 	    tag = HUN
 		normal_or_historical_nations = yes
 		NOT = { has_country_flag = HUN_collapse_ended }
+		has_ruler = "Карл I Роберт"
+		NOT = { is_year = 1312 }
 	}
 	
 	can_start = {
@@ -232,7 +234,7 @@ hungarian_magnats = {
 	}
 	
 	can_stop = {
-	    always = no
+	    is_year = 1318
 	}
 	
 	progress = {
