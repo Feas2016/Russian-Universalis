@@ -491,49 +491,49 @@ country_decisions = {
 		}
 	}
 	
-	claim_empire = {
-		potential = {
-			tag = BYZ
-		}
+	# claim_empire = {	### not actually after Fenix
+		# potential = {
+			# tag = BYZ
+		# }
 
-		allow = {
-			OR = {
-				NOT = { owns = 118 }
-				NOT = { owns = 112 }
-				NOT = { owns = 113 }
-				NOT = { owns = 101 }
-				NOT = { owns = 358 }
-				NOT = { owns = 146 }
-				NOT = { owns = 341 }
-				NOT = { owns = 121 }
-				}
-			NOT = { has_country_modifier = byz_ancestors }
-			stability = 1
-			prestige = 100
-			is_monarch_leader = yes
-			dip_power = 100
-		}
+		# allow = {
+			# OR = {
+				# NOT = { owns = 118 }
+				# NOT = { owns = 112 }
+				# NOT = { owns = 113 }
+				# NOT = { owns = 101 }
+				# NOT = { owns = 358 }
+				# NOT = { owns = 146 }
+				# NOT = { owns = 341 }
+				# NOT = { owns = 121 }
+				# }
+			# NOT = { has_country_modifier = byz_ancestors }
+			# stability = 1
+			# prestige = 100
+			# is_monarch_leader = yes
+			# dip_power = 100
+		# }
 
-		effect = {
-			add_country_modifier = {
-				name = "byz_ancestors"
-				duration = -1
-			}
-			add_claim = 118
-			add_claim = 112
-			add_claim = 113
-			add_claim = 101
-			add_claim = 358
-			add_claim = 146
-			add_claim = 341
-			add_claim = 121
-			add_dip_power = -100
-		}
+		# effect = {
+			# add_country_modifier = {
+				# name = "byz_ancestors"
+				# duration = -1
+			# }
+			# add_claim = 118
+			# add_claim = 112
+			# add_claim = 113
+			# add_claim = 101
+			# add_claim = 358
+			# add_claim = 146
+			# add_claim = 341
+			# add_claim = 121
+			# add_dip_power = -100
+		# }
 
-		ai_will_do = {
-			factor = 1
-		}
-	}
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 	
 	byz_adopted_heir = {
 		major = yes
