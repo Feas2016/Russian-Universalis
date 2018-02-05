@@ -279,14 +279,15 @@ feudalism = {
 #######################################
 
 #######################################
-# Dark Times I.  
+# Dark Times I. The Orders Legacy
 # 
-# First stage of goverment institutions
+# First stage of government institutions
 #######################################
 
 hhh_dt_f = {
-	penalty = 0.1
+	penalty = 0.5
 	bonus = {
+		global_heretic_missionary_strength = 0.005
 	}
 
 	historical_start_date = 1312.1.1
@@ -299,17 +300,11 @@ hhh_dt_f = {
 	can_start = {
 		is_year = 1310
 		OR = {
-		region = france_region
-		region = british_isles_region
-		region = south_german_region
-		region = italy_region
-		}
+			region = mashriq_region
+			religion = catholic
+		}	
 		is_state = yes
 		is_island = no
-		OR = {
-			development = 15
-			is_capital = yes
-		}
 	}
 	start_chance = 5
     on_start = hhh_dark_times_events.0
@@ -319,9 +314,75 @@ hhh_dt_f = {
 	}
 
 	embracement_speed = {
-	    modifier = {
+		modifier = {
 			scale = yes
 			factor = 0.6
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
+				any_friendly_coast_border_province = {
+					hhh_dt_f = 100
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.15
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						hhh_dt_f = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					hhh_dt_f = 100
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.1
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = { government = theocracy }
+			}
+			custom_trigger_tooltip = {
+				tooltip = hhh_dt_f_bishopic
+				owner = { government = theocracy }
+			}
+		}
+		
+		modifier = {
+			factor = 0.15
+			scale = yes	# Hide the this modifier when potential is false
+			potential = {
+				has_dlc = "The Cossacks"
+				owner = { has_estate = estate_church }
+			}
+			custom_trigger_tooltip = {
+				tooltip = hhh_dt_f_church
+				any_neighbor_province = {
+					hhh_dt_f = 100
+				}
+				owner = {
+					has_estate = estate_church
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+				has_estate = estate_church
+			}
+		}
+		
+	    modifier = {
+			scale = yes
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hight_cities_hhh_dt_f
 						    OR = {
@@ -348,50 +409,10 @@ hhh_dt_f = {
 				province_id = 12 #Denmark
 				}
 			}
-		}	
-		modifier = {
-			scale = yes
-			factor = 0.6
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
-				any_friendly_coast_border_province = {
-					hhh_dt_f = 100
-				}
-			}
 		}
+		
 		modifier = {
-			factor = 0.2
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_dt_f_impcity
-				owner = {
-					government = imperial_city
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_dt_f_impcity
-				owner = {
-					government = republic
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt
-				any_neighbor_province = {
-					NOT = { owned_by = ROOT }
-					hhh_dt_f = 100
-				}
-			}
-		}
-		modifier = {
-			factor = 0.10
+			factor = 0.05
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
@@ -405,6 +426,15 @@ hhh_dt_f = {
 				region = north_china_region
 				region = low_countries_region
 				}
+			}
+		}
+		
+		modifier = {
+			factor = 0.1
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = hhh_dt_f_catholic
+				religion = catholic
 			}
 		}
 		
@@ -426,7 +456,7 @@ hhh_dt_f = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.025
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_post_1330
@@ -434,7 +464,7 @@ hhh_dt_f = {
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.05
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_post_1340
@@ -506,37 +536,41 @@ hhh_dt_f = {
 }
 
 #######################################
-# Dark Times II.  
+# Dark Times II. Gunpowder
 # 
-# Second stage of goverment institutions
+# Second stage of government institutions
 #######################################
 
 hhh_dt_s = {
-	penalty = 0.1
+	penalty = 0.5
 	bonus = {
+		fire_damage = 0.05
 	}
 
 	historical_start_date = 1342.1.1
 	historical_start_province = 183 # Paris
 
 	history = {
-		is_year = 1380
+		is_year = 1340
 	}
 	
 	can_start = {
 		is_year = 1340
 		OR = {
-		region = france_region
-		region = british_isles_region
-		region = south_german_region
-		region = italy_region
+			region = mashriq_region
+			region = iberia_region
+			AND = {
+				government = steppe_horde
+				OR = {
+					superregion = europe_superregion
+					superregion = eastern_europe_superregion
+					superregion = near_east_superregion
+				}
+				
+			}	
 		}
 		is_state = yes
 		is_island = no
-		OR = {
-			development = 15
-			is_capital = yes
-		}
 	}
 	start_chance = 5
     on_start = hhh_dark_times_events.3
@@ -548,7 +582,7 @@ hhh_dt_s = {
 	embracement_speed = {
 	    modifier = {
 			scale = yes
-			factor = 0.15
+			factor = 0.10
 			custom_trigger_tooltip = {
 				tooltip = tooltip_hight_cities_hhh_dt_f
 						    OR = {
@@ -579,12 +613,45 @@ hhh_dt_s = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
 				any_friendly_coast_border_province = {
-					hhh_dt_f = 100
+					hhh_dt_s = 100
 				}
 			}
 		}
 		modifier = {
-			factor = 0.2
+			factor = 0.1
+			scale = yes
+			force_potential = yes	# Hide the this modifier when potential is false
+			potential = {
+				has_dlc = "The Cossacks"
+				owner = { has_estate = estate_burghers }
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_global_trade_burghers
+				any_neighbor_province = {
+					global_trade = 100
+				}
+				owner = {
+					has_estate = estate_burghers
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 40
+					}
+				}
+				has_estate = estate_burghers
+			}
+		}
+		modifier = {
+			factor = 0.15
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = hhh_dt_f_china
+				owner = {
+					culture_group = east_asian
+				}
+			}
+		}
+		modifier = {
+			factor = 0.15
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_f_impcity
@@ -600,6 +667,7 @@ hhh_dt_s = {
 				tooltip = tooltip_dt_f_impcity
 				owner = {
 					government = republic
+					NOT = { government = imperial_city }
 				}
 			}
 		}
@@ -610,24 +678,20 @@ hhh_dt_s = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					hhh_dt_f = 100
+					hhh_dt_s = 100
 				}
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 0.05
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
-				region = france_region
-		        region = british_isles_region
-		        region = south_german_region
 		        region = italy_region
-				region = hindusthan_region
-				region = coromandel_region
 				region = south_china_region
 				region = north_china_region
-				region = low_countries_region
+				region = iberia_region
+				region = mashriq_region
 				}
 			}
 		}
@@ -650,19 +714,19 @@ hhh_dt_s = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.025
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1365
-				is_year = 1365
+				tooltip = tooltip_post_1360
+				is_year = 1360
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1375
-				is_year = 1375
+				tooltip = tooltip_post_1370
+				is_year = 1370
 			}
 		}
 		modifier = {
@@ -681,7 +745,7 @@ hhh_dt_s = {
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = hhh_dt_f }
+					overlord = { has_institution = hhh_dt_s }
 				}
 			}
 		}
@@ -690,14 +754,14 @@ hhh_dt_s = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_s
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_s
 				}
 			}
 		}
@@ -730,14 +794,15 @@ hhh_dt_s = {
 }
 
 #######################################
-# Dark Times III.  
+# Dark Times III. Ordonnance
 # 
-# Third stage of goverment institutions
+# Third stage of government institutions
 #######################################
 
 hhh_dt_t = {
-	penalty = 0.1
+	penalty = 0.5
 	bonus = {
+	max_states = 1
 	}
 
 	historical_start_date = 1382.1.1
@@ -752,8 +817,6 @@ hhh_dt_t = {
 		OR = {
 		region = france_region
 		region = british_isles_region
-		region = south_german_region
-		region = italy_region
 		}
 		is_state = yes
 		is_island = no
@@ -769,46 +832,19 @@ hhh_dt_t = {
 		owner = { has_institution = hhh_dt_s }
 	}
 
-	embracement_speed = {
-	    modifier = {
-			scale = yes
-			factor = 0.15
-			custom_trigger_tooltip = {
-				tooltip = tooltip_hight_cities_hhh_dt_f
-						    OR = {
-		        province_id = 183 #Paris
-				province_id = 219 #Toledo
-				province_id = 101 #Genoa
-				province_id = 112 #Venice
-				province_id = 266 #Prague
-				province_id = 43 #Danzig
-				province_id = 38 #Riga
-				province_id = 227 #Lisboa
-				province_id = 236 #London
-				province_id = 90 #Flandria
-				province_id = 3401 #Vija_ind
-				province_id = 534 #malabar
-				province_id = 1948 #Bahmani
-				province_id = 522 #Dheli
-				province_id = 1816 #Bejing
-				province_id = 667 #Kanton
-				province_id = 125 #Palermo
-				province_id = 12 #Denmark
-				}
-			}
-		}	
+	embracement_speed = {	
 		modifier = {
 			scale = yes
 			factor = 0.6
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
 				any_friendly_coast_border_province = {
-					hhh_dt_f = 100
+					hhh_dt_t = 100
 				}
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.15
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_f_impcity
@@ -824,6 +860,7 @@ hhh_dt_t = {
 				tooltip = tooltip_dt_f_impcity
 				owner = {
 					government = republic
+					NOT = { government = imperial_city }
 				}
 			}
 		}
@@ -834,22 +871,19 @@ hhh_dt_t = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					hhh_dt_f = 100
+					hhh_dt_t = 100
 				}
 			}
 		}
 		modifier = {
-			factor = 0.10
+			factor = 0.05
 			custom_trigger_tooltip = {
 				tooltip = tooltip_important_region
 			OR = {	
 				region = france_region
 		        region = british_isles_region
 		        region = south_german_region
-		        region = italy_region
-				region = hindusthan_region
 				region = north_china_region
-				region = low_countries_region
 				}
 			}
 		}
@@ -872,19 +906,19 @@ hhh_dt_t = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.025
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1405
-				is_year = 1405
+				tooltip = tooltip_post_1400
+				is_year = 1400
 			}
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1415
-				is_year = 1415
+				tooltip = tooltip_post_1410
+				is_year = 1410
 			}
 		}
 		modifier = {
@@ -903,7 +937,7 @@ hhh_dt_t = {
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = hhh_dt_f }
+					overlord = { has_institution = hhh_dt_t }
 				}
 			}
 		}
@@ -912,14 +946,14 @@ hhh_dt_t = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_t
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_t
 				}
 			}
 		}
@@ -952,14 +986,15 @@ hhh_dt_t = {
 }
 
 #######################################
-# Dark Times IV.  
+# Dark Times IV. national consciousness
 # 
-# Last stage of goverment institutions
+# Last stage of government institutions
 #######################################
 
 hhh_dt_l = {
-	penalty = 0.1
+	penalty = 0.5
 	bonus = {
+		global_autonomy = -0.015
 	}
 
 	historical_start_date = 1415.1.1
@@ -970,62 +1005,34 @@ hhh_dt_l = {
 	}
 	
 	can_start = {
-		is_year = 1410
 		OR = {
-		region = france_region
-		region = british_isles_region
-		region = south_german_region
-		region = italy_region
+			AND = {
+				owner = { is_subject  = yes }
+				is_year = 1410
+			}
+			AND = {
+				culture = russian
+				is_year = 1415
+			}
 		}
-		is_state = yes
-		is_island = no
-		OR = {
-			development = 15
-			is_capital = yes
-		}
+			is_state = yes
+			is_island = no
 	}
 	start_chance = 5
-    on_start = hhh_dark_times_events.0
+    on_start = hhh_dark_times_events.9
 
 	can_embrace = {
 		owner = { has_institution = hhh_dt_t }
 	}
 
 	embracement_speed = {
-	    modifier = {
-			scale = yes
-			factor = 0.15
-			custom_trigger_tooltip = {
-				tooltip = tooltip_hight_cities_hhh_dt_f
-						    OR = {
-		        province_id = 183 #Paris
-				province_id = 219 #Toledo
-				province_id = 101 #Genoa
-				province_id = 112 #Venice
-				province_id = 266 #Prague
-				province_id = 43 #Danzig
-				province_id = 38 #Riga
-				province_id = 227 #Lisboa
-				province_id = 236 #London
-				province_id = 90 #Flandria
-				province_id = 3401 #Vija_ind
-				province_id = 534 #malabar
-				province_id = 1948 #Bahmani
-				province_id = 522 #Dheli
-				province_id = 1816 #Bejing
-				province_id = 667 #Kanton
-				province_id = 125 #Palermo
-				province_id = 12 #Denmark
-				}
-			}
-		}	
 		modifier = {
 			scale = yes
 			factor = 0.6
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
 				any_friendly_coast_border_province = {
-					hhh_dt_f = 100
+					hhh_dt_l = 100
 				}
 			}
 		}
@@ -1046,6 +1053,7 @@ hhh_dt_l = {
 				tooltip = tooltip_dt_f_impcity
 				owner = {
 					government = republic
+					NOT = { government = imperial_city }
 				}
 			}
 		}
@@ -1056,22 +1064,17 @@ hhh_dt_l = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					hhh_dt_f = 100
+					hhh_dt_l = 100
 				}
 			}
 		}
+		
 		modifier = {
-			factor = 0.10
+			factor = 0.15
+			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_important_region
-			OR = {	
-		        region = british_isles_region
-		        region = south_german_region
-		        region = italy_region
-				region = hindusthan_region
-				region = north_china_region
-				region = low_countries_region
-				}
+				tooltip = hhh_dt_l_culture
+				has_owner_accepted_culture = no
 			}
 		}
 		
@@ -1085,7 +1088,7 @@ hhh_dt_l = {
 			}
 		}
 		modifier = {
-			factor = 0.05
+			factor = 0.025
 			scale = yes
 			custom_trigger_tooltip = {
 				tooltip = tooltip_development_15
@@ -1093,19 +1096,19 @@ hhh_dt_l = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.025
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1440
-				is_year = 1440
+				tooltip = tooltip_post_1435
+				is_year = 1435
 			}
 		}
 		modifier = {
-			factor = 0.35
+			factor = 0.1
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_post_1455
-				is_year = 1455
+				tooltip = tooltip_post_1450
+				is_year = 1450
 			}
 		}
 		modifier = {
@@ -1124,7 +1127,7 @@ hhh_dt_l = {
 				}
 				owner = {
 					is_colonial_nation = yes
-					overlord = { has_institution = hhh_dt_f }
+					overlord = { has_institution = hhh_dt_l }
 				}
 			}
 		}
@@ -1133,14 +1136,14 @@ hhh_dt_l = {
 			scale = yes
 			potential = {
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_l
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_dt_embraced
 				is_owned_by_trade_company = no
 				owner = {
-					has_institution = hhh_dt_f
+					has_institution = hhh_dt_l
 				}
 			}
 		}
@@ -1171,7 +1174,6 @@ hhh_dt_l = {
 		}
 	}
 }
-
 
 #######################################
 # Renaissance

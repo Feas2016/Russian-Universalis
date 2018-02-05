@@ -3,7 +3,6 @@ government_rank = 1
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
-historical_rival = MAM ### STT
 capital = 324	# Karaman
 religious_school = hanafi_school
 
@@ -387,6 +386,8 @@ religious_school = hanafi_school
 		regent = yes
 	}
 }
+
+1420.1.1 = { historical_rival = MAM }	### STT
 
 1421.1.1 = {
 	monarch = {

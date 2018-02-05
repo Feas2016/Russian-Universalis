@@ -18,7 +18,11 @@ country_event = {
 
 	trigger = {
 		always = yes
-        ai = no		
+        ai = no
+		NOT = {
+			has_global_flag = hhh_default
+			has_global_flag = hhh_light
+		}
 	}
 
 	mean_time_to_happen = {
@@ -27,7 +31,7 @@ country_event = {
 
 	option = {
 		name = hhh_choose_difficulty.0.a
-		custom_tooltip = tooltip_hhh_choose_difficulty_l.0.a.tt
+		custom_tooltip = tooltip_hhh_choose_difficulty.0.a.tt
 		set_global_flag = hhh_default
 	}
 	option = {
