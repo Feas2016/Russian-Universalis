@@ -570,7 +570,7 @@ hhh_dt_s = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_global_trade_burghers
 				any_neighbor_province = {
-					global_trade = 100
+					province_trade_power = 100
 				}
 				owner = {
 					has_estate = estate_burghers

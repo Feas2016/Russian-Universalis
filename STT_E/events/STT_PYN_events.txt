@@ -137,7 +137,7 @@ country_event = {
 		release = SIQ
 		add_prestige = -30
 		hidden_effect = {    
-		    SIQ= {
+		    SIQ = {
 			    define_ruler = {
 			        name = "Савьюн"
 					dynasty = "Мьинсайн"
@@ -174,7 +174,7 @@ country_event = {
 				spawn_rebels = {
 					type = nationalist_rebels
 					size = 4
-					TAG = SIQ
+					tag = SIQ
 				}
 			}
 			random_owned_province = {
@@ -184,7 +184,7 @@ country_event = {
 				spawn_rebels = {
 					type = nationalist_rebels
 					size = 4
-					TAG = SIQ
+					tag = SIQ
 				}
 			}
 			random_owned_province = {

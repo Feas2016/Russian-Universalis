@@ -3,7 +3,7 @@ country_decisions = {
 	lanxang_nation = {
 		major = yes
 		potential = {
-			TAG = MUA
+			tag = MUA
 			is_year = 1354
 		}
 		allow = {
@@ -25,23 +25,23 @@ country_decisions = {
 			608 = { add_core = LXA }
 			3475 = { add_core = LXA }
 			2381 = { add_core = LXA }
-			ai_will_do = {
-				factor = 400
+			define_ruler = {
+				name = "Фа Нгум"
+				dynasty = "Кхун Ло"
+				adm = 5
+				dip = 2
+				mil = 5
 			}
-		define_ruler = {
-			name = "Фа Нгум"
-			dynasty = "Кхун Ло"
-			adm = 5
-			dip = 2
-			mil = 5
+			define_heir = {
+				name = "Саму Сена Дая"
+				dynasty = "Кхун Ло"
+				adm = 2
+				dip = 3
+				mil = 2
+			}
 		}
-		define_heir = {
-			name = "Саму Сена Дая"
-			dynasty = "Кхун Ло"
-			adm = 2
-			dip = 3
-			mil = 2
-		}
+		ai_will_do = {
+			factor = 400
 		}
 	}
 }
