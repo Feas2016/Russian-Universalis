@@ -1,0 +1,75 @@
+namespace = stt_ayutthaya_origins
+# Ayutthaya - released or unrest started
+country_event = {
+	id = stt_ayutthaya_origins.1
+	title = "stt_ayutthaya_origins.1.t"
+	desc = "stt_ayutthaya_origins.1.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SUK
+		is_year = 1351
+		NOT = {
+			is_year = 1361
+		}
+	}
+
+	mean_time_to_happen = { 
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+		    2387 = { add_core = AYU }
+			2388 = { add_core = AYU }
+			2404 = { add_core = AYU }
+			3462 = { add_core = AYU }
+			3470 = { add_core = AYU }
+			591 = { add_core = AYU }
+			592 = { add_core = AYU }
+			600 = { add_core = AYU }
+		}
+	}
+
+	option = {
+		name = "stt_ayutthaya_origins.1.a1"
+		ai_chance = { factor = 80 }
+		release = AYU
+		add_prestige = -30
+	}
+
+	option = {
+		name = "stt_ayutthaya_origins.1.a2"
+		ai_chance = { factor = 20 }
+		add_legitimacy = 10
+		add_mil_power = 100
+		random_owned_province = {
+		    limit = {
+			    is_core = AYU
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 4
+			}
+		}
+		random_owned_province = {
+		    limit = {
+			    is_core = AYU
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 4
+			}
+		}		
+		every_owned_province = {
+		    limit = {
+			    is_core = AYU
+			}
+			add_unrest = 10
+			add_local_autonomy = 45
+		}
+	}
+}

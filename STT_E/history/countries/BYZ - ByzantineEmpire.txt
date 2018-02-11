@@ -2017,11 +2017,19 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 
 1308.1.1 = {
     add_country_modifier = {
-	    name = "BYZ_army_crisis"
+	    name = "BYZ_army_crisis1"
 		duration = -1
 	}
 	add_country_modifier = {
-	    name = "BYZ_economic_crisis"
+	    name = "BYZ_economic_crisis1"
+		duration = -1
+	}
+	add_country_modifier = {
+	    name = "BYZ_diplomacy_crisis1"
+		duration = -1
+	}
+	add_country_modifier = {
+	    name = "BYZ_cultural_crisis1"
 		duration = -1
 	}
 }
@@ -2085,6 +2093,25 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		dip = 5
 		mil = 2
 	}
+}
+
+1350.1.1 = {
+    add_country_modifier = {
+	    name = "BYZ_army_crisis2"
+		duration = -1
+	}
+	add_country_modifier = {
+	    name = "BYZ_economic_crisis2"
+		duration = -1
+	}
+	add_country_modifier = {
+	    name = "BYZ_cultural_crisis2"
+		duration = -1
+	}
+	
+	remove_country_modifier = BYZ_army_crisis1 
+	remove_country_modifier = BYZ_economic_crisis1
+	remove_country_modifier = BYZ_cultural_crisis1
 }
 
 1354.11.1 = {
@@ -2187,6 +2214,22 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 	}
 }
 
+1380.1.1 = {
+    add_country_modifier = {
+	    name = "BYZ_army_crisis3"
+		duration = -1
+	}
+	
+	add_country_modifier = {
+	    name = "BYZ_diplomacy_crisis2"
+		duration = -1
+	}
+	
+	remove_country_modifier = BYZ_army_crisis2
+	remove_country_modifier = BYZ_cultural_crisis2
+	remove_country_modifier = BYZ_diplomacy_crisis1
+}
+
 1385.6.28 = {
 	heir = {
 		name = "Мануил"
@@ -2274,6 +2317,12 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 		dip = 2
 		mil = 2
 	}
+}
+
+1410.1.1 = {
+	remove_country_modifier = BYZ_army_crisis3
+	remove_country_modifier = BYZ_diplomacy_crisis2
+	remove_country_modifier = BYZ_economic_crisis2
 }
 
 1425.7.21 = {

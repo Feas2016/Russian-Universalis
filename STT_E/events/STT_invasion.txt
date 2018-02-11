@@ -325,9 +325,9 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 7500
+	    months = 7000
 		modifier = {
-		    factor = 0.30
+		    factor = 0.25
 			has_province_modifier = important_natural_harbor
 		}
 		modifier = {
@@ -381,11 +381,11 @@ province_event = {
 			}
 		}
 		modifier = {
-		    factor = 0.75
+		    factor = 0.70
 			NOT = { development = 10 }
 		}
 		modifier = {
-		    factor = 0.80
+		    factor = 0.75
 			has_port = yes
 		}
 	}
@@ -739,6 +739,100 @@ country_event = {
         name = stt_wek.17.a
 		CRO = {
 		    declare_war_with_cb = { who = HUN casus_belli = "cb_independence_war" }
+		}
+	}
+}
+
+country_event = {
+    id = stt_wek.18
+	title = stt_wek.18.t
+	desc = stt_wek.18.d
+	
+	picture = RELIGION_eventPicture
+	
+    fire_only_once = yes
+	
+	trigger = {
+	    is_year = 1350
+		tag = LIT
+	}
+	
+	mean_time_to_happen = {
+	    months = 50
+	}
+	
+	option = {
+	    ai_chance = { factor = 80 }
+	    name = stt_wek.18.a1
+		change_religion = catholic
+		custom_tooltip = LIT_a_c
+		hidden_effect = {
+		    every_country = {
+		        limit = {
+			        religion = catholic
+			    }
+			    add_opinion = {
+                    who = LIT
+                    modifier = LIT_accept_catholic1
+                }
+		    }
+		    every_country = {
+		        limit = {
+			        religion = orthodox
+			    }
+			    add_opinion = {
+                    who = LIT
+                    modifier = LIT_accept_catholic2
+                }
+		    }
+		}
+	}
+	
+	option = {
+	    ai_chance = { factor = 10 }
+	    name = stt_wek.18.a2
+		change_religion = orthodox
+		custom_tooltip = LIT_a_o
+		hidden_effect = {
+		    every_country = {
+		        limit = {
+			        religion = orthodox
+			    }
+			    add_opinion = {
+                    who = LIT
+                    modifier = LIT_accept_orthodox1
+                }
+		    }
+		    every_country = {
+		        limit = {
+			        religion = catholic
+			    }
+			    add_opinion = {
+                    who = LIT
+                    modifier = LIT_accept_orthodox1
+                }
+		    }
+		}
+	}
+	
+	option = {
+	    name = stt_wek.18.a3
+	    ai_chance = { factor = 10 }
+		add_prestige = 10
+		custom_tooltip = LIT_a_r
+	    hidden_effect = {
+		    every_country = {
+		        limit = {
+			        OR = { 
+				        religion = catholic
+					    religion = orthodox
+				    }
+			    }
+			    add_opinion = {
+                    who = LIT
+                    modifier = LIT_stay_romuva
+                }
+		    }
 		}
 	}
 }

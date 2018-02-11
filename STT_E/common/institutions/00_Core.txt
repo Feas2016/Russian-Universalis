@@ -316,7 +316,7 @@ hhh_dt_f = {
 	embracement_speed = {
 		modifier = {
 			scale = yes
-			factor = 0.6
+			factor = 0.7
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_hhh_dt_f
 				any_friendly_coast_border_province = {
@@ -326,7 +326,7 @@ hhh_dt_f = {
 		}
 		
 		modifier = {
-			factor = 0.15
+			factor = 0.2
 			scale = yes
 			potential = {
 				NOT = {
@@ -350,6 +350,10 @@ hhh_dt_f = {
 			force_potential = yes
 			potential = {
 				owner = { government = theocracy }
+				OR = {
+			region = mashriq_region
+			religion = catholic
+		}	
 			}
 			custom_trigger_tooltip = {
 				tooltip = hhh_dt_f_bishopic
@@ -363,6 +367,10 @@ hhh_dt_f = {
 			potential = {
 				has_dlc = "The Cossacks"
 				owner = { has_estate = estate_church }
+				OR = {
+				region = mashriq_region
+				religion = catholic
+				}	
 			}
 			custom_trigger_tooltip = {
 				tooltip = hhh_dt_f_church
@@ -380,55 +388,6 @@ hhh_dt_f = {
 			}
 		}
 		
-	    modifier = {
-			scale = yes
-			factor = 0.10
-			custom_trigger_tooltip = {
-				tooltip = tooltip_hight_cities_hhh_dt_f
-						    OR = {
-		        province_id = 183 #Paris
-				province_id = 219 #Toledo
-				province_id = 101 #Genoa
-				province_id = 112 #Venice
-				province_id = 266 #Prague
-				province_id = 43 #Danzig
-				province_id = 38 #Riga
-				province_id = 227 #Lisboa
-				province_id = 236 #London
-				province_id = 90 #Flandria
-				province_id = 3401 #Vija_ind
-				province_id = 534 #malabar
-				province_id = 1948 #Bahmani
-				province_id = 522 #Dheli
-				province_id = 586 #Pegu
-				province_id = 1816 #Bejing
-				province_id = 667 #Kanton
-				province_id = 597 #Jahor
-				province_id = 125 #Palermo
-				province_id = 1124 #mali
-				province_id = 12 #Denmark
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0.05
-			custom_trigger_tooltip = {
-				tooltip = tooltip_important_region
-			OR = {	
-				region = france_region
-		        region = british_isles_region
-		        region = south_german_region
-		        region = italy_region
-				region = hindusthan_region
-				region = coromandel_region
-				region = south_china_region
-				region = north_china_region
-				region = low_countries_region
-				}
-			}
-		}
-		
 		modifier = {
 			factor = 0.1
 			scale = yes
@@ -438,23 +397,6 @@ hhh_dt_f = {
 			}
 		}
 		
-		# All continents boost
-		modifier = {
-			factor = 0.025
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_5
-				development = 5
-			}
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_15
-				development = 15
-			}
-		}
 		modifier = {
 			factor = 0.025
 			scale = yes
@@ -883,7 +825,6 @@ hhh_dt_t = {
 				region = france_region
 		        region = british_isles_region
 		        region = south_german_region
-				region = north_china_region
 				}
 			}
 		}

@@ -1,0 +1,47 @@
+country_decisions = {
+
+	lanxang_nation = {
+		major = yes
+		potential = {
+			TAG = MUA
+			is_year = 1354
+		}
+		allow = {
+			is_year = 1354
+			is_at_war = no
+			NOT = { exists = LXA }			
+            owns_core_province = 615
+		}
+	 	effect = {
+			change_tag = LXA
+			change_government = despotic_monarchy
+			add_prestige = 25
+			2384 = { add_core = LXA }
+			2385 = { add_core = LXA }
+			2382 = { add_core = LXA }
+			3472 = { add_core = LXA }
+			3471 = { add_core = LXA }
+			2383 = { add_core = LXA }
+			608 = { add_core = LXA }
+			3475 = { add_core = LXA }
+			2381 = { add_core = LXA }
+			ai_will_do = {
+				factor = 400
+			}
+		define_ruler = {
+			name = "Фа Нгум"
+			dynasty = "Кхун Ло"
+			adm = 5
+			dip = 2
+			mil = 5
+		}
+		define_heir = {
+			name = "Саму Сена Дая"
+			dynasty = "Кхун Ло"
+			adm = 2
+			dip = 3
+			mil = 2
+		}
+		}
+	}
+}

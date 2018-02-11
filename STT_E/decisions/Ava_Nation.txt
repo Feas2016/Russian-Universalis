@@ -1,0 +1,68 @@
+country_decisions = {
+
+	ava_nation_pyn = {
+		major = yes
+		potential = {
+			TAG = PYN
+			is_year = 1363
+			NOT = { exists = AVA }
+			NOT = { is_year = 1500 }
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = SIQ }
+            owns_core_province = 584
+			owns_core_province = 585
+			owns_core_province = 581
+			owns_core_province = 2399
+		}
+	 	effect = {
+			change_tag = AVA
+			584 = {
+				move_capital_effect = yes
+			}
+			upper_burma_area = {
+				add_core = AVA
+			}
+			change_government = despotic_monarchy
+			add_prestige = 25
+			ai_will_do = {
+				factor = 400
+			}
+		}
+	}
+}
+
+country_decisions = {
+
+	ava_nation_siq = {
+		major = yes
+		potential = {
+			TAG = SIQ
+			is_year = 1363
+			NOT = { exists = AVA }
+			NOT = { is_year = 1500 }
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = PYN }
+            owns_core_province = 3458
+			owns_core_province = 3459
+			owns_core_province = 581
+		}
+	 	effect = {
+			change_tag = AVA
+			584 = {
+				move_capital_effect = yes
+			}
+			coromandel_region = {
+				add_core = AVA
+			}
+			change_government = despotic_monarchy
+			add_prestige = 25
+			ai_will_do = {
+				factor = 400
+			}
+		}
+	}
+}

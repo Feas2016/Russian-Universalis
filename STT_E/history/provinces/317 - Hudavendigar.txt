@@ -12,6 +12,7 @@ base_production = 7
 base_manpower = 8
 is_city = yes
 add_core = BYZ
+fort_15th = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -21,7 +22,6 @@ extra_cost = 15
 
 
 1326.1.1 = { owner = TU0 controller = TU0 add_core = TU0 }
-1363.1.1 = { culture = turkish religion = sunni }
 1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
 1404.1.1 = { revolt = {} controller = TU0 }
 1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 }

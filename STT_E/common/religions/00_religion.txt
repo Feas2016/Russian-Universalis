@@ -1535,6 +1535,27 @@ pagan = {
 		heretic = { OLD_NORSE }	
 	}
 	
+	#STT
+	romuva = {
+		icon = 29
+		color = { 85 120 0 }
+		country = {
+			tolerance_heathen = 1
+			infantry_power = 0.10
+		}
+		country_as_secondary = {
+			land_morale = 0.10
+			global_unrest = -2
+		}
+		province = {
+			local_manpower_modifier = 0.10
+		}
+		
+		personal_deity = yes
+		
+		heretic = { OLD_ROMUVA }	
+	}
+	
 	tengri_pagan_reformed = {
 		icon = 27
 		color = { 25 76 217 }

@@ -11,6 +11,8 @@ country_decisions = {
 			}
 			#tag = STY	### STT
 			primary_culture = austrian
+			NOT = { tag = AEM }
+			NOT = { tag = HRE }
 			NOT = { tag = HAB }
 			OR = {
 				NOT = { exists = HAB }

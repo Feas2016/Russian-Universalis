@@ -1,7 +1,7 @@
 #2389 - Phra Bang
 
-owner = AYU
-controller = AYU
+owner = SUK
+controller = SUK
 culture = central_thai
 religion = buddhism
 capital = "Sri Thep"
@@ -12,9 +12,14 @@ base_production =3
 base_manpower = 2
 is_city = yes
 add_core = SUK
-add_core = AYU
 discovered_by = chinese
 discovered_by = indian
+
+1351.1.1 = {
+	owner = AYU
+	controller = AYU
+	add_core = AYU
+}
 
 1438.1.1 = {	
 	add_core = AYU

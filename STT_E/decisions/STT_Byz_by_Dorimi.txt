@@ -4,50 +4,50 @@ country_decisions = {
 # Written by Dorimi for Purple Phoenix Arise
 ###################################	
 
-	establish_hexamilion = {
-		potential = {
-			owns = 1773
-			owns = 146
-			NOT = { primary_culture = turkish }
-			NOT = { religion = sunni }
-			OR = { 
-				NOT = { 1773 = { has_province_modifier = byz_hexamilion } } 
-				NOT = { 146 = { has_province_modifier = byz_hexamilion } } 
-			}
-			mil = 2
-		}
-		allow = {
-			advisor = fortification_expert
-			mil = 2
-			mil_power = 50
-		}
-		effect = {
-			add_mil_power = -50
-			add_treasury = -300
-			1773 = {
-			add_province_modifier = {
-				name = "byz_hexamilion"
-				duration = -1
-						}
-				}	
-			146 = {
-			add_province_modifier = {
-				name = "byz_hexamilion"
-				duration = -1
-						}
-				}	
-			}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# establish_hexamilion = { #koufor
+		# potential = {
+			# owns = 1773
+			# owns = 146
+			# NOT = { primary_culture = turkish }
+			# NOT = { religion = sunni }
+			# OR = { 
+				# NOT = { 1773 = { has_province_modifier = byz_hexamilion } } 
+				# NOT = { 146 = { has_province_modifier = byz_hexamilion } } 
+			# }
+			# mil = 2
+		# }
+		# allow = {
+			# advisor = fortification_expert
+			# mil = 2
+			# mil_power = 50
+		# }
+		# effect = {
+			# add_mil_power = -50
+			# add_treasury = -300
+			# 1773 = {
+			# add_province_modifier = {
+				# name = "byz_hexamilion"
+				# duration = -1
+						# }
+				# }	
+			# 146 = {
+			# add_province_modifier = {
+				# name = "byz_hexamilion"
+				# duration = -1
+						# }
+				# }	
+			# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 	
 	establish_byzbride = {
 		potential = {
 			OR = {
-				tag = BYZ
-				tag = ROM
-				tag = PQR
+				#tag = BYZ #koufor
+				#tag = ROM #koufor
+				#tag = PQR #koufor
 				tag = MOS
 				tag = TSR
 				tag = RUS
@@ -160,34 +160,34 @@ country_decisions = {
 		}
 	}
 	
-	establish_echinades = {
-		potential = {
-			tag = BYZ
-			NOT = { has_country_modifier = byz_echinades }
-			mil = 3
-		}
-		allow = {
-			advisor = naval_reformer
-			is_at_war = no
-			mil = 3
-			mil_power = 50
-			num_of_total_ports = 15
-			num_of_heavy_ship = 15
-			num_of_light_ship = 40
-		}
-		effect = {
-			add_stability = 1
-			add_prestige = 15
-			add_treasury = -150
-			add_mil_power = -50
-			add_country_modifier = {
-				name = "byz_echinades"
-				duration = -1
-			}		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# establish_echinades = {	#koufor
+		# potential = {
+			# tag = BYZ
+			# NOT = { has_country_modifier = byz_echinades }
+			# mil = 3
+		# }
+		# allow = {
+			# advisor = naval_reformer
+			# is_at_war = no
+			# mil = 3
+			# mil_power = 50
+			# num_of_total_ports = 15
+			# num_of_heavy_ship = 15
+			# num_of_light_ship = 40
+		# }
+		# effect = {
+			# add_stability = 1
+			# add_prestige = 15
+			# add_treasury = -150
+			# add_mil_power = -50
+			# add_country_modifier = {
+				# name = "byz_echinades"
+				# duration = -1
+			# }		}
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 	
 	establish_greekfire = {
 		potential = {
@@ -654,25 +654,25 @@ country_decisions = {
 	}
 	
 	
-	byz_establish_barbarium = {
-		potential = {
-			tag = BYZ
-		}
-		allow = {
-			NOT = { has_country_modifier = byz_barbarium }
-			has_regency = no
-		}
-		effect = {
-			add_adm_power = -50
-			add_country_modifier = {
-				name = "byz_barbarium"
-				duration = 1825
-			}		
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# byz_establish_barbarium = { #koufor
+		# potential = {
+			# tag = BYZ
+		# }
+		# allow = {
+			# NOT = { has_country_modifier = byz_barbarium }
+			# has_regency = no
+		# }
+		# effect = {
+			# add_adm_power = -50
+			# add_country_modifier = {
+				# name = "byz_barbarium"
+				# duration = 1825
+			# }		
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 	
 	byz_establish_callsenate = {
 		potential = {

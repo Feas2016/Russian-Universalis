@@ -1,7 +1,7 @@
 #142 - Corfu
 
-owner = VEN
-controller = VEN
+owner = NAP			### STT
+controller = NAP	### STT
 culture = greek
 religion = orthodox
 capital = "Êîðôó"	### STT
@@ -12,6 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = CEP
+add_core = NAP	### STT
 add_core = BYZ	### STT
 discovered_by = western
 discovered_by = eastern
@@ -23,8 +24,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1444.1.1 = { add_core = VEN}
-1460.1.1 = { owner = VEN controller = VEN }
+1386.1.1 = { owner = VEN controller = VEN add_core = VEN}	### STT
 1610.1.1 = { unrest = 7 } # Exploatation by the nobles, several minor revolts
 1650.1.1 = { unrest = 0 }
 1750.1.1 = { add_core = GRE }

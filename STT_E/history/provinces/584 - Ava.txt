@@ -1,7 +1,7 @@
 #584 - Ava
 
-owner = AVA
-controller = AVA
+owner = PYN
+controller = PYN
 culture = burmese
 religion = buddhism
 capital = "Ava"
@@ -12,9 +12,15 @@ base_production = 6
 base_manpower = 4
 fort_15th = yes
 is_city = yes
-add_core = AVA
+add_core = PYN
 discovered_by = chinese
 discovered_by = indian
+
+1364.1.1 = {
+	owner = AVA
+	controller = AVA
+	add_core = AVA
+}
 
 1527.1.1 = {
 	owner = SST

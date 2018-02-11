@@ -32,45 +32,47 @@ country_decisions = {
 			dulkadir_area = { type = all owned_by = BYZ }
 		}
 		effect = {
-			149 = { change_province_name = "Адрианополь" rename_capital = "Адрианополь" }
-			316 = { change_province_name = "Оптиматы" rename_capital = "Никомедия" }
-			317 = { change_province_name = "Опсикий" rename_capital = "Прусса" }
-			318 = { change_province_name = "Смирна" rename_capital = "Смирна" }
-			319 = { change_province_name = "Ликия" rename_capital = "Ликия" }
-			#322 = { change_province_name = Кютахья rename_capital = Кютахья } #STT
-			322 = { change_province_name = "Фригия" rename_capital = "Фригия" } #STT
-			323 = { change_province_name = "Иконий" rename_capital = "Икониум" }
-			324 = { change_province_name = "Ларинда" rename_capital = "Ларинда" }
-			325 = { change_province_name = "Пафлагония" rename_capital = "Амастрис" }
-			326 = { change_province_name = "Галатия" rename_capital = "Ангира" }
-			328 = { change_province_name = "Синоп" rename_capital = "Синоп" }
-			329 = { change_province_name = "Себастия" rename_capital = "Себастия" }
-			330 = { change_province_name = "Трапезунд" rename_capital = "Трапезунд" }
-			327 = { change_province_name = "Киликея" rename_capital = "Атана" }
-			1846 = { change_province_name = "Армениакон" rename_capital = "Амасея" }
-			1848 = { change_province_name = "Анатоликон" rename_capital = "Анатоликон" }
-			151 = { change_province_name = "Константинополь" rename_capital = "Константинополь" }
-			2296 = { change_province_name = "Абидос" rename_capital = "Пигай" }
-			2297 = { change_province_name = "Фракиссия" rename_capital = "Магнисия" }
-			2298 = { change_province_name = "Атталия" rename_capital = "Атталия" }
-			2299 = { change_province_name = "Букеларии" rename_capital = "Клавдиполь" }
-			2300 = { change_province_name = "Каппадокия" rename_capital = "Тавиум" }
-			2301 = { change_province_name = "Харсиан" rename_capital = "Цесария" }
-			2302 = { change_province_name = "Селевкия" rename_capital = "Кермараг" }
-			2304 = { change_province_name = "Амиссос" rename_capital = "Амиссос" }
-			2750 = { change_province_name = "Филиппополь" rename_capital = "Филиппополь" }
-			#STT
-			2304 = { change_province_name = "Мезия" rename_capital = "Мезия" }
-			3106 = { change_province_name = "Траянополис" rename_capital = "Траянополис" }
-			3108 = { change_province_name = "Гарсаруа" rename_capital = "Гарсаруа" }
-			3110 = { change_province_name = "Тралл" rename_capital = "Тралл" }
-			3111 = { change_province_name = "Халдия" rename_capital = "Халдия" }
-			3114 = { change_province_name = "Мелитена" rename_capital = "Мелитена" }
-			3128 = { change_province_name = "Дорилей" rename_capital = "Дорилей" }
-			3261 = { change_province_name = "Аморион" rename_capital = "Аморион" }
-			3262 = { change_province_name = "Ликанда" rename_capital = "Ликанда" }
-			3263 = { change_province_name = "Архелай" rename_capital = "Архелай" }
-			3264 = { change_province_name = "Стримон" rename_capital = "Стримон" }
+				hidden_effect = {
+				149 = { change_province_name = "Адрианополь" rename_capital = "Адрианополь" }
+				316 = { change_province_name = "Оптиматы" rename_capital = "Никомедия" }
+				317 = { change_province_name = "Опсикий" rename_capital = "Прусса" }
+				318 = { change_province_name = "Смирна" rename_capital = "Смирна" }
+				319 = { change_province_name = "Ликия" rename_capital = "Ликия" }
+				#322 = { change_province_name = Кютахья rename_capital = Кютахья } #STT
+				322 = { change_province_name = "Фригия" rename_capital = "Фригия" } #STT
+				323 = { change_province_name = "Иконий" rename_capital = "Икониум" }
+				324 = { change_province_name = "Ларинда" rename_capital = "Ларинда" }
+				325 = { change_province_name = "Пафлагония" rename_capital = "Амастрис" }
+				326 = { change_province_name = "Галатия" rename_capital = "Ангира" }
+				328 = { change_province_name = "Синоп" rename_capital = "Синоп" }
+				329 = { change_province_name = "Себастия" rename_capital = "Себастия" }
+				330 = { change_province_name = "Трапезунд" rename_capital = "Трапезунд" }
+				327 = { change_province_name = "Киликея" rename_capital = "Атана" }
+				1846 = { change_province_name = "Армениакон" rename_capital = "Амасея" }
+				1848 = { change_province_name = "Анатоликон" rename_capital = "Анатоликон" }
+				151 = { change_province_name = "Константинополь" rename_capital = "Константинополь" }
+				2296 = { change_province_name = "Абидос" rename_capital = "Пигай" }
+				2297 = { change_province_name = "Фракиссия" rename_capital = "Магнисия" }
+				2298 = { change_province_name = "Атталия" rename_capital = "Атталия" }
+				2299 = { change_province_name = "Букеларии" rename_capital = "Клавдиполь" }
+				2300 = { change_province_name = "Каппадокия" rename_capital = "Тавиум" }
+				2301 = { change_province_name = "Харсиан" rename_capital = "Цесария" }
+				2302 = { change_province_name = "Селевкия" rename_capital = "Кермараг" }
+				2304 = { change_province_name = "Амиссос" rename_capital = "Амиссос" }
+				2750 = { change_province_name = "Филиппополь" rename_capital = "Филиппополь" }
+				#STT
+				2304 = { change_province_name = "Мезия" rename_capital = "Мезия" }
+				3106 = { change_province_name = "Траянополис" rename_capital = "Траянополис" }
+				3108 = { change_province_name = "Гарсаруа" rename_capital = "Гарсаруа" }
+				3110 = { change_province_name = "Тралл" rename_capital = "Тралл" }
+				3111 = { change_province_name = "Халдия" rename_capital = "Халдия" }
+				3114 = { change_province_name = "Мелитена" rename_capital = "Мелитена" }
+				3128 = { change_province_name = "Дорилей" rename_capital = "Дорилей" }
+				3261 = { change_province_name = "Аморион" rename_capital = "Аморион" }
+				3262 = { change_province_name = "Ликанда" rename_capital = "Ликанда" }
+				3263 = { change_province_name = "Архелай" rename_capital = "Архелай" }
+				3264 = { change_province_name = "Стримон" rename_capital = "Стримон" }
+			}
 			custom_tooltip = reestablishing_themes_names_tooltip
 			add_prestige = 50 #STT
 			add_adm_power = 150 #STT

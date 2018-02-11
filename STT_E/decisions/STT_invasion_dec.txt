@@ -301,17 +301,19 @@ country_decisions = {
 	    major = yes
 		potential = {
 		    tag = BYZ
-			has_country_modifier = BYZ_army_crisis
+			has_country_modifier = BYZ_army_crisis1
 		}
 		
 		allow = {
 		    mil_power = 500
+			adm_power = 100
 			MIL = 4
 		}
 		
 		effect = {
 		    add_mil_power = -500
-			remove_country_modifier = BYZ_army_crisis
+			add_adm_power = -100
+			remove_country_modifier = BYZ_army_crisis1
 			add_country_modifier = {
 			    name = BYZ_army_crisis2
 				duration = -1
@@ -331,17 +333,21 @@ country_decisions = {
 		}
 		
 		allow = {
-		    mil_power = 600
-			adm_power = 300
+		    mil_power = 400
+			adm_power = 200
 			MIL = 4
 			ADM = 3
 		}
 		
 		effect = {
-		    add_adm_power = -300
-		    add_mil_power = -600
+		    add_adm_power = -200
+		    add_mil_power = -400
 			add_prestige = 25
 			remove_country_modifier = BYZ_army_crisis2
+			add_country_modifier = {
+			    name = BYZ_army_crisis3
+				duration = -1
+			}
         }
 		
 		ai_will_do = {
@@ -349,31 +355,208 @@ country_decisions = {
 		}
 	}	
 	
-	BYZ_economic_reform = {
+	BYZ_army_reform3 = {
 	    major = yes
 		potential = {
 		    tag = BYZ
-			has_country_modifier = BYZ_economic_crisis
+			has_country_modifier = BYZ_army_crisis3
 		}
 		
 		allow = {
-		    adm_power = 500
-			dip_power = 250
-			ADM = 4
+		    mil_power = 300
+			adm_power = 100
+			dip_power = 100
+			MIL = 5
+			ADM = 3
 			DIP = 3
 		}
 		
 		effect = {
-		    add_adm_power = -500
-			add_dip_power = -250
+		    add_adm_power = -100
+		    add_mil_power = -300
+			add_dip_power = -100
 			add_prestige = 25
-			remove_country_modifier = BYZ_economic_crisis
+			remove_country_modifier = BYZ_army_crisis3
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_economic_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_economic_crisis1
+		}
+		
+		allow = {
+		    adm_power = 400
+			dip_power = 200
+			ADM = 4
+			DIP = 2
+		}
+		
+		effect = {
+		    add_adm_power = -400
+			add_dip_power = -200
+			add_prestige = 25
+			remove_country_modifier = BYZ_economic_crisis1
+			add_country_modifier = {
+			    name = BYZ_economic_crisis2
+				duration = -1
+			}
         }
 		
 		ai_will_do = {
 		    factor = 1000
 		}
 	}
+	
+	BYZ_economic_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_economic_crisis2
+		}
+		
+		allow = {
+		    adm_power = 400
+			dip_power = 100
+			mil_power = 100
+			ADM = 4
+			DIP = 3
+		}
+		
+		effect = {
+		    add_adm_power = -400
+			add_dip_power = -100
+			add_mil_power = -100
+			add_prestige = 25
+			remove_country_modifier = BYZ_economic_crisis2
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_diplomatic_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_diplomacy_crisis1
+		}
+		
+		allow = {
+			dip_power = 500
+			mil_power = 100
+			DIP = 4
+		}
+		
+		effect = {
+			add_dip_power = -500
+			add_mil_power = -100
+			add_prestige = 25
+			remove_country_modifier = BYZ_diplomacy_crisis1
+			add_country_modifier = {
+			    name = BYZ_diplomacy_crisis2
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_diplomatic_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_diplomacy_crisis2
+		}
+		
+		allow = {
+			dip_power = 400
+			mil_power = 200
+			MIL = 3
+			DIP = 5
+		}
+		
+		effect = {
+			add_dip_power = -400
+			add_mil_power = -200
+			add_prestige = 25
+			remove_country_modifier = BYZ_diplomacy_crisis2
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_cultural_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_cultural_crisis1
+		}
+		
+		allow = {
+			dip_power = 300
+			mil_power = 200
+			adm_power = 100
+			MIL = 5
+			DIP = 3
+		}
+		
+		effect = {
+			add_dip_power = -300
+			add_mil_power = -200
+			add_adm_power = -100
+			add_prestige = 25
+			remove_country_modifier = BYZ_cultural_crisis1
+			add_country_modifier = {
+			    name = BYZ_cultural_crisis2
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_cultural_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_cultural_crisis2
+		}
+		
+		allow = {
+			dip_power = 300
+			mil_power = 100
+			adm_power = 200
+			ADM = 3
+			DIP = 5
+		}
+		
+		effect = {
+			add_dip_power = -300
+			add_mil_power = -100
+			add_adm_power = -200
+			add_prestige = 25
+			remove_country_modifier = BYZ_cultural_crisis2
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
 
     ##########
 	## YUAN ##
