@@ -1,4 +1,4 @@
-	country_decisions = {
+country_decisions = {
 
 	recruit_new_soldiers = {
 		potential = {
@@ -14,9 +14,9 @@
 			mil_power = 100
 			NOT = {
 				num_of_religion = {
-								religion = sunni
-								value = 0.75
-								}
+					religion = sunni
+					value = 0.75
+				}
 			}
 		}
 		effect = {
@@ -34,7 +34,7 @@
 				OR = {
 					NOT = { mil_power = 200 }
 					NOT = { manpower_percentage = 0.75 }
-					}
+				}
 			}
 		}
 	}
@@ -120,7 +120,7 @@
 				OR = {
 					NOT = { dip_power = 300 }
 					NOT = { years_of_income = 0.5 }
-					}
+				}
 			}
 		}
 	}
@@ -256,8 +256,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { dip_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
 					}
 			}
 			modifier = {
@@ -300,8 +300,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { dip_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
 					}
 			}
 			modifier = {
@@ -343,8 +343,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { dip_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
 					}
 			}
 		}
@@ -384,8 +384,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { adm_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
 					}
 			}
 			modifier = {
@@ -428,8 +428,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { adm_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
 					}
 			}
 			modifier = {
@@ -471,8 +471,8 @@
 			modifier = {
 				factor = 0
 				OR = {
-					NOT = { stability = 1 }
-					NOT = { adm_power = 150 }
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
 					}
 			}
 		}
