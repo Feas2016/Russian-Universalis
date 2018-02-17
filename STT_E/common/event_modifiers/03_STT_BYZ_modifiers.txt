@@ -273,12 +273,12 @@ BYZ_army_success = {
 
 BYZ_economic_success = {
     global_trade_power = 0.10
-	global_tax_income = 0.10
+	global_tax_modifier = 0.10
 	production_efficiency = 0.10
 }
 
 BYZ_diplomacy_success = {
-    prestige_decay = -3
+    prestige_decay = -0.03
 	improve_relation_modifier = 0.15
 	diplomatic_reputation = 1
 }

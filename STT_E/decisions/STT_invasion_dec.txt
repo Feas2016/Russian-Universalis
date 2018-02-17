@@ -342,7 +342,6 @@ country_decisions = {
 		effect = {
 		    add_adm_power = -200
 		    add_mil_power = -400
-			add_prestige = 25
 			remove_country_modifier = BYZ_army_crisis2
 			add_country_modifier = {
 			    name = BYZ_army_crisis3
@@ -375,8 +374,11 @@ country_decisions = {
 		    add_adm_power = -100
 		    add_mil_power = -300
 			add_dip_power = -100
-			add_prestige = 25
 			remove_country_modifier = BYZ_army_crisis3
+			add_country_modifier = {
+			    name = BYZ_army_success
+				duration = 1825
+			}
         }
 		
 		ai_will_do = {
@@ -401,7 +403,6 @@ country_decisions = {
 		effect = {
 		    add_adm_power = -400
 			add_dip_power = -200
-			add_prestige = 25
 			remove_country_modifier = BYZ_economic_crisis1
 			add_country_modifier = {
 			    name = BYZ_economic_crisis2
@@ -433,8 +434,11 @@ country_decisions = {
 		    add_adm_power = -400
 			add_dip_power = -100
 			add_mil_power = -100
-			add_prestige = 25
 			remove_country_modifier = BYZ_economic_crisis2
+			add_country_modifier = {
+			    name = BYZ_economic_success
+				duration = 1825
+			}
         }
 		
 		ai_will_do = {
@@ -458,7 +462,6 @@ country_decisions = {
 		effect = {
 			add_dip_power = -500
 			add_mil_power = -100
-			add_prestige = 25
 			remove_country_modifier = BYZ_diplomacy_crisis1
 			add_country_modifier = {
 			    name = BYZ_diplomacy_crisis2
@@ -488,8 +491,11 @@ country_decisions = {
 		effect = {
 			add_dip_power = -400
 			add_mil_power = -200
-			add_prestige = 25
 			remove_country_modifier = BYZ_diplomacy_crisis2
+			add_country_modifier = {
+			    name = BYZ_diplomacy_success
+				duration = 3650
+			}
         }
 		
 		ai_will_do = {
@@ -516,7 +522,6 @@ country_decisions = {
 			add_dip_power = -300
 			add_mil_power = -200
 			add_adm_power = -100
-			add_prestige = 25
 			remove_country_modifier = BYZ_cultural_crisis1
 			add_country_modifier = {
 			    name = BYZ_cultural_crisis2
@@ -548,8 +553,11 @@ country_decisions = {
 			add_dip_power = -300
 			add_mil_power = -100
 			add_adm_power = -200
-			add_prestige = 25
 			remove_country_modifier = BYZ_cultural_crisis2
+			add_country_modifier = {
+			    name = BYZ_cultural_success
+				duration = 9125
+			}
         }
 		
 		ai_will_do = {

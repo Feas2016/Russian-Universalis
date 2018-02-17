@@ -103,26 +103,28 @@ country_decisions = {
 				name = "byz_europe"
 				duration = 14600
 			}
-			random_owned_province = {
-				limit = { controlled_by = ROOT  }
-				cavalry = ROOT
-				cavalry = ROOT
-				cavalry = ROOT
-				cavalry = ROOT
-				cavalry = ROOT
-				cavalry = ROOT					
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-			}
-			}
+			hidden_effect = {
+				random_owned_province = {
+					limit = { controlled_by = ROOT  }
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT
+					cavalry = ROOT					
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					infantry = ROOT
+					}
+				}
+			}	
 		ai_will_do = {
 			factor = 0
 		}
