@@ -837,4 +837,122 @@ country_event = {
 	}
 }
 
+country_event = {
+    id = stt_wek.19
+	title = stt_wek.19.t
+	desc = stt_wek.19.d
+	
+	picture = UNIVERSITY_eventPicture
+	
+    is_triggered_only = yes
+	
+	option = {
+	    trigger = { NOT = { heir_adm = 6 } }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 0.5
+				heir_adm = 4
+			}
+			modifier = {
+				factor = 0.2
+				heir_adm = 5
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { heir_adm = 3 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { heir_adm = 2 }
+			}
+		}
+		name = stt_wek.19.a1
+		add_years_of_income = -0.75
+		random_list = {
+			20 = {
+				custom_tooltip = STT_education_fail
+			}
+			60 = {
+				change_heir_adm = 1
+			}
+			20 = {
+				change_heir_adm = 2
+			}
+		}
+	}
+	
+	option = {
+	    trigger = { NOT = { heir_dip = 6 } }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 0.5
+				heir_dip = 4
+			}
+			modifier = {
+				factor = 0.2
+				heir_dip = 5
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { heir_dip = 3 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { heir_dip = 2 }
+			}
+		}
+		name = stt_wek.19.a2
+		add_years_of_income = -0.75
+		random_list = {
+			20 = {
+				custom_tooltip = STT_education_fail
+			}
+			60 = {
+				change_heir_dip = 1
+			}
+			20 = {
+				change_heir_dip = 2
+			}
+		}
+	}
+	
+	option = {
+		trigger = { NOT = { heir_mil = 6 } }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 0.5
+				heir_mil = 4
+			}
+			modifier = {
+				factor = 0.2
+				heir_mil = 5
+			}
+			modifier = {
+				factor = 1.2
+				NOT = { heir_mil = 3 }
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { heir_mil = 2 }
+			}
+		}
+		name = stt_wek.19.a3
+		add_years_of_income = -0.75
+		random_list = {
+			20 = {
+				custom_tooltip = STT_education_fail
+			}
+			60 = {
+				change_heir_mil = 1
+			}
+			20 = {
+				change_heir_mil = 2
+			}
+		}
+	}
+}
+
 

@@ -727,4 +727,34 @@ country_decisions = {
 	        factor = 1
         }
 	}
+	
+	STT_heir_education = {
+	    major = yes
+	    potential = {
+			NOT = { has_heir_flag = STT_education_done }
+			has_heir = yes
+			NOT = { heir_age = 15 }
+			heir_age = 5
+			OR = {
+				NOT = { heir_adm = 6 }
+				NOT = { heir_dip = 6 }
+				NOT = { heir_mil = 6 }
+			}
+		}
+		
+		allow = {
+			NOT = { heir_age = 15 }
+			heir_age = 5
+			years_of_income = 0.75
+		}
+		
+		effect = {
+			set_heir_flag = STT_education_done
+			country_event = { id = stt_wek.19 }
+		}
+		
+		ai_will_do = {
+	        factor = 1000
+        }
+	}
 }
