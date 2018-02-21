@@ -1,10 +1,38 @@
-government = rus_government
+government = rus_government ### STT
+government_rank = 2 ### STT
 primary_culture = russian
 religion = orthodox
 technology_group = eastern
 capital = 294	# Tver
 fixed_capital = 294 # Cannot move capital away from this province & no power cost to move to it
-government_rank = 1
+
+
+1286.1.1 = {
+	monarch = {
+		name = "Михаил"
+		dynasty = "Рюрикович"
+		birth_date = 1271.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1318.1.1 = {
+	heir = {
+		name = "Дмитрий"
+		monarch_name = "Дмитрий Грозные Очи"
+		dynasty = "Рюрикович"
+		birth_date = 1298.1.1
+		death_date = 1326.1.1
+		claim = 90
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+
 
 1398.11.1 = {
 	monarch = {
@@ -33,13 +61,16 @@ government_rank = 1
 		name = "Борис"
 		dynasty = "Рюрикович"
 		birth_date = 1399.1.1
-		adm = 1
-		dip = 0
-		mil = 0
+		adm = 2
+		dip = 3
+		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = well_advised_personality
 }
 
-1449.8.31 = {
+1449.8.31 = { ### STT
 	government_rank = 1
 }
 

@@ -3,7 +3,7 @@ mod_wasteland_arctic = {
 	local_colonial_growth = -20
 	attrition = 10
 	max_attrition = 25
-	movement_cost = 1.5
+	movement_speed = -0.15
 	supply_limit = -0.10
 	
 	picture = "wasteland_arctic"
@@ -11,7 +11,6 @@ mod_wasteland_arctic = {
 westernised = {
 	stability_cost_modifier = 1
 	global_unrest = 5
-	icon = 5
 }
 reformer = {	
 	prestige = 1
@@ -21,7 +20,6 @@ forgreat = {
 }
 jagtolerance_modifier = {
 	diplomatic_reputation = 2
-	#icon = 3
 }
 kingdom_of_god = {
 	diplomats = 1
@@ -29,7 +27,6 @@ kingdom_of_god = {
 	stability_cost_modifier = -0.05
 	advisor_pool = 2
 	free_leader_pool = 1
-	#icon = 9
 }
 super_albania = {
 	defensiveness = 1
@@ -44,4 +41,125 @@ heir_training = {
 heir_not_training = {
 	prestige = -0.1
 	legitimacy = -0.1
+}
+help_to_osman = { 
+    ae_impact = -0.2
+}
+
+help_to_russia = {
+    global_unrest = -4
+    missionaries = 2
+	global_missionary_strength = 0.04
+}
+
+restore_wek = {
+    core_creation = -0.25
+	ae_impact = -0.15
+}
+
+pagans_was_supported = {
+    local_unrest = 2
+	local_manpower_modifier = 0.75
+	local_missionary_strength = -0.5
+}
+
+pagans_was_destroyed = {
+    local_unrest = -2
+	local_manpower_modifier = -0.50
+}
+
+catholic_resistance = {
+    diplomatic_reputation = -2
+	global_unrest = 3
+}
+
+great_hof = {
+    local_unrest = -2
+	prestige = 1
+	global_missionary_strength = 0.01
+	tolerance_own = 1
+}
+
+norse_missionaries = {
+    global_missionary_strength = 0.01
+	missionaries = 2
+}
+
+fail_norse_mission = {
+    local_missionary_strength = -0.99
+	local_unrest = 3
+}
+
+tyur_bless = {
+    army_tradition = 1
+	discipline = 0.025
+	infantry_power = 0.10
+	land_morale = 0.10
+	naval_morale = 0.10
+	navy_tradition = 1
+}
+
+golden_horde_power = {
+    cavalry_power = 0.20
+	land_morale = 0.10
+	land_maintenance_modifier = -0.33
+}
+
+GLH_broken = {
+    global_unrest = 1
+	stability_cost_modifier = 0.10
+}
+
+DLH_broken = {
+    global_unrest = 1
+	stability_cost_modifier = 0.10
+}
+
+HUL_broken = {
+    global_unrest = 2
+}
+
+GLH_sunni = {
+    global_unrest = 2
+	global_missionary_strength = 0.04
+	missionaries = 2
+}
+
+TUR_timariot_system = {
+    global_unrest = -4
+    manpower_recovery_speed = 0.10
+	land_maintenance_modifier = -0.33
+	land_forcelimit_modifier = 0.20
+	global_manpower_modifier = 0.25
+}
+
+HUN_economic_reform = {
+    global_tax_modifier = 0.20
+	inflation_reduction = 0.10
+	global_own_trade_power = 0.20
+	trade_efficiency = 0.2
+}
+
+HUN_union = {
+    diplomatic_reputation = -4
+	ae_impact = 0.10
+	improve_relation_modifier = -0.2
+}
+
+HUN_foreign_ruler = {
+    diplomatic_reputation = -2
+	improve_relation_modifier = -0.1
+	global_unrest = 2
+	stability_cost_modifier = 0.20
+}
+
+HUN_religion_process = {
+    global_unrest = 5
+	global_heretic_missionary_strength = 0.04
+	missionaries = 2
+}
+
+HUN_religion_tolerance = {
+    global_unrest = -2
+	tolerance_heretic = 3
 }

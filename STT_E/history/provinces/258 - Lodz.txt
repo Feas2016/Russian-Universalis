@@ -1,7 +1,7 @@
 #258 - Lodz
 
-owner = POL
-controller = POL
+owner = KRA
+controller = KRA
 capital = "Sieradz"
 culture = polish
 religion = catholic
@@ -11,12 +11,13 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = POL
+add_core = KRA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1320.1.1 = { owner = POL add_core = POL controller = POL }
 1569.7.1 = {
 	owner = PLC
 	controller = PLC

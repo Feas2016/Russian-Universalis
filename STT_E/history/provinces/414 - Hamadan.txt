@@ -1,24 +1,33 @@
 #414 - Hamadan
 
-owner = TIM
-controller = TIM
-culture = persian
+owner = HUL			### STT
+controller = HUL	### STT
+culture = luri
 religion = shiite
 capital = "Hamedan"
 trade_goods = cloth
 hre = no
-base_tax = 4 
-base_production = 4
-base_manpower = 3
+base_tax = 2
+base_production = 2
+base_manpower = 2
 is_city = yes
-add_core = PER
-add_core = TIM
+add_core = HUL		### STT
+add_core = QOM
+add_core = LRI
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = indian
 
-1449.1.1 = {
+1335.1.1 = { owner = JAL controller = JAL add_core = JAL }	### STT
+1386.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1442.1.1 = { #Death of Yusuf Khwaja, governor of Rayy. Appointment of Sultan Muhammad b. Baysunghur as governor of northern Iran.
+	owner = QOM
+	controller = QOM
+	add_core = QOM
+}
+#1446.1.1 #Revolt of Muhammad bin Baysonqor
+1451.1.1 = {
 	owner = QAR
 	controller = QAR
 	add_core = QAR
@@ -35,6 +44,7 @@ discovered_by = indian
 1504.1.1 = {
 	owner = PER
 	controller = PER
+	add_core = PER
 	remove_core = AKK
 } # The Safavids took over
 1535.1.1 = { controller = TUR } # Wartime occupation
@@ -44,6 +54,6 @@ discovered_by = indian
 1590.3.21 = { controller = PER } # Peace of Istanbul
 1673.1.1 = { discovered_by = ENG }
 1707.5.12 = { discovered_by = GBR }
-1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
-1748.1.1 = { revolt_risk = 4 } # The empire began to decline
-1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1747.1.1 = { unrest = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { unrest = 4 } # The empire began to decline
+1779.1.1 = { unrest = 0 } # With the Qajar dynasty the situation stabilized

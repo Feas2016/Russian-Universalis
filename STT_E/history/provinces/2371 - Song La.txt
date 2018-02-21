@@ -1,7 +1,7 @@
 #2371 - Song La
 
-owner = DAI
-controller = DAI
+owner = MUA
+controller = MUA
 culture = lao
 religion = mahayana
 capital = "Song La"
@@ -11,9 +11,16 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = DAI
+add_core = MUA
 discovered_by = chinese
 discovered_by = indian
+
+1354.1.1  = {
+	owner = LXA
+	controller = LXA
+	add_core = LXA
+	remove_core = MUA
+}
 
 1413.1.1 = {
 	owner = MNG

@@ -1,7 +1,7 @@
 #581 - Sagaing
 
-owner = AVA
-controller = AVA
+owner = PYN
+controller = PYN
 culture = burmese
 religion = buddhism
 capital = "Tagaung"
@@ -11,9 +11,21 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = AVA
+add_core = PYN
 discovered_by = chinese
 discovered_by = indian
+
+1315.1.1 = {
+	owner = SIQ
+	controller = SIQ
+	add_core = SIQ
+}
+
+1364.1.1 = {
+	owner = AVA
+	controller = AVA
+	add_core = AVA
+}
 
 1527.1.1 = {
 	owner = SST

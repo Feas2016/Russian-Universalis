@@ -1,0 +1,25 @@
+name = "Франко-Прусская война"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+}
+
+1870.7.19 = {
+	add_attacker = FRA
+	add_defender = NDB
+	add_defender = BAV
+	add_defender = BAD
+	add_defender = WUR
+
+}
+
+
+1871.5.10 = {
+	rem_attacker = FRA
+	rem_defender = NDB
+	rem_defender = BAV
+	rem_defender = BAD
+	rem_defender = WUR
+
+
+}

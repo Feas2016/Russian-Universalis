@@ -50,7 +50,7 @@ guiTypes = {
 		{
 			name ="topGold"
 			spriteType = "GFX_country_diplomacy_view_topGold"
-			position = { x= -6 y = 84 }
+			position = { x= -1 y = 84 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -83,24 +83,41 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			clicksound = click
 		}
+		
+		iconType =
+		{
+			name ="countryshield_glow"
+			quadTextureSprite = "GFX_shield_thin_great_power_glow"
+			position = { x= -6 y = 124 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 
 		iconType =
 		{
 			name ="religion_icon"
-			spriteType = "GFX_icon_religion"
-			position = { x= 75 y = 130 }
+			spriteType = "GFX_country_icon_religion"
+			position = { x= 74 y = 125 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.6
 			hint_tag = "hint_religion"
 		}
 
 		iconType =
 		{
 			name ="secondary_religion_icon"
-			spriteType = "GFX_icon_religion"
-			position = { x= 108 y = 140 }
+			spriteType = "GFX_icon_religion_small"
+			position = { x= 110 y = 142 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.4
+			scale = 0.8
+			hint_tag = "hint_religion"
+		}
+		iconType =
+		{
+			name ="religious_school_icon"
+			spriteType = "GFX_icon_religion_small"
+			position = { x= 110 y = 142 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.5
 			hint_tag = "hint_religion"
 		}
 
@@ -156,7 +173,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "+155 ???"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = center
 			
 		}
@@ -183,7 +200,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "+200"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = center	
 		}			
 		
@@ -209,7 +226,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "+200"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = center	
 		}		
 		
@@ -223,7 +240,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="num_relations_icon"
-			spriteType = "GFX_diplomacy_action_relation"
+			spriteType = "GFX_diplomacy_action_relation_tooltip"
 			position = { x= 282 y = 168 }
 			hint_tag = "hint_diplomaticupkeep"
 		}			
@@ -245,7 +262,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "1337"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = center	
 		}
 		
@@ -277,7 +294,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 64
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}	
 		
@@ -335,7 +352,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 32
-			maxHeight = 16
+			maxHeight = 26
 			format = centre
 		}		
 		
@@ -356,7 +373,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 32
-			maxHeight = 16
+			maxHeight = 26
 			format = centre
 		}
 		
@@ -377,7 +394,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 32
-			maxHeight = 16
+			maxHeight = 26
 			format = centre
 		}
 		
@@ -406,7 +423,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -428,7 +445,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "32%"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}	
 		
@@ -449,7 +466,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "32%"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}	
 
@@ -470,7 +487,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "32%"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -491,7 +508,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}
 
@@ -513,7 +530,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "0"	
 			maxWidth = 44
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -534,7 +551,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}					
 		
@@ -555,7 +572,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 			fixedsize = yes
 			truncate = yes
@@ -578,7 +595,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 
@@ -618,7 +635,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -640,7 +657,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -662,7 +679,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "?"	
 			maxWidth = 30
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}
 		
@@ -674,7 +691,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = ""	
 			maxWidth = 300
-			maxHeight = 16
+			maxHeight = 26
 			format = centre
 		}			
 
@@ -684,7 +701,7 @@ guiTypes = {
 			font = "vic_18"
 			text = "HEIR"	
 			maxWidth = 60
-			maxHeight = 16
+			maxHeight = 26
 			format = left
 		}		
 
@@ -703,21 +720,21 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 200
-			maxHeight = 16
+			maxWidth = 250
+			maxHeight = 26
 			format = left
 			fixedsize = yes
 		}		
 		
 		instantTextBoxType = {
 			name = "monarch_heir_info"
-			position = { x =200 y = 227 }
+			position = { x =100 y = 213 } #x =200 y = 227 Поднял под правителя
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 150
-			maxHeight = 16
+			maxWidth = 250 #150 Увеличил длину
+			maxHeight = 16 #26 Уменьшил высоту
 			format = right
 			fixedsize = yes
 		}		
@@ -752,12 +769,12 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "label_rivals"
-			position = { x = 20 y = 302 }
+			position = { x = 20 y = 302 } #x = 40 Поднял надпись
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "RIVALS"	
-			maxWidth = 84
+			maxWidth = 84 #64 Расширил надпись
 			maxHeight = 20
 			fixedsize = yes
 			truncate = yes
@@ -906,7 +923,7 @@ guiTypes = {
 		listboxType = 
 		{
 			name ="diploaction_list"
-			position = { x = 300 y = 310 }
+			position = { x = 300 y = 312 }
 			backGround=""
 			size = { x= 213 y = 220}
 			Orientation = "UPPER_LEFT"
@@ -925,8 +942,9 @@ guiTypes = {
 		}
 		guiButtonType = {
 			name = "button_view_player_country"
-			position = { x=394 y =523 }
-			quadTextureSprite ="GFX_view_your_country_button"	
+			position = { x=389 y =523 }  #x=394 Сдвинул влево, чтобы не налезало на вступление в войны
+			quadTextureSprite ="GFX_view_your_country_button"
+			shortcut = "z"
 		}
 		guiButtonType = {
 			name = "show_opinions"
@@ -967,7 +985,7 @@ guiTypes = {
 		}	
 
 		instantTextBoxType= {
-			position = { x = 316 y = 320 }
+			position = { x = 313 y = 320 } #x = 316 Чтобы соответствовала благосклонности
 			name = "trust_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -981,26 +999,26 @@ guiTypes = {
 		iconType = {
 			name ="diplomacy_trust_progress_bar"
 			spriteType = "GFX_diplomacy_progress_bar"
-			position = { x= 409 y = 324 }
+			position = { x= 423 y = 324 } #x= 409 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		iconType = {
 			name ="diplomacy_trust_progress_frame"
 			spriteType = "GFX_diplomacy_progress_frame"
-			position = { x= 402 y = 320 }
+			position = { x= 416 y = 322 } #x= 402 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}	
 
 		iconType = {
 			name ="diplomacy_trust_progress_indicator"
 			spriteType = "GFX_diplomacy_progress_indicator"
-			position = { x= 433 y = 316 }
+			position = { x= 447 y = 316 } #x= 433 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}			
 		
 		instantTextBoxType= {
-			position = { x = 440 y = 320 }
+			position = { x = 454 y = 320 } #x = 440 Передвигал, чтобы влезала благосклонность
 			name = "trust_value"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -1012,7 +1030,7 @@ guiTypes = {
 		}	
 
 		instantTextBoxType= {
-			position = { x = 309 y = 350 }
+			position = { x = 309 y = 350 } #x = 316 Передвигал, чтобы влезала благосклонность
 			name = "favors_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -1026,26 +1044,26 @@ guiTypes = {
 		iconType = {
 			name ="diplomacy_favors_progress_bar"
 			spriteType = "GFX_diplomacy_progress_bar"
-			position = { x= 409 y = 354 }
+			position = { x= 423 y = 354 } #x= 409 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}		
 		
 		iconType = {
 			name ="diplomacy_favors_progress_frame"
 			spriteType = "GFX_diplomacy_progress_frame"
-			position = { x= 402 y = 350 }
+			position = { x= 416 y = 352 } #x= 402 y = 350 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}	
 
 		iconType = {
 			name ="diplomacy_favors_progress_indicator"
 			spriteType = "GFX_diplomacy_progress_indicator"
-			position = { x= 433 y = 346 }
+			position = { x= 447 y = 346 } #x= 433 Передвигал, чтобы влезала благосклонность
 			Orientation = "UPPER_LEFT"
 		}			
 
 		instantTextBoxType= {
-			position = { x = 440 y = 350 }
+			position = { x = 454 y = 350 } #x = 440 Передвигал, чтобы влезала благосклонность
 			name = "favors_value"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
@@ -1069,7 +1087,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "prepare_for_war"
-			position = { x = 348 y = 523 }
+			position = { x = 345 y = 523 } #x = 348 Сдвигал из-за вступления в наступательные войны
 			quadTextureSprite ="GFX_prepare_for_war_button"	
 			tooltip = ""
 			tooltipText =""
@@ -1081,17 +1099,17 @@ guiTypes = {
 		iconType = {
 			name = "prepare_for_war_glow"
 			spriteType = "GFX_unitpanel_button_large_glow"
-			position = { x = 348 y = 523 }
+			position = { x = 345 y = 523 } #x = 348 Сдвигал из-за вступления в наступательные войны
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType= {
-			position = { x = 335 y = 320 }
+			position = { x = 315 y = 300 } #x = 345 y = 320 Поднял надпись
 			name = "provincelist_label"
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 180
-			maxHeight = 16
+			maxWidth = 220 #150 Расширил надпись
+			maxHeight = 16 #20 Сузил надпись
 			text = "VITAL_PROVINCES"	
 			orientation = "UPPER_LEFT"
 			format = center
@@ -1122,12 +1140,12 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x = 331 y = 575 }
+			position = { x = 436 y = 520 } #x = 331 y = 575 Сдвигал из-за вступления в наступательные войны
 			name = "join_offensive_wars_label"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 220
-			maxHeight = 16
+			maxWidth = 130 #150 Уменьшил
+			maxHeight = 66 #20 Увеличил
 			text = "JOIN_OFFENSIVE_WARS"	
 			orientation = "UPPER_LEFT"
 			format = left
@@ -1135,7 +1153,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "join_offensive_wars_checkbox"
-			position = { x=303 y=571 }
+			position = { x=498 y = 520 } #x=303 y=571 Сдвигал из-за вступления в наступательные войны
 			quadTextureSprite ="GFX_checkbox_gold_24"	
 			tooltip = ""
 			tooltipText =""
@@ -1149,7 +1167,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 130
-			maxHeight = 16
+			maxHeight = 16 #20 Уменьшил надпись
 			text = "MANAGE_MANUAL"	
 			orientation = "UPPER_LEFT"
 			format = left
@@ -1305,6 +1323,7 @@ guiTypes = {
 			}
 
 
+
 			
 			instantTextBoxType = {
 				name = "description"
@@ -1321,9 +1340,9 @@ guiTypes = {
 			listboxType = 
 				{
 				name ="vassal_select_list"
-				position = { x=88 y =200}
+				position = { x=20 y =174}
 				backGround=""
-				size = { x=370 y =300}
+				size = { x=500 y =350}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				spacing = 2
@@ -1476,7 +1495,7 @@ guiTypes = {
 		name = "vassal_selection_entry"
 		backGround=""
 		position = { x=0 y=0 }	
-		size = { x=150 y= 100 }
+		size = { x=150 y= 64 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder= ""
@@ -1499,7 +1518,7 @@ guiTypes = {
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
 			text = ""	
-			maxWidth = 174
+			maxWidth = 350
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
 		
@@ -1529,7 +1548,7 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 4 y = 4}
 				text = ""	
-				maxWidth = 220
+				maxWidth = 400
 				maxHeight = 130	
 				Orientation = "UPPER_LEFT"			
 			}
@@ -1537,7 +1556,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="vassal_selection_button"
-			quadTextureSprite= "GFX_shield_thin"
+			quadTextureSprite= "GFX_shield_medium"
 			position = { x= -25 y = -5 }
 			Orientation = "UPPER_LEFT"
 
@@ -1634,7 +1653,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "+??"	
 			maxWidth = 64
-			maxHeight = 16
+			maxHeight = 26
 			format = left
 			allwaystransparent = yes
 		}		
@@ -1835,7 +1854,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 120
+			maxWidth = 120 #96 Расширил надпись
 			maxHeight = 20
 			format = left
 			fixedsize = yes
@@ -2366,13 +2385,22 @@ guiTypes = {
 		iconType =
 		{
 			name ="Background"
-			spriteType = "GFX_diplomacy_declare_war_bg"
+			if_resolution = {
+				max_height = 867
+				spriteType = "GFX_diplomacy_declare_war_bg"
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				spriteType = "GFX_diplomacy_declare_war_bg_large"
+			}
+			if_resolution = {
+				min_height = 1048
+				spriteType = "GFX_diplomacy_declare_war_bg_huge"
+			}
 			position = { x= -7 y = -9 }
 			Orientation = "UPPER_LEFT"
-			
-		}
-		
-			
+		}			
 		
 		instantTextBoxType = {
 				name = "Title"
@@ -2388,28 +2416,40 @@ guiTypes = {
 			}
 		
 		instantTextBoxType = {
-				name = "Description"
-				position = { x = 35 y = 212 }
-				textureFile = ""
-				font = "vic_18"
-				borderSize = {x = 0 y = 0}
-				text = ""	
-				maxWidth = 265
+			name = "Description"
+			position = { x = 35 y = 212 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 265
+			if_resolution = {
+				max_height = 867
 				maxHeight = 170
-				format = left
-				scrollbartype = "standardtext_slider"
 			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				maxHeight = 258
+			}
+			if_resolution = {
+				min_height = 1048
+				maxHeight = 346
+			}
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
 		
 		windowType = {
-		name = "aggressive_expansion"
-		backGround=""
-		position = { x=270 y=168 }	
-		size = { x=130 y=18 }
-		moveable = 0
-		dontRender = ""
-		horizontalBorder= ""
-		verticalBorder= ""
-		fullScreen = no
+			name = "aggressive_expansion"
+			backGround=""
+			position = { x=270 y=168 }	
+			size = { x=130 y=18 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
 		
 			iconType = {
 				name ="aggressive_expansion_icon"
@@ -2426,7 +2466,7 @@ guiTypes = {
 					borderSize = {x = 0 y = 0}
 					text = "AGGRESSIVE!"	
 					maxWidth = 275
-					maxHeight = 294
+					maxHeight = 18
 					format = left
 				}
 		}
@@ -2438,10 +2478,10 @@ guiTypes = {
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
 			text = "CASUS_BELLIS"
-			maxWidth = 256
-			maxHeight = 32	
+			maxWidth = 200
+			maxHeight = 32
 			format = left
-		}				
+		}
 		
 		guiButtonType = {
 			name ="colonial_war_button"
@@ -2472,7 +2512,19 @@ guiTypes = {
 		guiButtonType = {
 			name ="no_wargoal_banner"
 			quadTextureSprite = "GFX_wargoal_list_button"
-			position = { x= 335 y = 368 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 335 y = 368 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 335 y = 456 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 335 y = 544 }
+			}
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
@@ -2480,13 +2532,37 @@ guiTypes = {
 		iconType = {
 			name ="no_wargoal_icon"
 			spriteType = "GFX_nocasusbelli"
-			position = { x= 341 y = 372 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 341 y = 372 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 341 y = 460 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 341 y = 548 }
+			}
 			Orientation = "UPPER_LEFT"
 		}
 		
 		instantTextBoxType = {
 			name = "no_wargoal_name"
-			position = { x = 356 y = 373 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 356 y = 373 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 356 y = 461 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 356 y = 549 }
+			}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y =0}
@@ -2499,10 +2575,22 @@ guiTypes = {
 		}		
 		
 		listboxType = {
-			name ="war_goals"
+			name = "war_goals"
 			position = { x = 335 y = 235 }
 			backGround=""
-			size = { x= 185 y = 130 }
+			if_resolution = {
+				max_height = 867
+				size = { x = 185 y = 130 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				size = { x = 185 y = 218 }
+			}
+			if_resolution = {
+				min_height = 1048
+				size = { x = 185 y = 306 }
+			}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -2512,7 +2600,19 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "allies_title"
-			position = { x = 285 y = 397 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 285 y = 397 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 285 y = 484 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 285 y = 573 }
+			}
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -2524,9 +2624,23 @@ guiTypes = {
 		
 		listboxType = {
 			name ="allies"
-			position = { x = 331 y = 427 }
 			backGround=""
-			size = { x= 185 y = 100 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 331 y = 427 }
+				size = { x= 185 y = 100 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 331 y = 515 }
+				size = { x= 185 y = 166 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 331 y = 603 }
+				size = { x= 185 y = 254 }
+			}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -2536,7 +2650,19 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "enemies_title"
-			position = { x = 18 y = 396 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 18 y = 397 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 18 y = 484 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 18 y = 573 }
+			}
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 0 y = 0}
@@ -2548,9 +2674,23 @@ guiTypes = {
 		
 		listboxType = {
 			name ="enemies"
-			position = { x = 42 y = 423 }
 			backGround=""
-			size = { x= 200 y = 97 }
+			if_resolution = {
+				max_height = 867
+				position = { x = 42 y = 427 }
+				size = { x= 200 y = 100 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 42 y = 515 }
+				size = { x= 200 y = 166 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 42 y = 603 }
+				size = { x= 200 y = 254 }
+			}
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 1
@@ -2559,17 +2699,17 @@ guiTypes = {
 		}				
 		
 		instantTextBoxType = {
-				name = "chance_string"
-				position = { x = 0 y = 100 }
-				textureFile = ""
-				font = "vic_18"
-				borderSize = {x = 4 y = 4}
-				text = ""	
-				maxWidth = 320
-				maxHeight = 200	
+			name = "chance_string"
+			position = { x = 0 y = 100 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""	
+			maxWidth = 320
+			maxHeight = 200	
 
-				format = centre
-			}
+			format = centre
+		}
 		
 		shieldtype = 
 		{
@@ -2587,7 +2727,19 @@ guiTypes = {
 		
 		guiButtonType = {
 			name = "AgreeButton"
-			position = { x=280 y =525}
+			if_resolution = {
+				max_height = 867
+				position = { x = 280 y = 525 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 280 y = 679 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 280 y = 855 }
+			}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2598,7 +2750,19 @@ guiTypes = {
 
 		guiButtonType = {
 			name = "DeclineButton"
-			position = { x=50 y =525}
+			if_resolution = {
+				max_height = 867
+				position = { x = 50 y = 525 }
+			}
+			if_resolution = {
+				min_height = 868
+				max_height = 1047
+				position = { x = 50 y = 679 }
+			}
+			if_resolution = {
+				min_height = 1048
+				position = { x = 50 y = 855 }
+			}
 			quadTextureSprite ="button_type_4"
 			tooltip = ""
 			tooltipText =""
@@ -2625,7 +2789,7 @@ guiTypes = {
 		iconType = {
 			name ="banner"
 			spriteType = "GFX_banner_green_194"
-			position = { x= -25 y = -3 }
+			position = { x= -17 y = -3 }
 			Orientation = "UPPER_LEFT"
 		}
 		
@@ -2642,12 +2806,12 @@ guiTypes = {
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y =0}
-			text = ""	
-			maxWidth = 260
-			maxHeight = 24	
+			text = ""
+			maxWidth = 160
+			maxHeight = 24
 			Orientation = "UPPER_LEFT"
 			fixedsize = yes
-		}		
+		}
 	}	
 	
 	windowType = {
@@ -3429,7 +3593,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "ENFORCEPEACE_CHOOSE_TARGET"	
 			maxWidth = 350
-			maxHeight = 16	
+			maxHeight = 26	
 		}			
 		
 		
@@ -3509,6 +3673,372 @@ guiTypes = {
 			maxWidth = 64
 			maxHeight = 32	
 		}	
+	}
+
+
+	################ INTERVENE IN WAR ###############	
+	
+	eu3dialogtype = {
+		name = "InterveneDiplomacyDialogue"
+		backGround=""
+		position = { x=290 y=-15 }	
+		size = { x=520 y=476 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="Background"
+			spriteType = "GFX_court_view_select_advisor_bg"
+			position = { x= -7 y = -9 }
+			Orientation = "UPPER_LEFT"
+			
+		}
+		
+		iconType =
+		{
+			name ="intervene_overlay"
+			spriteType = "GFX_intervene_overlay"
+			position = { x = 5 y = 298}
+		}		
+		
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 117 y = 138 }
+			textureFile = ""
+			font = "vic_22s"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 316
+			maxHeight = 40
+			format = centre
+		}
+		
+		instantTextBoxType = {
+			name = "Description"
+			position = { x = 45 y = 210 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 475
+			maxHeight = 225
+			format = left
+		}
+		
+		shieldtype = 
+		{
+			name ="LeftShield"
+			spriteType = "standarddialogshield"
+			position = { x= 32 y = 120 }
+		}
+		
+		shieldtype = 
+		{
+			name ="RightShield"
+			spriteType = "standarddialogshield"
+			position = { x= 426 y = 120 }
+		}
+
+		iconType =
+		{
+			name ="diplo_chance_reasons"
+			spriteType = "GFX_diploreasons_bar"
+			position = { x = 100 y = 420 }
+		}
+		
+		iconType =
+		{
+			name ="diplo_chance_threshold"
+			spriteType = "GFX_diploreasons_bar_threshold"
+			position = { x = 100 y = 420 }
+		}		
+		
+		iconType =
+		{
+			name ="diplo_chance_frame"
+			spriteType = "GFX_diplomacy_view_diplochance_bar_frame"
+			position = { x = 85 y = 415 }
+		}
+		
+		iconType =
+		{
+			name ="chance_string_bg"
+			spriteType = "GFX_diplomacy_chance_string_bg"
+			position = { x= 140 y = 450 }
+			Orientation = "UPPER_LEFT"		
+		}
+		
+		instantTextBoxType = {
+			name = "chance_string"
+			position = { x = 117 y = 470 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 315
+			maxHeight = 40	
+
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "warstitle"
+			position = { x = 32 y = 276 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "INTERVENE_CHOOSE_TARGET"	
+			maxWidth = 260
+			maxHeight = 26	
+		}		
+
+		OverlappingElementsBoxType = {
+			name = "warslist"
+			position = { x = 300 y = 268 }
+			size = { x = 147 y = 120 }
+			Orientation = "UPPER_LEFT"
+			format = left
+			spacing = 1
+		}
+
+		instantTextBoxType = {
+			name = "warname"
+			position = { x = 50 y = 310 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 460
+			maxHeight = 26
+			format = centre
+		}	
+
+		instantTextBoxType = {
+			name = "warscoretitle"
+			position = { x = 28 y = 340 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "WARSCORECOLON"	
+			maxWidth = 120
+			maxHeight = 26
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "warscorevalue"
+			position = { x = 156 y = 340 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = ""	
+			maxWidth = 44
+			maxHeight = 26
+			format = right
+		}
+
+		iconType =
+		{
+			name ="wargoal_progress"
+			spriteType = "GFX_wargoal_progressbar"
+			position = { x = 232 y = 338}
+		}
+		
+		iconType =
+		{
+			name ="wargoal_progress_frame"
+			spriteType = "GFX_war_overview_progress_frame"
+			position = { x = 219 y = 334}
+		}
+
+		instantTextBoxType={
+			position = {x = 237 y = 340 }
+			name = "wargoal"
+			font = "vic_18"
+			borderSize = {x = 8 y = 0}	
+			maxWidth = 280
+			maxHeight = 18
+			text = "War Goooooooooooooooooooal!"	
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "enemiestitle"
+			position = { x = 295 y = 370 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "LEDGER_ENEMIES"	
+			maxWidth = 226
+			maxHeight = 32
+			format = centre
+		}
+		
+		listboxType = {
+			name ="enemieslist"
+			position = { x = 290 y = 390 }
+			backGround=""
+			size = { x= 218 y = 128 }
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}
+
+		instantTextBoxType = {
+			name = "alliestitle"
+			position = { x = 34 y = 370 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "LEDGER_ALLIES"	
+			maxWidth = 226
+			maxHeight = 32
+			format = centre
+		}
+		
+		listboxType = {
+			name ="allieslist"
+			position = { x = 28 y = 390 }
+			backGround=""
+			size = { x= 218 y = 128 }
+			Orientation = "UPPER_LEFT"
+			horizontal = 0
+			spacing = 1
+			scrollbartype = "standardlistbox_slider"
+			borderSize = {x = 0 y = 0}
+		}	
+		
+		guiButtonType = {
+			name = "AgreeButton"
+			position = { x=280 y =525}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "c"
+			extra_shortcut = "RETURN"
+			buttonText = "SEND"
+			buttonFont = "vic_18"
+		}
+
+		guiButtonType = {
+			name = "DeclineButton"
+			position = { x=50 y =525}
+			quadTextureSprite ="button_type_4"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = "CANCEL_OFFER"
+			shortcut = "z"			
+			extra_shortcut = "ESCAPE"
+			buttonFont = "vic_18"
+		}	
+	}
+
+	windowType = 
+	{
+		name = "InterveneDiplomacyDialogue_countryentry"
+		backGround=""
+		position = { x=0 y=20 }	
+		size = { x=128 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="shield"
+			position = { x= 0 y = 0 }
+			quadTextureSprite = "GFX_shield_small"
+		}
+
+		iconType =
+		{
+			name = "great_power_glow"
+			spriteType = "GFX_small_shield_overlay_great_power"
+			alwaystransparent = yes
+			position = { x = -1 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 32 y = 6 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 2 y = 2}
+			text = ""	
+			fixedsize = yes	
+			maxWidth = 180
+			maxHeight = 32	
+		}
+
+		iconType =
+		{
+			name ="leader"
+			spriteType = "GFX_war_leader"
+			position = { x= 1 y = 15 }
+			Orientation = "UPPER_LEFT"
+		}		
+
+		iconType =
+		{
+			name ="no_peace"
+			spriteType = "GFX_no_peace"
+			position = { x= 1 y = 15 }
+			Orientation = "UPPER_LEFT"
+		}
+			
+		iconType =
+		{
+			name ="no_demand"
+			spriteType = "GFX_no_demand_peace"
+			position = { x= 18 y = 16 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="no_full_ally"
+			spriteType = "GFX_no_full_ally"
+			position = { x= 15 y = 16 }
+			Orientation = "UPPER_LEFT"
+		}		
+	}
+
+	windowType = 
+	{
+		name = "InterveneDiplomacyDialogue_warentry"
+		backGround=""
+		position = { x = 0 y = 0 }	
+		size = { x = 32 y = 32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no	
+
+		guiButtonType =
+		{
+			name ="shield"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_shield_small"
+		}
+		iconType =
+		{
+			name ="invalid"
+			spriteType = "GFX_diplomacy_arrowupdown"
+			position = { x = 18 y = 20 }
+			scale = 0.4
+		}
 	}
 
 ################ SUPPORT REBELS ###############################
@@ -3606,7 +4136,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "SUPPORT_EFFICIENCY"	
 			maxWidth = 200
-			maxHeight = 16
+			maxHeight = 26
 			format = left
 		}
 		
@@ -3618,7 +4148,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "100%"	
 			maxWidth = 200
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}
 		
@@ -3630,7 +4160,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "REBEL_SUPPORT_MONEY"	
 			maxWidth = 200
-			maxHeight = 16
+			maxHeight = 26
 			format = left
 		}
 		
@@ -3642,7 +4172,7 @@ guiTypes = {
 			borderSize = {x = 4 y = 4}	
 			text = "0¤"	
 			maxWidth = 200
-			maxHeight = 16
+			maxHeight = 26
 			format = right
 		}		
 		
@@ -4029,7 +4559,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 210
-			maxHeight = 16
+			maxHeight = 26
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left
@@ -4505,12 +5035,12 @@ guiTypes = {
 		}
 				
 		instantTextBoxType={
-			position = {x = 287 y = 325 }
+			position = {x = 287 y = 285 }
 			name = "Description"
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 220
-			maxHeight = 160
+			maxHeight = 200
 			text = "SP_PRICE"	
 			orientation = "UPPER_LEFT"
 			format = centre
@@ -4546,7 +5076,7 @@ guiTypes = {
 		{
 			name ="diplo_chance_reasons"
 			spriteType = "GFX_diplomacy_view_diplo_chance_sell_province"
-			position = { x = 295 y = 425 }
+			position = { x = 297 y = 423 }
 		}
 				
 		
@@ -4844,7 +5374,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 210
-			maxHeight = 16
+			maxHeight = 26
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left
@@ -4880,7 +5410,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 210
-			maxHeight = 16
+			maxHeight = 26
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left
@@ -4915,7 +5445,7 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 210
-			maxHeight = 16
+			maxHeight = 26
 			text = ""	
 			orientation = "UPPER_LEFT"
 			format = left

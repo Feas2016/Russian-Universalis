@@ -18,7 +18,7 @@ discovered_by = western
 discovered_by = eastern
 
 1542.1.1 = { religion = protestant} # Unknown date
-1558.7.18 = { controller = RUS } # Russian conquest
+1558.7.18 = { controller = TSR } # Russian conquest
 1561.1.1 = {
 	owner = LIT
 	add_core = LIT
@@ -33,7 +33,8 @@ discovered_by = eastern
 1603.4.5 = { controller = PLC } # 2nd Polish War-Captured by Chodkiewicz
 1625.8.21 = { controller = SWE } # 2nd Polish War-Captured by Jakob de la Gardie
 1629.9.16 = { owner = SWE add_core = SWE remove_core = PLC } # The Armistice of Altmark
-1656.11.3 = { controller = RUS } # Karl X Gustavs Russian War-Captured by Russians
+1656.11.3 = { controller = TSR } # Karl X Gustavs Russian War-Captured by Russians
 1661.6.21 = { controller = SWE } # The Peace of Kardis
-1704.7.14 = { controller = RUS } # The Great Nordic War-Captured Dorpat
-1721.8.30 = { owner = RUS add_core = RUS remove_core = SWE } # The Peace of Nystad
+1704.7.14 = { controller = TSR } # The Great Nordic War-Captured Dorpat
+1721.8.30 = { owner = TSR add_core = TSR remove_core = SWE } # The Peace of Nystad
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

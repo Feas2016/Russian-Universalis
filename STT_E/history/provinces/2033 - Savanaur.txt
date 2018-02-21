@@ -1,7 +1,7 @@
 #2033 - Savanaur+Hubli+Keladi+Dharwar
 
-owner = BAH
-controller = BAH
+owner = VIJ
+controller = VIJ
 culture = kannada
 religion = hinduism
 capital = "Dharwar"
@@ -11,14 +11,21 @@ base_tax = 6
 base_production = 6
 base_manpower = 3
 is_city = yes
-add_core = BAH
-add_core = BIJ
+add_core = VIJ
 add_core = KLN
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = muslim 
 discovered_by = ottoman
 discovered_by = chinese
+
+1200.1.1 = { owner = HOI controller = HOI add_core = HOI }
+
+1328.1.1 = { owner = DLH controller = DLH add_core = DLH }
+
+1330.1.1 = { remove_core = HOI }
+
+1336.1.1 = { owner = VIJ controller = VIJ add_core = VIJ }
 
 1490.1.1 = {
 	owner = BIJ

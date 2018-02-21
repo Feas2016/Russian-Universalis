@@ -2,7 +2,7 @@
 
 culture = aboriginal
 religion = animism
-capital = "Paredarerme"
+capital = "Паредареме"
 hre = no
 trade_goods = unknown
 base_tax = 2 
@@ -16,6 +16,14 @@ native_hostileness = 0
 1803.1.1 = {
 	owner = GBR
 	controller = GBR
-	capital = "Hobart Town"
+	capital = "Хобарт Таун"
 	is_city = yes
+	trade_goods = naval_supplies
 } # Penal colony
+
+1825.1.1 = {
+	culture = english
+	religion = protestant
+	add_core = GBR
+}
+

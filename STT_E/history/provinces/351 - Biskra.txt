@@ -19,7 +19,23 @@ discovered_by = ottoman
 discovered_by = TUR
 
 1671.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Virtually independent of the Ottoman empire
+
+1711.1.1 = {
 	owner = ALG
 	controller = ALG
-	add_core = ALG
-} # Virtually independent of the Ottoman empire
+	remove_core = TUR
+}
+
+1844.4.1 = {
+	controller = FRA
+}
+
+1847.12.22 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+}

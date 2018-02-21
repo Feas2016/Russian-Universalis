@@ -1,15 +1,15 @@
 #64 - Straubing (includes Passau)
 
-owner = BMU
-controller = BMU
-add_core = BMU
+owner = BAV
+controller = BAV
+add_core = BAV
 culture = bavarian
 religion = catholic
 base_tax = 5 
 base_production = 5
-trade_goods = grain
+trade_goods = glass
 base_manpower = 1
-capital	= "Straubing" 
+capital	= "Страубинг"	### STT
 is_city = yes
 hre = yes
 discovered_by = eastern
@@ -17,9 +17,11 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1392.1.1 = { owner = BMU add_core = BMU controller = BMU remove_core = BAV }	### STT
 1704.8.13 = {
 	owner = HAB
 	controller = HAB
 } # Bavaria is conquered by the Emperor, is however later restored for the balance of power
-1714.9.7 = { owner = BAV controller = BAV }
+1714.9.7 = { owner = BAV controller = BAV add_core = BAV }	### STT
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }	### STT

@@ -2,14 +2,14 @@
 
 owner = ALS
 controller = ALS 
-capital = "Straﬂburg"
+capital = "Strasburg"
 is_city = yes
 culture = swabian
 religion = catholic
 hre = yes
 base_tax = 6
 base_production = 6
-trade_goods = wine
+trade_goods = paper
 base_manpower = 5
 add_core = ALS
 fort_15th = yes
@@ -40,3 +40,4 @@ discovered_by = ottoman
 1749.1.1 = { base_tax = 8 
 base_production = 8 } # Machault & the 5% tax
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1871.1.18 = { owner = GER controller = GER add_core = GER }

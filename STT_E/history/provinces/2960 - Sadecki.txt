@@ -1,7 +1,7 @@
 #262 - Sadecki
 
-owner = POL
-controller = POL
+owner = KRA
+controller = KRA
 culture = polish
 religion = catholic
 capital = "Nowy Sacz"
@@ -12,13 +12,13 @@ trade_goods = iron
 base_manpower = 2
 is_city = yes
 add_core = KRA
-add_core = POL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 10
 
+1320.1.1 = { owner = POL add_core = POL controller = POL }
 1569.7.1 = {
 	owner = PLC
 	controller = PLC
@@ -32,3 +32,5 @@ extra_cost = 10
 1733.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The war of Polish succession
 1735.1.1 = { revolt = {} controller = PLC }
 1772.8.5 = { owner = HAB controller = HAB add_core = HAB } #First Partition
+1806.7.12 = { owner = AEM controller = AEM add_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

@@ -32,11 +32,14 @@ mod_ermitaj = {
 	
 	picture = "ermitaj"
 }
+mod_fort_sunking = {
+    local_tax_modifier = 0.3
+}
 mod_hofburg = {
 	local_tax_modifier = 0.1
 }
 mod_tajh_mahal = {
-	global_tax_income = 3
+	global_tax_income = 120
 }
 mod_alhambra = {
 	local_defensiveness = 0.5
@@ -45,13 +48,13 @@ mod_alex_mayak = {
 	province_trade_power_value = 7.5
 }
 mod_letn_pekin = {
-	global_tax_income = 5
+	global_tax_income = 48
 }
 mod_atesgah = {
 	province_trade_power_value = 10
 }
 mod_tower = {
-	local_tax_modifier = 0.1
+	local_tax_modifier = 0.2
 }
 mod_cast_de_ovo = {
 	local_defensiveness = 0.4
@@ -60,4 +63,15 @@ mod_cast_de_ovo = {
 mod_zam_if = {
 	local_defensiveness = 0.3
 	province_trade_power_value = 10
+}
+mod_aachen_palace = {
+	local_tax_modifier = 0.5
+}
+mod_ryuanji = {
+    global_tax_income = 24
+	local_unrest = -2
+}
+mod_zam_sforza = {
+    local_manpower_modifier = 0.75
+	local_defensiveness = 0.3
 }

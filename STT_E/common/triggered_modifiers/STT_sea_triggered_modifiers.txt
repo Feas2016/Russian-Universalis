@@ -235,8 +235,8 @@ center_of_europe = {
 	potential = {
 		normal_or_historical_nations = yes
 		OR = {
-			num_of_owned_provinces_with = { value = 1 region = south_germany_region }
-			num_of_owned_provinces_with = { value = 1 region = north_germany_region }
+			num_of_owned_provinces_with = { value = 1 region = south_german_region }
+			num_of_owned_provinces_with = { value = 1 region = north_german_region }
 			num_of_owned_provinces_with = { value = 1 region = poland_region }
 			num_of_owned_provinces_with = { value = 1 region = carpathia_region }
 		}
@@ -254,4 +254,24 @@ center_of_europe = {
 
 	trade_efficiency = 0.05
 	global_trade_power = 0.10
+}
+
+norse_pagans = {
+    potential = {
+	    NOT = {is_year = 1725}
+		OR = {
+		    tag = NDL
+			tag = SWE
+			tag = NOR
+		}
+		religion = norse_pagan_reformed
+	}
+	
+	trigger = {
+	    NOT = {is_year = 1725}
+		religion = norse_pagan_reformed
+	}
+	
+	diplomatic_reputation = -4
+	improve_relation_modifier = -0.3
 }

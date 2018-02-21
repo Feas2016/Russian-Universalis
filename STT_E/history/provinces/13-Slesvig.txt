@@ -1,16 +1,16 @@
 #Sönderjylland-Slesvig, incl. Ribe, Slesvig and Flensborg
 
-add_core = SHL
-owner = SHL
-controller = SHL
+add_core = DAN
+owner = DAN
+controller = DAN
 culture = danish
 religion = catholic
 hre = no
 base_tax = 4 
 base_production = 4
-trade_goods = grain
+trade_goods = livestock
 base_manpower = 3
-capital = "Ribe"
+capital = "Ðèáå"	### STT
 is_city = yes
 discovered_by = eastern
 discovered_by = western
@@ -18,6 +18,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1000.1.1 = { add_core = DAN }
+1386.1.1 = { owner = SHL add_core = SHL controller = SHL }
 1460.3.5 = { owner = DAN controller = DAN }
 1536.1.1 = { religion = protestant }
 1627.8.1 = {
@@ -31,3 +32,7 @@ discovered_by = ottoman
 1657.10.23 = { controller = SWE } #Karl X Gustavs First Danish War-Captured by Wrangel
 1658.2.26 = { owner = SHL controller = SHL } #The Peace of Roskilde
 1721.1.1 = { owner = DAN controller = DAN }
+1864.3.1 = { controller = PRU }
+1864.10.30 = { owner = PRU controller = PRU add_core = PRU}
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB remove_core = PRU } 

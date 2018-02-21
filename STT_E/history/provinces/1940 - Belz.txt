@@ -1,23 +1,23 @@
 #Belz
 
-owner = MAZ
-controller = MAZ
+owner = BLZ
+controller = BLZ
 capital= "Belz"
 culture = ruthenian
 religion = orthodox
-trade_goods = grain
+trade_goods = livestock
 hre = no
 base_tax = 4 
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = VOL
-add_core = MAZ
+add_core = BLZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1340.1.1 = { owner = LIT add_core = LIT controller = LIT }
 1462.7.1 = { owner = POL controller = POL add_core = POL remove_core = MAZ } # Belz incorporated into Poland
 1569.7.1 = {
 	owner = PLC
@@ -36,3 +36,5 @@ discovered_by = ottoman
 	controller = HAB
 	add_core = HAB
 } # First partition of Poland
+1806.7.12 = { owner = AEM controller = AEM add_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

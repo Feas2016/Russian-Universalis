@@ -4,15 +4,15 @@ recover_west_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		germiyan_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 322
-			province_id = 1848
-			province_id = 2297
-			province_id = 2298
-			province_id = 2299
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
@@ -24,24 +24,27 @@ recover_west_anatolia = {
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_west_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 316
-			owns = 317
-			owns = 318
+			owns = 316 #Kocaeli
+			owns = 317 #Bursa
+			owns = 318 #Sugla
 		}
-		OR = {
-			NOT = { owns = 322 }
-			NOT = { owns = 1848 }
-			NOT = { owns = 2297 }
-			NOT = { owns = 2298 }
-			NOT = { owns = 2299 }
+		calc_true_if = {
+			all_province = {
+				area = germiyan_area
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 2
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -49,7 +52,7 @@ recover_west_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -66,7 +69,14 @@ recover_west_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -82,52 +92,55 @@ recover_central_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		rum_area
+		ankara_area
+		karaman_area
+		kastamonu_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 323
-			province_id = 324
-			province_id = 325
-			province_id = 326
-			province_id = 328
-			province_id = 1846
-			province_id = 2300
-			province_id = 2301
-			province_id = 2302
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_central_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 319
-			owns = 322
-			owns = 1848
+			owns = 319 #Menteshe
+			owns = 322 #Kuthaya
+			owns = 1848 #Hamid
 		}
-		OR = {
-			NOT = { owns = 323 }	
-			NOT = { owns = 324 }	
-			NOT = { owns = 325 }	
-			NOT = { owns = 326 }	
-			NOT = { owns = 328 }	
-			NOT = { owns = 1846 }
-			NOT = { owns = 2300 }
-			NOT = { owns = 2301 }
-			NOT = { owns = 2302 }
+		calc_true_if = {
+			all_province = {
+				OR = {
+					area = rum_area
+					area = ankara_area
+					area = karaman_area
+					area = kastamonu_area
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 5
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -135,7 +148,7 @@ recover_central_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -152,7 +165,14 @@ recover_central_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -168,53 +188,54 @@ recover_east_anatolia = {
 
 	category = MIL
 	
+	target_areas_list = {
+		erzurum_area
+		dulkadir_area
+		north_kurdistan_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 327
-			province_id = 329
-			province_id = 330
-			province_id = 331		
-			province_id = 332
-			province_id = 2303
-			province_id = 2304
-			province_id = 2305
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = byz_recovered_eastern_anatolia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
-			owns = 323	
-			owns = 324	
-			owns = 325	
-			owns = 326	
-			owns = 328	
-			owns = 1846
+			owns = 325	#Kastamonu
+			owns = 328	#Sinop
+			owns = 1846 #Amasya
+			owns = 2301	#Kayseri
 		}
-		OR = {
-			NOT = { owns = 327 }
-			NOT = { owns = 329 }
-			NOT = { owns = 330 }
-			NOT = { owns = 331 }
-			NOT = { owns = 332 }
-			NOT = { owns = 2303 }
-			NOT = { owns = 2304 }
-			NOT = { owns = 2305 }
+		calc_true_if = {
+			all_province = {
+				OR = {
+					area = erzurum_area
+					area = dulkadir_area
+					area = north_kurdistan_area
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 4
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -222,7 +243,7 @@ recover_east_anatolia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -239,7 +260,14 @@ recover_east_anatolia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -255,37 +283,47 @@ recover_crimea = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		285
+		2410
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 285
-			province_id = 2410
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = byz_recovered_crimea }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 316	
 			owns = 146	
 		}
-		OR = {
-			NOT = { owns = 285 }
-			NOT = { owns = 2410 }
+		any_province = {
+			OR = {
+				province_id = 285
+				province_id = 2410
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -310,7 +348,14 @@ recover_crimea = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -326,40 +371,54 @@ recover_east_islands = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		163
+		164
+		320
+		321
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 163
-			province_id = 164
-			province_id = 320
-			province_id = 321
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		NOT = { has_country_flag = recovered_eastern_islands }
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 316	
 			owns = 146	
 		}
-		OR = {
-			NOT = { owns = 163 }	
-			NOT = { owns = 321 }	
-			NOT = { owns = 320 }	
+		calc_true_if = {
+			all_province = {
+				OR = {
+					province_id = 163
+					province_id = 164
+					province_id = 320
+					province_id = 321
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 2	
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -384,7 +443,14 @@ recover_east_islands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -400,26 +466,30 @@ recover_albania = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		137
+		138
+		143
+		1766
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 143
-			province_id = 138
-			province_id = 1766
-			province_id = 137
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_albania }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -427,15 +497,24 @@ recover_albania = {
 			owns = 146	
 			owns = 285
 		}
-		OR = {
-			NOT = { owns = 143 }	
-			NOT = { owns = 138 }	
-			NOT = { owns = 1766 }	
-			NOT = { owns = 137 }
+		calc_true_if = {
+			all_province = {
+				OR = {
+					province_id = 137
+					province_id = 138
+					province_id = 143
+					province_id = 1766
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 2
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -460,7 +539,14 @@ recover_albania = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -476,39 +562,47 @@ recover_isteria = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		130 136 137 1826 3031 3101 3283
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 136
-			province_id = 1826
-			province_id = 130
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_isteria }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 137	
 			owns = 138	
 		}
-		OR = {
-			NOT = { owns = 136 }	
-			NOT = { owns = 1826 }	
-			NOT = { owns = 130 }	
+		any_province = {
+			OR = {
+				province_id = 136
+				province_id = 1826
+				province_id = 130
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -516,7 +610,7 @@ recover_isteria = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -533,7 +627,14 @@ recover_isteria = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -549,52 +650,74 @@ recover_north_italy = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		106
+		113
+		114
+		115
+		116
+		117
+		119
+		2976
+		2977
+		2978
+		2980
+		3005 3013 3014 3015 3030 3037 3038 #STT
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 119
-			province_id = 117
-			province_id = 114
-			province_id = 115
-			province_id = 116
-			province_id = 113
-			province_id = 106
-			province_id = 2976
-			province_id = 2977
-			province_id = 2978
-			province_id = 2980
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_northern_italy_byz }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
-		owns = 118	
-		OR = {
-			NOT = { owns = 119 }	
-			NOT = { owns = 117 }	
-			NOT = { owns = 114 }	
-			NOT = { owns = 115 }	
-			NOT = { owns = 116 }	
-			NOT = { owns = 113 }
-			NOT = { owns = 106 }
-			NOT = { owns = 2976 }
-			NOT = { owns = 2977 }
-			NOT = { owns = 2978 }
-			NOT = { owns = 2980 }
+		owns = 118
+		calc_true_if = {
+			all_province = {
+				OR = {
+					province_id = 119
+					province_id = 117
+					province_id = 114
+					province_id = 115
+					province_id = 116
+					province_id = 113
+					province_id = 106
+					province_id = 2976
+					province_id = 2977
+					province_id = 2978
+					province_id = 2980
+					# STT
+					province_id = 3038
+					province_id = 3037
+					province_id = 3030
+					province_id = 3015
+					province_id = 3014
+					province_id = 3013
+					province_id = 3005
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 5
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -602,7 +725,7 @@ recover_north_italy = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -619,7 +742,14 @@ recover_north_italy = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -635,53 +765,66 @@ recover_lombardia = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		101
+		104
+		105
+		107
+		108
+		109
+		1862
+		2976
+		2981
+		2992
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 101
-			province_id = 104
-			province_id = 105
-			province_id = 107
-			province_id = 108
-			province_id = 109
-			province_id = 1862
-			province_id = 2976
-			province_id = 2981
-			province_id = 2992
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_lombardia }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 113	
 			owns = 106	
-		}	
-		OR = {
-			NOT = { owns = 101 }
-			NOT = { owns = 104 }
-			NOT = { owns = 105 }
-			NOT = { owns = 107 }
-			NOT = { owns = 108 }
-			NOT = { owns = 109 }
-			NOT = { owns = 1862 }
-			NOT = { owns = 2976 }
-			NOT = { owns = 2981 }
-			NOT = { owns = 2992 }
+		}
+		calc_true_if = {
+			all_province = {
+				OR = {
+					province_id = 101
+					province_id = 104
+					province_id = 105
+					province_id = 107
+					province_id = 108
+					province_id = 109
+					province_id = 1862
+					province_id = 2976
+					province_id = 2981
+					province_id = 2992
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 4
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -689,7 +832,7 @@ recover_lombardia = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -706,7 +849,14 @@ recover_lombardia = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -722,39 +872,49 @@ recover_west_islands = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		127
+		333
+		1247
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 1247
-			province_id = 127
-			province_id = 333
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
 		has_country_flag = recovered_west_islands
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 125	
 			owns = 118	
 		}
-		OR = {
-			NOT = { owns = 1247 }	
-			NOT = { owns = 127 }	
-			NOT = { owns = 333 }	
+		any_province = {
+			OR = {
+				province_id = 1247
+				province_id = 127
+				province_id = 333
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }	
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -779,7 +939,14 @@ recover_west_islands = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -795,28 +962,32 @@ recover_south_spain = {
 
 	category = MIL
 	
+	target_provinces_list = {
+		226
+		223
+		222
+		221
+		224
+		1749
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 226
-			province_id = 223
-			province_id = 222
-			province_id = 221
-			province_id = 224
-			province_id = 1749
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_south_spain }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -824,17 +995,26 @@ recover_south_spain = {
 			owns = 127
 			owns = 333	
 		}
-		OR = {
-			NOT = { owns = 226 }	
-			NOT = { owns = 223 }	
-			NOT = { owns = 222 }	
-			NOT = { owns = 221 }	
-			NOT = { owns = 224 }	
-			NOT = { owns = 1749 }
+		calc_true_if = {
+			all_province = {
+				OR = {
+					province_id = 226
+					province_id = 223
+					province_id = 222
+					province_id = 221
+					province_id = 224
+					province_id = 1749
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 3
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -842,7 +1022,7 @@ recover_south_spain = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -859,7 +1039,14 @@ recover_south_spain = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -875,50 +1062,48 @@ recover_tripoli = {
 
 	category = MIL
 	
+	target_areas_list = {
+		tripolitania_area
+		cyrenaica_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 354
-			province_id = 355
-			province_id = 356
-			province_id = 357
-			province_id = 2326
-			province_id = 2451
-			province_id = 2452
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_tripoli }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
-		OR = {
-			owns = 327	
-			owns = 329	
-			owns = 330	
-			owns = 331	
-			owns = 332	
-		}
-		OR = {
-			NOT = { owns = 354 }
-			NOT = { owns = 355 }
-			NOT = { owns = 356 }
-			NOT = { owns = 357 }
-			NOT = { owns = 2326 }
-			NOT = { owns = 2451 }
-			NOT = { owns = 2452 }
+		owns = 163 #Crete
+		owns = 358 #Alexandria
+		calc_true_if = {
+			all_province = {
+				OR = {
+					area = tripolitania_area
+					area = cyrenaica_area
+				}
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 3
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -926,7 +1111,7 @@ recover_tripoli = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -943,7 +1128,14 @@ recover_tripoli = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -959,20 +1151,27 @@ recover_tunis = {
 
 	category = MIL
 	
+	target_areas_list = {
+		tunisia_area
+	}
+	
 	target_provinces = {
-		area = tunisia_area
+		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_tunis }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -986,10 +1185,13 @@ recover_tunis = {
 		}
 		tunisia_area = {
 			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -997,7 +1199,7 @@ recover_tunis = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1014,7 +1216,14 @@ recover_tunis = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1030,26 +1239,27 @@ recover_antioch = {
 
 	category = MIL
 	
+	target_areas_list = {
+		aleppo_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 377
-			province_id = 378
-			province_id = 1849
-			province_id = 2313
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_antiocha }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1057,15 +1267,19 @@ recover_antioch = {
 			owns = 327	
 			owns = 332		
 		}
-		OR = {
-			NOT = { owns = 377 }
-			NOT = { owns = 378 }
-			NOT = { owns = 1849 }
-			NOT = { owns = 2313 }
+		calc_true_if = {
+			all_province = {
+				area = aleppo_area
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			amount = 2
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1073,7 +1287,7 @@ recover_antioch = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1090,7 +1304,14 @@ recover_antioch = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1106,26 +1327,27 @@ recover_jerusalem = {
 
 	category = MIL
 	
+	target_areas_list = {
+		palestine_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 364
-			province_id = 379
-			province_id = 1854
-			province_id = 1855
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_jerusalem }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
@@ -1133,16 +1355,16 @@ recover_jerusalem = {
 			owns = 377	
 			owns = 358		
 		}
-		OR = {
-			NOT = { owns = 364 }
-			NOT = { owns = 379 }
-			NOT = { owns = 1854 }
-			NOT = { owns = 1855 }
-
+		any_province = {
+			area = palestine_area
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1150,7 +1372,7 @@ recover_jerusalem = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1167,7 +1389,14 @@ recover_jerusalem = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {
@@ -1183,41 +1412,47 @@ recover_alexandria = {
 
 	category = MIL
 	
+	target_areas_list = {
+		delta_area
+		bahari_area
+	}
+	
 	target_provinces = {
-		OR = {
-			province_id = 358
-			province_id = 2325
-			province_id = 362
-			province_id = 363
-		}
 		NOT = { owned_by = ROOT }
+		NOT = { owner = { alliance_with = ROOT } }
+		NOT = { owner = { is_subject_of = ROOT } }
+		NOT = { owner = { overlord_of = ROOT } }
 	}
 	allow = {
 		normal_or_historical_nations = yes
 		has_dlc = "Purple Phoenix"
-		### STT
+### STT
 		OR = {
 			tag = BYZ
 			tag = PQR
 			tag = ROM
 		}
 		NOT = { has_country_flag = recovered_alexandria }
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 151		# Thrace
 		is_at_war = no
 		OR = {
 			owns = 379	#Jerusalem
 			owns = 2313 #Antioch		
 		}
-		OR = {
-			NOT = { owns = 358 }	
-			NOT = { owns = 2325 }
-			NOT = { owns = 362 }	
-			NOT = { owns = 363 }			
+		any_province = {
+			OR = {
+				area = bahari_area
+				area = delta_area
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }	
 		}
 	}
 	abort = {
-		is_subject = yes
+		is_subject_other_than_tributary_trigger = yes
 	}
 	success = {
 		all_target_province = {
@@ -1225,7 +1460,7 @@ recover_alexandria = {
 		}
 	}
 	chance = {
-		factor = 2000
+		factor = 3000
 		modifier = {
 			factor = 2
 			mil = 4
@@ -1242,7 +1477,14 @@ recover_alexandria = {
 	}
 	abort_effect = {
 		every_target_province = {
-			remove_claim = ROOT
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
 		}
 	}
 	effect = {

@@ -1,21 +1,23 @@
 #1774 - Treviso
-owner = VEN
-controller = VEN
+owner = VRN			### STT
+controller = VRN	### STT
+add_core = VRN 		### STT
 culture = venetian 
 religion = catholic 
-hre = no
+hre = yes			### STT
 base_tax = 4
 base_production = 3
 trade_goods = wool
 base_manpower = 2  
-capital = "Vicenza" 
+capital = "Викенза"	### STT
 is_city = yes	# Estimated 
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1444.1.1 = { add_core = VEN }
+1387.1.1 = { owner = MLO add_core = MLO controller = MLO hre = no }	### STT
+1405.1.1 = { add_core = VEN controller = VEN owner = VEN }	### STT
 1797.10.17 = {
 	owner = HAB
 	controller = HAB
@@ -29,8 +31,13 @@ discovered_by = ottoman
 } # Treaty of Pressburg
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 1814.4.11 = {
-	owner = HAB
-	controller = HAB
-	add_core = HAB
+	owner = AEM
+	controller = AEM
+	add_core = AEM
 	remove_core = ITA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1866.7.26 = {	owner = ITA
+	controller = ITA
+	add_core = ITA
+	remove_core = AEM
+}

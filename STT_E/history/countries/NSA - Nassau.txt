@@ -9,20 +9,22 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1429.1.1 = {
 	monarch = {
-		name = "Philipp II"
-		dynasty = "von Nassau"
+		name = "Филипп II"
+		dynasty = "фон Нассау"
 		birth_date = 1418.3.14
 		adm = 1
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = fierce_negotiator_personality
 }
 
 1473.5.28 = {
 	heir = {
-		name = "Ludwig"
-		monarch_name = "Ludwig I"
-		dynasty = "von Nassau"
+		name = "Людвиг"
+		monarch_name = "Людвиг I"
+		dynasty = "фон Нассау"
 		birth_date = 1473.5.28
 		death_date = 1523.5.28
 		claim = 95
@@ -34,8 +36,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1492.1.1 = {
 	monarch = {
-		name = "Ludwig I"
-		dynasty = "von Nassau"
+		name = "Людвиг I"
+		dynasty = "фон Нассау"
 		birth_date = 1473.5.28
 		adm = 2
 		dip = 2
@@ -45,9 +47,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1504.9.20 = {
 	heir = {
-		name = "Philipp"
-		monarch_name = "Philipp III"
-		dynasty = "von Nassau"
+		name = "Филипп"
+		monarch_name = "Филипп III"
+		dynasty = "фон Нассау"
 		birth_date = 1504.9.20
 		death_date = 1559.10.4
 		claim = 95
@@ -59,8 +61,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1523.5.28 = {
 	monarch = {
-		name = "Philipp III"
-		dynasty = "von Nassau"
+		name = "Филипп III"
+		dynasty = "фон Нассау"
 		birth_date = 1504.9.20
 		adm = 4
 		dip = 3
@@ -70,9 +72,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1537.12.26 = {
 	heir = {
-		name = "Albert"
-		monarch_name = "Albert"
-		dynasty = "von Nassau"
+		name = "Альберт"
+		monarch_name = "Альберт"
+		dynasty = "фон Нассау"
 		birth_date = 1537.12.26
 		death_date = 1593.11.11
 		claim = 95
@@ -84,8 +86,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1559.10.4 = {
 	monarch = {
-		name = "Albert"
-		dynasty = "von Nassau"
+		name = "Альберт"
+		dynasty = "фон Нассау"
 		birth_date = 1537.12.26
 		adm = 5
 		dip = 3
@@ -95,9 +97,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1559.10.4 = {
 	heir = {
-		name = "Philipp"
-		monarch_name = "Philipp IV"
-		dynasty = "von Nassau"
+		name = "Филипп"
+		monarch_name = "Филипп IV"
+		dynasty = "фон Нассау"
 		birth_date = 1542.10.14
 		death_date = 1602.3.12
 		claim = 95
@@ -109,8 +111,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1593.11.11 = {
 	monarch = {
-		name = "Philipp IV"
-		dynasty = "von Nassau"
+		name = "Филипп IV"
+		dynasty = "фон Нассау"
 		birth_date = 1542.10.14
 		adm = 3
 		dip = 4
@@ -120,9 +122,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1593.11.11 = {
 	heir = {
-		name = "Ludwig"
-		monarch_name = "Ludwig II"
-		dynasty = "von Nassau"
+		name = "Людвиг"
+		monarch_name = "Людвиг II"
+		dynasty = "фон Нассау"
 		birth_date = 1565.8.9
 		death_date = 1627.11.8
 		claim = 95
@@ -134,8 +136,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1602.3.12 = {
 	monarch = {
-		name = "Ludwig II"
-		dynasty = "von Nassau"
+		name = "Людвиг II"
+		dynasty = "фон Нассау"
 		birth_date = 1565.8.9
 		adm = 4
 		dip = 2
@@ -145,9 +147,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1627.11.8 = {
 	heir = {
-		name = "Wilhelm Ludwig"
-		monarch_name = "Wilhelm Ludwig"
-		dynasty = "von Nassau"
+		name = "Вильгельм Людвиг"
+		monarch_name = "Вильгельм Людвиг"
+		dynasty = "фон Нассау"
 		birth_date = 1590.12.18
 		death_date = 1640.8.22
 		claim = 95
@@ -159,8 +161,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1627.11.8 = {
 	monarch = {
-		name = "Wilhelm Ludwig"
-		dynasty = "von Nassau"
+		name = "Вильгельм Людвиг"
+		dynasty = "фон Нассау"
 		birth_date = 1590.12.18
 		adm = 3
 		dip = 1
@@ -170,8 +172,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1629.1.1 = {
 	monarch = {
-		name = "Ernst Casimir"
-		dynasty = "von Nassau"
+		name = "Эрнст Казимир"
+		dynasty = "фон Нассау"
 		birth_date = 1607.11.15
 		adm = 1
 		dip = 2
@@ -181,9 +183,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1640.4.26 = {
 	heir = {
-		name = "Friedrich"
-		monarch_name = "Friedrich"
-		dynasty = "von Nassau"
+		name = "Фридрих"
+		monarch_name = "Фридрих"
+		dynasty = "фон Нассау"
 		birth_date = 1640.4.26
 		death_date = 1675.9.8
 		claim = 95
@@ -195,8 +197,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1655.4.1 = {
 	monarch = {
-		name = "Friedrich"
-		dynasty = "von Nassau"
+		name = "Фридрих"
+		dynasty = "фон Нассау"
 		birth_date = 1607.11.15
 		adm = 2
 		dip = 2
@@ -206,9 +208,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1664.6.13 = {
 	heir = {
-		name = "Johann Ernst"
-		monarch_name = "Johann Ernst"
-		dynasty = "von Nassau"
+		name = "Иоганн Эрнст"
+		monarch_name = "Иоганн Эрнст"
+		dynasty = "фон Нассау"
 		birth_date = 1664.6.13
 		death_date = 1719.2.27
 		claim = 95
@@ -220,8 +222,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1675.9.8 = {
 	monarch = {
-		name = "Johann Ernst"
-		dynasty = "von Nassau"
+		name = "Иоганн Эрнст"
+		dynasty = "фон Нассау"
 		birth_date = 1664.6.13
 		adm = 1
 		dip = 2
@@ -231,9 +233,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1685.9.17 = {
 	heir = {
-		name = "Karl August"
-		monarch_name = "Karl August"
-		dynasty = "von Nassau"
+		name = "Карл Август"
+		monarch_name = "Карл Август"
+		dynasty = "фон Нассау"
 		birth_date = 1685.9.17
 		death_date = 1753.11.9
 		claim = 95
@@ -245,8 +247,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1719.2.27 = {
 	monarch = {
-		name = "Karl August"
-		dynasty = "von Nassau"
+		name = "Карл Август"
+		dynasty = "фон Нассау"
 		birth_date = 1685.9.17
 		adm = 1
 		dip = 3
@@ -256,9 +258,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1735.1.16 = {
 	heir = {
-		name = "Karl Christian"
-		monarch_name = "Karl Christian"
-		dynasty = "von Nassau"
+		name = "Карл Кристиан"
+		monarch_name = "Карл Кристиан"
+		dynasty = "фон Нассау"
 		birth_date = 1735.1.16
 		death_date = 1788.11.28
 		claim = 95
@@ -270,8 +272,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1753.11.9 = {
 	monarch = {
-		name = "Karl Christian"
-		dynasty = "von Nassau"
+		name = "Карл Кристиан"
+		dynasty = "фон Нассау"
 		birth_date = 1735.1.16
 		adm = 3
 		dip = 3
@@ -281,9 +283,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1768.10.25 = {
 	heir = {
-		name = "Friedrich Wilhelm"
-		monarch_name = "Friedrich Wilhelm"
-		dynasty = "von Nassau"
+		name = "Фридрих Вильгельм"
+		monarch_name = "Фридрих Вильгельм"
+		dynasty = "фон Нассау"
 		birth_date = 1768.10.25
 		death_date = 1816.1.9
 		claim = 95
@@ -295,8 +297,8 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1788.11.28 = {
 	monarch = {
-		name = "Friedrich Wilhelm"
-		dynasty = "von Nassau"
+		name = "Фридрих Вильгельм"
+		dynasty = "фон Нассау"
 		birth_date = 1768.10.25
 		adm = 2
 		dip = 2
@@ -306,9 +308,9 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1792.6.14 = {
 	heir = {
-		name = "Wilhelm"
-		monarch_name = "Wilhelm"
-		dynasty = "von Nassau"
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "фон Нассау"
 		birth_date = 1792.6.14
 		death_date = 1839.8.30
 		claim = 95
@@ -320,11 +322,36 @@ fixed_capital = 83 # Cannot move capital away from this province & no power cost
 
 1816.1.9 = {
 	monarch = {
-		name = "Wilhelm"
-		dynasty = "von Nassau"
+		name = "Вильгельм I"
+		dynasty = "фон Нассау"
 		birth_date = 1792.6.14
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+}
+
+1792.6.14 = {
+	heir = {
+		name = "Адольф"
+		monarch_name = "Адольф I"
+		dynasty = "фон Нассау"
+		birth_date = 1792.6.14
+		death_date = 1905.11.17
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1839.8.30 = {
+	monarch = {
+		name = "Вильгельм I"
+		dynasty = "фон Нассау"
+		birth_date = 1817.7.24
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }

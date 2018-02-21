@@ -1,0 +1,205 @@
+namespace = stt_pinya_events
+
+# ruler kills his brother
+country_event = {
+	id = stt_pinya_events.1
+	title = "stt_pinya_events.1.t"
+	desc = "stt_pinya_events.1.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PYN
+		is_year = 1309
+		NOT = {
+			is_year = 1313
+		}
+	}
+
+	mean_time_to_happen = { 
+		months = 3
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "stt_pinya_events.1.a1" # Правитель отравляет брата, запускается цепочка ивентов на отделение северных территорий (в ивенте не говорится о последствиях, игроку даётся моральный выбор)
+		ai_chance = { factor = 99 }
+		add_stability = 1
+		add_legitimacy = 25
+		add_prestige = -10
+		every_owned_province = {
+			add_local_autonomy = -25
+		}
+		set_country_flag = pinya_brother_killer
+	}
+
+	option = {
+		name = "stt_pinya_events.1.a2" # не убивать
+		ai_chance = { factor = 1 }
+		add_legitimacy = -25
+		add_prestige = 10	
+		every_owned_province = {
+			add_local_autonomy = 25
+		}
+	}
+}
+
+# ruler adopts Uzana
+
+country_event = {
+	id = stt_pinya_events.2
+	title = "stt_pinya_events.2.t"
+	desc = "stt_pinya_events.2.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PYN
+		has_country_flag = pinya_brother_killer
+		is_year = 1314
+		NOT = {
+			is_year = 1315
+		}
+	}
+
+	mean_time_to_happen = { 
+		months = 3
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "stt_pinya_events.2.a1" # Правитель усыновляет Узану (сын последнего правителя Пагана) и делает его наследником престола
+		add_stability = 1
+		add_legitimacy = -10
+		add_prestige = 10
+		define_heir = {
+			name = "Узана I"
+			dynasty = "Мьинсайн"
+			dip = 5
+			adm = 3
+			mil = 0
+		}
+		lower_burma_area = {
+			add_core = PYN
+		}
+	}
+}
+
+# Sagaing - released or unrest started Появление Сикайна или массовые восстания и увеличение автономии
+country_event = {
+	id = stt_pinya_events.3 
+	title = "stt_pinya_events.3.t"
+	desc = "stt_pinya_events.3.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PYN
+		has_country_flag = pinya_brother_killer
+		is_year = 1315
+		NOT = {
+			is_year = 1325
+		}
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+		    2395= { add_core = SIQ }
+			2396= { add_core = SIQ }
+			2397= { add_core = SIQ }
+			2398= { add_core = SIQ }
+			3458= { add_core = SIQ }
+			3460= { add_core = SIQ }
+			3461= { add_core = SIQ }
+			581 = { add_core = SIQ }
+			582 = { add_core = SIQ }
+			580 = { add_core = SIQ }
+		}
+	}
+
+	option = {
+		name = "stt_pinya_events.3.a1" # Возникает королевство Сикайн
+		ai_chance = { factor = 90 }
+		release = SIQ
+		add_prestige = -30
+		hidden_effect = {    
+		    SIQ = {
+			    define_ruler = {
+			        name = "Савьюн"
+					dynasty = "Мьинсайн"
+					dip = 1
+					adm = 3
+					mil = 5
+				    age = 30
+			        claim = 100
+			        regency = no
+			        female = no
+			    }
+				define_heir = {
+					name = "Тарабайя I"
+					dynasty = "Мьинсайн"
+					dip = 2
+					adm = 2
+					mil = 2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "stt_pinya_events.3.a2" # Появляются сепаратисты, увеличивается автономия на севере
+		ai_chance = { factor = 10 }
+		add_legitimacy = 10
+		add_mil_power = 100
+		hidden_effect = {
+			add_stability = -2
+			random_owned_province = {
+				limit = {
+					is_core = SIQ
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 4
+					friend = SIQ
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_core = SIQ
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 4
+					friend = SIQ
+				}
+			}
+			random_owned_province = {
+				limit = {
+					is_core = SIQ
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 4
+				}
+			}
+		}		
+		every_owned_province = {
+			add_unrest = 5
+			add_local_autonomy = 30
+		}
+	}
+}

@@ -5,11 +5,220 @@ religion = catholic
 primary_culture = dutch
 capital = 97	# Amsterdam
 
+885.1.1 = {
+	monarch = {
+		name = "Герульф"
+		dynasty = "Герульфинг"
+		birth_date = 850.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+896.1.1 = {
+	monarch = {
+		name = "Дирк I"
+		dynasty = "Герульфинг"
+		birth_date = 875.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+949.10.6 = {
+	monarch = {
+		name = "Дирк II"
+		dynasty = "Герульфинг"
+		birth_date = 930.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+988.5.6 = {
+	monarch = {
+		name = "Арнульф"
+		dynasty = "Герульфинг"
+		birth_date = 955.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+993.9.18 = {
+	monarch = {
+		name = "Дирк III"
+		dynasty = "Герульфинг"
+		birth_date = 981.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1039.5.27 = {
+	monarch = {
+		name = "Дирк IV"
+		dynasty = "Герульфинг"
+		birth_date = 1020.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1049.1.13 = {
+	monarch = {
+		name = "Флорис I"
+		dynasty = "Герульфинг"
+		birth_date = 1020.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1061.6.28 = {
+	monarch = {
+		name = "Дирк V"
+		dynasty = "Герульфинг"
+		birth_date = 1052.1.1
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}
+
+1091.6.17 = {
+	monarch = {
+		name = "Флорис II"
+		dynasty = "Герульфинг"
+		birth_date = 1080.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1121.3.2 = {
+	monarch = {
+		name = "Дирк VI"
+		dynasty = "Герульфинг"
+		birth_date = 1110.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1157.8.6 = {
+	monarch = {
+		name = "Флорис III"
+		dynasty = "Герульфинг"
+		birth_date = 1141.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1190.8.1 = {
+	monarch = {
+		name = "Дирк VII"
+		dynasty = "Герульфинг"
+		birth_date = 1161.1.1
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
+1203.11.4 = {
+	monarch = {
+		name = "Ада"
+		dynasty = "Герульфинг"
+		birth_date = 1161.1.1
+		adm = 4
+		dip = 3
+		mil = 1
+		female = yes
+	}
+}
+
+1203.12.1 = {
+	monarch = {
+		name = "Людовик I"
+		dynasty = "ван Хеспенгау"
+		birth_date = 1161.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1207.1.1 = {
+	monarch = {
+		name = "Виллем I"
+		dynasty = "Герульфинг"
+		birth_date = 1167.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1222.2.4 = {
+	monarch = {
+		name = "Флорис IV"
+		dynasty = "Герульфинг"
+		birth_date = 1210.6.24
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1234.7.19 = {
+	monarch = {
+		name = "Виллем II"
+		dynasty = "Герульфинг"
+		birth_date = 1228.2.1
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1256.1.12 = {
+	monarch = {
+		name = "Флорис V Крестьянский Бог"
+		dynasty = "Герульфинг"
+		birth_date = 1254.6.1
+		adm = 5
+		dip = 5
+		mil = 1
+	}
+}
+
+1296.6.27 = {
+	monarch = {
+		name = "Ян I"
+		dynasty = "Герульфинг"
+		birth_date = 1284.1.1
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
 
 1389.1.1 = {
 	monarch = {
-		name = "Albert"
-		dynasty = "von Wittelsbach"
+		name = "Альберт"
+		dynasty = "фон Виттельсбах"
 		adm = 4
 		dip = 3
 		mil = 1
@@ -18,9 +227,9 @@ capital = 97	# Amsterdam
 
 1389.1.1 = {
 	heir = {
-		name = "Willem"
-		monarch_name = "Willem VI"
-		dynasty = "von Wittelsbach"
+		name = "Вильгельм"
+		monarch_name = "Вильгельм VI"
+		dynasty = "фон Виттельсбах"
 		birth_date = 1365.4.5
 		death_date = 1417.5.31
 		claim = 95
@@ -32,16 +241,16 @@ capital = 97	# Amsterdam
 
 1404.1.1 = {
 	monarch = {
-		name = "Willem VI"
-		dynasty = "von Wittelsbach"
+		name = "Вильгельм VI"
+		dynasty = "фон Виттельсбах"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 	heir = {
-		name = "Jacoba"
-		monarch_name = "Jacoba"
-		dynasty = "von Wittelsbach"
+		name = "Якоба"
+		monarch_name = "Якоба"
+		dynasty = "фон Виттельсбах"
 		birth_date = 1401.8.16
 		death_date = 1436.10.8
 		claim = 95
@@ -54,8 +263,8 @@ capital = 97	# Amsterdam
 
 1417.5.31 = {
 	monarch = {
-		name = "Jacoba"
-		dynasty = "von Wittelsbach"
+		name = "Якоба"
+		dynasty = "фон Виттельсбах"
 		adm = 2
 		dip = 1
 		mil = 1

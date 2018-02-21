@@ -25,7 +25,7 @@ colonial_alaska = {
 	}
 
 	provinces = {
-		979 978 977 976 2611 2612 2613 2601
+		978 977 976 2611 2612 2613 2601
 	}
 	
 	# Specific
@@ -95,7 +95,7 @@ colonial_canada = {
 		1010 1008 1009 1011 1006 1005 1004 1007 1002 1003 1000 999 998 1001 992 991 989 988 987
 		993 990 994 986 985 984 995 996 997 981 980 983 982 2012 2015 2568 2569 2570
 		2571 2572 2573 2574 2575 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
-		2589 2590 2591 2592 2593 2594 2596 2597 2670 2671 2004 2017 2017
+		2589 2590 2591 2592 2593 2594 2596 2597 2670 2671 2004 2017
 		2003 2018 2603 2604 2605 2607 973 2610 972 974 975 2609 2022
 		2488 2486 2487 2485 874 2484
 	}
@@ -631,7 +631,7 @@ colonial_mexico = {
 		2641 2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 2652 2653 2657 2661 2662
 		2665 2666 2667 2668 2669 2660 2479 2480 2481 872 873 2482 2483 
 		2600 2595 875 2493 2491 876 867 2476 2478 868 869 870 2021 871 2477
-		2625 
+		2625 838
 	}
 	
 	# Specific
@@ -715,8 +715,8 @@ colonial_the_carribean = {
 	}
 	
 	provinces = {
-		482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 1881
-		2654 2655 2656 2658 2659 1814 3357 3355 3356 923 2533 928 2534 927 1813 926 2535 2536
+		482 483 484 485 486 487 488 489 490 492 493 494 495 496 497 498 499 500 501 1881
+		2654 2655 2656 2658 2659 1814 3355 3356 923 2533 928 2534 927 1813 926 2535 2536		
 	}
 	
 	# Specific
@@ -790,16 +790,7 @@ colonial_the_carribean = {
 	}
 	names = {
 		name = "COLONIAL_THE_CARRIBEAN_Cuba"
-	}
-	
-	extra_province_names = {
-		"Saint Lucia" "Saint Vincent" Montserrat Gonave
-		Aruba Bonaire Mustique Bequia
-		Grenada Dulcina Barbuda Abaco
-		Eleuthera Sabinal Saona Mayreau
-		Anguilla Anegada Tortola Alcarraza
-		Mayaguana "Saint Croix" Vieques Roatan
-	}
+	}	
 }
 
 # Colombia
@@ -832,10 +823,11 @@ colonial_colombia = {
 	provinces = {
 		816 817 818 819 820 2820 #Quito
 		822 823 824 825 826 827 832 2812 2814 2815 2817 2818 #New Granada
-		835 836 838 2663 2664 2819 #Castilla del Oro
+		835 836 2663 2664 2819 #Castilla del Oro
 		828 829 2806 #New Andalucia
 		741 742 830 831 834 2803 2805 2807 2808 2809 2810 2811 2813 2939 #Venezuela
-		2937 2889 2816 2804
+		2889 2816 2804 ###sTT
+		502 3357 491 ###STT
 	}
 
 	# Specific
@@ -888,8 +880,8 @@ colonial_peru = {
 		795 797 800 801 802 803 2831 2832 2833 2834 2835 2838 2940 2941 2942 2946 2947 #Bolivia
 		804 805 809 810 811 812 813 814 2821 2822 2823 2824 2825 2826 2827 2943 #Tawantisuyu
 		806 807 808 2828 2829 2830 #Kuntisuyu
-		2944 2945 2882 821 #Amazon
-		815
+		2944 2945 2882 821 #Amazon ###STT
+		815 ###STT
 	}
 
 #	# Specific
@@ -962,7 +954,7 @@ colonial_la_plata = {
 		790 2854 2878 #Chaco
 		772 773 2850 2851 2852 #Banda Oriental
 		783 784 787 792 793 796 2840 2841 2862 2873 2874 #Chile
-		775 776 799 2883 #Paraguay
+		775 776 799 2883 #Paraguay ###STT
 	}
 	
 	# Specific
@@ -1046,7 +1038,7 @@ colonial_brazil = {
 		750 751 753 754 755 2885 2912 2913 2915 2917 2918 2921 2922 #Pernambuco
 		749 752 2886 2923 2924 2925 2926 2927 #Maranhao
 		747 748 2890 2928 2929 2930 2933 2934 2935 #Grao-Para
-		2938
+		2938 ###STT
 	}
 	
 	# Specific
@@ -1102,8 +1094,10 @@ colonial_australia = {
 
 	provinces = {
 		1084 1085 1086 1087 1088 1089 1090 1091 1092 1093 1094
-		1246 1109 1107 1108 1106 2726 2727 2728 2729 2730 2731
-		2732 2733 2734 2735 2736 2737 2738 2739
+		2726 2727 2728 2729 2730 2731
+		2732 2733 2734 2735 2736
+		###STT
+		3358
 	}
 	
 	# Specific
@@ -1157,6 +1151,27 @@ colonial_australia = {
 	}
 }
 
+# New Zeland
+colonial_new_zeland = {
+	color = { 50 30 210 }
+
+	provinces = {
+		1106 1107 1108 1109 1246 2737 2738 2739 
+		1236 1238 1239 1242 1243 1986 1989
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_NEW_ZELAND_Root_Culture_GetName_New_zeland"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_REGION_Terra_New_zeland"
+	}
+}
+	
+
 # Guyana
 colonial_guyana = {
 	color = {  189 242 102 }
@@ -1202,7 +1217,7 @@ colonial_guyana = {
 				primary_culture = dutch
 			}
 		}
-		name = "COLONIAL_GUYANA_Guyana's"
+		name = "COLONIAL_GUYANA_Guyanass"
 	}
 	# Generic
 	names = {
@@ -1221,7 +1236,7 @@ colonial_cape = {
 	color = {  20 20 126 }
 
 	provinces = {
-		1175 1177 1173 1174 3546 2864 1176 1179 833 1180 1181 789 3331 2856 2880 1178 2864 3335 3332 3334
+		1175 1177 1173 1174 3546 1176 1179 833 1180 1181 789 3331 2856 2880 1178 2864 3335 3332 3334
 	}
 	
 	# Specific
@@ -1296,4 +1311,37 @@ colonial_placeholder_9 = {
 
 colonial_placeholder_10 = {
 	color = { 95 125 183 }
+}
+
+# Used for RNW, added to support bigger tiles
+colonial_placeholder_11 = {
+	color = { 50 150 45 }
+}
+
+colonial_placeholder_12 = {
+	color = { 200 190 20 }
+}
+
+colonial_placeholder_13 = {
+	color = { 20 220 90 }
+}
+
+colonial_placeholder_14 = {
+	color = { 100 50 50 }
+}
+
+colonial_placeholder_15 = {
+	color = { 200 50 50 }
+}
+
+colonial_placeholder_16 = {
+	color = { 30 30 60 }
+}
+
+colonial_placeholder_17 = {
+	color = { 90 70 100 }
+}
+
+colonial_placeholder_18 = {
+	color = { 90 140 30 }
 }

@@ -1,0 +1,58 @@
+# rome restored???
+
+country_decisions = {
+
+### - 3 decisions doubled by STT_Aurora_Reconquest_Byza Koufor
+
+	triumph_anatolia = {
+		potential = {
+			tag = BYZ
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			has_dlc = "Purple Phoenix"
+			NOT = { has_country_flag = triumph_anatolia }
+			anatolia_region = { owned_by = BYZ }
+		}
+		allow = {
+			anatolia_region = { type = all owned_by = BYZ }
+		}
+		effect = {
+			add_prestige = 20
+			add_army_tradition = 25
+			set_country_flag = triumph_anatolia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	triumph_italy = {
+		potential = {
+			tag = BYZ
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			has_dlc = "Purple Phoenix"
+			NOT = { has_country_flag = triumph_italy }
+			italy_region = { owned_by = BYZ }
+		}
+		allow = {
+			italy_region = { type = all owned_by = BYZ }
+			
+		}
+		effect = {
+			add_prestige = 35
+			add_army_tradition = 25
+			set_country_flag = triumph_italy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

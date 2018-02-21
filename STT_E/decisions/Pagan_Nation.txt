@@ -1,0 +1,36 @@
+country_decisions = {
+
+	pagan_nation = {
+		major = yes
+		potential = {
+			OR = {
+				primary_culture = burmese
+				primary_culture = shan
+			}
+			NOT = { is_year = 1450 }
+		}
+		allow = {
+			is_at_war = no
+			NOT = { exists = PAG }
+            owns_core_province = 582
+			owns_core_province = 585
+			owns_core_province = 588
+			owns_core_province = 2399
+			owns_core_province = 3451
+			owns_core_province = 586
+			owns_core_province = 1815
+		}
+	 	effect = {
+			change_tag = PAG
+			burma_region = {
+				add_core = PAG
+			}
+			change_government = despotic_monarchy
+			add_prestige = 25
+			add_stability = 1
+		}
+		ai_will_do = {
+			factor = 400
+		}
+	}
+}

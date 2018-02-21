@@ -1,8 +1,8 @@
 owner = HES
 controller = HES
 add_core = HES
-capital = "Kassel"
-trade_goods = grain
+capital = "Кассель"	### STT
+trade_goods = glass
 culture = hessian
 religion = catholic
 base_tax = 4 
@@ -15,6 +15,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1458.1.1 = { owner = KSS add_core = KSS controller = KSS }	### STT
+1500.1.1 = { owner = HES add_core = HES controller = HES }	### STT
 1536.1.1 = { religion = protestant }
 1685.1.1 = { base_manpower = 2} # Reformed refugees find shelter in Kassel (-> Oberneustadt founded)
 1730.3.23 = { owner = SWE controller = SWE } # Friedrich I is nominally King in Sweden, even thogh he has little power there.
@@ -30,3 +32,5 @@ discovered_by = ottoman
 	controller = HES
 	remove_core = WES
 } # Westfalia is dissolved after the Battle of Leipsig
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB remove_core = HES } 

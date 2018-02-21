@@ -1,0 +1,410 @@
+annex_dai_viet = {
+	
+	type = country 
+
+	category = MIL
+	
+	target_provinces = {
+		owned_by = DAI
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		faction_in_power = temples
+		tag = MNG
+		is_free_or_tributary_trigger = yes
+		is_lesser_in_union = no
+		exists = DAI
+		NOT = { alliance_with = DAI }
+		NOT = { has_country_modifier = military_victory }
+		DAI = {
+			is_free_or_tributary_trigger = yes
+			is_neighbor_of = ROOT
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { num_of_cities = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { faction_in_power = temples }
+			NOT = { exists = DAI }
+			is_subject_other_than_tributary_trigger = yes
+			is_lesser_in_union = yes
+			DAI = { NOT = { religion_group = ROOT } }
+		}
+	}
+	success = {
+		faction_in_power = temples
+		NOT = { exists = DAI }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = DAI value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+defend_korea = {
+
+	type = country
+	
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MNG
+			tag = QNG
+		}
+		exists = KOR
+		exists = JAP
+		is_free_or_tributary_trigger = yes
+		is_lesser_in_union = no
+		KOR = {
+			war_with = JAP
+			is_neighbor_of = ROOT
+		}
+		war_with = JAP
+		}
+	abort = {
+		OR = {
+			NOT = { war_with = JAP }
+			is_subject_other_than_tributary_trigger = yes
+			is_lesser_in_union = yes	
+		}
+	}
+	success = {
+		NOT = { war_with = JAP }
+		###STT
+		north_korea_area = { owned_by = ROOT }
+		central_korea_area = { owned_by = ROOT }
+		south_korea_area = { owned_by = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	effect = { ###STT
+		north_korea_area = { add_claim = ROOT }
+		central_korea_area = { add_claim = ROOT }
+		south_korea_area = { add_claim = ROOT }
+	}
+}
+
+
+colonize_taiwan = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MNG
+			tag = QNG
+		}
+		OR = {
+			has_factions = no
+			faction_in_power = enuchs
+		}
+		owns = 1821
+		taiwan_area = {
+			is_empty = yes
+			NOT = { owned_by = ROOT }
+		}
+		num_of_colonists = 1
+		num_of_ports = 1
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		NOT = { has_country_flag = colonized_taiwan_CHI }
+	}
+	abort = {
+		OR = {
+			AND = { 
+				NOT = { faction_in_power = enuchs }
+				has_factions = yes
+			}
+			taiwan_area = {
+				type = all
+				is_empty = no
+				NOT = { owned_by = ROOT }
+			}
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		taiwan_area = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+		OR = {
+			has_factions = no
+			faction_in_power = enuchs
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	effect = {
+		set_country_flag = colonized_taiwan_CHI
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+colonize_deren = {
+	
+	type = country
+	
+	category = DIP
+
+	allow = {
+		normal_or_historical_nations = yes
+		always = no #Removed
+		OR = {
+			tag = MNG
+			tag = MCH
+		}
+		1050 = {
+			is_empty = yes
+			has_discovered = ROOT
+		}
+		OR = {
+			has_factions = no
+			faction_in_power = enuchs
+		}
+		num_of_colonists = 1
+		num_of_ports = 1
+	}
+	abort = {
+		OR = {
+			NOT = { 
+				OR = {
+					has_factions = no
+					faction_in_power = enuchs
+				}
+			}
+			AND = {
+				1050 = { is_empty = no }
+				NOT = { owns = 1050 }
+			}
+			NOT = { num_of_ports = 1 }
+		}	
+	}
+	success = {
+		owns = 1050
+		1050 = {
+			colonysize = 400
+		}
+		OR = {
+			has_factions = no
+			faction_in_power = enuchs
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			adm = 4
+		}
+	}
+	effect = {
+		add_prestige = 3
+	}
+}
+
+start_the_conquest_of_ming_china = {
+
+	type = country
+	ai_mission = yes
+	
+	category = MIL
+	
+	target_provinces_list = {
+		703
+		704
+		723
+		726
+		722
+		2112
+		2113
+		2115
+	}
+	
+	target_provinces = {
+		NOT = { owned_by = ROOT }
+		owner = {
+			NOT = { war_with = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = MCH
+		exists = MNG
+		NOT = { war_with = MNG }
+		NOT = { alliance_with = MNG }
+		NOT = { overlord_of = MNG }
+		OR = {
+			NOT = { owns = 703 }	# Liaoxi
+			NOT = { owns = 704 }	# Liaoxi
+			NOT = { owns = 723 }	# Xilin Gol
+			NOT = { owns = 726 }	# Shenyang
+			NOT = { owns = 722 } 	# Jirem
+			NOT = { owns = 2112 }
+			NOT = { owns = 2113 }
+			NOT = { owns = 2115 }
+		}
+		is_lesser_in_union = no
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		OR = {
+			NOT = { exists = MNG }
+			is_subject_other_than_tributary_trigger = yes
+		}
+	}
+	success = {
+		NOT = { war_with = MNG }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			mil = 4
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+unite_manchu = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = {
+		730 1053 2108
+	}
+	
+	target_provinces = {
+		always = yes
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		NOT = { has_country_flag = united_manchus }
+		NOT = { exists = MCH }
+		OR = { 
+			tag = MJZ
+			tag = MHX
+			tag = MYR
+		}
+		is_free_or_tributary_trigger = yes
+		OR = {
+			NOT = { owns = 730 }		#Girin
+			NOT = { owns = 1053 }		#Hinggan
+			NOT = { owns = 2108 }		#Huncun
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = united_manchus
+		add_ruler_modifier = {
+			name = "uniter_of_the_manchus"
+		}
+	}
+}

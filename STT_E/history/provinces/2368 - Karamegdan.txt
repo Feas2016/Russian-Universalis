@@ -1,8 +1,8 @@
 # 2368 - Karamegdan
 
-owner = CHG
-controller = CHG
-add_core = CHG
+owner = CGU
+controller = CGU
+add_core = CGU
 culture = khazak
 religion = sunni
 capital = "Karamegdan"
@@ -20,17 +20,14 @@ discovered_by = CHG
 discovered_by = OIR
 discovered_by = KAS
 
+1340.1.1. = { owner = CHG add_core = CHG controller = CHG }
 1465.1.1 = {
 	owner = KZH
 	controller = KZH
 	remove_core = CHG 
 } # Kazakh horde forms
-1622.1.1 = { discovered_by = RUS }
-1723.1.1 = {
-	owner = OIR 
-	controller = OIR
-	add_core = OIR 
-} # Dzungarian invasion
+1622.1.1 = { discovered_by = TSR }
+1723.1.1 = { owner = ZUN controller = ZUN add_core = ZUN } # Dzungarian invasion
 1755.1.1 = {
 	owner = QNG
 	controller = QNG

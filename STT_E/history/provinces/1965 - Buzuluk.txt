@@ -1,10 +1,10 @@
 #1965 - Buzuluk
 
-owner = NOG
-controller = NOG
-culture = nogaybak
+owner = GLH
+controller = GLH
+culture = kazani
 religion = sunni
-capital = "Buzuluk"
+capital = "Бузулук"
 trade_goods = iron
 hre = no
 base_tax = 2 
@@ -12,17 +12,20 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = NOG
+add_core = GLH
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+1440.1.1 = { owner = NOG controller = NOG } #vanilla date
 1552.10.2 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 	remove_core = NOG 
 } # Russian conquest of Kazan
-1736.1.1 = { capital = "Buzulukskaya" culture = russian religion = orthodox }
-1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
+1736.1.1 = { capital = "Бузулукская" culture = russian religion = orthodox }
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Емельян Пугачев" } controller = REB unrest = 6 } # Pugachev rebellion
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

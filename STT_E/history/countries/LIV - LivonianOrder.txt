@@ -2,20 +2,335 @@ government = monastic_order_government
 government_rank = 1
 technology_group = western
 primary_culture = prussian
-add_accepted_culture = lithuanian
 add_accepted_culture = latvian
+add_accepted_culture = estonian
 religion = catholic
 historical_friend = TEU
 historical_friend = RIG
-historical_friend = KUR
-historical_friend = OSE
-historical_friend = DOR
+historical_friend = KUR ### STT
+historical_friend = OSE ### STT
+historical_friend = DOR ### STT
 capital = 37	# Livland
+add_army_professionalism = 0.1
 
+1209.1.1 = {
+	monarch = {
+		name = "Фольквин фон Наумбург"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1236.9.22 = {
+	monarch = {
+		name = "Герман фон Балк"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1239.3.5 = {
+	monarch = {
+		name = "Дитрих фон Грюнинген"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1242.1.1 = {
+	monarch = {
+		name = "Андреас фон Вельвен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1244.1.1 = {
+	monarch = {
+		name = "Дитрих фон Грюнинген"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1246.1.1 = {
+	monarch = {
+		name = "Андреас фон Вельвен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1248.1.1 = {
+	monarch = {
+		name = "Андреас фон Штирланд"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1253.1.1 = {
+	monarch = {
+		name = "Анно фон Зангерсхаузен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1256.1.1 = {
+	monarch = {
+		name = "Буркхард фон Хорнхаузен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1260.1.1 = {
+	monarch = {
+		name = "Георг фон Айхштэтт"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1262.1.1 = {
+	monarch = {
+		name = "Вернер фон Брайтхаузен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1264.1.1 = {
+	monarch = {
+		name = "Конрад фон Мандерн"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1267.1.1 = {
+	monarch = {
+		name = "Отто фон Лаутенберг"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1270.2.16 = {
+	monarch = {
+		name = "Андреас фон Вестфаен"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1270.9.21 = {
+	monarch = {
+		name = "Вальтер фон Нордек"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1273.1.1 = {
+	monarch = {
+		name = "Эрнст фон Ратцебург"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1279.3.5 = {
+	monarch = {
+		name = "Герхард фон Каценелнбоген"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1279.6.1 = {
+	monarch = {
+		name = "Конрад фон Фейхтванген"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1281.1.1 = {
+	monarch = {
+		name = "Мангольд фон Штернберг"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1283.1.1 = {
+	monarch = {
+		name = "Виллекин фон Ниндорф"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1287.3.26 = {
+	monarch = {
+		name = "Конрад фон Хаттштейн"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1290.1.1 = {
+	monarch = {
+		name = "Бальтазар Хольте"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1293.1.1 = {
+	monarch = {
+		name = "Генрих фон Динклаге"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1296.10.28 = {
+	monarch = {
+		name = "Бруно"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1298.6.1 = {
+	monarch = {
+		name = "Готфрид фон Рогге"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1307.1.1 = {
+	monarch = {
+		name = "Герхард фон Йорк"
+		birth_date = 1270.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1322.1.1 = {
+	monarch = {
+		name = "Конрад Кессельхут"
+		birth_date = 1290.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1324.1.1 = {
+	monarch = {
+		name = "Реймар Ган"
+		birth_date = 1290.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1328.1.1 = {
+	monarch = {
+		name = "Эберхард фон Монхайм"
+		birth_date = 1275.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+1340.6.24 = {
+	monarch = {
+		name = "Бурхард фон Дрейлебен"
+		birth_date = 1275.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+1345.1.1 = {
+	monarch = {
+		name = "Госвин фон Херике"
+		birth_date = 1300.1.1
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1359.9.10 = {
+	monarch = {
+		name = "Арнольд фон Фитингхоф"
+		birth_date = 1300.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1364.7.11 = {
+	monarch = {
+		name = "Вильгельм фон Фримерсхайм"
+		birth_date = 1320.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1385.3.1 = {
+	monarch = {
+		name = "Робин фон Эльц"
+		birth_date = 1330.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
 
 1389.1.1 = {
 	monarch = {
-		name = "Wennemar Hasenkamp"
+		name = "Веннемар фон Брюггеноэ"
 		dip = 3
 		adm = 1
 		mil = 3
@@ -24,7 +339,7 @@ capital = 37	# Livland
 
 1401.10.21 = {
 	monarch = {
-		name = "Konrad von Vietinghof"
+		name = "Конрад фон Фитингхоф"
 		dip = 3
 		adm = 1
 		mil = 2
@@ -33,7 +348,7 @@ capital = 37	# Livland
 
 1413.2.14 = {
 	monarch = {
-		name = "Diderick Tork"
+		name = "Дитрих Торк"
 		dip = 1
 		adm = 2
 		mil = 2
@@ -42,7 +357,7 @@ capital = 37	# Livland
 
 1415.9.1 = {
 	monarch = {
-		name = "Siegfried Lander"
+		name = "Зигфрид Ландер фон Шпонхейм"
 		dip = 2
 		adm = 2
 		mil = 3
@@ -51,7 +366,7 @@ capital = 37	# Livland
 
 1424.3.31 = {
 	monarch = {
-		name = "Zisse von Rutenberg"
+		name = "Циссе фон дем Рутенберг"
 		dip = 3
 		adm = 0
 		mil = 1
@@ -60,7 +375,7 @@ capital = 37	# Livland
 
 1433.10.1 = {
 	monarch = {
-		name = "Franco Kerskorff"
+		name = "Франк фон Кирскорф"
 		dip = 2
 		adm = 0
 		mil = 2
@@ -69,7 +384,7 @@ capital = 37	# Livland
 
 1435.9.1 = {
 	monarch = {
-		name = "Heinrich von Bockenforde"
+		name = "Генрих фон Бёкефёрде"
 		dip = 3
 		adm = 1
 		mil = 0
@@ -78,7 +393,8 @@ capital = 37	# Livland
 
 1437.5.1 = {
 	monarch = {
-		name = "Heinrich Vincke"
+		name = "Генрих Финке фон Оверберг"
+		culture = hanoverian
 		dip = 2
 		adm = 2
 		mil = 1
@@ -87,7 +403,8 @@ capital = 37	# Livland
 
 1450.9.6 = {
 	monarch = {
-		name = "Johann Osthoff"
+		name = "Иоганн фон Менгден"
+		culture = hessian
 		birth_date = 1421.1.1
 		dip = 1
 		adm = 3
@@ -97,7 +414,7 @@ capital = 37	# Livland
 
 1470.1.7 = {
 	monarch = {
-		name = "Johann Wolthuss"
+		name = "Иоганн Вальдхаун фон Герсе"
 		dip = 3
 		adm = 2
 		mil = 2
@@ -106,7 +423,8 @@ capital = 37	# Livland
 
 1471.10.1 = {
 	monarch = {
-		name = "Bernd von der Borch"
+		name = "Бернхард фон дер Борх"
+		culture = hanoverian
 		dip = 2
 		adm = 1
 		mil = 3
@@ -115,8 +433,9 @@ capital = 37	# Livland
 
 1483.1.1 = {
 	monarch = {
-		name = "Johann Fridach"
+		name = "Иоганн Фридрих фон Лоринкгофен"
 		birth_date = 1435.1.1
+		culture = hanoverian
 		dip = 2
 		adm = 2
 		mil = 1
@@ -125,7 +444,8 @@ capital = 37	# Livland
 
 1494.5.26 = {
 	monarch = {
-		name = "Wolter von Plettenberg"
+		name = "Вальтер фон Плеттенберг"
+		culture = hanoverian
 		birth_date = 1450.1.1
 		dip = 3
 		adm = 4
@@ -135,7 +455,8 @@ capital = 37	# Livland
 
 1535.2.28 = {
 	monarch = {
-		name = "Hermann Hasenkamp"
+		name = "Герман фон Брюггеноэ"
+		culture = hanoverian
 		birth_date = 1475.1.1
 		dip = 2
 		adm = 1
@@ -145,8 +466,9 @@ capital = 37	# Livland
 
 1549.2.4 = {
 	monarch = {
-		name = "Johann von der Recke"
+		name = "Иоганн фон дер Реке"
 		birth_date = 1480.1.1
+		culture = hanoverian
 		dip = 2
 		adm = 2
 		mil = 3
@@ -155,7 +477,8 @@ capital = 37	# Livland
 
 1551.5.18 = {
 	monarch = {
-		name = "Heinrich von Galen"
+		name = "Генрих фон Гален"
+		culture = hanoverian
 		birth_date = 1480.1.1
 		dip = 1
 		adm = 1
@@ -165,7 +488,8 @@ capital = 37	# Livland
 
 1557.6.1 = {
 	monarch = {
-		name = "Johann Wilhelm"
+		name = "Иоганн Вильгельм фон Фюрстенберг"
+		culture = austrian
 		birth_date = 1500.1.1
 		dip = 2
 		adm = 1
@@ -175,10 +499,22 @@ capital = 37	# Livland
 
 1559.9.17 = {
 	monarch = {
-		name = "Gotthard Kettler"
+		name = "Готхард Кетлер"
+		culture = hanoverian
 		birth_date = 1517.1.1
 		dip = 3
 		adm = 1
 		mil = 2
 	}
 }
+
+1561.11.28 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent= yes
+	}
+}
+

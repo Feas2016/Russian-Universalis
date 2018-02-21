@@ -10,8 +10,7 @@ country_decisions = {
 			NOT = {
 				has_country_modifier = unified_islam
 			}
-			### STT
-			NOT = { exists = ISL }
+			NOT = { exists = ISL }	###STT
 		}
 		allow = {
 			religion_group = muslim
@@ -44,9 +43,8 @@ country_decisions = {
 			add_adm_power = -100
 			add_mil_power = -100
 			add_dip_power = -100
-			###STT
-			change_tag = ISL
-			change_government = theocratic_government
+			change_tag = ISL	###STT
+			change_government = theocratic_government	###STT
 		}
 		ai_will_do = {
 			factor = 0
@@ -58,7 +56,7 @@ country_decisions = {
 			has_dlc = "Star and Crescent"
 			religion = shiite
 			dominant_religion = sunni
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_force_converted = no
 		}
 		allow = {
@@ -72,7 +70,7 @@ country_decisions = {
 			change_religion = sunni
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1 #STT
 		}
 	}
 	
@@ -81,7 +79,7 @@ country_decisions = {
 			has_dlc = "Star and Crescent"
 			religion = sunni
 			dominant_religion = shiite
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_force_converted = no
 		}
 		allow = {
@@ -95,7 +93,7 @@ country_decisions = {
 			change_religion = shiite		
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 1 #STT
 		}
 	}
 

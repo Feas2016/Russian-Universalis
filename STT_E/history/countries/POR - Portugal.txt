@@ -3,56 +3,175 @@ primary_culture = portugese
 religion = catholic
 technology_group = western
 historical_friend = SPA
-historical_neutral = ARA
 historical_friend = CAS
 capital = 227 # Lisboa
-
-
+add_army_professionalism = 0.05
 national_focus = DIP
 
-
-1385.1.1 = {
+1139.7.26 = {
 	monarch = {
-		name = "Joгo I"
-		dynasty = "de Avis"
+		name = "Афонсу I Великий"
+		dynasty = "де Бургонь"
+		birth_date = 1109.7.25
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1185.12.6 = {
+	monarch = {
+		name = "Саншу I"
+		dynasty = "де Бургонь"
+		birth_date = 1154.11.11
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1212.3.26 = {
+	monarch = {
+		name = "Афонсу II"
+		dynasty = "де Бургонь"
+		birth_date = 1185.4.23
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1223.3.25 = {
+	monarch = {
+		name = "Саншу II"
+		dynasty = "де Бургонь"
+		birth_date = 1209.9.8
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1247.7.24 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1248.1.4 = {
+	monarch = {
+		name = "Афонсу III"
+		dynasty = "де Бургонь"
+		birth_date = 1210.5.5
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1279.2.16 = {
+	monarch = {
+		name = "Диниш I"
+		dynasty = "де Бургонь"
+		birth_date = 1261.10.9
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1291.2.8 = {
+	heir = {
+		name = "Афонсу"
+		monarch_name = "Афонсу IV"
+		dynasty = "де Бургонь"
+		birth_date = 1291.2.8
+		death_date = 1357.5.28
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1325.1.7 = {
+	monarch = {
+		name = "Афонсу IV"
+		dynasty = "де Бургонь"
+		birth_date = 1291.2.8
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1357.5.8 = {
+	monarch = {
+		name = "Педру I"
+		dynasty = "де Бургонь"
+		birth_date = 1320.4.19
+		adm = 5
+		dip = 1
+		mil = 5
+	}
+}
+
+1367.1.18 = {
+	monarch = {
+		name = "Фернанду I"
+		dynasty = "де Бургонь"
+		birth_date = 1345.10.31
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1383.10.22 = {
+	monarch = {
+		name = "Беатриса"
+		dynasty = "де Бургонь"
+		birth_date = 1373.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1383.12.16 = {
+	monarch = {
+		name = "Жуан I"
+		dynasty = "де Авис"
+		birth_date = 1357.4.11
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 }
 
-1385.4.1 = { leader = {	name = "Nuno Бlvares Pereira"	type = general	rank = 1	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
+1385.4.1 = { leader = {	name = "Нуну Альвареш Перейра"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1423.1.1 } }
 
-1391.10.31 = {
-	heir = {
-		name = "Duarte"
-		monarch_name = "Duarte"
-		dynasty = "de Avis"
-		birth_date = 1391.10.31
-		death_date = 1438.9.9
-		claim = 95
-		adm = 1
-		dip = 3
-		mil = 0
-	}
-}
+1415.4.1 = { leader = {	name = "Инфантес"		type = general			fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
 
-1415.4.1 = { leader = {	name = "Infantes"		type = general	rank = 1	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1449.1.1 } }
+1417.1.1 = { leader = {	name = "Жуан Гонсалвиш Зарку"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
-1417.1.1 = { leader = {	name = "Joгo Gonзalves Zarco"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1417.1.1 = { leader = {	name = "Тристау Ваш Тейксейра"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
 
-1417.1.1 = { leader = {	name = "Tristгo Vaz Teixeira"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1425.12.31 } }
+1418.1.1 = { leader = {	name = "Бартоломеу Перестрелу"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
-1418.1.1 = { leader = {	name = "Bartolomeu Perestrelo"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1426.1.1 = { leader = {	name = "Диогу де Силвеш"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
 
-1426.1.1 = { leader = {	name = "Diogo de Silves"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1428.12.31 } }
+1432.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
 
-1432.1.1 = { leader = {	name = "Gonзalo Velho Cabral"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1432.12.31 } }
-
-1433.1.1 = {
+1433.8.14 = { ### STT
 	monarch = {
-		name = "Duarte"
-		dynasty = "de Avis"
+		name = "Дуарте I"
+		dynasty = "де Авис"
 		birth_date = 1391.10.31
 		adm = 1
 		dip = 3
@@ -62,9 +181,9 @@ national_focus = DIP
 
 1433.1.1 = {
 	heir = {
-		name = "Afonso"
-		monarch_name = "Afonso V"
-		dynasty = "de Avis"
+		name = "Альфонсо"
+		monarch_name = "Альфонсо V"
+		dynasty = "де Авис"
 		birth_date = 1432.1.15
 		death_date = 1481.8.28
 		claim = 95
@@ -74,17 +193,17 @@ national_focus = DIP
 	}
 }
 
-1433.1.1 = { leader = {	name = "Gonзalo Velho Cabral"	type = explorer rank = 6	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
+1433.1.1 = { leader = {	name = "Гонсалу Велью Кабрал"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1434.12.31 } }
 
-1434.1.1 = { leader = {	name = "Afonso Gonзalves Baldaia" type = explorer rank = 6	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
+1434.1.1 = { leader = {	name = "Афонсу Гонсалвиш Балдая" type = explorer	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1437.12.31 } }
 
-1435.1.1 = { leader = {	name = "Earl of Avranches"	type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
+1435.1.1 = { leader = {	name = "Уир из Авранша"	type = general				fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1449.5.20 } }
 
 1438.9.10 = {
 	monarch = {
-		name = "Infante Pedro"
-		dynasty = "de Avis"
-		birth_date = 1392.1.1
+		name = "Инфанте Педру"
+		dynasty = "де Авис"
+		birth_date = 1392.12.9 ### STT
 		regent = yes
 		adm = 4
 		dip = 2
@@ -94,46 +213,61 @@ national_focus = DIP
 
 1438.9.10 = {
 	heir = {
-		name = "Afonso"
-		monarch_name = "Afonso V"
-		dynasty = "de Avis"
+		name = "Афонсу"
+		monarch_name = "Афонсу V"
+		dynasty = "де Авис"
 		birth_date = 1432.1.15
 		death_date = 1481.8.28
 		claim = 95
 		adm = 3
 		dip = 2
 		mil = 2
-		leader = {	name = "Afonso V"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1 }
+		leader = {	name = "Афонсу V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = expansionist_personality
 }
 
-1443.1.1 = { leader = {	name = "Diogo Gomes"		type = explorer 	rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
+1443.1.1 = { leader = {	name = "Диогу Гомеш"	type = explorer 	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1462.12.31 } }
 
 1448.6.9 = {
 	monarch = {
-		name = "Afonso V"
-		dynasty = "de Avis"
+		name = "Афонсу V"
+		dynasty = "де Авис"
 		birth_date = 1432.1.15
 		adm = 3
 		dip = 2
 		mil = 2
-		leader = {	name = "Afonso V"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1 }
+		leader = {	name = "Афонсу V"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Изабелла"
+		dynasty = "де Авис"
+		birth_date = 1432.3.1
+		death_date = 1455.12.2
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = expansionist_personality
 }
 
-#1441.1.1 = { leader = {	name = "Nuno Tristгo"		type = explorer		rank = 6	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
+#1441.1.1 = { leader = {	name = "Нуну Триштан"		type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1444.12.31 } }
 
-#1444.1.1 = { leader = {	name = "Бlvaro Fernandes"	type = explorer		rank = 6	fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
+#1444.1.1 = { leader = {	name = "Альваро Фернандес"	type = explorer		fire = 1	shock = 1	manuever = 2	siege = 0	death_date = 1447.12.31 } }
 
 1450.1.1 = { decision = act_of_uniformity decision = blasphemy_act }
 
-1454.1.1 = { leader = { name = "Alvise Ca' da Mosto"	type = explorer		rank = 6	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1457.1.1 } }
+1454.1.1 = { leader = { name = "Алоизий Када-Мосто"	type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1457.1.1 } }
 
 1455.3.3 = {
 	heir = {
-		name = "Joгo"
-		monarch_name = "Joгo II"
-		dynasty = "de Avis"
+		name = "Жуан"
+		monarch_name = "Жуан II"
+		dynasty = "де Авис"
 		birth_date = 1455.3.3
 		death_date = 1495.10.25
 		claim = 95
@@ -143,34 +277,59 @@ national_focus = DIP
 	}
 }
 
-1459.1.1 = { leader = { name = "Diogo Gomes"		type = explorer		rank = 6	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1463.1.1 } }
+1459.1.1 = { leader = { name = "Диогу Гомеш"		type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1463.1.1 } }
 
-1460.1.1 = { leader = { name = "Pedro de Sintra"	type = explorer		rank = 6	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1463.1.1 } }
+1460.1.1 = { leader = { name = "Педро де Синтра"	type = explorer		fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1463.1.1 } }
 
-1469.1.1 = { leader = {	name = "Fernando Pу"          	type = explorer		rank = 10	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
+1469.1.1 = { leader = {	name = "Фернанду Пессоа"    type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1481.1.1 } }
 
-1471.1.1 = { leader = { name = "Rui de Sequeira"	type = explorer		rank = 5	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
+1471.1.1 = { leader = { name = "Руй де Секейра"		type = explorer		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1475.1.1 } }
 
-1480.1.1 = { leader = {	name = "Diogo Cгo"             	type = explorer		rank = 10	fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
+1475.5.30 = {
+	queen = {
+		country_of_origin = CAS
+		name = "Джоанна"
+		dynasty = "де Трастамара"
+		birth_date = 1462.2.21
+		death_date = 1530.2.12
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1480.1.1 = { leader = {	name = "Диогу Кан"          type = explorer		fire = 1	shock = 1	manuever = 3	siege = 0	death_date = 1486.1.1 } }
 
 1481.1.1 = { government = despotic_monarchy }
 
 1481.8.29 = {
 	monarch = {
-		name = "Joгo II"
-		dynasty = "de Avis"
+		name = "Жуан II"
+		dynasty = "де Авис"
 		birth_date = 1455.3.3
 		adm = 2
 		dip = 5
 		mil = 4
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Элеонора"
+		dynasty = "де Авис"
+		birth_date = 1458.5.2
+		death_date = 1525.11.17
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
 }
 
 1481.8.29 = {
 	heir = {
-		name = "Manuel"
-		monarch_name = "Manuel I"
-		dynasty = "de Avis"
+		name = "Мануэл"
+		monarch_name = "Мануэл I"
+		dynasty = "де Авис"
 		birth_date = 1469.5.31
 		death_date = 1521.12.13
 		claim = 95
@@ -180,16 +339,16 @@ national_focus = DIP
 	}
 }
 
-1482.1.1 = { leader = { name = "Diogo de Azambuja"	type = conquistador	rank = 4	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1486.1.1 } }
+1482.1.1 = { leader = { name = "Диогу де Азамбужа"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1486.1.1 } }
 
-1487.1.1 = { leader = {	name = "Bartolomeu Dias"       	type = explorer		rank = 5	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
+1487.1.1 = { leader = {	name = "Бартоломеу Диаш"    type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1500.5.29 } }
 
-1487.5.7 = { leader = {	name = "Pкro da Covilhг"       	type = conquistador	rank = 9	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
+1487.5.7 = { leader = {	name = "Перу да Ковильян"   type = conquistador	fire = 3	shock = 3	manuever = 6	siege = 0	death_date = 1530.1.1 } }
 
 1495.10.17 = {
 	monarch = {
-		name = "Manuel I"
-		dynasty = "de Avis"
+		name = "Мануэл I"
+		dynasty = "де Авис"
 		birth_date = 1469.5.31
 		adm = 4
 		dip = 5
@@ -197,31 +356,59 @@ national_focus = DIP
 	}
 }
 
-1497.7.8 = { leader = {	name = "Vasco da Gama"         	type = explorer		rank = 2	fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
+1497.7.8 = { leader = {	name = "Васко да Гама"      type = explorer		fire = 2	shock = 2	manuever = 6	siege = 0	death_date = 1510.1.1 } }
+
+1497.9.30 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Изабелла"
+		dynasty = "де Трастамара"
+		birth_date = 1470.10.2
+		death_date = 1498.8.23
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 #1500.1.1 = { decision = colonial_expansion }
 
-1500.1.1 = { leader = { name = "Rui Lourenзo Ravasco"	type = conquistador	rank = 4	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1506.1.1 } }
+1500.1.1 = { leader = { name = "Руи Лоренцо Раваско"	type = conquistador	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1506.1.1 } }
 
-1500.3.9 = { leader = {	name = "Pedro Бlvares Cabral"  	type = explorer		rank = 6	fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1502.1.1 } }
+1500.3.9 = { leader = {	name = "Педру Алвариш Кабрал"  	type = explorer		fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1502.1.1 } }
 
-1500.5.12 = { leader = { name = "Gaspar Corte-Real" 	type = explorer		rank = 2	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+1500.5.12 = { leader = { name = "Гашпар Корте-Реал" 	type = explorer		fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
 
-1500.5.12 = { leader = { name = "Miguel Corte-Real"  	type = explorer		rank = 4	fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+1500.5.12 = { leader = { name = "Мигель Корте-Реал"  	type = explorer		fire = 3	shock = 3	manuever = 5	siege = 0	death_date = 1503.1.1 } }
+
+1500.10.30 = {
+	queen = {
+		country_of_origin = ARA
+		name = "Мария"
+		dynasty = "де Трастамара"
+		birth_date = 1482.6.29
+		death_date = 1517.3.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
 #1501.1.1 = { decision = house_of_trade }
 
-1501.1.1 = { leader = { name = "Amerigo Vespucci"	type = explorer		rank = 11	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1501.1.1 = { leader = { name = "Америго Веспуччи"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
-1502.1.1 = { leader = { name = "Gaspar de Lemos"	type = explorer		rank = 5	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1502.1.1 = { leader = { name = "Гашпар де Лемуш"	type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
-1502.1.1 = { leader = { name = "Gonзalo Coelho"		type = explorer		rank = 4	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
+1502.1.1 = { leader = { name = "Гонсалу Коэлью"		type = explorer		fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1504.1.1 } }
 
 1502.6.7 = {
 	heir = {
-		name = "Joгo"
-		monarch_name = "Joгo III"
-		dynasty = "de Avis"
+		name = "Жуан"
+		monarch_name = "Жуан III"
+		dynasty = "де Авис"
 		birth_date = 1502.6.7
 		death_date = 1557.6.11
 		claim = 95
@@ -231,18 +418,32 @@ national_focus = DIP
 	}
 }
 
-#1503.1.1 = { leader = {	name = "Afonso de Albuquerque"	type = conquistador	rank = 1	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.16 } } # Removed /SWЦ
+#1503.1.1 = { leader = {	name = "Афонсу де Албукерки"	type = conquistador	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1515.12.16 } } # Removed /SWЦ
 
-1503.1.1 = { leader = {	name = "Francisco de Almeida"	type = conquistador	rank = 5	fire = 4	shock = 5	manuever = 6	siege = 2	death_date = 1510.3.1 } }
+1503.1.1 = { leader = {	name = "Франсишку де Алмейда"	type = conquistador	fire = 4	shock = 5	manuever = 6	siege = 2	death_date = 1510.3.1 } }
 
-#1506.1.1 = { leader = { name = "Tristгo da Cunha"  	type = explorer		rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1513.1.1 } } # Removed /SWЦ
+#1506.1.1 = { leader = { name = "Тристан да Кунья"  	type = explorer		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1513.1.1 } } # Removed /SWЦ
 
-1509.1.1 = { leader = {	name = "Caramuru"		type = conquistador	rank = 1	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1527.1.1 } }
+1509.1.1 = { leader = {	name = "Карамуру"		type = conquistador	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1527.1.1 } }
+
+1518.7.16 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Леонор"
+		dynasty = "фон Габсбург"
+		birth_date = 1498.1.15
+		death_date = 1558.2.25
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
 
 1521.12.17 = {
 	monarch = {
-		name = "Joгo III"
-		dynasty = "de Avis"
+		name = "Жуан III"
+		dynasty = "де Авис"
 		birth_date = 1502.6.7
 		adm = 1
 		dip = 5
@@ -250,7 +451,21 @@ national_focus = DIP
 	}
 }
 
-1530.1.1 = { leader = {	name = "Martim de Sousa"       	type = conquistador	rank = 9	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1564.1.1 } }
+1525.2.10 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Екатерина"
+		dynasty = "фон Габсбург"
+		birth_date = 1507.1.14
+		death_date = 1578.2.12
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1530.1.1 = { leader = {	name = "Мартин де Соуза"       	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1564.1.1 } }
 
 1534.8.15 = { decision = join_the_counter_reformation }
 
@@ -258,9 +473,9 @@ national_focus = DIP
 
 1554.1.20 = {
 	heir = {
-		name = "Sebastiгo"
-		monarch_name = "Sebastiгo I"
-		dynasty = "de Avis"
+		name = "Себастьян"
+		monarch_name = "Себастьян I"
+		dynasty = "де Авис"
 		birth_date = 1554.1.20
 		death_date = 1578.8.4
 		claim = 95
@@ -270,24 +485,35 @@ national_focus = DIP
 	}
 }
 
-1556.1.1 = { leader = {	name = "Mem de Sб"             	type = conquistador	rank = 2	fire = 4	shock = 5	manuever = 5	siege = 2	death_date = 1560.1.1 } }
+1556.1.1 = { leader = {	name = "Мем де Са"             	type = conquistador	fire = 4	shock = 5	manuever = 5	siege = 2	death_date = 1560.1.1 } }
 
 1557.6.13 = {
 	monarch = {
-		name = "Sebastiгo I"
-		dynasty = "de Avis"
+		name = "Себастьян I"
+		dynasty = "де Авис"
 		birth_date = 1554.1.20
 		adm = 2
 		dip = 2
 		mil = 4
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Джоанна"
+		dynasty = "фон Габсбург"
+		birth_date = 1535.6.24
+		death_date = 1573.9.7
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
 }
 
 1557.6.13 = {
 	heir = {
-		name = "Henrique"
-		monarch_name = "Henrique I o Cardeal-Rei"
-		dynasty = "de Avis"
+		name = "Энрике"
+		monarch_name = "Энрике"
+		dynasty = "де Авис"
 		birth_date = 1512.1.31
 		death_date = 1580.1.31
 		claim = 80
@@ -297,12 +523,12 @@ national_focus = DIP
 	}
 }
 
-1578.1.1 = { leader = {	name = "Antуnio, Prior do Crato"     	type = general		rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1580.2.1 } }
+1578.1.1 = { leader = {	name = "Антониу из Крату"     	type = general		fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1580.2.1 } }
 
 1578.8.6 = {
 	monarch = {
-		name = "Henrique I o Cardeal-Rei"
-		dynasty = "de Avis"
+		name = "Энрике"
+		dynasty = "де Авис"
 		birth_date = 1512.1.31
 		adm = 2
 		dip = 2
@@ -312,59 +538,81 @@ national_focus = DIP
 
 1578.8.6 = {
 	heir = {
-		name = "Antуnio"
-		monarch_name = "Antуnio I"
-		dynasty = "de Avis"
+		name = "Антониу"
+		monarch_name = "Антониу I"
+		dynasty = "де Авис"
 		birth_date = 1531.1.1
 		death_date = 1595.8.26
 		claim = 95
 		adm = 4
 		dip = 3
 		mil = 4
-		leader = {	name = "Antуnio I"   	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0 }
+		leader = {	name = "Антониу I"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 	}
 }
 
 1580.2.1 = {
 	monarch = {
-		name = "Antуnio I"
-		dynasty = "de Avis"
+		name = "Антониу I"
+		dynasty = "де Авис"
 		birth_date = 1531.1.1
 		adm = 4
 		dip = 3
 		mil = 4
-		leader = {	name = "Antуnio I"   	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0 }
+		leader = {	name = "Антониу I"   	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = POR
+		name = "Анна"
+		dynasty = "Барбоза"
+		birth_date = 1530.1.1
+		death_date = 1590.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
-1585.1.1 = { leader = { name = "Afonso de Castro"		type = admiral		rank = 4	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1607.6.3 } }
+1585.1.1 = { leader = { name = "Афонсу де Кастро"		type = admiral		fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1607.6.3 } }
 
-1595.1.1 = { leader = {	name = "Pedro Fernandes Queirуz"	type = explorer		rank = 5	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1615.1.1 } }
+1595.1.1 = { leader = {	name = "Педро Фернандес Кирос"	type = explorer		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1615.1.1 } }
 
-1602.1.1 = { leader = {	name = "Antуnio Fernandes"     	type = explorer		rank = 9	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1624.1.1 } }
+1602.1.1 = { leader = {	name = "Антониу Фернандес"     	type = explorer		fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1624.1.1 } }
 
-1606.1.1 = { leader = {	name = "D. Бlvaro de Meneses"   type = admiral		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1620.1.1 } }
+1606.1.1 = { leader = {	name = "Альваро де Менесес"   type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1620.1.1 } }
 
-1624.1.1 = { leader = {	name = "Nuno Бlvares Botelho"	type = admiral		rank = 1	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1650.1.1 } }
+1624.1.1 = { leader = {	name = "Нуну Альваро Ботельо"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1650.1.1 } }
 
-1637.1.1 = { leader = {	name = "Pedro Teixeira"        	type = conquistador	rank = 4	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1640.1.1 } }
+1637.1.1 = { leader = {	name = "Педро Тейшейра"        	type = conquistador	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1640.1.1 } }
 
 1640.12.1 = {
 	monarch = {
-		name = "Joгo IV"
-		dynasty = "de Braganзa"
+		name = "Жуан IV"
+		dynasty = "де Браганса"
 		birth_date = 1604.3.19
 		adm = 3
 		dip = 5
 		mil = 3
 	}
+	queen = {
+		country_of_origin = SPA
+		name = "Луиза"
+		dynasty = "де Медина-Сидония"
+		birth_date = 1631.10.31
+		death_date = 1666.2.27
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 4
+	}
 }
 
 1643.8.21 = {
 	heir = {
-		name = "Afonso"
-		monarch_name = "Afonso VI"
-		dynasty = "de Braganзa"
+		name = "Афонсу"
+		monarch_name = "Афонсу VI"
+		dynasty = "де Браганса"
 		birth_date = 1643.8.21
 		death_date = 1683.9.12
 		claim = 95
@@ -374,14 +622,14 @@ national_focus = DIP
 	}
 }
 		
-1655.1.1 = { leader = {	name = "Бlvares Botelho"       	type = admiral		rank = 1	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1680.1.1 } }
+1655.1.1 = { leader = {	name = "Альваро Ботельо"       	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1680.1.1 } }
 
 1656.11.7 = { government = administrative_monarchy } 
 
 1656.11.7 = {
 	monarch = {
-		name = "Afonso VI"
-		dynasty = "de Braganзa"
+		name = "Афонсу VI"
+		dynasty = "де Браганса"
 		birth_date = 1643.8.21
 		adm = 0
 		dip = 0
@@ -391,9 +639,9 @@ national_focus = DIP
 
 1656.11.7 = {
 	heir = {
-		name = "Pedro"
-		monarch_name = "Pedro II"
-		dynasty = "de Braganзa"
+		name = "Педру"
+		monarch_name = "Педру II"
+		dynasty = "де Браганса"
 		birth_date = 1648.4.26
 		death_date = 1706.12.9
 		claim = 95
@@ -403,26 +651,65 @@ national_focus = DIP
 	}
 }
 
-1659.1.1 = { leader = {	name = "F. von Schomberg"	type = general		rank = 2	fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1668.1.1 } }
+1659.1.1 = { leader = {	name = "Ф. ван Шомберг"	type = general		fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1668.1.1 } }
+
+1666.8.2 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Франсиска"
+		dynasty = "ди Савойя"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
 
 1667.11.24 = {
 	monarch = {
-		name = "Pedro II"
-		dynasty = "de Braganзa"
+		name = "Педру II"
+		dynasty = "де Браганса"
 		birth_date = 1648.4.26
 		adm = 5
 		dip = 3
 		mil = 4
 	}
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Франсиска"
+		dynasty = "ди Савойя"
+		birth_date = 1646.9.12
+		death_date = 1683.12.27
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 3
+	}
 }
 
-1685.12.1 = { leader = { name = "Francisco da Silva"	type = admiral		rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1720.2.29 } }
+1685.12.1 = { leader = { name = "Франсиско да Сильва"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1720.2.29 } }
+
+1687.8.11 = {
+	queen = {
+		country_of_origin = PAL
+		name = "Мария Софья"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1666.8.6
+		death_date = 1699.8.4
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
 
 1689.10.22 = {
 	heir = {
-		name = "Joгo"
-		monarch_name = "Joгo V"
-		dynasty = "de Braganзa"
+		name = "Жуан"
+		monarch_name = "Жуан V"
+		dynasty = "де Браганса"
 		birth_date = 1689.10.22
 		death_date = 1750.7.31
 		claim = 95
@@ -432,26 +719,51 @@ national_focus = DIP
 	}
 }
 
-1700.1.1 = { leader = {	name = "Antуnio Luнs de Sousa"	type = general		rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1720.1.1 } }
+1700.1.1 = { leader = {	name = "Антониу Луис де Соуса"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1720.1.1 } }
 
-1706.12.11 = { government = absolute_monarchy }
+1706.12.11 = { government = despotic_monarchy }
 
 1706.12.11 = {
 	monarch = {
-		name = "Joгo V"
-		dynasty = "de Braganзa"
+		name = "Жуан V"
+		dynasty = "де Браганса"
 		birth_date = 1689.10.22
 		adm = 2
 		dip = 2
 		mil = 3
 	}
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1708.10.27 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Мария Анна"
+		dynasty = "фон Габсбург"
+		birth_date = 1683.9.7
+		death_date = 1754.8.14
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
 }
 
 1714.6.6 = {
 	heir = {
-		name = "Josй"
-		monarch_name = "Josй I"
-		dynasty = "de Braganзa"
+		name = "Жозе"
+		monarch_name = "Жозе I"
+		dynasty = "де Браганса"
 		birth_date = 1714.6.6
 		death_date = 1777.2.24
 		claim = 95
@@ -465,20 +777,31 @@ national_focus = DIP
 
 1750.8.2 = {
 	monarch = {
-		name = "Josй I"
-		dynasty = "de Braganзa"
+		name = "Жозе I"
+		dynasty = "де Браганса"
 		birth_date = 1714.6.6
 		adm = 6
 		dip = 3
 		mil = 3
 	}
+	queen = {
+		country_of_origin = SPA
+		name = "Мария-Виктория"
+		dynasty = "де Бурбон"
+		birth_date = 1718.3.31
+		death_date = 1781.1.17
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
+	}
 }
 
 1750.8.2 = {
 	heir = {
-		name = "Maria"
-		monarch_name = "Maria I"
-		dynasty = "de Braganзa"
+		name = "Мария"
+		monarch_name = "Мария I"
+		dynasty = "де Браганса"
 		birth_date = 1734.12.17
 		death_date = 1816.3.20
 		claim = 95
@@ -489,25 +812,36 @@ national_focus = DIP
 	}
 }
 
-1761.1.1 = { leader = { name = "Conde de Lippe"  	type = general		rank = 0	fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1770.1.1 } }
+1761.1.1 = { leader = { name = "Конде де Липпе"  	type = general		fire = 2	shock = 2	manuever = 5	siege = 0	death_date = 1770.1.1 } }
 
 1777.2.23 = {
 	monarch = {
-		name = "Maria I"
-		dynasty = "de Braganзa"
+		name = "Мария I"
+		dynasty = "де Браганса"
 		birth_date = 1734.12.17
 		adm = 0
 		dip = 1
 		mil = 0
 		female = yes
 	}
+	queen = {
+		country_of_origin = POR
+		name = "Педро"
+		dynasty = "де Браганса"
+		birth_date = 1717.7.5
+		death_date = 1786.5.25
+		female = no
+		adm = 2
+		dip = 1
+		mil = 1
+	}
 }
 
 1777.2.23 = {
 	heir = {
-		name = "Joгo"
-		monarch_name = "Joгo VI"
-		dynasty = "de Braganзa"
+		name = "Жуан"
+		monarch_name = "Жуан VI"
+		dynasty = "де Браганса"
 		birth_date = 1767.5.13
 		death_date = 1826.3.10
 		claim = 95
@@ -517,25 +851,252 @@ national_focus = DIP
 	}
 }
 
-1790.2.27 = { leader = { name = "B. Freire de Andrade"  	type = general		rank = 1	fire = 5	shock = 3	manuever = 4	siege = 1	death_date = 1809.3.17 } }
+1790.2.27 = { leader = { name = "Б. Фрейре де Андраде"  	type = general		fire = 5	shock = 3	manuever = 4	siege = 1	death_date = 1809.3.17 } }
 
-1794.4.25 = { leader = { name = "M. Pereira Forjaz"  		type = general		rank = 1	fire = 4	shock = 5	manuever = 3	siege = 1	death_date = 1827.11.6 } }
+1794.4.25 = { leader = { name = "М. Перейра Форхас"  		type = general		fire = 4	shock = 5	manuever = 3	siege = 1	death_date = 1827.11.6 } }
 
-1800.5.4 = { leader = { name = "M.J. Dias Azedo"  		type = general		rank = 2	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1821.2.11 } }
+1800.5.4 = { leader = { name = "М. Д. Диас Азеведу"  		type = general		fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1821.2.11 } }
 
-1803.3.14 = { leader = { name = "Conde de Amarante"  		type = general		rank = 3	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1821.5.27 } }
+1803.3.14 = { leader = { name = "Конде де Амаранте"  		type = general		fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1821.5.27 } }
 
 1808.1.1 = { capital = 763 } # Rio de Janeiro
 
-1809.1.1 = { leader = { name = "F. Furtado de Castro"  		type = general		rank = 6	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1854.3.11 } }
+1809.1.1 = { leader = { name = "Ф. Фуртадо де Кастро"  		type = general		fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1854.3.11 } }
 
 1816.3.20 = {
 	monarch = {
-		name = "Joгo VI"
-		dynasty = "de Braganзa"
+		name = "Жуан VI"
+		dynasty = "де Браганса"
 		birth_date = 1767.5.13
 		adm = 1
 		dip = 1
 		mil = 0
+	}
+	queen = {
+		country_of_origin = SPA
+		name = "Карлота"
+		dynasty = "де Бурбон"
+		birth_date = 1775.4.25
+		death_date = 1830.1.7
+		female = yes
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1826.3.10 = {
+	monarch = {
+		name = "Педру IV"
+		dynasty = "де Браганса"
+		birth_date = 1798.10.12
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1826.3.10 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		death_date = 1853.11.15
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1828.3.3 = {
+	monarch = {
+		name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1828.7.11 = {
+	monarch = {
+		name = "Мигел I"
+		dynasty = "де Браганса"
+		birth_date = 1802.10.26
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1828.7.11 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		death_date = 1853.11.15
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1834.5.26 = {
+	monarch = {
+		name = "Мария II"
+		dynasty = "де Браганса"
+		birth_date = 1819.4.4
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+1836.4.9 = {
+	queen = {
+		country_of_origin = AEM
+		name = "Фердинанд"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1816.10.29
+		death_date = 1885.12.15
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1837.9.16 = {
+	queen = {
+		country_of_origin = AEM
+		name = "Фернанду II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1816.10.29
+		death_date = 1885.12.15
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1837.9.16 = {
+	heir = {
+		name = "Педру"
+		monarch_name = "Педру V"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1837.9.16
+		death_date = 1861.11.11
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1853.11.15 = {
+	monarch = {
+		name = "Педру V"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1837.9.16
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1853.11.15 = {
+	heir = {
+		name = "Луиш"
+		monarch_name = "Луиш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1838.10.31
+		death_date = 1889.10.19
+		claim = 75
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1861.11.11 = {
+	monarch = {
+		name = "Луиш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1838.10.31
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1863.9.28 = {
+	heir = {
+		name = "Карлуш"
+		monarch_name = "Карлуш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1863.9.28
+		death_date = 1908.2.1
+		claim = 75
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1889.10.19 = {
+	monarch = {
+		name = "Карлуш I"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1863.9.28
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1889.10.19 = {
+	heir = {
+		name = "Луиш Филипе"
+		monarch_name = "Луиш II"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1887.3.21
+		death_date = 1908.2.1
+		claim = 75
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1908.2.1 = {
+	monarch = {
+		name = "Мануэл II"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1889.3.19
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1908.2.1 = {
+	heir = {
+		name = "Афонсу"
+		monarch_name = "Афонсу VII"
+		dynasty = "де Браганса-Кобург"
+		birth_date = 1865.7.31
+		death_date = 1920.2.21
+		claim = 75
+		adm = 4
+		dip = 5
+		mil = 3
 	}
 }

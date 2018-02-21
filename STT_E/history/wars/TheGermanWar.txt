@@ -1,0 +1,48 @@
+name = "Германская война"
+war_goal = {
+	type = take_border
+	casus_belli = cb_border_war
+}
+
+1866.6.17 = {
+	add_attacker = PRU
+	add_attacker = ITA
+	add_attacker = MKL
+	add_attacker = BRU
+	add_attacker = SHL
+	add_attacker = ANH
+	add_attacker = BRE
+	add_attacker = HSA
+	add_attacker = HAM
+	add_defender = AEM
+	add_defender = BAV
+	add_defender = BAD
+	add_defender = WUR
+	add_defender = SAX
+	add_defender = HES
+	add_defender = NSA
+	add_defender = HAN
+
+}
+
+
+1866.7.26 = {
+	rem_attacker = PRU
+	rem_attacker = ITA
+	rem_attacker = MKL
+	rem_attacker = BRU
+	rem_attacker = SHL
+	rem_attacker = ANH
+	rem_attacker = BRE
+	rem_attacker = HSA
+	rem_attacker = HAM
+	rem_defender = AEM
+	rem_defender = BAV
+	rem_defender = BAD
+	rem_defender = WUR
+	rem_defender = SAX
+	rem_defender = HES
+	rem_defender = NSA
+	rem_defender = HAN
+
+}

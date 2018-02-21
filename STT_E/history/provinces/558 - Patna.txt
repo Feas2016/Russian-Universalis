@@ -12,6 +12,7 @@ base_production = 8
 base_manpower = 5
 is_city = yes
 add_core = JNP
+add_core = LAH
 fort_15th = yes #Rohtasgarh
 discovered_by = indian
 discovered_by = muslim 
@@ -23,6 +24,12 @@ add_permanent_province_modifier = {
 	name = minor_inland_center_of_trade_modifier
 	duration = -1
 }
+
+1300.1.1 = { controller = DLH owner = DLH add_core = DLH }
+
+1338.1.1 = { owner = LAH controller = LAH add_core = LAH }
+
+1342.1.1 = { owner = BNG controller = BNG add_core = BNG }
 
 1486.1.1 = {
 	owner = DLH
@@ -102,7 +109,7 @@ owner = BNG
 	controller = GBR
 	add_core = GBR
 } # Given to GBR by Mughal Empire (was formerly british puppet)
-1772.1.1 = { revolt_risk = 5 } # Paharia revolt
-1780.1.1 = { revolt_risk = 7 } # Revolt led by Tilka Manjhi
-1785.1.1 = { revolt_risk = 2 }
-1795.1.1 = { revolt_risk = 6 } # Tamar revolt, Munda revolt
+1772.1.1 = { unrest = 5 } # Paharia revolt
+1780.1.1 = { unrest = 7 } # Revolt led by Tilka Manjhi
+1785.1.1 = { unrest = 2 }
+1795.1.1 = { unrest = 6 } # Tamar revolt, Munda revolt

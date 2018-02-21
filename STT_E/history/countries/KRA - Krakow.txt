@@ -4,6 +4,28 @@ religion = catholic
 technology_group = eastern
 capital = 262	# Krakow
 fixed_capital = 262 # Cannot move capital away from this province & no power cost to move to it
+historical_rival = GNE
+
+1305.1.1 = {
+	monarch = {
+		name = "Вацлав III"
+		dynasty = "Пржемыслович"
+		birth_date = 1289.10.6
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+1306.1.1 = {
+	monarch = {
+		name = "Владислав I Локетек"
+		dynasty = "Пяст"
+		birth_date = 1261.1.19
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}
 
 1530.1.1 = { government = administrative_monarchy }
 
@@ -13,10 +35,131 @@ fixed_capital = 262 # Cannot move capital away from this province & no power cos
 
 1815.5.3 = {
 	monarch = {
-		name = "National Assembly"
+		name = "Национальная ассамблея"
 		adm = 2
 		dip = 2
 		mil = 2
 		regent = yes
 	}
 }
+
+1815.11.2 = {
+	monarch = {
+		name = "Станислав Воздицкий"
+		birth_date = 1764.7.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1827.1.1 = {
+	monarch = {
+		name = "Сенат"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1827.12.18 = {
+	monarch = {
+		name = "Станислав Воздицкий"
+		birth_date = 1764.7.27
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1831.1.19 = {
+	monarch = {
+		name = "Сенат"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1833.3.24 = {
+	monarch = {
+		name = "Клавдий Вильгловский"
+		birth_date = 1780.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1836.2.25 = {
+	monarch = {
+		name = "Сенат"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}
+
+1836.2.26 = {
+	monarch = {
+		name = "Юзеф Халлер"
+		birth_date = 1783.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1839.4.27 = {
+	monarch = {
+		name = "Ян Шиндлер"
+		birth_date = 1802.9.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1846.2.22 = {
+	monarch = {
+		name = "Национальное правительство"
+		regent = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1846.2.24 = {
+	monarch = {
+		name = "Ян Тыссовский"
+		birth_date = 1811.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1846.3.3 = {
+	monarch = {
+		name = "Иосиф Викентий Воздицкий"
+		birth_date = 1800.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1846.11.16 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+

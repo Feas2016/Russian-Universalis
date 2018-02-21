@@ -1,0 +1,53 @@
+#Ex: Окончание
+defined_text = {
+    name = GetGSEndA
+
+    text = {
+        localisation_key = FEMALE_ENDING_A
+        trigger = {
+			OR = {
+				is_subject_of_type = march
+				is_subject_of_type = colony
+				is_subject_of_type = client_vassal
+				is_subject_of_type = client_march
+			}
+       }
+    }
+    text = {
+        localisation_key = MALE_ENDING_A
+        trigger = {
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = personal_union
+				is_subject_of_type = protectorate
+				is_subject_of_type = daimyo_vassal
+			}
+       }
+    }
+}
+defined_text = {
+    name = GetGSEndLa
+
+    text = {
+        localisation_key = FEMALE_ENDING_LA
+        trigger = {
+			OR = {
+				is_subject_of_type = march
+				is_subject_of_type = colony
+				is_subject_of_type = client_vassal
+				is_subject_of_type = client_march
+			}
+       }
+    }
+    text = {
+        localisation_key = MALE_ENDING_LA
+        trigger = {
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = personal_union
+				is_subject_of_type = protectorate
+				is_subject_of_type = daimyo_vassal
+			}
+       }
+    }
+}

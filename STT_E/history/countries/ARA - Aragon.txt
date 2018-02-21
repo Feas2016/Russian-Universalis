@@ -1,16 +1,393 @@
 government = feudal_monarchy
+government_rank = 1 ### STT
 primary_culture = aragonese
 add_accepted_culture = catalan
 add_accepted_culture = sicilian
 religion = catholic
 technology_group = western
-historical_neutral = POR
 capital = 220 # Valencia
+add_army_professionalism = 0.05
+
+781.1.1 = {
+	monarch = {
+		name = "Галиндо"
+		dynasty = "Веласкотенес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+790.1.1 = {
+	monarch = {
+		name = "Галиндо"
+		dynasty = "Гарсес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+798.1.1 = {
+	monarch = {
+		name = "Ауреоло"
+		dynasty = "Авреолес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+809.1.1 = {
+	monarch = {
+		name = "Аснар I"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+820.1.1 = {
+	monarch = {
+		name = "Гарсия I"
+		dynasty = "Веласкотенес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+833.1.1 = {
+	monarch = {
+		name = "Галиндо Гарсес"
+		dynasty = "Веласкотенес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+844.1.1 = {
+	monarch = {
+		name = "Галиндо I"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+867.1.1 = {
+	monarch = {
+		name = "Аснар II"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+893.1.1 = {
+	monarch = {
+		name = "Галиндо I"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+922.1.1 = {
+	monarch = {
+		name = "Гунтисло"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+933.1.1 = {
+	monarch = {
+		name = "Андрегота"
+		dynasty = "Галиндес"
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+943.1.1 = {
+	monarch = {
+		name = "Гарсия II Санчес"
+		dynasty = "Хименес"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+970.2.22 = {
+	monarch = {
+		name = "Санчо II Абарка"
+		dynasty = "Хименес"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+994.12.1 = {
+	monarch = {
+		name = "Гарсия III Санчес"
+		dynasty = "Хименес"
+		adm = 5
+		dip = 3
+		mil = 1
+	}
+}
+
+1000.7.29 = {
+	monarch = {
+		name = "Санчо III Гарсия"
+		dynasty = "Хименес"
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+1035.10.18 = {
+    government_rank = 2
+	monarch = {
+		name = "Рамиро I"
+		dynasty = "Хименес"
+		birth_date = 1008.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1063.5.8 = {
+	monarch = {
+		name = "Санчо I"
+		dynasty = "Хименес"
+		birth_date = 1043.1.1
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1094.6.4 = {
+	monarch = {
+		name = "Педро I"
+		dynasty = "Хименес"
+		birth_date = 1069.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+	
+1104.9.27 = {
+	monarch = {
+		name = "Альфонсо I Воитель"
+		dynasty = "Хименес"
+		birth_date = 1073.1.1
+		adm = 3
+		dip = 2
+		mil = 6
+	}
+}
+	
+1134.9.8 = {
+	monarch = {
+		name = "Рамиро II"
+		dynasty = "Хименес"
+		birth_date = 1075.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+	
+1157.8.16 = {
+	monarch = {
+		name = "Петронила"
+		dynasty = "Хименес"
+		birth_date = 1136.6.29
+		adm = 4
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}
+	
+1164.7.18 = {
+	monarch = {
+		name = "Альфонсо II"
+		dynasty = "де Барселона"
+		birth_date = 1157.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+
+1196.4.25 = {
+	monarch = {
+		name = "Педро II"
+		dynasty = "де Барселона"
+		birth_date = 1174.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1213.9.12 = {
+	monarch = {
+		name = "Хайме I"
+		dynasty = "де Барселона"
+		birth_date = 1208.2.2
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1276.7.27 = {
+	monarch = {
+		name = "Педро III"
+		dynasty = "де Барселона"
+		birth_date = 1239.1.1
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
+
+1285.11.11 = {
+	monarch = {
+		name = "Альфонсо III"
+		dynasty = "де Барселона"
+		birth_date = 1265.11.4
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1291.6.18 = {
+	monarch = {
+		name = "Хайме II"
+		dynasty = "де Барселона"
+		birth_date = 1267.8.10
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1299.11.2 = {
+	heir = {
+		name = "Альфонсо"
+		monarch_name = "Альфонсо IV"
+		dynasty = "де Барселона"
+		birth_date = 1299.11.2
+		death_date = 1336.1.24
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+	
+1327.11.5 = {
+	monarch = {
+		name = "Альфонсо IV"
+		dynasty = "де Барселона"
+		birth_date = 1299.11.2
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1327.11.5 = {
+	heir = {
+		name = "Педро"
+		monarch_name = "Педро IV"
+		dynasty = "де Барселона"
+		birth_date = 1319.10.5
+		death_date = 1387.1.6
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+1336.1.24 = {
+	monarch = {
+		name = "Педро IV"
+		dynasty = "де Барселона"
+		birth_date = 1319.10.5
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+1350.12.27 = {
+	heir = {
+		name = "Хуан"
+		monarch_name = "Хуан I"
+		dynasty = "де Барселона"
+		birth_date = 1350.12.27
+		death_date = 1396.5.19
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1387.1.5 = {
+	monarch = {
+		name = "Хуан I"
+		dynasty = "де Барселона"
+		birth_date = 1350.12.27
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1387.1.5 = {
+	heir = {
+		name = "Мартин"
+		monarch_name = "Мартин I"
+		dynasty = "де Барселона"
+		birth_date = 1356.7.29
+		death_date = 1410.5.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
 
 1396.5.19 = {
 	monarch = {
-		name = "Martн I"
-		dynasty = "d'Aragу"
+		name = "Мартин I"
+		dynasty = "де Барселона"
 		adm = 2
 		dip = 2
 		mil = 3
@@ -19,7 +396,7 @@ capital = 220 # Valencia
 
 1410.5.31 = {
 	monarch = {
-		name = "Compromнs de Casp"
+		name = "Компромисс Каспе"
 		regent = yes
 		adm = 2
 		dip = 2
@@ -29,8 +406,8 @@ capital = 220 # Valencia
 
 1412.6.24 = {
 	monarch = {
-		name = "Ferran I"
-		dynasty = "de Trastбmara"
+		name = "Фердинанд I"
+		dynasty = "де Трастамара"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -39,9 +416,9 @@ capital = 220 # Valencia
 
 1412.6.24 = {
 	heir = {
-		name = "Alfons"
-		monarch_name = "Alfons V"
-		dynasty = "de Trastбmara"
+		name = "Альфонсо"
+		monarch_name = "Альфонсо V"
+		dynasty = "де Трастамара"
 		birth_date = 1396.1.1
 		death_date = 1458.6.27
 		claim = 95
@@ -50,24 +427,25 @@ capital = 220 # Valencia
 		mil = 6
 	}
 }
-		
+	
 1416.4.2 = {
 	monarch = {
-		name = "Alfons V"
-		dynasty = "de Trastбmara"
+		name = "Альфонсо V"
+		dynasty = "де Трастамара"
 		birth_date = 1396.1.1
 		adm = 2
 		dip = 4
 		mil = 6
-		leader = {	name = "Alfons V"	type = general	rank = 0	fire = 4	shock = 3	manuever = 4	siege = 1 }
+		leader = {	name = "Альфонсо V"	type = general	fire = 4	shock = 3	manuever = 4	siege = 1 }
 	}
-}
 
-1416.4.2 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = architectural_visionary_personality
 	heir = {
-		name = "Joan"
-		monarch_name = "Joan II"
-		dynasty = "de Trastбmara"
+		name = "Хуан"
+		monarch_name = "Хуан II"
+		dynasty = "де Трастамара"
 		birth_date = 1397.6.29
 		death_date = 1479.1.20
 		claim = 95
@@ -75,26 +453,48 @@ capital = 220 # Valencia
 		dip = 1
 		mil = 0
 	}
+	queen = {
+		country_of_origin = CAS
+		name = "Мария"
+		dynasty = "де Трастамара"
+		birth_date = 1401.9.14
+		death_date = 1458.9.7
+		female = yes
+		adm = 4
+		dip = 4
+		mil = 3
+	}
 }
 
-1443.1.1 = { leader = {	name = "Bernat de Vilamarн"	type = admiral	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1463.9.1 } }
+1443.1.1 = { leader = {	name = "Бернат де Виламари"	type = admiral	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1463.9.1 } }
 
 1458.6.29 = {
 	monarch = {
-		name = "Joan II"
-		dynasty = "de Trastбmara"
+		name = "Хуан II"
+		dynasty = "де Трастамара"
 		birth_date = 1397.6.29
 		adm = 4
 		dip = 1
 		mil = 0
 	}
+	queen = {
+		country_of_origin = CAS
+		name = "Жуана Энриез"
+		dynasty = "де Курдоба"
+		birth_date = 1425.1.1
+		death_date = 1468.2.13
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
 }
 
 1458.6.29 = {
 	heir = {
-		name = "Ferran"
-		monarch_name = "Ferran II"
-		dynasty = "de Trastбmara"
+		name = "Фердинанд"
+		monarch_name = "Фердинанд II"
+		dynasty = "де Трастамара"
 		birth_date = 1452.3.10
 		death_date = 1516.1.23
 		claim = 95
@@ -106,26 +506,41 @@ capital = 220 # Valencia
 
 1479.1.20 = {
 	monarch = {
-		name = "Ferran II"
-		dynasty = "de Trastбmara"
+		name = "Фердинанд II"
+		dynasty = "де Трастамара"
 		birth_date = 1452.3.10
 		adm = 4
 		dip = 6
 		mil = 5
-		leader = {	name = "Ferran II"	type = general	rank = 0	fire = 3	shock = 2	manuever = 3	siege = 1 }
+		leader = {	name = "Фердинанд II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
 	}
+	queen = {
+		country_of_origin = CAS
+		name = "Изабелла"
+		dynasty = "де Трастамара"
+		birth_date = 1451.4.22
+		death_date = 1504.11.26
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = martial_educator_personality
 }
 
-1495.7.1 = { leader = {	name = "Prospero Colonna"      	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1516.1.23 } }
+1495.7.1 = { leader = {	name = "Просперо Колонна"      	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1516.1.23 } }
 
-1499.1.1 = { leader = { name = "Pedro Navarro"		type = general	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1512.4.11 } } # Captured by French, after that in their service
+1499.1.1 = { leader = { name = "Педро Наварро"		type = general	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1512.4.11 } } # Captured by French, after that in their service
 
-1508.1.1 = { leader = {	name = "Ramуn de Cardona"       type = general	rank = 1	fire = 3	shock = 3	manuever = 2	siege = 1	death_date = 1516.1.23 } }
+1508.1.1 = { leader = {	name = "Рамон де Кардона"       type = general	fire = 3	shock = 3	manuever = 2	siege = 1	death_date = 1516.1.23 } }
 
-1512.1.1 = { leader = { name = "Fernando d'Avalos"	 	type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1525.11.4 } }
+1512.1.1 = { leader = { name = "Фернандо д'Авалос"	 	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1525.11.4 } }
 
 1516.1.23 = { government = despotic_monarchy }
 
 1724.1.20 = { government = administrative_monarchy }
 
-1759.8.12 = { government = absolute_monarchy }
+1759.8.12 = { government = despotic_monarchy }

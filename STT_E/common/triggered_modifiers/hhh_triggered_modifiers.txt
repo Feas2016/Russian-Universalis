@@ -1,0 +1,52 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+###########################################
+
+stable_government = {
+    potential = {
+		government = greek_monarchy
+		has_country_flag = purple_palace_begin
+	}
+    trigger = {
+	    stability = 3
+		faction_influence = {
+         faction = royalists
+         influence = 30
+        }
+	}
+    royalists_influence = 0.06
+	stability_cost_modifier = -0.05
+}
+
+war_government = {
+    potential = {
+	    has_country_flag = purple_palace_begin
+		government = greek_monarchy
+	}
+    trigger = {
+	    NOT = {
+		stability = 3
+		}
+		is_at_war = yes
+	}
+    royalists_influence = 0.15
+	stability_cost_modifier = 0.05
+}
+
+unstable_government = {
+    potential = {
+	    has_country_flag = purple_palace_begin
+		government = greek_monarchy
+	}
+    trigger = {
+	    NOT = {
+		stability = 3
+		}
+		is_at_war = no
+	}
+    republicans_influence = 0.1
+	stability_cost_modifier = 0.025
+}

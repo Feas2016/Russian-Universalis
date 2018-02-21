@@ -1,0 +1,688 @@
+# From Novgorod mod by Skepteroun
+subjugate_viatka = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = VIA
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		VIA = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = viatka_subjugated }
+		NOT = { last_mission = subjugate_viatka }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = VIA }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			VIA = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = VIA }
+				1079 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = VIA value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 1079
+				}
+			}
+			1079 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 1079
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = viatka_subjugated
+	}
+}
+
+subjugate_perm = {
+
+	type = country
+	
+	category = DIP
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = PRM
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		num_of_cities = 3
+		primary_culture = russian
+		PRM = {
+			ai = yes
+			exists = yes
+			is_free_or_tributary_trigger = yes
+			num_of_cities = 2
+			is_neighbor_of = ROOT
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { war_with = PRM }
+		NOT = { has_country_flag = perm_mission_rus }
+		NOT = { last_mission = subjugate_perm }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			PRM = {
+				is_subject_other_than_tributary_trigger = yes
+				NOT = { is_subject_of = ROOT }
+			}
+		}
+	}
+	success = {
+		is_at_war = no
+		OR = {
+			PRM = { is_subject_of = ROOT }
+			PRM = {
+				has_opinion = {
+					who = ROOT
+					value = 175
+				}
+			}
+		}
+		PRM = {
+			is_at_war = no
+			is_neighbor_of = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			dip = 3
+		}	
+	}
+	effect = {
+		set_country_flag = perm_mission_rus
+		add_prestige = 5
+		vassalize = PRM
+	}
+}
+
+subjugate_pronsk = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = PNS
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		PNS = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = pronsk_subjugated }
+		NOT = { last_mission = subjugate_pronsk }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = PNS }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			PNS = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = PNS }
+				3174 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = PNS value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 3174
+				}
+			}
+			3174 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 3174
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = pronsk_subjugated
+	}
+}
+
+subjugate_odoev = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = OKA
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		OKA = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = odoev_subjugated }
+		NOT = { last_mission = subjugate_odoev }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = OKA }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			OKA = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = OKA }
+				3195 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = OKA value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 3195
+				}
+			}
+			3195 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 3195
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = odoev_subjugated
+	}
+}
+
+subjugate_vladimir = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = VLD
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		VLD = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = vladimir_subjugated }
+		NOT = { last_mission = subjugate_vladimir }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = VLD }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			VLD = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = VLD }
+				307 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = VLD value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 307
+				}
+			}
+			307 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 307
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = vladimir_subjugated
+	}
+}
+
+subjugate_rostov = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = RSO
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		RSO = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = rostov_subjugated }
+		NOT = { last_mission = subjugate_rostov }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = RSO }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			RSO = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = RSO }
+				3192 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = RSO value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 3192
+				}
+			}
+			3192 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 3192
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = rostov_subjugated
+	}
+}
+
+subjugate_galich = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = GLC
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		GLC = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = galich_subjugated }
+		NOT = { last_mission = subjugate_galich }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = GLC }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			GLC = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = GLC }
+				1957 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = GLC value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 1957
+				}
+			}
+			1957 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 1957
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = rostov_subjugated
+	}
+}
+
+subjugate_nizhniy = {
+	type = country
+	category = MIL
+	
+	target_provinces = {
+		owned_by = NZH
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_free_or_tributary_trigger = yes
+		NZH = {
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			religion_group = ROOT
+			NOT = { is_subject_of = ROOT }
+		}
+		NOT = { has_country_flag = nizhniy_subjugated }
+		NOT = { last_mission = subjugate_nizhniy }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = NZH }
+			NOT = { religion_group = ROOT }
+		}
+	}
+	success = {
+		OR = {
+			NZH = { is_subject_of = ROOT }
+			AND = {
+				NOT = { exists = NZH }
+				306 = { owned_by = ROOT }
+			}
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = NZH value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_prestige = 5
+		if = {
+			limit = {
+				any_target_province = {
+					province_id = 306
+				}
+			}
+			306 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_target_province = {
+						province_id = 306
+					}
+				}
+			}
+			random_target_province = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1				
+			}
+		}
+		set_country_flag = nizhniy_subjugated
+	}
+}

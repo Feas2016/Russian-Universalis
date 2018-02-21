@@ -4,7 +4,7 @@ owner = ERF
 controller = ERF 
 culture = saxon
 religion = catholic
-capital = "Erfurt"
+capital = "Эрфурт"
 trade_goods = dyes #Woad
 hre = yes
 base_tax = 3
@@ -16,10 +16,14 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+fort_15th = yes
 
 1531.1.1 = { religion = protestant }
-1554.3.3 = { capital = "Weimar" }
-1665.1.1 = { fort_17th = yes }
+1554.3.3 = { capital = "Веймар" }
+1665.1.1 = {
+	fort_15th = no
+	fort_17th = yes
+}
 1790.8.1 = { unrest = 5 } # Peasant revolt
 1791.1.1 = { unrest = 0 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
@@ -28,3 +32,6 @@ discovered_by = ottoman
 	controller = PRU
 	add_core = PRU
 } # Congress of Vienna
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core = PRU }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB remove_core = ERF }
+

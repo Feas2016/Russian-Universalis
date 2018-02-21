@@ -1,7 +1,7 @@
 #2398 - Thaungdut
 
-owner = MYA
-controller = MYA
+owner = PYN
+controller = PYN
 culture = chin
 religion = animism
 capital = "Thaungdut"
@@ -11,9 +11,21 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = MYA
+add_core = PYN
 discovered_by = chinese
 discovered_by = indian
+
+1315.1.1 = {
+	owner = SIQ
+	controller = SIQ
+	add_core = SIQ
+}
+
+1364.1.1 = {
+	owner = AVA
+	controller = AVA
+	add_core = AVA
+}
 
 1502.1.1 = {
 	owner = SST

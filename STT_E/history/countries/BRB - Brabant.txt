@@ -6,47 +6,368 @@ primary_culture = flemish
 
 capital = 92
 
-
-1355.1.1 = {
+994.1.1 = {
 	monarch = {
-		name = "Jeanne"
-		dynasty = "de Reginar"
+		name = "Ламберт I"
+		dynasty = "де Лувен"
+		birth_date = 955.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1015.9.12 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "де Лувен"
+		birth_date = 992.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1038.1.1 = {
+	monarch = {
+		name = "Оттон I"
+		dynasty = "де Лувен"
+		birth_date = 1000.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1041.1.1 = {
+	monarch = {
+		name = "Ламберт II"
+		dynasty = "де Лувен"
+		birth_date = 1000.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1062.9.21 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "де Лувен"
+		birth_date = 1020.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1078.1.1 = {
+	monarch = {
+		name = "Генрих III"
+		dynasty = "де Лувен"
+		birth_date = 1040.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1095.3.1 = {
+	monarch = {
+		name = "Готфрид I"
+		dynasty = "де Лувен"
+		birth_date = 1063.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1139.1.25 = {
+	monarch = {
+		name = "Готфрид II"
+		dynasty = "де Лувен"
+		birth_date = 1109.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1142.7.13 = {
+	monarch = {
+		name = "Готфрид III"
+		dynasty = "де Лувен"
+		birth_date = 1142.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1190.8.21 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "де Брабант"
+		birth_date = 1165.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1207.1.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих II"
+		dynasty = "де Брабант"
+		birth_date = 1207.1.1
+		death_date = 1248.2.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1235.9.5 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "де Брабант"
+		birth_date = 1207.1.1
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}
+
+1248.2.1 = {
+	monarch = {
+		name = "Генрих III"
+		dynasty = "де Брабант"
+		birth_date = 1231.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1261.2.28 = {
+	monarch = {
+		name = "Генрих IV"
+		dynasty = "де Брабант"
+		birth_date = 1251.1.1
+		adm = 5
+		dip = 1
+		mil = 1
+	}
+}
+
+1267.5.14 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де Брабант"
+		birth_date = 1253.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1294.5.3 = {
+	monarch = {
+		name = "Жан II"
+		dynasty = "де Брабант"
+		birth_date = 1275.9.27
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1312.10.27 = {
+	monarch = {
+		name = "Жан III"
+		dynasty = "де Брабант"
+		birth_date = 1300.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+1322.6.24 = {
+	heir = {
+		name = "Жанна"
+		monarch_name = "Жанна"
+		dynasty = "де Брабант"
+		birth_date = 1322.6.24
+		death_date = 1406.11.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1327.1.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан IV"
+		dynasty = "де Брабант"
+		birth_date = 1327.1.1
+		death_date = 1336.1.1
+		claim = 95
 		adm = 2
 		dip = 2
 		mil = 2
+	}
+}
+
+1336.1.1 = {
+	heir = {
+		name = "Жанна"
+		monarch_name = "Жанна"
+		dynasty = "де Брабант"
+		birth_date = 1322.6.24
+		death_date = 1406.11.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1345.1.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих V"
+		dynasty = "де Брабант"
+		birth_date = 1345.1.1
+		death_date = 1349.10.29
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1349.10.29 = {
+	heir = {
+		name = "Готфрид"
+		monarch_name = "Готфрид IV"
+		dynasty = "де Брабант"
+		birth_date = 1346.1.1
+		death_date = 1352.2.3
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1352.2.3 = {
+	heir = {
+		name = "Жанна"
+		monarch_name = "Жанна"
+		dynasty = "де Брабант"
+		birth_date = 1322.6.24
+		death_date = 1406.11.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1355.12.5 = {
+	monarch = {
+		name = "Жанна"
+		dynasty = "де Брабант"
+		birth_date = 1322.6.24
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1355.12.5 = {
+	heir = {
+		name = "Венцель"
+		monarch_name = "Венцель"
+		dynasty = "фон Люксембург"
+		birth_date = 1337.2.25
+		death_date = 1383.12.7
+		claim = 70
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1355.12.5 = {
+	heir = {
+		name = "Венцель"
+		monarch_name = "Венцель"
+		dynasty = "фон Люксембург"
+		birth_date = 1337.2.25
+		death_date = 1383.12.7
+		claim = 70
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1383.12.7 = {
+	heir = {
+		name = "Маргарита"
+		monarch_name = "Маргарита I"
+		dynasty = "де Дампьер"
+		birth_date = 1350.4.13
+		death_date = 1405.3.21
+		claim = 70
+		adm = 3
+		dip = 3
+		mil = 3
 		female = yes
 	}
 }
 
 1384.8.1 = {
 	heir = {
-		name = "Antoine"
-		monarch_name = "Antoine"
-		dynasty = "de Valois"
-		birth_date = 1384.1.1
+		name = "Антуан"
+		monarch_name = "Антуан"
+		dynasty = "де Валуа-Бургонь"
+		birth_date = 1384.8.1
 		death_date = 1415.10.25
 		claim = 70
-		adm = 3
-		dip = 2
-		mil = 2
+		adm = 4
+		dip = 3
+		mil = 3
 	}
 }
 
 1406.11.1 = {
 	monarch = {
-		name = "Antoine"
-		dynasty = "de Valois"
-		adm = 3
-		dip = 2
-		mil = 2
+		name = "Антуан"
+		dynasty = "де Валуа-Бургонь"
+		birth_date = 1384.8.1
+		adm = 4
+		dip = 3
+		mil = 3
 	}
 }
 
 1406.11.1 = {
 	heir = {
-		name = "John"
-		monarch_name = "John IV"
-		dynasty = "de Valois"
+		name = "Жан"
+		monarch_name = "Жан IV"
+		dynasty = "де Валуа-Бургонь"
 		birth_date = 1403.6.11
 		death_date = 1427.4.17
 		claim = 95
@@ -56,21 +377,22 @@ capital = 92
 	}
 }
 
-1415.1.1 = {
+1415.10.25 = {
 	monarch = {
-		name = "John IV"
-		dynasty = "de Valois"
+		name = "Жан IV"
+		dynasty = "де Валуа-Бургонь"
+		birth_date = 1403.6.11
 		adm = 1
 		dip = 2
 		mil = 1
 	}
 }
 
-1415.1.1 = {
+1415.10.25 = {
 	heir = {
-		name = "Philip"
-		monarch_name = "Philip I"
-		dynasty = "de Valois"
+		name = "Филипп"
+		monarch_name = "Филипп I"
+		dynasty = "де Валуа-Бургонь"
 		birth_date = 1404.7.25
 		death_date = 1430.8.14
 		claim = 95
@@ -80,10 +402,11 @@ capital = 92
 	}
 }
 
-1427.1.1 = {
+1427.4.17 = {
 	monarch = {
-		name = "Philip I"
-		dynasty = "de Valois"
+		name = "Филипп I"
+		dynasty = "де Валуа"
+		birth_date = 1404.7.25
 		adm = 3
 		dip = 2
 		mil = 2

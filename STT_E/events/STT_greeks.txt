@@ -1,8 +1,8 @@
-namespace = stt_greeks
+namespace = stt_greeks_events
 
 # end of Byzantines
 country_event = {
-	id = stt_greeks.1
+	id = stt_greeks_events.1
 	title = "stt_greeks_events.t.1"
 	desc = "stt_greeks_events.de.1"
 	picture = REFORM_eventPicture
@@ -117,7 +117,6 @@ country_event = {
 	desc = stt_greeks_events.de.4
 	picture = NEW_HEIR_eventPicture
 	
-	major = yes
 	is_triggered_only = yes
 
 	option = {

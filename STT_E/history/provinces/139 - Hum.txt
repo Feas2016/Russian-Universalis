@@ -12,15 +12,26 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = BOS
-add_core = BOS
+add_core = HUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1418.1.1 = { owner = HUM controller = HUM }
 1521.1.1 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	remove_core = HUM
 }
-
+1878.7.1 = {
+	owner = BOS
+	controller = BOS
+	remove_core = TUR
+}
+1908.10.6 = {
+	owner = DUA
+	controller = DUA
+	add_core = DUA
+}

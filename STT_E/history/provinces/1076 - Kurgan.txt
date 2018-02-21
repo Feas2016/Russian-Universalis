@@ -1,8 +1,8 @@
 #1076 - Kurgan
 
-owner = SHY
-controller = SHY
-capital = "Kurgan"
+owner = GLH
+controller = GLH
+capital = "Курган"	### STT
 culture = siberian
 religion = sunni
 trade_goods = fur
@@ -13,21 +13,35 @@ base_manpower = 3
 is_city = yes
 add_core = SIB
 add_core = SHY
+add_core = GLH
 discovered_by = nomad_group
-revolt_risk = 15
+unrest = 15
 
+1420.1.1 = { owner = SIB controller = SIB } #vanilla date
+1428.1.1 = { owner = SHY controller = SHY } #vanilla date
 1468.1.1 = {
 	owner = SIB
 	controller = SIB
 	discovered_by = SIB
-	revolt_risk = 0 
+	unrest = 0 
 } # Sibir Khanate formed from northern Uzbek lands
 1582.10.23 = {
-	discovered_by = RUS
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	discovered_by = TSR
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 	remove_core = SIB 
 } # Yermak Timofeevich
-1662.1.1 = { capital = "Tsaryovo Gorodische" culture = russian religion = orthodox }
-1782.1.1 = { capital = "Kurgan" }
+1662.1.1 = { 
+	capital = "Царево Городище"	### STT
+	culture = russian 
+	religion = orthodox 
+}
+1721.11.2 = { 
+	owner = RUS 
+	controller = RUS 
+	add_core = RUS 
+	remove_core = TSR 
+} ## Potr I - imperator
+1782.1.1 = { capital = "Курган" }	### STT
+

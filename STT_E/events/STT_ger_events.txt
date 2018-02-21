@@ -1,3 +1,5 @@
+namespace = ger_main
+### Прусская дань Польше (все 3 эвента)
 country_event = {
 	id = ger_main.56475
 	title = "ger_main.t.56475"
@@ -7,12 +9,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		tag = PRU
 		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
-		exists = POL
+			exists = POL
+			exists = PLC
+		}
 	}
 
 	mean_time_to_happen = {
@@ -21,10 +22,21 @@ country_event = {
 
 	option = {
 		name = "ger_main.a.56475"
-		add_casus_belli = {	
-			target = POL
-			type = cb_insult
-			months = 12
+		if = { 
+			limit = { exists = POL }
+			add_casus_belli = {	
+				target = POL
+				type = cb_insult
+				months = 12
+			}
+		}
+		if = { 
+			limit = { exists = PLC }
+			add_casus_belli = {	
+				target = PLC
+				type = cb_insult
+				months = 12
+			}
 		}
 		add_prestige = -10
 		add_legitimacy = -20
@@ -40,12 +52,11 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		tag = PRU
 		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
-		exists = POL
+			exists = POL
+			exists = PLC
+		}
 	}
 
 	mean_time_to_happen = {
@@ -70,12 +81,12 @@ country_event = {
 	}
 	
 	trigger = {
+		tag = PRU
+		has_country_modifier = ger_hommage
 		OR = {
-			tag = GER
-			tag = PRU
-			tag = BRA
-			}
-	NOT = { has_country_modifier = ger_hommage }	
+			exists = POL
+			exists = PLC
+		}
 	}
 
 	option = {

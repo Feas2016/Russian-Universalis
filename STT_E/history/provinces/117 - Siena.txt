@@ -7,7 +7,7 @@ religion = catholic
 hre = yes 
 base_tax = 8 
 base_production = 8    
-trade_goods = cloth
+trade_goods = glass
 base_manpower = 5    
 capital = "Siena" 
 is_city = yes 
@@ -57,3 +57,9 @@ discovered_by = ottoman
 	controller = TUS
 	remove_core = FRA
 } # Treaty of Fontainebleu, Napoleon abdicates and Tuscany is restored
+1861.3.14 = {
+	add_core = ITA
+	owner = ITA
+	controller = ITA
+	remove_core = TUS
+}

@@ -1,29 +1,447 @@
 government = feudal_monarchy
 government_rank = 1
 primary_culture = lithuanian
-add_accepted_culture = polish
-religion = catholic
+add_accepted_culture = byelorussian
+add_accepted_culture = ruthenian
+religion = romuva
 technology_group = eastern
 historical_friend = POL
 capital = 272 # Vilnius
 
-
-1392.1.1 = {
+1236.1.1 = {
 	monarch = {
-		name = "Vytautas"
-		dynasty = Gediminai
-		birth_date = 1350.1.1
-		adm = 2
-		dip = 3
-		mil = 0
-		leader = { name = "Vytautas"	type = general	rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0 }
+		name = "Миндовг"
+		dynasty = "Палемонович"
+		birth_date = 1195.1.1
+		adm = 3
+		dip = 4
+		mil = 5
 	}
 }
 
-1430.1.1 = {
+1263.9.12 = {
 	monarch = {
-		name = "Svitrigaila"
-		dynasty = Gediminai
+		name = "Тройнат"
+		dynasty = "Палемонович"
+		birth_date = 1210.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+
+1264.1.1 = {
+	monarch = {
+		name = "Войшелк"
+		dynasty = "Палемонович"
+		birth_date = 1230.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1267.4.18 = {
+	monarch = {
+		name = "Шварн"
+		dynasty = "Рюрикович"
+		birth_date = 1230.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1269.1.1 = {
+	monarch = {
+		name = "Тройден"
+		dynasty = "Витович"
+		birth_date = 1220.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+1282.3.1 = {
+	monarch = {
+		name = "Довмонт"
+		dynasty = "Витович"
+		birth_date = 1250.1.1
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+1285.8.5 = {
+	monarch = {
+		name = "Будикид"
+		dynasty = "Сколомендович"
+		birth_date = 1245.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1290.1.1 = {
+	monarch = {
+		name = "Пукувер Будивид"
+		dynasty = "Сколомендович"
+		birth_date = 1250.1.1
+		adm = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1295.1.1 = {
+	monarch = {
+		name = "Витень"
+		dynasty = "Сколомендович"
+		birth_date = 1270.1.1
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+1295.1.1 = {
+	heir = {
+		name = "Гедимин"
+		monarch_name = "Гедимин"
+		dynasty = "Гедиминович"
+		birth_date = 1275.1.1
+		death_date = 1341.12.1
+		claim = 95
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+1316.1.1 = {
+	monarch = {
+		name = "Гедимин"
+		dynasty = "Гедиминович"
+		birth_date = 1275.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1316.1.1 = {
+	queen = {
+		country_of_origin = PLT
+		name = "Евна"
+		dynasty = "Рюрикович"
+		birth_date = 1290.1.1
+		death_date = 1341.12.1 #1344.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1316.1.1 = {
+	heir = {
+		name = "Евнутий"
+		monarch_name = "Евнутий"
+		dynasty = "Гедиминович"
+		birth_date = 1308.1.1
+		death_date = 1366.1.1
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1341.12.1 = {
+	monarch = {
+		name = "Евнутий"
+		dynasty = "Гедиминович"
+		birth_date = 1308.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1316.1.1 = {
+	heir = {
+		name = "Ольгерд"
+		monarch_name = "Ольгерд"
+		dynasty = "Гедиминович"
+		birth_date = 1296.1.1
+		death_date = 1377.5.24
+		claim = 95
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1345.1.1 = {
+	monarch = {
+		name = "Ольгерд"
+		dynasty = "Гедиминович"
+		birth_date = 1296.1.1
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1345.1.1 = {
+	heir = {
+		name = "Андрей"
+		monarch_name = "Андрей"
+		dynasty = "Гедиминович"
+		birth_date = 1320.1.1
+		death_date = 1399.8.12
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1345.1.1 = {
+	queen = {
+		country_of_origin = VIT
+		name = "Мария"
+		dynasty = "Рюрикович"
+		birth_date = 1300.1.1
+		death_date = 1346.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1345.1.1 = {
+	queen = {
+		country_of_origin = TVE
+		name = "Иулиания"
+		dynasty = "Рюрикович"
+		birth_date = 1330.1.1
+		death_date = 1377.5.24 #1399.3.17
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1350.1.1 = {
+	heir = {
+		name = "Корибут"
+		monarch_name = "Корибут"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		death_date = 1404.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1354.1.1 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1362.1.1 = {
+	heir = {
+		name = "Ягайло"
+		monarch_name = "Ягайло"
+		dynasty = "Гедиминович"
+		birth_date = 1362.1.1
+		death_date = 1434.6.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+
+1377.5.24 = {
+	monarch = {
+		name = "Ягайло"
+		dynasty = "Ягеллон"
+		birth_date = 1362.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1377.5.24 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1381.10.1 = {
+	monarch = {
+		name = "Кейстут"
+		dynasty = "Гедиминович"
+		birth_date = 1297.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1381.10.1 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Бирута"
+		dynasty = "Вайделот"
+		birth_date = 1317.1.1
+		death_date = 1382.8.15 #1389.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1381.10.1 = {
+	heir = {
+		name = "Витовт"
+		monarch_name = "Витовт"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		death_date = 1430.10.27
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1382.8.15 = {
+	monarch = {
+		name = "Ягайло"
+		dynasty = "Ягеллон"
+		birth_date = 1362.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1382.8.15 = {
+	heir = {
+		name = "Скиргайло"
+		monarch_name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		death_date = 1397.12.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1387.1.1 = { religion = catholic }
+
+1386.2.12 = {
+	monarch = {
+		name = "Скиргайло"
+		dynasty = "Гедиминович"
+		birth_date = 1354.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1392.8.4 = {
+	monarch = {
+		name = "Витовт"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+		leader = { name = "Витовт"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0 }
+	}
+}
+
+1392.8.4 = {
+	queen = {
+		country_of_origin = SMO
+		name = "Анна"
+		dynasty = "Рюрикович"
+		birth_date = 1370.1.1
+		death_date = 1418.7.31
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1392.8.4 = {
+	heir = {
+		name = "Свидригайло"
+		monarch_name = "Свидригайло"
+		dynasty = "Гедиминович"
+		birth_date = 1370.1.1
+		death_date = 1452.2.10
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1418.10.1 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Юлиана"
+		dynasty = "Гольшанский"
+		birth_date = 1390.1.1
+		death_date = 1430.10.27 #1448.1.1
+		female = yes
+		adm = 2 
+		dip = 2
+		mil = 2
+	}
+}
+
+1430.10.27 = {
+	monarch = {
+		name = "Свидригайло"
+		dynasty = "Гедиминович"
 		birth_date = 1370.1.1
 		adm = 2
 		dip = 2
@@ -32,11 +450,25 @@ capital = 272 # Vilnius
 	religion = orthodox
 }
 
-1432.1.1 = {
+1430.10.27 = {
+	heir = {
+		name = "Сигизмунд"
+		monarch_name = "Сигизмунд"
+		dynasty = "Гедиминович"
+		birth_date = 1365.1.1
+		death_date = 1440.3.20
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1432.9.1 = {
 	monarch = {
-		name = "Zygimantas"
-		dynasty = Gediminai
-		birth_date = 1350.1.1
+		name = "Сигизмунд"
+		dynasty = "Гедиминович"
+		birth_date = 1365.1.1
 		adm = 0
 		dip = 3
 		mil = 1
@@ -44,22 +476,39 @@ capital = 272 # Vilnius
 	religion = catholic
 }
 
-1440.1.1 = {
+1432.9.1 = {
+	heir = {
+		name = "Михаил"
+		monarch_name = "Михаил"
+		dynasty = "Гедиминович"
+		birth_date = 1380.1.1
+		death_date = 1451.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1440.3.20 = {
 	monarch = {
-		name = "Kazimierz"
-		dynasty = Jagiellon
+		name = "Казимир IV"
+		dynasty = "Ягеллон"
 		birth_date = 1427.11.30
 		adm = 4
 		dip = 4
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = incorruptible_personality
 }
 
 1461.8.5 = {
 	heir = {
-		name = "Aleksandras"
-		monarch_name = "Aleksandras I"
-		dynasty = "Jagiello"
+		name = "Александр"
+		monarch_name = "Александр I"
+		dynasty = "Ягеллон"
 		birth_date = 1461.8.5
 		death_date = 1506.8.19
 		claim = 95
@@ -69,14 +518,14 @@ capital = 272 # Vilnius
 	}
 }
 
-1492.1.1 = { leader = {	name = "Mykola Radivil"        	type = general	rank = 5	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1565.5.28 } }
+1492.1.1 = { leader = {	name = "Микола Радивил"        	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1565.5.28 } }
 
-1492.1.1 = { leader = {	name = "Mykhaylo Glynskiy"     	type = general	rank = 5	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1505.1.1 } }
+1492.1.1 = { leader = {	name = "Михаил Глинский"     	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1505.1.1 } }
 
 1492.6.8 = {
 	monarch = {
-		name = "Aleksandras I"
-		dynasty = Jagiello
+		name = "Александр I"
+		dynasty = Ягеллон
 		birth_date = 1461.8.5
 		adm = 3
 		dip = 0
@@ -86,9 +535,9 @@ capital = 272 # Vilnius
 
 1492.6.8 = {
 	heir = {
-		name = "Zygimantas"
-		monarch_name = "Zygimantas I Stary"
-		dynasty = "Jagiello"
+		name = "Сигизмунд"
+		monarch_name = "Сигизмунд I Старый"
+		dynasty = "Ягеллон"
 		birth_date = 1467.1.1
 		death_date = 1548.4.1
 		claim = 95
@@ -98,12 +547,12 @@ capital = 272 # Vilnius
 	}
 }
 
-1497.9.12 = { leader = { name = "Kostiantyn Ostrozskiy"	type = general	rank = 3	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1530.8.10 } }
+1497.9.12 = { leader = { name = "Константин Остроцкий"	type = general	fire = 3	shock = 4	manuever = 3	siege = 1	death_date = 1530.8.10 } }
 
 1506.8.20 = {
 	monarch = {
-		name = "Zygimantas I Stary"
-		dynasty = Jagiello
+		name = "Сигизунд I Старый"
+		dynasty = Ягеллон
 		birth_date = 1467.1.1
 		adm = 3
 		dip = 3
@@ -113,9 +562,9 @@ capital = 272 # Vilnius
 
 1520.8.1 = {
 	heir = {
-		name = "Zygimantas August"
-		monarch_name = "Zygimantas II August"
-		dynasty = "Jagiello"
+		name = "Сигизмунд Август"
+		monarch_name = "Сигизмунд II Август"
+		dynasty = "Ягеллон"
 		birth_date = 1520.8.1
 		death_date = 1572.7.7
 		claim = 95
@@ -125,14 +574,14 @@ capital = 272 # Vilnius
 	}
 }
 
-1521.1.1 = { leader = {	name = "Juriy Radivil"         	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1541.4.1 } }
+1521.1.1 = { leader = {	name = "Юрий Радивил"         	type = general	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1541.4.1 } }
 
-1536.1.1 = { leader = {	name = "Andriy Nemyrovych"     	type = general	rank = 4	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1541.1.1 } }
+1536.1.1 = { leader = {	name = "Андрей Немирович"     	type = general	fire = 1	shock = 2	manuever = 3	siege = 0	death_date = 1541.1.1 } }
 
 1548.4.2 = {
 	monarch = {
-		name = "Zygimantas II August"
-		dynasty = Jagiello
+		name = "Сигизмунд II Август"
+		dynasty = Ягеллон
 		birth_date = 1520.8.1
 		adm = 3
 		dip = 3
@@ -140,8 +589,8 @@ capital = 272 # Vilnius
 	}
 }
 
-1553.1.1 = { leader = {	name = "Mykola Radivil"        	type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1616.2.28 } }
+1553.1.1 = { leader = {	name = "Микола Радивил"        	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1616.2.28 } }
 
-1559.1.1 = { leader = {	name = "Roman Sangushka"       	type = general	rank = 2	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1571.5.12 } }
+1559.1.1 = { leader = {	name = "Роман Сангушка"       	type = general	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1571.5.12 } }
 
 1572.1.1 = { government = noble_republic }

@@ -1,11 +1,203 @@
-government = feudal_monarchy
+government = rus_government
 technology_group = eastern
-### STT
+government_rank = 1
 religion = orthodox
 primary_culture = ruthenian
-capital = 279	# Volhynia
-### STT
-1434.1.1 = {
+capital = 261	# Volhynia
+
+1199.1.1 = {
+	monarch = {
+		name = "Роман"
+		dynasty = "Рюрикович"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1205.6.19 = {
+	monarch = {
+		name = "Даниил"
+		dynasty = "Рюрикович"
+		birth_date = 1201.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1254.1.1 = {
+government_rank = 2
+}
+
+1264.1.1 = {
+	monarch = {
+		name = "Шварн"
+		dynasty = "Рюрикович"
+		birth_date = 1230.1.1
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1269.1.1 = {
+	monarch = {
+		name = "Лев I"
+		dynasty = "Романович"
+		birth_date = 1228.1.1
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+1301.1.1 = {
+	monarch = {
+		name = "Юрий I"
+		dynasty = "Романович"
+		birth_date = 1252.4.24
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1308.3.18 = {
+	monarch = {
+		name = "Лев и Андрей"
+		monarch_name = "Лев и Андрей"
+		dynasty = "Романовичи"
+		birth_date = 1275.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+1308.3.18 = {
+	heir = {
+		name = "Владимир"
+		monarch_name = "Владимир"
+		dynasty = "Романович"
+		birth_date = 1305.1.1
+		death_date = 1340.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+1323.1.1 = {
+	monarch = {
+		name = "Владимир"
+		dynasty = "Романович"
+		birth_date = 1305.1.1
+		adm = 0
+		dip = 1
+		mil = 1
+	}
+}
+
+1323.1.1 = {
+	religion = catholic
+	monarch = {
+		name = "Юрий II Болеслав"
+		dynasty = "Пяст"
+		birth_date = 1308.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1340.3.21 = {
+	religion = orthodox
+	monarch = {
+		name = "Любарт"
+		dynasty = "Гедиминович"
+		birth_date = 1299.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1349.1.1 = {
+	government_rank = 1
+}
+
+1351.1.1 = {
+	heir = {
+		name = "Фёдор"
+		monarch_name = "Фёдор"
+		dynasty = "Гедиминович"
+		birth_date = 1351.1.1
+		death_date = 1431.6.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1366.1.1 = {
+	monarch = {
+		name = "Александр"
+		dynasty = "Кориатович"
+		birth_date = 1310.1.1
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1370.1.1 = {
+	monarch = {
+		name = "Любарт"
+		dynasty = "Гедиминович"
+		birth_date = 1299.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1370.1.1 = {
+	heir = {
+		name = "Фёдор"
+		monarch_name = "Фёдор"
+		dynasty = "Гедиминович"
+		birth_date = 1351.1.1
+		death_date = 1431.6.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1376.10.29 = {
+	government_rank = 2
+}
+
+1377.1.1 = {
+	government_rank = 1
+}
+
+1383.8.4 = {
+	monarch = {
+		name = "Фёдор"
+		dynasty = "Гедиминович"
+		birth_date = 1351.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1431.6.1 = {
 	monarch = {
 		name = "Свидригайло"
 		dynasty = Гедиминович
@@ -15,5 +207,16 @@ capital = 279	# Volhynia
 		adm = 2
 		dip = 2
 		mil = 3
+	}
+}
+
+1452.2.10 = {
+	monarch = {
+		name = "(Вакантно)"
+		dynasty = "Гедиминович"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

@@ -1,0 +1,2881 @@
+defeat_the_byzantine_empire = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 2 ### STT
+		149 = { is_capital = yes } ### STT
+		is_free_or_tributary_trigger = yes
+		NOT = { owns = 151 }
+		NOT = { has_country_modifier = defeated_byzantine_empire }
+		NOT = { has_country_flag = defeated_BYZ }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		owns = 151
+	}
+	chance = {
+		factor = 8000
+		modifier = {
+			factor = 2
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 2
+			BYZ = {
+				owns = 151
+				is_free_or_tributary_trigger = yes			
+			}
+		}
+		modifier = {
+			factor = 10
+			is_year = 1450
+		}
+	}
+	immediate = {
+		add_claim = 151
+	}
+	abort_effect = {
+		151 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = defeated_BYZ
+		add_country_modifier = {
+			name = "defeated_byzantine_empire"
+			duration = 3650
+		}
+	}
+}
+
+conquer_the_byzantine_empire = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = BYZ
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 3 ### STT
+		NOT = { has_country_modifier = defeated_byzantine_empire }
+		NOT = { has_country_flag = byz_empire_conquered }
+		is_free_or_tributary_trigger = yes
+		owns = 151
+		BYZ = {
+			is_neighbor_of = ROOT
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = BYZ }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = BYZ }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = BYZ }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = BYZ value = 0 } }
+		}
+		modifier = {
+			factor = 2
+			owns = 151
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = byz_empire_conquered
+		add_country_modifier = {
+			name = "defeated_byzantine_empire"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_southern_greece = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces_list = {
+		145 146 1773
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		government_rank = 3 ### STT
+		OR = {
+			145 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			146 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			1773 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_victory }
+		NOT = { has_country_flag = southern_greece_TUR_taken }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 10
+			owns = 151
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		set_country_flag = southern_greece_TUR_taken
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_serbia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = SER
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		NOT = { has_country_modifier = military_victory }
+		government_rank = 3 ### STT
+		is_free_or_tributary_trigger = yes
+		SER = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = SER }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = SER }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = SER }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = SER value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_bosnia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = BOS
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		government_rank = 3 ### STT
+		NOT = { has_country_modifier = military_victory }
+		is_free_or_tributary_trigger = yes
+		BOS = {
+			NOT = { alliance_with = ROOT }
+			is_neighbor_of = ROOT
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = BOS }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = BOS }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = BOS }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = BOS value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+}
+
+
+retake_smyrna = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = AYD
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		is_free_or_tributary_trigger = yes
+		AYD = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = AYD }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = AYD }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = AYD }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = AYD value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		every_target_province = {
+			add_province_modifier = {
+				name = "faster_integration"
+				duration = 3650
+			}
+		}
+	}
+}
+
+
+vassalize_wallachia = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		is_subject = no
+		government_rank = 2 ### STT
+		NOT = { has_country_modifier = military_vassalization }
+		WAL = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = WAL }
+			WAL = { is_subject_other_than_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = WAL
+				}
+			}
+		}
+	}
+	success = {
+		WAL = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = WAL value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = WAL
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = WAL
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = WAL
+			}
+		}
+	}
+}
+
+
+vassalize_transylvania = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		is_subject = no
+		government_rank = 3 ### STT
+		NOT = { has_country_modifier = military_vassalization }
+		TRA = {
+			is_subject = no
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = TRA }
+			TRA = { is_subject_other_than_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = TRA
+				}
+			}
+		}
+	}
+	success = {
+		TRA = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = TRA value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = TRA
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = TRA
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = TRA
+			}
+		}
+	}
+}
+
+
+defeat_the_knights = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = TUR
+			tag = TU0
+			tag = TRK ### STT
+			tag = AYD
+			tag = MEN
+		}
+		num_of_ports = 1 ### STT
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = defeat_the_knights_flag }
+		is_free_or_tributary_trigger = yes
+		KNI = {
+			owns = 320		# Rhodes
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			AND = {
+				KNI = { NOT = { owns = 320 } }
+				NOT = { owns = 320 }
+			}
+		}
+	}
+	success = {
+		owns = 320
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = KNI value = 0 } }
+		}
+	}
+	immediate = {
+		add_claim = 320
+	}
+	abort_effect = {
+		320 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = defeat_the_knights_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+take_crete_from_venice = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		owns = 151
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = take_crete_from_venice_flag }
+		is_free_or_tributary_trigger = yes
+		VEN = {
+			owns = 163
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			AND = {
+				VEN = { NOT = { owns = 163 } }
+				NOT = { owns = 163 }
+			}
+		}
+	}
+	success = {
+		owns = 163
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = VEN value = 0 } }
+		}
+	}
+	immediate = {
+		add_claim = 163
+	}
+	abort_effect = {
+		163 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = take_crete_from_venice_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+muslim_asia_minor = {
+	
+	type = country
+
+	category = ADM
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = TUR
+			tag = TU0 ### STT
+			tag = TRK ### STT
+			tag = AYD 
+			tag = CND 
+			tag = DUL 
+			tag = KAR 
+			tag = SRU 
+			tag = MEN 
+			tag = RAM 
+			tag = ERE 
+			tag = GRM
+		}
+		religion_group = muslim
+		is_at_war = no
+		owns = 151
+		NOT = { exists = BYZ }
+		anatolia_region = {
+			owned_by = ROOT
+			religion_group = christian
+		}
+		NOT = { has_country_modifier = force_converted_province_mission }
+		NOT = { has_country_flag = muslim_asia_minor_mission }
+	}
+	abort = {
+		NOT = { religion_group = muslim  }
+	}
+	success = {
+		NOT = { 
+			anatolia_region = { 
+				owned_by =  ROOT
+				NOT = { religion_group = muslim  }
+			} 
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			exists = TRE
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = deus_vult
+		}
+	}
+	effect = {
+		set_country_flag = muslim_asia_minor_mission
+		add_country_modifier = {
+			name = force_converted_province_mission
+			duration = 3650
+		}
+	}
+}
+
+take_kaffa = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		is_free_or_tributary_trigger = yes
+		owns = 151
+		NOT = { owns = 285 }		# Kaffa
+		285 = {
+			owner = {
+				religion_group = christian
+				NOT = { alliance_with = ROOT }
+				NOT = { war_with = ROOT }
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
+			}
+		}
+		NOT = { has_country_modifier = black_sea_ambition }
+		NOT = { has_country_flag = take_kaffa_mission }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		owns = 285
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 3
+			mil = 4
+		}
+	}
+	immediate = {
+		add_claim = 285
+	}
+	abort_effect = {
+		285 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = take_kaffa_mission
+		add_country_modifier = {
+			name = "black_sea_ambition"
+			duration = 730
+		}
+	}
+}
+
+conquer_levant = {
+   
+    type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		aleppo_area
+		syria_area
+		palestine_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+    allow = {
+		normal_or_historical_nations = yes
+        OR = { tag = TUR tag = TRK } ### STT
+        is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquest_of_levant_mission }
+		any_neighbor_country = {
+			any_owned_province = {
+				OR = {
+					area = aleppo_area
+					area = syria_area
+					area = palestine_area
+				}
+			}
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+		}
+    }
+    abort = {
+        is_subject_other_than_tributary_trigger = yes
+    }
+    success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+    }
+    chance = {
+        factor = 10000
+        modifier = {
+           factor = 2
+           num_of_cities = 40
+        }
+    }
+    immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+    }
+    abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+    }
+    effect = {
+		set_country_flag = conquest_of_levant_mission
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+    }
+}
+
+conquer_egypt = {
+   
+    type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		delta_area
+		bahari_area
+		said_area
+		vostani_area
+		al_wahat_area
+		gulf_of_arabia_area
+		cyrenaica_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+    allow = {
+		normal_or_historical_nations = yes
+        OR = { tag = TUR tag = TRK } ### STT
+		owns = 379 # Judea
+        is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquest_of_egypt_mission }
+		any_neighbor_country = {
+			any_owned_province = {
+				OR = {
+					area = delta_area
+					area = bahari_area
+					area = vostani_area
+					area = said_area
+					area = al_wahat_area
+					area = gulf_of_arabia_area
+					area = cyrenaica_area
+				}
+			}
+			NOT = { alliance_with = ROOT }
+			NOT = { war_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+    }
+    abort = {
+        is_subject_other_than_tributary_trigger = yes
+    }
+    success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+    }
+    chance = {
+        factor = 2000
+        modifier = {
+           factor = 10
+           owns = 379 # Judea
+        }
+    }
+    immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+    }
+    abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+    }
+    effect = {
+		set_country_flag = conquest_of_egypt_mission
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+    }
+}
+
+safeguard_eastern_anatolia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		north_kurdistan_area
+		armenia_area
+		erzurum_area
+		dulkadir_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		government_rank = 2 ### STT
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		NOT = { has_country_modifier = military_victory }
+		owns = 329
+		OR = {
+			north_kurdistan_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			armenia_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			erzurum_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			dulkadir_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 5
+			owns = 151 # Constantinople
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+vassalize_dulkadir = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0} ### STT
+		is_free_or_tributary_trigger = yes
+		government_rank = 2 ### STT
+		NOT = { has_country_modifier = military_vassalization }
+		DUL = {
+			is_free_or_tributary_trigger = yes
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = DUL }
+			DUL = { is_free_or_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = DUL
+				}
+			}
+		}
+	}
+	success = {
+		OR = { ### STT
+			DUL = { vassal_of = TUR }
+			DUL = { vassal_of = TU0 }
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = DUL value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = DUL
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = DUL
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = DUL
+			}
+		}
+	}
+}
+
+vassalize_ramazan = {
+
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0} ### STT
+		is_free_or_tributary_trigger = yes
+		government_rank = 2 ### STT
+		NOT = { has_country_modifier = military_vassalization }
+		RAM = {
+			is_free_or_tributary_trigger = yes
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = RAM }
+			RAM = { is_free_or_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = RAM
+				}
+			}
+		}
+	}
+	success = {
+		RAM = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = RAM value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = RAM
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = RAM
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = RAM
+			}
+		}
+	}
+}
+
+conquer_mesopotamia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		iraq_arabi_area
+		basra_area
+		al_jazira_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		NOT = { has_country_modifier = indian_ocean_ambition }
+		owns = 382 #Damascus
+		OR = {
+			iraq_arabi_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			basra_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+			al_jazira_area = {
+				NOT = { owned_by = ROOT }
+				NOT = { owner = { alliance_with = ROOT } }
+				NOT = { owner = { is_subject_of = ROOT } }
+				NOT = { owner = { overlord_of = ROOT } }
+			}
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 418 # Kurdistan
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_mesopotamia_flag
+		add_country_modifier = {
+			name = "indian_ocean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_hedjaz = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		hejaz_area #STT
+		#tabuk_area #STT
+		#sarat_area #STT
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		owns = 358
+		hejaz_area = { ### STT -2
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		# tabuk_area = { ### STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
+		# sarat_area = { ### STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = indian_ocean_ambition }
+		NOT = { has_country_flag = conquer_hedjaz_flag }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 361 # Cairo
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_hedjaz_flag
+		add_country_modifier = {
+			name = "indian_ocean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_mocha = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		tihama_al_yemen_area
+		yemen_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		OR = {
+			owns_core_province = 2315
+			owns_core_province = 2321
+			owns_core_province = 2331
+		}
+		# tihama_al_yemen_area = { ### STT
+			# NOT = { owned_by = ROOT }
+			# NOT = { owner = { alliance_with = ROOT } }
+			# NOT = { owner = { is_subject_of = ROOT } }
+			# NOT = { owner = { overlord_of = ROOT } }
+		# }
+		yemen_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = indian_ocean_ambition }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 386 # Bishah
+		}
+		modifier = {
+			factor = 2
+			owns = 4278 # Qunfudah
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_mocha
+		add_country_modifier = {
+			name = "indian_ocean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_haasa = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		bahrain_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		NOT = { has_country_flag = conquer_haasa_flag }
+		NOT = { has_country_modifier = indian_ocean_ambition }
+		owns = 408 #Basrah
+		is_free_or_tributary_trigger = yes
+		bahrain_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 408 # Basra
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_haasa_flag
+		add_country_modifier = {
+			name = "indian_ocean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_trebizond = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ### STT
+		owns = 328
+		NOT = { owns = 330 } # Trebizond
+		330 = {
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = black_sea_ambition }
+		NOT = { has_country_flag = conquer_trebizond_flag }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		owns = 330
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 3
+			owns = 151 # Constantinople
+		}
+	}
+	immediate = {
+		add_claim = 330
+	}
+	abort_effect = {
+		330 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_trebizond_flag
+		add_country_modifier = {
+			name = "black_sea_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_tripolitania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		tripolitania_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		owns = 358
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquer_tripolitania_flag }
+		tripolitania_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 151 # Constantinople
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_tripolitania_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_tunisia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		tunisia_area
+		djerba_area
+		kabylia_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		OR = {
+			owns = 358 #Tripoli
+			owns = 2954 #Djerba
+		}
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquer_tunisia_flag }
+		tunisia_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			owns = 151 # Constantinople
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_tunisia_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+subjugate_algiers = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		owns = 341 # Tunis
+		owns = 354 # Tripoli
+		is_subject = no
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = subjugate_algiers_flag }
+		ALG = {
+			exists = yes
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = ALG }
+			ALG = { is_subject_other_than_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = ALG
+				}
+			}
+		}
+	}
+	success = {
+		ALG = { vassal_of = ROOT } ### STT
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = ALG value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = ALG
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = ALG
+		}
+	}
+	effect = {
+		set_country_flag = subjugate_algiers_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = ALG
+			}
+		}
+	}
+}
+
+
+conquer_algeria = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		algiers_area
+	}
+	
+	target_provinces = {
+		owner = {
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ### STT
+		owns = 341 # Tunis
+		owns = 354 # Tripoli
+		NOT = { has_country_modifier = mediterranean_ambition }
+		NOT = { has_country_flag = conquer_algeria_flag }
+		NOT = { exists = ALG }
+		algiers_area = {
+			NOT = { owned_by = ROOT }
+			NOT = { owner = { alliance_with = ROOT } }
+			NOT = { owner = { is_subject_of = ROOT } }
+			NOT = { owner = { overlord_of = ROOT } }
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 5000
+		modifier = {
+			factor = 2
+			owns = 151 # Constantinople
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		set_country_flag = conquer_algeria_flag
+		add_country_modifier = {
+			name = "mediterranean_ambition"
+			duration = 3650
+		}
+	}
+}
+
+conquer_bulgaria = { ### STT 11 missions
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes	
+	
+	target_provinces = {
+		owned_by = BUL
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		NOT = { has_country_modifier = military_victory }
+		is_free_or_tributary_trigger = yes
+		BUL = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = BUL }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = BUL }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = BUL }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 4000
+		modifier = {
+			factor = 3
+			NOT = { has_opinion = { who = BUL value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+}
+
+conquer_angora = {
+type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		province_id = 326
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { owns = 316 owns = 2296}
+		326 = {
+			NOT = { owned_by = ROOT }
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				NOT = { overlord_of = ROOT }
+				NOT = { alliance_with = ROOT }
+			}
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2500
+		modifier = {
+			factor = 5
+			owns = 316
+		}
+		modifier = {
+			factor = 10
+			owns = 2299
+		}
+		modifier = {
+			factor = 10
+			owns = 323
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = national_merchants
+			duration = 7300
+		}
+	}
+}
+
+conquer_albania = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		owned_by = ALB
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		NOT = { has_country_modifier = military_victory }
+		is_free_or_tributary_trigger = yes
+		ALB = {
+			is_neighbor_of = ROOT
+			NOT = { alliance_with = ROOT }
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = ALB }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = ALB }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = ALB }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2500
+		modifier = {
+			factor = 3
+			NOT = { has_opinion = { who = ALB value = 0 } }
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = relief_from
+			duration = 3650
+		}
+	}
+}
+
+vassalize_moldavia = {
+
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TRK } ###STT
+		is_subject = no
+		government_rank = 3 #STT
+		NOT = { has_country_modifier = military_vassalization }
+		MOL = {			
+			is_neighbor_of = ROOT
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 50 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = MOL }
+			MOL = { is_subject_other_than_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = MOL
+				}
+			}
+		}
+	}
+	success = {
+		MOL = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = MOL value = 0 } }
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = MOL
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = MOL
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_vassalization
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = MOL
+			}
+		}
+	}
+}
+
+ellada_strand = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 2296
+			province_id = 3107
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = TU0
+		OR = {
+			2296 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3107 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 10
+			owns = 151
+		}
+		modifier = {
+			factor = 5
+			owns = 317
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = the_beating_of_the_drums
+			duration = 3650
+		}
+	}
+}
+
+conquer_kastamonu = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 2299
+			province_id = 316
+			province_id = 325
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = TU0
+		owns = 317
+		OR = {
+			2299 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			316 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			325 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 10
+			owns = 316
+		}
+		modifier = {
+			factor = 5
+			owns = 2296
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = ned_shipbuilding_industry
+			duration = 7300
+		}
+		add_country_modifier = {
+			name = shipyard_fire
+			duration = 7300
+		}		
+	}
+}
+
+conquer_edirne = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 149
+			province_id = 3105
+			province_id = 3106
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = TU0
+		owns = 317
+		OR = {
+			3106 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3105 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			149 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 5
+			owns = 316
+		}
+		modifier = {
+			factor = 5
+			owns = 2296
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = conquerors_presence
+			duration = 3650
+		}
+	}
+}
+
+conquer_southern_bolgaria = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 1764
+			province_id = 3259
+			province_id = 2750
+			province_id = 3264
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		owns = 149
+		OR = {
+			1764 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3259 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			2750 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3264 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 5
+			owns = 151
+		}
+		modifier = {
+			factor = 10
+			owns = 3106
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+}
+
+conquer_macedonia = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 148
+			province_id = 1853
+			province_id = 3001
+			province_id = 1765
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { owns = 3264 owns = 2750 }
+		OR = {
+			148 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			1853 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3001 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			1765 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = military_victory }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 2500
+		modifier = {
+			factor = 5
+			owns = 151
+		}
+		modifier = {
+			factor = 10
+			owns = 3264
+		}
+		modifier = {
+			factor = 10
+			owns = 2750
+		}		
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = a_batch_of_western_muskets
+			duration = 3650
+		}
+	}
+}
+
+danube_water = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 3096
+			province_id = 3285
+			province_id = 159
+			province_id = 150
+			province_id = 3260
+			province_id = 3746			
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = { tag = TUR tag = TU0 tag = TRK } ###STT
+		OR = { owns = 1764 owns = 2750 }
+		OR = {
+			3096 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3285 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			159 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			150 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3260 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}
+			3746 = {
+				NOT = { owned_by = ROOT }
+				owner = {
+					NOT = { is_subject_of = ROOT }
+					NOT = { overlord_of = ROOT }
+					NOT = { alliance_with = ROOT }
+				}
+			}			
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_modifier = defensive_modifier }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 1500
+		modifier = {
+			factor = 5
+			owns = 151
+		}
+		modifier = {
+			factor = 20
+			AND = { owns = 3264 owns = 2750 }
+		}	
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			remove_claim = ROOT
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = defensive_modifier
+			duration = 3650
+		}
+	}
+}
+
+edirne_capital = {
+
+	type = country
+	
+	ai_mission = yes
+	
+	target_provinces = {
+		OR = {
+			province_id = 3264
+			province_id = 3259
+			province_id = 1764
+			province_id = 3106
+			province_id = 3105
+			province_id = 149			
+		}
+		owner = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { alliance_with = ROOT }
+		}
+	}
+	
+	category = ADM
+	
+	allow = {
+			tag = TU0
+			owns = 149				
+			149 = { is_capital = no }
+			NOT = { government_rank = 3 }
+			}			
+	success = {
+		149 = { is_capital = yes }
+		all_target_province = {
+		owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 10000
+	}
+	effect = {
+		add_prestige = 25
+		149 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		if = { 
+		limit = { NOT = { government_rank = 2 } }
+		set_government_rank = 2
+		}
+		add_country_modifier = {
+			name = western_embassy_mission
+			duration = 7300
+		}		
+	}
+}

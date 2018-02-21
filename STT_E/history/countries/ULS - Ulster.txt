@@ -1,5 +1,36 @@
 government = feudal_monarchy
+government_rank = 1
 technology_group = western
-primary_culture = irish
 religion = catholic
-capital = 372 # Dublin
+primary_culture = irish
+capital = 372	# Ulster
+
+1444.1.1 = { #Maggins clan gained control of much of this province following the collapse of English control of the Earldom of Ulster. Date and name fictional as we haven't found a list of these Magginses.
+	monarch = {
+		name = "Арт Ро"
+		dynasty = "Маггинс"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1480.1.1 = { #Also Fictional
+	monarch = {
+		name = "Донал"
+		dynasty = "Маггинс"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1500.1.1 = { #Date unknown
+	monarch = {
+		name = "Артур"
+		dynasty = "Маггинс"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

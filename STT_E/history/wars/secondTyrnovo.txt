@@ -1,0 +1,16 @@
+name = "Второе Тырновское восстание"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = BUL
+}
+
+1686.1.1 = {
+	add_attacker = BUL
+	add_defender = TUR
+}
+
+1686.9.1 = {
+	rem_attacker = BUL
+	rem_attacker = TUR
+}

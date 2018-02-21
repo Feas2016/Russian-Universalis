@@ -1,0 +1,52 @@
+name = "Великая Война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 271
+}
+
+1409.5.1 = {
+	add_attacker = LIT
+	add_attacker = POL
+	add_attacker = MOL
+	add_attacker = MAZ
+	add_defender = TEU
+	add_defender = HUN
+	add_defender = CRO
+	add_defender = STT
+}
+
+1410.6.15 = { 
+	battle = { 
+		name = "Грюнвальдская битва" 
+		location = 2958
+		attacker = { 
+			commander = "Владислав II Ягайло"
+			infantry = 39000
+			cavalry = 0
+			artillery = 0
+			losses = 25		# percent 
+			country = POL
+		} 
+		defender = { 
+			commander = "Ульрих фон Юнгинген"
+			infantry = 27000
+			cavalry = 0
+			artillery = 0
+			losses = 90		# percent 
+			country = TEU
+		} 
+		result = yes
+	} 
+}
+
+1411.2.1 = {
+	rem_attacker = LIT
+	rem_attacker = POL
+	rem_attacker = MOL
+	rem_attacker = MAZ
+	rem_defender = TEU
+	rem_defender = HUN
+	rem_defender = CRO
+	rem_defender = STT
+}

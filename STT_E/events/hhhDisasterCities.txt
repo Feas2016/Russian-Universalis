@@ -1,0 +1,34 @@
+###########################################################
+# Events for the Cossack Estate
+#
+# written by Henrik Lohmander
+###########################################################
+
+namespace = hhh_estate_disasters
+
+country_event = {
+	id = hhh_estate_disasters.1
+	title = hhh_estate_disasters.1.t
+	desc = hhh_estate_disasters.1.d
+	picture = CIVIL_WAR_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	trigger = {
+		has_country_flag = hhh_disaster
+		government = greek_monarchy
+	}
+	
+	immediate = {
+		set_country_flag = hhh_estate_triggered
+	}
+	
+	option = {
+		name = estate_disasters.10.a	
+		create_independent_estate = estate_hhh
+		clr_country_flag = hhh_disaster 
+	}
+}
+
+
+

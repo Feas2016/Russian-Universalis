@@ -7,7 +7,7 @@ religion = catholic
 hre = no 
 base_tax = 3 
 base_production = 3
-trade_goods = grain
+trade_goods = livestock
 base_manpower = 2
 capital = "Potenza"
 is_city = yes 
@@ -36,3 +36,9 @@ discovered_by = ottoman
 	remove_core = SPA
 }
 1734.6.2 = { owner = NAP controller = NAP remove_core = HAB }
+1861.3.14 = {
+	add_core = ITA
+	owner = ITA
+	controller = ITA
+	remove_core = NAP
+}

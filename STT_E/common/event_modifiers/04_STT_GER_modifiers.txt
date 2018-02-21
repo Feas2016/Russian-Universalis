@@ -4,13 +4,22 @@
 ##################################################################################################
 
 ger_hommage = {
-	prestige = 1
+	prestige = -1
+	global_tax_modifier = -0.05
 	#icon = 6
 }
 
-ger_landtag = {
+ger_yeslandtag = {
 	adm_tech_cost_modifier = -0.05
 	global_tax_modifier = 0.05
 	stability_cost_modifier = 0.15
+	diplomatic_reputation = -1
+	#icon = 5
+}
+
+ger_nolandtag = {
+	global_tax_modifier = -0.02
+	stability_cost_modifier = -0.05
+	diplomatic_reputation = 1
 	#icon = 5
 }

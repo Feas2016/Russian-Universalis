@@ -1,26 +1,30 @@
 government = iqta
 technology_group = indian
 religion = sunni
-primary_culture = bihari
+primary_culture = bihari ### STT
 capital = 555	# Jaunpur
 fixed_capital = 555 # Cannot move capital away from this province & no power cost to move to it
+religious_school = hanafi_school
 
 #Sultans of Jaunpur
 1399.1.1 = {
 	monarch = {
-		name = "Mubarak Shah" #Malik Qaranfal took this name when he became ruler
-		dynasty = "Sharqi"
+		name = "Мубаррак Шах" #Malik Qaranfal took this name when he became ruler
+		dynasty = "Шарки"
+		claim = 75
+		birth_date = 1360.1.1
+		death_date = 1410.1.1
 		ADM = 2
-		DIP = 1
+		DIP = 5
 		MIL = 3
 	}
 }
 
 1399.1.1 = {
 	heir = {
-		name = "Malik Qaranfal"
-		monarch_name = "Mubarrak Shah"
-		dynasty = "Sharqi"
+		name = "Малик Каранфал"
+		monarch_name = "Мубаррак Шах"
+		dynasty = "Шарки"
 		claim = 75
 		birth_date = 1370.1.1
 		death_date = 1402.1.1
@@ -32,9 +36,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1401.1.1 = {
 	heir = {
-		name = "Ibrahim"
-		monarch_name = "Ibrahim Shah"
-		dynasty = "Sharqi"
+		name = "Ибрагим"
+		monarch_name = "Ибрагим Шах"
+		dynasty = "Шарки"
 		birth_date = 1380.1.1
 		death_date = 1436.1.1
 		claim = 95
@@ -46,8 +50,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 	
 1402.1.1 = {
 	monarch = {
-		name = "Ibrahim Shah"
-		dynasty = "Sharqi"
+		name = "Ибрагим Шах"
+		dynasty = "Шарки"
 		ADM = 2
 		DIP = 1
 		MIL = 3
@@ -56,9 +60,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1402.1.1 = {
 	heir = {
-		name = "Mahmud"
-		monarch_name = "Mahmud Shah"
-		dynasty = "Sharqi"
+		name = "Махмуд"
+		monarch_name = "Махмуд Шах"
+		dynasty = "Шарки"
 		claim = 95
 		birth_date = 1402.1.1
 		death_date = 1457.1.1
@@ -70,19 +74,18 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1436.1.1 = {
 	monarch = {
-		name = "Mahmud Shah"
-		dynasty = "Sharqi"
+		name = "Махмуд Шах"
+		dynasty = "Шарки"
 		ADM = 5
 		DIP = 2
 		MIL = 2
 	}
-}
-
-1436.1.1 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 	heir = {
-		name = "Bhikhan"
-		monarch_name = "Muhammad Shah"
-		dynasty = "Sharqi"
+		name = "Бхикан"
+		monarch_name = "Мухаммед Шах"
+		dynasty = "Шарки"
 		claim = 95
 		birth_date = 1436.1.1
 		death_date = 1458.6.1
@@ -90,25 +93,28 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 1
 		MIL = 2
 	}
+	add_heir_personality = naive_personality
 }
 
 1457.1.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Sharqi"
+		name = "Мухаммед Шах"
+		dynasty = "Шарки"
 		ADM = 3
 		DIP = 1
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
 }
 
 #While Muhammad Shah is away his brother hussain usurps the throne
 
 1457.1.1 = {
 	heir = {
-		name = "Hussain"
-		monarch_name = "Hussain Shah"
-		dynasty = "Sharqi"
+		name = "’уссейн"
+		monarch_name = "’уссейн Шах"
+		dynasty = "Шарки"
 		birth_date = 1437.1.1
 		death_date = 1486.1.1
 		claim = 85
@@ -116,16 +122,20 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 		DIP = 0
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = strict_personality
 }
 
 1458.6.1 = {
 	monarch = {
-		name = "Hussain Shah"
-		dynasty = "Sharqi"
+		name = "Хуссейн Шах"
+		dynasty = "Шарки"
 		ADM = 4
 		DIP = 0
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
 }
 
 #Delhi sultan inserts his own son on the throne of Jaunpur 1486, annexation in anything but name
@@ -133,8 +143,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 #Surs
 1553.1.1 = {
 	monarch = {
-		name = "Adil"
-		dynasty = "Suri"
+		name = "јдиль"
+		dynasty = "—ури"
 		ADM = 2
 		DIP = 2
 		MIL = 3
@@ -143,9 +153,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1553.1.1 = {
 	heir = {
-		name = "Sher Khan"
-		monarch_name = "Sher Khan"
-		dynasty = "Suri"
+		name = "Шер ’ан"
+		monarch_name = "Шер ’ан"
+		dynasty = "—ури"
 		birth_date = 1520.1.1
 		death_date = 1561.1.1
 		claim = 85
@@ -157,8 +167,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1557.4.1 = {
 	monarch = {
-		name = "Sher Khan"
-		dynasty = "Suri"
+		name = "Шер ’ан"
+		dynasty = "—ури"
 		ADM = 1
 		DIP = 1
 		MIL = 4
@@ -169,8 +179,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1738.1.1 = {
 	monarch = {
-		name = "Balwant Singh"
-		dynasty = "Narayan"
+		name = "Балванг Сингх"
+		dynasty = "Нараян"
 		ADM = 3
 		DIP = 3
 		MIL = 3
@@ -181,9 +191,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1740.1.1 = {
 	heir = {
-		name = "Chait Singh"
-		monarch_name = "Chait Singh"
-		dynasty = "Narayan"
+		name = "Чайт Сингх"
+		monarch_name = "Чайт Сингх"
+		dynasty = "Нараян"
 		birth_date = 1730.1.1
 		death_date = 1810.1.1
 		claim = 95
@@ -195,8 +205,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1770.8.19 = {
 	monarch = {
-		name = "Chait Singh"
-		dynasty = "Narayan"
+		name = "Чайт Сингх"
+		dynasty = "Нараян"
 		ADM = 2
 		DIP = 3
 		MIL = 2
@@ -205,9 +215,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1770.8.19 = {
 	heir = {
-		name = "Mahipat Singh"
-		monarch_name = "Mahipat Singh"
-		dynasty = "Narayan"
+		name = "Махипат Сингх"
+		monarch_name = "Махипат Сингх"
+		dynasty = "Нараян"
 		birth_date = 1756.1.1
 		death_date = 1795.9.12
 		claim = 95
@@ -219,8 +229,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1781.9.14 = {
 	monarch = {
-		name = "Mahipat Singh"
-		dynasty = "Narayan"
+		name = "Махипат Сингх"
+		dynasty = "Нараян"
 		ADM = 2
 		DIP = 1
 		MIL = 2
@@ -229,9 +239,9 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1781.9.14 = {
 	heir = {
-		name = "Udit Singh"
-		monarch_name = "Udit Singh"
-		dynasty = "Narayan"
+		name = "Удит Сингх"
+		monarch_name = "Удит Сингх"
+		dynasty = "Нараян"
 		birth_date = 1770.1.1
 		death_date = 1835.4.4
 		claim = 95
@@ -243,8 +253,8 @@ fixed_capital = 555 # Cannot move capital away from this province & no power cos
 
 1795.9.12 = {
 	monarch = {
-		name = "Udit Singh"
-		dynasty = "Narayan"
+		name = "Удит Сингх"
+		dynasty = "Нараян"
 		ADM = 0
 		DIP = 1
 		MIL = 1

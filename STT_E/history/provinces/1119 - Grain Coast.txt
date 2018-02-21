@@ -2,7 +2,7 @@
 
 culture = dyola
 religion = shamanism
-capital = "Mesurado"
+capital = "Месурадо"
 trade_goods = unknown #Malaguetta Pepper dominant in early eras
 hre = no
 base_tax = 1
@@ -27,3 +27,18 @@ discovered_by = BEN
 1680.1.1 = { unrest = 7 } #Karou Invasions destablilize Region
 1687.1.1 = { unrest = 0 } #Karou Establish hegemonic presence in region
 1760.1.1 = { unrest = 7 } #Soso Invasions reach region, disrupt societies in area
+
+1828.1.1 = { 
+	owner = USA
+	controller = USA
+	add_core = USA
+	culture = american
+	religion = protestant
+	capital = "Бьюкенен"
+	trade_goods = fish
+}
+1847.7.26 = {
+	owner = LIB
+	controller = LIB
+	add_core = LIB
+}

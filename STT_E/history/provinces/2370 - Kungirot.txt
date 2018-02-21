@@ -1,22 +1,24 @@
 # 2370 - Kungirot
 
-owner = NOG
-controller = NOG
+owner = GLH			### STT
+controller = GLH	### STT
 culture = nogaybak
 religion = sunni
-capital = "Kungirot"
-trade_goods = wool
+capital = "Кунгирот"	### STT
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = NOG
+add_core = GLH		### STT
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+1444.1.1 = { owner = NOG controller = NOG add_core = NOG }	### STT
 1520.1.1 = {
 	owner = KZH
 	controller = KZH
@@ -30,4 +32,5 @@ discovered_by = nomad_group
 	add_core = KHI
 	remove_core = KZH
 } # Khan of Khiva builds Mangyshlak fortress
-1717.1.1 = { discovered_by = RUS }
+1717.1.1 = { discovered_by = TSR }	### STT
+1873.8.24 = { owner = RUS add_core = RUS controller = RUS }	### STT

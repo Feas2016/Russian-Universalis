@@ -1,0 +1,48 @@
+#4395 - Hisn Kayfa
+
+owner = HUL			### STT
+controller = HUL	### STT
+culture = kurdish
+religion = sunni
+capital = "Hisn Kayfa"	### STT
+trade_goods = wool
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = IRQ
+add_core = HSN	### STT
+add_core = HUL	### STT
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = indian
+
+1335.1.1 = { owner = AKK add_core = AKK controller = AKK }	### STT
+1382.1.1 = { owner = QAR controller = QAR add_core = QAR }	### STT
+1401.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1406.1.1 = { owner = QAR controller = QAR }	### STT
+1444.1.1 = { owner = HSN controller = HSN add_core = HSN remove_core = QAR }	### STT
+1462.1.1 = {
+	owner = AKK
+	controller = AKK
+	add_core = AKK
+}
+1507.1.1 = {
+	owner = HSN
+	controller = HSN
+	add_core = HSN
+	remove_core = AKK
+} # Independence
+1514.8.23 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Diyarbakir conquered by Ottomans, Van remains Persian
+1549.12.1 = { remove_core = PER } # Part of the Ottoman empire
+1771.1.1 = { unrest = 4 } # Ali Bey gained control of Syria, reconstituting the Mamluk state
+1772.1.1 = { unrest = 0 }

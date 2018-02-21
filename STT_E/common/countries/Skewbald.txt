@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = muslimgfx
+graphical_culture = asiangfx
 
 color = { 201  79  95 }
 
@@ -30,96 +30,112 @@ historical_units = {
 }
 
 monarch_names = {
-	"Abdul-Karim #0" = 40
-	"Abdul-Latif #0" = 20
-	"Abdul-Rahman #0" = 40
-	"Abdullah #0" = 20
-	"Agalak #0" = 20
-	"Ahmad #0" = 50
-	"Ak Kцbek #0" = 40
-	"Ali Beg #0" = 20
-	"Arab Shah #0" = 20
-	"Arslan #0" = 20
-	"Baraq #0" = 30
-	"Bek Bulat #0" = 20
-	"Bolaq #0" = 20
-	"Cherkes #0" = 20
-	"Chokra #0" = 20
-	"Daniyal #0" = 20
-	"Darwish #0" = 20
-	"Darwish Ali #0" = 20
-	"Devlet Berdi #0" = 20
-	"Edigu #0" = 20
-	"Hajji Muhammad #0" = 20
-	"Husayn #0" = 30
-	"Ibak #0" = 20
-	"Ibrahim #0" = 50
-	"Ilham #0" = 20
-	"Ishim #0" = 20
-	"Jabbar Berdi #0" = 20
-	"Jalal al-Din #0" = 20
-	"Jan Ali #0" = 20
-	"Janay #0" = 20
-	"Jani Beg #0" = 20
-	"Jumaduq #0" = 20
-	"Karim Berdi #0" = 20
-	"Kebek #0" = 20
-	"Khalil #0" = 30
-	"Khaqan Beg #0" = 20
-	"Kьchьk Muhammad #0" = 40
-	"Kuchum #0" = 20
-	"Mahmud #0" = 80
-	"Mahmudak #0" = 50
-	"Mamai #0" = 20
-	"Mamuk #0" = 30
-	"Mansur #0" = 20
-	"Muhammad #0" = 50
-	"Murtaza #0" = 20
-	"Mustafa Ali #0" = 20
-	"Nogai #0" = 20
-	"Pulad #0" = 20
-	"Pulad Timur #0" = 20
-	"Qadir Berdi #0" = 20
-	"Qasim #0" = 60
-	"Sain Bulat #0" = 20
-	"Satilghan #0" = 20
-	"Sayid Ahmad #0" = 60
-	"Sayid Burhan #0" = 20
-	"Sayid Mahmud #0" = 20
-	"Shadi Beg #0" = 20
-	"Shah Ali #0" = 20
-	"Shaikh Ahmad #0" = 20
-	"Shaikh Awliar #0" = 20
-	"Shaikh Haidar #0" = 20
-	"Shiban #0" = 20
-	"Taibugha #0" = 20
-	"Timur #0" = 20
-	"Timur Qutlugh #0" = 20
-	"Toqtamish #0" = 20
-	"Ulugh Muhammad #0" = 40
-	"Urus #0" = 20
-	"Urus Muhammad #0" = 20
-	"Yadigar Muhammad #0" = 20
-	"Yamghurchi #0" = 20
+	"Абдул-Карим #0" = 40
+	"Абдул-Латиф #0" = 20
+	"Абдул-Рахман #0" = 40
+	"Абдулла #0" = 20
+	"Агалак #0" = 20
+	"Ахмед #0" = 50
+	"Ак Кубек #0" = 40
+	"Алибек #0" = 20
+	"Араб Шах #0" = 20
+	"Арслан #0" = 20
+	"Барак #0" = 30
+	"Бекбулат #0" = 20
+	"Болак #0" = 20
+	"Черкес #0" = 20
+	"Чокра #0" = 20
+	"Даниял #0" = 20
+	"Дарвиш #0" = 20
+	"Дарвиш Али #0" = 20
+	"Девлет Берди #0" = 20
+	"Едигей #0" = 20
+	"Хаджи Муххамад #0" = 20
+	"Хусейн #0" = 30
+	"Ибак #0" = 20
+	"Ибрагим #0" = 50
+	"Ильхам #0" = 20
+	"Ишим #0" = 20
+	"Джаббар Берди #0" = 20
+	"Джалал аль-Дин #0" = 20
+	"Джан Али #0" = 20
+	"Джанай #0" = 20
+	"Джанибек #0" = 20
+	"Джумадук #0" = 20
+	"Карим Берди #0" = 20
+	"Кебек #0" = 20
+	"Халил #0" = 30
+	"Хакан Бек #0" = 20
+	"Кычак Мухаммад #0" = 40
+	"Кучум #0" = 20
+	"Махмуд #0" = 80
+	"Махмудак #0" = 50
+	"Мамай #0" = 20
+	"Мамук #0" = 30
+	"Мансур #0" = 20
+	"Мухаммад #0" = 50
+	"Муртаза #0" = 20
+	"Мустафа Али #0" = 20
+	"Ногай #0" = 20
+	"Пулад #0" = 20
+	"Пулад Тимур #0" = 20
+	"Кадир Берди #0" = 20
+	"Касим #0" = 60
+	"Саин Булат #0" = 20
+	"Сатилган #0" = 20
+	"Сайид-Ахмад #0" = 60
+	"Сайид-Бурхан #0" = 20
+	"Сайид-Махмуд #0" = 20
+	"Шадибек #0" = 20
+	"Шах-Али #0" = 20
+	"Шейх Ахмад #0" = 20
+	"Шейх Авлиар #0" = 20
+	"Шейх Хайдар #0" = 20
+	"Шибан #0" = 20
+	"Тайбуга #0" = 20
+	"Тимур #0" = 20
+	"Тимур Кутлуг #0" = 20
+	"Тохтамыш #0" = 20
+	"Улу-Мухаммед #0" = 40
+	"Урус #0" = 20
+	"Урус-Мухаммед #0" = 20
+	"Ядигар-Мухаммед #0" = 20
+	"Ямгурчи #0" = 20
 	
-	"Fatima #0" = -1
-	"Ibtisam #0" = -1
-	"Jalila #0" = -1
-	"Janan #0" = -1
-	"Layla #0" = -1
-	"Sakina #0" = -1
-	"Sharifa #0" = -1
+	"Фатима #0" = -1
+	"Ибтисан #0" = -1
+	"Жалила #0" = -1
+	"Жанан #0" = -1
+	"Лайла #0" = -1
+	"Сакина #0" = -1
+	"Шарифа #0" = -1
 }
 
-leader_names = { 
-	Balna Salmiianov Ravna Taiborey Vylka
-	Kanin Maimbava Arinin Aven Tsoy
+leader_names = {
+	"Кара Чинуа"
+	"Делгер Кюгун"
+	"Арих Гал"
+	"Коке Эрдене"
+	"Сурен Унэген"
+	"Текус Энг"
+	"Канадей"
+	"Бурилгиген"
+	"Арихтени"
+	"Екечер"
+	"Суренкай"
+	"Корчигге"
 }
 
 ship_names = {
-	"Ghengis Khan" Orda Kochu Bayan Sasibuga
-	Ilbasan "Mubarrak Kwaja" Chimtai Urus Tuqtaqiya
-	"Timur Malik" Toqtamish "Timur Qutlugh" "Shadi Beg"
-	Pulad "Jalal Ad-Din" "Karim Berdi" Kebek "Jabbar Berdi"
-	"Ulugh Muhammad" "Devlat Berdi" Baraq "Sayyid Ahmad"
+	"Астерхан"
+	"Волга"
+	"Астерхан"
+	"Кхаджитархан"
+	"Чингисхан"
+	"Кучук"
+	"Актархан"
+	"Сарай Бату"
+	"Хаджи-Тархан"
+	"Гиторхан"
+	"Цитрохан"
 }

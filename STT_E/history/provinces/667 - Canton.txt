@@ -1,12 +1,12 @@
 #667 - Guangzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = cantonese
 religion = confucianism
 capital = "Canton"
-trade_goods = spices
+trade_goods = incense
 hre = no
 base_tax = 10
 base_production = 12
@@ -34,6 +34,7 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1368.1.1 = { owner = MNG controller = MNG remove_core = YUA add_core = MNG }
 1514.1.1 = { discovered_by = POR }
 1647.4.1 = {
 	owner = QNG

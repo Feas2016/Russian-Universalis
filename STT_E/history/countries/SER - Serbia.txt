@@ -1,36 +1,655 @@
 government = feudal_monarchy
+government_rank = 1
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
 capital = 141	# Beograd
 historical_friend = BOS
+historical_rival = BYZ
 
-1389.1.1 = {
-	government_rank = 1
+# 600.1.1 = {
+	# monarch = {
+		# name = "Звонемир"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 636.1.1 = {
+	# monarch = {
+		# name = "Безымянный князь"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 648.1.1 = {
+	# monarch = {
+		# name = "Свевлад"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 0
+	# }
+# }
+
+# 660.1.1 = {
+	# monarch = {
+		# name = "Селемир"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 680.1.1 = {
+	# monarch = {
+		# name = "Владин"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 700.1.1 = {
+	# monarch = {
+		# name = "Ратимир"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 730.1.1 = {
+	# monarch = {
+		# name = "Ратимир"
+		# dynasty = "Звонемирович"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 768.1.1 = {
+	# monarch = {
+		# name = "Вишеслав"
+		# dynasty = "Вишеславович"
+		# birth_date = 750.1.1
+		# adm = 2
+		# dip = 0
+		# mil = 5
+	# }
+# }
+
+# 814.1.1 = {
+	# monarch = {
+		# name = "Радослав"
+		# dynasty = "Вишеславович"
+		# birth_date = 780.1.1
+		# adm = 0
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 822.1.1 = {
+	# monarch = {
+		# name = "Просигой"
+		# dynasty = "Вишеславович"
+		# birth_date = 800.1.1
+		# adm = 2
+		# dip = 1
+		# mil = 3
+	# }
+# }
+
+# 825.1.1 = {
+	# monarch = {
+		# name = "Властимир"
+		# dynasty = "Властимирович"
+		# birth_date = 805.1.1
+		# adm = 4
+		# dip = 3
+		# mil = 0
+	# }
+# }
+
+# 852.1.1 = {
+	# monarch = {
+		# name = "Мутимир"
+		# dynasty = "Властимирович"
+		# birth_date = 830.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 891.1.1 = {
+	# monarch = {
+		# name = "Первослав"
+		# dynasty = "Властимирович"
+		# birth_date = 850.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 892.1.1 = {
+	# monarch = {
+		# name = "Петар"
+		# dynasty = "Властимирович"
+		# birth_date = 870.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 917.8.1 = {
+	# monarch = {
+		# name = "Павле"
+		# dynasty = "Властимирович"
+		# birth_date = 880.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 921.1.1 = {
+	# monarch = {
+		# name = "Захарий"
+		# dynasty = "Властимирович"
+		# birth_date = 880.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 927.1.1 = {
+	# monarch = {
+		# name = "(Вакантно)"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# regent = yes
+	# }
+# }
+
+# 933.1.1 = {
+	# monarch = {
+		# name = "Часлав"
+		# dynasty = "Властимирович"
+		# birth_date = 896.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 960.1.1 = {
+	# monarch = {
+		# name = "Хвалимир II"
+		# dynasty = "Властимирович"
+		# birth_date = 910.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 971.1.1 = {
+	# monarch = {
+		# name = "Петрислав II"
+		# dynasty = "Властимирович"
+		# birth_date = 930.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 990.1.1 = {
+	# monarch = {
+		# name = "Йован Владимир"
+		# dynasty = "Властимирович"
+		# birth_date = 990.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 997.1.1 = {
+	# monarch = {
+		# name = "Самуил"
+		# dynasty = "Комитопул"
+		# birth_date = 958.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 1014.10.6 = {
+	# monarch = {
+		# name = "Йован Владимир"
+		# dynasty = "Властимирович"
+		# birth_date = 990.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 1016.5.22 = {
+	# monarch = {
+		# name = "Драгомир"
+		# dynasty = "Властимирович"
+		# birth_date = 940.1.1
+		# adm = 4
+		# dip = 1
+		# mil = 2
+	# }
+# }
+
+# 1018.1.1 = {
+	# monarch = {
+		# name = "Стефан Воислав"
+		# dynasty = "Воиславлевич"
+		# birth_date = 990.1.1
+		# adm = 4
+		# dip = 2
+		# mil = 3
+	# }
+# }
+
+# 1052.1.1 = {
+	# monarch = {
+		# name = "Михайло I"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1020.1.1
+		# adm = 4
+		# dip = 4
+		# mil = 4
+	# }
+# }
+
+# 1077.1.1 = {
+# government_rank = 1
+# }
+
+# 1081.1.1 = {
+	# monarch = {
+		# name = "Константин Бодин"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1040.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1099.1.1 = {
+	# monarch = {
+		# name = "(Вакантно)"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# regent = yes
+	# }
+# }
+
+# 1101.1.1 = {
+	# monarch = {
+		# name = "Доброслав II"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1052.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1101.6.1 = {
+	# monarch = {
+		# name = "Михайло II"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1055.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1102.1.1 = {
+	# monarch = {
+		# name = "Доброслав III"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1060.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1102.6.1 = {
+	# monarch = {
+		# name = "Кочапар"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1060.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1103.1.1 = {
+	# monarch = {
+		# name = "Владимир"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1060.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1113.1.1 = {
+	# monarch = {
+		# name = "Джордже"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1070.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1118.1.1 = {
+	# monarch = {
+		# name = "Грубеша"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1070.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# female = yes
+	# }
+# }
+
+# 1125.1.1 = {
+	# monarch = {
+		# name = "Джордже"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1070.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1131.1.1 = {
+	# monarch = {
+		# name = "Градихна"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1090.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# female = yes
+	# }
+# }
+
+# 1142.1.1 = {
+	# monarch = {
+		# name = "Радослав"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1090.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1148.1.1 = {
+	# monarch = {
+		# name = "Деса"
+		# dynasty = "Вуканович"
+		# birth_date = 1100.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1162.1.1 = {
+	# monarch = {
+		# name = "(Вакантно)"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# regent = yes
+	# }
+# }
+
+# 1168.1.1 = {
+	# monarch = {
+		# name = "Мирослав"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1120.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1179.1.1 = {
+	# monarch = {
+		# name = "Михайло III"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1130.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1186.1.1 = {
+	# monarch = {
+		# name = "Десислава"
+		# dynasty = "Воиславлевич"
+		# birth_date = 1130.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# female = yes
+	# }
+# }
+
+# 1189.1.1 = {
+	# monarch = {
+		# name = "(Вакантно)"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# regent = yes
+	# }
+# }
+
+# 1195.1.1 = {
+	# monarch = {
+		# name = "Вукан"
+		# dynasty = "Неманич"
+		# birth_date = 1165.1.1
+		# adm = 4
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 1208.1.1 = {
+	# monarch = {
+		# name = "Джордже"
+		# dynasty = "Неманич"
+		# birth_date = 1165.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+
+# 1217.1.1 = {
+	# monarch = {
+		# name = "Стефан Первовенчанный"
+		# dynasty = "Неманич"
+		# birth_date = 1165.1.1
+		# adm = 2
+		# dip = 0
+		# mil = 1
+	# }
+# }
+
+# 1228.9.24 = {
+	# monarch = {
+		# name = "Стефан Радослав"
+		# dynasty = "Неманич"
+		# birth_date = 1192.1.1
+		# adm = 0
+		# dip = 0
+		# mil = 1
+	# }
+# }
+
+# 1234.1.1 = {
+	# monarch = {
+		# name = "Стефан Владислав I"
+		# dynasty = "Неманич"
+		# birth_date = 1198.1.1
+		# adm = 0
+		# dip = 5
+		# mil = 3
+	# }
+# }
+
+# 1243.1.1 = {
+	# monarch = {
+		# name = "Стефан Урош I"
+		# dynasty = "Неманич"
+		# birth_date = 1229.1.1
+		# adm = 3
+		# dip = 3
+		# mil = 0
+	# }
+# }
+
+1276.1.1 = {
+	monarch = {
+		name = "Стефан Драгутин"
+		dynasty = "Неманич"
+		birth_date = 1253.1.1
+		adm = 3
+		dip = 0
+		mil = 2
+	}
 }
 
-1397.6.24 = {
+1282.1.1 = {
 	monarch = {
-		name = "Stefan II"
-		dynasty = "Lazarevic"
-		birth_date = 1377.1.1		
-		adm = 5
+		name = "Стефан Урош II Милутин"
+		dynasty = "Неманич"
+		birth_date = 1253.1.1
+		adm = 0
+		dip = 3
+		mil = 2
+	}
+}
+
+1282.1.1 = {
+	heir = {
+		name = "Стефан Урош"
+		monarch_name = "Стефан Урош III Дечанский"
+		dynasty = "Неманич"
+		birth_date = 1276.1.1
+		death_date = 1331.11.11
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1321.10.29 = {
+	monarch = {
+		name = "Стефан Урош III Дечанский"
+		dynasty = "Неманич"
+		birth_date = 1282.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1331.9.8 = {
+	monarch = {
+		name = "Стефан Урош IV Душан"
+		dynasty = "Неманич"
+		birth_date = 1308.7.26
+		adm = 4
 		dip = 3
 		mil = 4
 	}
 }
 
-1397.6.24 = {
-	heir = {
-		name = "Рurad"
-		monarch_name = "Рurad I"
-		dynasty = "Brankovic"
-		birth_date = 1377.1.1
-		death_date = 1456.12.24
-		claim = 85
-		adm = 2
-		dip = 2
-		mil = 3
+1346.4.16 = {
+	government_rank = 3
+}
+
+1355.12.20 = {
+	monarch = {
+		name = "Стефан Урош V"
+		dynasty = "Неманич"
+		birth_date = 1336.9.1
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+1371.12.2 = {
+	monarch = {
+		name = "Лазарь"
+		dynasty = "Лазаревич"
+		birth_date = 1329.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1371.12.4 = {
+	government_rank = 1
+}
+
+1389.6.28 = {
+	monarch = {
+		name = "Стефан II"
+		dynasty = "Лазаревич"
+		birth_date = 1374.1.1		
+		adm = 5
+		dip = 3
+		mil = 4
 	}
 }
 
@@ -40,8 +659,8 @@ historical_friend = BOS
 
 1427.7.20 = {
 	monarch = {
-		name = "Рurad I"
-		dynasty = "Brankovic"
+		name = "Георгий"
+		dynasty = "Бранкович"
 		birth_date = 1377.1.1		
 		adm = 2
 		dip = 2
@@ -51,11 +670,11 @@ historical_friend = BOS
 
 1427.7.20 = {
 	heir = {
-		name = "Lazar"
-		monarch_name = "Lazar II"
-		dynasty = "Brankovic"
+		name = "Лазарь"
+		monarch_name = "Лазарь"
+		dynasty = "Бранкович"
 		birth_date = 1421.1.1
-		death_date = 1458.2.20
+		death_date = 1458.1.20
 		claim = 95
 		adm = 2
 		dip = 1
@@ -65,8 +684,8 @@ historical_friend = BOS
 
 1456.12.25 = {
 	monarch = {
-		name = "Lazar II"
-		dynasty = "Brankovic"
+		name = "Лазарь"
+		dynasty = "Бранкович"
 		birth_date = 1421.1.1		
 		adm = 2
 		dip = 1
@@ -76,9 +695,9 @@ historical_friend = BOS
 
 1456.12.25 = {
 	heir = {
-		name = "Stefan"
-		monarch_name = "Stefan III"
-		dynasty = "Brankovic"
+		name = "Стефан"
+		monarch_name = "Стефан III"
+		dynasty = "Бранкович"
 		birth_date = 1417.1.1
 		death_date = 1476.10.9
 		claim = 85
@@ -90,8 +709,8 @@ historical_friend = BOS
 
 1458.1.21 = {
 	monarch = {
-		name = "Stefan III"
-		dynasty = "Brankovic"
+		name = "Стефан III"
+		dynasty = "Бранкович"
 		birth_date = 1417.1.1		
 		adm = 1
 		dip = 1
@@ -99,10 +718,10 @@ historical_friend = BOS
 	}
 }
 
-1459.4.9 = {
+1459.3.21 = {
 	monarch = {
-		name = "Stjepan Tomaљevic"
-		dynasty = "Kotromanic"
+		name = "Стефан"
+		dynasty = "Томашевич"
 		birth_date = 1438.1.1
 		adm = 3
 		dip = 3
@@ -110,13 +729,21 @@ historical_friend = BOS
 	}
 }
 
-1781.1.1 = { leader = {	name = "Peter I"               	type = general	rank = 0	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1830.10.18 } }
+1459.6.30 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
 
 1804.2.14 = {
 	monarch = {
-		name = "Рorde I Petrovic"
-		dynasty = "Karadordevic"
-		birth_date = 1762.11.16	
+		name = "Карагеоргий"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1768.11.3	
 		adm = 5
 		dip = 4
 		mil = 4
@@ -124,11 +751,25 @@ historical_friend = BOS
 	government = administrative_monarchy
 }
 
+1804.2.14 = {
+	queen = {
+		country_of_origin = SER
+		name = "Елена"
+		dynasty = "Петрович"
+		birth_date = 1771.1.1
+		death_date = 1815.21.11 #1842.2.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1806.10.11 = {
 	heir = {
-		name = "Alexander"
-		monarch_name = "Alexander I"
-		dynasty = "Karadordevic"	
+		name = "Александр"
+		monarch_name = "Александр I"
+		dynasty = "Карагеоргиевич"	
 		claim = 95
 		birth_date = 1806.10.11
 		death_date = 1885.5.3
@@ -138,10 +779,153 @@ historical_friend = BOS
 	}
 }
 
-1813.10.4 = {
+1815.11.21 = {
 	monarch = {
-		name = "Milosh I"
-		dynasty = "Obrenovic"
+		name = "Милош"
+		dynasty = "Обренович"
+		birth_date = 1780.3.18
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+	government_rank = 1
+}
+
+1815.11.21 = {
+	queen = {
+		country_of_origin = SER
+		name = "Любица"
+		dynasty = "Вукоманович"
+		birth_date = 1785.1.14
+		death_date = 1839.6.13 #1843.5.26
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1819.10.21 = {
+	heir = {
+		name = "Милан"
+		monarch_name = "Милан"
+		dynasty = "Обренович"
+		birth_date = 1819.10.21
+		death_date = 1839.8.6
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1839.6.13 = {
+	monarch = {
+		name = "Милан"
+		dynasty = "Обренович"
+		birth_date = 1819.10.21		
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1839.6.13 = {
+	heir = {
+		name = "Михаил"
+		monarch_name = "Михаил III"
+		dynasty = "Обренович"
+		birth_date = 1823.9.16
+		death_date = 1868.6.10
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1839.8.6 = {
+	monarch = {
+		name = "Михаил III"
+		dynasty = "Обренович"
+		birth_date = 1823.9.16		
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1839.6.13 = {
+	heir = {
+		name = "Александр"
+		monarch_name = "Александр I"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1806.10.11
+		death_date = 1885.5.3
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1842.9.15 = {
+	monarch = {
+		name = "Александр I"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1806.10.11	
+		adm = 2
+		dip = 1
+		mil = 0
+	}
+}
+
+1842.9.15 = {
+	queen = {
+		country_of_origin = SER
+		name = "Персида"
+		dynasty = "Ненадович"
+		birth_date = 1813.2.15
+		death_date = 1859.1.3 #1873.3.29
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1842.9.15 = {
+	heir = {
+		name = "Светозар"
+		monarch_name = "Светозар I"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1841.1.1
+		death_date = 1847.3.17
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1847.3.17 = {
+	heir = {
+		name = "Пётр"
+		monarch_name = "Пётр I"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1844.6.29
+		death_date = 1921.8.16
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1859.1.3 = {
+	monarch = {
+		name = "Милош II"
+		dynasty = "Обренович"
 		birth_date = 1806.10.11		
 		adm = 4
 		dip = 5
@@ -149,16 +933,252 @@ historical_friend = BOS
 	}
 }
 
-1819.10.21 = {
+1858.12.23 = {
 	heir = {
-		name = "Milosh"
-		monarch_name = "Milosh II"
-		dynasty = "Obrenovic"
-		birth_date = 1819.10.21
-		death_date = 1839.7.6
+		name = "Михаил"
+		monarch_name = "Михаил III"
+		dynasty = "Обренович"
+		birth_date = 1823.9.16
+		death_date = 1868.6.10
 		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1860.9.25 = {
+	monarch = {
+		name = "Михаил III"
+		dynasty = "Обренович"
+		birth_date = 1823.9.16
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1860.9.25 = {
+	queen = {
+		country_of_origin = DUA
+		name = "Юлия"
+		dynasty = "Хуньяди де Кетей"
+		birth_date = 1831.8.26
+		death_date = 1868.6.10 #1919.2.19
+		female = yes
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1860.9.25 = {
+	heir = {
+		name = "Милан"
+		monarch_name = "Милан I"
+		dynasty = "Обренович"
+		birth_date = 1854.8.22
+		death_date = 1901.2.11
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1868.6.10 = {
+	monarch = {
+		name = "Милан I"
+		dynasty = "Обренович"
+		birth_date = 1854.8.22
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1875.10.17 = {
+	queen = {
+		country_of_origin = RMN
+		name = "Наталья"
+		dynasty = "Кешко"
+		birth_date = 1859.5.15
+		death_date = 1888.10.12 #1941.5.8
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1876.8.14 = {
+	heir = {
+		name = "Александр"
+		monarch_name = "Александр I"
+		dynasty = "Обренович"
+		birth_date = 1876.8.14
+		death_date = 1903.6.11
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1882.3.6 = {
+government_rank = 2
+}
+
+1889.3.6 = {
+	monarch = {
+		name = "Александр I"
+		dynasty = "Обренович"
+		birth_date = 1876.8.14
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1900.8.5 = {
+	queen = {
+		country_of_origin = SER
+		name = "Драга"
+		dynasty = "Луневица"
+		birth_date = 1861.9.23
+		death_date = 1903.6.11
+		female = yes
 		adm = 0
 		dip = 0
 		mil = 0
 	}
 }
+
+1903.6.11 = {
+	monarch = {
+		name = "Пётр I"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1844.6.29
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+1903.6.11 = {
+	heir = {
+		name = "Александр"
+		monarch_name = "Александр II"
+		dynasty = "Карагеоргиевич"
+		birth_date = 1888.12.16
+		death_date = 1934.10.9
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 2
+	}
+}
+
+# 1921.8.16 = {
+	# monarch = {
+		# name = "Александр II"
+		# dynasty = "Карагеоргиевич"
+		# birth_date = 1888.12.16
+		# adm = 4
+		# dip = 0
+		# mil = 2
+	# }
+# }
+
+# 1922.6.8 = {
+	# queen = {
+		# country_of_origin = RMN
+		# name = "Мария"
+		# dynasty = "фон Гогенцоллерн-Зигмаринген"
+		# birth_date = 1900.1.6
+		# death_date = 1934.10.9 #1961.6.22
+		# female = yes
+		# adm = 5
+		# dip = 5
+		# mil = 2
+	# }
+# }
+
+# 1923.9.6 = {
+	# heir = {
+		# name = "Пётр"
+		# monarch_name = "Пётр II"
+		# dynasty = "Карагеоргиевич"
+		# birth_date = 1923.9.6
+		# death_date = 1970.11.3
+		# claim = 95
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1934.10.9 = {
+	# monarch = {
+		# name = "Павел"
+		# dynasty = "Карагеоргиевич"
+		# birth_date = 1893.4.27
+		# adm = 2
+		# dip = 2
+		# mil = 1
+		# regent = yes
+	# }
+# }
+
+# 1934.10.9 = {
+	# heir = {
+		# name = "Пётр"
+		# monarch_name = "Пётр II"
+		# dynasty = "Карагеоргиевич"
+		# birth_date = 1923.9.6
+		# death_date = 1970.11.3
+		# claim = 95
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1941.3.27 = {
+	# monarch = {
+		# name = "Пётр II"
+		# dynasty = "Карагеоргиевич"
+		# birth_date = 1923.9.6
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1944.6.8 = {
+	# queen = {
+		# country_of_origin = RMN
+		# name = "Александра"
+		# dynasty = "фон Глюксбург"
+		# birth_date = 1921.3.25
+		# death_date = 1945.11.29 #1993.1.30
+		# female = yes
+		# adm = 2
+		# dip = 2
+		# mil = 2
+	# }
+# }
+
+# 1945.7.17 = {
+	# heir = {
+		# name = "Александр"
+		# monarch_name = "Александр II"
+		# dynasty = "Карагеоргиевич"
+		# birth_Date = 1945.7.17
+		# death_Date = 3000.1.1
+		# claim = 95
+		# adm = 5
+		# dip = 3
+		# mil = 2
+	# }
+# }

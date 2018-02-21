@@ -3,12 +3,11 @@ country_decisions = {
 	move_the_court_to_versailles = {
 	
 		potential = {
-			### STT
-			OR = { 	
+			OR = { 	### STT
 				tag = FRA
-				tag = UEF
-				tag = WEK
-				}
+				tag = UEF	### STT
+				tag = WEK	### STT
+				}	### STT
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -34,12 +33,11 @@ country_decisions = {
 	
 	say_the_state_is_me = {
 		potential = {
-			### STT
-			OR = { 	
+			OR = { 	### STT
 				tag = FRA
-				tag = UEF
-				tag = WEK
-				}
+				tag = UEF	### STT
+				tag = WEK	### STT
+				}	### STT
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -49,7 +47,7 @@ country_decisions = {
 			government = monarchy
 		}
 		allow = {
-			adm_tech = 13
+			current_age = age_of_absolutism
 			adm = 5
 			monthly_income = 100
 		}
@@ -58,11 +56,7 @@ country_decisions = {
 				name = "the_state_is_me"
 				duration = -1
 			}
-			change_government = absolute_monarchy
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
+			add_absolutism = 10
 		}
 		ai_will_do = {
 			factor = 1
@@ -72,13 +66,12 @@ country_decisions = {
 
 
 	enact_edict_de_nantes = {
-		potential = {
-			### STT
-			OR = { 	
+		potential = {			
+			OR = { 	### STT
 				tag = FRA
-				tag = UEF
-				tag = WEK
-				}
+				tag = UEF	### STT
+				tag = WEK	### STT
+				}	### STT
 			normal_or_historical_nations = yes
 			OR = {
 				ai = no
@@ -141,6 +134,7 @@ country_decisions = {
 		}
 		effect = {
 			remove_country_modifier = edict_de_nantes
+			set_country_flag = revoked_the_edict_of_nantes
 			add_prestige = 10
 		}
 		ai_will_do = {

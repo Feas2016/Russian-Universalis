@@ -1,0 +1,280 @@
+government = feudal_monarchy
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = gascon
+capital = 3634
+
+1291.1.1 = {
+	monarch = {
+		name = "Сантюль III"
+		dynasty = "д’Астарак"
+		birth_date = 1245.1.1
+		adm = 2
+		dip = 0
+		mil = 0
+	}
+}
+
+1291.1.1 = {
+	heir = {
+		name = "Бернар"
+		monarch_name = "Бернар V"
+		dynasty = "д’Астарак"
+		birth_date = 1279.1.1
+		death_date = 1328.1.1
+		claim = 95
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1301.1.1 = {
+	monarch = {
+		name = "Бернар V"
+		dynasty = "д’Астарак"
+		birth_date = 1279.1.1
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+1301.1.1 = {
+	heir = {
+		name = "Аманьё"
+		monarch_name = "Аманьё"
+		dynasty = "д’Астарак"
+		birth_date = 1296.1.1
+		death_date = 1330.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1328.1.1 = {
+	monarch = {
+		name = "Аманьё"
+		dynasty = "д’Астарак"
+		birth_date = 1296.1.1
+		adm = 0
+		dip = 2
+		mil = 3
+	}
+}
+
+1328.1.1 = {
+	heir = {
+		name = "Сантюль"
+		monarch_name = "Сантюль IV"
+		dynasty = "д’Астарак"
+		birth_date = 1315.1.1
+		death_date = 1362.12.19
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1330.1.1 = {
+	monarch = {
+		name = "Сантюль IV"
+		dynasty = "д’Астарак"
+		birth_date = 1315.1.1
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}
+
+1342.1.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан I"
+		dynasty = "д’Астарак"
+		birth_date = 1342.1.1
+		death_date = 1403.12.10
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1362.12.19 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "д’Астарак"
+		birth_date = 1343.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1362.12.19 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан II"
+		dynasty = "д’Астарак"
+		birth_date = 1360.1.1
+		death_date = 1410.4.16
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1403.12.10 = {
+	monarch = {
+		name = "Жан II"
+		dynasty = "д’Астарак"
+		birth_date = 1360.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+1403.12.10 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан III"
+		dynasty = "д’Астарак"
+		birth_date = 1382.1.1
+		death_date = 1458.9.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1410.4.16 = {
+	monarch = {
+		name = "Жан III"
+		dynasty = "д’Астарак"
+		birth_date = 1382.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1453.1.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан IV"
+		dynasty = "д’Астарак"
+		birth_date = 1453.1.1
+		death_date = 1511.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1458.9.1 = {
+	monarch = {
+		name = "Жан IV"
+		dynasty = "д’Астарак"
+		birth_date = 1453.1.1
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1488.1.1 = {
+	heir = {
+		name = "Мата"
+		monarch_name = "Мата"
+		dynasty = "д’Астарак"
+		birth_date = 1488.1.1
+		death_date = 1552.1.1
+		claim = 50
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1511.1.1 = {
+	monarch = {
+		name = "Гастон III Хромой"
+		dynasty = "де Фуа-Кандаль"
+		birth_date = 1486.1.1
+		adm = 0 
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		name = "Мата"
+		dynasty = "д’Астарак"
+		birth_date = 1488.1.1
+		death_date = 1552.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1511.1.1 = {
+	heir = {
+		name = "Фредерик"
+		monarch_name = "Фредерик"
+		dynasty = "де Фуа-Кандаль"
+		birth_date = 1510.1.1
+		death_date = 1571.8.1
+		claim = 50
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1536.1.1 = {
+	monarch = {
+		name = "Фредерик"
+		dynasty = "де Фуа-Кандаль"
+		birth_date = 1510.1.1
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1567.1.1 = {
+	heir = {
+		name = "Маргарита"
+		monarch_name = "Маргарита"
+		dynasty = "де Фуа-Кандаль"
+		birth_date = 1567.1.1
+		death_date = 1593.9.23
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}
+
+1571.8.1 = {
+	monarch = {
+		name = "Маргарита"
+		dynasty = "де Фуа-Кандаль"
+		birth_date = 1567.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+		female = yes
+	}
+}

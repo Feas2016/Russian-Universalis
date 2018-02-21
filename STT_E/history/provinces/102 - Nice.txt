@@ -1,8 +1,8 @@
 #102 - Nice
 
-owner = SAV
-controller = SAV
-add_core = SAV
+owner = NCC			### STT
+controller = NCC	### STT
+add_core = NCC		### STT
 culture = ligurian
 religion = catholic
 hre = yes
@@ -10,13 +10,14 @@ base_tax = 4
 base_production = 4
 trade_goods = fish
 base_manpower = 2
-capital = "Nice"
+capital = "Ницца"	### STT
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1388.1.1 = { owner = SAV add_core = SAV controller = SAV }	### STT
 1495.1.1 = { hre = no }
 1713.4.12 = {
 	owner = SIC
@@ -36,3 +37,9 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1859.7.11 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	remove_core = SPI
+}

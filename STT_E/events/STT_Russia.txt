@@ -14,7 +14,7 @@ country_event = {
 		government_rank = 2
 		NOT = { exists = TSR }
 		NOT = { exists = RUS }
-		NOT = { exists = SLV }
+		NOT = { exists = SLA }
 		NOT = { tag = MOS }
 		NOT = { is_year = 1500 }
 	}
@@ -64,7 +64,7 @@ province_event = {
 	trigger = {
 		has_terrain = steppe
 		owner = { culture_group = east_slavic }
-		culture_group = tartar
+		culture_group = turkic
 	}
 
 	mean_time_to_happen = {
@@ -74,7 +74,8 @@ province_event = {
 	option = {
 		ai_chance = { factor = 90 }
 		name = "stt_rus.a.3"
-		change_culture = cossaks
+		change_culture = cossacks
+		change_religion = owner
 	}
 	option = {
 		name = "stt_rus.b.3"
@@ -90,16 +91,18 @@ province_event = {
 	picture = COLONIZATION_eventPicture
 		
 	trigger = {
-		region = siberia_region
+	    OR = {
+		region = west_siberia_region
+		region = east_siberia_region
+		}
 		has_empty_adjacent_province = yes
 		OR = {
 			owner = { technology_group = eastern }
 			AND = {
 				owner = { technology_group = western }
 				OR = {
-					culture_group = STT_PLU
-					culture_group = STT_SLV
-					culture_group = STT_SLV
+					culture_group = stt_plu
+					culture_group = stt_sla
 					culture_group = south_slavic
 					culture_group = west_slavic
 					culture_group = east_slavic
@@ -120,7 +123,7 @@ province_event = {
 		ai_chance = { factor = 90 }
 		name = "stt_rus.a.4"
 		random_empty_neighbor_province = {
-			create_colony = 100
+			create_colony = 1000
 		}
 	}
 	option = {
@@ -142,25 +145,62 @@ province_event = {
 	}
 }
 	
+#country_event = {
+#	id = stt_rus.5
+#	title = "stt_rus.t.5"
+#	desc = "stt_rus.de.5"
+#	picture = COLONIZATION_eventPicture
+#
+#	is_triggered_only = yes #off MTTH
+#
+#	option = { 
+#		name = "stt_rus.a.5"
+#		ai_chance = { factor = 90 }
+#		add_casus_belli = {
+#			target = FROM
+#			type = cb_horde_vs_civ
+#			months = 3650
+#		}
+#	}
+#	option = { 
+#		name = "stt_rus.b.5"
+#		ai_chance = { factor = 10 }
+#		add_prestige = -10
+#	}
+#}
+
 country_event = {
-	id = stt_rus.5
-	title = "stt_rus.t.5"
-	desc = "stt_rus.de.5"
-	picture = COLONIZATION_eventPicture
-
-	is_triggered_only = yes #off MTTH
-
-	option = { 
-		name = "stt_rus.a.5"
-		ai_chance = { factor = 90 }
-		declare_war_with_cb = {
-			who = FROM
-			casus_belli = cb_horde_vs_civ
+	id = stt_rus.6
+	title = "stt_rus.t.6"
+	desc = "stt_rus.de.6"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+	    OR = {
+		    tag = MOS
+			tag = TSR
+			tag = RUS
+		}
+		is_year = 1470
+		is_at_war = no
+		num_of_cities = 30
+		YAR = {
+		    NOT = { num_of_cities = 7 }
+			is_subject = no
+		}
+		has_opinion = {
+		    who = YAR
+		    value = 150
 		}
 	}
-	option = { 
-		name = "stt_rus.b.5"
-		ai_chance = { factor = 10 }
-		add_prestige = -10
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+	    name = "stt_rus.a.6"
+		vassalize = YAR
 	}
 }

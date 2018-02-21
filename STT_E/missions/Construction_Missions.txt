@@ -1,0 +1,461 @@
+construct_grand_fleet = {
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		NOT = { has_country_flag = constructed_grand_fleet_mission }
+		NOT = { has_country_modifier = naval_enthusiasm_mission }
+		num_of_ports = 5
+		naval_forcelimit = 40
+		technology_group = western
+		NOT = { num_of_heavy_ship = 15 }
+		num_of_heavy_ship = 5
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	success = {
+		num_of_heavy_ship = 20
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.05
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 1.05
+			prestige = 10
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = press_gangs
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			has_idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = naval_glory
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "naval_enthusiasm_mission"
+			duration = 3650
+		}
+		set_country_flag = constructed_grand_fleet_mission
+	}	
+}
+
+
+rule_the_seas = {
+
+	type = country
+	
+	category = ADM
+
+	allow = {
+		num_of_ports = 5
+		num_of_heavy_ship = 25
+		naval_forcelimit = 25
+		technology_group = western
+		NOT = {
+			has_country_modifier = naval_enthusiasm_mission
+		}
+		OR = {
+			NOT = { has_country_flag = rule_the_seas_mission }
+			had_country_flag = { flag = rule_the_seas_mission days = 7300 }
+		}
+		any_known_country = {
+			num_of_heavy_ship = FROM
+		}
+	}
+	abort = {
+		NOT = { num_of_ports = 1 }
+	}
+	success = {
+		NOT = {
+			any_known_country = {
+				num_of_heavy_ship = FROM
+			}
+		}
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 1.15
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 1.1
+			prestige = 10
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = naval_ideas
+		}
+	}
+	effect = {
+		set_country_flag = rule_the_seas_mission
+		add_country_modifier = {
+			name = "naval_enthusiasm_mission"
+			duration = 3650
+		}
+	}	
+}
+
+construct_army = {
+
+	type = country
+
+	category = ADM
+	
+	allow = {
+		OR = {
+			NOT = { has_country_flag = construct_army_mission }
+			had_country_flag = { flag = construct_army_mission days = 7300 }
+		}
+		NOT = { has_country_modifier = thriving_arms_industry }
+		NOT = { army_size_percentage = 0.5 }
+		is_emperor = no
+	}
+	abort = {
+	}
+	success = {
+		army_size_percentage = 0.75
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2.0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { army_size_percentage = 0.5 }
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = { army_size_percentage = 0.3 }
+		}		
+		modifier = {
+			factor = 1.5
+			has_idea = grand_army
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = military_drill
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = engineer_corps
+		}
+		modifier = {
+			factor = 1.5
+			has_idea = battlefield_commisions
+		}	
+		modifier = {
+			factor = 1.5
+			has_idea = glorious_arms
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = national_conscripts
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = regimental_system
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = napoleonic_warfare
+		}
+	}
+	effect = {
+		set_country_flag = construct_army_mission
+		add_country_modifier = {
+			name = "thriving_arms_industry"
+			duration = 3650
+		}
+	}	
+}
+
+
+construct_navy = {
+
+	type = country
+	
+	category = ADM
+
+	allow = {
+		primitives = no
+		any_owned_province = {
+			has_port = yes
+			is_core = FROM
+		}
+		OR = {
+			NOT = { has_country_flag = construct_navy_mission }
+			had_country_flag = { flag = construct_navy_mission days = 7300 }
+		}
+		NOT = { navy_size_percentage = 0.5 }
+		NOT = { technology_group = sub_saharan }
+		NOT = { technology_group = north_american }
+		NOT = { technology_group = mesoamerican }
+		NOT = { technology_group = south_american }
+		NOT = { technology_group = nomad_group }
+		NOT = { has_country_modifier = thriving_ship_building_sector }
+	}
+	abort = {
+		NOT = {
+			any_owned_province = {
+				has_port = yes
+				is_core = FROM
+			}
+		}
+	}
+	success = {
+		navy_size_percentage = 0.75
+	}
+	chance = {
+		factor = 1000
+		modifier = {
+			factor = 2.0
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { navy_size_percentage = 0.5 }
+		}		
+		modifier = {
+			factor = 2.0
+			NOT = { navy_size_percentage = 0.3 }
+		}		
+		modifier = {
+			factor = 2.0
+			has_idea = press_gangs
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = grand_navy
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = sea_hawks
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = superior_seamanship
+		}	
+		modifier = {
+			factor = 2.0
+			has_idea = naval_fighting_instruction
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = excellent_shipwrights
+		}
+		modifier = {
+			factor = 2.0
+			has_idea = naval_glory
+		}
+	}
+	effect = {
+		set_country_flag = construct_navy_mission
+		add_country_modifier = {
+			name = "thriving_ship_building_sector"
+			duration = 3650
+		}
+	}	
+}
+
+rival_army = {
+
+	type = rival_countries
+
+	category = ADM
+	
+	allow = {
+		FROM = {
+			NOT = { army_size = ROOT }
+			land_forcelimit = ROOT
+			NOT = { has_country_modifier = thriving_arms_industry }
+			OR = {
+				NOT = { has_country_flag = rival_army_mission }
+				had_country_flag = { flag = rival_army_mission days = 7300 }
+			}
+		}
+		NOT = { alliance_with = FROM }
+		NOT = { is_subject_of = FROM }
+		NOT = { overlord_of = FROM }
+	}
+	abort = {
+		OR = {
+			alliance_with = FROM
+			is_subject_of = FROM
+			overlord_of = FROM
+		}
+	}
+	success = {
+		FROM = { army_size = ROOT }
+	}
+	chance = {
+		factor = 1000
+
+		modifier = {
+			factor = 1.5
+			FROM = { mil = 3 }
+		}
+	}
+	effect = {
+		FROM = {
+			set_country_flag = rival_army_mission
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 3650
+			}
+		}
+	}	
+}
+
+
+rival_navy = {
+
+	type = rival_countries
+	
+	category = ADM
+	
+	allow = {
+		FROM = {
+			NOT = { navy_size = ROOT }
+			NOT = { has_country_modifier = naval_enthusiasm_mission }
+			naval_forcelimit = ROOT
+			OR = {
+				NOT = { has_country_flag = had_rival_navy_mission }
+				had_country_flag = { flag = had_rival_navy_mission days = 7300 }
+			}
+		}
+		NOT = { alliance_with = FROM }
+		NOT = { is_subject_of = FROM }
+		NOT = { overlord_of = FROM }
+		num_of_ports = 3
+		FROM = {
+			NOT = { technology_group = sub_saharan }
+			NOT = { technology_group = north_american }
+			NOT = { technology_group = mesoamerican }
+			NOT = { technology_group = south_american }
+			NOT = { technology_group = nomad_group }
+			any_owned_province = {
+				has_port = yes
+				is_core = owner
+			}
+		}
+	}
+	abort = {
+		OR = {
+			FROM = {
+				NOT = {
+					any_owned_province = {
+						has_port = yes
+						is_core = owner
+					}
+				}
+			}	
+			alliance_with = FROM
+			is_subject_of = FROM
+			overlord_of = FROM
+		}
+	}
+	success = {
+		FROM = { navy_size = ROOT }
+	}
+	chance = {
+		factor = 1000
+
+		modifier = {
+			factor = 1.5
+			FROM = { mil = 3 }
+		}
+	}
+	effect = {
+		FROM = {
+			set_country_flag = had_rival_navy_mission
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+kremlin_expansion = {
+
+	type = our_provinces
+	
+	ai_mission = yes
+	
+	category = ADM
+	
+	allow = {
+		owner = {
+			monthly_income = 10
+			OR = { #STT
+				government = rus_government
+				government = rus_imperial_government
+				government = veche_republic
+			}
+			NOT = { has_country_flag = had_kremlin_mission }
+		}
+		is_capital = yes
+		can_build = fort_15th
+		NOT = { fort_level = 2 }
+		num_free_building_slots = 1
+	}
+	abort = {
+		OR = {
+			AND = {
+				NOT = { can_build = fort_15th }
+				NOT = { has_construction = building }
+			}
+			NOT = {	owned_by = FROM }
+			NOT = { num_free_building_slots = 1 }
+			is_capital = no
+		}
+	}
+	success = {
+		has_building = fort_15th
+	}
+	chance = {
+		factor = 5000
+	}
+	effect = {
+		add_base_tax = 1
+		add_base_production = 1
+		add_base_manpower = 1
+		hidden_effect = {
+			owner = {
+				set_country_flag = had_kremlin_mission
+			}
+		}
+	}
+}

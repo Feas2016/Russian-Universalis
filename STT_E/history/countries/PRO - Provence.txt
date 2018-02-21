@@ -10,8 +10,8 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1399.8.1 = {
 	monarch = {
-		name = "Louis II"
-		dynasty = "de Valois"
+		name = "Луи II"
+		dynasty = "де Валуа"
 		adm = 0
 		dip = 2
 		mil = 2
@@ -20,9 +20,9 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1403.9.25 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis III"
-		dynasty = "de Valois"
+		name = "Луи"
+		monarch_name = "Луи III"
+		dynasty = "де Валуа"
 		birth_date = 1403.9.25
 		death_date = 1434.11.12
 		claim = 95
@@ -34,8 +34,8 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1417.1.1 = {
 	monarch = {
-		name = "Louis III"
-		dynasty = "de Valois"
+		name = "Луи III"
+		dynasty = "де Валуа"
 		birth_date = 1403.9.25
 		adm = 1
 		dip = 2
@@ -45,9 +45,9 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1417.1.1 = {
 	heir = {
-		name = "Renй"
-		monarch_name = "Renй I"
-		dynasty = "de Valois"
+		name = "Рене"
+		monarch_name = "Рене I"
+		dynasty = "де Валуа"
 		birth_date = 1409.1.16
 		death_date = 1480.7.10
 		claim = 95
@@ -59,11 +59,22 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1434.11.16 = {
 	monarch = {
-		name = "Renй I"
-		dynasty = "de Valois"
+		name = "Рене I"
+		dynasty = "де Валуа"
 		birth_date = 1409.1.16
 		adm = 3
 		dip = 5
+		mil = 2
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Изабелла"
+		dynasty = "де Мец"
+		birth_date = 1400.1.1
+		death_date = 1453.2.28
+		female = yes
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }
@@ -72,9 +83,9 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1436.1.1 = {
 	heir = {
-		name = "Charles"
-		monarch_name = "Charles III"
-		dynasty = "de Valois"
+		name = "Карл"
+		monarch_name = "Карл III"
+		dynasty = "де Валуа"
 		birth_date = 1436.1.1
 		death_date = 1481.1.1
 		claim = 95
@@ -86,13 +97,38 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1442.6.2 = { remove_accepted_culture = sicilian }
 
+1454.9.10 = {
+	queen = {
+		country_of_origin = BRI #Count of Laval
+		name = "Жанна"
+		dynasty = "де Лаваль"
+		birth_date = 1433.11.10
+		death_date = 1498.12.19
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
 1480.7.10 = {
 	monarch = {
-		name = "Charles III"
-		dynasty = "de Valois"
+		name = "Карл III"
+		dynasty = "де Валуа"
 		birth_date = 1436.1.1
 		adm = 0
 		dip = 2
+		mil = 1
+	}
+	queen = {
+		country_of_origin = LOR
+		name = "Жанна"
+		dynasty = "де Водемон"
+		birth_date = 1458.1.1
+		death_date = 1480.12.1
+		female = yes
+		adm = 1
+		dip = 1
 		mil = 1
 	}
 }
@@ -103,4 +139,4 @@ fixed_capital = 201 # Cannot move capital away from this province & no power cos
 
 1589.8.3 = { government = administrative_monarchy }
 
-1661.3.9 = { government = absolute_monarchy }
+1661.3.9 = { government = despotic_monarchy }

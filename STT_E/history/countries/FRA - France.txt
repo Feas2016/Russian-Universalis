@@ -2,17 +2,415 @@ government = feudal_monarchy
 primary_culture = cosmopolitan_french
 add_accepted_culture = gascon
 add_accepted_culture = occitain
-add_accepted_culture = angevin
-add_accepted_culture = champenois
+add_accepted_culture = angevin ### STT
+add_accepted_culture = champenois ### STT
 religion = catholic
 technology_group = western
 capital = 183 # Paris
 national_focus = DIP
+historical_rival = HAB
+
+# 986.3.2 = {
+	# monarch = {
+		# name = "Людовик V"
+		# dynasty = "Каролинг"
+		# birth_date = 967.1.1
+		# adm = 3
+		# dip = 4
+		# mil = 3
+	# }
+# }
+
+# 987.9.22 = {
+	# monarch = {
+		# name = "(Вакантно)"
+		# adm = 3
+		# dip = 3
+		# mil = 3
+		# regent = yes
+	# }
+# }
+
+# 987.7.3 = {
+	# monarch = {
+		# name = "Гуго Капет"
+		# dynasty = "Капетинг"
+		# birth_date = 940.1.1
+		# adm = 3
+		# dip = 2
+		# mil = 4
+	# }
+# }
+
+# 987.7.3 = {
+	# heir = {
+		# name = "Роберт"
+		# monarch_name = "Роберт II"
+		# dynasty = "Капетинг"
+		# birth_date = 972.3.27
+		# death_date = 1031.7.20
+		# claim = 95
+		# adm = 4
+		# dip = 3
+		# mil = 1
+	# }
+# }
+
+# 996.10.24 = {
+	# monarch = {
+		# name = "Роберт II"
+		# dynasty = "Капетинг"
+		# birth_date = 972.3.27
+		# adm = 4
+		# dip = 3
+		# mil = 1
+	# }
+# }
+
+# 1008.5.4 = {
+	# heir = {
+		# name = "Генрих"
+		# monarch_name = "Генрих I"
+		# dynasty = "Капетинг"
+		# birth_date = 1008.5.4
+		# death_date = 1060.8.4
+		# claim = 95
+		# adm = 1
+		# dip = 4
+		# mil = 2
+	# }
+# }
+
+# 1031.7.20 = {
+	# monarch = {
+		# name = "Генрих I"
+		# dynasty = "Капетинг"
+		# birth_date = 1008.5.4
+		# adm = 1
+		# dip = 4
+		# mil = 2
+	# }
+# }
+
+# 1052.1.1 = {
+	# heir = {
+		# name = "Филипп"
+		# monarch_name = "Филипп I"
+		# dynasty = "Капетинг"
+		# birth_date = 1052.1.1
+		# death_date = 1108.7.29
+		# claim = 95
+		# adm = 2
+		# dip = 1
+		# mil = 1
+	# }
+# }
+
+# 1060.8.4 = {
+	# monarch = {
+		# name = "Филипп I"
+		# dynasty = "Капетинг"
+		# birth_date = 1052.1.1
+		# adm = 2
+		# dip = 1
+		# mil = 1
+	# }
+# }
+
+# 1081.12.1 = {
+	# heir = {
+		# name = "Людовик"
+		# monarch_name = "Людовик VI"
+		# dynasty = "Капетинг"
+		# birth_date = 1081.12.1
+		# death_date = 1137.8.1
+		# claim = 95
+		# adm = 2
+		# dip = 4
+		# mil = 2
+	# }
+# }
+
+# 1108.7.29 = {
+	# monarch = {
+		# name = "Людовик VI"
+		# dynasty = "Капетинг"
+		# birth_date = 1081.12.1
+		# adm = 2
+		# dip = 4
+		# mil = 2
+	# }
+# }
+
+# 1120.1.1 = {
+	# heir = {
+		# name = "Людовик"
+		# monarch_name = "Людовик VII"
+		# dynasty = "Капетинг"
+		# birth_date = 1120.1.1
+		# death_date = 1180.9.18
+		# claim = 95
+		# adm = 1
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1137.8.1 = {
+	# monarch = {
+		# name = "Людовик VII"
+		# dynasty = "Капетинг"
+		# birth_date = 1120.1.1
+		# adm = 1
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1165.8.21 = {
+	# heir = {
+		# name = "Филипп"
+		# monarch_name = "Филипп II Август"
+		# dynasty = "Капетинг"
+		# birth_date = 1165.8.21
+		# death_date = 1223.7.14
+		# claim = 95
+		# adm = 1
+		# dip = 1
+		# mil = 4
+	# }
+# }
+
+# 1180.9.18 = {
+	# monarch = {
+		# name = "Филипп II Август"
+		# dynasty = "Капетинг"
+		# birth_date = 1165.8.21
+		# adm = 1
+		# dip = 1
+		# mil = 4
+	# }
+# }
+
+# 1187.9.5 = {
+	# heir = {
+		# name = "Людовик"
+		# monarch_name = "Людовик VIII Лев"
+		# dynasty = "Капетинг"
+		# birth_date = 1187.9.5
+		# death_date = 1226.11.8
+		# claim = 95
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1223.7.14 = {
+	# monarch = {
+		# name = "Людовик VIII Лев"
+		# dynasty = "Капетинг"
+		# birth_date = 1187.9.5
+		# adm = 3
+		# dip = 3
+		# mil = 3
+	# }
+# }
+
+# 1223.7.14 = {
+	# heir = {
+		# name = "Людовик"
+		# monarch_name = "Людовик IX Святой"
+		# dynasty = "Капетинг"
+		# birth_date = 1214.4.25
+		# death_date = 1270.8.25
+		# claim = 95
+		# adm = 1
+		# dip = 1
+		# mil = 4
+	# }
+# }
+
+# 1226.11.8 = {
+	# monarch = {
+		# name = "Людовик IX Святой"
+		# dynasty = "Капетинг"
+		# birth_date = 1214.4.25
+		# adm = 1
+		# dip = 1
+		# mil = 4
+	# }
+# }
+
+# 1245.4.30 = {
+	# heir = {
+		# name = "Филипп"
+		# monarch_name = "Филипп III Смелый"
+		# dynasty = "Капетинг"
+		# birth_date = 1245.4.30
+		# death_date = 1285.10.5
+		# claim = 95
+		# adm = 4
+		# dip = 1
+		# mil = 1
+	# }
+# }
+
+# 1270.8.25 = {
+	# monarch = {
+		# name = "Филипп III Смелый"
+		# dynasty = "Капетинг"
+		# birth_date = 1245.4.30
+		# adm = 4
+		# dip = 1
+		# mil = 1
+	# }
+# }
+
+# 1270.8.25 = {
+	# heir = {
+		# name = "Филипп"
+		# monarch_name = "Филипп IV Красивый"
+		# dynasty = "Капетинг"
+		# birth_date = 1268.4.8
+		# death_date = 1314.11.29
+		# claim = 95
+		# adm = 4
+		# dip = 1
+		# mil = 3
+	# }
+# }
+
+1285.10.5 = {
+	monarch = {
+		name = "Филипп IV Красивый"
+		dynasty = "Капетинг"
+		birth_date = 1268.4.8
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1289.10.4 = {
+	heir = {
+		name = "Людовик"
+		monarch_name = "Людовик X Сварливый"
+		dynasty = "Капетинг"
+		birth_date = 1289.10.4
+		death_date = 1316.6.5
+		claim = 95
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1314.11.29 = {
+	monarch = {
+		name = "Людовик X Сварливый"
+		dynasty = "Капетинг"
+		birth_date = 1289.10.4
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1316.6.5 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1316.11.15 = {
+	monarch = {
+		name = "Иоанн I Посмертный"
+		dynasty = "Капетинг"
+		birth_date = 1316.11.15
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+1316.11.20 = {
+	monarch = {
+		name = "Филипп V"
+		dynasty = "Капетинг"
+		birth_date = 1291.11.17
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1316.11.20 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл IV"
+		dynasty = "Капетинг"
+		birth_date = 1294.6.18
+		death_date = 1328.2.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1322.1.3 = {
+	monarch = {
+		name = "Карл IV"
+		dynasty = "Капетинг"
+		birth_date = 1294.6.18
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1328.4.1 = {
+	monarch = {
+		name = "Филипп VI"
+		dynasty = "де Валуа"
+		birth_date = 1293.1.1
+		adm = 3 
+		dip = 2
+		mil = 3
+	}
+}
+
+1350.8.22 = {
+	monarch = {
+		name = "Иоанн II"
+		dynasty = "де Валуа"
+		birth_date = 1319.4.16
+		adm = 3 
+		dip = 4
+		mil = 3
+	}
+}
+
+1364.4.8 = {
+	monarch = {
+		name = "Карл V"
+		dynasty = "де Валуа"
+		birth_date = 1338.1.21
+		adm = 4 
+		dip = 4
+		mil = 2
+	}
+}
 
 1380.9.16 = {
 	monarch = {
-		name = "Charles VI"
-		dynasty = "de Valois"
+		name = "Карл VI"
+		dynasty = "де Валуа"
 		birth_date = 1368.12.3
 		adm = 0
 		dip = 0
@@ -22,9 +420,9 @@ national_focus = DIP
 
 1391.12.25 = { 
 	leader = { 
-		name = "Jean II Le Meingre"	
+		name = "Жан ле Менгр"	
 		type = general		
-		rank = 1	
+		
 		fire = 2	
 		shock = 2	
 		manuever = 3	
@@ -35,9 +433,9 @@ national_focus = DIP
 
 1402.1.1 = { 
 	leader = {	
-		name = "Charles d'Albret"	
+		name = "Карл д'Альбре"	
 		type = general		
-		rank = 1	
+		
 		fire = 2	
 		shock = 2	
 		manuever = 3	
@@ -48,9 +446,9 @@ national_focus = DIP
 
 1403.2.22 = {
 	heir = {
-		name = "Charles"
-		monarch_name = "Charles VII"
-		dynasty = "de Valois"
+		name = "Карл"
+		monarch_name = "Карл VII"
+		dynasty = "де Валуа"
 		birth_date = 1403.2.22
 		death_date = 1461.7.22
 		claim = 95
@@ -60,24 +458,35 @@ national_focus = DIP
 	}
 }
 
-1418.1.1 = { leader = {	name = "Йtienne de Vignolles"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1443.1.11 } }
+1418.1.1 = { leader = {	name = "Этьен де Виньоль"	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1443.1.11 } }
 
 1422.10.22 = {
 	monarch = {
-		name = "Charles VII"
-		dynasty = "de Valois"
+		name = "Карл VII"
+		dynasty = "де Валуа"
 		birth_date = 1403.2.22
 		adm = 4
 		dip = 2
 		mil = 4
 	}
+	queen = {
+        country_of_origin = PRO
+        name = "Мари"
+        dynasty = "д'Анжу" 
+        birth_date = 1404.10.14
+        death_date = 1463.11.29
+        female = yes
+        adm = 4
+        dip = 4
+        mil = 4
+    }
 }
 
 1423.7.3 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XI"
-		dynasty = "de Valois"
+		name = "Людовик"
+		monarch_name = "Людовик XI"
+		dynasty = "де Валуа"
 		birth_date = 1423.7.3
 		death_date = 1483.8.30
 		claim = 95
@@ -85,38 +494,70 @@ national_focus = DIP
 		dip = 3
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = intricate_web_weaver_personality
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = well_advised_personality
+	add_queen_personality = zealot_personality
 }
 
-#1425.1.1 = { leader = {	name = "Arthur de Richemont"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1457.9.23 } }
+#1425.1.1 = { leader = {	name = "Артур де Ришмон"	type = general		fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1457.9.23 } }
 
-1427.1.1 = { leader = {	name = "Jean de Dunois"		type = general		rank = 2	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1468.11.24 } }
+1427.1.1 = { leader = {	name = "Жан де Дюнуа"		type = general		fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1468.11.24 } }
 
-1429.1.1 = { leader = {	name = "Gilles de Rais"		type = general		rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1435.1.1 } }
+1429.1.1 = { leader = {	name = "Жиль де Ре"		type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1435.1.1 } }
 
-1429.4.29 = { leader = { name = "Jeanne d'Arc"		type = general		rank = 1	fire = 3	shock = 6	manuever = 4	siege = 0	female = yes	death_date = 1430.5.23 } }
+1429.4.29 = { leader = { name = "Жанна д'Арк"		type = general		fire = 3	shock = 6	manuever = 4	siege = 0	female = yes	death_date = 1430.5.23 } }
 
-#1435.1.1 = { leader = { name = "J. de Xaintrailles" 	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1461.10.7 } }
+#1435.1.1 = { leader = { name = "Жан де Сентрайль" 	type = general		fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1461.10.7 } }
 
-1439.1.1 = { leader = {	name = "Jean Bureau"           	type = general		rank = 5	fire = 4	shock = 4	manuever = 1	siege = 3	death_date = 1463.7.5 } }
+1439.1.1 = {
+	leader = {
+		name = "Жан Бюро"
+		type = general
+	
+		fire = 4
+		shock = 4
+		manuever = 1
+		siege = 3
+		death_date = 1463.7.5
+		personality = siege_specialist_personality
+	}
+}
 
-#1455.1.1 = { decision = land_recruiting_act }
+1455.1.1 = { add_army_professionalism = 0.1 }
 
 1461.7.22 = {
 	monarch = {
-		name = "Louis XI"
-		dynasty = "de Valois"
+		name = "Людовик XI"
+		dynasty = "де Валуа"
 		birth_date = 1423.7.3
 		adm = 4
 		dip = 3
 		mil = 2
 	}
+	queen = {
+		country_of_origin = SAV
+		name = "Карлотта"
+		dynasty = "ди Савойя"
+		birth_date = 1443.1.1
+		death_date = 1483.12.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = lawgiver_personality
+	add_queen_personality = calm_personality
 }
 
 1470.6.30 = {
 	heir = {
-		name = "Charles"
-		monarch_name = "Charles VIII"
-		dynasty = "de Valois"
+		name = "Карл"
+		monarch_name = "Карл VIII"
+		dynasty = "де Валуа"
 		birth_date = 1470.6.30
 		death_date = 1498.4.7
 		claim = 95
@@ -132,92 +573,145 @@ national_focus = DIP
 
 1483.8.30 = {
 	monarch = {
-		name = "Charles VIII"
-		dynasty = "de Valois"
+		name = "Карл VIII"
+		dynasty = "де Валуа"
 		birth_date = 1470.6.30
 		adm = 4
 		dip = 2
 		mil = 6
 	}
-}
-
-1483.8.30 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XII"
-		dynasty = "de Valois"
+		name = "Людовик"
+		monarch_name = "Людовик XII"
+		dynasty = "де Валуа"
 		birth_date = 1462.6.27
 		death_date = 1515.1.1
 		claim = 95
-		adm = 2
+		adm = 5
 		dip = 3
-		mil = 5
+		mil = 2
 	}
+	queen = {
+		country_of_origin = BRI
+		name = "Анна"
+		dynasty = "де Дре"
+		birth_date = 1477.1.25
+		death_date = 1514.1.9
+		female = yes
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_queen_personality = fertile_personality
+	add_heir_personality = calm_personality
 }
 
-1488.7.27 = { leader = { name = "L. de la Trйmoille"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1525.2.24 } }
+1488.7.27 = { leader = { name = "Луи де Ла Треймуль "	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1525.2.24 } }
 
 1488.9.10 = { add_accepted_culture = breton }
 
-1495.1.1 = { leader = {	name = "Jacques de La Palice"	type = general		rank = 2	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1525.2.24 } }
+1495.1.1 = { leader = {	name = "Жак де Ла Палис"	type = general		fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1525.2.24 } }
 
-#1495.1.1 = { leader = {	name = "Capitaine Paulin"	type = admiral		rank = 1	fire = 2	shock = 3	manuever = 2	siege = 0 	death_date = 1510.1.1 } } # Removed /SWЦ
+#1495.1.1 = { leader = {	name = "Паулин де Ла Гард"	type = admiral		fire = 2	shock = 3	manuever = 2	siege = 0 	death_date = 1510.1.1 } } # Removed /SWЦ
 
-1495.1.1 = { leader = { name = "Louis d'Armagnac"	type = general	rank = 1	fire = 3	shock = 3 manuever = 2	siege = 0 death_date = 1503.4.28 } }
+1495.1.1 = { leader = { name = "Луи д'Арманьяк"	type = general	fire = 3	shock = 3 manuever = 2	siege = 0 death_date = 1503.4.28 } }
 
-1497.1.1 = { leader = {	name = "Prйgent of Bidoux"	type = admiral		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1528.8.1 } }
+1497.1.1 = { leader = {	name = "Прижан из Бижю"	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1528.8.1 } }
 
 1498.4.7 = {
 	monarch = {
-		name = "Louis XII"
-		dynasty = "de Valois"
+		name = "Людовик XII"
+		dynasty = "де Валуа"
 		birth_date = 1462.6.27
-		adm = 2
+		adm = 5
 		dip = 3
-		mil = 5
+		mil = 2
 	}
-}
-
-1498.4.7 = {
 	heir = {
-		name = "Franзois"
-		monarch_name = "Franзois I"
-		dynasty = "de Valois"
+		name = "Франциск"
+		monarch_name = "Франциск I"
+		dynasty = "де Валуа"
 		birth_date = 1494.9.12
 		death_date = 1547.3.31
 		claim = 95
-		adm = 5
-		dip = 2
-		mil = 6
+		adm = 4
+		dip = 5
+		mil = 3
 	}
+	queen = {
+        country_of_origin = FRA
+        name = "Жанна"
+        dynasty = "де Валуа"
+        birth_date = 1464.4.23
+        death_date = 1498.12.17 #Death in 1505.2.4
+        female = yes
+        adm = 3
+        dip = 3
+        mil = 2
+    }
+	clear_scripted_personalities = yes
+	add_queen_personality = zealot_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = just_personality 
+	add_heir_personality = scholar_personality 
+}
+
+1499.1.8 = {
+    queen = { # Anne of Brittany needs a second entry for her marriage to Louis XII
+        country_of_origin = BRI
+        name = "Анна"
+        dynasty = "де Дре"
+        birth_date = 1477.1.25
+        death_date = 1514.1.9
+        female = yes
+        adm = 4
+        dip = 3
+        mil = 2
+    }
 }
 		
-1509.1.1 = { leader = {	name = "Pierre Bayard"         	type = general		rank = 2	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1524.4.30 } }
+1509.1.1 = { leader = {	name = "Пьер Баярд"         	type = general		fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1524.4.30 } }
 
-1511.1.1 = { leader = {	name = "Gaston de Foix"		type = general		rank = 0	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1512.4.11 } }
+1511.1.1 = { leader = {	name = "Гастон де Фуа"		type = general		fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1512.4.11 } }
 
 1515.1.1 = { government = despotic_monarchy }
 
-1515.1.1 = { leader = { name = "Pedro Navarro"		type = general	rank = 1	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1528.8.28 } }
+1515.1.1 = { leader = { name = "Педро Наварро"		type = general	fire = 3	shock = 2	manuever = 2	siege = 3	death_date = 1528.8.28 } }
 
 1515.1.1 = {
 	monarch = {
-		name = "Franзois I"
-		dynasty = "de Valois"
+		name = "Франциск I"
+		dynasty = "де Валуа"
 		birth_date = 1494.9.12
-		adm = 5
-		dip = 2
-		mil = 6
+		adm = 4
+		dip = 5
+		mil = 3
 	}
+	queen = {
+        country_of_origin = FRA
+        name = "Клод"
+        dynasty = "де Валуа"
+        birth_date = 1499.10.13
+        death_date = 1524.7.20
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 2
+    }
+	clear_scripted_personalities = yes
+    add_queen_personality = fertile_personality
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = expansionist_personality
 }
 
-1515.9.1 = { leader = { name = "Odet de Foix"		type = general		rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1528.8.15 } }
+1515.9.1 = { leader = { name = "Оде де Фуа"		type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1528.8.15 } }
 
 1519.3.31 = {
 	heir = {
-		name = "Henri"
-		monarch_name = "Henri II"
-		dynasty = "de Valois"
+		name = "Генрих"
+		monarch_name = "Генрих II"
+		dynasty = "де Валуа"
 		birth_date = 1519.3.31
 		death_date = 1559.7.10
 		claim = 95
@@ -227,38 +721,50 @@ national_focus = DIP
 	}
 }
 
-1521.1.1 = { leader = {	name = "Claude de Guise"	type = general		rank = 0	fire = 2	shock = 4	manuever = 2	siege = 1	death_date = 1550.4.12 } }
+1521.1.1 = { leader = {	name = "Клод де Гиз"	type = general		fire = 2	shock = 4	manuever = 2	siege = 1	death_date = 1550.4.12 } }
 
-1522.1.1 = { leader = {	name = "G. da Verazzano"	type = explorer		rank = 11	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1528.1.1 } }
+1522.1.1 = { leader = {	name = "Жан де Верраццано"	type = explorer	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1528.1.1 } }
 
-1525.1.1 = { leader = {	name = "Philippe de Chabot"	type = admiral		rank = 2	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1543.6.7 } }
+1525.1.1 = { leader = {	name = "Филипп Шабо"	type = admiral		fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1543.6.7 } }
 
-1534.1.1 = { leader = {	name = "Jacques Cartier"	type = explorer		rank = 12	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1542.10.1 } }
+1530.7.4 = {
+    queen = {
+        country_of_origin = HAB
+        name = "Элеонора"
+        dynasty = "фон Габсбург"
+        birth_date = 1496.11.15
+        death_date = 1558.2.25
+        female = yes
+        adm = 3
+        dip = 3
+        mil = 2
+    }
+    add_queen_personality = zealot_personality
+}
+
+1534.1.1 = { leader = {	name = "Жак Картье"	type = explorer	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1542.10.1 } }
 
 1534.8.15 = { decision = join_the_counter_reformation decision = conventicle_act decision = act_of_uniformity }
 
-1536.1.1 = { leader = {	name = "Anne de Montmorency"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1567.1.1 } }
+1536.1.1 = { leader = {	name = "Анн де Монморанси"	type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1567.1.1 } }
 
-1544.1.1 = { leader = {	name = "Claude d'Annebaut"	type = admiral		rank = 0	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1552.11.2 } }
+1544.1.1 = { leader = {	name = "Клод д'Аннебо"	type = admiral		fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1552.11.2 } }
 
-1547.1.1 = { leader = {	name = "Gaspard de Coligny"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1562.1.1 } }
+1547.1.1 = { leader = {	name = "Гаспар де Колиньи"	type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1562.1.1 } }
 
 1547.3.31 = {
 	monarch = {
-		name = "Henri II"
-		dynasty = "de Valois"
+		name = "Генрих II"
+		dynasty = "де Валуа"
 		birth_date = 1519.3.31
 		adm = 4
 		dip = 3
 		mil = 3
 	}
-}
-
-1547.3.31 = {
 	heir = {
-		name = "Franзois"
-		monarch_name = "Franзois II"
-		dynasty = "de Valois"
+		name = "Франциск"
+		monarch_name = "Франциск II"
+		dynasty = "де Валуа"
 		birth_date = 1544.1.19
 		death_date = 1560.12.5
 		claim = 95
@@ -266,32 +772,55 @@ national_focus = DIP
 		mil = 1
 		dip = 0
 	}
+	queen = {
+        country_of_origin = LAN
+        name = "Катерина"
+        dynasty = "де' Медичи"
+        birth_date = 1519.4.13
+        death_date = 1589.1.9
+        female = yes
+        adm = 1
+        dip = 2
+        mil = 2
+    }
+	clear_scripted_personalities = yes
+	add_queen_personality = cruel_personality
+	add_ruler_personality = lawgiver_personality 
+	add_ruler_personality = zealot_personality 
 }
 
 #1550.1.1 = { decision = judiciary_act decision = agricultural_cultivation }
 
-1552.1.1 = { leader = {	name = "Louis I de Condй"	type = general		rank = 1	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1562.1.1 } }
+1552.1.1 = { leader = {	name = "Людовик де Конде"	type = general		fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1562.1.1 } }
 
-1552.1.1 = { leader = { name = "Franзois de Guise"	type = general		rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1563.2.18 } }
+1552.1.1 = { leader = { name = "Франсуа де Гиз"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1563.2.18 } }
 
-1553.1.1 = { leader = {	name = "N. de Villegagnon"	type = explorer		rank = 13	fire = 3	shock = 1	manuever = 4	siege = 0	death_date = 1557.1.1 } }
+1553.1.1 = { leader = {	name = "Николя де Гоннвиль"	type = explorer	fire = 3	shock = 1	manuever = 4	siege = 0	death_date = 1557.1.1 } }
 
 1559.7.10 = {
 	monarch = {
-		name = "Franзois II"
-		dynasty = "de Valois"
+		name = "Франциск II"
+		dynasty = "де Валуа"
 		birth_date = 1544.1.19
 		adm = 0
 		dip = 0
 		mil = 1
 	}
-}
-
-1559.7.10 = {
+	queen = {
+        country_of_origin = SCO
+        name = "Мэри"
+        dynasty = "Стюарт"
+        birth_date = 1542.12.8
+        death_date = 1587.2.8
+        female = yes
+        adm = 2
+        dip = 3
+        mil = 3
+    }
 	heir = {
-		name = "Charles"
-		monarch_name = "Charles IX"
-		dynasty = "de Valois"
+		name = "Карл"
+		monarch_name = "Карл IX"
+		dynasty = "де Валуа"
 		birth_date = 1550.6.27
 		death_date = 1574.5.30
 		claim = 95
@@ -299,12 +828,14 @@ national_focus = DIP
 		dip = 1
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_queen_personality = intricate_web_weaver_personality
 }
 
 1560.12.5 = {
 	monarch = {
-		name = "Charles IX"
-		dynasty = "de Valois"
+		name = "Карл IX"
+		dynasty = "де Валуа"
 		birth_date = 1550.6.27
 		adm = 1
 		dip = 1
@@ -314,9 +845,9 @@ national_focus = DIP
 
 1560.12.5 = {
 	heir = {
-		name = "Henri"
-		monarch_name = "Henri III"
-		dynasty = "de Valois"
+		name = "Генрих"
+		monarch_name = "Генрих III"
+		dynasty = "де Валуа"
 		birth_date = 1551.9.19
 		death_date = 1589.8.2
 		claim = 95
@@ -326,63 +857,122 @@ national_focus = DIP
 	}
 }
 
-1562.1.1 = { leader = {	name = "Jean Ribaut"		type = conquistador	rank = 14	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1565.10.12 } }
+1562.1.1 = { leader = {	name = "Жан Рибо"		type = conquistador	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1565.10.12 } }
 
 1562.1.1 = { set_country_flag = religious_turmoil set_country_flag = religious_intolerance } # Wars of Religion
 
+1570.11.26 = {
+    queen = {
+        country_of_origin = HAB
+        name = "Елисавета"
+        dynasty = "фон Габсбург"
+        birth_date = 1554.6.5
+        death_date = 1592.1.22
+        female = yes
+        adm = 2
+        dip = 3
+        mil = 2
+    }
+    add_queen_personality = kind_hearted_personality # Although devoutly Catholic, she was shocked and disgusted by the St. Bartholomew's Day Massacre.
+}
+
 1574.5.30 = {
 	monarch = {
-		name = "Henri III"
-		dynasty = "de Valois"
+		name = "Генрих III"
+		dynasty = "де Валуа"
 		birth_date = 1551.9.19
 		adm = 5
 		dip = 1
 		mil = 1
 	}
-}
-
-1574.5.30 = {
 	heir = {
-		name = "Henri"
-		monarch_name = "Henri IV"
-		dynasty = "de Bourbon"
+		name = "Генрих"
+		monarch_name = "Генрих IV"
+		dynasty = "де Бурбон"
 		birth_date = 1553.12.13
 		death_date = 1610.5.14
 		claim = 95
-		adm = 6
-		dip = 6
-		mil = 6
-		leader = {	name = "Henri IV"	type = general		rank = 0	fire = 4	shock = 4	manuever = 2	siege = 0 }
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = {	name = "Генрих IV"	type = general		fire = 4	shock = 4	manuever = 2	siege = 0 }
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality 
+	add_ruler_personality = tolerant_personality   
 }
 
-1575.10.4 = { leader = { name = "Henri de Guise"	type = general		rank = 0	fire = 2	shock = 4	manuever = 2	siege = 1	death_date = 1588.12.23 } }
+1575.2.13 = {
+    queen = {
+        country_of_origin = LOR
+        name = "Луиза"
+        dynasty = "де Лоррейн"
+        birth_date = 1553.4.30
+        death_date = 1601.1.29
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 2
+    }
+}
+
+1575.10.4 = { leader = { name = "Генрих де Гиз"	type = general		fire = 2	shock = 4	manuever = 2	siege = 1	death_date = 1588.12.23 } }
 
 1589.8.2 = {
 	monarch = {
-		name = "Henri IV"
-		dynasty = "de Bourbon"
+		name = "Генрих IV"
+		dynasty = "де Бурбон"
 		birth_date = 1553.12.13
-		adm = 6
-		dip = 6
-		mil = 6
-		leader = {	name = "Henri IV"	type = general		rank = 0	fire = 4	shock = 4	manuever = 2	siege = 0 }
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = {	name = "Генрих IV"	type = general		fire = 4	shock = 4	manuever = 2	siege = 0 }
 	}
+	queen = {
+        country_of_origin = FRA
+        name = "Маргарита"
+        dynasty = "де Валуа"
+        birth_date = 1553.5.14
+        death_date = 1599.12.17 #Died in 1615.3.27
+        female = yes
+        adm = 2
+        dip = 3
+        mil = 2
+    }
+	clear_scripted_personalities = yes
+	add_queen_personality = silver_tongue_personality
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = expansionist_personality
 }
 
-1589.8.3 = { leader = { name = "Franзois de Bonne"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1626.9.21 } }
+1589.8.3 = { leader = { name = "Франсуа де Бонн"	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1626.9.21 } }
 
-1589.8.8 = { government = absolute_monarchy }
+1589.8.8 = { government = despotic_monarchy }
 
 1598.4.13 = { clr_country_flag = religious_turmoil clr_country_flag = religious_intolerance  decision = enact_edict_de_nantes } # Edict of Nantes
 
 1600.1.1 = { decision = enlist_privateers }
 
+1600.10.5 = {
+    queen = {
+        country_of_origin = LAN
+        name = "Мария"
+        dynasty = "Медичи"
+        birth_date = 1575.4.26
+        death_date = 1642.7.3
+        female = yes
+        adm = 1
+        dip = 2
+        mil = 1
+    }
+    add_queen_personality = architectural_visionary_personality
+}
+
 1601.9.27 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XIII"
-		dynasty = "de Bourbon"
+		name = "Людовик"
+		monarch_name = "Людовик XIII"
+		dynasty = "де Бурбон"
 		birth_date = 1601.9.27
 		death_date = 1643.5.14
 		claim = 95
@@ -392,44 +982,63 @@ national_focus = DIP
 	}
 }
 
-1603.3.15 = { leader = { name = "Samuel de Champlain"	type = conquistador	rank = 12	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1620.1.1 } }
+1603.3.15 = { leader = { name = "Самюэль де Шамплен"	type = conquistador	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1620.1.1 } }
 
 1610.5.14 = {
 	monarch = {
-		name = "Louis XIII"
-		dynasty = "de Bourbon"
+		name = "Людовик XIII"
+		dynasty = "де Бурбон"
 		birth_date = 1601.9.27
 		adm = 3
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = charismatic_negotiator_personality
 }
 
-1615.1.1 = { leader = {	name = "Augustin Beaulieu"	type = explorer		rank = 13	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1625.1.1 } }
+1615.1.1 = { leader = {	name = "Августин Болье"	type = explorer	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1625.1.1 } }
 
-1630.1.1 = { leader = {	name = "Henri de Turenne"	type = general		rank = 1	fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1675.7.27 } }
+1615.11.24 = {
+    queen = {
+        country_of_origin = SPA
+        name = "Ана"
+        dynasty = "фон Габсбург"
+        birth_date = 1601.9.22
+        death_date = 1666.1.20
+        female = yes
+        adm = 3
+        dip = 2
+        mil = 2
+    }
+    add_queen_personality = loose_lips_personality
+}
 
-1634.1.1 = { leader = {	name = "Jean Nicollet"		type = conquistador	rank = 19	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1642.11.1 } }
+1630.1.1 = { leader = {	name = "Генрих де Тюренн"	type = general		fire = 5	shock = 5	manuever = 5	siege = 1	death_date = 1675.7.27 } }
 
-1635.1.1 = { leader = {	name = "Maillй Brйzй"          	type = admiral		rank = 0	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1646.6.14 } }
+1634.1.1 = { leader = {	name = "Жан Николе"			type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1642.11.1 } }
 
-1635.1.1 = { leader = {	name = "Henri de Sourdis"	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1641.1.1 } }
+1635.1.1 = { leader = {	name = "Жан Арман де Брезе" type = admiral		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1646.6.14 } }
 
-1635.1.1 = { leader = {	name = "Henri d'Harcourt"	type = general		rank = 3	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1666.7.25 } }
+1635.1.1 = { leader = {	name = "Генрих де Сурдис"	type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1641.1.1 } }
 
-1635.1.1 = { leader = {	name = "B. de Saxe-Weimar"	type = general		rank = 5	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1639.7.18 } }
+1635.1.1 = { leader = {	name = "Генрих д'Аркур"		type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1666.7.25 } }
+
+1635.1.1 = { leader = {	name = "Бернард де Саксен-Веймар"	type = general		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1639.7.18 } }
 
 1635.5.1 = {
 	join_league = protestant
 }
 
-1638.1.1 = { leader = {	name = "Chevalier Paul"        	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1666.1.1 } }
+1638.1.1 = { leader = {	name = "Поль Шевалье"        	type = admiral		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1666.1.1 } }
 
 1638.9.5 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XIV"
-		dynasty = "de Bourbon"
+		name = "Людовик"
+		monarch_name = "Людовик XIV"
+		dynasty = "де Бурбон"
 		birth_date = 1638.9.5
 		death_date = 1715.9.1
 		claim = 95
@@ -439,17 +1048,22 @@ national_focus = DIP
 	}
 }
 
-1640.1.1 = { leader = {	name = "Louis II de Condй"	type = general		rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1675.1.1 } }
+1640.1.1 = { leader = {	name = "Людовик II де Конде"	type = general		fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1675.1.1 } }
 
 1643.5.14 = {
 	monarch = {
-		name = "Louis XIV"
-		dynasty = "de Bourbon"
+		name = "Людовик XIV"
+		dynasty = "де Бурбон"
 		birth_date = 1638.9.5
 		adm = 5
 		dip = 5
 		mil = 6
 	}
+	add_army_professionalism = 0.2
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = expansionist_personality
 }
 
 1643.5.15 = { remove_accepted_culture = burgundian remove_accepted_culture = breton }
@@ -458,83 +1072,113 @@ national_focus = DIP
 	leave_league = protestant
 }
 
-1650.1.1 = { leader = {	name = "Abraham Duquesne"	type = admiral		rank = 0	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1684.12.31 } }
+1650.1.1 = { leader = {	name = "Авраам Дюкен"	type = admiral		fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1684.12.31 } }
 
-1653.1.1 = { leader = {	name = "Jean de Gabaret"	type = admiral		rank = 4	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1693.1.1 } }
+1653.1.1 = { leader = {	name = "Жан де Габарет"	type = admiral		fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1693.1.1 } }
 
-1654.1.1 = { leader = {	name = "M. des Groseilliers"	type = conquistador	rank = 13	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1669.1.1 } }
+1654.1.1 = { leader = {	name = "М. Гросселье"	type = conquistador	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1669.1.1 } }
 
-1660.1.1 = { leader = {	name = "Francois de Vendфme"	type = admiral		rank = 3	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1669.6.25 } }
+1660.1.1 = { leader = {	name = "Франсуа де Вандом"	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1669.6.25 } }
+
+1660.6.9 = {
+    queen = {
+        country_of_origin = SPA
+        name = "Мария Тереза"
+        dynasty = "фон Габсбург"
+        birth_date = 1639.9.10
+        death_date = 1683.7.30
+        female = yes
+        adm = 2
+        dip = 3
+        mil = 2
+    }
+    add_queen_personality = charismatic_negotiator_personality
+}
 
 1661.3.9 = { government = enlightened_despotism }
 
-1665.1.1 = { leader = {	name = "De Valbelle"		type = admiral		rank = 4	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1690.1.1 } }
+1665.1.1 = { leader = {	name = "Де Вальбиль"		type = admiral		fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1690.1.1 } }
 
-1667.5.24 = { leader = { name = "F. de Luxembourg"	type = general		rank = 2	fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1695.1.4 } }
+1667.5.24 = { leader = { name = "Ф. де Люксембург"	type = general		fire = 3	shock = 4	manuever = 4	siege = 1	death_date = 1695.1.4 } }
 
-1669.1.1 = { leader = {	name = "Renй de La Salle"	type = conquistador	rank = 15	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1687.3.19 } }
+1669.1.1 = { leader = {	name = "Рене де Ла Саль"	type = conquistador	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1687.3.19 } }
 
-1670.1.1 = { leader = {	name = "F. de Relingue"		type = admiral		rank = 9	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1704.8.24 } }
+1670.1.1 = { leader = {	name = "Ф. де Релинг"		type = admiral		fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1704.8.24 } }
 
-1672.1.1 = { leader = {	name = "F. de Chвteaurenault"	type = admiral		rank = 3	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1716.1.1 } }
+1672.1.1 = { leader = {	name = "Ф. де Шаторено"	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1716.1.1 } }
 
-1672.1.1 = { leader = {	name = "T. C. Amblimont"	type = admiral		rank = 5	fire = 4	shock = 4	manuever = 2	siege = 0	death_date = 1694.1.1 } }
+1672.1.1 = { leader = {	name = "Т. К. Амблимонт "	type = admiral		fire = 4	shock = 4	manuever = 2	siege = 0	death_date = 1694.1.1 } }
 
-1672.9.12 = { leader = { name = "Louis de Frontenac"	type = conquistador	rank = 14	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1689.11.28 } }
+1672.9.12 = { leader = { name = "Луи де Фронтенак"	type = conquistador	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1689.11.28 } }
 
-1673.1.1 = { leader = {	name = "H. de La Fresniиre"	type = conquistador	rank = 11	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1722.3.22 } }
+1673.1.1 = { leader = {	name = "Х. де Ла Фреснир"	type = conquistador	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1722.3.22 } }
 
-1673.5.1 = { leader = {	name = "Louis Jolliet"		type = conquistador	rank = 14	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1700.5.1 } }
+1673.5.1 = { leader = {	name = "Луи Жолье"		type = conquistador	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1700.5.1 } }
 
-1675.1.1 = { leader = {	name = "F. de la La Feuillade"	type = general		rank = 6	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1691.1.1 } }
+1675.1.1 = { leader = {	name = "Ф. де Ла Феилад "	type = general		fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1691.1.1 } }
 
-1675.1.1 = { leader = {	name = "Louis de Vivonne"	type = admiral		rank = 4	fire = 4	shock = 4	manuever = 2	siege = 0	death_date = 1688.3.1 } }
+1675.1.1 = { leader = {	name = "Луи де Вивон"	type = admiral		fire = 4	shock = 4	manuever = 2	siege = 0	death_date = 1688.3.1 } }
 
-1675.1.26 = { leader = { name = "Alain de Coлtlogon"	type = admiral		rank = 2	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1730.6.7 } }
+1675.1.26 = { leader = { name = "Алаин де Кол Тологон"	type = admiral		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1730.6.7 } }
 
-#1678.1.1 = { leader = {	name = "Camille de Tallard"	type = general		rank = 10	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1704.8.13 } } # Removed /SWЦ
+#1678.1.1 = { leader = {	name = "Камиль де Талар"	type = general	0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1704.8.13 } } # Removed /SWЦ
 
-#1678.9.1 = { leader = {	name = "Daniel Duluth"		type = conquistador	rank = 15	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1710.2.25 } } # Removed /SWЦ
+#1678.9.1 = { leader = {	name = "Даниэль Дулуз"		type = conquistador	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1710.2.25 } } # Removed /SWЦ
 
-#1681.1.1 = { leader = {	name = "Louis de Boufflers"	type = general		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1711.8.22 } } # Removed /SWЦ
+#1681.1.1 = { leader = {	name = "Луи де Буффлер"	type = general		fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1711.8.22 } } # Removed /SWЦ
 
 1682.5.1 = { decision = move_the_court_to_versailles }
 
-#1685.1.1 = { leader = {	name = "Jean d'Estrйes"		type = admiral		rank = 2	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1707.5.19 } } # Removed /SWЦ
+1683.10.9 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Франсуаза"
+		dynasty = "де Ментенон"
+		birth_date = 1635.11.26
+		death_date = 1719.4.15
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	add_queen_personality = zealot_personality
+}
+
+#1685.1.1 = { leader = {	name = "Жан д'Эстре"		type = admiral		fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1707.5.19 } } # Removed /SWЦ
 
 1685.10.1 = { decision = revoke_edict_de_nantes }
 
-#1688.1.1 = { leader = {	name = "Louis de Vendфme"	type = general		rank = 2	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1712.6.11 } } # Removed /SWЦ
+#1688.1.1 = { leader = {	name = "Людовик де Вандом"	type = general		fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1712.6.11 } } # Removed /SWЦ
 
-1688.1.1 = { leader = {	name = "Nicolas de Catinat"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1701.6.10 } }
+1688.1.1 = { leader = {	name = "Николя де Катина"		type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1701.6.10 } }
 
-#1689.1.1 = { leader = {	name = "A.J. de Noailles"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1708.10.2 } } # Removed /SWЦ
+#1689.1.1 = { leader = {	name = "А. Д. де Ноайлес"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1708.10.2 } } # Removed /SWЦ
 
-1690.1.1 = { leader = {	name = "Anne de Tourville"	type = admiral		rank = 1	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1697.9.20 } }
+1690.1.1 = { leader = {	name = "Анн де Турвиль"			type = admiral		fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1697.9.20 } }
 
-#1693.1.1 = { leader = {	name = "Francois de Villeroy"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1706.5.23 } } # Removed /SWЦ
+#1693.1.1 = { leader = {	name = "Франсуа де Вильруа"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1706.5.23 } } # Removed /SWЦ
 
-#1695.1.1 = { leader = {	name = "Andrй de Nesmond"	type = admiral		rank = 13	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1702.1.1 } } # Removed /SWЦ
+#1695.1.1 = { leader = {	name = "Эндрю де Несмон"	type = admiral	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1702.1.1 } } # Removed /SWЦ
 
-#1696.1.3 = { leader = {	name = "P. de Montesquiou"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1725.8.12 } } # Removed /SWЦ
+#1696.1.3 = { leader = {	name = "Р. де Монтескью"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1725.8.12 } } # Removed /SWЦ
 
-1701.1.1 = { leader = {	name = "L. Alexandre de Bourbon"	type = admiral	rank = 3	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1718.9.24 } }
+1701.1.1 = { leader = {	name = "Л. Александр де Бурбон"	type = admiral	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1718.9.24 } }
 
-1701.1.1 = { leader = {	name = "Claude de Villars" 	type = general		rank = 3	fire = 5	shock = 5	manuever = 4	siege = 1	death_date = 1734.6.17 } }
+1701.1.1 = { leader = {	name = "Клод де Виллар" 		type = general		fire = 5	shock = 5	manuever = 4	siege = 1	death_date = 1734.6.17 } }
 
-1701.1.1 = { leader = {	name = "Jean de Rouville"	type = conquistador	rank = 17	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1713.1.1 } }
+1701.1.1 = { leader = {	name = "Жан де Равиль"			type = conquistador	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1713.1.1 } }
 
-1703.1.1 = { leader = {	name = "Ferdinand de Marsin"	type = general		rank = 6	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1706.9.7 } }
+1703.1.1 = { leader = {	name = "Фердинанд де Марсин "	type = general		fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1706.9.7 } }
 
-#1703.1.1 = { leader = {	name = "Victor d'Estrйes"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1737.12.13 } } # Removed /SWЦ
+#1703.1.1 = { leader = {	name = "Виктор д'Эстре"		type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1737.12.13 } } # Removed /SWЦ
 
-#1706.1.1 = { leader = {	name = "Jacques de Berwick"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1734.6.12 } } # Removed /SWЦ
+#1706.1.1 = { leader = {	name = "Жак де Бервик"		type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1734.6.12 } } # Removed /SWЦ
 
 1710.2.15 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XV"
-		dynasty = "de Bourbon"
+		name = "Людовик"
+		monarch_name = "Людовик XV"
+		dynasty = "де Бурбон"
 		birth_date = 1710.2.15
 		death_date = 1774.5.10
 		claim = 95
@@ -544,58 +1188,77 @@ national_focus = DIP
 	}
 }
 
-1711.9.21 = { leader = { name = "Renй Dugay-Trouin"	type = admiral		rank = 2	fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1736.9.27 } }
+1711.9.21 = { leader = { name = "Рене Дюге-Труэн"	type = admiral		fire = 3	shock = 4	manuever = 5	siege = 0	death_date = 1736.9.27 } }
 
-1714.1.1 = { leader = {	name = "Йtienne de Bourgmont"  	type = conquistador	rank = 18	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1724.1.1 } }
+1714.1.1 = { leader = {	name = "Итен де Бурмон"  	type = conquistador	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1724.1.1 } }
 
 1715.9.1 = {
 	monarch = {
-		name = "Louis XV"
-		dynasty = "de Bourbon"
+		name = "Людовик XV"
+		dynasty = "де Бурбон"
 		birth_date = 1710.2.15
 		adm = 2
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = calm_personality
+	add_ruler_personality = cruel_personality
 }
 
-1727.7.21 = { leader = { name = "Pierre Benoоt Dumas"	type = conquistador	rank = 13	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1735.7.11 } }
+1725.9.4 = {
+    queen = {
+        country_of_origin = PLC
+        name = "Мария"
+        dynasty = "Лещинский"
+        birth_date = 1703.6.23
+        death_date = 1768.6.24
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 2
+    }
+    add_queen_personality = calm_personality
+}
 
-1731.1.1 = { leader = {	name = "P. de la Vйrendrye"	type = conquistador	rank = 13	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1749.12.5 } }
+1727.7.21 = { leader = { name = "Пьер Бенут Думас"		type = conquistador	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1735.7.11 } }
 
-#1733.1.1 = { leader = {	name = "C.L. de Belle-Isle"	type = general		rank = 1	fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1757.1.1 } } # Removed /SWЦ
+1731.1.1 = { leader = {	name = "П. де Ла Верендри"		type = conquistador	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1749.12.5 } }
 
-1734.8.1 = { leader = {	name = "Maurice de Saxe"	type = general		rank = 0	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.12.30 } }
+#1733.1.1 = { leader = {	name = "К. Л. де Белл-Айл "	type = general		fire = 2	shock = 2	manuever = 2	siege = 1	death_date = 1757.1.1 } } # Removed /SWЦ
 
-#1740.5.1 = { leader = {	name = "Louis de Contades"	type = general		rank = 5	fire = 1	shock = 2	manuever = 2	siege = 0	death_date = 1759.1.1 } } # Removed /SWЦ
+1734.8.1 = { leader = {	name = "Мориц Саксонский"		type = general		fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.12.30 } }
 
-1741.1.1 = { leader = {	name = "L. F. de Bourbon"	type = general		rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1747.1.1 } }
+#1740.5.1 = { leader = {	name = "Луи де Контад"		type = general		fire = 1	shock = 2	manuever = 2	siege = 0	death_date = 1759.1.1 } } # Removed /SWЦ
 
-#1745.1.1 = { leader = {	name = "Louis de Richelieu"	type = general		rank = 1	fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1758.1.1 } } # Removed /SWЦ
+1741.1.1 = { leader = {	name = "Л. Ф. де Бурбон"		type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1747.1.1 } }
 
-#1748.1.1 = { leader = {	name = "Charles de Soubise"	type = general		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1774.1.1 } } # Removed /SWЦ
+#1745.1.1 = { leader = {	name = "Луи де Ришелье"		type = general		fire = 4	shock = 2	manuever = 3	siege = 0	death_date = 1758.1.1 } } # Removed /SWЦ
 
-1748.1.1 = { leader = {	name = "Emmanuel d'Aiguillon"	type = general		rank = 1	fire = 2	shock = 3	manuever = 5	siege = 0	death_date = 1753.1.1 } }
+#1748.1.1 = { leader = {	name = "Карл де Субиз"		type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1774.1.1 } } # Removed /SWЦ
 
-#1748.1.1 = { leader = {	name = "Francois de Chevert"	type = general		rank = 6	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1758.1.1 } } # Removed /SWЦ
+1748.1.1 = { leader = {	name = "Эммануэль д'Эгийон"		type = general		fire = 2	shock = 3	manuever = 5	siege = 0	death_date = 1753.1.1 } }
 
-1748.1.1 = { leader = {	name = "Thomas de Lally"	type = general		rank = 18	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1761.1.16 } }
+#1748.1.1 = { leader = {	name = "Франсуа де Шевер"	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1758.1.1 } } # Removed /SWЦ
 
-1748.1.1 = { leader = {	name = "Victor de Broglie"	type = general		rank = 2	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1761.1.1 } }
+1748.1.1 = { leader = {	name = "Томас де Лалли"			type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1761.1.16 } }
+
+1748.1.1 = { leader = {	name = "Виктор де Бройль"		type = general		fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1761.1.1 } }
 
 1750.1.1 = { set_country_flag = haiti_nationalism }
 
-1750.1.1 = { leader = {	name = "Jean Armand Dieskau"	type = general		rank = 11	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1755.1.1 } }
+1750.1.1 = { leader = {	name = "Жан Арман Дискау"		type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1755.1.1 } }
 
-#1750.2.7 = { leader = {	name = "de la Galissoniиre"	type = admiral		rank = 8	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1756.10.26 } } # Removed /SWЦ
+#1750.2.7 = { leader = {	name = "де Ла Галисонир"	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1756.10.26 } } # Removed /SWЦ
 
-#1751.1.1 = { leader = {	name = "Emmanuel de la Motte"	type = admiral		rank = 3	fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1764.10.23 } } # Removed /SWЦ
+#1751.1.1 = { leader = {	name = "Эммануэль де Ла Мотт"	type = admiral		fire = 3	shock = 2	manuever = 4	siege = 0	death_date = 1764.10.23 } } # Removed /SWЦ
 
 1754.8.23 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XVI"
-		dynasty = "de Bourbon"
+		name = "Людовик"
+		monarch_name = "Людовик XVI"
+		dynasty = "де Бурбон"
 		birth_date = 1754.8.23
 		death_date = 1793.1.21
 		claim = 95
@@ -605,58 +1268,73 @@ national_focus = DIP
 	}
 }
 
-#1755.1.1 = { leader = {	name = "Pierre de Vaudreuil"	type = general		rank = 10	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1760.9.8 } } # Removed /SWЦ
+#1755.1.1 = { leader = {	name = "Пьер де Водраил"	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1760.9.8 } } # Removed /SWЦ
 
-1756.1.1 = { leader = {	name = "Louis de Montcalm"	type = general		rank = 9	fire = 4	shock = 6	manuever = 3	siege = 0	death_date = 1759.9.14 } }
+1756.1.1 = { leader = {	name = "Луи де Монкальм"	type = general		fire = 4	shock = 6	manuever = 3	siege = 0	death_date = 1759.9.14 } }
 
-#1759.11.20 = { leader = { name = "Hubert de Conflans"	type = admiral		rank = 0	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1777.1.1 } } # Removed /SWЦ
+#1759.11.20 = { leader = { name = "Юбер де Конфлан"	type = admiral		fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1777.1.1 } } # Removed /SWЦ
 
-#1764.1.1 = { leader = {	name = "Louis d'Orvilliers"	type = admiral		rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1779.1.1 } } # Removed /SWЦ
+#1764.1.1 = { leader = {	name = "Луи д'Орвилье"	type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1779.1.1 } } # Removed /SWЦ
 
-1766.11.15 = { leader = { name = "L. de Bougainville"	type = explorer		rank = 6	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1769.3.16 } }
+1766.11.15 = { leader = { name = "Л. де Бугенвиль"	type = explorer		fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1769.3.16 } }
 
-1769.1.1 = { leader = {	name = "N. Marion-Dufresne"	type = explorer		rank = 11	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1772.7.12 } }
+1769.1.1 = { leader = {	name = "Н. Марио-Дюфресне"	type = explorer	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1772.7.12 } }
 
-1772.1.1 = { leader = {	name = "Yves de Kerguйlen"	type = explorer		rank = 12	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1775.1.1 } }
+1772.1.1 = { leader = {	name = "Ив де Кергелен"		type = explorer	fire = 1	shock = 1	manuever = 4	siege = 0	death_date = 1775.1.1 } }
 
-1774.1.1 = { leader = {	name = "Fleuriot de Langle"	type = explorer		rank = 10	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1788.1.1 } }
+1774.1.1 = { leader = {	name = "Флариот де Лан"		type = explorer	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1788.1.1 } }
 
 1774.5.10 = {
 	monarch = {
-		name = "Louis XVI"
-		dynasty = "de Bourbon"
+		name = "Людовик XVI"
+		dynasty = "де Бурбон"
 		birth_date = 1754.8.23
 		adm = 4
 		dip = 0
 		mil = 4
 	}
+	queen = {
+        country_of_origin = HAB
+        name = "Мария Антония" # Marie Antoinette
+        dynasty = "фон Габсбург"
+        birth_date = 1753.9.2
+        death_date = 1810.11.13
+        female = yes
+        adm = 1
+        dip = 2
+        mil = 1
+    }
+	clear_scripted_personalities = yes
+	add_queen_personality = naive_personality
+	add_ruler_personality = naive_personality
+	add_ruler_personality = loose_lips_personality
 }
 
-1776.1.1 = { leader = {	name = "Luc de Guichen"		type = admiral		rank = 3	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1790.1.13 } }
+1776.1.1 = { leader = {	name = "Люк де Гюшен "		type = admiral		fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1790.1.13 } }
 
-1776.1.1 = { leader = {	name = "Francois de Grasse"	type = admiral		rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1782.4.1 } }
+1776.1.1 = { leader = {	name = "Франсуа де Грасс"	type = admiral		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1782.4.1 } }
 
-#1777.1.1 = { leader = {	name = "Charles d'Estaing"	type = admiral		rank = 1	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1794.4.28 } } # Removed /SWЦ
+#1777.1.1 = { leader = {	name = "Карл д'Эстен"	type = admiral		fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1794.4.28 } } # Removed /SWЦ
 
-1780.1.1 = { leader = {	name = "Jean de Rochambeau"	type = general		rank = 0	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1792.1.1 } }
+1780.1.1 = { leader = {	name = "Жан де Рошамбо"		type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1792.1.1 } }
 
-1780.1.1 = { leader = {	name = "Charles de Ternay"	type = admiral		rank = 1	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.1.1 } }
+1780.1.1 = { leader = {	name = "Карл де Тернэ"		type = admiral		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.1.1 } }
 
-#1780.1.1 = { leader = {	name = "Louis A. Berthier"	type = general		rank = 1	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1814.4.11 } }
+#1780.1.1 = { leader = {	name = "Луи А. Бертье"	type = general		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1814.4.11 } }
 
-1781.1.1 = { leader = {	name = "Pierre de Suffren"	type = admiral		rank = 2	fire = 4	shock = 6	manuever = 4	siege = 0	death_date = 1788.12.8 } }
+1781.1.1 = { leader = {	name = "Пьер де Сюффрен"	type = admiral		fire = 4	shock = 6	manuever = 4	siege = 0	death_date = 1788.12.8 } }
 
-1782.1.1 = { leader = {	name = "Charles de Bussy"	type = general		rank = 17	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1785.1.1 } }
+1782.1.1 = { leader = {	name = "Карл де Бюсси"		type = general	fire = 4	shock = 5	manuever = 5	siege = 0	death_date = 1785.1.1 } }
 
-1785.1.1 = { leader = {	name = "A. d'Entrecastreaux"	type = explorer		rank = 7	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1793.7.21 } }
+1785.1.1 = { leader = {	name = "А. д'Антркасто"		type = explorer		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1793.7.21 } }
 
 1785.1.1 = { set_country_flag = revolution }
 
 1785.3.27 = {
 	heir = {
-		name = "Louis"
-		monarch_name = "Louis XVII"
-		dynasty = "de Bourbon"
+		name = "Людовик"
+		monarch_name = "Людовик XVII"
+		dynasty = "де Бурбон"
 		birth_date = 1785.3.27
 		death_date = 1795.6.8
 		claim = 95
@@ -666,7 +1344,7 @@ national_focus = DIP
 	}
 }
 
-1785.8.1 = { leader = {	name = "Jean de La Pйrouse"	type = explorer		rank = 10	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1788.1.26 } }
+1785.8.1 = { leader = {	name = "Жан де Ла Перуз"	type = explorer	fire = 1	shock = 1	manuever = 5	siege = 0	death_date = 1788.1.26 } }
 
 1786.5.5 = { set_country_flag = financial_crisis }
 
@@ -674,25 +1352,26 @@ national_focus = DIP
 
 1789.7.14 = { set_country_flag = revolution government = constitutional_monarchy }
 
-#1790.1.1 = { leader = {	name = "Albert De Luynes"	type = general		rank = 12	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.23  } }
-#1790.1.1 = { leader = {	name = "Duc de Luynes"		type = general		rank = 12	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.20 } }
+#1790.1.1 = { leader = {	name = "Альберт де Люинь"	type = general	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.23  } }
+#1790.1.1 = { leader = {	name = "Дюк де Люинь"		type = general	fire = 3	shock = 2	manuever = 2	siege = 0	death_date = 1807.5.20 } }
 
-#1791.1.1 = { leader = {	name = "Jeannot de Moncey"	type = general		rank = 1	fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1842.4.20 } } # Removed /SWЦ
+#1791.1.1 = { leader = {	name = "Жанно де Монсей"	type = general		fire = 4	shock = 4	manuever = 4	siege = 1	death_date = 1842.4.20 } } # Removed /SWЦ
 
 1791.1.1 = { decision = abolish_slavery_act }
 
-#1792.4.1 = { leader = {	name = "Francois Kellermann"	type = general		rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1814.4.6 } }
+#1792.4.1 = { leader = {	name = "Франсуа Келлерман"	type = general		fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1814.4.6 } }
 
 1792.9.21 = { government = revolutionary_republic revolution_target = yes government_rank = 3 } # The establishment of the First Republic
-#1792.9.21 = { leader = {	name = "Andrй Massйna"		type = general		rank = 1	fire = 4	shock = 5	manuever = 4	siege = 2 	death_date = 1814.4.6 } } # Removed /SWЦ
-#1792.9.21 = { leader = {	name = "Jean Victor Moreau"	type = general		rank = 1	fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1813.9.2 } }
-#1792.9.21 = { leader = {	name = "Nicolas Oudinot"	type = general		rank = 1	fire = 5	shock = 3	manuever = 3	siege = 1	death_date = 1814.4.6 } }
-#1792.9.21 = { leader = {	name = "Emmanuel Grouchy"	type = general		rank = 1	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1847.5.29 } }
-1792.9.21 = { leader = {	name = "Louis Gabriel Suchet"	type = general		rank = 1	fire = 5	shock = 5	manuever = 4	siege = 2	death_date = 1826.1.23 } }
-1792.9.21 = { leader = {	name = "Louis Nicolas Davout"	type = general		rank = 1	fire = 5	shock = 5	manuever = 5	siege = 2	death_date = 1817.1.1 } }
+#1792.9.21 = { leader = {	name = "Андре Массена"		type = general		fire = 4	shock = 5	manuever = 4	siege = 2 	death_date = 1814.4.6 } } # Removed /SWЦ
+#1792.9.21 = { leader = {	name = "Жан Виктор Моро"	type = general		fire = 4	shock = 3	manuever = 4	siege = 0	death_date = 1813.9.2 } }
+#1792.9.21 = { leader = {	name = "Никола Удино"	type = general		fire = 5	shock = 3	manuever = 3	siege = 1	death_date = 1814.4.6 } }
+#1792.9.21 = { leader = {	name = "Эммануэль Груши"	type = general		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1847.5.29 } }
+1792.9.21 = { leader = {	name = "Луи Габриэль Сюше"	type = general		fire = 5	shock = 5	manuever = 4	siege = 2	death_date = 1826.1.23 } }
+1792.9.21 = { leader = {	name = "Луи Никола Даву"	type = general		fire = 5	shock = 5	manuever = 5	siege = 2	death_date = 1817.1.1 } }
+
 1792.9.21 = {
 	monarch = {
-		name = "La Convention nationale"
+		name = "Национальная конвенция"
 		adm = 3
 		dip = 0
 		mil = 4
@@ -700,21 +1379,21 @@ national_focus = DIP
 	}
 }
 
-#1793.1.1 = { leader = {	name = "Jean B. Jourdan"	type = general		rank = 1	fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1814.4.6 } }
+#1793.1.21 = { leader = {	name = "Жан Б. Жардан"	type = general		fire = 4	shock = 3	manuever = 3	siege = 0	death_date = 1814.4.6 } }
 
-1793.1.1 = { leader = {	name = "Claude Victor-Perrin"	type = general		rank = 1	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1814.4.6 } }
+1793.1.21 = { leader = {	name = "Клод Виктор-Перрен"	type = general		fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1814.4.6 } }
 
-1793.6.1 = { leader = {	name = "Napolйon Bonaparte"	type = general		rank = 1	fire = 6	shock = 6	manuever = 6	siege = 2	death_date = 1799.11.10 } }
+1793.6.1 = { leader = {	name = "Наполеон Бонапарт"	type = general		fire = 6	shock = 6	manuever = 6	siege = 2	death_date = 1799.11.10 } }
 
-1794.1.1 = { leader = { name = "Nicolas Soult"		type = general		rank = 1	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1851.11.26 } }
+1794.1.1 = { leader = { name = "Никола Сульт"		type = general		fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1851.11.26 } }
 
-1794.1.1 = { leader = { name = "Jean B. Bernadotte"	type = general		rank = 1	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1810.11.2 } }
+1794.1.1 = { leader = { name = "Жан Б. Бернадотт"	type = general		fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1810.11.2 } }
 
-1794.1.1 = { leader = { name = "L. Gouvion Saint-Cyr"	type = general		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1814.4.6 } }
+1794.1.1 = { leader = { name = "Л. Гувион Сен-Сир"	type = general		fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1814.4.6 } }
 
 1795.11.2 = {
 	monarch = {
-		name = "Le Directoire"
+		name = "Революционный совет"
 		adm = 3
 		dip = 0
 		mil = 4
@@ -722,43 +1401,77 @@ national_focus = DIP
 	}
 }
 
-1796.1.1 = { leader = {	name = "Pierre Charles Villeneuve" type = admiral	rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1805.10.21 } }
+1796.1.1 = { leader = {	name = "Пьер Шарль Вильнёв" type = admiral	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1805.10.21 } }
 
-1796.8.1 = { leader = {	name = "Michel Ney"		type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1815.12.7 } }
+1796.8.1 = { leader = {	name = "Мишель Ней"		type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1815.12.7 } }
 
-1797.1.1 = { leader = { name = "Йtienne MacDonald"	type = general		rank = 1	fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1814.4.11 } }
+1797.1.1 = { leader = { name = "Этьен Макдональд"	type = general		fire = 3	shock = 3	manuever = 4	siege = 1	death_date = 1814.4.11 } }
 
-1797.1.1 = { leader = { name = "Franзois Lefebvre"	type = general		rank = 1	fire = 3	shock = 3	manuever = 3	siege = 2	death_date = 1807.7.9 } }
+1797.1.1 = { leader = { name = "Франсуа Лефевр"	type = general		fire = 3	shock = 3	manuever = 3	siege = 2	death_date = 1807.7.9 } }
 
-1799.1.1 = { leader = { name = "Йdouard Mortier"	type = general		rank = 1	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1835.7.28 } }
+1799.1.1 = { leader = { name = "Эдуар Мортье"	type = general		fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1835.7.28 } }
 
-1799.11.9 = { leader = { name = "Joachim Murat"		type = general		rank = 1	fire = 4	shock = 4	manuever = 6	siege = 2	death_date = 1806.1.1 } }
+1799.11.9 = { leader = { name = "Иоахим Мюрат"		type = general		fire = 4	shock = 4	manuever = 6	siege = 2	death_date = 1806.1.1 } }
 
-1799.11.9 = { leader = { name = "Jean Lannes"		type = general		rank = 1	fire = 4	shock = 5	manuever = 4	siege = 2	death_date = 1809.5.31 } }
+1799.11.9 = { leader = { name = "Жан Ланн"		type = general		fire = 4	shock = 5	manuever = 4	siege = 2	death_date = 1809.5.31 } }
 
 1799.11.10 = {
 	monarch = {
-		name = "Napolйon I"
+		name = "Наполеон I"
 		adm = 6
 		dip = 3
 		mil = 6
-		dynasty = "Bonaparte" 
+		culture = sardinian #Corsican
+		dynasty = "Бонапарт" 
 		birth_date = 1769.8.15
-		leader = { name = "Napolйon"	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 2 }
+		leader = { name = "Наполеон"	type = general	fire = 6	shock = 6	manuever = 6	siege = 2 }
 	}
+	add_army_professionalism = 0.4
+	clear_scripted_personalities = yes
+	add_ruler_personality = inspiring_leader_personality
+	add_ruler_personality = calm_personality
 }
 
-1800.1.1 = { leader = {	name = "Auguste Marmont"	type = general		rank = 1	fire = 3	shock = 3	manuever = 5	siege = 2	death_date = 1814.4.6 } }
+1800.1.1 = { leader = {	name = "Огюст-Фредерик-Луи Виесс де Мармон"	type = general		fire = 3	shock = 3	manuever = 5	siege = 2	death_date = 1814.4.6 } }
 
-1802.1.1 = { leader = {	name = "Jean B. Bessiиres"	type = general		rank = 1	fire = 3	shock = 2	manuever = 4	siege = 1	death_date = 1813.5.1 } }
+1802.1.1 = { leader = {	name = "Жан-Батист Бессикрес"	type = general		fire = 3	shock = 2	manuever = 4	siege = 1	death_date = 1813.5.1 } }
 
-1804.5.18 = { government = revolutionary_empire }
+1804.5.18 = {
+	government = revolutionary_empire
+    queen = {
+        country_of_origin = FRA
+        name = "Жозефина"
+        dynasty = "де Богарне"
+        birth_date = 1763.6.23
+        death_date = 1810.1.10 #Death: 1814.5.29
+        female = yes
+        adm = 2
+        dip = 2
+        mil = 2
+    }
+    add_queen_personality = infertile_personality
+}
+
+1810.4.1 = {
+    queen = {
+        country_of_origin = HAB
+        name = "Мария Людовика"
+        dynasty = "фон Габсбург"
+        birth_date = 1791.12.12
+        death_date = 1841.12.17
+        female = yes
+        adm = 2
+        dip = 3
+        mil = 2
+    }
+    add_queen_personality = careful_personality
+}
 
 1811.3.20 = {
 	heir = {
-		name = "Napolйon"
-		monarch_name = "Napolйon II"
-		dynasty = "Bonaparte"
+		name = "Наполеон"
+		monarch_name = "Наполеон II"
+		dynasty = "Бонапарт"
 		birth_date = 1811.3.20
 		death_date = 1832.7.22
 		claim = 95
@@ -772,8 +1485,8 @@ national_focus = DIP
 	government = administrative_monarchy
 	government_rank = 2
 	monarch = {
-		name = "Louis XVIII"
-		dynasty = "de Bourbon"
+		name = "Людовик XVIII"
+		dynasty = "де Бурбон"
 		birth_date = 1755.11.17
 		adm = 4
 		dip = 3
@@ -783,14 +1496,296 @@ national_focus = DIP
 
 1814.4.11 = {
 	heir = {
-		name = "Charles"
-		monarch_name = "Charles X"
-		dynasty = "de Bourbon"
+		name = "Карл"
+		monarch_name = "Карл X"
+		dynasty = "де Бурбон"
 		birth_date = 1757.10.9
 		death_date = 1836.11.6
 		claim = 95
 		adm = 2
 		dip = 3
 		mil = 1
+	}
+}
+
+1815.3.20 = {
+    government_rank = 3
+	monarch = {
+		name = "Наполеон I"
+		adm = 6
+		dip = 3
+		mil = 6
+		dynasty = "Бонапарт" 
+		birth_date = 1769.8.15
+		leader = { name = "Наполеон"	type = general	fire = 6	shock = 6	manuever = 6	siege = 2 }
+	}
+}
+
+1815.3.20 = {
+	heir = {
+		name = "Наполеон"
+		monarch_name = "Наполеон II"
+		dynasty = "Бонапарт"
+		birth_date = 1811.3.20
+		death_date = 1832.7.22
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1815.6.22 = {
+	monarch = {
+		name = "Наполеон II"
+		adm = 2
+		dip = 2
+		mil = 2
+		dynasty = "Бонапарт" 
+		birth_date = 1811.3.20
+	}
+}
+
+1815.7.7 = {
+    government_rank = 2
+	monarch = {
+		name = "Людовик XVIII"
+		dynasty = "де Бурбон"
+		birth_date = 1755.11.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1815.7.7 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл X"
+		dynasty = "де Бурбон"
+		birth_date = 1757.10.9
+		death_date = 1836.11.6
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1824.9.16 = {
+	monarch = {
+		name = "Карл X"
+		adm = 2
+		dip = 3
+		mil = 1
+		dynasty = "де Бурбон" 
+		birth_date = 1757.10.9
+	}
+}
+
+1824.9.16 = {
+	heir = {
+		name = "Луи"
+		monarch_name = "Людовик XIX"
+		dynasty = "де Бурбон"
+		birth_date = 1775.8.6
+		death_date = 1844.6.3
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1830.8.2 = {
+	monarch = {
+		name = "Людовик XIX"
+		adm = 2
+		dip = 2
+		mil = 3
+		dynasty = "де Бурбон" 
+		birth_date = 1775.8.6
+	}
+}
+
+1830.8.2 = {
+	heir = {
+		name = "Анри"
+		monarch_name = "Генрих V"
+		dynasty = "де Бурбон"
+		birth_date = 1820.9.29
+		death_date = 1883.8.24
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1830.8.2 = {
+	monarch = {
+		name = "Генрих V"
+		adm = 2
+		dip = 2
+		mil = 3
+		dynasty = "де Бурбон" 
+		birth_date = 1820.9.29
+	}
+}
+
+1830.8.9 = {
+	monarch = {
+		name = "Луи-Филипп I"
+		adm = 2
+		dip = 3
+		mil = 5
+		dynasty = "д'Орлеан" 
+		birth_date = 1773.10.6
+	}
+}
+
+1830.8.9 = {
+	heir = {
+		name = "Фердинанд Филипп"
+		monarch_name = "Фердинанд I Филипп"
+		dynasty = "д'Орлеан"
+		birth_date = 1810.9.3
+		death_date = 1842.7.13
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1831.1.1 = { leader = {	name = "Тома Робер Бюжо"	type = general		fire = 2	shock = 3	manuever = 4	siege = 1	death_date = 1849.6.10 } }
+
+1842.7.13 = {
+	heir = {
+		name = "Луи-Филипп"
+		monarch_name = "Луи-Филипп II"
+		dynasty = "д'Орлеан"
+		birth_date = 1838.8.24
+		death_date = 1894.9.8
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1848.12.20 = {
+	government = constitutional_republic
+	monarch = {
+		name = "Наполеон III"
+		dynasty = "Бонапарт"
+		birth_date = 1808.4.20
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1852.12.2 = {
+	government = administrative_monarchy
+	government_rank = 3
+}
+
+1870.9.4 = {
+	government = constitutional_republic
+	monarch = {
+		name = "Луи Адольф"
+		dynasty = "Тьер"
+		birth_date = 1797.4.15
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1873.5.24 = {
+	monarch = {
+		name = "Патрис"
+		dynasty = "де Мак-Магон"
+		birth_date = 1808.7.13
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1879.1.30 = {
+	monarch = {
+		name = "Жуль"
+		dynasty = "Греви"
+		birth_date = 1807.8.15
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1887.12.2 = {
+	monarch = {
+		name = "Сади"
+		dynasty = "Карно"
+		birth_date = 1837.8.11
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+1894.6.24 = {
+	monarch = {
+		name = "Жан"
+		dynasty = "Казимир-Перье"
+		birth_date = 1847.11.8
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1895.1.17 = {
+	monarch = {
+		name = "Феликс"
+		dynasty = "Фор"
+		birth_date = 1841.1.30
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1899.2.16 = {
+	monarch = {
+		name = "Эмиль"
+		dynasty = "Лубе"
+		birth_date = 1838.12.30
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1906.1.18 = {
+	monarch = {
+		name = "Арман"
+		dynasty = "Фальер"
+		birth_date = 1841.11.6
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1913.2.18 = {
+	monarch = {
+		name = "Раймон"
+		dynasty = "Пуанкаре"
+		birth_date = 1860.8.20
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 }

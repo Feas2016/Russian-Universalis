@@ -1,7 +1,7 @@
 #2424 - Przemysl
 
-owner = POL
-controller = POL
+owner = VVL
+controller = VVL
 culture = ruthenian
 religion = orthodox
 hre = no
@@ -11,13 +11,15 @@ trade_goods = grain
 base_manpower = 1
 capital = "Chelm"
 is_city = yes
-add_core = VOL
-add_core = POL
+add_core = HEM
+add_core = VVL
 discovered_by = eastern
 discovered_by = western
 discovered_by = ottoman
 discovered_by = muslim
 
+1340.1.1 = { owner = LIT add_core = LIT controller = LIT }
+1377.1.1 = { owner = POL controller = POL add_core = POL }
 1492.1.1 = { unrest = 0 } 
 1569.7.1 = {
 	owner = PLC
@@ -43,3 +45,20 @@ discovered_by = muslim
 	controller = HAB
 	add_core = HAB
 } # Third partition of Poland
+1806.7.12 = {
+	owner = AEM
+	controller = AEM
+	add_core = AEM
+	remove_core = HAB
+}
+1807.7.9 = {
+	owner = POL
+	controller = POL
+	add_core = POL
+	remove_core = AEM
+} # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
+1812.12.12 = { controller = RUS }
+1814.4.11 = {
+	owner = RUS
+	add_core = RUS
+} # Napoleon abdicates

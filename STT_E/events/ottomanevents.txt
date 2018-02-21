@@ -1,0 +1,269 @@
+namespace = ottoman
+
+country_event = {
+	id = ottoman.1
+	title = "ott.t.1"
+	desc = "ott.d.1"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {		
+		OR = { tag = TUR tag = TU0 }
+		religion_group = muslim
+		is_month = 7		
+		NOT = { is_month = 9 }
+		NOT = {
+			has_country_modifier = ignored_ramadan_timer
+		}
+	}
+	
+	option = {
+		name = "ramadan1"
+		add_piety = 0.1
+		add_treasury = -100
+		add_country_modifier = { 
+			name = ignored_ramadan_timer
+			duration = 1200
+			hidden = yes
+		}
+	}
+	option = {
+		name = "ramadan2"
+		add_piety = -0.1
+		hidden_effect = {
+			add_country_modifier = { 
+				name = ignored_ramadan_timer
+				duration = 665
+				hidden = yes
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = ottoman.2
+	title = "ott.t.2"
+	desc = "ott.d.2"
+	picture = ANGRY_MOB_eventPicture
+
+
+	trigger = { 
+		OR = { tag = TUR tag = TU0 }
+	}
+
+	mean_time_to_happen = {
+	years = 50
+
+		modifier = {
+			factor = 0.1
+			NOT = { stability = 1 }
+		}
+	}
+
+	option = {
+		name = "unrest1"		
+		ai_chance = { factor = 55 }
+		add_prestige = 10
+		add_treasury = -50
+
+	}
+	option = {
+		name = "unrest2"		
+		ai_chance = { factor = 45 }
+		add_stability = -1
+		add_ruler_modifier = {
+			name = "collect_extra_vergi"
+			duration = -1
+		}	
+	}
+}
+
+country_event = {
+	id = ottoman.3
+	title = "ott.t.3"
+	desc = "ott.d.3"
+	picture = INVENTION_eventPicture
+	
+	trigger = { 
+		OR = { tag = TUR tag = TU0 }	
+	}
+
+	mean_time_to_happen = {
+	years = 50
+		modifier = {
+			factor = 0.1
+			NOT = { stability = 0 }
+		}
+	}
+	
+	option = {
+		name = "scholar1"	
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				stability = 2
+			}
+		}
+		add_adm_power = -100
+		add_treasury = -100
+		add_country_modifier = {
+			name = "buyuk_aydin"
+			duration = 3000
+		}		
+	}
+	option = {
+		name = "scholar2"	
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = { stability = 1 }
+			}
+		}
+		add_prestige = 50
+		add_treasury = 350
+	}
+
+}
+
+country_event = {
+	id = ottoman.4
+	title = "ott.t.4"
+	desc = "ott.d.4"
+	picture = COURT_eventPicture
+	
+	trigger = { 
+		tag = TUR	
+	}
+
+	mean_time_to_happen = {
+	years = 45
+		modifier = {
+			factor = 0.2
+			NOT = { stability = 0 }
+		}
+	}
+
+	option = {
+		name = "vakif1"		
+		ai_chance = { factor = 55 }
+		add_country_modifier = {
+			name = "vakif_devam"
+			duration = 1800
+		}
+		add_dip_power = 100
+		add_piety = -0.1
+		
+	}
+	option = {
+		name = "vakif2"		
+		ai_chance = { factor = 45 }
+		add_piety = 0.2
+	}
+
+}
+
+country_event = {
+	id = ottoman.5
+	title = "ott.t.5"
+	desc = "ott.d.5"
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+
+	trigger = { 
+		OR = { tag = TUR tag = TU0 }	
+	}
+
+	mean_time_to_happen = {
+	years = 30
+
+		modifier = {
+			factor = 0.3
+			NOT = { stability = 0 }
+		}
+	}
+
+	option = {
+		name = "harem1"		
+		ai_chance = { factor = 55 }
+		add_mil_power = -100
+		add_legitimacy = 5
+	}
+	option = {
+		name = "harem2"		
+		ai_chance = { 
+			factor = 45 
+			modifier = {
+				factor = 0.5
+				NOT = { stability = 0 }
+			}
+		}
+		add_legitimacy = -25
+	}
+}
+
+country_event = {
+	id = ottoman.6
+	title = "ott.t.6"
+	desc = "ott.d.6"
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = { 
+		tag = TUR	
+	}
+
+	mean_time_to_happen = {
+	years = 25
+
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+		}
+	}
+
+	option = {
+		name = "jan1"		
+		ai_chance = { factor = 45 }
+		add_dip_power = 30
+	}
+	option = {
+		name = "jan2"
+		ai_chance = { factor = 55 }
+		add_adm_power = 30
+	}
+
+}
+
+country_event = {
+	id = ottoman.7
+	title = "ott.t.7"
+	desc = "ott.d.7"
+	picture = UNIVERSITY_eventPicture
+	
+	trigger = { 
+		tag = TUR	
+	}
+
+	mean_time_to_happen = {
+	years = 45
+
+		modifier = {
+			factor = 0.2
+			NOT = { stability = 0 }
+		}
+	}
+
+	option = {
+		name = "enderun1"		
+		ai_chance = { factor = 45 }
+		add_adm_power = 20
+		add_dip_power = 20		
+	}
+	option = {
+		name = "enderun2"		
+		ai_chance = { factor = 55 }
+		add_mil_power = 40
+	}
+
+}

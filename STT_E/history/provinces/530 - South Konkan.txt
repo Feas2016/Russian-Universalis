@@ -1,7 +1,7 @@
 #530 - South Konkan (Dabhol, Rajapur, up to and including Bankot)
 
-owner = BAH
-controller = BAH
+owner = VIJ
+controller = VIJ
 culture = marathi
 religion = hinduism
 capital = "Dabhol"
@@ -20,11 +20,12 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1380.1.1 = {
-	controller = VIJ
-	owner = VIJ
-} # Taken by Harihara II
-1444.1.1 = { add_core = BAH }
+1200.1.1 = { owner = YAD controller = YAD add_core = YAD }
+1315.1.1 = { owner = DLH controller = DLH add_core = DLH }
+1320.1.1 = { remove_core = YAD }
+1339.1.1 = { owner = VIJ controller = VIJ }
+1350.1.1 = { owner = BAH controller = BAH add_core = BAH }
+1374.1.1 = { owner = VIJ controller = VIJ }
 1469.1.1 = { controller = BAH } # Taken by Bahmanis
 1470.1.1 = { owner = BAH } # Taken by Bahmanis
 1490.1.1 = {

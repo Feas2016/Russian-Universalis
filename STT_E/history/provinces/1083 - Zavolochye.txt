@@ -1,8 +1,8 @@
 #1083 - Vetluga ( formerly Zavolochye )
 
-owner = MOS
-controller = MOS
-capital = "Yur"
+owner = GLC
+controller = GLC
+capital = "Юр"
 culture = russian
 religion = orthodox
 trade_goods = grain
@@ -12,12 +12,13 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 add_core = GLC
-add_core = MOS
 discovered_by = eastern
 discovered_by = western
-discovered_by = GOL
+discovered_by = GLH
 discovered_by = nomad_group
 
+1340.11.11 = { owner = MOS controller = MOS add_core = MOS add_core = NOV }
 1450.1.1 = { discovered_by = SIB }
-1503.4.1 = { owner = RUS controller = RUS add_core = RUS remove_core = MOS }
-1778.8.18 = { capital = "Vetluga" }
+1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
+1778.8.18 = { capital = "Ветлуга" }

@@ -25,25 +25,25 @@ country_event = {
 				MOS = {	
 					exists = yes 
 					num_of_cities = 10
-					is_subject = no
+					is_free_or_tributary_trigger = yes
 					is_neighbor_of = KAZ
 				}
 				TSR = {	
 					exists = yes 
 					num_of_cities = 10
-					is_subject = no
+					is_free_or_tributary_trigger = yes
 					is_neighbor_of = KAZ
 				}
 			}
 			CRI = {
 				exists = yes 
 				num_of_cities = 5
-				is_subject = no
+				is_free_or_tributary_trigger = yes
 			}
 			NOG = {	
 				exists = yes 
 				num_of_cities = 5
-				is_subject = no
+				is_free_or_tributary_trigger = yes
 			}
 		}
 		OR = {
@@ -55,7 +55,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1000
+		months = 800
 	}
 	
 	option = {
@@ -82,7 +82,7 @@ country_event = {
 						MOS = {
 							exists = yes 
 							num_of_cities = 10
-							is_subject = no
+							is_free_or_tributary_trigger = yes
 							is_neighbor_of = KAZ
 						}
 					}
@@ -96,7 +96,7 @@ country_event = {
 						TSR = {	
 							exists = yes 
 							num_of_cities = 10
-							is_subject = no
+							is_free_or_tributary_trigger = yes
 							is_neighbor_of = KAZ
 						}
 					}
@@ -111,7 +111,7 @@ country_event = {
 						CRI = {	
 							exists = yes 
 							num_of_cities = 5
-							is_subject = no
+							is_free_or_tributary_trigger = yes
 						}
 					}
 					CRI = {	
@@ -125,7 +125,7 @@ country_event = {
 						NOG = {	
 							exists = yes 
 							num_of_cities = 5
-							is_subject = no
+							is_free_or_tributary_trigger = yes
 						}
 					}
 					NOG = {	

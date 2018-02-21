@@ -8,18 +8,18 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1449
+		tag = HUN
 		CIL = {
 			exists = yes
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			ai = yes
 			was_player = no
 		}
-		tag = HUN
 		has_regency = no
 		NOT = {
-			has_leader = "John Hunyadi"
-			has_ruler = "(Regent) John"
-			dynasty = "Hunyadi"
+			has_leader = "Янош Хуньяди"
+			has_ruler = "(Регент) Янош"
+			dynasty = "Хуньяди"
 		}
 
 	}
@@ -52,7 +52,7 @@ country_event = {
 			if = {
 				limit = {
 					CRO = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {
@@ -85,7 +85,7 @@ country_event = {
 			if = {
 				limit = {
 					STY = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {
@@ -123,7 +123,7 @@ country_event = {
 		if = {
 			limit = {
 				STY = {
-					is_subject = no
+					is_free_or_tributary_trigger = yes
 					}
 				}
 			CIL = {
@@ -162,7 +162,7 @@ country_event = {
 			if = {
 				limit = {
 					CRO = {
-						is_subject = no
+						is_free_or_tributary_trigger = yes
 						}
 					}
 				CIL = {
@@ -187,8 +187,8 @@ country_event = {
 	trigger = {
 		tag = GOR
 		GOR = {
-			has_ruler = "John II"
-			dynasty = "Meinhardiner"
+			has_ruler = "Иоганн II"
+			dynasty = "Майнхардинер"
 			has_heir = no
 		}
 	}
@@ -214,8 +214,8 @@ country_event = {
 	trigger = {
 		AND = {
 			GOR = {
-				has_ruler = "John II"
-				dynasty = "Meinhardiner"
+				has_ruler = "Иоганн II"
+				dynasty = "Майнхардинер"
 				has_heir = no
 				NOT = {
 					num_of_cities = 3
@@ -265,10 +265,10 @@ country_event = {
 	option = {
 		name = HAB_HungaryArea.3.op2
 		ai_chance = { factor = 0 }
-			add_prestige = -5
-			hidden_effect = {
-				set_country_flag = gorz_not_claimed
-			}
+		add_prestige = -5
+		hidden_effect = {
+			set_country_flag = gorz_not_claimed
+		}
 	}
 }
 
@@ -278,7 +278,7 @@ country_event = {
 	title = "HAB_HungaryArea_4_title"
 	desc = "HAB_HungaryArea_4_desc"
 	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
@@ -289,24 +289,24 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 0
+		months = 1
 	}
 	option = {
 		name = HAB_HungaryArea.4.op1
 		ai_chance = { factor = 100 }
 			GOR = {
-					every_owned_province = {
-						add_claim = ROOT
-					}
-				}
+				every_owned_province = {
+				add_claim = ROOT
+			}
+		}
 	}
 	option = {
 		name = HAB_HungaryArea.4.op2
 		ai_chance = { factor = 0 }
-			add_prestige = -5
-			hidden_effect = {
-				set_country_flag = gorz_not_claimed
-			}
+		add_prestige = -5
+		hidden_effect = {
+			set_country_flag = gorz_not_claimed
+		}
 	}
 }
 
@@ -316,7 +316,7 @@ country_event = {
 	title = "HAB_HungaryArea_5_title"
 	desc = "HAB_HungaryArea_5_desc"
 	picture = DIPLOMACY_eventPicture
-	fire_only_once = yes
+	#fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
 		NOT = {
@@ -327,7 +327,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 0
+		months = 1
 	}
 	option = {
 		name = HAB_HungaryArea.5.op1

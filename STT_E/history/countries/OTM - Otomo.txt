@@ -7,19 +7,21 @@ capital = 1014	# Bungo
 
 1311.1.1 = {
 	monarch = {
-		name = "Sadamune" # ? - 1334.1.9
-		dynasty = "Otomo"
+		name = "Садамунэ" # ? - 1334.1.9
+		dynasty = "Отомо"
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 1321.1.1 = {
 	heir = {
-		name = "Ujiyasu"
-		monarch_name = "Ujiyasu"
-		dynasty = "Otomo"
+		name = "Удзиясу"
+		monarch_name = "Удзиясу"
+		dynasty = "Отомо"
 		birth_date = 1321.1.1
 		death_date = 1362.11.19
 		claim = 90
@@ -31,39 +33,45 @@ capital = 1014	# Bungo
 
 1334.1.9 = {
 	monarch = {
-		name = "Ujiyasu"
-		dynasty = "Otomo"
+		name = "Удзиясу"
+		dynasty = "Отомо"
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = kind_hearted_personality
 }
 
 1362.11.19 = {
 	monarch = {
-		name = "Ujitoki"
-		dynasty = "Otomo"
+		name = "Удзитоки"
+		dynasty = "Отомо"
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = craven_personality
 }
 
 1368.4.8 = {
 	monarch = {
-		name = "Chikayo" # ? - 1418.4.1 
-		dynasty = "Otomo"
+		name = "Тикаё" # ? - 1418.4.1 
+		dynasty = "Отомо"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = intricate_web_weaver_personality
 }
 
 1386.1.1 = {
 	heir = {
-		name = "Chikaaki"
-		monarch_name = "Chikaaki"
-		dynasty = "Otomo"
+		name = "Тикааки"
+		monarch_name = "Тикааки"
+		dynasty = "Отомо"
 		birth_date = 1385.1.1
 		death_date = 1423.1.1
 		claim = 90
@@ -75,21 +83,23 @@ capital = 1014	# Bungo
 	
 1401.1.1 = { 
 	monarch = {
-		name = "Chikaaki"
-		dynasty = "Otomo"
-#		birth_date = 1385.1.1
+		name = "Тикааки"
+		dynasty = "Отомо"
+		birth_date = 1385.1.1
 #		death_date = 1423.1.1
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
 }
 	
 1401.1.1 = {
 	heir = {
-		name = "Mochinao"
-		monarch_name = "Mochinao"
-		dynasty = "Otomo"
+		name = "Мотинао"
+		monarch_name = "Мотинао"
+		dynasty = "Отомо"
 		birth_date = 1401.1.1
 		death_date = 1445.1.1
 		claim = 95
@@ -101,21 +111,24 @@ capital = 1014	# Bungo
 	
 1423.1.1 = { 
 	monarch = {
-		name = "Mochinao"
-		dynasty = "Otomo"
-#		birth_date = 1401.1.1
+		name = "Мотинао"
+		dynasty = "Отомо"
+		birth_date = 1401.1.1
 #		death_date = 1445.1.1
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = greedy_personality
+	add_ruler_personality = architectural_visionary_personality
 }
 	
 1432.11.27 = {
 	heir = {
-		name = "Chikatsuna"
-		monarch_name = "Chikatsuna"
-		dynasty = "Otomo"
+		name = "Тикацуна"
+		monarch_name = "Тикацуна"
+		dynasty = "Отомо"
 		birth_date = 1430.1.1
 		death_date = 1459.1.1
 		claim = 40
@@ -127,21 +140,23 @@ capital = 1014	# Bungo
 	
 1445.1.1 = { 
 	monarch = {
-		name = "Chikatsuna"
-		dynasty = "Otomo"
-#		birth_date = 1430.1.1
+		name = "Тикацуна"
+		dynasty = "Отомо"
+		birth_date = 1430.1.1
 #		death_date = 1459.1.1
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 	
 1450.1.1 = {
 	heir = {
-		name = "Chikataka"
-		monarch_name = "Chikataka"
-		dynasty = "Shimazu"
+		name = "Тикатака"
+		monarch_name = "Тикацуна"
+		dynasty = "Симадзу"
 		birth_date = 1430.1.1
 		death_date = 1565.1.1
 		claim = 90
@@ -153,21 +168,23 @@ capital = 1014	# Bungo
 	
 1453.1.1 = { 
 	monarch = {
-		name = "Chikataka"
-		dynasty = "Otomo"
-#		birth_date = 1430.1.1
+		name = "Тикатака"
+		dynasty = "Отомо"
+		birth_date = 1430.1.1
 #		death_date = 1565.1.1
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = charismatic_negotiator_personality
 }
 	
 1453.1.1 = {
 	heir = {
-		name = "Chikashige"
-		monarch_name = "Chikashige"
-		dynasty = "Otomo"
+		name = "Тикасигэ"
+		monarch_name = "Тикасигэ"
+		dynasty = "Отомо"
 		birth_date = 1411.1.1
 		death_date = 1493.1.1
 		claim = 90
@@ -179,21 +196,23 @@ capital = 1014	# Bungo
 	
 1461.1.1 = { 
 	monarch = {
-		name = "Chikashige"
-		dynasty = "Otomo"
-#		birth_date = 1411.1.1
+		name = "Тикасигэ"
+		dynasty = "Отомо"
+		birth_date = 1411.1.1
 #		death_date = 1493.1.1
 		adm = 3
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = industrious_personality
 }
 	
 1461.1.1 = {
 	heir = {
-		name = "Masachika"
-		monarch_name = "Masachika"
-		dynasty = "Otomo"
+		name = "Масатика"
+		monarch_name = "Масатика"
+		dynasty = "Отомо"
 		birth_date = 1444.1.1
 		death_date = 1496.7.20
 		claim = 90
@@ -205,21 +224,23 @@ capital = 1014	# Bungo
 	
 1473.1.1 = { 
 	monarch = {
-		name = "Masachika"
-		dynasty = "Otomo"
-#		birth_date = 1444.1.1
+		name = "Масатика"
+		dynasty = "Отомо"
+		birth_date = 1444.1.1
 #		death_date = 1496.7.20
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = babbling_buffoon_personality
 }
 	
 1484.1.1 = {
 	heir = {
-		name = "Yoshisuke"
-		monarch_name = "Yoshisuke"
-		dynasty = "Otomo"
+		name = "Ёсисукэ"
+		monarch_name = "Ёсисукэ"
+		dynasty = "Отомо"
 		birth_date = 1484.1.1
 		death_date = 1496.5.27
 		claim = 95
@@ -231,9 +252,9 @@ capital = 1014	# Bungo
 	
 1489.1.1 = { 
 	monarch = {
-		name = "Yoshisuke"
-		dynasty = "Otomo"
-#		birth_date = 1484.1.1
+		name = "Ёсисукэ"
+		dynasty = "Отомо"
+		birth_date = 1484.1.1
 #		death_date = 1496.5.27
 		adm = 2
 		dip = 2
@@ -243,21 +264,23 @@ capital = 1014	# Bungo
 
 1496.7.7 = { 
 	monarch = {
-		name = "Chikaharu"
-		dynasty = "Otomo"
-#		birth_date = 1461.1.1
+		name = "Тикахару"
+		dynasty = "Отомо"
+		birth_date = 1461.1.1
 #		death_date = 1524.2.23
 		adm = 3
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
 }
 	
 1496.7.7 = {
 	heir = {
-		name = "Yoshinaga"
-		monarch_name = "Yoshinaga"
-		dynasty = "Otomo"
+		name = "Ёсинага"
+		monarch_name = "Ёсинага"
+		dynasty = "Отомо"
 		birth_date = 1478.1.1
 		death_date = 1518.1.1
 		claim = 80
@@ -269,21 +292,23 @@ capital = 1014	# Bungo
 
 1501.1.1 = { 
 	monarch = {
-		name = "Yoshinaga"
-		dynasty = "Otomo"
-#		birth_date = 1478.1.1
+		name = "Ёсинага"
+		dynasty = "Отомо"
+		birth_date = 1478.1.1
 #		death_date = 1518.1.1
 		adm = 4
 		dip = 3
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
 }
 	
 1502.1.1 = {
 	heir = {
-		name = "Yoshiaki"
-		monarch_name = "Yoshiaki"
-		dynasty = "Otomo"
+		name = "Ёсиаки"
+		monarch_name = "Ёсиаки"
+		dynasty = "Отомо"
 		birth_date = 1502.1.1
 		death_date = 1550.2.28
 		claim = 90
@@ -295,21 +320,23 @@ capital = 1014	# Bungo
 
 1518.1.1 = { 
 	monarch = {
-		name = "Yoshiaki"
-		dynasty = "Otomo"
-#		birth_date = 1502.1.1
+		name = "Ёсиаки"
+		dynasty = "Отомо"
+		birth_date = 1502.1.1
 #		death_date = 1550.2.28
 		adm = 3
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = lawgiver_personality
 }
 	
 1530.1.31 = {
 	heir = {
-		name = "Yoshishige"
-		monarch_name = "Yoshishige"
-		dynasty = "Otomo"
+		name = "Ёсисигэ"
+		monarch_name = "Ёсисигэ"
+		dynasty = "Отомо"
 		birth_date = 1530.1.31
 		death_date = 1587.6.11
 		claim = 90
@@ -321,21 +348,24 @@ capital = 1014	# Bungo
 
 1550.2.28 = { 
 	monarch = {
-		name = "Yoshishige"
-		dynasty = "Otomo"
-#		birth_date = 1530.1.31
+		name = "Ёсисигэ"
+		dynasty = "Отомо"
+		birth_date = 1530.1.31
 #		death_date = 1587.6.11
 		adm = 4
 		dip = 4
 		mil = 4
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_advised_personality
+	add_ruler_personality = free_thinker_personality
 }
 
 1558.1.1 = {
 	heir = {
-		name = "Yoshimune"
-		monarch_name = "Yoshimune"
-		dynasty = "Otomo"
+		name = "Ёсимунэ"
+		monarch_name = "Ёсимунэ"
+		dynasty = "Отомо"
 		birth_date = 1558.1.1
 		death_date = 1610.9.2
 		claim = 90
@@ -351,12 +381,16 @@ capital = 1014	# Bungo
 
 1587.6.11 = { 
 	monarch = {
-		name = "Yoshimune"
-		dynasty = "Otomo"
-#		birth_date = 1558.1.1
+		name = "Ёсимунэ"
+		dynasty = "Отомо"
+		birth_date = 1558.1.1
 #		death_date = 1610.9.2
 		adm = 2
 		dip = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = malevolent_personality
+	add_ruler_personality = craven_personality
 }

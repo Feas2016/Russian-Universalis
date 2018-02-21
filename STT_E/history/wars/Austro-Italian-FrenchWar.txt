@@ -1,0 +1,17 @@
+name = "Австро-итало-французская война"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 104 # Milan
+}
+1859.4.29 = {
+	add_attacker = SPI
+	add_attacker = FRA
+	add_defender = AEM
+}
+
+1859.7.11 = {
+	rem_attacker = MOS
+    rem_attacker = FRA
+	rem_defender = AEM
+}

@@ -1,4 +1,5 @@
 government = feudal_monarchy
+government_rank = 1 ### STT
 primary_culture = polish
 religion = catholic
 technology_group = eastern
@@ -8,10 +9,639 @@ capital = 262 # Krakow
 
 national_focus = ADM
 
-
-1444.11.11 = {
+480.1.1 = {
 	monarch = {
-		name = "(Interregnum)"
+		name = "Лех I"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+520.1.1 = {
+	monarch = {
+		name = "Крак I"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+560.1.1 = {
+	monarch = {
+		name = "Крак II"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+600.1.1 = {
+	monarch = {
+		name = "Лех II"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+640.1.1 = {
+	monarch = {
+		name = "Ванда"
+		dynasty = "Лех"
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+680.1.1 = {
+	monarch = {
+		name = "Лешко I"
+		dynasty = "Лех"
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+720.1.1 = {
+	monarch = {
+		name = "Лешко II"
+		dynasty = "Попелид"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+
+740.1.1 = {
+	monarch = {
+		name = "Лешко III"
+		dynasty = "Попелид"
+		adm = 0
+		dip = 1
+		mil = 4
+	}
+}
+
+780.1.1 = {
+	monarch = {
+		name = "Попел I"
+		dynasty = "Попелид"
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+820.1.1 = {
+	monarch = {
+		name = "Попел II"
+		dynasty = "Попелид"
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}
+
+830.1.1 = {
+	monarch = {
+		name = "Пяст"
+		dynasty = "Пяст"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+850.1.1 = {
+	monarch = {
+		name = "Земовит"
+		dynasty = "Пяст"
+		birth_date = 835.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+892.1.1 = {
+	monarch = {
+		name = "Лешек"
+		dynasty = "Пяст"
+		birth_date = 870.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+940.1.1 = {
+	monarch = {
+		name = "Земомысл"
+		dynasty = "Пяст"
+		birth_date = 930.1.1
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+960.1.1 = {
+	monarch = {
+		name = "Мешко I"
+		dynasty = "Пяст"
+		birth_date = 930.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+992.5.25 = {
+	monarch = {
+		name = "Болеслав I Храбрый"
+		dynasty = "Пяст"
+		birth_date = 967.1.1
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+1025.1.1 = {
+government_rank = 2
+}
+
+1025.6.17 = {
+	monarch = {
+		name = "Мешко II"
+		dynasty = "Пяст"
+		birth_date = 990.1.1
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1031.1.1 = {
+government_rank = 2
+}
+
+1031.1.1 = {
+	monarch = {
+		name = "Безприм"
+		dynasty = "Пяст"
+		birth_date = 987.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1032.1.1 = {
+	monarch = {
+		name = "Мешко II"
+		dynasty = "Пяст"
+		birth_date = 990.1.1
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1034.5.10 = {
+	monarch = {
+		name = "Болеслав Забытый"
+		dynasty = "Пяст"
+		adm = 1
+		dip = 3
+		mil = 5
+	}
+}
+
+1039.1.1 = {
+	monarch = {
+		name = "Казимир I Восстановитель"
+		dynasty = "Пяст"
+		birth_date = 1016.7.25
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1058.11.28 = {
+	monarch = {
+		name = "Болеслав II Смелый"
+		dynasty = "Пяст"
+		birth_date = 1042.1.1
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1058.11.28 = {
+	monarch = {
+		name = "Болеслав II Смелый"
+		dynasty = "Пяст"
+		birth_date = 1042.1.1
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1076.1.1 = {
+government_rank = 2
+}
+
+
+1079.4.11 = {
+    government_rank = 1
+	monarch = {
+		name = "Владислав I Герман"
+		dynasty = "Пяст"
+		birth_date = 1043.1.1
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
+
+1102.6.4 = {
+	monarch = {
+		name = "Збигнев"
+		dynasty = "Пяст"
+		birth_date = 1070.1.1
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+1106.1.1 = {
+	monarch = {
+		name = "Болеслав III"
+		dynasty = "Пяст"
+		birth_date = 1086.8.20
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+1138.10.28 = {
+	monarch = {
+		name = "Владислав II"
+		dynasty = "Пяст"
+		birth_date = 1105.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1146.8.1 = {
+	monarch = {
+		name = "Болеслав IV"
+		dynasty = "Пяст"
+		birth_date = 1120.1.1
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+1173.1.5 = {
+	monarch = {
+		name = "Мешко III"
+		dynasty = "Пяст"
+		birth_date = 1126.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1177.1.1 = {
+	monarch = {
+		name = "Казимир II Справедливый"
+		dynasty = "Пяст"
+		birth_date = 1138.1.1
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}
+
+1194.5.5 = {
+	monarch = {
+		name = "Лешек"
+		dynasty = "Пяст"
+		birth_date = 1184.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1198.1.1 = {
+	monarch = {
+		name = "Мешко III"
+		dynasty = "Пяст"
+		birth_date = 1126.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1202.3.13 = {
+	monarch = {
+		name = "Лешек"
+		dynasty = "Пяст"
+		birth_date = 1184.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
+
+1227.11.24 = {
+	monarch = {
+		name = "Владислав III"
+		dynasty = "Пяст"
+		birth_date = 1165.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1229.1.1 = {
+	monarch = {
+		name = "Конрад I"
+		dynasty = "Пяст"
+		birth_date = 1187.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1232.1.1 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "Пяст"
+		birth_date = 1163.1.1
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1238.3.19 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "Пяст"
+		birth_date = 1192.1.1
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}
+
+1241.4.9 = {
+	monarch = {
+		name = "Конрад I"
+		dynasty = "Пяст"
+		birth_date = 1187.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1243.5.25 = {
+	monarch = {
+		name = "Болеслав V"
+		dynasty = "Пяст"
+		birth_date = 1226.7.21
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+1279.12.7 = {
+	monarch = {
+		name = "Лешек Чёрный"
+		dynasty = "Пяст"
+		birth_date = 1241.1.1
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+1288.9.30 = {
+	monarch = {
+		name = "Генрих IV Пробус"
+		dynasty = "Пяст"
+		birth_date = 1258.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1290.5.20 = {
+	monarch = {
+		name = "Пшемысл II"
+		dynasty = "Пяст"
+		birth_date = 1257.10.14
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+1290.5.20 = {
+government_rank = 2
+}
+
+1296.2.8 = {
+	monarch = {
+		name = "Вацлав I"
+		dynasty = "Пржемыслович"
+		birth_date = 1271.9.27
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1305.6.21 = {
+	monarch = {
+		name = "Вацлав II"
+		dynasty = "Пржемыслович"
+		birth_date = 1289.10.6
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1306.8.4 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1306.10.16 = {
+	monarch = {
+		name = "Рудольф I"
+		dynasty = "фон Габсбург"
+		birth_date = 1281.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1307.7.4 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Майнхардинер"
+		birth_date = 1265.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1310.12.9 = {
+	monarch = {
+		name = "Ян I"
+		dynasty = "фон Люксембург"
+		birth_date = 1296.8.10
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1320.1.20 = {
+	monarch = {
+		name = "Владислав I Локетек"
+		dynasty = "Пяст"
+		birth_date = 1260.3.3
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+	heir = {
+		name = "Казимир"
+		monarch_name = "Казимир III Великий"
+		dynasty = "Пяст"
+		birth_date = 1310.4.10
+		death_date = 1370.11.7
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+1333.3.2 = {
+	monarch = {
+		name = "Казимир III Великий"
+		dynasty = "Пяст"
+		birth_date = 1310.4.10
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+#1370.11.7 = { government = elective_monarchy }	### STT
+
+1370.11.7 = {
+	monarch = {
+		name = "Людвик Венгерский"
+		dynasty = "д'Анжу"
+		birth_date = 1326.3.5
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1382.9.11 = {
+	monarch = {
+		name = "Ядвига"
+		dynasty = "д'Анжу"
+		birth_date = 1373.10.3
+		adm = 3
+		dip = 5
+		mil = 2
+		female = yes
+	}
+}
+
+1399.7.17 = {
+	monarch = {
+		name = "Владислав II Ягелло"
+		dynasty = "Ягеллон"
+		birth_date = 1362.1.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1424.10.31 = {
+	heir = {
+		name = "Владислав"
+		monarch_name = "Владислав III Варненчик"
+		dynasty = "Ягеллон"
+		birth_date = 1424.10.31
+		death_date = 1444.11.10
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1434.6.1 = {
+	monarch = {
+		name = "Владислав III Варненчик"
+		dynasty = "Ягеллон"
+		birth_date = 1424.10.31
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+
+1444.11.10 = {
+	monarch = {
+		name = "(Вакантно)"
 		adm = 0
 		mil = 0
 		dip = 0
@@ -21,21 +651,37 @@ national_focus = ADM
 
 1447.6.25 = {
 	monarch = {
-		name = "Kazimierz IV"
-		dynasty = Jagiellon
+		name = "Казимир IV"
+		dynasty = "Ягеллон"
 		birth_date = 1427.11.30
 		adm = 4
 		dip = 4
 		mil = 1
 	}
-	government = elective_monarchy
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = incorruptible_personality
+}
+
+1454.2.10 = {
+	queen = {
+		country_of_origin = SAX
+		name = "Елизавета"
+		dynasty = "фон Габсбург"
+		birth_date = 1437.1.1
+		death_date = 1505.8.30
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 2
+	}
 }
 
 1459.12.27 = {
 	heir = {
-		name = "Jan Olbracht"
-		monarch_name = "Jan I Olbracht"
-		dynasty = "Jagiellon"
+		name = "Ян Ольбрахт"
+		monarch_name = "Ян I Ольбрахт"
+		dynasty = "Ягеллон"
 		birth_date = 1459.12.27
 		death_date = 1501.6.17
 		claim = 95
@@ -43,30 +689,63 @@ national_focus = ADM
 		dip = 0
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = silver_tongue_personality
 }
 
-1461.1.1 = { leader = {	name = "Piotr Dunin"           	type = general	rank = 1	fire = 2	shock = 3	manuever = 3	siege = 1	death_date = 1484.1.1 } }
+1461.1.1 = {
+	leader = {
+		name = "Петр Дунин"
+		type = general
 
-1465.1.1 = { leader = {	name = "Feliks Paniewski"      	type = general	rank = 2	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1488.1.1 } }
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1484.1.1
+	}
+}
 
-1475.1.1 = { leader = {	name = "Dobieslaw Kurozwecki"  	type = general	rank = 1	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1496.1.1 } }
+1465.1.1 = {
+	leader = {
+		name = "Феликс Паневский"
+		type = general
+
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 1488.1.1
+	}
+}
+
+
+1475.1.1 = {
+	leader = {
+		name = "Добислав Курожецкий"
+		type = general
+
+		fire = 2
+		shock = 3
+		manuever = 2
+		siege = 0
+		death_date = 1496.1.1
+	}
+}
 
 1492.6.8 = {
 	monarch = {
-		name = "Jan I Olbracht"
-		dynasty = Jagiellon
+		name = "Ян I Ольбрахт"
+		dynasty = "Ягеллон"
 		birth_date = 1459.12.27
 		adm = 2
 		dip = 0
 		mil = 1
 	}
-}
-
-1492.6.8 = {
 	heir = {
-		name = "Aleksander"
-		monarch_name = "Aleksander I"
-		dynasty = "Jagiellon"
+		name = "Александр"
+		monarch_name = "Александр I"
+		dynasty = "Ягеллон"
 		birth_date = 1461.8.5
 		death_date = 1506.8.19
 		claim = 95
@@ -74,24 +753,38 @@ national_focus = ADM
 		dip = 0
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_heir_personality = naive_personality
+}
+
+1495.2.15 = {
+	queen = {
+		country_of_origin = MOS
+		name = "Елена"
+		dynasty = "Рюрикович"
+		birth_date = 1476.5.19
+		death_date = 1513.1.20
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
 }
 
 1501.6.18 = {
 	monarch = {
-		name = "Aleksander I"
-		dynasty = Jagiellon
+		name = "Александр I"
+		dynasty = "Ягеллон"
 		birth_date = 1461.8.5
 		adm = 3
 		dip = 0
 		mil = 0
 	}
-}
-
-1501.6.18 = {
 	heir = {
-		name = "Zygmunt"
-		monarch_name = "Zygmunt I Stary"
-		dynasty = "Jagiellon"
+		name = "Жигмунт"
+		monarch_name = "Жигмунт I Старый"
+		dynasty = "Ягеллон"
 		birth_date = 1467.1.1
 		death_date = 1548.4.1
 		claim = 95
@@ -99,24 +792,59 @@ national_focus = ADM
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+	add_heir_personality = scholar_personality
+	add_heir_personality = charismatic_negotiator_personality
 }
 
 1506.8.20 = {
 	monarch = {
-		name = "Zygmunt I Stary"
-		dynasty = Jagiellon
+		name = "Жигмунт I Старый"
+		dynasty = Ягеллон
 		birth_date = 1467.1.1
 		adm = 3
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = charismatic_negotiator_personality
+}
+
+1512.2.8 = {
+	queen = {
+		country_of_origin = TRA
+		name = "Барбара"
+		dynasty = "Запольяи"
+		birth_date = 1490.1.1
+		death_date = 1515.10.2
+		female = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1518.4.18 = {
+	queen = {
+		country_of_origin = MLO
+		name = "Бона"
+		dynasty = "Сфорца"
+		birth_date = 1494.2.2
+		death_date = 1557.11.19
+		female = yes
+		adm = 1
+		dip = 5
+		mil = 2
+	}
 }
 
 1520.8.1 = {
 	heir = {
-		name = "Zygmunt August"
-		monarch_name = "Zygmunt I August"
-		dynasty = "Jagiellon"
+		name = "Жигмунт Август"
+		monarch_name = "Сигизмунд II Август"
+		dynasty = "Ягеллон"
 		birth_date = 1520.8.1
 		death_date = 1572.7.7
 		claim = 95
@@ -124,121 +852,195 @@ national_focus = ADM
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = infertile_personality
+	add_heir_personality = industrious_personality
 }
 
-1521.1.1 = { leader = {	name = "Jan Tarnowski"		type = general	rank = 1	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1561.5.16 } }
+1521.1.1 = {
+	leader = {
+		name = "Ян Тарновский"
+		type = general
+
+		fire = 2
+		shock = 4
+		manuever = 4
+		siege = 1
+		death_date = 1561.5.16
+	}
+}
 
 1548.4.2 = {
 	monarch = {
-		name = "Zygmunt II August"
-		dynasty = Jagiellon
+		name = "Сигизмунд II Август"
+		dynasty = Ягеллон
 		birth_date = 1520.8.1
 		adm = 3
 		dip = 3
 		mil = 1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = infertile_personality
+	add_ruler_personality = industrious_personality
 }
 
-1560.1.1 = { leader = {	name = "Sebastian Lubomirski"  	type = general	rank = 3	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1613.7.20 } }
+1543.5.6 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Елизавета"
+		dynasty = "фон Габсург"
+		birth_date = 1526.7.9
+		death_date = 1545.6.15
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
 
-1565.1.1 = { leader = {	name = "Kurbski"               	type = general	rank = 3	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1575.1.1 } }
+1550.12.7 = {
+	queen = {
+		country_of_origin = LIT
+		name = "Барбара"
+		dynasty = "Радвилов"
+		birth_date = 1520.12.6
+		death_date = 1551.5.8
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
 
-1572.1.1 = { leader = {	name = "Krzysztof Radziwill"   	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1603.11.20 } }
+1553.7.30 = {
+	queen = {
+		country_of_origin = HAB
+		name = "Катажина"
+		dynasty = "фон Габсбург"
+		birth_date = 1533.9.15
+		death_date = 1572.2.28
+		female = yes
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1560.1.1 = {
+	leader = {
+		name = "Себастьян Любомирский"  	
+		type = general
+
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 0
+		death_date = 1613.7.20
+	}
+}
+
+1565.1.1 = {
+	leader = {
+		name = "Анжей Курбский"
+		type = general
+
+		fire = 2
+		shock = 1
+		manuever = 3
+		siege = 0
+		death_date = 1575.1.1
+	}
+}
+
+1572.1.1 = { leader = {	name = "Кристоф Радзивилл"   	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1603.11.20 } }
 
 1573.5.12 = {
 	monarch = {
-		name = "Henryk I"
-		dynasty = "de Valois"
-		birth_date = 1551.9.19
+		name = "Генрих I"
+		dynasty = "де Валуа"
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-
 1575.1.1 = {
 	monarch = {
-		name = "Stefan I"
-		dynasty = "Bбthory"
-		birth_date = 1533.9.27
+		name = "Стефан I"
+		dynasty = "Баторий"
 		adm = 5
 		dip = 2
 		mil = 6
-		leader = { name = "Stefan Bбthory"	type = general	rank = 0	fire = 3	shock = 5	manuever = 5	siege = 1 }
+		leader = { name = "Стефан Баторий"	type = general	fire = 3	shock = 5	manuever = 5	siege = 1 }
 	}
 }
 
-1581.1.1 = { leader = {	name = "Jan Zamojski"		type = general	rank = 1	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1605.6.3 } }
+1581.1.1 = { leader = {	name = "Ян Заможский"		type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1605.6.3 } }
 
 1587.8.1 = {
 	monarch = {
-		name = "Zygmunt III"
-		dynasty = "Vasa"
-		birth_date = 1566.6.20
+		name = "Жигмунт III"
+		dynasty = "Ваза"
 		adm = 1
 		dip = 2
 		mil = 2
-		leader = { name = "Zygmunt III Wasa"	type = general	rank = 0	fire = 3	shock = 4	manuever = 4	siege = 0 }
+		leader = { name = "Жигмунт III Ваза"	type = general	fire = 3	shock = 4	manuever = 4	siege = 0 }
 	}
 }
 
-1589.1.1 = { leader = {	name = "Jan Sapieha"           	type = general	rank = 3	fire = 2	shock = 2	manuever = 3	siege = 1	death_date = 1611.1.1 } }
+1589.1.1 = { leader = {	name = "Ян Сапега"           	type = general	fire = 2	shock = 2	manuever = 3	siege = 1	death_date = 1611.1.1 } }
 
 1595.6.9 = {
 	heir = {
-		name = "Wladyslaw"
-		monarch_name = "Wladyslaw IV"
-		dynasty = "Vasa"
+		name = "Владислав"
+		monarch_name = "Владислав IV"
+		dynasty = "Ваза"
 		birth_date = 1595.6.9
 		death_date = 1648.5.20
 		claim = 95
 		adm = 4
 		dip = 5
 		mil = 4
-		leader = { name = "Wladyslaw IV Wasa"	type = general	rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
+		leader = { name = "Владислав IV Ваза"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1 }
 	}
 }
 		
 1596.1.1 = { capital = 257 } # Warsaw
 
-1600.1.1 = { leader = {	name = "Jan K. Chodkiewicz"           	type = general	rank = 2	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1621.9.24 } }
+1600.1.1 = { leader = {	name = "Ян Чодкевич"           	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1621.9.24 } }
 
-1600.1.1 = { leader = {	name = "Stanislaw Lubomirski"  	type = general		rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1649.1.1 } }
+# 1600.1.1 = { leader = {	name = "Станислав Любомирский"  	type = general		fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1649.1.1 } } # Removed /SWЦ
 
-1605.1.1 = { leader = {	name = "S. Zolkiewski"		type = general		rank = 1	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1620.10.6 } }
+1605.1.1 = { leader = {	name = "С. Золкевсий"		type = general		fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1620.10.6 } }
 
-1615.1.1 = { leader = {	name = "Krzysztof Radziwill"   	type = general		rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1640.1.1 } }
+#1615.1.1 = { leader = {	name = "Кристоф Радзивилл"   	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1640.1.1 } } # Removed /SWЦ
 
-1617.1.1 = { leader = {	name = "Denhoff"               	type = general		rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1622.1.1 } }
+#1617.1.1 = { leader = {	name = "Денхофф"               	type = general		fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1622.1.1 } } # Removed /SWЦ
 
-1618.1.1 = { leader = {	name = "Arend Dickmann"		type = admiral		rank = 0	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1627.1.1 } }
+1618.1.1 = { leader = {	name = "Аренд Дикманн"		type = admiral		fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1627.1.1 } }
 
-1620.1.1 = { leader = {	name = "Mikolaj Potocki"	type = general		rank = 1	fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1651.11.20 } }
+1620.1.1 = { leader = {	name = "Миколай Потоцкий"	type = general		fire = 2	shock = 1	manuever = 3	siege = 0	death_date = 1651.11.20 } }
 
-1620.1.1 = { leader = {	name = "S. Koniecpolski"	type = general		rank = 2	fire = 2	shock = 5	manuever = 5	siege = 0	death_date = 1646.3.11 } }
+1620.1.1 = { leader = {	name = "С. Конепольский"	type = general		fire = 2	shock = 5	manuever = 5	siege = 0	death_date = 1646.3.11 } }
 
-1621.1.1 = { leader = {	name = "K. Arciszewski"		type = conquistador	rank = 2	fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1656.4.7 } }
-
-1630.1.1 = { leader = {	name = "P.J. Sapieha"		type = general		rank = 2	fire = 2	shock = 3	manuever = 5	siege = 0	death_date = 1665.1.1 } }
+1621.1.1 = { leader = {	name = "К. Аркизевский"		type = conquistador	fire = 3	shock = 2	manuever = 5	siege = 1	death_date = 1656.4.7 } }
 
 1632.4.30 = {
 	monarch = {
-		name = "Wladyslaw IV"
-		dynasty = "Vasa"
-		birth_date = 1595.6.9
+		name = "Владислав IV"
+		dynasty = "Ваза"
 		adm = 4
 		dip = 5
 		mil = 4
-		leader = { name = "Wladyslaw IV Wasa"	type = general	rank = 0	fire = 3	shock = 3	manuever = 4	siege = 1 }
+		leader = { name = "Ваза IV Ваза"	type = general	fire = 3	shock = 3	manuever = 4	siege = 1 }
 	}
 }
 
 1632.4.30 = {
 	heir = {
-		name = "Jan Kazimierz"
-		monarch_name = "Jan II Kazimierz"
-		dynasty = "Vasa"
+		name = "Ян Казимиир"
+		monarch_name = "Ян II Казимир"
+		dynasty = "Ваза"
 		birth_date = 1609.3.22
 		death_date = 1672.12.16
 		claim = 95
@@ -248,34 +1050,32 @@ national_focus = ADM
 	}
 }
 
-1640.1.1 = { leader = {	name = "Wisnowiecki"		type = general	rank = 2	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1651.8.20 } }
+1640.1.1 = { leader = {	name = "Вишневецкий"		type = general	fire = 2	shock = 3	manuever = 4	siege = 0	death_date = 1651.8.20 } }
 
 1648.5.20 = {
 	monarch = {
-		name = "Jan II Kazimierz"
-		dynasty = "Vasa"
-		birth_date = 1609.3.22
+		name = "Ян II Казимир"
+		dynasty = "Ваза"
 		adm = 0
 		dip = 3
 		mil = 1
 	}
 }
 
-1650.1.1 = { leader = {	name = "von Winter"            	type = general	rank = 2	fire = 4	shock = 2	manuever = 2	siege = 0	death_date = 1671.1.1 } }
+1650.1.1 = { leader = {	name = "фон Винтер"            	type = general	fire = 4	shock = 2	manuever = 2	siege = 0	death_date = 1671.1.1 } }
 
-1651.1.1 = { leader = {	name = "Gosiewski"             	type = general	rank = 2	fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1658.1.1 } }
+1651.1.1 = { leader = {	name = "Госевский"             	type = general	fire = 4	shock = 3	manuever = 2	siege = 0	death_date = 1658.1.1 } }
 
-1654.1.1 = { leader = {	name = "S.J. Jablonowski"		type = general	rank = 1	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1690.1.1 } }
+1654.1.1 = { leader = {	name = "С. Яблоновский"		type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1690.1.1 } }
 
-1655.1.1 = { leader = {	name = "Stefan Czarniecki"	type = general	rank = 3	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1665.2.16 } }
+1655.1.1 = { leader = {	name = "Стефан Царнецкий"	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1665.2.16 } }
 
-1657.1.1 = { leader = {	name = "Jerzy Lubomirski"      	type = general	rank = 2	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1667.1.1 } }
+1657.1.1 = { leader = {	name = "Любомирский"      	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1667.1.1 } }
 
 1669.1.1 = {
 	monarch = {
-		name = "Michal I Korybut"
-		dynasty = "Wisniowiecki"
-		birth_date = 1640.5.31
+		name = "Михаил I Корибут"
+		dynasty = "Вишневецкий"
 		adm = 0
 		dip = 0
 		mil = 0
@@ -284,79 +1084,72 @@ national_focus = ADM
 
 1674.5.1 = {
 	monarch = {
-		name = "Jan III"
-		dynasty = "Sobieski"
-		birth_date = 1629.8.17
+		name = "Ян III"
+		dynasty = "Собеский"
 		adm = 2
 		dip = 5
 		mil = 6
-		leader = { name = "Jan Sobieski"	type = general	rank = 0	fire = 3	shock = 5	manuever = 3	siege = 0 }
+		leader = { name = "Ян Собеский"	type = general	fire = 3	shock = 5	manuever = 3	siege = 0 }
 	}
 }
 
-1680.1.1 = { leader = {	name = "Johann Patkul"		type = general	rank = 0	fire = 2	shock = 1	manuever = 4	siege = 0	death_date = 1707.10.10 } }
+1680.1.1 = { leader = {	name = "Йохан Паткулль"		type = general	fire = 2	shock = 1	manuever = 4	siege = 0	death_date = 1707.10.10 } }
 
 1697.1.1 = {
 	monarch = {
-		name = "August II Mocny"
-		dynasty = "von Wettin"
-		birth_date = 1670.5.12
+		name = "Август II"
+		dynasty = "фон Веттин"
 		adm = 2
 		dip = 1
 		mil = 0
 	}
 }
 
-1700.1.1 = { leader = {	name = "Jan K. Sapieha"		type = general	rank = 2	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1726.1.1 } }
+1700.1.1 = { leader = {	name = "Ян Казимир"		type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1726.1.1 } }
 
 1700.1.1 = {
 	monarch = {
-		name = "Stanislaw I"
-		dynasty = "Leszczynski"
-		birth_date = 1677.10.20
+		name = "Станислав I"
+		dynasty = "Лещинский"
 		adm = 5
 		dip = 2
 		mil = 3
 	}
 }
 
-1730.1.1 = { leader = {	name = "J.M. Pac"              	type = general	rank = 2	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1780.1.1 } }
+1730.1.1 = { leader = {	name = "Пак"              	type = general	fire = 1	shock = 2	manuever = 4	siege = 0	death_date = 1780.1.1 } }
 
 1735.10.3 = {
 	monarch = {
-		name = "August III Sas"
-		dynasty = "von Wettin"
-		birth_date = 1696.10.17
+		name = "Август III"
+		dynasty = "фон Веттин"
 		adm = 1
 		dip = 3
 		mil = 0
 	}
 }
 
-1735.11.10 = { leader = { name = "Michal Radziwill"      	type = general	rank = 2	fire = 1	shock = 3	manuever = 3	siege = 0	death_date = 1762.5.22 } }
+1735.11.10 = { leader = { name = "Михаил Раживил"      	type = general	fire = 1	shock = 3	manuever = 3	siege = 0	death_date = 1762.5.22 } }
 
-1740.1.1 = { leader = {	name = "Benyowski"             		type = general	rank = 1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1770.1.1 } }
+1740.1.1 = { leader = {	name = "Беневский"             		type = general	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1770.1.1 } }
 
-1755.1.1 = { leader = {	name = "Stanislaw Poniatowski"          type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1798.2.12 } }
+1755.1.1 = { leader = {	name = "Станислав Понятовский"          type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1798.2.12 } }
 
-1762.10.9 = { leader = { name = "A. Sapieha"            	type = general	rank = 2	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1775.9.13 } }
+1762.10.9 = { leader = { name = "А. Сапега"            	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1775.9.13 } }
 
 1764.9.8 = {
 	monarch = {
-		name = "Stanislaw II"
-		dynasty = "Poniatowski"
-		birth_date = 1732.1.17
+		name = "Станислав II"
+		dynasty = "Понятовский"
 		adm = 2
 		dip = 4
 		mil = 1
 	}
 }
 
-1779.1.1 = { leader = {	name = "Kazimierz Pulaski"	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1779.10.11 } }
+1779.1.1 = { leader = {	name = "Казимир Пуляский"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1779.10.11 } }
 
-1789.1.1 = { leader = {	name = "Tadeusz Kosciuszko"	type = general	rank = 1	fire = 3	shock = 4	manuever = 5	siege = 1	death_date = 1817.10.15 } }
-
-1789.1.1 = { leader = {	name = "J. Poniatowski"        	type = general	rank = 2	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1813.1.1 } }
+1789.1.1 = { leader = {	name = "Й. Понятовский"        	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1813.1.1 } }
 
 1807.7.9 = {
 	government_rank = 1

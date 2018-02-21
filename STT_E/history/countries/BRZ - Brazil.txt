@@ -1,4 +1,4 @@
-government = despotic_monarchy 
+government = despotic_monarchy
 technology_group = western
 religion = catholic
 primary_culture = portugese
@@ -7,5 +7,54 @@ capital = 756	# Sгo Salvador
 
 
 1763.1.1 = { capital = 763 }	# Rio de Janeiro
+1822.10.12 = { government_rank = 3 }
+1822.10.12 = {
+	monarch = {
+		name = "Педру I"
+		dynasty = "де Браганса"
+		birth_date = 1798.10.12
+		adm = 2
+		dip = 0
+		mil = 4
+	}
+}
 
+1825.12.2 = {
+	heir = {
+		name = "Педру"
+		monarch_name = "Педру II"
+		dynasty = "де Браганса"
+		birth_date = 1825.12.2
+		death_date = 1891.12.5
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
 
+1831.4.7 = {
+	monarch = {
+		name = "Педру II"
+		dynasty = "де Браганса"
+		birth_date = 1825.12.2
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1846.7.29 = {
+	heir = {
+		name = "Изабелла"
+		monarch_name = "Изабелла I"
+		dynasty = "де Браганса"
+		birth_date = 1846.7.29
+		death_date = 1921.11.14
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}

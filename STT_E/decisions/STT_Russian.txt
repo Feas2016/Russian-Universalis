@@ -1,7 +1,6 @@
 country_decisions = {
 
- rus_return = {
-	major = yes
+ rus_return = {	
 		potential = {
 			OR = {
 			tag = MOS
@@ -110,7 +109,7 @@ country_decisions = {
 			stability = 1
 		}
 		effect = {
-			add_prestige = 5
+			add_prestige = 20
 			add_stability = -1
 			add_treasury = -100
 			add_adm_power = -50
@@ -162,9 +161,10 @@ country_decisions = {
 			tag = RUS
 			tag = NOV
 			tag = VNO
-		}
+			}
 			NOT = { has_country_modifier = rus_raskol }
 			religion = orthodox
+			is_year = 1650
 		}
 		allow = {
 			advisor = theologian
@@ -174,9 +174,10 @@ country_decisions = {
 		}
 		effect = {
 			add_stability = -2
-			add_prestige = 5
+			add_prestige = 30
 			add_treasury = -50
 			add_adm_power = -20
+			add_dip_power = 100
 			add_country_modifier = {
 				name = "rus_raskol"
 				duration = -1
@@ -414,7 +415,7 @@ country_decisions = {
 			primary_culture = russian
 			NOT = { exists = TSR }
 			NOT = { exists = RUS }
-			NOT = { exists = SLV }
+			NOT = { exists = SLA }
 			NOT = { government = veche_republic }
 			NOT = { government = knyaz_veche_republic }
 			NOT = {
@@ -449,192 +450,231 @@ country_decisions = {
 		}
 	}
 	
-	rus_nothommage = { #не платить дань орде
-		major = yes
+	time_of_troubles_12_de = {
 		potential = {
-			OR = {
-				tag = MOS
-				primary_culture = russian
-				primary_culture = ruthenian
-			}
-			has_country_modifier = rus_hommage_modifer			
+			has_regency = yes
+			is_year = 1612
+			NOT = { is_year = 1613 }
+			is_year = 1612
+			tag = TSR
+			ai = no
+			was_player = no
 		}
 		allow = {
-			NOT = { truce_with = BHO }
-			NOT = { truce_with = GOL }
-			has_country_modifier = rus_hommage_modifer
-			is_at_war = no
-			OR = {
-				ROOT = { is_neighbor_of = BHO }
-				ROOT = { is_neighbor_of = GOL }
-				AND = {
-					NOT = { exists = BHO }
-					NOT = { exists = GOL }
-				}				
-			}
-		}
-		effect = {
-			remove_country_modifier = rus_hommage_modifer
-			if = {
-				limit = { exists = BHO }
-				BHO = {
-					country_event = { id = stt_rus.5 }
-					remove_opinion = {
-						who = ROOT
-						modifier = rus_hommage_opinion
-					}
-				}
-				remove_opinion = {
-					who = BHO
-					modifier = rus_hommage_opinion
-				}
-			}
-			if = {
-				limit = { exists = GOL }
-				GOL = {					
-					country_event = { id = stt_rus.5 }
-					remove_opinion = {
-						who = ROOT
-						modifier = rus_hommage_opinion
-					}
-				}
-				remove_opinion = {
-					who = GOL
-					modifier = rus_hommage_opinion
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { num_of_cities = BHO }
-				factor = 0
-			}
-			modifier = {
-				NOT = { num_of_cities = GOL }
-				factor = 0
-			}
-		}
-	}
-	
-	gol_nothommage = { #заставить платить дань орде
-		major = yes
-		potential = {
-			OR = {
-				tag = BOH
-				tag = GOL
-			}
-			has_country_modifier = gol_hommage_modifer
-		}
-		allow = {
-			has_country_modifier = gol_hommage_modifer
-			is_at_war = no
-			any_neighbor_country = {
-				OR = {
-					tag = MOS
-					primary_culture = russian
-					primary_culture = ruthenian
-				}
-				is_at_war = no
-			}
-		}
-		effect = {
-			random_neighbor_country = {
-				limit = {
-					OR = {
-						tag = MOS
-						primary_culture = russian
-						primary_culture = ruthenian
-					}
-				}
-				ROOT = { 
-					declare_war_with_cb = {
-						who = PREV
-						casus_belli = cb_horde_vs_civ
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { num_of_cities = 7 }
-				factor = 0
-			}
-			modifier = {
-				NOT = { num_of_cities = PREV }
-				factor = 0
-			}
-		}
-	}
-	
-	rus_hommage = { #платить дань орде
-		major = yes
-		potential = {
-			OR = {
-				tag = MOS
-				primary_culture = russian
-				primary_culture = ruthenian
-			}
-			NOT = { has_country_modifier = rus_hommage_modifer }
-		}
-		allow = {
-			OR = {
-				ROOT = { is_neighbor_of = BHO }
-				ROOT = { is_neighbor_of = GOL }
-			}
-			NOT = { has_country_modifier = rus_hommage_modifer }
-			is_at_war = no
+			tag = TSR
 		}
 		effect = {
 			add_country_modifier = {
-				name = rus_hommage_modifer
-				duration = -1
-			}
-			if = { limit = { exists = BHO }
-				add_opinion = {
-					who = BHO
-					modifier = rus_hommage_opinion
-					years = 200
-				}
-				BHO = {
-					add_opinion = {
-						who = ROOT
-						modifier = rus_hommage_opinion
-						years = 200
-					}
-					add_country_modifier = {
-						name = gol_hommage_modifer
-						duration = -1
-					}
-				}
-			}
-			if = { limit = { exists = GOL }
-				add_opinion = {
-					who = GOL
-					modifier = rus_hommage_opinion
-					years = 200
-				}
-				GOL = {
-					add_opinion = {
-						who = ROOT
-						modifier = rus_hommage_opinion
-						years = 200
-					}
-					add_country_modifier = {
-						name = gol_hommage_modifer
-						duration = -1
-					}
-				}
+				name = time_of_troubles_12
+				duration = 2
 			}
 		}
 		ai_will_do = {
-			factor = 1
-			modifier = {
-				num_of_cities = 7
-				factor = 0
-			}
+			factor = 0
 		}
 	}
 	
+#	rus_nothommage = { #не платить дань орде
+#		major = yes
+#		potential = {
+#			OR = {
+#				tag = MOS
+#				primary_culture = russian
+#			}
+#			has_country_modifier = rus_hommage_modifer			
+#		}
+#		allow = {
+#			NOT = { truce_with = BHO }
+#			NOT = { truce_with = GOL }
+#			has_country_modifier = rus_hommage_modifer
+#			is_at_war = no
+#			OR = {
+#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GOL }
+#				AND = {
+#					NOT = { exists = BHO }
+#					NOT = { exists = GOL }
+#				}				
+#			}
+#		}
+#		effect = {
+#			remove_country_modifier = rus_hommage_modifer
+#			if = {
+#				limit = { exists = BHO }
+#				BHO = {
+#					country_event = { id = stt_rus.5 }
+#					remove_opinion = {
+#						who = ROOT
+#						modifier = rus_hommage_opinion
+#					}
+#				}
+#				remove_opinion = {
+#					who = BHO
+#					modifier = rus_hommage_opinion
+#				}
+#			}
+#			if = {
+#				limit = { exists = GOL }
+#				GOL = {					
+#					country_event = { id = stt_rus.5 }
+#					remove_opinion = {
+#						who = ROOT
+#						modifier = rus_hommage_opinion
+#					}
+#				}
+#				remove_opinion = {
+#					who = GOL
+#					modifier = rus_hommage_opinion
+#				}
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				NOT = { num_of_cities = BHO }
+#				factor = 0
+#			}
+#			modifier = {
+#				NOT = { num_of_cities = GOL }
+#				factor = 0
+#			}
+#		}
+#	}
+#	
+#	gol_nothommage = { #заставить платить дань орде
+#		major = yes
+#		potential = {
+#			OR = {
+#				tag = BHO
+#				tag = GOL
+#			}
+#			has_country_modifier = gol_hommage_modifer
+#		}
+#		allow = {
+#			has_country_modifier = gol_hommage_modifer
+#			is_at_war = no
+#			any_neighbor_country = {
+#				OR = {
+#					tag = MOS
+#					primary_culture = russian
+#					primary_culture = ruthenian
+#				}
+#				is_at_war = no
+#				NOT = {
+#					OR = {
+#						truce_with = BHO
+#						truce_with = GOL
+#					}
+#				}
+#			}
+#		}
+#		effect = {
+#			random_neighbor_country = {
+#				limit = {
+#					OR = {
+#						tag = MOS
+#						primary_culture = russian
+#						primary_culture = ruthenian
+#					}
+#				}
+#				ROOT = { 
+#					declare_war_with_cb = {
+#						who = PREV
+#						casus_belli = cb_horde_vs_civ
+#					}
+#				}
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				any_neighbor_country = {
+#					OR = {
+#						tag = MOS
+#						primary_culture = russian
+#						primary_culture = ruthenian
+#					}
+#					num_of_infantry = ROOT
+#				}
+#				factor = 0
+#			}
+#		}
+#	}
+#	
+#	rus_hommage = { #платить дань орде
+#		major = yes
+#		potential = {
+#			OR = {
+#				tag = MOS
+#				primary_culture = russian
+#				primary_culture = ruthenian
+#			}
+#			NOT = { has_country_modifier = rus_hommage_modifer }
+#			OR = {
+#					exists = BHO
+#					exists = GOL
+#				}
+#			}
+#		allow = {
+#			OR = {
+#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GOL }
+#			}
+#			NOT = { has_country_modifier = rus_hommage_modifer }
+#			is_at_war = no
+#		}
+#		effect = {
+#				name = rus_hommage_modifer
+#				duration = -1
+#			}
+#			if = { limit = { exists = BHO }
+#				add_opinion = {
+#					who = BHO
+#					modifier = rus_hommage_opinion
+#					years = 200
+#				}
+#				BHO = {
+#					add_opinion = {
+#						who = ROOT
+#						modifier = rus_hommage_opinion
+#						years = 200
+#					}
+#					add_country_modifier = {
+#						name = gol_hommage_modifer
+#						duration = -1
+#					}
+#				}
+#			}
+#			if = { limit = { exists = GOL }
+#				add_opinion = {
+#					who = GOL
+#					modifier = rus_hommage_opinion
+#					years = 200
+#				}
+#				GOL = {
+#						who = ROOT
+#						modifier = rus_hommage_opinion
+#						years = 200
+#					}
+#					add_country_modifier = {
+#						name = gol_hommage_modifer
+#						duration = -1
+#					}
+#				}
+#			}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				any_neighbor_country = {
+#					OR = {
+#						tag = BHO
+#						tag = GOL
+#					}
+#					num_of_infantry = ROOT
+#				}
+#				factor = 0
+#			}
+#		}
+#	}
 }

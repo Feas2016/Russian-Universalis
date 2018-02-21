@@ -6,11 +6,12 @@ country_decisions = {
 			NOT = { tag = HLR }
 			culture_group = south_slavic
 			NOT = { exists = YUG }
+			NOT = { exists = ILR }
 			NOT = { tag = RMN }
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no			
 			owns_core_province = 131 # zagreb
 			owns_core_province = 140 # sarajevo

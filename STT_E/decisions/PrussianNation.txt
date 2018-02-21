@@ -4,10 +4,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			NOT = { government = celestial_empire } 
 			tag = BRA
 			NOT = { tag = PRU }
 			OR = {
@@ -36,20 +38,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			### STT
-			change_government = reich_government
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -70,7 +59,14 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-### STT delete
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government	###STT
+			}
 			add_prestige = 5
 			change_primary_culture = prussian
 			PRU = {
@@ -85,6 +81,7 @@ country_decisions = {
 					change_culture = prussian
 				}
 			}
+			###STT -1
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -100,6 +97,7 @@ country_decisions = {
 			capital_scope = {
 				change_culture = prussian
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -110,12 +108,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			tag = TEU
 			NOT = { tag = PRU }
+			NOT = { government = celestial_empire } 
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
@@ -145,9 +145,11 @@ country_decisions = {
 			owns_core_province = 41 # Königsberg
 		}
 		effect = {
+			41 = {
+				move_capital_effect = yes
+			}
 			change_tag = PRU
-			### STT
-			change_government = reich_government
+			###STT -1
 			east_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -161,20 +163,30 @@ country_decisions = {
 				add_permanent_claim = PRU
 			}
 			add_prestige = 25
-### STT delete
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government	###STT
+			}
 			every_neighbor_country = {
 				limit = { government = monarchy }
 				add_opinion = { who = ROOT modifier = secularized_monastic_order }
 			}
-			set_capital = 41		# Ostpreussen
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -185,6 +197,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_prussia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -207,6 +220,7 @@ country_decisions = {
 			NOT = { tag = GER }
 			NOT = { tag = HLR }
 			NOT = { tag = BRA }
+			NOT = { government = celestial_empire } 
 			NOT = {
 				tag = TEU
 				government = monastic_order_government
@@ -214,8 +228,8 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = PRU }
-			adm_tech = 10
-			is_subject = no
+			adm_tech = 18 #STT
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -228,20 +242,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
-			### STT
-			change_government = reich_government
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -255,11 +256,20 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
+			###STT -1
 			west_prussia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = PRU
+			}
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				change_government = prussian_monarchy
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Rights of Man" } }
+				change_government = reich_government ###STT
 			}
 			add_prestige = 25
 			change_primary_culture = prussian
@@ -277,13 +287,17 @@ country_decisions = {
 				change_culture = prussian
 			}
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = PRU_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
+			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
 			factor = 1

@@ -1,7 +1,7 @@
 #1875 - Cuneo (can't change filename)
 
-owner = SAV
-controller = SAV
+owner = CUN			### STT
+controller = CUN	### STT
 culture = piedmontese
 religion = catholic
 hre = yes
@@ -10,14 +10,15 @@ base_production = 5
 trade_goods = grain
 base_manpower = 5
 fort_15th = yes #Cittadellla of Alessandria
-capital = "Cuneo"
+capital = "Кунео"	### STT
 is_city = yes		# Estimated
-add_core = SAV
+add_core = CUN		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1348.1.1 = { owner = SAV add_core = SAV controller = SAV }	### STT
 1495.1.1 = { hre = no }
 1536.1.1 = { owner = FRA controller = FRA add_core = FRA } 
 1562.1.1 = { owner = SAV controller = SAV remove_core = FRA } 
@@ -43,3 +44,9 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+1861.3.14 = {	### STT
+	add_core = ITA
+	owner = ITA
+	controller = ITA
+	remove_core = SPI
+}

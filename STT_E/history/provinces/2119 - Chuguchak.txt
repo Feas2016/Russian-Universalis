@@ -1,8 +1,8 @@
 # 2119 - Chuguchak
 
-owner = OIR
-controller = OIR
-add_core = OIR
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = oirats
 religion = sunni
 capital = "Chugachak"
@@ -15,7 +15,10 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
-1622.1.1 = { discovered_by = RUS }
+
+1368.1.1. = { owner = KHA add_core = KHA controller = KHA }
+1399.1.1. = { owner = OIR add_core = OIR controller = OIR }
+1622.1.1 = { discovered_by = TSR }
 1635.1.1 = {
 	owner = ZUN
 	controller = ZUN

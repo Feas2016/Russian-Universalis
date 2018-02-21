@@ -2,93 +2,127 @@ government = feudal_monarchy
 technology_group = western
 religion = catholic
 primary_culture = gascon
-capital = 176	# Foix
-fixed_capital = 3069 # Cannot move capital away from this province & no power cost to move to it
+capital = 3069	# Foix
 
-1398.1.1 = {
-	monarch = {
-		name = "Isabelle"
-		dynasty ="de Foix"
-		female = yes
-		dip = 3
-		adm = 2
-		mil = 1
-	}
-}
-
-1398.1.1 = {
+1391.12.20 = {
 	heir = {
-		name = "Jean"
-		monarch_name = "Jean I"
-		dynasty = "de Foix"
-		birth_date = 1382.1.1
-		death_date = 1436.1.1
+		name = "Изабелла"
+		monarch_name = "Изабелла"
+		dynasty = "де Фуа"
+		birth_date = 1360.1.1
+		death_date = 1428.1.1
 		claim = 95
-		dip = 1
-		adm = 2
+		adm = 1
+		dip = 2
 		mil = 2
+		female = yes
 	}
 }
-		
 
-1413.1.1 = {
+1398.8.1 = {
 	monarch = {
-		name = "Jean I"
-		dynasty ="de Foix"
-		birth_date = 1382.1.1
-		dip = 1
-		adm = 2
+		name = "Изабелла"
+		dynasty = "де Фуа"
+		adm = 1
+		dip = 2
 		mil = 2
+		female = yes
+	}
+}
+
+1398.8.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан I"
+		dynasty = "де Фуа"
+		birth_date = 1382.1.1
+		death_date = 1436.5.4
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1412.1.1 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де Фуа"
+		adm = 1
+		dip = 2
+		mil = 4
 	}
 }
 
 1423.2.26 = {
 	heir = {
-		name = "Gaston"
-		monarch_name = "Gaston IV"
-		dynasty = "de Foix"
-		claim = 95
+		name = "Гастон"
+		monarch_name = "Гастон IV"
+		dynasty = "де Фуа"
 		birth_date = 1423.2.26
-		death_date = 1472.1.1
-		dip = 4
-		adm = 4
-		mil = 3
+		death_date = 1472.7.25
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
 	}
 }
+
 
 1436.1.1 = {
 	monarch = {
-		name = "Gaston IV"
-		dynasty = "de Foix"
-		birth_date = 1423.2.26
-		dip = 4
-		adm = 4
-		mil = 3
+		name = "Матье"
+		dynasty = "де Фуа"
+		adm = 1
+		dip = 1
+		mil = 1
+		regent = yes
 	}
 }
 
-1467.1.1 = {
-	heir = {
-		name = "Franзois Phйbus"
-		monarch_name = "Franзois I Phйbus"
-		dynasty = "de Foix"
-		birth_date = 1467.1.1
-		death_date = 1483.1.1
-		claim = 95
-		dip = 4
-		adm = 4
-		mil = 3
-	}
-}
-
-1472.7.26 = {
+1438.2.26 = {
 	monarch = {
-		name = "Franзois I Phйbus"
-		dynasty ="de Foix"
-		birth_date = 1467.1.1
-		dip = 4
-		adm = 4
-		mil = 3
+		name = "Гастон IV"
+		dynasty = "де Фуа"
+		adm = 2
+		dip = 3
+		mil = 5
+		leader = {	name = "Гастон IV"         	type = general	fire = 3	shock = 3	manuever = 3	siege = 2 }
+	}
+}
+
+1466.12.1 = {
+	heir = {
+		name = "Франциск"
+		monarch_name = "Франциск Феб"
+		dynasty = "де Фуа"
+		birth_date = 1466.12.1
+		death_date = 1483.1.30
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1472.1.1 = {
+	monarch = {
+		name = "Мадлен"
+		dynasty = "де Фуа"
+		adm = 2
+		dip = 2
+		mil = 1
+		regent = yes
+	}
+}
+
+1481.12.1 = {
+	monarch = {
+		name = "Франциск Феб"
+		dynasty = "де Фуа"
+		adm = 1
+		dip = 0
+		mil = 1
 	}
 }
 
@@ -98,6 +132,6 @@ fixed_capital = 3069 # Cannot move capital away from this province & no power co
 
 1560.1.1 = { religion = reformed }
 
-1661.3.9 = { government = absolute_monarchy }
+1661.3.9 = { government = despotic_monarchy }
 
 #Union with Navarra from 1472

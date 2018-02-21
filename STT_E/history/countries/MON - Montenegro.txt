@@ -1,107 +1,190 @@
 government = feudal_monarchy
 government_rank = 1
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 2
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = 1
+#serfdom_freesubjects = -5
 technology_group = eastern
 primary_culture = serbian
 religion = orthodox
 capital = 138	# Zabljak
-fixed_capital = 138 # Cannot move capital away from this province & no power cost to move to it
 
-#Grand Dukes of Duklija/Zeta
+1360.1.1 = {
+	monarch = {
+		name = "Балша I"
+		dynasty = "Балшич"
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+1360.1.1 = {
+	heir = {
+		name = "Джордже"
+		monarch_name = "Джордже I"
+		dynasty = "Балшич"
+		birth_date = 1332.1.1
+		death_date = 1378.1.13
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1362.1.1 = {
+	monarch = {
+		name = "Джордже I"
+		dynasty = "Балшич"
+		birth_date = 1332.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1362.1.1 = {
+	heir = {
+		name = "Балша"
+		monarch_name = "Балша II"
+		dynasty = "Балшич"
+		birth_date = 1348.1.1
+		death_date = 1385.9.18
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1378.1.13 = {
+	monarch = {
+		name = "Балша II"
+		dynasty = "Балшич"
+		birth_date = 1348.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1378.1.13 = {
+	heir = {
+		name = "Джордже"
+		monarch_name = "Джордже II"
+		dynasty = "Балшич"
+		birth_date = 1355.1.1
+		death_date = 1403.4.1
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 1
+	}
+}
+
 1385.1.1 = {
 	monarch = {
-		name = "Djurad II"
-		dynasty = "Balsic"
-		dip = 4
-		adm = 0
-		mil = 0
+		name = "Джордже II"
+		dynasty = "Балшич"
+		birth_date = 1355.1.1
+		adm = 1
+		dip = 5
+		mil = 1
 	}
 }
 
 1387.1.1 = {
 	heir = {
-		name = "Balsha"
-		monarch_name = "Balsha III"
-		dynasty = "Balsic"
+		name = "Балша"
+		monarch_name = "Балша III"
+		dynasty = "Балшич"
 		birth_date = 1385.1.1
 		death_date = 1421.4.28
 		claim = 95
-		adm = 3
-		dip = 1
-		mil = 3
+		adm = 4
+		dip = 2
+		mil = 4
 	}
 }
 
-1405.1.1 = {
+1403.4.1 = {
 	monarch = {
-		name = "Balsha III"
-		dynasty = "Balsic"
-		dip = 1
-		adm = 3
-		mil = 3
+		name = "Балша III"
+		dynasty = "Балшич"
+		birth_date = 1385.1.1
+		dip = 2
+		adm = 4
+		mil = 4
 	}
 }
 
 1421.1.1 = {
 	monarch = {
-		name = "Stepan I"
-		dynasty = "Lazarevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Стефан I"
+		dynasty = "Лазаревич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1465.1.1 = {
 	monarch = {
-		name = "Jovan I"
-		dynasty = "Crnojevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Иван I"
+		dynasty = "Черноевич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1475.1.1 = {
 	heir = {
-		name = "Djurad"
-		monarch_name = "Djurad IV"
-		dynasty = "Crnojevic"
+		name = "Джордже"
+		monarch_name = "Джордже IV"
+		dynasty = "Черноевич"
 		birth_date = 1475.1.1
 		death_date = 1496.1.1
 		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
 1490.1.1 = {
 	monarch = {
-		name = "Djuradj IV"
-		dynasty = "Crnojevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Джордже IV"
+		dynasty = "Черноевич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1496.1.1 = {
 	monarch = {
-		name = "Stepan II"
-		dynasty = "Crnojevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Стефан II"
+		dynasty = "Черноевич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1498.1.1 = {
 	monarch = {
-		name = "Jovan II"
-		dynasty = "Crnojevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Иван II"
+		dynasty = "Черноевич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
@@ -109,11 +192,11 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 
 1515.7.1 = {
 	monarch = {
-		name = "Djuradj V"
-		dynasty = "Crnojevic"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Джордже V"
+		dynasty = "Черноевич"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
@@ -122,198 +205,402 @@ fixed_capital = 138 # Cannot move capital away from this province & no power cos
 
 1516.1.1 = {
 	monarch = {
-		name = "Vavila"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Вавила"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1520.1.1 = {
 	monarch = {
-		name = "German II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Герман"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1530.1.1 = {
 	monarch = {
-		name = "Pavle"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Павел"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1532.1.1 = {
 	monarch = {
-		name = "Vasilije I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Василий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1540.1.1 = {
 	monarch = {
-		name = "Nikodim"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Никодим"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1560.1.1 = {
 	monarch = {
-		name = "Makrije"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Макарий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1561.1.1 = {
 	monarch = {
-		name = "Rufim I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Рувим"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1569.1.1 = {
 	monarch = {
-		name = "Pahomije II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Пахомий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1575.1.1 = {
 	monarch = {
-		name = "Gerasim"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Герасим"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1582.1.1 = {
 	monarch = {
-		name = "Venjamin"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Вениамин"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1591.1.1 = {
 	monarch = {
-		name = "Nikanor"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Никанор"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1593.1.1 = {
 	monarch = {
-		name = "Rufim II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Рувим Негуш"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1639.1.1 = {
 	monarch = {
-		name = "Mardarija I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Мардарий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1649.1.1 = {
 	monarch = {
-		name = "Visarion I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Виссарион"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1659.1.1 = {
 	monarch = {
-		name = "Mardarija II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Мардарий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1673.1.1 = {
 	monarch = {
-		name = "Rufim III"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Рувим"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1680.1.1 = {
 	monarch = {
-		name = "Vasilije II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Василий"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1685.1.1 = {
 	monarch = {
-		name = "Visarion II"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Виссарион"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1694.1.1 = {
 	monarch = {
-		name = "Sava I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Савва I"
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
 
 1696.7.1 = {
 	monarch = {
-		name = "Danilo I"
+		name = "Даниил I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1670.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1702.1.18 = {
+	heir = {
+		name = "Савва"
+		monarch_name = "Савва II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1702.1.18
+		death_date = 1782.3.9
+		claim = 95
+		adm = 5
 		dip = 2
-		adm = 2
-		mil = 2
+		mil = 4
 	}
 }
 
 1735.1.21 = {
 	monarch = {
-		name = "Sava II"
-		dip = 2
+		name = "Савва II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1702.1.18
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1748.1.1 = {
+	heir = {
+		name = "Пётр"
+		monarch_name = "Пётр I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1748.1.1
+		death_date = 1830.10.19
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1768.2.1 = {
+	monarch = {
+		name = "Лже-Пётр Фёдорович"
+		birth_date = 1728.2.10
+		dip = 3
 		adm = 2
-		mil = 2
+		mil = 4
+	}
+}
+
+1768.2.1 = {
+	heir = {
+		name = "Савва"
+		monarch_name = "Савва II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1702.1.18
+		death_date = 1782.3.9
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+1773.9.22 = {
+	monarch = {
+		name = "Савва II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1702.1.18
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1773.9.22 = {
+	heir = {
+		name = "Пётр"
+		monarch_name = "Пётр I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1748.1.1
+		death_date = 1830.10.19
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
 
 1782.3.9 = {
 	monarch = {
-		name = "Petar I"
-		dip = 2
-		adm = 2
-		mil = 2
+		name = "Пётр I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1748.1.1
+		dip = 3
+		adm = 3
+		mil = 3
 	}
 }
+
+1813.11.13 = {
+	heir = {
+		name = "Пётр"
+		monarch_name = "Пётр II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1813.11.13
+		death_date = 1851.10.31
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1830.10.30 = {
+	monarch = {
+		name = "Пётр II"
+		dynasty = "Петрович-Негош"
+		birth_date = 1813.11.13
+		dip = 4
+		adm = 6
+		mil = 3
+	}
+}
+
+1830.10.30 = {
+	heir = {
+		name = "Данило"
+		monarch_name = "Данило I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1826.6.6
+		death_date = 1860.8.13
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1851.10.31 = {
+	monarch = {
+		name = "Данило I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1826.6.6
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+}
+
+1851.10.31 = {
+	heir = {
+		name = "Никола"
+		monarch_name = "Никола I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1841.10.7
+		death_date = 1921.3.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1852.3.1 = { government = administrative_monarchy }
+
+1855.1.12 = {
+	queen = {
+		country_of_origin = SER
+		name = "Даринка"
+		dynasty = "Квекич"
+		birth_date = 1838.12.19
+		death_date = 1860.8.13 #1892.2.2
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 1
+	}
+}
+
+1860.8.13 = {
+	monarch = {
+		name = "Никола I"
+		dynasty = "Петрович-Негош"
+		birth_date = 1841.10.7
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+
+1860.11.8 = {
+	queen = {
+		country_of_origin = SER
+		name = "Милена"
+		dynasty = "Вукотич"
+		birth_date = 1847.4.27
+		death_date = 1921.3.1 #1923.3.16
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1871.6.29 = {
+	heir = {
+		name = "Данило Александр"
+		monarch_name = "Данило II Александр"
+		dynasty = "Петрович-Негош"
+		birth_date = 1871.6.29
+		death_date = 1939.9.24
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1910.10.28 = { government_rank = 2 }

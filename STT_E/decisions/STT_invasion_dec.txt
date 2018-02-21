@@ -1,0 +1,730 @@
+country_decisions = {
+
+ invest_algiers = {
+    
+	    potential = {
+		    capital_scope = {
+			    continent = europe
+			}
+			is_year = 1600
+			technology_group = western
+			NOT = { has_country_flag = invest_in_algiers }
+			algiers_area = {
+			    owned_by = ROOT 
+				type = all
+		    }
+		}
+		
+		allow = {
+			stability = 1
+			is_at_war = no
+			adm_power = 50
+			treasury = 800
+		}
+		
+		effect = {
+		    add_adm_power = -50
+			add_treasury = -800
+		    every_province = {
+			limit = {
+				OR = {
+					province_id = 3302
+					province_id = 337
+					province_id = 2461
+					province_id = 338
+					}
+				}
+		    add_base_manpower = 3
+			add_base_tax = 3
+			add_base_production = 3
+		    }
+		    set_country_flag = invest_in_algiers
+		}
+		
+		ai_will_do = {
+		    factor = 1
+		}
+    }
+	
+    establish_baltic_fleet = {
+        potential = {
+		    OR = {
+			    tag = TSR
+				tag = RUS
+				tag = RU2
+			}
+		    government_rank = 3
+			NOT = { has_country_modifier = baltic_fleet }
+		}
+		
+		allow = {
+		    stability = 0
+			treasury = 500
+			owns_core_province = 30
+			owns_core_province = 33
+			owns_core_province = 34
+			owns_core_province = 1842
+		}
+		
+		effect = {
+		    add_treasury = -500
+		    add_country_modifier = {
+				name = "baltic_fleet"
+				duration = -1
+            }
+		}
+    }
+
+    establish_blacksea_fleet = {
+        potential = {
+		    OR = {
+			    tag = TSR
+				tag = RUS
+				tag = RU2
+			}
+		    government_rank = 3
+			NOT = { has_country_modifier = blacksea_fleet }
+		}
+		
+		allow = {
+		    crimea_area = {
+			    owned_by = ROOT 
+				type = all
+		    }
+		    stability = 0
+			treasury = 700
+			owns_core_province = 1974
+			owns_core_province = 2412
+			owns_core_province = 3412
+			owns_core_province = 286
+		}
+		
+		effect = {
+		    add_treasury = -700
+		    add_country_modifier = {
+				name = "blacksea_fleet"
+				duration = -1
+            }
+		}
+    }
+
+    wek_coronation = {
+	    potential = {
+		    tag = WEK
+			religion = catholic
+			government = monarchy
+			NOT = { has_country_modifier = restore_wek }
+		}
+		
+		allow = {
+		    stability = 1
+			is_papal_controller = yes
+			treasury = 500
+			1878 = {
+			    has_great_project = aachen_palace
+			}
+		}
+		
+		effect = {
+		    add_treasury = -500
+		    country_event = {
+			    id = stt_wek.2
+			}
+			add_country_modifier = { 
+			    name = restore_wek
+				duration = -1
+			}
+		}
+	}
+
+    accept_norske_religion = {
+	    major = yes
+	    potential = {
+		    OR = {
+			    tag = NOR
+				tag = SWE
+			}
+			NOT = { is_year = 1550 }
+			NOT = { religion = norse_pagan_reformed }
+		}
+		
+		allow = {
+		    num_of_owned_provinces_with = {
+			    value = 3
+				religion = norse_pagan_reformed
+			}
+			is_free_or_tributary_trigger = yes
+			num_of_infantry = 20
+		}
+		
+		effect = {
+		    country_event = {
+			    id = stt_scan.3
+			}
+		}
+		
+		ai_will_do = {
+		    factor = 1
+		}
+	}
+
+    build_hof = {
+	    potential = {
+		    OR = {
+			    tag = NOR
+				tag = SWE
+			}
+			religion = norse_pagan_reformed
+			NOT = {
+			    capital_scope = {
+				    has_province_modifier = great_hof
+				}
+			}
+			NOT = {
+			    has_country_flag = building_hof
+			}
+		}
+		
+		allow = { 
+		    treasury = 200
+			adm_power = 75
+		}
+		
+		effect = {
+		    add_treasury = -200
+			add_adm_power = -75
+			set_country_flag = building_hof
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			    factor = 0
+				NOT = {
+				    OR = {
+				        adm_power = 75
+						treasury = 200
+					}
+				}
+			}
+		}
+	}
+
+    start_missionary_mission = {
+	    potential = {
+		    capital_scope = {
+				has_province_modifier = great_hof
+			}
+			NOT = { has_country_modifier = norse_missionaries }
+		}
+		
+		allow = {
+		    advisor = inquisitor
+		    treasury = 50
+			adm_power = 100
+			capital_scope = {
+				has_province_modifier = great_hof
+			}
+		}
+		
+		effect = {
+		    add_treasury = -50
+			add_adm_power = -100
+			add_country_modifier = {
+			    name = norse_missionaries
+				duration = 2200
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+			    factor = 0
+				NOT = {
+				    OR = {
+				        adm_power = 100
+						treasury = 50
+					}
+				}
+			}
+		}
+	}
+
+    form_nordland = {
+	    major = yes
+	    potential = {
+		    religion = norse_pagan_reformed
+			culture_group = scandinavian
+			NOT = { exists = NDL }
+		}
+		
+		allow = {
+		    is_free_or_tributary_trigger = yes
+			is_at_war = no
+		    religious_unity = 0.80
+			OR = { 
+			    SWE = {
+			        NOT = {
+				        exists = NOR
+					    exists = DAN
+				    }
+			    }
+			    NOR = {
+				    NOT = {
+				        exists = SWE
+					    exists = DAN
+				    }
+			    }
+			}
+		}
+		
+		effect = {
+		    change_tag = NDL
+			add_country_modifier = {
+			    name = "centralization_modifier"
+			    duration = 7300
+		    }
+			add_prestige = 50
+			add_legitimacy = 20
+			culture_group_union = scandinavian
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	#########
+	## BYZ ##
+	#########
+
+    BYZ_army_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_army_crisis1
+		}
+		
+		allow = {
+		    mil_power = 500
+			adm_power = 100
+			MIL = 4
+		}
+		
+		effect = {
+		    add_mil_power = -500
+			add_adm_power = -100
+			remove_country_modifier = BYZ_army_crisis1
+			add_country_modifier = {
+			    name = BYZ_army_crisis2
+				duration = -1
+			}
+		}
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_army_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_army_crisis2
+		}
+		
+		allow = {
+		    mil_power = 400
+			adm_power = 200
+			MIL = 4
+			ADM = 3
+		}
+		
+		effect = {
+		    add_adm_power = -200
+		    add_mil_power = -400
+			remove_country_modifier = BYZ_army_crisis2
+			add_country_modifier = {
+			    name = BYZ_army_crisis3
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_army_reform3 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_army_crisis3
+		}
+		
+		allow = {
+		    mil_power = 300
+			adm_power = 100
+			dip_power = 100
+			MIL = 5
+			ADM = 3
+			DIP = 3
+		}
+		
+		effect = {
+		    add_adm_power = -100
+		    add_mil_power = -300
+			add_dip_power = -100
+			remove_country_modifier = BYZ_army_crisis3
+			add_country_modifier = {
+			    name = BYZ_army_success
+				duration = 1825
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}	
+	
+	BYZ_economic_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_economic_crisis1
+		}
+		
+		allow = {
+		    adm_power = 400
+			dip_power = 200
+			ADM = 4
+			DIP = 2
+		}
+		
+		effect = {
+		    add_adm_power = -400
+			add_dip_power = -200
+			remove_country_modifier = BYZ_economic_crisis1
+			add_country_modifier = {
+			    name = BYZ_economic_crisis2
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_economic_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_economic_crisis2
+		}
+		
+		allow = {
+		    adm_power = 400
+			dip_power = 100
+			mil_power = 100
+			ADM = 4
+			DIP = 3
+		}
+		
+		effect = {
+		    add_adm_power = -400
+			add_dip_power = -100
+			add_mil_power = -100
+			remove_country_modifier = BYZ_economic_crisis2
+			add_country_modifier = {
+			    name = BYZ_economic_success
+				duration = 1825
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_diplomatic_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_diplomacy_crisis1
+		}
+		
+		allow = {
+			dip_power = 500
+			mil_power = 100
+			DIP = 4
+		}
+		
+		effect = {
+			add_dip_power = -500
+			add_mil_power = -100
+			remove_country_modifier = BYZ_diplomacy_crisis1
+			add_country_modifier = {
+			    name = BYZ_diplomacy_crisis2
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_diplomatic_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_diplomacy_crisis2
+		}
+		
+		allow = {
+			dip_power = 400
+			mil_power = 200
+			MIL = 3
+			DIP = 5
+		}
+		
+		effect = {
+			add_dip_power = -400
+			add_mil_power = -200
+			remove_country_modifier = BYZ_diplomacy_crisis2
+			add_country_modifier = {
+			    name = BYZ_diplomacy_success
+				duration = 3650
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_cultural_reform1 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_cultural_crisis1
+		}
+		
+		allow = {
+			dip_power = 300
+			mil_power = 200
+			adm_power = 100
+			MIL = 5
+			DIP = 3
+		}
+		
+		effect = {
+			add_dip_power = -300
+			add_mil_power = -200
+			add_adm_power = -100
+			remove_country_modifier = BYZ_cultural_crisis1
+			add_country_modifier = {
+			    name = BYZ_cultural_crisis2
+				duration = -1
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	BYZ_cultural_reform2 = {
+	    major = yes
+		potential = {
+		    tag = BYZ
+			has_country_modifier = BYZ_cultural_crisis2
+		}
+		
+		allow = {
+			dip_power = 300
+			mil_power = 100
+			adm_power = 200
+			ADM = 3
+			DIP = 5
+		}
+		
+		effect = {
+			add_dip_power = -300
+			add_mil_power = -100
+			add_adm_power = -200
+			remove_country_modifier = BYZ_cultural_crisis2
+			add_country_modifier = {
+			    name = BYZ_cultural_success
+				duration = 9125
+			}
+        }
+		
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+
+    ##########
+	## YUAN ##
+	##########
+
+    YUA_ketzuy = {
+	    major = yes
+		potential = {
+		    tag = YUA
+			NOT = { has_country_modifier = YUA_returned_ketzuy }
+		}
+		
+		allow = {
+		    ADM = 4
+			adm_power = 500
+		}
+		
+		effect = {
+		    add_adm_power = -500
+			add_meritocracy = 5
+			add_country_modifier = {
+			    name = YUA_returned_ketzuy
+				duration = -1
+			}
+		}
+		ai_will_do = {
+		    factor = 1000
+		}
+	}
+	
+	YUA_type_money = {
+	    potential = {
+		    OR = {
+			    tag = YUA
+				tag = MNG
+			}
+			NOT = { has_country_modifier = CHN_type_money }
+		}
+		
+		allow = {
+		    adm_power = 200
+			dip_power = 200
+		}
+		
+		effect = {
+		    add_years_of_income = 1.75
+		    add_adm_power = -200
+			add_dip_power = -200
+			add_meritocracy = -10
+			add_corruption = 5
+			add_country_modifier = {
+			    name = CHN_type_money
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+		    factor = 100
+			modifier = {
+			    factor = 0
+				NOT = { num_of_loans = 2 }
+			}
+		}
+	}
+	
+	YUA_accept_confu = {
+	    potential = {
+		    tag = YUA
+			NOT = { religion = confucianism } 
+		}
+		
+		allow = {
+		    DIP = 3
+		}
+		
+		effect = {
+		    change_religion = confucianism
+			add_meritocracy = 5
+			add_dip_power = 300
+		}
+		
+		ai_will_do = {
+		    factor = 100
+		}
+	}
+	
+	YUA_repair_irrigation = {
+	    potential = {
+		    tag = YUA
+			has_country_flag = YUA_destructions
+		}
+		
+		allow = {
+			ADM = 3
+		}
+		
+		effect = {
+		    add_years_of_income = -1.75
+			add_country_modifier = {
+			    name = "YUA_working_process"
+				duration = 1825
+			}
+			hidden_effect = {
+			    country_event = { id = STT_flavorYUA.8 days = 1826}
+			}
+			clr_country_flag = YUA_destructions
+			
+		}
+		
+		ai_will_do = {
+		    factor = 100
+		}
+	}
+	
+	HUN_accept_orthodox = {
+	    potential = {
+		    tag = HUN
+			dynasty = "Романович"
+			NOT = { religion = orthodox }
+			NOT = { has_country_flag = HUN_orthodox }
+		}
+		
+		allow = {
+		    NOT = { has_disaster = hungarian_magnats }
+		}
+		
+		effect = {
+		    change_religion = orthodox
+			add_country_modifier = {
+			    name = "HUN_religion_process"
+				duration = 3650
+			}
+			set_country_flag = HUN_orthodox
+		}
+		ai_will_do = {
+	        factor = 0
+        }
+	}
+	
+	HUN_catholic_tolerance = {
+	    potential = {
+		    tag = HUN
+		    dynasty = "Романович"
+			NOT = { religion = orthodox }
+			NOT = { has_country_flag = HUN_tolerance }
+		}
+		
+		allow = {
+		    NOT = { has_disaster = hungarian_magnats }
+		}
+		
+		effect = {
+		    add_country_modifier = {
+			    name = "HUN_religion_tolerance"
+				duration = -1
+			}
+			set_country_flag = HUN_tolerance
+		}
+		
+		ai_will_do = {
+	        factor = 1
+        }
+	}
+}

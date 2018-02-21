@@ -6,7 +6,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			NOT = { tag = SLV }
+			NOT = { tag = SLA }
 			NOT = { exists = TRK }
 			OR = {
 				tag = TUR
@@ -21,10 +21,10 @@ country_decisions = {
 			adm_tech = 18
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 30
 			government = republic
 			stability = 1
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_at_war = no	
 		}
 		effect = {

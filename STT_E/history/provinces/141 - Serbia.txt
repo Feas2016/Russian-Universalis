@@ -11,8 +11,12 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 is_city = yes
-fort_15th = yes
 add_core = SER
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -23,6 +27,7 @@ discovered_by = ottoman
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	capital = "Beograd"
 }
 1688.11.7 = { unrest = 12 } # Serb rebellion under D. Brankovic
 1717.8.22 = {
@@ -42,3 +47,4 @@ discovered_by = ottoman
 1815.4.23 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Second Serbian uprising
 1817.1.1 = { revolt = {} controller = TUR }
 1818.1.1 = { capital = "Kragujevac" }
+1835.2.15 = { owner = SER controller = SER remove_core = TUR }

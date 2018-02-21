@@ -1,15 +1,324 @@
-government = iqta
+government = mamluk_government
 primary_culture = al_misr_arabic
+add_accepted_culture = al_suryah_arabic
 religion = sunni
 technology_group = muslim
 historical_rival = TUR
-historical_rival = TIM
+historical_rival = TU0 #STT
 capital = 361 # Cairo
+add_army_professionalism = 0.1
+religious_school = shafii_school
+
+1250.5.2 = {
+	monarch = {
+		name = "Шаджар"
+		dynasty = "ад-Дурр"
+		birth_date = 1220.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1250.7.1 = {
+	monarch = {
+		name = "Айбек"
+		dynasty = "Бахрит"
+		birth_date = 1220.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+
+1257.1.1 = {
+	monarch = {
+		name = "аль-Мансур Али"
+		dynasty = "Бахрит"
+		birth_date = 1242.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+
+1259.11.12 = {
+	monarch = {
+		name = "Кутуз"
+		dynasty = "Бахрит"
+		birth_date = 1230.1.1
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+
+1260.10.24 = {
+	monarch = {
+		name = "Бейбарс I"
+		dynasty = "Бахрит"
+		birth_date = 1223.1.1
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1277.7.1 = {
+	monarch = {
+		name = "Саид Берке-хан"
+		dynasty = "Бахрит"
+		birth_date = 1260.1.1
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+1279.8.1 = {
+	monarch = {
+		name = "Бадруддин Саламыш"
+		dynasty = "Бахрит"
+		birth_date = 1272.1.1
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+1279.12.1 = {
+	monarch = {
+		name = "Сайфуддин Калаун"
+		dynasty = "Бахрит"
+		birth_date = 1222.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+
+1290.10.10 = {
+	monarch = {
+		name = "аль-Ашраф Халиль"
+		dynasty = "Бахрит"
+		birth_date = 1262.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1293.12.14 = {
+	monarch = {
+		name = "ан-Насир Мухаммад"
+		dynasty = "Бахрит"
+		birth_date = 1285.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1294.12.1 = {
+	monarch = {
+		name = "аль-Адиль Китбуга"
+		dynasty = "Бахрит"
+		birth_date = 1253.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1296.11.1 = {
+	monarch = {
+		name = "Ладжин аль-Мансур"
+		dynasty = "Бахрит"
+		birth_date = 1260.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+1299.1.16 = {
+	monarch = {
+		name = "ан-Насир Мухаммад"
+		dynasty = "Бахрит"
+		birth_date = 1285.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1309.1.1 = {
+	monarch = {
+		name = "Бейбарс II аль-Джашанкир"
+		dynasty = "Бахрит"
+		birth_date = 1290.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1309.1.1 = {
+	heir = {
+		name = "ан-Насир Мухаммад"
+		monarch_name = "ан-Насир Мухаммад"
+		dynasty = "Бахрит"
+		birth_date = 1285.1.1
+		death_date = 1341.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1299.1.16 = {
+	monarch = {
+		name = "ан-Насир Мухаммад"
+		dynasty = "Бахрит"
+		birth_date = 1285.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1341.1.1 = {
+	monarch = {
+		name = "Куджук аль-Ашраф"
+		dynasty = "Бахрит"
+		birth_date = 1334.1.1
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1342.1.1 = {
+	monarch = {
+		name = "Исмаил ас-Салих"
+		dynasty = "Бахрит"
+		birth_date = 1325.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1345.1.1 = {
+	monarch = {
+		name = "Шабан I аль-Камиль"
+		dynasty = "Бахрит"
+		birth_date = 1328.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1346.1.1 = {
+	monarch = {
+		name = "Хаджжи I аль-Музаффар"
+		dynasty = "Бахрит"
+		birth_date = 1332.1.1
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1347.1.1 = {
+	monarch = {
+		name = "Аль-Хасан ан-Насир"
+		dynasty = "Бахрит"
+		birth_date = 1334.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1351.1.1 = {
+	monarch = {
+		name = "Салих Салахуддин"
+		dynasty = "Бахрит"
+		birth_date = 1338.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1354.1.1 = {
+	monarch = {
+		name = "Аль-Хасан ан-Насир"
+		dynasty = "Бахрит"
+		birth_date = 1334.1.1
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+1361.1.1 = {
+	monarch = {
+		name = "Мухаммад II аль-Мансур Салахуддин"
+		dynasty = "Бахрит"
+		birth_date = 1347.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1363.1.1 = {
+	monarch = {
+		name = "Шабан II"
+		dynasty = "Бахрит"
+		birth_date = 1353.1.1
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1376.1.1 = {
+	monarch = {
+		name = "Али II аль-Мансур"
+		dynasty = "Бахрит"
+		birth_date = 1367.1.1
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1382.1.1 = {
+	monarch = {
+		name = "Баркук"
+		dynasty = "Бурджит"
+		birth_date = 1339.1.1
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
 
 1399.1.1 = {
 	monarch = {
-		name = "al-Nasr Faraj"
-		dynasty = "Burji"
+		name = "ан-Насир Фарадж"
+		dynasty = "Бурджит"
+		culture = circassian
 		adm = 2
 		dip = 2
 		mil = 3
@@ -19,8 +328,9 @@ capital = 361 # Cairo
 
 1412.1.1 = {
 	monarch = {
-		name = "Shaikh al-Mahmudi"
-		dynasty = "Burji"
+		name = "Шайх ал-Муайяд"
+		dynasty = "Бурджит"
+		culture = circassian
 		adm = 2
 		dip = 3
 		mil = 1
@@ -29,8 +339,9 @@ capital = 361 # Cairo
 
 1421.1.1 = {
 	monarch = {
-		name = "Muhammad IV"
-		dynasty = "Burji"
+		name = "Мухаммад I"
+		culture = circassian
+		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
 		mil = 3
@@ -39,28 +350,41 @@ capital = 361 # Cairo
 
 1422.1.1 = {
 	monarch = {
-		name = "Barsbai"
-		dynasty = "Burji"
+		name = "Барсбой"
+		dynasty = "Бурджит"
+		culture = circassian
 		adm = 2
 		dip = 3
 		mil = 1
 	}
 }
 
+1425.1.1 = {				#STT
+	historical_rival = AKK  #STT
+	historical_rival = DUL  #STT
+	historical_rival = RAM  #STT
+	historical_rival = KAR  #STT
+}							#STT
+
 1438.6.8 = {
 	monarch = {
-		name = "Jaqmaq"
-		dynasty = "Burji"
-		adm = 1
+		name = "Джакмак"
+		birth_date = 1372.1.1
+		dynasty = "Бурджит"
+		culture = circassian
+		adm = 2
 		dip = 2
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_ruler_personality = obsessive_perfectionist_personality
 }
 
 1453.2.13 = {
 	monarch = {
-		name = "Inвl"
-		dynasty = "Burji"
+		name = "Инал"
+		dynasty = "Бурджит"
 		adm = 2
 		dip = 2
 		mil = 2
@@ -69,8 +393,8 @@ capital = 361 # Cairo
 
 1461.2.25 = {
 	monarch = {
-		name = "Khыshqadam"
-		dynasty = "Burji"
+		name = "Хушкадам"
+		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
 		mil = 2
@@ -79,9 +403,9 @@ capital = 361 # Cairo
 
 1461.2.25 = {	
 	heir = {
-		name = "Qв'itbay"
-		monarch_name = "Qв'itbay"
-		dynasty = "Burji"
+		name = "Каит-бай"
+		monarch_name = "Билбай"
+		dynasty = "Бурджит"
 		birth_date = 1418.1.1
 		death_date = 1496.7.8
 		claim = 95
@@ -93,8 +417,8 @@ capital = 361 # Cairo
 
 1467.10.10 = {
 	monarch = {
-		name = "Qв'itbay"
-		dynasty = "Burji"
+		name = "Каит-бай"
+		dynasty = "Бурджит"
 		adm = 1
 		dip = 3
 		mil = 1
@@ -103,8 +427,8 @@ capital = 361 # Cairo
 
 1496.7.8 = {
 	monarch = {
-		name = "Muhammad II"
-		dynasty = "Burji"
+		name = "Мухаммад II"
+		dynasty = "Бурджит"
 		adm = 2
 		dip = 0
 		mil = 1
@@ -113,8 +437,8 @@ capital = 361 # Cairo
 
 1498.10.30 = {
 	monarch = {
-		name = "Qвnsыh I"
-		dynasty = "Burji"
+		name = "Кансух I"
+		dynasty = "Бурджит"
 		adm = 1
 		dip = 2
 		mil = 2
@@ -123,8 +447,8 @@ capital = 361 # Cairo
 
 1500.6.29 = {
 	monarch = {
-		name = "Jвnbalat"
-		dynasty = "Burji"
+		name = "Джанбалат"
+		dynasty = "Бурджит"
 		adm = 0
 		dip = 1
 		mil = 1
@@ -133,30 +457,30 @@ capital = 361 # Cairo
 
 1501.6.26 = {
 	monarch = {
-		name = "Qвnsыh II"
-		dynasty = "Burji"
+		name = "Кансух II"
+		dynasty = "Бурджит"
 		adm = 1
 		dip = 1
 		mil = 3
-		leader = {	name = "Al Kansur"             	type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = {	name = "аль-Кансур"             	type = general	fire = 1	shock = 4	manuever = 5	siege = 0 }
 	}
 }
 
 1516.8.25 = {
 	monarch = {
-		name = "Tыmвn Bay II"
-		dynasty = "Burji"
+		name = "Туман-бай II"
+		dynasty = "Бурджит"
 		adm = 0
 		dip = 0
 		mil = 2
-		leader = {	name = "Tыmвn Bay II"		type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 1 }
+		leader = {	name = "Туман-бай II"		type = general	fire = 3	shock = 3	manuever = 3	siege = 1 }
 	}
 }
 
 1768.1.1 = {
 	monarch = {
-		name = "Alо l-Kabоr"
-		dynasty = "Beg"
+		name = "Ало аль-Кабор"
+		dynasty = "Бей"
 		adm = 3
 		dip = 3
 		mil = 2
@@ -165,8 +489,8 @@ capital = 361 # Cairo
 
 1773.5.2 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "Beg"
+		name = "Мехмед"
+		dynasty = "Бей"
 		adm = 4
 		dip = 1
 		mil = 1
@@ -175,22 +499,22 @@ capital = 361 # Cairo
 
 1775.6.11 = {
 	monarch = {
-		name = "Murad"
-		dynasty = "Beg"
+		name = "Мурад"
+		dynasty = "Бей"
 		adm = 2
 		dip = 3
 		mil = 3
 	}
 }
 
-1792.1.1 = { leader = {	name = "Ibrahim Bey"           	type = general	rank = 1	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1804.3.14 } }
+1792.1.1 = { leader = {	name = "Ибрагим Бей"           	type = general	fire = 2	shock = 2	manuever = 4	siege = 0	death_date = 1804.3.14 } }
 
-1792.1.1 = { leader = {	name = "Murad Bey"             	type = general	rank = 2	fire = 1	shock = 3	manuever = 4	siege = 0	death_date = 1801.4.22 } }
+1792.1.1 = { leader = {	name = "Мурад Бей"             	type = general	fire = 1	shock = 3	manuever = 4	siege = 0	death_date = 1801.4.22 } }
 
 1801.4.23 = {
 	monarch = {
-		name = "Osman"
-		dynasty = "Bardisi"
+		name = "Ахмед"
+		dynasty = "Хуршид"
 		adm = 0
 		dip = 1
 		mil = 0
@@ -199,11 +523,11 @@ capital = 361 # Cairo
 
 1804.3.14 = {
 	monarch = {
-		name = "Muhammad 'Alо"
-		dynasty = "Muhammad"
+		name = "Мухаммад Али"
+		dynasty = "Мухаммад"
 		adm = 6
 		dip = 4
 		mil = 6
-		leader = { name = "Mehmet Ali"		type = general	rank = 0	fire = 1	shock = 4	manuever = 5	siege = 0 }
+		leader = { name = "Мехмед Али"		type = general	fire = 1	shock = 4	manuever = 5	siege = 0 }
 	}
 }

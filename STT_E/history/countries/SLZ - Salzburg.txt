@@ -8,7 +8,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1396.1.1 = {
 	monarch = {
-		name = "Gregor Schenk"
+		name = "Грегор Шенк"
 		adm = 2
 		dip = 0
 		mil = 2
@@ -17,7 +17,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1403.1.1 = {
 	monarch = {
-		name = "Eberhard III"		
+		name = "Эберхард III"		
 		adm = 4
 		dip = 0
 		mil = 0
@@ -26,7 +26,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1427.1.1 = {
 	monarch = {
-		name = "Eberhard IV"
+		name = "Эберхард IV"
 		birth_date = 1370.1.1		
 		adm = 2
 		dip = 1
@@ -36,7 +36,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1429.1.1 = {
 	monarch = {
-		name = "Johann II"
+		name = "Иоганн II"
 		adm = 0
 		dip = 1
 		mil = 3
@@ -45,16 +45,18 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1441.1.1 = {
 	monarch = {
-		name = "Friedrich IV"
+		name = "Фридрих IV"
 		adm = 3
 		dip = 1
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = careful_personality
 }
 
 1452.4.5 = {
 	monarch = {
-		name = "Siegmund I von Reisperg"		
+		name = "Сигизмунд I фон Райсперг"		
 		birth_date = 1395.1.1
 		adm = 1
 		dip = 2
@@ -64,7 +66,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1461.11.14 = {
 	monarch = {
-		name = "Burkhard von Weisspriach"
+		name = "Буркхард фон Вайсбрих"
 		birth_date = 1420.1.1
 		adm = 1
 		dip = 1
@@ -74,7 +76,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1466.2.15 = {
 	monarch = {
-		name = "Bernhard II von Rohr"
+		name = "Бернхард II фон Рор"
 		birth_date = 1421.1.1
 		adm = 2
 		dip = 3
@@ -84,7 +86,8 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1487.7.16 = {
 	monarch = {
-		name = "Johann III von Gran"
+		name = "Иоганн III фон Гран"
+		culture = hungarian
 		birth_date = 1435.1.1
 		adm = 3
 		dip = 3
@@ -94,7 +97,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1489.12.16 = {
 	monarch = {
-		name = "Friedrich von Schaumburg"
+		name = "Фридрих фон Шаумбург"
 		adm = 1
 		dip = 1
 		mil = 0
@@ -103,7 +106,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1494.10.5 = {
 	monarch = {
-		name = "Siegmund II von Holneck"
+		name = "Сигизмунд II фон Гольнек"
 		adm = 1
 		dip = 1
 		mil = 2
@@ -112,7 +115,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1495.7.4 = {
 	monarch = {
-		name = "Leonhard von Keutschach"		
+		name = "Леонард фон Койтшах"		
 		birth_date = 1442.1.1
 		adm = 3
 		dip = 1
@@ -122,8 +125,9 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1519.6.9 = {
 	monarch = {
-		name = "Matthaus von Wellenburg"
+		name = "Маттиас фон Велленбург"
 		birth_date = 1468.1.1
+		culture = swabian
 		adm = 2
 		dip = 3
 		mil = 2
@@ -133,8 +137,9 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1540.3.30 = {
 	monarch = {
-		name = "Ernst von Bayern"
+		name = "Эрнст Баварский"
 		birth_date = 1500.6.13
+		culture = bavarian
 		adm = 0
 		dip = 2
 		mil = 0
@@ -143,7 +148,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1554.7.17 = {
 	monarch = {
-		name = "Michael von Khuenburg"
+		name = "Михаэль фон Кюэнбург"
 		birth_date = 1514.10.10
 		adm = 4
 		dip = 0
@@ -153,7 +158,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1560.11.18 = {
 	monarch = {
-		name = "Johann Jakob von Kuon"
+		name = "Иоганн Якоб фон Куон"
 		birth_date = 1515.1.1
 		adm = 2
 		dip = 2
@@ -163,7 +168,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1586.5.5 = {
 	monarch = {
-		name = "Georg von Khuenburg"
+		name = "Георг фон Кюэнбург"
 		birth_date = 1530.1.1
 		adm = 2
 		dip = 1
@@ -173,7 +178,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1587.1.26 = {
 	monarch = {
-		name = "Wolfgang von Rattenau"
+		name = "Вольфганг фон Раттенау"
 		birth_date = 1559.3.26
 		adm = 4
 		dip = 2
@@ -183,7 +188,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1612.3.8 = {
 	monarch = {
-		name = "Mark Sittich von Altemps"
+		name = "Маркус Зиттих фон Альтемпс"
 		birth_date = 1574.1.1
 		adm = 3
 		dip = 4
@@ -193,7 +198,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1619.10.10 = {
 	monarch = {
-		name = "Paris von Lodron"
+		name = "Парис фон Лоброн"
 		birth_date = 1586.2.13
 		adm = 0
 		dip = 1
@@ -203,7 +208,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1653.12.16 = {
 	monarch = {
-		name = "Guidobald von Thun"
+		name = "Гвидобальд фон Тун"
 		birth_date = 1616.12.16
 		adm = 2
 		dip = 2
@@ -213,7 +218,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1668.6.2 = {
 	monarch = {
-		name = "Maximilian von Khuenburg"
+		name = "Максимилиан фон Кюэнбург"
 		birth_date = 1622.10.30
 		adm = 1
 		dip = 2
@@ -223,7 +228,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1687.5.4 = {
 	monarch = {
-		name = "Johann Ernst von Thun"
+		name = "Иоганн Эрнст фон Тун"
 		birth_date = 1643.7.3
 		adm = 1
 		dip = 1
@@ -233,7 +238,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1709.4.21 = {
 	monarch = {
-		name = "Franz Anton von Harrach"
+		name = "Франц Антон фон Харрах"
 		birth_date = 1665.10.2
 		adm = 3
 		dip = 2
@@ -243,7 +248,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1727.7.19 = {
 	monarch = {
-		name = "Leopold Anton von Firman"
+		name = "Леопольд Антон фон Фирман"
 		birth_date = 1679.5.27
 		adm = 4
 		dip = 1
@@ -253,7 +258,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1744.10.23 = {
 	monarch = {
-		name = "Jakob von Liechtenstein"
+		name = "Якоб фон Лихтенштейн"
 		birth_date = 1690.2.14
 		adm = 4
 		dip = 2
@@ -263,7 +268,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1747.6.13 = {
 	monarch = {
-		name = "Andreas von Dietrichstein"
+		name = "Андреас фон Дитрихштайн"
 		birth_date = 1689.5.27
 		adm = 2
 		dip = 3
@@ -273,7 +278,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1753.1.7 = {
 	monarch = {
-		name = "Siegmund III Christof"
+		name = "Сигизмунд III Кристоф"
 		birth_date = 1698.2.28
 		adm = 5
 		dip = 2
@@ -283,7 +288,7 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 
 1771.12.17 = {
 	monarch = {
-		name = "Hieronymus von Colloredo"
+		name = "Иероним фон Коллоредо"
 		birth_date = 1732.5.31
 		adm = 4
 		dip = 1
@@ -291,9 +296,12 @@ fixed_capital = 76 # Cannot move capital away from this province & no power cost
 	}
 }
 
+1803.2.11 = { government = constitutional_monarchy } ### STT
+
 1803.2.11 = {
 	monarch = {
-		name = "Ferdinand von Цsterreich"
+		name = "Фердинанд III"
+		dynasty = "фон Габсбург-Лотаринген" ### STT
 		birth_date = 1769.5.6
 		adm = 0
 		dip = 1

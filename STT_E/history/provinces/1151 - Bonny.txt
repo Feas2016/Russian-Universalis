@@ -1,22 +1,27 @@
 #1151 - Bonny
-owner = BNN
-controller = BNN
-add_core = BNN
-culture = ijaw
-religion = shamanism
+owner = BNN			### STT
+controller = BNN	### STT
+add_core = BNN		### STT
+culture = ijaw		### STT
+religion = shamanism #Fetishism
 capital = "Bonny"
 trade_goods = slaves
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 3		### STT
+base_production = 3	### STT
 base_manpower = 2
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9 
+
+
+
 discovered_by = sub_saharan
-add_permanent_province_modifier = {
+add_permanent_province_modifier = {	### STT
 	name = major_river_estuary_modifier
 	duration = -1
 }
+
 1472.1.1 = { discovered_by = POR } # Frenão do Pó
 1804.1.1 = { discovered_by = SOK }
+

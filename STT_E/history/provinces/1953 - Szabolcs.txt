@@ -4,8 +4,8 @@ owner = HUN
 controller = HUN 
 culture = hungarian
 religion = catholic
-capital = "Nyíregyháza"
-trade_goods = naval_supplies
+capital = "Nyiregyhaza"
+trade_goods = livestock
 hre = no
 base_tax = 4
 base_production = 4
@@ -50,3 +50,6 @@ discovered_by = ottoman
 1690.1.1 = { owner = HAB controller = HAB } # Estimated
 1703.1.1 = { unrest = 6 } # Kuruc rebellion, lead by Francisc Rakoczy
 1711.1.1 = { unrest = 0 } # The treaty of Szatmar
+1711.5.1 = { revolt = { } }
+1806.7.12 = { owner = AEM controller = AEM add_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

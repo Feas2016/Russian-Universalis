@@ -26,13 +26,14 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = east_african
 
+1470.1.1 = {
+	remove_core = ALO
+}
 1503.1.1 = {
 	owner = NUB
 	controller = NUB
 	add_core = NUB
-	discovered_by = NUB
 }
-1523.1.1 = { religion = sunni } #Funj sultans declare Islam state religion
 1565.1.1 = { unrest = 8 } #Shaykh Ajib launches invasion of Funj heartland
 1566.1.1 = { unrest = 0 } #Shaykh Ajib forces Funj out of Sennar
 1582.1.1 = { unrest = 8 } #Dakin invasdes Jazira to restore Funj rule

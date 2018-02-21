@@ -1,7 +1,7 @@
 #261 - Halicz
 
-owner = POL
-controller = POL
+owner = VOL
+controller = VOL
 capital= "Halicz"
 culture = ruthenian
 religion = orthodox
@@ -12,12 +12,12 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = VOL
-add_core = POL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1349.1.1 = { owner = POL add_core = POL controller = POL }
 1492.1.1 = { unrest = 0 } 
 1569.7.1 = {
 	owner = PLC
@@ -42,3 +42,5 @@ discovered_by = ottoman
 	add_core = HAB
 	remove_core = PLC
 } # First partition of Poland
+1806.7.12 = { owner = AEM controller = AEM add_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

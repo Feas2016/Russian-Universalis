@@ -22,7 +22,6 @@ stt_sofia = {
 	}	
 	prestige = 1
 	missionaries = 1
-	icon = 9
 }
 mod2_ermitaj = {
 	potential = {
@@ -34,7 +33,6 @@ mod2_ermitaj = {
 		33 = { has_great_project = ermitaj }	
 	}	
 	prestige = 1
-	icon = 10
 }
 mod2_vasil_blazen = {
 	potential = {
@@ -47,7 +45,6 @@ mod2_vasil_blazen = {
 	global_missionary_strength = 0.01
 	global_unrest = -1
 	missionaries = 1
-	icon = 9
 }
 mod2_fort_sunking = {
 	potential = {
@@ -68,8 +65,8 @@ mod2_hofburg = {
 		owns = 134
 		134 = { has_great_project = hofburg }	
 	}	
-	relations_decay_of_me = 0.3
-	prestige = 0.05
+	improve_relation_modifier = 0.3
+	prestige = 1
 }
 mod2_tajh_mahal = {
 	potential = {
@@ -128,8 +125,8 @@ mod2_ryuanji = {
 		1020 = { has_great_project = ryuanji }	
 	}	
 	global_missionary_strength = -0.02
-	tolerance_heretic = 2
- 	tolerance_heathen = 2	
+	tolerance_heretic = 3
+ 	tolerance_heathen = 3	
 }
 mod2_atesgah = {
 	potential = {
@@ -139,7 +136,7 @@ mod2_atesgah = {
 		owns = 416
 		416 = { has_great_project = atesgah }	
 	}	
-	global_trade_power = 0.1
+	global_trade_power = 0.15
 }
 mod2_tower = {
 	potential = {
@@ -172,7 +169,7 @@ mod2_cast_de_ovo = {
 		owns = 122
 		122 = { has_great_project = cast_de_ovo }	
 	}	
-	army_tradition = 0.5
+	army_tradition = 1
 }
 mod2_zam_if = {
 	potential = {
@@ -184,4 +181,16 @@ mod2_zam_if = {
 	}	
 	global_unrest = -1
 	legitimacy = 1
+}
+mod2_aachen_palace = {
+	potential = {
+		owns = 1878
+	}
+	trigger = {
+		owns = 1878
+		1878 = { has_great_project = aachen_palace }	
+	}	
+	prestige = 1.5
+	legitimacy = 1.5
+	diplomatic_upkeep = 1
 }

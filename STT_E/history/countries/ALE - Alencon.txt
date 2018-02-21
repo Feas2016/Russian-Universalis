@@ -6,30 +6,244 @@ technology_group = western
 capital = 1879	# Alencon
 fixed_capital = 1879 # Cannot move capital away from this province & no power cost to move to it
 
-1361.1.1 = {
+1020.1.1 = {
 	monarch = {
-		name = "Peter II"
-		dynasty = "de Valois"
+		name = "Гильом I"
+		dynasty = "де Беллем"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1028.1.1 = {
+	monarch = {
+		name = "Гильом II Талвас"
+		dynasty = "де Беллем"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1054.1.1 = {
+	monarch = {
+		name = "Мабель"
+		dynasty = "де Беллем"
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1079.12.5 = {
+	monarch = {
+		name = "Роже I"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1094.7.27 = {
+	monarch = {
+		name = "Роберт I"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1113.5.8 = {
+	monarch = {
+		name = "Гильом III Талвас"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1172.6.20 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1191.2.24 = {
+	monarch = {
+		name = "Жан II"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1191.5.1 = {
+	monarch = {
+		name = "Робер I"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1217.9.18 = {
+	monarch = {
+		name = "(Ваканто)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1218.1.1 = {
+	monarch = {
+		name = "Робер II"
+		dynasty = "де Монтгомери"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1220.1.1 = {
+	monarch = {
+		name = "(Ваканто)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1269.3.1 = {
+	monarch = {
+		name = "Пьер I"
+		dynasty = "Капетинг"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1284.4.6 = {
+	monarch = {
+		name = "(Ваканто)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1290.3.1 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Валуа"
+		birth_date = 1270.3.12
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1309.1.1 = {
+	heir = {
+		name = "Людовик"
+		monarch_name = "Людовик I"
+		dynasty = "де Валуа"
+		birth_date = 1309.1.1
+		death_date = 1328.11.2
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1328.11.2 = {
+	monarch = {
+		name = "Карл II"
+		dynasty = "де Валуа"
+		birth_date = 1297.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1337.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл III"
+		dynasty = "де Валуа"
+		birth_date = 1337.1.1
+		death_date = 1375.7.5
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1346.8.26 = {
+	monarch = {
+		name = "Карл III"
+		dynasty = "де Валуа"
+		birth_date = 1337.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1365.7.13 = {
+	monarch = {
+		name = "Филипп I"
+		dynasty = "де Валуа"
+		birth_date = 1339.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1374.9.27 = {
+	monarch = {
+		name = "Пьер II"
+		dynasty = "де Валуа"
+		birth_date = 1340.1.1
 		adm = 1
 		dip = 0
 		mil = 0
 	}
 }
 
-1404.1.1 = {
+1404.9.20 = {
 	monarch = {
-		name = "Jean I"
-		dynasty = "de Valois"
+		name = "Жан I"
+		dynasty = "де Валуа"
+		birth_date = 1385.6.2
 		adm = 0
 		dip = 1
 		mil = 2
 	}
 }
 
-1414.1.1 = {
+1415.9.25 = {
 	monarch = {
-		name = "Jean II"
-		dynasty = "de Valois"
+		name = "Жан II"
+		dynasty = "де Валуа"
+		birth_date = 1409.3.2
 		adm = 0
 		mil = 2
 		dip = 4
@@ -38,18 +252,20 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 
 1478.1.1 = {
 	monarch = {
-		name = "Renй"
-		dynasty = "de Valois"
+		name = "Рене I"
+		dynasty = "де Валуа"
+		birth_date = 1454.1.1
 		adm = 1
 		mil = 1
 		dip = 3
 	}
 }
 
-1492.1.1 = {
+1492.11.1 = {
 	monarch = {
-		name = "Charles IV"
-		dynasty = "de Valois"
+		name = "Карл IV"
+		dynasty = "де Валуа"
+		birth_date = 1489.9.2
 		adm = 1
 		mil = 2
 		dip = 1
@@ -65,4 +281,4 @@ fixed_capital = 1879 # Cannot move capital away from this province & no power co
 
 1589.8.3 = { government = administrative_monarchy }
 
-1661.3.9 = { government = absolute_monarchy }
+#1661.3.9 = { government = absolute_monarchy }

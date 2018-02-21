@@ -1,0 +1,239 @@
+namespace = hhh_religion
+
+#ConvertRelEventsIsHere->hhhFlavour
+
+country_event = {
+	id = hhh_religion.0
+	title = "hhh_religion.0.t"
+	desc = "hhh_religion.0.d"
+	picture = HARBOUR_eventPicture
+
+	trigger = {
+		government = greek_monarchy
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+		NOT = { 
+		has_country_modifier = "christian_opinions"
+		}
+		has_church_aspect = christian_cult_aspect
+	}
+
+	mean_time_to_happen = {
+		days = 600
+	}
+
+	option = {
+		name = "hhh_religion.0.a"
+		add_country_modifier = {
+			name = "christian_opinions"
+			duration = 11000
+		}
+		every_known_country = {
+			limit = {
+					religion_group  = christian
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = hellenic_christian_opinion
+			}
+		}
+		add_years_of_income = -0.25
+	}
+
+	option = {
+		name = "hhh_religion.0.b"
+		add_prestige = 10
+				add_country_modifier = {
+			name = "christian_opinions"
+			duration = 11000
+		}
+	}
+}
+
+#lights of temple
+
+country_event = {
+	id = hhh_religion.1
+	title = "hhh_religion.1.t"
+	desc = "hhh_religion.1.d"
+	picture = FEAST_eventPicture
+
+	trigger = {
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+	}
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+	    #lights grow bigger
+		name = "hhh_religion.1.a"
+		add_stability_or_adm_power = yes
+		add_legitimacy = 5
+		add_faction_influence = {
+			faction = royalists
+			influence = 15
+		}
+    }
+}
+
+#Marked by Ares
+
+country_event = {
+	id = hhh_religion.2
+	title = "hhh_religion.2.t"
+	desc = "hhh_religion.2.d"
+	picture = BATTLE_eventPicture
+
+	trigger = {
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+		is_at_war = yes
+		NOT = { 
+		has_country_modifier = "appearance_ares"
+		}
+        war_exhaustion = 2
+	}
+	
+	mean_time_to_happen = {
+		months = 80
+		modifier = {
+			factor = 0.60
+			war_exhaustion =  8
+		}
+			modifier = {
+			factor = 0.30
+			war_exhaustion =  10
+		}
+	}
+
+	option = {
+	    #Sacreface to ares
+		name = "hhh_religion.2.a"
+		add_war_exhaustion = -4
+		add_years_of_income = -0.15
+	    add_country_modifier = {
+			name = "appearance_ares"
+			duration = 365
+		}
+		create_general = 40
+	}
+
+	option = {
+		name = "hhh_religion.2.b"
+		add_prestige = -5
+	}
+}
+
+#Athena's help to dev city
+
+country_event = {
+	id = hhh_religion.3
+	title = "hhh_religion.3.t"
+	desc = "hhh_religion.3.d"
+	picture = FEAST_eventPicture
+
+	trigger = {
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "hhh_religion.3.a"
+		random_owned_province = {
+				limit = {
+			    is_core = ROOT
+				culture = ROOT
+				}
+                add_base_production = 1
+                add_base_tax = 1
+				add_province_modifier = {
+					name = "athenians_spirit"
+					duration = 730
+				}
+			}
+		add_faction_influence = {
+			faction = royalists
+			influence = 10
+		}	
+	}
+    }
+
+#rage of poseidone
+
+
+#christians_rage
+
+country_event = {
+	id = hhh_religion.4
+	title = "hhh_religion.4.t"
+	desc = "hhh_religion.4.d"
+	picture = FEAST_eventPicture
+
+	trigger = {
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "hhh_religion.4.a"
+		random_owned_province = {
+				limit = {
+			    is_core = ROOT
+				culture = ROOT
+				}
+                add_province_modifier = {
+					name = "christian_upset"
+					duration = 730
+				}
+			}
+	}
+    }
+
+#Plague Cure by appolone
+#rage of Diona
+
+#The new oracle
+
+#Son of zeus
+#define_ruler = {
+ #   dynasty = ROOT
+	#male = yes
+#	adm = 2
+ #   dip = 1
+ #   mil = 2
+  #  claim = 50
+#}
+
+
+#muslims ravage
+
+#Christian bishops
+
+#blessed by oracle

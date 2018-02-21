@@ -1,5 +1,5 @@
 # SPQR
-government = spqr_republic
+government = imperial_government_2
 mercantilism = 0.1
 technology_group = western
 primary_culture = greek
@@ -8,28 +8,1360 @@ historical_friend = PQR
 historical_friend = ROM
 historical_rival = LAE
 capital = 118 # Rome
-government_rank = 1
+government_rank = 3
 
-1425.7.21 = {
+1.1.1 = {
 	monarch = {
-		name = "Ромул Август"
+		name = "Октавиан Август"
+		dynasty = "Юлий-Клавдий"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+14.8.19 = {
+	monarch = {
+		name = "Тиберий"
+		dynasty = "Юлий-Клавдий"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+37.3.18 = {
+	monarch = {
+		name = "Калигула"
+		dynasty = "Юлий-Клавдий"
+		birth_date = 12.8.31
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+41.1.24 = {
+	monarch = {
+		name = "Клавдий"
+		dynasty = "Юлий-Клавдий"
+		adm = 5
+		dip = 2
+		mil = 3
+	}
+}
+
+54.10.13 = {
+	monarch = {
+		name = "Нерон"
+		dynasty = "Юлий-Клавдий"
+		birth_date = 37.12.15
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+68.6.9 = {
+	monarch = {
+		name = "Гальба"
+		dynasty = "Сульпиций"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+69.1.15 = {
+	monarch = {
+		name = "Отон"
+		dynasty = "Сальвий"
+		birth_date = 32.4.25
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+69.4.17 = {
+	monarch = {
+		name = "Авл"
+		dynasty = "Вителлий"
+		birth_date = 15.9.24
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+69.12.20 = {
+	monarch = {
+		name = "Веспасиан"
 		dynasty = "Флавий"
+		birth_date = 9.11.17
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+79.6.24 = {
+	monarch = {
+		name = "Тит"
+		dynasty = "Флавий"
+		birth_date = 39.12.30
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+81.9.14 = {
+	monarch = {
+		name = "Домициан"
+		dynasty = "Флавий"
+		birth_date = 51.10.24
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+96.9.18 = {
+	monarch = {
+		name = "Нерва"
+		dynasty = "Антонин"
+		birth_date = 30.11.8
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+
+98.1.28 = {
+	monarch = {
+		name = "Траян"
+		dynasty = "Антонин"
+		birth_date = 53.9.15
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+117.8.9 = {
+	monarch = {
+		name = "Адриан"
+		dynasty = "Антонин"
+		birth_date = 76.1.24
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+138.6.10 = {
+	monarch = {
+		name = "Антонин Пий"
+		dynasty = "Антонин"
+		birth_date = 86.9.19
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+161.3.7 = {
+	monarch = {
+		name = "Луций Вер"
+		dynasty = "Антонин"
+		birth_date = 130.12.15
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+169.1.15 = {
+	monarch = {
+		name = "Марк Аврелий"
+		dynasty = "Антонин"
+		birth_date = 121.4.26
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+180.3.17 = {
+	monarch = {
+		name = "Коммод"
+		dynasty = "Антонин"
+		birth_date = 161.8.31
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}
+
+192.12.31 = {
+	monarch = {
+		name = "Пертинакс"
+		dynasty = "Гельвий"
+		birth_date = 126.8.1
 		adm = 3
 		dip = 3
 		mil = 3
 	}
 }
 
-1448.10.31 = {
-	heir = {
-		name = "Ромул Августs"
-		monarch_name = "Ромул Август II"
-		dynasty = "Флавий"
-		birth_date = 1444.7.29
-		death_date = 1524.7.29
+193.3.28 = {
+	monarch = {
+		name = "Дидий Юлиан"
+		dynasty = "Дидий"
+		birth_date = 133.1.30
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+193.6.1 = {
+	monarch = {
+		name = "Песценний Нигер"
+		dynasty = "Фуск"
+		birth_date = 135.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+194.10.1 = {
+	monarch = {
+		name = "Клодий Альбин"
+		dynasty = "Клодий"
+		birth_date = 150.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+197.2.19 = {
+	monarch = {
+		name = "Септимий Север"
+		dynasty = "Север"
+		birth_date = 146.4.11
 		adm = 4
 		dip = 4
 		mil = 4
 	}
 }
 
+211.2.4 = {
+	monarch = {
+		name = "Гета"
+		dynasty = "Север"
+		birth_date = 189.5.28
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+211.12.26 = {
+	monarch = {
+		name = "Каракалла"
+		dynasty = "Север"
+		birth_date = 188.4.4
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+217.4.9 = {
+	monarch = {
+		name = "Макрин"
+		dynasty = "Север"
+		birth_date = 164.1.1
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+217.6.8 = {
+	monarch = {
+		name = "Диадумениан"
+		dynasty = "Север"
+		birth_date = 208.9.4
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+218.6.9 = {
+	monarch = {
+		name = "Гелиогабал"
+		dynasty = "Север"
+		birth_date = 204.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+218.12.1 = {
+	monarch = {
+		name = "Вер"
+		dynasty = "Вер"
+		birth_date = 180.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+219.1.1 = {
+	monarch = {
+		name = "Гелиогабал"
+		dynasty = "Север"
+		birth_date = 204.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+222.3.12 = {
+	monarch = {
+		name = "Александр Север"
+		dynasty = "Север"
+		birth_date = 208.10.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+235.3.20 = {
+	monarch = {
+		name = "Максимин I"
+		dynasty = "Юлий Вер"
+		birth_date = 173.10.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+236.3.20 = {
+	monarch = {
+		name = "Максимин II"
+		dynasty = "Юлий Вер"
+		birth_date = 217.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+238.3.22 = {
+	monarch = {
+		name = "Гордиан I"
+		dynasty = "Меций"
+		birth_date = 159.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+238.4.12 = {
+	monarch = {
+		name = "Гордиан II"
+		dynasty = "Меций"
+		birth_date = 192.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+238.4.13 = {
+	monarch = {
+		name = "Пупиен"
+		dynasty = "Пупиен"
+		birth_date = 164.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+238.4.22 = {
+	monarch = {
+		name = "Бальбин"
+		dynasty = "Бальб"
+		birth_date = 178.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+238.7.29 = {
+	monarch = {
+		name = "Гордиан III"
+		dynasty = "Бальб"
+		birth_date = 215.1.20
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+244.2.11 = {
+	monarch = {
+		name = "Филипп I Араб"
+		dynasty = "Марин"
+		birth_date = 204.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+249.9.1 = {
+	monarch = {
+		name = "Филипп II"
+		dynasty = "Марин"
+		birth_date = 237.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+249.10.1 = {
+	monarch = {
+		name = "Деций Траян"
+		dynasty = "Деций"
+		birth_date = 201.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+251.7.1 = {
+	monarch = {
+		name = "Геренний Этруск"
+		dynasty = "Деций"
+		birth_date = 220.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+251.7.14 = {
+	monarch = {
+		name = "Гостилиан"
+		dynasty = "Деций"
+		birth_date = 230.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+251.11.1 = {
+	monarch = {
+		name = "Требониан Галл"
+		dynasty = "Велдумниан"
+		birth_date = 206.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+251.8.1 = {
+	monarch = {
+		name = "Волузиан"
+		dynasty = "Велдумниан"
+		birth_date = 226.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+253.8.2 = {
+	monarch = {
+		name = "Эмилиан"
+		dynasty = "Эмилий"
+		birth_date = 207.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+253.10.1 = {
+	monarch = {
+		name = "Валериан I"
+		dynasty = "Лициний"
+		birth_date = 193.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+260.6.1 = {
+	monarch = {
+		name = "Галлиен"
+		dynasty = "Лициний"
+		birth_date = 218.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+260.7.1 = {
+	monarch = {
+		name = "Салонин"
+		dynasty = "Лициний"
+		birth_date = 242.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+260.7.15 = {
+	monarch = {
+		name = "Галлиен"
+		dynasty = "Лициний"
+		birth_date = 218.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+261.8.1 = {
+	monarch = {
+		name = "Макриан I"
+		dynasty = "Фульвий"
+		birth_date = 220.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+261.9.1 = {
+	monarch = {
+		name = "Макриан II"
+		dynasty = "Фульвий"
+		birth_date = 240.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+261.10.1 = {
+	monarch = {
+		name = "Квиет"
+		dynasty = "Фульвий"
+		birth_date = 240.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+261.11.1 = {
+	monarch = {
+		name = "Квиет"
+		dynasty = "Фульвий"
+		birth_date = 240.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+261.11.1 = {
+	monarch = {
+		name = "Муссий Эмилиан"
+		dynasty = "Муссий"
+		birth_date = 220.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+262.3.30 = {
+	monarch = {
+		name = "Галлиен"
+		dynasty = "Лициний"
+		birth_date = 218.1.1
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+268.9.1 = {
+	monarch = {
+		name = "Авреол"
+		dynasty = "Авреол"
+		birth_date = 220.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+268.9.15 = {
+	monarch = {
+		name = "Клавдий II"
+		dynasty = "Валерий"
+		birth_date = 212.5.10
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+270.2.1 = {
+	monarch = {
+		name = "Квинтилл"
+		dynasty = "Валерий"
+		birth_date = 220.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+270.9.9 = {
+	monarch = {
+		name = "Аврелиан"
+		dynasty = "Домиций"
+		birth_date = 214.9.9
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+275.9.15 = {
+	monarch = {
+		name = "Тацит"
+		dynasty = "Марк Клавдий"
+		birth_date = 199.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+276.6.1 = {
+	monarch = {
+		name = "Флориан"
+		dynasty = "Марк Клавдий"
+		birth_date = 232.8.19
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+276.9.9 = {
+	monarch = {
+		name = "Проб"
+		dynasty = "Далмаций"
+		birth_date = 232.8.19
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+282.9.1 = {
+	monarch = {
+		name = "Кар"
+		dynasty = "Нумерий"
+		birth_date = 224.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+283.7.1 = {
+	monarch = {
+		name = "Нумериан"
+		dynasty = "Нумерий"
+		birth_date = 253.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+283.8.1 = {
+	monarch = {
+		name = "Карин"
+		dynasty = "Нумерий"
+		birth_date = 250.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+284.11.1 = {
+	monarch = {
+		name = "Юлиан I"
+		dynasty = "Сабин"
+		birth_date = 250.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+285.1.1 = {
+	monarch = {
+		name = "Карин"
+		dynasty = "Нумерий"
+		birth_date = 250.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+285.7.1 = {
+	monarch = {
+		name = "Диоклетиан"
+		dynasty = "Геркулий"
+		birth_date = 245.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+286.4.1 = {
+	monarch = {
+		name = "Максимиан"
+		dynasty = "Геркулий"
+		birth_date = 250.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+305.5.1 = {
+	monarch = {
+		name = "Констанций I Хлор"
+		dynasty = "Константиниан"
+		birth_date = 250.3.31
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+306.7.25 = {
+	monarch = {
+		name = "Север II"
+		dynasty = "Константиниан"
+		birth_date = 270.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+307.2.16 = {
+	monarch = {
+		name = "Галерий"
+		dynasty = "Константиниан"
+		birth_date = 250.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+311.5.5 = {
+	monarch = {
+		name = "Лициний"
+		dynasty = "Константиниан"
+		birth_date = 263.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+316.12.1 = {
+	monarch = {
+		name = "Валент I"
+		dynasty = "Константиниан"
+		birth_date = 270.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+317.3.1 = {
+	monarch = {
+		name = "Лициний"
+		dynasty = "Константиниан"
+		birth_date = 263.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+324.7.1 = {
+	monarch = {
+		name = "Мартиниан"
+		dynasty = "Константиниан"
+		birth_date = 270.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+324.9.18 = {
+	monarch = {
+		name = "Константин I"
+		dynasty = "Константиниан"
+		birth_date = 274.2.27
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+337.3.22 = {
+	monarch = {
+		name = "Константин II"
+		dynasty = "Константиниан"
+		birth_date = 316.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+340.1.1 = {
+	monarch = {
+		name = "Констанций II"
+		dynasty = "Константиниан"
+		birth_date = 317.8.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+350.3.1 = {
+	monarch = {
+		name = "Ветранион"
+		dynasty = "Ветраниониан"
+		birth_date = 320.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+350.6.3 = {
+	monarch = {
+		name = "Непоциан"
+		dynasty = "Непоцианиан"
+		birth_date = 317.8.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+350.6.30 = {
+	monarch = {
+		name = "Ветранион"
+		dynasty = "Ветраниониан"
+		birth_date = 320.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+350.12.25 = {
+	monarch = {
+		name = "Магненций"
+		dynasty = "Магн"
+		birth_date = 303.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+353.8.11 = {
+	monarch = {
+		name = "Деценций"
+		dynasty = "Магн"
+		birth_date = 305.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+353.8.18 = {
+	monarch = {
+		name = "Констанций II"
+		dynasty = "Константиниан"
+		birth_date = 317.8.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+355.8.11 = {
+	monarch = {
+		name = "Сильван"
+		dynasty = "Сильваниан"
+		birth_date = 317.8.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+355.9.7 = {
+	monarch = {
+		name = "Констанций II"
+		dynasty = "Константиниан"
+		birth_date = 317.8.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+361.11.3 = {
+	monarch = {
+		name = "Юлиан II"
+		dynasty = "Константиниан"
+		birth_date = 331.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+363.6.26 = {
+	monarch = {
+		name = "Иовиан"
+		dynasty = "Константиниан"
+		birth_date = 330.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+364.2.17 = {
+	monarch = {
+		name = "Валентиниан I"
+		dynasty = "Валентиниан"
+		birth_date = 321.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+375.11.17 = {
+	monarch = {
+		name = "Валент II"
+		dynasty = "Валентиниан"
+		birth_date = 328.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+378.8.9 = {
+	monarch = {
+		name = "Грациан"
+		dynasty = "Валентиниан"
+		birth_date = 359.4.18
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+383.8.25 = {
+	monarch = {
+		name = "Магн Максим"
+		dynasty = "Магниан"
+		birth_date = 335.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+388.8.27 = {
+	monarch = {
+		name = "Флавий Виктор"
+		dynasty = "Магниан"
+		birth_date = 355.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+388.8.30 = {
+	monarch = {
+		name = "Валентиниан II"
+		dynasty = "Валентиниан"
+		birth_date = 371.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+392.3.15 = {
+	monarch = {
+		name = "Феодосий I"
+		dynasty = "Феодосиан"
+		birth_date = 347.1.11
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+395.1.17 = {
+	monarch = {
+		name = "Гонорий"
+		dynasty = "Феодосиан"
+		birth_date = 384.9.9
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+406.12.31 = {
+	monarch = {
+		name = "Константин III"
+		dynasty = "Клавдиан"
+		birth_date = 370.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+409.9.1 = {
+	monarch = {
+		name = "Констант II"
+		dynasty = "Клавдиан"
+		birth_date = 370.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+411.9.18 = {
+	monarch = {
+		name = "Гонорий"
+		dynasty = "Феодосиан"
+		birth_date = 384.9.9
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+414.1.1 = {
+	monarch = {
+		name = "Приск Аттал"
+		dynasty = "Ампелиан"
+		birth_date = 380.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+416.6.28 = {
+	monarch = {
+		name = "Гонорий"
+		dynasty = "Феодосиан"
+		birth_date = 384.9.9
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+421.2.8 = {
+	monarch = {
+		name = "Констанций III"
+		dynasty = "Феодосиан"
+		birth_date = 370.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+421.9.2 = {
+	monarch = {
+		name = "Гонорий"
+		dynasty = "Феодосиан"
+		birth_date = 384.9.9
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+
+
+423.8.15 = {
+	monarch = {
+		name = "Флавий Иоанн"
+		dynasty = "Иоаниан"
+		birth_date = 385.1.1
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+425.7.2 = {
+	monarch = {
+		name = "Валентиниан III"
+		dynasty = "Феодосиан"
+		birth_date = 419.7.2
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+455.3.17 = {
+	monarch = {
+		name = "Петроний Максим"
+		dynasty = "Аниций"
+		birth_date = 396.1.1
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+455.5.31 = {
+	monarch = {
+		name = "Авит"
+		dynasty = "Агрикола"
+		birth_date = 395.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+456.10.6 = {
+	monarch = {
+		name = "Рицимер"
+		dynasty = "Балт"
+		birth_date = 405.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+457.2.28 = {
+	monarch = {
+		name = "Майориан"
+		dynasty = "Ювенис"
+		birth_date = 420.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+461.8.2 = {
+	monarch = {
+		name = "Рицимер"
+		dynasty = "Балт"
+		birth_date = 405.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+461.11.1 = {
+	monarch = {
+		name = "Либий Север"
+		dynasty = "Серпентий"
+		birth_date = 420.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+465.8.15 = {
+	monarch = {
+		name = "Рицимер"
+		dynasty = "Балт"
+		birth_date = 405.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+467.4.12 = {
+	monarch = {
+		name = "Прокопий Антемий"
+		dynasty = "Феодосиан"
+		birth_date = 420.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+472.7.11 = {
+	monarch = {
+		name = "Олибрий"
+		dynasty = "Аниций"
+		birth_date = 430.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+472.10.23 = {
+	monarch = {
+		name = "Гундобад"
+		dynasty = "Нибелунг"
+		birth_date = 455.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+473.3.3 = {
+	monarch = {
+		name = "Глицерий"
+		dynasty = "Доместик"
+		birth_date = 430.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+474.6.1 = {
+	monarch = {
+		name = "Юлий Непот"
+		dynasty = "Непоциан"
+		birth_date = 430.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+475.8.28 = {
+	monarch = {
+		name = "Орест"
+		dynasty = "Татул"
+		birth_date = 430.1.1
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+475.10.31 = {
+	monarch = {
+		name = "Ромул Август"
+		dynasty = "Татул"
+		birth_date = 460.1.1
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+}
+
+476.9.4 = {
+	monarch = {
+		name = "Юлий Непот"
+		dynasty = "Непоциан"
+		birth_date = 430.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+480.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+
+480.1.1 = {
+government = spqr_republic
+government_rank = 1
+}

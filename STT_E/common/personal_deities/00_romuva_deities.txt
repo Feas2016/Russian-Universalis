@@ -1,0 +1,135 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+dievas =
+{
+	legitimacy = 1
+	horde_unity = 1
+	stability_cost_modifier = -0.15
+	
+	allow = { religion = romuva }
+	sprite = 13
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+perkunas =
+{
+	discipline = 0.05
+	army_tradition = 0.5
+	
+	allow = { religion = romuva }
+	sprite = 14
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+zhemina =
+{
+	development_cost = -0.1
+	production_efficiency = 0.1
+	
+	allow = { religion = romuva }
+	sprite = 15
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+saule =
+{
+	global_unrest = -2
+	global_missionary_strength = 0.01 
+	
+	allow = { religion = romuva }
+	sprite = 16
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+budte =
+{
+	technology_cost = -0.05
+	idea_cost = -0.10 
+	
+	allow = { religion = romuva }
+	sprite = 17
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+	}
+}
+
+bangputis =
+{
+	navy_tradition = 1
+	ship_durability = 0.1
+	
+	allow = { religion = romuva }
+	sprite = 18
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+		    factor = 0
+			all_owned_province = {
+			    NOT = { has_port = yes }
+			}
+		}
+	}
+}

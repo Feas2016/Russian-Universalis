@@ -1,0 +1,16 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = moravian
+religion = catholic
+capital = 3128 # Olomouc
+technology_group = western
+
+# Start of Thirty years war
+1618.5.22 = {
+	elector = yes
+	religion = protestant
+	join_league = protestant
+}
+1620.11.8 = {
+	leave_league = protestant
+}

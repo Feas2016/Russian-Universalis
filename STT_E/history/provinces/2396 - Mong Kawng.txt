@@ -5,16 +5,29 @@ controller = MYA
 culture = kachin
 religion = buddhism
 capital = "Mong Kawng"
-trade_goods = gold
+trade_goods = gems
 hre = no
 base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = MYA
-add_core = CDL
+#add_core = CDL
+add_core = PYN
 discovered_by = chinese
 discovered_by = indian
+
+#1315.1.1 = {
+#	owner = SIQ
+#	controller = SIQ
+#	add_core = SIQ
+#}
+
+#1364.1.1 = {
+#	owner = MYA
+#	controller = MYA
+#	add_core = MYA
+#}
 
 1502.1.1 = {
 	controller = SST

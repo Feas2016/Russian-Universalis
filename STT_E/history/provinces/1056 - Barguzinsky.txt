@@ -1,7 +1,8 @@
 #1056 - Barguzinsky
 
-owner = BRT
-controller = BRT
+owner = YUA
+controller = YUA
+add_core = YUA
 add_core = BRT
 culture = buryat
 religion = tengri_pagan_reformed
@@ -17,11 +18,18 @@ native_hostileness = 3
 is_city = yes
 discovered_by = nomad_group
 
-1632.1.1 = { discovered_by = RUS }
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = BRT add_core = BRT controller = BRT }
+1632.1.1 = { discovered_by = TSR }
 1653.1.1 = {
-	owner = RUS
-	controller = RUS
+	owner = TSR
+	controller = TSR
 	religion = orthodox
 	culture = russian
 } # Pyotr Beketov
-1678.1.1 = { add_core = RUS }
+1678.1.1 = { add_core = TSR }
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

@@ -12,13 +12,45 @@ capital = 41	# Kцnigsberg
 		adm = 1
 		dip = 3
 		mil = 1
-		leader = {	name = "Альбрехт I"              	type = general	rank = 0	fire = 1	shock = 2	manuever = 2	siege = 0 }
+		leader = {	name = "Альбрехт I"              	type = general	fire = 1	shock = 2	manuever = 2	siege = 0 }
 	}
 }
 
 1525.1.1 = { religion = protestant }
 
-1525.1.1  = { changed_tag_from = TEU }
+1525.1.1  = { ### STT
+	changed_tag_from = TEU
+	government = prussian_monarchy
+	add_country_modifier = { name = ger_hommage    duration = -1 } 
+}
+
+1526.2.12 = {
+	queen = {
+		country_of_origin = DAN
+		name = "Доротея"
+		dynasty = "фон Ольденбург"
+		birth_date = 1504.8.1
+		death_date = 1547.4.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1550.1.1 = {
+	queen = {
+		country_of_origin = BRU
+		name = "Анна Мари"
+		dynasty = "фон Вельф"
+		birth_date = 1532.4.23
+		death_date = 1568.3.28
+		female = yes
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
 
 1553.5.7 = {
 	heir = {
@@ -58,12 +90,37 @@ capital = 41	# Kцnigsberg
 	}
 }
 
+1573.1.1 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Мари Элеонор"
+		dynasty = "фон дер Марк"
+		birth_date = 1550.6.16
+		death_date = 1608.6.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
 1618.8.19 = {
 	monarch = {
 		name = "Иоганн Сигизмунд"
 		dynasty = "фон Гогенцоллерн"
 		adm = 3
 		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = PRU
+		name = "Анна"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1576.7.3
+		death_date = 1625.8.30
+		female = yes
+		adm = 3
+		dip = 4
 		mil = 2
 	}
 }
@@ -79,7 +136,7 @@ capital = 41	# Kцnigsberg
 		adm = 5
 		dip = 5
 		mil = 3
-		leader = {	name = "Георг Вильгельм"         	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Георг Вильгельм"         	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
 	}
 }
 
@@ -90,7 +147,18 @@ capital = 41	# Kцnigsberg
 		adm = 5
 		dip = 5
 		mil = 3
-		leader = {	name = "Георг Вильгельм"         	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Георг Вильгельм"         	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = PAL
+		name = "Элизабет Шарлотт"
+		dynasty = "фон Виттельсбах"
+		birth_date = 1597.11.19
+		death_date = 1660.4.26
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -105,7 +173,7 @@ capital = 41	# Kцnigsberg
 		adm = 4
 		dip = 5
 		mil = 5
-		leader = {	name = "Фридрих Вильгельм"     	type = general	rank = 0	fire = 3	shock = 3	manuever = 2	siege = 0 }
+		leader = {	name = "Фридрих Вильгельм"     	type = general	fire = 3	shock = 3	manuever = 2	siege = 0 }
 	}
 }
 
@@ -116,11 +184,26 @@ capital = 41	# Kцnigsberg
 		adm = 4
 		dip = 5
 		mil = 5
-		leader = {	name = "Фридрих Вильгельм"     	type = general	rank = 0	fire = 3	shock = 3	manuever = 2	siege = 0 }
+		leader = {	name = "Фридрих Вильгельм"     	type = general	fire = 3	shock = 3	manuever = 2	siege = 0 }
+	}
+	add_army_professionalism = 0.2
+}
+
+1646.12.7 = {
+	queen = {
+		country_of_origin = NSA
+		name = "Луиза Генриетта"
+		dynasty = "фон Нассау"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 1
 	}
 }
 
-1654.1.1 = { leader = {	name = "Г. фон Дерффингер"       	type = general	rank = 1	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1695.2.14 } }
+1654.1.1 = { leader = {	name = "Г. фон Дерффингер"       	type = general	fire = 4	shock = 3	manuever = 3	siege = 1	death_date = 1695.2.14 } }
 
 1657.7.11 = {
 	heir = {
@@ -133,13 +216,27 @@ capital = 41	# Kцnigsberg
 		adm = 6
 		dip = 4
 		mil = 4
-		leader = {	name = "Фридрих I"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Фридрих I"           	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
+	}
+}
+
+1668.6.14 = {
+	queen = {
+		country_of_origin = SHL
+		name = "Софья Доротея"
+		dynasty = "фон Голштейн-Готторп"
+		birth_date = 1627.11.27
+		death_date = 1667.6.18
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 3
 	}
 }
  
-1670.1.1 = { leader = {	name = "Ф. Гессен-Гомбург"        	type = general	rank = 3	fire = 2	shock = 4	manuever = 3	siege = 2	death_date = 1708.1.24 } }
+1670.1.1 = { leader = {	name = "Ф. Гессен-Гомбург"        	type = general	fire = 2	shock = 4	manuever = 3	siege = 2	death_date = 1708.1.24 } }
 
-1686.1.1 = { leader = {	name = "Ф.В. фон Киау"              	type = general	rank = 5	fire = 2	shock = 2	manuever = 1	siege = 0	death_date = 1733.1.19 } }
+1686.1.1 = { leader = {	name = "Ф.В. фон Киау"              	type = general	fire = 2	shock = 2	manuever = 1	siege = 0	death_date = 1733.1.19 } }
 
 1688.5.10 = {
 	monarch = {
@@ -148,11 +245,22 @@ capital = 41	# Kцnigsberg
 		adm = 6
 		dip = 4
 		mil = 4
-		leader = {	name = "Фридрих I"           	type = general	rank = 0	fire = 3	shock = 3	manuever = 3	siege = 0 }
+		leader = {	name = "Фридрих I"           	type = general	fire = 3	shock = 3	manuever = 3	siege = 0 }
+	}
+	queen = {
+		country_of_origin = HAN
+		name = "Софья Шарлотта"
+		dynasty = "фон Ганновер"
+		birth_date = 1668.10.30
+		death_date = 1705.2.1
+		female = yes
+		adm = 2
+		dip = 3
+		mil = 1
 	}
 }
 
-1688.5.10 = { government = absolute_monarchy }
+1688.5.10 = { government = prussian_monarchy }
 
 1688.8.14 = {
 	heir = {
@@ -168,11 +276,28 @@ capital = 41	# Kцnigsberg
 	}
 }
 
-1701.1.18 = { capital = 50 }	# Berlin
+1701.1.18 = { ### STT
+	capital = 50 # Berlin
+	remove_country_modifier = ger_hommage
+	elector = yes 
+	government_rank = 2
+}
 
-1701.1.18 = { elector = yes government_rank = 2 }
+1702.1.1 = { leader = {	name = "Леопольд фон Дессау" 	type = general	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
 
-1702.1.1 = { leader = {	name = "Леопольд фон Дессау"            	type = general	rank = 0	fire = 4	shock = 4	manuever = 4	siege = 3	death_date = 1747.4.7 } }
+1708.11.28 = {
+	queen = {
+		country_of_origin = MKL
+		name = "Софья Луиза"
+		dynasty = "фон Мекленбург"
+		birth_date = 1685.5.6
+		death_date = 1735.7.29
+		female = yes
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
 
 1713.2.24 = {
 	monarch = {
@@ -182,6 +307,22 @@ capital = 41	# Kцnigsberg
 		dip = 4
 		mil = 5
 	}
+	queen = {
+		country_of_origin = HAN
+		name = "Софья Доротея"
+		dynasty = "фон Ганновер"
+		birth_date = 1687.3.16
+		death_date = 1757.6.28
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	add_army_professionalism = 0.25
+	clear_scripted_personalities = yes
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = strict_personality
 }
 
 1713.2.24 = {
@@ -195,17 +336,17 @@ capital = 41	# Kцnigsberg
 		adm = 6
 		dip = 6
 		mil = 6
-		leader = {	name = "Фридрих II Великий"          	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 1 }
+		leader = {	name = "Фридрих II Великий"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
 	}
 }
 
-1720.1.1 = { leader = {	name = "Курт фон Шверин"          	type = general	rank = 2	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1757.5.6 } }
+1720.1.1 = { leader = {	name = "Курт фон Шверин"          	type = general	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1757.5.6 } }
 
-1725.1.1 = { leader = {	name = "А.Ф. фон Шуленбург"       	type = general	rank = 6	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1741.4.10 } }
+1725.1.1 = { leader = {	name = "А.Ф. фон Шуленбург"       	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1741.4.10 } }
 
-1735.1.1 = { leader = {	name = "Ганс фон Левальд"		type = general	rank = 5	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1768.1.1 } }
+1735.1.1 = { leader = {	name = "Ганс фон Левальд"		type = general	fire = 3	shock = 1	manuever = 3	siege = 1	death_date = 1768.1.1 } }
 
-1735.1.1 = { leader = {	name = "фон Гесслер"			type = general	rank = 4	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1745.1.1 } }
+1735.1.1 = { leader = {	name = "фон Гесслер"			type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1745.1.1 } }
 
 1740.5.30 = {
 	monarch = {
@@ -214,13 +355,29 @@ capital = 41	# Kцnigsberg
 		adm = 6
 		dip = 6
 		mil = 6
-		leader = {	name = "Фридрих II Великий"          	type = general	rank = 0	fire = 6	shock = 6	manuever = 6	siege = 1 }
+		leader = {	name = "Фридрих II Великий"          	type = general	fire = 6	shock = 6	manuever = 6	siege = 1 }
 	}
+	queen = {
+		country_of_origin = BRU
+		name = "Элизабет Кристин"
+		dynasty = "фон Вельф"
+		birth_date = 1715.11.8
+		death_date = 1797.1.13
+		female = yes
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+	add_army_professionalism = 0.3
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = lawgiver_personality
 }
 
-1740.5.30 = { government = enlightened_despotism }
+#1740.5.30 = { government = enlightened_despotism }
 
-1741.1.1 = { leader = {	name = "Ганс фон Цитен"	type = general	rank = 7	fire = 2	shock = 4	manuever = 4	siege = 0	death_date = 1760.11.3 } }
+1741.1.1 = { leader = {	name = "Ганс фон Цитен"	type = general	fire = 2	shock = 4	manuever = 4	siege = 0	death_date = 1760.11.3 } }
 
 1744.9.25 = {
 	heir = {
@@ -236,21 +393,21 @@ capital = 41	# Kцnigsberg
 	}
 }
 
-1745.1.1 = { leader = {	name = "Принц Генрих"	type = general	rank = 2	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1797.11.16 } }
+1745.1.1 = { leader = {	name = "Принц Генрих"	type = general	fire = 3	shock = 5	manuever = 4	siege = 0	death_date = 1797.11.16 } }
 
-1745.1.1 = { leader = {	name = "Ф.В. фон Зейдлиц"	type = general	rank = 3	fire = 1	shock = 6	manuever = 4	siege = 0	death_date = 1760.5.1 } }
+1745.1.1 = { leader = {	name = "Ф.В. фон Зейдлиц"	type = general	fire = 1	shock = 6	manuever = 4	siege = 0	death_date = 1760.5.1 } }
 
-1750.1.1 = { leader = {	name = "Принц Фердинанд"	type = general	rank = 4	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1786.8.17 } }
+1750.1.1 = { leader = {	name = "Принц Фердинанд"	type = general	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1786.8.17 } }
 
-1750.1.1 = { leader = {	name = "Ф.А. фон Финк"		type = general	rank = 8	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1759.11.19 } }
+1750.1.1 = { leader = {	name = "Ф.А. фон Финк"		type = general	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1759.11.19 } }
 
-1755.1.1 = { leader = {	name = "Вильгельм цу Дона"	type = general	rank = 6	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1790.4.27 } }
+1755.1.1 = { leader = {	name = "Вильгельм цу Дона"	type = general	fire = 2	shock = 3	manuever = 2	siege = 0	death_date = 1790.4.27 } }
 
-1760.1.1 = { leader = {	name = "Гебхард фон Блюхер"	type = general	rank = 0	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1819.9.12 } }
+1760.1.1 = { leader = {	name = "Гебхард фон Блюхер"	type = general	fire = 5	shock = 5	manuever = 5	siege = 0	death_date = 1819.9.12 } }
 
-1772.1.1 = { leader = {	name = "Ф.В. фон Бюлов"		type = general	rank = 2	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1816.2.25 } }
+1772.1.1 = { leader = {	name = "Ф.В. фон Бюлов"		type = general	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1816.2.25 } }
 
-1780.1.1 = { leader = {	name = "Ф.Л. цу Гогенлоэ"	type = general	rank = 1	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1806.8.1 } }
+1780.1.1 = { leader = {	name = "Ф.Л. цу Гогенлоэ"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0	death_date = 1806.8.1 } }
 
 1786.8.18 = {
 	monarch = {
@@ -259,6 +416,17 @@ capital = 41	# Kцnigsberg
 		adm = 1
 		dip = 4
 		mil = 2
+	}
+	queen = {
+		country_of_origin = HES
+		name = "Фредрика Луиза"
+		dynasty = "фон Гессен"
+		birth_date = 1751.10.16
+		death_date = 1805.2.25
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 1
 	}
 }
 
@@ -284,6 +452,17 @@ capital = 41	# Kцnigsberg
 		dip = 5
 		mil = 2
 	}
+	queen = {
+		country_of_origin = MKL
+		name = "Луиза"
+		dynasty = "фон Мекленбург"
+		birth_date = 1776.3.10
+		death_date = 1810.7.19
+		female = yes
+		adm = 1
+		dip = 6
+		mil = 3
+	}
 }
 
 1797.11.17 = {
@@ -302,8 +481,32 @@ capital = 41	# Kцnigsberg
 
 1806.7.12 = { elector = no } # The HRE is formally abolished
 
-1807.1.1 = { leader = { name = "Август фон Гнейзенау"	type = general	rank = 0	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1831.8.23 } }
+1807.1.1 = { leader = { name = "Август фон Гнейзенау"	type = general	fire = 4	shock = 4	manuever = 5	siege = 0	death_date = 1831.8.23 } }
 
 1807.1.1 = { capital = 40 } # Memel
 
 1808.1.1 = { capital = 50 } # Berlin
+
+1840.6.7 = {
+	monarch = {
+		name = "Фридрих Вильгельм IV"
+		dynasty = "фон Гогенцоллерн"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+1840.6.7 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "фон Гогенцоллерн"
+		birth_date = 1797.3.22
+		death_date = 1888.3.9
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

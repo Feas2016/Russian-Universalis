@@ -3,6 +3,7 @@
 alliance = {
 	first = HSA
 	second = RIG
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1581.1.1
 }
@@ -10,6 +11,7 @@ alliance = {
 alliance = {
 	first = HSA
 	second = OLD
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1667.1.1
 }
@@ -17,6 +19,7 @@ alliance = {
 alliance = {
 	first = HSA
 	second = MAG
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1680.10.4
 }
@@ -24,6 +27,7 @@ alliance = {
 alliance = {
 	first = HSA
 	second = LUN
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1692.1.1
 }
@@ -31,19 +35,23 @@ alliance = {
 alliance = {
 	first = HSA
 	second = BRE
+	trade_league = 1
 	start_date = 1380.1.1
-	end_date = 1719.9.30
+	end_date = 1563.1.1
 }
-alliance = {
+# Bremen kicked out of the Hansa due to religious conflicts for a few years
+alliance = { ### STT
 	first = HSA
 	second = HAM
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1719.9.30
 }
 
-alliance = {
+alliance = { ### STT
 	first = HAM
 	second = BRE
+	trade_league = 1
 	start_date = 1380.1.1
 	end_date = 1719.9.30
 }

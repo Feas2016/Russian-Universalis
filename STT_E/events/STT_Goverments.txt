@@ -45,19 +45,20 @@ country_event = {
 	
 	trigger = {
 		government = anarhy_government
+		NOT = { stability = 0 }
 	}
 	
-		mean_time_to_happen = {
-		months = 5
+	mean_time_to_happen = {
+		months = 15
 	}
 	
-		option = {		
+	option = {		
 		name = "STT_anarhy.2.o1"
 		ai_chance = { factor = 50 }
 		kill_ruler = yes
 		kill_heir = yes
 	}
-		option = {		
+	option = {		
 		name = "STT_anarhy.2.o2"
 		ai_chance = { factor = 50 }
 		add_stability = -1

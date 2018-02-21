@@ -1,23 +1,105 @@
 take_slavic_province = {
 	type = take_province
 	
-	badboy_factor = 0.75
-	prestige_factor = 2
-	peace_cost_factor = 0.75	
-	
-	allowed_provinces = {
-		OR = {
-			culture_group = west_slavic
-			culture_group = east_slavic
-			culture_group = south_slavic
-		}
-	}
+	attacker = {
+		badboy_factor = 0.75
+		prestige_factor = 1.5
+		peace_cost_factor = 0.75
 		
-	#po_annex = yes
-	po_demand_provinces = yes
+		allowed_provinces = {
+			OR = {
+				culture_group = west_slavic
+				culture_group = east_slavic
+				culture_group = south_slavic
+				culture_group = stt_sla
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
 	
-	country_desc = ALL_CGROUP_COUNTRIES
-	prov_desc = ALL_CGROUP_PROVS
+	defender = {
+		badboy_factor = 0.75
+		prestige_factor = 1.5
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			OR = {
+				culture_group = west_slavic
+				culture_group = east_slavic
+				culture_group = south_slavic
+				culture_group = stt_sla
+			}
+		}	
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CGROUP_PROVS
+	}
 	
-	war_name = PANSLAVIC_WAR_NAME	
+	war_name = PANSLAVIC_WAR_NAME
+}
+
+sack_papal_rome = {
+	type = take_capital
+	
+	attacker = {	
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5	
+		badboy_factor = 0.8
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_gold
+			po_become_vassal
+			po_demand_provinces
+			po_concede_defeat
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_annul_treaties
+			po_trade_power
+		}
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		prestige_factor = 1.5
+		peace_cost_factor = 0.5	
+		badboy_factor = 0.8
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_gold
+			po_become_vassal
+			po_demand_provinces
+			po_concede_defeat
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_annul_treaties
+			po_trade_power
+		}
+		
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = SACK_OF_ROME_WAR_NAME	
 }

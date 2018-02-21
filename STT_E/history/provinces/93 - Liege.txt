@@ -2,21 +2,25 @@
 
 owner = LIE
 controller = LIE
-capital = "Liège"
+capital = "Ëüåæ"
 is_city = yes
 culture = wallonian
 religion = catholic
 hre = yes
 base_tax = 6 
 base_production = 6
-trade_goods = iron
+trade_goods = glass
 base_manpower = 3
 add_core = LIE
 fort_15th = yes
+
+
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+
 
 1453.1.1 = { add_core = BUR }
 1465.1.1 = { unrest = 4 } # Revolt imminent
@@ -39,3 +43,9 @@ discovered_by = ottoman
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
+1830.8.25 = {
+	owner = BLG
+	controller = BLG
+	add_core = BLG
+	add_claim = NED
+}

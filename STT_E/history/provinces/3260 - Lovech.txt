@@ -1,7 +1,7 @@
 #150 - Bulgaria
 
-owner = TUR
-controller = TUR
+owner = BUL
+controller = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Lovech"
@@ -11,8 +11,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = TUR
 add_core = BUL
+add_core = BYZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -20,9 +20,12 @@ discovered_by = ottoman
 discovered_by = nomad_group
 
 #Country breaks
-#1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
+#
+1396.1.1 = { owner = TU0 controller = TU0 add_core = TU0 }
+1402.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+1413.1.1 = { revolt = {} controller = TU0 }
+1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 2 }
 1598.1.1 = { unrest = 6 } # Oppositions around Tarnovo

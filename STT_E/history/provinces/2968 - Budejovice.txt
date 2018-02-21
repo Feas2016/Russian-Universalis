@@ -46,5 +46,10 @@ discovered_by = ottoman
 	owner = HAB
 	controller = HAB
 	remove_core = BOH
-} # Tilly beats the Winterking. Deus Vult!
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+}
+1806.7.12 = { hre = no 
+    owner = AEM 
+    controller = AEM
+    add_core = AEM 
+} # The Holy Roman Empire is dissolved 
+ 1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

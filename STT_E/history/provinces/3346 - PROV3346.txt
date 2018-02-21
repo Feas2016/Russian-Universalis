@@ -1,7 +1,8 @@
 #734 - Gangwon
 
-owner = KOR
-controller = KOR
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = korean
 religion = confucianism
 capital = "Chuncheon"
@@ -15,6 +16,12 @@ add_core = KOR
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1392.1.1 = { owner = KOR add_core = KOR controller = KOR }
 1542.1.1 = { discovered_by = POR }
 1637.1.1 = { add_core = MNG } # Tributary of Qing China
 1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire

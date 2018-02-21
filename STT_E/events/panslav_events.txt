@@ -10,16 +10,17 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = GOL
-		is_subject = no
+		OR = {
+			tag = GOL
+			tag = BHO
+		}
+		is_free_or_tributary_trigger = yes
 		government = steppe_horde
 		owns_core_province = 464 #Astrakhan
 		is_year = 1459
 		stability = 0
 		NOT = { is_year = 1600 }
-		AST = {
-			exists = no
-		}
+		AST = {	exists = no	}
 	}
 	mean_time_to_happen = {
 		months = 48
@@ -34,67 +35,66 @@ country_event = {
 	}
 	option = {	# A stronger COUNTRY will emerge!
 		name = "panslav.1.a"
-		every_owned_province = {
-				limit = {
-				AND = {
-					is_core = AST
-					owns = GOL
-					}
-				}
-			cede_province = AST
-		}
-			AST = {
-				define_ruler = {
-					name = "Mahmud"
-					dynasty = "Genghisid"
-					claim = 75
-					regency = no
- 					female = no
-					adm = 1
-					dip = 1
-					mil = 2
-					}
-				random_owned_province = {
-					limit = { controlled_by = AST  }
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						cavalry = AST
-						infantry = AST
-						infantry = AST
-						infantry = AST
-						infantry = AST
-						infantry = AST
-					}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 20
+				NOT = { stability = 0 }
 			}
-			
 		}
-	option = {	# A stronger COUNTRY will emerge!
-		name = "panslav.1.b"
 		every_owned_province = {
 			limit = {
 				AND = {
 					is_core = AST
-					owns = GOL
+					owns = ROOT
 					}
 				}
-				unrest = 10
+			cede_province = AST
+		}
+		AST = {
+			define_ruler = {
+				name = "Махмуд"
+				dynasty = "Чингизид"
+				claim = 75
+				regency = no
+ 				female = no
+				adm = 1
+				dip = 1
+				mil = 2
 			}
-			add_stability = -3
-			add_legitimacy = -50
+			random_owned_province = {
+				limit = { controlled_by = AST  }
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					cavalry = AST
+					infantry = AST
+					infantry = AST
+					infantry = AST
+					infantry = AST
+					infantry = AST
+				}
+			}			
 		}
-
-		modifier = {
-			factor = 0.75
-			stability = 0
+	option = {	# A stronger COUNTRY will emerge!
+		name = "panslav.1.b"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 80
+				stability = 0
+			}
 		}
+		add_stability = -3
+		add_legitimacy = -50
 	}
+}
 country_event = {
 	id = "panslav.2"
 	title = "panslav.2.t"
@@ -106,37 +106,44 @@ country_event = {
 	
 	trigger = {
 		OR = {
-		tag = LUZ
-		tag = KSB
+			tag = LUS
+			tag = KSB
+			tag = PLA
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		is_at_war = no
 		num_of_cities = 6
 		OR = {
-		owns_core_province = 46
-		AND = {
-		num_of_cities = 8
-		MKL =	{ 
 			owns_core_province = 46
-			is_subject_of = ROOT
-			is_at_war = no
+			AND = {
+				num_of_cities = 8
+				MKL =	{ 
+					owns_core_province = 46
+					is_subject_of = ROOT
+					is_at_war = no
+				}
 			}
-		}
 		}
 		stability = 2
 	}
 	mean_time_to_happen = {
 		months = 3
 	}
-	option = {	
+	option = {
 		name = "panslav.2.a"
-	if = { limit = { MKL = { exists = yes } } inherit = MKL }
-	46 = {
-		change_culture = obodrit
-		add_base_tax = 1
-		add_local_autonomy = 40 }	
-	add_accepted_culture = obodrit
-	}		
+		if = {
+			limit = {
+				MKL = { exists = yes }
+			}
+			inherit = MKL 
+		}
+		46 = {
+			change_culture = obodrit
+			add_base_tax = 1
+			add_local_autonomy = 20
+		}
+		add_accepted_culture = obodrit
+	}
 }
 country_event = {
 	id = "panslav.3"
@@ -148,9 +155,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = LUZ
-		is_subject = no
-		owns_core_province = 43
+		tag = LUS
+		is_free_or_tributary_trigger = yes
+		owns_core_province = 46
 		owns_core_province = 1858
 		stability = 1
 	}
@@ -159,17 +166,19 @@ country_event = {
 	}
 	option = {	
 		name = "panslav.3.a"
-	46 = {
-		change_culture = kashub
-		add_local_autonomy = 40 }	
-	1858 = {
-		change_culture = kashub
-		add_local_autonomy = 1858 }
-	add_accepted_culture = kashub
-	add_country_modifier = {
-	name = "trade_policy_failing" 
-	duration = 1800
-	}
+		46 = {
+			change_culture = kashubian
+			add_local_autonomy = 20 
+			}	
+		1858 = {
+			change_culture = kashubian
+			add_local_autonomy = 20
+			}
+		add_accepted_culture = kashubian
+		add_country_modifier = {
+			name = "trade_policy_failing" 
+			duration = 1800
+		}
 	}		
 }
 country_event = {
@@ -183,46 +192,43 @@ country_event = {
 	
 	trigger = {
 		tag = LIT
-		is_subject = no
-		NOT = { year = 1452 }
+		is_free_or_tributary_trigger = yes
+		NOT = { is_year = 1452 }
 	}
 	mean_time_to_happen = {
 		months = 5
 	}
-	option = {	
+	option = {
 		name = "panslav.4.a"
-	change_primary_culture = byelorussian
-	culture_group_union = east_slavic
-	add_stability = -3
-	prestige = -40
-	change_religion = orthodox
-define_ruler = {
- name = "Svitrigaila"
- dynasty = "Gediminovich" 
- age = 74
- claim = 50
- regency = no
- female = no
- adm = 4
- dip = 6
- mil = 2
-}
+		ai_chance = { factor = 10 }
+		change_primary_culture = byelorussian
+		add_stability = -3
+		add_prestige = -40
+		change_religion = orthodox
+		define_ruler = {
+			name = "Свидригайло"
+			dynasty = "Гедиминович" 
+			age = 74
+			claim = 50
+			regency = no
+			female = no
+			adm = 4
+			dip = 6
+			mil = 2
+		}
 		POL = {
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_displeased
 				years = 50
 			}
-		}
-
-	ai_chance = { factor = 0 }
-	}		
-
+		}		
+	}
 	option = {	
 		name = "panslav.4.b"
-	prestige = 5
-	culture_group_union = baltic
-	stability = 1
+		ai_chance = { factor = 90 }
+		add_prestige = 5
+		add_stability = 1
 		POL = {
 			add_opinion = {
 				who = ROOT
@@ -230,23 +236,21 @@ define_ruler = {
 				years = 50
 			}
 		}
-
 	}
 }
 country_event = {
 	id = "panslav.5"
 	title = "panslav.5.t"
 	desc = "panslav.5.d"
-	picture = "ANGRY_MOB_eventPicture"
-	
+	picture = "ANGRY_MOB_eventPicture"	
 	
 	fire_only_once = yes
 	
 	trigger = {
-		tag = LUZ
-		is_subject = no
+		tag = LUS
+		is_free_or_tributary_trigger = yes
 		any_owned_province = {
-		limit = { culture_group = german } 
+			culture_group = german 
 		}
 		is_at_war = yes
 		NOT = { stability = 1 }
@@ -256,21 +260,22 @@ country_event = {
 	}
 	option = {	
 		name = "panslav.5.a"
-	any_owned_province = { limit = { culture_group = german }
-	add_province_modifier = {
-					name = "german_unrest"
-					duration = 365
-					}
+		every_owned_province = {
+			limit = { culture_group = german }
+		add_province_modifier = {
+			name = "german_unrest"
+			duration = 365
+			}
+		}
 	}
-	
-	}	
 	option = {	
 		name = "panslav.5.b"
-	any_owned_province = { limit = { culture_group = 	german }
-	add_local_autonomy = 50
-	 }
-	prestige = -30
-	add_stability = -1
+		every_owned_province = {
+			limit = { culture_group = german }
+			add_local_autonomy = 50
+		}
+		add_prestige = -30
+		add_stability = -1
 	}		
 }
 country_event = {
@@ -284,10 +289,11 @@ country_event = {
 	
 	trigger = {
 		OR = {
-		tag = LIT
-		tag = PLC
+			tag = LIT
+			tag = PLC
+			tag = JAG
 		}
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		owns = 283
 		owns = 291
 		owns = 2411
@@ -300,51 +306,50 @@ country_event = {
 	mean_time_to_happen = {
 		months = 24
 	}
-	option = {	
+	option = {
 		name = "panslav.6.a"
-			prestige = -15
-			add_stability = 1
-			283 =  { cede_province = ZAZ }
-			291 = { cede_province = ZAZ }
-			2411 = { cede_province = ZAZ }
-			ZAZ = {
-				random_owned_province = {
-					limit = { controlled_by = ZAZ }
-						cavalry = ZAZ										cavalry = ZAZ
-						infantry = ZAZ
-						infantry = ZAZ
-						infantry = ZAZ
-						infantry = ZAZ
-						infantry = ZAZ
+		add_prestige = -15
+		add_stability = 1
+		283 =  { cede_province = ZAZ }
+		291 = { cede_province = ZAZ }
+		2411 = { cede_province = ZAZ }
+		ZAZ = {
+			random_owned_province = {
+				limit = { 
+					controlled_by = ZAZ 
 					}
+				cavalry = ZAZ
+				cavalry = ZAZ
+				infantry = ZAZ
+				infantry = ZAZ
+				infantry = ZAZ
+				infantry = ZAZ
+				infantry = ZAZ
 			}
-			add_stability = 1
-			ai_chance = { factor = 80
 		}
-
-	option = {	
+		add_stability = 1
+		ai_chance = { factor = 80 }
+	}
+	option = {
 		name = "panslav.6.b"
 		every_owned_province = {
 			limit = {
-				AND = {
-					culture = ruthenian
-					}
-				}
-				unrest = 5
+				culture = ruthenian
 			}
-			prestige = 10
-			add_stability = -2
-			ai_chance = { factor = 20 }
+			add_unrest = 5
 		}
-	option = {	
+		add_prestige = 10
+		add_stability = -2
+		ai_chance = { factor = 20 }
+	}
+	option = {
 		name = "panslav.6.c"
-			283 =  { cede_province = ZAZ }
-			291 = { cede_province = ZAZ }
-			2411 = { cede_province = ZAZ }
-			create_march = ZAZ
-			ai_chance = { factor = 0 }	
-		}
-
+		283 =  { cede_province = ZAZ }
+		291 = { cede_province = ZAZ }
+		2411 = { cede_province = ZAZ }
+		create_march = ZAZ
+		ai_chance = { factor = 0 }	
+	}
 }
 country_event = { #Mangazea
 	id = "panslav.8"
@@ -356,11 +361,8 @@ country_event = { #Mangazea
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-		tag = MOS
-		tag = RUS
-			}
-		NOT = { year = 1600 }
+		OR = { tag = MOS tag = RUS tag = TSR }
+		owns = 1072
 		owns = 2445
 	}
 	mean_time_to_happen = {
@@ -368,24 +370,22 @@ country_event = { #Mangazea
 	}
 	option = {	
 		name = "panslav.8.a"
-2445 = { add_base_tax = 5
-		add_building = marketplace }
+		2445 = { add_base_tax = 5 add_base_production = 2 add_building = marketplace }
+		1072 = { add_base_tax = 1 add_base_manpower = 1 add_great_project = mangazeya_volok }
+		
+	}
 }
 country_event = { #Mangazea
 	id = "panslav.10"
 	title = "panslav.10.t"
 	desc = "panslav.10.d"
 	picture = "HARBOUR_eventPicture"
-	
-	
+		
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
-		tag = MOS
-		tag = RUS
-			}
-		year = 1680
+		OR = { tag = MOS tag = RUS tag = TSR }
+		is_year = 1680
 		owns = 2445
 	}
 	mean_time_to_happen = {
@@ -393,14 +393,11 @@ country_event = { #Mangazea
 	}
 	option = {	
 		name = "panslav.10.a"
-2445 = { add_base_tax = -7
-		}
-}
-option = {	
+		2445 = { add_base_tax = -4 add_base_production = -2 }
+	}
+	option = {	
 		name = "panslav.10.b"
-2445 = { add_base_tax = -3
-		 }
+		2445 = { add_base_tax = -2 add_base_production = -1 }
 		add_prestige = -20
-}
-
+	}
 }

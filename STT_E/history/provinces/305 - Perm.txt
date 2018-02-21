@@ -1,9 +1,9 @@
 #305 - Perm
 
-owner = KAZ
-controller = KAZ
+owner = GLH
+controller = GLH
 culture = uralic
-religion = shamanism
+religion = siberian_shamanism
 hre = no
 base_tax = 4
 base_production = 4
@@ -11,12 +11,22 @@ trade_goods = copper
 base_manpower = 3
 capital = "Yagoshiha"
 is_city = yes
-add_core = KAZ
 add_core = PRM
+add_core = KAZ
+add_core = GLH
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
-1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
+1438.1.1 = { owner = KAZ controller = KAZ } #vanilla date
+1462.1.1 = { religion = orthodox }
+1505.4.1 = {
+	owner = MOS
+	controller = MOS
+	add_core = MOS  
+}
+1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
 1553.1.1 = { culture = russian religion = orthodox } # Most Tatars were christianized or killed
 1720.3.20 = { capital = "Perm" } # Peter the Great founds city
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator
+

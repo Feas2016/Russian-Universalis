@@ -1,7 +1,7 @@
 #312 - Beloozero
 
-owner = MOS
-controller = MOS
+owner = DMI
+controller = DMI
 culture = russian
 religion = orthodox
 hre = no
@@ -11,17 +11,16 @@ trade_goods = grain
 base_manpower = 2
 capital = "Dmitrov"
 is_city = yes
-add_core = GLC
-add_core = MOS
+add_core = DMI
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+1360.1.1 = { owner = MOS add_core = MOS controller = MOS }
 1450.1.1 = { discovered_by = SIB }
-1503.4.1 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS 
-	remove_core = MOS
-}
+1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
+1611.1.1 = { controller = PLC }
+1613.1.1 = { controller = TSR } # Poles driven out
 1613.3.3 = { unrest = 0 } # Order returned, Romanov dynasty
+1618.12.11 = { owner = TSR owner = TSR controller = TSR } # Truce of Deulino
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

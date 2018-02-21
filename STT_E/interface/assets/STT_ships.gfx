@@ -1,0 +1,20 @@
+ # by Ûcaldyr
+ 
+ objectTypes = {
+    
+    ###########################################################################
+    ############                           						###############
+    ############                     Transports                 ###############
+    ############                            					###############
+    ###########################################################################
+    
+    pdxmesh = {
+        name = "nave"
+        file = "gfx\models\ships\cog.mesh"
+
+        animation = { id = "idle"    type = "cog_idle" }
+        animation = { id = "walk"    type = "cog_walk" }
+        animation = { id = "attack"    type = "cog_attack" }
+        scale = 1.7
+    }
+} 

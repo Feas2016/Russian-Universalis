@@ -1,0 +1,619 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+
+
+################################################
+#Production
+################################################
+workshop = {
+	cost = 100
+	time = 12
+	modifier = { local_production_efficiency = 0.5 }
+	allow_in_gold_provinces = no
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+counting_house = {
+	cost = 200
+	time = 13
+	make_obsolete = workshop
+	modifier = { local_production_efficiency = 1 }
+	allow_in_gold_provinces = no
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+storehouse = {
+	cost = 400
+	time = 14
+	modifier = { local_production_efficiency = 1.25 }
+    make_obsolete = counting_house	
+	allow_in_gold_provinces = no
+	ai_will_do = {
+		factor = 1
+	}
+}
+steam_factory = {
+	cost = 800
+	time = 12
+	make_obsolete = storehouse
+	modifier = { local_production_efficiency = 1.50 }
+	allow_in_gold_provinces = no
+	ai_will_do = {
+		factor = 1
+	}
+}
+factory = {
+	cost = 1200
+	time = 15
+	make_obsolete = steam_factory
+	modifier = { local_production_efficiency = 2.00 }
+	trigger = {  owner = { has_country_flag = factorytrue } } 
+	allow_in_gold_provinces = no	
+	ai_will_do = {
+		factor = 1
+	}
+}
+################################################
+#Government
+################################################
+courthouse = {
+	cost = 250
+	time = 6
+	modifier = { allowed_num_of_buildings = 1
+		local_development_cost = -0.15
+        local_state_maintenance_modifier = -0.15 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+town_hall = {
+	cost = 350
+	time = 12
+	make_obsolete = courthouse
+	modifier = { allowed_num_of_buildings = 2
+		local_development_cost = -0.20
+        local_state_maintenance_modifier = -0.20 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+capitol = {
+	cost = 500
+	time = 24
+    make_obsolete = town_hall
+	modifier = {  allowed_num_of_buildings = 3
+		local_development_cost = -0.25
+    local_state_maintenance_modifier = -0.30 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+university = {
+	cost = 5000	### STT
+	time = 12
+	
+	trigger = {	### STT
+	    development = 30
+	}
+	modifier = {
+		adm_tech_cost_modifier = -0.1
+        dip_tech_cost_modifier = -0.1
+        mil_tech_cost_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 1	
+	}
+	
+}
+################################################
+#Unique
+################################################
+customs_house = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = exploration_ideas }
+	}
+	modifier = { 
+		colonists = 1
+		global_colonial_growth = 10
+		range = 0.2 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+arsenal = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = offensive_ideas }
+	}
+	modifier = { 
+		army_tradition = 1
+		free_leader_pool = 1
+		discipline = 0.025 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+spy_agency = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = trade_ideas }
+	}
+	modifier = { global_trade_power = 0.1 merchants = 1 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+tax_office = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = economic_ideas }
+	}
+	modifier = { global_tax_modifier = 0.20 stability_cost_modifier = -0.1 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+glorious_monument = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {	### STT
+	    owner = { government_rank = 3 }
+	}
+	
+	modifier = { idea_cost = -0.1 prestige = 1 }
+	ai_will_do = { factor = 1 }
+}
+################################################
+#INFRASTRUCTURE
+################################################
+road_network = {
+	cost = 90
+	time = 8
+	modifier = {
+		local_friendly_movement_speed = 0.40
+		trade_value_modifier = 0.25
+		allowed_num_of_buildings = 1
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+canal_system = {
+	cost = 200
+	time = 12
+
+	modifier = {
+		trade_value = 1 
+		province_trade_power_modifier = 0.25
+	}
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+railroad = {
+	cost = 250
+	time = 12
+	trigger = {  owner = { has_country_flag = railwaystrue } } 
+	modifier = {
+        trade_goods_size_modifier = 0.25
+        local_production_efficiency = 0.15
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+################################################
+#Army
+################################################
+armory = {
+	cost = 100
+	time = 12
+	modifier = { land_forcelimit = 1 }	### STT
+	ai_will_do = {
+		factor = 1
+	}
+}
+barracks = {
+	cost = 300
+	time = 12
+	modifier = { land_forcelimit = 2 }	### STT
+	make_obsolete = armory	
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}	
+
+training_fields = {
+	cost = 600
+	time = 12
+	make_obsolete = barracks
+	modifier = { land_forcelimit = 3 }	### STT
+	ai_will_do = {
+		factor = 1
+	}
+}
+regimental_camp = {
+	cost = 100
+	time = 12
+	modifier = { local_manpower_modifier = 0.50 }	### STT
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+conscription_center = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = regimental_camp
+	
+	modifier = { local_manpower_modifier = 1.00 }	### STT
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mint = {
+	cost = 600
+	time = 12
+    make_obsolete = conscription_center
+	modifier = { local_manpower_modifier = 1.50 }	### STT
+	ai_will_do = {
+		factor = 1
+	}
+}
+################################################
+#Navy
+################################################
+shipyard = {
+	cost = 100
+	time = 12
+	trigger = { has_port = yes }	
+	modifier = {
+		naval_forcelimit = 2
+		ship_recruit_speed = -0.25
+		local_ship_repair = 0.25
+	}	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+grand_shipyard = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = shipyard
+	
+	trigger = {
+		has_port = yes
+	}
+	modifier = {
+		naval_forcelimit = 4
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.50
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+naval_base = {
+	cost = 600
+	time = 12
+	
+	make_obsolete = grand_shipyard
+	
+	trigger = {
+		has_port = yes
+	}
+	modifier = {
+		naval_forcelimit = 6
+		ship_recruit_speed = -1
+		local_ship_repair = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+dock = {
+	cost = 100
+	time = 12
+	trigger = { has_port = yes }
+	modifier = { local_sailors_modifier = 0.5 }
+	ai_will_do = { factor = 1 }
+}
+drydock = {
+	cost = 300
+	time = 12
+	make_obsolete = dock
+	trigger = { has_port = yes }
+	modifier = { local_sailors_modifier = 1.0 }
+	ai_will_do = { factor = 1 }
+}
+naval_arsenal = {
+	cost = 600
+	time = 12
+	make_obsolete = drydock
+	trigger = { has_port = yes }
+	modifier = { local_sailors_modifier = 1.5 }
+	ai_will_do = { factor = 1 }
+}
+################################################
+#Religion
+################################################
+temple = {		
+	cost = 100
+	time = 12
+	modifier = {
+		local_tax_modifier = 0.2
+        local_missionary_strength = 0.01
+	}
+	ai_will_do = {
+		factor = 1		 
+	}
+}
+cathedral = {		
+	cost = 300
+	time = 12
+
+    make_obsolete = temple
+	modifier = {
+		local_tax_modifier = 0.4
+        local_missionary_strength = 0.015
+	}
+	ai_will_do = {
+		factor = 1		 
+	}
+}
+monastery = {
+	cost = 1500
+	time = 12
+    one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = religious_ideas }
+	}
+	modifier = {  global_missionary_strength = 0.02 missionaries = 1 }	
+	ai_will_do = {
+		factor = 1
+	}
+}
+################################################
+#Trade
+################################################
+marketplace = {
+	cost = 100
+	time = 12
+	modifier = { province_trade_power_modifier = 0.5 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+trade_depot = {
+	cost = 200
+	time = 12
+	make_obsolete = marketplace
+	modifier = { province_trade_power_modifier = 1 }
+    ai_will_do = {
+		factor = 1
+	}
+}
+
+treasury_office = {
+	cost = 400
+	time = 12
+	make_obsolete = trade_depot
+	modifier = { province_trade_power_modifier = 1.5 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+stock_exchange = {
+	cost = 600
+	time = 12	
+	make_obsolete = treasury_office 	
+	modifier = { province_trade_power_modifier = 2.0 }
+	ai_will_do = {
+		factor = 1
+	}
+}
+################################################
+#Defence
+################################################
+fort_15th = {
+	cost = 200
+	time = 30
+	modifier = { fort_level = 2 }
+    onmap = yes
+	influencing_fort = yes
+	ai_will_do = { factor = 1}
+}
+fort_16th = {
+	cost = 400
+	time = 30
+	make_obsolete = fort_15th
+	modifier = { fort_level = 4 }
+    onmap = yes
+	influencing_fort = yes
+	ai_will_do = { factor = 1}
+}
+fort_17th = {
+	cost = 600
+	time = 30
+	make_obsolete = fort_16th
+	modifier = { fort_level = 6 }
+    onmap = yes
+	influencing_fort = yes
+	ai_will_do = { factor = 1}
+}
+fort_18th = {
+	cost = 800
+	time = 30
+	make_obsolete = fort_17th
+	modifier = { fort_level = 8 }
+    onmap = yes
+	influencing_fort = yes
+	ai_will_do = { factor = 1}
+}
+################################################
+# Manufactories
+################################################
+wharf = {
+	cost = 500
+	time = 60
+	manufactory = {
+		naval_supplies
+		fish
+		salt
+	}
+	modifier = { trade_goods_size = 1.0 }
+	onmap = yes
+	ai_will_do = {
+		factor = 1 
+	}
+}
+
+weapons = {
+	cost = 500
+	time = 60
+	manufactory = { 
+		copper 
+		iron 
+	}
+	modifier = { trade_goods_size = 1.0	}
+	onmap = yes	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+textile = {
+	cost = 500
+	time = 60
+	manufactory = {
+		wool
+		cloth
+		silk
+		dyes
+	}
+	modifier = { trade_goods_size = 1.0	}
+	onmap = yes
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+plantations = {
+	cost = 500
+	time = 60
+	manufactory = {
+		coffee
+		cotton
+		sugar
+		tobacco
+		cocoa
+		tea
+	}
+	modifier = { trade_goods_size = 1.0	}
+	onmap = yes
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tradecompany = {
+	cost = 500
+	time = 60
+	manufactory = {
+		ivory
+		slaves	
+		spices
+		fur
+		incense
+	}
+	modifier = { trade_goods_size = 1.0	}
+	onmap = yes
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+farm_estate = {
+	cost = 500
+	time = 60
+	manufactory = {
+		grain
+		livestock
+		wine
+	}
+	modifier = {
+		trade_goods_size = 1.0
+	}
+	onmap = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+mills = {
+	cost = 500
+	time = 60
+	manufactory = {
+		paper
+		gems
+		tropical_wood
+		glass
+		chinaware
+		coal
+	}
+	modifier = {
+		trade_goods_size = 1.0
+	}
+	onmap = yes
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

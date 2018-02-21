@@ -3,10 +3,9 @@
 owner = BUR
 controller = BUR
 add_core = BUR
-capital = "Mons"
+capital = "Монс"
 is_city = yes
-add_local_autonomy = 50
-culture = picard
+culture = wallonian
 religion = catholic
 hre = yes
 base_tax = 6 
@@ -18,6 +17,7 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+
 
 1477.1.5 = { owner = HAB controller = HAB add_core = HAB remove_core = BUR } # Charles the Bold dies, Lowlands to Austria
 1519.1.12 = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
@@ -63,3 +63,9 @@ discovered_by = ottoman
 	add_core = NED
 	remove_core = FRA
 } # The United Kingdom of the Netherlands
+1830.8.25 = { ### STT
+	owner = BLG
+	controller = BLG
+	add_core = BLG
+	add_claim = NED
+}

@@ -8,9 +8,9 @@ religion = catholic
 hre = yes
 base_tax = 6
 base_production = 6
-trade_goods = fish
+trade_goods = livestock
 base_manpower = 5
-capital = "Kiel"
+capital = "Киль"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
@@ -36,3 +36,10 @@ base_production = 5 }
 	controller = DAN
 	remove_core = FRA
 } # Napoleon abdicates unconditionally
+1864.3.1 = { controller = PRU }
+1864.10.30 = { owner = AEM controller = AEM add_core = AEM remove_core = DAN }
+1866.7.30 = { owner = PRU controller = PRU add_core = PRU remove_core = HAB }
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = PRU remove_core = SHL}
+
+

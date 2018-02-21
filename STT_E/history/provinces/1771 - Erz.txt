@@ -6,7 +6,7 @@ add_core = BOH
 capital = "Leitmeritz"
 culture = czech
 religion = catholic
-trade_goods = iron 
+trade_goods = glass 
 hre = yes
 base_tax = 3 
 base_production = 3
@@ -39,4 +39,10 @@ discovered_by = ottoman
 	remove_core = BOH
 } # Tilly beats the Winterking. Deus Vult!
 1627.1.1 = { religion = catholic } # Order from Ferdinand II to reconvert to Catholicism, many Protestant leave the country 
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1806.7.12 = { hre = no 
+    owner = AEM 
+    controller = AEM
+    add_core = AEM 
+}
+	# The Holy Roman Empire is dissolved 
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

@@ -1,0 +1,134 @@
+namespace = otm
+
+#Conquest of Mamluks
+country_event = {
+
+	id = otm.1
+	title = "otm.1.title"
+	desc = "otm.1.desc"
+	picture = AURORA_otm1_eventPicture
+	
+	trigger = {
+		tag = TUR
+		is_year = 1500
+		government_rank = 3
+		religion = sunni
+		is_at_war = yes
+		any_neighbor_country = {
+			tag = MAM
+			ai = yes
+		}
+		any_province = {
+			owned_by = MAM
+			controlled_by = TUR
+		}
+		NOT = { is_year = 1550 }
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = otm.1.a
+		ai_chance = { factor = 90 }
+		add_treasury = 200
+		add_prestige = 10
+		add_adm_power = -20
+		add_corruption = 0.5
+		MAM = {
+			every_province = {
+				limit = {
+					controlled_by = TUR
+					owned_by = MAM
+				}
+				cede_province = TUR
+				add_core = TUR
+				add_local_autonomy = 10
+				add_nationalism = 20				
+			}
+		}
+	}
+	
+	option = {
+		name = otm.1.b
+		ai_chance = { factor = 10 }
+		add_war_exhaustion = 2
+		add_prestige = -10
+		add_piety = -0.10
+	}
+}
+
+#Subjestion the Crimea
+country_event = {
+
+	id = otm.2
+	title = "otm.2.title"
+	desc = "otm.2.desc"
+	picture = AURORA_otm_Crimeavas_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		is_year = 1430
+		government_rank = 3
+		religion = sunni
+		owns_core_province = 2410 #feodoro
+		owns_core_province = 285 #kaffa
+		owns_core_province = 2447 #mantrega
+		owns_core_province = 286 #azov
+		alliance_with = CRI
+		any_neighbor_country = { tag = CRI}
+			CRI = { 
+				religion = sunni 
+				ai = yes 
+				owns_core_province = 284 #Crimea 
+				guaranteed_by = ROOT 
+			} 
+		NOT = { is_year = 1480 }
+	}
+	
+	mean_time_to_happen = {
+	months = 100
+	modifier = {
+		factor = 0.8
+		NOT = { stability = 0 }
+		}
+	}
+		
+	option = {
+		name = otm.2.a
+		ai_chance = { factor = 65 }
+		vassalize = CRI
+		add_prestige = 25
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_manpower = -0.3
+	}
+	
+	option = {
+		name = otm.2.b
+		ai_chance = { factor = 20 }
+		add_manpower = -0.15
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = CRI
+			modifier = historical_friend
+		}
+	}
+	
+	option = {
+		name = otm.2.c
+		ai_chance = { factor = 15 }
+		break_marriage = CRI		
+		reverse_add_opinion = {
+			who = CRI
+			modifier = refused_to_defend_empire
+		}
+		reverse_add_opinion = {
+			who = CRI
+			modifier = break_alliance
+		}
+	}
+}

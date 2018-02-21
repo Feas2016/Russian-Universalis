@@ -1,0 +1,1212 @@
+namespace = stt_flavor_horde
+
+#it's cool to be a developer of russian universalis, thanks to Feas and others
+
+# Horde Collapse Starts
+country_event = {
+	id = stt_flavor_horde.1
+	title = "stt_flavor_horde.1.t"
+	desc = "stt_flavor_horde.1.d"
+
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = GLH
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = { is_capital = no }
+			tribal_rebels = 4
+		}
+	}
+
+	option = {
+		name = "stt_flavor_horde.1.a"
+	}
+}
+
+# Horde Collapse Ends
+country_event = {
+	id = stt_flavor_horde.2
+	title = "stt_flavor_horde.2.t"
+	desc = "stt_flavor_horde.2.d"
+
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes 
+
+	trigger = {
+		tag = GLH
+	}
+
+	immediate = {
+		set_country_flag = GLH_collapse_ended
+		hidden_effect = {
+			every_owned_province = { add_unrest = -25 }
+		}
+	}
+
+	option = {
+		name = "stt_flavor_horde.2.a"
+		add_legitimacy = 20
+		add_horde_unity = 20
+		if = {
+		    limit = {
+			    NOT = { stability = 3 }
+			}
+		    add_stability = 2
+		}
+		add_country_modifier = { name = "golden_horde_power" duration = -1 }
+	}
+}
+
+country_event = {
+	id = stt_flavor_horde.3
+	title = "stt_flavor_horde.3.t"
+	desc = "stt_flavor_horde.3.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		any_owned_province = { is_core = KAZ }
+		NOT = { has_country_modifier = GLH_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 50 
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+		release = KAZ
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
+		set_country_flag = GLH_disaster_pause
+	}
+
+	option = {
+		name = "stt_flavor_horde.3.a1"
+		trigger = { ai = no }
+	    declare_war_with_cb = { who = KAZ casus_belli = cb_imperial } 
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.3.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# Khanate of Crimea breaks away - released and war starterd
+country_event = {
+	id = stt_flavor_horde.4
+	title = "stt_flavor_horde.4.t"
+	desc = "stt_flavor_horde.4.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		any_owned_province = { is_core = CRI }
+		NOT = { has_country_modifier = GLH_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 50 
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+		    285 = { add_core = CRI } # Core on Kefe
+		    2410 = { add_core = CRI }
+		    2447 = { add_core = CRI }
+		    286 = { add_core = CRI }
+		    2195 = { add_core = CRI }
+		    463 = { add_core = CRI }
+		    282 = { add_core = CRI }
+		    2406 = { add_core = CRI }
+		    283 = { add_core = CRI }
+		    290 = { add_core = CRI }
+		}
+		release = CRI
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
+		set_country_flag = GLH_disaster_pause
+	}
+
+	option = {
+		name = "stt_flavor_horde.4.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = CRI casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.4.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# Nogai Khanate breaks away - released and war starterd
+country_event = {
+	id = stt_flavor_horde.5
+	title = "stt_flavor_horde.5.t"
+	desc = "stt_flavor_horde.5.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		any_owned_province = { is_core = NOG }
+		NOT = { has_country_modifier = GLH_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 50 
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    2370 = { add_core = NOG }
+		    2362 = { add_core = NOG }  
+		}
+		release = NOG
+		add_country_modifier = { name = "GLH_broken" duration = 500 }
+		set_country_flag = GLH_disaster_pause
+	}
+
+	option = {
+		name = "stt_flavor_horde.5.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = NOG casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.5.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# Uzbeki Khanate breaks away - released and war starterd
+country_event = {
+	id = stt_flavor_horde.6
+	title = "stt_flavor_horde.6.t"
+	desc = "stt_flavor_horde.6.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		any_owned_province = { is_core = SHY }
+		NOT = { has_country_modifier = GLH_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 50
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    1973 = { add_core = SHY }  
+			2356 = { add_core = SHY }
+			1076 = { remove_core = SHY }
+			1075 = { remove_core = SHY }
+			1074 = { remove_core = SHY }
+			1071 = { remove_core = SHY }
+		}
+		release = SHY
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
+		set_country_flag = GLH_disaster_pause
+	}
+
+	option = {
+		name = "stt_flavor_horde.6.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SHY casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.6.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# Sibir breaks away - released and war starterd
+country_event = {
+	id = stt_flavor_horde.7
+	title = "stt_flavor_horde.7.t"
+	desc = "stt_flavor_horde.7.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		any_owned_province = { is_core = SIB }
+		NOT = { has_country_modifier = GLH_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 50
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+		release = SIB
+		release = SKW
+		add_country_modifier = { name = "GLH_broken" duration = 700 }
+		set_country_flag = GLH_disaster_pause
+	}
+
+	option = {
+		name = "stt_flavor_horde.7.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SIB casus_belli = cb_imperial }
+		declare_war_with_cb = { who = SKW casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.7.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# Ilkanate Colapse Begins
+country_event = {
+	id = stt_flavor_horde.8
+	title = "stt_flavor_horde.8.t"
+	desc = "stt_flavor_horde.8.d"
+
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HUL
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "stt_flavor_horde.8.a"
+	}
+}
+
+# Ilkanate stabilizes
+country_event = {
+	id = stt_flavor_horde.9
+	title = "stt_flavor_horde.9.t"
+	desc = "stt_flavor_horde.9.d"
+
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = HUL
+	}
+
+	immediate = {
+		clr_country_flag = horde_collapse
+		set_country_flag = HUL_collapse_ended
+	}
+
+	option = {
+		name = "stt_flavor_horde.9.a"
+		if = {
+			limit = { NOT = { stability = 0 } }
+			add_stability = 3
+		}
+		every_owned_province = { add_unrest = -35 }
+	}
+}
+
+# Ilkanate loses cores when they lose territory.
+country_event = {
+	id = stt_flavor_horde.10
+	title = "stt_flavor_horde.10.t"
+	desc = "stt_flavor_horde.10.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		every_province = { 
+			limit = {
+				is_core = HUL
+				NOT = { owned_by = HUL }
+			}
+			remove_core = HUL
+			add_unrest = -25 
+		}
+	}
+
+	option = {
+		name = "stt_flavor_horde.10.a"
+	}
+}
+
+# Pain, much pain, surpriiisee
+country_event = {
+	id = stt_flavor_horde.11
+	title = "stt_flavor_horde.11.t"
+	desc = "stt_flavor_horde.11.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		is_at_war = yes
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = { 
+				is_capital = no 
+				controlled_by = HUL
+			}
+			nationalist_rebels = 5
+		}
+	}
+
+	option = {
+		name = "stt_flavor_horde.11.a"
+	}
+}
+
+# bb, subjects
+country_event = {
+	id = stt_flavor_horde.12
+	title = "stt_flavor_horde.12.t"
+	desc = "stt_flavor_horde.12.d"
+
+	picture = BATTLE_eventPicture
+
+	
+	trigger = {
+		is_subject_of = HUL
+		HUL = { has_disaster = ilkhanate_disaster }
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "stt_flavor_horde.12.a1"
+		trigger = { HUL = { ai = yes } }
+		HUL = { release_all_subjects = yes }
+	}
+
+	option = {
+		name = "stt_flavor_horde.12.a2"
+		trigger = { HUL = { ai = no } }
+		declare_war_with_cb = { who = HUL casus_belli = "cb_independence_war" }
+	}
+}
+
+# bb SAB
+country_event = {
+	id = stt_flavor_horde.13
+	title = "stt_flavor_horde.13.t"
+	desc = "stt_flavor_horde.13.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 575
+				        province_id = 2232
+				        province_id = 2230
+				        province_id = 2229
+					    province_id = 435
+				        province_id = 434
+				        province_id = 2233
+				        province_id = 3438
+					    province_id = 2220
+				        province_id = 432
+				        province_id = 2234
+				        province_id = 2218
+					    province_id = 2223
+				        province_id = 431
+				        province_id = 2219
+				        province_id = 448
+					    province_id = 447
+				        province_id = 577
+				        province_id = 578
+				        province_id = 576
+					    province_id = 2068
+				        province_id = 3437
+				        province_id = 2231
+					}
+			    }
+		        add_core = SAB
+		    }
+			release = SAB
+			SAB = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.13.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SAB casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.13.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb CHB
+country_event = {
+	id = stt_flavor_horde.14
+	title = "stt_flavor_horde.14.t"
+	desc = "stt_flavor_horde.14.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 417
+				        province_id = 3439
+				        province_id = 3443
+				        province_id = 2207
+					    province_id = 416
+				        province_id = 2205
+				        province_id = 2206
+				        province_id = 415
+					    province_id = 3115
+				        province_id = 2037
+				        province_id = 331
+					}
+			    }
+		        add_core = CHB
+		    }
+			release = CHB
+			CHB = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.14.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = CHB casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.14.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb AKK
+country_event = {
+	id = stt_flavor_horde.15
+	title = "stt_flavor_horde.15.t"
+	desc = "stt_flavor_horde.15.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 40
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 411
+				        province_id = 2309
+				        province_id = 2308
+				        province_id = 407
+					    province_id = 3118
+				        province_id = 418
+				        province_id = 2306
+				        province_id = 3122
+					    province_id = 2305
+					}
+			    }
+		        add_core = AKK
+		    }
+			release = AKK
+			AKK = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.15.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = AKK casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.15.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb KRT
+country_event = {
+	id = stt_flavor_horde.16
+	title = "stt_flavor_horde.16.t"
+	desc = "stt_flavor_horde.16.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 450
+				        province_id = 451
+				        province_id = 2225
+				        province_id = 449
+					    province_id = 2228
+				        province_id = 2224
+				        province_id = 446
+				        province_id = 445
+					    province_id = 2350
+						province_id = 2221
+					    province_id = 2235
+					}
+			    }
+		        add_core = KRT
+		    }
+			release = KRT
+			KRT = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.16.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = KRT casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.16.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb SDB
+country_event = {
+	id = stt_flavor_horde.17
+	title = "stt_flavor_horde.17.t"
+	desc = "stt_flavor_horde.17.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 438
+				        province_id = 2349
+				        province_id = 437
+				        province_id = 2236
+					    province_id = 427
+				        province_id = 2214
+				        province_id = 426
+				        province_id = 3476
+					}
+			    }
+		        add_core = SDB
+		    }
+			release = SDB
+			SDB = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.17.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SDB casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.17.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb MUZ
+country_event = {
+	id = stt_flavor_horde.18
+	title = "stt_flavor_horde.18.t"
+	desc = "stt_flavor_horde.18.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 433
+				        province_id = 436
+				        province_id = 2222
+				        province_id = 2216
+					    province_id = 3446
+				        province_id = 429
+					}
+			    }
+		        add_core = MUZ
+		    }
+			release = MUZ
+			MUZ = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.18.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = MUZ casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.18.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb INJ
+country_event = {
+	id = stt_flavor_horde.19
+	title = "stt_flavor_horde.19.t"
+	desc = "stt_flavor_horde.19.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 3444
+				        province_id = 3445
+				        province_id = 430
+				        province_id = 2217
+					    province_id = 412
+				        province_id = 413
+					}
+			    }
+		        add_core = INJ
+		    }
+			release = INJ
+			INJ = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.19.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = INJ casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.19.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+# bb JAL
+country_event = {
+	id = stt_flavor_horde.20
+	title = "stt_flavor_horde.20.t"
+	desc = "stt_flavor_horde.20.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUL
+		has_disaster = ilkhanate_disaster
+		NOT = { has_country_modifier = HUL_broken }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 428
+				        province_id = 2213
+				        province_id = 3442
+				        province_id = 2215
+					    province_id = 2212
+				        province_id = 414
+						province_id = 3441
+				        province_id = 2211
+				        province_id = 2210
+				        province_id = 2209
+					    province_id = 3117
+				        province_id = 408
+						province_id = 3330
+				        province_id = 2312
+				        province_id = 3440
+					    province_id = 3116
+				        province_id = 2311
+						province_id = 409
+						province_id = 410
+				        province_id = 2310
+				        province_id = 406
+					    province_id = 3329
+				        province_id = 3121
+						province_id = 3119
+					}
+			    }
+		        add_core = JAL
+		    }
+			release = JAL
+			JAL = { every_owned_province = { add_unrest = -25 }}
+		}
+		add_country_modifier = { name = "HUL_broken" duration = 900 }
+	}
+
+	option = {
+		name = "stt_flavor_horde.20.a1"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = JAL casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_flavor_horde.20.a2"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+
+#death of tohtam
+country_event = {
+	id = stt_flavor_horde.21
+	title = "stt_flavor_horde.21.t"
+	desc = "stt_flavor_horde.21.d"
+	
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = GLH
+		is_year = 1311
+		NOT = { is_year = 1320 }
+		has_ruler = "Тохта"
+		religion = tengri_pagan_reformed
+	}
+	
+	mean_time_to_happen = {
+	    months = 20
+	}
+	
+	option = {
+	    name = "stt_flavor_horde.21.a"
+	    set_country_flag = tohtam_died
+	    kill_ruler = yes
+	}
+	
+}
+
+#accept islam
+country_event = {
+	id = stt_flavor_horde.22
+	title = "stt_flavor_horde.22.t"
+	desc = "stt_flavor_horde.22.d"
+
+	picture = RAMADAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+	    religion = tengri_pagan_reformed
+		tag = GLH
+		is_year = 1318
+		NOT = { is_year = 1325 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 20
+	}
+	
+	option = {
+	    ai_chance = {
+		    factor = 100
+		}
+	    name = "stt_flavor_horde.22.a1"
+		change_religion = sunni
+		capital_scope = {
+		    tribal_rebels = 5
+		}
+		add_country_modifier = {
+		    name = GLH_sunni
+			duration = 1825
+		}
+	}
+	
+	option = {
+	    ai_chance = {
+		    factor = 0
+		}
+	    name = "stt_flavor_horde.22.a2"
+		add_prestige = -10
+	}
+}

@@ -1,34 +1,7 @@
 ###########################################
 # Triggered modifiers for AEIOU by dorimi
 ###########################################
-aus_truedynasty = {
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AEM
-		}
-	}
-	trigger = {
-		government = monarchy
-		OR = {
-			dynasty = "фон Ольденбург"
-			dynasty = "фон Мекленбург"
-			dynasty = "фон Гогенцоллерн"
-			dynasty = "фон Габсбург"
-			dynasty = "фон Цвайбрюккен"
-			dynasty = "фон Виттельсбах"
-			dynasty = "фон Гольштейн"
-			dynasty = "фон Гессен-Кассель"
-			dynasty = "фон Гольштейн-Готторп"
-			dynasty = "фон Пфальц-Ноймаркт"
-			dynasty = "фон Брауншвейг-Люнебург"
-			dynasty = "фон Ганновер"
-			dynasty = "фон Веттин"
-		}
-	}
-	prestige = 1
-	legitimacy = 1
-}
+
 
 aus_golbenbull = {
 	potential = {
@@ -36,6 +9,7 @@ aus_golbenbull = {
 			tag = HAB
 			tag = AEM
 		}
+		has_global_flag = golden_bulla
 	}
 	trigger = {
 		NOT = { has_country_modifier = aus_maius }
@@ -43,31 +17,44 @@ aus_golbenbull = {
 	prestige = -1
 }
 
-aus_noaulic = {
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AEM
-		}
-	}
-	trigger = {
-		NOT = { has_country_modifier = aus_aulic }
-	}
-	global_tax_modifier = -0.03
-	stability_cost_modifier = -0.05
-	diplomatic_reputation = 1
-}
+# aus_noaulic = {
+	# potential = {
+		# OR = {
+			# tag = HAB
+			# tag = AEM
+		# }
+	# }
+	# trigger = {
+		# NOT = { has_country_modifier = aus_aulic }
+	# }
+	# global_tax_modifier = -0.03
+	# stability_cost_modifier = -0.05
+	# diplomatic_reputation = 1
+# }
 
-aus_yesaulic = {
-	potential = {
-		OR = {
-			tag = HAB
-			tag = AEM
-		}
+# aus_yesaulic = {
+	# potential = {
+		# OR = {
+			# tag = HAB
+			# tag = AEM
+		# }
+	# }
+	# trigger = {
+		# has_country_modifier = aus_aulic
+	# }
+	# global_tax_modifier = 0.02
+	# diplomatic_reputation = -1
+# }
+
+emperor_golbenbulla = {
+    potential = {
+	    is_emperor = yes
+		has_global_flag = golden_bulla
 	}
+	
 	trigger = {
-		has_country_modifier = aus_aulic
+	    is_emperor = yes
 	}
-	global_tax_modifier = 0.02
-	diplomatic_reputation = -1
+	
+	imperial_authority = -0.25
 }

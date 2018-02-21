@@ -7,7 +7,7 @@ add_core = MJE
 culture = somali
 religion = sunni
 capital = "Galkayo"
-trade_goods = grain
+trade_goods = livestock
 is_city = yes
 hre = no
 base_tax = 1 
@@ -32,3 +32,4 @@ discovered_by = east_african
 1550.1.1 = { discovered_by = TUR }
 1555.1.1 = { owner = MRE controller = MRE } #Northern part of province no longer conrolled by ADA
 1650.1.1 = { owner = MJE controller = MJE remove_core = MRE}
+1889.1.1 = { owner = TTA controller = ITA add_core = ITA }

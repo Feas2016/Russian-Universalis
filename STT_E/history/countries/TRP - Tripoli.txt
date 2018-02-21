@@ -5,36 +5,40 @@ primary_culture = tunisian
 government_rank = 1
 capital = 354	# Tripoli
 fixed_capital = 354 # Cannot move capital away from this province & no power cost to move to it
+religious_school = maliki_school
 
 #Based in Djerba
 
 1503.1.1 = {
 	monarch = {
-		name = "Oruз Reis"
-		dynasty = "Yakubid"
+		name = "Арудж Барбаросса"
+		dynasty = "Якубид"
+		culture = greek
 		adm = 2
 		dip = 4
 		mil = 5
-		leader = {	name = "Oruз Reis"            	type = admiral	rank = 5	fire = 1	shock = 4	manuever = 5	siege = 0	death_date = 1516.1.1 }
+		leader = {	name = "Арудж Барбаросса"            	type = admiral	fire = 1	shock = 4	manuever = 5	siege = 0	death_date = 1516.1.1 }
 	}
 	capital = 353	# Djerba
 }
 
 1516.1.1 = {
 	monarch = {
-		name = "Muslihiddin Reis"
-		dynasty = "Kurtoglu"
+		name = "Муслихиддин Реис"
+		dynasty = "Куртоглу"
+		culture = turkish
 		adm = 2
 		dip = 4
 		mil = 4
-		leader = {	name = "Kurtoglu Reis"            	type = admiral	rank = 5	fire = 1	shock = 3	manuever = 5	siege = 0	death_date = 1516.1.1 }
+		leader = {	name = "Куртоглу Реис"            	type = admiral	fire = 1	shock = 3	manuever = 5	siege = 0	death_date = 1516.1.1 }
 	}
 }
 
 1541.1.1 = {
 	monarch = {
-		name = "Turgut Reis"
-		dynasty = "Dragutli"
+		name = "Тургут Реис"
+		dynasty = "Драгутли"
+		culture = turkish
 		adm = 1
 		dip = 4
 		mil = 4
@@ -47,8 +51,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1551.8.1 = {
 	monarch = {
-		name = "Murad"
-		dynasty = "Muradid"
+		name = "Мурад"
+		dynasty = "Мурадид"
+		culture = turkish
 		adm = 1
 		dip = 4
 		mil = 2
@@ -58,8 +63,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1556.1.1 = {
 	monarch = {
-		name = "Turgut Reis"
-		dynasty = "Dragutli"
+		name = "Тургут Реис"
+		dynasty = "Драгутли"
+		culture = turkish
 		adm = 1
 		dip = 4
 		mil = 4
@@ -68,8 +74,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1565.1.1 = {
 	monarch = {
-		name = "Yahya"
-		dynasty = "Kerdeki"
+		name = "Яхая"
+		dynasty = "Кердеки"
+		culture = turkish
 		adm = 1
 		dip = 1
 		mil = 1
@@ -78,8 +85,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1566.1.1 = {
 	monarch = {
-		name = "Jafar"
-		dynasty = "Jafarid"
+		name = "Джафар"
+		dynasty = "Джафарид"
+		culture = turkish
 		adm = 0
 		dip = 2
 		mil = 1
@@ -88,8 +96,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1580.1.1 = {
 	monarch = {
-		name = "Murad"
-		dynasty = "Muradid"
+		name = "Мурад"
+		dynasty = "Мурадид"
+		culture = turkish
 		adm = 1
 		dip = 3
 		mil = 1
@@ -98,8 +107,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1581.1.1 = {
 	monarch = {
-		name = "Kaid"
-		dynasty = "Kaidid"
+		name = "Каид"
+		dynasty = "Кайдид"
+		culture = turkish
 		adm = 1
 		dip = 1
 		mil = 1
@@ -108,8 +118,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1587.1.1 = {
 	monarch = {
-		name = "Hussein"
-		dynasty = "Husseinid"
+		name = "Хусейн"
+		dynasty = "Хусейнид"
+		culture = turkish
 		adm = 1
 		dip = 2
 		mil = 1
@@ -118,8 +129,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1595.1.1 = {
 	monarch = {
-		name = "Ibrahim"
-		dynasty = "Ibrahimid"
+		name = "Ибрахим"
+		dynasty = "Ибрахимid"
+		culture = turkish
 		adm = 1
 		dip = 3
 		mil = 1
@@ -128,8 +140,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1600.1.1 = {
 	monarch = {
-		name = "Iskander"
-		dynasty = "Iskanderid"
+		name = "Искандер"
+		dynasty = "Искандерид"
+		culture = turkish
 		adm = 1
 		dip = 1
 		mil = 1
@@ -138,8 +151,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1606.1.1 = {
 	monarch = {
-		name = "Selim"
-		dynasty = "Kuloglu"
+		name = "Селим"
+		dynasty = "Кулоглу"
+		culture = turkish
 		adm = 1
 		dip = 2
 		mil = 2
@@ -148,8 +162,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1607.1.1 = {
 	monarch = {
-		name = "Ali"
-		dynasty = "al-Turki"
+		name = "Али"
+		dynasty = "аль-Турки"
+		culture = turkish
 		adm = 1
 		dip = 2
 		mil = 1
@@ -158,8 +173,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1609.1.1 = {
 	monarch = {
-		name = "Ahmad"
-		dynasty = "Ahmadid"
+		name = "Ахмад"
+		dynasty = "Ахмадид"
+		culture = turkish
 		adm = 1
 		dip = 1
 		mil = 1
@@ -170,8 +186,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1610.1.1 = {
 	monarch = {
-		name = "Suleiman"
-		dynasty = "Suleimanid"
+		name = "Сулейман"
+		dynasty = "Сулейманид"
 		adm = 0
 		dip = 3
 		mil = 1
@@ -181,8 +197,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1620.1.1 = {
 	monarch = {
-		name = "Mustafa"
-		dynasty = "Mustafid"
+		name = "Мустафа"
+		dynasty = "Мустафид"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -191,8 +207,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1631.1.1 = {
 	monarch = {
-		name = "Ramadan"
-		dynasty = "Ramadanid"
+		name = "Рамадан"
+		dynasty = "Рамаданид"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -201,8 +217,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1633.1.1 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "Saqizli"
+		name = "Мехмед"
+		dynasty = "Саквизи"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -211,8 +227,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1649.1.1 = {
 	monarch = {
-		name = "Osman"
-		dynasty = "Saqizli"
+		name = "Осман"
+		dynasty = "Саквизи"
 		adm = 3
 		dip = 3
 		mil = 1
@@ -221,8 +237,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1672.1.1 = {
 	monarch = {
-		name = "Osman"
-		dynasty = "al-Suhali"
+		name = "Осман"
+		dynasty = "аль-Сухали"
 		adm = 1
 		dip = 1
 		mil = 2
@@ -231,8 +247,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1672.9.1 = {
 	monarch = {
-		name = "Bali"
-		dynasty = "Djanush"
+		name = "Бали"
+		dynasty = "Джануш"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -241,8 +257,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1673.1.1 = {
 	monarch = {
-		name = "Halil"
-		dynasty = "Arnavut"
+		name = "Халил"
+		dynasty = "Арнавут"
 		adm = 0
 		dip = 2
 		mil = 1
@@ -251,8 +267,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1675.1.1 = {
 	monarch = {
-		name = "Mustafa"
-		dynasty = "Pehlavan"
+		name = "Мустафа"
+		dynasty = "Пехлаван"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -261,8 +277,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1676.1.1 = {
 	monarch = {
-		name = "Ibrahim"
-		dynasty = "Djelebi"
+		name = "Ибрахим"
+		dynasty = "Джелеби"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -271,8 +287,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1676.9.1 = {
 	monarch = {
-		name = "Mustafa"
-		dynasty = "el-Kbir"
+		name = "Мустафа"
+		dynasty = "эль-Кбир"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -281,8 +297,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1677.1.1 = {
 	monarch = {
-		name = "Osman"
-		dynasty = "al-Khardj"
+		name = "Осман"
+		dynasty = "аль-Кхарди"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -291,8 +307,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1678.1.1 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "al-Haddad"
+		name = "Мехмед"
+		dynasty = "аль-Хаддад"
 		adm = 1
 		dip = 3
 		mil = 1
@@ -301,8 +317,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1679.1.1 = {
 	monarch = {
-		name = "Hassan"
-		dynasty = "Abaza"
+		name = "Хассан"
+		dynasty = "Абаза"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -311,8 +327,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1683.6.13 = {
 	monarch = {
-		name = "Ali"
-		dynasty = "al-Djeszairli"
+		name = "Али"
+		dynasty = "аль-Джезаирли"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -321,8 +337,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1684.1.1 = {
 	monarch = {
-		name = "Abdallah"
-		dynasty = "Izmirli"
+		name = "Абдаллах"
+		dynasty = "Измирли"
 		adm = 1
 		dip = 2
 		mil = 1
@@ -331,8 +347,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1687.5.1 = {
 	monarch = {
-		name = "Ibrahim"
-		dynasty = "Terzi"
+		name = "Ибрахим"
+		dynasty = "Терзи"
 		adm = 0
 		dip = 1
 		mil = 0
@@ -341,8 +357,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1687.11.1 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "Kerdeki"
+		name = "Мехмед"
+		dynasty = "Кердеки"
 		adm = 1
 		dip = 4
 		mil = 2
@@ -351,8 +367,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1701.5.1 = {
 	monarch = {
-		name = "Osman"
-		dynasty = "al-Kahwadji"
+		name = "Осман"
+		dynasty = "аль-Кахваджи"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -361,8 +377,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1701.11.1 = {
 	monarch = {
-		name = "Mustafa"
-		dynasty = "Gallipoli"
+		name = "Мустафа"
+		dynasty = "Галлиполи"
 		adm = 2
 		dip = 2
 		mil = 1
@@ -371,8 +387,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1702.1.1 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "Mehmedid"
+		name = "Мехмед"
+		dynasty = "Мехмедид"
 		adm = 1
 		dip = 2
 		mil = 2
@@ -381,8 +397,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1706.1.1 = {
 	monarch = {
-		name = "Khalil"
-		dynasty = "Karh Deghli"
+		name = "Кхалил"
+		dynasty = "Карх Дегхли"
 		adm = 2
 		dip = 1
 		mil = 1
@@ -391,8 +407,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1709.1.1 = {
 	monarch = {
-		name = "Ibrahim"
-		dynasty = "Aleyli"
+		name = "Ибрахим"
+		dynasty = "Алейли"
 		adm = 1
 		dip = 1
 		mil = 1
@@ -401,8 +417,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1710.1.1 = {
 	monarch = {
-		name = "Ismail"
-		dynasty = "Khoudja"
+		name = "Исмаил"
+		dynasty = "Ходжа"
 		adm = 1
 		dip = 0
 		mil = 1
@@ -411,8 +427,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1711.1.20 = {
 	monarch = {
-		name = "Mehmed"
-		dynasty = "Djavush"
+		name = "Мехмед"
+		dynasty = "Джавуш"
 		adm = 0
 		dip = 0
 		mil = 0
@@ -423,8 +439,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1711.7.30 = {
 	monarch = {
-		name = "Ahmad I"
-		dynasty = "Karamanli"
+		name = "Ахмад I"
+		dynasty = "Караманли"
 		adm = 4
 		dip = 1
 		mil = 3
@@ -434,9 +450,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1711.7.30 = {
 	heir = {
-		name = "Mehmed"
-		monarch_name = "Mehmed I"
-		dynasty = "Karamanli"
+		name = "Мехмед"
+		monarch_name = "Мехмед I"
+		dynasty = "Караманли"
 		birth_date = 1700.1.1
 		death_Date = 1754.7.25
 		claim = 95
@@ -448,8 +464,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1745.11.4 = {
 	monarch = {
-		name = "Mehmed I"
-		dynasty = "Karamanli"
+		name = "Мехмед I"
+		dynasty = "Караманли"
 		adm = 3
 		dip = 2
 		mil = 3
@@ -458,9 +474,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1745.11.4 = {
 	heir = {
-		name = "'Alо"
-		monarch_name = "'Alо I"
-		dynasty = "Karamanli"
+		name = "Ало"
+		monarch_name = "Ало I"
+		dynasty = "Караманли"
 		birth_date = 1730.1.1
 		death_date = 1793.7.30
 		claim = 95
@@ -472,8 +488,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1754.7.25 = {
 	monarch = {
-		name = "'Alо I"
-		dynasty = "Karamanli"
+		name = "Ало I"
+		dynasty = "Караманли"
 		adm = 3
 		dip = 1
 		mil = 1
@@ -482,9 +498,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1754.7.25 = {
 	heir = {
-		name = "'Alо Borgul"
-		monarch_name = "'Alо Borgul"
-		dynasty = "Karamanli"
+		name = "Ало Боргул"
+		monarch_name = "Ало Боргул"
+		dynasty = "Караманли"
 		birth_date = 1750.1.1
 		death_date = 1795.1.22
 		claim = 95
@@ -496,8 +512,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1793.7.30 = {
 	monarch = {
-		name = "'Alо Borgul"
-		dynasty = "Karamanli"
+		name = "Ало Боргул"
+		dynasty = "Караманли"
 		adm = 1
 		dip = 2
 		mil = 0
@@ -506,9 +522,9 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1793.7.30 = {
 	heir = {
-		name = "Yusuf"
-		monarch_name = "Yusuf"
-		dynasty = "Karamanli"
+		name = "Юсуф"
+		monarch_name = "Юсуф"
+		dynasty = "Караманли"
 		birth_date = 1780.1.1
 		death_date = 1832.1.1
 		claim = 95
@@ -520,8 +536,8 @@ fixed_capital = 354 # Cannot move capital away from this province & no power cos
 
 1795.1.22 = {
 	monarch = {
-		name = "Yusuf"
-		dynasty = "Karamanli"
+		name = "Юсуф"
+		dynasty = "Караманли"
 		adm = 1
 		dip = 2
 		mil = 2

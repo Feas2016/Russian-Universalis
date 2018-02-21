@@ -1,12 +1,12 @@
 #726 - Liaodong
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = manchu
 religion = confucianism
 capital = "Shenyang"
-trade_goods = grain
+trade_goods = gems
 hre = no
 base_tax = 5 
 base_production = 5
@@ -16,6 +16,7 @@ fort_15th = yes #the Nine Garrisons
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = { owner = MNG controller = MNG remove_core = YUA add_core = MNG }
 1519.1.1 = { discovered_by = POR } # Tome Pires
 1621.1.1 = {
 	owner = MCH

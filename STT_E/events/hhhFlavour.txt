@@ -1,0 +1,722 @@
+namespace = event_estate_hhh
+
+###New stades
+
+country_event = {
+	id = event_estate_hhh.1
+	title = event_estate_hhh.1.t
+	desc = event_estate_hhh.1.d
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	    government = greek_monarchy	
+		NOT = {
+		has_country_modifier = purple_guardy
+		}
+		army_tradition = 30
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+		
+		modifier = {
+		factor = 0.4
+		stability = 2
+	}
+	}
+	
+	option = {
+		name = event_estate_hhh.1.a
+		 add_country_modifier = {
+			name = purple_guardy
+			duration = -1
+		}
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = 10
+			}
+		add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+        add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_HHH_PURPLE
+				influence = -10
+				duration = -1
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_PURPLE
+				influence = 10
+				duration = 3070
+			}	
+        add_faction_influence = {
+		    faction = royalists
+			influence = 35
+			}			
+		
+	}
+	option = {
+		name = event_estate_hhh.1.b
+		add_prestige = -5
+		
+	}
+	
+}
+
+country_event = {
+	id = event_estate_hhh.2
+	title = event_estate_hhh.2.t
+	desc = event_estate_hhh.2.d
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	    government = greek_monarchy
+		has_country_modifier = purple_guardy
+		is_year = 1550
+	}
+	
+	mean_time_to_happen = {
+		months = 32
+	}
+	
+	option = {
+		name = event_estate_hhh.2.a
+		add_prestige = -10
+		 add_country_modifier = {
+			name = purple_archons
+			duration = -1
+		}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_PARCH
+				influence = 10
+				duration = -1
+		}
+		
+	}
+	option = {
+		name = event_estate_hhh.2.b
+		add_prestige = 10
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			 add_country_modifier = {
+			name = purple_upset
+			duration = 1825
+		    }
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 4
+			}
+		}
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = 10
+			}
+		add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		
+	}
+	
+}
+
+###Estate
+
+country_event = {
+	id = event_estate_hhh.3
+	title = event_estate_hhh.3.t
+	desc = event_estate_hhh.3.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+	    government = greek_monarchy
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = event_estate_hhh.3.a
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = 10
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_COUN
+				influence = 10
+				duration = 3620
+			}
+		add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		hidden_effect = {
+		country_event = {
+			id = event_estate_hhh.3
+			days = 3650
+			}	
+	    }
+		add_faction_influence = {
+		    faction = republicans
+			influence = 10 
+			}
+	}
+	option = {
+		name = event_estate_hhh.3.b
+		add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_COUN
+				influence = -10
+				duration = 3650
+			}
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = -10
+			}
+		hidden_effect = {
+		country_event = {
+			id = event_estate_hhh.3
+			days = 3650
+			}	
+		}
+		add_faction_influence = {
+		    faction = royalists
+			influence = 10 
+			}
+	}
+	option = {
+		name = event_estate_hhh.3.c
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = -10
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_COUN
+				influence = -10
+				duration = 3650
+			}
+		add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		hidden_effect = {
+		country_event = {
+			id = event_estate_hhh.3
+			days = 3650
+			}	
+		
+	        }	   
+	       add_faction_influence = {
+		    faction = royalists
+			influence = 10 
+			}
+		
+           }
+    }
+
+country_event = {
+	id = event_estate_hhh.4
+	title = event_estate_hhh.4.t
+	desc = event_estate_hhh.4.d
+	picture = FAMINE_eventPicture
+	
+	trigger = {
+	    government = greek_monarchy
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = event_estate_hhh.4.a
+		add_years_of_income = -0.15
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = 5
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_COUN
+				influence = -5
+				duration = 1825
+			}
+		add_faction_influence = {
+			faction = royalists
+			influence = 10
+		}
+	}
+	option = {
+		name = event_estate_hhh.4.b
+		add_estate_loyalty = {
+				estate = estate_hhh
+				loyalty = -5
+			}
+		add_estate_influence_modifier = {
+				estate = estate_hhh
+				desc = EST_VAL_HHH_SUF
+				influence = 5
+				duration = 1825
+			}
+		add_faction_influence = {
+			faction = republicans
+			influence = 10
+		}	
+		
+	}
+	
+}
+
+country_event = {
+	id = event_estate_hhh.5
+	title = event_estate_hhh.5.t
+	desc = event_estate_hhh.5.d
+	picture = BURGHER_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		has_dlc = "The Cossacks"
+		has_estate = estate_hhh
+		estate_influence = {
+			estate = estate_hhh
+			influence = 25
+		}
+		estate_influence = {
+			estate = estate_church
+			influence = 25
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_hhh
+				modifier = EST_VAL_HHH_AUTHORITY_ASSERTED
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_hhh
+				modifier = EST_VAL_HHH_AUTHORITY_QUESTIONED
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	} 
+	
+	option = {
+		name = hhh_estate_events.5.a
+		add_estate_loyalty = {
+			estate = estate_hhh
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_hhh
+			desc = EST_VAL_HHH_AUTHORITY_ASSERTED
+			influence = 10
+			duration = 1825
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_HHH_AUTHORITY_ASSERTED
+			influence = -10
+			duration = 1825
+		}
+	}
+	option = {
+		name = hhh_estate_events.5.b
+		add_estate_loyalty = {
+			estate = estate_hhh
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_hhh
+			desc = EST_VAL_HHH_AUTHORITY_QUESTIONED
+			influence = -10
+			duration = 1825
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_HHH_AUTHORITY_QUESTIONED
+			influence = 10
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = event_estate_hhh.6
+	title = event_estate_hhh.6.t
+	desc = event_estate_hhh.6.d
+	picture = BURGHER_ESTATE_UPSET_eventPicture
+	
+	trigger = {
+		has_dlc = "The Cossacks"
+		has_estate = estate_hhh
+	}
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	} 
+	
+	option = {
+		name = hhh_estate_events.6.a
+		add_estate_loyalty = {
+			estate = estate_hhh
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_HHH_AUTHORITY_ASSERTED
+			influence = -10
+			duration = 1825
+		}
+		add_faction_influence = {
+			faction = royalists
+			influence = 10
+		}
+	}
+}
+
+#usual_event_zone
+#heresy
+country_event = {
+	id = event_estate_hhh.7
+	title = event_estate_hhh.7.t
+	desc = event_estate_hhh.7.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+	    government = greek_monarchy
+		NOT = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 124
+	}
+	
+	option = {
+		name = event_estate_hhh.7.b
+		random_owned_province = {
+				limit = {
+					is_core = ROOT
+				    NOT = { has_province_modifier = hellenic_heresy }
+				culture = ROOT
+				}
+				add_province_modifier = {
+					name = "hellenic_heresy"
+					duration = 730
+				}
+			}
+			
+		
+	}
+	option = {
+		name = event_estate_hhh.7.a
+		random_owned_province = {
+				limit = {
+					is_core = ROOT
+				    NOT = { has_province_modifier = hellenic_heresy }
+				has_owner_accepted_culture = yes
+				}
+				add_province_modifier = {
+					name = "hellenic_heresy"
+					duration = 730
+				}
+			}
+		add_ruler_modifier = {
+		            name = "hellenic_ruler"
+				duration = -1
+		}		
+
+}
+}
+
+#change culture
+
+country_event = {
+	id = event_estate_hhh.8
+	title = event_estate_hhh.8.t
+	desc = event_estate_hhh.8.d
+	picture = ARTWORK_eventPicture
+	
+	trigger = {
+	    government = greek_monarchy
+		OR = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		has_ruler_modifier = hellenic_ruler
+		}
+		NOT = {
+		primary_culture = high_greek
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = event_estate_hhh.8.a
+		random_owned_province = {
+				limit = {
+					is_core = ROOT
+				    NOT = { has_province_modifier = hellenic_heresy }
+    				is_capital = no
+				culture = ROOT
+				}
+				change_culture = high_greek
+			}
+			
+		
+	}
+	option = {
+		name = event_estate_hhh.8.b
+		every_owned_province = {
+					limit = {
+						OR = {
+						has_owner_accepted_culture = yes
+						has_owner_culture = yes
+						}
+					}
+					change_culture = high_greek
+				}
+		change_primary_culture = high_greek		
+        add_dip_power = -200
+		add_stability = -1
+}
+}
+
+#change religion
+
+country_event = {
+	id = event_estate_hhh.9
+	title = event_estate_hhh.9.t
+	desc = event_estate_hhh.9.d
+	picture = PRAYING_eventPicture
+	
+	trigger = {
+	    government = greek_monarchy
+		NOT = {
+		religion = hellenic_pagan
+		religion = synhellenic_pagan
+		}
+		has_ruler_modifier = hellenic_ruler
+	}
+	
+	mean_time_to_happen = {
+		months = 132
+	}
+	
+	option = {
+		name = "event_estate_hhh.9.a"
+		capital_scope = {
+				change_religion = hellenic_pagan
+			}
+		change_religion = hellenic_pagan
+        add_country_modifier = {
+			name = hellenic_fervor
+			duration = 1825
+		    }
+		
+		}		
+	option = {
+		name = "event_estate_hhh.9.b"
+		capital_scope = {
+				change_religion = synhellenic_pagan
+			}	
+        add_country_modifier = {
+			name = hellenic_fervor
+			duration = 1825
+		    }
+        change_religion = synhellenic_pagan			
+        }
+	option = {
+		name = "event_estate_hhh.9.f"
+		capital_scope = {
+				change_religion = hellenic_pagan
+			}
+        add_prestige = 5			
+
+}	
+}
+
+#Factions
+
+##
+country_event = {
+	id = event_estate_hhh.10
+	title = event_estate_hhh.10.t
+	desc = event_estate_hhh.10.d
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		government = greek_monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = event_estate_hhh.10.a
+		add_legitimacy = 5
+		add_faction_influence = {
+			faction = republicans
+			influence = 10
+		}
+	}
+	option = {
+		name = event_estate_hhh.10.b
+		add_yearly_manpower = 0.25
+		add_faction_influence = {
+			faction = royalists
+			influence = 10
+		}
+	}
+}
+
+#The Royalists strengthen their influence in the council. Can it be stopped?
+
+country_event = {
+	id = event_estate_hhh.11
+	title = event_estate_hhh.11.t
+	desc = event_estate_hhh.11.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		government = greek_monarchy
+		faction_in_power = royalists
+		NOT = {
+			has_country_modifier = consolidation_of_power
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = event_estate_hhh.11.a
+		add_country_modifier = {
+			name = "consolidation_of_power"
+			duration = 1825
+		}
+		add_faction_influence = {
+			faction = royalists
+			influence = 5
+		}
+	}
+}
+#lack of power
+country_event = {
+	id = event_estate_hhh.12
+	title = "event_estate_hhh.12.t"
+	desc = "event_estate_hhh.12.d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		government = greek_monarchy
+		NOT = { 
+		faction_in_power = republicans
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "event_estate_hhh.12.a"
+		add_faction_influence = {
+			faction = republicans
+			influence = 5
+		}
+	}
+
+	option = {
+		name = "event_estate_hhh.12.b"
+		add_legitimacy = -5
+		add_country_modifier = {
+			name = "suffering_administration"
+			duration = 913
+		}
+		add_faction_influence = {
+			faction = royalists
+			influence = 5
+		}
+	}
+}
+
+#UnloyalArchon
+country_event = {
+	id = event_estate_hhh.13
+	title = "event_estate_hhh.13.t"
+	desc = "event_estate_hhh.13.d"
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+	    government = greek_monarchy
+		has_advisor = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "event_estate_hhh.13.a"
+		kill_advisor = random
+		add_faction_influence = {
+			faction = royalists
+			influence = 10
+		}
+	}
+
+	option = {
+		name = "event_estate_hhh.13.b"
+		add_faction_influence = {
+			faction = republicans
+			influence = 5
+		}
+	}
+}

@@ -1,4 +1,5 @@
 veche_republic = {
+	color = { 105 170 220 }
 	republic = yes
 
 	valid_for_new_country = no
@@ -12,9 +13,9 @@ veche_republic = {
 	
 	#boost_income = yes
 	can_use_trade_post = yes
-
-	ai_will_do = {
-		factor = 0	
+	can_form_trade_league = yes
+	government_abilities = {
+		russian_mechanic
 	}
 		
 	faction = mr_aristocrats
@@ -24,22 +25,34 @@ veche_republic = {
 	rank = {
 		1 = {
 			trade_efficiency = 0.1
+			merchants = 1
+			max_absolutism = -50
+			global_autonomy = -0.02
 		}
 		2 = {
-			trade_efficiency = 0.1
+			trade_efficiency = 0.15
 			merchants = 1
+			max_absolutism = -50
+			global_autonomy = -0.2
 		}
 		3 = {
 			trade_efficiency = 0.15
 			merchants = 1
 			global_autonomy = -0.10
+			max_absolutism = -50
 		}
+	}
+	ai_will_do = {
+		factor = 0	
 	}
 }
 
 knyaz_veche_republic = {
 	republic = yes
-
+	color = { 60 120 180 }
+	
+	unique_government = yes
+	
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	allow_convert = no
@@ -49,11 +62,11 @@ knyaz_veche_republic = {
 	
 	#boost_income = yes
 	can_use_trade_post = yes
-
-	ai_will_do = {
-		factor = 0	
+	#can_form_trade_league = yes
+	government_abilities = {
+		russian_mechanic
 	}
-		
+	
 	faction = mr_aristocrats
 	faction = mr_traders
 	faction = mr_guilds
@@ -61,20 +74,31 @@ knyaz_veche_republic = {
 	rank = {
 		1 = {
 			land_morale = 0.05
+			merchants = 1
+			max_absolutism = -30
+			global_autonomy = -0.05
 		}
 		2 = {
 			land_morale = 0.05
 			merchants = 1
+			max_absolutism = -30
+			global_autonomy = -0.10
 		}
 		3 = {
 			land_morale = 0.1
 			land_forcelimit_modifier = 0.10
 			merchants = 1
+			max_absolutism = -30
+			global_autonomy = -0.15
 		}
+	}
+	ai_will_do = {
+		factor = 0	
 	}
 }
 
 #reformed_veche_republic = {
+#	color = { 105 170 220 }
 #	republic = yes
 #	
 #	valid_for_new_country = no
@@ -85,8 +109,9 @@ knyaz_veche_republic = {
 #	royal_marriage = no
 #	
 #	has_parliament = yes
-#
-	#bonus
+#	government_abilities = {
+#		russian_mechanic
+#	}
 #
 #	rank = {
 #		1 = {
@@ -104,5 +129,8 @@ knyaz_veche_republic = {
 #			stability_cost_modifer = -0.10
 #			global_autonomy = -0.15
 #		}
+#	}
+#	ai_will_do = {
+#		factor = 0	
 #	}
 #}

@@ -1,0 +1,70 @@
+government = iqta
+government_rank = 1
+primary_culture = kurdish
+religion = sunni
+technology_group = muslim
+capital = 2308 #Hisn Kayfa
+add_accepted_culture = al_suryah_arabic
+religious_school = shafii_school
+
+1378.1.1 = {
+	monarch = {
+		name = "аль-Адиль Фахр аль-Дин"
+		dynasty = "Айюбид"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1401.1.1 = {
+	monarch = {
+		name = "аль-Ашраф Шараф аль-Дин"
+		dynasty = "Айюбид"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "аль-Салих Салах аль-Дин"
+		dynasty = "Айюбид"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "аль-Камил Ахмад"
+		monarch_name = "аль-Камил IV Ахмад"
+		dynasty = "Айюбид"
+		birth_date = 1420.1.1
+		death_date = 1462.1.11
+		claim = 90
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1452.1.1 = {
+	monarch = {
+		name = "аль-Камил IV Ахмад"
+		dynasty = "Айюбид"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1462.1.1 = {
+	monarch = {
+		name = "Халил"
+		dynasty = "Айюбид"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+

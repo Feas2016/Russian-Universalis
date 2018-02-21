@@ -18,30 +18,51 @@ country_event = {
 	
 	
 	trigger = {
-		tag = CAS
 		NOT = { exists = SPA }
+		OR = {
+			AND = {
+				tag = CAS
+				NOT = { war_with = ARA }
+				ARA = {
+					exists = yes
+					ai = yes
+					was_player = no
+					is_subject = no
+					is_neighbor_of = ROOT
+				}
+			}
+			AND = {
+				tag = ARA
+				NOT = { war_with = CAS }
+				ai = no
+				CAS = {
+					exists = yes
+					ai = yes
+					was_player = no
+					is_subject = no
+					is_neighbor_of = ROOT
+				}
+			}
+		}
 		is_year = 1450
 		NOT = { is_year = 1530 }
 		is_subject = no
 		num_of_cities = 10
-		ARA = {
-			exists = yes
-			ai = yes
-			was_player = no
-			is_subject = no
-			is_neighbor_of = ROOT
-		}
-		NOT = { war_with = ARA }
 		OR = {
 			AND = {
-				is_female = yes
+				CAS = { is_female = yes }
 				ARA = { is_female = no }
 			}
 			AND = {
-				is_female = no
+				CAS = { is_female = no }
 				ARA = { is_female = yes }
 			}
 			ARA = {
+				ai = yes
+				has_regency = yes
+			}
+			CAS = {
+				ai = yes
 				has_regency = yes
 			}
 		}
@@ -51,7 +72,20 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.1
-			ARA = { has_regency = no }
+			OR = {
+				AND = {
+					tag = CAS
+					ARA = {
+						has_regency = no 
+					}
+				}
+				AND = {
+					tag = ARA
+					CAS = { 
+						has_regency = no 
+					}
+				}
+			}
 		}
 	}
 	
@@ -59,15 +93,52 @@ country_event = {
 	option = {		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
 		ai_chance = { factor = 90 }
-		create_union = ARA
-		add_opinion = {
-			who = ARA
-			modifier = spa_iberian_wedding
-		}
-		ARA = {
+		if = {
+			limit = { tag = CAS }
+			create_union = ARA
 			add_opinion = {
-				who = ROOT
+				who = ARA
 				modifier = spa_iberian_wedding
+			}
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+				add_liberty_desire = -50
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = ARA
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
+			}
+		}
+		if = {
+			limit = { tag = ARA }
+			create_union = CAS
+			add_opinion = {
+				who = CAS
+				modifier = spa_iberian_wedding
+			}
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding
+				}
+				add_liberty_desire = -50
+			}
+			every_known_country = {
+				limit = {
+					marriage_with = CAS
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = spa_iberian_wedding_negative
+				}
 			}
 		}
 		random_owned_province = {
@@ -76,27 +147,40 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels
-				size = 3
-			}
-		}
-		every_known_country = {
-			limit = {
-				marriage_with = ARA
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = spa_iberian_wedding_negative
+				size = 2
 			}
 		}
 	}
 	option = {		# No let us marry a local talent instead
 		name = "flavor_spa.EVTOPTB3716"
 		ai_chance = { factor = 10 }
-		add_stability = 1
-		ARA = {
-			add_opinion = {
-				who = ROOT
-				modifier = spa_declined_iberian_wedding
+		add_stability_or_adm_power = yes
+		if = {
+			limit = { tag = CAS }
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_declined_iberian_wedding
+				}
+			}
+		}
+		if = {
+			limit = { tag = ARA }
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = spa_declined_iberian_wedding
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_consort = no
+			}
+			define_consort = {
+				ADM = 2
+				MIL = 2
+				DIP = 2
 			}
 		}
 	}
@@ -142,7 +226,7 @@ country_event = {
 		name = "flavor_spa.EVTOPTA3150"
 		define_advisor = {
 			type = inquisitor
-			name = "Tomбs de Torquemada"
+			name = "Томас де Торквемада"
 			location = 215 # Castilla La Vieja 
 			discount = yes
 			skill = 1
@@ -179,8 +263,9 @@ country_event = {
 	option = {		# Toleration is key to the nation's prosperity
 		name = "flavor_spa.EVTOPTC3150"
 		ai_chance = { factor = 0 }
+		custom_tooltip = flavor_spa.c.3150.tt
 		add_reform_desire = -0.01
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_ruler_modifier = {
 			name = religious_tolerance
 		}
@@ -265,7 +350,7 @@ country_event = {
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
 		define_explorer = {
-			name = "Cristуbal Colуn"
+			name = "Христофор Колумб"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -354,7 +439,9 @@ country_event = {
 		add_papal_influence = 25
 		define_advisor = {
 			type = theologian 
-			name = "Ignacio de Loyola"
+			culture = basque
+			religion = catholic
+			name = "Игнатий де Лойола"
 			discount = yes
 			skill = 2
 		}
@@ -435,19 +522,8 @@ country_event = {
 			}
 			tag = SPA
 		}
-		NOT = {
-			iberia_region = {
-				religion_group = muslim
-			}
-			is_claim = 337
-			is_core = 337
-		}
 		337 = {
-			owner = {
-				religion_group = muslim
-				NOT = { alliance_with = ROOT }
-				NOT = { is_subject_of = ROOT }
-			}
+			owned_by = ROOT
 		}
 	}
 
@@ -458,9 +534,8 @@ country_event = {
 
 	option = {		# Expansion in North Africa seems prosperous
 		name = "flavor_spa.EVTOPTA1000"
-		337 = {
-			add_claim = ROOT
-		}
+		add_prestige = 10
+		add_years_of_income = 0.05
 	}
 }
 
@@ -478,7 +553,7 @@ country_event = {
 
 		is_year = 1500
 		NOT = { is_year = 1600 }
-		num_of_colonial_subjects = 3
+		colony = 3
 		
 	}
 
@@ -601,7 +676,7 @@ country_event = {
 		tag = SPA
 
 		owns = 224	# Andalucia
-		num_of_colonial_subjects = 3
+		colony = 3
 	}
 
 	mean_time_to_happen = {
@@ -845,7 +920,7 @@ country_event = {
 		add_mil_power = 40
 		define_advisor = {
 			type = statesman
-			name = "Baltasar de Zuniga"
+			name = "Бальтасар де Суньига"
 			discount = yes
 			skill = 3
 		}
@@ -883,7 +958,8 @@ country_event = {
 		add_mil_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Conde-Duque Olivares"
+			name = "Гаспар де Гусман Оливарес"
+			culture = umbrian
 			discount = yes
 			skill = 3
 		}
@@ -1168,7 +1244,9 @@ country_event = {
 		add_dip_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Giulio Alberoni"
+			culture = romagnan
+			religion = catholic
+			name = "Хулио Альберони"
 			discount = yes
 			skill = 2
 		}
@@ -1200,7 +1278,8 @@ country_event = {
 		add_adm_power = 100
 		define_advisor = {
 			type = statesman
-			name = "Josй Monino"
+			name = "Хосе Моньино"
+			culture = andalucian
 			discount = yes
 			skill = 3
 		}
@@ -1221,6 +1300,7 @@ country_event = {
 		tag = SPA
 		is_year = 1800
 		NOT = { government = constitutional_monarchy }
+		NOT = { government = celestial_empire }
 		government = monarchy
 	}
 
@@ -1443,7 +1523,7 @@ country_event = {
 		religion = catholic
 		is_year = 1540
 		NOT = { is_year = 1570 }
-		num_of_colonial_subjects = 3 #colonial aristocracy exists
+		colony = 3 #colonial aristocracy exists
 		OR = {
 			north_america = {
 				country_or_vassal_holds = ROOT
@@ -1651,6 +1731,7 @@ country_event = {
 						province_id = 217
 					}
 					has_seat_in_parliament = no
+					has_estate = yes
 				}
 				set_seat_in_parliament = yes #Has to placate all the local Cortes from now on.
 			}
@@ -1767,14 +1848,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		if = {
-			limit = { NOT = { stability = 3 } }
-			add_stability = 1
-		}
-		if = {
-			limit = { stability = 3 }
-			add_prestige = 15
-		}
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -1830,10 +1904,7 @@ country_event = {
 					region = iberia_region
 					is_core = GRA
 					OR = {
-						has_building = fort_15th
-						has_building = fort_16th
-						has_building = fort_17th
-						has_building = fort_18th
+						fort_level = 1
 						province_id = 223
 					}
 				}
@@ -1864,7 +1935,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Abйn Umayyad"
+				leader = "Абин Омейяд"
 				friend = GRA
 				size = 2
 				win = yes
@@ -1962,7 +2033,7 @@ country_event = {
 		name = "flavor_spa.8.b"
 		if = {
 			limit = { NOT = { stability = 3 } }
-			add_stability = 1
+			add_stability_or_adm_power = yes
 		}
 		if = {
 			limit = { stability = 3 }
@@ -2136,7 +2207,7 @@ country_event = {
 			government = constitutional_monarchy
 			government = enlightened_despotism
 		}
-		num_of_colonial_subjects = 3
+		colony = 3
 	}
 	
 	mean_time_to_happen = {
@@ -2198,7 +2269,7 @@ country_event = {
 	trigger = {
 		tag = SPA 
 		religion = catholic
-		num_of_colonial_subjects = 3
+		colony = 3
 		is_year = 1750
 		OR = {
 			government = constitutional_monarchy
@@ -2241,6 +2312,200 @@ country_event = {
 		add_prestige = 25
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+
+#A Habsburg Heir in Spain
+country_event = {
+	id = flavor_spa.13
+	title = flavor_spa.13.t
+	desc = flavor_spa.13.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SPA
+			AND = {
+				tag = CAS
+				NOT = {
+					exists = SPA
+				}
+			}
+		}
+		has_heir = no
+		is_lesser_in_union = no
+		marriage_with = HAB
+		HAB = {
+			dynasty = "фон Габсург"
+			OR = {
+				NOT = {
+					has_country_flag = bur_marriage_successor
+				}
+				ai = no
+			}
+		}
+		NOT = {
+			dynasty = HAB
+		}
+		FRA = {
+			is_rival = HAB
+			is_rival = ROOT
+		}
+		NOT = {
+			OR = {
+				is_rival = HAB
+				war_with = HAB
+				HAB = {
+					is_rival = SPA
+				}
+				AND = {
+					HAB = {
+						is_rival = CAS
+					}
+					NOT = {
+						exists = SPA
+					}
+				}
+			}
+		}
+		NOT = {
+			dynasty = FRA
+		}
+		ruler_age = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_spa.13.a
+		define_heir = {
+			claim = 100
+			dynasty = "фон Габсург"
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+			}
+		}
+	}
+}
+
+#Habsburg in Spain notification for Austria
+country_event = {
+	id = flavor_spa.14
+	title = flavor_spa.14.t
+	desc = flavor_spa.14.d
+	picture = NEW_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_spa.14.a
+		add_prestige = 5
+	}
+}
+
+#The Low Countries Pass to Spain
+country_event = {
+	id = flavor_spa.15
+	title = flavor_spa.15.t
+	desc = flavor_spa.15.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = SPA
+			AND = {
+				tag = CAS
+				NOT = {
+					exists = SPA
+				}
+			}
+		}
+		has_heir = no
+		is_lesser_in_union = no
+		marriage_with = HAB
+		HAB = {
+			dynasty = "фон Габсург"
+			ai = yes
+			has_country_flag = bur_marriage_successor
+		}
+		NOT = {
+			dynasty = HAB
+		}
+		FRA = {
+			is_rival = HAB
+			is_rival = ROOT
+		}
+		NOT = { is_rival = HAB }
+		NOT = { war_with = HAB }
+		NOT = {
+			HAB = {
+				is_rival = ROOT
+			}
+		}
+		NOT = {
+			dynasty = FRA
+		}
+		ruler_age = 20
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = flavor_spa.15.a
+		ai_chance = {
+			factor = 85
+		}
+		define_heir = {
+			claim = 100
+			dynasty = "фон Габсург"
+			age = 15
+		}
+		custom_tooltip = flavor_spa.15.tt
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+				every_owned_province = {
+					limit = {
+						has_province_flag = bur_succession_province
+						OR = {
+							region = low_countries_region
+							area = picardy_area
+						}
+					}
+					add_core = ROOT
+					remove_core = HAB
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = flavor_spa.15.b
+		ai_chance = {
+			factor = 15
+		}
+		define_heir = {
+			claim = 100
+			dynasty = "фон Габсург"
+			age = 15
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+			}
 		}
 	}
 }

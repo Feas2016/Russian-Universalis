@@ -1,0 +1,1168 @@
+conquer_ireland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_free_or_tributary_trigger = yes
+		is_year = 1536
+		owns = 373
+		eastern_ireland_area = {
+			NOT = { owned_by = ROOT }
+		}
+		western_ireland_area = {
+			NOT = { owned_by = ROOT }
+		}
+		NOT = { has_country_modifier = british_ambition }
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		eastern_ireland_area = {
+			type = all
+			owned_by = ROOT
+		}
+		western_ireland_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+	}
+	immediate = {
+		eastern_ireland_area = {
+			add_claim = ROOT
+		}
+		western_ireland_area = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		eastern_ireland_area = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		western_ireland_area = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "british_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_scotland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	target_areas_list = {
+		highlands_area
+		lowlands_area
+	}
+	
+	target_provinces = {
+		owned_by = SCO
+	}
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_free_or_tributary_trigger = yes
+		is_year = 1603
+		SCO = {
+			is_free_or_tributary_trigger = yes
+			NOT = { alliance_with = ROOT }
+			NOT = { overlord_of = ROOT }
+			NOT = { is_subject_of = ROOT }
+			OR = {
+				highlands_area = { owned_by = SCO }
+				lowlands_area = { owned_by = SCO }
+			}
+		}
+		NOT = { has_opinion = { who = SCO value = 50 } }
+		NOT = { has_country_modifier = british_ambition }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			SCO = { is_subject_of = ROOT }
+			any_target_province = {
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = SCO }
+			}
+		}
+	}
+	success = {
+		NOT = { exists = SCO }
+		all_target_province = {
+			owned_by = ROOT
+		}
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			mil = 5
+		}
+	}
+	immediate = {
+		every_target_province = {
+			add_claim = ROOT
+		}
+	}
+	abort_effect = {
+		every_target_province = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "british_ambition"
+			duration = 3650
+		}
+	}
+}
+
+
+vassalize_scotland = {
+	
+	type = country
+
+	category = MIL
+	ai_mission = yes
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_free_or_tributary_trigger = yes
+		exists = SCO
+		SCO = {
+			is_subject = no
+			NOT = { num_of_cities = ROOT }
+			NOT = { total_development = 71 }
+			NOT = { government = imperial_city }
+		}
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { exists = SCO }
+			SCO = { is_subject_other_than_tributary_trigger = yes }
+			NOT = {
+				has_casus_belli = {
+					type = cb_vassalize_mission
+					target = SCO
+				}
+			}
+		}
+	}
+	success = {
+		SCO = { vassal_of = ROOT }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			MIL = 4
+		}
+		modifier = {
+			factor = 2
+			MIL = 5
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			months = 300
+			target = SCO
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_vassalize_mission
+			target = SCO
+		}
+	}
+	effect = {
+		add_prestige = 10
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_vassalize_mission
+				target = SCO
+			}
+		}
+	}
+}
+
+
+england_discovers_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_idea = quest_for_the_new_world
+		num_of_ports = 3
+		is_year = 1449 #STT
+		num_of_heavy_ship = 1
+		OR = {
+		northeast_america_region = { range = ROOT }
+			colonial_canada = { range = ROOT }
+		}
+		NOT = { northeast_america_region = { has_discovered = ROOT } }
+		NOT = { colonial_canada = { has_discovered = ROOT } }
+		NOT = { has_country_modifier = "colonial_enthusiasm" }
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		OR = {
+		northeast_america_region = { has_discovered = ROOT }
+			colonial_canada = { has_discovered = ROOT }
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2
+			num_of_ports = 20
+		}
+	}
+	effect = {
+		add_dip_power = 25
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1875
+		}
+	}
+}
+
+
+english_colony_in_north_america = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		num_of_colonists = 1
+		num_of_ports = 3
+		is_year = 1449 #STT
+		northeast_america_region = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+			OR = {
+				NOT = { religion = catholic }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+		NOT = { colonial_eastern_america = { owned_by = ROOT } }
+		NOT = {
+			colonial_eastern_america = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_eastern_america = { is_empty = yes } }
+				NOT = { colonial_eastern_america = { owned_by = ROOT } }
+			}
+		}
+	}
+	success = {
+		northeast_america_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 0.5
+			northeast_america_region = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 1875
+		}
+	}
+}
+
+
+england_discovers_the_carribean = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		num_of_ports = 3
+		is_year = 1449 #STT
+		has_idea = quest_for_the_new_world
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		colonial_the_carribean = { range = ROOT }
+		NOT = { colonial_the_carribean = { has_discovered = ROOT } }
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = quest_for_the_new_world }
+			NOT = { num_of_ports = 1 }
+		}
+	}
+	success = {
+		colonial_the_carribean = { has_discovered = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+english_colony_in_the_carribean = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		num_of_colonists = 1
+		num_of_ports = 3
+		is_year = 1449 #STT
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		colonial_the_carribean = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+		NOT = { colonial_the_carribean = { owned_by = ROOT } }
+		NOT = {
+			colonial_the_carribean = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_the_carribean = { is_empty = yes } }
+				NOT = { colonial_the_carribean = { owned_by = ROOT } }
+			}
+		}
+	}
+	success = {
+		colonial_the_carribean = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 0.5
+			colonial_the_carribean = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+england_discovers_india = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		num_of_ports = 3
+		has_idea = quest_for_the_new_world
+		is_year = 1449 #STT
+		NOT = { west_india_region = { has_discovered = ROOT } }
+		NOT = { coromandel_region = { has_discovered = ROOT } }
+		NOT = { deccan_region = { has_discovered = ROOT } }
+		NOT = { bengal_region = { has_discovered = ROOT } }
+		OR = {
+			west_india_region = { range = ROOT }
+			bengal_region = { range = ROOT }
+			coromandel_region = { range = ROOT }
+			deccan_region = { range = ROOT }
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = {	has_idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		OR = {
+			west_india_region = { has_discovered = ROOT }
+			bengal_region = { has_discovered = ROOT }
+			coromandel_region = { has_discovered = ROOT }
+			deccan_region = { has_discovered = ROOT }
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_dip_power = 25
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+england_discovers_australia = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		num_of_ports = 3
+		is_year = 1549 #STT
+		has_idea = quest_for_the_new_world
+		bengal_region = { has_discovered = ROOT }
+		colonial_australia = { range = ROOT }
+		NOT = { colonial_australia = { has_discovered = ROOT } }
+		NOT = { has_country_modifier = colonial_enthusiasm }
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			NOT = { has_idea = quest_for_the_new_world }
+		}
+	}
+	success = {
+		colonial_australia = { has_discovered = ROOT }
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}	
+	}
+	effect = {
+		add_dip_power = 25
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+english_colony_in_australia = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = { has_country_modifier = colonial_enthusiasm }
+		num_of_colonists = 1
+		num_of_ports = 3
+		is_year = 1549 #STT
+		colonial_australia = {
+			has_discovered = ROOT
+			is_empty = yes
+			range = ROOT
+			OR = {
+				ROOT = { NOT = { religion = catholic } }
+				is_religion_grant_colonial_claim = no
+				is_religion_grant_colonial_claim = ROOT
+			}
+		}
+		NOT = { colonial_australia = { owned_by = ROOT } }
+		NOT = {
+			colonial_australia = {
+				owner = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { num_of_ports = 1 }
+			AND = {
+				NOT = { colonial_australia = { is_empty = yes } }
+				NOT = { colonial_australia = { owned_by = ROOT } }
+			}
+		}
+	}
+	success = {
+		australia_region = {
+			owned_by = ROOT
+			colonysize = 400
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = colonial_ventures
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 2
+		}
+		modifier = {
+			factor = 2
+			num_of_colonists = 3
+		}
+		modifier = {
+			factor = 0.5
+			colonial_australia = {
+				owner = {
+					is_subject_of_type = colony
+					NOT = { is_subject_of = ROOT }
+				}
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "colonial_enthusiasm"
+			duration = 3650
+		}
+	}
+}
+
+
+establish_trade_in_indian_cot = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1449 #STT
+		has_discovered = 504
+		has_discovered = 1340
+		has_discovered = 1343
+		has_discovered = 2030
+		NOT = {
+			504 = {		# Sind
+				is_strongest_trade_power = ROOT
+			}
+			1340 = {	# Comorin Cape
+				is_strongest_trade_power = ROOT
+			}
+			1343 = {	# Ganges Delta
+				is_strongest_trade_power = ROOT
+			}
+			2030 = {	# Goa
+				is_strongest_trade_power = ROOT
+			}
+		}
+		NOT = { has_country_flag = establish_trade_in_indian_cot }
+		NOT = { has_country_modifier = east_india_trade_rush }
+	}
+	abort = {
+	}
+	success = {
+		OR = {
+			504 = {		# Sind
+				is_strongest_trade_power = ROOT
+			}
+			1340 = {	# Comorin Cape
+				is_strongest_trade_power = ROOT
+			}
+			1343 = {	# Ganges Delta
+				is_strongest_trade_power = ROOT
+			}
+			2030 = {	# Goa
+				is_strongest_trade_power = ROOT
+			}
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = shrewd_commerce_practise
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "east_india_trade_rush"
+			duration = 3650
+		}
+		set_country_flag = establish_trade_in_indian_cot
+	}
+}
+
+
+establish_trade_in_american_cot = {
+	
+	type = country
+	
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1449 #STT
+		northeast_america_region = {
+			has_discovered = ROOT
+		}
+		NOT = {
+			1500 = {		# Chesapeake Bay
+				is_strongest_trade_power = ROOT
+			}
+		}
+		NOT = { has_country_flag = establish_trade_in_american_cot }
+	}
+	abort = {
+	}
+	success = {
+		1500 = {		# Chesapeake Bay
+			is_strongest_trade_power = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = land_of_opportunity
+		}
+		modifier = {
+			factor = 2
+			has_idea = shrewd_commerce_practise
+		}
+	}
+	effect = {
+		add_treasury = 40
+		add_dip_power = 40
+		set_country_flag = establish_trade_in_american_cot
+	}
+}
+
+monopolize_british_cot = {
+	
+	type = country
+
+	category = DIP
+	
+	allow = {
+		normal_or_historical_nations = yes	
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = {
+			236 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		is_year = 1449 #STT
+		ROOT = { controls = 236 }
+		NOT = { has_country_flag = monopolize_british_cot }
+	}
+	abort = {
+	}
+	success = {
+		236 = {
+			is_strongest_trade_power = ROOT
+		}
+	}
+	chance = {
+		factor = 2000
+		modifier = {
+			factor = 2
+			has_idea = national_trade_policy
+		}	
+	}
+	effect = {
+		add_treasury = 40
+		add_dip_power = 40
+		set_country_flag = monopolize_british_cot
+	}
+}
+
+occupy_paris = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ENG
+		exists = FRA
+		war_with = FRA
+		NOT = { is_year = 1475 }
+		france_region = { owned_by = ROOT }
+		FRA = { controls = 183 }
+		183 = { is_capital = yes }
+		NOT = { has_country_flag = has_occupied_paris }
+		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+	}
+	abort = {
+		OR = {
+			NOT = { war_with = FRA }
+			any_ally = { controls = 183 }
+		}
+	}
+	success = {
+		controls = 183
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+		modifier = {
+			factor = 2
+			FRA = {
+				NOT = { mil = 2 }
+			}
+		}
+	}
+	effect = {
+		seine_area = { add_claim = ROOT }
+		bourgogne_area = { add_claim = ROOT }
+		normandy_area = { add_claim = ROOT }
+		loire_area = { add_claim = ROOT }
+		picardy_area = { add_claim = ROOT }
+		add_prestige = 5
+		set_country_flag = has_occupied_paris
+	}
+}
+
+
+conquer_normandie_and_caux = {
+	
+	type = country
+	ai_mission = yes
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ENG
+		exists = FRA
+		is_free_or_tributary_trigger = yes
+		NOT = { is_year = 1475 }
+		NOT = { alliance_with = FRA }
+		NOT = { truce_with = FRA }
+		NOT = { has_country_modifier = military_victory }
+		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+		france_region = { owned_by = ROOT }
+		FRA = {
+			owns = 167	# Caux
+			owns = 168	# Normandie
+		}
+	}
+	abort = {
+		is_subject_other_than_tributary_trigger = yes
+	}
+	success = {
+		owns = 167
+		owns = 168
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = FRA value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = FRA value = -200 } }
+		}
+	}
+	immediate = {
+		add_claim = 167
+		add_claim = 168
+	}
+	abort_effect = {
+		167 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+		168 = {
+			if = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				remove_claim = ROOT
+			}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+
+conquer_aquitaine = {
+	
+	type = country
+	ai_mission = yes
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ENG
+		exists = FRA
+		is_free_or_tributary_trigger = yes
+		NOT = { alliance_with = FRA }
+		NOT = { truce_with = FRA }
+		NOT = { is_year = 1475 }
+		france_region = { owned_by = ROOT }
+		FRA = {
+			owns = 173	# Saintonge 
+			owns = 174	# Gascogne
+		}
+		NOT = { has_country_modifier = military_victory }
+		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+	}
+	abort = {
+		OR = {
+			is_subject_other_than_tributary_trigger = yes
+			NOT = { france_region = { owned_by = ROOT } }
+		}
+	}
+	success = {
+		owns = 173
+		owns = 174
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = FRA value = -100 } }
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_opinion = { who = FRA value = -200 } }
+		}
+	}
+	immediate = {
+		add_claim = 173
+		add_claim = 174
+	}
+	abort_effect = {
+		173 = {
+			if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					remove_claim = ROOT
+				}
+		}
+		174 = {
+			if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					remove_claim = ROOT
+				}
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = "military_victory"
+			duration = 3650
+		}
+	}
+}
+
+vassalize_france = {
+	
+	type = country
+
+	category = MIL
+	
+	allow = {
+		normal_or_historical_nations = yes
+		tag = ENG
+		exists = FRA
+		is_subject = no
+		france_region = {
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		FRA = {
+			is_subject = no
+			NOT = { num_of_infantry = ROOT }
+			NOT = { num_of_cavalry = ROOT }
+			NOT = { num_of_cities = ROOT }
+		}
+		NOT = { truce_with = FRA }
+		NOT = { war_with = FRA }
+		NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+	}
+	abort = {
+		OR = {
+			is_subject = yes
+			NOT = { exists = FRA }
+			FRA = { is_subject = yes }
+		}
+	}
+	success = {
+		FRA = { junior_union_with = ENG }
+	}
+	chance = {
+		factor = 3000
+		modifier = {
+			factor = 2
+			mil = 4
+		}
+	}
+	immediate = {
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 120
+			target = FRA
+		}
+	}
+	abort_effect = {
+		remove_casus_belli = {
+			type = cb_restore_personal_union
+			target = FRA
+		}
+	}
+	effect = {
+		add_prestige = 10
+		hidden_effect = {
+			remove_casus_belli = {
+				type = cb_restore_personal_union
+				target = FRA
+			}
+		}
+	}
+}

@@ -1,3 +1,5 @@
+namespace = aus_main
+
 country_event = {
 	id = aus_main.56471
 	title = "aus_main.t.56471"
@@ -8,10 +10,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
 	}
 
 	mean_time_to_happen = {
@@ -24,9 +26,9 @@ country_event = {
 		add_legitimacy = 10
 		add_imperial_influence = 10
 		add_country_modifier = {
-				name = "aus_maius"
-				duration = -1
-			}
+			name = "aus_maius"
+			duration = -1
+		}
 	}
 }
 
@@ -40,10 +42,10 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
 	}
 
 	mean_time_to_happen = {
@@ -70,11 +72,12 @@ country_event = {
 	
 	trigger = {
 		OR = {
-				tag = HAB
-				tag = AEM
-				tag = DUA
-			}
-	NOT = { has_country_modifier = aus_maius }	
+			tag = HAB
+			tag = AEM
+			tag = DUA
+		}
+		has_global_flag = golden_bulla
+	    NOT = { has_country_modifier = ger_yeslandtag }	
 	}
 
 	option = {
@@ -86,24 +89,88 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = aus_main.56474
-	title = "aus_main.t.56474"
-	desc = "aus_main.d.56474"
-	picture = BYZ_COURT_eventPicture
+# country_event = {
+	# id = aus_main.56474
+	# title = "aus_main.t.56474"
+	# desc = "aus_main.d.56474"
+	# picture = BYZ_COURT_eventPicture
 
-	is_triggered_only = yes
+	# is_triggered_only = yes
+	
+	# trigger = {
+		# government = monarchy
+		# ai = no
+	# }
+	
+	# option = {
+		# name = "aus_main.a.56474"
+		# add_country_modifier = {
+				# name = "aus_aulic"
+				# duration = 3650
+		# }
+	# }
+# }
+
+#by invasion
+country_event = {
+	id = aus_main.56475
+	title = "aus_main.t.56475"
+	desc = "aus_main.d.56475"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
 	
 	trigger = {
-		government = monarchy
-		ai = no
+	    is_year = 1350
+		is_emperor = yes
+	}
+	
+	mean_time_to_happen = {
+	    months = 24
 	}
 	
 	option = {
-		name = "aus_main.a.56474"
-		add_country_modifier = {
-				name = "aus_aulic"
-				duration = 3650
+	    name = "aus_main.a.56475"
+		add_legitimacy = 20
+		set_global_flag = golden_bulla
+		hidden_effect = { 
+		    every_elector = {
+		        add_prestige = 30
+			    add_legitimacy = 30
+		    }
+		}	
+	}
+}
+
+#by invasion
+country_event = {
+	id = aus_main.56476
+	title = "aus_main.t.56476"
+	desc = "aus_main.d.56476"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	
+	trigger = {
+	    NOT = { has_global_flag = golden_bulla }
+		is_emperor = yes
+	}
+	
+	mean_time_to_happen = {
+	    months = 100
+		modifier = {
+		    factor = 0.75
+			NOT = { prestige = 75 }
 		}
+		modifier = {
+		    factor = 0.75
+			NOT = { legitimacy = 75 }
+		}
+	}
+	
+	option = {
+	    name = "aus_main.a.56476"
+		add_imperial_influence = -5
 	}
 }

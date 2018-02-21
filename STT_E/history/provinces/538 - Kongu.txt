@@ -5,13 +5,14 @@ controller = VIJ
 capital = "Coimbatore"
 culture = tamil
 religion = hinduism
-trade_goods = grain
+trade_goods = incense
 hre = no
 base_tax = 6
 base_production = 6
 base_manpower = 3
 is_city = yes
 add_core = MAD
+add_core = VIJ
 add_local_autonomy = 25
 discovered_by = indian
 discovered_by = nomad_group
@@ -19,9 +20,13 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
+
+1200.1.1 = { owner = PND controller = PND add_core = PND }
+1326.1.1 = { owner = DLH controller = DLH }
+1330.1.1 = { add_core = DLH }
+1343.1.1 = { owner = VIJ controller = VIJ add_core = VIJ }
 1444.1.1 = {
 	add_core = MYS
-	add_core = VIJ
 }
 1498.1.1 = { discovered_by = POR }
 1543.1.1 = { controller = REB revolt = { size = 0 type = nationalist_rebels } }

@@ -1,0 +1,480 @@
+country_decisions = {
+
+	recruit_new_soldiers = {
+		potential = {
+			OR = {
+				tag = TUR
+				tag = TU0
+			}
+			has_country_modifier = the_devshirme_system
+			NOT = { has_ruler_modifier = recruit_new_soldiers }
+		}
+		allow = {
+			MIL = 4
+			mil_power = 100
+			NOT = {
+				num_of_religion = {
+					religion = sunni
+					value = 0.75
+				}
+			}
+		}
+		effect = {
+			add_mil_power = -100
+			add_yearly_manpower = 2.5
+			add_ruler_modifier = {
+				name = "recruit_new_soldiers"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { mil_power = 200 }
+					NOT = { manpower_percentage = 0.75 }
+				}
+			}
+		}
+	}
+	
+	reform_the_kanun_system = {
+		potential = {
+			tag = TUR
+			NOT = { has_country_modifier = reform_the_kanun_system }
+		}
+		allow = {
+			adm = 4
+			adm_power = 350
+		}
+		effect = {
+			add_adm_power = -350
+			add_country_modifier = {
+				name = "reform_the_kanun_system"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 500 }
+			}
+		}
+	}
+	
+	collect_extra_vergi = {
+		potential = {
+			OR = {
+				tag = TUR
+				tag = TU0
+			}
+			NOT = { has_ruler_modifier = collect_extra_vergi }
+		}
+		allow = {
+			adm = 4
+			adm_power = 200
+		}
+		effect = {
+			add_adm_power = -200
+			add_years_of_income = 2.0
+			add_piety = -0.2
+			add_ruler_modifier = {
+				name = "collect_extra_vergi"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { adm_power = 300 }
+			}
+		}
+	}
+	
+	culus_tip_to_jannissery = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = culus_tip_to_jannissery }
+			has_country_modifier = tur_janissary
+		}
+		allow = {
+			dip = 4
+			dip_power = 200
+			years_of_income = 0.5
+		}
+		effect = {
+			add_dip_power = -200
+			add_years_of_income = -0.5
+			add_ruler_modifier = {
+				name = "culus_tip_to_jannissery"
+				duration = -1
+			}	
+		}
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { dip_power = 300 }
+					NOT = { years_of_income = 0.5 }
+				}
+			}
+		}
+	}
+	
+	give_zekat = {
+		potential = {
+			OR = {
+				tag = TUR
+				tag = TU0
+			}
+			NOT = { has_ruler_modifier = give_zekat }
+			government_rank = 3
+		}
+		allow = {
+			adm = 4
+			adm_power = 75
+			years_of_income = 0.2
+		}
+		effect = {
+			add_adm_power = -75
+			add_years_of_income = -0.2
+			add_ruler_modifier = {
+				name = "give_zekat"
+				duration = -1
+			}	
+			add_piety = 0.3
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { adm_power = 100 }
+					NOT = { piety = 0.25 }
+					NOT = { treasury = 300 }
+					}
+			}
+		}
+	}
+	
+	consruct_kulliye = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = consruct_kulliye }
+			government_rank = 3
+		}
+		allow = {
+			adm = 4
+			adm_power = 350
+		}
+		effect = {
+			add_adm_power = -350
+			add_dip_power = -75
+			add_mil_power = -75
+			add_treasury = -1800
+			add_stability = 2
+			add_piety = 0.40
+			add_prestige = 50
+			add_legitimacy = 30
+			add_ruler_modifier = {
+				name = "consruct_kulliye"
+				duration = -1
+			}		
+		}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { adm_power = 500 }
+					NOT = { treasury = 2000 }
+					}
+			}
+		}
+	}
+	
+	tedbiri_kiyafet = {
+		potential = {
+			tag = TUR
+			NOT = { has_ruler_modifier = tedbiri_kiyafet }
+		}
+		allow = {
+			dip = 4
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_stability = 1
+			add_ruler_modifier = {
+				name = "tedbiri_kiyafet"
+				duration = -1
+			}	
+		}
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				NOT = { dip_power = 250 }
+			}
+		}
+	}
+	
+		ban_alcohol_and_tobacco = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			OR = {
+				has_country_modifier = let_alcohol_and_tobacco
+				NOT = { has_country_modifier = ban_alcohol_and_tobacco }
+				}
+		}
+		allow = {
+			dip = 3
+			dip_power = 50
+		}
+		effect = {
+			add_dip_power = -50
+			add_stability = -1
+			add_piety = 0.25
+			add_country_modifier = {
+				name = "ban_alcohol_and_tobacco"
+				duration = -1
+			}
+			tooltip = { add_estate_influence_modifier = { estate = estate_church
+					desc = EST_VAL_CHURCHES_ADVANCE
+					influence = 15
+					duration = -1 }
+					}
+			remove_country_modifier = let_alcohol_and_tobacco						
+		}
+		ai_will_do = {
+			factor = 0.4
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
+					}
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = let_alcohol_and_tobacco
+			}			
+		}
+	}
+	
+		let_alcohol_and_tobacco = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			OR = {
+				has_country_modifier = ban_alcohol_and_tobacco
+				NOT = { has_country_modifier = let_alcohol_and_tobacco }
+				}
+		}
+		allow = {
+			dip = 3
+			dip_power = 50
+		}
+		effect = {
+			add_dip_power = -50
+			add_stability = -1
+			add_piety = -0.25
+			add_country_modifier = {
+				name = "let_alcohol_and_tobacco"
+				duration = -1
+			}
+			tooltip = {  add_estate_influence_modifier = { estate = estate_burghers
+					desc = EST_VAL_BURGHERS_ADVANCE
+					influence = 15
+					duration = -1 }
+					}
+			remove_country_modifier = ban_alcohol_and_tobacco			
+		}
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
+					}
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = ban_alcohol_and_tobacco
+			}
+		}
+	}
+		cancel_alcohol_and_tobacco = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			OR = {
+				has_country_modifier = ban_alcohol_and_tobacco
+				has_country_modifier = let_alcohol_and_tobacco
+				}
+		}
+		allow = {
+			dip = 3
+			dip_power = 50
+		}
+		effect = {
+			add_dip_power = -50		
+			if = {
+				limit = {
+				has_country_modifier = ban_alcohol_and_tobacco 
+				}
+				remove_country_modifier = ban_alcohol_and_tobacco
+				}
+			if = {
+				limit = {
+				has_country_modifier = let_alcohol_and_tobacco 
+				}
+				remove_country_modifier = let_alcohol_and_tobacco
+				}			
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { dip_power = 600 }
+					}
+			}
+		}
+	}
+
+		dhimmi_government = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			has_estate = estate_dhimmi
+			OR = {
+				has_country_modifier = nobel_government
+				NOT = { has_country_modifier = dhimmi_government }
+				}
+		}
+		allow = {
+			adm = 3
+			adm_power = 50
+		}
+		effect = {
+			add_adm_power = -50
+			add_stability = -1
+			add_piety = -0.25
+			add_country_modifier = {
+				name = "dhimmi_government"
+				duration = -1
+			}
+			tooltip = { add_estate_influence_modifier = { estate = estate_dhimmi
+					desc = EST_VAL_DHIMMI_ADVANCE
+					influence = 15
+					duration = -1 }
+					}
+			remove_country_modifier = nobel_government						
+		}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
+					}
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = nobel_government
+			}			
+		}
+	}
+	
+		nobel_government = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			OR = {
+				has_country_modifier = dhimmi_government
+				NOT = { has_country_modifier = nobel_government }
+				}
+		}
+		allow = {
+			adm = 3
+			adm_power = 50
+		}
+		effect = {
+			add_adm_power = -50
+			add_stability = -1
+			add_piety = 0.25
+			add_country_modifier = {
+				name = "nobel_government"
+				duration = -1
+			}
+			tooltip = {  add_estate_influence_modifier = { estate = estate_nobility
+					desc = EST_VAL_NOBILITY_ADVANCES
+					influence = 15
+					duration = -1 }
+					}
+			remove_country_modifier = dhimmi_government		
+		}
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
+					}
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = dhimmi_government
+			}
+		}
+	}
+		mix_government = {
+		potential = {			
+			religion_group = muslim
+			NOT = { technology_group = nomad_group }
+			OR = {
+				has_country_modifier = nobel_government
+				has_country_modifier = dhimmi_government
+				}
+		}
+		allow = {
+			dip = 3
+			adm_power = 150
+		}
+		effect = {
+			add_adm_power = -50		
+			if = {
+				limit = {
+				has_country_modifier = dhimmi_government
+				}
+				remove_country_modifier = dhimmi_government
+				}
+			if = {
+				limit = {
+				has_country_modifier = nobel_government
+				}
+				remove_country_modifier = nobel_government
+				}			
+		}
+		ai_will_do = {
+			factor = 0.01
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 2 }
+					NOT = { adm_power = 600 }
+					}
+			}
+		}
+	}		
+}

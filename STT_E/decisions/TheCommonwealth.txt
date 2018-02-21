@@ -4,12 +4,15 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
+			NOT = { exists = JAG }	###STT
+			NOT = { exists = PLU }	###STT
 			tag = POL
 			LIT = {
 				exists = yes
@@ -17,13 +20,23 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-				ai = no
-				senior_union_with = LIT
+			ai = no
+				AND = {
+					senior_union_with = LIT
+					LIT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+					###STT
+						NOT = { num_of_cities = 52 } #Keep this number the same as in allow. Original 31 +10
+					}
+				}
 			}
 		}
 		allow = {
 			LIT = { was_player = no }
-			adm_tech = 10
+			LIT = {
+				###STT
+				NOT = { num_of_cities = 52 } #Keep this number the same as in potential. Original 31 +10
+			}
+			adm_tech = 20 #STT
 			is_subject = no
 			is_nomad = no
 			stability = 1
@@ -33,25 +46,17 @@ country_decisions = {
 			owns_core_province = 43					# Danzig
 			owns_core_province = 1841				# Marienburg
 			senior_union_with = LIT
-			NOT = { num_of_unions = 2 }
+			NOT = { personal_union = 2  } ###STT
 			MAZ = { exists = no }
 		}
 		effect = {
 			change_tag = PLC
 			inherit = LIT
 			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+				limit = { NOT = { accepted_culture = lithuanian } }
+				add_accepted_culture = lithuanian
 			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -108,24 +113,29 @@ country_decisions = {
 				limit = { culture = polish }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 400
+		do_not_integrate = LIT
 	}
 
 	lit_commonwealth = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
+			NOT = { exists = JAG }	###STT
+			NOT = { exists = PLU }	###STT
 			tag = LIT
 			POL = {
 				exists = yes
@@ -133,13 +143,18 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-				ai = no
-				senior_union_with = POL
-			}			
+			ai = no
+				AND = {
+					senior_union_with = POL
+					POL = { #This overlaps with allow for AI, is meant to negate do_not_integrate
+						NOT = { num_of_cities = 24 } #Keep this number the same as in allow. Original 14 +10
+					}
+				}
+			}	
 		}
 		allow = {
-			POL = { NOT = { num_of_cities = 24 } } #Original 14+10
-			adm_tech = 10
+			POL = { NOT = { num_of_cities = 24 } } #Keep this number the same as in potential. Original 14+10
+			adm_tech = 20 #STT
 			is_subject = no
 			is_nomad = no
 			stability = 3
@@ -149,25 +164,17 @@ country_decisions = {
 			owns_core_province = 280				# Kiev
 			owns_core_province = 1941				# Turov
 			senior_union_with = POL
-			NOT = { num_of_unions = 2 }
+			NOT = { personal_union = 2  } ###STT
 			MAZ = { exists = no }
 		}
 		effect = {
 			change_tag = PLC
 			inherit = POL
 			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+				limit = { NOT = { accepted_culture = polish } }
+				add_accepted_culture = polish
 			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
@@ -224,23 +231,28 @@ country_decisions = {
 				limit = { culture = lithuanian }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 200
+		do_not_integrate = POL
 	}
 	
 	commonwealth_enforced = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_plc_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = PLC }
+			NOT = { exists = JAG }	###STT
+			NOT = { exists = PLU }	###STT
 			LIT = {
 				NOT = { senior_union_with = POL }
 				NOT = { junior_union_with = POL }
@@ -260,8 +272,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
-			is_subject = no
+			adm_tech = 20 #STT
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			stability = 3
 			is_at_war = no
@@ -277,22 +289,24 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = polish }
+					NOT = { accepted_culture = polish }
+				}
+				add_accepted_culture = polish
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = lithuanian }
+					NOT = { accepted_culture = lithuanian }
+				}
+				add_accepted_culture = lithuanian
 			}
 			if = {
 				limit = {
@@ -346,6 +360,7 @@ country_decisions = {
 				limit = { has_owner_culture = yes }
 				add_base_tax = 1
 			}
+			set_country_flag = formed_plc_flag
 			add_prestige = 25
 		}
 		ai_will_do = {

@@ -1,0 +1,215 @@
+country_decisions = {
+
+	restore_roman_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = restored_rome_flag }
+			owns = 118
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { exists = ROM }
+			OR = {
+				religion_group = christian
+				religion_group = pagan
+			}
+		}
+		allow = {
+			italy_region = {
+				type = all
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {	### STT
+			    value = 30
+			    region = france_region
+			}
+			num_of_owned_provinces_with = {	### STT
+			    value = 20
+			    region = balkan_region
+			}
+			num_of_owned_provinces_with = {	### STT
+			    value = 20
+			    region = anatolia_region
+			}
+			num_of_owned_provinces_with = {	### STT
+			    value = 20
+			    region = iberia_region
+			}
+### delete nooooooob paradox's fantasy
+			owns = 341 # Tunis
+			owns = 358 # Alexandria	### STT
+			owns = 379 # Jerusalem 	### STT
+			owns = 151 # Constantinople	### STT
+			owns = 146 # Athens	### STT
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+		}
+		effect = {
+			118 = {
+				move_capital_effect = yes
+			}
+			change_tag = ROM
+			custom_tooltip = roman_culture_provinces_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_owner_culture = yes
+					}
+					change_culture = roman
+				}
+			}
+			change_primary_culture = roman
+			custom_tooltip = restore_roman_empire_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
+			change_government = rome_government ### STT
+			add_legitimacy = 50 ### STT
+			add_prestige = 50
+			add_core = 118 # Rome
+			#if = {
+			#	limit = {
+			#		is_part_of_hre = yes
+			#		is_elector = no
+			#	}
+			#	every_owned_province = {
+			#		limit = {
+			#			is_part_of_hre = yes
+			#		}
+			#		set_in_empire = no
+			#	}
+			#}
+			### STT del paradox's noob
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_ruler_modifier = {	### STT
+				name = "byz_ceasar"
+				duration = -1
+			}
+			set_country_flag = restored_rome_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+form_the_latin_empire = { 	### STT
+	major = yes
+	potential = {
+		owns = 151	# Constantinople
+		religion = catholic
+		NOT = { exists = LAE }
+		is_free_or_tributary_trigger = yes		
+		NOT = { exists = BYZ }
+		NOT = { tag = PQR }
+		NOT = { tag = ROM }
+		NOT = { tag = HLR }
+		NOT = { is_year = 1700 }
+		NOT = { has_country_flag = formed_the_latin_empire }
+		NOT = { num_of_cities = 40 }
+	}
+	allow = {	
+		NOT = { is_year = 1700 }
+		owns_core_province = 151	# Constantinople
+		religion = catholic
+		stability = 1
+		is_at_war = no
+		NOT = { num_of_cities = 40 }
+		num_of_owned_provinces_with = {
+			value = 3
+			area = thrace_area
+		}		
+	}
+	effect = {
+		set_country_flag = formed_the_latin_empire
+		add_prestige = 25
+		change_tag = LAE
+		country_event = { id = ideagroups.1 } #Swap Ideas
+		change_government = feudal_monarchy
+		change_technology_group = western
+		set_government_rank = 3
+		every_owned_province = {
+			add_core = LAE
+		}
+	}
+	ai_will_do = { factor = 1 }
+	ai_importance = 10
+}
+
+byz_spqr = { 	### STT
+	major = yes
+	potential = {
+		OR = {
+			culture_group = latin
+			culture_group = byzantine
+			}
+		NOT = {	adm_tech = 10 }
+		is_free_or_tributary_trigger = yes
+		num_of_cities = 3
+		NOT = { exists = PQR }
+		NOT = { exists = ROM }
+	}
+	allow = {
+		OR = {
+			culture_group = latin
+			culture_group = byzantine
+			}
+		owns = 118
+		NOT = {	adm_tech = 10 }
+		is_at_war = no
+		num_of_owned_provinces_with = {
+			value = 20
+			region = italy_region
+			}
+		}
+	effect = {
+		every_province = {
+			limit = { region = italy_region }
+			add_permanent_claim = PQR
+			}
+		if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
+			change_government = spqr_republic
+			set_government_rank = 2
+			set_capital = 118
+			change_tag = PQR
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			add_stability = 2
+			add_adm_power = 100
+			add_republican_tradition = 1
+		}
+	ai_will_do = { factor = 1 }
+	ai_importance = 40
+	}
+	
+}

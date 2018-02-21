@@ -4,23 +4,29 @@ owner = MAW
 controller = MAW
 culture = rajput
 religion = hinduism
-capital = "Mandore"
-trade_goods = wool
+capital = "Мандоре"	### STT
+trade_goods = livestock
 hre = no
 base_tax = 4 
 base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = MAW
+estate = estate_nobles
 discovered_by = indian
 discovered_by = muslim 
 discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = chinese
 
+1300.1.1 = { controller = DLH owner = DLH add_core = DLH }
+
+1406.1.1 = { controller = MAW owner = MAW add_core = MAW }
+
 1438.1.1 = {
 	owner = MER
 	controller = MER
+	add_core = MER
 } #Conquered by Mewar after Rathore, Sisodiya cooperation breaks down in plots and murder.
 1444.1.1 = {
 	revolt = { size = 1 type = nationalist_rebels leader = "Jodha Rathore" }
@@ -29,6 +35,7 @@ discovered_by = chinese
 	capital = "Jodphur"
 	controller = MAW
 	owner = MAW
+	remove_core = MER
 	revolt = { }
 } #Rathores restored
 1679.8.1 = { controller = MUG } # The city is pillaged

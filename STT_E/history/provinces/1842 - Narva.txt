@@ -1,8 +1,9 @@
 #Narva
 
-owner = LIV
-controller = LIV
+owner = DAN
+controller = DAN
 add_core = EST
+add_core = DAN 
 add_core = LIV
 culture = estonian
 religion = catholic
@@ -16,22 +17,24 @@ is_city = yes
 discovered_by = western
 discovered_by = eastern
 
+1346.1.1 = { owner = LIV controller = LIV }
 1542.1.1 = { religion = protestant} # Unknown date
 1558.5.11 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	owner = TSR
+	controller = TSR
+	add_core = TSR
 	remove_core = LIV
 } # Russian conquest
 1581.1.1 = {
 	owner = SWE
 	controller = SWE
 	add_core = SWE
-	remove_core = RUS
+	remove_core = TSR
 } # Swedish conquest
-1704.8.9 = { controller = RUS } # Second Battle of Narva
+1704.8.9 = { controller = TSR } # Second Battle of Narva
 1721.8.30 = {
-	owner = RUS
-	add_core = RUS
+	owner = TSR
+	add_core = TSR
 	remove_core = SWE
 } # The Peace of Nystad
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

@@ -2,25 +2,40 @@ government = iqta
 technology_group = muslim
 religion = sunni
 primary_culture = afghani
-capital = 447	# Kandahar
+capital = 447	# Kandahar ### STT
+religious_school = hanafi_school
+
+#Timurid Governors of Kabul, sons of Soyurghatmish
+1443.1.1 = {
+	monarch = {
+		name = "Карачар ибн Суюргатмыш"
+		culture = uzbehk
+		dynasty = "Тимурид"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+#1451 falls to Babur bin Baysonqor
 
 #Kingdom of the Mughal prince Hakim
 1565.1.1 = {
 	monarch = {
-		name = "Hakim"
-		dynasty = "Timurid"
+		name = "Хаким"
+		dynasty = "Тимурид"
+		culture = kanauji
 		adm = 2
 		dip = 2
 		mil = 3
 	}
-	capital = 451	# Kabul
+	capital = 451	# Kabul	 ### STT
 }
 
 #Ghilzai Dynasty
 1707.1.1 = {
 	monarch = {
-		name = "Mir Ways"
-		dynasty = "Ghilzai"
+		name = "Мир Вай"
+		dynasty = "Гильзаи"
 		adm = 3
 		dip = 5
 		mil = 5
@@ -30,9 +45,9 @@ capital = 447	# Kandahar
 
 1707.1.1 = {
 	heir = {
-		name = "Mir 'Abd-al'Aziz"
-		monarch_name = "Mir 'Abd-al'Aziz"
-		dynasty = "Ghilzai"
+		name = "Мир Абд аль-Азиз"
+		monarch_name = "Мир Абд аль-Азиз"
+		dynasty = "Гильзаи"
 		birth_date = 1700.1.1
 		death_date = 1716.3.1
 		claim = 95
@@ -44,8 +59,8 @@ capital = 447	# Kandahar
 
 1715.11.1 = {
 	monarch = {
-		name = "Mir 'Abd-al'Aziz"
-		dynasty = "Ghilzai"
+		name = "Мир Абд аль-Азиз"
+		dynasty = "Гильзаи"
 		adm = 0
 		dip = 1
 		mil = 2
@@ -54,9 +69,9 @@ capital = 447	# Kandahar
 
 1715.11.1 = {
 	heir = {
-		name = "Mir Mahmud"
-		monarch_name = "Mir Mahmud"
-		dynasty = "Ghilzai"
+		name = "Мир Махмуд"
+		monarch_name = "Мир Махмуд"
+		dynasty = "Гильзаи"
 		birth_date = 1715.11.1
 		death_date = 1725.4.25
 		claim = 95
@@ -68,8 +83,8 @@ capital = 447	# Kandahar
 
 1716.3.1 = {
 	monarch = {
-		name = "Mir Mahmud"
-		dynasty = "Ghilzai"
+		name = "Мир Махмуд"
+		dynasty = "Гильзаи"
 		adm = 1
 		dip = 1
 		mil = 5
@@ -78,9 +93,9 @@ capital = 447	# Kandahar
 
 1716.3.1 = {
 	heir = {
-		name = "Mir Ashraf"
-		monarch_name = "Mir Ashraf"
-		dynasty = "Ghilzai"
+		name = "Мир Ашраф"
+		monarch_name = "Мир Ашраф"
+		dynasty = "Гильзаи"
 		birth_date = 1700.1.1
 		death_date = 1729.11.2
 		claim = 95
@@ -92,8 +107,8 @@ capital = 447	# Kandahar
 
 1725.4.25 = {
 	monarch = {
-		name = "Mir Ashraf"
-		dynasty = "Ghilzai"
+		name = "Мир Ашраф"
+		dynasty = "Гильзаи"
 		adm = 1
 		dip = 3
 		mil = 1
@@ -102,9 +117,9 @@ capital = 447	# Kandahar
 
 1725.4.25 = {
 	heir = {
-		name = "Mir Husayn"
-		monarch_name = "Mir Husayn"
-		dynasty = "Ghilzai"
+		name = "Мир Хусейн"
+		monarch_name = "Мир Хусейн"
+		dynasty = "Гильзаи"
 		birth_date = 1710.1.1
 		death_date = 1738.3.12
 		claim = 95
@@ -116,8 +131,8 @@ capital = 447	# Kandahar
 
 1729.11.2 = {
 	monarch = {
-		name = "Mir Husayn"
-		dynasty = "Ghilzai"
+		name = "Мир Хусейн"
+		dynasty = "Гильзаи"
 		adm = 1
 		dip = 0
 		mil = 1
@@ -129,8 +144,8 @@ capital = 447	# Kandahar
 
 1747.1.1 = {
 	monarch = {
-		name = "Ahmad Shah Durr-i-Durran"
-		dynasty = "Durrani"
+		name = "Ахмад-шах Дуррани"
+		dynasty = "Дуррани"
 		adm = 3
 		dip = 3
 		mil = 6
@@ -139,9 +154,9 @@ capital = 447	# Kandahar
 
 1748.1.1 = {
 	heir = {
-		name = "Taimur"
-		monarch_name = "Taimur Shah"
-		dynasty = "Durrani"
+		name = "Таймур"
+		monarch_name = "Таймур-шах"
+		dynasty = "Дуррани"
 		birth_date = 1748.1.1
 		death_date = 1793.1.1
 		claim = 95
@@ -153,8 +168,8 @@ capital = 447	# Kandahar
 
 1772.10.1 = {
 	monarch = {
-		name = "Taimur Shah"
-		dynasty = "Durrani"
+		name = "Таймур-шах"
+		dynasty = "Дуррани"
 		adm = 1
 		dip = 2
 		mil = 3
@@ -163,9 +178,9 @@ capital = 447	# Kandahar
 
 1772.10.1 = {
 	heir = {
-		name = "Zaman"
-		monarch_name = "Zaman Shah"
-		dynasty = "Durrani"
+		name = "Заман"
+		monarch_name = "Заман-шах"
+		dynasty = "Дуррани"
 		birth_date = 1770.1.1
 		death_date = 1801.1.1
 		claim = 95
@@ -179,8 +194,8 @@ capital = 447	# Kandahar
 
 1793.1.1 = {
 	monarch = {
-		name = "Zaman Shah"
-		dynasty = "Durrani"
+		name = "Заман-шах"
+		dynasty = "Дуррани"
 		adm = 1
 		dip = 1
 		mil = 3
@@ -189,9 +204,9 @@ capital = 447	# Kandahar
 
 1793.1.1 = {
 	heir = {
-		name = "Mahmud"
-		monarch_name = "Mahmud Shah"
-		dynasty = "Durrani"
+		name = "Махмуд"
+		monarch_name = "Махмуд-шах"
+		dynasty = "Дуррани"
 		birth_date = 1769.1.1
 		death_date = 1803.1.1
 		claim = 95
@@ -203,8 +218,8 @@ capital = 447	# Kandahar
 
 1801.1.1 = {
 	monarch = {
-		name = "Mahmud Shah"
-		dynasty = "Durrani"
+		name = "Махмуд-шах"
+		dynasty = "Дуррани"
 		adm = 0
 		dip = 0
 		mil = 0
@@ -215,8 +230,8 @@ capital = 447	# Kandahar
 
 1803.1.1 = {
 	monarch = {
-		name = "Shuja Shah"
-		dynasty = "Durrani"
+		name = "Шуджа-Шах"
+		dynasty = "Дуррани"
 		adm = 2
 		dip = 2
 		mil = 3
@@ -225,8 +240,8 @@ capital = 447	# Kandahar
 
 1809.5.3 = {
 	monarch = {
-		name = "Mahmud Shah"
-		dynasty = "Durrani"
+		name = "Махмуд-шах"
+		dynasty = "Дуррани"
 		adm = 0
 		dip = 0
 		mil = 0
@@ -235,8 +250,8 @@ capital = 447	# Kandahar
 
 1818.1.1 = {
 	monarch = {
-		name = "Ali Shah"
-		dynasty = "Durrani"
+		name = "Али-шах"
+		dynasty = "Дуррани"
 		adm = 2
 		dip = 1
 		mil = 0
@@ -245,8 +260,8 @@ capital = 447	# Kandahar
 
 1819.1.1 = {
 	monarch = {
-		name = "Ayub Shah"
-		dynasty = "Durrani"
+		name = "Айюб-шах"
+		dynasty = "Дуррани"
 		adm = 1
 		dip = 1
 		mil = 0

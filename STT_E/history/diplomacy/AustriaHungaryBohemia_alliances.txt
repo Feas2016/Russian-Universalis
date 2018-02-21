@@ -2,7 +2,7 @@
 vassal = {
 	first = BOH
 	second = SIL
-	start_date = 1399.1.1
+	start_date = 1399.1.1 ### STT
 	end_date = 1526.8.29
 }
 
@@ -43,7 +43,7 @@ union = {
 	first = HUN
 	second = BRA
 	start_date = 1411.1.18
-	end_date = 1417.4.18
+	end_date = 1437.12.9 ### STT
 }
 
 # Hungary-Bohemia, until the death of Zigismund I
@@ -150,15 +150,6 @@ alliance = {
 	end_date = 1457.11.24
 }
 
-
-# Austria and Aragon (League of Cambrai)
-alliance = {
-	first = HAB
-	second = ARA
-	start_date = 1508.12.10
-	end_date = 1516.8.13
-}
-
 # Habsburg, Spain and Bavaria
 alliance = {
 	first = HAB
@@ -168,6 +159,7 @@ alliance = {
 }
 
 # Habsburg, Spain and Bavaria
+# + The Grand alliance
 alliance = {
 	first = HAB
 	second = SPA
@@ -247,18 +239,18 @@ alliance = {
 	end_date = 1678.9.19
 }
 
-# Austria and Poland (Holy League of 1684)
-alliance = {
-	first = HAB
-	second = PLC
-	start_date = 1684.3.5
-	end_date = 1699.1.26
-}
-
 # Austria and Venice (Holy League of 1684)
 alliance = {
 	first = HAB
 	second = VEN
+	start_date = 1684.3.5
+	end_date = 1699.1.26
+}
+
+# Austria and Poland (Holy League of 1684)
+alliance = {
+	first = HAB
+	second = PLC
 	start_date = 1684.3.5
 	end_date = 1699.1.26
 }
@@ -291,14 +283,6 @@ alliance = {
 alliance = {
 	first = HAB
 	second = SAX
-	start_date = 1689.7.9
-	end_date = 1700.1.1
-}
-
-# The Grand alliance
-alliance = {
-	first = HAB
-	second = SPA
 	start_date = 1689.7.9
 	end_date = 1700.1.1
 }
@@ -551,30 +535,6 @@ royal_marriage = {
 	end_date = 1506.9.25
 }
 
-# Karl V ~ Isabel (daughter of King Manuel I of Portugal)
-royal_marriage = {
-	first = SPA
-	second = POR
-	start_date = 1526.3.11
-	end_date = 1539.5.1
-}
-
-# King Felipe II of Spain (son of Karl V) ~ Isabel (daughter of King Joäo III of Portugal)
-royal_marriage = {
-	first = SPA
-	second = POR
-	start_date = 1543.11.12
-	end_date = 1545.7.12
-}
-
-# Maximilian II ~ Maria (daughter of Emperor Karl V)
-royal_marriage = {
-	first = HAB
-	second = SPA
-	start_date = 1548.1.1
-	end_date = 1576.10.12
-}
-
 # Ferdinand II ~ Maria-Anna (daughter of Duke Wilhelm V of Bavaria)
 royal_marriage = {
 	first = HAB
@@ -671,7 +631,7 @@ royal_marriage = {
 	end_date = 1790.2.18
 }
 
-# MOD HAB+
+# MOD HAB+ ### STT
 union = {
 	first = HAB
 	second = STY
@@ -745,4 +705,10 @@ union = {
 	second = TOP
 	start_date = 1377.1.1
 	end_date = 1462.1.1
+} 
+union = {
+	first = DUA
+	second = BOS
+	start_date = 1878.7.1
+	end_date = 1908.10.6
 }

@@ -3,6 +3,7 @@ country_decisions = {
 	seljuk_nation = {
 		major = yes
 		potential = {
+			NOT = { is_year = 1500 }
 			NOT = { exists = SEL }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -17,7 +18,8 @@ country_decisions = {
 			owns = 382
 		}
 		allow = {
-			is_subject = no
+		    NOT = { is_year = 1500 }
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 429			# Esfahan
 			owns_core_province = 416

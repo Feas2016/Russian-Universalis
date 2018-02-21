@@ -1,8 +1,8 @@
 # 2190 - Qaraqorum
 
-owner = OIR
-controller = OIR
-add_core = OIR
+owner = YUA			### STT
+controller = YUA	### STT
+add_core = YUA		### STT
 culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Qaraqorum"
@@ -12,18 +12,26 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
+
+
+
 discovered_by = chinese
 discovered_by = nomad_group
 
-add_permanent_province_modifier = {
+add_permanent_province_modifier = {	### STT
 	name = minor_inland_center_of_trade_modifier
 	duration = -1
 }
 
-1454.1.1 = {
+1368.1.1 = {	### STT
 	owner = KHA
 	controller = KHA
 	add_core = KHA
+}
+1444.1.1 = {			### STT
+	owner = OIR
+	controller = OIR
+	add_core = OIR
 } # Mark?rgis Khan of the Gold Family rises to power after Esen's death.
 1635.4.1 = {
 	owner = KLK

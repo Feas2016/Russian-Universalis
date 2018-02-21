@@ -8,8 +8,8 @@ capital = 57 # Lьneburg
 
 1373.1.1 = {
 	monarch = {
-		name = "Heinrich der Milde"
-		dynasty = "von Welf"
+		name = "Генрих III"
+		dynasty = "фон Вельф"
 		birth_date = 1355.1.1
 		dip = 2
 		adm = 2
@@ -19,9 +19,9 @@ capital = 57 # Lьneburg
 
 1411.1.1 = {
 	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich IV"
-		dynasty = "von Welf"
+		name = "Генрих"
+		monarch_name = "Генрих IV"
+		dynasty = "фон Вельф"
 		birth_date = 1411.1.1
 		death_date = 1473.12.17
 		claim = 95
@@ -33,20 +33,22 @@ capital = 57 # Lьneburg
 
 1416.10.16 = {
 	monarch = {
-		name = "Heinrich IV"
-		dynasty = "von Welf"
+		name = "Генрих IV"
+		dynasty = "фон Вельф"
 		birth_date = 1411.1.1
 		dip = 2
 		adm = 2
 		mil = 2
 	}
-}
-
-1416.10.16 = {
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = careful_personality
+	add_ruler_personality = craven_personality
+	add_heir_personality = cruel_personality
 	heir = {
-		name = "Wilhelm"
-		monarch_name = "Wilhelm I"
-		dynasty = "von Welf"
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "фон Вельф"
 		birth_date = 1392.1.1
 		death_date = 1482.7.25
 		claim = 95
@@ -56,25 +58,41 @@ capital = 57 # Lьneburg
 	}
 }
 
+1436.1.1 = {
+	queen = {
+		country_of_origin = KLE
+		name = "Хелен"
+		dynasty = "фон Марк"
+		birth_date = 1423.1.1
+		death_date = 1471.1.1
+		female = yes
+		adm = 1 
+		dip = 1
+		mil = 1
+	}
+}
+
 #Dukes of Braunschweig-Wolfenbьttel
 
 1473.12.7 = {
 	monarch = {
-		name = "Wilhelm I"
-		dynasty = "von Welf"
+		name = "Вильгельм I"
+		dynasty = "фон Вельф"
 		birth_date = 1392.1.1
 		dip = 2
 		adm = 2
 		mil = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
 }
 # remark="Also Wilhelm I of Lьneburg"
 
 1473.12.7 = {
 	heir = {
-		name = "Wilhelm"
-		monarch_name = "Wilhelm II"
-		dynasty = "von Welf"
+		name = "Вильгельм"
+		monarch_name = "Вильгельм II"
+		dynasty = "фон Вельф"
 		birth_date = 1425.1.1
 		death_date = 1503.7.7
 		claim = 95
@@ -86,8 +104,8 @@ capital = 57 # Lьneburg
 
 1482.7.25 = {
 	monarch = {
-		name = "Wilhelm II"
-		dynasty = "von Welf"
+		name = "Вильгельм II"
+		dynasty = "фон Вельф"
 		birth_date = 1425.1.1
 		dip = 2
 		adm = 2
@@ -97,9 +115,9 @@ capital = 57 # Lьneburg
 
 1482.7.25 = {
 	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich der Дltere"
-		dynasty = "von Welf"
+		name = "Генрих"
+		monarch_name = "Генрих V"
+		dynasty = "фон Вельф"
 		birth_date = 1463.6.24
 		death_date = 1514.6.23
 		claim = 95
@@ -111,8 +129,8 @@ capital = 57 # Lьneburg
 
 1503.10.7 = {
 	monarch = {
-		name = "Heinrich der Дltere"
-		dynasty = "von Welf"
+		name = "Генрих V"
+		dynasty = "фон Вельф"
 		birth_date = 1463.6.24
 		dip = 2
 		adm = 2
@@ -122,9 +140,9 @@ capital = 57 # Lьneburg
 
 1503.10.7 = {
 	heir = {
-		name = "Heinrich"
-		monarch_name = "Heinrich der Jьngere"
-		dynasty = "von Welf"
+		name = "Генрих"
+		monarch_name = "Генрих VI"
+		dynasty = "фон Вельф"
 		birth_date = 1489.11.10
 		death_date = 1568.6.11
 		claim = 95
@@ -136,8 +154,8 @@ capital = 57 # Lьneburg
 
 1514.6.23 = {
 	monarch = {
-		name = "Heinrich der Jьngere"
-		dynasty = "von Welf"
+		name = "Генрих VI"
+		dynasty = "фон Вельф"
 		birth_date = 1489.11.10
 		dip = 2
 		adm = 2
@@ -147,9 +165,9 @@ capital = 57 # Lьneburg
 
 1528.6.29 = {
 	heir = {
-		name = "Julius"
-		monarch_name = "Julius I"
-		dynasty = "von Welf"
+		name = "Юлиус"
+		monarch_name = "Юлиус I"
+		dynasty = "фон Вельф"
 		birth_date = 1528.6.29
 		death_date = 1589.5.3
 		claim = 95
@@ -163,8 +181,8 @@ capital = 57 # Lьneburg
 
 1568.6.11 = {
 	monarch = {
-		name = "Julius I"
-		dynasty = "von Welf"
+		name = "Юлиус I"
+		dynasty = "фон Вельф"
 		birth_date = 1528.6.29
 		dip = 2
 		adm = 2
@@ -174,9 +192,9 @@ capital = 57 # Lьneburg
 
 1568.6.11 = {
 	heir = {
-		name = "Heinrich Julius"
-		monarch_name = "Heinrich Julius I"
-		dynasty = "von Welf"
+		name = "Генрих Юлиус"
+		monarch_name = "Генрих Юлиус I"
+		dynasty = "фон Вельф"
 		birth_date = 1564.10.15
 		death_date = 1613.7.20
 		claim = 95
@@ -188,8 +206,8 @@ capital = 57 # Lьneburg
 
 1589.5.13 = {
 	monarch = {
-		name = "Heinrich Julius I"
-		dynasty = "von Welf"
+		name = "Генрих Юлиус I"
+		dynasty = "фон Вельф"
 		birth_date = 1564.10.15
 		dip = 2
 		adm = 2
@@ -199,9 +217,9 @@ capital = 57 # Lьneburg
 
 1591.4.15 = {
 	heir = {
-		name = "Friedrich Ulrich"
-		monarch_name = "Friedrich Ulrich I"
-		dynasty = "von Welf"
+		name = "Фридрих Ульрих"
+		monarch_name = "Фридрих Ульрих I"
+		dynasty = "фон Вельф"
 		birth_date = 1591.4.15
 		death_date = 1634.8.21
 		claim = 95
@@ -213,8 +231,8 @@ capital = 57 # Lьneburg
 
 1613.7.20 = {
 	monarch = {
-		name = "Friedrich Ulrich I"
-		dynasty = "von Welf"
+		name = "Фридрих Ульрих I"
+		dynasty = "фон Вельф"
 		birth_date = 1591.4.15
 		dip = 2
 		adm = 2
@@ -226,9 +244,9 @@ capital = 57 # Lьneburg
 
 1613.7.20 = {
 	heir = {
-		name = "August"
-		monarch_name = "August II"
-		dynasty = "von Welf"
+		name = "Август"
+		monarch_name = "Август II"
+		dynasty = "фон Вельф"
 		birth_date = 1579.4.10
 		death_date = 1666.9.17
 		claim = 95
@@ -244,8 +262,8 @@ capital = 57 # Lьneburg
 
 1635.1.1 = {
 	monarch = {
-		name = "August II"
-		dynasty = "von Welf"
+		name = "Август II"
+		dynasty = "фон Вельф"
 		birth_date = 1579.4.10
 		dip = 2
 		adm = 2
@@ -255,9 +273,9 @@ capital = 57 # Lьneburg
 
 1635.1.1 = {
 	heir = {
-		name = "Rudolf August"
-		monarch_name = "Rudolf August I"
-		dynasty = "von Welf"
+		name = "Рудольф Август"
+		monarch_name = "Рудольф Август I"
+		dynasty = "фон Вельф"
 		birth_date = 1627.5.16
 		death_date = 1704.1.26
 		claim = 95
@@ -273,8 +291,8 @@ capital = 57 # Lьneburg
 
 1666.9.17 = {
 	monarch = {
-		name = "Rudolf August I"
-		dynasty = "von Welf"
+		name = "Рудольф Август I"
+		dynasty = "фон Вельф"
 		birth_date = 1627.5.16
 		dip = 2
 		adm = 2
@@ -284,9 +302,9 @@ capital = 57 # Lьneburg
 
 1666.9.17 = {
 	heir = {
-		name = "Anton Ulrich"
-		monarch_name = "Anton Ulrich I"
-		dynasty = "von Welf"
+		name = "Антон Ульрих"
+		monarch_name = "Антон Ульрих I"
+		dynasty = "фон Вельф"
 		birth_date = 1633.10.4
 		death_date = 1714.3.27
 		claim = 95
@@ -298,8 +316,8 @@ capital = 57 # Lьneburg
 
 1704.1.26 = {
 	monarch = {
-		name = "Anton Ulrich I"
-		dynasty = "von Welf"
+		name = "Антон Ульрих I"
+		dynasty = "фон Вельф"
 		birth_date = 1633.10.4
 		dip = 2
 		adm = 2
@@ -309,9 +327,9 @@ capital = 57 # Lьneburg
 
 1704.1.26 = {
 	heir = {
-		name = "August Wilhelm"
-		monarch_name = "August Wilhelm I"
-		dynasty = "von Welf"
+		name = "Август Вильгельм"
+		monarch_name = "Август Вильгельм I"
+		dynasty = "фон Вельф"
 		birth_date = 1662.3.8
 		death_date = 1731.3.23
 		claim = 95
@@ -323,8 +341,8 @@ capital = 57 # Lьneburg
 
 1714.1.27 = {
 	monarch = {
-		name = "August Wilhelm I"
-		dynasty = "von Welf"
+		name = "Август Вильгельм I"
+		dynasty = "фон Вельф"
 		birth_date = 1662.3.8
 		dip = 2
 		adm = 2
@@ -334,9 +352,9 @@ capital = 57 # Lьneburg
 
 1714.1.27 = {
 	heir = {
-		name = "Ludwig Rudolf"
-		monarch_name = "Ludwig Rudolf I"
-		dynasty = "von Welf"
+		name = "Людвиг Рудольф"
+		monarch_name = "Людвиг Рудольф I"
+		dynasty = "фон Вельф"
 		birth_date = 1671.7.22
 		death_date = 1735.3.1
 		claim = 95
@@ -348,8 +366,8 @@ capital = 57 # Lьneburg
 
 1731.3.23 = {
 	monarch = {
-		name = "Ludwig Rudolf I"
-		dynasty = "von Welf"
+		name = "Людвиг Рудольф I"
+		dynasty = "фон Вельф"
 		birth_date = 1671.7.22
 		dip = 2
 		adm = 2
@@ -359,9 +377,9 @@ capital = 57 # Lьneburg
 
 1731.3.23 = {
 	heir = {
-		name = "Ferdinand Albrecht"
-		monarch_name = "Ferdinand Albrecht I"
-		dynasty = "von Welf"
+		name = "Фердинанд Альбрехт"
+		monarch_name = "Фердинанд Альбрехт I"
+		dynasty = "фон Вельф"
 		birth_date = 1680.5.29
 		death_date = 1735.9.2
 		claim = 95
@@ -373,8 +391,8 @@ capital = 57 # Lьneburg
 
 1735.3.1 = {
 	monarch = {
-		name = "Ferdinand Albrecht I"
-		dynasty = "von Welf"
+		name = "Фердинанд Альбрехт I"
+		dynasty = "фон Вельф"
 		birth_date = 1680.5.29
 		dip = 2
 		adm = 2
@@ -384,9 +402,9 @@ capital = 57 # Lьneburg
 
 1735.3.1 = {
 	heir = {
-		name = "Karl"
-		monarch_name = "Karl I"
-		dynasty = "von Welf"
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "фон Вельф"
 		birth_date = 1713.8.1
 		death_date = 1780.3.26
 		claim = 95
@@ -399,8 +417,8 @@ capital = 57 # Lьneburg
 # Dukes of Braunschweig (after 1753)
 1735.9.13 = {
 	monarch = {
-		name = "Karl I"
-		dynasty = "von Welf"
+		name = "Карл I"
+		dynasty = "фон Вельф"
 		birth_date = 1713.8.1
 		dip = 2
 		adm = 2
@@ -410,9 +428,9 @@ capital = 57 # Lьneburg
 
 1735.10.9 = {
 	heir = {
-		name = "Karl Wilhelm Ferdinand"
-		monarch_name = "Karl II Wilhelm Ferdinand"
-		dynasty = "von Welf"
+		name = "Карл Вильгельм"
+		monarch_name = "Карл II Вильгельм"
+		dynasty = "фон Вельф"
 		birth_date = 1735.10.9
 		death_date = 1806.10.16
 		claim = 95
@@ -424,8 +442,8 @@ capital = 57 # Lьneburg
 
 1780.3.26 = {
 	monarch = {
-		name = "Karl II Wilhelm Ferdinand"
-		dynasty = "von Welf"
+		name = "Карл II Вильгельм"
+		dynasty = "фон Вельф"
 		birth_date = 1735.10.9
 		dip = 2
 		adm = 2
@@ -435,13 +453,72 @@ capital = 57 # Lьneburg
 
 1780.3.26 = {
 	heir = {
-		name = "Friedrich Wilhelm"
-		monarch_name = "Friedrich Wilhelm"
+		name = "Фридрих Вильгельм"
+		monarch_name = "Фридрих Вильгельм"
 		birth_date = 1771.10.9
 		death_date = 1815.6.6
 		claim = 95
 		adm = 2
 		dip = 2
+		mil = 2
+	}
+}
+
+1806.10.16 = {
+	monarch = {
+		name = "Фридрих Вильгельм"
+		dynasty = "фон Вельф"
+		birth_date = 1771.10.9
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1806.10.16 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл II"
+		birth_date = 1804.10.30
+		death_date = 1873.8.19
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1815.6.6 = {
+	monarch = {
+		name = "Карл II"
+		dynasty = "фон Вельф"
+		birth_date = 1804.10.30
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1815.6.6 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм III"
+		birth_date = 1806.4.25
+		death_date = 1884.10.18
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1830.9.9 = {
+	monarch = {
+		name = "Вильгельм III"
+		dynasty = "фон Вельф"
+		birth_date = 1806.10.18
+		dip = 2
+		adm = 2
 		mil = 2
 	}
 }

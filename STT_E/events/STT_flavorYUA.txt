@@ -1,0 +1,484 @@
+namespace = STT_flavorYUA
+normal_or_historical_nations = yes
+
+#gifts to aristocracy
+
+country_event = {
+    id = STT_flavorYUA.1
+	title = "STT_flavorYUA.1.t"
+	desc = "STT_flavorYUA.1.d"
+	
+	picture = GIFTS_TO_EMPEROR_eventPicture
+	
+	trigger = {
+	    tag = YUA
+		NOT = { has_ruler_modifier = YUA_gifts }
+		NOT = { has_ruler_modifier = YUA_nogifts }
+	}
+	
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.1.a1"
+		ai_chance =  { factor = 100 }
+		add_years_of_income = -1
+		add_corruption = 2
+		add_prestige = 20
+		add_ruler_modifier = {
+		    name = YUA_gifts
+		}
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.1.a2"
+		ai_chance = { factor = 0 }
+		add_corruption = -1
+		add_prestige = -10
+		add_ruler_modifier = {
+		    name = YUA_nogifts
+		}
+	}
+}
+
+#Asanbuki and Inaltoto
+country_event = {
+    id = STT_flavorYUA.2
+	title = "STT_flavorYUA.2.t"
+	desc = "STT_flavorYUA.2.d"
+	
+	picture = MERITOCRACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = YUA
+		has_ruler = "Кулуг Хайсан"
+	}
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.2.a"
+		define_advisor = {
+		    type = army_reformer
+			skill = 2
+			discount = yes
+			name = "Асанбуки"
+		}
+		define_advisor = {
+		    type = treasurer
+			skill = 2
+			discount = yes
+			name = "Иналтото"
+		}
+	}
+}
+
+#death of Haisan	
+country_event = {
+    id = STT_flavorYUA.3
+	title = "STT_flavorYUA.3.t"
+	desc = "STT_flavorYUA.3.d"
+	
+	picture = GIFTS_TO_EMPEROR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = YUA
+		has_ruler = "Кулуг Хайсан"
+		has_heir = "Буянту"
+	}
+	
+	mean_time_to_happen = {
+	    months = 40
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.3.a"
+		kill_ruler = yes
+		define_heir = {
+		    name = "Шидэбала"
+		    dynasty = ROOT
+			birth_date = 1303.2.23
+			adm = 2
+			dip = 4
+			mil = 1
+		}
+	}
+}
+
+#mongol's steppe
+country_event = {
+    id = STT_flavorYUA.4
+	title = "STT_flavorYUA.4.t"
+	desc = "STT_flavorYUA.4.d"
+	
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	    tag = YUA
+		any_owned_province = {
+		    region = mongolia_region
+		}
+	}
+	
+	mean_time_to_happen = {
+	    years = 20
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.4.a1"
+		ai_chance = {factor = 50}
+		custom_tooltip = STT_flavorYUA.4.b1
+		hidden_effect = {
+		    every_owned_province = {
+		        limit = {
+			        region = mongolia_region
+			    }
+			    add_local_autonomy = 50
+			    add_unrest = -5
+		    }
+		}
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.4.a2"
+		ai_chance = {factor = 50}
+		custom_tooltip = STT_flavorYUA.4.b2
+		hidden_effect = {
+		    every_owned_province = {
+		        limit = {
+			        region = mongolia_region
+			    }
+			    add_unrest = 5
+		    	add_nationalism = 5
+	    	}
+	    	random_owned_province = {
+		        limit = {
+			        region = mongolia_region
+			    }
+		    	spawn_rebels = {
+			        type = anti_tax_rebels
+			    	size = 4
+			    }
+	    	}
+	    	random_owned_province = {
+		        limit = {
+			        region = mongolia_region
+		    	}
+			    spawn_rebels = {
+			        type = anti_tax_rebels
+				    size = 4
+			    }
+		    }
+		    random_owned_province = {
+		        limit = {
+			        region = mongolia_region
+			    }
+			    spawn_rebels = {
+			        type = anti_tax_rebels
+				    size = 4
+		    	}
+	    	}
+			random_owned_province = {
+		        limit = {
+			        region = mongolia_region
+			    }
+			    spawn_rebels = {
+			        type = anti_tax_rebels
+				    size = 4
+		    	}
+	    	}
+		}
+	}
+}
+
+#random event. chinese discrimination
+province_event = {
+    id = STT_flavorYUA.5
+	title = "STT_flavorYUA.5.t"
+	desc = "STT_flavorYUA.5.d"
+	
+	picture = FIREARMS_INCIDENT_eventPicture
+	
+	trigger = {
+	    owner = {
+		    tag = YUA
+			NOT = { has_country_flag = YUA_rebellion }
+		}
+		NOT = { is_year = 1500 }
+		culture_group = east_asian
+		NOT = { has_province_modifier = YUA_discrimination }
+	}
+	
+	mean_time_to_happen = {
+	    months = 2500
+		modifier = {
+		    factor = 0.75
+			has_owner_accepted_culture = no
+		}
+		modifier = {
+		    factor = 0.75
+			unrest = 5
+		}
+		modifier = {
+		    factor = 1.25
+			has_owner_accepted_culture = yes
+		}
+	}
+	
+	option = {
+	    name = STT_flavorYUA.5.a
+	    add_nationalism = 10
+		spawn_rebels = {
+		    type = nationalist_rebels
+			size = 1
+		}
+		add_province_modifier = {
+		    name = YUA_discrimination
+			duration = 1825
+		}
+		owner = {
+		    every_owned_province = {
+		        limit = {
+			        culture_group = east_asian
+				    has_owner_accepted_culture = no
+			    }
+			    add_unrest = 1
+		    }
+		}
+	}
+}
+
+#broken irrigation system
+country_event = {
+    id = STT_flavorYUA.6
+	title = "STT_flavorYUA.6.t"
+	desc = "STT_flavorYUA.6.d"
+	
+	picture = CHINESE_GENERAL_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = YUA
+		is_year = 1330
+		NOT = { has_country_flag = YUA_destructions }
+	}
+	
+	mean_time_to_happen = {
+	    months = 250
+	}
+	
+	option = {
+	    name = STT_flavorYUA.6.a
+	    set_country_flag = YUA_destructions
+	    every_owned_province = {
+		    limit = {
+			    region = north_china_region
+			}
+		    add_province_modifier = {
+			    name = "YUA_destr_of_huanhe"
+				duration = -1
+			}
+		}
+	}
+}
+
+#rebellion of white lotus
+country_event = {
+    id = STT_flavorYUA.7
+	title = "STT_flavorYUA.7.t"
+	desc = "STT_flavorYUA.7.d"
+	
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = YUA
+		has_country_modifier = YUA_working_process
+	}
+	
+	mean_time_to_happen = {
+	    months = 150
+		modifier = {
+		    factor = 0.75
+			average_unrest = 5
+		}
+		modifier = {
+		    factor = 0.75
+			num_of_owned_provinces_with = {
+			    value = 20
+				has_owner_accepted_culture = no
+				OR = {
+				    region = north_china_region
+					region = south_china_region
+				}
+			}
+		}
+		modifier = {
+		    factor = 0.75
+			num_of_owned_provinces_with = {
+			    value = 40
+				has_owner_accepted_culture = no
+				OR = {
+				    region = north_china_region
+					region = south_china_region
+				}
+			}
+		}
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.7.a"
+	    set_country_flag = YUA_rebellion
+	    random_owned_province = {
+		    limit = {
+			    region = north_china_region
+		    }
+			spawn_rebels = {
+			    type = anti_tax_rebels
+			    size = 4
+		    }
+	    }
+		random_owned_province = {
+		    limit = {
+			    region = north_china_region
+		    }
+			spawn_rebels = {
+			    type = anti_tax_rebels
+			    size = 4
+		    }
+	    }
+		random_owned_province = {
+		    limit = {
+			    region = south_china_region
+		    }
+			spawn_rebels = {
+			    type = anti_tax_rebels
+			    size = 4
+		    }
+	    }
+		random_owned_province = {
+		    limit = {
+			    region = south_china_region
+		    }
+			spawn_rebels = {
+			    type = anti_tax_rebels
+			    size = 4
+		    }
+	    }
+	}
+}
+
+#end of repair
+country_event = {
+    id = STT_flavorYUA.8
+	title = "STT_flavorYUA.8.t"
+	desc = "STT_flavorYUA.8.d"
+	
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = "STT_flavorYUA.8.a"
+	    every_owned_province = {
+		    limit = {
+			    region = north_china_region
+			}
+		    remove_province_modifier = YUA_destr_of_huanhe
+		}
+	}
+}
+
+#Ming's rebellion
+country_event = {
+    id = STT_flavorYUA.9
+	title = "STT_flavorYUA.9.t"
+	desc = "STT_flavorYUA.9.d"
+    
+	picture = CHINESE_GENERAL_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = YUA
+		has_country_flag = YUA_rebellion
+	}
+	
+	mean_time_to_happen = {
+	    months = 24
+	}
+	
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    region = north_china_region
+					    region = south_china_region
+						region = xinan_region
+					}
+				}
+				add_core = MNG
+			}
+		}
+	}
+	
+	option = {
+	    name = "STT_flavorYUA.9.a"
+		1821 = {
+		    spawn_rebels = {
+			    type = nationalist_rebels
+				size = 2
+				leader = "Чжу Юаньчжан"
+				friend = MNG
+				win = yes
+			}
+		}
+		random_owned_province = {
+		    limit = {
+			    area = jiangsu_area
+			}
+			spawn_rebels = {
+			    type = nationalist_rebels
+				size = 2
+				friend = MNG
+				win = yes
+			}
+		}
+		random_owned_province = {
+		    limit = {
+			    area = jiangsu_area
+			}
+			spawn_rebels = {
+			    type = nationalist_rebels
+				size = 2
+				friend = MNG
+				win = yes
+			}
+		}
+		random_owned_province = {
+		    limit = {
+			    area = jiangsu_area
+			}
+			spawn_rebels = {
+			    type = nationalist_rebels
+				size = 2
+				friend = MNG
+				win = yes
+			}
+		}
+	}
+}

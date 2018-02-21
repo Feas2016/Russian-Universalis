@@ -2,7 +2,9 @@ country_decisions = {
 
 	carthagen_nation = {
 		major = yes
+		
 		potential = {
+			NOT = { is_year = 1520 }
 			NOT = { exists = CAR }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -49,8 +51,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
-			is_subject = no
+		    NOT = {is_year = 1520}
+			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 344			# Marrakesh
 			owns_core_province = 338                      # Al-Djazair
@@ -93,10 +95,11 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
                         }
-                        add_prestige = 25
+            add_prestige = 25
 			change_tag = CAR
 			set_government_rank = 3
 			set_capital = 341
+			change_government = carthage_republic
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {

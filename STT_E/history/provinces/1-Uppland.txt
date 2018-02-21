@@ -6,23 +6,27 @@ controller = SWE
 culture = swedish
 religion = catholic
 hre = no
-base_tax = 4
-base_production = 3
+base_tax = 5 
+base_production = 5
 trade_goods = grain
 base_manpower = 3
-capital = "Stockholm"
+capital = "Стокгольм"	### STT
 is_city = yes
-fort_15th = yes
+
+add_province_triggered_modifier = test_modifier
+
+
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-add_permanent_province_modifier = {
+add_permanent_province_modifier = {	### STT
 	name = major_coastal_center_of_trade_modifier
 	duration = -1
 }
-add_permanent_province_modifier = {
+add_permanent_province_modifier = {	### STT
 	name = minor_river_estuary_modifier
 	duration = -1
 }

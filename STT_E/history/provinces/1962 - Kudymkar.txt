@@ -1,10 +1,10 @@
-#Kudymkar
+#׃סעü-ֲûלü
 
 owner = PRM
 controller = PRM
-capital = "Kudymkar"
+capital = "׃סעü-ֲûלü"
 culture = uralic
-religion = shamanism
+religion = siberian_shamanism
 trade_goods = fur
 hre = no
 base_tax = 2 
@@ -16,9 +16,11 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
 
-1455.1.1 = { religion = orthodox }
+1462.1.1 = { religion = orthodox }
 1505.4.1 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
+	owner = MOS
+	controller = MOS
+	add_core = MOS  
 }
+1547.1.16 = { owner = TSR controller = TSR add_core = TSR remove_core = MOS } ## Ivav IV - tsar
+1721.11.2 = { owner = RUS controller = RUS add_core = RUS remove_core = TSR } ## Potr I - imperator

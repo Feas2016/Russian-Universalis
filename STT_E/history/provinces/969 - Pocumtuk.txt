@@ -5,7 +5,7 @@ owner = MAH
 controller = MAH
 culture = mahican
 religion = totemism
-capital = "Pocumtuk"
+capital = "Поктумук"
 trade_goods = naval_supplies
 hre = no
 base_tax = 2 
@@ -37,10 +37,20 @@ discovered_by = north_american
 	controller = USA
 	add_core = USA
 } # Still part of New York at this time, even if there was disagreement
-1777.1.15 = { unrest = 0 revolt = { type = particularist_rebels size = 3 } controller = REB } # Republic of Vermont is proclaimed (no tag available)
+1777.1.15 = {
+	owner = VRM
+	controller = VRM
+	add_core = VRM
+	capital = "Виндзор"
+}
 1782.11.1 = {
+    capital = "Кастелтон"
 	remove_core = GBR
 	unrest = 0  
 } # Preliminary articles of peace, the British recognized Amercian independence
-1791.3.4 = { revolt = {} controller = USA } # Admitted to the union as its own state
+1791.3.4 = {
+	owner = USA
+	controller = USA
+	remove_core = VRM
+}
 1799.1.1 = { base_tax = 2 base_production = 2 } # Federal tax on property

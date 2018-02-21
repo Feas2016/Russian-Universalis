@@ -2,7 +2,7 @@
 
 owner = FRA
 controller = FRA
-capital = "Perche"
+capital = "Ïåðøå"	### STT
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
@@ -18,6 +18,8 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1425.1.1 = { controller = ENG } ### STT
+1449.1.1 = { controller = FRA }	### STT
 1549.1.1 = { remove_core = ALE }
 1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
 1651.4.1 = { unrest = 4 } # An unstable peace is concluded

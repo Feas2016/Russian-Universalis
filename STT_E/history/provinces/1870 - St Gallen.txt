@@ -1,23 +1,24 @@
 #1870 - St Gallen
 
-owner = SGA
-controller = SGA
+owner = SGA			### STT
+controller = SGA	### STT
 culture = swiss
 religion = catholic
-capital = "St Gallen"
-trade_goods = wool
+capital = "Св. Галлен"	### STT
+trade_goods = livestock
 hre = yes
 base_tax = 3 
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = SGA
+add_core = SGA		### STT
+estate = estate_burghers #or priests
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1451.1.1 = { owner = SWI controller = SWI add_core = SWI }
+1451.1.1 = { owner = SWI controller = SWI add_core = SWI }	### STT
 1513.7.3 = { unrest = 7 } # Luzern Peasant War
 1515.1.1 = { unrest = 0 }
 1526.1.1 = { religion = reformed }

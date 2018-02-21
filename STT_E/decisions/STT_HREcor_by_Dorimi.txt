@@ -3,14 +3,6 @@ country_decisions = {
 	dorimi_addcrown = {
 	major = yes
 		potential = {
-			OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-			tag = DUA
-			tag = HAB
-			tag = AEM
-		}
 		is_emperor = yes
 			NOT = { has_ruler_modifier = dorimi_coronation }
 			NOT = { has_ruler_modifier = dorimi_crown }
@@ -19,17 +11,15 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			dip_power = 50
-			legitimacy = 90
-			prestige = 75
+			legitimacy = 60
+			prestige = 85
 			stability = 1
 			papal_influence = 10
 			dominant_religion = catholic
 		}
 		effect = {
 			add_prestige = -5
-			add_treasury = -50
 			add_dip_power = -50
-			add_imperial_influence = -5
 			add_ruler_modifier = {
 				name = "dorimi_crown"
 				duration = -1
@@ -43,14 +33,6 @@ country_decisions = {
 	dorimi_addcross = {
 	major = yes
 		potential = {
-			OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-			tag = DUA
-			tag = HAB
-			tag = AEM
-		}
 		is_emperor = yes
 			NOT = { has_ruler_modifier = dorimi_coronation }
 			NOT = { has_ruler_modifier = dorimi_cross }
@@ -59,16 +41,14 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			adm_power = 50
-			legitimacy = 95
-			prestige = 80
+			legitimacy = 85
+			prestige = 60
 			stability = 1
-			papal_influence = 20
+			papal_influence = 10
 			dominant_religion = catholic
 		}
 		effect = {
-			add_treasury = -50
 			add_adm_power = -50
-			add_imperial_influence = -10
 			add_ruler_modifier = {
 				name = "dorimi_cross"
 				duration = -1
@@ -81,14 +61,6 @@ country_decisions = {
 	dorimi_addorb = {
 	major = yes
 		potential = {
-			OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-			tag = DUA
-			tag = HAB
-			tag = AEM
-		}
 		is_emperor = yes
 			NOT = { has_ruler_modifier = dorimi_coronation }
 			NOT = { has_ruler_modifier = dorimi_orb }
@@ -97,16 +69,14 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			adm_power = 50
-			legitimacy = 95
-			prestige = 85
+			legitimacy = 85
+			prestige = 60
 			stability = 1
-			papal_influence = 30
+			papal_influence = 10
 			dominant_religion = catholic
 		}
 		effect = {
-			add_treasury = -80
 			add_adm_power = -50
-			add_imperial_influence = -10
 			add_ruler_modifier = {
 				name = "dorimi_orb"
 				duration = -1
@@ -120,14 +90,6 @@ country_decisions = {
 	dorimi_addsword = {
 	major = yes
 		potential = {
-			OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-			tag = DUA
-			tag = HAB
-			tag = AEM
-		}
 		is_emperor = yes
 			NOT = { has_ruler_modifier = dorimi_coronation }
 			NOT = { has_ruler_modifier = dorimi_sword }
@@ -136,16 +98,14 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			dip_power = 50
-			legitimacy = 95
-			prestige = 90
+			legitimacy = 85
+			prestige = 60
 			stability = 1
-			papal_influence = 40
+			papal_influence = 10
 			dominant_religion = catholic
 		}
 		effect = {
-			add_treasury = -100
 			add_dip_power = -50
-			add_imperial_influence = -10
 			add_ruler_modifier = {
 				name = "dorimi_sword"
 				duration = -1
@@ -158,14 +118,6 @@ country_decisions = {
 	dorimi_addcoronation = {
 		major = yes
 		potential = {
-			OR = {
-			tag = BRA
-			tag = PRU
-			tag = GER
-			tag = DUA
-			tag = HAB
-			tag = AEM
-			}
 			is_emperor = yes
 			has_ruler_modifier = dorimi_sword
 			has_ruler_modifier = dorimi_orb
@@ -182,7 +134,10 @@ country_decisions = {
 			is_at_war = no
 			dip_power = 100
 			stability = 2
-			is_papal_controller = yes
+			OR = {
+			    is_papal_controller = yes
+				papal_influence = 150
+			}
 			is_defender_of_faith = yes
 		}
 		effect = {

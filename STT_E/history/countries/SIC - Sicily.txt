@@ -4,26 +4,328 @@ religion = catholic
 primary_culture = sicilian
 capital = 125	# Palermo
 
+1072.1.6 = {
+	monarch = {
+		name = "Рожер I"
+		dynasty = "д'Отвиль"
+		birth_date = 1031.1.1
+		adm = 1
+		dip = 0
+		mil = 5
+	}
+}
 
-1377.1.28 = {
-	monarch = { 
-		name = "Maria I"
-		dynasty = "d'Aragу"
+1101.6.22 = {
+	monarch = {
+		name = "Симон"
+		dynasty = "д'Отвиль"
+		birth_date = 1093.1.1
+		adm = 2
+		dip = 1
+		mil = 4
+	}
+}
+
+1105.9.28 = {
+	monarch = {
+		name = "Рожер II"
+		dynasty = "д'Отвиль"
+		birth_date = 1095.12.22
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}
+
+1130.9.27 = {
+	government_rank = 2
+}
+
+1154.2.26 = {
+	monarch = {
+		name = "Вильгельм I"
+		dynasty = "д'Отвиль"
+		birth_date = 1126.1.1
+		adm = 4
+		dip = 1
+		mil = 4
+	}
+}
+
+1166.5.7 = {
+	monarch = {
+		name = "Вильгельм II"
+		dynasty = "д'Отвиль"
+		birth_date = 1153.1.1
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1189.11.11 = {
+	monarch = {
+		name = "Танкред"
+		dynasty = "д'Отвиль"
+		birth_date = 1135.1.1
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+1194.2.20 = {
+	monarch = {
+		name = "Вильгельм III"
+		dynasty = "д'Отвиль"
+		birth_date = 1185.1.1
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
+1194.11.20 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1165.11.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1197.9.28 = {
+	monarch = {
+		name = "Фридрих I"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1194.12.26
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1212.2.1 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1211.1.1
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1217.1.1 = {
+	monarch = {
+		name = "Фридрих I"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1194.12.26
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+1250.12.13 = {
+	monarch = {
+		name = "Конрад I"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1228.4.25
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
+1254.5.21 = {
+	monarch = {
+		name = "Конрад II"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1252.3.25
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1258.10.29 = {
+	monarch = {
+		name = "Манфред"
+		dynasty = "фон Гогенштауфен"
+		birth_date = 1232.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1266.2.26 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "д'Анжу"
+		birth_date = 1227.3.21
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1282.9.4 = {
+	monarch = {
+		name = "Педро I"
+		dynasty = "де Барселона"
+		birth_date = 1239.1.1
+		adm = 4
 		dip = 3
 		mil = 4
-		adm = 2
+	}
+}
+
+1285.11.11 = {
+	monarch = {
+		name = "Хайме I"
+		dynasty = "де Барселона"
+		birth_date = 1267.8.10
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}
+
+1296.12.11 = {
+	monarch = {
+		name = "Федериго II"
+		dynasty = "де Барселона"
+		birth_date = 1272.12.13
+		adm = 0
+		dip = 2
+		mil = 1
+	}
+}
+
+1305.1.1 = {
+	heir = {
+		name = "Педро"
+		monarch_name = "Педро II"
+		dynasty = "де Барселона"
+		birth_date = 1305.1.1
+		death_date = 1342.8.15
+		claim = 95
+		adm = 0
+		dip = 4
+		mil = 5
+	}
+}
+
+1337.6.25 = {
+	monarch = {
+		name = "Педро II"
+		dynasty = "де Барселона"
+		birth_date = 1305.7.1
+		adm = 0
+		dip = 4
+		mil = 5
+	}
+}
+
+1342.8.15 = {
+	monarch = {
+		name = "Людовик"
+		dynasty = "де Барселона"
+		birth_date = 1337.1.1
+		adm = 5
+		dip = 0
+		mil = 5
+	}
+}
+
+1355.10.16 = {
+	monarch = {
+		name = "Федериго III"
+		dynasty = "де Барселона"
+		birth_date = 1341.9.1
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1377.1.28 = {
+	monarch = {
+		name = "Мария I"
+		dynasty = "де Барселона"
+		adm = 3
+		dip = 4
+		mil = 2
 		female = yes
+	}
+}
+
+1401.5.25 = {
+	monarch = {
+		name = "Мартин I"
+		dynasty = "де Барселона"
+		birth_date = 1374.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1409.7.25 = {
+	monarch = {
+		name = "Мартин II"
+		dynasty = "де Барселона"
+		birth_date = 1356.7.29
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1410.5.31 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "де Трастамара"
+		birth_date = 1380.11.27
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1416.4.2 = {
+	monarch = {
+		name = "Альфонс I"
+		dynasty = "де Трастамара"
+		birth_date = 1396.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1458.7.28 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }
 
 1713.4.12 = {
 	monarch = {
-		name = "Vittorio Amedeo II"
-		dynasty = "di Savoia"
+		name = "Виктор Амадей II"
+		dynasty = "ди Савойя"
 		adm = 4
 		dip = 6
 		mil = 5
-		leader = { name = "Vittorio Amedeo II" type = general rank = 0 fire = 4 shock = 4 manuever = 2 siege = 2 }
+		leader = { name = "Виктор Амадей II" type = general fire = 4 shock = 4 manuever = 2 siege = 2 }
 	}
 }
 
@@ -34,8 +336,8 @@ capital = 125	# Palermo
 # Ferdinand/Ferrante flees to Sicily
 1806.3.11 = {
 	monarch = {
-		name = "Ferrante IV"
-		dynasty = "de Bourbon"
+		name = "Фердинанд IV"
+		dynasty = "де Бурбон"
 		dip = 0
 		mil = 0
 		adm = 0

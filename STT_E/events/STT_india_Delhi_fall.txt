@@ -1,0 +1,973 @@
+namespace = stt_delhi_disaster
+
+#it's cool to be a rukajoper of russian universalis, thanks to Feas and others
+
+# Delhi Collapse Starts
+country_event = {
+	id = stt_delhi_disaster.1
+	title = "stt_delhi_disaster.1.t"
+	desc = "stt_delhi_disaster.1.d"
+
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = DLH
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = { is_capital = no }
+			nationalist_rebels  = 5
+		}
+	}
+
+	option = {
+		name = "stt_delhi_disaster.1.a"
+	}
+}
+
+# Delhi Collapse Ends
+country_event = {
+	id = stt_delhi_disaster.2
+	title = "stt_delhi_disaster.2.t"
+	desc = "stt_delhi_disaster.2.d"
+
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes 
+
+	trigger = {
+		tag = DLH
+	}
+
+	immediate = {
+		set_country_flag = DLH_collapse_ended
+		hidden_effect = {
+			every_owned_province = { add_unrest = -25 }
+		}
+	}
+
+	option = {
+		name = "stt_delhi_disaster.2.a"
+		add_legitimacy = 20
+		if = {
+		    limit = {
+			    NOT = { stability = 3 }
+			}
+		    add_stability = 2
+		}
+	}
+}
+
+# Delhi loses cores when they lose territory.
+country_event = {
+	id = stt_delhi_disaster.3
+	title = "stt_delhi_disaster.3.t"
+	desc = "stt_delhi_disaster.3.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		every_province = { 
+			limit = {
+				is_core = DLH
+				NOT = { owned_by = DLH }
+			}
+			remove_core = DLH
+			add_unrest = -25 
+		}
+	}
+
+	option = {
+		name = "stt_delhi_disaster.3.a"
+	}
+}
+
+# It was a big mistake to conquer south India
+country_event = {
+	id = stt_delhi_disaster.17
+	title = "stt_delhi_disaster.17.t"
+	desc = "stt_delhi_disaster.17.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	trigger = {
+		is_at_war = yes
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = { 
+				is_capital = no 
+				controlled_by = DLH
+			}
+			nationalist_rebels = 5
+		}
+	}
+
+	option = {
+		name = "stt_delhi_disaster.17.a"
+	}
+}
+
+# Delhi vassals declare war
+country_event = {
+	id = stt_delhi_disaster.5
+	title = "stt_delhi_disaster.5.t"
+	desc = "stt_delhi_disaster.5.d"
+
+	picture = BATTLE_eventPicture
+
+	
+	trigger = {
+		is_subject_of = DLH
+		DLH = { has_disaster = delhi_disaster }
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "stt_delhi_disaster.5.a"
+		trigger = { DLH = { ai = yes } }
+		DLH = { release_all_subjects = yes }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.5.b"
+		trigger = { DLH = { ai = no } }
+		declare_war_with_cb = { who = DLH casus_belli = "cb_independence_war" }
+	}
+}
+
+# Satgaon free
+country_event = {
+	id = stt_delhi_disaster.6
+	title = "stt_delhi_disaster.6.t"
+	desc = "stt_delhi_disaster.6.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = SAT }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2038
+				        province_id = 2043
+						province_id = 2049
+				        province_id = 3414
+				        province_id = 3435
+					    province_id = 552
+				        province_id = 561
+					}
+			    }
+		        add_core = SAT
+		    }
+			release = SAT
+			SAT = { every_owned_province = { add_unrest = -25 }}
+			SAT = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.6.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SAT casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.6.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Lakhnauti free
+country_event = {
+	id = stt_delhi_disaster.7
+	title = "stt_delhi_disaster.7.t"
+	desc = "stt_delhi_disaster.7.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = LAH }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2044
+				        province_id = 3432
+				        province_id = 558
+				        province_id = 563
+					}
+			    }
+		        add_core = LAH
+		    }
+			release = LAH
+			LAH = { every_owned_province = { add_unrest = -25 }}
+			LAH = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.7.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = LAH casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.7.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Sonargaon free
+country_event = {
+	id = stt_delhi_disaster.8
+	title = "stt_delhi_disaster.8.t"
+	desc = "stt_delhi_disaster.8.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = SNR }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2039
+				        province_id = 2046 
+				        province_id = 2081
+				        province_id = 3421
+					    province_id = 3422
+				        province_id = 564
+						province_id = 567
+						province_id = 568
+					}
+			    }
+		        add_core = SNR
+		    }
+			release = SNR
+			SNR = { every_owned_province = { add_unrest = -25 }}
+			SNR = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.8.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = SNR casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.8.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Bahmani free
+country_event = {
+	id = stt_delhi_disaster.9
+	title = "stt_delhi_disaster.9.t"
+	desc = "stt_delhi_disaster.9.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = BAH }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 3138
+						province_id = 3137
+				        province_id = 3136
+				        province_id = 529
+				        province_id = 2089
+					    province_id = 2036
+				        province_id = 3434
+						province_id = 2034
+						province_id = 1946
+						province_id = 545
+						province_id = 544
+						province_id = 548
+						province_id = 3395
+						province_id = 3399
+						province_id = 1948
+						province_id = 2092
+						province_id = 2028
+					}
+			    }
+		        add_core = BAH
+		    }
+			release = BAH
+			BAH = { every_owned_province = { add_unrest = -25 }}
+			BAH = { every_owned_province = { remove_core = YAD }}
+			BAH = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.9.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = BAH casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.9.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Vijayanagara free
+country_event = {
+	id = stt_delhi_disaster.10
+	title = "stt_delhi_disaster.10.t"
+	desc = "stt_delhi_disaster.10.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = VIJ }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+				        province_id = 530
+						province_id = 531
+						province_id = 532
+						province_id = 533
+						province_id = 538
+						province_id = 541
+						province_id = 569
+				        province_id = 2030
+						province_id = 2029
+				        province_id = 3416
+					    province_id = 2033
+				        province_id = 2032
+						province_id = 3419
+						province_id = 3418
+						province_id = 2090
+						province_id = 1949
+						province_id = 2035
+						province_id = 2031
+					}
+			    }
+		        add_core = VIJ
+		    }
+			release = VIJ
+			VIJ = { every_owned_province = { add_unrest = -25 }}
+			VIJ = { every_owned_province = { remove_core = HOI }}
+			VIJ = { every_owned_province = { remove_core = PND }}
+			VIJ = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.10.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = VIJ casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.10.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Jaunpur free
+country_event = {
+	id = stt_delhi_disaster.11
+	title = "stt_delhi_disaster.11.t"
+	desc = "stt_delhi_disaster.11.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = JNP }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2061
+				        province_id = 2063
+						province_id = 3375
+						province_id = 2094
+						province_id = 556
+						province_id = 558
+						province_id = 523
+						province_id = 2095
+						province_id = 2055
+				        province_id = 555
+						province_id = 2096
+				        province_id = 3433
+					    province_id = 3378
+					}
+			    }
+		        add_core = JNP
+		    }
+			release = JNP
+			JNP = { every_owned_province = { add_unrest = -25 }}
+			JNP = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.11.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = JNP casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.11.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Musunuri free
+country_event = {
+	id = stt_delhi_disaster.12
+	title = "stt_delhi_disaster.12.t"
+	desc = "stt_delhi_disaster.12.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = MUS }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2028
+						province_id = 2084
+				        province_id = 3397
+						province_id = 2037
+						province_id = 3407
+						province_id = 542
+						province_id = 3398
+						province_id = 3423
+						province_id = 3425
+				        province_id = 3396
+					}
+			    }
+		        add_core = MUS
+		    }
+			release = MUS
+			MUS = { every_owned_province = { add_unrest = -25 }}
+			MUS = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.12.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = MUS casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.12.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Gujarat free
+country_event = {
+	id = stt_delhi_disaster.15
+	title = "stt_delhi_disaster.15.t"
+	desc = "stt_delhi_disaster.15.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = GUJ }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 2053
+				        province_id = 521
+						province_id = 2054
+						province_id = 2051
+						province_id = 3391
+						province_id = 3135
+						province_id = 2052
+						province_id = 515
+					}
+			    }
+		        add_core = GUJ
+		    }
+			release = GUJ
+			GUJ = { every_owned_province = { add_unrest = -25 }}
+			GUJ = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.15.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = GUJ casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.15.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Malwa free
+country_event = {
+	id = stt_delhi_disaster.14
+	title = "stt_delhi_disaster.14.t"
+	desc = "stt_delhi_disaster.14.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = MLW }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 740
+				        province_id = 526
+						province_id = 3392
+						province_id = 2093
+						province_id = 2092
+						province_id = 2057
+						province_id = 550
+						province_id = 528
+					}
+			    }
+		        add_core = MLW
+		    }
+			release = MLW
+			MLW = { every_owned_province = { add_unrest = -25 }}
+			MLW = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.14.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = MLW casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.14.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Kashmir free
+country_event = {
+	id = stt_delhi_disaster.18
+	title = "stt_delhi_disaster.18.t"
+	desc = "stt_delhi_disaster.18.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = KSH }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+					    province_id = 508
+				        province_id = 3385
+					}
+			    }
+		        add_core = KSH
+		    }
+			release = KSH
+			KSH = { every_owned_province = { add_unrest = -25 }}
+			KSH = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.18.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = KSH casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.18.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}
+# Arcot free
+country_event = {
+	id = stt_delhi_disaster.16
+	title = "stt_delhi_disaster.16.t"
+	desc = "stt_delhi_disaster.16.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = DLH
+		has_disaster = delhi_disaster
+		NOT = { has_country_modifier = DLH_broken }
+		NOT = { exists = KRK }
+	}
+
+	mean_time_to_happen = { 
+		months = 80
+		modifier = {
+			factor = 0.50
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+	}
+
+	immediate = {
+	    hidden_effect = {
+		    every_owned_province = {
+			    limit = {
+				    OR = {
+				        province_id = 540
+						province_id = 1947
+						province_id = 3406
+						province_id = 3403
+						province_id = 3404
+						province_id = 3405
+					}
+			    }
+		        add_core = KRK
+		    }
+			release = KRK
+			KRK= { every_owned_province = { add_unrest = -25 }}
+			KRK = { every_owned_province = { remove_core = DLH }}
+		}
+		add_country_modifier = { name = "DLH_broken" duration = 360 }
+	}
+
+	option = {
+		name = "stt_delhi_disaster.16.a"
+		trigger = { ai = no }
+		declare_war_with_cb = { who = KRK casus_belli = cb_imperial }
+		add_prestige = 30
+		add_legitimacy = 10
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "stt_delhi_disaster.16.b"
+		add_prestige = -30
+		add_legitimacy = -10
+		add_horde_unity = -10
+		add_stability = -1
+	}
+}

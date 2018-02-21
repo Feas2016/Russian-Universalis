@@ -1,9 +1,10 @@
 # 89 Picardie - Principal cities: Amiens
 
-owner = FRA
-controller = FRA
-add_core = FRA
-capital = "Boulogne"
+owner = BLN	### STT
+controller = BLN	### STT
+	### STT
+add_core = BLN 	### STT
+capital = "Булонь"	### STT
 is_city = yes
 culture = picard
 religion = catholic
@@ -18,11 +19,12 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1415.10.25 = { controller = ENG } 	### STT
 1435.1.1 = {
 	owner = BUR
 	controller = BUR
 	add_core = BUR
-	remove_core = FRA
+		### STT
 } # Treaty of Arras
 1463.1.1 = {
 	owner = FRA

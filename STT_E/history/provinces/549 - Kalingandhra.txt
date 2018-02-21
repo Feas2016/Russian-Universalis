@@ -1,7 +1,7 @@
 #549 - Kalingandhra
 
-owner = ORI
-controller = ORI
+owner = YOR
+controller = YOR
 culture = telegu
 religion = hinduism
 capital = "Vizianagaram"
@@ -19,7 +19,12 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
+1200.1.1 = { owner = EGA controller = EGA add_core = EGA }
+
 1405.1.1 = { discovered_by = chinese }
+
+1427.1.1 = { owner = ORI controller = ORI add_core = ORI }
+
 1443.1.1 = {
 	owner = ORI
 	controller = ORI

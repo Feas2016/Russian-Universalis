@@ -76,11 +76,11 @@ country_decisions = {
 		allow = {
 			owns = 295
 			owns = 1082
-			treasury = 4000
+			treasury = 2500
 			adm_power = 300
 		}
 		effect = {
-			add_treasury = -4000
+			add_treasury = -2500
 			add_adm_power = -300
 			295 = {
 				add_great_project = vasil_blazen
@@ -121,12 +121,12 @@ country_decisions = {
 	construct_ermitaj = {
 		major = yes
 		potential = {
-		technology_group = western
 		capital = 33
+		is_year = 1650
 			OR = {
 				ai = no
 				AND = {
-					treasury = 3000
+					treasury = 2000
 					owns = 33
 				}
 			}
@@ -138,12 +138,12 @@ country_decisions = {
 	 }
 		allow = {
 			owns = 33
-			treasury = 3000
+			treasury = 2000
 			adm_power = 100
 			dip_power = 200
 		}
 		effect = {
-			add_treasury = -3000
+			add_treasury = -2000
 			add_adm_power = -100
 			add_dip_power = -200
 			33 = {
@@ -307,7 +307,6 @@ country_decisions = {
 		potential = {
 			treasury = 500
 			owns = 183
-			NOT = { has_country_modifier = "fort_sunking" }
 			183 = {
 				owns = ROOT
 				NOT = { has_great_project = fort_sunking }
@@ -318,18 +317,14 @@ country_decisions = {
 		
 		is_year = 1650
 			owns = 183
-			treasury = 4000
+			treasury = 3000
 			adm_power = 200
 		}
 		effect = {
-			add_treasury = -4000
+			add_treasury = -3000
 			add_adm_power = -200
 			183 = {
 				add_great_project = fort_sunking
-			}
-			add_country_modifier = {
-				name = "fort_sunking"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -355,7 +350,6 @@ country_decisions = {
 			183 = {	# Paris
 				cancel_construction = yes
 			}
-			remove_country_modifier = "fort_sunking"
 		}
 		ai_will_do = {
 			factor = 0
@@ -373,7 +367,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					treasury = 3500
+					treasury = 2500
 					owns = 134
 				}
 			}
@@ -387,20 +381,16 @@ country_decisions = {
 	 }
 		allow = {
 			owns = 134
-			treasury = 3500
-			adm_power = 500
-			dip_power = 350
+			treasury = 2500
+			adm_power = 300
+			dip_power = 250
 		}
 		effect = {
-			add_treasury = -3500
-			add_adm_power = -500
-			add_dip_power = -350
+			add_treasury = -2500
+			add_adm_power = -300
+			add_dip_power = -250
 			134 = {
 				add_great_project = hofburg
-			}
-			add_country_modifier = {
-				name = "hofburg"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -426,7 +416,6 @@ country_decisions = {
 			134 = {	# Wien
 				cancel_construction = yes
 			}
-			remove_country_modifier = "hofburg"
 		}
 		ai_will_do = {
 			factor = 0
@@ -440,11 +429,11 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					treasury = 5000
+					treasury = 4000
 					owns = 507
 				}
 			}
-			adm_tech = 15
+			adm_tech = 22
 			507 = {
 				owns = ROOT
 				NOT = { has_great_project = tajh_mahal }
@@ -453,20 +442,16 @@ country_decisions = {
 		}
 		allow = {
 			owns = 507
-			treasury = 5000
-			adm_power = 300
-			dip_power = 300
+			treasury = 4000
+			adm_power = 200
+			dip_power = 200
 		}
 		effect = {
-			add_treasury = -5000
-			add_adm_power = -300
-			add_dip_power = -300
+			add_treasury = -4000
+			add_adm_power = -200
+			add_dip_power = -200
 			507 = {
 				add_great_project = tajh_mahal
-			}
-			add_country_modifier = {
-				name = "tajh_mahal"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -492,7 +477,6 @@ country_decisions = {
 			507 = {	# Agra
 				cancel_construction = yes
 			}
-			remove_country_modifier = "tajh_mahal"
 		}
 		ai_will_do = {
 			factor = 0
@@ -501,30 +485,32 @@ country_decisions = {
 	construct_alhambra = {
 		major = yes
 		potential = {
-		iberia_region = {
-		    NOT = {
-				any_country = {
-                     religion_group = muslim
-		        }
-	        }
-        }
-			OR = {
-				ai = no
-				AND = {
-					treasury = 1000
-					owns = 223
+		NOT = {
+			any_country = {
+			    any_owned_province = {
+				    region = iberia_region
 				}
+                religion_group = muslim
+		    }
+	    }
+        
+		OR = {
+		    ai = no
+			AND = {
+				treasury = 1000
+				owns = 223
 			}
-			adm = 4
-			is_year = 1500
-			owns = 223
-			culture_group = iberian
-			223 = {
-				owns = ROOT
-				NOT = { has_great_project = alhambra }
-				NOT = { has_construction = great_project }
-			}
-	 }
+		}
+		ADM = 3
+		is_year = 1500
+		owns = 223
+		culture_group = iberian
+		223 = {
+			owns = ROOT
+			NOT = { has_great_project = alhambra }
+			NOT = { has_construction = great_project }
+		}
+	}
 		allow = {
 			owns = 223
 			treasury = 1000
@@ -540,10 +526,6 @@ country_decisions = {
 			add_mil_power = -100
 			223 = {
 				add_great_project = alhambra
-			}
-			add_country_modifier = {
-				name = "alhambra"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -569,7 +551,6 @@ country_decisions = {
 			223 = {	# Granada
 				cancel_construction = yes
 			}
-			remove_country_modifier = "alhambra"
 		}
 		ai_will_do = {
 			factor = 0
@@ -605,10 +586,6 @@ country_decisions = {
 			358 = {
 				add_great_project = alex_mayak
 			}
-			add_country_modifier = {
-				name = "alex_mayak"
-				duration = -1
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -633,7 +610,6 @@ country_decisions = {
 			358 = {	# Alexandria
 				cancel_construction = yes
 			}
-			remove_country_modifier = "alex_mayak"
 		}
 		ai_will_do = {
 			factor = 0
@@ -645,7 +621,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					treasury = 5000
+					treasury = 3500
 					owns = 1816
 				}
 			}
@@ -659,18 +635,14 @@ country_decisions = {
 		}
 		allow = {
 			owns = 1816
-			treasury = 5000
-			adm_power = 500
+			treasury = 3500
+			adm_power = 300
 		}
 		effect = {
-			add_treasury = -5000
-			add_adm_power = -500
+			add_treasury = -3500
+			add_adm_power = -300
 			1816 = {
 				add_great_project = letn_pekin
-			}
-			add_country_modifier = {
-				name = "letn_pekin"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -696,7 +668,6 @@ country_decisions = {
 			1816 = {	# Pekin
 				cancel_construction = yes
 			}
-			remove_country_modifier = "letn_pekin"
 		}
 		ai_will_do = {
 			factor = 0
@@ -730,10 +701,6 @@ country_decisions = {
 			1020 = {
 				add_great_project = ryuanji
 			}
-			add_country_modifier = {
-				name = "ryuanji"
-				duration = -1
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -758,7 +725,6 @@ country_decisions = {
 			1020 = {	# kioto
 				cancel_construction = yes
 			}
-			remove_country_modifier = "ryuanji"
 		}
 		ai_will_do = {
 			factor = 0
@@ -793,10 +759,6 @@ country_decisions = {
 			416 = {
 				add_great_project = atesgah
 			}
-			add_country_modifier = {
-				name = "atesgah"
-				duration = -1
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -821,7 +783,6 @@ country_decisions = {
 			416 = {	# azerbajan
 				cancel_construction = yes
 			}
-			remove_country_modifier = "atesgah"
 		}
 		ai_will_do = {
 			factor = 0
@@ -858,10 +819,6 @@ country_decisions = {
 			236 = {
 				add_great_project = tower
 			}
-			add_country_modifier = {
-				name = "tower"
-				duration = -1
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -886,7 +843,6 @@ country_decisions = {
 			236 = {	# london
 				cancel_construction = yes
 			}
-			remove_country_modifier = "tower"
 		}
 		ai_will_do = {
 			factor = 0
@@ -898,7 +854,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					treasury = 2000
+					treasury = 1500
 					owns = 104
 				}
 			}
@@ -911,8 +867,9 @@ country_decisions = {
 			}
 		}
 		allow = {
+		    is_year = 1450
 			owns = 104
-			treasury = 2000
+			treasury = 1500
 			adm_power = 300
 			mil_power = 100
 		}
@@ -922,10 +879,6 @@ country_decisions = {
 			add_mil_power = -100
 			104 = {
 				add_great_project = zam_sforza
-			}
-			add_country_modifier = {
-				name = "zam_sforza"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -951,7 +904,6 @@ country_decisions = {
 			104 = {	# milan
 				cancel_construction = yes
 			}
-			remove_country_modifier = "zam_sforza"
 		}
 		ai_will_do = {
 			factor = 0
@@ -963,7 +915,7 @@ country_decisions = {
 			OR = {
 				ai = no
 				AND = {
-					treasury = 1200
+					treasury = 1000
 					owns = 122
 				}
 			}
@@ -977,20 +929,17 @@ country_decisions = {
 		}
 		allow = {
 			owns = 122
-			treasury = 1200
+			treasury = 1000
 			mil_power = 300
 			dip_power = 100
+			mil = 4
 		}
 		effect = {
-			add_treasury = -1200
+			add_treasury = -1000
 			add_mil_power = -300
 			add_dip_power = -100
 			122 = {
 				add_great_project = cast_de_ovo
-			}
-			add_country_modifier = {
-				name = "cast_de_ovo"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -1016,7 +965,6 @@ country_decisions = {
 			122 = {	# napoli
 				cancel_construction = yes
 			}
-			remove_country_modifier = "cast_de_ovo"
 		}
 		ai_will_do = {
 			factor = 0
@@ -1043,20 +991,16 @@ country_decisions = {
 		}
 		allow = {
 			owns = 201
-			treasury = 2000
+			treasury = 1000
 			mil_power = 300
 			adm_power = 100
 		}
 		effect = {
-			add_treasury = -2000
+			add_treasury = -1000
 			add_mil_power = -300
 			add_adm_power = -100
 			201 = {
 				add_great_project = zam_if
-			}
-			add_country_modifier = {
-				name = "zam_if"
-				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -1082,10 +1026,93 @@ country_decisions = {
 			201 = {	# marcel
 				cancel_construction = yes
 			}
-			remove_country_modifier = "zam_if"
 		}
 		ai_will_do = {
 			factor = 0
 		}
 	}
+
+    construct_aachen_palace = {
+	    major = yes
+		potential = {
+			OR = {
+				ai = no
+				AND = {
+					treasury = 1500
+					owns = 1878
+				}
+			}
+			tag = WEK
+		    owns = 1878
+			1878 = {
+				owns = ROOT
+				NOT = { has_great_project = aachen_palace }
+				NOT = { has_construction = great_project }
+			}
+		}
+		allow = {
+			owns = 1878
+			treasury = 1500
+			adm_power = 100
+		}
+		effect = {
+			add_treasury = -1500
+			add_adm_power = -100
+			1878 = {
+				add_great_project = aachen_palace
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		} 
+	}
+	
+	cancel_aachen_palace = {
+		major = yes
+		potential = {
+			ai = no
+			owns = 1878
+			1878 = {
+				has_construction = great_project
+			}
+		}
+		allow = {
+			1878 = {
+				has_construction = great_project
+			}
+		}
+		effect = {
+			1878 = {
+				cancel_construction = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+#	construct_volga_don_volok = { # Soon
+#		major = yes
+#		
+#		potential = {	
+#			owns = 1971			
+#			1971 = {
+#				NOT = { has_great_project = volga_don_volok } 
+#				NOT = { has_construction = great_project }
+#			}
+#		}	
+#		allow = {
+#			owns = 1971
+#			controls = 464
+#			controls = 286
+#			treasury = 300
+#		}
+#		effect = {
+#			add_treasury = -100
+#			1971 = {	add_great_project = volga_don_volok	}
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
 }

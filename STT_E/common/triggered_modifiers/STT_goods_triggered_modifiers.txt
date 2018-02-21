@@ -10,7 +10,9 @@ grain_bonus_3 = {
 		grain = 4
 		NOT = { grain = 8 }	
 	}
-	land_forcelimit_modifier = 0.10
+	global_manpower_modifier = 0.05
+	land_forcelimit_modifier = 0.05
+	global_regiment_cost = -0.05
 }
 
 # Grain for the Army and the People - second level
@@ -21,7 +23,9 @@ grain_bonus_6 = {
 	trigger = { 
 		grain = 8
 	}
-	land_forcelimit_modifier = 0.20
+	global_manpower_modifier = 0.05
+	land_forcelimit_modifier = 0.10
+	global_regiment_cost = -0.10
 	global_colonial_growth = 20
 }
 

@@ -1,12 +1,12 @@
 #717 - Selenge
 
-owner = KHA		# The Oirads united much of Mongolia
-controller = KHA
-add_core = KHA
+owner = YUA		# The Oirads united much of Mongolia
+controller = YUA
+add_core = YUA
 culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Kherlen"
-trade_goods = wool
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
@@ -16,6 +16,11 @@ add_core = OIR
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
 1510.1.1 = {
 	owner = KHA
 	controller = KHA

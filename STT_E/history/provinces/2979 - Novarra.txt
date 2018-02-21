@@ -49,6 +49,7 @@ discovered_by = ottoman
 	controller = SPI
 	add_core = SPI
 	remove_core = HAB
+	remove_core = MLO
 }
 1792.9.1 = { controller = FRA } # Occupied by French troops
 1792.11.27 = {
@@ -61,3 +62,9 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+1861.3.14 = {
+	add_core = ITA
+	owner = ITA
+	controller = ITA
+	remove_core = SPI
+}

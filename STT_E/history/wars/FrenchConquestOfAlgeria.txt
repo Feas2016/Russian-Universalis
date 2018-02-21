@@ -1,0 +1,49 @@
+name = "Французское завоевание Алжира"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 338
+}
+
+1830.6.14 = {
+	add_attacker = FRA
+	add_defender = TUR
+	add_defender = ALG
+}
+
+1844.5.30 = {
+	add_defender = MOR
+}
+
+1844.8.14 = {
+	battle = {
+		name = "Битва при Ислии"
+		location = 2465
+		attacker = {
+			commander = "Тома Робер Бюжо"
+			infantry = 10000
+			artillery = 16
+			losses = 1	#percent
+			country = FRA
+		}
+		defender = {
+			commander = "Мухаммед IV"
+			infantry = 30000
+			losses = 20	#percent
+			country = MOR
+		}
+		result = yes
+	}
+}
+
+1844.9.10 = {
+	rem_defender = MOR
+}
+
+# Truce
+1847.12.22 = {
+	rem_attacker = FRA
+	rem_defender = TUR
+	rem_defender = ALG
+}
+

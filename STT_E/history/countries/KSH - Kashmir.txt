@@ -3,12 +3,13 @@ primary_culture = kashmiri
 religion = shiite
 technology_group = indian
 capital = 508	# Srinagar
+religious_school = ismaili_school
 
 #Sultans of Kashmir
 1389.1.1 = {
 	monarch = {
-		name = "Sikandar"
-		dynasty = "Shah Miri"
+		name = "Сикандар"
+		dynasty = "Сайид"
 		ADM = 1
 		DIP = 1
 		MIL = 4
@@ -17,9 +18,9 @@ capital = 508	# Srinagar
 
 1389.1.1 = {
 	heir = {
-		name = "Ali Shah"
-		monarch_name = "Ali Shah I"
-		dynasty = "Shah Miri"
+		name = "Али Шах"
+		monarch_name = "Али Шах I"
+		dynasty = "Сайид"
 		birth_date = 1389.1.1
 		death_date = 1420.6.1
 		claim = 95
@@ -33,8 +34,8 @@ capital = 508	# Srinagar
 
 1413.1.1 = {
 	monarch = {
-		name = "Ali Shah I"
-		dynasty = "Shah Miri"
+		name = "Али Шах I"
+		dynasty = "Сайид"
 		ADM = 1
 		DIP = 3
 		MIL = 2
@@ -43,9 +44,9 @@ capital = 508	# Srinagar
 
 1413.1.1 = {
 	heir = {
-		name = "Zayn al-'Abidin"
-		monarch_name = "Zayn al-'Abidin"
-		dynasty = "Shah Miri"
+		name = "Зайн аль-Абидин"
+		monarch_name = "Зайн аль-Абидин"
+		dynasty = "Сайид"
 		birth_date = 1400.1.1
 		death_Date = 1470.5.12
 		claim = 95
@@ -57,19 +58,24 @@ capital = 508	# Srinagar
 
 1420.6.1 = {
 	monarch = {
-		name = "Zayn al-'Abidin"
-		dynasty = "Shah Miri"
+		name = "Зайн аль-Абидин"
+		dynasty = "Сайид"
 		ADM = 4
 		DIP = 4
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = just_personality
+	#add_ruler_personality = lawgiver_personality
+	#add_ruler_personality = tolerant_personality
 }
 
 1440.1.1 = {
 	heir = {
-		name = "Haydar Shah"
-		monarch_name = "Haydar Shah"
-		dynasty = "Shah Miri"
+		name = "Хайдар Шах"
+		monarch_name = "Хайдар Шах"
+		dynasty = "Сайид"
 		birth_date = 1440.1.1
 		death_Date = 1472.4.13
 		claim = 95
@@ -81,19 +87,22 @@ capital = 508	# Srinagar
 
 1470.5.12 = {
 	monarch = {
-		name = "Haydar Shah"
-		dynasty = "Shah Miri"
+		name = "Хайдар Шах"
+		dynasty = "Сайид"
 		ADM = 2
 		DIP = 2
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = sinner_personality
 }
 
 1470.5.12 = {
 	heir = {
-		name = "Hasan Shah"
-		monarch_name = "Hasan Shah"
-		dynasty = "Shah Miri"
+		name = "Хасан Шах"
+		monarch_name = "Хасан Шах"
+		dynasty = "Сайид"
 		birth_date = 1460.1.1
 		death_date = 1484.1.1
 		claim = 95
@@ -105,19 +114,21 @@ capital = 508	# Srinagar
 
 1472.4.13 = {
 	monarch = {
-		name = "Hasan Shah"
-		dynasty = "Shah Miri"
+		name = "Хасан Шах"
+		dynasty = "Сайид"
 		ADM = 2
 		DIP = 2
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = obsessive_perfectionist_personality
 }
 
 1472.4.13 = {
 	heir = {
-		name = "Muhammad Shah"
-		monarch_name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		monarch_name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		birth_date = 1460.1.1
 		death_Date = 1486.1.1
 		claim = 95
@@ -129,8 +140,8 @@ capital = 508	# Srinagar
 
 1484.1.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -139,9 +150,9 @@ capital = 508	# Srinagar
 
 1484.1.1 = {
 	heir = {
-		name = "Fath Shah"
-		monarch_name = "Fath Shah"
-		dynasty = "Shah Miri"
+		name = "Фатих Шах"
+		monarch_name = "Фатих Шах"
+		dynasty = "Сайид"
 		birth_date = 1460.1.1
 		death_Date = 1493.1.1
 		claim = 95
@@ -153,8 +164,8 @@ capital = 508	# Srinagar
 
 1486.1.1 = {
 	monarch = {
-		name = "Fath Shah"
-		dynasty = "Shah Miri"
+		name = "Фатих Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 1
 		MIL = 2
@@ -163,9 +174,9 @@ capital = 508	# Srinagar
 
 1486.1.1 = {
 	heir = {
-		name = "Muhammad Shah"
-		monarch_name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		monarch_name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		birth_date = 1470.1.1
 		death_Date = 1505.1.1
 		claim = 95
@@ -177,8 +188,8 @@ capital = 508	# Srinagar
 
 1493.1.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -189,8 +200,8 @@ capital = 508	# Srinagar
 
 1505.1.1 = {
 	monarch = {
-		name = "Fath Shah"
-		dynasty = "Shah Miri"
+		name = "Фатих Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 1
 		MIL = 2
@@ -201,8 +212,8 @@ capital = 508	# Srinagar
 
 1514.1.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -213,8 +224,8 @@ capital = 508	# Srinagar
 
 1515.1.1 = {
 	monarch = {
-		name = "Fath Shah"
-		dynasty = "Shah Miri"
+		name = "Фатих Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 1
 		MIL = 2
@@ -225,8 +236,8 @@ capital = 508	# Srinagar
 
 1517.8.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -237,8 +248,8 @@ capital = 508	# Srinagar
 
 1528.1.1 = {
 	monarch = {
-		name = "Ibrahim Shah"
-		dynasty = "Shah Miri"
+		name = "Ибрагим Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 2
 		MIL = 3
@@ -247,8 +258,8 @@ capital = 508	# Srinagar
 
 1529.1.1 = {
 	monarch = {
-		name = "Nazuk Shah"
-		dynasty = "Shah Miri"
+		name = "Назук Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 1
 		MIL = 2
@@ -257,8 +268,8 @@ capital = 508	# Srinagar
 
 1530.7.1 = {
 	monarch = {
-		name = "Muhammad Shah"
-		dynasty = "Shah Miri"
+		name = "Мухаммед Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -269,8 +280,8 @@ capital = 508	# Srinagar
 
 1537.6.1 = {
 	monarch = {
-		name = "Shams ad-Din"
-		dynasty = "Shah Miri"
+		name = "Шамс ад-Дин"
+		dynasty = "Сайид"
 		ADM = 2
 		DIP = 2
 		MIL = 2
@@ -279,8 +290,8 @@ capital = 508	# Srinagar
 
 1538.1.1 = {
 	monarch = {
-		name = "Isma'il Shah"
-		dynasty = "Shah Miri"
+		name = "Исмаил Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 2
 		MIL = 3
@@ -289,8 +300,8 @@ capital = 508	# Srinagar
 
 1540.1.1 = {
 	monarch = {
-		name = "Nazuk Shah"
-		dynasty = "Shah Miri"
+		name = "Назук Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 1
 		MIL = 2
@@ -301,8 +312,8 @@ capital = 508	# Srinagar
 
 1552.11.1 = {
 	monarch = {
-		name = "Ibrahim Shah"
-		dynasty = "Shah Miri"
+		name = "Ибрагим Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 2
 		MIL = 3
@@ -313,8 +324,8 @@ capital = 508	# Srinagar
 
 1555.1.1 = {
 	monarch = {
-		name = "Isma'il Shah"
-		dynasty = "Shah Miri"
+		name = "Исмаил Шах"
+		dynasty = "Сайид"
 		ADM = 0
 		DIP = 2
 		MIL = 3
@@ -325,8 +336,8 @@ capital = 508	# Srinagar
 
 1556.1.1 = {
 	monarch = {
-		name = "Mahmud Habib Shah"
-		dynasty = "Shah Miri"
+		name = "Хабиб Шах"
+		dynasty = "Сайид"
 		ADM = 2
 		DIP = 0
 		MIL = 4
@@ -335,8 +346,8 @@ capital = 508	# Srinagar
 
 1561.1.1 = {
 	monarch = {
-		name = "Ghazi Shah"
-		dynasty = "Chacki"
+		name = "Гази-хан Чак"
+		dynasty = "Чаки"
 		ADM = 2
 		DIP = 2
 		MIL = 2
@@ -345,8 +356,8 @@ capital = 508	# Srinagar
 
 1563.1.1 = {
 	monarch = {
-		name = "Husayn Shah I"
-		dynasty = "Chacki"
+		name = "Хусейн Шах I"
+		dynasty = "Чаки"
 		ADM = 2
 		DIP = 2
 		MIL = 2
@@ -355,9 +366,9 @@ capital = 508	# Srinagar
 
 1563.1.1 = {
 	heir = {
-		name = "'Ali Shah"
-		monarch_name = "'Ali Shah"
-		dynasty = "Chacki"
+		name = "Али Шах"
+		monarch_name = "Али Шах"
+		dynasty = "Чаки"
 		birth_date = 1540.1.1
 		death_date = 1579.5.1
 		claim = 95
@@ -369,8 +380,8 @@ capital = 508	# Srinagar
 
 1569.1.1 = {
 	monarch = {
-		name = "'Ali Shah"
-		dynasty = "Chacki"
+		name = "Али Шах"
+		dynasty = "Чаки"
 		ADM = 2
 		DIP = 2
 		MIL = 2
@@ -379,8 +390,8 @@ capital = 508	# Srinagar
 
 1579.5.1 = {
 	monarch = {
-		name = "Yusuf Shah"
-		dynasty = "Chacki"
+		name = "Юсуф Шах"
+		dynasty = "Чаки"
 		ADM = 1
 		DIP = 2
 		MIL = 4
@@ -389,8 +400,8 @@ capital = 508	# Srinagar
 
 1579.7.1 = {
 	monarch = {
-		name = "Saiyid Mubarak Baihaqi"
-		dynasty = "Chacki"
+		name = "Сайид Мубарак Байхаки"
+		dynasty = "Чаки"
 		ADM = 0
 		DIP = 0
 		MIL = 3
@@ -399,8 +410,8 @@ capital = 508	# Srinagar
 
 1579.10.1 = {
 	monarch = {
-		name = "Lohir Shah"
-		dynasty = "Chacki"
+		name = "Лохир Шах"
+		dynasty = "Чаки"
 		ADM = 1
 		DIP = 2
 		MIL = 2
@@ -409,8 +420,8 @@ capital = 508	# Srinagar
 
 1580.11.1 = {
 	monarch = {
-		name = "Yusuf Shah"
-		dynasty = "Chacki"
+		name = "Юсуф Шах"
+		dynasty = "Чаки"
 		ADM = 1
 		DIP = 2
 		MIL = 4
@@ -421,8 +432,8 @@ capital = 508	# Srinagar
 
 1586.3.1 = {
 	monarch = {
-		name = "Ya'qub Shah"
-		dynasty = "Chacki"
+		name = "Якуб Шах"
+		dynasty = "Чаки"
 		ADM = 0
 		DIP = 0
 		MIL = 2

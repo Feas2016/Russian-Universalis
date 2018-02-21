@@ -1,8 +1,8 @@
 # 100 Friesland - Principal cities: Groningen & Leeuwarden
 
-owner = FRI
-controller = FRI
-capital = "Groningen"
+owner = GRN			### STT
+controller = GRN	### STT
+capital = "Гронинген"### STT
 is_city = yes
 culture = frisian
 religion = catholic
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 trade_goods = wool 
 base_manpower = 3
-add_core = FRI
+add_core = GRN		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -26,6 +26,7 @@ discovered_by = ottoman
 1519.1.12 = { owner = SPA add_core = SPA remove_core = HAB } # Unification of Spain under Charles
 1524.1.1 = { controller = SPA } # Charles V annexes Friesland
 1536.1.1 = { religion = reformed reformation_center = reformed }
+1556.1.23 = { owner = NED controller = NED add_core = NED remove_core = SPA unrest = 0 } # Union of Utrecht - Friesland joins	### STT
 1559.5.12 = { unrest = 3 } # New bishoprics established in the Lowlands create an outrage
 1565.1.1 = { unrest = 5 } # Letters of Segovia, harsh persecution of Calvinists advocated by Philip I
 1566.4.5 = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
@@ -35,7 +36,7 @@ discovered_by = ottoman
 1569.1.1 = { unrest = 12 } # The Duke of Alba reforms the tax system ('tiende penning')
 1570.1.1 = { unrest = 20 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
 1577.2.12 = { unrest = 16 } # The 'Perpetual Edict' (Eeuwig Edict) is accepted by Don Juan
-1579.1.23 = { owner = NED controller = NED add_core = NED remove_core = SPA unrest = 0 } # Union of Utrecht - Friesland joins
+	### STT
 1648.10.24 = { hre = no } # The Peace of Westphalia
 1681.1.1 = { base_tax = 9 
 base_production = 9 } # Protestants expelled from France

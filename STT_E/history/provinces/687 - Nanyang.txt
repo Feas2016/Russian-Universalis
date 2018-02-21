@@ -1,12 +1,12 @@
 #687 - Zhoujiakou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = zhongyuan
 religion = confucianism
 capital = "Nanyang"
-trade_goods = cotton
+trade_goods = gems
 hre = no
 base_tax = 5 
 base_production = 5
@@ -17,9 +17,10 @@ add_core = LNG
 discovered_by = chinese
 discovered_by = nomad_group
 
-1628.1.1 = { revolt_risk = 6 } # Li Zicheng rebellion
+1368.1.1 = { owner = MNG controller = MNG remove_core = YUA add_core = MNG }
+1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
 1641.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB }
-1643.1.1 = { revolt = { } revolt_risk = 0 owner = CSH controller = CSH add_core = CSH } # The Shun dynasty of Li Zicheng
+1643.1.1 = { revolt = { } unrest = 0 owner = CSH controller = CSH add_core = CSH } # The Shun dynasty of Li Zicheng
 1645.2.1 = {
 	owner = QNG
 	controller = QNG

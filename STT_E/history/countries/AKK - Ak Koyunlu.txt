@@ -1,13 +1,65 @@
-government = steppe_horde
+government = tribal_federation
 primary_culture = turkish
+add_accepted_culture = kurdish
+add_accepted_culture = armenian
 religion = sunni
-technology_group = nomad_group
+technology_group = muslim
 capital = 418
+religious_school = hanafi_school
+
+1348.1.1 = {
+	monarch = {
+		name = "Факр Ад-Дин Кутлу"
+		dynasty = "Ак-Коюнлу"
+		birth_date = 1328.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1357.1.1 = {
+	heir = {
+		name = "Ахмад Бек"
+		monarch_name = "Ахмад Бек"
+		dynasty = "Ак-Коюнлу"
+		birth_date = 1357.1.1
+		death_date = 1389.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1378.1.1 = {
+	monarch = {
+		name = "Ахмад Бек"
+		dynasty = "Ак-Коюнлу"
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1389.1.1 = {
+	heir = {
+		name = "Кара Юлук"
+		monarch_name = "Кара Юлук"
+		dynasty = "Ак-Коюнлу"
+		birth_date = 1350.1.1
+		death_date = 1435.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
 
 1396.1.1 = {
 	monarch = {
-		name = "Qara Yьlьq Osman"
-		dynasty = "Aq Qoyunlu"
+		name = "Кара Юлук"
+		dynasty = "Ак-Коюнлу"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -17,9 +69,9 @@ capital = 418
 
 1396.1.1 = {
 	heir = {
-		name = "Ali"
-		monarch_name = "Ali"
-		dynasty = "Aq Qoyunlu"
+		name = "Али Джалал"
+		monarch_name = "Али Джалал"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1396.1.1
 		death_date = 1444.1.1
 		claim = 95
@@ -29,10 +81,12 @@ capital = 418
 	}
 }
 
+1420.1.1 = { historical_rival = MAM }	### STT
+
 1435.1.1 = {
 	monarch = {
-		name = "Ali"
-		dynasty = "Aq Qoyunlu"
+		name = "Али Джалал"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1396.1.1
 		adm = 0
 		dip = 1
@@ -42,10 +96,9 @@ capital = 418
 
 1435.1.1 = {
 	heir = {
-
-		name = "Cihangir"
-		monarch_name = "Cihangir"
-		dynasty = "Aq Qoyunlu"
+		name = "Джахангир Муизз"
+		monarch_name = "Джахангир Муизз"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1424.1.1
 		death_date = 1453.1.1
 		claim = 95
@@ -57,56 +110,59 @@ capital = 418
 
 1444.1.1 = {
 	monarch = {
-
-		name = "Cihangir"
-		dynasty = "Aq Qoyunlu"
+		name = "Джахангир Муизз"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1424.1.1
 		adm = 2
 		dip = 3
 		mil = 2
 	}
+	add_piety = -0.6
 }
 
 1444.1.1 = {
 	heir = {
-		name = "Uzun Hasan"
-		monarch_name = "Uzun Hasan"
-		dynasty = "Aq Qoyunlu"
+		name = "Узун Хасан"
+		monarch_name = "Узун Хасан"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1433.1.1
 		death_date = 1478.1.5
 		claim = 95
 		adm = 4
-		dip = 4
-		mil = 5
+		dip = 5
+		mil = 6
 		leader = {	
-			name = "Uzun Hasan"
+			name = "Узун Хасан"
 			type = general
-			rank = 0	
 			fire = 4	
 			shock = 5	
 			manuever = 5	
 			siege = 0
 		}
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = bold_fighter_personality
 }
 
 1453.1.1 = {
 	monarch = {
-		name = "Uzun Hasan"
-		dynasty = "Aq Qoyunlu"
+		name = "Узун Хасан"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1433.1.1
 		adm = 4
-		dip = 4
-		mil = 5
-		leader = {	name = "Uzun Hasan"            	type = general	rank = 0	fire = 4	shock = 5	manuever = 5	siege = 0}
+		dip = 5
+		mil = 6
+		leader = {	name = "Узун Хасан"            	type = general	fire = 4	shock = 5	manuever = 5	siege = 0}
 	}
+	add_ruler_personality = bold_fighter_personality
+	clear_scripted_personalities = yes
 }
 
 1453.1.1 = {
 	heir = {
-		name = "Halоl"
-		monarch_name = "Halоl"
-		dynasty = "Aq Qoyunlu"
+		name = "Халиль"
+		monarch_name = "Халиль"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1453.1.1
 		death_date = 1478.7.16
 		claim = 50
@@ -120,8 +176,8 @@ capital = 418
 
 1478.1.6 = {
 	monarch = {
-		name = "Halоl"
-		dynasty = "Aq Qoyunlu"
+		name = "Халиль"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1453.1.1
 		adm = 2
 		dip = 2
@@ -131,9 +187,9 @@ capital = 418
 
 1478.1.6 = {
 	heir = {
-		name = "Yaqыb"
-		monarch_name = "Yaqыb"
-		dynasty = "Aq Qoyunlu"
+		name = "Якуб"
+		monarch_name = "Якуб"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1458.1.1
 		death_date = 1490.12.25
 		claim = 50
@@ -145,8 +201,8 @@ capital = 418
 
 1478.7.16 = {
 	monarch = {
-		name = "Yaqыb"
-		dynasty = "Aq Qoyunlu"
+		name = "Якуб"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1458.1.1
 		adm = 1
 		dip = 3
@@ -156,9 +212,9 @@ capital = 418
 
 1478.7.16 = {
 	heir = {
-		name = "Baysungur"
-		monarch_name = "Baysungur"
-		dynasty = "Aq Qoyunlu"
+		name = "Байсункур"
+		monarch_name = "Байсункур"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1470.1.1
 		death_date = 1492.5.23
 		claim = 50
@@ -170,8 +226,8 @@ capital = 418
 
 1490.12.25 = {
 	monarch = {
-		name = "Baysungur"
-		dynasty = "Aq Qoyunlu"
+		name = "Байсункур"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1470.1.1
 		adm = 4
 		dip = 1
@@ -181,9 +237,9 @@ capital = 418
 
 1490.12.25 = {
 	heir = {
-		name = "Rьstem"
-		monarch_name = "Rьstem"
-		dynasty = "Aq Qoyunlu"
+		name = "Рустам"
+		monarch_name = "Рустам"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1470.1.1
 		death_date = 1496.2.8
 		claim = 50
@@ -195,8 +251,8 @@ capital = 418
 
 1492.5.23 = {
 	monarch = {
-		name = "Rьstem"
-		dynasty = "Aq Qoyunlu"
+		name = "Рустам"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1470.1.1
 		adm = 0
 		dip = 2
@@ -206,9 +262,9 @@ capital = 418
 
 1492.5.23 = {
 	heir = {
-		name = "Ahmed"
-		monarch_name = "Ahmed Gцvde"
-		dynasty = "Aq Qoyunlu"
+		name = "Ахмад"
+		monarch_name = "Ахмад"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		death_date = 1497.1.1
 		claim = 50
@@ -220,8 +276,8 @@ capital = 418
 
 1496.2.8 = {
 	monarch = {
-		name = "Ahmed Gцvde"
-		dynasty = "Aq Qoyunlu"
+		name = "Ахмад"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		adm = 1
 		dip = 1
@@ -231,9 +287,9 @@ capital = 418
 
 1496.2.8 = {
 	heir = {
-		name = "Murвd"
-		monarch_name = "Murвd"
-		dynasty = "Aq Qoyunlu"
+		name = "Мурад"
+		monarch_name = "Мурад"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		death_date = 1498.1.1
 		claim = 50
@@ -245,8 +301,8 @@ capital = 418
 
 1497.1.1 = {
 	monarch = {
-		name = "Murвd"
-		dynasty = "Aq Qoyunlu"
+		name = "Мурад"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		adm = 0
 		dip = 3
@@ -256,9 +312,9 @@ capital = 418
 
 1497.1.1 = {
 	heir = {
-		name = "Elvend"
-		monarch_name = "Elvend Mehmed"
-		dynasty = "Aq Qoyunlu"
+		name = "Алванд"
+		monarch_name = "Алванд"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		death_date = 1499.5.1
 		claim = 50
@@ -270,8 +326,8 @@ capital = 418
 
 1498.1.1 = {
 	monarch = {
-		name = "Elvend Mehmed"
-		dynasty = "Aq Qoyunlu"
+		name = "Алванд"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		adm = 0
 		dip = 1
@@ -281,9 +337,9 @@ capital = 418
 
 1498.1.1 = {
 	heir = {
-		name = "Murвd"
-		monarch_name = "Murвd"
-		dynasty = "Aq Qoyunlu"
+		name = "Мухаммед Мирза"
+		monarch_name = "Мухаммед Мирза"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		death_date = 1508.1.1
 		claim = 50
@@ -295,8 +351,8 @@ capital = 418
 
 1501.7.1 = {
 	monarch = {
-		name = "Murвd"
-		dynasty = "Aq Qoyunlu"
+		name = "Мухаммед Мирза"
+		dynasty = "Ак-Коюнлу"
 		birth_date = 1475.1.1
 		adm = 0
 		dip = 3

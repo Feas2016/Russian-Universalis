@@ -13,7 +13,11 @@ base_manpower = 2
 is_city = yes
 add_core = HUN
 add_core = CRO
-add_local_autonomy = 25
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -33,3 +37,5 @@ discovered_by = ottoman
 	add_core = HAB
 	remove_core = TUR
 }
+1806.7.12 = { owner = AEM controller = AEM add_core = AEM }
+1867.3.15 = { owner = DUA controller = DUA add_core = DUA remove_core = AEM }

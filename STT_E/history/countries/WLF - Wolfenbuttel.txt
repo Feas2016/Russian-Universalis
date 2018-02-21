@@ -3,16 +3,492 @@ government_rank = 1
 technology_group = western
 primary_culture = hannoverian
 religion = catholic
-capital = 2971 # Lьneburg
+capital = 57 # Lьneburg
 
-1428.1.1 = {
+1373.1.1 = {
 	monarch = {
-		name = "Wilhem I"
-		dynasty =  "von Welf"
-		birth_date = 1392.1.1
-		death_date = 1482.6.4
-		adm = 1
+		name = "Генрих III"
+		dynasty = "Вельф"
+		birth_date = 1355.1.1
 		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1411.1.1 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих IV"
+		dynasty = "Вельф"
+		birth_date = 1411.1.1
+		death_date = 1473.12.17
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1416.10.16 = {
+	monarch = {
+		name = "Генрих IV"
+		dynasty = "Вельф"
+		birth_date = 1411.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1416.10.16 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм I"
+		dynasty = "Вельф"
+		birth_date = 1392.1.1
+		death_date = 1482.7.25
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+#Dukes of Braunschweig-Wolfenbьttel
+
+1473.12.7 = {
+	monarch = {
+		name = "Вильгельм I"
+		dynasty = "Вельф"
+		birth_date = 1392.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+# remark="Also Wilhelm I of Lьneburg"
+
+1473.12.7 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм II"
+		dynasty = "Вельф"
+		birth_date = 1425.1.1
+		death_date = 1503.7.7
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1482.7.25 = {
+	monarch = {
+		name = "Вильгельм II"
+		dynasty = "Вельф"
+		birth_date = 1425.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1482.7.25 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих V"
+		dynasty = "Вельф"
+		birth_date = 1463.6.24
+		death_date = 1514.6.23
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1503.10.7 = {
+	monarch = {
+		name = "Генрих V"
+		dynasty = "Вельф"
+		birth_date = 1463.6.24
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1503.10.7 = {
+	heir = {
+		name = "Генрих"
+		monarch_name = "Генрих VI"
+		dynasty = "Вельф"
+		birth_date = 1489.11.10
+		death_date = 1568.6.11
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1514.6.23 = {
+	monarch = {
+		name = "Генрих VI"
+		dynasty = "Вельф"
+		birth_date = 1489.11.10
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1528.6.29 = {
+	heir = {
+		name = "Юлиус"
+		monarch_name = "Юлиус I"
+		dynasty = "Вельф"
+		birth_date = 1528.6.29
+		death_date = 1589.5.3
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1529.1.1 = { religion = protestant }
+
+1568.6.11 = {
+	monarch = {
+		name = "Юлиус I"
+		dynasty = "Вельф"
+		birth_date = 1528.6.29
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1568.6.11 = {
+	heir = {
+		name = "Генрих Юлиус"
+		monarch_name = "Генрих Юлиус I"
+		dynasty = "Вельф"
+		birth_date = 1564.10.15
+		death_date = 1613.7.20
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1589.5.13 = {
+	monarch = {
+		name = "Генрих Юлиус I"
+		dynasty = "Вельф"
+		birth_date = 1564.10.15
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1591.4.15 = {
+	heir = {
+		name = "Фридрих Ульрих"
+		monarch_name = "Фридрих Ульрих I"
+		dynasty = "Вельф"
+		birth_date = 1591.4.15
+		death_date = 1634.8.21
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1613.7.20 = {
+	monarch = {
+		name = "Фридрих Ульрих I"
+		dynasty = "Вельф"
+		birth_date = 1591.4.15
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+#On Frederick Ulrich's death, his territories passed to a line of #distant cousins
+
+1613.7.20 = {
+	heir = {
+		name = "Август"
+		monarch_name = "Август II"
+		dynasty = "Вельф"
+		birth_date = 1579.4.10
+		death_date = 1666.9.17
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1625.5.9 = {
+	join_league = protestant
+}
+
+1635.1.1 = {
+	monarch = {
+		name = "Август II"
+		dynasty = "Вельф"
+		birth_date = 1579.4.10
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1635.1.1 = {
+	heir = {
+		name = "Рудольф Август"
+		monarch_name = "Рудольф Август I"
+		dynasty = "Вельф"
+		birth_date = 1627.5.16
+		death_date = 1704.1.26
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1642.1.1 = {
+	leave_league = protestant
+}
+
+1666.9.17 = {
+	monarch = {
+		name = "Рудольф Август I"
+		dynasty = "Вельф"
+		birth_date = 1627.5.16
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1666.9.17 = {
+	heir = {
+		name = "Антон Ульрих"
+		monarch_name = "Антон Ульрих I"
+		dynasty = "Вельф"
+		birth_date = 1633.10.4
+		death_date = 1714.3.27
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1704.1.26 = {
+	monarch = {
+		name = "Антон Ульрих I"
+		dynasty = "Вельф"
+		birth_date = 1633.10.4
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1704.1.26 = {
+	heir = {
+		name = "Август Вильгельм"
+		monarch_name = "Август Вильгельм I"
+		dynasty = "Вельф"
+		birth_date = 1662.3.8
+		death_date = 1731.3.23
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1714.1.27 = {
+	monarch = {
+		name = "Август Вильгельм I"
+		dynasty = "Вельф"
+		birth_date = 1662.3.8
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1714.1.27 = {
+	heir = {
+		name = "Людвиг Рудольф"
+		monarch_name = "Людвиг Рудольф I"
+		dynasty = "Вельф"
+		birth_date = 1671.7.22
+		death_date = 1735.3.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1731.3.23 = {
+	monarch = {
+		name = "Людвиг Рудольф I"
+		dynasty = "Вельф"
+		birth_date = 1671.7.22
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1731.3.23 = {
+	heir = {
+		name = "Фердинанд Альбрехт"
+		monarch_name = "Фердинанд Альбрехт I"
+		dynasty = "Вельф"
+		birth_date = 1680.5.29
+		death_date = 1735.9.2
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1735.3.1 = {
+	monarch = {
+		name = "Фердинанд Альбрехт I"
+		dynasty = "Вельф"
+		birth_date = 1680.5.29
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1735.3.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "Вельф"
+		birth_date = 1713.8.1
+		death_date = 1780.3.26
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+# Dukes of Braunschweig (after 1753)
+1735.9.13 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "Вельф"
+		birth_date = 1713.8.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1735.10.9 = {
+	heir = {
+		name = "Карл Вильгельм"
+		monarch_name = "Карл II Вильгельм"
+		dynasty = "Вельф"
+		birth_date = 1735.10.9
+		death_date = 1806.10.16
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1780.3.26 = {
+	monarch = {
+		name = "Карл II Вильгельм"
+		dynasty = "Вельф"
+		birth_date = 1735.10.9
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1780.3.26 = {
+	heir = {
+		name = "Фридрих Вильгельм"
+		monarch_name = "Фридрих Вильгельм"
+		birth_date = 1771.10.9
+		death_date = 1815.6.6
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1806.10.16 = {
+	monarch = {
+		name = "Фридрих Вильгельм"
+		dynasty = "Вельф"
+		birth_date = 1771.10.9
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+
+
+1815.6.6 = {
+	monarch = {
+		name = "Карл II"
+		dynasty = "Вельф"
+		birth_date = 1804.10.30
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1815.6.6 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм III"
+		birth_date = 1806.4.25
+		death_date = 1884.10.18
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1830.9.9 = {
+	monarch = {
+		name = "Вильгельм III"
+		dynasty = "Вельф"
+		birth_date = 1806.10.18
+		dip = 2
+		adm = 2
 		mil = 2
 	}
 }

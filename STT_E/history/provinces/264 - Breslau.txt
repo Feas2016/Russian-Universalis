@@ -4,8 +4,8 @@ owner = BRL
 controller = BRL
 culture = schlesian
 religion = catholic
-capital = "Breslau"
-trade_goods = iron
+capital = "Бреслау"
+trade_goods = paper
 hre = yes
 base_tax = 3
 base_production = 4
@@ -45,3 +45,5 @@ add_permanent_province_modifier = {
 base_production = 8 base_manpower = 13 }
 1763.1.1 = { remove_core = HAB } # End of 3rd Silesian war
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1866.8.1 = { owner = NDB controller = NDB add_core = NDB remove_core = PRU }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB }

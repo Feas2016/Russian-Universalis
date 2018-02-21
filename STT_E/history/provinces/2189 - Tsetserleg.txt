@@ -1,11 +1,11 @@
 # 2189 - Tsetserleg
 
-owner = OIR
-controller = OIR
-add_core = OIR
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = khalkha
 religion = tengri_pagan_reformed
-capital = "Tsetserleg"
+capital = "Цетсерлег"	### STT
 trade_goods = fur
 hre = no
 base_tax = 2 
@@ -15,12 +15,18 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
+
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
 1454.1.1 = {
 	owner = KHA
 	controller = KHA
 	add_core = KHA
 } # Mark?rgis Khan of the Gold Family rises to power after Esen's death.
-1633.1.1 = { discovered_by = RUS }
+1633.1.1 = { discovered_by = TSR }
 1635.4.1 = {
 	owner = KLK
 	controller = KLK

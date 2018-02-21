@@ -5,11 +5,202 @@ religion = catholic
 technology_group = western
 capital = 99	# Coevorde
 
+1096.1.1 = {
+	monarch = {
+		name = "Герхард I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1065.1.1
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+1129.3.8 = {
+	monarch = {
+		name = "Герхард II"
+		dynasty = "фон Вассенберг"
+		birth_date = 1090.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1131.10.16 = {
+	monarch = {
+		name = "Генрих I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1117.5.27
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1182.9.10 = {
+	monarch = {
+		name = "Оттон I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1150.1.1
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}
+
+1207.1.1 = {
+	monarch = {
+		name = "Герхард III"
+		dynasty = "фон Вассенберг"
+		birth_date = 1185.1.1
+		adm = 5
+		dip = 4
+		mil = 1
+	}
+}
+
+1229.10.22 = {
+	monarch = {
+		name = "Оттон II"
+		dynasty = "фон Вассенберг"
+		birth_date = 1215.1.1
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
+
+1271.1.10 = {
+	monarch = {
+		name = "Рейнальд I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1255.1.1
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+1295.1.1 = {
+	heir = {
+		name = "Рейнальд"
+		monarch_name = "Рейнальд II"
+		dynasty = "фон Вассенберг"
+		birth_date = 1295.1.1
+		death_date = 1343.10.12
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1326.10.9 = {
+	monarch = {
+		name = "Рейнальд II"
+		dynasty = "фон Вассенберг"
+		birth_date = 1295.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1333.5.13 = {
+	heir = {
+		name = "Рейнальд"
+		monarch_name = "Рейнальд III"
+		dynasty = "фон Вассенберг"
+		birth_date = 1333.5.13
+		death_date = 1371.12.4
+		claim = 95
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1343.10.12 = {
+	monarch = {
+		name = "Рейнальд III"
+		dynasty = "фон Вассенберг"
+		birth_date = 1333.5.13
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1343.10.12 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1325.1.1
+		death_date = 1399.3.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1361.8.22 = {
+	monarch = {
+		name = "Эдуард I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1336.3.12
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+1343.10.12 = {
+	heir = {
+		name = "Мария"
+		monarch_name = "Мария I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1325.1.1
+		death_date = 1399.3.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1371.8.24 = {
+	monarch = {
+		name = "Рейнальд III"
+		dynasty = "фон Вассенберг"
+		birth_date = 1333.5.13
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+1371.12.4 = {
+	monarch = {
+		name = "Матильда I"
+		dynasty = "фон Вассенберг"
+		birth_date = 1320.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}
+
 
 1379.1.1 = {
 	monarch = {
-		name = "Willem"
-		dynasty= "van Jьlich-Hengebach"
+		name = "Вильгельм I"
+		dynasty = "фон Генгебах"
 		birth_date = 1364.3.5
 		adm = 4
 		dip = 2
@@ -19,9 +210,9 @@ capital = 99	# Coevorde
 
 1379.1.1 = {
 	heir = {
-		name = "Reinoud"
-		monarch_name = "Reinoud IV"
-		dynasty = "van Jьlich-Hengebach"
+		name = "Рейнальд"
+		monarch_name = "Рейнальд IV"
+		dynasty = "фон Генгебах"
 		birth_date = 1365.1.1
 		death_date = 1423.6.25
 		claim = 80
@@ -33,8 +224,8 @@ capital = 99	# Coevorde
 
 1402.1.1 = {
 	monarch = {
-		name = "Reinoud IV"
-		dynasty= "van Jьlich-Hengebach"
+		name = "Рейнальд IV"
+		dynasty= "фон Генгебах"
 		birth_date = 1365.1.1
 		adm = 1
 		dip = 3
@@ -44,8 +235,8 @@ capital = 99	# Coevorde
 
 1423.6.29 = {
 	monarch = {
-		name = "Arnold I"
-		dynasty = "van Egmond"
+		name = "Арнольд I"
+		dynasty = "ван Эгмонт"
 		birth_date = 1410.7.14
 		adm = 3
 		dip = 3
@@ -53,10 +244,24 @@ capital = 99	# Coevorde
 	}
 }
 
+1438.2.12 = {
+	heir = {
+		name = "Адольф"
+		monarch_name = "Адольф I"
+		dynasty = "ван Эгмонт"
+		birth_date = 1438.2.12
+		death_date = 1471.7.23
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
 1465.1.11 = {
 	monarch = {
-		name = "Adolf I"
-		dynasty = "van Egmond"
+		name = "Адольф I"
+		dynasty = "ван Эгмонт"
 		birth_date = 1438.2.12
 		adm = 2
 		dip = 1
@@ -66,8 +271,8 @@ capital = 99	# Coevorde
 
 1471.7.23 = {
 	monarch = {
-		name = "Arnold I"
-		dynasty = "van Egmond"
+		name = "Арнольд I"
+		dynasty = "ван Эгмонт"
 		birth_date = 1410.7.14
 		adm = 3
 		dip = 3
@@ -77,8 +282,8 @@ capital = 99	# Coevorde
 
 1477.1.5 = {
 	monarch = {
-		name = "Adolf I"
-		dynasty = "van Egmond"
+		name = "Адольф I"
+		dynasty = "ван Эгмонт"
 		birth_date = 1438.2.12
 		adm = 2
 		dip = 1
@@ -88,8 +293,8 @@ capital = 99	# Coevorde
 
 1477.6.27 = {
 	monarch = {
-		name = "Maria I"
-		dynasty = "de Bourgogne"
+		name = "Мария I"
+		dynasty = "де Валуа"
 		birth_date = 1457.2.13
 		adm = 3
 		dip = 4
@@ -102,8 +307,8 @@ capital = 99	# Coevorde
 
 1492.1.1 = {
 	monarch = {
-		name = "Karel II"
-		dynasty = "van Egmond"
+		name = "Карл II"
+		dynasty = "ван Эгмонд"
 		birth_date = 1467.11.9
 		adm = 2
 		dip = 3
@@ -111,12 +316,12 @@ capital = 99	# Coevorde
 	}
 }
 
-1520.1.1 = { leader = { name = "Maarten van Rossum" type = general rank = 1 fire = 2 shock = 3 manuever = 3 siege = 0 death_date = 1555.6.7 } }
+1520.1.1 = { leader = { name = "Маартен ван Россум" type = general fire = 2 shock = 3 manuever = 3 siege = 0 death_date = 1555.6.7 } }
 
 1538.6.30 = {
 	monarch = {
-		name = "Willem III de Rijke"
-		dynasty = "von der Mark"
+		name = "Вильгельм III"
+		dynasty = "фон дер Марк"
 		birth_date = 1516.7.28
 		adm = 2
 		dip = 3

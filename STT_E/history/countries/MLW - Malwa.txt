@@ -3,12 +3,14 @@ primary_culture = malvi
 religion = sunni
 technology_group = indian
 capital = 526	# Mandu
+add_accepted_culture = rajput
+religious_school = hanafi_school
  
 #Sultans of Malwa
 1390.1.1 = {
 	monarch = {
-		name = "Dilavar Khan Husain"
-		dynasty = "Ghuri"
+		name = "Амид-шах Дауд"
+		dynasty = "Гури"
 		ADM = 1
 		DIP = 2
 		MIL = 2
@@ -17,9 +19,9 @@ capital = 526	# Mandu
 
 1390.1.1 = {
 	heir = {
-		name = "Alp Khan Hushang"
-		monarch_name = "Alp Khan Hushang"
-		dynasty = "Ghuri"
+		name = "Хушанг"
+		monarch_name = "Хушанг-шах"
+		dynasty = "Гури"
 		birth_date = 1380.1.1
 		death_date = 1435.1.1
 		claim = 95
@@ -33,8 +35,8 @@ capital = 526	# Mandu
 
 1405.1.1 = {
 	monarch = {
-		name = "Alp Khan Hushang"
-		dynasty = "Ghuri"
+		name = "Хушанг-шах"
+		dynasty = "Гури"
 		ADM = 3
 		DIP = 3
 		MIL = 0
@@ -43,9 +45,9 @@ capital = 526	# Mandu
 
 1405.1.1 = {
 	heir = {
-		name = "Ghazni"
-		monarch_name = "Ghazni Khan"
-		dynasty = "Ghuri"
+		name = "Мухаммед"
+		monarch_name = "Мухаммед-шах"
+		dynasty = "Гури"
 		birth_date = 1380.1.1
 		death_date = 1436.5.3
 		claim = 95
@@ -57,8 +59,8 @@ capital = 526	# Mandu
 
 1435.1.1 = {
 	monarch = {
-		name = "Ghazni Khan"
-		dynasty = "Ghuri"
+		name = "Мухаммед-шах I"
+		dynasty = "Гури"
 		ADM = 2
 		DIP = 1
 		MIL = 2
@@ -67,19 +69,24 @@ capital = 526	# Mandu
 
 1436.5.3 = {
 	monarch = {
-		name = "Mahmud I"
-		dynasty = "Khalji"
+		name = "Мухаммед I"
+		dynasty = "Халджи"
 		ADM = 5
 		DIP = 5
 		MIL = 6
 	}
+	clear_scripted_personalities = yes
+	#add_ruler_personality = just_personality
+	add_ruler_personality = careful_personality #Most dominant Personality aspect
+	#add_ruler_personality = well_connected_personality
+	#add_ruler_personality = tolerant_personality
 }
 
 1450.1.1 = {
 	heir = {
-		name = "Ghiyath Shah"
-		monarch_name = "Ghiyath Shah"
-		dynasty = "Khalji"
+		name = "Гияс"
+		monarch_name = "Гияс-шах"
+		dynasty = "Халджи"
 		birth_date = 1450.1.1
 		death_date = 1500.11.18
 		claim = 95
@@ -91,19 +98,23 @@ capital = 526	# Mandu
 
 1469.5.30 = {
 	monarch = {
-		name = "Ghiyath Shah"
-		dynasty = "Khalji"
+		name = "Гийас-шах"
+		dynasty = "Халджи"
 		ADM = 1
 		DIP = 3
 		MIL = 1
 	}
+	clear_scripted_personalities = yes
+	#add_ruler_personality = just_personality
+	#add_ruler_personality = kind_hearted_personality
+	add_ruler_personality = sinner_personality
 }
 
 1469.5.30 = {
 	heir = {
-		name = "Nasir Shah"
-		monarch_name = "Nasir Shah"
-		dynasty = "Khalji"
+		name = "Абдул Кадир"
+		monarch_name = "Насир-шах"
+		dynasty = "Халджи"
 		birth_date = 1469.5.30
 		death_date = 1511.4.30
 		claim = 95
@@ -115,19 +126,23 @@ capital = 526	# Mandu
 
 1500.11.18 = {
 	monarch = {
-		name = "Nasir Shah"
-		dynasty = "Khalji"
+		name = "Насир-шах"
+		dynasty = "Халджи"
 		ADM = 1
 		DIP = 0
 		MIL = 3
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = cruel_personality
+	#add_ruler_personality = tolerant_personality
+	#add_ruler_personality = intricate_web_weaver_personality
 }
 
 1500.11.18 = {
 	heir = {
-		name = "Mahmud Shah"
-		monarch_name = "Mahmud Shah"
-		dynasty = "Khalji"
+		name = "Шихаб"
+		monarch_name = "Шихаб-шах"
+		dynasty = "Халджи"
 		birth_date = 1490.1.1
 		death_date = 1531.3.29
 		claim = 95
@@ -139,17 +154,24 @@ capital = 526	# Mandu
 
 1511.4.30 = {
 	monarch = {
-		name = "Mahmud Shah"
-		dynasty = "Khalji"
+		name = "Махмуд-шах"
+		dynasty = "Халджи"
 		ADM = 0
 		DIP = 0
 		MIL = 2
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = naive_personality
+	#add_ruler_personality = babbling_buffoon_personality
+	#add_ruler_personality = bold_fighter_personality
 }
 
+1519.1.1 = {
+	remove_accepted_culture = rajput
+}
 #1531.3.29 = {
 #	monarch = {
-#		name = "Gujarat occupation"
+#		name = "Гаджарат оккупация"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 0
@@ -158,8 +180,8 @@ capital = 526	# Mandu
 
 1536.1.1 = {
 	monarch = {
-		name = "Qadir Shah"
-		dynasty = "Qadirid"
+		name = "Кадир-шах"
+		dynasty = "Кадирид"
 		ADM = 2
 		DIP = 1
 		MIL = 0
@@ -168,7 +190,7 @@ capital = 526	# Mandu
 
 #1542.1.1 = {
 #	monarch = {
-#		name = "Mughal Occupation"
+#		name = "Мунгальская оккупация"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -177,8 +199,8 @@ capital = 526	# Mandu
 
 1554.1.1 = {
 	monarch = {
-		name = "Salim Shah"
-		dynasty = "Shaja'atid"
+		name = "Салим-шах"
+		dynasty = "Шаяатид"
 		ADM = 1
 		DIP = 1
 		MIL = 0
@@ -187,9 +209,9 @@ capital = 526	# Mandu
 
 1554.1.1 = {
 	heir = {
-		name = "Baz Bahadur"
-		monarch_name = "Baz Bahadur"
-		dynasty = "Shaja'atid"
+		name = "Баз-Бахадур-шах"
+		monarch_name = "Баз-Бахадур-шах"
+		dynasty = "Шаяатид"
 		birth_date = 1534.1.1
 		death_date = 1562.1.1
 		claim = 95
@@ -201,8 +223,8 @@ capital = 526	# Mandu
 
 1555.1.1 = {
 	monarch = {
-		name = "Baz Bahadur"
-		dynasty = "Shaja'atid"
+		name = "Шихаб-шах"
+		dynasty = "Шаяатид"
 		ADM = 2
 		DIP = 0
 		MIL = 0
@@ -211,7 +233,7 @@ capital = 526	# Mandu
 
 #1562.1.1 = {
 #	monarch = {
-#		name = "Mughal occupation"
+#		name = "Мунгальская оккупация"
 #		ADM = 2
 #		DIP = 2
 #		MIL = 2
@@ -223,8 +245,8 @@ capital = 526	# Mandu
 
 1728.1.1 = {
 	monarch = {
-		name = "Malhar Rao I"
-		dynasty = "Holkar"
+		name = "Малхар Рао I"
+		dynasty = "Холкар"
 		ADM = 2
 		DIP = 3
 		MIL = 5
@@ -233,9 +255,9 @@ capital = 526	# Mandu
 
 1740.1.1 = {
 	heir = {
-		name = "Mali"
-		monarch_name = "Mali Rao"
-		dynasty = "Holkar"
+		name = "Мали"
+		monarch_name = "Мали Рао"
+		dynasty = "Холкар"
 		birth_date = 1740.1.1
 		death_date = 1767.4.5
 		claim = 95
@@ -247,8 +269,8 @@ capital = 526	# Mandu
 
 1766.5.19 = {
 	monarch = {
-		name = "Mali Rao"
-		dynasty = "Holkar"
+		name = "Мали Рао"
+		dynasty = "Холкар"
 		ADM = 0
 		DIP = 0
 		MIL = 1
@@ -257,9 +279,9 @@ capital = 526	# Mandu
 
 1766.5.19 = {
 	heir = {
-		name = "Ahalya Bai"
-		monarch_name = "Ahalya Bai"
-		dynasty = "Holkar"
+		name = "Ахаля Баи"
+		monarch_name = "Ахаля Баи"
+		dynasty = "Холкар"
 		birth_date = 1740.1.1
 		death_date = 1818.1.1
 		claim = 95
@@ -272,8 +294,8 @@ capital = 526	# Mandu
 
 1767.4.5 = {
 	monarch = {
-		name = "Ahalya Bai"
-		dynasty = "Holkar"
+		name = "Ахаля Баи"
+		dynasty = "Холкар"
 		ADM = 6
 		DIP = 4
 		MIL = 2

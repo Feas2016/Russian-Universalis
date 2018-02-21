@@ -1,0 +1,357 @@
+government = constitutional_republic
+government_rank = 2
+technology_group = western
+primary_culture = flemish
+add_accepted_culture = wallonian
+religion = catholic
+capital = 92	# Brussel
+
+1790.1.11 = {
+	monarch = {
+		name = "Хендрик ван дер Ноот"
+		birth_date = 1731.1.7
+		dip = 4
+		adm = 4
+		mil = 2
+	}
+}
+
+1790.12.2 = {
+	monarch = {
+		name = "(Вакантно)"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1830.8.25 = {
+	monarch = {
+		name = "Временное правительство"
+		dip = 3
+		adm = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1831.6.4 = {
+	monarch = {
+		name = "Леопольд I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1790.12.16
+		dip = 4
+		adm = 3
+		mil = 5
+	}
+}
+
+1831.6.4 = {
+	government = constitutional_monarchy
+}
+
+1832.8.9 = {
+	queen = {
+		country_of_origin = FRA
+		name = "Луиза Мария"
+		dynasty = "д'Орлеан"
+		birth_date = 1812.4.3
+		death_date = 1850.10.11
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1835.4.9 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name = "Леопольд II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1835.4.9
+		death_date = 1909.12.17
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1865.12.10 = {
+	monarch = {
+		name = "Леопольд II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1835.4.9
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1865.12.10 = {
+	queen = {
+		country_of_origin = DUA
+		name = "Мария Генриетта"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1836.8.23
+		death_date = 1902.9.19
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1865.12.10 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name = "Леопольд III"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1859.6.12
+		death_date = 1869.1.22
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+}
+
+1869.6.3 = {
+	heir = {
+		name = "Бодуэн"
+		monarch_name = "Бодуэн I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1869.6.3
+		death_date = 1893.1.23
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+1893.1.23 = {
+	heir = {
+		name = "Альберт"
+		monarch_name = "Альберт I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1875.4.8
+		death_date = 1934.2.17
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1909.12.17 = {
+	monarch = {
+		name = "Альберт I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1875.4.8
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1909.12.17 = {
+	queen = {
+		country_of_origin = GER
+		name = "Елизавета"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1876.7.25
+		death_date = 1934.2.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1909.12.17 = {
+	heir = {
+		name = "Леопольд"
+		monarch_name ="Леопольд III"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1901.11.3
+		death_date = 1983.9.25
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1934.2.17 = {
+	monarch = {
+		name = "Леопольд III"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1901.11.3
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1934.2.17 = {
+	queen = {
+		country_of_origin = SWE
+		name = "Астрид"
+		dynasty = "Бернадот"
+		birth_date = 1905.11.17
+		death_date = 1935.8.29
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1934.2.17 = {
+	heir = {
+		name = "Бодуэн"
+		monarch_name = "Бодуэн"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1930.9.7
+		death_date = 1993.7.31
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1934.2.17 = {
+	queen = {
+		country_of_origin = GBR
+		name = "Лилиан"
+		dynasty = "Байльс"
+		birth_date = 1916.11.28
+		death_date = 1951.7.17
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1951.7.17 = {
+	monarch = {
+		name = "Бодуэн"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1930.9.7
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1951.7.17 = {
+	heir = {
+		name = "Альберт"
+		monarch_name = "Альберт II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1934.6.6
+		death_date = 3000.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1960.12.15 = {
+	queen = {
+		country_of_origin = SPA
+		name = "Фабиола"
+		dynasty = "де Мора и Арагон"
+		birth_date = 1928.6.11
+		death_date = 1993.8.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1993.8.9 = {
+	monarch = {
+		name = "Альберт II"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1934.6.6
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1993.8.9 = {
+	queen = {
+		country_of_origin = ITA
+		name = "Паола"
+		dynasty = "Руффо ди Калабриа"
+		birth_date = 1937.9.10
+		death_date = 2013.7.21
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1993.8.9 = {
+	heir = {
+		name = "Филипп"
+		monarch_name = "Филипп"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1960.4.15
+		death_date = 3000.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+2013.7.21 = {
+	monarch = {
+		name = "Филипп"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1960.4.15
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+2013.7.21 = {
+	queen = {
+		country_of_origin = BLG
+		name = "Матильда"
+		dynasty = "д’Удекем д’Акоз"
+		birth_date = 1973.1.20
+		death_date = 3000.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+2013.7.21 = {
+	heir = {
+		name = "Елизавета"
+		monarch_name = "Елизавета"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 2001.10.25
+		death_date = 3000.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+		female = yes
+	}
+}

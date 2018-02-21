@@ -1,9 +1,9 @@
 # 2164 - Namning
 
-owner = MNG
-controller = MNG
+owner = YUA
+controller = YUA
 add_core = CGS
-add_core = MNG
+add_core = YUA
 culture = zhuang
 religion = confucianism
 capital = "Namning"
@@ -17,6 +17,7 @@ discovered_by = chinese
 discovered_by = nomad_group
 discovered_by = indian
 
+1368.1.1 = { owner = MNG controller = MNG remove_core = YUA add_core = MNG }
 1595.1.1 = { discovered_by = SPA }
 1651.12.1 = {
 	owner = QNG

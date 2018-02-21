@@ -1,13 +1,177 @@
 government = kaiserreich_government
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 2
-#innovative_narrowminded = 1
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -3
-#quality_quantity = 0
-#serfdom_freesubjects = -3
 primary_culture = austrian
+add_accepted_culture = hungarian
 religion = catholic
 technology_group = western
 capital = 134 # Wien
+government_rank = 3
+
+1867.3.15 = {
+	monarch = {
+		name = "Франц Иосиф I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1830.8.18
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1867.3.15 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Елизавета"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1837.12.24
+		death_date = 1898.9.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1867.3.15 = {
+	heir = {
+		name = "Рудольф"
+		monarch_name = "Рудольф I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1858.8.21
+		death_date = 1889.1.30
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1889.1.30 = {
+	heir = {
+		name = "Карл Людвиг"
+		monarch_name = "Карл Людвиг I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1833.7.30
+		death_date = 1896.5.19
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1896.5.19 = {
+	heir = {
+		name = "Франц Фердинанд"
+		monarch_name = "Франц II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1863.12.19
+		death_date = 1914.6.28
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1914.6.28 = {
+	heir = {
+		name = "Карл Франц Иосиф"
+		monarch_name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		death_date = 1922.4.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	monarch = {
+		name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	queen = {
+		country_of_origin = PAR
+		name = "Цита"
+		dynasty = "де Бурбон-Парма"
+		birth_date = 1892.5.9
+		death_date = 1989.3.14
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	heir = {
+		name = "Отто"
+		monarch_name = "Отто I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1912.11.20
+		death_date = 2011.6.4
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1922.4.1 = {
+	monarch = {
+		name = "Отто I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1912.11.20
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1961.1.11 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1961.1.11
+		death_date = 3000.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+2007.1.1 = {
+	monarch = {
+		name = "Карл II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1961.1.11
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+2007.1.1 = {
+	heir = {
+		name = "Фердинанд Звонимир"
+		monarch_name = "Фердинанд II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1997.6.21
+		death_date = 3000.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

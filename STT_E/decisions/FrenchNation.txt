@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_france_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -12,10 +13,13 @@ country_decisions = {
 			NOT = { tag = FRA }
 			NOT = { tag = PAP }
 			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
-			### STT
-			NOT = { exists = FRA }
-			NOT = { exists = WEK }
-			NOT = { exists = UEF }
+			NOT = { exists = FRA }	### STT
+			NOT = { exists = WEK }	### STT
+			NOT = { exists = UEF }	### STT
+			OR = {
+				ai = no
+				NOT = { exists = FRA }
+			}
 			OR = {
 				culture_group = french
 				primary_culture = basque
@@ -32,7 +36,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no			
 			NOT = { exists = FRA }
 			owns_core_province = 177	# Maine
@@ -44,19 +48,11 @@ country_decisions = {
 			owns_core_province = 186	# Champagne		
 		}
 		effect = {
-			change_tag = FRA
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+			183 = { #Paris
+				move_capital_effect = yes
 			}
+			change_tag = FRA
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -74,9 +70,20 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			FRA = {
-				set_capital = 183
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			set_country_flag = formed_france_flag
 		}
 		ai_will_do = {
 			factor = 1

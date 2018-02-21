@@ -1,0 +1,90 @@
+country_decisions = {
+
+incorporate_styria = {
+	major = yes
+		potential = {
+			tag = HAB
+			STY = {
+				exists = yes
+				is_subject_of = HAB
+			}
+			dip_tech = 3
+		}
+		allow = {
+			dip_tech = 4
+			stability = 1
+			adm_power = 50
+			dip_power = 50
+			is_at_war = no
+			OR = {
+				STY = {
+					years_in_union_under = {
+					who = HAB
+					years = 10
+					}
+				}
+				STY = {	
+					years_in_vassalage_under = {
+					who = HAB
+					years = 10
+					}				
+				}	
+			}
+		}
+		effect = {
+			inherit = STY
+			add_adm_power = -50
+			add_dip_power = -50
+			add_legitimacy = 5
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+
+incorporate_tirol = {
+	major = yes
+		potential = {
+			tag = HAB
+			TIR = {
+				exists = yes
+				is_subject_of = HAB
+			}
+			dip_tech = 6
+		}
+		allow = {
+			dip_tech = 7
+			stability = 1
+			adm_power = 50
+			dip_power = 50
+			is_at_war = no
+			OR = {
+				TIR = {
+					years_in_union_under = {
+					who = HAB
+					years = 10
+					}
+				}
+				TIR = {	
+					years_in_vassalage_under = {
+					who = HAB
+					years = 10
+					}				
+				}	
+			}
+		}
+		effect = {
+			inherit = TIR
+			add_adm_power = -50
+			add_dip_power = -50
+			add_legitimacy = 5
+			add_prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 500
+	}
+}

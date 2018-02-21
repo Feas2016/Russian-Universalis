@@ -3,7 +3,7 @@ government_rank = 1
 technology_group = western
 primary_culture = latvian
 religion = catholic
-capital = 1935	# Mitau
+capital = 39	# Mitau
 historical_friend = LIV
 
 1561.11.28 = { religion = protestant}
@@ -11,8 +11,9 @@ historical_friend = LIV
 1561.11.28 = {
     government = feudal_monarchy
 	monarch = {
-		name = "Gotthard"
-		dynasty = "Kettler"
+		name = "Готхард"
+		dynasty = "фон Кетлер"
+		birth_date = 1517.1.1
 		adm = 3
 		dip = 1
 		mil = 2
@@ -21,9 +22,9 @@ historical_friend = LIV
 
 1569.11.25 = {
 	heir = {
-		name = "Friedrich"
-		monarch_name = "Friedrich"
-		dynasty = "Kettler"
+		name = "Фридрих"
+		monarch_name = "Фридрих I"
+		dynasty = "фон Кетлер"
 		birth_date = 1569.11.25
 		death_date = 1642.8.17
 		claim = 95
@@ -33,11 +34,26 @@ historical_friend = LIV
 	}
 }
 
-1587.5.18 = {
+1587.5.17 = {
 	monarch = {
-		name = "Friedrich"
-		dynasty = "Kettler"
+		name = "Фридрих I"
+		dynasty = "фон Кетлер"
+		birth_date = 1569.11.25
 		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1587.5.17 = {
+	heir = {
+		name = "Вильгельм"
+		monarch_name = "Вильгельм"
+		dynasty = "фон Кетлер"
+		birth_date = 1574.6.20
+		death_date = 1640.4.7
+		claim = 95
+		adm = 3
 		dip = 2
 		mil = 3
 	}
@@ -45,11 +61,11 @@ historical_friend = LIV
 
 1610.10.28 = {
 	heir = {
-		name = "Jakob"
-		monarch_name = "Jakob"
-		dynasty = "Kettler"
+		name = "Якоб"
+		monarch_name = "Якоб"
+		dynasty = "фон Кетлер"
 		birth_date = 1610.10.28
-		death_date = 1682.1.1
+		death_date = 1682.12.31
 		claim = 95
 		adm = 3
 		dip = 2
@@ -59,19 +75,20 @@ historical_friend = LIV
 
 1641.8.18 = {
 	monarch = {
-		name = "Jakob"
-		dynasty = "Kettler"
-		adm = 3
-		dip = 2
+		name = "Якоб"
+		dynasty = "фон Кетлер"
+		birth_date = 1610.10.28
+		adm = 4
+		dip = 3
 		mil = 5
 	}
 }
 
 1650.7.6 = {
 	heir = {
-		name = "Friedrich Kasimir"
-		monarch_name = "Friedrich Kasimir"
-		dynasty = "Kettler"
+		name = "Фридрих Казимир"
+		monarch_name = "Фридрих II Казимир"
+		dynasty = "фон Кетлер"
 		birth_date = 1650.7.6
 		death_date = 1698.1.22
 		claim = 95
@@ -81,10 +98,11 @@ historical_friend = LIV
 	}
 }
 
-1681.12.30 = {
+1681.12.31 = {
 	monarch = {
-		name = "Friedrich Kasimir"
-		dynasty = "Kettler"
+		name = "Фридрих II Казимир"
+		dynasty = "фон Кетлер"
+		birth_date = 1650.7.6
 		adm = 1
 		dip = 2
 		mil = 3
@@ -93,9 +111,9 @@ historical_friend = LIV
 
 1692.7.19 = {
 	heir = {
-		name = "Friedrich Wilhelm"
-		monarch_name = "Freidrich Wilhelm"
-		dynasty = "Kettler"
+		name = "Фридрих Вильгельм"
+		monarch_name = "Фридрих III Вильгельм"
+		dynasty = "фон Кетлер"
 		birth_date = 1692.7.19
 		death_date = 1711.1.21
 		claim = 95
@@ -107,70 +125,68 @@ historical_friend = LIV
 
 1698.1.23 = {
 	monarch = {
-		name = "Friedrich Wilhelm"
-		dynasty = "Kettler"
+		name = "Фридрих III Вильгельм"
+		dynasty = "фон Кетлер"
+		birth_date = 1692.7.19
 		adm = 1
 		dip = 4
 		mil = 3
 	}
 }
 
-1711.1.3 = {
-	monarch = {
-		name = "Anna Ivanova"
-		dynasty = "Romanov"
-		adm = 2
-		dip = 2
-		mil = 2
-		female = yes
-	}
-}
-
-1730.1.1 = {
-	monarch = {
-		name = "Ferdinand"
-		dynasty = "Kettler"
+1698.1.23 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд"
+		dynasty = "фон Кетлер"
+		birth_date = 1655.11.2
+		death_date = 1737.5.4
+		claim = 95
 		adm = 0
 		dip = 2
 		mil = 5
 	}
 }
 
-1737.5.5 = {
+1711.1.21 = {
 	monarch = {
-		name = "Ernst Johann"
-		dynasty = "von Biron"
+		name = "Анна Иоанновна"
+		dynasty = "Романов"
+		birth_date = 1693.1.28
+		adm = 2
+		dip = 2
+		mil = 1
+		female = yes
+	}
+}
+
+1730.2.15 = {
+	monarch = {
+		name = "Фердинанд"
+		dynasty = "фон Кетлер"
+		birth_date = 1655.11.2
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}
+
+1737.5.4 = {
+	monarch = {
+		name = "Эрнст Иоганн"
+		dynasty = "фон Бирон"
+		birth_date = 1690.11.13
 		adm = 0
 		dip = 2
 		mil = 0
 	}
 }
 
-1758.11.17 = {
-	monarch = {
-		name = "Karl Christian Joseph"
-		dynasty = "von Wettin"
-		adm = 1
-		dip = 0
-		mil = 0
-	}
-}
-
-1763.2.20 = {
-	monarch = {
-		name = "Ernst Johann"
-		dynasty = "von Biron"
-		adm = 0
-		dip = 2
-		mil = 0
-	}
-}
-
-1763.2.20 = {
+1737.5.4 = {
 	heir = {
-		name = "Peter"
-		monarch_name = "Peter"
-		dynasty = "von Biron"
+		name = "Петер"
+		monarch_name = "Пётр"
+		dynasty = "фон Бирон"
 		birth_date = 1724.2.15
 		death_date = 1800.1.13
 		claim = 95
@@ -179,14 +195,98 @@ historical_friend = LIV
 		mil = 3
 	}
 }
-		
 
-1769.11.25 = {
+1740.11.9 = {
 	monarch = {
-		name = "Peter"
-		dynasty = "von Biron"
+		name = "Совет герцогства"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1758.11.17 = {
+	monarch = {
+		name = "Карл"
+		dynasty = "фон Веттин"
+		birth_date = 1733.7.13
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1758.11.17 = {
+	heir = {
+		name = "Альберт Казимир"
+		monarch_name = "Альберт I Казимир"
+		dynasty = "фон Веттин"
+		birth_date = 1738.7.11
+		death_date = 1822.2.10
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}	
+
+1763.2.20 = {
+	monarch = {
+		name = "Эрнст Иоганн"
+		dynasty = "фон Бирон"
+		birth_date = 1690.11.13
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+
+1763.2.20 = {
+	heir = {
+		name = "Петер"
+		monarch_name = "Пётр"
+		dynasty = "фон Бирон"
+		birth_date = 1724.2.15
+		death_date = 1800.1.13
+		claim = 95
 		adm = 1
 		dip = 3
 		mil = 3
+	}
+}	
+
+1769.11.25 = {
+	monarch = {
+		name = "Пётр"
+		dynasty = "фон Бирон"
+		birth_date = 1724.2.15
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}
+
+1769.11.25 = {
+	heir = {
+		name = "Карл Эрнст"
+		monarch_name = "Карл II Эрнст"
+		dynasty = "фон Бирон"
+		birth_date = 1728.10.11
+		death_date = 1801.10.4
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1795.3.28 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
 	}
 }

@@ -1,7 +1,7 @@
 #615 - Luang Prabang
 
-owner = LXA
-controller = LXA
+owner = MUA
+controller = MUA
 culture = lao
 religion = buddhism
 capital = "Xieng Tong"
@@ -11,13 +11,20 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = LXA
+add_core = MUA
 discovered_by = chinese
 discovered_by = indian
 
 add_permanent_province_modifier = {
 	name = minor_inland_center_of_trade_modifier
 	duration = -1
+}
+
+1354.1.1  = {
+	owner = LXA
+	controller = LXA
+	add_core = LXA
+	remove_core = MUA
 }
 
 1560.1.1 = { capital = "Luang Prabang" }

@@ -1,10 +1,11 @@
 #1049 - Hailanboo
 
-owner = MYR
-controller = MYR
+owner = YUA			### STT
+controller = YUA	### STT
+add_core = YUA 		### STT
 add_core = MYR
 culture = manchu
-religion = shamanism
+religion = siberian_shamanism ### STT
 capital = "Haiilanboo"
 trade_goods = fur
 hre = no
@@ -12,9 +13,19 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
+
+
+
 discovered_by = chinese
 discovered_by = nomad_group
 
+
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1399.1.1 = { owner = MYR add_core = MYR controller = MYR }
 1628.1.1 = {
 	owner = MCH
 	controller = MCH
@@ -26,5 +37,6 @@ discovered_by = nomad_group
 	add_core = QNG
 	remove_core = MCH
 } # The Qing Dynasty
-1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
+1643.1.1 = { discovered_by = TSR } # Vasily Poyarkov ### STT
 1709.1.1 = { discovered_by = SPA }
+1858.5.28 = { owner = RUS add_core = RUS controller = RUS }

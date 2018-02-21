@@ -1,0 +1,86 @@
+# These ideas are loaded after all country ideas, but before default idea.
+
+uralic_g_ideas = {
+	start = {
+		enemy_core_creation = 0.25
+		stability_cost_modifier = -0.20
+	}
+	
+	bonus = {
+		prestige = 0.5
+	}
+	
+	trigger = {
+		OR = {
+			culture_group = uralic_g
+			culture = chuvash
+		}
+	}
+	free = yes
+	
+	ug_mordvin_forests = {
+		hostile_attrition = 2
+	}
+	ug_not_popularity_language = {
+		global_spy_defence = 0.20
+	}
+	ug_old_gods = {
+		religious_unity = 0.25
+		global_missionary_strength = 0.01
+	}
+	ug_forests_kremlin = {
+		defensiveness = 0.15
+	}
+	ug_old_traditions = {
+		global_unrest = -2		
+	}
+	ug_unique_art = {
+		production_efficiency = 0.1
+	}
+	ug_volga_trade = {
+		trade_efficiency = 0.1
+		trade_range_modifier = 0.25
+	}
+}	
+
+russian_culture_ideas = {
+	start = {
+		cavalry_power = 0.15
+		fort_maintenance_modifier = -0.2
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.2
+	}
+	
+	trigger = {
+		culture_group = east_slavic
+		NOT = { tag = VIA }
+	}
+	free = yes
+	
+	orthodox_traditions = {
+		tolerance_own = 2
+	}
+	the_old_kingdoms = {
+		diplomatic_reputation = 2
+	}
+	multinational = {
+		num_accepted_cultures = 1
+	}
+	desire_for_freedom = {
+		enemy_core_creation = 0.5
+	}
+	forest_trails = {
+		land_attrition = -0.15
+		movement_speed = 0.1
+	}
+	stand_up_to_the_last = {
+		defensiveness = 0.2
+	}
+	russian_pride = {
+		land_morale = 0.15
+	}
+}
+
+

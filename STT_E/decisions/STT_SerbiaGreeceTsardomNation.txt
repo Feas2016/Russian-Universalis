@@ -1,0 +1,65 @@
+country_decisions = {
+	SerbiaGreeceTsardom_nation = {
+		major = yes
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = SGT }
+			NOT = { tag = YUG }
+			primary_culture = serbian
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+		    is_free_or_tributary_trigger = yes
+		    NOT = { is_year = 1400 }
+			adm_tech = 5
+			is_subject = no
+			is_at_war = no
+			accepted_culture = greek
+			owns_core_province = 143 # Albania
+			owns_core_province = 3001 # Skopje
+            owns_core_province = 3034 # Arta
+			owns_core_province = 147 # Thessaly
+			owns_core_province = 144 # Epir
+			owns_core_province = 1853 # Kastoria
+		}
+	 	effect = {
+		    1773 = { add_core = SGT }
+			3104 = { add_core = SGT }	  
+			146 = { add_core = SGT }
+			3003 = { add_core = SGT }
+			164 = { add_core = SGT }
+            145 = { add_core = SGT }
+			3033 = { add_core = SGT }	  
+			148 = { add_core = SGT }
+			3264 = { add_core = SGT }
+			149 = { add_core = SGT }
+			3105 = { add_core = SGT }	  
+			3106 = { add_core = SGT }
+			151 = { add_core = SGT }
+			3265 = { add_core = SGT }
+			if = {
+				limit = { 
+					NOT = { government_rank = 3 } 
+					}
+				set_government_rank = 3
+			}
+		    add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_tag = SGT
+			change_government = despotic_monarchy
+			add_prestige = 50
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+		    factor = 400
+		}
+	}
+}

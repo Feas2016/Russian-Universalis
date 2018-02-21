@@ -4,14 +4,349 @@ technology_group = western
 primary_culture = gascon
 add_accepted_culture = cosmopolitan_french
 religion = catholic
-capital = 3067	# Bordeaux
+capital = 195	# Bordeaux
+
+1009.1.1 = {
+	monarch = {
+		name = "Аманьё I"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1030.1.1 = {
+	monarch = {
+		name = "Аманьё II"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1050.1.1 = {
+	monarch = {
+		name = "Бернар Эзи I"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1097.1.1 = {
+	monarch = {
+		name = "Аманьё III"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1140.1.1 = {
+	monarch = {
+		name = "Бернар Эзи II"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1157.1.1 = {
+	monarch = {
+		name = "Аманьё IV"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1187.1.1 = {
+	monarch = {
+		name = "Аманьё V"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1209.11.20 = {
+	monarch = {
+		name = "Аманьё VI"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1240.1.1 = {
+	monarch = {
+		name = "Аманьё VII"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1270.1.1 = {
+	monarch = {
+		name = "Бернар Эзи IV"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1280.1.1 = {
+	monarch = {
+		name = "Мате"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1283.1.1 = {
+	monarch = {
+		name = "Изабелла"
+		dynasty = "д'Альбре"
+		dip = 3
+		adm = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1294.1.1 = {
+	monarch = {
+		name = "Аманьё VIII"
+		dynasty = "д'Альбре"
+		birth_date = 1260.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+	}
+}
+
+1309.1.1 = {
+	heir = {
+		name = "Бернар Эзи"
+		monarch_name = "Бернар Эзи V"
+		dynasty = "д'Альбре"
+		birth_date = 1295.1.1
+		death_date = 1358.1.1
+		adm = 2
+		dip = 4
+		mil = 4
+		claim = 95
+	}
+}
+
+1328.1.1 = {
+	monarch = {
+		name = "Бернар Эзи V"
+		dynasty = "д'Альбре"
+		birth_date = 1295.1.1
+		dip = 2
+		adm = 4
+		mil = 4
+	}
+}
+
+1338.8.1 = {
+	heir = {
+		name = "Арно Аманьё"
+		monarch_name = "Арно Аманьё IX"
+		dynasty = "д'Альбре"
+		birth_date = 1338.8.1
+		death_date = 1401.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+		claim = 95
+	}
+}
+
+1358.1.1 = {
+	monarch = {
+		name = "Арно Аманьё IX"
+		dynasty = "д'Альбре"
+		birth_date = 1338.8.1
+		dip = 4
+		adm = 4
+		mil = 5
+	}
+}
+
+1370.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "д'Альбре"
+		birth_date = 1370.1.1
+		death_date = 1415.10.25
+		adm = 3
+		dip = 3
+		mil = 4
+		claim = 95
+	}
+}
+
+1401.1.1 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "д'Альбре"
+		birth_date = 1370.1.1
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
 
 1407.1.1 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл II"
+		dynasty = "д'Альбре"
+		birth_date = 1407.1.1
+		death_date = 1471.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+		claim = 95
+	}
+}
+
+
+1415.10.25 = {
 	monarch = {
-		name = "Charles II"
-		dynasty = "d'Albret"
+		name = "Карл II"
+		dynasty = "д'Альбре"
+		birth_date = 1407.1.1
 		dip = 2
 		adm = 2
 		mil = 3
+	}
+}
+
+1420.1.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан I"
+		dynasty = "д'Альбре"
+		birth_date = 1420.1.1
+		death_date = 1468.1.3
+		adm = 3
+		dip = 3
+		mil = 3
+		claim = 95
+	}
+}
+
+1430.1.1 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "д'Альбре"
+		birth_date = 1420.1.1
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Ален"
+		monarch_name = "Ален Великий"
+		dynasty = "д'Альбре"
+		birth_date = 1420.1.1
+		death_date = 1522.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+		claim = 95
+	}
+}
+
+1468.1.3 = {
+	monarch = {
+		name = "Ален Великий"
+		dynasty = "д'Альбре"
+		birth_date = 1440.1.1
+		adm = 5
+		dip = 5
+		mil = 5
+	}
+}
+
+1469.1.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан II"
+		dynasty = "д'Альбре"
+		birth_date = 1469.1.1
+		death_date = 1516.16.3
+		adm = 2
+		dip = 2
+		mil = 3
+		claim = 95
+	}
+}
+
+# 1516.16.4 = {
+	# heir = {
+		# name = "Генрих"
+		# monarch_name = "Генрих I"
+		# dynasty = "д'Альбре"
+		# birth_date = 1503.5.18
+		# death_date = 1555.5.25
+		# adm = 3
+		# dip = 4
+		# mil = 1
+		# claim = 95
+	# }
+# }
+
+1522.1.1 = {
+	monarch = {
+		name = "Энрике II"
+		dynasty = "д'Альбре"
+		birth_date = 1503.5.18
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+
+1555.5.25 = {
+	monarch = {
+		name = "Жанна I"
+		dynasty = "д'Альбре"
+		birth_date = 1528.1.7
+		adm = 4
+		dip = 4
+		mil = 1
+		female = yes
+	}
+}
+
+1572.6.9 = {
+	monarch = {
+		name = "Генрих II"
+		dynasty = "де Бурбон"
+		birth_date = 1553.12.13
+		adm = 5
+		dip = 5
+		mil = 5
 	}
 }

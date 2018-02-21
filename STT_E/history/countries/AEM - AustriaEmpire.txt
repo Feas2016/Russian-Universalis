@@ -1,13 +1,243 @@
 government = kaiserreich_government
-#aristocracy_plutocracy = -3
-#centralization_decentralization = 2
-#innovative_narrowminded = 1
 mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -3
-#quality_quantity = 0
-#serfdom_freesubjects = -3
 primary_culture = austrian
 religion = catholic
 technology_group = western
 capital = 134 # Wien
+government_rank = 3
+
+1804.8.11 = { leader = {	name = "Йозеф Альвинци"              	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1810.9.25 } }
+
+1804.8.11 = { leader = {	name = "Мак"                  	type = general	fire = 3	shock = 3	manuever = 2	siege = 0	death_date = 1828.1.1 } }
+
+1804.8.11 = { leader = {	name = "Эрцгерцог Карл"        	type = general	fire = 5	shock = 4	manuever = 4	siege = 1	death_date = 1840.1.1 } }
+
+1804.8.11 = {
+	monarch = {
+		name = "Франц I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1768.2.12
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1804.8.11 = {
+	queen = {
+		country_of_origin = NAP
+		name = "Мария Тереза"
+		dynasty = "де Бурбон"
+		birth_date = 1772.6.6
+		death_date = 1807.4.13
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1804.8.11 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1793.4.19
+		death_date = 1875.6.29
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1804.8.11 = { leader = {	name = "Эрцгерцог Иоганн"      	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1859.1.1 } }
+
+1805.1.1 = { leader = {	name = "Шварценберг"         	type = general	fire = 3	shock = 4	manuever = 4	siege = 0	death_date = 1817.1.1 } }
+
+1808.1.16 = {
+	queen = {
+		country_of_origin = MLO
+		name = "Мария Людовика"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1787.2.14
+		death_date = 1816.4.7
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1816.11.10 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Каролина Шарлотта Августа"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1792.2.8
+		death_date = 1873.2.9
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1835.3.2 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1793.4.19
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1835.3.2 = {
+	queen = {
+		country_of_origin = SAV
+		name = "Мария Анна"
+		dynasty = "ди Савойя"
+		birth_date = 1793.4.19
+		death_date = 1884.5.4
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1848.12.2 = {
+	monarch = {
+		name = "Франц Иосиф I"
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1830.8.18
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1848.12.2 = {
+	heir = {
+		name = "Максимилиан"
+		monarch_name = "Максимилиан I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1832.7.6
+		death_date = 1867.6.19
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1854.4.24 = {
+	queen = {
+		country_of_origin = BAV
+		name = "Елизавета"
+		dynasty = "фон Пфальц-Цвейнбрюккен"
+		birth_date = 1837.12.24
+		death_date = 1898.9.10
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1859.9.12 = {
+	heir = {
+		name = "Рудольф"
+		monarch_name = "Рудольф I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1858.8.21
+		death_date = 1867.6.19
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1889.1.30 = {
+	heir = {
+		name = "Карл Людвиг"
+		monarch_name = "Карл Людвиг I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1833.7.30
+		death_date = 1896.5.19
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1896.5.19 = {
+	heir = {
+		name = "Франц Фердинанд"
+		monarch_name = "Франц II"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1863.12.19
+		death_date = 1914.6.28
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1914.6.28 = {
+	heir = {
+		name = "Карл Франц Иосиф"
+		monarch_name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		death_date = 1922.4.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	monarch = {
+		name = "Карл I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1887.8.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	queen = {
+		country_of_origin = PAR
+		name = "Цита"
+		dynasty = "де Бурбон-Парма"
+		birth_date = 1892.5.9
+		death_date = 1989.3.14
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1916.11.21 = {
+	heir = {
+		name = "Отто"
+		monarch_name = "Отто I"	
+		dynasty = "фон Габсбург-Лотаринген"
+		birth_date = 1912.11.20
+		death_date = 2011.6.4
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}

@@ -1,9 +1,10 @@
-#2994 - Pomorskie
+#2997 - Pomorskie
 
 owner = TEU
 controller = TEU
 add_core = TEU
-capital = "Tuchel"
+add_core = GNE		### STT
+capital = "Тучель"	### STT
 culture = kashubian
 religion = catholic
 trade_goods = grain
@@ -12,6 +13,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
+fort_15th = yes
+estate = estate_burghers
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -40,7 +43,7 @@ discovered_by = ottoman
 	add_core = PLC
 }# Union of Lublin, Polish administration
 1572.1.1 = { unrest = 6 } # Sigismund II dies
-1575.12.12 = { owner = HSA controller = HSA add_core = HSA } # Danzig rebels
+1575.12.12 = { owner = DNZ controller = DNZ add_core = DNZ } # Danzig rebels
 1577.12.16 = { owner = PLC controller = PLC } # Danzig War, retaken by Poland
 1588.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war
 1589.1.1 = { revolt = {} controller = PLC unrest = 0 } # Coronation of Sigismund III
@@ -57,9 +60,13 @@ discovered_by = ottoman
 	owner = POL
 	controller = POL
 	remove_core = PRU
+	remove_core = PLC
 } # The Duchy of Warsaw is established after the treaty of Tilsit, ruled by Frederick Augustus I of Saxony
 1813.3.17 = { controller = PRU }
 1814.4.11 = {
 	owner = PRU
 	add_core = PRU
 } # Actually returned to Prussia after the Congress of Vienna
+1866.8.1 = { owner = NDB  controller = NDB add_core = NDB remove_core = PRU }
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = NDB }
+

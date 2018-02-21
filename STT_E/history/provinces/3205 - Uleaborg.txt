@@ -1,9 +1,8 @@
 #Österbotten, down to Vasa.
 
-owner = SWE
-controller = SWE
-add_core = FIN
-add_core = SWE
+owner = NOV
+controller = NOV
+add_core = NOV
 culture = finnish
 religion = catholic
 hre = no
@@ -11,11 +10,13 @@ base_tax = 1
 base_production = 1
 trade_goods = fur
 base_manpower = 1
-capital = "Uleåborg"
+capital = "Óëèáîðã"	### STT
+add_core = FIN
 is_city = yes
 discovered_by = eastern
 discovered_by = western
 
+1370.1.1 = { owner = SWE add_core = SWE controller = SWE }
 1527.6.1 = { religion = protestant}
 1598.8.1 = { controller = PLC } # Sigismund tries to reconquer his crown
 1599.7.15 = { controller = SWE } # Duke Karl get it back

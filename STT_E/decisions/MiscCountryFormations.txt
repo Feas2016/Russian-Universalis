@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_hannover_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -35,7 +36,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -48,6 +49,9 @@ country_decisions = {
 			owns_core_province = 2971	# Hoya
 		}
 		effect = {
+			1758 = {
+				move_capital_effect = yes
+			}
 			change_tag = HAN
 			1758 = {
 				add_base_tax = 1
@@ -73,6 +77,7 @@ country_decisions = {
 				}
 				add_permanent_claim = HAN
 			}
+			set_country_flag = formed_hannover_flag
 			add_prestige = 25
 			if = {
 				limit = {
@@ -80,8 +85,11 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			HAN = {
-				set_capital = 1758 # Hannover
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {
@@ -98,6 +106,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_westphalia_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -109,8 +118,8 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = SWI }
 			NOT = { exists = WES }
-			### STT
-			NOT = { tag = WEK }
+			NOT = { tag = WEK }	### STT
+			NOT = { government = celestial_empire }
 			OR = {
 				primary_culture = hannoverian #Westphalian
 				primary_culture = hessian
@@ -140,7 +149,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			OR = {
@@ -157,7 +166,11 @@ country_decisions = {
 			owns_core_province = 2972	# Paderborn
 		}
 		effect = {
+			1762 = {
+				move_capital_effect = yes
+			}
 			change_tag = WES
+			set_country_flag = formed_westphalia_flag
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -197,9 +210,6 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_government = administrative_monarchy
-			WES = {
-				set_capital = 1762 # Kassel
-			}
 			set_country_flag = formed_westphalia
 		}
 		ai_will_do = {
@@ -216,6 +226,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_greece_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -226,10 +237,9 @@ country_decisions = {
 			NOT = { tag = BYZ }
 			NOT = { exists = BYZ }
 			NOT = { exists = GRE }
-			### STT
-			NOT = { tag = PQR }
-			NOT = { tag = ROM }
-			NOT = { tag = LAE }
+			NOT = { tag = PQR }	### STT
+			NOT = { tag = ROM }	### STT
+			NOT = { tag = LAE }	### STT
 			primary_culture = greek
 			is_colonial_nation = no
 			OR = {
@@ -249,7 +259,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 144
@@ -260,18 +270,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GRE
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -325,6 +324,7 @@ country_decisions = {
 				}
 				set_capital = 146
 			}
+			set_country_flag = formed_greece_flag
 			if = {
 				limit = {
 					NOT = { has_idea_group = greek_ideas } 
@@ -338,4 +338,122 @@ country_decisions = {
 		}
 	}
 
+	icelandic_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			owns = 370
+			owns = 371
+			NOT = { has_country_flag = formed_iceland } #Only once
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				ai = no
+				NOT = { num_of_cities = 4 }
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { exists = ICE }
+			is_colonial_nation = no		
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			NOT = { num_of_cities = 4 }
+			owns_core_province = 370
+			owns_core_province = 371
+		}
+		effect = {
+			if = {
+				limit = {
+					capital_scope = { NOT = { area = subarctic_islands_area } }
+				}
+				370 = {
+					move_capital_effect = yes
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					remove_core = ROOT
+					if = {
+						limit = { ROOT = { tag = NOR } }
+						set_province_flag = norwegian_core
+					}
+					if = {
+						limit = { ROOT = { tag = DAN } }
+						set_province_flag = danish_core
+					}
+					if = {
+						limit = { ROOT = { tag = SWE } }
+						set_province_flag = swedish_core
+					}					
+				}
+			}		
+			change_tag = ICE
+			set_country_flag = formed_iceland
+			if = {
+				limit = { NOT = { primary_culture = norwegian } }
+				change_primary_culture = CAPITAL
+			}
+			every_owned_province = {
+				limit = { area = subarctic_islands_area }
+				add_local_autonomy = -100
+			}
+			370 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			371 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}			
+			hidden_effect = {
+				every_province = {
+					if = {
+						limit = {
+							has_province_flag = norwegian_core
+						}
+						add_core = NOR
+						clr_province_flag = norwegian_core					
+					}
+					if = {
+						limit = {
+							has_province_flag = danish_core
+						}
+						add_core = DAN
+						clr_province_flag = danish_core					
+					}
+					if = {
+						limit = {
+							has_province_flag = swedish_core
+						}
+						add_core = SWE
+						clr_province_flag = swedish_core					
+					}					
+				}
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { area = subarctic_islands_area } }
+			}
+		}
+	}
+	
 }

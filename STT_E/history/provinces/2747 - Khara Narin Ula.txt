@@ -1,12 +1,12 @@
 #2405 - Khara Narin Ula
 
-owner = KHA
-controller = KHA
-add_core = KHA 
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = khalkha
 religion = vajrayana
 capital = "Khara Narin Ula"
-trade_goods = wool
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1
@@ -15,6 +15,11 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
 1543.1.1 = { unrest = 8 } # Fighting broke out between the Mongols
 1552.1.1 = {
 	owner = KHA

@@ -1,17 +1,19 @@
 #561 - Bengal Delta
 
-owner = BNG
-controller = BNG
+owner = SAT
+controller = SAT
 culture = bengali
 religion = hinduism
 capital = "Howrah"
 trade_goods = silk
 hre = no
-base_tax = 5
-base_production = 5
-base_manpower = 3
+base_tax = 9
+base_production = 9
+base_manpower = 6
 is_city = yes
-add_core = BNG
+estate = estate_church
+add_core = SAT
+fort_15th = yes
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim
@@ -19,6 +21,10 @@ discovered_by = ottoman
 discovered_by = chinese
 extra_cost = 5
 
+add_permanent_province_modifier = {
+	name = ganges_estuary_modifier
+	duration = -1
+}
 add_permanent_province_modifier = {
 	name = minor_river_estuary_modifier
 	duration = -1
@@ -28,15 +34,21 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1300.1.1 = { controller = DLH owner = DLH add_core = DLH }
+
+1338.1.1 = { owner = SAT controller = SAT add_core = SAT }
+
+1342.1.1 = { owner = BNG controller = BNG add_core = BNG }
+
 1500.1.1 = { discovered_by = POR }
 1576.7.12 = {
 	owner = MUG
 	controller = MUG
+	add_core = MUG
 	unrest = 8
 } #Mughal takeover, but the land remains in the hand of Afghan and Hindu landowners with interests vested against the Mughal dynasty and a deep hatred for the Mughal state
 1587.1.1 = {
 	unrest = 0
-	add_core = MUG
 } # Integrated into Mughal Empire
 1622.10.1 = {
 	controller = REB
@@ -72,3 +84,18 @@ add_permanent_province_modifier = {
 	controller = MUG
 	revolt = { }
 } # Muhammed Shuja defeated by Aurangzeb
+1698.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	remove_core = MUG
+	capital = "Calcutta"
+	base_production = 11
+} # The area is bought by the East India Company
+1707.5.12 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+}
+1756.1.1 = { controller = BNG } # Captured by Siraj-ud-daullah
+1757.6.23 = { controller = GBR } # Battle of Plassey, a new Nawab is installed by the British

@@ -1,4 +1,4 @@
-name = "Muscovite-Kazani War"
+name = "Московско-Казанская война"
 war_goal = {
 	type = superiority_horde
 	casus_belli = cb_horde_vs_civ
@@ -8,20 +8,22 @@ war_goal = {
 1439.1.1 = {
 	add_attacker = KAZ
 	add_attacker = RMI
+	
 	add_defender = MOS
 	add_defender = YAR
 	add_defender = VYA
 	add_defender = PRM
-	add_defender = ROS
+	add_defender = RSO
 }
 
 # Treaty of Who knows what
 1448.8.17 = {
 	rem_attacker = KAZ
 	rem_attacker = RMI
+	
 	rem_defender = MOS
 	rem_defender = YAR
 	rem_defender = VYA
 	rem_defender = PRM
-	add_defender = ROS
+	add_defender = RSO
 }

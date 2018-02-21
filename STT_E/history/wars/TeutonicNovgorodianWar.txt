@@ -1,28 +1,32 @@
-name = "Teutonic-Novgorodian War"
+name = "Ливоно-Новгородская Война"
 war_goal = {
 	type = take_claim
 	casus_belli = cb_conquest
-	province = 34 # Votia
+	province = 34 #Ingermanland
 }
 
 
-1444.1.1 = {
+1447.7.6 = {
 	add_attacker = LIV
 	add_attacker = TEU
 	add_attacker = RIG
 	add_attacker = OSE
 	add_attacker = DOR
 	add_attacker = KUR
+	
 	add_defender = NOV
+	add_defender = PSK
 }
 
 # Treaty of Who knows what
-1448.4.11 = {
+1448.2.27 = {
 	rem_attacker = LIV
 	rem_attacker = TEU
 	rem_attacker = RIG
 	rem_attacker = OSE
 	rem_attacker = DOR
 	rem_attacker = KUR
+	
 	rem_defender = NOV
+	rem_defender = PSK
 }

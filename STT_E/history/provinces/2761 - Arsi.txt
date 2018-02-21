@@ -13,6 +13,7 @@ hre = no
 base_tax = 2 
 base_production = 2
 add_local_autonomy = 25
+estate = estate_nobles
 discovered_by = ETH
 discovered_by = ADA
 discovered_by = NUB
@@ -33,10 +34,11 @@ discovered_by = east_african
 	discovered_by = ADA
 	owner = ADA
 	controller = ADA
-	unrest = 6
+	unrest = 0
 } # Ahmad Gran takes over region
-1535.1.1 = { unrest = 0 }
 1544.1.1 = {
 	owner = ETH
 	controller = ETH
+	add_core = ETH
+	remove_core = ADA
 } # Adal collapse in highlands in wake of Ahmad Gran's death

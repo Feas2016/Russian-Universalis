@@ -1,0 +1,765 @@
+#Ex: Добавляет -а в окончания
+defined_text = {
+    name = GetHEndA
+
+    text = {
+        localisation_key = MALE_ENDING_A
+        trigger = {
+			has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_A
+        trigger = {
+			has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ла в окончания
+defined_text = {
+    name = GetHEndLA
+
+    text = {
+        localisation_key = MALE_ENDING_LA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ая/ий в окончания
+defined_text = {
+    name = GetHEndAYA
+
+    text = {
+        localisation_key = MALE_ENDING_IY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ая/ый в окончания
+defined_text = {
+    name = GetHEndAYY
+
+    text = {
+        localisation_key = MALE_ENDING_YY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AYY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ым/ой в окончания
+defined_text = {
+    name = GetHEndOY
+
+    text = {
+        localisation_key = MALE_ENDING_OY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ым/ей в окончания
+defined_text = {
+    name = GetHEndEY
+
+    text = {
+        localisation_key = MALE_ENDING_EY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ся/ась в окончания
+defined_text = {
+    name = GetHEndSYA
+
+    text = {
+        localisation_key = MALE_ENDING_SYA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_SYA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет его/её
+defined_text = {
+    name = GetHEgoEyo
+
+    text = {
+        localisation_key = MALE_EGO
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EYO
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет Его/Её
+defined_text = {
+    name = GetHEgoEyoCap
+
+    text = {
+        localisation_key = MALE_EGO_Cap
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EYO_Cap
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет ему/ей
+defined_text = {
+    name = GetHEmuEy
+
+    text = {
+        localisation_key = MALE_EMU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет Ему/Ей
+defined_text = {
+    name = GetHEmuEyCap
+
+    text = {
+        localisation_key = MALE_EMU_Cap
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_EY_Cap
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ен/на в окончания
+defined_text = {
+    name = GetHEndEnNa
+
+    text = {
+        localisation_key = MALE_ENDING_EN
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ей в окончания
+defined_text = {
+    name = GetHEndEgoEy
+
+    text = {
+        localisation_key = MALE_ENDING_EGO
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ин/на в окончания
+defined_text = {
+    name = GetHEndInNa
+
+    text = {
+        localisation_key = MALE_ENDING_IN
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_NA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -к/ца в окончания
+defined_text = {
+    name = GetHEndTsaK
+
+    text = {
+        localisation_key = MALE_ENDING_TSAK
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAK
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ль/ница в окончания
+defined_text = {
+    name = GetHEndTsaL
+
+    text = {
+        localisation_key = MALE_ENDING_TSAL
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAL
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ка/цу в окончания
+defined_text = {
+    name = GetHEndTsuKa
+
+    text = {
+        localisation_key = MALE_ENDING_TSUKA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSUKA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ен/льна в окончания
+defined_text = {
+    name = GetHEndLna
+
+    text = {
+        localisation_key = MALE_ENDING_LNA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LNA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ел/ла в окончания
+defined_text = {
+    name = GetHEndEl
+
+    text = {
+        localisation_key = MALE_ENDING_EL
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EL
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ём/ей в окончания
+defined_text = {
+    name = GetHEndEyEm
+
+    text = {
+        localisation_key = MALE_ENDING_EYEM
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYEM
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -им/ей в окончания
+defined_text = {
+    name = GetHEndEyIm
+
+    text = {
+        localisation_key = MALE_ENDING_IM
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EYIM
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ю в окончания
+defined_text = {
+    name = GetHEndEgoYu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -а/у в окончания
+defined_text = {
+    name = GetHEndAU
+
+    text = {
+        localisation_key = MALE_ENDING_AU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_AU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -от/а в окончания
+defined_text = {
+    name = GetHEndOTA
+
+    text = {
+        localisation_key = MALE_ENDING_OTA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OTA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ому/ой в окончания
+defined_text = {
+    name = GetHEndOmu
+
+    text = {
+        localisation_key = MALE_ENDING_OMU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OMU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -у/е в окончания
+defined_text = {
+    name = GetHEndUE
+
+    text = {
+        localisation_key = MALE_ENDING_UE
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_UE
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ца/ку в окончания
+defined_text = {
+    name = GetHEndTsaKu
+
+    text = {
+        localisation_key = MALE_ENDING_TSAKU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_TSAKU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ой/ая в окончания
+defined_text = {
+    name = GetHEndOYY
+
+    text = {
+        localisation_key = MALE_ENDING_OYY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ец/ка в окончания
+defined_text = {
+    name = GetHEndEZ
+
+    text = {
+        localisation_key = MALE_ENDING_EZKA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EZKA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ой/оя в окончания
+defined_text = {
+    name = GetHEndOYA
+
+    text = {
+        localisation_key = MALE_ENDING_OYA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ся/лась в окончания
+defined_text = {
+    name = GetHEndLAS
+
+    text = {
+        localisation_key = MALE_ENDING_LAS
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_LAS
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ого/ой в окончания
+defined_text = {
+    name = GetHEndOgoOy
+
+    text = {
+        localisation_key = MALE_ENDING_OGO
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGO
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ем/ьницой в окончания
+defined_text = {
+    name = GetHEndEmLsoy
+
+    text = {
+        localisation_key = MALE_ENDING_EMLSOY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EMLSOY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -им/ой в окончания
+defined_text = {
+    name = GetHEndOyIm
+
+    text = {
+        localisation_key = MALE_ENDING_OYIM
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OYIM
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -есса в окончания
+defined_text = {
+    name = GetHEndEssa
+
+    text = {
+        localisation_key = MALE_ENDING_ESSA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -а/ессы в окончания
+defined_text = {
+    name = GetHEndEssy
+
+    text = {
+        localisation_key = MALE_ENDING_ESSY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -у/ессе в окончания
+defined_text = {
+    name = GetHEndEsse
+
+    text = {
+        localisation_key = MALE_ENDING_ESSE
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ESSE
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -его/ую в окончания
+defined_text = {
+    name = GetHEndEgoUyu
+
+    text = {
+        localisation_key = MALE_ENDING_EGOUYU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_EGOUYU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ого/ую в окончания
+defined_text = {
+    name = GetHEndOgoUyu
+
+    text = {
+        localisation_key = MALE_ENDING_OGOUYU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OGOUYU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ов/ая в окончания
+defined_text = {
+    name = GetHEndOvAya
+
+    text = {
+        localisation_key = MALE_ENDING_OVAYA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_OVAYA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ор/рица в окончания
+defined_text = {
+    name = GetHEndOrRit
+
+    text = {
+        localisation_key = MALE_ENDING_ORRIT
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRIT
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ора/рицы в окончания
+defined_text = {
+    name = GetHEndOrRita
+
+    text = {
+        localisation_key = MALE_ENDING_ORRITA
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRITA
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ору/рице в окончания
+defined_text = {
+    name = GetHEndOrRitu
+
+    text = {
+        localisation_key = MALE_ENDING_ORRITU
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_ORRITU
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ку/це в окончания
+defined_text = {
+    name = GetHEndKuTse
+
+    text = {
+        localisation_key = MALE_ENDING_KUTSE
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_KUTSE
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}
+#Ex: Добавляет -ка/цы в окончания
+defined_text = {
+    name = GetHEndKaTsy
+
+    text = {
+        localisation_key = MALE_ENDING_КАTSY
+        trigger = {
+            has_female_heir = no
+        }
+    }
+    text = {
+        localisation_key = FEMALE_ENDING_КАTSY
+        trigger = {
+            has_female_heir = yes
+        }
+    }
+}

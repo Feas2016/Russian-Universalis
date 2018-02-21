@@ -1,26 +1,40 @@
 #139 - Hum
 
-owner = HUM		# Part of the Bosnian kingdom
-controller = HUM
+owner = BOS
+controller = BOS
 culture = serbian
 religion = orthodox
-capital = "Hvoca"	# Unofficial capital of Herzegovina
+capital = "Hvoca"
 trade_goods = wool
 hre = no
 base_tax = 2 
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = HUM
 add_core = BOS
+add_core = HUM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1348.1.1 = { owner = SER add_core = SER controller = SER }
+1356.1.1 = { owner = HUM controller = HUM }
+1361.1.1 = { owner = BOS controller = BOS }
+1418.1.1 = { owner = HUM controller = HUM }
 1521.1.1 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	remove_core = HUM
 }
-
+1878.7.1 = {
+	owner = BOS
+	controller = BOS
+	remove_core = TUR
+}
+1908.10.6 = {
+	owner = DUA
+	controller = DUA
+	add_core = DUA
+}

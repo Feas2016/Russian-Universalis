@@ -40,7 +40,7 @@ scandinavia_region = {
 		northern_norway
 		eastern_norway
 		western_norway
-		bothnia_area
+		#bothnia_area
 		subarctic_islands_area
 		karelia_area
 		greenland_area
@@ -148,12 +148,12 @@ russia_region = {
 }
 
 
-ural_region = {
-	areas = {
+# ural_region = {
+	# areas = {
 		
 		
-	}
-}
+	# }
+# }
 
 iberia_region = {
 	areas = {
@@ -443,44 +443,44 @@ east_africa_region = {
 		northern_swahili_coast_area
 		central_swahili_coast_area
 		mozambique_area
-		lower_zambezi_area
+		#lower_zambezi_area
 		upper_zambezi_area
-		ruvuma_area
-		ngonde_area
+		#ruvuma_area
+		#ngonde_area
 		mascarenes_area
 		madagascar_highlands_area
 		southern_madagaskar_area
 		betsimasaraka_area
 		sakalava_area
-		southern_madagascar
-		uticulo_makuana_area
-		jubba_area
-		makuana_area
+		#southern_madagascar
+		#uticulo_makuana_area
+		#jubba_area
+		#makuana_area
 	}
 }
 
 central_africa_region = {
 	areas = {
-		ngonde_area
+		#ngonde_area
 		buha_area
-		katanga_area
+		#katanga_area
 		zambia_area
 		luba_area
 		sankuru_area
-		tanzania_area
-		kenya_area
+		#tanzania_area
+		#kenya_area
 		buzinza_area
 		uganda_area
 		rwanda_area
-		shaba_area
+		#shaba_area
 	}
 }
 
 kongo_region = {
 	areas = {
-		coastal_kongo
+		#coastal_kongo
 		kongo_area
-		angola_namibia_area
+		#angola_namibia_area
 		matamba_area
 		lower_kasai_area
 		kasai_area
@@ -655,7 +655,7 @@ burma_region = {
 japan_region = {
 	areas = {
 		hokkaido_area
-		hokuriku_area
+		#hokuriku_area
 		kanto_area
 		kyushu_area
 		chubu_area
@@ -1106,9 +1106,10 @@ east_china_sea_region = {
 	}
 }
 
-north_east_pacific_region = {
+north_west_pacific_region  = {
 	areas = {
 		east_pacific_ocean_area
+		berring_sea_area
 	}
 }
 
@@ -1127,11 +1128,10 @@ south_west_pacific_region = {
 	}
 }
 
-north_west_pacific_region = {
+north_east_pacific_region = {
 	areas = {
 		north_pacific_area
-		north_pacific_coast_area
-		berring_sea_area
+		north_pacific_coast_area		
 		gulf_of_alaska_area
 	}
 }

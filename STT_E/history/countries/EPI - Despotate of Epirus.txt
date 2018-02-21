@@ -1,24 +1,258 @@
 government = despotic_monarchy
 government_rank = 1
 technology_group = eastern
-primary_culture = neapolitan
-religion = catholic
+primary_culture = greek
+religion = orthodox
 capital = 144 # Ioannina
+fixed_capital = 144 # Cannot move capital away from this province & no power cost to move to it
+
+1204.1.1 = {
+	monarch = {
+		name = "Михаил I"
+		dynasty = "Комнин Дука"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1215.1.1 = {
+	monarch = {
+		name = "Феодор I"
+		dynasty = "Комнин Дука"
+		birth_date = 1180.1.1
+		adm = 2
+		dip = 2
+		mil = 5
+	}
+}
+
+1230.1.1 = {
+	monarch = {
+		name = "Михаил II"
+		dynasty = "Комнин Дука"
+		birth_date = 1205.1.1
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+1249.1.1 = {
+government_rank = 2
+}
+
+1268.1.1 = {
+	monarch = {
+		name = "Никифор I"
+		dynasty = "Комнин Дука"
+		birth_date = 1240.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1297.1.1 = {
+	monarch = {
+		name = "Фома I"
+		dynasty = "Комнин Дука"
+		birth_date = 1285.1.1
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+1318.1.1 = {
+    primary_culture = neapolitan
+	add_accepted_culture = greek
+	religion = catholic
+	monarch = {
+		name = "Николай I"
+		dynasty = "Орсини"
+		birth_date = 1295.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1318.1.1 = {
+	heir = {
+		name = "Иоанн"
+		monarch_name = "Иоанн I"
+		dynasty = "Орсини"
+		birth_date = 1300.1.1
+		death_date = 1335.1.1
+		claim = 95
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1323.1.1 = {
+	monarch = {
+		name = "Иоанн I"
+		dynasty = "Орсини"
+		birth_date = 1300.1.1
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}
+
+1328.1.1 = {
+	heir = {
+		name = "Никифор"
+		monarch_name = "Никифор II"
+		dynasty = "Орсини"
+		birth_date = 1328.1.1
+		death_date = 1359.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1335.1.1 = {
+	monarch = {
+		name = "Никифор II"
+		dynasty = "Орсини"
+		birth_date = 1328.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1337.1.1 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1356.1.1 = {
+	monarch = {
+		name = "Никифор II"
+		dynasty = "Орсини"
+		birth_date = 1328.1.1
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1356.1.1 = {
+	heir = {
+		name = "Мануил"
+		monarch_name = "Мануил I"
+		dynasty = "Орсини"
+		birth_date = 1348.1.1
+		death_date = 1404.1.1
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1359.1.1 = {
+    primary_culture = serbian
+	add_accepted_culture = neapolitan
+	religion = orthodox
+	monarch = {
+		name = "Симеон Урош I"
+		dynasty = "Неманич"
+		birth_date = 1326.1.1
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+1366.1.1 = {
+	monarch = {
+		name = "Фома II"
+		dynasty = "Прелюбович"
+		birth_date = 1350.1.1
+		adm = 5
+		dip = 1
+		mil = 2
+	}
+}
+
+1366.1.1 = {
+	heir = {
+		name = "Ирина"
+		monarch_name = "Ирина I"
+		dynasty = "Прелюбович"
+		birth_date = 1352.1.1
+		death_date = 1375.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
+
+1384.12.23 = {
+    government_rank = 3
+	monarch = {
+		name = "Мария I"
+		dynasty = "Неманич"
+		birth_date = 1350.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+		female = yes
+	}
+}
 
 1385.1.1 = {
+    primary_culture = neapolitan
+	religion = catholic
+	government_rank = 1
 	monarch = {
-		name = "Esau I"
-		dynasty = "de Buondelmonti"
+		name = "Исав I"
+		dynasty = "де Буонделмонти"
+		birth_date = 1355.1.1
 		dip = 1
 		adm = 1
 		mil = 2
 	}
 }
 
+1385.1.1 = {
+	heir = {
+		name = "Джорджио"
+		monarch_name = "Джорджио I"
+		dynasty = "де Буонделмонти"
+		birth_date = 1375.1.1
+		death_date = 1453.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1386.1.1 = {
+government_rank = 2
+}
+
 1411.2.6 = {
 	monarch = {
-		name = "Giorgio I"
-		dynasty = "de Buondelmonti"
+		name = "Джоджио I"
+		dynasty = "де Буонделмонти"
+		birth_date = 1375.1.1
 		dip = 0
 		adm = 0
 		mil = 0
@@ -27,20 +261,75 @@ capital = 144 # Ioannina
 
 1411.2.26 = {
 	monarch = {
-		name = "Carlo I"
-		dynasty = "Tocco"
+		name = "Карло I"
+		dynasty = "Токко"
+		birth_date = 1376.1.1
 		dip = 4
 		adm = 4
 		mil = 3
 	}
 }
 
-1429.6.4 = {
+1411.2.26 = {
+	heir = {
+		name = "Карло"
+		monarch_name = "Карло II"
+		dynasty = "Токко"
+		birth_date = 1390.1.1
+		death_date = 1448.10.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1429.7.4 = {
 	monarch = {
-		name = "Carlo II"
-		dynasty = "Tocco"
+		name = "Карло II"
+		dynasty = "Токко"
+		birth_date = 1390.1.1
 		dip = 0
 		adm = 1
+		mil = 3
+	}
+}
+
+1429.7.4 = {
+	heir = {
+		name = "Леонардо"
+		monarch_name = "Леонардо I"
+		dynasty = "Токко"
+		birth_date = 1420.1.1
+		death_date = 1496.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1448.10.1 = {
+	monarch = {
+		name = "Леонардо I"
+		dynasty = "Токко"
+		birth_date = 1420.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}
+
+1464.1.1 = {
+	heir = {
+		name = "Карло"
+		monarch_name = "Карло III"
+		dynasty = "Токко"
+		birth_date = 1464.1.1
+		death_date = 1518.1.1
+		claim = 95
+		adm = 3
+		dip = 3
 		mil = 3
 	}
 }

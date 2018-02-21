@@ -1,27 +1,28 @@
-government = iqta
+government = feudal_theocracy
 primary_culture = omani_culture
 religion = ibadi
 technology_group = muslim
-capital = 400	# Muscat
+capital = 400	# Muscat ### STT
+government_rank = 1
+religious_school = hanbali_school
 
-#Rulers of Suhar
+#Nabhan dynasty
 
-1380.1.1 = {
+1406.1.1 = {
 	monarch = {
-		name = "Mahzum"
-		dynasty = "Nabhan"
-		adm = 1
+		name = "Махзум"
+		dynasty = "Набхан"
+		adm = 3
 		dip = 1
 		mil = 2
 	}
-	add_piety = -0.1
 }
 
 1430.1.1 = {
 	heir = {
-		name = "Sulaymвn"
-		monarch_name = "Sulaymвn"
-		dynasty = "Nabhan"
+		name = "Сулейман"
+		monarch_name = "Сулейман"
+		dynasty = "Набхан"
 		birth_date = 1430.1.1
 		death_Date = 1488.1.1
 		claim = 95
@@ -33,8 +34,8 @@ capital = 400	# Muscat
 
 1450.1.1 = {
 	monarch = {
-		name = "Sulaymвn"
-		dynasty = "Nabhan"
+		name = "Сулейман"
+		dynasty = "Набхан"
 		adm = 4
 		dip = 4
 		mil = 3
@@ -45,8 +46,8 @@ capital = 400	# Muscat
 
 1488.1.1 = {
 	monarch = {
-		name = "'Umar"
-		dynasty = "al-Julanda"
+		name = "Омар"
+		dynasty = "аль-Джуланда"
 		adm = 3
 		dip = 2
 		mil = 1
@@ -55,9 +56,9 @@ capital = 400	# Muscat
 
 1488.1.1 = {
 	heir = {
-		name = "Muhammaed"
-		monarch_name = "Muhammaed I"
-		dynasty = "al-Julanda"
+		name = "Мухаммед"
+		monarch_name = "Мухаммед I"
+		dynasty = "аль-Джуланда"
 		birth_date = 1470.1.1
 		death_date = 1492.1.1
 		claim = 95
@@ -69,8 +70,8 @@ capital = 400	# Muscat
 
 1489.1.1 = {
 	monarch = {
-		name = "Muhammaed I"
-		dynasty = "al-Julanda"
+		name = "Мухаммед I"
+		dynasty = "аль-Джуланда"
 		adm = 0
 		dip = 4
 		mil = 3
@@ -79,9 +80,9 @@ capital = 400	# Muscat
 
 1489.1.1 = {
 	heir = {
-		name = "Ahmad"
-		monarch_name = "Ahmad"
-		dynasty = "al-Julanda"
+		name = "Ахмед"
+		monarch_name = "Ахмед"
+		dynasty = "аль-Джуланда"
 		birth_date = 1470.1.1
 		death_date = 1499.1.1
 		claim = 95
@@ -93,8 +94,8 @@ capital = 400	# Muscat
 
 1492.1.1 = {
 	monarch = {
-		name = "Ahmad"
-		dynasty = "al-Julanda"
+		name = "Ахмед"
+		dynasty = "аль-Джуланда"
 		adm = 1
 		dip = 3
 		mil = 2
@@ -103,9 +104,9 @@ capital = 400	# Muscat
 
 1492.1.1 = {
 	heir = {
-		name = "Abu'l-Hasan"
-		monarch_name = "Abu'l-Hasan"
-		dynasty = "al-Julanda"
+		name = "Абуль-Хасан"
+		monarch_name = "Абуль-Хасан"
+		dynasty = "аль-Джуланда"
 		birth_date = 1490.1.1
 		death_Date = 1500.1.1
 		claim = 95
@@ -117,8 +118,8 @@ capital = 400	# Muscat
 
 1499.1.1 = {
 	monarch = {
-		name = "Abu'l-Hasan"
-		dynasty = "al-Julanda"
+		name = "Абуль-Хасан"
+		dynasty = "аль-Джуланда"
 		adm = 2
 		dip = 4
 		mil = 4
@@ -127,9 +128,9 @@ capital = 400	# Muscat
 
 1499.1.1 = {
 	heir = {
-		name = "Muhammad"
-		monarch_name = "Muhammad II"
-		dynasty = "al-Julanda"
+		name = "Мухаммед"
+		monarch_name = "Мухаммед II"
+		dynasty = "аль-Джуланда"
 		birth_date = 1480.1.1
 		death_Date = 1535.1.1
 		claim = 95
@@ -141,8 +142,8 @@ capital = 400	# Muscat
 
 1500.1.1 = {
 	monarch = {
-		name = "Muhammad II"
-		dynasty = "al-Julanda"
+		name = "Мухаммед II"
+		dynasty = "аль-Джуланда"
 		adm = 0
 		dip = 0
 		mil = 1
@@ -151,9 +152,9 @@ capital = 400	# Muscat
 
 1500.1.1 = {
 	heir = {
-		name = "Barakвt"
-		monarch_name = "Barakвt"
-		dynasty = "al-Julanda"
+		name = "Баракат"
+		monarch_name = "Баракат"
+		dynasty = "аль-Джуланда"
 		birth_date = 1500.1.1
 		death_Date = 1560.1.1
 		claim = 95
@@ -165,20 +166,18 @@ capital = 400	# Muscat
 
 1535.1.1 = {
 	monarch = {
-		name = "Barakвt"
-		dynasty = "Nabhan"
-		adm = 3
-		dip = 3
+		name = "Баракат"
+		dynasty = "Набхан"
+		adm = 0
+		dip = 2
 		mil = 2
 	}
 }
 
-#Rulers of Suhar
-
 1560.1.1 = {
 	monarch = {
-		name = "Makhzыm"
-		dynasty = "Nabhan"
+		name = "Махзум"
+		dynasty = "Набхан"
 		adm = 1
 		dip = 3
 		mil = 3
@@ -187,9 +186,9 @@ capital = 400	# Muscat
 
 1560.1.1 = {
 	heir = {
-		name = "Habhвn"
-		monarch_name = "Habhвn"
-		dynasty = "Nabhan"
+		name = "Набхан"
+		monarch_name = "Набхан"
+		dynasty = "Набхан"
 		birth_date = 1560.1.1
 		death_Date = 1617.2.16
 		claim = 95
@@ -201,8 +200,8 @@ capital = 400	# Muscat
 
 1615.1.1 = {
 	monarch = {
-		name = "Habhвn"
-		dynasty = "Nabhan"
+		name = "Набхан"
+		dynasty = "Набхан"
 		adm = 4
 		dip = 0
 		mil = 2
@@ -211,9 +210,9 @@ capital = 400	# Muscat
 
 1615.1.1 = {
 	heir = {
-		name = "'Umayr"
-		monarch_name = "'Umayr"
-		dynasty = "Nabhan"
+		name = "Омар"
+		monarch_name = "Омар"
+		dynasty = "Набхан"
 		birth_date = 1600.1.1
 		death_Date = 1624.1.1
 		claim = 95
@@ -225,8 +224,8 @@ capital = 400	# Muscat
 
 1617.2.16 = {
 	monarch = {
-		name = "'Umayr"
-		dynasty = "Nabhan"
+		name = "Омар"
+		dynasty = "Набхан"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -237,8 +236,8 @@ capital = 400	# Muscat
 
 1624.1.1 = {
 	monarch = {
-		name = "Nвsir"
-		dynasty = "Ya'ariba"
+		name = "Насир"
+		dynasty = "Яариба"
 		adm = 4
 		dip = 3
 		mil = 0
@@ -247,9 +246,9 @@ capital = 400	# Muscat
 
 1624.1.1 = {
 	heir = {
-		name = "Sultвn"
-		monarch_name = "Sultвn I"
-		dynasty = "Ya'ariba"
+		name = "Султан"
+		monarch_name = "Султан I"
+		dynasty = "Яариба"
 		birth_date = 1620.1.1
 		death_Date = 1668.11.12
 		claim = 95
@@ -261,8 +260,8 @@ capital = 400	# Muscat
 
 1649.4.5 = {
 	monarch = {
-		name = "Sultвn I"
-		dynasty = "Ya'ariba"
+		name = "Султан I"
+		dynasty = "Яариба"
 		adm = 2
 		dip = 1
 		mil = 4
@@ -271,9 +270,9 @@ capital = 400	# Muscat
 
 1649.4.5 = {
 	heir = {
-		name = "Abi'l-'Arab"
-		monarch_name = "Abi'l-'Arab I"
-		dynasty = "Ya'ariba"
+		name = "Абуль-Араб"
+		monarch_name = "Абуль-Араб I"
+		dynasty = "Яариба"
 		birth_date = 1640.1.1
 		death_Date = 1679.1.1
 		claim = 95
@@ -285,8 +284,8 @@ capital = 400	# Muscat
 
 1668.11.12 = {
 	monarch = {
-		name = "Abi'l-'Arab I"
-		dynasty = "Ya'ariba"
+		name = "Абуль-Араб I"
+		dynasty = "Яариба"
 		adm = 3
 		dip = 1
 		mil = 2
@@ -295,9 +294,9 @@ capital = 400	# Muscat
 
 1668.11.12 = {
 	heir = {
-		name = "Sayf"
-		monarch_name = "Sayf I"
-		dynasty = "Ya'ariba"
+		name = "Саиф"
+		monarch_name = "Саиф I"
+		dynasty = "Яариба"
 		birth_date = 1660.1.1
 		death_date = 1711.10.16
 		claim = 95
@@ -310,8 +309,8 @@ capital = 400	# Muscat
 
 1679.1.1 = {
 	monarch = {
-		name = "Sayf I"
-		dynasty = "Ya'ariba"
+		name = "Саиф I"
+		dynasty = "Яариба"
 		adm = 2
 		dip = 3
 		mil = 2
@@ -320,9 +319,9 @@ capital = 400	# Muscat
 
 1679.1.1 = {
 	heir = {
-		name = "Sultвn II"
-		monarch_name = "Sultвn II"
-		dynasty = "Ya'ariba"
+		name = "Султан"
+		monarch_name = "Султан II"
+		dynasty = "Яариба"
 		birth_date = 1679.1.1
 		death_date = 1718.1.1
 		claim = 95
@@ -334,8 +333,8 @@ capital = 400	# Muscat
 
 1711.10.16 = {
 	monarch = {
-		name = "Sultвn II"
-		dynasty = "Ya'ariba"
+		name = "Султан II"
+		dynasty = "Яариба"
 		adm = 2
 		dip = 0
 		mil = 1
@@ -344,9 +343,9 @@ capital = 400	# Muscat
 
 1711.10.16 = {
 	heir = {
-		name = "Muhannв"
-		monarch_name = "Muhannв"
-		dynasty = "Ya'ariba"
+		name = "Муханна"
+		monarch_name = "Муханна"
+		dynasty = "Яариба"
 		birth_date = 1700.1.1
 		death_Date = 1720.1.1
 		claim = 95
@@ -358,8 +357,8 @@ capital = 400	# Muscat
 
 1718.1.1 = {
 	monarch = {
-		name = "Muhannв"
-		dynasty = "Ya'ariba"
+		name = "Муханна"
+		dynasty = "Яариба"
 		adm = 3
 		dip = 3
 		mil = 1
@@ -368,9 +367,9 @@ capital = 400	# Muscat
 
 1718.1.1 = {
 	heir = {
-		name = "Sayf"
-		monarch_name = "Sayf II"
-		dynasty = "Ya'ariba"
+		name = "Саиф"
+		monarch_name = "Саиф II"
+		dynasty = "Яариба"
 		birth_date = 1700.1.1
 		death_date = 1724.10.3
 		claim = 95
@@ -382,8 +381,8 @@ capital = 400	# Muscat
 
 1720.1.1 = {
 	monarch = {
-		name = "Sayf II"
-		dynasty = "Ya'ariba"
+		name = "Саиф II"
+		dynasty = "Яариба"
 		adm = 0
 		dip = 0
 		mil = 2
@@ -394,8 +393,8 @@ capital = 400	# Muscat
 
 1724.10.3 = {
 	monarch = {
-		name = "Muhammad III"
-		dynasty = "Banu Ghafir"
+		name = "Мухаммед III"
+		dynasty = "Бану Хафир"
 		adm = 2
 		dip = 1
 		mil = 1
@@ -404,8 +403,8 @@ capital = 400	# Muscat
 
 1728.4.12 = {
 	monarch = {
-		name = "Sayf II"
-		dynasty = "Ya'ariba"
+		name = "Саиф II"
+		dynasty = "Яариба"
 		adm = 0
 		dip = 0
 		mil = 2
@@ -414,8 +413,8 @@ capital = 400	# Muscat
 
 1728.4.12 = {
 	heir = {
-		name = "Sultвn"
-		monarch_name = "Sultвn III"
+		name = "Султан"
+		monarch_name = "Султан III"
 		birth_date = 1700.1.1
 		death_Date = 1743.7.2
 		claim = 95
@@ -427,8 +426,8 @@ capital = 400	# Muscat
 
 1742.2.1 = {
 	monarch = {
-		name = "Sultвn III"
-		dynasty = "Ya'ariba"
+		name = "Султан III"
+		dynasty = "Яариба"
 		adm = 0
 		dip = 1
 		mil = 2
@@ -437,8 +436,8 @@ capital = 400	# Muscat
 
 1743.7.2 = {
 	monarch = {
-		name = "Abi'l-'Arab II"
-		dynasty = "Ya'ariba"
+		name = "Абуль-Араб II"
+		dynasty = "Яариба"
 		adm = 3
 		dip = 1
 		mil = 3
@@ -447,8 +446,8 @@ capital = 400	# Muscat
 
 1749.6.10 = {
 	monarch = {
-		name = "Ahmad"
-		dynasty = "Al Said"
+		name = "Ахмад"
+		dynasty = "Аль-Саид"
 		adm = 4
 		dip = 3
 		mil = 3
@@ -457,9 +456,9 @@ capital = 400	# Muscat
 
 1750.1.1 = {
 	heir = {
-		name = "Sв'оd"
-		monarch_name = "Sв'оd I"
-		dynasty = "Al Said"
+		name = "Саид"
+		monarch_name = "Саид I"
+		dynasty = "Аль-Саид"
 		birth_date = 1750.1.1
 		death_date = 1804.11.16
 		claim = 95
@@ -471,8 +470,8 @@ capital = 400	# Muscat
 
 1783.12.16 = {
 	monarch = {
-		name = "Sв'оd I"
-		dynasty = "Al Said"
+		name = "Саид I"
+		dynasty = "Аль-Саид"
 		adm = 3
 		dip = 1
 		mil = 2
@@ -481,9 +480,9 @@ capital = 400	# Muscat
 
 1783.12.16 = {
 	heir = {
-		name = "Sвlim"
-		monarch_name = "Sвlim I"
-		dynasty = "Al Said"
+		name = "Селим"
+		monarch_name = "Селим I"
+		dynasty = "Аль-Саид"
 		birth_date = 1780.1.1
 		death_Date = 1806.9.14
 		claim = 95
@@ -495,8 +494,8 @@ capital = 400	# Muscat
 
 1804.11.16 = {
 	monarch = {
-		name = "Sвlim I"
-		dynasty = "Al Said"
+		name = "Селим I"
+		dynasty = "Аль-Саид"
 		adm = 2
 		dip = 1
 		mil = 2
@@ -505,9 +504,9 @@ capital = 400	# Muscat
 
 1804.11.16 = {
 	heir = {
-		name = "Sв'оd"
-		monarch_name = "Sв'оd II"
-		dynasty = "Al Said"
+		name = "Саид"
+		monarch_name = "Саид II"
+		dynasty = "Аль-Саид"
 		birth_date = 1797.6.5
 		death_Date = 1856.10.19
 		claim = 95
@@ -519,8 +518,8 @@ capital = 400	# Muscat
 
 1806.9.14 = {
 	monarch = {
-		name = "Sв'оd II"
-		dynasty = "Al Said"
+		name = "Саид II"
+		dynasty = "Аль-Саид"
 		adm = 3
 		dip = 2
 		mil = 2

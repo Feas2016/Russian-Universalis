@@ -1,0 +1,236 @@
+government = feudal_monarchy
+government_rank = 1
+primary_culture = picard
+religion = catholic
+technology_group = western
+capital = 3635
+
+1269.1.1 = {
+	monarch = {
+		name = "Роберт"
+		dynasty = "де Клермон"
+		birth_date = 1256.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+1279.1.1 = {
+	heir = {
+		name = "Людовик"
+		monarch_name = "Людовик I"
+		dynasty = "де Бурбон"
+		birth_date = 1279.1.1
+		death_date = 1341.1.22
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 4
+		leader = {	name = "Людовик I"         	type = general	fire = 2	shock = 3	manuever = 3	siege = 1 }
+	}
+}
+
+1317.2.7 = {
+	monarch = {
+		name = "Людовик"
+		dynasty = "де Бурбон"
+		birth_date = 1279.1.1
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "Пьер"
+		monarch_name = "Пьер I"
+		dynasty = "де Бурбон"
+		birth_date = 1311.1.1
+		death_date = 1356.9.19
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1341.1.22 = {
+	monarch = {
+		name = "Пьер I"
+		dynasty = "де Бурбон"
+		birth_date = 1311.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+		leader = {	name = "Пьер I"         	type = general	fire = 2	shock = 2	manuever = 2	siege = 2 }
+	}
+	heir = {
+		name = "Людовик"
+		monarch_name = "Людовик II Добрый"
+		dynasty = "де Бурбон"
+		birth_date = 1337.8.4
+		death_date = 1410.8.19
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1356.9.19 = {
+	monarch = {
+		name = "Людовик II Добрый"
+		dynasty = "де Бурбон"
+		birth_date = 1337.8.4
+		adm = 2
+		dip = 2
+		mil = 4
+		leader = {	name = "Людовик II"         	type = general	fire = 2	shock = 1	manuever = 2	siege = 4 }
+	}
+}
+
+1381.3.1 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан I"
+		dynasty = "де Бурбон"
+		birth_date = 1337.8.4
+		death_date = 1434.4.5
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 2
+	}
+}
+
+1410.8.19 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де Бурбон"
+		birth_date = 1337.8.4
+		adm = 1
+		dip = 0
+		mil = 2
+		leader = {	name = "Жан I"         	type = general	fire = 1	shock = 1	manuever = 0	siege = 1 }
+	}
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл I"
+		dynasty = "де Бурбон"
+		birth_date = 1401.1.1
+		death_date = 1456.12.4
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+1415.10.25 = {
+	monarch = {
+		name = "(Регентский совет)"
+		adm = 0
+		mil = 0
+		dip = 0
+		regent = yes
+	}
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "Карл I"
+		dynasty = "де Бурбон"
+		birth_date = 1401.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+		leader = {	name = "Карл I"         	type = general	fire = 2	shock = 1	manuever = 1	siege = 2 }
+	}
+}
+
+1426.8.30 = {
+	heir = {
+		name = "Жан"
+		monarch_name = "Жан II Добрый"
+		dynasty = "де Бурбон"
+		birth_date = 1426.8.30
+		death_date = 1488.4.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1434.12.4 = {
+	monarch = {
+		name = "Жан II Добрый"
+		dynasty = "де Бурбон"
+		birth_date = 1426.8.30
+		adm = 3
+		dip = 4
+		mil = 3
+		leader = {	name = "Жан II"         	type = general	fire = 2	shock = 1	manuever = 3	siege = 2 }
+	}
+}
+
+1438.12.1 = {
+	heir = {
+		name = "Пьер"
+		monarch_name = "Пьер II"
+		dynasty = "де Бурбон"
+		birth_date = 1438.12.1
+		death_date = 1503.10.10
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1488.4.1 = {
+	monarch = {
+		name = "Пьер II"
+		dynasty = "де Бурбон"
+		birth_date = 1438.12.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+1491.5.10 = {
+	heir = {
+		name = "Сюзанна"
+		monarch_name = "Сюзанна"
+		dynasty = "де Бурбон"
+		birth_date = 1491.5.10
+		death_date = 1521.4.28
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+
+1503.10.10 = {
+	monarch = {
+		name = "Сюзанна"
+		dynasty = "де Бурбон"
+		birth_date = 1491.5.10
+		adm = 1
+		dip = 1
+		mil = 0
+		female = yes
+	}
+}
+
+1521.4.28 = {
+	monarch = {
+		name = "(Регентский совет)"
+		adm = 0
+		mil = 0
+		dip = 0
+		regent = yes
+	}
+}

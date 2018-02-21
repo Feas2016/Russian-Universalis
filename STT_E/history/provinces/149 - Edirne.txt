@@ -1,10 +1,10 @@
 #149 - Edirne
 
-owner = TUR
-controller = TUR
+owner = BYZ
+controller = BYZ
 culture = greek
 religion = orthodox
-capital = "Edirne"
+capital = "Эдирне"
 trade_goods = grain
 hre = no
 base_tax = 7
@@ -12,7 +12,6 @@ base_production = 7
 base_manpower = 3
 is_city = yes
 add_core = BYZ
-add_core = TUR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -23,10 +22,11 @@ add_permanent_province_modifier = {
 	name = minor_river_estuary_modifier
 	duration = -1
 }
-
-1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Sьleyman's Faction" leader = "Sьleyman Osmanoglu" } controller = REB } # Interregnum
-1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Mыsa's Faction" leader = "Mыsa Osmanoglu" } controller = REB }
-1413.1.1 = { revolt = {} controller = TUR }
+1362.1.1 = { owner = TU0 controller = TU0 add_core = TU0 }
+1402.1.1 = { revolt = { type = pretender_rebels size = 1 name = "Фракция Сулеймана" leader = "Сулейман Османоглу" } controller = REB } # Interregnum
+1410.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 name = "Фракция Мусы" leader = "Муса Османоглу" } controller = REB }
+1413.1.1 = { revolt = {} controller = TU0 }
+1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 }
 1459.1.1 = { culture = turkish religion = sunni }
 1502.1.1 = { remove_core = BYZ }
 1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance

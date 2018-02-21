@@ -1,0 +1,56 @@
+#397 - Abu Dhabi
+
+owner = NAJ					### STT
+controller = NAJ			### STT
+culture = bedouin_arabic	### STT
+religion = shiite
+capital = "Абу Даби"		### STT
+trade_goods = livestock #Pearls
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = NAJ	### STT
+add_core = SHR
+add_core = YAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = east_african
+discovered_by = ETH	### STT
+discovered_by = ADA	### STT
+discovered_by = NUB	### STT
+discovered_by = ZAN	### STT
+discovered_by = ZIM	### STT
+discovered_by = AJU	### STT
+discovered_by = MBA	### STT
+discovered_by = MDI	### STT
+discovered_by = MLI	### STT
+discovered_by = SFA	### STT
+
+1444.4.4 = { owner = ORM controller = ORM add_core = ORM }	### STT
+1480.1.1 = { discovered_by = TUR }
+1507.9.1 = { discovered_by = POR } # Alfonso d'Albuquerque
+1622.5.3 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+} # Taken by Abbas I of Safavid
+1783.1.1 = {
+	owner = NAJ
+	controller = NAJ
+	remove_core = PER
+} # Reconquered by the Bani Utubs
+1793.1.1 = {
+	capital = "Abu Dhabi"
+	owner = YAS
+	controller = YAS
+	trade_goods = gems #Pearls
+}
+1799.1.1 = {
+	owner = OMA
+	controller = OMA
+	add_core = OMA
+} # Ruled by the Sultanate of Oman

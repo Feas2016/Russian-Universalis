@@ -1,8 +1,8 @@
 #682 - Hanyang
 
-owner = MNG
-controller = MNG
-add_core = MNG
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = hubei
 religion = confucianism
 capital = "Wuchang"
@@ -23,9 +23,10 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1368.1.1 = { owner = MNG controller = MNG remove_core = YUA add_core = MNG }
 1608.1.1 = { discovered_by = SPA }
 1642.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Zhang Xianzhong rebellion
-1643.1.1 = { revolt = { } revolt_risk = 0 controller = CXI } # The Xi dynasty of Zhang Xianzhong
+1643.1.1 = { revolt = { } unrest = 0 controller = CXI } # The Xi dynasty of Zhang Xianzhong
 1645.6.14 = {
 	owner = QNG
 	controller = QNG

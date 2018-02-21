@@ -4,17 +4,18 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_tuscany_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = ITA }
 			NOT = { tag = TUS }
-			### STT
-			NOT = { tag = PQR }
-			NOT = { tag = ROM }
+			NOT = { tag = PQR }	### STT
+			NOT = { tag = CAR }	### STT
 			OR = {
 				ai = no
 				AND = {
@@ -35,7 +36,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			NOT = { exists = TUS }
@@ -74,6 +75,10 @@ country_decisions = {
 				change_government = feudal_monarchy
 			}
 			add_prestige = 25
+			set_country_flag = formed_tuscany_flag
+			hidden_effect = {
+				country_event = { id = flavor_tus.2 days = 50 random = 20 }
+			}
 		}
 		ai_will_do = {
 			factor = 1

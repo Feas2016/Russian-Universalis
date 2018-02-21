@@ -1,0 +1,32 @@
+namespace = stt_eng_fra
+
+country_event = {
+	id = stt_eng_fra.1
+	title = "stt_eng_fra.1.t"
+	desc = "stt_eng_fra.1.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		is_year = 1333
+	}
+
+	mean_time_to_happen = {
+		months = 15
+	}
+
+	option = {
+		name = "stt_eng_fra.3.a1"
+		add_prestige = 10
+		add_legitimacy = 10
+		france_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ENG
+		}
+	}
+}

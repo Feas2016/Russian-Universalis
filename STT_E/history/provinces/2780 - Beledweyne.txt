@@ -6,29 +6,34 @@ add_core = AJU
 add_core = HOB
 culture = somali
 religion = sunni
-capital = "Qardho"
-trade_goods = wool
+capital = "Кардхо"	### STT
+trade_goods = livestock
 is_city = yes
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-discovered_by = ETH
-discovered_by = ADA
-discovered_by = NUB
-discovered_by = ZAN
-discovered_by = AJU
-discovered_by = MBA
-discovered_by = MDI
-discovered_by = MLI
-discovered_by = SFA
-discovered_by = ZIM
+discovered_by = east_african
+discovered_by = ETH	### STT
+discovered_by = ADA	### STT
+discovered_by = NUB	### STT
+discovered_by = ZAN	### STT
+discovered_by = AJU	### STT
+discovered_by = MBA	### STT
+discovered_by = MDI	### STT
+discovered_by = MLI	### STT
+discovered_by = SFA	### STT
+discovered_by = ZIM	### STT
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = east_african
+
+
+
 
 1526.1.1 = { owner = ADA controller = ADA } #Ahmad Gran secures control over Marehan
 1550.1.1 = { discovered_by = TUR }
+
 1555.1.1 = { owner = AJU controller = AJU } #Northern part of province no longer conrolled by ADA
 1650.1.1 = { owner = HOB controller = HOB remove_core = AJU }
+1889.1.1 = { owner = TTA controller = ITA add_core = ITA }	### STT

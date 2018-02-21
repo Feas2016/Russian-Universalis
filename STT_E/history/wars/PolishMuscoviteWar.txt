@@ -1,0 +1,241 @@
+name = "Русско-польская война"
+
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = TSR
+}
+
+1604.11.11 = {
+	add_attacker = PLC
+	add_attacker = ZAZ
+	
+	add_defender = TSR
+	add_defender = QAS
+}
+1604.12.21 = {
+	battle = {
+		name = "Новгород-Северский"
+		location = 1945
+		attacker = {
+			commander = "Лжедмитрий I"	# False Dmitriy I
+			infantry = 11000
+			cavalry = 4000
+			losses = 10	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Фёдор Мстиславский"	# Fyodor Mstislavsky
+			infantry = 17000
+			cavalry = 8000
+			losses = 20	# percent
+			country = TSR
+		}
+		result = yes
+	}
+}
+1605.1.21 = {
+	battle = {
+		name = "Добрыничи"
+		location = 297
+		attacker = {
+			commander = "Лжедмитрий I"	# False Dmitriy I
+			infantry = 16000
+			cavalry = 7000
+			losses = 66	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Фёдор Мстиславский"	# Fyodor Mstislavsky
+			infantry = 14000
+			cavalry = 6000
+			losses = 33	# percent
+			country = TSR
+		}
+		result = no
+	}
+}
+1609.8.18 = {
+	battle = {
+		name = "Калязин"
+		location = 294
+		attacker = {
+			commander = "Ян Пётр Сапега"
+			infantry = 15000
+			cavalry = 5000
+			losses = 20	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Михаил Скопин-Шуйский"	
+			infantry = 13000
+			cavalry = 5000
+			losses = 10	# percent
+			country = TSR
+		}
+		result = no
+	}
+}
+1609.10.18 = {
+	battle = {
+		name = "Каринское поле"
+		location = 307
+		attacker = {
+			commander = "Ян Пётр Сапега"	
+			infantry = 10000
+			cavalry = 10000
+			losses = 50	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Михаил Скопин-Шуйский"
+			infantry = 17000
+			cavalry = 8000
+			losses = 10	# percent
+			country = TSR
+		}
+		result = no
+	}
+}
+1610.6.24 = {
+	battle = {
+		name = "Царёво-Займище"
+		location = 293
+		attacker = {
+			commander = "Станислав Жолкевский"	
+			infantry = 5000
+			cavalry = 6000
+			losses = 10	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Фёдор Елецкий"
+			infantry = 6000
+			cavalry = 2000
+			losses = 100 # percent
+			country = TSR
+		}
+		result = yes
+	}
+}
+1610.7.4 = {
+	battle = {
+		name = "Клушино"
+		location = 293
+		attacker = {
+			commander = "Станислав Жолкевский"	# Stanislaw Zolkiewski
+			infantry = 1000
+			cavalry = 6000
+			artillery = 30
+			losses = 6	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Дмитрий Шуйский"	# Dmitry Shuisky
+			infantry = 18000
+			cavalry = 12000
+			losses = 25	# percent
+			country = TSR
+		}
+		result = yes
+	}
+}
+
+1611.6.3 = {
+	battle = {
+		name = "Осада Смоленска"
+		location = 293
+		attacker = {
+			commander = "Сигизмунд III"	# Sigismund III
+			infantry = 15000
+			cavalry = 25000
+			artillery = 5000
+			losses = 80	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Михаил Шеин"	
+			infantry = 4800
+			cavalry = 500
+			losses = 100 # percent
+			country = TSR
+		}
+		result = yes
+	}
+}
+1612.8.25 = {
+	battle = {
+		name = "Московская битва"
+		location = 295
+		attacker = {
+			commander = "Дмитрий Пожарский"
+			infantry = 7500
+			cavalry = 2500
+			artillery = 500
+			losses = 5	# percent
+			country = TSR
+		}
+		defender = {
+			commander = "Ян Ходкевич"	
+			infantry = 8000
+			cavalry = 7000
+			losses = 70 # percent
+			country = PLC
+		}
+		result = no
+	}
+}
+1618.6.1 = {
+	battle = {
+		name = "Можайское сражение"
+		location = 3181
+		attacker = {
+			commander = "Владислав Ваза"
+			infantry = 8000
+			cavalry = 7000
+			artillery = 3000
+			losses = 5	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Борис Лыков"	
+			infantry = 8000
+			cavalry = 7000
+			artillery = 1500
+			losses = 5 # percent
+			country = TSR
+		}
+		result = no
+	}
+}
+1618.10.1 = {
+	battle = {
+		name = "Осада Москвы"
+		location = 295
+		attacker = {
+			commander = "Владислав Ваза"
+			infantry = 11000
+			cavalry = 10000
+			artillery = 5000
+			losses = 15	# percent
+			country = PLC
+		}
+		defender = {
+			commander = "Михаил Федорович"	
+			infantry = 6000
+			cavalry = 5000
+			artillery = 500
+			losses = 5 # percent
+			country = TSR
+		}
+		result = no
+	}
+}
+# Treaty of Dywilino
+1618.12.11 = {
+	rem_attacker = PLC
+	rem_attacker = ZAZ
+	
+	rem_defender = TSR
+	rem_defender = QAS
+}

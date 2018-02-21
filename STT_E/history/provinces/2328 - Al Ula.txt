@@ -1,0 +1,55 @@
+#2328 - Al-Ula
+
+owner = FAD			### STT
+controller = FAD	### STT
+culture = bedouin_arabic
+religion = sunni
+capital = "Аль-Ула"	### STT
+trade_goods = salt
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = FAD		### STT
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+discovered_by = eastern
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = east_african
+discovered_by = ETH	### STT
+discovered_by = ADA	### STT
+discovered_by = NUB	### STT
+discovered_by = ZAN	### STT
+discovered_by = ZIM	### STT
+discovered_by = AJU	### STT
+discovered_by = MBA	### STT
+discovered_by = MDI	### STT
+discovered_by = MLI	### STT
+discovered_by = SFA	### STT
+
+1515.1.1 = { discovered_by = POR }
+1516.8.24 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Part of the Ottoman Empire
+1770.1.1 = {
+	owner = MAM
+	controller = MAM
+	remove_core = TUR
+} # Ali Bey gained control of the Hijaz, reconstituting the Mamluk state
+1772.1.1 = { owner = HED controller = HED }
+1802.1.1 = {
+	owner = NAJ
+	controller = NAJ
+	add_core = NAJ
+} # The First Saudi State
+1818.9.9 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	remove_core = NAJ
+} # The end of the Saudi State

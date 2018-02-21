@@ -12,6 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = HED
+fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
@@ -35,7 +36,8 @@ discovered_by = SFA
 	controller = TUR
 	add_core = TUR
 } # Part of the Ottoman empire
-1770.1.1 = {	owner = MAM
+1770.1.1 = {
+	owner = MAM
 	controller = MAM
 	remove_core = TUR
 } # Ali Bey gained control of the Hijaz, reconstituting the Mamluk state
@@ -48,5 +50,6 @@ discovered_by = SFA
 1812.6.1 = {
 	owner = TUR
 	controller = TUR
+	add_core = TUR
 	remove_core = NAJ
 } # Mecca is returned to the Ottomans

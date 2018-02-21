@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_germany_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -11,8 +12,8 @@ country_decisions = {
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			### STT
-			NOT = { tag = WEK }
+			NOT = { tag = ROM }
+			NOT = { tag = WEK }	### STT
 			OR = {
 				ai = no
 				AND = {
@@ -48,8 +49,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
-			is_subject = no
+			adm_tech = 30
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
@@ -73,8 +74,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GER
-			### STT
-			change_government = reich_government
+			change_government = reich_government	### STT
 			emperor = {
 				add_opinion = {
 					who = root
@@ -86,17 +86,24 @@ country_decisions = {
 				country_event = { id = hre_event.5 }
 			}
 			set_government_rank = 3
-			germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GER
 			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = GER
+			}			
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
+			set_country_flag = formed_germany_flag
 		}
 		ai_will_do = {
 			factor = 1

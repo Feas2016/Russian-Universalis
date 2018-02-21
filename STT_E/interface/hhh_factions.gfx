@@ -1,0 +1,26 @@
+spriteTypes = {
+# Greek Monarchy
+	spriteType = {
+		name = "GFX_faction_rr_jacobins"	
+		texturefile = "gfx//interface//jacobins_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_royalists"
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_royalists"	
+		texturefile = "gfx//interface//imperials_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_faction_bg_republicans"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_republicans"	
+		texturefile = "gfx//interface//girondists_icon.tga"
+	}	
+
+}

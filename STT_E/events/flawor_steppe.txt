@@ -1,5 +1,5 @@
 namespace = flavor_steppe
-# don_cossaks
+# don_cossacks
 country_event = {
 	id = "flavor_steppe.1"
 	title = "flavor_steppe.1.t"
@@ -11,6 +11,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = RUS
+			tag = TSR
 			tag = MOS
 		}
 		owns_core_province = 2409
@@ -31,11 +32,11 @@ country_event = {
 	}
 	option = {	
 		name = "flavor_steppe.1.a"
-		add_manpower = -2000
+		add_manpower = -2
 		2409 = {
 			add_core = DON
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_don"
 				duration = -1
@@ -43,8 +44,8 @@ country_event = {
 		}
 		288 = {
 			add_core = DON
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_don"
 				duration = -1
@@ -52,8 +53,8 @@ country_event = {
 		}
 		2413 = {
 			add_core = DON
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_don"
 				duration = -1
@@ -61,7 +62,7 @@ country_event = {
 		}
 	}
 }
-# zaz_cossaks
+# zaz_cossacks
 country_event = {
 	id = "flavor_steppe.2"
 	title = "flavor_steppe.2.t"
@@ -75,6 +76,7 @@ country_event = {
 			tag = LIT
 			tag = POL
 			tag = PLC
+			tag = JAG
 		}
 		owns_core_province = 283
 		owns_core_province = 2411
@@ -94,11 +96,11 @@ country_event = {
 	}
 	option = {	
 		name = "flavor_steppe.2.a"
-		add_manpower = -1000
+		add_manpower = -1
 		283 = {
 			add_core = ZAZ
 			change_culture = ruthenian
-			change_religion = orthodox
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_zaz"
 				duration = -1
@@ -107,7 +109,7 @@ country_event = {
 		2411 = {
 			add_core = ZAZ
 			change_culture = ruthenian
-			change_religion = orthodox
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_zaz"
 				duration = -1
@@ -116,7 +118,7 @@ country_event = {
 		290 = {
 			add_core = ZAZ
 			change_culture = ruthenian
-			change_religion = orthodox
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_zaz"
 				duration = -1
@@ -124,7 +126,7 @@ country_event = {
 		}
 	}
 }
-# ural_cossaks
+# ural_cossacks
 country_event = {
 	id = "flavor_steppe.3"
 	title = "flavor_steppe.3.t"
@@ -137,6 +139,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 474
 		owns_core_province = 2365
@@ -157,11 +160,11 @@ country_event = {
 	}
 	option = {
 		name = "flavor_steppe.3.a"
-		add_manpower = -1000
+		add_manpower = -1
 		474 = {
 			add_core = YIK
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
@@ -169,8 +172,8 @@ country_event = {
 		}
 		2365 = {
 			add_core = YIK
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
@@ -178,8 +181,8 @@ country_event = {
 		}
 		469 = {
 			add_core = YIK
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
@@ -188,7 +191,7 @@ country_event = {
 		2367 = {
 			add_core = YIK
 			change_culture = russian
-			change_religion = orthodox
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
@@ -196,7 +199,7 @@ country_event = {
 		}
 	}
 }
-# sibir_cossaks
+# sibir_cossacks
 country_event = {
 	id = "flavor_steppe.4"
 	title = "flavor_steppe.4.t"
@@ -209,6 +212,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 1071
 		owns_core_province = 2354
@@ -228,35 +232,35 @@ country_event = {
 		}
 	}
 	option = {
-		add_manpower = -1000
+		add_manpower = -1
 		name = "flavor_steppe.4.a"
 		1071 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_sibir"
 				duration = -1
 			}
 		}
 		479 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_sibir"
 				duration = -1
 			}
 		}
 		2354 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_sibir"
 				duration = -1
 			}
 		}
 		2357 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_sibir"
 				duration = -1
@@ -264,7 +268,7 @@ country_event = {
 		}
 	}
 }
-# terek_cossaks
+# terek_cossacks
 country_event = {
 	id = "flavor_steppe.5"
 	title = "flavor_steppe.5.t"
@@ -277,6 +281,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2208
 		owns_core_province = 2199
@@ -295,26 +300,26 @@ country_event = {
 	}
 	option = {	
 		name = "flavor_steppe.5.a"
-		add_manpower = -1000
+		add_manpower = -1
 		2208 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
-				name = "volnitsa_terek_kouban"
+				name = "volnitsa_terek"
 				duration = -1
 			}
 		}
 		2199 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
-				name = "volnitsa_terek_kouban"
+				name = "volnitsa_terek"
 				duration = -1
 			}
 		}
 	}
 }
-# orenburg_cossaks
+# orenburg_cossacks
 country_event = {
 	id = "flavor_steppe.6"
 	title = "flavor_steppe.6.t"
@@ -327,6 +332,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2420
 		owns_core_province = 1966
@@ -344,19 +350,19 @@ country_event = {
 		}
 	}
 	option = {
-		add_manpower = -1000
+		add_manpower = -1
 		name = "flavor_steppe.6.a"
 		2420 = {
-			change_culture = cossack 
-			change_religion = orthodox
+			change_culture = cossacks 
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
 			}
 		}
 		1966 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
 				name = "volnitsa_ural_orenburg"
 				duration = -1
@@ -365,7 +371,7 @@ country_event = {
 	}
 }
 
-# kouban_cossaks
+# kouban_cossacks
 country_event = {
 	id = "flavor_steppe.7"
 	title = "flavor_steppe.7.t"
@@ -378,6 +384,7 @@ country_event = {
 		OR = {
 			tag = RUS
 			tag = MOS
+			tag = TSR
 		}
 		owns_core_province = 2414
 		owns_core_province = 286
@@ -395,30 +402,30 @@ country_event = {
 			stability = 0
 		}
 	}
-	option = {	
+	option = {
 		name = "flavor_steppe.7.a"
-		add_manpower = -2000
+		add_manpower = -2
 		2414 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
-				name = "volnitsa_terek_kouban"
+				name = "volnitsa_kouban"
 				duration = -1
 			}
 		}
 		286 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
-				name = "volnitsa_terek_kouban"
+				name = "volnitsa_kouban"
 				duration = -1
 			}
 		}
 		287 = {
-			change_culture = cossack
-			change_religion = orthodox
+			change_culture = cossacks
+			change_religion = ROOT
 			add_province_modifier = {
-				name = "volnitsa_terek_kouban"
+				name = "volnitsa_kouban"
 				duration = -1
 			}
 		}
@@ -434,18 +441,20 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
+		is_year = 1600
 		OR = {
 			AND = {
 				tag = OIR
 				government = steppe_horde
-				is_year = 1600
 				NOT = { stability = 1 }
 			}
 			AND = {
-				OR = { tag = RUS tag = MOS }
-				NOT = {	OIR = exists }
+				OR = { tag = RUS tag = MOS tag = TSR}
+				NOT = {	exists = OIR }
 			}
 		}
+		owns_core_province = 468
+		owns_core_province = 2417
 	}
 	mean_time_to_happen = {
 		months = 24
@@ -453,19 +462,15 @@ country_event = {
 	option = {	# A stronger COUNTRY will emerge!
 		name = "flavor_steppe.8.a"
 		468 = { 
-			change_culture = oirat
+			change_culture = kalmyks
 			change_religion = vajrayana
 			add_core = KAL 
 			}
 		2417 = { 
-			change_culture = oirat
+			change_culture = kalmyks
 			change_religion = vajrayana
 			add_core = KAL
-			}
-		2416 = { 
-			change_culture = oirat
-			change_religion = vajrayana
-			add_core = KAL 
 		}
 	}
 }
+

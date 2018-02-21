@@ -5,8 +5,7 @@ country_decisions = {
 			OR = {
 				tag = ENG
 				tag = GBR
-				### STT
-				tag = UEF
+				tag = UEF ### STT
 			}
 			dip_tech = 15
 			NOT = { has_country_modifier = british_merchant_navy }
@@ -33,8 +32,7 @@ country_decisions = {
 			OR = {
 				tag = ENG
 				tag = GBR
-				### STT
-				tag = UEF
+				tag = UEF ### STT
 			}
 			NOT = { has_country_modifier = britanna_rules_the_waves }
 		}
@@ -58,12 +56,11 @@ country_decisions = {
 
 	designate_the_staple_port = {
 		potential = {
-			OR = {
+			OR = { ### STT
 				tag = ENG
-				### STT
-				tag = GBR
-				tag = UEF
-			}
+				tag = GBR ### STT
+				tag = UEF ### STT
+			} ### STT
 			owns = 87
 			NOT = { 87 = { has_province_modifier = the_staple_port } }
 
@@ -85,7 +82,7 @@ country_decisions = {
 					add_opinion = { who = ENG modifier = opinion_designated_staple_port }
 				}
 			}
-			add_mercantilism = 0.10
+			add_mercantilism = 10
 			add_adm_power = -40
 			87 = {
 				add_province_modifier = {

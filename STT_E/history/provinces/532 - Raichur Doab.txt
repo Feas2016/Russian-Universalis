@@ -20,10 +20,15 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = chinese
 
-1378.1.1 = {
-	controller = BAH
-	owner = BAH
-}
+1200.1.1 = { owner = HOI controller = HOI add_core = HOI }
+
+
+1327.1.1 = { owner = DLH controller = DLH add_core = DLH }
+
+1330.1.1 = { remove_core = HOI }
+
+1336.1.1 = { owner = VIJ controller = VIJ add_core = VIJ }
+
 1428.1.1 = { add_core = BAH }
 1493.1.1 = {
 	owner = VIJ

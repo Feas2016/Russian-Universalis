@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 5
 trade_goods = cloth
 base_manpower = 5
-capital = "Chambéry"
+capital = "Chambery"
 is_city = yes	
 add_core = SAV
 discovered_by = eastern
@@ -46,3 +46,9 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+1859.7.11 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	remove_core = SPI
+}

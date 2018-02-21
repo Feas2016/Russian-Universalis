@@ -9,7 +9,7 @@ culture = swabian
 religion = catholic
 base_tax = 3
 base_production = 3
-trade_goods = grain 
+trade_goods = glass 
 base_manpower = 5
 capital = "Freiburg" 
 is_city = yes
@@ -26,15 +26,10 @@ discovered_by = ottoman
 1524.4.1 = { unrest = 8 } # Peasant Revolts - 18.000 peasants take Freiburg (May)
 1524.12.1 = { unrest = 0 }
 1797.10.17 = {
-	owner = MOD
-	controller = MOD
-	add_core = MOD
- 	remove_core = HAB
- } # Treaty of Campo Formio
-1805.12.26 = {
 	owner = BAD
 	controller = BAD
 	add_core = BAD
-	remove_core = MOD
+	remove_core = HAB
  } # Treaty of Pressburg
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAD }

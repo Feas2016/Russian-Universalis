@@ -7,12 +7,12 @@ culture = amhara
 religion = coptic
 capital = "Nekemte"
 is_city = yes
-base_manpower = 1
-trade_goods = grain
+base_manpower = 2
+trade_goods = gold
 hre = no
 base_tax = 3 
 base_production = 3
-add_local_autonomy = 25
+estate = estate_nobles
 discovered_by = ETH
 discovered_by = ADA
 discovered_by = NUB
@@ -28,3 +28,11 @@ discovered_by = ottoman
 discovered_by = indian
 discovered_by = east_african
 
+1580.1.1 = {
+	culture = oromo
+}
+1670.1.1 = { #Damot is more closely integrated from around this time and onwards, with regular visits from emperors, etc.
+	owner = ETH
+	controller = ETH
+	add_core = ETH
+}

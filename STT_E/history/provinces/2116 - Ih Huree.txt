@@ -1,8 +1,8 @@
 # 2116 - Ih Huree
 
-owner = KHA
-controller = KHA
-add_core = KHA
+owner = YUA
+controller = YUA
+add_core = YUA
 culture = khalkha
 religion = tengri_pagan_reformed
 capital = "Ih Huree"
@@ -15,7 +15,12 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
-1633.1.1 = { discovered_by = RUS } 
+1368.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+}
+1633.1.1 = { discovered_by = TSR } 
 1635.4.1 = {
 	owner = KLK
 	controller = KLK

@@ -1,12 +1,12 @@
 #578 - Roh
 
-owner = TIM
-controller = TIM
-add_core = TIM
+owner = HUL			### STT
+controller = HUL	### STT
+add_core = HUL		### STT
 culture = afghani
 religion = sunni
 capital = "Peshawar"
-trade_goods = grain
+trade_goods = livestock
 hre = no
 base_tax = 4 
 base_production = 4
@@ -14,18 +14,21 @@ base_manpower = 2
 is_city = yes
 fort_15th = yes # Bala Hissar
 add_core = AFG
+add_core = HUL 		### STT
 discovered_by = KAS
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = nomad_group
 
-1449.1.1 = {
+1335.1.1 = { owner = SAB add_core = SAB controller = SAB }	### STT
+1387.1.1 = { owner = TIM add_core = TIM controller = TIM }	### STT
+1444.1.1 = { owner = AFG add_core = AFG controller = AFG }	### STT
+1449.2.1 = { #Conquered by Babur bin Baysunkur
 	owner = KHO
 	controller = KHO
-	add_core = KHO
 	remove_core = TIM
-} # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+}
 1507.7.1 = {
 	owner = TIM
 	controller = TIM
@@ -40,6 +43,9 @@ discovered_by = nomad_group
 1672.1.1 = { revolt = { type = nationalist_rebels size = 1 name = "Pathans" } }
 1673.1.1 = { discovered_by = ENG }
 1675.1.1 = { revolt = { } }
+
+
+
 1677.1.1 = { discovered_by = FRA }
 1707.5.12 = { discovered_by = GBR }
 1737.1.1 = { controller = PER } # Captured by Persia, Nadir Shah

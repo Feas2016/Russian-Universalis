@@ -4,14 +4,14 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_great_britain_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
 			NOT = { exists = GBR }
-			### STT
-			NOT = { exists = UEF }
-			NOT = { tag = WEK }
+			NOT = { exists = UEF }	### STT
+			NOT = { tag = WEK }	### STT
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
 			OR = {
@@ -35,8 +35,8 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
-			is_subject = no
+			adm_tech = 18 #STT
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			owns_core_province = 236		# London
@@ -46,19 +46,11 @@ country_decisions = {
 			owns_core_province = 251		# Aberdeen
 		}
 		effect = {
-			change_tag = GBR
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
+			236 = {
+				move_capital_effect = yes
 			}
+			change_tag = GBR
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -72,14 +64,11 @@ country_decisions = {
 				add_permanent_claim = GBR
 			}
 			add_prestige = 25
-			
-			GBR = {
-				set_capital = 236
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			set_country_flag = formed_great_britain_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -107,6 +96,8 @@ country_decisions = {
 								SCO = {	junior_union_with = ENG	}
 								SCO = {	vassal_of = ENG	}
 							}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							SCO = { NOT = { num_of_cities = 11 } } #Keep this number the same as in allow
 						}
 					}
 				}
@@ -120,6 +111,8 @@ country_decisions = {
 								ENG = {	junior_union_with = SCO	}
 								ENG = {	vassal_of = SCO	}
 							}
+							#This overlaps with allow for AI, is meant to negate do_not_integrate
+							ENG = { NOT = { num_of_cities = 28 } } #Keep this number the same as in allow
 						}
 					}
 				}
@@ -127,7 +120,7 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			is_subject = no
+			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			legitimacy = 100
@@ -138,7 +131,7 @@ country_decisions = {
 						SCO = {	junior_union_with = ENG	}
 						SCO = {	vassal_of = ENG	}
 					}
-					SCO = { NOT = { num_of_cities = 11 } }
+					SCO = { NOT = { num_of_cities = 11 } } #Keep this number the same as in potential
 				}
 				AND = {
 					tag = SCO
@@ -146,7 +139,7 @@ country_decisions = {
 						ENG = {	junior_union_with = SCO	}
 						ENG = {	vassal_of = SCO	}
 					}
-					ENG = { NOT = { num_of_cities = 28 } }
+					ENG = { NOT = { num_of_cities = 28 } } #Keep this number the same as in potential
 				}
 			}
 		}
@@ -170,18 +163,7 @@ country_decisions = {
 				inherit = ENG
 			}
 			change_tag = GBR
-			if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
-					set_in_empire = no
-				}
-			}
+			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -205,6 +187,8 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 200
+		do_not_integrate = ENG
+		do_not_integrate = SCO
 	}
 
 }

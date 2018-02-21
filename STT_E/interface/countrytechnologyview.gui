@@ -56,61 +56,240 @@ guiTypes = {
 		}
 		
 
-		iconType =
+		guiButtonType =
 		{
-			name ="tech_group"
-			spriteType = "GFX_tech_group_strip"
-			position = { x= 19 y = 103 }
+			name ="show_institutions"
+			spriteType = "GFX_institutions_large_icon"
+			position = { x= 14 y = 104 }
 			Orientation = "UPPER_LEFT"
 			hint_tag = "hint_techgroup"
+			shortcut = "n"
 		}
 
 		instantTextBoxType = {
-			name = "current_tech"
-			position = { x = 60 y = 118 }
+			name = "total_tech_penalty2"
+			position = { x = 63 y = 115 }
 			textureFile = ""
-			font = "vic_18"
+			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
-			text = "CURRENT_TECH_GROUP"	
-			maxWidth = 150
+			maxWidth = 350 ### Увеличил длину
 			maxHeight = 32
 			format = left
-			fixedsize = yes
+			text = "Total Tech Penalty: 70%"
 		}
 		
-		guiButtonType =
-		{
-			name ="westernize_button"
-			quadTextureSprite= "GFX_standard_button_105"
-			position = { x= 440 y = 113 }
+		### ------- Institutions -------		
+		windowType = {
+			name = "institutions_window"
+			position = { x=11 y=283 }
+			moveable = 0
 			Orientation = "UPPER_LEFT"
-			buttonText = "BUTTON_WESTERNISE"
-			buttonFont = "vic_18"
-		}
 
-		guiButtonType =
-		{
-			name ="pause_westernize_button"
-			quadTextureSprite= "GFX_standard_button_105"
-			position = { x= 440 y = 113 }
-			Orientation = "UPPER_LEFT"
-			buttonText = "BUTTON_PAUSE_WESTERNISE"
-			buttonFont = "vic_18"
-		}		
-		
-		iconType =
-		{
-			name ="westernize_progress"
-			spriteType = "GFX_westernize_progressbar"
-			position = { x= 282 y = 123 }
-			Orientation = "UPPER_LEFT"
+			iconType = {
+				name = "bg"
+				spriteType ="GFX_country_institutions_overlay"	
+				position = { x = -18 y = -152 }
+				orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "institutions_title"
+				position = { x = 52 y = -28 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				text = "INSTITUTIONS"	
+				maxWidth = 300
+				maxHeight = 32
+				format = left
+				fixedsize = yes
+			}			
+			
+			OverlappingElementsBoxType = {
+				name = "institutions"
+				position = { x = -35 y = 79 }
+				size = { x = 604 y = 128 }
+				Orientation = "UPPER_LEFT"
+				format = center
+				spacing = 1
+			}
+			
+			iconType = {
+				name = "institution_red_banner"
+				spriteType ="GFX_institution_red_banner"	
+				position = { x = 21 y = 150 }
+				orientation = "UPPER_LEFT"
+			}		
+			
+			iconType = {
+				name = "mod_institution_spread_icon"
+				spriteType = "GFX_institution_spread_icon"
+				position = { x= 20 y = 20 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "mod_institution_spread"
+				position = { x = 48 y = 25 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 250 ### Увеличил длину
+				maxHeight = 32
+				format = left
+				text = "Institution Spread: +70%"
+			}
+			
+			iconType = {
+				name ="mod_embracement_cost_icon"
+				spriteType = "GFX_institution_embracement_cost_icon"
+				position = { x= 271 y = 20 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			instantTextBoxType = {
+				name = "mod_embracement_cost"
+				position = { x = 299 y = 25 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 250 ### Увеличил длину
+				maxHeight = 32
+				format = left
+				text = "Embracement Cost: -20%"
+			}
+			
+			guiButtonType =
+			{
+				name ="embrace_button"
+				quadTextureSprite= "GFX_standard_button_105"
+				position = { x = 378 y = 308 }
+				Orientation = "UPPER_LEFT"
+				buttonText = "BUTTON_EMBRACE"
+				buttonFont = "vic_18"
+			}			
+			
+			instantTextBoxType = {
+				name = "name"
+				position = { x = 28 y = 156 }
+				textureFile = ""
+				font = "vic_29s"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 230
+				maxHeight = 32
+				format = left
+			}
+			
+			instantTextBoxType = {
+				name = "when_embraced_label"
+				position = { x = 28 y = 190 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 200
+				maxHeight = 32
+				format = left
+				text = "WHEN_EMBRACED"
+			}
+			
+			instantTextBoxType = {
+				name = "when_embraced"
+				position = { x = 36 y = 216 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 450 ### Увеличил длину
+				maxHeight = 32
+				format = left
+			}
+			
+			iconType = {
+				name = "country_progress"
+				spriteType = "GFX_institution_progress"
+				position = { x = 39 y = 314 }
+			}
+			
+			iconType = {
+				name = "country_progress_frame"
+				spriteType = "GFX_institution_progress_frame"
+				position = { x = 26 y = 310 }
+			}			
+			
+			instantTextBoxType = {
+				name = "country_progress_label"
+				position = { x = 28 y = 284 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 400 ### Увеличил длину
+				maxHeight = 26
+				format = left
+				fixedsize = yes
+			}
+			
+			instantTextBoxType = {
+				name = "origin"
+				position = { x = 264 y = 158 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				text = "Origin: North of the Wall"	
+				maxWidth = 236
+				maxHeight = 32
+				format = right
+				fixedsize = yes
+			}
+			
+			guiButtonType =
+			{
+				name ="goto_origin"
+				quadTextureSprite= "GFX_standard_button_105"
+				position = { x = 400 y = 185 }
+				Orientation = "UPPER_LEFT"
+				buttonText = "GOTO_GOTO"
+				buttonFont = "vic_18"
+			} 
+
+			iconType = {
+				name = "spread_info_icon"
+				spriteType = "GFX_institution_spread_conditions"
+				position = { x = 286 y = 158 }
+			}
+			
+			instantTextBoxType = {
+				name = "embrace_cost"
+				position = { x = 140 y = 310 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 120
+				maxHeight = 32
+				format = center
+				text = "4322 ¤"
+			}
+			
+			instantTextBoxType = {
+				name = "penalty"
+				position = { x = 36 y = 260 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}	
+				maxWidth = 400 ### Увеличил длину
+				maxHeight = 32
+				format = left
+			}
+			
+			guiButtonType =
+			{
+				name ="back_button"
+				quadTextureSprite= "GFX_standard_button_105"
+				position = { x = 214 y = 370 }
+				Orientation = "UPPER_LEFT"
+				buttonText = "BACK"
+				buttonFont = "vic_18"
+				shortcut = "n"
+			}
 		}
-		
-		iconType = {
-			name ="westernize_progress_frame"
-			spriteType = "GFX_westernize_progress_frame"
-			position = { x= 272 y = 118 }
-		}					
 	}
 	
 	### ------- Administrative Tech Research -------		
@@ -123,9 +302,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "tech"
-			position = { x = 84 y = 29 }
+			position = { x = 84 y = 32 }
 			textureFile = ""
-			font = "vic_22"
+			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "adm_tech"	
 			maxWidth = 256
@@ -173,12 +352,12 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "tech_research_name"
-			position = { x = 35 y =60 }
+			position = { x = 32 y =60 } # Сместил влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Research Galloop Tactic"	
-			maxWidth = 165
+			maxWidth = 185 # Увеличил на 20
 			maxHeight = 42
 			format = left
 			allwaystransparent = yes
@@ -217,18 +396,18 @@ guiTypes = {
 		{
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
-			position = { x = 452 y = 28 }
+			position = { x = 402 y = 28 }
 			Orientation = "UPPER_LEFT"
 		}				
 		
 		instantTextBoxType = {
 			name = "time_value"
-			position = { x = 480 y = 29 }
+			position = { x = 430 y = 29 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
 			text = "+100%"	
-			maxWidth = 64
+			maxWidth = 84 # Увеличил на 20
 			maxHeight = 32
 			format = left
 		}	
@@ -252,20 +431,20 @@ guiTypes = {
 		{
 			name ="tech_gov_monarchy"
 			spriteType = "GFX_government_type_icon"
-			position = { x= 207 y = 61 }
+			position = { x= 198 y = 61 } ### Сдвинул влево
 			Orientation = "UPPER_LEFT"
 			frame = 5
 		}
 
 		instantTextBoxType = {
 			name = "tech_gov_monarchy_name"
-			position = { x = 239 y = 64 }
+			position = { x = 225 y = 64 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 205
-			maxHeight = 16
+			maxWidth = 205 ### Увеличил длину
+			maxHeight = 16 ### Увеличил длину
 			format = left
 		}
 		
@@ -284,20 +463,20 @@ guiTypes = {
 		{
 			name ="tech_gov_republic"
 			spriteType = "GFX_government_type_icon"
-			position = { x= 206 y = 92 }
+			position = { x= 197 y = 92 } ### Сдвинул влево
 			Orientation = "UPPER_LEFT"
 			frame = 4
 		}
 
 		instantTextBoxType = {
 			name = "tech_gov_republic_name"
-			position = { x = 235 y = 96 }
+			position = { x = 225 y = 96 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 215
-			maxHeight = 16
+			maxWidth = 215 ### Увеличил длину
+			maxHeight = 16 ### Увеличил длину
 			format = left
 		}
 		
@@ -316,20 +495,20 @@ guiTypes = {
 		{
 			name ="tech_gov_tribal"
 			spriteType = "GFX_government_type_icon"
-			position = { x= 207 y = 125 }
+			position = { x= 198 y = 125 } ### Сдвинул влево
 			Orientation = "UPPER_LEFT"
 			frame = 2
 		}
 
 		instantTextBoxType = {
 			name = "tech_gov_tribal_name"
-			position = { x = 239 y = 128 }
+			position = { x = 225 y = 128 } ### Сдвинул влево
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = ""	
-			maxWidth = 205
-			maxHeight = 16
+			maxWidth = 205 ### Увеличил длину
+			maxHeight = 16 ### Увеличил длину
 			format = left
 		}	
 		
@@ -429,7 +608,7 @@ guiTypes = {
 		iconType =
 		{
 			name ="tech_enable"
-			spriteType = "GFX_promote_investments_button_icon"
+			spriteType = "GFX_unitpanel_forced_march"
 			position = { x= 440 y = 130 }			
 			Orientation = "UPPER_LEFT"
 		}					
@@ -471,9 +650,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "tech"
-			position = { x = 84 y = 10 }
+			position = { x = 84 y = 13 }
 			textureFile = ""
-			font = "vic_22"
+			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "dip_tech"	
 			maxWidth = 256
@@ -562,13 +741,13 @@ guiTypes = {
 		{
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
-			position = { x = 452 y = 8 }
+			position = { x = 402 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}				
 		
 		instantTextBoxType = {
 			name = "time_value"
-			position = { x = 480 y = 9 }
+			position = { x = 430 y = 9 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
@@ -727,10 +906,31 @@ guiTypes = {
 		iconType =
 		{
 			name ="tech_enable"
-			spriteType = "GFX_promote_investments_button_icon"
+			spriteType = "GFX_spy_actions_icon"
 			position = { x= 440 y = 130 }
 			Orientation = "UPPER_LEFT"
 		}
+
+
+		iconType =
+		{
+			name ="tech_accepted_cultures"
+			spriteType = "GFX_accepted_cultures"
+			position = { x= 478 y = 130 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "tech_accepted_cultures_value"
+			position = { x = 500 y = 130 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}	
+			text = "x%"	
+			maxWidth = 42
+			maxHeight = 32
+			format = right
+		}			
 
 
 		
@@ -879,9 +1079,9 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "tech"
-			position = { x = 84 y = 9 }
+			position = { x = 84 y = 12 }
 			textureFile = ""
-			font = "vic_22"
+			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "mil_tech"	
 			maxWidth = 256
@@ -970,13 +1170,13 @@ guiTypes = {
 		{
 			name ="time_icon"
 			spriteType = "GFX_icon_time"
-			position = { x = 452 y = 8 }
+			position = { x = 402 y = 8 }
 			Orientation = "UPPER_LEFT"
 		}				
 		
 		instantTextBoxType = {
 			name = "time_value"
-			position = { x = 480 y = 9 }
+			position = { x = 430 y = 9 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}	
@@ -1012,12 +1212,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_infantry_name"
-			position = { x = 238 y = 34 }
+			position = { x = 233 y = 34 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Maurician"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes
@@ -1086,12 +1286,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_cavalry_name"
-			position = { x = 238 y = 73 }
+			position = { x = 233 y = 73 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Knights"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes
@@ -1161,12 +1361,12 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "tech_unit_artillery_name"
-			position = { x = 238 y = 112 }
+			position = { x = 233 y = 112 } # Сместил влево на 5
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}	
 			text = "Bronze guns"	
-			maxWidth = 164
+			maxWidth = 184 # Увеличил на 20
 			maxHeight = 32
 			format = left
 			fixedsize = yes
@@ -1576,8 +1776,8 @@ guiTypes = {
 		iconType =
 		{
 			name ="item_icon"
-			spriteType = "GFX_icon_merchant"
-			position = { x= 0 y = 0 }
+			spriteType = "GFX_icon_tech_may_study_technology"
+			position = { x= -4 y = -4 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.6
 		}		
@@ -1695,9 +1895,27 @@ guiTypes = {
 			spriteType = "GFX_icon_development_efficiency"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
-			scale = 0.5
 		}		
 	}
+
+	windowType = {
+		name = "countrytechnologyview_researchacceptedculturesitem"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=32 y=32 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+
+		iconType =
+		{
+			name ="item_icon"
+			spriteType = "GFX_icon_accepted_cultures"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}		
+	}
+
 
 	windowType = {
 		name = "countrytechnologyview_researchcombatwidthitem"
@@ -1770,4 +1988,22 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}		
 	}	
+
+	windowType = {
+		name = "countrytechnologyview_institution"
+		backGround =""
+		position = { x=0 y=0 }	
+		size = { x=200 y=64 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+
+		guiButtonType =
+		{
+			name ="item_button"
+			spriteType = "GFX_icon_maneuver"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
 }

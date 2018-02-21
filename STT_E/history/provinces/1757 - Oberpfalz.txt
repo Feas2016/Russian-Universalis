@@ -1,8 +1,8 @@
 #1757 - Oberpfalz
 
-owner = PAL
-controller = PAL
-add_core = PAL
+owner = BAV			### STT
+controller = BAV	### STT
+add_core = BAV		### STT
 culture = bavarian
 religion = catholic
 base_tax = 4
@@ -13,11 +13,15 @@ capital	= "Amberg"
 is_city = yes
 fort_15th = yes
 hre = yes
+
+
+
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+1329.1.1 = { owner = PAL add_core = PAL controller = PAL  remove_core = BAV }	### STT
 1618.5.6 = { owner = BAV controller = BAV add_core = BAV } # Battle of Prague
 1704.8.13 = {
 	owner = HAB
@@ -26,3 +30,4 @@ discovered_by = ottoman
 1714.9.7 = { owner = BAV controller = BAV }
 1743.1.1 = { base_tax = 4 base_production = 4 } # Economic crisis as effect of the Austrian succession war (e.g. Straubing bancrupt)
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1871.1.18 = { owner = GER controller = GER add_core = GER remove_core = BAV }	### STT

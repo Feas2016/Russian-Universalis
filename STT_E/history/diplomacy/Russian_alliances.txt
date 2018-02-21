@@ -1,16 +1,8 @@
 # Muscovy and Pskov
-alliance = {
+alliance = { ### STT
 	first = MOS
 	second = PSK
 	start_date = 1444.1.1
-	end_date = 1503.4.1
-}
-
-# Russia and Pskov
-alliance = {
-	first = RUS
-	second = PSK
-	start_date = 1503.4.2
 	end_date = 1510.1.19
 }
 
@@ -22,35 +14,35 @@ vassal = {
 	end_date = 1463.1.1
 }
 
+# Muscovy and Beloozero
+vassal = {
+	first = MOS
+	second = BLO
+	start_date = 1444.1.1
+	end_date = 1486.1.1
+}
+
 # Russian vassal - Qasim khanate
 vassal = {
 	first = MOS
 	second = QAS
 	start_date = 1445.7.7
-	end_date = 1503.4.1
+	end_date = 1547.1.16 ### STT
 }
 
 # Russian vassal - Qasim khanate
 vassal = {
-	first = RUS
+	first = TSR ### STT
 	second = QAS
-	start_date = 1503.4.2
+	start_date = 1547.1.16 ### STT
 	end_date = 1681.1.1
 }
 
 # Muscovite vassal - Great Perm
-vassal = {
+vassal = { ### STT
 	first = MOS
 	second = PRM
 	start_date = 1451.1.1
-	end_date = 1503.4.1
-}
-
-# Russian vassal - Great Perm
-vassal = {
-	first = RUS
-	second = PRM
-	start_date = 1503.4.1
 	end_date = 1505.4.1
 }
 
@@ -79,18 +71,10 @@ vassal = {
 }
 
 # Muscovy and Ryazan
-vassal = {
+vassal = { ### STT
 	first = MOS
 	second = RYA
 	start_date = 1456.1.1
-	end_date = 1503.4.1
-}
-
-# Russia and Ryazan
-vassal = {
-	first = RUS
-	second = RYA
-	start_date = 1503.4.2
 	end_date = 1521.1.1
 }
 
@@ -112,25 +96,17 @@ vassal = {
 
 # Russia and Crimea
 alliance = {
-	first = RUS
+	first = MOS ### STT
 	second = CRI
 	start_date = 1503.4.2
 	end_date = 1505.10.27
 }
 
 # Muscovy vassalizes Kazan
-vassal = {
+vassal = { ### STT
 	first = MOS
 	second = KAZ
 	start_date = 1487.7.9
-	end_date = 1503.4.1
-}
-
-# Russia vassalizes Kazan
-vassal = {
-	first = RUS
-	second = KAZ
-	start_date = 1503.4.2
 	end_date = 1505.6.24
 }
 
@@ -152,7 +128,7 @@ royal_marriage = {
 
 # Russia and Sweden
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = SWE
 	start_date = 1567.2.16
 	end_date = 1568.9.29 
@@ -160,23 +136,29 @@ alliance = {
 
 # Russia and Sweden (Treaty of Viborg)
 alliance = {
-	first = RUS 
+	first = TSR ### STT
 	second = SWE
 	start_date = 1609.2.28
 	end_date = 1610.7.19
 }
 
 # Pereyaslav Rada - Zaporozhian Cossacks swear fealty to Russia
-vassal = {
-	first = RUS
+vassal = { ### STT
+	first = TSR
 	second = ZAZ
 	start_date = 1654.1.8
+	end_date = 1721.11.1
+}
+vassal = { ### STT
+	first = RUS
+	second = ZAZ
+	start_date = 1721.11.2
 	end_date = 1775.8.3
 }
 
 # Russia and Poland (the Eternal Peace)
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = PLC
 	start_date = 1686.5.6
 	end_date = 1696.6.17
@@ -184,7 +166,7 @@ alliance = {
 
 # Treaty of Preobrazhenskoye & Treaty of Narva (Russia and Saxony-Poland)
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = PLC
 	start_date = 1699.11.21
 	end_date = 1706.9.26
@@ -192,7 +174,7 @@ alliance = {
 
 # Treaty of Preobrazhenskoye & Treaty of Narva (Russia and Saxony-Poland)
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = SAX
 	start_date = 1699.11.21
 	end_date = 1706.9.26
@@ -200,7 +182,7 @@ alliance = {
 
 # Anti-Swedish alliance
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = DAN
 	start_date = 1700.4.30
 	end_date = 1700.8.18
@@ -208,7 +190,7 @@ alliance = {
 
 # Treaty of Torun (Russia and Saxony-Poland)
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = PLC
 	start_date = 1709.10.9
 	end_date = 1721.9.10
@@ -216,7 +198,7 @@ alliance = {
 
 # Treaty of Torun (Russia and Saxony-Poland)
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = SAX
 	start_date = 1709.10.9
 	end_date = 1721.9.10
@@ -224,23 +206,29 @@ alliance = {
 
 # Anti-Swedish alliance
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = DAN
 	start_date = 1709.10.11
 	end_date = 1721.9.10
 }
 
 # Russian vassal
+vassal = { ### STT
+	first = TSR
+	second = KUR
+	start_date = 1710.11.11
+	end_date = 1721.11.1
+}
 vassal = {
 	first = RUS
 	second = KUR
-	start_date = 1710.11.11
+	start_date = 1721.11.2 ### STT
 	end_date = 1795.3.28
 }
 
 # Anti-Swedish alliance
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = PRU
 	start_date = 1713.9.18
 	end_date = 1721.9.10
@@ -248,7 +236,7 @@ alliance = {
 
 # Anti-Swedish alliance
 alliance = {
-	first = RUS
+	first = TSR ### STT
 	second = HAN
 	start_date = 1715.1.1
 	end_date = 1721.9.10
@@ -391,7 +379,7 @@ alliance = {
 }
 
 ####################
-# Mod
+# Mod ### STT
 ####################
 
 # Muscovy and Viatka

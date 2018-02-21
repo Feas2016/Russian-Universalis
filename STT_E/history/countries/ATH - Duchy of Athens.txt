@@ -1,73 +1,347 @@
 government = feudal_monarchy
 government_rank = 1
-primary_culture = tuscan
+primary_culture = cosmopolitan_french
 add_accepted_culture = greek
 religion = catholic
 technology_group = western
 capital = 146	#Athens
-fixed_capital = 146 # Cannot move capital away from this province & no power cost to move to it
+#STT fixed_capital = 146 # Cannot move capital away from this province & no power cost to move to it
 
-1402.1.1 = {
+1204.1.1 = {
 	monarch = {
-		name = "Antonio I"
-		dynasty = Acciaioli
-		adm = 0
-		dip = 1
+		name = "Оттон"
+		dynasty = "де ла Рош"
+		adm = 4
+		dip = 4
+		mil = 0
+	}
+}
+
+1225.1.1 = {
+	monarch = {
+		name = "Ги I"
+		dynasty = "де ла Рош"
+		birth_date = 1205.1.1
+		adm = 4
+		dip = 5
 		mil = 2
+	}
+}
+
+1263.1.1 = {
+	monarch = {
+		name = "Жан I"
+		dynasty = "де ла Рош"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+1280.1.1 = {
+	monarch = {
+		name = "Гильом I"
+		dynasty = "де ла Рош"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1287.1.1 = {
+	monarch = {
+		name = "Ги II"
+		dynasty = "де ла Рош"
+		birth_date = 1280.1.1
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+1308.10.5 = {
+	monarch = {
+		name = "Готье I"
+		dynasty = "де Бриенн"
+		birth_date = 1278.1.1
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1308.10.5 = {
+	heir = {
+		name = "Готье"
+		monarch_name = "Готье II"
+		dynasty = "де Бриенн"
+		birth_date = 1302.1.1
+		death_date = 1356.9.19
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1311.3.15 = {
+    primary_culture = catalan
+	monarch = {
+		name = "Роже"
+		dynasty = "Десслор"
+		birth_date = 1270.1.1
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+}
+
+1312.1.1 = {
+    primary_culture = sicilian
+	monarch = {
+		name = "Манфред"
+		dynasty = "де Барселона"
+		birth_date = 1302.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+1312.1.1 = {
+	heir = {
+		name = "Гулельмо"
+		monarch_name = "Гильом II"
+		dynasty = "де Барселона"
+		birth_date = 1312.1.1
+		death_date = 1338.8.22
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1317.11.9 = {
+	monarch = {
+		name = "Гильом II"
+		dynasty = "де Барселона"
+		birth_date = 1312.1.1
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1317.11.9 = {
+	heir = {
+		name = "Джованни"
+		monarch_name = "Джованни Рандаццо"
+		dynasty = "де Барселона"
+		birth_date = 1317.1.1
+		death_date = 1348.4.3
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1338.8.22 = {
+	monarch = {
+		name = "Джованни Рандаццо"
+		dynasty = "де Барселона"
+		birth_date = 1317.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1340.1.1 = {
+	heir = {
+		name = "Федериго"
+		monarch_name = "Федериго I Рандаццо"
+		dynasty = "де Барселона"
+		birth_date = 1340.1.1
+		death_date = 1355.7.11
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1348.4.3 = {
+	monarch = {
+		name = "Федериго I Рандаццо"
+		dynasty = "де Барселона"
+		birth_date = 1340.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+1355.7.11 = {
+	monarch = {
+		name = "Федериго II"
+		dynasty = "де Барселона"
+		birth_date = 1341.9.1
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+1377.1.27 = {
+	monarch = {
+		name = "Мария I"
+		dynasty = "де Барселона"
+		birth_date = 1363.6.2
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}
+
+1381.1.1 = {
+	monarch = {
+		name = "Педро IV"
+		dynasty = "де Барселона"
+		birth_date = 1319.10.5
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
+1387.1.5 = {
+    primary_culture = tuscan
+	monarch = {
+		name = "Нерио I"
+		dynasty = "Аччайоли"
+		birth_date = 1358.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1388.1.1 = {
+	heir = {
+		name = "Антонио"
+		monarch_name = "Антонио I"
+		dynasty = "Аччайоли"
+		birth_date = 1370.1.1
+		death_date = 1435.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1394.9.25 = {
+	monarch = {
+		name = "Антонио I"
+		dynasty = "Аччайоли"
+		birth_date = 1370.1.1
+		adm = 1
+		dip = 2
+		mil = 3
 	}
 }
 
 1416.1.1 = {
 	heir = {
-		name = "Nerio"
-		monarch_name = "Nerio II"
-		dynasty = "Acciaioli"
+		name = "Нерио"
+		monarch_name = "Нерио II"
+		dynasty = "Аччайоли"
 		birth_date = 1416.1.1
 		death_date = 1451.1.1
 		claim = 95
-		adm = 1
-		dip = 1
+		adm = 2
+		dip = 2
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = scholar_personality
 }
 
 1435.1.1 = {
 	monarch = {
-		name = "Nerio II"
-		dynasty = Acciaioli
+		name = "Нерио II"
+		dynasty = "Аччайоли"
 		birth_date = 1416.1.1		
-		adm = 1
-		dip = 1
+		adm = 2
+		dip = 2
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
 }
 
-1439.1.1 = {
-	monarch = {
-		name = "Antonio II"
-		dynasty = Acciaioli	
+1441.1.1 = {
+	heir = {
+		name = "Антонио"
+		monarch_name = "Антонио II"
+		dynasty = "Аччайоли"
+		birth_date = 1417.1.1
+		death_date = 1441.1.1
+		claim = 95
 		adm = 2
 		dip = 1
 		mil = 2
 	}
 }
 
+1439.1.1 = {
+	monarch = {
+		name = "Антонио II"
+		dynasty = "Аччайоли"
+		birth_date = 1417.1.1
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}
+
+1439.1.1 = {
+	heir = {
+		name = "Нерио"
+		monarch_name = "Нерио II"
+		dynasty = "Аччайоли"
+		birth_date = 1416.1.1
+		death_date = 1451.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_heir_personality = scholar_personality
+}
+
 1441.1.1 = {
 	monarch = {
-		name = "Nerio II"
-		dynasty = Acciaioli
+		name = "Нерио II"
+		dynasty = "Аччайоли"
 		birth_date = 1416.1.1			
 		adm = 2
 		dip = 2
 		mil = 0
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
 }
 
 1441.1.1 = {
 	heir = {
-		name = "Francesco"
-		monarch_name = "Francesco I"
-		dynasty = "Acciaioli"
+		name = "Франческо"
+		monarch_name = "Франческо I"
+		dynasty = "Аччайоли"
 		birth_date = 1440.1.1
 		death_date = 1455.1.1
 		claim = 95
@@ -77,11 +351,10 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 	}
 }
 	
-
 1451.1.1 = {
 	monarch = {
-		name = "Francesco I"
-		dynasty = Acciaioli
+		name = "Франческо I"
+		dynasty = "Аччайоли"
 		birth_date = 1440.1.1		
 		adm = 2
 		dip = 3
@@ -89,12 +362,41 @@ fixed_capital = 146 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1455.1.1 = {
-	monarch = {
-		name = "Francesco II"
-		dynasty = Acciaioli
+1451.1.1 = {
+	heir = {
+		name = "Франческо"
+		monarch_name = "Франческо II Франко"
+		dynasty = "Аччайоли"
+		birth_date = 1430.1.1
+		death_date = 1460.1.1
+		claim = 95
 		adm = 4
 		dip = 3
 		mil = 3
+	}
+}
+
+1454.1.1 = {
+	monarch = {
+		name = "Франческо II Франко"
+		dynasty = "Аччайоли"
+		birth_date = 1430.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1454.1.1 = {
+	heir = {
+		name = "Гавриил"
+		monarch_name = "Габриэль I"
+		dynasty = "Аччайоли"
+		birth_date = 1450.1.1
+		death_date = 1500.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
 	}
 }

@@ -1,20 +1,22 @@
 #315 - Finnmark
 
-owner = NOR
-controller = NOR
+owner = NOV
+controller = NOV
 culture = sapmi
-religion = shamanism
+religion = siberian_shamanism
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = fish
-capital = "Vardø"
+capital = "Âàðäè"	### STT
 is_city = yes
-add_core = NOR
+add_core = NOV
+add_local_autonomy = 70
 discovered_by = eastern
 discovered_by = western
 
+1326.1.1 = { owner = NOR add_core = NOR controller = NOR }
 1450.1.1 = { culture = norwegian }
 1536.1.1 = { religion = protestant owner = DAN controller = DAN add_core = DAN }
 1814.1.14 = {

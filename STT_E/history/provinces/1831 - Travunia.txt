@@ -1,7 +1,7 @@
 #1831 - Travunia
 
-owner = HUM		# Part of the Bosnian kingdom
-controller = HUM
+owner = BOS
+controller = BOS
 culture = serbian
 religion = orthodox
 capital = "Trebinje"
@@ -18,8 +18,24 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+
+1348.1.1 = { owner = SER add_core = SER controller = SER }
+1356.1.1 = { owner = HUM controller = HUM }
+1361.1.1 = { owner = BOS controller = BOS }
+1418.1.1 = { owner = HUM controller = HUM }
 1521.1.1 = {
 	owner = TUR
 	controller = TUR
 	add_core = TUR
+	remove_core = HUM
+}
+1878.7.1 = {
+	owner = BOS
+	controller = BOS
+	remove_core = TUR
+}
+1908.10.6 = {
+	owner = DUA
+	controller = DUA
+	add_core = DUA
 }

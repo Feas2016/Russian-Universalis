@@ -27,8 +27,8 @@ east_indian_trade_route = {
 		has_discovered = 1460 # Cape of Good Hope
 		num_of_ports = 4
 		has_idea = quest_for_the_new_world
-		technology_group = western
 		any_active_trade_node = {
+			has_merchant = ROOT
 			OR = {
 				province_id = 1361 # Straits of Johor
 				province_id = 1343 # Ganges Delta
@@ -41,6 +41,25 @@ east_indian_trade_route = {
 
 	trade_efficiency = 0.05	
 }
+
+#########################################################
+# Coptic control of Alexandria.
+#########################################################
+coptic_alexandria = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_discovered = 358	# Alexandria
+		religion = coptic
+	}
+
+	trigger = {
+		owns = 358 # Alexandria
+	}
+
+	prestige = 0.5
+	missionaries = 1
+}
+
 
 #########################################################
 # Theravada control of the temple of the Sacred Tooth.
@@ -242,12 +261,12 @@ custodian_of_the_two_holy_mosques = {
 	}
 
 	trigger = {
-		is_subject = no
-		owns = 385
-		owns = 384
+		is_free_or_tributary_trigger = yes
+		owns_or_vassal_of = 385
+		owns_or_vassal_of = 384
 	}
 
-	prestige = 0.5
+	legitimacy = 0.5
 	missionaries = 1
 }
 
@@ -315,9 +334,9 @@ catholic_rome = {
 		NOT = { overlord_of = PAP }
 		owns_or_vassal_of = 118 # Roma		
 		NOT = { tag = ITA }
-		### STT
-		NOT = { tag = PQR }
 		NOT = { tag = ROM }
+		NOT = { tag = PQR }		###STT
+        NOT = { tag = WEK }		###STT
 	}
 
 	papal_influence = -10
@@ -343,27 +362,37 @@ papal_subjugation = {
 }
 
 
-######################################
-# Western Influences.
-######################################
-western_arms_trade = {
+rapid_collapse_of_society = {
 	potential = {
-		NOT = { technology_group = western }
-		NOT = { technology_group = high_american }
+		normal_or_historical_nations = yes
+		capital_scope = {
+			OR = {
+				continent = north_america
+				continent = south_america
+				continent = new_world
+			}
+		}
+		
 	}
-
 	trigger = {
-		any_neighbor_country = {
-			technology_group = western
-			is_subject = no
-			alliance_with = ROOT
-			has_opinion = { who = ROOT value = 150 }
+		NOT = { has_institution = feudalism }
+		custom_trigger_tooltip = {
+			tooltip = rapid_collapse_of_society_tooltip
+			has_country_flag = european_diseases_struck
+			NOT = {
+				had_country_flag = {
+					flag = european_diseases_struck
+					days = 9125
+				}
+			}
 		}
 	}
-
-	technology_cost = -0.10
+	
+	all_power_cost = 0.33
+	discipline = -0.1
+	land_morale = -0.2
+	
 }
-
 
 ######################################
 # Italian - Submission to Emperor
@@ -406,7 +435,7 @@ counter_revolution = {
 		capital_scope = { continent = europe }
 		revolution_target_exists = yes
 		is_revolution_target = no
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		NOT = {
 			revolution_target = {
 				war_with = ROOT
@@ -416,7 +445,6 @@ counter_revolution = {
 			} 
 		}
 		OR = {
-			government = absolute_monarchy
 			government = enlightened_despotism
 			government = despotic_monarchy
 			government = feudal_monarchy
@@ -447,10 +475,8 @@ reaction = {
 		capital_scope = { continent = europe }
 		revolution_target_exists = yes
 		is_revolution_target = no
-		is_subject = no
+		is_free_or_tributary_trigger = yes
 		OR = {
-			government = absolute_monarchy
-			government = enlightened_despotism
 			government = despotic_monarchy
 			government = feudal_monarchy
 			government = administrative_monarchy
@@ -559,12 +585,10 @@ pentarchy_mod = {
 the_mandate_of_heaven = {
 	potential = {
 		government = celestial_empire
-		is_westernising = no
-		NOT = { technology_group = western }
+		NOT = { has_dlc = "Mandate of Heaven" }
 	}
 	
 	trigger = {	
-		is_westernising = no
 		stability = 0
 		legitimacy = 60
 		num_of_cities = 20
@@ -577,12 +601,10 @@ the_mandate_of_heaven = {
 the_mandate_of_heaven_lost = {
 	potential = {
 		government = celestial_empire
-		is_westernising = no
-		NOT = { technology_group = western }
+		NOT = { has_dlc = "Mandate of Heaven" }
 	}
 
 	trigger = {
-		is_westernising = no
 		OR = {
 			NOT = { stability = 0 }
 			NOT = { legitimacy = 60 }

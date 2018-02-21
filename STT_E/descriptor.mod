@@ -1,6 +1,9 @@
 name="[STT]Russian Universalis"
 path="mod/STT_E"
 replace_path="history/provinces"
+replace_path="history/countries"
+replace_path="common/province_names"
+
 tags={
  "Graphics"
  "Fixes"
@@ -12,4 +15,4 @@ tags={
  "Events" 
 }
 picture="Europa_Universalis_IV_extended.png"
-supported_version="1.17.*.*"
+supported_version="1.24.*.*"

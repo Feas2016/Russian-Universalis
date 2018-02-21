@@ -5,14 +5,14 @@
 
 rus_pomestie = {
 	cavalry_cost = -0.1
-	cavalry_power = 0.05
+	cavalry_power = 0.1
 	#icon = 8
 }
 
 rus_zemsky = {
 	dip_tech_cost_modifier = 0.1
 	diplomatic_upkeep = 1
-	stability_cost_modifier = -0.1
+	stability_cost_modifier = -0.15
 	#icon = 6
 }
 
@@ -24,10 +24,11 @@ rus_duma = {
 }
 
 rus_raskol = {
-	global_missionary_strength = 0.02
-	tolerance_heretic = -4
+	global_missionary_strength = 0.03
+	tolerance_heretic = -3
 	tolerance_heathen = -2
 	global_unrest = 2
+	missionaries = 1
 	#icon = 10
 }
 
@@ -44,9 +45,9 @@ rus_admiralty = {
 
 rus_foreign = {
 	land_maintenance_modifier = 0.10
-	global_manpower_modifier = -0.3
+	global_manpower_modifier = -0.15
 	land_attrition = -0.1
-	discipline = 0.02
+	discipline = 0.025
 	infantry_power = 0.1
 	infantry_cost = 0.1
 	#icon = 8
@@ -57,8 +58,8 @@ rus_titular = {
 	land_maintenance_modifier = -0.1
 	global_manpower_modifier = 0.1
 	global_regiment_recruit_speed = -0.1
-	land_morale = 0.05
-	discipline = -0.1
+	land_morale = 0.10
+	discipline = -0.05
 	#icon = 8
 }
 
@@ -82,17 +83,16 @@ rus_starosta = {
 rus_heraldry = {
 	prestige = 1
 	diplomatic_reputation = 1
-	relations_decay_of_me = 0.10
+	improve_relation_modifier = 0.10
 	stability_cost_modifier = 0.1
 	global_tax_modifier = -0.05
 	#icon = 9
 }
 
 rus_trading = {
-	overseas_income = 0.05
 	global_trade_power = 0.1
 	global_own_trade_power = 0.05
-	trade_efficiency = 0.03
+	trade_efficiency = 0.1
 	trade_steering = 0.03
 	global_tax_modifier = -0.05
 	#icon = 6
@@ -111,4 +111,18 @@ gol_hommage_modifer = {
 	prestige = 1
 	global_tax_modifier = 0.30
 	global_trade_power = 0.30
+}
+
+baltic_fleet = {
+    naval_forcelimit = 15
+	global_sailors = 1000
+}
+
+blacksea_fleet = {
+    naval_forcelimit = 15
+	global_sailors = 1000
+}
+
+time_of_troubles_12 = {
+	land_forcelimit_modifier = -0.80
 }

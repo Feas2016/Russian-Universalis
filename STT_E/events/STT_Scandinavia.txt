@@ -5,19 +5,8 @@ province_event = {
 	title = "stt_scan.t.1"
 	desc = "stt_scan.de.1"
 	picture = CITY_DEVELOPMENT_eventPicture
-	major = yes
-	
+		
 	trigger = {
-		is_year = 1500
-		OR = { 
-			tag = SWE
-			tag = SCA
-			AND = {
-				NOT = { tag = SCA }
-				NOT = { tag = SWE }
-				culture_group = scandinavian
-			}
-		}
 		any_province = {
 			OR = {
 				province_id = 18
@@ -27,6 +16,18 @@ province_event = {
 			is_empty = yes
 			NOT = { is_colony = yes }
 		}
+		is_year = 1400
+		owner = {
+		    OR = {
+			    tag = SWE
+			    tag = SCA
+			    AND = {
+				    NOT = { exists = SCA }
+				    NOT = { exists = SWE }
+				    culture_group = scandinavian
+			    }
+		    }
+		}	
 	}
 	
 	mean_time_to_happen = {
@@ -40,7 +41,7 @@ province_event = {
 			is_year = 1600
 		}
 		modifier = {
-			factor = 1.0
+			factor = 1.2
 			is_year = 1650
 		}
 	}
@@ -58,5 +59,224 @@ province_event = {
 				}
 			create_colony = 1000
 		}
+	}
+}
+
+province_event = {
+	id = stt_scan.2
+	title = "stt_scan.t.2"
+	desc = "stt_scan.de.2"
+	picture = ANGRY_MOB_eventPicture
+	# 1979, 8,10,20,22
+	trigger = {
+	    NOT = { is_year = 1400 } 
+		OR = {
+			province_id = 1979
+			province_id = 8
+			province_id = 10
+			province_id = 20
+			province_id = 22
+		}
+		culture_group = scandinavian
+		NOT = { religion = norse_pagan_reformed }
+		owner = {
+		    NOT = { religion = norse_pagan_reformed }
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 240
+	}
+	
+	option = {
+	    name = "stt_scan.a.2"
+		ai_chance = {
+		    factor = 10
+			modifier = {
+			    factor = 1000
+				num_of_owned_provinces_with = {
+			        value = 1
+				    religion = norse_pagan_reformed
+			    }
+			}
+		}
+		change_religion = norse_pagan_reformed
+		add_province_modifier = {
+			name = "pagans_was_supported"
+			duration = 1800
+		}
+		add_years_of_income = -0.1
+	}
+	
+	option = {
+	    name = "stt_scan.a.3"
+		ai_chance = {
+		    factor = 90
+		}
+		add_manpower = -1
+		add_province_modifier = {
+			name = "pagans_was_destroyed"
+			duration = 1000
+		}
+	}
+}	
+
+province_event = {
+	id = stt_scan.3
+	title = "stt_scan.t.3"
+	desc = "stt_scan.de.3"
+	picture = REFORM_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+	    name = "stt_scan.a.4"
+		add_stability = -3
+		change_religion = norse_pagan_reformed
+		add_country_modifier = {
+			name = "catholic_resistance"
+			duration = 1500
+		}
+		random_owned_province = {
+		    spawn_rebels = {
+			    type = catholic_rebels
+				size = 4
+			}
+		}
+		random_owned_province = {
+		    spawn_rebels = {
+			    type = catholic_rebels
+				size = 4
+			}
+		}
+	}	
+}
+
+country_event = {
+    id = stt_scan.4
+	title = "stt_scan.t.4"
+	desc = "stt_scan.de.4"
+	picture = qwqeqw_eventPicture
+
+	trigger = {
+	    has_country_flag = building_hof
+	}
+	
+	mean_time_to_happen = {
+	    months = 18
+	}
+	
+	option = {
+	    name = "stt_scan.a.5"  #end of construction
+	    clr_country_flag = building_hof
+		capital_scope = {
+			add_province_modifier = {
+				name = great_hof
+				duration = -1
+			}
+		}
+	}
+}
+
+province_event = {
+    id = stt_scan.5
+	title = "stt_scan.t.5"
+	desc = "stt_scan.de.5"   #success
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+	    owner = {
+	        has_country_modifier = norse_missionaries
+		}
+		NOT = { religion = norse_pagan_reformed }
+		NOT = { has_province_modifier = fail_norse_mission }
+	}
+	
+	mean_time_to_happen = {
+	    months = 240
+	}
+	
+	option = {
+	    name = "stt_scan.a.6"
+		change_religion = norse_pagan_reformed
+	}
+}
+
+province_event = {
+    id = stt_scan.6
+	title = "stt_scan.t.6"
+	desc = "stt_scan.de.6"   #fail
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		owner = {
+	        has_country_modifier = norse_missionaries
+			ai = no
+		}
+		NOT = { religion = norse_pagan_reformed }
+		NOT = { has_province_modifier = fail_norse_mission }
+	}
+	
+	mean_time_to_happen = {
+	    months = 200
+	}
+	
+	option = {
+	    name = "stt_scan.a.7"
+		add_province_modifier = {
+		    name = fail_norse_mission
+			duration = 1295
+		}
+	}
+}
+
+country_event = {
+    id = stt_scan.7
+	title = "stt_scan.t.7"
+	desc = "stt_scan.de.7"
+	picture = RELIGIOUS_WARS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    religion = norse_pagan_reformed
+	}
+	
+	mean_time_to_happen = {
+	    months = 240
+	}
+	
+	option = {
+	    name = "stt_scan.a.8"
+		add_treasury = 500
+	}
+}
+
+country_event = {
+    id = stt_scan.8
+	title = "stt_scan.t.8"
+	desc = "stt_scan.de.8"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	    religion = norse_pagan_reformed
+		tag = NDL
+		is_at_war = yes
+	}
+	
+	mean_time_to_happen = {
+	    months = 60
+	}
+	
+	option = {
+	    name = "stt_scan.a.9"
+		create_general = 100
+	}
+	
+	option = {
+	    name = "stt_scan.a.10"
+		add_prestige = -10
 	}
 }

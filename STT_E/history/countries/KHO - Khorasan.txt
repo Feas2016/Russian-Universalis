@@ -1,40 +1,73 @@
 government = iqta
-primary_culture = afghani
+primary_culture = afghani 	### STT
 add_accepted_culture = persian
 religion = shiite
 technology_group = muslim
-capital = 436	# Khurasan
+#capital = 446	# Herat
+#capital = 2214 #Astarabad	### STT
+capital = 436	# Khurasan 	### STT
 
-
-1449.1.1 = {
+1444.1.1 = { #At start this represents Astarabad, with alegience to Babur bin Baysunkur.
+	#capital = 2214 #Astarabad
 	monarch = {
-		name = "Babur Ibn-Baysunkur"
-		dynasty = "Timurid"
-		adm = 4
+		name = "Бабур ибн-Байсункур"
+		dynasty = "Тимурид"
+		culture = uzbehk
+		adm = 3
 		dip = 5
 		mil = 5
+		culture = uzbehk
+		religion = sunni
 	}
-	capital = 446	# Herat
-}
-
-1449.1.1 = {
+	religion = sunni
+	religious_school = hanafi_school
+	add_piety = -0.5
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
 	heir = {
-		name = "Ibrahim"
-		monarch_name = "Ibrahim"
-		dynasty = "Timurid"
-		birth_date = 1430.1.1
-		death_date = 1459.1.1
+		name = "Махмуд"
+		monarch_name = "Махмуд-шах"
+		dynasty = "Тимурид"
+		birth_date = 1444.1.1
+		death_date = 1457.1.1
 		claim = 95
-		adm = 4
-		dip = 4
-		mil = 5
+		adm = 1
+		dip = 2
+		mil = 1
 	}
 }
 
-1457.1.1 = {
+1449.2.1 = { #Herat Conquered by Babur bin Baysunkur
+	capital = 446
+}
+
+1457.3.22 = {
 	monarch = {
-		name = "Ibrahim"
-		dynasty = "Timurid"
+		name = "Шихр"
+		dynasty = "Хаджи"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 0
+	}
+	heir = {
+		name = "Ибрагим"
+		monarch_name = "Ибрагим"
+		dynasty = "Тимурид"
+		birth_date = 1446.1.1
+		death_date = 1457.1.1
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+
+1457.5.31 = {
+	monarch = {
+		name = "Ибрагим"
+		dynasty = "Тимурид"
 		adm = 4
 		dip = 4
 		mil = 5
@@ -43,8 +76,8 @@ capital = 436	# Khurasan
 
 1459.3.1 = {
 	monarch = {
-		name = "Interregnum"
-		dynasty = "Timurid"
+		name = "Межцарствие"
+		dynasty = "Тимурид"
 		regent = yes
 		adm = 1
 		dip = 1
@@ -55,8 +88,8 @@ capital = 436	# Khurasan
 
 1461.1.1 = {
 	monarch = {
-		name = "Abы Sa'id"
-		dynasty = "Timurid"
+		name = "Абу Саид"
+		dynasty = "Тимурид"
 		adm = 3
 		dip = 5
 		mil = 6
@@ -65,9 +98,9 @@ capital = 436	# Khurasan
 
 1461.1.1 = {
 	heir = {
-		name = "Hussein Baiqara"
-		monarch_name = "Hussein Baiqara"
-		dynasty = "Timurid"
+		name = "Хуссейн Байкара"
+		monarch_name = "Хуссейн Байкара"
+		dynasty = "Тимурид"
 		birth_date = 1438.1.1
 		death_date = 1506.5.4
 		claim = 95
@@ -79,8 +112,8 @@ capital = 436	# Khurasan
 
 1469.8.27 = {
 	monarch = {
-		name = "Hussein Baiqara"
-		dynasty = "Timurid"
+		name = "Хуссейн Байкара"
+		dynasty = "Тимурид"
 		adm = 4
 		dip = 5
 		mil = 5
@@ -90,9 +123,9 @@ capital = 436	# Khurasan
 
 1475.1.1 = {
 	heir = {
-		name = "Badi' al-Zaman"
-		monarch_name = "Badi' al-Zaman"
-		dynasty = "Timurid"
+		name = "Бади аз-Заман"
+		monarch_name = "Бади аз-Заман"
+		dynasty = "Тимурид"
 		birth_date = 1475.1.1
 		death_date = 1517.1.1
 		claim = 95
@@ -102,12 +135,10 @@ capital = 436	# Khurasan
 	}
 }
 
-1507.7.1 = { capital = 436 }	# Khurasan
-
 1750.1.2 = {
 	monarch = {
-		name = "Shah Rukh"
-		dynasty = "Afsharid"
+		name = "Шахрух"
+		dynasty = "Афшарид"
 		adm = 3
 		dip = 3
 		mil = 3

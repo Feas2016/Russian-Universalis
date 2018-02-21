@@ -1,7 +1,7 @@
 #Leczyca
 
-owner = POL
-controller = POL
+owner = KRA
+controller = KRA
 capital = "Leczyca"
 culture = polish
 religion = catholic
@@ -11,12 +11,14 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = POL
+add_core = KRA
+add_core = KIS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+1320.1.1 = { owner = POL add_core = POL controller = POL }
 1569.7.1 = {
 	owner = PLC
 	controller = PLC
