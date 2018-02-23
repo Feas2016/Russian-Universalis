@@ -2012,15 +2012,15 @@ conquer_western_siberia_region = {
 					NOT = { alliance_with = ROOT }
 				}
 			}
-			ural_region = {
-				owner = {
-					is_neighbor_of = ROOT
-					NOT = { num_of_cities = ROOT }
-					NOT = { is_subject_of = ROOT }
-					NOT = { overlord_of = ROOT }
-					NOT = { alliance_with = ROOT }
-				}
-			}
+			# ural_region = {	### STT
+				# owner = {
+					# is_neighbor_of = ROOT
+					# NOT = { num_of_cities = ROOT }
+					# NOT = { is_subject_of = ROOT }
+					# NOT = { overlord_of = ROOT }
+					# NOT = { alliance_with = ROOT }
+				# }
+			# }
 		}
 		NOT = { has_country_modifier = conquest_of_siberia }
 		OR = {

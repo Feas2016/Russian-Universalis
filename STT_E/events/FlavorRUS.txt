@@ -135,13 +135,13 @@ country_event = {
 		name = "flavor_rus.EVTOPTA3404"
 		ai_chance = { factor = 100 }
 		add_prestige = 10
-		ural_region = {
+		russia_region = {	### STT
 			limit = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_permanent_claim = ROOT ###STT
+			add_permanent_claim = ROOT ### STT
 		}
 		
 	}
@@ -1700,7 +1700,7 @@ country_event = {
 		}
 		is_year = 1750
 		NOT = { stability = 1 }
-		ural_region = {
+		russia_region = {	### STT
 			owned_by = RUS
 		}
 	}
@@ -1714,7 +1714,7 @@ country_event = {
 		
 		set_country_flag = rus_pugachev_uprising
 		
-		ural_region = {
+		russia_region = {	### STT
 			limit = {
 				owned_by = RUS
 			}
@@ -1723,7 +1723,7 @@ country_event = {
 
 		random_owned_province = {
 			limit = {
-				region = ural_region
+				region = russia_region	### STT
 			}
 			spawn_rebels = {
 				type = anti_tax_rebels
