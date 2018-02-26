@@ -1,0 +1,100 @@
+black_death_disaster = {
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = BD_starter
+				OR ={
+					culture_group = chinese
+					culture_group = altaic
+					culture_group = turkic
+					culture_group = iranian
+					culture_group = hindusthani		#
+					culture_group = western_aryan
+					culture_group = caucasian
+					culture_group = turko_semitic		#
+					culture_group = byzantine
+					culture_group = maghrebi
+					culture_group = south_slavic
+					culture_group = east_slavic
+					culture_group = west_slavic
+					culture_group = baltic
+					culture_group = dunay_group
+					culture_group = albany
+					culture_group = magyar
+					culture_group = latin
+					culture_group = germanic
+					culture_group = nordic		#
+					culture_group = scandinavian 
+					culture_group = french
+					culture_group = iberian
+					culture_group = british
+					culture_group = celtic		#
+					culture_group = gaelic
+					culture_group = sudanese
+					culture_group = cushitic
+				}
+			}
+			has_country_flag = BD_starter_war
+		}
+		NOT = {
+			has_country_flag = BD_ended
+			has_country_flag = BD_progress
+		}
+	}
+
+	can_start = {
+		NOT = { is_year = 1400 }
+	}
+
+
+	can_stop = {
+		always = no
+	}
+	
+	modifier = {
+	}
+
+
+	progress = {
+		modifier = {
+			factor = 10
+			num_of_cities = 1
+		}
+		modifier = {
+			factor = 2
+			num_of_cities = 2
+		}
+		modifier = {
+			factor = 1
+			num_of_cities = 5
+		}
+	}
+
+	can_end = {
+		OR = {
+			NOT = {
+				has_country_modifier = BD_country_mod
+			}
+			has_country_modifier = BD_resist_orders
+		}
+	}
+
+	on_start = black_death.4
+	on_end = black_death.5
+
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1500 = 0
+			100 = black_death.6
+			100 = black_death.7
+			100 = black_death.8
+			100 = black_death.9
+			100 = black_death.10
+			100 = black_death.11
+			25 = black_death.12
+		}
+	}
+}
+

@@ -1,0 +1,1406 @@
+namespace = black_death
+
+##############################################		GENESIS		### black death genesis появление чумы в пустыне гоби на севере китая
+
+country_event = {
+	id = black_death.1
+	title = "black_death.1.t"
+	desc = "black_death.1.d"
+	
+	picture = BD_1_eventPicture
+	
+	trigger = {
+		is_year = 1320
+		has_global_flag = hhh_default
+		NOT = { is_year = 1400 }
+		OR = {
+			720 = { owned_by = ROOT }
+			701 = { owned_by = ROOT }
+			702 = { owned_by = ROOT }
+			709 = { owned_by = ROOT }
+			721 = { owned_by = ROOT }
+			722 = { owned_by = ROOT }
+			723 = { owned_by = ROOT }
+			2747 = { owned_by = ROOT }
+			2114 = { owned_by = ROOT }
+			2115 = { owned_by = ROOT }
+			2179 = { owned_by = ROOT }
+			699 = { owned_by = ROOT }
+			697 = { owned_by = ROOT }
+			2136 = { owned_by = ROOT }
+		}
+	}
+
+	major = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 400
+	}
+	
+	immediate = {
+		set_country_flag = BD_gen
+	}
+	
+	option = {
+		name = "black_death.1.a1"
+	}
+}
+
+####################################################		SPREAD		###### black death spreading in province  черная смерть распространяется в провинции
+
+country_event = {
+	id = black_death.2
+	title = "black_death.2.t"
+	desc = "black_death.2.d"
+
+	picture = BD_2_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_flag = BD_gen
+			any_neighbor_country = {
+				has_country_flag = BD_progress
+			}
+		}
+		NOT = {
+			has_country_flag = BD_progress
+			has_country_flag = BD_spread
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 8
+	}
+	
+	immediate = {
+		set_country_flag = BD_spread
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = BD_prov_mod
+				}
+			}
+			add_province_modifier = {
+				name = "BD_prov_mod"
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = "black_death.2.a1"
+		add_prestige = -10
+	}
+}
+
+##################################### 		STARTER		######  event starts black death disaster		становится понятно что чума распространяется по всей стране - ивент запускает бедствие black_death
+
+country_event = {
+	id = black_death.3
+	title = "black_death.3.t"
+	desc = "black_death.3.d"
+	
+	picture = BD_3_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_spread
+		NOT = {
+			has_country_flag = BD_ended
+			has_country_flag = BD_progress
+			has_country_flag = BD_starter
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	immediate = {
+		add_country_modifier = {
+		    name = BD_country_mod
+		    duration = 4745
+		}
+		set_country_flag = BD_starter
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = {
+						has_province_modifier = BD_prov_mod
+					}
+				}
+				add_province_modifier = {
+					name = "BD_prov_mod"
+					duration = 1825
+				}
+				if = { limit = { base_production = 2 }
+					add_base_production = -1
+				}				
+			}
+		}
+	}
+
+	option = {
+		name = "black_death.3.a1"
+		add_stability = -1
+		add_yearly_manpower = -0.75
+	}
+}
+
+############################################### 		BD DIS BEGINS		######  event just tells that black death disaster started and activates BD_progress country flag	ивент просто оповещает, что катастрофы не избежать и бедствие черной чумы началось. так же он активирует важный флаг BD_progress 
+
+country_event = {
+	id = black_death.4
+	title = "black_death.4.t"
+	desc = "black_death.4.d"
+	picture = BD_4_eventPicture
+
+	#fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = BD_progress
+	}
+
+	option = {
+		name = "black_death.4.a1"
+	}
+}
+
+######################################### 		BD DIS ENDS		######  black death disaster end event. just removes unnecessary flags and adds BD_ended flag	ивент конца бедствия. убирает ненужные флаги и добавляет флаг BD_ended
+
+country_event = {
+	id = black_death.5
+	title = "black_death.5.t"
+	desc = "black_death.5.d"
+	picture = BD_5_eventPicture
+
+	#fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = BD_ended
+		clr_country_flag = BD_gen
+		clr_country_flag = BD_spread
+		clr_country_flag = BD_starter
+		clr_country_flag = BD_resist
+		clr_country_flag = BD_progress
+		clr_country_flag = BD_antibd
+		clr_country_flag = BD_antibd_adm
+		clr_country_flag = BD_antibd_trade
+		clr_country_flag = BD_antibd_funeral
+		clr_country_flag = BD_council_yes
+		clr_ruler_flag = ruler_hide
+		clr_ruler_flag = ruler_not_hide
+		clr_heir_flag = heir_hide
+		clr_heir_flag = heir_not_hide
+	}
+
+	option = {
+		name = "black_death.5.a1"
+		add_stability = 1
+	}
+}
+
+##################################### 		DECREASE DEVELOPMENT		######  	чумные доктора картинка ### ивент распространения чумы. уменьшает развитие случайной провинции и добавляет модификатор для провинции
+
+country_event = {
+	id = black_death.6
+	title = "black_death.6.t"
+	desc = "black_death.6.d"
+	picture = BD_6_eventPicture
+	
+	trigger = {
+		OR = {
+			has_country_flag = BD_progress
+		}
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.6.a1"
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = BD_prov_mod
+				}
+			}
+			add_province_modifier = {
+				name = "BD_prov_mod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					base_manpower = 2
+				}
+				add_base_manpower = -1
+			}
+		}
+	}
+}
+
+##################################### 		TOTAL DEVASTATE PROV MOD		######  	ивент распространения чумы. уменьшает развитие случайной провинции и добавляет усиленный модификатор для провинции
+
+country_event = {
+	id = black_death.7
+	title = "black_death.7.t"
+	desc = "black_death.7.d"
+	picture = BD_7_eventPicture
+	
+	trigger = {
+		OR = {
+			has_country_flag = BD_progress
+		}
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.7.a1"
+		random_owned_province = {
+			limit = {
+				NOT = {
+					OR = {
+						has_province_modifier = BD_prov_mod
+						has_province_modifier = BD_total_devastate_prov_mod
+					}
+				}
+			}
+			add_province_modifier = {
+				name = "BD_total_devastate_prov_mod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					base_tax = 2
+				}
+				add_base_tax = -1
+			}
+		}
+	}
+}
+
+##################################### 		TOTAL DEVASTATE PROV MOD 7 = 8		######  	ивент распространения чумы. уменьшает развитие случайной провинции и добавляет усиленный модификатор для провинции
+
+country_event = {
+	id = black_death.8
+	title = "black_death.8.t"
+	desc = "black_death.8.d"
+	picture = BD_8_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.8.a1"
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = BD_total_devastate_prov_mod
+				}
+			}
+			add_province_modifier = {
+				name = "BD_total_devastate_prov_mod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					base_production = 2
+				}
+				add_base_production = -1
+			}
+		}
+	}
+}
+
+
+##################################### 	REDUCE MANPOWER	######  	ивент уменьшает количество рекрутов
+
+country_event = {
+	id = black_death.9
+	title = "black_death.9.t"
+	desc = "black_death.9.d"
+	picture = BD_9_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.9.a1"
+		add_yearly_manpower = -0.75
+	}
+}
+
+##################################### 	INTOLERANT SOCIETY MOD	######  	начинаются преследования меньшинств. ивент добавляет модификатор нетолерантное общество
+
+country_event = {
+	id = black_death.10
+	title = "black_death.10.t"
+	desc = "black_death.10.d"
+	picture = BD_10_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.10.a1"
+		if = {
+			limit = {
+				NOT = {
+					has_country_modifier = intolerant_society
+				}
+			}
+			add_country_modifier = {
+				name = intolerant_society
+				duration = 1850
+			}
+		}
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = BD_prov_mod
+				}
+			}
+			add_province_modifier = {
+				name = "BD_prov_mod"
+				duration = 4500
+			}
+		}
+	}
+}
+
+
+##################################### 	PEASANTS SUFFERING	######  	чума опустошает и деревню. рабочих рук становится меньше, крестьяне не в силах прокормить и себя, под гнётом местных феодалов начинают бунтовать
+
+country_event = {
+	id = black_death.11
+	title = "black_death.11.t"
+	desc = "black_death.11.d"
+	picture = BD_11_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.11.a1"
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_province_modifier = BD_prov_mod
+				}
+			}
+			add_province_modifier = {
+				name = "BD_prov_mod"
+				duration = 3650
+			}
+			if = {
+				limit = {
+					base_manpower = 2
+				}
+				add_base_manpower = -1
+			}
+		}
+	}
+}
+
+
+##################################### 	DOCTORS ARGUMENT	######   ивент по сути добавляет модификатор чумы в одну из провинций, игроку даётся мнимый выбор на сторону каких докторов встать
+
+country_event = {
+	id = black_death.12
+	title = "black_death.12.t"
+	desc = "black_death.12.d"
+	picture = BD_12_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		add_yearly_manpower = -0.75
+	}
+
+	option = {
+		name = "black_death.12.a1"					### семена болезни
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = {
+						has_province_modifier = BD_prov_mod
+					}
+				}
+				add_province_modifier = {
+					name = "BD_prov_mod"
+					duration = 3650
+				}
+				if = {
+					limit = {
+						base_manpower = 2
+					}
+					add_base_manpower = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "black_death.12.a2"					### миазмы
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = {
+						has_province_modifier = BD_total_devastate_prov_mod
+					}
+				}
+				add_province_modifier = {
+					name = "BD_total_devastate_prov_mod"
+					duration = 3650
+				}
+				if = {
+					limit = {
+						base_manpower = 2
+					}
+					add_base_manpower = -1
+				}
+			}
+		}
+	}
+}
+
+
+
+#############################################		HEIR DIES		#####			наследник умирает
+
+country_event = {
+	id = black_death.13
+	title = "black_death.13.t"
+	desc = "black_death.13.d"
+	picture = BD_13_eventPicture
+	
+	trigger = {
+		has_heir = yes
+		is_lesser_in_union = no
+		has_country_flag = BD_progress
+		NOT = { has_heir_flag = heir_hide }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "black_death.13.a1"
+		kill_heir = yes
+	}
+}
+
+#############################################		RULER DIES	#####			правитель умирает
+
+country_event = {
+	id = black_death.14
+	title = "black_death.14.t"
+	desc = "black_death.14.d"
+	picture = BD_14_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		NOT = { has_ruler_flag = ruler_hide }
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "black_death.14.a1"
+		kill_ruler = yes
+	}
+}
+
+#############################################		BIG CITY DECREASE DEVELOPMENT	#####			уменьшение развития в больших городах с развитием больше 20
+
+country_event = {
+	id = black_death.15
+	title = "black_death.15.t"
+	desc = "black_death.15.d"
+	picture = BD_15_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		any_owned_province = {
+			development = 20
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 25
+	}
+	
+	option = {
+		name = "black_death.15.a1"
+		random_owned_province = {
+			limit = { development = 20 }
+			add_base_manpower = -2
+			add_base_production = -1
+			add_base_tax = -1
+		}
+	}
+}
+
+#############################################		HUGE CITY DECREASE DEVELOPMENT	#####			уменьшение развития в огромных городах с развитием больше 25
+
+country_event = {
+	id = black_death.16
+	title = "black_death.16.t"
+	desc = "black_death.16.d"
+	picture = BD_16_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		any_owned_province = {
+			development = 22
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 15
+	}
+	
+	option = {
+		name = "black_death.16.a1"
+		random_owned_province = {
+			limit = { development = 22 }
+			add_base_manpower = -2
+			add_base_production = -1
+			add_base_tax = -2
+		}
+	}
+}
+
+#############################################		HUGE+ CITY DECREASE DEVELOPMENT	#####			уменьшение развития в самых огромных городах с развитием больше 30
+
+country_event = {
+	id = black_death.17
+	title = "black_death.17.t"
+	desc = "black_death.17.d"
+	picture = BD_17_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		any_owned_province = {
+			development = 26
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "black_death.17.a1"
+		random_owned_province = {
+			limit = { development = 26 }
+			add_base_manpower = -2
+			add_base_production = -3
+			add_base_tax = -2
+		}
+	}
+}
+
+#############################################		RULER HIDE	#####			правитель укрывается от чумы
+
+country_event = {
+	id = black_death.18
+	title = "black_death.18.t"
+	desc = "black_death.18.d"
+	picture = BD_18_eventPicture
+	
+	trigger = {
+		had_country_flag = { flag = BD_progress days = 240 }
+		NOT = { has_ruler_flag = ruler_hide }
+		NOT = { has_ruler_flag = ruler_not_hide }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	#fire_only_once = yes
+	
+	option = {
+		name = "black_death.18.a1"
+		ai_chance = { factor = 40 }
+		add_legitimacy = -25
+		add_horde_unity = -25
+		set_ruler_flag = ruler_hide
+		add_ruler_personality = careful_personality
+	}
+	
+	option = {
+		name = "black_death.18.a2"
+		ai_chance = { factor = 60 }
+		add_prestige = 12
+		set_ruler_flag = ruler_not_hide
+	}
+}
+
+#############################################		HEIR HIDE		#####			наследник укрывается от чумы
+
+country_event = {
+	id = black_death.19
+	title = "black_death.19.t"
+	desc = "black_death.19.d"
+	picture = BD_19_eventPicture
+	
+	trigger = {
+		has_heir = yes
+		is_lesser_in_union = no
+		had_country_flag = { flag = BD_progress days = 120 }
+		NOT = { has_heir_flag = heir_hide }
+		NOT = { has_heir_flag = heir_not_hide }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	#fire_only_once = yes
+	
+	option = {
+		name = "black_death.19.a1"								##### укрыть
+		ai_chance = { factor = 40 }
+		add_heir_claim = -25
+		set_heir_flag = heir_hide
+	}
+	
+	option = {
+		name = "black_death.19.a2"								#####	оставить
+		ai_chance = { factor = 60 }
+		add_heir_claim = 25
+		set_heir_flag = heir_not_hide
+	}
+}
+
+##################################### 	CHURCH DONATIONS ISLAM	######  	ивент во время чумы люди много жертвовали церкви, отобрать деньги или оставить их у церкви
+
+country_event = {
+	id = black_death.20
+	title = "black_death.20.t"
+	desc = "black_death.20.d"
+	picture = BD_20_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.20.a1"		#забрать деньги
+		ai_chance = { factor = 50 }
+		add_years_of_income = 8
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_ULEM_TAKE_MONEY
+		    influence = -10
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = -25
+		}
+	}
+	
+	option = {
+		name = "black_death.20.a2"		#оставить деньги
+		ai_chance = { factor = 50 }
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_ULEM_LEAVE_MONEY
+		    influence = 25
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = 10
+		}
+	}
+}
+
+##################################### 	CHURCH DONATIONS CHRIST	######  	ивент во время чумы люди много жертвовали церкви, отобрать деньги или оставить их у церкви
+
+country_event = {
+	id = black_death.21
+	title = "black_death.21.t"
+	desc = "black_death.21.d"
+	picture = BD_21_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		OR = {
+			religion = catholic 
+			religion = orthodox
+			religion = coptic
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.21.a1"		#забрать деньги
+		ai_chance = { factor = 50 }
+		add_years_of_income = 8
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_CHURCH_TAKE_MONEY
+		    influence = -10
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = -20
+		}
+	}
+	
+	option = {
+		name = "black_death.21.a2"		#оставить деньги
+		ai_chance = { factor = 50 }
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_CHURCH_LEAVE_MONEY
+		    influence = 25
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = 10
+		}
+	}
+}
+
+##################################### 	PAPACY DONATIONS	######  	ивент во время чумы люди много жертвовали церкви, у папы было огромное количество золота
+
+country_event = {
+	id = black_death.22
+	title = "black_death.22.t"
+	desc = "black_death.22.d"
+	picture = BD_22_eventPicture
+
+	trigger = {
+		has_country_flag = BD_progress
+		TAG = PAP
+	}
+
+	fire_only_once = yes
+	
+	major = yes
+
+	mean_time_to_happen = {
+		months = 50
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.22.a1"
+		add_years_of_income = 15
+		add_inflation = 5
+	}
+}
+
+##################################### 	BD IF IN WAR WITH COUNTRY WITH BD	######  	ивент распространения чумы через войну с государством в котором бушует чума
+
+country_event = {
+	id = black_death.23
+	title = "black_death.23.t"
+	desc = "black_death.23.d"
+	picture = BD_23_eventPicture
+
+	trigger = {
+		any_neighbor_country = {
+			has_country_flag = BD_progress
+			war_with = ROOT
+		}
+		NOT = {
+			has_country_flag = BD_ended
+			has_country_flag = BD_progress
+			has_country_flag = BD_starter
+			has_country_flag = BD_spread
+		}
+	}
+
+	#fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		set_country_flag = BD_starter_war
+	}
+
+	option = {
+		name = "black_death.23.a1"
+	}
+}
+
+##################################### 	PLAGUE POISONERS 	######  	ивент преследовать отравителей и распространителей чумных мазей или нет
+
+country_event = {
+	id = black_death.24
+	title = "black_death.24.t"
+	desc = "black_death.24.d"
+	picture = BD_24_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.24.a1"		#поддержать
+		ai_chance = { factor = 50 }
+		add_years_of_income = -1
+		add_legitimacy = 10
+	}
+	
+	option = {
+		name = "black_death.24.a2"		#запретить
+		ai_chance = { factor = 50 }
+		add_years_of_income = 1
+		add_legitimacy = -15
+	}
+}
+
+##################################### 	CHOREA 	######  	ивент чисто познавательный рассказывающий о таком явлении как хореомания
+
+country_event = {
+	id = black_death.25
+	title = "black_death.25.t"
+	desc = "black_death.25.d"
+	picture = BD_25_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 140
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.25.a1"
+		add_stability = -1
+	}
+}
+
+##################################### 	SUPERSTITION AND HERESY		######  	ивент распространение суеверий и ереси
+
+country_event = {
+	id = black_death.26
+	title = "black_death.26.t"
+	desc = "black_death.26.d"
+	picture = BD_26_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		NOT = {
+			OR = {
+				religion = animism
+				religion = shamanism
+				religion = siberian_shamanism
+			}
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.26.a1"		#пусть люди найдут отдушину в этом
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+		    name = BD_heresy
+		    duration = 3650
+		}
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_HERESY_ALLOW
+		    influence = -10
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = -15
+		}
+	}
+	
+	option = {
+		name = "black_death.26.a2"		#запретить любую ересь и языческие суеверия
+		ai_chance = { factor = 50 }
+		add_mil_power = -50
+		add_country_modifier = {
+		    name = BD_not_heresy
+		    duration = 3650
+		}
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_HERESY_FORBID
+		    influence = 15
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = 10
+		}
+	}
+}
+
+##################################### 	FASHION SHOES	######  	ивент отчаившиеся люди искали причину появления чумы во всем например в моде на длинноносые ботинки
+
+country_event = {
+	id = black_death.27
+	title = "black_death.27.t"
+	desc = "black_death.27.d"
+	picture = BD_27_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.27.a1"		#	да не лишено смысла
+	}
+	
+	option = {
+		name = "black_death.27.a2"		#	невежество
+	}
+}
+
+##################################### 	FLAGELLANTS	######  	ивент появление секты флагеллантов
+
+country_event = {
+	id = black_death.28
+	title = "black_death.28.t"
+	desc = "black_death.28.d"
+	picture = BD_28_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		religion = catholic
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 140
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.28.a1"		#спасовать перед еретиками
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+		    name = BD_tolerates_flagellant
+		    duration = 3650
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_BD_FLAGELLANTS_ALLOW
+			influence = -10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -15
+		}
+		random_owned_province = {	
+			spawn_rebels = {
+				type = catholic_rebels
+				size = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "black_death.28.a2"		#предать огню этих еретиков
+		ai_chance = { factor = 50 }
+		add_mil_power = -50
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_FLAGELLANTS_FORBID
+		    influence = 15
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = 10
+		}
+		random_owned_province = {	
+			spawn_rebels = {
+				type = flagellant_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+##################################### 	BIANCHI	######  	ивент появление секты бьянок
+
+country_event = {
+	id = black_death.29
+	title = "black_death.29.t"
+	desc = "black_death.29.d"
+	picture = BD_29_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		religion = catholic
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.29.a1"		#спасовать перед еретиками
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+		    name = BD_heresy
+		    duration = 500
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_BD_BIANCHI_ALLOW
+			influence = -10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -15
+		}
+		random_owned_province = {	
+			spawn_rebels = {
+				type = catholic_rebels
+				size = 2
+			}
+		}
+	}
+	
+	option = {
+		name = "black_death.29.a2"		#запретить эту ересь
+		ai_chance = { factor = 50 }
+		add_mil_power = -50
+		add_years_of_income = -0.5
+		add_estate_influence_modifier = {
+		    estate = estate_church
+		    desc = EST_VAL_CHURCH_BD_BIANCHI_FORBID
+		    influence = 15
+		    duration = 3650
+		}
+		add_estate_loyalty = {
+		    estate = estate_church
+		    loyalty = 10
+		}
+	}
+}
+
+##################################### 	ANTISEMITISM CHRIST	######  	ивент преследования евреев в христианских странах
+
+country_event = {
+	id = black_death.30
+	title = "black_death.30.t"
+	desc = "black_death.30.d"
+	picture = BD_30_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		OR = {
+			religion = catholic
+			religion = orthodox
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.30.a1"		#запретить преследования
+		ai_chance = { factor = 50 }
+		add_adm_power = -35
+		add_dip_power = -35
+		add_years_of_income = 1
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_BD_NO_ANTISEMIT
+			influence = 20
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_country_modifier = {
+		    name = BD_antisemitism_forbid
+		    duration = 3000
+		}
+		hidden_effect = {
+			add_stability = -1
+		}
+	}
+	
+	option = {
+		name = "black_death.30.a2"		#преследовать евреев
+		ai_chance = { factor = 50 }
+		add_mil_power = -70
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_BD_ANTISEMIT
+			influence = -10
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -15
+		}
+		hidden_effect = {
+			add_stability = -1
+		}
+	}
+}
+
+##################################### 	ANTISEMITISM ISLAM	######  	ивент преследования евреев в исламских странах
+
+country_event = {
+	id = black_death.31
+	title = "black_death.31.t"
+	desc = "black_death.31.d"
+	picture = BD_31_eventPicture
+	
+	trigger = {
+		has_country_flag = BD_progress
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.31.a1"		#запретить преследования
+		ai_chance = { factor = 50 }
+		add_adm_power = -35
+		add_dip_power = -35
+		add_stability = -1
+		hidden_effect = {
+			add_years_of_income = 1.5
+		}
+	}
+	
+	option = {
+		name = "black_death.31.a2"		#преследовать евреев
+		ai_chance = { factor = 50 }
+		add_mil_power = -70
+		add_years_of_income = -1.5
+		hidden_effect = {
+			add_stability = -1
+		}
+	}
+}
+
+
+
+##################################### 	BD COUNCIL	######  	ивент собрать совет по противодействию чуме ивент запускает возможность через некоторые решения уменьшить разгул эпидемии и в конечном итоге остановить бедствие
+
+country_event = {
+	id = black_death.32
+	title = "black_death.32.t"
+	desc = "black_death.32.d"
+	picture = BD_32_eventPicture
+	
+	trigger = {
+		had_country_flag = { flag = BD_progress days = 2555 }
+		NOT = {
+			has_country_flag = BD_end
+			has_country_flag = BD_council_yes
+		}
+	}
+
+	#fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	immediate = {
+	}
+
+	option = {
+		name = "black_death.32.a1"		#собрать совет
+		ai_chance = { factor = 40 }
+		add_adm_power = -25
+		add_dip_power = -25
+		set_country_flag = BD_council_yes
+		hidden_effect = {
+			country_event = {
+				id = black_death.33
+				days = 50
+				random = 50
+			}
+		}
+	}
+	
+	option = {
+		name = "black_death.32.a2"		#и так проживём
+		ai_chance = { factor = 60 }
+	}
+}
+
+
+##################################### 	BD COUNCIL YES	######  	ивент если совет произошёл
+
+country_event = {
+	id = black_death.33
+	title = "black_death.33.t"
+	desc = "black_death.33.d"
+	picture = BD_33_eventPicture
+	
+	trigger = {
+	}
+
+	#fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = BD_antibd
+	}
+
+	option = {
+		name = "black_death.33.a1"		#советники сообщают какие меры нужно предпринять для борьбы с чумой
+	}
+}
