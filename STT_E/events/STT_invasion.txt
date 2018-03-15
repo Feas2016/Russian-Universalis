@@ -733,6 +733,9 @@ country_event = {
 	
 	trigger = {
 	    is_year = 1310
+		exists = CRO
+		CRO = { is_at_war  = no }
+		CRO = { is_subject = no }
 	}
 	
 	option = {

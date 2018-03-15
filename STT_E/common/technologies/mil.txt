@@ -752,7 +752,6 @@ technology = {
 	maneuver_value 		= 	0.5
 	cavalry_shock		=	1.0
 	cavalry_fire		= 	0.5
-	combat_width = 1
 	
 	enable = percussion_cap_musket
 }
@@ -765,7 +764,6 @@ technology = {
 	artillery_fire		=	2.0	
 	infantry_shock		=	0.3
 	infantry_fire		=	2.0
-	combat_width = 2
 	
 	enable = armstrong_gun
 }
@@ -775,7 +773,6 @@ technology = {
 	year = 1867
 	#track vehicle
 	supply_limit		=	0.8
-	maneuver_value = 0.5
 	
 	enable = needle_gun
 	enable = chassepot_rifle
@@ -819,7 +816,6 @@ technology = {
 	#trench war
 	artillery_shock		=	0.2
 	infantry_fire		=	2.0
-	maneuver_value = 0.25
 }
 
 technology = {
@@ -828,7 +824,6 @@ technology = {
 	#tank
 	artillery_fire		=	2.0
 	land_morale			=	1.0
-	combat_width = 2	
 	
 	enable = mark_heavy_tank
 	enable = renault_light_tank
