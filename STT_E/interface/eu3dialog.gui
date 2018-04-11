@@ -6,6 +6,12 @@ guiTypes = {
 			position = { x= 0 y = 0 }
 		}
 
+	positionType =
+	{
+		name ="dialog_decoration_footer_offset"
+		position = { x= 0 y = -19 }
+	}
+
 		
 	### DEFAULT DIALOG
 	eu3dialogtype = {
@@ -354,6 +360,21 @@ guiTypes = {
 			name ="message_band"
 			spriteType = "GFX_message_band"
 			position = { x= -15 y = 23 }
+		}
+		
+		
+		iconType =
+		{
+			name ="header_decoration"
+			spriteType = "gfx_header_decoration"
+			position = { x= -16 y = -60 }
+		}
+		
+		iconType =
+		{
+			name ="footer_decoration"
+			spriteType = "gfx_footer_decoration"
+			position = { x= -3 y = -280 }
 		}
 		
 		instantTextBoxType = {

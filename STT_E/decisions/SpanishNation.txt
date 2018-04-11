@@ -55,6 +55,26 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 213	# Barcelona
+				province_id = 214	# Aragón
+				province_id = 215	# Castilla La Vieja
+				province_id = 216	# Salamanca
+				province_id = 224	# Andalucia
+				province_id = 219	# Toledo
+				province_id = 220	# Valencia
+				province_id = 223	# Granada
+				AND = {
+					region = iberia_region
+					owner = { religion_group = muslim }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = SPA }
 			adm_tech = 18 #STT
@@ -76,6 +96,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = SPA
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }

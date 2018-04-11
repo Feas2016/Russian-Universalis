@@ -5,11 +5,19 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { tag = JAP }
+			NOT = { has_country_flag = formed_japan_flag }
 			government = shogunate
 			any_country = {
 				vassal_of = ROOT
 				government = daimyo
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1020
+				province_id = 1028
+			}
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
 			NOT = { exists = JAP }
@@ -39,6 +47,8 @@ country_decisions = {
 				}
 			}
 			change_tag = JAP
+			swap_non_generic_missions = yes
+			set_country_flag = formed_japan_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -58,6 +68,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			government = shogunate
+			NOT = { has_country_flag = formed_japan_flag }
 			NOT = { exists = JAP }
 		}
 		allow = {
@@ -76,6 +87,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = JAP
+			set_country_flag = formed_japan_flag
 			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3
 			add_legitimacy = 100
@@ -97,9 +109,17 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { tag = JAP }
+			NOT = { has_country_flag = formed_japan_flag }
 			NOT = { government = shogunate }
 			NOT = { government = celestial_empire }
 			culture_group = japanese_g
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1020
+				province_id = 1028
+			}
+			NOT = { owned_by = ROOT }
 		}
 		allow = {
 			NOT = { exists = JAP }
@@ -119,6 +139,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = JAP
+			set_country_flag = formed_japan_flag
 			remove_non_electors_emperors_from_empire_effect = yes
 			change_government = the_empire_of_the_rising_sun	### STT
 			set_government_rank = 3

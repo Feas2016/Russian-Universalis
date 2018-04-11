@@ -29,9 +29,11 @@ country_event = {
 		has_heir = no
 		is_lesser_in_union = no
 		government = monarchy
-		religion = catholic
 		any_owned_province = {
+			OR = {
 			religion = protestant
+				religion = anglican
+			}
 			is_in_capital_area = yes
 		}
 		NOT = {
@@ -51,7 +53,6 @@ country_event = {
 	
 	option = {
 		name = women_history_events.1.a
-		change_religion = protestant
 		define_ruler = {
 			name = "Елизавета"
 			dynasty = "Тюдор"
@@ -1074,7 +1075,7 @@ country_event = {
 			discount = yes
 			type = diplomat
 			skill = 2
-			culture = aztec
+			culture = aztek
 			name = "Малинче"
 		}
 	}
@@ -1723,6 +1724,7 @@ country_event = {
 		is_female = no
 		has_regency = no
 		is_lesser_in_union = no
+		has_consort = no
 		government = monarchy
 		NOT = {
 			OR = {
@@ -1745,9 +1747,8 @@ country_event = {
 			set_global_flag = wih_margaretofanjou_flag
 		}
 	}
-	
 	option = {
-		name = women_history_events.27.a
+		name = women_history_events.27.c
 		define_ruler = {
 			name = "Маргарита"
 			dynasty = "де Анжу"
@@ -1763,6 +1764,28 @@ country_event = {
 				has_dlc = "Rights of Man" 
 			}
 			hidden_effect = { add_ruler_personality = righteous_personality }
+		}
+	}
+	option = {
+		name = women_history_events.27.a
+		trigger = {
+			has_dlc = "Rights of Man"
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_consort = {
+			name = "Маргарита"
+			dynasty = "де Анжу"
+			culture = cosmopolitan_french
+			adm = 3
+			dip = 4
+			mil = 3
+			female = yes
+		}
+		hidden_effect = {
+			add_queen_personality = righteous_personality
 		}
 	}
 	option = {
@@ -4690,7 +4713,7 @@ country_event = {
 		add_mil_power = 100
 		add_meritocracy_effect = yes
 		define_advisor = {
-			name = "Ылени Эфиопская"
+			name = "Елени Эфиопская"
 			type = statesman
 				culture = sidamo
 				religion = sunni
@@ -4706,7 +4729,7 @@ country_event = {
 				has_dlc = "Rights of Man"
 			}
 			define_consort = {
-				name = "Ылени"
+				name = "Елени"
 				dynasty = "Соломонид"
 				culture = sidamo
 				religion = sunni
@@ -4725,7 +4748,7 @@ country_event = {
 				NOT = { has_dlc = "Rights of Man" }
 			}
 		define_ruler = {
-			name = "Ылени"
+			name = "Елени"
 			dynasty = "Соломонид"
 				culture = sidamo
 				religion = sunni

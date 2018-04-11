@@ -71,8 +71,8 @@ country_event = {
 				modifier = released_vassal
 			}
 			define_ruler = {
-				name = "Motochika"
-				dynasty = "Chosokabe"
+				name = "Мототика"
+				dynasty = "Тёсокабэ"
 				adm = 4
 				dip = 4
 				mil = 5
@@ -149,8 +149,8 @@ country_event = {
 				modifier = released_vassal
 			}
 			define_ruler = {
-				name = "Soun"
-				dynasty = "Hojo"
+				name = "Соун"
+				dynasty = "Исэ"
 				fixed = yes
 				adm = 5
 				dip = 4
@@ -171,7 +171,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Soun Hojo"
+				leader = "Исэ Соун"
 				friend = HJO
 				size = 1
 			}
@@ -233,8 +233,8 @@ country_event = {
 				modifier = released_vassal
 			}
 			define_ruler = {
-				name = "Motonari" 
-				dynasty = "Mori"
+				name = "Мотонари" 
+				dynasty = "Мори"
 				adm = 5
 				dip = 6
 				mil = 4
@@ -255,7 +255,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = nationalist_rebels
-				leader = "Motonari Mori"
+				leader = "Мори Мотонари"
 				friend = MRI
 				size = 1
 			}
@@ -303,7 +303,7 @@ country_event = {
 			spawn_rebels = {
 				size = 1
 				type = pretender_rebels
-				leader = "Yoshikado Shiba"
+				leader = "Ёшикадо Шиба"
 			}
 		}
 	}
@@ -370,7 +370,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Mochitomi Hatakeyama"
+				leader = "Мочитоми Хатакэяма"
 			}
 		}
 	}
@@ -378,7 +378,7 @@ country_event = {
 		name = flavor_daimyo.5.b #Support Mochitomi's claim.
 		remove_heir = yes
 		define_heir = {
-			name = "Mochitomi"
+			name = "Мочитоми"
 			dynasty = ROOT
 			age = 30
 			claim = 75
@@ -442,7 +442,7 @@ country_event = {
 	option = {	
 		name = flavor_daimyo.6.a #I will name Sumitomo as the heir apparent.
 		define_heir = {
-			name = "Sumitomo"
+			name = "Сумимото"
 			dynasty = ROOT
 			claim = 50
 			age = 30
@@ -452,7 +452,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Takakuni Hosokawa"
+				leader = "Хосокава Такакуни"
 			}
 		}
 		if = {
@@ -463,7 +463,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					size = 1
-					leader = "Sumiyuki Hosokawa"
+					leader = "Хосокава Сумиюки"
 				}
 			}
 		}
@@ -481,7 +481,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Takakuni Hosokawa"
+				leader = "Хосокава Такакуни"
 			}
 		}
 		if = {
@@ -492,7 +492,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					size = 1
-					leader = "Sumitomo Hosokawa"
+					leader = "Хосокава Сумимото"
 				}
 			}
 		}
@@ -509,7 +509,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Sumitomo Hosokawa"
+				leader = "Хосокава Сумимото"
 			}
 		}
 		if = {
@@ -520,7 +520,7 @@ country_event = {
 				spawn_rebels = {
 					type = pretender_rebels
 					size = 1
-					leader = "Sumiyuki Hosokawa"
+					leader = "Хосокава Сумиюки"
 				}
 			}
 		}
@@ -557,7 +557,7 @@ country_event = {
 			spawn_rebels = {
 				size = 1
 				type = pretender_rebels
-				leader = "Nagayoshi Miyoshi"
+				leader = "Миёси Токэй"
 			}
 		}
 	}
@@ -565,8 +565,8 @@ country_event = {
 		name = flavor_daimyo.7.b #It is time to make room for a man of ability.
 		add_stability = -1
 		define_ruler = {
-			name = "Nagayoshi"
-			dynasty = "Miyoshi"
+			name = "Токэй"
+			dynasty = "Миёси"
 			adm = 3
 			dip = 3
 			mil = 3
@@ -601,7 +601,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Sadamasa Uesugi"
+				leader = "Уэсуги Садамаса"
 			}
 		}
 	}
@@ -649,7 +649,7 @@ country_event = {
 				who = ROOT
 				modifier = released_vassal
 			}
-			define_ruler = { dynasty = "Akamatsu" }
+			define_ruler = { dynasty = "Акамацу" }
 		}
 	}
 	option = {
@@ -1120,8 +1120,8 @@ country_event = {
 		name = flavor_daimyo.20.a #We must look to Harunobu for leadership.
 		add_stability = -1
 		define_ruler = {
-			name = "Shingen"
-			dynasty = "Takeda"
+			name = "Сингэн"
+			dynasty = "Такэда"
 			fixed = yes
 			adm = 5
 			dip = 5
@@ -1139,7 +1139,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader = "Shingen Takeda"
+				leader = "Такэда Сингэн"
 			}
 		}
 	}
@@ -1196,7 +1196,7 @@ country_event = {
 				}
 			}
 			spawn_rebels = {
-				leader = "Shigeuji Ashikaga"
+				leader = "Асикага Сигэудзи"
 				type = pretender_rebels
 				size = 2
 			}
@@ -1292,8 +1292,8 @@ country_event = {
 		name = flavor_daimyo.23.a #Tenka Fubu.
 		add_stability = -2
 		define_ruler = {
-			name = "Nobunaga"
-			dynasty = "Oda"
+			name = "Нобунага"
+			dynasty = "Ода"
 			fixed = yes
 			adm = 5
 			dip = 5
@@ -1306,7 +1306,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader = "Nobunaga Oda"
+				leader = "Ода Нобунага"
 			}
 		}
 		
@@ -1337,7 +1337,7 @@ country_event = {
 	option = {	
 		name = flavor_daimyo.24.a #We have great need of such generals.
 		define_general = {
-			name = "Toyotomi Hideyoshi"
+			name = "Тоётоми Хидэёси"
 			shock = 4
 			fire = 4
 			manuever = 4
@@ -1346,11 +1346,14 @@ country_event = {
 	}
 	option = {
 		name = flavor_daimyo.24.b #A skilled negotiator for our clan.
-		define_advisor = {
-			type = recruitmaster
-			name = "Toyotomi Hideyoshi"
-			discount = yes
-			skill = 3
+		define_heir = {
+			name = "Хидэёси"
+			dynasty = Тоётоми
+			age = 25
+			claim = 75
+			adm = 5
+			dip = 6
+			mil = 5
 		}
 	}
 }

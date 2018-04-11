@@ -59,6 +59,24 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 343 #Fez
+				province_id = 344 #Marrekech
+				AND = {
+                    province_id = 348
+                    ROOT = { NOT = { owns_core_province = 346 } }
+                }
+                AND = {
+                    province_id = 346
+                    ROOT = { NOT = { owns_core_province = 348 } }
+                }
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = MOR }
 			is_at_war = no
@@ -180,6 +198,31 @@ country_decisions = {
 					is_former_colonial_nation = yes
 					ai = no
 				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 338
+				province_id = 2461
+				province_id = 2460 ###STT
+				province_id = 349
+				province_id = 340
+				province_id = 2456
+				province_id = 2457
+				province_id = 350
+
+				AND = {
+                    province_id = 336
+                    ROOT = { NOT = { owns_core_province = 339 } }
+                }
+                AND = {
+                    province_id = 339
+                    ROOT = { NOT = { owns_core_province = 336 } }
+                }
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
@@ -304,6 +347,24 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 341
+				province_id = 2473
+				AND = {
+                    province_id = 2454
+                    ROOT = { NOT = { owns_core_province = 354 } }
+                }
+                AND = {
+                    province_id = 354
+                    ROOT = { NOT = { owns_core_province = 2454 } }
+                }
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = TUN }
 			is_at_war = no
@@ -388,6 +449,24 @@ country_decisions = {
 					is_former_colonial_nation = yes
 					ai = no
 				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 354
+				province_id = 2451
+				AND = {
+                    province_id = 355
+                    ROOT = { NOT = { owns_core_province = 353 } }
+                }
+                AND = {
+                    province_id = 353
+                    ROOT = { NOT = { owns_core_province = 355 } }
+                }
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {

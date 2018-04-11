@@ -1061,3 +1061,19 @@ cb_force_tributary = {
 	
 	war_goal = take_capital_force_tributary
 }
+
+cb_hundred_years_union = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 360
+	
+	prerequisites = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	}
+
+	war_goal = take_capital_personal_union
+}

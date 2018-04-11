@@ -37,6 +37,42 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 414		# Hamadan
+				province_id = 429		# Isfahan
+				province_id = 433		# Yazd
+				province_id = 2213		# Qom
+				province_id = 2215		# Qazvin
+				AND = {
+					province_id = 426
+					ROOT = { NOT = { owns_core_province = 2218 } }
+				}
+				AND = {
+					province_id = 2218
+					ROOT = { NOT = { owns_core_province = 426 } }
+				}
+				AND = {
+					province_id = 416
+					ROOT = { NOT = { owns_core_province = 432 } }
+					ROOT = { NOT = { owns_core_province = 2221 } }
+				}
+				AND = {
+					province_id = 432
+					ROOT = { NOT = { owns_core_province = 416 } }
+					ROOT = { NOT = { owns_core_province = 2221 } }
+				}
+				AND = {
+					province_id = 2221
+					ROOT = { NOT = { owns_core_province = 416 } }
+					ROOT = { NOT = { owns_core_province = 432 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -60,6 +96,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PER
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_and_rank = {
 				government = feudal_theocracy

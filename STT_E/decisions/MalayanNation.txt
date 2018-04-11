@@ -25,6 +25,28 @@ country_decisions = {
 				num_of_cities = 12
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 624
+				province_id = 2687
+				province_id = 629
+				province_id = 630
+				area = malacca_area
+				area = malaya_area
+				area = kalimantan_area
+				area = brunei_area
+				area = kutai_area
+				area = north_sumatra_area
+				area = batak_area
+				area = central_sumatra_area
+				area = minangkabau_area
+				area = south_sumatra_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no

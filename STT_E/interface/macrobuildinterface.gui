@@ -567,14 +567,7 @@ guiTypes = {
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 285 y = 391 }
 			frame = 2
-		}		
-		
-		iconType ={
-			name ="manufactory_icon"
-			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 14 y = 391 }
-			frame = 8
-		}		
+		}
 		
 	    ##################################################################################
 		instantTextBoxType = {
@@ -1565,7 +1558,30 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"
 		}
+		iconType ={
+			name ="manufactory_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 15 y = 391}
+			frame = 8
+		}
 
+		checkboxType = {
+			name = "build_manufactory"
+
+			position = { x = 9 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+
+		instantTextBoxType={
+			name = "manufactory_cost"
+
+			position = {x = 9 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
 		checkboxType = {
 			name = "build_mills"
 			position = { x = 61 y = 490 } #STT 321 420
@@ -1581,6 +1597,24 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"
 		}
+
+		checkboxType = {
+			name = "build_furnace"
+			position = { x = 61 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+
+		instantTextBoxType={
+			name = "furnace_cost"
+			position = {x = 61 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+
 		##################################################################################
 		iconType = {
 			name = "current_building"

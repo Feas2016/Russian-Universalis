@@ -34,6 +34,21 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 177	# Maine
+				province_id = 179	# Blois
+				province_id = 182	# Vermandois
+				province_id = 183	# Île-de-France
+				province_id = 184	# Orléannais
+				province_id = 185	# Othe
+				province_id = 186	# Champagne
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -52,6 +67,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = FRA
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

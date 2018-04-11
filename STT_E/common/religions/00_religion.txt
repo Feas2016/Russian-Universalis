@@ -226,6 +226,38 @@ christian = {
 		}
 	}
 
+	anglican = {
+		color = { 135 77 255 }
+		icon = 28
+
+		allowed_center_conversion = {
+			catholic
+		}
+		country = {
+			development_cost = -0.1
+			innovativeness_gain = 0.5
+		}
+		
+		country_as_secondary = {
+			idea_cost = -0.1
+		}
+		
+		uses_anglican_power = yes				# Uses church power/aspect mechanics
+		
+		aspects = {
+			divorce_consort_aspect
+			gain_consort_aspect
+			dissolve_monasteries_aspect
+			monopoly_aspect
+			stability_aspect
+		}
+		aspects_name = ANGLICAN_ASPECTS
+		
+		heretic = { PENTECOSTAL PURITAN CONGREGATIONALIST }
+		
+		date = 1534.11.3 # act of supremacy
+	}
+	
 	protestant = {
 		color = { 0 0 178 }
 		icon = 2
@@ -261,6 +293,7 @@ christian = {
 			allow_usury_aspect
 			translated_bibles_aspect
 		}
+		aspects_name = PROTESTANT_ASPECTS
 		
 		hre_heretic_religion = yes
 		
@@ -384,7 +417,7 @@ christian = {
 		will_get_center = { #Refered to even for initial CoR Spawn
 			any_owned_province = {
 				can_have_center_of_reformation_trigger = {
-					RELIGION = protestant
+					RELIGION = reformed
 				}
 			}
 		}
@@ -417,7 +450,7 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
-								RELIGION = protestant
+								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
@@ -444,7 +477,7 @@ christian = {
 					random_owned_province = {
 						limit = {
 							can_have_center_of_reformation_trigger = {
-								RELIGION = protestant
+								RELIGION = reformed
 							}
 						}
 						change_religion = reformed
@@ -1093,9 +1126,6 @@ muslim = {
 	sunni = {
 		color = { 0 153 0 }
 		icon = 5
-		allowed_conversion = {
-			sikhism
-		}
 		country = {
 			cav_to_inf_ratio = 0.10
 			heir_chance = 1.0

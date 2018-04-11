@@ -36,6 +36,30 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {	
+				AND = {
+					ROOT = { DIP = 5 }
+					OR = {
+						province_id = 280		#Kiev -center
+					province_id = 283		#Zaporozhie -eastern/southern center of rebellions
+					}
+				}
+				AND = {
+					ROOT = { NOT = { DIP = 5 } }
+					OR = {
+						province_id = 280		#Kiev -center
+						province_id = 283		#Zaporozhie -eastern/southern center of rebellions
+						province_id = 261		#Ruthenia/Lvov -western
+						province_id = 279		#Volhynia -western
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			### STT delete
 			is_free_or_tributary_trigger = yes

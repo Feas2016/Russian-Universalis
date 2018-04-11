@@ -160,6 +160,22 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_tab_missions"
+		texturefile = "gfx//interface//tab_domestic_missions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tab_decisions"
+		texturefile = "gfx//interface//tab_domestic_decisions.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.tga"
 		noOfFrames = 30 ###STT

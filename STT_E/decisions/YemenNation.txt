@@ -30,6 +30,33 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 387	# Mocha
+				province_id = 388	# Aden
+				province_id = 390	# Sa'ana
+				province_id = 4280	# Taiz
+				AND = {
+					province_id = 389
+					ROOT = { NOT = { owns_core_province = 391 } }
+					ROOT = { NOT = { owns_core_province = 2346 } }
+				}
+				AND = {
+					province_id = 2346
+					ROOT = { NOT = { owns_core_province = 391 } }
+					ROOT = { NOT = { owns_core_province = 389 } }
+				}
+				AND = {
+					province_id = 391
+					ROOT = { NOT = { owns_core_province = 2346 } }
+					ROOT = { NOT = { owns_core_province = 389 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = YEM }
 			is_at_war = no
@@ -47,6 +74,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = YEM
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }

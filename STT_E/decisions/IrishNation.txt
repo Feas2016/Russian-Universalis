@@ -29,6 +29,20 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 372			# Ulster
+				province_id = 373			# Meath
+				province_id = 374			# Leinster
+				province_id = 375			# Munster
+				province_id = 376			# Connaught
+				province_id = 4118			# Desmond
+				province_id = 4119			# Sligo
+				province_id = 4120			# Kildare
+				province_id = 4121			# Ulster
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
@@ -46,6 +60,8 @@ country_decisions = {
 		effect = {
 			change_tag = IRE
 			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			# should grant cores on all ireland
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -58,6 +74,10 @@ country_decisions = {
 			}
 			add_prestige = 10
 			set_country_flag = formed_ireland_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1

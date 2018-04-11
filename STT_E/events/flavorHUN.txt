@@ -34,12 +34,11 @@ country_event = {
 		ai_chance = { factor = 50 }
 		name = flavor_hun.1.a
 		define_ruler = {
-			name = "(–егент) янош"
+			name = "янош"
 			dynasty = "’унь€ди"
 			DIP = 5			
 			ADM = 4
 			MIL = 5
-			regency = yes
 			attach_leader = "янош ’унь€ди"
 		}
 		if = {
@@ -106,6 +105,10 @@ country_event = {
 		tag = HUN
 		is_year = 1450
 		NOT = { is_year = 1457 }
+		OR = {
+			heir_age = 15
+			has_heir = no
+		}
 		has_regency = no
 		# del STT NOT = { personal_union = 1 }
 		HAB = {

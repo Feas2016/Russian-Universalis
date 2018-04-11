@@ -37,6 +37,21 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 262	# Krakow
+				province_id = 257	# Warszawa
+				province_id = 254	# Poznan
+				province_id = 255	# Kalish
+				province_id = 258	# Sieradz
+				province_id = 259	# Sandomierz
+				province_id = 1939	# Leczyca
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = POL }
 			is_at_war = no
@@ -52,6 +67,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = POL
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }

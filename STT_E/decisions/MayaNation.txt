@@ -29,6 +29,20 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 842 #Petén
+				province_id = 846 #Sotuta
+				province_id = 2633 #Mani
+				province_id = 2652 #Ecab
+				province_id = 2636 #Chacuyal
+				province_id = 2632 #Xicallanco
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes

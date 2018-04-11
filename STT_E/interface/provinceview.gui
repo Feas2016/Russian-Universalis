@@ -1500,17 +1500,32 @@ guiTypes = {
 				format = right			
 			}
 
+			iconType = {
+				name = "latent_resource_icon"
+				position = { x= 423 y = 485 }
+				spriteType = "GFX_resource_icon"
+				Orientation = "UPPER_LEFT"
+				hint_tag = "hint_tradegoods"
+			}
+
 			guiButtonType = {
 				name = "resource_icon"
-				position = { x= 413 y = 500 }
+				position = { x= 403 y = 500 }
 				quadTextureSprite = "GFX_resource_icon"
 				Orientation = "UPPER_LEFT"
 				hint_tag = "hint_tradegoods"
 			}			
 
+			iconType = {
+				name = "hidden_latent_resource_icon"
+				position = { x= 448 y = 490 }
+				Orientation = "UPPER_LEFT"
+				spriteType = "GFX_resource_transparent"
+			}			
+
 			instantTextBoxType = {
 				name = "resource_price_value"
-				position = { x= 320 y = 560 }
+				position = { x= 310 y = 560 }
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}	
@@ -1524,7 +1539,7 @@ guiTypes = {
 			iconType = {
 				name ="resource_price_gold"
 				spriteType = "GFX_icon_gold_font_medium"
-				position = { x= 445 y = 555 }
+				position = { x= 435 y = 555 }
 				Orientation = "UPPER_LEFT"
 			}			
 			
@@ -5566,14 +5581,7 @@ guiTypes = {
 			position = { x = 285 y = 391 }
 			frame = 2
 		}		
-		
-		iconType ={
-			name ="manufactory_icon"
-			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 391 } ### STT
-			frame = 8
-		}		
-		
+				
 	    ##################################################################################
 		instantTextBoxType = {
 			name = "title_production"
@@ -6473,6 +6481,29 @@ guiTypes = {
 			text = "MANUFACTORY"	
 		}	
 		
+		iconType ={
+			name ="manufactory_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 15 y = 391}
+			frame = 8
+		}			
+		
+		checkboxType = {
+			name = "build_manufactory"
+			position = { x = 9 y = 420 }
+			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "manufactory_cost"
+			position = {x = 9 y = 470 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"
+		}
+		
 		checkboxType = {
 			name = "build_wharf"
 			position = { x = 9 y = 420 }
@@ -6578,6 +6609,22 @@ guiTypes = {
 		instantTextBoxType={
 			name = "mills_cost"
 			position = {x = 65 y = 500 } ### STT
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000Â¤"	
+		}
+
+		checkboxType = {
+			name = "build_furnace"
+			position = { x = 111 y = 470 } ### STT
+			quadTextureSprite = "GFX_furnace"
+		}
+		
+		instantTextBoxType={
+			name = "furnace_cost"
+			position = {x = 115 y = 500 } ### STT
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128

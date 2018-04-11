@@ -271,6 +271,7 @@ country_event = {
 		ai_chance = { factor = 75 }
 		reduce_estate_nobles_loyalty_effect = yes
 		add_years_of_income = -0.5
+		add_innovativeness_small_effect = yes
 		add_country_modifier = {
 			name = justices_of_peace
 			duration = -1
@@ -411,6 +412,7 @@ country_event = {
 			add_base_tax = 2
 		}
 		add_stability = -1
+		add_innovativeness_small_effect = yes
 		every_owned_province = {
 			limit = {
 				has_province_flag = enclosure_movement
@@ -458,6 +460,9 @@ country_event = {
 		PAP = {
 			exists = yes
 			religion = catholic
+		}
+		NOT = {
+			has_dlc = "Rule Britannia"
 		}
 	}
 
@@ -652,7 +657,10 @@ country_event = {
 			}
 			tag = GBR
 		}
+		OR = {
 		religion = protestant
+			religion = anglican
+		}
 		OR = {
 			marriage_with = SPA
 			junior_union_with = SPA
@@ -778,7 +786,7 @@ country_event = {
 	}
 }
 
-# Sir Фрэнсис Уолсингем
+# Sir Francis Walsingham
 country_event = {
 	id = flavor_eng.9116
 	title = "flavor_eng.EVTNAME9116"
@@ -811,6 +819,7 @@ country_event = {
 	option = {			# An Excellent Minister!
 		name = "EXCELLENTMINISTER"
 		add_adm_power = 25
+		add_innovativeness_small_effect = yes
 		if = {
 			limit = { owns = 235 }
 			define_advisor = {
@@ -839,7 +848,7 @@ country_event = {
 	}
 }
 
-# Sir Томас Грешем's Currency Reform
+# Sir Thomas Gresham's Currency Reform
 country_event = {
 	id = flavor_eng.9117
 	title = "flavor_eng.EVTNAME9117"
@@ -871,6 +880,7 @@ country_event = {
 			add_base_tax = 1
 		}
 		add_inflation = -3
+		add_innovativeness_small_effect = yes
 		define_advisor = {
 			type = treasurer
 			name = "Томас Грешем"
@@ -894,7 +904,10 @@ country_event = {
 	trigger = {
 		is_year = 1500
 		NOT = { is_year = 1600 }
+		OR = {
 		religion = protestant
+			religion = anglican
+		}
 		NOT = { has_country_modifier = aristocracy_modifier }
 		OR = {
 			AND = {
@@ -1054,12 +1067,14 @@ country_event = {
 		add_stability_or_adm_power = yes
 		add_years_of_income = 1.5
 		add_inflation = 3
+		add_innovativeness_small_effect = yes
 	}
 	option = {			# Issue Strict Control
 		name = "flavor_eng.EVTOPTB9119"
 		ai_chance = { factor = 50 }
 		add_stability_or_adm_power = yes
 		add_inflation = -3
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -1119,7 +1134,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		is_year = 1570
+		is_year = 1520
 		NOT = { is_year = 1616 }
 		OR = {
 			AND = {
@@ -1128,19 +1143,32 @@ country_event = {
 			}
 			tag = GBR
 		}
-		religion = protestant
 		OR = {
-			eastern_ireland_area = {
+		religion = protestant
+			religion = anglican
+		}
+		OR = {
+			munster_area = {
 				owned_by = ROOT
 			}
-			western_ireland_area = {
+			connacht_area = {
+				owned_by = ROOT
+			}
+			leinster_area = {
+				owned_by = ROOT
+			}
+			ulster_area = {
 				owned_by = ROOT
 			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 300
+		months = 1200
+		modifier = {
+			factor = 0.5
+			mission_completed = conquer_ireland
+		}
 	}
 
 	option = {			# We are not amused!
@@ -1431,6 +1459,7 @@ country_event = {
 		OR = {
 			religion = protestant
 			religion = reformed
+			religion = anglican
 		}
 	}
 
@@ -1496,6 +1525,7 @@ country_event = {
 	option = {			# National Loans at 500 ducats
 		name = "flavor_eng.EVTOPTA9134"
 		add_inflation = -3
+		add_innovativeness_big_effect = yes
 	}
 }
 
@@ -1582,7 +1612,7 @@ country_event = {
 	}
 }
 
-# Sir Роберт Уолпол
+# Sir Robert Walpole
 country_event = {
 	id = flavor_eng.9140
 	title = "flavor_eng.EVTNAME9140"
@@ -1997,6 +2027,7 @@ country_event = {
 		OR = {
 			religion = protestant
 			religion = reformed
+			religion = anglican
 		}
 		any_owned_province = {
 			is_capital = no
@@ -2131,6 +2162,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_adm_power = 10
 		add_prestige = 10
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -2166,6 +2198,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_adm_power = 10
 		add_prestige = 10
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -2201,6 +2234,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_adm_power = 10
 		add_prestige = 10
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -2236,6 +2270,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_adm_power = 10
 		add_prestige = 10
+		add_innovativeness_big_effect = yes
 	}
 }
 
@@ -2271,6 +2306,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_adm_power = 10
 		add_prestige = 10
+		add_innovativeness_big_effect = yes
 	}
 }
 
@@ -2426,3 +2462,357 @@ country_event = {
 		}
 	}
 }
+	
+# Rule Britannia - Oxbridge rivalry
+country_event = { 
+	id = flavor_eng.9880
+	title = flavor_eng.9880.t
+	desc = flavor_eng.9880.d
+	picture = UNIVERSITY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		237 = {
+			owned_by = ROOT
+		}
+		4370 = {
+			owned_by = ROOT
+		}
+		mission_completed = eng_rb_universities
+	}
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = flavor_eng.9880.a
+		
+		if = {
+			limit = {
+				check_variable = {
+					which = oxbridge_subject
+					value = 1
+				}
+				NOT = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 2
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "rb_eng_passage_spheres"
+				duration = 1825
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = oxbridge_subject
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 3
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "rb_eng_theory_warfare"
+				duration = 1825
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = oxbridge_subject
+					value = 3
+				}
+				NOT = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 4
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "rb_eng_philosophy_royalty"
+				duration = 1825
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = oxbridge_subject
+					value = 4
+				}
+				NOT = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 5
+					}
+				}
+			}
+			add_country_modifier = {
+				name = "rb_eng_divine_common"
+				duration = 1825
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = oxbridge_subject
+					value = 5
+				}
+			}
+			add_country_modifier = {
+				name = "rb_eng_national_economy"
+				duration = 1825
+			}
+		}
+		custom_tooltip = "flavor_eng.9880.a.tooltip"
+		hidden_effect = {
+			country_event = {
+				id = flavor_eng.9880
+				days = 3650
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+				}
+				random_list = {
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 2
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+				}
+				random_list = {
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 1
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 3
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+				}
+				random_list = {
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 1
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 4
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+				random_list = {
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 1
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 5
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_subject
+						value = 5
+					}
+				}
+				random_list = {
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 1
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 2
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 3
+						}
+					}
+					25 = {
+						set_variable = {
+							which = oxbridge_subject
+							value = 4
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_symposium
+						value = 0
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_symposium
+							value = 1
+						}
+					}
+				}	
+				set_variable = { which = oxbridge_symposium value = 2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_symposium
+						value = 1
+					}
+					NOT = {
+						check_variable = {
+							which = oxbridge_symposium
+							value = 2
+						}
+					}
+				}	
+				set_variable = { which = oxbridge_symposium value = 2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = oxbridge_symposium
+						value = 2
+					}
+				}	
+				set_variable = { which = oxbridge_symposium value = 1 }
+			}
+		}
+	}
+}
+	

@@ -23,6 +23,28 @@ country_decisions = {
 			culture_group = turko_semitic #Arabic
 			NOT = { primary_culture = turkish }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358			#Alexandria
+				province_id = 361			#Cairo
+				province_id = 377			#Aleppo
+				province_id = 379			#Jerusalem
+				province_id = 382			#Damascus
+				province_id = 384			#Medina
+				province_id = 385			#Mecca
+				province_id = 388			#Aden
+				province_id = 390			#Sanaa
+				province_id = 392			#Al-Arid
+				province_id = 394			#Qatif
+				province_id = 400			#Muscat
+				province_id = 403			#Nizwa
+				province_id = 410			#Baghdad
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no

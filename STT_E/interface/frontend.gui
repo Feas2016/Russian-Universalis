@@ -230,6 +230,7 @@ guiTypes = {
 					fixedsize = yes
 				}
 			
+			
 			}
 
 			### MAIN MENU PANEL (upperright)
@@ -353,6 +354,18 @@ guiTypes = {
 				downsound = ""
 				fullscreen=yes
 				Orientation = "CENTER_DOWN"
+				
+				instantTextBoxType = {
+					name ="geks_version_label"
+					position = { x = 9 y = 41 }
+					
+					font = "vic_18"
+					borderSize = {x = -164 y = 5}
+					text = "GEKS_VERSION"	
+					format = left
+					maxWidth = 250
+					maxHeight = 20	
+				}
 				
 ### MAIN MENU PANEL (bottom)
 

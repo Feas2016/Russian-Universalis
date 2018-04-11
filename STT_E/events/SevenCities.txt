@@ -1169,11 +1169,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_eldorado
 			}
-			add_country_modifier = {
-				name = sce_lake_guatavita
-				duration = 18250
+			add_treasury = 400
 			}
+		add_permanent_province_modifier = {
+			name = "el_dorado_mod"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -1240,11 +1244,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_eldorado
 			}
-			add_country_modifier = {
-				name = sce_el_dorado
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "el_dorado_mod"
 				duration = -1
 			}
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -1367,12 +1375,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_fountainofyouth
 			}
-			
-			add_country_modifier = {
-				name = sce_life_water
-				duration = 18250
+			add_treasury = 400
 			}
+		add_permanent_province_modifier = {
+			name = "sce_life_water"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -1436,14 +1447,18 @@ province_event = {
 	option = {
 		name = seven_cities_events.205.a
 		FROM = {
-			add_country_modifier = {
-				name = sce_fountain_youth
-				duration = -1
-			}
 			tooltip = {
 				remove_country_modifier = sce_search_fountainofyouth
 			}
+			add_treasury = 800
 		}
+		add_permanent_province_modifier = {
+			name = "sce_life_water"
+			duration = -1
+		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -1576,12 +1591,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_cibola
 			}
-			
-			add_country_modifier = {
-				name = sce_cibola_silver
-				duration = 18250
+			add_treasury = 400
 			}
+		add_permanent_province_modifier = {
+			name = "sce_cibola_silver"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -1652,11 +1670,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_cibola
 			}
-			add_country_modifier = {
-				name = sce_cibola_gold
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_cibola_silver"
 				duration = -1
 			}
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -1791,12 +1813,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_cityofcaesars
 			}
-			
-			add_country_modifier = {
-				name = sce_citycaesars_quartz
-				duration = 18250
+			add_treasury = 400
 			}
+		add_permanent_province_modifier = {
+			name = "sce_city_of_caesars"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -1869,13 +1894,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_cityofcaesars
 			}
-			
-			add_country_modifier = {
-				name = sce_city_of_caesars
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_city_of_caesars"
 				duration = -1
 			}
-			
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -2019,13 +2046,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_sierradelaplata
 			}
-			
-			add_country_modifier = {
-				name = sce_sierradelaplata_quartz
-				duration = 18250
+			add_treasury = 400
 			}
-			
+		add_permanent_province_modifier = {
+			name = "sce_sierradelaplata_quartz"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -2101,13 +2130,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_sierradelaplata
 			}
-			
-			add_country_modifier = {
-				name = sce_sierra_dela_plata
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_sierradelaplata_quartz"
 				duration = -1
 			}
-			
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -2246,13 +2277,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_norumbega
 			}
-			
-			add_country_modifier = {
-				name = sce_norumbega_abandoned
-				duration = 18250
+			add_treasury = 400
 			}
-			
+		add_permanent_province_modifier = {
+			name = "sce_norumbega_abandoned"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -2325,12 +2358,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_norumbega
 			}
-			add_country_modifier = {
-				name = sce_norumbega
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_norumbega_abandoned"
 				duration = -1
 			}
-			
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -2469,12 +2505,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_saguenay
 			}
-			add_country_modifier = {
-				name = sce_saguenay_abandoned
-				duration = 18250
+			add_treasury = 400
 			}
-			
+		add_permanent_province_modifier = {
+			name = "sce_saguenay_abandoned"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -2548,12 +2587,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_saguenay
 			}
-			add_country_modifier = {
-				name = sce_saguenay
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_saguenay_abandoned"
 				duration = -1
 			}
-			
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -2689,11 +2731,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_quivira
 			}
-			add_country_modifier = {
-				name = sce_golden_cups
-				duration = 18250
+			add_treasury = 400
 			}
+		add_permanent_province_modifier = {
+			name = "sce_golden_cups"
+			duration = -1
 		}
+		add_base_tax = 2
+		add_base_production = 2
+		add_base_manpower = 2
 	}
 }
 
@@ -2768,11 +2814,15 @@ province_event = {
 			tooltip = {
 				remove_country_modifier = sce_search_quivira
 			}
-			add_country_modifier = {
-				name = sce_quivira
+			add_treasury = 800
+		}
+		add_permanent_province_modifier = {
+			name = "sce_golden_cups"
 				duration = -1
 			}
-		}
+		add_base_tax = 4
+		add_base_production = 4
+		add_base_manpower = 4
 	}
 }
 
@@ -3025,7 +3075,7 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_lost_woods
 				duration = 365
 			}
@@ -3042,7 +3092,7 @@ province_event = {
 	option = {
 		name = seven_cities_events.303.a
 		tooltip = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_lost_woods_tooltip
 				duration = 90
 			}
@@ -3170,7 +3220,7 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_shortcut
 				duration = 365
 			}
@@ -3190,7 +3240,7 @@ province_event = {
 			add_adm_power = -50
 		}
 		tooltip = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_shortcut_tooltip
 				duration = 90
 			}
@@ -3884,7 +3934,7 @@ province_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_poison_rock
 				duration = 365
 			}
@@ -3901,7 +3951,7 @@ province_event = {
 	option = {
 		name = seven_cities_events.406.a
 		tooltip = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = sce_poison_rock_tooltip
 				duration = 365
 			}
@@ -4064,7 +4114,7 @@ province_event = {
 
 	option = {
 		name = seven_cities_events.410.a
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = sce_mounds
 			duration = 365
 		}
@@ -4209,7 +4259,7 @@ province_event = {
 	
 	option = {
 		name = seven_cities_events.414.a
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = sce_monster_lake
 			duration = 365
 		}

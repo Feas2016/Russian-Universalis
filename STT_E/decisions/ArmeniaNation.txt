@@ -29,6 +29,27 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 327	# Cilicia
+				province_id = 419	# Yerevan
+				province_id = 2202	# Melikates
+				province_id = 2204	# Lomsia
+				province_id = 4302	# Manzikert
+				AND = {
+                    province_id = 2306
+                    ROOT = { NOT = { owns_core_province = 2307 } }
+                }
+				AND = {
+                    province_id = 2307
+                    ROOT = { NOT = { owns_core_province = 2306 } }
+                }
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = ARM }
 			is_at_war = no

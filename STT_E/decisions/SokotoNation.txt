@@ -21,6 +21,13 @@ country_decisions = {
 			religion = sunni
 			has_country_flag = sok_dan_fodio_happened
 		}
+		provinces_to_highlight = {
+			province_id = 1148
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no

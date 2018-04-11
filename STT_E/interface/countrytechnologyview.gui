@@ -78,6 +78,25 @@ guiTypes = {
 			text = "Total Tech Penalty: 70%"
 		}
 		
+		iconType =
+		{
+			name = "innovativeness_icon"
+			spriteType = "GFX_innovativeness_icon"
+			position = { x= 495 y = 115 }
+		}
+
+		instantTextBoxType = {
+			name = "innovativeness_text"
+			position = { x = 446 y = 115 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}
+			maxWidth = 50
+			maxHeight = 32
+			format = right
+			text = "100.0"
+		}
+		
 		### ------- Institutions -------		
 		windowType = {
 			name = "institutions_window"

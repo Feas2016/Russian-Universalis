@@ -37,6 +37,34 @@ country_decisions = {
 				num_of_cities = 8
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 808 #Qusqu
+				province_id = 813 #Kashamarka
+				province_id = 810 #Wankawilka
+				province_id = 814 #Wanuku
+				AND = {
+					province_id = 804
+					ROOT = { NOT = { owns_core_province = 2831 } }
+				}
+				AND = {
+					province_id = 2831
+					ROOT = { NOT = { owns_core_province = 804 } }
+				}
+				AND = {
+					province_id = 812
+					ROOT = { NOT = { owns_core_province = 820 } }
+				}
+				AND = {
+					province_id = 820
+					ROOT = { NOT = { owns_core_province = 812 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = INC }
 			is_at_war = no

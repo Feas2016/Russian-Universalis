@@ -34,6 +34,25 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2978	# Arezzo
+				province_id = 116	# Firenze
+				province_id = 115	# Pisa
+				AND = {
+					province_id = 117
+					ROOT = { NOT = { owns_core_province = 2980 } }
+				}
+				AND = {
+					province_id = 2980
+					ROOT = { NOT = { owns_core_province = 117 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes

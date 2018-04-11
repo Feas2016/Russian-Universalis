@@ -24,6 +24,40 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295			# Moskva
+				province_id = 310			# Novgorod
+				AND = {
+					province_id = 294
+					ROOT = { NOT = { owns_core_province = 308 } }
+				}
+				AND = {
+					province_id = 308
+					ROOT = { NOT = { owns_core_province = 294 } }
+				}
+				AND = {
+					province_id = 301
+					ROOT = { NOT = { owns_core_province = 293 } }
+				}
+				AND = {
+					province_id = 293
+					ROOT = { NOT = { owns_core_province = 301 } }
+				}
+				AND = {
+					province_id = 306
+					ROOT = { NOT = { owns_core_province = 307 } }
+				}
+				AND = {
+					province_id = 307
+					ROOT = { NOT = { owns_core_province = 306 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = RUS }
 			adm_tech = 14 ### STT
@@ -48,6 +82,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RUS
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
 			set_government_and_rank = { 	### STT
 				government = rus_imperial_government
 				rank = 3

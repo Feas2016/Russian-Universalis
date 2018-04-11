@@ -66,6 +66,7 @@ country_event = {
 }
 
 #Alexandria
+# Do not change effects without also updating tooltips in Coptic missions
 country_event = {
 	id = coptic_flavor.3
 	title = coptic_flavor.3.t
@@ -76,6 +77,12 @@ country_event = {
 
 	trigger = {
 		owns = 358
+		OR = {
+			NOT = {
+				has_mission = coptic_conquest_of_alexandria
+			}
+			has_country_flag = alexandria_mission_flag
+		}
 		OR = {
 			religion = coptic
 			uses_blessings = yes
@@ -91,7 +98,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = coptic_alexandria_liberated
-			gharbia_area = {
+			delta_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = ROOT
@@ -140,7 +147,7 @@ country_event = {
 		custom_tooltip = coptic_flavor.3.a.tt
 
 		tooltip = {
-			gharbia_area = {
+			delta_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = FROM
@@ -155,6 +162,7 @@ country_event = {
 }
 
 #Yerevan
+# Do not change effects without also updating tooltips in Coptic missions
 country_event = {
 	id = coptic_flavor.5
 	title = coptic_flavor.5.t
@@ -172,6 +180,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		OR = {
+			NOT = {
+				has_mission = coptic_conquest_of_yerevan
+			}
+			has_country_flag = yerevan_mission_flag
+		}
 		owns = 419
 		OR = {
 			religion = coptic
@@ -220,6 +234,7 @@ country_event = {
 }
 
 #Antioch
+# Do not change effects without also updating tooltips in Coptic missions
 country_event = {
 	id = coptic_flavor.7
 	title = coptic_flavor.7.t
@@ -229,6 +244,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		OR = {
+			NOT = {
+				has_mission = coptic_conquest_of_antioch
+			}
+			has_country_flag = antioch_mission_flag
+		}
 		owns = 2313
 		OR = {
 			religion = coptic
@@ -272,6 +293,7 @@ country_event = {
 }
 
 #Qasr Ibrim
+# Do not change effects without also updating tooltips in Coptic missions
 country_event = {
 	id = coptic_flavor.9
 	title = coptic_flavor.9.t
@@ -281,7 +303,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		OR = {
+			NOT = {
+				has_mission = coptic_conquest_of_qasr_ibrim
+			}
+			has_country_flag = qasr_ibrim_flag
+		}
 		owns = 1234
+		1234 = {
+			religion = coptic
+		}
 		OR = {
 			religion = coptic
 			uses_blessings = yes
@@ -314,6 +345,12 @@ country_event = {
 
 		add_prestige = 10
 
+		if = {
+			limit = {
+				any_owned_province = {
+					has_province_flag = copts_liberated
+				}
+			}
 		every_owned_province = {
 			limit = { has_province_flag = copts_liberated }
 			add_province_modifier = {
@@ -321,6 +358,7 @@ country_event = {
 				duration = 3650
 			}
 			clr_province_flag = copts_liberated
+		}
 		}
 
 		hidden_effect = {
@@ -382,7 +420,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			sharqiya_area = {
+			gulf_of_arabia_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = ROOT
@@ -430,7 +468,7 @@ country_event = {
 		custom_tooltip = coptic_flavor.11.a.tt
 
 		tooltip = {
-			sharqiya_area = {
+			gulf_of_arabia_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = FROM
@@ -473,7 +511,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			sharqiya_area = {
+			gulf_of_arabia_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = ROOT
@@ -521,7 +559,7 @@ country_event = {
 		custom_tooltip = coptic_flavor.11.a.tt
 
 		tooltip = {
-			sharqiya_area = {
+			gulf_of_arabia_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = FROM
@@ -536,6 +574,7 @@ country_event = {
 }
 
 #Cairo
+# Do not change effects without also updating tooltips in Coptic missions
 country_event = {
 	id = coptic_flavor.15
 	title = coptic_flavor.15.t
@@ -545,6 +584,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		OR = {
+			NOT = {
+				has_mission = coptic_conquest_of_cairo
+			}
+			has_country_flag = cairo_mission_flag
+		}
 		has_dlc = "Rights of Man"
 		owns = 361
 		religion = coptic
@@ -556,7 +601,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			central_egypt_area = {
+			bahari_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = ROOT
@@ -604,7 +649,7 @@ country_event = {
 		custom_tooltip = coptic_flavor.15.a.tt
 
 		tooltip = {
-			central_egypt_area = {
+			bahari_area = {
 				limit = { 
 					NOT = { religion = coptic } 
 					owned_by = FROM
