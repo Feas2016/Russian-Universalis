@@ -6503,133 +6503,21 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000�"
 		}
-		
-		checkboxType = {
-			name = "build_wharf"
-			position = { x = 9 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "wharf_cost"
-			position = {x = 13 y = 450 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_weapons"
-			position = { x = 61 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "weapons_cost"
-			position = {x = 65 y = 450 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_textile"
-			position = { x = 113 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "textile_cost"
-			position = {x = 117 y = 470 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_plantations"
-			position = { x = 165 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "plantations_cost"
-			position = {x = 169 y = 470 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}		
-		
-		checkboxType = {
-			name = "build_tradecompany"
-			position = { x = 217 y = 420 }
-			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "tradecompany_cost"
-			position = {x = 221 y = 470 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-				
-		checkboxType = {
-			name = "build_farm_estate"
-			position = { x = 9 y = 470 } ### STT
-			quadTextureSprite = "GFX_farm_estate" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "farm_estate_cost"
-			position = {x = 13 y = 500 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		
-		checkboxType = {
-			name = "build_mills"
-			position = { x = 61 y = 470 } ### STT
-			quadTextureSprite = "GFX_manufactory_mill" #Placeholder, real sprite is decided by game (based on button name).
-		}
-		
-		instantTextBoxType={
-			name = "mills_cost"
-			position = {x = 65 y = 500 } ### STT
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
 
 		checkboxType = {
 			name = "build_furnace"
-			position = { x = 111 y = 470 } ### STT
+			position = { x = 61 y = 420 }
 			quadTextureSprite = "GFX_furnace"
 		}
 		
 		instantTextBoxType={
 			name = "furnace_cost"
-			position = {x = 115 y = 500 } ### STT
+			position = {x = 61 y = 470 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"	
+			text = "2000�"	
 		}
 		
 		iconType = {
