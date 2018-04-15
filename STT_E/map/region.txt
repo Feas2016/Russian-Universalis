@@ -148,12 +148,12 @@ russia_region = {
 }
 
 
-# ural_region = {
-	# areas = {
+ural_region = {	### STT
+	areas = {
 		
 		
-	# }
-# }
+	}
+}
 
 iberia_region = {
 	areas = {
@@ -543,8 +543,7 @@ mongolia_region = {
 		inner_mongolia_area
 		ordos_area
 		zungaria_area
-		altai_sayan_area
-		
+		altai_sayan_area		
 	}
 }
 
@@ -556,7 +555,12 @@ manchuria_region = {
 		liaoning_area
 		north_korea_area
 		central_korea_area
-		south_korea_area
+		south_korea_area		
+	}
+}
+
+korea_region = {	### STT
+	areas = {
 		
 	}
 }
