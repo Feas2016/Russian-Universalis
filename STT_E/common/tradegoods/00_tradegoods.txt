@@ -141,9 +141,11 @@ wine = {
 		}
 		modifier = {
 			factor = 1.5
-			area = cuyo_area
-			region = france_region
-			region = italy_region
+			OR = {
+				area = cuyo_area
+				region = france_region
+				region = italy_region
+			}
 		}
 		modifier = {
 			factor = 1.1
@@ -215,10 +217,12 @@ wool = {
 		}
 		modifier = {
 			factor = 0.15
-			has_terrain = grasslands
-			has_terrain = hills
-			has_terrain = forest
-			has_terrain = woods
+			OR = {
+				has_terrain = grasslands
+				has_terrain = hills
+				has_terrain = forest
+				has_terrain = woods
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -828,9 +832,11 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			OR = {
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -1018,9 +1024,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
 		}
 	}
 }
@@ -1441,9 +1449,11 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			OR = {
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		}
 	}
 }
@@ -1729,10 +1739,10 @@ gems = {
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
+			#OR = {
 				#area = diamantina_area	### STT
 				area = bogota_area
-			}
+			#}
 		}
 		modifier = {
 			factor = 1.5

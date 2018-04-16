@@ -19,21 +19,17 @@ on_death_election = {
 }
 
 on_five_year_pulse_4 = {
-	random_events = {	
-		100 = event_estate_hhh.4
-		100 = event_estate_hhh.5
-		100 = event_estate_hhh.5
-		1000 = 0              
-	}
 	random_events = {
 		100 = hhh_religion.3
 		100 = hhh_religion.1
 		100 = hhh_religion.4
-		60 = hhh_religion.4
+		100 = event_estate_hhh.4
+		100 = event_estate_hhh.5
+		1000 = 0
 	}
 }
 
-on_four_yearly_pulse_4  = {
+on_four_year_pulse_4  = {
 	random_events = {	
 		100 = event_estate_hhh.10
 		100 = event_estate_hhh.12

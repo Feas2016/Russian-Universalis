@@ -79,9 +79,7 @@ control_gibraltar_straits = {
 control_gibraltar_straits2 = {
 	potential = {
 		normal_or_historical_nations = yes
-		OR = {
-			has_country_modifier = control_gibraltar_straits
-		}
+		has_country_modifier = control_gibraltar_straits
 	}
 	
 	trigger = {

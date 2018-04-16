@@ -536,8 +536,8 @@ cb_heretic = {
 		OR = { ###STT
 			cb_on_religious_enemies = yes
 			government = papal_government
-			government = theocratic_goverment
-			government = monastic_order_goverment
+			government = theocratic_government
+			government = monastic_order_government
 		}
 		religion_group = from
 		NOT = {	has_matching_religion = FROM }
