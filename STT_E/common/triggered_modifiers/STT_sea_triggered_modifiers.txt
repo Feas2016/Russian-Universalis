@@ -4,42 +4,42 @@ control_caspian_sea = {
 	potential = {
 		normal_or_historical_nations = yes
 		OR = {
-			417 = { owned_by = ROOT }	# Gilan
-			426 = { owned_by = ROOT } 	# Mazandaran
-			425 = { owned_by = ROOT }	# Derbent
-			421 = { owned_by = ROOT }	# Baku
-			443 = { owned_by = ROOT }	# Ustyur
-			439 = { owned_by = ROOT }	# Mangyshlak
-			465 = { owned_by = ROOT }	# Nogay
-			469 = { owned_by = ROOT }	# Ryn
-			464 = { owned_by = ROOT }	# Astrakhan
-			424 = { owned_by = ROOT }	# Ardabil
-			2349 = { owned_by = ROOT }	# Kizil-Su
-			2214 = { owned_by = ROOT }	# Golestan
-			2199 = { owned_by = ROOT }	# Tarki
-			2208 = { owned_by = ROOT }	# Tarek
-			3476 = { owned_by = ROOT }	# Amol
-			3439 = { owned_by = ROOT }	# Talesh
+			ROOT = { owns_or_vassal_of = 417 }	# Gilan
+			ROOT = { owns_or_vassal_of = 426 } 	# Mazandaran
+			ROOT = { owns_or_vassal_of = 425 }	# Derbent
+			ROOT = { owns_or_vassal_of = 421 }	# Baku
+			ROOT = { owns_or_vassal_of = 443 }	# Ustyur
+			ROOT = { owns_or_vassal_of = 439 }	# Mangyshlak
+			ROOT = { owns_or_vassal_of = 465 }	# Nogay
+			ROOT = { owns_or_vassal_of = 469 }	# Ryn
+			ROOT = { owns_or_vassal_of = 464 }	# Astrakhan
+			ROOT = { owns_or_vassal_of = 424 }	# Ardabil
+			ROOT = { owns_or_vassal_of = 2349 }	# Kizil-Su
+			ROOT = { owns_or_vassal_of = 2214 }	# Golestan
+			ROOT = { owns_or_vassal_of = 2199 }	# Tarki
+			ROOT = { owns_or_vassal_of = 2208 }	# Tarek
+			ROOT = { owns_or_vassal_of = 3476 }	# Amol
+			ROOT = { owns_or_vassal_of = 3439 }	# Talesh
 		}
 	}
 
 	trigger = {
-			417 = { owned_by = ROOT }	# Gilan
-			426 = { owned_by = ROOT } 	# Mazandaran
-			425 = { owned_by = ROOT }	# Derbent
-			421 = { owned_by = ROOT }	# Baku
-			443 = { owned_by = ROOT }	# Ustyur
-			439 = { owned_by = ROOT }	# Mangyshlak
-			465 = { owned_by = ROOT }	# Nogay
-			469 = { owned_by = ROOT }	# Ryn
-			464 = { owned_by = ROOT }	# Astrakhan
-			424 = { owned_by = ROOT }	# Ardabil
-			2349 = { owned_by = ROOT }	# Kizil-Su
-			2214 = { owned_by = ROOT }	# Golestan
-			2199 = { owned_by = ROOT }	# Tarki
-			2208 = { owned_by = ROOT }	# Tarek
-			3476 = { owned_by = ROOT }	# Amol
-			3439 = { owned_by = ROOT }	# Talesh
+			ROOT = { owns_or_vassal_of = 417 }	# Gilan
+			ROOT = { owns_or_vassal_of = 426 } 	# Mazandaran
+			ROOT = { owns_or_vassal_of = 425 }	# Derbent
+			ROOT = { owns_or_vassal_of = 421 }	# Baku
+			ROOT = { owns_or_vassal_of = 443 }	# Ustyur
+			ROOT = { owns_or_vassal_of = 439 }	# Mangyshlak
+			ROOT = { owns_or_vassal_of = 465 }	# Nogay
+			ROOT = { owns_or_vassal_of = 469 }	# Ryn
+			ROOT = { owns_or_vassal_of = 464 }	# Astrakhan
+			ROOT = { owns_or_vassal_of = 424 }	# Ardabil
+			ROOT = { owns_or_vassal_of = 2349 }	# Kizil-Su
+			ROOT = { owns_or_vassal_of = 2214 }	# Golestan
+			ROOT = { owns_or_vassal_of = 2199 }	# Tarki
+			ROOT = { owns_or_vassal_of = 2208 }	# Tarek
+			ROOT = { owns_or_vassal_of = 3476 }	# Amol
+			ROOT = { owns_or_vassal_of = 3439 }	# Talesh
 	}
 
 	global_trade_power = 0.05
@@ -66,10 +66,10 @@ control_gibraltar_straits = {
 	}
 
 	trigger = {
-		226 = { owned_by = ROOT }
-		334 = { owned_by = ROOT }
-		1749 = { owned_by = ROOT }
-		1751 = { owned_by = ROOT }
+		ROOT = { owns_or_vassal_of = 226 }
+		ROOT = { owns_or_vassal_of = 334 }
+		ROOT = { owns_or_vassal_of = 1749 }
+		ROOT = { owns_or_vassal_of = 1751 }
 	}
 
 	global_trade_power = 0.025
@@ -79,7 +79,9 @@ control_gibraltar_straits = {
 control_gibraltar_straits2 = {
 	potential = {
 		normal_or_historical_nations = yes
-		has_country_modifier = control_gibraltar_straits
+		OR = {
+			has_country_modifier = control_gibraltar_straits
+		}
 	}
 	
 	trigger = {
@@ -98,13 +100,13 @@ control_dover_straits = {
 	potential = {
 		normal_or_historical_nations = yes
 		OR = {
-			87 = { owned_by = ROOT }
-			235 = { owned_by = ROOT }
+			ROOT = { owns_or_vassal_of = 87 }
+			ROOT = { owns_or_vassal_of = 235 }
 		}
 	}
 	trigger = {
-		87 = { owned_by = ROOT }
-		235 = { owned_by = ROOT }
+		ROOT = { owns_or_vassal_of = 87 }
+		ROOT = { owns_or_vassal_of = 235 }
 	}
 
 	global_trade_power = 0.05	
@@ -117,22 +119,22 @@ mare_trade = {
 	potential = {
 		normal_or_historical_nations = yes
 		OR = {
-			151 = { owned_by = ROOT } # Constantinople
-			358 = { owned_by = ROOT } # Alexandia
-			341 = { owned_by = ROOT } # Tunis
-			112 = { owned_by = ROOT } # Venice
-			101 = { owned_by = ROOT } # Genoa
-			115 = { owned_by = ROOT } # Pisa
+			ROOT = { owns_or_vassal_of = 151 } # Constantinople
+			ROOT = { owns_or_vassal_of = 358 } # Alexandia
+			ROOT = { owns_or_vassal_of = 341 } # Tunis
+			ROOT = { owns_or_vassal_of = 112 } # Venice
+			ROOT = { owns_or_vassal_of = 101 } # Genoa
+			ROOT = { owns_or_vassal_of = 115 } # Pisa
 		}
 	}
 	
 	trigger = {
-		151 = { owned_by = ROOT } # Constantinople
-		358 = { owned_by = ROOT } # Alexandia
-		341 = { owned_by = ROOT } # Tunis
-		112 = { owned_by = ROOT } # Venice
-		101 = { owned_by = ROOT } # Genoa
-		115 = { owned_by = ROOT } # Pisa
+			ROOT = { owns_or_vassal_of = 151 } # Constantinople
+			ROOT = { owns_or_vassal_of = 358 } # Alexandia
+			ROOT = { owns_or_vassal_of = 341 } # Tunis
+			ROOT = { owns_or_vassal_of = 112 } # Venice
+			ROOT = { owns_or_vassal_of = 101 } # Genoa
+			ROOT = { owns_or_vassal_of = 115 } # Pisa
 	}
 	
 	global_trade_power = 0.05
@@ -150,10 +152,10 @@ mare_east = {
 	}
 	
 	trigger = {
-		151 = { owned_by = ROOT } # Constantinople
-		358 = { owned_by = ROOT } # Alexandria
-		163 = { owned_by = ROOT } # Crete
-		321 = { owned_by = ROOT } # Cyprus
+		ROOT = { owns_or_vassal_of = 151 } # Constantinople
+		ROOT = { owns_or_vassal_of = 358 } # Alexandria
+		ROOT = { owns_or_vassal_of = 163 } # Crete
+		ROOT = { owns_or_vassal_of = 321 } # Cyprus
 	}
 	
 	global_trade_power = 0.05
@@ -172,11 +174,11 @@ mare_central = {
 	}
 	
 	trigger = {
-		126 = { owned_by = ROOT } # Malta
-		341 = { owned_by = ROOT } # Tunis
-		121 = { owned_by = ROOT } # Napoli
-		124 = { owned_by = ROOT } # Messina
-		125 = { owned_by = ROOT } # Palermo
+		ROOT = { owns_or_vassal_of = 126 } # Malta
+		ROOT = { owns_or_vassal_of = 341 } # Tunis
+		ROOT = { owns_or_vassal_of = 121 } # Napoli
+		ROOT = { owns_or_vassal_of = 124 } # Messina
+		ROOT = { owns_or_vassal_of = 125 } # Palermo
 	}
 	
 	global_trade_power = 0.05
@@ -195,11 +197,11 @@ mare_west = {
 	}
 	
 	trigger = {
-		101 = { owned_by = ROOT } # Genoa
-		127 = { owned_by = ROOT } # Sardinia
-		201 = { owned_by = ROOT } # Marseilles
-		213 = { owned_by = ROOT } # Barcelona
-		333 = { owned_by = ROOT } # Baleares
+		ROOT = { owns_or_vassal_of = 101 } # Genoa
+		ROOT = { owns_or_vassal_of = 127 } # Sardinia
+		ROOT = { owns_or_vassal_of = 201 } # Marseilles
+		ROOT = { owns_or_vassal_of = 213 } # Barcelona
+		ROOT = { owns_or_vassal_of = 333 } # Baleares
 	}
 	
 	global_trade_power = 0.05
@@ -225,7 +227,7 @@ mare_nostrum = {
 		has_country_modifier = control_gibraltar_straits
 	}	
 	
-	global_trade_power = 0.05
+	global_trade_power = 0.3
 }
 
 # Center of Europe

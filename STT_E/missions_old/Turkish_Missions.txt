@@ -2849,9 +2849,8 @@ edirne_capital = {
 	
 	allow = {
 			tag = TU0
-			owns = 149				
-			149 = { is_capital = no }
-			NOT = { government_rank = 3 }
+			owns = 149
+			NOT = { government_rank = 2 }
 			}			
 	success = {
 		149 = { is_capital = yes }

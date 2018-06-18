@@ -38,7 +38,7 @@ country_event = {
 			estate = estate_burghers
 			loyalty = -10
 		}
-		change_government = absolute_monarchy
+		change_government = despotic_monarchy
 		if = {
 		    limit = {
 			   government_rank = 1
@@ -406,11 +406,17 @@ country_event = {
 	
 	picture = CONQUEST_eventPicture
 	
+	fire_only_once = yes
+	major = yes
+	
 	trigger = {
 	    tag = HUN
 		any_owned_province = {
 	        is_core = MOL
 		}
+		MOL = { exists = no }
+		NOT = { MOL = { has_country_flag = moldova_hun } }
+		NOT = { is_year = 1380 }
 	}
 	
 	mean_time_to_happen = {
@@ -422,6 +428,25 @@ country_event = {
 		ai_chance = { factor = 90 }
         release = MOL
 		create_march = MOL
+		MOL = { set_country_flag = moldova_hun }
+		hidden_effect = { 
+			MOL = { 
+				set_country_flag = moldova_hun  
+				define_ruler = {
+					name = "Драгош I"
+					dynasty = "Драгошести"
+					mil = 6
+				}
+				define_ruler_to_general = {
+					fire = 4
+					shock = 4
+					manuever = 3
+					siege = 1
+				}
+				create_marriage = HUN
+				add_manpower = 10
+			}
+		}
 	}
 	
 	option = {
@@ -957,5 +982,97 @@ country_event = {
 		}
 	}
 }
+
+province_event = { ###STT FOR FRIDRIH
+	id = stt_wek.200
+	title = no_need200
+	desc = no_need200
+	
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+		
+	trigger = {
+		NOT = { is_year = 1452 }
+	    151 = { controlled_by = BYZ }
+		151 = { has_province_modifier = BYZ_wall666 }
+	}
+	immediate = { 151 = { remove_building = fort_15th add_building = fort_17th } if = { limit = { BYZ = { ai = yes } } BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } } }
+	option = { name = stt_wek.200.a }
+}
+
+country_event = { ### STT FOR FRIDRIH
+    id = stt_wek.20
+	title = stt_wek.20.t
+	desc = stt_wek.20.d
+	
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+    fire_only_once = yes
+	
+	mean_time_to_happen = { days = 3 }
+	
+	trigger = {
+	    NOT = { 151 = { controlled_by = BYZ } }
+		151 = { controlled_by = ROOT }
+	}
+	
+	option = {
+        name = stt_wek.20.a1
+		trigger = { tag = TU0 }
+		ai_chance = { factor = 100 }
+		BYZ = { kill_ruler = yes }
+		add_treasury  = 500
+		151 = { remove_province_modifier = BYZ_wall666 }
+		151 = { add_base_tax = -1 add_base_production = -1 add_base_manpower = -1 }
+		add_prestige = 10
+		hidden_effect = { 
+			151 = { add_building = fort_15th remove_building = fort_17th }
+			BYZ = { remove_country_modifier = ai_boost_wall }
+			every_country = {  limit = { capital_scope = { continent = europe } NOT = { alliance_with = ROOT } religion_group = christian NOT = { tag = ROOT } } country_event = { id = stt_wek.21 days = 1 random = 14 } }  
+		}
+	}
+	option = {
+        name = stt_wek.20.a2
+		trigger = { NOT = { tag = TU0 } }
+		BYZ = { kill_ruler = yes }
+		add_treasury  = 500
+		151 = { remove_province_modifier = BYZ_wall666 }
+		151 = { add_base_tax = -1 add_base_production = -1 add_base_manpower = -1 }
+		hidden_effect = { 
+			151 = { add_building = fort_15th remove_building = fort_17th }
+			BYZ = { remove_country_modifier = ai_boost_wall }
+			every_country = {  limit = { capital_scope = { continent = europe } NOT = { alliance_with = ROOT } religion_group = christian NOT = { tag = ROOT } } country_event = { id = stt_wek.21 days = 1 random = 14 } }  
+		}
+	}
+}
+
+country_event = { ### STT FOR FRIDRIH
+    id = stt_wek.21
+	title = stt_wek.21.t
+	desc = stt_wek.21.d
+	
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+    is_triggered_only = yes	
+	
+	option = {
+        name = stt_wek.21.a
+		add_prestige = 5
+		if = {
+		    limit = {
+			   religion = orthodox
+			}
+		add_opinion = { who = FROM modifier = fall_byz_ort_opinion }
+		}
+		if = {
+		    limit = {
+			   religion_group = christian
+			   NOT = { religion = orthodox }
+			}
+		add_opinion = { who = FROM modifier = fall_byz_opinion }
+		}
+	}
+}
+
 
 

@@ -1,0 +1,561 @@
+п»ї########################################
+# Events for Moldovia
+#
+# written by Red Dragon
+########################################
+
+namespace = STT_flavor_mol
+normal_or_historical_nations = yes
+
+# Moldova independent
+country_event = {
+	id = STT_flavor_mol.1
+	title = "STT_flavor_mol.1.t"
+	desc = "STT_flavor_mol.1.d"
+
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = GLH
+		has_disaster = golden_horde_disaster
+		is_year = 1340
+		NOT = { is_year = 1360 }
+		NOT = { exists = MOL }
+	}
+
+	mean_time_to_happen = { 
+		months = 25
+		modifier = {
+			factor = 0.80
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.25
+			has_regency = yes
+		}
+		modifier = {
+			factor = 1.5
+			HUN = { is_at_war = yes }
+		}
+	}
+
+	immediate = {
+	if = {
+		limit = { moldavia_area = { NOT = { religion = orthodox } } }
+		moldavia_area = { change_religion = orthodox }
+	}
+	release = MOL
+	if = {
+		limit = { moldavia_area = { is_core = GLH } }
+		moldavia_area = { remove_core = GLH } 
+	}
+	
+	hidden_effect = {
+		MOL =  
+		{ 	create_alliance = HUN
+			add_country_modifier = {
+				name = "TUR_war_time"
+				duration = 730
+			}
+			define_ruler = {
+				name = "Драгош I"
+				dynasty = "Драгошести"
+				mil = 6
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 4
+				manuever = 3
+				siege = 1
+			}
+			create_marriage = HUN
+			add_manpower = 10
+			infantry = capital
+			infantry = capital			
+			infantry = capital	
+			infantry = capital	
+			infantry = capital
+			infantry = capital
+			cavalry = capital
+			cavalry = capital
+		}
+		add_casus_belli = {	target = MOL type = cb_vassalize_mission months = 120 }
+	 }
+	}
+	
+
+	option = {
+		name = "STT_flavor_mol.1.a1"
+		declare_war_with_cb = { who = MOL casus_belli = cb_vassalize_mission }
+		add_stability = -1
+		add_legitimacy = 25
+		add_horde_unity = 25
+	}
+
+	option = {
+		name = "STT_flavor_mol.1.a2"
+		trigger = { ai = no }
+		HUN = { create_march = MOL }
+		hidden_effect = { MOL = { set_country_flag = moldova_hun } }
+		add_truce_with = HUN
+		add_legitimacy = -25
+		add_horde_unity = -25
+		add_stability = 1
+	}
+	
+	option = {
+		name = "STT_flavor_mol.1.a3"
+		trigger = { ai = no }
+		HUN = { create_march = MOL }
+		hidden_effect = { MOL = { set_country_flag = moldova_hun } }
+		switch_tag = MOL
+	}
+}
+
+#Hungary attack
+country_event = {
+	id = STT_flavor_mol.2
+	title = "STT_flavor_mol.2.t"
+	desc = "STT_flavor_mol.2.d"
+
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		is_year = 1335
+		NOT = { is_year = 1360 }
+		is_at_war = no
+		MOL = { exists = no }
+		NOT = { truce_with = GLH }
+	}
+
+	mean_time_to_happen = { 
+		months = 100
+		modifier = {
+			factor = 0.80
+			GLH = { is_at_war = yes }
+		}
+		modifier = {
+			factor = 0.50
+			is_rival = GLH
+		}
+		modifier = {
+			GLH = { NOT = { num_of_cities = 20 } }
+			factor = 0.50
+		}
+		modifier = {
+			factor = 0.25
+			CRI = { exists = yes }
+		}
+	}
+		
+	option = {
+		name = "STT_flavor_mol.2.a1"
+		declare_war_with_cb = { who = GLH casus_belli = cb_crusade }
+		add_prestige = 10
+	}
+	
+	option = {
+		name = "STT_flavor_mol.2.a2"
+		trigger = { ai = no }
+		add_prestige = -5
+	}
+	
+}
+
+#Hungary occupy Moldovia
+country_event = {
+	id = STT_flavor_mol.3
+	title = "STT_flavor_mol.3.t"
+	desc = "STT_flavor_mol.3.d"
+
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = HUN
+		is_at_war = yes
+		NOT = { MOL = { has_country_flag = moldova_hun } }
+		NOT = { is_year = 1360 }
+		1756 = { controlled_by = HUN }
+		3130 = { controlled_by = HUN }
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	immediate = {
+	if = {
+		limit = { moldavia_area = { NOT = { religion = orthodox } } }
+		moldavia_area = { change_religion = orthodox }
+	}
+	GLH = { release = MOL }
+	if = {
+		limit = { moldavia_area = { is_core = GLH } }
+		moldavia_area = { remove_core = GLH } 
+	}
+	}
+	
+	option = {
+		name = "STT_flavor_mol.3.a"
+		white_peace = GLH
+		create_march = MOL
+		add_prestige = 20
+		GLH = { add_prestige = -20 }
+		hidden_effect = { 
+			MOL = { 
+				set_country_flag = moldova_hun  
+				define_ruler = {
+					name = "Драгош I"
+					dynasty = "Драгошести"
+					mil = 6
+				}
+				define_ruler_to_general = {
+					fire = 4
+					shock = 4
+					manuever = 3
+					siege = 1
+				}
+				create_marriage = HUN
+				add_manpower = 10
+			}
+		} 	
+	}
+			
+}
+
+
+# Hungary win
+country_event = {
+	id = STT_flavor_mol.4
+	title = "STT_flavor_mol.4.t"
+	desc = "STT_flavor_mol.4.d"
+
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		NOT = { is_year = 1360 }
+		OR = { 1756 = { controlled_by = MOL }
+		3130 = { controlled_by = MOL }
+		}
+		NOT = { MOL = { march_of = GLH } }
+		NOT = { MOL = { vassal_of = GLH } }
+		NOT = { MOL = { has_country_flag = moldova_hun } }
+	}
+
+	mean_time_to_happen = { 
+		months = 75
+		modifier = {
+			factor = 0.5
+			MOL = { war_score = 25 }
+		}
+		modifier = {
+			factor = 0.25
+			MOL = { war_score = 50 }
+		}
+		modifier = {
+			factor = 0.1
+			MOL = { war_score = 75 }
+		}
+	}
+
+	immediate = {
+	MOL = { white_peace = GLH }
+	}
+
+	option = {
+		name = "STT_flavor_mol.4.a"
+		add_prestige = 20
+		create_march = MOL
+		hidden_effect = { MOL = { set_country_flag = moldova_hun } }
+	}
+}
+
+# Hungary lose
+country_event = {
+	id = STT_flavor_mol.5
+	title = "STT_flavor_mol.5.t"
+	desc = "STT_flavor_mol.5.d"
+
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GLH
+		NOT = { is_year = 1345 }
+		3130 = { controlled_by = GLH }
+	}
+
+	mean_time_to_happen = { 
+		months = 100
+		modifier = {
+			factor = 0.5
+			war_score = 25
+		}
+		modifier = {
+			factor = 0.25
+			war_score = 50
+		}
+		modifier = {
+			factor = 0.1
+			war_score = 75
+		}
+	}
+
+	immediate = {
+	hidden_effect = { white_peace = MOL }
+	}
+
+	option = {
+		name = "STT_flavor_mol.5.a1"
+		ai_chance = { factor = 25 }
+		MOL = { capital_scope = { add_base_manpower = -2 add_base_production = -1 add_base_tax = -1 } }
+		add_stability = -1
+		add_mil_power = -200
+		inherit = MOL
+	}
+	option = {
+		name = "STT_flavor_mol.5.a2"
+		ai_chance = { factor = 75 }
+		create_march = MOL
+	}
+}
+
+#Bogdan I 
+country_event = {
+	id = STT_flavor_mol.6
+	title = "STT_flavor_mol.6.t"
+	desc = "STT_flavor_mol.6.d"
+
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		is_year = 1355
+	}
+
+	mean_time_to_happen = { 
+		months = 24
+	}
+	
+	option = {
+		name = "STT_flavor_mol.6.a1"
+		ai_chance = { factor = 90 }
+		add_prestige = 10
+		hidden_effect = { MOL = { set_country_flag = bogdan_angry } }	
+	}
+	option = {
+		name = "STT_flavor_mol.6.a2"
+		ai_chance = { factor = 10 }
+		add_prestige = -25
+		1952 = { add_local_autonomy = 50 }
+	}
+}
+
+# Moldovia breaks free from Hungary
+country_event = {
+	id = STT_flavor_mol.7
+	title = "STT_flavor_mol.7.t"
+	desc = "STT_flavor_mol.7.d"
+
+	picture = ASSASSINATION_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = MOL
+		has_country_flag = moldova_hun
+		has_country_flag = bogdan_angry
+		is_year = 1359
+		NOT = { is_year = 1365 }
+	}
+
+	mean_time_to_happen = { 
+		months = 12
+	}
+	option = {
+		name = "STT_flavor_mol.7.a1"
+		ai_chance = { factor = 90 }
+		define_ruler = {
+		name = "Богдан I Основатель"
+		dynasty = "Мушат"
+		min_random_adm = 3
+		min_random_dip = 3
+		mil = 6
+		claim = 30
+		}
+		hidden_effect = {
+		define_heir = { dynasty = Мушат age = 0 }
+		define_ruler_to_general = {	fire = 2 shock = 5 manuever = 4 siege = 1 }
+		clr_country_flag = moldova_hun
+		clr_country_flag = bogdan_angry
+		}
+		HUN = { free_vassal = MOL } 
+	}
+	option = {
+		name = "STT_flavor_mol.7.a2"
+		ai_chance = { factor = 10 }
+		add_stability = -1
+		define_ruler = {
+		dynasty = "Драгошести"
+		max_random_adm = 3
+		max_random_dip = 3
+		max_random_mil = 3
+		age = 10
+		}
+		capital_scope = { spawn_rebels = { type = pretender_rebels size = 2 leader = "Богдан Мушат" } }
+	}
+}
+
+#Polish influence
+country_event = {
+	id = STT_flavor_mol.8
+	title = "STT_flavor_mol.8.t"
+	desc = "STT_flavor_mol.8.d"
+
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = MOL
+		is_year = 1380
+		NOT = { is_year = 1400 }
+		NOT = { has_country_flag = moldova_hun }
+		POL = { exists = yes
+		num_of_cities = 10 }
+		is_neighbor_of = POL 
+	}
+
+	mean_time_to_happen = { 
+		months = 240
+		modifier = {
+			factor = 0.80
+			dynasty = "Мушат"
+		}
+		modifier = {
+			factor = 0.60
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.35
+			has_regency = yes
+		}
+		modifier = {
+			factor = 1.5
+			adm = 4
+			dip = 4
+			mil = 5
+		}
+	}
+	
+	immediate = { hidden_effect = { define_ruler = { dynasty = Мушат min_random_mil = 4 } } } 
+		
+	option = {
+		name = "STT_flavor_mol.8.a1"
+		ai_chance = { factor = 70 }
+		add_prestige = 10
+		POL = { declare_war_with_cb = { who = MOL casus_belli = cb_vassalize_mission } }			
+	}
+	option = {
+		name = "STT_flavor_mol.8.a2"
+		ai_chance = { factor = 30 }
+		define_ruler = { 
+		dynasty = Мушат
+		max_random_adm = 4
+		max_random_dip = 4
+		max_random_mil = 4
+		age = 15
+		}
+		POL = { create_march = MOL }
+		hidden_effect = { set_country_flag = moldova_pol }
+	}
+}
+
+#Polish influence win
+country_event = {
+	id = STT_flavor_mol.9
+	title = "STT_flavor_mol.9.t"
+	desc = "STT_flavor_mol.9.d"
+
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+		
+	trigger = {
+		tag = POL
+		MOL = { vassal_of = POL }
+		NOT = { has_country_flag = moldova_pol }
+	}
+
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	option = {
+		name = "STT_flavor_mol.9.a"
+		MOL = { kill_ruler = yes
+		define_ruler = { dynasty = Мушат claim = 50 } 
+		}
+		create_march = MOL
+		add_prestige = 10
+		hidden_effect = { set_country_flag = moldova_pol }
+	}
+}
+
+#Turkish influence
+country_event = {
+	id = STT_flavor_mol.10
+	title = "STT_flavor_mol.10.t"
+	desc = "STT_flavor_mol.10.d"
+
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+		
+	trigger = {
+		OR = { tag = TU0 tag = TUR }
+		is_year = 1400
+		num_of_cities = 20
+		BYZ = { exists = no }
+		NOT = { MOL = { total_development = 80 } }
+	}
+
+	mean_time_to_happen = { 
+		months = 100
+	}
+	
+	option = {
+		name = "STT_flavor_mol.10.a1"
+		add_casus_belli = {
+		target = MOL
+		type = cb_vassalize_mission
+		months = 120
+		}
+	}
+	option = {
+		name = "STT_flavor_mol.10.a2"
+		trigger = { MOL = { has_country_flag = moldova_civil } } 
+		vassalize = MOL
+	}
+}

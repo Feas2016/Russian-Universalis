@@ -1,0 +1,119 @@
+########################################
+#          Theodoro Events                #
+########################################
+
+namespace = stt_flavor_feo
+normal_or_historical_nations = yes
+
+
+#Theodoro independent
+country_event = {
+	id = stt_flavor_feo.1
+	title = "stt_flavor_feo.1.t"
+	desc = "stt_flavor_feo.1.d"
+
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	    2410 = { owned_by = ROOT }
+		is_year = 1350
+		NOT = { is_year = 1400 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 120
+		modifier = {
+		    factor = 0.5
+			NOT = { stability = 1 }
+		}
+		modifier = {
+		    factor = 0.5
+			OR = { NOT = { legitimacy = 80 } NOT = { horde_unity = 80 } }
+		}
+		modifier = {
+		    factor = 0.75
+			is_at_war = yes
+		}
+		modifier = {
+		    factor = 1.25
+			num_of_cities = 7
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			if = { limit = { 2410 = { NOT = { religion = orthodox } } } 2410 = { change_religion = orthodox } }
+			2410 = { add_core = FEO remove_core = ROOT }
+		    release = FEO 
+			FEO = { create_general = 50 infantry = capital infantry = capital infantry = capital infantry = capital cavalry = capital cavalry = capital add_manpower = 10 add_treasury = 100 }
+		}
+	}
+	
+	option = {
+	    name = stt_flavor_feo.1.a1
+	    ai_chance = { factor = 80 }
+		trigger = { tag = TRE }
+		add_prestige = -5
+		create_alliance = FEO
+		FEO = { add_prestige = 10 }
+	}
+	
+	option = {
+	    name = stt_flavor_feo.1.a2
+		ai_chance = { factor = 80 }
+		trigger = { NOT = { tag = TRE } }
+		add_prestige = -5
+		add_horde_unity = -10
+	}
+	
+	option = {
+	    name = stt_flavor_feo.1.a3
+		ai_chance = { factor = 20 }
+		add_prestige = 5
+		declare_war_with_cb = { who = FEO casus_belli = cb_imperial }
+		hidden_effect = { FEO = { add_country_modifier = { name = "war_time_all" duration = 730 } }	}
+	}
+	
+	option = {
+	    name = stt_flavor_feo.1.a4
+		trigger = { ai = no }
+		add_prestige = 5
+		declare_war_with_cb = { who = FEO casus_belli = cb_imperial }
+		hidden_effect = { FEO = { add_country_modifier = { name = "war_time_all" duration = 365 } }	}
+		switch_tag = FEO
+	}
+}
+
+# Theodoro fort
+country_event = {
+	id = stt_flavor_feo.2
+	title = "stt_flavor_feo.2.t"
+	desc = "stt_flavor_feo.2.d"
+	picture = FORT_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = FEO
+	}
+
+	mean_time_to_happen = { 
+		months = 24
+	}
+	
+	option = {
+		name = "stt_flavor_feo.2.a1"
+		ai_chance = { factor = 70 }
+		add_years_of_income = -0.5
+		2410 = { add_province_modifier = { name = feowall duration = -1 } add_building = fort_15th }
+	}
+	option = {
+		name = "stt_flavor_feo.2.a2"
+		ai_chance = { factor = 30 }
+		add_prestige = 5
+	}
+}

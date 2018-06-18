@@ -483,15 +483,15 @@ country_decisions = {
 #			has_country_modifier = rus_hommage_modifer			
 #		}
 #		allow = {
-#			NOT = { truce_with = BHO }
+#			NOT = { truce_with = GHL }
 #			NOT = { truce_with = GOL }
 #			has_country_modifier = rus_hommage_modifer
 #			is_at_war = no
 #			OR = {
-#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GHL }
 #				ROOT = { is_neighbor_of = GOL }
 #				AND = {
-#					NOT = { exists = BHO }
+#					NOT = { exists = GHL }
 #					NOT = { exists = GOL }
 #				}				
 #			}
@@ -499,8 +499,8 @@ country_decisions = {
 #		effect = {
 #			remove_country_modifier = rus_hommage_modifer
 #			if = {
-#				limit = { exists = BHO }
-#				BHO = {
+#				limit = { exists = GHL }
+#				GHL = {
 #					country_event = { id = stt_rus.5 }
 #					remove_opinion = {
 #						who = ROOT
@@ -508,7 +508,7 @@ country_decisions = {
 #					}
 #				}
 #				remove_opinion = {
-#					who = BHO
+#					who = GHL
 #					modifier = rus_hommage_opinion
 #				}
 #			}
@@ -530,7 +530,7 @@ country_decisions = {
 #		ai_will_do = {
 #			factor = 1
 #			modifier = {
-#				NOT = { num_of_cities = BHO }
+#				NOT = { num_of_cities = GHL }
 #				factor = 0
 #			}
 #			modifier = {
@@ -544,7 +544,7 @@ country_decisions = {
 #		major = yes
 #		potential = {
 #			OR = {
-#				tag = BHO
+#				tag = GHL
 #				tag = GOL
 #			}
 #			has_country_modifier = gol_hommage_modifer
@@ -561,7 +561,7 @@ country_decisions = {
 #				is_at_war = no
 #				NOT = {
 #					OR = {
-#						truce_with = BHO
+#						truce_with = GHL
 #						truce_with = GOL
 #					}
 #				}
@@ -610,13 +610,13 @@ country_decisions = {
 #			}
 #			NOT = { has_country_modifier = rus_hommage_modifer }
 #			OR = {
-#					exists = BHO
+#					exists = GHL
 #					exists = GOL
 #				}
 #			}
 #		allow = {
 #			OR = {
-#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GHL }
 #				ROOT = { is_neighbor_of = GOL }
 #			}
 #			NOT = { has_country_modifier = rus_hommage_modifer }
@@ -626,13 +626,13 @@ country_decisions = {
 #				name = rus_hommage_modifer
 #				duration = -1
 #			}
-#			if = { limit = { exists = BHO }
+#			if = { limit = { exists = GHL }
 #				add_opinion = {
-#					who = BHO
+#					who = GHL
 #					modifier = rus_hommage_opinion
 #					years = 200
 #				}
-#				BHO = {
+#				GHL = {
 #					add_opinion = {
 #						who = ROOT
 #						modifier = rus_hommage_opinion
@@ -667,7 +667,7 @@ country_decisions = {
 #			modifier = {
 #				any_neighbor_country = {
 #					OR = {
-#						tag = BHO
+#						tag = GHL
 #						tag = GOL
 #					}
 #					num_of_infantry = ROOT

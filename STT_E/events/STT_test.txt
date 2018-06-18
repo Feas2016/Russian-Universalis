@@ -1,0 +1,37 @@
+
+namespace = stt_test
+# TEST
+country_event = {
+	id = stt_test.1
+	title = "stt_test.1.t"
+	desc = "stt_test.1.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = { is_year = 1309 }
+		
+	option = {
+	name = stt_test.1.a
+	add_prestige = 5
+	every_country = { limit = { is_neighbor_of = ROOT } country_event = { id = stt_test.2 } }
+	}
+}
+country_event = {
+	id = stt_test.2
+	title = "stt_test.2.t"
+	desc = "stt_test.2.d"
+
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_province = { limit = { owned_by = ROOT } add_core = FROM cede_province = FROM }
+	}
+	
+	option = {
+	name = stt_test.2.a
+	}
+}

@@ -140,6 +140,13 @@ customs_house = {
 	
 	one_per_country = yes
 	
+	trigger = {
+	    OR = { 
+		owner = { full_idea_group = exploration_ideas } 
+		owner = { full_idea_group = expansion_ideas } 
+		}
+	}
+	
 	modifier = { 
 		colonists = 1
 		global_colonial_growth = 10
@@ -149,7 +156,7 @@ customs_house = {
 	ai_will_do = {
 		factor = 2500
 		modifier = { factor = 0.95 FROM = { NOT = { exploration_ideas = 1 } } }
-		modifier = { factor = 0.95 FROM = { NOT = { expansion_ideas = 1} } }
+		modifier = { factor = 0.95 FROM = { NOT = { expansion_ideas = 1 } } }
 		modifier = { factor = 0.95 FROM = { NOT = { personality = ai_colonialist } } }
 	}
 }
@@ -158,6 +165,14 @@ spy_agency = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	
+	trigger = {
+	    OR = { 
+		owner = { full_idea_group = trade_ideas } 
+		owner = { full_idea_group = naval_ideas } 
+		}
+	}
+	
 	modifier = { global_trade_power = 0.1 merchants = 1 }
 	ai_will_do = {
 		factor = 2500
@@ -170,6 +185,14 @@ tax_office = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	
+	trigger = {
+	    OR = { 
+		owner = { full_idea_group = economic_ideas } 
+		owner = { full_idea_group = administrative_ideas } 
+		}
+	}
+	
 	modifier = { global_tax_modifier = 0.20 stability_cost_modifier = -0.1 }
 	ai_will_do = {
 		factor = 3000
@@ -181,6 +204,10 @@ glorious_monument = {
 	time = 12
 	
 	one_per_country = yes
+	
+	trigger = {	### STT
+	    owner = { government_rank = 3 }
+	}
 	
 	modifier = { idea_cost = -0.1 }
 	ai_will_do = { factor = 2500 }

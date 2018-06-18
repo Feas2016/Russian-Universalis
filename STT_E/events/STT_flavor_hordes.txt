@@ -59,10 +59,10 @@ country_event = {
 			}
 		    add_stability = 2
 		}
-		add_country_modifier = { name = "golden_horde_power" duration = -1 }
+		add_country_modifier = { name = "golden_horde_power" duration = 36000 }
 	}
 }
-
+#Kazan breaks away
 country_event = {
 	id = stt_flavor_horde.3
 	title = "stt_flavor_horde.3.t"
@@ -96,6 +96,8 @@ country_event = {
 	}
 
 	immediate = {
+		hidden_effect = { 3176 = { add_core = KAZ } 3177 = { add_core = KAZ } 3172 = { add_core = KAZ } }
+		every_owned_province = { limit = { is_core = KAZ } remove_core = GLH add_permanent_claim = GLH }
 		release = KAZ
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
 		set_country_flag = GLH_disaster_pause
@@ -105,17 +107,17 @@ country_event = {
 		name = "stt_flavor_horde.3.a1"
 		trigger = { ai = no }
 	    declare_war_with_cb = { who = KAZ casus_belli = cb_imperial } 
-		add_prestige = 30
 		add_legitimacy = 10
-		add_horde_unity = 10
+		add_horde_unity = 15
+		add_stability = -1
 	}
 
 	option = {
 		name = "stt_flavor_horde.3.a2"
-		add_prestige = -30
+		add_prestige = -10
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_stability = -1
+		add_stability = 1
 	}
 }
 
@@ -164,6 +166,7 @@ country_event = {
 		    2406 = { add_core = CRI }
 		    283 = { add_core = CRI }
 		    290 = { add_core = CRI }
+			every_owned_province = { limit = { is_core = CRI } remove_core = GLH add_permanent_claim = GLH }
 		}
 		release = CRI
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
@@ -174,17 +177,17 @@ country_event = {
 		name = "stt_flavor_horde.4.a1"
 		trigger = { ai = no }
 		declare_war_with_cb = { who = CRI casus_belli = cb_imperial }
-		add_prestige = 30
 		add_legitimacy = 10
-		add_horde_unity = 10
+		add_horde_unity = 15
+		add_stability = -1
 	}
 
 	option = {
 		name = "stt_flavor_horde.4.a2"
-		add_prestige = -30
+		add_prestige = -10
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_stability = -1
+		add_stability = 1
 	}
 }
 
@@ -223,7 +226,8 @@ country_event = {
 	immediate = {
 	    hidden_effect = {
 		    2370 = { add_core = NOG }
-		    2362 = { add_core = NOG }  
+		    2362 = { add_core = NOG }
+			every_owned_province = { limit = { is_core = NOG } remove_core = GLH add_permanent_claim = GLH }			
 		}
 		release = NOG
 		add_country_modifier = { name = "GLH_broken" duration = 500 }
@@ -234,17 +238,17 @@ country_event = {
 		name = "stt_flavor_horde.5.a1"
 		trigger = { ai = no }
 		declare_war_with_cb = { who = NOG casus_belli = cb_imperial }
-		add_prestige = 30
 		add_legitimacy = 10
-		add_horde_unity = 10
+		add_horde_unity = 20
+		add_stability = -1
 	}
 
 	option = {
 		name = "stt_flavor_horde.5.a2"
-		add_prestige = -30
+		add_prestige = -10
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_stability = -1
+		add_stability = 1
 	}
 }
 
@@ -289,6 +293,7 @@ country_event = {
 			1075 = { remove_core = SHY }
 			1074 = { remove_core = SHY }
 			1071 = { remove_core = SHY }
+			every_owned_province = { limit = { is_core = SHY } remove_core = GLH add_permanent_claim = GLH }
 		}
 		release = SHY
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
@@ -299,17 +304,17 @@ country_event = {
 		name = "stt_flavor_horde.6.a1"
 		trigger = { ai = no }
 		declare_war_with_cb = { who = SHY casus_belli = cb_imperial }
-		add_prestige = 30
 		add_legitimacy = 10
-		add_horde_unity = 10
+		add_horde_unity = 15
+		add_stability = -1
 	}
 
 	option = {
 		name = "stt_flavor_horde.6.a2"
-		add_prestige = -30
+		add_prestige = -10
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_stability = -1
+		add_stability = 1
 	}
 }
 
@@ -347,6 +352,10 @@ country_event = {
 	}
 
 	immediate = {
+		hidden_effect = { 
+		every_owned_province = { limit = { is_core = SIB } remove_core = GLH add_permanent_claim = GLH }
+		every_owned_province = { limit = { is_core = SKW } remove_core = GLH add_permanent_claim = GLH }
+		}
 		release = SIB
 		release = SKW
 		add_country_modifier = { name = "GLH_broken" duration = 700 }
@@ -358,17 +367,17 @@ country_event = {
 		trigger = { ai = no }
 		declare_war_with_cb = { who = SIB casus_belli = cb_imperial }
 		declare_war_with_cb = { who = SKW casus_belli = cb_imperial }
-		add_prestige = 30
 		add_legitimacy = 10
-		add_horde_unity = 10
+		add_horde_unity = 25
+		add_stability = -1
 	}
 
 	option = {
 		name = "stt_flavor_horde.7.a2"
-		add_prestige = -30
+		add_prestige = -15
 		add_legitimacy = -10
 		add_horde_unity = -10
-		add_stability = -1
+		add_stability = 1
 	}
 }
 
@@ -590,19 +599,20 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.13.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = SAB casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.13.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		ai_chance = { factor = 70 }
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -666,19 +676,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.14.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = CHB casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.14.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -740,19 +750,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.15.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = AKK casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.15.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -816,19 +826,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.16.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = KRT casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.16.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -889,19 +899,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.17.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = SDB casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.17.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -960,19 +970,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.18.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = MUZ casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.18.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -1031,19 +1041,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.19.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = INJ casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.19.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -1120,19 +1130,19 @@ country_event = {
 
 	option = {
 		name = "stt_flavor_horde.20.a1"
-		trigger = { ai = no }
+		ai_chance = { factor = 30 }
 		declare_war_with_cb = { who = JAL casus_belli = cb_imperial }
-		add_prestige = 30
+		add_stability = -1
 		add_legitimacy = 10
 		add_horde_unity = 10
 	}
 
 	option = {
 		name = "stt_flavor_horde.20.a2"
-		add_prestige = -30
-		add_legitimacy = -10
-		add_horde_unity = -10
-		add_stability = -1
+		add_prestige = -15
+		add_legitimacy = -20
+		add_horde_unity = -20
+		add_stability = 1
 	}
 }
 
@@ -1209,4 +1219,103 @@ country_event = {
 	    name = "stt_flavor_horde.22.a2"
 		add_prestige = -10
 	}
+}
+
+#chagatai ulus
+country_event = {
+	id = stt_flavor_horde.23
+	title = "stt_flavor_horde.23.t"
+	desc = "stt_flavor_horde.23.d"
+
+	picture = RAMADAN_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = CGU
+		is_year = 1340
+	}
+	
+	mean_time_to_happen = {
+	    months = 120
+		modifier = {
+		    factor = 0.5
+			NOT = { legitimacy_or_horde_unity = 80 }
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+		    every_owned_province = {
+				limit = {
+					OR = {
+						region = khorasan_region
+						AND = {
+							NOT = { area = jetysuu_area }
+							region = central_asia_region
+						}
+					}
+				}
+				add_core = TRS remove_core = ROOT
+			}
+			release = TRS
+		}
+	}
+	
+	option = {
+	    name = stt_flavor_horde.23.a1
+	    ai_chance = {
+			factor = 100
+		}
+		change_tag = CHG
+		add_horde_unity = -20
+	}
+	
+	option = {
+	    trigger = { ai = no }
+		name = stt_flavor_horde.23.a2
+		change_tag = CHG
+		add_horde_unity = -20
+		switch_tag = TRS
+	}
+}
+
+#from golden to great #1
+country_event = {
+	id = stt_flavor_horde.24
+	title = "stt_flavor_horde.24.t"
+	desc = "stt_flavor_horde.24.d"
+
+	picture = RAMADAN_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+	    tag = GLH
+		CRI = { exists = yes }
+		KAZ = { exists = yes }
+		SHY = { exists = yes }
+		SIB = { exists = yes }
+		MOL = { exists = yes }
+		NOG = { exists = yes }
+		is_at_war = no
+	}
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+		
+	option = {
+	    name = stt_flavor_horde.24.a
+		kill_heir = yes
+		define_ruler = { min_random_adm = 3 min_random_dip = 3 min_random_mil = 5 }
+		change_tag = GOL
+		add_horde_unity = 75
+		disband_rebels = tribal_rebels
+		if = { limit = { ROOT = { has_disaster = golden_horde_disaster } } 	end_disaster = golden_horde_disaster set_country_flag = GLH_collapse_ended }
+		if = { limit = { NOT = { stability = 0 } } add_stability = 2 }
+		every_province = { limit = { is_claim = GLH } remove_claim = GLH }		
+	}
+
 }

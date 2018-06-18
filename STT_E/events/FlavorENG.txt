@@ -1148,16 +1148,10 @@ country_event = {
 			religion = anglican
 		}
 		OR = {
-			munster_area = {
+			eastern_ireland_area = {
 				owned_by = ROOT
 			}
-			connacht_area = {
-				owned_by = ROOT
-			}
-			leinster_area = {
-				owned_by = ROOT
-			}
-			ulster_area = {
+			western_ireland_area = {
 				owned_by = ROOT
 			}
 		}

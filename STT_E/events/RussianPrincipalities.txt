@@ -874,9 +874,6 @@ country_event = {
 		trigger = {
 			NOT = { num_of_cities = 2 }
 		}
-		ai_chance = {
-			factor = 50
-		}
 		add_government_power = {
 			government_mechanic = russian_mechanic
 			which = ADM
@@ -931,7 +928,7 @@ country_event = {
 		NOT = { has_country_modifier = tatar_feudatories }
 		any_owned_province = {
 			OR = {
-				culture_group = tartar
+				culture_group = turkic
 				religion_group = muslim
 			}
 			NOT = { has_province_flag = tatar_province_asked }
@@ -943,7 +940,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						culture_group = tartar
+						culture_group = turkic
 						religion_group = muslim
 					}
 					NOT = { has_province_flag = tatar_province_asked }
