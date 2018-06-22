@@ -1382,42 +1382,38 @@ SGT_ideas = {
 
 ATO_Ideas = {
 	start = {
-		cavalry_cost = -0.2
-		cavalry_power = 0.10
+		merc_maintenance_modifier = -0.25
+		cavalry_power = 0.05
 	}
 	
 	bonus = {
-		global_trade_power = 0.10
+		trade_steering = 0.10
 	}
 	
 	trigger = {
-		tag = ATO
+		tag = PBG
 	}
 	free = yes
 	
-	ato_first = {
-		land_morale = 0.1
-		cav_to_inf_ratio = 0.1
+	golden_fleece = {
+		prestige = 1
 	}
-	ato_second = {
-		papal_influence = 1
+	compagnies_ordonnance = {
+		mercenary_cost = -0.20
 	}
-	ato_third = {
-		tolerance_own = 1
+	bur_estates_general = {
+		possible_mercenaries = 1.0
 	}
-	ato_fourth = {
-		improve_relation_modifier = 0.15
+	reform_of_feudal_army = {
+		discipline = 0.05
 	}
-	ato_fifth = {
-		spy_offence = 0.15
-		rebel_support_efficiency = 0.2
+	integrated_towns = {
+		trade_efficiency = 0.1
 	}
-	ato_six = {
-		production_efficiency = 0.1
-		global_prov_trade_power_modifier = 0.1
+	freedom_of_worship = {
+		tolerance_heretic = 2
 	}
-	ato_seven = {
-		naval_maintenance_modifier = -0.1
-		fort_maintenance_modifier = -0.1
+	bur_regimental_system = {
+		global_manpower_modifier = 0.25
 	}
 }

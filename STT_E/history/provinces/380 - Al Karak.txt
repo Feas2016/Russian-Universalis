@@ -1,17 +1,17 @@
 #380 - Al Karak
 
-owner = MAM
-controller = MAM
+owner = KOJ
+controller = KOJ
 culture = bedouin_arabic
 religion = sunni
-capital = "Al Karak"
+capital = "Эль-Карак"
 trade_goods = grain
 hre = no
 base_tax = 2 
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MAM
+add_core = KOJ
 fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
@@ -30,6 +30,20 @@ discovered_by = MBA
 discovered_by = MDI
 discovered_by = MLI
 discovered_by = SFA
+
+1263.1.1 = {
+	owner = MAM
+	controller = MAM
+	add_core = MAM
+}
+
+1359.1.1 = {
+	add_core = KOJ
+}
+
+1400.1. = {
+	remuve_core = KOJ
+}
 
 1516.8.24 = {
 	owner = TUR

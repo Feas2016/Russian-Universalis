@@ -218,9 +218,7 @@ country_event = {
 	picture = BD_6_eventPicture
 	
 	trigger = {
-		OR = {
-			has_country_flag = BD_progress
-		}
+		has_country_flag = BD_progress
 	}
 
 	#fire_only_once = yes
@@ -261,9 +259,7 @@ country_event = {
 	picture = BD_7_eventPicture
 	
 	trigger = {
-		OR = {
-			has_country_flag = BD_progress
-		}
+		has_country_flag = BD_progress
 	}
 
 	#fire_only_once = yes
@@ -533,6 +529,7 @@ country_event = {
 	
 	trigger = {
 		has_heir = yes
+		government = monarchy
 		is_lesser_in_union = no
 		has_country_flag = BD_progress
 		NOT = { has_heir_flag = heir_hide }

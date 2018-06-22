@@ -1074,5 +1074,33 @@ country_event = { ### STT FOR FRIDRIH
 	}
 }
 
-
+#Cyprus reconquest
+country_event = {
+    id = stt_wek.22
+	title = stt_wek.22.t
+	desc = stt_wek.22.d
+	
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CYP
+		is_year = 1308
+		NOT = { is_year = 1330 }
+	}	
+	
+	option = {
+	    name = stt_wek.22.a
+		321 = {
+		    add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 5
+		}
+		every_province = {
+			limit = { is_core = KOJ }
+			add_core = ROOT
+		}
+	}
+}
 
