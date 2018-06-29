@@ -3,7 +3,7 @@
 owner = GLH
 controller = GLH 
 culture = nogaybak
-religion = sunni
+religion = tengri_pagan_reformed
 capital = "Хаджи-тархан"
 trade_goods = wool
 hre = no
@@ -29,6 +29,9 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1321.1.1 = {
+	religion = sunni
+}
 1444.1.1 = { owner = GOL controller = GOL add_core = GOL } #vanilla date
 1459.1.1 = { owner = AST controller = AST remove_core = GOL } # Independence of Astrakhan
 1556.6.2 = { owner = TSR controller = TSR add_core = TSR remove_core = AST capital = "Астрахань" } # Conquered by Ivan the terrible 

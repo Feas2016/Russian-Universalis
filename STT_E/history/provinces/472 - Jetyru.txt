@@ -3,8 +3,8 @@
 owner = GLH
 controller = GLH
 culture = nogaybak
-religion = sunni
-capital = "Zhetyru"
+religion = tengri_pagan_reformed
+capital = "Жетыру"
 trade_goods = naval_supplies
 hre = no
 base_tax = 2 
@@ -19,6 +19,9 @@ discovered_by = nomad_group
 discovered_by = KZH
 discovered_by = GLH
 
+1321.1.1 = {
+	religion = sunni
+}
 1440.1.1 = { owner = NOG controller = NOG } #vanilla date
 1520.1.1 = { owner = KZH controller = KZH add_core = KZH remove_core = NOG culture = khazak } # Qasim Khan conquers Nogai lands
 1622.1.1 = { discovered_by = TSR }
