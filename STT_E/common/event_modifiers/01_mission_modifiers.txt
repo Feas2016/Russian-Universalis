@@ -191,68 +191,75 @@ conquest_of_finland = {
 	land_attrition = -0.2
 }
 
-south_achivment = {
+south_achivment = {	### STT
     diplomatic_reputation = 1.00
     core_creation = -0.15
 }
 
-north_achivment = {
-ae_impact = -0.15
-trade_efficiency = 0.05
+north_achivment = {	### STT
+	ae_impact = -0.15
+	trade_efficiency = 0.05
 }
 
-east_achivment = {
-diplomatic_annexation_cost = -0.35
-discipline = 0.025
+east_achivment = {	### STT
+	diplomatic_annexation_cost = -0.35
+	discipline = 0.025
 }
 
-east_achivment_2 = {
-colonists = 1
+east_achivment_2 = {	### STT
+	colonists = 1
 }
 
-new_muslim_lands = {
-local_missionary_strength = 0.03
+new_muslim_lands = {	### STT
+	local_missionary_strength = 0.03
 }
 
-siberian_development = {
-local_development_cost = -0.2 
+siberian_development = {	### STT
+	local_development_cost = -0.2 
 }
 
-china_trade = {
-merchants = 1
-trade_efficiency = 0.05
+china_trade = {	### STT
+	merchants = 1
+	trade_efficiency = 0.05
 }
 
-new_flot_bases = 
-{ naval_forcelimit_modifier = 0.05 
+new_flot_bases = {	### STT
+	naval_forcelimit_modifier = 0.05 
 }
 
-russian_sea_empire
-= { naval_maintenance_modifier =
-   -0.15
-   }
+russian_sea_empire = {	### STT
+	naval_maintenance_modifier = -0.15
+}
 
-far_east_integration
-= { local_culture_conversion_cost = -0.35 }
+far_east_integration = {	### STT
+	local_culture_conversion_cost = -0.35 
+}
   
-japan_morale = {
-land_morale = 0.05
+japan_morale = {	### STT
+	land_morale = 0.05
 }
 
-russian_india = {
-merchants = 1
-trade_efficiency = 0.1
+russian_india = {	### STT
+	merchants = 1
+	trade_efficiency = 0.1
 }
 
-control_of_caucasus = {
-discipline = 0.03
+control_of_caucasus = {	### STT
+	discipline = 0.03
 }
 
-slavyn_unity = { culture_conversion_cost = -0.15 }
+slavyn_unity = {	### STT
+	culture_conversion_cost = -0.15 
+}
 
-russian_tsargrad = { missionaries = 1
-                     local_missionary_strength = 0.015 }
-west_achivment = { technology_cost = -0.05 }					 
+russian_tsargrad = {	### STT
+	missionaries = 1
+	local_missionary_strength = 0.015 
+}
+
+west_achivment = { 	### STT
+	technology_cost = -0.05 
+}					 
   
 russian_pacific_port = {
 	local_sailors_modifier = 1
