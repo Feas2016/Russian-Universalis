@@ -396,18 +396,18 @@ country_event = {
 		name = "STT_flavor_mol.7.a1"
 		ai_chance = { factor = 90 }
 		define_ruler = {
-		name = "Богдан I Основатель"
-		dynasty = "Мушат"
-		min_random_adm = 3
-		min_random_dip = 3
-		mil = 6
-		claim = 30
+			name = "Богдан I Основатель"
+			dynasty = "Мушат"
+			adm = 5
+			dip = 5
+			mil = 6
+			claim = 30
 		}
 		hidden_effect = {
-		define_heir = { dynasty = Мушат age = 0 }
-		define_ruler_to_general = {	fire = 2 shock = 5 manuever = 4 siege = 1 }
-		clr_country_flag = moldova_hun
-		clr_country_flag = bogdan_angry
+			define_heir = { dynasty = Мушат age = 0 }
+			define_ruler_to_general = {	fire = 2 shock = 5 manuever = 4 siege = 1 }
+			clr_country_flag = moldova_hun
+			clr_country_flag = bogdan_angry
 		}
 		HUN = { free_vassal = MOL } 
 	}
@@ -416,11 +416,11 @@ country_event = {
 		ai_chance = { factor = 10 }
 		add_stability = -1
 		define_ruler = {
-		dynasty = "Драгошести"
-		max_random_adm = 3
-		max_random_dip = 3
-		max_random_mil = 3
-		age = 10
+			dynasty = "Драгошести"
+			adm = 5
+			dip = 5
+			mil = 5
+			age = 10
 		}
 		capital_scope = { spawn_rebels = { type = pretender_rebels size = 2 leader = "Богдан Мушат" } }
 	}
@@ -469,7 +469,7 @@ country_event = {
 		}
 	}
 	
-	immediate = { hidden_effect = { define_ruler = { dynasty = Мушат min_random_mil = 4 } } } 
+	immediate = { hidden_effect = { define_ruler = { dynasty = Мушат mil = 5 } } } 
 		
 	option = {
 		name = "STT_flavor_mol.8.a1"
@@ -481,11 +481,11 @@ country_event = {
 		name = "STT_flavor_mol.8.a2"
 		ai_chance = { factor = 30 }
 		define_ruler = { 
-		dynasty = Мушат
-		max_random_adm = 4
-		max_random_dip = 4
-		max_random_mil = 4
-		age = 15
+			dynasty = Мушат
+			adm = 2
+			dip = 2
+			mil = 2
+			age = 15
 		}
 		POL = { create_march = MOL }
 		hidden_effect = { set_country_flag = moldova_pol }

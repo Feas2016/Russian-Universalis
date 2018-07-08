@@ -1309,7 +1309,11 @@ country_event = {
 	option = {
 	    name = stt_flavor_horde.24.a
 		kill_heir = yes
-		define_ruler = { min_random_adm = 3 min_random_dip = 3 min_random_mil = 5 }
+		define_ruler = { 
+			adm = 2 
+			dip = 2 
+			mil = 6 
+		}
 		change_tag = GOL
 		add_horde_unity = 75
 		disband_rebels = tribal_rebels

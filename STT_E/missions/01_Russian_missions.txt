@@ -3,7 +3,7 @@ consolidate_expand_russia_missions = {
 	generic = no
 	ai = yes
 	potential = {
-	primary_culture = russian
+		primary_culture = russian
 	}
 	has_country_shield = yes
 	south_lands = {
@@ -566,11 +566,12 @@ consolidate_expand_russia_missions = {
 	conquer_balcan = { 
 	icon = mission_conquer_5_states
 		required_missions = { west_steppe }
-		provinces_to_highlight = { or = {
-			area = bulgaria_area
-			area = serbia_area
-			area = wallachia_area
-			area = transylvania_areaa
+		provinces_to_highlight = { 
+			OR = {
+				area = bulgaria_area
+				area = serbia_area
+				area = wallachia_area
+				area = transylvania_area
 			}
 		}
 	trigger = {	
@@ -1063,8 +1064,8 @@ litva_poland_missions = {
 	primary_culture = russian
 	}
 	has_country_shield = yes 
-	conquest_litva = 
-	{    icon = mission_1 
+	conquest_litva = {    
+		icon = mission_1 
 		required_missions = { russia_partitions_poland_new } #None
 		completed_by = 1795.1.15
 		provinces_to_highlight = { 
@@ -1115,7 +1116,7 @@ consolidate_expand_russia_minus_missions = {
 	generic = no
 	ai = yes
 	potential = { 
-	primary_culture = russian
+		primary_culture = russian
 	}
 	has_country_shield = yes
 	west_lands = {
@@ -1148,8 +1149,8 @@ consolidate_expand_russia_minus_missions = {
 		position = 2
 		completed_by = 1350.1.15
 		provinces_to_highlight = {
-			area = moscow_are
-			}
+			area = moscow_area
+		}
 		
 		trigger = {
 			moscow_area = {
@@ -1166,8 +1167,6 @@ consolidate_expand_russia_minus_missions = {
 				name = "west_achivment"
 				duration = 5475
 			}
-			
-			
 		}
 	}
 	

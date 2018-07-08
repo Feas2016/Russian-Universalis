@@ -39,17 +39,20 @@ college = {
 	
 	on_built = {
 		hidden_effect = { 
-			change_innovativeness = 0.05			
+			FROM = { change_innovativeness = 0.05 }				
 		}
 	}
 	
 	on_destroyed = {
 		hidden_effect = { 
-			change_innovativeness = -0.05			
+			FROM = { change_innovativeness = -0.05 }
+						
 		}
 	}
 	
 	ai_will_do = {
+		factor = 1
+		modifier = { factor = 2.0 FROM = { num_of_cities = 1 } }
 	}
 }
 steel_mill = {
@@ -88,6 +91,7 @@ road_network = {
 	cost = 70
 	time = 12
 	
+	
 	modifier = {
 		local_friendly_movement_speed = 0.3
 		province_trade_power_modifier = 0.2
@@ -95,7 +99,7 @@ road_network = {
 	}
 	
 	ai_will_do = {
-		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+		factor = 1.5 
 	}
 }
 
@@ -156,7 +160,7 @@ customs_house = {
 	ai_will_do = {
 		factor = 2500
 		modifier = { factor = 0.95 FROM = { NOT = { exploration_ideas = 1 } } }
-		modifier = { factor = 0.95 FROM = { NOT = { expansion_ideas = 1 } } }
+		modifier = { factor = 0.95 FROM = { NOT = { expansion_ideas = 1} } }
 		modifier = { factor = 0.95 FROM = { NOT = { personality = ai_colonialist } } }
 	}
 }

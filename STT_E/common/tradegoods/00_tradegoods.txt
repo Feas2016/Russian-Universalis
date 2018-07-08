@@ -141,12 +141,10 @@ wine = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
 				area = cuyo_area
 				region = france_region
 				region = italy_region
 			}
-		}
 		modifier = {
 			factor = 1.1
 			FROM = {
@@ -217,13 +215,11 @@ wool = {
 		}
 		modifier = {
 			factor = 0.15
-			OR = {
 				has_terrain = grasslands
 				has_terrain = hills
 				has_terrain = forest
 				has_terrain = woods
 			}
-		}
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -241,6 +237,10 @@ wool = {
 		modifier = {
 			factor = 1.5
 			region = tibet_region
+		}
+		modifier = {
+			factor = 0.5
+			
 		}
 	}
 }
@@ -385,7 +385,7 @@ fur = {
 salt = {
 	color = { 0.999 0.999 0.999 }
 	modifier = {
-		land_maintenance_modifier = -0.10
+		land_maintenance_modifier = -0.05
 	}
 	province = {
 		local_defensiveness = 0.15
@@ -828,12 +828,10 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
-			OR = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
 			}
-		}
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -1020,13 +1018,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
 				region = malaya_region
 				region = indonesia_region
 				region = moluccas_region
 			}
 		}
-	}
 }
 
 
@@ -1445,13 +1441,11 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
-			OR = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
 			}
 		}
-	}
 }
 
 livestock = {
