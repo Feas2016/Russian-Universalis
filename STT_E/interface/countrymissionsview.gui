@@ -64,7 +64,7 @@ guiTypes = {
 			backGround=""
 			size = { x=518 y=412 }
 			Orientation = "UPPER_LEFT"
-			horizontal = 1
+			horizontal = 0
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 0 y = 0}
@@ -75,15 +75,15 @@ guiTypes = {
 		name = "countrymissionsview_missions_gridbox_listbox_entry"
 		position = { x=0 y=0 }
 		show_position = { x=0 y =140 }
-		size = { x=630 y=500 }
+		size = { x=530 y=500 }
 		moveable = 0
 		
 		gridBoxType = {
 			name = "countrymissionsview_missions_gridbox"
 			position = { x = 0 y = 0 }
-			size = { width = 600 height = 400 }
+			size = { width = 400 height = 400 }
 			slotsize = { width = 104 height = 152 }
-			max_slots_horizontal = 6
+			max_slots_horizontal = 5
 			format = "UPPER_LEFT"
 		}
 	}
@@ -209,12 +209,12 @@ guiTypes = {
 		}
 
 		instantTextBoxType= {
-			position = { x=8 y=84}
+			position = { x=1 y=84}
 			name = "mission_title"
-			font = "vic_18"
+			font = "garamond_12"
 			borderSize = {x = 0 y = 0}
-			maxWidth = 90
-			maxHeight = 22
+			maxWidth = 101
+			maxHeight = 35
 			text = "Subjective and a Noun"
 			orientation = "UPPER_LEFT"
 			format = center
