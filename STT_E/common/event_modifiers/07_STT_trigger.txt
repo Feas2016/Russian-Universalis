@@ -185,4 +185,14 @@ byz_heir = {
 feowall = { 
 	local_defensiveness = 0.1
 }
+ndl_colon_boom = {
+	colonists = 1
+	global_colonial_growth = 40
+	range = 1
+}
 
+ndl_colon_win = {
+	global_colonial_growth = 20
+	global_trade_power = 0.1
+	merchants = 1
+}

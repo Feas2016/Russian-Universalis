@@ -1121,12 +1121,12 @@ UKR_ideas = {
 
 NDL_ideas = {
     start = {
-	    land_morale = 0.20
+	    land_morale = 0.15
 		may_perform_slave_raid = yes
 	}
 	
 	bonus = {
-	    army_tradition = 1.5
+	    army_tradition = 1.0
 	}
 	
 	trigger = {
@@ -1143,9 +1143,14 @@ NDL_ideas = {
 	    discipline = 0.05
 	}
 	
+	NDL_seventh_idea = {
+	    colonists = 1
+		global_colonial_growth = 20
+	}
+	
 	NDL_third_idea = {
-	    infantry_power = 0.20
-		land_forcelimit_modifier = 0.20
+	    infantry_power = 0.15
+		land_forcelimit_modifier = 0.10
 	}
 	
 	NDL_fourth_idea = {
@@ -1154,17 +1159,12 @@ NDL_ideas = {
 	}
 	
 	NDL_fifth_idea = {
-	    land_maintenance_modifier = -0.40
+	    land_maintenance_modifier = -0.33
 	}
 	
 	NDL_sixth_idea = {
 	    leader_land_shock = 1
 		leader_land_manuever = 1
-	}
-	
-	NDL_seventh_idea = {
-	    colonists = 1
-		global_colonial_growth = 20
 	}
 }
 

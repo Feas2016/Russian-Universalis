@@ -186,12 +186,12 @@ country_decisions = {
 		}
 		
 		allow = { 
-		    treasury = 200
+		    years_of_income = 1.5
 			adm_power = 75
 		}
 		
 		effect = {
-		    add_treasury = -200
+		    add_years_of_income = -1.5
 			add_adm_power = -75
 			set_country_flag = building_hof
 		}
@@ -202,7 +202,7 @@ country_decisions = {
 				NOT = {
 				    OR = {
 				        adm_power = 75
-						treasury = 200
+						years_of_income = 2.25
 					}
 				}
 			}
@@ -219,7 +219,7 @@ country_decisions = {
 		
 		allow = {
 		    advisor = inquisitor
-		    treasury = 50
+		    years_of_income = 0.75
 			adm_power = 100
 			capital_scope = {
 				has_province_modifier = great_hof
@@ -227,7 +227,7 @@ country_decisions = {
 		}
 		
 		effect = {
-		    add_treasury = -50
+		    add_years_of_income = -0.75
 			add_adm_power = -100
 			add_country_modifier = {
 			    name = norse_missionaries
@@ -284,7 +284,7 @@ country_decisions = {
 		    }
 			add_prestige = 50
 			add_legitimacy = 20
-			culture_group_union = scandinavian
+			swap_non_generic_missions = yes
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		

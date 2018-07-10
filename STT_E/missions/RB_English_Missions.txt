@@ -591,10 +591,10 @@ eng_rb_buildings_group = {
 				owned_by = ROOT
 				has_building = university
 			}
-			4370 = {
-				owned_by = ROOT
-				has_building = university
-			}
+			# 4370 = {
+				# owned_by = ROOT
+				# has_building = university
+			# }
 		}
 		
 		effect = {
@@ -668,9 +668,9 @@ eng_rb_buildings_group = {
 			241 = {
 				owned_by = ROOT
 			}	
-			4375 = {
-				owned_by = ROOT
-			}	
+			# 4375 = {
+				# owned_by = ROOT
+			# }	
 			246 = {
 				owned_by = ROOT
 			}	
@@ -693,14 +693,14 @@ eng_rb_buildings_group = {
 					duration = -1
 				}
 			}
-			4375 = {
-				add_base_production = 3
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "eng_rb_coal_produced_mod"
-					duration = -1
-				}
-			}
+			# 4375 = {
+				# add_base_production = 3
+				# add_base_manpower = 3
+				# add_province_modifier = {
+					# name = "eng_rb_coal_produced_mod"
+					# duration = -1
+				# }
+			# }
 			246 = {
 				add_base_production = 3
 				add_base_manpower = 3
@@ -735,10 +735,10 @@ eng_rb_buildings_group = {
 				owned_by = ROOT
 				has_building = furnace
 			}
-			4375 = {
-				owned_by = ROOT
-				has_building = furnace
-			}
+			# 4375 = {
+				# owned_by = ROOT
+				# has_building = furnace
+			# }
 			246 = {
 				owned_by = ROOT
 				has_building = furnace
@@ -826,12 +826,12 @@ eng_rb_conquest_europe = {
 				}
 				add_permanent_claim = ROOT
 			}
-			4388 = {
-				add_permanent_claim = ROOT
-			}
-			4389			= {
-				add_permanent_claim = ROOT
-			}
+			# 4388 = {
+				# add_permanent_claim = ROOT
+			# }
+			# 4389 = {
+				# add_permanent_claim = ROOT
+			# }
 			199 = {
 				add_permanent_claim = ROOT
 			}
@@ -876,12 +876,12 @@ eng_rb_conquest_europe = {
 				type = all
 				owned_by = ROOT
 			}
-			4388 = {
-				owned_by = ROOT
-			}
-			4389			= {
-				owned_by = ROOT
-			}
+			# 4388 = {
+				# owned_by = ROOT
+			# }
+			# 4389 = {
+				# owned_by = ROOT
+			# }
 			199 = {
 				owned_by = ROOT
 			}

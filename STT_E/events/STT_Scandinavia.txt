@@ -94,10 +94,12 @@ province_event = {
 		    factor = 10
 			modifier = {
 			    factor = 1000
-				owner = { num_of_owned_provinces_with = {
-			        value = 1
-				    religion = norse_pagan_reformed
-			    } }
+				owner = { 
+					num_of_owned_provinces_with = {
+						value = 1
+						religion = norse_pagan_reformed
+					} 
+				}
 			}
 		}
 		change_religion = norse_pagan_reformed
@@ -193,7 +195,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 240
+	    months = 340
 	}
 	
 	option = {
@@ -218,7 +220,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 200
+	    months = 500
 	}
 	
 	option = {
@@ -243,12 +245,12 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 240
+	    months = 700
 	}
 	
 	option = {
 	    name = "stt_scan.a.8"
-		add_treasury = 500
+		add_years_of_income = 1.5
 	}
 }
 
