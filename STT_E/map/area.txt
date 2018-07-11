@@ -1885,32 +1885,58 @@ south_korea_area = { #4 (Jeolla, Gyeongsang)
 	736 737 2741 2745 3341 3343 3344 3348
 }
 
-hokkaido_area = { #4
-	1031 1032 1847 1852
+hokkaido_area = { #5
+	1031 1032 1847 1852 4193
 }
 
-kyushu_area = { #4
-	1012 1014 1015 1818
+hokuriku_area = { #3
+	1023 1024 1837
 }
 
-chubu_area = { #7
-	1023 1024 1029 1835 1837 1839
+kanto_area = { #3 #Western Kanto
+	1028 1843 4189
 }
 
-thohoku_area = { #3
-	1025 1026 3623
+eastern_kanto_area = { #3
+	1027 4190 4191
 }
 
-kanto_area = { #3
-	1027 1028 1843
+kyushu_area = { #4 #Southern Kyushu
+	1012 1015 4180 4181
 }
 
-kansai_area = { #5
-	1020 1021 1030 1830 1832
+northern_kyushu = {
+	1014 1818 4182
 }
 
-chugoku_area = { #6 (+shikoku)
-	1017 1018 1019 1819 1820 1825
+shikoku_area = { #3
+	1819 1820 4186
+}
+
+eastern_chubu_area = { #4
+	1029 1839 4188 4360
+}
+
+chubu_area = { #3 (Western Chubu)
+	color = { 219 83 61 }
+	1030 1835 4359
+}
+
+kinai_area = { #4
+	color = { 208 206 65 }
+	1020 1021 1832 4187
+}
+
+thohoku_area = { #4
+	1025 1026 3623 4192
+}
+
+sanindo_area = { #4
+	1018 1830 4183 4185 
+}
+
+saigoku_area = { #4 #Sanyodo
+	1017 1019 1825 4184
 }
 
 ########################################
