@@ -22,6 +22,11 @@ ire_conquest_1 = {
 			tag = DMS
 			tag = MCM
 			tag = IRE
+			tag = THO #STT
+			tag = CLN #STT
+			tag = WEX #STT
+			tag = BFN #STT
+			
 		}
 	}
 	has_country_shield = yes
@@ -48,29 +53,40 @@ ire_conquest_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			# 4379 = {
-				# if = {
-					# limit = {
-						# NOT = {
-							# owned_by = ROOT
-							# is_core = ROOT
-						# }
-					# }
-					# add_permanent_claim = ROOT
-				# }
-			# }
-			# 4120 = {
-				# if = {
-					# limit = {
-						# NOT = {
-							# owned_by = ROOT
-							# is_core = ROOT
-						# }
-					# }
-					# add_permanent_claim = ROOT
-				# }
-			# }
+			3028 = {	#STT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			3026 = {	#STT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 			374 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			3273 = {	#STT
 				if = {
 					limit = {
 						NOT = {
@@ -109,6 +125,10 @@ ire_conquest_main = {
 			tag = DMS
 			tag = MCM
 			tag = IRE
+			tag = THO #STT
+			tag = CLN #STT
+			tag = WEX #STT
+			tag = BFN #STT
 		}
 	}
 	has_country_shield = yes
@@ -136,29 +156,40 @@ ire_conquest_main = {
 				}
 				add_permanent_claim = ROOT
 			}
-			# 4379 = {
-				# if = {
-					# limit = {
-						# NOT = {
-							# owned_by = ROOT
-							# is_core = ROOT
-						# }
-					# }
-					# add_permanent_claim = ROOT
-				# }
-			# }
-			# 4120 = {
-				# if = {
-					# limit = {
-						# NOT = {
-							# owned_by = ROOT
-							# is_core = ROOT
-						# }
-					# }
-					# add_permanent_claim = ROOT
-				# }
-			# }
+			3028 = {	#STT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			3026 = {	#STT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 			374 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			3273 = {	#STT
 				if = {
 					limit = {
 						NOT = {
@@ -180,9 +211,10 @@ ire_conquest_main = {
 				area = ulster_area
 				area = connacht_area
 				area = munster_area
-				# province_id = 4379
-				# province_id = 4120
+				province_id = 3273 #STT
+				province_id = 3026 #STT
 				province_id = 374
+				province_id = 3028 #STT
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -201,13 +233,16 @@ ire_conquest_main = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			# 4379 = {
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# 4120 = {
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
+			3273 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3026 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			374 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3028 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -255,13 +290,13 @@ ire_conquest_main = {
 				}
 				add_permanent_claim = ROOT
 			}
-			kingdom_of_the_isles_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#kingdom_of_the_isles_area = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 			highlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -287,13 +322,13 @@ ire_conquest_main = {
 			}
 		}
 		effect = {
-			west_midlands_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#east_anglia_area = { #STT
+			#	limit = {
+			#		NOT = { owned_by = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 			wessex_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -308,7 +343,7 @@ ire_conquest_main = {
 		required_missions = { conquer_wales }
 		provinces_to_highlight = {
 			OR = {
-				area = west_midlands_area
+				#area = east_anglia_area #STT
 				area = wessex_area
 			}
 			NOT = {
@@ -316,10 +351,10 @@ ire_conquest_main = {
 			}
 		}
 		trigger = {
-			west_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#east_anglia_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 			wessex_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -327,14 +362,14 @@ ire_conquest_main = {
 		}
 		effect = {
 			add_army_tradition = 10
-			home_counties_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			east_anglia_area = {
+			#home_counties_area = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			east_anglia_area = { #STT
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -369,6 +404,10 @@ ire_conquest_2 = {
 			tag = DMS
 			tag = MCM
 			tag = IRE
+			tag = THO #STT
+			tag = CLN #STT
+			tag = WEX #STT
+			tag = BFN #STT
 		}
 	}
 	has_country_shield = yes
@@ -411,7 +450,7 @@ ire_conquest_2 = {
 		required_missions = { beyond_the_pale }
 		provinces_to_highlight = {
 			OR = {
-				area = kingdom_of_the_isles_area
+				#area = kingdom_of_the_isles_area
 				area = highlands_area
 			}
 			NOT = {
@@ -419,13 +458,13 @@ ire_conquest_2 = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = ire_koi_tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 2
-					area = kingdom_of_the_isles_area
-				}
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = ire_koi_tooltip
+			#	num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			#		value = 2
+			#		area = kingdom_of_the_isles_area
+			#	}
+			#}
 			custom_trigger_tooltip = {
 				tooltip = ire_highlands_tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -444,15 +483,15 @@ ire_conquest_2 = {
 					duration = 7300
 				}
 			}
-			kingdom_of_the_isles_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "ire_recruiting_from_clans"
-					duration = 7300
-				}
-			}
+			#kingdom_of_the_isles_area = {
+			#	limit = {
+			#		owned_by = ROOT
+			#	}
+			#	add_province_modifier = {
+			#		name = "ire_recruiting_from_clans"
+			#		duration = 7300
+			#	}
+			#}
 			lowlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -460,13 +499,13 @@ ire_conquest_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			scottish_marches_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			#scottish_marches_area = {
+			#	limit = {
+			#		NOT = { owned_by = ROOT	}
+			#		NOT = { is_core = ROOT	}
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 		}
 	}
 	ire_conquer_scotland = {
@@ -475,7 +514,7 @@ ire_conquest_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = lowlands_area
-				area = scottish_marches_area
+				#area = scottish_marches_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -486,21 +525,21 @@ ire_conquest_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			scottish_marches_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			#scottish_marches_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		effect = {
 			add_army_tradition = 10
-			east_midlands_area = {
+			mercia_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			yorkshire_area = {
+			northern_england_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -558,6 +597,10 @@ ire_conquest_4 = {
 			tag = DMS
 			tag = MCM
 			tag = IRE
+			tag = THO #STT
+			tag = CLN #STT
+			tag = WEX #STT
+			tag = BFN #STT
 		}
 	}
 	has_country_shield = yes
@@ -567,22 +610,26 @@ ire_conquest_4 = {
 		required_missions = { }
 		provinces_to_highlight = {
 			OR = {
-				# province_id = 4379
-				# province_id = 4120
+				province_id = 3273 #STT
+				province_id = 3026 #STT
 				province_id = 374
+				province_id = 3028 #STT
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			# 4379 = {
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
-			# 4120 = {
-				# country_or_non_sovereign_subject_holds = ROOT
-			# }
+			3273 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3026 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			374 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3028 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -646,6 +693,10 @@ ire_colonial_missions = {
 			tag = DMS
 			tag = MCM
 			tag = IRE
+			tag = THO #STT
+			tag = CLN #STT
+			tag = WEX #STT
+			tag = BFN #STT
 		}
 	}
 	has_country_shield = yes

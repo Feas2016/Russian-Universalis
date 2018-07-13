@@ -26,6 +26,7 @@ cb_restore_personal_union = {
 			government = dutch_republic
 		}
 		is_revolution_target = no
+		NOT = { tag = VLD }
 		FROM = {
 			government = monarchy
 			is_subject = no
@@ -536,8 +537,8 @@ cb_heretic = {
 		OR = { ###STT
 			cb_on_religious_enemies = yes
 			government = papal_government
-			government = theocratic_government
-			government = monastic_order_government
+			government = theocratic_goverment
+			government = monastic_order_goverment
 		}
 		religion_group = from
 		NOT = {	has_matching_religion = FROM }
@@ -1060,20 +1061,4 @@ cb_force_tributary = {
 	}
 	
 	war_goal = take_capital_force_tributary
-}
-
-cb_hundred_years_union = {
-	valid_for_subject = no
-
-	is_triggered_only = yes
-	months = 360
-	
-	prerequisites = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-	}
-
-	war_goal = take_capital_personal_union
 }

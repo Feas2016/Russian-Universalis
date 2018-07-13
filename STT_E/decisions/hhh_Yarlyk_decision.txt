@@ -1,0 +1,275 @@
+country_decisions = {
+
+	knyaz_off_notif = {
+		major = yes
+		potential = {
+			primary_culture = russian
+			has_ruler_modifier = great_knyaz
+			exists = GLH
+			NOT = { has_global_flag = knyaz_off_notification }
+		}
+		allow = {
+		}
+		effect = {
+		custom_tooltip = "tooltip_knyaz_notification" 
+		set_global_flag = knyaz_off_notification	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	knyaz_on_notif = {
+		major = yes
+		potential = {
+			primary_culture = russian
+			has_ruler_modifier = great_knyaz
+			exists = GLH
+			has_global_flag = knyaz_off_notification
+		}
+		allow = {
+		}
+		effect = {
+		custom_tooltip = "tooltip_knyaz_notification"
+		clr_global_flag = knyaz_off_notification	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	knyaz_claimant = {
+		major = yes
+		potential = {
+			primary_culture = russian
+			is_subject_of_type = tributary_state
+			exists = GLH
+			exists = VLD
+			NOT = {
+				all_known_country = {
+					primary_culture = russian 
+					OR = {
+						has_country_modifier = yarlyk_claimant
+						has_ruler_flag = event_claimant_flag
+						has_global_flag = knyaz_rights_flag_t
+					}
+				}
+			}
+			NOT = { has_country_modifier = yarlyk_claimant }
+			NOT = { has_ruler_flag = event_claimant_flag }
+			NOT = { has_ruler_modifier = tried_to_claim }
+			
+		}
+		allow = {
+			reverse_has_opinion = { who = GLH value = 60 } 
+			num_of_cities = 5
+			prestige = 20
+			has_country_modifier = yarlyk_claimant
+		}
+		effect = {
+			country_event = { id = rushorde.6 }
+			capital_scope = { remove_loot = { who = GLH amount = 15 } }
+			add_prestige = -10
+		    add_legitimacy = -10
+			add_ruler_modifier = { 
+				name = "tried_to_claim"
+				duration = 365
+			}
+	         
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { legitimacy = 80 }
+			}
+		}
+	}
+		
+	knyaz_rights_f = { #ne teryaetsya iz-za plohih otnosheniy
+		major = yes
+		potential = {
+			NOT = {
+			has_global_flag = knyaz_rights_flag_f
+			}
+			is_subject_of_type = tributary_state
+			is_year = 1325
+			exists = GLH
+			exists = VLD
+		}
+		allow = {
+			has_ruler_modifier = great_knyaz
+			total_development = 60
+			prestige = 15
+			adm_power = 100
+			dip_power = 100
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+	         custom_tooltip = "tooltip_knyaz_rights_f"
+			 set_global_flag = knyaz_rights_flag_f
+			 add_adm_power = -100
+			 add_dip_power = -100
+			 add_years_of_income = -0.4
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		}
+		
+	knyaz_rights_s = { #menshe dani
+		major = yes
+		potential = {
+			NOT = {
+			has_global_flag = knyaz_rights_flag_s
+			}
+			has_global_flag = knyaz_rights_flag_f
+			is_year = 1350
+			is_subject_of_type = tributary_state
+			exists = GLH
+			exists = VLD
+		}
+		allow = {
+			has_ruler_modifier = great_knyaz
+			total_development = 70
+			prestige = 25
+			adm_power = 150
+			dip_power = 150
+			NOT = { num_of_loans = 1 }
+			
+		}
+		effect = {
+	         custom_tooltip = "tooltip_knyaz_rights_s"
+			 set_global_flag = knyaz_rights_flag_s
+			 add_adm_power = -150	
+			 add_dip_power = -150
+			 add_years_of_income = -0.4
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	knyaz_rights_t = { #permanent great knyaz'
+		major = yes
+		potential = {
+			NOT = {
+			has_global_flag = knyaz_rights_flag_t
+			}
+			has_global_flag = knyaz_rights_flag_s
+			is_subject_of_type = tributary_state
+			exists = GLH
+			exists = VLD
+		}
+		allow = {
+			has_ruler_modifier = great_knyaz
+			total_development = 80
+			prestige = 35
+			is_year = 1365
+			adm_power = 200
+			dip_power = 200
+			stability = 1
+			NOT = { num_of_loans = 1 }			
+		}
+		effect = {
+			custom_tooltip = "tooltip_knyaz_rights_t"
+			set_global_flag = knyaz_rights_flag_t
+			add_adm_power = -200
+			add_dip_power = -200
+			add_years_of_income = -2.0
+			add_country_modifier = {
+				name = "perma_knyaz"
+				duration = 36500
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	knyaz_rights_l = {
+		major = yes
+		potential = {
+			NOT = {
+			has_global_flag = knyaz_rights_flag_l
+			}
+			has_global_flag = knyaz_rights_flag_t
+			is_subject_of_type = tributary_state
+			exists = GLH
+			exists = VLD
+		}
+		allow = {
+			has_country_modifier = perma_knyaz
+			is_year = 1385
+			total_development = 120
+			prestige = 50
+			adm_power = 300
+			dip_power = 300	
+		}
+		effect = {
+			custom_tooltip = "tooltip_knyaz_rights_l"
+			set_global_flag = knyaz_rights_flag_l
+			country_event = { id = rushorde.9 }
+			add_adm_power = -300
+			add_dip_power = -300
+			GLH = { release_all_subjects = yes }
+			inherit = VLD
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						primary_culture = russian
+						NOT = { total_development = 23 }
+					}
+					 country_event = { id = rushorde.10 }
+				}
+				
+			}
+			add_country_modifier = { name = "knyaz_uniter" duration = 7300 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vladimir_yarlyk = {
+		major = yes
+		potential = {
+			tag = VLD
+			exists = GLH
+			is_free_or_tributary_trigger = yes
+			NOT = { has_global_flag = knyaz_rights_flag_l }
+		}
+		allow = {
+			any_known_country = {
+				primary_culture = russian
+				is_subject_of_type = tributary_state
+				reverse_has_opinion = { who = GLH value = 5 } 
+			}			
+		}
+		effect = {
+				if = {
+						limit = {
+							any_known_country  = { has_country_modifier = yarlyk_claimant }
+						}
+						random_country = {
+							limit = { has_country_modifier = yarlyk_claimant }
+							country_event = { id = rushorde.1 }
+							remove_country_modifier = yarlyk_claimant		
+						}
+						else = {
+							random_country = {
+								limit = {
+									reverse_has_opinion = { who = GLH value = 5 } 
+									primary_culture = russian
+									is_subject_of_type = tributary_state
+								}
+								country_event = { id = rushorde.1 }
+								remove_country_modifier = yarlyk_claimant
+							}
+						}
+					}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+ }

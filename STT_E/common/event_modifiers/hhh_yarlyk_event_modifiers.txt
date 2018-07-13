@@ -1,0 +1,34 @@
+yarlyk_claimant = {
+	legitimacy = 0.5
+	prestige = 0.2
+}
+
+great_knyaz = {
+	legitimacy = 1
+	prestige = 0.25
+	ae_impact = -0.15
+	province_warscore_cost = -0.2
+	land_forcelimit_modifier  = 0.2
+	land_maintenance_modifier = -0.10
+	global_tax_income = 12
+	reduced_liberty_desire = 40
+}
+
+knyaz_uniter = {
+	diplomats = 2
+	diplomatic_upkeep = 8
+	vassal_forcelimit_bonus = -1
+	diplomatic_reputation = 2
+	vassal_income = -0.8
+	diplomatic_annexation_cost = -0.5
+	reduced_liberty_desire = 100
+	spy_offence = -0.5
+	fabricate_claims_cost = 0.5
+	improve_relation_modifier = 0.3
+}
+
+perma_knyaz = {
+	legitimacy = 1
+	prestige = 0.5
+	ae_impact = -0.1
+}

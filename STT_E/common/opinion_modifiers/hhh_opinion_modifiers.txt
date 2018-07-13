@@ -2,3 +2,42 @@ hellenic_christian_opinion = {
 	opinion = 30
 	yearly_decay = 1
 }
+
+Khan_positive = {
+	opinion = 50
+	yearly_decay = 5
+}
+
+Khan_negative_first = {
+	opinion = -30
+	yearly_decay = 3
+}
+Khan_negative_second = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+great_knyaz_decline = {
+	opinion = -30
+	yearly_decay = 10
+}
+
+all_knyaz_decline = {
+	opinion = -20
+	yearly_decay = 5
+}
+
+great_knyaz_smallthanks = {
+	opinion = 10
+	yearly_decay = 10
+}
+
+great_knyaz_thanks = {
+	opinion = 25
+	yearly_decay = 25
+}
+
+great_knyaz_bigthanks = {
+	opinion = 50
+	yearly_decay = 50
+}

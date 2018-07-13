@@ -473,6 +473,33 @@ country_decisions = {
 		}
 	}
 	
+	declare_parties = {
+		major = yes
+		potential = {
+		is_year = 1900
+		}
+		allow = {
+			adm_power = 200
+		}
+		effect = {
+			add_adm_power = -200
+			add_faction = russian_soviet
+			add_faction = constituto_democratic_party
+			add_faction = russian_social_democratic_work_party
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = { stability = -1 }
+				factor = 0
+			}
+			modifier = {
+				is_at_war = no
+				factor = 0.35
+			}
+		}
+	}
+	
 #	rus_nothommage = { #не платить дань орде
 #		major = yes
 #		potential = {

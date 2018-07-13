@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 104 130 172 }
+color = { 220 227 43 }
 
 historical_idea_groups = {
 	maritime_ideas
@@ -12,7 +12,7 @@ historical_idea_groups = {
 	economic_ideas
 	spy_ideas
 	innovativeness_ideas
-	offensive_ideas
+	administrative_ideas
 }
 
 historical_units = {
@@ -32,34 +32,21 @@ historical_units = {
 	napoleonic_lancers
 }
 
-leader_names = {
-	"Caomhanach" "Conchobhair"
-	"Mac Amhalghaidh" "Mac an tSionnaigh" "Mac Cochláin" "Mac Coibheanaigh"
-	"Mac Conshnámha" "Mac Fhlannchaidh" "Mac Fionbhair" "Mac Giolla Phadraig"
-	"Mac Raghnaill" "Mac Tighearnáin" "Mag Eochagáin" 
-	"Ó hAimheirgin" "Ó Braoin" "Ó Cairbre" "Ó Caoindealbháin" "Ó Catharnaigh"
-	"Ó Ceallaigh" "Ó Ciardha" "Ó Cearbhaill" "Ó Comhraidhe" "Ó Congalaig"
-	"Ó Cosraigh" "Ó Diubhgeannáin" "Ó Doinn" "Ó Donnchadha" "Ó Dubhghaill"
-	"Ó Dubhuidhe" "Ó Faolain" "Ó Fhearghaill" "Ó Fionnaláin" "Ó Finntighearn"
-	"Ó hAonghusa" "Ó Lorcáin" "Ó Maolmhuaidh" "Ó Ruairc" "Ó Seaghdha" "Ó Seanáin"
-	"Ó Tuathail"
-}
-
 monarch_names = {
-	"Thomas #0" = 20
-	"Gerald #0" = 40
-	"Art #0" = 5
-	"Henry #0" = 20
-	"John #0" = 5
-	"Maurice #0" = 5
-	"William #0" = 5
-	"George #0" = 5
-	"Wentworth #0" = 5
-	"Robert #0" = 5
-	"James #0" = 0
+	"James #4" = 80
+	"John #0" = 20
+	"Thomas #0" = 40
+	"Piers #0" = 20
+	"Walter #0" = 20
+	"Charles #0" = 20
+	"Henry #0" = 1
+	"Edmund #0" = 0
+	"Richard #0" = 0
+	"Peter #0" = 0
+	"George #0" = 0
+	"Maurice #0" = 0
+	"Robert #0" = 0
 	"Lettice #0" = 0
-	"Edward #0" = 0
-	"Cinnéidigh #0" = 0
 	"Deaglán #0" = 0
 	"Dougal #0" = 0
 	"Fionnlagh #0" = 0
@@ -93,11 +80,21 @@ monarch_names = {
 }
 
 ship_names = {
-	Carlow
-	Dublin
-	Kildare Kilkenny
-	Laios Longford Louth
-	Meath
-	Offaly 
-	Westmeath Wexford Wicklow
+	Clare Cork
+	"Deas Mhuman" 
+	Kerry 
+	"Lar Mumhan" Limerick
+	Tipperary "Tuad Mhuman"
+	"Urh Mumhan"  
+	Waterford
+}  
+
+leader_names = {
+	Barry Boyle
+	Darcy
+	FitzGerald FitzThomas
+	O'Brien O'Neill
+	MacCarthy
+	Sarsfield
+	Talbot
 }
