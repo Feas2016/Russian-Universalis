@@ -188,6 +188,20 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_disaster_golden_horde_disaster"
+		texturefile = "gfx//interface//disasters//golden_horde_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_disaster_ilkhanate_disaster"
+		texturefile = "gfx//interface//disasters//ilkhanate_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
 		name = "GFX_disaster_progress_frame"
 		texturefile = "gfx//interface//disaster_progress_frame.dds"
 	}
