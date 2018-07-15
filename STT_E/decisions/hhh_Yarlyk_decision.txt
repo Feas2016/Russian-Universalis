@@ -44,38 +44,23 @@ country_decisions = {
 			is_subject_of_type = tributary_state
 			exists = GLH
 			exists = VLD
-			NOT = {
-				all_known_country = {
-					primary_culture = russian 
-					OR = {
-						has_country_modifier = yarlyk_claimant
-						has_ruler_flag = event_claimant_flag
-						has_global_flag = knyaz_rights_flag_t
-					}
-				}
-			}
 			NOT = { has_country_modifier = yarlyk_claimant }
 			NOT = { has_ruler_flag = event_claimant_flag }
 			NOT = { has_ruler_modifier = tried_to_claim }
-			
+			NOT = { has_global_flag = knyaz_rights_flag_t }
 		}
 		allow = {
 			reverse_has_opinion = { who = GLH value = 60 } 
 			num_of_cities = 5
 			prestige = 20
-			has_country_modifier = yarlyk_claimant
+			NOT = { has_country_modifier = yarlyk_claimant }
 		}
 		effect = {
 			country_event = { id = rushorde.6 }
-			capital_scope = { remove_loot = { who = GLH amount = 15 } }
 			add_prestige = -10
 		    add_legitimacy = -10
-			add_ruler_modifier = { 
-				name = "tried_to_claim"
-				duration = 365
-			}
-	         
-		}
+			capital_scope = { remove_loot = { who = GLH amount = 15 } }
+	    }
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -92,13 +77,13 @@ country_decisions = {
 			has_global_flag = knyaz_rights_flag_f
 			}
 			is_subject_of_type = tributary_state
-			is_year = 1325
 			exists = GLH
 			exists = VLD
 		}
 		allow = {
 			has_ruler_modifier = great_knyaz
 			total_development = 60
+			is_year = 1325
 			prestige = 15
 			adm_power = 100
 			dip_power = 100
@@ -109,7 +94,7 @@ country_decisions = {
 			 set_global_flag = knyaz_rights_flag_f
 			 add_adm_power = -100
 			 add_dip_power = -100
-			 add_years_of_income = -0.4
+			 add_years_of_income = -0.5
 		}
 		ai_will_do = {
 			factor = 1
@@ -123,12 +108,12 @@ country_decisions = {
 			has_global_flag = knyaz_rights_flag_s
 			}
 			has_global_flag = knyaz_rights_flag_f
-			is_year = 1350
 			is_subject_of_type = tributary_state
 			exists = GLH
 			exists = VLD
 		}
 		allow = {
+			is_year = 1345
 			has_ruler_modifier = great_knyaz
 			total_development = 70
 			prestige = 25
@@ -142,7 +127,7 @@ country_decisions = {
 			 set_global_flag = knyaz_rights_flag_s
 			 add_adm_power = -150	
 			 add_dip_power = -150
-			 add_years_of_income = -0.4
+			 add_years_of_income = -1
 		}
 		ai_will_do = {
 			factor = 1
@@ -164,7 +149,7 @@ country_decisions = {
 			has_ruler_modifier = great_knyaz
 			total_development = 80
 			prestige = 35
-			is_year = 1365
+			is_year = 1360
 			adm_power = 200
 			dip_power = 200
 			stability = 1
@@ -178,7 +163,7 @@ country_decisions = {
 			add_years_of_income = -2.0
 			add_country_modifier = {
 				name = "perma_knyaz"
-				duration = 36500
+				duration = -1
 			}
 		}
 		ai_will_do = {
@@ -195,15 +180,15 @@ country_decisions = {
 			has_global_flag = knyaz_rights_flag_t
 			is_subject_of_type = tributary_state
 			exists = GLH
-			exists = VLD
 		}
 		allow = {
 			has_country_modifier = perma_knyaz
-			is_year = 1385
+			is_year = 1380
 			total_development = 120
 			prestige = 50
 			adm_power = 300
-			dip_power = 300	
+			dip_power = 300
+			VLD = { NOT = { num_of_cities = 8 } }			
 		}
 		effect = {
 			custom_tooltip = "tooltip_knyaz_rights_l"
@@ -211,19 +196,24 @@ country_decisions = {
 			country_event = { id = rushorde.9 }
 			add_adm_power = -300
 			add_dip_power = -300
-			GLH = { release_all_subjects = yes }
-			inherit = VLD
+			add_years_of_income = -4
+			if = { limit = { VLD = { NOT = { num_of_cities = 8 } } } inherit = VLD }
 			hidden_effect = {
+				GLH = { free_vassal = ROOT } 
 				every_known_country = {
 					limit = {
+						OR = {
+						is_subject_of_type = tributary_state
 						primary_culture = russian
-						NOT = { total_development = 23 }
+						primary_culture = novgorodian
+						NOT = { total_development = 31 }
+						}
+						culture_group = east_slavic
 					}
 					 country_event = { id = rushorde.10 }
 				}
-				
 			}
-			add_country_modifier = { name = "knyaz_uniter" duration = 7300 }
+			add_country_modifier = { name = "knyaz_uniter" duration = 5475 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -237,6 +227,10 @@ country_decisions = {
 			exists = GLH
 			is_free_or_tributary_trigger = yes
 			NOT = { has_global_flag = knyaz_rights_flag_l }
+			OR = {
+			ai = yes
+			has_leader = "test"
+			}
 		}
 		allow = {
 			any_known_country = {
@@ -246,7 +240,9 @@ country_decisions = {
 			}			
 		}
 		effect = {
-				if = {
+			if = { limit = { has_global_flag = knyaz_rights_flag_t } every_country = { limit = { OR = { has_ruler_modifier = great_knyaz has_country_modifier = perma_knyaz } } create_union = ROOT } 
+				else = { 
+					if = {
 						limit = {
 							any_known_country  = { has_country_modifier = yarlyk_claimant }
 						}
@@ -267,9 +263,11 @@ country_decisions = {
 							}
 						}
 					}
+				}	
+			}	
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 	}
  }

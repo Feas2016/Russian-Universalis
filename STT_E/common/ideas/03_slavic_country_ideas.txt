@@ -1,0 +1,307 @@
+VIA_ideas = { #vyatka
+	start = {
+		merchants = 1
+		global_colonial_growth = 15	
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	trigger = {
+		tag = VIA
+	}
+	free = yes
+	
+	natives_in_viatka = {
+		global_unrest = -2
+		tolerance_heathen = 1
+	}
+	boyars_of_viatka = {
+		enemy_core_creation = 0.5
+	}
+	VIA_ushkuyniki = {
+		loot_amount = 0.1
+		land_forcelimit_modifier = 0.15
+	}
+	viatkian_colonisation = {
+ 		colonists = 1
+	}
+	viatka_development = {
+		development_cost = -0.15
+	}
+	veche_of_viatka = {
+		republican_tradition = 0.5
+	}
+	viatkian_forts = {
+		defensiveness = 0.15
+	}
+	
+}
+VLD_ideas = { #vladimir
+
+	start = {
+		discipline = 0.05
+		land_maintenance_modifier = -0.10
+	}
+	
+	bonus = {
+		diplomatic_annexation_cost = -0.1
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	trigger = {
+		tag = VLD
+	}
+	free = yes
+	
+	VLD_first = {
+		legitimacy = 1
+		prestige_decay = -0.01
+	}
+	VLD_fifth = {
+		land_morale = 0.15
+	}
+	VLD_fourth = {
+		ae_impact = -0.1
+		core_creation = -0.1
+	}
+	VLD_seven = {
+ 		tolerance_own = 1
+		global_missionary_strength = 0.04
+	}
+	VLD_second = {
+		development_cost = -0.2
+	}
+	VLD_third = {
+		stability_cost_modifier = -0.2
+		heir_chance = 0.5
+	}
+	VLD_six = {
+		global_tax_modifier = 0.15
+	}
+}
+
+SUZ_ideas = { #suzdal'
+	start = {
+		build_cost = -0.25
+		build_time = -0.25
+	}
+	
+	bonus = {
+		dip_tech_cost_modifier = -0.1
+		land_forcelimit_modifier = 0.25
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	
+	trigger = {
+		tag = SUZ
+	}
+	free = yes
+	
+	SUZ_first = {
+		cavalry_power = 0.2
+		land_morale = 0.05
+	}
+	SUZ_second = {
+		global_trade_power = 0.2
+	}
+	SUZ_third = {
+		diplomatic_reputation = 2
+	}
+	SUZ_fourth = {
+		war_exhaustion = -0.1
+		war_exhaustion_cost = -0.5
+	}
+	SUZ_fifth = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+	SUZ_six = {
+		legitimacy = 1
+		stability_cost_modifier = -0.2
+	}
+	SUZ_seven = {
+ 		num_accepted_cultures = 3
+		promote_culture_cost = -0.5
+	}
+}
+
+PTV_ideas = { #turovo-pinsk
+	start = {
+		infantry_power = 0.1
+		land_attrition = -0.25
+	}
+	
+	bonus = {
+		diplomatic_reputation = 1
+		land_maintenance_modifier = -0.1
+	}
+	
+	trigger = {
+		tag = PTV
+	}
+	free = yes
+	
+	PTV_first = {
+		hostile_attrition = 2
+	}
+	PTV_second = {
+		legitimacy = 2
+	}
+	PTV_third= {
+ 		tolerance_heretic = 3
+	}
+	PTV_fourth = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+	PTV_fifth = {
+		army_tradition = 1
+	}
+	PTV_six = {
+		yearly_corruption = -0.25
+	}
+	PTV_seven = {
+		discipline = 0.05
+		movement_speed = 0.1
+	}
+}
+
+BRY_ideas = { #bryansk
+	start = {
+		war_exhaustion = -0.075	
+	}
+	
+	bonus = {
+		global_unrest = -2
+		stability_cost_modifier = -0.1
+	}
+	
+	trigger = {
+		OR = {
+		tag = BRY
+		tag = CHR
+		}
+	}
+	free = yes
+	
+	BRY_war_with_litva = {
+		infantry_power = 0.1
+		siege_ability = 0.2
+	}
+	BRY_chernig = {
+ 		core_creation = -0.1
+		legitimacy = 1
+	}
+	BRY_rusmetropol = {
+		global_missionary_strength = 0.03
+		tolerance_heretic = 1
+	}
+	BRY_debri = {
+		production_efficiency = 0.2
+	}
+	BRY_diplo = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 2
+	}
+	BRY_litov_udel = {
+		global_tax_modifier = 0.1
+	}
+	BRY_tatar_igo = {
+		manpower_recovery_speed = 0.25
+	}
+	
+}
+
+GNE_ideas = { #gnezno in poland
+	start = {
+		prestige = 1
+		stability_cost_modifier = -0.15
+	}
+	
+	bonus = {
+		technology_cost = -0.5
+	}
+	
+	trigger = {
+		tag = GNE
+	}
+	free = yes
+	
+	GNE_first = {
+		ae_impact = -0.2
+	}
+	GNE_second = {
+		legitimacy = 1
+ 		heir_chance = 1
+	}
+	GNE_third = {
+		core_creation = -0.2
+	}
+	GNE_fourth = {
+		global_missionary_strength = 0.02
+		global_heretic_missionary_strength = 0.03
+	}
+	GNE_fifth = {
+		army_tradition = 1
+		infantry_power = 0.1
+	}
+	GNE_six = {
+		prestige = 1
+		global_autonomy = -0.05
+	}
+	GNE_seven = {
+		land_maintenance_modifier = -0.2
+	}
+	
+}
+VOL_ideas = { #galichko-volyn'
+	start = {
+		discipline = 0.05 
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		development_cost = -0.1
+		land_maintenance_modifier = -0.1
+	}
+	
+	trigger = {
+		OR = { 
+		tag = VOL
+		tag = VVL
+		}
+	}
+	free = yes
+	
+	lev_and_vladimir = {
+		siege_ability = 0.25
+	}
+	king_of_russia = {
+		legitimacy = 1
+ 		diplomatic_reputation = 1
+	}
+	diplomats_of_volyn = {
+		diplomatic_upkeep = 2
+	}
+	malorussia_metropolia = {
+		tolerance_own = 2
+		prestige = 1
+	}
+	religion_union_volyn = {
+		tolerance_heretic = 5
+	}
+	lepshie_muzi = {
+		global_tax_modifier = 0.2
+	}
+	volyn_inheritance = {
+		enemy_core_creation = 1
+		army_tradition = 1
+	}
+	
+}

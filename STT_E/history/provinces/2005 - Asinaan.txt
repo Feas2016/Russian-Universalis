@@ -1,26 +1,25 @@
-#2005 - Asinaan
+#4180 - Hyuga
 
-culture = cheyenne
-religion = totemism
-capital = "Asinaan"
-trade_goods = unknown
+owner = ITO
+controller = ITO
+culture = kyushuan
+religion = shinto
+capital = "Obi"
+trade_goods = livestock
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-native_size = 1
-native_ferocity = 1
-native_hostileness = 1
-discovered_by = north_american
+base_tax = 3
+base_manpower = 2
+base_production = 2
+is_city = yes
+add_core = ITO
+add_core = SMZ
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
 
-1692.1.1 = { discovered_by = ENG } #Henry Kelsey
-1707.5.12 = { discovered_by = GBR }
-1710.1.1 = {
-	owner = ASI
-	controller = ASI
-	add_core = ASI
-	is_city = yes
-	trade_goods = fur
-	culture = nakota
-} #Horses cause waves of migration on the Great Plains
-1732.1.1 = { discovered_by = FRA } # Pierre Gaultier de Varennes
+1542.1.1 = { discovered_by = POR }
+1577.12.8 = { owner = SMZ controller = SMZ }
+1588.1.1 = { owner = ITO controller = ITO }
+1600.10.21 = { remove_core = SMZ }

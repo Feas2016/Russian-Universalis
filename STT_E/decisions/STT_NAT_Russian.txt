@@ -33,6 +33,14 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = TSR
+			if = { 
+				limit = { has_country_modifier = perma_knyaz }
+				remove_country_modifier = perma_knyaz
+				add_country_modifier = {
+				name = "stt_rus_tsar"
+				duration = 36500 #100 
+				}
+			}
 			if = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
@@ -48,13 +56,37 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = TSR
-			}
-			white_ruthenia_area = {
+				add_permanent_claim = TSR
+			} 
+			livonia_area  = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = TSR
+				add_permanent_claim = TSR
+			}
+			curonia_area  = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TSR
+			} 
+			karelia_area  = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TSR
+			}
+			ruthenia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TSR
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = TSR
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -98,26 +130,35 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = VNO
-			310 = { change_province_name = "Великий Новгород" rename_capital = "Великий Новгород"}
-			### Pernament!
+			310 = { change_province_name = "Великий Новгород" rename_capital = "Великий Новгород" }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 1800
+			}
 			russia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = VNO
 			}
-			### WANT!!!
-			estonia_ingria_area  = {
+			karelia_area  = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = VNO
+				add_permanent_claim = VNO
 			}
-			### don't have interested in Crimea at this time.
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 1800
-			}					
+			ruthenia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNO
+			}
+			baltic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = VNO
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -167,40 +208,75 @@ country_decisions = {
 			}	
 		}
 		effect = {
-			russia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = RUS
-			}
-			white_ruthenia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = RUS
-			}
-			sloboda_ukraine_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = RUS
-			}
-			east_dniepr_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = RUS
-			}
-			280 = {
-				add_claim = RUS
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 35
 			change_tag = RUS
+			set_government_rank = 3
+			change_government = constitutional_republic
 			country_event = { id = ideagroups.1 } #Swap Ideas
+			finland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			russia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			poland_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			baltic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			ruthenia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			central_asia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			caucasia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			west_siberia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
+			east_siberia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RUS
+			}
 		}
 		ai_will_do = {
 			factor = 1

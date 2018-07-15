@@ -56,6 +56,13 @@ russian_culture_ideas = {
 	trigger = {
 		culture_group = east_slavic
 		NOT = { tag = VIA }
+		NOT = {	tag = VLD }
+		NOT = {	tag = SUZ }
+		NOT = {	tag = PTV }
+		NOT = {	tag = BRY }
+		NOT = {	tag = CHR }
+		NOT = {	tag = VOL }
+		NOT = {	tag = VVL }
 	}
 	free = yes
 	
@@ -80,6 +87,50 @@ russian_culture_ideas = {
 	}
 	russian_pride = {
 		land_morale = 0.15
+	}
+}
+
+schlesian_ideas = {
+	start = {
+		discipline = 0.05
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+	 	global_tax_modifier = 0.10
+		prestige = 1
+	}
+
+	trigger = {
+		OR = {
+		primary_culture = schlesian
+		tag = SIL
+		}
+		NOT = { tag = LGN } 
+	}
+	free = yes
+
+	under_the_infuence = {
+		improve_relation_modifier = 0.4
+	}
+	silesian_duchies = {
+		stability_cost_modifier = -0.25
+	}
+	german_settlers = {
+		build_cost = -0.25
+		development_cost = -0.1
+	}
+	raubritter = {
+		trade_steering = 0.1
+	}
+	via_regia = {
+		trade_efficiency = 0.1
+	}
+	hanseatic_ties = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	black_gold = {
+		production_efficiency = 0.1
 	}
 }
 

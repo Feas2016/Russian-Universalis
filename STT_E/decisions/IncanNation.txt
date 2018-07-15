@@ -92,6 +92,7 @@ country_decisions = {
 			set_government_rank = 3
 			change_tag = INC
 			change_religion = inti
+			swap_non_generic_missions = yes
 			peru_region = {
 				limit = {
 					NOT = { owned_by = ROOT }

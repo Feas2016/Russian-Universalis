@@ -92,8 +92,8 @@ province_event = {
 		
 	trigger = {
 	    OR = {
-		region = west_siberia_region
-		region = east_siberia_region
+			region = west_siberia_region
+			region = east_siberia_region
 		}
 		has_empty_adjacent_province = yes
 		OR = {
@@ -212,18 +212,16 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    OR = {
-		    tag = RUS
-		}
+	    tag = RUS
 		is_year = 1867
 		is_at_war = no
-		country_exists = USA
-		    has_province = 1810
-			has_province = 977
-			has_province = 2613
-			has_province = 978
-			has_province = 2612
-			has_province = 2611
+		exists = USA
+		owns = 1810
+		owns = 977
+		owns = 2613
+		owns = 978
+		owns = 2612
+		owns = 2611
 	}
 	
 	mean_time_to_happen = {
@@ -232,24 +230,12 @@ country_event = {
 	
 	option = {
 	    name = "stt_rus.a.7"
-		1810 = {
-		cede_province = USA
-		}
-		977 = {
-		cede_province = USA
-		}
-		2613 = {
-		cede_province = USA
-		}
-		978 = {
-		cede_province = USA
-		}
-		2612 = {
-		cede_province = USA
-		}
-		2611 = {
-		cede_province = USA
-		}
+		1810 = { cede_province = USA }
+		977 = { cede_province = USA }
+		2613 = { cede_province = USA }
+		978 = { cede_province = USA }
+		2612 = { cede_province = USA }
+		2611 = { cede_province = USA }
 		add_years_of_income = 2
 	}
 	option = {
