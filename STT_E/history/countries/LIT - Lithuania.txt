@@ -35,7 +35,7 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Войшелк"
 		dynasty = "Палемонович"
-		birth_date = 1230.1.1
+		birth_date = 1223.1.1
 		adm = 2
 		dip = 2
 		mil = 5
@@ -46,7 +46,7 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Шварн"
 		dynasty = "Рюрикович"
-		birth_date = 1230.1.1
+		birth_date = 1236.1.1
 		adm = 3
 		dip = 5
 		mil = 2
@@ -57,14 +57,14 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Тройден"
 		dynasty = "Витович"
-		birth_date = 1220.1.1
+		birth_date = 1223.1.1
 		adm = 4
 		dip = 3
 		mil = 6
 	}
 }
 
-1282.3.1 = {
+1282.4.1 = {
 	monarch = {
 		name = "Довмонт"
 		dynasty = "Витович"
@@ -79,7 +79,7 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Будикид"
 		dynasty = "Сколомендович"
-		birth_date = 1245.1.1
+		birth_date = 1240.1.1
 		adm = 2
 		dip = 1
 		mil = 3
@@ -90,25 +90,25 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Пукувер Будивид"
 		dynasty = "Сколомендович"
-		birth_date = 1250.1.1
+		birth_date = 1260.1.1
 		adm = 3
 		dip = 1
 		mil = 1
 	}
 }
 
-1295.1.1 = {
+1294.1.1 = {
 	monarch = {
 		name = "Витень"
 		dynasty = "Сколомендович"
-		birth_date = 1270.1.1
+		birth_date = 1260.1.1
 		adm = 1
 		dip = 4
 		mil = 4
 	}
 }
 
-1295.1.1 = {
+1294.1.1 = {
 	heir = {
 		name = "Гедимин"
 		monarch_name = "Гедимин"
@@ -165,7 +165,7 @@ capital = 272 # Vilnius
 	monarch = {
 		name = "Евнутий"
 		dynasty = "Гедиминович"
-		birth_date = 1308.1.1
+		birth_date = 1300.1.1
 		adm = 4
 		dip = 1
 		mil = 2
@@ -186,7 +186,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1345.1.1 = {
+1345.2.1 = {
 	monarch = {
 		name = "Ольгерд"
 		dynasty = "Гедиминович"
@@ -197,7 +197,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1345.1.1 = {
+1345.2.1 = {
 	heir = {
 		name = "Андрей"
 		monarch_name = "Андрей"
@@ -211,7 +211,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1345.1.1 = {
+1345.2.1 = {
 	queen = {
 		country_of_origin = VIT
 		name = "Мария"
@@ -225,7 +225,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1345.1.1 = {
+1346.1.1 = {
 	queen = {
 		country_of_origin = TVE
 		name = "Иулиания"
@@ -271,7 +271,7 @@ capital = 272 # Vilnius
 	heir = {
 		name = "Ягайло"
 		monarch_name = "Ягайло"
-		dynasty = "Гедиминович"
+		dynasty = "Ягеллон"
 		birth_date = 1362.1.1
 		death_date = 1434.6.1
 		claim = 95
@@ -280,7 +280,6 @@ capital = 272 # Vilnius
 		mil = 4
 	}
 }
-
 
 1377.5.24 = {
 	monarch = {
@@ -307,7 +306,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1381.10.1 = {
+1381.8.3 = {
 	monarch = {
 		name = "Кейстут"
 		dynasty = "Гедиминович"
@@ -318,7 +317,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1381.10.1 = {
+1381.8.3 = {
 	queen = {
 		country_of_origin = LIT
 		name = "Бирута"
@@ -332,7 +331,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1381.10.1 = {
+1381.8.3 = {
 	heir = {
 		name = "Витовт"
 		monarch_name = "Витовт"
@@ -371,9 +370,9 @@ capital = 272 # Vilnius
 	}
 }
 
-1387.1.1 = { religion = catholic }
+1386.1.1 = { religion = catholic }
 
-1386.2.12 = {
+1386.4.29 = {
 	monarch = {
 		name = "Скиргайло"
 		dynasty = "Гедиминович"
@@ -381,6 +380,21 @@ capital = 272 # Vilnius
 		adm = 3
 		dip = 4
 		mil = 4
+	}
+}
+
+1386.4.29 = {
+	heir = {
+		name = "Витовт"
+		monarch_name = "Витовт"
+		dynasty = "Гедиминович"
+		birth_date = 1350.1.1
+		death_date = 1430.10.27
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 5
+		leader = { name = "Витовт"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0 }
 	}
 }
 
@@ -464,7 +478,7 @@ capital = 272 # Vilnius
 	}
 }
 
-1432.9.1 = {
+1432.9.12 = {
 	monarch = {
 		name = "Сигизмунд"
 		dynasty = "Гедиминович"
@@ -476,7 +490,7 @@ capital = 272 # Vilnius
 	religion = catholic
 }
 
-1432.9.1 = {
+1432.9.12 = {
 	heir = {
 		name = "Михаил"
 		monarch_name = "Михаил"
