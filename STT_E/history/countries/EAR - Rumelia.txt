@@ -1,0 +1,71 @@
+government = administrative_republic 
+government_rank = 1
+primary_culture = bulgarian
+add_accepted_culture = turkish
+add_accepted_culture = greek
+religion = orthodox
+technology_group = eastern
+capital = 2750 # Пловдив
+
+1879.5.16 = {
+	monarch = {
+		name = "Александр Богориди"
+		birth_date = 1822.4.5
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1884.5.16 = {
+	monarch = {
+		name = "Гаврил Крыстевич"
+		birth_date = 1813.4.5
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1885.9.17 = {
+	government = administrative_monarchy
+	monarch = {
+		name = "Александр I"
+		dynasty = "фон Баттенберг"
+		birth_date = 1857.4.17
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1886.9.19 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+
+1887.7.7 = {
+	monarch = {
+		name = "Фердинанд I"
+		dynasty = "фон Саксен-Кобург-Гота"
+		birth_date = 1861.2.26
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1908.9.22 = {
+	monarch = {
+		name = "(Вакантно)"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
