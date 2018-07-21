@@ -15,7 +15,7 @@ country_event = {
 	    exists = VLD
 		exists = GLH
 		senior_union_with = VLD
-		primary_culture = russian
+		culture_group = east_slavic
 		government = monarchy
 		NOT = { has_global_flag = knyaz_rights_flag_t }
 	}
@@ -55,7 +55,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 		government = monarchy
 		NOT = { has_global_flag = knyaz_rights_flag_t }
 	}
@@ -123,7 +123,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 		government = monarchy
 		reverse_has_opinion = { who = GLH value = 60 }
 		NOT = { has_global_flag = knyaz_rights_flag_t }
@@ -144,7 +144,7 @@ country_event = {
 			}
 			hidden_effect = {
 				every_known_country = {
-					limit = { primary_culture = russian }
+					limit = { culture_group = east_slavic is_subject_of_type = tributary_state }
 					country_event = { id = rushorde.5 }
 				}
 			}	
@@ -163,7 +163,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 		government = monarchy
 		NOT = { reverse_has_opinion = { who = GLH value = 0 } }	  
 	    NOT = { has_global_flag = knyaz_rights_flag_f }
@@ -213,7 +213,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 		government = monarchy  
 	    has_ruler_modifier = yarlyk_claimant
 	}
@@ -240,7 +240,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 	}
 	
 	option = {
@@ -261,7 +261,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = GLH
 		exists = VLD
-		primary_culture = russian
+		culture_group = east_slavic
 	}
 	
 	immediate = {
@@ -295,7 +295,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = VLD
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 	}
 	
 	immediate = {
@@ -363,7 +363,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    NOT = { tag = VLD }
 		exists = GLH
-		primary_culture = russian
+		culture_group = east_slavic
 		OR = {
 			owns = 307
 			owns = 1778
@@ -406,7 +406,7 @@ country_event = {
 							random_country = {
 								limit = {
 									reverse_has_opinion = { who = GLH value = 5 } 
-									primary_culture = russian
+									culture_group = east_slavic
 									is_subject_of_type = tributary_state
 								}
 								country_event = { id = rushorde.1 }
@@ -437,7 +437,7 @@ country_event = {
 		is_subject_of_type = tributary_state
 	    exists = GLH
 		exists = VLD
-		primary_culture = russian
+		culture_group = east_slavic
 	}
 	
 	option = {
@@ -534,7 +534,7 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		primary_culture = russian
+		culture_group = east_slavic
 		OR = {
 		AND = { NOT = { is_year = 1330 } tag = TVE }
 		AND = { is_year = 1330 tag = MOS }
@@ -565,7 +565,7 @@ country_event = {
 	
 	trigger = {
 		is_subject_of_type = tributary_state
-	    primary_culture = russian
+	    culture_group = east_slavic
 		has_ruler_modifier = great_knyaz
 		is_month = 10 #November
 		NOT = { is_month = 11 }
@@ -577,7 +577,7 @@ country_event = {
 	
 	option = {
 	    name = "rushorde.12.a"
-		every_country = { limit = { is_subject_of_type = tributary_state primary_culture = russian NOT = { has_ruler_modifier = great_knyaz } } country_event = { id = rushorde.13 days = 1 random = 30 } }
+		every_country = { limit = { is_subject_of_type = tributary_state culture_group = east_slavic NOT = { has_ruler_modifier = great_knyaz } } country_event = { id = rushorde.13 days = 1 random = 30 } }
 	}
 	option = {
 	    name = "rushorde.12.b"
@@ -631,6 +631,10 @@ country_event = {
 				factor = 0
 				NOT = { has_opinion = { who = FROM value = 50 } }
 			}
+			modifier = {
+				factor = 0
+				num_of_loans = 1
+			}
 		}
 		hidden_effect = {
 		multiply_variable = { which = treasurydan value = 0.3 } 
@@ -651,6 +655,14 @@ country_event = {
 				AND = { has_opinion = { who = FROM value = 180 }
 				alliance_with = FROM
 				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_opinion = { who = FROM value = 50 } }
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 1
 			}
 		}
 		hidden_effect = {
@@ -681,7 +693,7 @@ country_event = {
 		}
 		add_prestige = -3
 		reverse_add_opinion = { who = FROM modifier = great_knyaz_decline }
-		every_country = { limit = { is_subject_of_type = tributary_state primary_culture = russian } add_opinion = { who = ROOT modifier = all_knyaz_decline } }
+		every_country = { limit = { is_subject_of_type = tributary_state culture_group = east_slavic } add_opinion = { who = ROOT modifier = all_knyaz_decline } }
 		if = { limit = { has_global_flag = knyaz_off_notification } FROM = { country_event = { id = rushorde.18 } } 
 		else = { FROM = { country_event = { id = rushorde.17 } } }
 		}
@@ -775,10 +787,6 @@ country_event = {
 
 country_event = {
 	id = rushorde.15
-	title = rushorde.16.t
-	desc = rushorde.16.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	
 	is_triggered_only = yes
 	hidden = yes
 	
@@ -878,7 +886,7 @@ country_event = {
 	
 	trigger = {
 		is_subject_of_type = tributary_state
-	    primary_culture = russian
+	    culture_group = east_slavic
 		has_ruler_modifier = great_knyaz
 		is_month = 0 # January
 		NOT = { is_month = 1 }

@@ -92,8 +92,8 @@ province_event = {
 		
 	trigger = {
 	    OR = {
-			region = west_siberia_region
-			region = east_siberia_region
+		region = west_siberia_region
+		region = east_siberia_region
 		}
 		has_empty_adjacent_province = yes
 		OR = {
@@ -214,14 +214,15 @@ country_event = {
 	trigger = {
 	    tag = RUS
 		is_year = 1867
+		NOT = { is_year = 1868 }
 		is_at_war = no
 		exists = USA
-		owns = 1810
-		owns = 977
-		owns = 2613
-		owns = 978
-		owns = 2612
-		owns = 2611
+		is_territory = 1810
+		is_territory = 977
+		is_territory = 2613
+		is_territory = 978
+		is_territory = 2612
+		is_territory = 2611
 	}
 	
 	mean_time_to_happen = {
