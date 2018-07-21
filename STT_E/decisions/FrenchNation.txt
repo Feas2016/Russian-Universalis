@@ -16,6 +16,7 @@ country_decisions = {
 			NOT = { exists = FRA }	### STT
 			NOT = { exists = WEK }	### STT
 			NOT = { exists = UEF }	### STT
+			NOT = { tag = RFC } 	### STT
 			OR = {
 				ai = no
 				NOT = { exists = FRA }
