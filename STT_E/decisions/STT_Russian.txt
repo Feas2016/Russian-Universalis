@@ -407,8 +407,6 @@ country_decisions = {
 		}
 	}
 
-
-
 	velikoe_knyazestvo = {
 		major = yes
 		potential = {
@@ -422,9 +420,13 @@ country_decisions = {
 				AND = {
 					government = rus_government
 					government_rank = 2
-					}
 				}
 			}
+			is_year = 1400
+			OR = { MOS = { has_ruler_modifier = great_knyaz }
+			MOS = { has_country_modifier = perma_knyaz } 
+			}
+		}
 		allow = {
 			num_of_cities = 5
 			is_at_war = no
@@ -444,7 +446,20 @@ country_decisions = {
 		effect = {
 			change_government = rus_government
 			set_government_rank = 2
+			if = { limit = { has_global_flag = knyaz_rights_flag_t }
+				hidden_effect = { every_country = { limit = { has_country_modifier = perma_knyaz } remove_country_modifier = perma_knyaz } }
+				add_country_modifier = {
+				name = "perma_knyaz"
+				duration = -1
+				}
+				else = { 
+					add_ruler_modifier = {
+					name = "great_knyaz"
+					duration = -1
+					}
+				}
 			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -470,34 +485,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 0
-		}
-	}
-	
-	declare_parties = {
-		major = yes
-		potential = {
-		is_year = 1900
-		tag = RUS
-		}
-		allow = {
-			adm_power = 200
-		}
-		effect = {
-			add_adm_power = -200
-			add_faction = russian_soviet
-			add_faction = constituto_democratic_party
-			add_faction = russian_social_democratic_work_party
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				NOT = { stability = -1 }
-				factor = 0
-			}
-			modifier = {
-				is_at_war = no
-				factor = 0.35
-			}
 		}
 	}
 	
