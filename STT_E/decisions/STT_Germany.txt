@@ -20,14 +20,20 @@ country_decisions = {
 			add_treasury = -100
 			add_adm_power = -50
 			remove_country_modifier = ger_hommage
-			random_list = {
-                50 = {
-                    country_event  = { id = ger_main.56475}
+			hidden_effect = {
+				if = {
+					limit = { 
+						POL = { war_exhaustion = 3 }
 					}
-                50 = {
-                    country_event  = { id = ger_main.56476}
-                 }
-            }
+					country_event  = { id = ger_main.56475}
+				}
+				else_if = {
+					limit = { 
+						POL = { NOT = { war_exhaustion = 3 } }
+					}
+					country_event  = { id = ger_main.56476}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
