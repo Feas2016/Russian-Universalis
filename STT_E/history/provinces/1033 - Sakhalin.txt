@@ -42,12 +42,13 @@ discovered_by = KMC
 1636.5.15 = { add_core = JAP }
 1640.1.1 = { discovered_by = TSR } # Ivan Moskvitin
 1679.1.1 = {
-	owner = JAP
-	controller = JAP
+	owner = TKG
+	controller = TKG
 	culture = japanese
 	religion = shinto
 	trade_goods = fish
 } # Russian & Japanese attemps at colonization
-1704.1.1 = { add_core = JAP }
+1704.1.1 = { add_core = TKG }
 1767.1.1 = { add_core = RUS }
 1787.1.1 = { discovered_by = FRA } # Jean-Francois de La Pérouse
+1869.6.27 = { remove_core = TKG add_core = JAP owner = JAP controller = JAP }

@@ -49,9 +49,10 @@ base_production = 9 } # The General Estates
 	remove_core = HAB
 } # The Treaty of Campo Formio, Luxembourg is ceded to France 
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.12 = {owner = RFC controller = RFC add_core = RFC remove_core = FRA}
 1815.6.9 = {	owner = LUX
 	controller = LUX
-	remove_core = FRA
+	remove_core = RFC
 } # Grand Duchy of Luxembourg
 1839.4.19 = {
 	controller = BLG
@@ -59,4 +60,3 @@ base_production = 9 } # The General Estates
 	add_core = BLG
 	remove_core = LUX
 }
-1814.4.12 = {owner = RFC controller = RFC add_core = RFC remove_core = FRA}

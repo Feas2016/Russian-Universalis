@@ -40,12 +40,13 @@ discovered_by = KMC
 
 1646.1.1 = {
 	discovered_by = TSR
-	owner = JAP
-	controller = JAP
+	owner = TKG
+	controller = TKG
 	culture = japanese
 	religion = shinto
 	is_city = yes
 	trade_goods = fish
 } # Japanese attemps at colonization
-1671.1.1 = { add_core = JAP }
+1671.1.1 = { add_core = TKG }
 1767.1.1 = { add_core = RUS }
+1869.6.27 = { remove_core = TKG add_core = JAP owner = JAP controller = JAP }

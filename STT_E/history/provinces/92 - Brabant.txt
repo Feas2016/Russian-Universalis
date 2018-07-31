@@ -52,11 +52,12 @@ discovered_by = ottoman
 1798.10.12 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # The Flemish Peasant Rebellion
 1798.12.5 = { revolt = {} controller = FRA }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.12 = {owner = RFC controller = RFC add_core = RFC remove_core = NED}
 1815.3.16 = {
 	owner = NED
 	controller = NED
 	add_core = NED
-	remove_core = FRA
+	remove_core = RFC
 } # The United Kingdom of the Netherlands
 1830.8.25 = {
 	owner = BLG
@@ -64,4 +65,3 @@ discovered_by = ottoman
 	add_core = BLG
 	add_claim = NED
 }
-1814.4.12 = {owner = RFC controller = RFC add_core = RFC remove_core = NED}
