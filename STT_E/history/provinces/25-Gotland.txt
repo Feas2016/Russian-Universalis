@@ -1,9 +1,8 @@
 #Gotland- Visby etc
 
-owner = DAN 
-controller = DAN
+owner = GOT #STT
+controller = GOT #STT
 add_core = GOT
-add_core = DAN
 add_core = SWE
 culture = gutnish
 religion = catholic
@@ -22,7 +21,13 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
+add_permanent_province_modifier = {
+	name = minor_coastal_center_of_trade_modifier
+	duration = -1
+}
 
+1288.1.1 = { owner = GOT controller = GOT } # war between german and gotland citizens
+1361.1.1 = { owner = DAN controller = DAN add_core = DAN } #Denmark conquer Gotland
 1439.9.24 = { revolt = { type = pretender_rebels size = 1 leader = "Eric Gryf" } controller = REB } # Eric settles at Visborg Castle, living off piracy
 1449.1.1 = { controller = DAN } # Eric surrenders the Castle to Denmark
 1523.4.14 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Prelude to 'Grevefejden'(Sören Norrby)

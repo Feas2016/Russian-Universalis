@@ -5,12 +5,7 @@
 
 
 ############  Important Natural Harbor #################################################
-important_natural_harbor = {
-	province_trade_power_value = 2
-	naval_forcelimit = 1
-	local_development_cost = -0.05
-	picture = "province_trade_power_value"
-}
+
 
 ############ Notable centers of trade #################################################
 minor_coastal_center_of_trade_modifier = {
@@ -43,12 +38,12 @@ major_inland_center_of_trade_modifier = {
 ############ Important river estuaries #################################################
 minor_river_estuary_modifier = {
 	province_trade_power_value = 5
-	picture = "estuary_icon"
+	picture = "ustye_reki"
 }
 
 major_river_estuary_modifier = {
 	province_trade_power_value = 10
-	picture = "estuary_icon"
+	picture = "ustye_reki"
 }
 
 ############ City modifiers #################################################

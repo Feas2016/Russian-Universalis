@@ -141,10 +141,10 @@ wine = {
 		}
 		modifier = {
 			factor = 1.5
-			area = cuyo_area
-			region = france_region
-			region = italy_region
-		}
+				area = cuyo_area
+				region = france_region
+				region = italy_region
+			}
 		modifier = {
 			factor = 1.1
 			FROM = {
@@ -215,11 +215,11 @@ wool = {
 		}
 		modifier = {
 			factor = 0.15
-			has_terrain = grasslands
-			has_terrain = hills
-			has_terrain = forest
-			has_terrain = woods
-		}
+				has_terrain = grasslands
+				has_terrain = hills
+				has_terrain = forest
+				has_terrain = woods
+			}
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -385,7 +385,7 @@ fur = {
 salt = {
 	color = { 0.999 0.999 0.999 }
 	modifier = {
-		land_maintenance_modifier = -0.10
+		land_maintenance_modifier = -0.05
 	}
 	province = {
 		local_defensiveness = 0.15
@@ -828,10 +828,10 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
-		}
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		modifier = {
 			factor = 1.25
 			OR = {
@@ -1018,11 +1018,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
 		}
-	}
 }
 
 
@@ -1441,11 +1441,11 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		}
-	}
 }
 
 livestock = {
@@ -1729,10 +1729,10 @@ gems = {
 		}
 		modifier = {
 			factor = 2.0
-			OR = {
+			#OR = {
 				#area = diamantina_area	### STT
 				area = bogota_area
-			}
+			#}
 		}
 		modifier = {
 			factor = 1.5
@@ -1762,26 +1762,35 @@ gems = {
 }
 
 coal = {
-	color = { 0.1 0.1 0.1 }
-	modifier = {
-		production_efficiency = 0.10
+	color = { 0.0 1.0 1.0 }
+	is_latent = yes
+	is_valuable = yes
+
+	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
+	
+	trigger = {
+		OR = {
+			development = 20
+			owner = { innovativeness = 20 }
+		}
+		provincial_institution_progress = {
+			which = enlightenment
+			value = 100
+		}
+		owner = { has_institution = enlightenment }
 	}
+	
+	modifier = {
+
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	province = {
+		local_state_maintenance_modifier = -0.2
+	}
+
 	chance = {
-		factor = 10
-		modifier = {
-			factor = 0
-			NOT = { is_year = 1720 }
-		}
-		modifier = {
-			factor = 1.5
-			is_random_new_world = yes
-			OR = {
-				has_terrain = mountain
-				has_terrain = hills
-				has_terrain = highlands
-			}
-			continent = new_world #Always in RNW
-		}
+		factor = 1
 	}
 }
 
@@ -1789,4 +1798,17 @@ coal = {
 
 unknown = {
 	color = { 0.5 0.5 0.5 }
+}
+
+steel = {
+	color = { 0.0 0.0 0.0 }
+	modifier = {
+		fire_damage = 0.15
+	}
+	province = {
+		local_build_cost = -0.25
+	}
+	chance = {
+		factor = 0
+	}
 }

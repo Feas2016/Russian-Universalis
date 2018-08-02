@@ -859,7 +859,7 @@ TIS_ideas = {
 	bonus = {
 	    mil_tech_cost_modifier  = -0.075
 	}
-	    trigger = {
+    trigger = {
 		tag = TIS
 	}
 	free = yes
@@ -1121,12 +1121,12 @@ UKR_ideas = {
 
 NDL_ideas = {
     start = {
-	    land_morale = 0.20
+	    land_morale = 0.15
 		may_perform_slave_raid = yes
 	}
 	
 	bonus = {
-	    army_tradition = 1.5
+	    army_tradition = 1.0
 	}
 	
 	trigger = {
@@ -1143,9 +1143,14 @@ NDL_ideas = {
 	    discipline = 0.05
 	}
 	
+	NDL_seventh_idea = {
+	    colonists = 1
+		global_colonial_growth = 20
+	}
+	
 	NDL_third_idea = {
-	    infantry_power = 0.20
-		land_forcelimit_modifier = 0.20
+	    infantry_power = 0.15
+		land_forcelimit_modifier = 0.10
 	}
 	
 	NDL_fourth_idea = {
@@ -1154,17 +1159,12 @@ NDL_ideas = {
 	}
 	
 	NDL_fifth_idea = {
-	    land_maintenance_modifier = -0.40
+	    land_maintenance_modifier = -0.33
 	}
 	
 	NDL_sixth_idea = {
 	    leader_land_shock = 1
 		leader_land_manuever = 1
-	}
-	
-	NDL_seventh_idea = {
-	    colonists = 1
-		global_colonial_growth = 20
 	}
 }
 
@@ -1377,5 +1377,47 @@ SGT_ideas = {
 	
 	sgt_king_romania = {
 	    stability_cost_modifier = -0.15
+	}
+}
+
+ATO_Ideas = {
+	start = {
+		cavalry_cost = -0.2
+		cavalry_power = 0.10
+	}
+	
+	bonus = {
+		global_trade_power = 0.10
+	}
+	
+	trigger = {
+		tag = ATO
+	}
+	free = yes
+	
+	ato_first = {
+		land_morale = 0.1
+		cav_to_inf_ratio = 0.1
+	}
+	ato_second = {
+		papal_influence = 1
+	}
+	ato_third = {
+		tolerance_own = 1
+	}
+	ato_fourth = {
+		improve_relation_modifier = 0.15
+	}
+	ato_fifth = {
+		spy_offence = 0.15
+		rebel_support_efficiency = 0.2
+	}
+	ato_six = {
+		production_efficiency = 0.1
+		global_prov_trade_power_modifier = 0.1
+	}
+	ato_seven = {
+		naval_maintenance_modifier = -0.1
+		fort_maintenance_modifier = -0.1
 	}
 }

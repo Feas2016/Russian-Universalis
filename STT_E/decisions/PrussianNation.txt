@@ -22,6 +22,23 @@ country_decisions = {
 				is_religion_enabled = reformed
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 41	# Königsberg
+				AND = {
+					province_id = 43	# Danzig
+					ROOT = { NOT = { owns_core_province = 2995 } }
+				}
+				AND = {
+					province_id = 2995
+					ROOT = { NOT = { owns_core_province = 2995 } }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = PRU }
 			adm_tech = 10
@@ -38,6 +55,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -134,6 +152,13 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			province_id = 41	# Königsberg
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = PRU }
 			adm_tech = 10
@@ -149,6 +174,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = PRU
+			swap_non_generic_missions = yes
 			###STT -1
 			east_prussia_area = {
 				limit = {
@@ -226,6 +252,17 @@ country_decisions = {
 				government = monastic_order_government
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 41	# Königsberg
+				province_id = 42	# Warmia
+				province_id = 43	# Danzig
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			NOT = { exists = PRU }
 			adm_tech = 18 #STT
@@ -242,6 +279,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PRU
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

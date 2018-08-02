@@ -1,0 +1,27 @@
+name = "Second Ottoman-Balkanian War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 3097 # Temes
+}
+
+1913.6.29 = {
+	add_attacker = BUL
+	add_defender = MON
+	add_defender = SER
+	add_defender = GRE
+}
+1913.7.10 = {
+	add_defender = RMN
+}
+1913.7.12 = {
+	add_defender = TUR
+}
+1913.8.10 = {
+	rem_defender = TUR
+	rem_attacker = BUL
+	rem_defender = MON
+	rem_defender = GRE
+	rem_defender = SER
+	rem_defender = RMN
+}

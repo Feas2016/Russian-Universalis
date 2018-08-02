@@ -1,0 +1,60 @@
+########################################
+#          New France Events                #
+########################################
+
+namespace = stt_flavor_fra
+normal_or_historical_nations = yes
+
+
+#France fassals
+country_event = {
+	id = stt_flavor_fra.1
+	title = "stt_flavor_fra.1.t"
+	desc = "stt_flavor_fra.1.d"
+
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+		
+	trigger = {
+	    is_year = 1309
+		NOT = { is_year = 1400 }
+		tag = FRA
+	}
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+			
+	option = {
+	    name = stt_flavor_fra.1.a
+		add_country_modifier = { name = fra_darktime_vassal duration = -1 }
+	}   
+}
+
+# France vassal new time
+country_event = {
+	id = stt_flavor_fra.2
+	title = "stt_flavor_fra.2.t"
+	desc = "stt_flavor_fra.2.d"
+	picture = FORT_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = FRA
+		is_year = 1400
+		has_country_modifier = fra_darktime_vassal
+	}
+
+	mean_time_to_happen = { 
+		months = 12
+	}
+	
+	option = {
+		name = "stt_flavor_fra.2.a"
+		remove_country_modifier = fra_darktime_vassal
+	}
+}

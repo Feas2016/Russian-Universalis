@@ -34,6 +34,17 @@ country_decisions = {
 				current_age = age_of_reformation
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 364 #Gazzah
+				province_id = 379 #Jerusalem
+				province_id = 1854 #Jaffa
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
 			owns_core_province = 364 #Gazzah
@@ -75,6 +86,7 @@ country_decisions = {
 					}
 				}
 				change_tag = KOJ
+				swap_non_generic_missions = yes
 				if = {
 					limit = { has_custom_ideas = no }
 					country_event = { id = ideagroups.1 } #Swap Ideas

@@ -25,6 +25,19 @@ country_decisions = {
 			}
 			adm_tech = 18	### STT
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 361 # Cairo
+				province_id = 362 # Rashid
+				province_id = 363 # Dumyat
+				province_id = 358 # Alexandria
+				province_id = 359 # Faiyum
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			capital = 361 # Cairo
 			adm_tech = 20
@@ -46,6 +59,7 @@ country_decisions = {
 				add_stability = -1
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -99,6 +113,13 @@ country_decisions = {
 					region = maghreb_region
 					region = horn_of_africa_region
 				}
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 361 # Cairo
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {

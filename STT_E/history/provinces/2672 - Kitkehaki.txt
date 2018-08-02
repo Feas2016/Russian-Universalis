@@ -1,23 +1,28 @@
-# No previous file for Kitkehaki
+#4181 - Higo
 
-culture = pawnee
-religion = totemism
-capital = "Kitkehaki"
-trade_goods = unknown
+owner = KKC
+controller = KKC
+culture = kyushuan
+religion = shinto
+capital = "Kumamoto"
+trade_goods = fish
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-native_size = 5
-native_ferocity = 1
-native_hostileness = 2
-discovered_by = north_american
+base_tax = 2
+base_manpower = 3
+base_production = 3
+is_city = yes
+add_core = KKC
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
 
-1541.1.1 = { discovered_by = SPA } # Francisco Vásquez de Coronado
-1760.1.1 = {
-	owner = PAW
-	controller = PAW
-	add_core = PAW
-	trade_goods = grain
-	is_city = yes 
-} #Great Plain tribes spread over vast territories
+1542.1.1 = { discovered_by = POR }
+1554.1.1 = { add_core = OTM owner = OTM controller = OTM remove_core = KKC }
+1578.11.12 = { add_core = SMZ }
+1581.1.1 = { owner = SMZ controller = SMZ remove_core = OTM }
+1587.5.15 = { fort_15th = yes } # Kumamoto Castle
+1587.5.15 = { owner = ODA controller = ODA add_core = ODA remove_core = SMZ} #Hideyoshi's conquest of Kyushu
+1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
+1869.6.27 = { remove_core = TKG add_core = JAP owner = JAP controller = JAP }

@@ -229,6 +229,7 @@ guiTypes = {
 					format = centre
 					fixedsize = yes
 				}
+				
 			
 			}
 
@@ -353,6 +354,18 @@ guiTypes = {
 				downsound = ""
 				fullscreen=yes
 				Orientation = "CENTER_DOWN"
+				
+				instantTextBoxType = {
+					name ="geks_version_label"
+					position = { x = 9 y = 41 }
+					
+					font = "vic_18"
+					borderSize = {x = -164 y = 5}
+					text = "GEKS_VERSION"	
+					format = left
+					maxWidth = 250
+					maxHeight = 20	
+				}
 				
 ### MAIN MENU PANEL (bottom)
 
@@ -1401,8 +1414,8 @@ guiTypes = {
 					clicksound = back_click
 				}
 			}
-			
-			windowType = {
+							
+			windowType = {		
 				name ="top"
 				backGround=""
 				position = { x=0 y =0}
@@ -1630,8 +1643,8 @@ guiTypes = {
 						maxWidth = 180
 						maxHeight = 24	
 						format = centre
-					}					
-					
+					}
+
 					guiButtonType = {
 						name = "create_team_button"
 						position = { x = -20 y = 20 }
@@ -2347,7 +2360,7 @@ guiTypes = {
 			tooltipText =""
 			delayedTooltipText = ""
 		}
-
+	
 		instantTextBoxType = {
 			name = "name"
 			position = { x = 20 y =0 }
@@ -2427,7 +2440,7 @@ guiTypes = {
 			maxHeight = 32	
 			Orientation = "UPPER_LEFT"
 		}
-
+	
 	}
 
 	windowType = {

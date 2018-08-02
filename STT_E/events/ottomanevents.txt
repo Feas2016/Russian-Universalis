@@ -7,7 +7,6 @@ country_event = {
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	trigger = {		
-		OR = { tag = TUR tag = TU0 }
 		religion_group = muslim
 		is_month = 7		
 		NOT = { is_month = 9 }
@@ -19,7 +18,7 @@ country_event = {
 	option = {
 		name = "ramadan1"
 		add_piety = 0.1
-		add_treasury = -100
+		add_years_of_income = -0.085
 		add_country_modifier = { 
 			name = ignored_ramadan_timer
 			duration = 1200
@@ -29,6 +28,7 @@ country_event = {
 	option = {
 		name = "ramadan2"
 		add_piety = -0.1
+		add_prestige = -5
 		hidden_effect = {
 			add_country_modifier = { 
 				name = ignored_ramadan_timer
@@ -44,7 +44,7 @@ country_event = {
 	id = ottoman.2
 	title = "ott.t.2"
 	desc = "ott.d.2"
-	picture = ANGRY_MOB_eventPicture
+	picture = CIVIL_WAR_eventPicture
 
 
 	trigger = { 
@@ -168,11 +168,13 @@ country_event = {
 	id = ottoman.5
 	title = "ott.t.5"
 	desc = "ott.d.5"
-	picture = WAR_OF_THE_ROSES_eventPicture
+	picture = THEATRE_eventPicture
 	
 
 	trigger = { 
-		OR = { tag = TUR tag = TU0 }	
+		religion_group = muslim	
+		government_rank = 2
+		government = monarchy		
 	}
 
 	mean_time_to_happen = {
@@ -187,7 +189,7 @@ country_event = {
 	option = {
 		name = "harem1"		
 		ai_chance = { factor = 55 }
-		add_mil_power = -100
+		add_mil_power = -50
 		add_legitimacy = 5
 	}
 	option = {
@@ -199,7 +201,7 @@ country_event = {
 				NOT = { stability = 0 }
 			}
 		}
-		add_legitimacy = -25
+		add_legitimacy = -15
 	}
 }
 

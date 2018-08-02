@@ -40,4 +40,4 @@ native_hostileness = 6
 1794.1.1 = { controller = GBR owner = GBR add_core = GBR } # Occupied by British forces
 1802.3.25 = { controller = FRA owner = FRA }# Treaty of Amiens, returned to France
 1809.1.1 = { controller = GBR } # Occupied again
-1814.4.11 = { controller = FRA } # Treaty of Fontainebleu, Napoleon abdicates unconditionally
+1814.4.12 = {owner = RFC controller = RFC add_core = RFC remove_core = FRA} # Treaty of Fontainebleu, Napoleon abdicates unconditionally

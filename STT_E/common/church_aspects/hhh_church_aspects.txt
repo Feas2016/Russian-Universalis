@@ -1,18 +1,18 @@
 christian_cult_aspect = {
-	effect = {
+	modifier = {
 		ae_impact = -0.10
 	}
 	ai_will_do = {
 		factor = 15
 		modifier = {
-			factor = 1
+			factor = 2
 			is_at_war = no
 		}
 	}
 }
 
 polygamy_marriages_aspect = {
-	effect = {
+	modifier = {
 		legitimacy = 0.25
 		devotion = 0.25
 		horde_unity = 0.25
@@ -34,7 +34,7 @@ polygamy_marriages_aspect = {
 }
 
 jesus_aspect = {
-    effect = {
+    modifier = {
 		global_unrest = -1
 		tolerance_own = 1
 	}
@@ -52,7 +52,7 @@ jesus_aspect = {
 }
 
 inclusion_of_local_sacraments_aspect = {
-	effect = { 
+	modifier = { 
 		global_missionary_strength = 0.01
 	}
 	ai_will_do = {
@@ -65,7 +65,7 @@ inclusion_of_local_sacraments_aspect = {
 }
 
 ares_cults_aspect = {
-	effect = { 
+	modifier = { 
 		land_morale = 0.05
 		naval_morale = 0.05
 	}
@@ -79,7 +79,7 @@ ares_cults_aspect = {
 }
 
 zeus_cult_aspect = {
-	effect = { 
+	modifier = { 
 		prestige = 0.5
 	}
 	ai_will_do = {
@@ -92,7 +92,7 @@ zeus_cult_aspect = {
 }
 
 hermes_cult_aspect = {
-	effect = {
+	modifier = {
 		global_colonial_growth = 20
 	}
 	ai_will_do = {
@@ -109,7 +109,7 @@ hermes_cult_aspect = {
 }
 
 muslim_cult_aspect = {
-	effect = {
+	modifier = {
 		manpower_recovery_speed = 0.1
 		cav_to_inf_ratio = 0.25
 	}
@@ -128,9 +128,10 @@ muslim_cult_aspect = {
 }
 
 artemis_aspect = {
-	effect = {
+	modifier = {
 		cav_to_inf_ratio = 0.25
 	}
 	ai_will_do = {
 		factor = 5
+	}
 }

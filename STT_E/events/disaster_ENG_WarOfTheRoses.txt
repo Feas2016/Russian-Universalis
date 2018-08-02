@@ -1013,6 +1013,9 @@ country_event = {
 			remove_province_modifier = wotr_local_support_for_york
 			remove_province_modifier = rebel_refugees
 			remove_province_modifier = rebel_stronghold
+			
+			# Set Flag
+			set_country_flag = had_war_of_the_roses
 		}
 		end_disaster = war_of_the_roses
 	}

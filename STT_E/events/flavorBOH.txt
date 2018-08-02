@@ -67,6 +67,7 @@ country_event = {
 			duration = -1
 		}
 		set_country_flag = boh_supported_hussites
+		set_country_flag = boh_hussites_mission_accept
 		PAP = {
 			country_event = { id = flavor_boh.9 }
 		}
@@ -105,6 +106,7 @@ country_event = {
 				size = 1
 			}
 		}
+		set_country_flag = boh_hussites_mission_decline
 		if = {
 			limit = { exists = PAP }
 			add_papal_influence = 5

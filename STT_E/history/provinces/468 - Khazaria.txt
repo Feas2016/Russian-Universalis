@@ -3,8 +3,8 @@
 owner = GLH
 controller = GLH 
 culture = nogaybak
-religion = sunni
-capital = "Cherny Yar"
+religion = tengri_pagan_reformed
+capital = "×¸ðíûé ßð"
 trade_goods = wool
 hre = no
 base_tax = 1
@@ -19,6 +19,9 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 
+1321.1.1 = {
+	religion = sunni
+}
 1444.1.1 = { owner = GOL controller = GOL add_core = GOL } #vanilla date
 1459.1.1 = { owner = AST controller = AST add_core = AST remove_core = GOL } # Independence of Astrakhan
 1556.6.2 = { owner = TSR controller = TSR add_core = TSR remove_core = AST } # Russians acquire Volga after fall of Astrakhan

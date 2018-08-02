@@ -57,4 +57,6 @@ discovered_by = SFA
 1796.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Revolts against the Ottomans
 1798.8.3 = { revolt = {} controller = FRA } # Occupied by the French
 1802.5.13 = { controller = TUR unrest = 8 } # Turkish rule is restored but a few troublesome years follow
-1811.6.1 = { unrest = 0 } # Order is restored
+1805.5.12 = { add_core = EGY }
+1811.6.1 = { remove_core = MAM unrest = 0 } # Order is restored
+1831.10.14 = { owner = EGY controller = EGY }

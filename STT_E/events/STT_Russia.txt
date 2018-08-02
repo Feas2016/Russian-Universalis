@@ -204,3 +204,42 @@ country_event = {
 		vassalize = YAR
 	}
 }
+country_event = {
+	id = stt_rus.7
+	title = "stt_rus.t.7"
+	desc = "stt_rus.de.7"
+	picture = BD_34_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = RUS
+		is_year = 1867
+		NOT = { is_year = 1868 }
+		is_at_war = no
+		exists = USA
+		is_territory = 1810
+		is_territory = 977
+		is_territory = 2613
+		is_territory = 978
+		is_territory = 2612
+		is_territory = 2611
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+	    name = "stt_rus.a.7"
+		1810 = { cede_province = USA }
+		977 = { cede_province = USA }
+		2613 = { cede_province = USA }
+		978 = { cede_province = USA }
+		2612 = { cede_province = USA }
+		2611 = { cede_province = USA }
+		add_years_of_income = 2
+	}
+	option = {
+	    name = "stt_rus.b.7"
+	}
+}

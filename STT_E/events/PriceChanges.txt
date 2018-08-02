@@ -1682,6 +1682,7 @@ country_event = {
 				province_without_special_goods_produced_trigger = yes #Don't offer if true.
 			}
 		}
+		add_innovativeness_small_effect = yes
 		event_target:bookmarket_here = {
 			if = {
 				limit = { NOT = { trade_goods = paper } }
@@ -1700,6 +1701,7 @@ country_event = {
 		ai_chance = {
 			factor = 1 #Practically only picked if option A is unavailable
 		}
+		add_innovativeness_small_effect = yes
 		event_target:bookmarket_here = {
 			add_base_production = 2
 		}
@@ -1993,6 +1995,7 @@ country_event = {
 	
 	option = {
 		name = prices.36.a
+		add_innovativeness_small_effect = yes
 		event_target:lending_libraries_here = {
 			if = {
 				limit = {
@@ -2405,6 +2408,7 @@ country_event = {
 	option = {
 		name = prices.42.a
 		add_dip_power = 100
+		add_innovativeness_small_effect = yes
 		change_price = {
 			trade_goods = livestock
 			key = SELECTIVE_BREEDING
@@ -2492,6 +2496,7 @@ country_event = {
 	option = {
 		name = prices.44.a
 		add_dip_power = 100
+		add_innovativeness_small_effect = yes
 		change_price = {
 			trade_goods = glass
 			key = MODERN_OPTICS
@@ -2531,6 +2536,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			set_global_flag = lead_crystal_happened #Checked by industrialization events for RB
 			random_owned_province = {
 				limit = {
 					manufactories = 100
@@ -2563,6 +2569,93 @@ country_event = {
 			trade_goods = glass
 			key = LEAD_CRYSTAL
 			value = -0.65
+			duration = -1
+		}
+	}
+}
+
+
+# Greater Availability of Coal
+country_event = {
+	id = prices.46
+	title = prices.46.t
+	desc = prices.46.d
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		#has_dlc = "Rule Britannia"
+		NOT = { has_global_flag = steam_engine_happened }
+		has_country_flag = watt_steam_engine_flag #Set by Industrialization Events
+		has_country_flag = coke_blast_furnaces_flag #Set by Industrialization Events.
+		has_institution = enlightenment
+		any_owned_province = {
+			trade_goods = coal
+			has_building = furnace
+		}
+		coal = 10
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					trade_goods = coal
+					has_building = furnace
+				}
+				save_event_target_as = coal_province
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						trade_goods = coal
+						NOT = { has_building = furnace }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						any_owned_province = {
+							trade_goods = coal
+							NOT = { has_building = furnace }
+						}
+					}
+					save_event_target_as = potential_furnace
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = prices.46.a
+		add_years_of_income = 1
+		add_dip_power = 50
+		if = {
+			limit = {
+				has_saved_event_target = potential_furnace
+			}
+			event_target:coal_province = {
+				add_base_production = 2
+			}
+			event_target:potential_furnace = {
+				add_building = furnace
+			}
+		}
+		else = {
+			event_target:coal_province = {
+				add_base_production = 6
+			}
+		}
+		change_price = {
+			trade_goods = coal
+			key = IMPROVED_COAL_MINING
+			value = -0.30
 			duration = -1
 		}
 	}

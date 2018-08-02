@@ -1,1197 +1,724 @@
-conquer_punjab_MUG = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		lahore_area
-		multan_area
-		sirhind_area
-	}
-	
-	target_provinces = {
-		NOT = { province_id = 2079 } #Derajat
-		NOT = { province_id = 2086 } #Cholistan
-		NOT = { province_id = 2065 } #Bhattiana
-		NOT = { owned_by = ROOT }
-		owner = {
-			NOT = { alliance_with = ROOT }
-			NOT = { is_subject_of = ROOT }
-		}
-	}
-	allow = {
-		normal_or_historical_nations = yes
+tim_reconquest_persia = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
 		OR = {
 			tag = TIM
-			tag = MUG
-		}
-		NOT = { has_country_modifier = indian_ambition }
-		NOT = { has_country_flag = conquered_punjab }
-		is_free_or_tributary_trigger = yes
-		NOT = { capital_scope = { region = hindusthan_region } }
-		NOT = { capital_scope = { region = west_india_region } }
-		NOT = { capital_scope = { region = bengal_region } }
-		NOT = { capital_scope = { region = deccan_region } }
-		NOT = { capital_scope = { region = coromandel_region } }
-		OR = {
-			owns = 578 	#Roh
-			owns = 2226 #Jallalabad / Adinapur
-			owns = 452 #Badakshan
-		}
-		any_province = {
-			OR = {
-				area = lahore_area
-				area = multan_area
-				area = sirhind_area
-			}
-			NOT = { province_id = 2079 } #Derajat
-			NOT = { province_id = 2086 } #Cholistan
-			NOT = { province_id = 2065 } #Bhattiana
-			NOT = { owned_by = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		NOT = { owns = 2075 }
-		NOT = { owns = 510 }
-		NOT = { owns = 507 }
-		NOT = { owns = 506 }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
+			tag = TRS
+			tag = AFG
+			tag = QOM
+			tag = KHO
+			tag = FRS
 		}
 	}
-	chance = {
-		factor = 2000
-		modifier = {
-			factor = 2
-			is_year = 1526
-		}
-		modifier = {
-			factor = 2
-			owns = 578 #Roh
-		}
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 5
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
+	has_country_shield = yes
+	
+	tim_freedom = {
+		icon = mission_have_two_subjects
+		required_missions = { }
+		position = 1
+		completed_by = 1525.1.1
+		
+		trigger = {
 			if = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
+					tag = TIM
+					vassal = 1
+				}
+				NOT = {
+					any_subject_country = {
+						liberty_desire = 40
 					}
 				}
-				remove_claim = ROOT
 			}
-		}
-	}
-	effect = {
-		set_country_flag = conquered_punjab
-		add_legitimacy = 10
-		add_horde_unity = 20
-		add_country_modifier = {
-			name = "indian_ambition"
-			duration = 5475
-		}
-	}
-}
-
-conquer_delhi = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = DLH
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		OR ={
-			tag = TIM
-			tag = MUG
-		}
-		NOT = { has_country_flag = conquered_delhi }
-		exists = DLH	
-		is_free_or_tributary_trigger = yes
-		DLH = {
-			is_neighbor_of = ROOT
-			NOT = { alliance_with = ROOT }
-		}
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = DLH }
-		}
-	}
-	success = {
-		NOT = { exists = DLH }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			is_year = 1526
-		}
-		modifier = {
-			factor = 2
-			army_size = DLH
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
+			else_if = {
+				limit = {
+					tag = QOM
+				}
+				NOT = {
+					all_subject_country = {
+						liberty_desire = 1
+					}
+				}
+				TIM = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = insulted
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TIM
+					NOT = { vassal = 1 }
+				}
+				vassal = 1
+				NOT = {
+					any_subject_country = {
+						liberty_desire = 40
+					}
+				}
+			}
+			else_if = {
 				limit = {
 					NOT = {
-						is_permanent_claim = ROOT
+						OR = {
+							tag = TIM
+							tag = QOM
+						}
 					}
 				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		add_prestige = 25
-		add_adm_power = 400
-		set_country_flag = conquered_delhi
-	}
-}
-
-vassalize_golcanda = { #Conquer Golconda
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = GOC
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = GOC
-		is_free_or_tributary_trigger = yes
-		NOT = { has_country_flag = vassalize_golcanda_done }
-		NOT = { has_country_modifier = indian_ambition }
-		GOC = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { alliance_with = MUG }
-			NOT = { num_of_cities = ROOT }
-		}
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		NOT = { exists = GOC }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = GOC value = 0 } }
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = indian_ambition
-			duration = 5475
-		}
-		set_country_flag = vassalize_golcanda_done
-	}
-}
-
-
-vassalize_gondwana = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = GDW
-		is_subject = no
-		NOT = { has_country_flag = vassalize_gondwana_done }
-		NOT = { has_country_modifier = military_vassalization }
-		GDW = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { num_of_cities = ROOT }
-			NOT = { total_development = 50 }
-			NOT = { government = imperial_city }
-		}
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = GDW }
-			GDW = { is_subject_other_than_tributary_trigger = yes }
-			NOT = {
-				has_casus_belli = {
-					type = cb_vassalize_mission
-					target = GDW
-				}
-			}
-		}
-	}
-	success = {
-		GDW = { vassal_of = MUG }
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = GDW value = 0 } }
-		}
-	}
-	immediate = {
-		add_casus_belli = {
-			type = cb_vassalize_mission
-			months = 300
-			target = GDW
-		}
-	}
-	abort_effect = {
-		remove_casus_belli = {
-			type = cb_vassalize_mission
-			target = GDW
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = military_vassalization
-			duration = 3650
-		}
-		set_country_flag = vassalize_gondwana_done
-		hidden_effect = {
-			remove_casus_belli = {
-				type = cb_vassalize_mission
-				target = GDW
-			}
-		}
-	}
-}
-
-
-defend_the_mughal_borders = {
-	
-	type = country
-
-	category = MIL
-	
-	target_areas_list = {
-		kabulistan_area
-		ghor_area
-	}
-	
-	target_provinces = {
-		owned_by = PER
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = PER
-		NOT = { has_country_modifier = afghanistan_secured_mug }
-		NOT = { has_country_flag = defended_mughal_borders }
-		is_free_or_tributary_trigger = yes
-		is_neighbor_of = PER
-		NOT = { alliance_with = PER }
-		NOT = { is_subject_of = PER }
-		NOT = { overlord_of = PER }
-		NOT = { war_with = PER }
-		MUG = {
-			any_owned_province = {
 				OR = {
-					area = kabulistan_area
-					area = ghor_area
+					war_with = TIM
+					is_subject = no
 				}
 			}
-		}
-		PER = {
-			any_owned_province = {
-				OR = {
-					area = kabulistan_area
-					area = ghor_area
-				}
-			}
-		}
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = PER }
-		}
-	}
-	success = {
-		NOT = { war_with = PER }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			is_monarch_leader = yes
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
+			else_if = {
 				limit = {
 					NOT = {
-						is_permanent_claim = ROOT
+						exists = TIM
 					}
 				}
-				remove_claim = ROOT
+				army_size_percentage = 1
 			}
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = "afghanistan_secured_mug"
-			duration = 5475
-		}
-	}
-}
-
-
-mughal_break_the_persian_border = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		merv_area
-		balkh_area
-		kabulistan_area
-		ghor_area
-		sistan_area
-		makran_area
-		kalat_area
-		birjand_area
-		herat_area
-		mashhad_area
-	}
-	
-	target_provinces = {
-		owned_by = PER
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = PER
-		is_free_or_tributary_trigger = yes
-		num_of_cities = PER
-		PER = {
-			is_neighbor_of = ROOT
-			num_of_cities = 15
-			NOT = { alliance_with = MUG }
-			NOT = { overlord_of = MUG }
-			NOT = { is_subject_of = MUG }
-		}
-		khorasan_region = { owned_by = PER }
-		NOT = { khorasan_region = { owned_by = ROOT } }
-		NOT = { has_country_modifier = conquest_of_persia }
-		NOT = { has_country_flag = persia_conquered_mug }
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = PER }
-		}
-	}
-	success = {
-		NOT = { war_with = PER }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			is_monarch_leader = yes
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = persia_conquered_mug
-		add_ruler_modifier = {
-			name = "conquest_of_persia"
-		}
-	}
-}
-
-
-vassalize_ahmadnagar = { #Conquer Ahmednagar
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = AHM
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = AHM
-		is_free_or_tributary_trigger = yes
-		NOT = { has_country_flag = vassalize_ahmadnagar_done }
-		NOT = { has_country_modifier = indian_ambition }
-		AHM = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { num_of_cities = ROOT }
-			NOT = { alliance_with = ROOT }
-		}
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		NOT = { exists = AHM }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = AHM value = 0 } }
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = vassalize_ahmadnagar_done
-		add_country_modifier = {
-			name = "indian_ambition"
-			duration = 5475
-		}
-	}
-}
-
-
-conquer_khandesh = {
-
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = KHD
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = KHD
-		is_free_or_tributary_trigger = yes
-		is_neighbor_of = KHD
-		NOT = { alliance_with = KHD }
-		NOT = { has_country_modifier = indian_ambition }
-		NOT = { has_country_flag = conquered_khandesh }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		NOT = { exists = KHD }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = conquered_khandesh
-		add_country_modifier = {
-			name = "indian_ambition"
-			duration = 5475
-		}
-	}
-}
-
-
-annex_berar = {
-	
-	type = country
-
-	category = DIP
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = BRR
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = BRR
-		is_free_or_tributary_trigger = yes
-		NOT = { has_country_flag = conquered_berar }
-		NOT = { has_country_modifier = indian_ambition }
-		BRR = {
-			NOT = { is_subject_of = MUG }
-			NOT = { overlord_of = MUG }
-			is_neighbor_of = ROOT
-			NOT = { alliance_with = ROOT }
-			NOT = { num_of_cities = ROOT }
-		}
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		NOT = { exists = BRR }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = conquered_berar
-		add_country_modifier = {
-			name = "indian_ambition"
-			duration = 5475
-		}
-	}
-}
-
-
-vassalize_gujarat = { #Conquer Gujarat
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces = {
-		owned_by = GUJ
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = GUJ
-		is_free_or_tributary_trigger = yes
-		NOT = { has_country_flag = vassalize_gujarat_done }
-		NOT = { has_country_modifier = indian_ambition }
-		GUJ = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { alliance_with = ROOT }
-			NOT = { is_subject_of = ROOT }
-			NOT = { overlord_of = ROOT }
-			NOT = { num_of_cities = ROOT }
-		}
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		NOT = { exists = GUJ }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = GUJ value = 0 } }
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = vassalize_gujarat_done
-		add_country_modifier = {
-			name = "indian_ambition"
-			duration = 5475
-		}
-	}
-}
-
-
-defeat_england = {
-
-	type = country
-	
-	category = MIL
-	
-	target_areas_list = {
-		west_bengal_area
-		north_bengal_area
-		east_bengal_area
-		naga_hills_area
-		jharkhand_area
-		orissa_area
-		garjat_area
-		assam_area
-		bihar_area
-		oudh_area
-		purvanchal_area
-		nepalese_area
-		himalayan_hills_area
-		lower_doab_area
-		central_doab_area
-		upper_doab_area
-		sirhind_area
-		lahore_area
-		multan_area
-		kashmir_area
-		marwar_area
-		mewar_area
-		jaipur_area
-		malwa_area
-		gujarat_area
-		saurashtra_area
-		tapti_area
-		sindh_area
-		konkan_area
-		maharashtra_area
-		gondwana_area
-		telingana_area
-		maidan_area
-		desh_area
-		rayalaseema_area
-		mysore_area
-		kanara_area
-		kerala_area
-		andhra_area
-		coromandel_area
-		madura_area
-		lanka_area
-		carnatic_area
-	}
-	
-	target_provinces = {
-		owned_by = ENG
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = MUG
-		exists = ENG
-		is_free_or_tributary_trigger = yes
-		ENG = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			num_of_owned_provinces_with = {
-				value = 20
-				OR = {
-					region = bengal_region
-					region = hindusthan_region
-					region = west_india_region
-					region = deccan_region
-					region = coromandel_region
-				}
-			}
-		}
-		NOT = { alliance_with = ENG }
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = ENG }
-		}
-	}
-	success = {
-		NOT = { war_with = ENG }
-		NOT = { bengal_region = { owned_by = ENG } }
-		NOT = { hindusthan_region = { owned_by = ENG } }
-		NOT = { west_india_region = { owned_by = ENG } }
-		NOT = { deccan_region = { owned_by = ENG } }
-		NOT = { coromandel_region = { owned_by = ENG } }
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			NOT = { dip = 1 }
-		}
-		modifier = {
-			factor = 2
-			NOT = { dip = 0 }
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		add_army_tradition = 50
-		add_stability = 2
-	}
-}
-
-
-defend_timurid_lands = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		transoxiana_area
-		#termez_area #STT
-		balkh_area
-	}
-	
-	target_provinces = {
-		owned_by = SHY
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = TIM
-		exists = SHY
-		is_year = 1470
-		is_free_or_tributary_trigger = yes
-		is_neighbor_of = SHY
-		NOT = { alliance_with = PER }
-		NOT = { alliance_with = SHY }
-		OR = {
-			transoxiana_area = {
-				owned_by = ROOT
-				owned_by = SHY
-			}
-			#STT -1 del
-			balkh_area = {
-				owned_by = ROOT
-				owned_by = SHY
-			}
-			
 		}
 		
-		NOT = { has_country_modifier = defended_against_shybanids }
-		NOT = { has_country_flag = defend_timurid_lands_mission }
-	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = SHY }
-		}
-	}
-	success = {
-		NOT = { war_with = SHY }
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			SHY = { NOT = { mil = 2 } }
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
+		effect = {
+			add_mil_power = 60
+			add_prestige = 10
 			if = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
+					NOT = { tag = TIM }
+				}
+				farsistan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				remove_claim = ROOT
+				persian_gulf_coast = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				kerman_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				431 = {
+					add_permanent_claim = ROOT
+				}
+				3438 = {	### STT
+					add_permanent_claim = ROOT
+				}
+				2217 = {
+					add_permanent_claim = ROOT
+				}
+				3444 = {	### STT
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
-	effect = {
-		set_country_flag = defend_timurid_lands_mission
-		add_country_modifier = {
-			name = "defended_against_shybanids"
-			duration = 5475
+	
+	tim_persia_one = {
+		icon = mission_arabian_fort
+		required_missions = { tim_freedom }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = farsistan_area
+				area = persian_gulf_coast
+				area = kerman_area
+				province_id = 431
+				province_id = 3438	### STT
+				province_id = 2217
+				province_id = 3444	### STT
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			farsistan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			persian_gulf_coast = {
+				type = all
+				owned_by = ROOT
+			}
+			kerman_area = {
+				type = all
+				owned_by = ROOT
+			}
+			431 = {
+				owned_by = ROOT
+			}
+			3438 = {	### STT
+				owned_by = ROOT
+			}
+			2217 = {
+				owned_by = ROOT
+			}
+			3444 = {	### STT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_treasury = 400
+			413 = {
+				add_permanent_claim = ROOT
+			}
+			414 = {
+				add_permanent_claim = ROOT
+			}
+			2210 = {
+				add_permanent_claim = ROOT
+			}
+			isfahan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iraq_e_ajam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			azerbaijan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
+	
+	tim_persia_two = {
+		icon = mission_chinese_general_riding
+		required_missions = { tim_persia_one }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = isfahan_area
+				area = iraq_e_ajam_area
+				area = azerbaijan_area
+				province_id = 413
+				province_id = 414
+				province_id = 2210
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			413 = {
+				owned_by = ROOT
+			}
+			414 = {
+				owned_by = ROOT
+			}
+			2210 = {
+				owned_by = ROOT
+			}
+			isfahan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			iraq_e_ajam_area = {
+				type = all
+				owned_by = ROOT
+			}
+			azerbaijan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "tim_mountain_reconquest"
+				duration = 5475
+			}
+		}
+	}
+	
 }
 
-vassalize_the_akkoyunlu = {
-	
-	type = country
-
-	category = MIL
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = TIM
-		exists = AKK
-		is_subject = no
-		NOT = { has_country_flag = vassalize_the_akkoyunlu_done }
-		NOT = { has_country_modifier = military_vassalization }
-		AKK = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { num_of_cities = ROOT }
-			NOT = { total_development = 50 }
-			NOT = { government = imperial_city }
-		}
-	}
-	abort = {
+tim_reconquest_khorasan = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
 		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = AKK }
-			AKK	= { is_subject_other_than_tributary_trigger = yes }
-			NOT = {
-				has_casus_belli = {
-					type = cb_vassalize_mission
-					target = AKK
+			tag = TIM
+			tag = TRS
+			tag = AFG
+			tag = QOM
+			tag = KHO
+		}
+	}
+	has_country_shield = yes
+	
+	tim_army_built = {
+		icon = mission_non-western_soldiers
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.6
+			num_of_generals = 1
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "oma_buildforces_mod"
+				duration = 5475
+			}
+			mashhad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			birjand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			herat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lahore_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			506 = {
+				add_permanent_claim = ROOT
+			}
+			2078 = {
+				add_permanent_claim = ROOT
+			}
+			510 = {
+				add_permanent_claim = ROOT
+			}
+			2075 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
-	success = {
-		AKK = { vassal_of = TIM }
-	}
-	chance = {
-		factor = 2000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = AKK value = 0 } }
-		}
-	}
-	immediate = {
-		add_casus_belli = {
-			type = cb_vassalize_mission
-			months = 300
-			target = AKK
-		}
-	}
-	abort_effect = {
-		remove_casus_belli = {
-			type = cb_vassalize_mission
-			target = AKK
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = military_vassalization
-			duration = 3650
-		}
-		set_country_flag = vassalize_the_akkoyunlu_done
-		hidden_effect = {
-			remove_casus_belli = {
-				type = cb_vassalize_mission
-				target = AKK
+	
+	tim_khorasan_one = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { tim_army_built }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = mashhad_area
+				area = birjand_area
+				area = sistan_area
+				area = herat_area
 			}
-		} 
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			mashhad_area = {
+				type = all
+				owned_by = ROOT
+			}
+			birjand_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sistan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			herat_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			ghor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabulistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
 	}
+	
+	tim_khorasan_two = {
+		icon = mission_unite_home_region
+		required_missions = { tim_khorasan_one }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			ghor_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kabulistan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			balkh_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "tim_heartland_reconquest"
+				duration = 5475
+			}
+		}
+	}
+	
 }
 
-
-vassalize_the_qara_qoyunlu = {
-	
-	type = country
-
-	category = MIL
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = TIM
-		exists = QAR
-		is_subject = no
-		NOT = { has_country_flag = vassalize_the_qara_qoyunlu_done }
-		NOT = { has_country_modifier = military_vassalization }
-		QAR = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { num_of_cities = ROOT }
-			NOT = { total_development = 50 }
-			NOT = { government = imperial_city }
-		}
-	}
-	abort = {
+tim_reconquest_transoxiana = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
 		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = QAR }
-			QAR = { is_subject_other_than_tributary_trigger = yes }
-			NOT = {
-				has_casus_belli = {
-					type = cb_vassalize_mission
-					target = QAR
+			tag = TIM
+			tag = TRS
+			tag = AFG
+			tag = QOM
+			tag = KHO
+		}
+	}
+	has_country_shield = yes
+	
+	tim_stability = {
+		icon = mission_arabian_fort
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			stability	= 2
+		}
+		
+		effect = {
+			transoxiana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			termez_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			458 = {
+				add_permanent_claim = ROOT
+			}
+			1967 = {
+				add_permanent_claim = ROOT
+			}
+			457 = {
+				add_permanent_claim = ROOT
+			}
+			2356 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
-	success = {
-		QAR = { vassal_of = TIM }
-	}
-	chance = {
-		factor = 2000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = QAR value = 0 } }
+	
+	tim_transoxiana_one = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { tim_stability }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = transoxiana_area
+				area = termez_area
+				province_id = 458
+				province_id = 1967
+				province_id = 457
+				province_id = 2356
+			}
+			NOT = { owned_by = ROOT }
 		}
-	}
-	immediate = {
-		add_casus_belli = {
-			type = cb_vassalize_mission
-			months = 300
-			target = QAR
+		
+		trigger = {
+			transoxiana_area = {
+				type = all
+				owned_by = ROOT
+			}
+			termez_area = {
+				type = all
+				owned_by = ROOT
+			}
+			458 = {
+				owned_by = ROOT
+			}
+			1967 = {
+				owned_by = ROOT
+			}
+			457 = {
+				owned_by = ROOT
+			}
+			2356 = {
+				owned_by = ROOT
+			}
 		}
-	}
-	abort_effect = {
-		remove_casus_belli = {
-			type = cb_vassalize_mission
-			target = QAR
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = military_vassalization
-			duration = 3650
-		}
-		set_country_flag = vassalize_the_qara_qoyunlu_done
-		hidden_effect = {
-			remove_casus_belli = {
-				type = cb_vassalize_mission
-				target = QAR
+		
+		effect = {
+			merv_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			437 = {
+				add_permanent_claim = ROOT
+			}
+			438 = {
+				add_permanent_claim = ROOT
+			}
+			2349 = {
+				add_permanent_claim = ROOT
+			}
+			2214 = {
+				add_permanent_claim = ROOT
+			}
+			441 = {
+				add_permanent_claim = ROOT
+			}
+			2362 = {
+				add_permanent_claim = ROOT
+			}
+			1973 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
+	
+	tim_transoxiana_two = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { tim_transoxiana_one }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = merv_area
+				province_id = 437
+				province_id = 438
+				province_id = 2349
+				province_id = 2214
+				province_id = 441
+				province_id = 2362
+				province_id = 1973
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			merv_area = {
+				type = all
+				owned_by = ROOT
+			}
+			437 = {
+				owned_by = ROOT
+			}
+			438 = {
+				owned_by = ROOT
+			}
+			2349 = {
+				owned_by = ROOT
+			}
+			2214 = {
+				owned_by = ROOT
+			}
+			441 = {
+				owned_by = ROOT
+			}
+			2362 = {
+				owned_by = ROOT
+			}
+			1973 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "tim_steppe_reconquest"
+				duration = 5475
+			}
+		}
+	}
+	
 }
 
-
-vassalize_georgia = {
-	
-	type = country
-
-	category = MIL
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = TIM
-		exists = GEO
-		is_subject = no
-		NOT = { has_country_flag = vassalize_georgia_done }
-		NOT = { has_country_modifier = military_vassalization }
-		GEO = {
-			is_subject = no
-			is_neighbor_of = ROOT
-			NOT = { num_of_cities = ROOT }
-			NOT = { total_development = 50 }
-			NOT = { government = imperial_city }
-		}
-	}
-	abort = {
+tim_india = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
 		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			NOT = { exists = GEO }
-			GEO = { is_subject_other_than_tributary_trigger = yes }
-			NOT = {
-				has_casus_belli = {
-					type = cb_vassalize_mission
-					target = GEO
+			tag = TIM
+			tag = TRS
+			tag = AFG
+			tag = QOM
+			tag = KHO
+		}
+	}
+	has_country_shield = yes
+	
+	conquer_punjab_MUG = {
+		icon = mission_indian_soldier_elephant
+		required_missions = { }
+		position = 6
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lahore_area
+				province_id = 506
+				province_id = 2078
+				province_id = 510
+				province_id = 2075
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+			506 = {
+				owned_by = ROOT
+			}
+			2078 = {
+				owned_by = ROOT
+			}
+			510 = {
+				owned_by = ROOT
+			}
+			2075 = {
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			sirhind_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			upper_doab_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
-	success = {
-		GEO = { vassal_of = TIM }
-	}
-	chance = {
-		factor = 2000
-		modifier = {
-			factor = 2
-			NOT = { has_opinion = { who = GEO value = 0 } }
-		}
-	}
-	immediate = {
-		add_casus_belli = {
-			type = cb_vassalize_mission
-			months = 300
-			target = GEO
-		}
-	}
-	abort_effect = {
-		remove_casus_belli = {
-			type = cb_vassalize_mission
-			target = GEO
-		}
-	}
-	effect = {
-		add_country_modifier = {
-			name = military_vassalization
-			duration = 3650
-		}
-		set_country_flag = vassalize_georgia_done
-		hidden_effect = {
-			remove_casus_belli = {
-				type = cb_vassalize_mission
-				target = GEO
+	
+	conquer_delhi = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { conquer_punjab_MUG }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = sirhind_area
+				area = upper_doab_area
 			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_treasury = 500
+			add_prestige = 20
 		}
 	}
 }

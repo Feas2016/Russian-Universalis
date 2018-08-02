@@ -12,6 +12,17 @@ country_decisions = {
 			NOT = { exists = MCH }
 			primary_culture = manchu
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 730		#Girin
+				province_id = 1053		#Hinggan
+				province_id = 2108		#Huncun
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -21,6 +32,7 @@ country_decisions = {
 			owns_core_province = 2108		#Huncun
 		}
 		effect = {
+			swap_non_generic_missions = yes
 			730 = {
 				move_capital_effect = yes
 			}
@@ -106,6 +118,7 @@ country_decisions = {
 				add_core = QNG
 			}
 			change_tag = QNG
+			swap_non_generic_missions = yes
 			set_government_rank = 3
 			south_china_region = {
 				limit = {

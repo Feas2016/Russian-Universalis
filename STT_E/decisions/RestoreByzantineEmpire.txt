@@ -23,6 +23,35 @@ country_decisions = {
 			NOT = { exists = LAE }
 			religion = orthodox
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 151 # Constantinople
+				province_id = 149	# Edirne
+				province_id = 144  # Epiros
+				province_id = 147	# Salonica
+				province_id = 148	# Macedonia
+				province_id = 146	# Athens
+				province_id = 145	# Morea
+				province_id = 1773	# Achea
+				province_id = 316	# Bithynia
+				province_id = 317	# Bursa
+				province_id = 318	# Smyrna
+				province_id = 1853	# Kozani
+				province_id = 2296	# Biga
+				province_id = 3105 ### STT
+				province_id = 3104
+				province_id = 3034
+				province_id = 3033
+				province_id = 3036
+				province_id = 142
+				province_id = 164
+				province_id = 3264
+				province_id = 3003
+				province_id = 3265
+				province_id = 3106
+			}
+			NOT = { owned_by = ROOT }
+		}
 		allow = {
 			owns = 151 # Constantinople
 			owns = 149	# Edirne
@@ -57,6 +86,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = BYZ
+			swap_non_generic_missions = yes
 			every_province = {
 				limit = {
 					OR = {

@@ -26,6 +26,7 @@ cb_restore_personal_union = {
 			government = dutch_republic
 		}
 		is_revolution_target = no
+		NOT = { tag = VLD }
 		FROM = {
 			government = monarchy
 			is_subject = no

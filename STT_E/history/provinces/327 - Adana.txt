@@ -1,17 +1,17 @@
 #327 - Adana
 
-owner = CRM
-controller = CRM
+owner = KIL			### STT
+controller = KIL	### STT
 culture = armenian
 religion = coptic
-capital = "Adana"
+capital = "Адана"	### STT
 trade_goods = cotton
 hre = no
 base_tax = 4 
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = CRM
+add_core = KIL		### STT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -31,3 +31,5 @@ add_permanent_province_modifier = {
 1699.1.1 = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # The Shuff Mountain rebellion 
 1700.1.1 = { revolt = {} controller = TUR }
 1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+1833.5.4 = { owner = EGY controller = EGY add_core = EGY }
+1841.6.1 = { owner = TUR controller = TUR remove_core = EGY }

@@ -265,25 +265,25 @@ holy_roman_electors_bishoprics = {
 	}
 }
 
-#Shogunate
+#Japan 
 
-japanese_shogunate = {
-	rank = {
-		3 = EMPIRE
-		2 = KINGDOM
+the_empire_of_the_rising_sun = {
+rank = {
 		1 = DAIMYO
+		2 = KINGDOM
+		3 = EMPIRE
 	}
 
 	ruler_male = {
-		3 = SHOGUN
+		1 = LORD
 		2 = KING
-		1 = LORD		
+		3 = EMPEROR		
 	}
 	
 	ruler_female = {
-		3 = SHOGUNESS
+		1 = LADY	
 		2 = QUEEN
-		1 = LADY		
+		3 = EMPRESS		
 	}
 	
 	consort_male = {
@@ -304,6 +304,8 @@ japanese_shogunate = {
 		NOT = { government = shogunate }
 	}
 }
+
+
 
 #Theocracies - Specified Religion / Culture
 teutonic_monastic_order = {
@@ -2717,7 +2719,7 @@ south_slavic_monarchy = {
 	}
 }
 
-irish_monarchy = {
+irish_peerage_monarchy = {
 	rank = {
 		1 = EARLDOM
 		2 = KINGDOM
@@ -2726,19 +2728,74 @@ irish_monarchy = {
 
 	ruler_male = {
 		1 = EARL
-		2 = KING
-		3 = HIGH_KING
+		2 = HIGH_KING
+		3 = EMPEROR
 	}
 
 	ruler_female = {
 		1 = COUNTESS
-		2 = QUEEN
-		3 = HIGH_QUEEN
+		2 = HIGH_QUEEN
+		3 = EMPRESS
 	}
 
 	trigger = {
 		government = monarchy
 		primary_culture = irish
+		OR = {
+			tag = DMS
+			tag = ORD
+			tag = KID
+			tag = ULS
+		}
+	}
+}
+
+irish_clan_monarchy = {
+	rank = {
+		1 = KINGDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = KING
+		2 = HIGH_KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = QUEEN
+		2 = HIGH_QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		government = monarchy
+		primary_culture = irish
+	}
+}
+
+hebridean_monarchy = {
+	rank = {
+		1 = LORDSHIP
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = LORD
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = LADY
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	trigger = {
+		primary_culture = highland_scottish
 	}
 }
 

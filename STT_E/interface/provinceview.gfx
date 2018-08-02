@@ -290,7 +290,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.tga"
-		noOfFrames = 30 #STT
+		noOfFrames = 31 #STT
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -920,21 +920,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 30
+		noOfFrames = 32
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_resource_icon_small"
 		texturefile = "gfx//interface//resources_small.dds"
-		noOfFrames = 30
+		noOfFrames = 32
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_resource_transparent"
+		texturefile = "gfx//interface//resource_transparent.dds"
 		loadType = "INGAME"
 	}	
 	
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 30
+		noOfFrames = 32
 		loadType = "INGAME"
 		
 		allwaystransparent = yes

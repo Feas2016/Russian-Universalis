@@ -1,0 +1,968 @@
+namespace = rushorde
+
+# Yarlyk Mechanic
+
+#Death of the grand knyaz
+
+country_event = {
+	id = rushorde.0
+	title = rushorde.0.t
+	desc = rushorde.0.d
+	picture = KING_SICK_IN_BED_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+	    exists = VLD
+		exists = GLH
+		senior_union_with = VLD
+		culture_group = east_slavic
+		government = monarchy
+		NOT = { has_global_flag = knyaz_rights_flag_t }
+	}
+	
+	immediate = { }
+	
+	option = {
+	    name = "rushorde.0.a"
+		if = {
+			limit = { NOT = { num_of_states = 21 } }
+			set_government_rank = 1
+		}
+		if = { 
+			limit = { any_country = { has_country_modifier = yarlyk_claimant }  }
+			random_list = {
+				50 = { country_event = { id = rushorde.1 } }
+				50 = { random_country = { limit = { has_country_modifier = yarlyk_claimant } country_event = { id = rushorde.1 } } }
+			}
+			else = {
+			country_event = { id = rushorde.1 }
+			}		 
+		}
+	}
+}
+
+#Vladimir inherited
+
+country_event = {
+	id = rushorde.1
+	title = rushorde.1.t
+	desc = rushorde.1.d
+	picture = CITY_VIEW_eventPicture
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+		government = monarchy
+		NOT = { has_global_flag = knyaz_rights_flag_t }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+	    name = "rushorde.1.a"
+			add_prestige = 5
+			if = {
+				limit = { government_rank = 1 }
+				set_government_rank = 2
+			}
+			if = { limit = { NOT = { senior_union_with = VLD } } create_union = VLD }
+			add_ruler_modifier = {
+					name = "great_knyaz"
+					duration = -1
+			}
+			remove_country_modifier = yarlyk_claimant
+			every_country = { limit = { has_country_modifier = yarlyk_claimant } remove_country_modifier = yarlyk_claimant }
+	}
+}
+
+#Yarlyk claimant
+
+country_event = {
+	id = rushorde.2
+	title = rushorde.2.t
+	desc = rushorde.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	major = yes
+	
+	mean_time_to_happen = {
+		months = 180
+
+		modifier = {
+			factor = 0.5
+			reverse_has_opinion = { who = GLH value = 80 }
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+			total_development = 50
+			num_of_cities = 5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+			adm = 6 dip = 5 mil = 6
+			}
+		}
+    	modifier = {
+			factor = 0.35
+			reverse_has_opinion = { who = GLH value = 95 }
+		}
+        modifier = {
+			factor = 0.2
+			reverse_has_opinion = { who = GLH value = 105 }
+		}
+    }
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+		government = monarchy
+		reverse_has_opinion = { who = GLH value = 60 }
+		NOT = { has_global_flag = knyaz_rights_flag_t }
+		NOT = { has_country_modifier = yarlyk_claimant }
+    }
+	
+	immediate = {
+		hidden_effect = {
+		    set_ruler_flag = yarlyk_claimant_flag
+		}
+	}
+	
+	option = {
+	    name = "rushorde.2.a"
+			add_country_modifier = {
+				name = "yarlyk_claimant"
+				duration = 3650
+			}
+			hidden_effect = {
+				every_known_country = {
+					limit = { culture_group = east_slavic is_subject_of_type = tributary_state }
+					country_event = { id = rushorde.5 }
+				}
+			}	
+	}
+}
+
+#Force Lost Yarlyk claim
+
+country_event = {
+	id = rushorde.3
+	title = rushorde.3.t
+	desc = rushorde.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+		government = monarchy
+		NOT = { reverse_has_opinion = { who = GLH value = 0 } }	  
+	    NOT = { has_global_flag = knyaz_rights_flag_f }
+        has_country_modifier = yarlyk_claimant
+	}
+	
+	immediate = {
+		hidden_effect = {
+		}
+	}
+	
+	option = {
+	    name = "rushorde.3.a"
+			hidden_effect = { clr_ruler_flag = yarlyk_claimant_flag }
+			remove_country_modifier = yarlyk_claimant
+			add_prestige = -10
+			add_legitimacy = -10
+			capital_scope = { remove_loot = { who = GLH amount = 5 } }				
+	}
+	
+	option = {
+	    name = "rushorde.3.b"
+			add_years_of_income = -1.0
+			country_event = {
+			    id = rushorde.7
+			    days = 10
+			}
+			capital_scope = { remove_loot = { who = GLH amount = 10 } }
+	}
+	
+	
+	mean_time_to_happen = {
+	months = 2
+    }
+}
+
+#Lost claim after death of the great knyaz
+
+country_event = {
+	id = rushorde.4
+	title = rushorde.4.t
+	desc = rushorde.4.d
+	picture = KING_SICK_IN_BED_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+		government = monarchy  
+	    has_ruler_modifier = yarlyk_claimant
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+	    name = "rushorde.4.a"
+		remove_country_modifier = yarlyk_claimant 
+	}
+}
+
+#Notification for rushorde.2
+
+country_event = {
+	id = rushorde.5
+	title = rushorde.5.t
+	desc = rushorde.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+	}
+	
+	option = {
+	    name = "rushorde.5.a"
+	}
+}
+
+#design results
+
+country_event = {
+	id = rushorde.6
+	title = rushorde.6.t
+	desc = rushorde.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = GLH
+		exists = VLD
+		culture_group = east_slavic
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = event_claimant_flag
+		}
+	}
+	
+	option = {
+	    name = "rushorde.6.a"
+		hidden_effect = { clr_ruler_flag = event_claimant_flag }
+		random_list = {
+			45 = { country_event = { id = rushorde.2 } }
+			50 = { add_prestige = -5 }
+			5 = { kill_ruler = yes }
+		}
+	}
+		
+}
+
+#Embassy
+
+country_event = {
+	id = rushorde.7
+	title = rushorde.7.t
+	desc = rushorde.7.d
+	picture = ARTWORK_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = VLD
+		exists = GLH
+		culture_group = east_slavic
+	}
+	
+	immediate = {
+	}		
+	
+	option = {
+	    name = "rushorde.7.a"
+		random_list = {
+		    50 = {
+				add_prestige = -5
+				add_legitimacy = 5
+				reverse_add_opinion = { who = GLH modifier = Khan_positive } 
+			}
+			40 = {
+				hidden_effect = {
+					clr_ruler_flag = yarlyk_claimant_flag 
+					add_opinion = { who = GLH modifier = Khan_negative_first }
+				}
+				add_prestige = -5
+		        add_legitimacy = -10
+				remove_country_modifier = yarlyk_claimant
+				reverse_add_opinion = { who = GLH modifier = Khan_negative_first }	
+			}	
+			8 = {
+				hidden_effect = {
+					clr_ruler_flag = yarlyk_claimant_flag
+					add_opinion = { who = GLH modifier = Khan_negative_second }
+		        }
+				kill_ruler = yes
+				add_prestige = -5
+		        add_legitimacy = -10
+				remove_country_modifier = yarlyk_claimant
+				reverse_add_opinion = { who = GLH modifier = Khan_negative_second } 
+			}
+			2 = {
+				hidden_effect = {
+					clr_ruler_flag = yarlyk_claimant_flag
+					add_opinion = { who = GLH modifier = Khan_negative_second }
+		        }
+				kill_ruler = yes
+				if = {
+					limit = { has_heir = yes }
+					kill_heir = yes
+				}
+				add_prestige = -10
+		        add_legitimacy = -10
+				remove_country_modifier = yarlyk_claimant
+				reverse_add_opinion = { who = GLH modifier = Khan_negative_second } 
+			}
+		}
+	}
+}
+
+#release vladimir
+
+country_event = {
+	id = rushorde.8
+	title = rushorde.8.t
+	desc = rushorde.8.d
+	picture = CITY_VIEW_eventPicture
+	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    NOT = { tag = VLD }
+		exists = GLH
+		culture_group = east_slavic
+		OR = {
+			owns = 307
+			owns = 1778
+		}	
+		NOT = { has_global_flag = knyaz_rights_flag_t }
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+	    name = "rushorde.8.a"
+		ai_chance = { factor = 100 }
+			if = { 
+				limit = { owns = 307 }
+				307 = { cede_province = VLD remove_core = ROOT }
+				}
+			if = {
+				limit = { owns = 1778 }
+				1778 = { cede_province = VLD remove_core = ROOT }
+			}
+			if = {
+				limit = { ai = yes }
+				add_dip_power = 200
+			}
+			if = {
+				limit = { reverse_has_opinion = { who = GLH value = 60 } }
+				country_event = { id = rushorde.1 }
+				else = {
+					if = {
+						limit = {
+							any_known_country  = { has_country_modifier = yarlyk_claimant }
+						}
+						random_country = {
+							limit = { has_country_modifier = yarlyk_claimant }
+							country_event = { id = rushorde.1 }
+							remove_country_modifier = yarlyk_claimant		
+						}
+						else = {
+							random_country = {
+								limit = {
+									reverse_has_opinion = { who = GLH value = 5 } 
+									culture_group = east_slavic
+									is_subject_of_type = tributary_state
+								}
+								country_event = { id = rushorde.1 }
+								remove_country_modifier = yarlyk_claimant
+							}
+						}
+					}
+				}
+			}
+	}
+	option = {
+	    name = "rushorde.8.b"
+		ai_chance = { factor = 0 }
+			GLH = { declare_war_with_cb = { who = ROOT casus_belli = cb_horde_vs_civ } }
+			add_stability = -2
+	}
+}
+
+country_event = { 
+	id = rushorde.9
+	title = rushorde.9.t
+	desc = rushorde.9.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    exists = GLH
+		exists = VLD
+		culture_group = east_slavic
+	}
+	
+	option = {
+	    name = "rushorde.9.a"
+		add_prestige = 25
+	}
+}
+
+country_event = {
+	id = rushorde.10
+	title = rushorde.10.t
+	desc = rushorde.10.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {	}
+	
+	immediate = { hidden_effect = { GLH = { free_vassal = ROOT } } }
+	
+	option = {
+	    name = "rushorde.10.a"
+		ai_chance = { 
+			factor = 50 
+			modifier = {
+				factor = 1.95
+				primary_culture = russian
+			}
+			modifier = {
+				factor = 1.5
+				primary_culture = novgorodian
+			}
+			modifier = {
+				factor = 1.25
+				OR = { 
+				primary_culture = ruthenian
+				primary_culture = byelorussian
+				}
+			}
+			modifier = {
+				factor = 0.75
+				primary_culture = cossacks
+			}
+			modifier = {
+				factor = 0.75
+				total_development = 31
+			}
+			modifier = {
+				factor = 0
+				total_development = 51
+			}
+		}
+		if = { limit = { NOT = { total_development = 11 } } FROM = { inherit = ROOT } 
+		else = { FROM = { vassalize = ROOT } }
+		}
+	}
+	
+	option = {
+	    name = "rushorde.10.b"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100.0
+				NOT = { has_opinion = { who = FROM value = 0 } }
+			}
+			modifier = {
+				factor = 1.5
+				total_development = 31
+			}
+			modifier = {
+				factor = 100.0
+				total_development = 51
+			}
+		}
+		if = { limit = { NOT = { total_development = 100 } } FROM = { add_casus_belli = { target = ROOT type = cb_vassalize_mission months = 240 } } 
+		else = { FROM = { add_casus_belli = { target = ROOT type = cb_restore_personal_union months = 240 } } }
+		}
+	}
+	
+	option = {
+	    name = "rushorde.10.ba"
+		trigger = { ruler_has_personality = conqueror_personality ai = no }
+		declare_war_with_cb = { who = FROM casus_belli = cb_imperial }
+	}
+}
+
+country_event = {
+	id = rushorde.11
+	title = rushorde.11.t
+	desc = rushorde.11.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		culture_group = east_slavic
+		OR = {
+		AND = { NOT = { is_year = 1330 } tag = TVE }
+		AND = { is_year = 1330 tag = MOS }
+		}
+		NOT = { is_year = 1444 }
+	}
+	
+	option = {
+	    name = "rushorde11.a"
+		add_ruler_modifier = {
+			name = "great_knyaz"
+			duration = -1
+		}
+	}
+}
+
+### Red Dragon dan'
+
+country_event = {
+	id = rushorde.12
+	title = rushorde.12.t
+	desc = rushorde.12.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	mean_time_to_happen = {
+	days = 1
+	}
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    culture_group = east_slavic
+		has_ruler_modifier = great_knyaz
+		is_month = 10 #November
+		NOT = { is_month = 11 }
+		NOT = { has_global_flag = go_knyaz_dan }
+		NOT = {	has_global_flag = knyaz_rights_flag_l }
+	}
+	
+	immediate = { set_global_flag = go_knyaz_dan clr_global_flag = go_horde_dan }
+	
+	option = {
+	    name = "rushorde.12.a"
+		every_country = { limit = { is_subject_of_type = tributary_state culture_group = east_slavic NOT = { has_ruler_modifier = great_knyaz } } country_event = { id = rushorde.13 days = 1 random = 30 } }
+	}
+	option = {
+	    name = "rushorde.12.b"
+		add_prestige = 3
+		set_country_flag = great_knyaz_solo
+	}
+}
+
+country_event = {
+	id = rushorde.13
+	title = rushorde.13.t
+	desc = rushorde.13.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = { 
+		hidden_effect = {
+		set_variable = { which = treasurydan value = 1 }
+		export_to_variable = { which = treasurydan  value = years_of_income who = ROOT }
+		}
+	}
+		
+	option = { #send 10%
+	    name = "rushorde.13.a"
+		ai_chance = { 
+			factor = 80 
+		}
+		hidden_effect = {
+		multiply_variable = { which = treasurydan value = 0.1 }
+		}
+		add_years_of_income = -0.1
+		reverse_add_opinion = { who = FROM modifier = great_knyaz_smallthanks }
+		if = { limit = { has_global_flag = knyaz_off_notification } FROM = { country_event = { id = rushorde.15 } } 
+		else = { FROM = { country_event = { id = rushorde.14 } } }
+		}
+	}
+	option = { #send 30%
+	    name = "rushorde.13.b"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = { who = FROM value = 150 }
+			}
+			modifier = {
+				factor = 0.75
+				NOT = { has_opinion = { who = FROM value = 100 } }
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_opinion = { who = FROM value = 50 } }
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 1
+			}
+		}
+		hidden_effect = {
+		multiply_variable = { which = treasurydan value = 0.3 } 
+		}
+		add_years_of_income = -0.3
+		reverse_add_opinion = { who = FROM modifier = great_knyaz_thanks }
+		if = { limit = { has_global_flag = knyaz_off_notification } FROM = { country_event = { id = rushorde.15 } } 
+		else = { FROM = { country_event = { id = rushorde.14 } } }
+		}
+		
+	}
+	option = { #send 50%
+	    name = "rushorde.13.c"
+		ai_chance = { 
+			factor = 5 
+			modifier = {
+				factor = 100
+				AND = { has_opinion = { who = FROM value = 180 }
+				alliance_with = FROM
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_opinion = { who = FROM value = 50 } }
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 1
+			}
+		}
+		hidden_effect = {
+		multiply_variable = { which = treasurydan value = 0.5 } 
+		}
+		add_years_of_income = -0.5
+		reverse_add_opinion = { who = FROM modifier = great_knyaz_bigthanks }
+		if = { limit = { has_global_flag = knyaz_off_notification } FROM = { country_event = { id = rushorde.15 } } 
+		else = { FROM = { country_event = { id = rushorde.14 } } }
+		}
+	}
+	option = {
+	    name = "rushorde.13.d1"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 10.0
+				NOT = { has_opinion = { who = FROM value = -50 } }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_opinion = { who = FROM value = 100 } }
+			}
+			modifier = {
+				factor = 0
+				has_opinion = { who = FROM value = 150 }
+			}
+		}
+		add_prestige = -3
+		reverse_add_opinion = { who = FROM modifier = great_knyaz_decline }
+		every_country = { limit = { is_subject_of_type = tributary_state culture_group = east_slavic } add_opinion = { who = ROOT modifier = all_knyaz_decline } }
+		if = { limit = { has_global_flag = knyaz_off_notification } FROM = { country_event = { id = rushorde.18 } } 
+		else = { FROM = { country_event = { id = rushorde.17 } } }
+		}
+	}
+}
+
+country_event = {
+	id = rushorde.14
+	title = rushorde.14.t
+	desc = rushorde.14.d	
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+		
+	option = {
+	    name = "rushorde.14.a"
+		FROM = {
+			#Receive 1
+			if = {
+				limit = { 
+					NOT = { check_variable = { which = treasurydan value = 2 } }
+				}
+				ROOT = { add_treasury = 1 }
+			}
+			#Receive 2
+			if = {
+				limit = {
+					check_variable = { which = treasurydan value = 2 }			
+					NOT = { check_variable = { which = treasurydan value = 3 } }
+				}
+				ROOT = { add_treasury = 2 }
+			}
+			#Receive 3
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 3 }
+					NOT = { check_variable = { which = treasurydan value = 4 } }
+				}
+				ROOT = { add_treasury = 3 }
+			}
+			#Receive 4
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 4 }
+					NOT = { check_variable = { which = treasurydan value = 5 } }
+				}
+				ROOT = { add_treasury = 4 }
+			}
+			#Receive 5
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 5 }
+					NOT = { check_variable = { which = treasurydan value = 10 } }
+				}
+				ROOT = { add_treasury = 5 }
+			}
+			#Receive 10
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 10 }
+					NOT = { check_variable = { which = treasurydan value = 25 } }
+				}
+				ROOT = { add_treasury = 10 }
+			}
+			#Receive 25 
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 25 }
+				NOT = { check_variable = { which = treasurydan value = 50 } }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+			#Receive 50
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 50 }
+				NOT = { check_variable = { which = treasurydan value = 100 } }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+			#Receive 100
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 100 }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = rushorde.15
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	immediate = {
+	hidden_effect = {  
+		FROM = {
+			#Receive 1
+			if = {
+				limit = { 
+					NOT = { check_variable = { which = treasurydan value = 2 } }
+				}
+				ROOT = { add_treasury = 1 }
+			}
+			#Receive 2
+			if = {
+				limit = {
+					check_variable = { which = treasurydan value = 2 }			
+					NOT = { check_variable = { which = treasurydan value = 3 } }
+				}
+				ROOT = { add_treasury = 2 }
+			}
+			#Receive 3
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 3 }
+					NOT = { check_variable = { which = treasurydan value = 4 } }
+				}
+				ROOT = { add_treasury = 3 }
+			}
+			#Receive 4
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 4 }
+					NOT = { check_variable = { which = treasurydan value = 5 } }
+				}
+				ROOT = { add_treasury = 4 }
+			}
+			#Receive 5
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 5 }
+					NOT = { check_variable = { which = treasurydan value = 10 } }
+				}
+				ROOT = { add_treasury = 5 }
+			}
+			#Receive 10
+			if = {
+				limit = { 
+					check_variable = { which = treasurydan value = 10 }
+					NOT = { check_variable = { which = treasurydan value = 25 } }
+				}
+				ROOT = { add_treasury = 10 }
+			}
+			#Receive 25 
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 25 }
+				NOT = { check_variable = { which = treasurydan value = 50 } }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+			#Receive 50
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 50 }
+				NOT = { check_variable = { which = treasurydan value = 100 } }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+			#Receive 100
+			if = {
+				limit = { 
+				check_variable = { which = treasurydan value = 100 }
+				}
+				ROOT = { add_treasury = 25 }
+			}
+		}
+	}
+	}
+	
+	option = {
+	    name = "rushorde.15.a"
+		
+	}
+}
+
+country_event = {
+	id = rushorde.16
+	title = rushorde.16.t
+	desc = rushorde.16.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	mean_time_to_happen = {
+	days = 5
+	}
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	    culture_group = east_slavic
+		has_ruler_modifier = great_knyaz
+		is_month = 0 # January
+		NOT = { is_month = 1 }
+		NOT = { has_global_flag = go_horde_dan }
+		NOT = {	has_global_flag = knyaz_rights_flag_l }
+	}
+	
+	immediate = { clr_global_flag = go_knyaz_dan set_global_flag = go_horde_dan }
+	
+	option = {
+	    name = "rushorde.16.a"
+		trigger = { has_country_flag = great_knyaz_solo }
+		if = { limit = { has_global_flag = knyaz_rights_flag_s } custom_tooltip = "tooltip_knyaz_rights_s" add_years_of_income = -0.1
+		else = { add_years_of_income = -0.2 }
+		}
+		clr_country_flag = great_knyaz_solo
+		hidden_effect = { GLH = { add_years_of_income = 0.1 } }
+	}
+	option = {
+	    name = "rushorde.16.b"
+		trigger = { NOT = { has_country_flag = great_knyaz_solo } }
+		ai_chance = { factor = 70 }
+		if = { limit = { has_global_flag = knyaz_rights_flag_s } custom_tooltip = "tooltip_knyaz_rights_s" add_years_of_income = -0.2 
+		else = { add_years_of_income = -0.4 }
+		}
+		hidden_effect = { GLH = { add_years_of_income = 0.2 } }
+	}
+	option = {
+	    name = "rushorde.16.c"
+		trigger = { NOT = { has_country_flag = great_knyaz_solo } }
+		ai_chance = { factor = 30 }
+		if = { limit = { has_global_flag = knyaz_rights_flag_s } custom_tooltip = "tooltip_knyaz_rights_s" add_years_of_income = -0.1 
+		else = { add_years_of_income = -0.2 }
+		}
+		hidden_effect = { GLH = { add_years_of_income = 0.1 } }
+		random_list = {
+			90 = {	}
+			7 = { reverse_add_opinion = { who = GLH modifier = Khan_negative_second } }
+			2 = { add_years_of_income = -3 }
+			1 = { kill_ruler = yes }
+		}
+	}
+	option = {
+	    name = "rushorde.16.ca"
+		ai_chance = { factor = 0 }
+		GLH = { declare_war_with_cb = { who = ROOT casus_belli = cb_horde_vs_civ } }
+	}
+}
+country_event = {
+	id = rushorde.17
+	title = rushorde.17.t
+	desc = rushorde.17.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { }
+	
+	option = {
+	    name = "rushorde.17.a"
+		add_casus_belli = { target = FROM type = cb_loan_cancelled months = 12 }
+	}
+}
+
+country_event = {
+	id = rushorde.18
+	title = rushorde.18.t
+	desc = rushorde.18.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	trigger = { }
+	
+	immediate = { add_casus_belli = { target = FROM type = cb_loan_cancelled months = 12 } }
+	
+	option = {
+	    name = "rushorde.18.b"
+	}
+}

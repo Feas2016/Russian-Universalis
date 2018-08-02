@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GOL
-			tag = BHO
+			tag = GLH
 		}
 		is_free_or_tributary_trigger = yes
 		government = steppe_horde
@@ -46,7 +46,7 @@ country_event = {
 			limit = {
 				AND = {
 					is_core = AST
-					owns = ROOT
+					owned_by = ROOT
 					}
 				}
 			cede_province = AST
@@ -250,7 +250,7 @@ country_event = {
 		tag = LUS
 		is_free_or_tributary_trigger = yes
 		any_owned_province = {
-			culture_group = german 
+			culture_group = germanic 
 		}
 		is_at_war = yes
 		NOT = { stability = 1 }
@@ -261,7 +261,7 @@ country_event = {
 	option = {	
 		name = "panslav.5.a"
 		every_owned_province = {
-			limit = { culture_group = german }
+			limit = { culture_group = germanic }
 		add_province_modifier = {
 			name = "german_unrest"
 			duration = 365
@@ -271,7 +271,7 @@ country_event = {
 	option = {	
 		name = "panslav.5.b"
 		every_owned_province = {
-			limit = { culture_group = german }
+			limit = { culture_group = germanic }
 			add_local_autonomy = 50
 		}
 		add_prestige = -30
@@ -309,7 +309,6 @@ country_event = {
 	option = {
 		name = "panslav.6.a"
 		add_prestige = -15
-		add_stability = 1
 		283 =  { cede_province = ZAZ }
 		291 = { cede_province = ZAZ }
 		2411 = { cede_province = ZAZ }
@@ -327,7 +326,7 @@ country_event = {
 				infantry = ZAZ
 			}
 		}
-		add_stability = 1
+		add_stability = 2
 		ai_chance = { factor = 80 }
 	}
 	option = {

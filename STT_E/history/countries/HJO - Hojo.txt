@@ -1,9 +1,35 @@
-government = daimyo
+government = shogunate
 government_rank = 1
 primary_culture = japanese
 religion = shinto
 technology_group = chinese
-capital = 1028	# Musashi ### STT
+capital = 1020	# Kyoto ### STT
+
+1333.5.5 = { government = daimyo capital = 1028 } #STT
+
+1301.1.1 = {
+	monarch = {
+		name = "Моротоки" 
+		dynasty = "Ходзё"
+		birth_date = 1275.1.1
+		death_date = 1311.9.18
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1301.1.1 = {
+	heir = {
+		name = "Мунэнобу" 
+		dynasty = "Ходзё"
+		birth_date = 1259.1.1
+		death_date = 1312.9.18
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
 
 1490.1.1 = {
 	monarch = {

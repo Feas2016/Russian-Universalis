@@ -1,17 +1,17 @@
 #380 - Al Karak
 
-owner = MAM
-controller = MAM
+owner = KOJ
+controller = KOJ
 culture = bedouin_arabic
 religion = sunni
-capital = "Al Karak"
+capital = "Эль-Карак"
 trade_goods = grain
 hre = no
 base_tax = 2 
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MAM
+add_core = KOJ
 fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
@@ -31,6 +31,20 @@ discovered_by = MDI
 discovered_by = MLI
 discovered_by = SFA
 
+1263.1.1 = {
+	owner = MAM
+	controller = MAM
+	add_core = MAM
+}
+
+1359.1.1 = {
+	add_core = KOJ
+}
+
+1400.1. = {
+	remove_core = KOJ
+}
+
 1516.8.24 = {
 	owner = TUR
 	controller = TUR
@@ -40,3 +54,5 @@ discovered_by = SFA
 1669.1.1 = { unrest = 2 } # Ottoman attempts to pacify unruly tribes 
 1670.1.1 = { unrest = 0 }
 1750.1.1 = { add_core = SYR }
+1833.5.4 = { owner = EGY controller = EGY add_core = EGY }
+1841.6.1 = { owner = TUR controller = TUR remove_core = EGY }

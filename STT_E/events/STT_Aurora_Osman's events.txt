@@ -10,7 +10,7 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
-		is_year = 1500
+		is_year = 1475
 		government_rank = 3
 		religion = sunni
 		is_at_war = yes
@@ -22,7 +22,7 @@ country_event = {
 			owned_by = MAM
 			controlled_by = TUR
 		}
-		NOT = { is_year = 1550 }
+		NOT = { is_year = 1525 }
 	}
 	mean_time_to_happen = {
 		months = 3

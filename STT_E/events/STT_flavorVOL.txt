@@ -1,0 +1,110 @@
+namespace = stt_flavor_VOL
+
+country_event = {
+	id = 100500
+	title = "stt_flavor_VOL.1.t" # Провозглашение Русского царства
+	desc = "stt_flavor_VOL.1.d"
+	picture = RELIGION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = VOL
+		OR = {
+			any_owned_province = { religion = catholic } # владеть любой провинцией с католичеством
+			any_neighbor_country = { religion = catholic } # любая соседняя страна с католичеством
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 400
+		modifier = {
+		    factor = 0.8
+			reverse_has_opinion = { # отношения с папой
+				who = PAP
+				value = 50
+			}
+		}
+		modifier = {
+		    factor = 0.5
+			reverse_has_opinion = { # отношения с папой
+				who = PAP
+				value = 100
+			}
+		}
+		modifier = {
+		    factor = 0.3
+			reverse_has_opinion = { # отношения с папой
+				who = PAP
+				value = 150
+			}
+		}
+		modifier = {
+		    factor = 0.5
+			NOT = {	reverse_has_opinion = { who = GLH value = 0 } } #отрицательное отношение с ордой
+		} 
+		modifier = {
+		    factor = 0.5
+			num_of_owned_provinces_with = { value = 3 religion = catholic } # минимум 3 провинции с католичеством
+		}
+	}
+	
+	option = {
+		name = "stt_flavor_VOL.a" # Мы соглашаемся на этот почётный титул! 
+		ai_chance = { factor = 30 } #шанс 30%
+		set_government_rank = 2
+		every_country = {
+		    limit = {
+			    religion = catholic
+				is_neighbor_of = VOL
+			}
+			add_opinion = {
+                who = VOL
+                modifier = king_of_Ruthenia
+            }
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = king_of_Ruthenia
+		}
+		
+		every_country = { 
+			limit = { 
+				religion = orthodox 
+				culture_group = east_slavic 
+			} 
+			add_opinion = { 
+				who = ROOT 
+				modifier = catholic_whore 
+				} 
+		}
+		add_stability = -3
+		add_prestige = -20
+		change_religion = catholic
+		ruthenia_region = { 
+			add_core = VOL 
+		}
+	}
+	
+	option = {
+		name = "stt_flavor_VOL.b" # Нет, нам не нужны подачки от заморских напыщенных скоморохов в рясах. 
+		ai_chance = { factor = 70 } #шанс 70%
+		add_prestige = 20
+		add_legitimacy = 20
+		add_stability = 1
+		every_country = { 
+			limit = { 
+				religion = orthodox 
+				culture_group = east_slavic 
+			} 
+			add_opinion = { 
+				who = ROOT 
+				modifier = slavic_patriot 
+				} 
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = refused_the_catholic_kingdom
+		}
+	}
+	

@@ -163,3 +163,36 @@ HUN_religion_tolerance = {
     global_unrest = -2
 	tolerance_heretic = 3
 }
+
+BYZ_wall666 = {
+	garrison_growth = 0.25
+	local_defensiveness = 0.2
+}
+
+ai_boost_wall = { fort_maintenance_modifier = -0.33 }
+
+war_time_all = { land_morale = 0.25  land_maintenance_modifier = -0.75 manpower_recovery_speed = 3 
+reinforce_cost_modifier = -0.95 reinforce_speed = 0.75 global_regiment_cost = -0.75
+land_forcelimit_modifier = 1
+}
+
+byz_heir = { 
+	prestige = 1
+	legitimacy = 1
+	diplomatic_reputation = 3
+}
+
+feowall = { 
+	local_defensiveness = 0.1
+}
+ndl_colon_boom = {
+	colonists = 1
+	global_colonial_growth = 40
+	range = 1
+}
+
+ndl_colon_win = {
+	global_colonial_growth = 20
+	global_trade_power = 0.1
+	merchants = 1
+}

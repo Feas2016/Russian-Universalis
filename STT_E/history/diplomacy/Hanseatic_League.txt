@@ -4,7 +4,7 @@ alliance = {
 	first = HSA
 	second = RIG
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1581.1.1
 }
 
@@ -12,7 +12,7 @@ alliance = {
 	first = HSA
 	second = OLD
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1667.1.1
 }
 
@@ -20,7 +20,7 @@ alliance = {
 	first = HSA
 	second = MAG
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1680.10.4
 }
 
@@ -28,7 +28,7 @@ alliance = {
 	first = HSA
 	second = LUN
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1692.1.1
 }
 
@@ -36,22 +36,116 @@ alliance = {
 	first = HSA
 	second = BRE
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1563.1.1
 }
 # Bremen kicked out of the Hansa due to religious conflicts for a few years
-alliance = { ### STT
+alliance = {
 	first = HSA
-	second = HAM
+	second = BRE
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1576.1.1
 	end_date = 1719.9.30
 }
 
-alliance = { ### STT
-	first = HAM
-	second = BRE
+alliance = {
+	first = HSA
+	second = HAM
 	trade_league = 1
-	start_date = 1380.1.1
+	start_date = 1361.1.1 #STT
 	end_date = 1719.9.30
 }
+
+### STT. Early league with leadership of Gotland
+### 1361.1.1 - Denmark conquer Gotland and Lubek become leader of league
+
+guarantee = { 
+	first = SWE
+	second = GOT
+	start_date = 1288.1.1
+	end_date = 1361.1.1
+}
+  
+alliance = {
+	first = GOT
+	second = HAM
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+alliance = {
+	first = GOT
+	second = MKL
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+alliance = {
+	first = GOT
+	second = SHV
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+alliance = {
+	first = GOT
+	second = LUN
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+alliance = {
+	first = GOT
+	second = WLG
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+alliance = {
+	first = GOT
+	second = HSA
+	trade_league = 1
+	start_date = 1299.1.1 #STT
+	end_date = 1361.1.1 
+}
+
+### Lubek - leader
+
+alliance = {
+	first = HSA
+	second = WLG
+	trade_league = 1
+	start_date = 1361.1.1 #STT
+	end_date = 1648.1.1 
+}
+
+alliance = {
+	first = HSA
+	second = LUN
+	trade_league = 1
+	start_date = 1361.1.1 #STT
+	end_date = 1648.1.1 
+}
+
+alliance = {
+	first = HSA
+	second = MKL
+	trade_league = 1
+	start_date = 1361.1.1 #STT
+	end_date = 1648.1.1 
+}
+
+alliance = {
+	first = HSA
+	second = SHV
+	trade_league = 1
+	start_date = 1361.1.1 #STT
+	end_date = 1648.1.1 
+}
+
+

@@ -30,6 +30,23 @@ country_decisions = {
 			NOT = { government = feudal_theocracy }
 			religion_group = muslim
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 428	# Teheran/Rayy
+				province_id = 429	# Isfahan
+				province_id = 446	# Herat
+				province_id = 451	# Kabul
+				province_id = 458	# Ferghana
+				province_id = 454	# Samarkand
+				province_id = 2213	# Qom
+				province_id = 2214	# Astarabad
+				province_id = 2218	# Shiraz
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_subject = no
 			OR = {
@@ -124,6 +141,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = TIM
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

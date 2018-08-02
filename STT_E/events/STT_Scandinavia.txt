@@ -94,10 +94,12 @@ province_event = {
 		    factor = 10
 			modifier = {
 			    factor = 1000
-				num_of_owned_provinces_with = {
-			        value = 1
-				    religion = norse_pagan_reformed
-			    }
+				owner = { 
+					num_of_owned_provinces_with = {
+						value = 1
+						religion = norse_pagan_reformed
+					} 
+				}
 			}
 		}
 		change_religion = norse_pagan_reformed
@@ -105,7 +107,7 @@ province_event = {
 			name = "pagans_was_supported"
 			duration = 1800
 		}
-		add_years_of_income = -0.1
+		owner = { add_years_of_income = -0.1 }
 	}
 	
 	option = {
@@ -113,7 +115,7 @@ province_event = {
 		ai_chance = {
 		    factor = 90
 		}
-		add_manpower = -1
+		owner = { add_manpower = -1 }
 		add_province_modifier = {
 			name = "pagans_was_destroyed"
 			duration = 1000
@@ -121,7 +123,7 @@ province_event = {
 	}
 }	
 
-province_event = {
+country_event = {
 	id = stt_scan.3
 	title = "stt_scan.t.3"
 	desc = "stt_scan.de.3"
@@ -193,7 +195,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 240
+	    months = 340
 	}
 	
 	option = {
@@ -218,7 +220,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 200
+	    months = 500
 	}
 	
 	option = {
@@ -243,12 +245,12 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 240
+	    months = 700
 	}
 	
 	option = {
 	    name = "stt_scan.a.8"
-		add_treasury = 500
+		add_years_of_income = 1.5
 	}
 }
 

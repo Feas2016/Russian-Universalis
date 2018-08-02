@@ -16,7 +16,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		##government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 	}
 	
 	is_triggered_only = yes
@@ -140,7 +141,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 		monthly_income = 30
 	}
 	
@@ -257,7 +259,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 		religion_group = christian
 		any_owned_province = {
 			has_terrain = steppe
@@ -286,14 +289,14 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					has_terrain = steppe
-					culture_group = tartar
+					culture_group = turkic
 				}
 				save_event_target_as = steppe_province
 			}
 			random_owned_province = {
 				limit = {
 					has_terrain = steppe
-					culture_group = tartar
+					culture_group = turkic
 					religion_group = muslim
 				}
 				save_event_target_as = steppe_province
@@ -301,7 +304,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					has_terrain = steppe
-					culture_group = tartar
+					culture_group = turkic
 					religion_group = muslim
 					continent = europe
 				}
@@ -333,8 +336,8 @@ country_event = {
 		ai_chance = {
 			factor = 60
 		}
-		change_culture = owner
 		event_target:steppe_province = {
+			change_culture = owner
 			add_base_production = 1
 			add_province_modifier = {
 				name = "settling_russians_in_steppe"
@@ -385,7 +388,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3 #STT
 		religion_group = christian
 		any_owned_province = {
 			has_influencing_fort = no
@@ -540,7 +544,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3 #STT
 		OR = {
 			NOT = { legitimacy = 70 }
 			NOT = { stability = 0 }
@@ -610,7 +615,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 	}
 	
 	is_triggered_only = yes
@@ -652,7 +658,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 	}
 	
 	is_triggered_only = yes
@@ -742,7 +749,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 		num_of_cities = 30
 		any_owned_province = {
 			is_colony = no
@@ -820,7 +828,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3  #STT
 		any_neighbor_country = {
 			NOT = { culture_group = east_slavic }
 			NOT = { religion = orthodox }
@@ -870,7 +879,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3 #STT
 		religion_group = christian
 		any_owned_province = {
 			NOT = { has_province_modifier = fugitive_christian_converts }
@@ -940,7 +950,8 @@ country_event = {
 	trigger = {
 		has_dlc = "Third Rome"
 		#government = tsardom
-		AND = { government = rus_government government_rank = 3 } #STT
+		government = rus_government #STT
+		government_rank = 3   #STT
 		any_owned_province = {
 			is_state = no
 		}

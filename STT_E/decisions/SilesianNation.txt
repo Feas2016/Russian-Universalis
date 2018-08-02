@@ -1,0 +1,73 @@
+country_decisions = {
+
+	silesian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_silesian_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SIL }
+			NOT = { tag = SIL }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			primary_culture = schlesian
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			area = silesia_area 
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = SIL }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			num_of_owned_provinces_with = { value = 4 area = silesia_area }			
+		}
+		effect = {
+			change_tag = SIL
+			swap_non_generic_missions = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } OR = { is_part_of_hre = no is_elector = yes } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = {
+						primary_culture = schlesian
+					}
+				}
+				change_primary_culture = schlesian
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_silesian_flag
+			every_province = { limit = { OR = { area = silesia_area culture = schlesian } } add_core = SIL }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #If there is no Silesia then Silesian minors will prioritize reforming it.
+	}
+	
+}

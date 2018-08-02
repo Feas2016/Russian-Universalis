@@ -916,19 +916,19 @@ country_decisions = {
 				ai = no
 				AND = {
 					treasury = 1000
-					owns = 122
+					owns = 2983
 				}
 			}
 			mil = 4
-			owns = 122
-			122 = {
+			owns = 2983
+			2983 = {
 				owns = ROOT
 				NOT = { has_great_project = cast_de_ovo }
 				NOT = { has_construction = great_project }
 			}
 		}
 		allow = {
-			owns = 122
+			owns = 2983
 			treasury = 1000
 			mil_power = 300
 			dip_power = 100
@@ -938,7 +938,7 @@ country_decisions = {
 			add_treasury = -1000
 			add_mil_power = -300
 			add_dip_power = -100
-			122 = {
+			2983 = {
 				add_great_project = cast_de_ovo
 			}
 		}
@@ -951,18 +951,18 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			owns = 122
-			122 = {
+			owns = 2983
+			2983 = {
 				has_construction = great_project
 			}
 		}
 		allow = {
-			122 = {
+			2983 = {
 				has_construction = great_project
 			}
 		}
 		effect = {
-			122 = {	# napoli
+			2983 = {	# napoli
 				cancel_construction = yes
 			}
 		}

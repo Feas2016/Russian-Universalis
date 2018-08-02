@@ -3,7 +3,7 @@
 owner = GLH
 controller = GLH
 culture = nogaybak
-religion = sunni
+religion = tengri_pagan_reformed
 capital = "Сарайчик"
 trade_goods = salt
 hre = no
@@ -18,6 +18,9 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+1321.1.1 = {
+	religion = sunni
+}
 1440.1.1 = { owner = NOG controller = NOG } #vanilla date
 1520.1.1 = {	owner = KZH controller = KZH add_core = KZH remove_core = NOG culture = khazak } # Qasim Khan crushes the Nogais
 1645.1.1 = {

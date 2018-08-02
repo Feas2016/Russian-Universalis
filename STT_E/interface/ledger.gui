@@ -42,9 +42,9 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		font = "vic_18"
 		text = " "	
-		maxWidth = 250
+		maxWidth = 300
 		maxHeight = 16
-		fixedsize = yes
+		fixedsize = no
 		format = left
 	}
 	instantTextBoxType = { 
@@ -52,7 +52,7 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		font = "vic_18"
 		text = " "	
-		maxWidth = 250
+		maxWidth = 300
 		maxHeight = 16
 		fixedsize = yes
 		format = right
@@ -71,10 +71,10 @@ guiTypes = {
 		position = { x = 0 y = 0 }
 		font = "vic_18"
 		text = " "	
-		maxWidth = 135
+		maxWidth = 150
 		maxHeight = 16
 		fixedsize = yes
-		format = left
+		format = right
 	}
 	
 	iconType = {
@@ -674,7 +674,7 @@ guiTypes = {
 		name = "filter_list_item"
 		backGround =""
 		position = { x=0 y=0 }	
-		size = { x=167 y=32 }
+		size = { x=197 y=32 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = "0"
@@ -692,7 +692,7 @@ guiTypes = {
 			position = { x = 34 y = 7 }
 			font = "vic_18"
 			text = "Allies"	
-			maxWidth = 130
+			maxWidth = 145
 			maxHeight = 32
 			format = left
 		}

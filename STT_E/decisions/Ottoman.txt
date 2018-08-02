@@ -29,6 +29,7 @@ country_decisions = {
 			set_country_flag = relocated_capital_constantinople
 			change_tag = TUR #STT
 			add_stability = 1
+			set_capital = 151
 			add_core = 151
 			151 = {
 				move_capital_effect = yes
@@ -49,6 +50,7 @@ country_decisions = {
 			}
 			set_government_rank = 3
 			country_event = { id = ideagroups.1 } #Swap Ideas
+			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -165,5 +167,95 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	declare_konst_capital = {
+		potential = {
+			NOT = { tag = TU0 }
+			NOT = { culture_group = east_slavic }
+			owns = 151
+			NOT = { capital = 151 }
+			NOT = { has_country_flag = relocated_capital_constantinople }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			controls = 151
+			religion = orthodox
+			OR = { adm = 4 dip = 4 mil = 4 }
+			OR = { government_rank = 2 prestige = 50 }
+			total_development = 100
+			adm_power = 100
+			dip_power = 100
+		}
+		effect = {
+			set_country_flag = relocated_capital_constantinople
+			add_adm_power = -100
+			add_dip_power = -100
+			add_prestige = 25
+			add_patriarch_authority = 0.5
+			add_core = 151
+			151 = {
+				move_capital_effect = yes
+				change_culture = ROOT 
+				change_religion = ROOT
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = constantinople_restored }
+				}
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+			set_government_rank = 3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 151 # Constantinople
+	}
+	
+	declare_byz_heir = {
+		potential = {
+			capital = 151
+			has_country_flag = relocated_capital_constantinople
+			NOT = { has_global_flag = declare_byz_heir }
+			normal_or_historical_nations = yes
+			BYZ = { exists = no }
+		}
+		allow = {
+			is_at_war = no
+			controls = 151
+			religion = orthodox
+			adm = 3
+			dip = 4
+			mil = 3
+			government_rank = 3
+			OR = { total_development = 500 num_of_cities = 30 }
+			prestige = 75
+			patriarch_authority = 0.5
+			OR = { is_defender_of_faith = yes diplomatic_reputation = 2 }
+		}
+		effect = {
+			set_global_flag = declare_byz_heir
+			add_patriarch_authority = 0.5
+			add_country_modifier = { name = byz_heir duration = -1 } 
+			northern_greece_area = { add_core = ROOT } 
+			morea_area = { add_core = ROOT } 
+			balkan_region = { add_permanent_claim = ROOT }
+			anatolia_region = { add_permanent_claim = ROOT }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 
 }

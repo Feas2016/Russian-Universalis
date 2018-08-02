@@ -1,0 +1,319 @@
+government = administrative_monarchy
+primary_culture = cosmopolitan_french
+add_accepted_culture = gascon
+add_accepted_culture = occitain
+add_accepted_culture = angevin ### STT
+add_accepted_culture = champenois ### STT
+religion = catholic
+technology_group = western
+capital = 183 # Paris
+national_focus = DIP
+historical_rival = HAB
+
+1814.4.11 = {
+	government_rank = 2
+	monarch = {
+		name = "Людовик XVIII"
+		dynasty = "де Бурбон"
+		birth_date = 1755.11.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1814.4.11 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл X"
+		dynasty = "де Бурбон"
+		birth_date = 1757.10.9
+		death_date = 1836.11.6
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1815.3.20 = {
+    government_rank = 3
+	monarch = {
+		name = "Наполеон I"
+		adm = 6
+		dip = 3
+		mil = 6
+		dynasty = "Бонапарт" 
+		birth_date = 1769.8.15
+		leader = { name = "Наполеон"	type = general	fire = 6	shock = 6	manuever = 6	siege = 2 }
+	}
+}
+
+1815.3.20 = {
+	heir = {
+		name = "Наполеон"
+		monarch_name = "Наполеон II"
+		dynasty = "Бонапарт"
+		birth_date = 1811.3.20
+		death_date = 1832.7.22
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1815.6.22 = {
+	monarch = {
+		name = "Наполеон II"
+		adm = 2
+		dip = 2
+		mil = 2
+		dynasty = "Бонапарт" 
+		birth_date = 1811.3.20
+	}
+}
+
+1815.7.7 = {
+    government_rank = 2
+	monarch = {
+		name = "Людовик XVIII"
+		dynasty = "де Бурбон"
+		birth_date = 1755.11.17
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1815.7.7 = {
+	heir = {
+		name = "Карл"
+		monarch_name = "Карл X"
+		dynasty = "де Бурбон"
+		birth_date = 1757.10.9
+		death_date = 1836.11.6
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
+
+1824.9.16 = {
+	monarch = {
+		name = "Карл X"
+		adm = 2
+		dip = 3
+		mil = 1
+		dynasty = "де Бурбон" 
+		birth_date = 1757.10.9
+	}
+}
+
+1824.9.16 = {
+	heir = {
+		name = "Луи"
+		monarch_name = "Людовик XIX"
+		dynasty = "де Бурбон"
+		birth_date = 1775.8.6
+		death_date = 1844.6.3
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1830.8.2 = {
+	monarch = {
+		name = "Людовик XIX"
+		adm = 2
+		dip = 2
+		mil = 3
+		dynasty = "де Бурбон" 
+		birth_date = 1775.8.6
+	}
+}
+
+1830.8.2 = {
+	heir = {
+		name = "Анри"
+		monarch_name = "Генрих V"
+		dynasty = "де Бурбон"
+		birth_date = 1820.9.29
+		death_date = 1883.8.24
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1830.8.2 = {
+	monarch = {
+		name = "Генрих V"
+		adm = 2
+		dip = 2
+		mil = 3
+		dynasty = "де Бурбон" 
+		birth_date = 1820.9.29
+	}
+}
+
+1830.8.9 = {
+	monarch = {
+		name = "Луи-Филипп I"
+		adm = 2
+		dip = 3
+		mil = 5
+		dynasty = "д'Орлеан" 
+		birth_date = 1773.10.6
+	}
+}
+
+1830.8.9 = {
+	heir = {
+		name = "Фердинанд Филипп"
+		monarch_name = "Фердинанд I Филипп"
+		dynasty = "д'Орлеан"
+		birth_date = 1810.9.3
+		death_date = 1842.7.13
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1831.1.1 = { leader = {	name = "Тома Робер Бюжо"	type = general		fire = 2	shock = 3	manuever = 4	siege = 1	death_date = 1849.6.10 } }
+
+1842.7.13 = {
+	heir = {
+		name = "Луи-Филипп"
+		monarch_name = "Луи-Филипп II"
+		dynasty = "д'Орлеан"
+		birth_date = 1838.8.24
+		death_date = 1894.9.8
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1848.12.20 = {
+	government = constitutional_republic
+	monarch = {
+		name = "Наполеон III"
+		dynasty = "Бонапарт"
+		birth_date = 1808.4.20
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1852.12.2 = {
+	government = administrative_monarchy
+	government_rank = 3
+}
+
+1870.9.4 = {
+	government = constitutional_republic
+	monarch = {
+		name = "Луи Адольф"
+		dynasty = "Тьер"
+		birth_date = 1797.4.15
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1873.5.24 = {
+	monarch = {
+		name = "Патрис"
+		dynasty = "де Мак-Магон"
+		birth_date = 1808.7.13
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1879.1.30 = {
+	monarch = {
+		name = "Жуль"
+		dynasty = "Греви"
+		birth_date = 1807.8.15
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1887.12.2 = {
+	monarch = {
+		name = "Сади"
+		dynasty = "Карно"
+		birth_date = 1837.8.11
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+1894.6.24 = {
+	monarch = {
+		name = "Жан"
+		dynasty = "Казимир-Перье"
+		birth_date = 1847.11.8
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1895.1.17 = {
+	monarch = {
+		name = "Феликс"
+		dynasty = "Фор"
+		birth_date = 1841.1.30
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1899.2.16 = {
+	monarch = {
+		name = "Эмиль"
+		dynasty = "Лубе"
+		birth_date = 1838.12.30
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1906.1.18 = {
+	monarch = {
+		name = "Арман"
+		dynasty = "Фальер"
+		birth_date = 1841.11.6
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1913.2.18 = {
+	monarch = {
+		name = "Раймон"
+		dynasty = "Пуанкаре"
+		birth_date = 1860.8.20
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

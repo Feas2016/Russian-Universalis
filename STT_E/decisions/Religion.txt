@@ -376,19 +376,24 @@ country_decisions = {
 	the_khalifah = {
 			potential = {
 				NOT = { has_ruler_modifier = khalifah }
+				NOT = {is_female = yes}
 				religion = sunni
-			NOT = { tag = MAM } #Controls the Caliph already.
 			}
 			allow = {
-			mil = 3
+				NOT = { government = republic
+				}
 				has_regency = no
+				owns_core_province = 385 #Mekka
+				owns_core_province = 384 #Medina
 			}
 			effect = {	
 				add_ruler_modifier = {
 					name = "khalifah"
 					duration = -1
 				}
-			add_piety = 0.10
+				add_piety = 0.20
+				add_adm_power = 50
+				add_legitimacy = 5			
 			}
 			ai_will_do = {
 				factor = 1

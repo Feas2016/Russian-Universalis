@@ -1,7 +1,7 @@
 #1020 - Kyoto
 
-owner = JAP
-controller = JAP
+owner = HJO #STT
+controller = HJO #STT
 culture = japanese
 religion = shinto
 capital = "Kyoto"
@@ -11,7 +11,7 @@ base_tax = 12
 base_production = 12
 base_manpower = 6
 is_city = yes
-add_core = JAP
+add_core = HJO #STT
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
@@ -24,4 +24,9 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
+1333.5.5 = { owner = ASK controller = ASK add_core = ASK remove_core = HJO }
+
 1542.1.1 = { discovered_by = POR }
+1573.7.3 = { add_core = ODA owner = ODA controller = ODA remove_core = ASK } #Nobunaga ousts Yoshiaki
+1600.10.21 = { add_core = TKG owner = TKG controller = TKG remove_core = ODA } # Tokugawa won the battle of Sekigahara
+1869.6.27 = { remove_core = TKG add_core = JAP owner = JAP controller = JAP }

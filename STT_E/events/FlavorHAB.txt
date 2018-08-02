@@ -448,6 +448,7 @@ country_event = {
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -600,10 +601,12 @@ country_event = {
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
+		add_innovativeness_big_effect = yes
 	}
 	option = {		# No Change
 		name = "flavor_hab.EVTOPTB3216"
 		add_stability_or_adm_power = yes
+		add_innovativeness_small_effect = yes
 	}
 }
 
@@ -1418,6 +1421,7 @@ country_event = {
 		name = "EXCELLENT"
 		add_dip_power = 100
 		add_prestige = 10
+		add_innovativeness_small_effect = yes
 	}
 }
 

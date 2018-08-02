@@ -33,3 +33,7 @@ base_production = 4 } # The Decentralizing Effect of the Provincial System
  # The situation began to stabilize, Greek pop. returned
 1689.1.1 = { revolt = { type = nationalist_rebels size = 1.5 } controller = REB } # Karposh uprising against Ottoman rule
 1690.1.1 = { revolt = {} controller = TUR }
+1912.10.25 = { controller = BUL }
+1913.5.30 = { owner = BUL add_core = BUL controller = BUL }
+1913.7.10 = { controller = GRE }
+1913.8.10 = { owner = GRE add_core = GRE remove_core = BUL }

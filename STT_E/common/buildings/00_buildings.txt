@@ -12,306 +12,538 @@
 # FROM = owner
 # ROOT = province
 
-# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+# Building AI is now mainly hard-coded. The AI will estimate how much it gains yearly from each building,
+# convert the value to ducats, and take the building with biggest yearly return as a percentage of the build cost.
+# If lower than 1%, the AI will not consider the yearly return worth it.
+# It will also require higher yearly return if the economy in not in prime shape.
+# Forts' value also get converted to a yearly return based on terrain and strategic position, as well as available budget for fort maintenance.
+
+# AI can still be modded though; it will multiply the yearly return with the value of ai_will_do.
+# If you don't want the AI to build a building at all, make ai_will_do become 0.
+# AI will consider each building to be worth 0.01 ducats per year as a base, so making ai_will_do above cost will have them build it at some point.
+# It will still check whether it can afford a building before doing so though, but may save up to it.
 
 
 ################################################
-#Production
+# Tier 1, 15th Century Buildings
 ################################################
-workshop = {
-	cost = 100
-	time = 12
-	modifier = { local_production_efficiency = 0.5 }
-	allow_in_gold_provinces = no
-	ai_will_do = {
-		factor = 1
-	}
-}
 
-counting_house = {
-	cost = 200
-	time = 13
-	make_obsolete = workshop
-	modifier = { local_production_efficiency = 1 }
-	allow_in_gold_provinces = no
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-storehouse = {
-	cost = 400
-	time = 14
-	modifier = { local_production_efficiency = 1.25 }
-    make_obsolete = counting_house	
-	allow_in_gold_provinces = no
-	ai_will_do = {
-		factor = 1
-	}
-}
-steam_factory = {
-	cost = 800
-	time = 12
-	make_obsolete = storehouse
-	modifier = { local_production_efficiency = 1.50 }
-	allow_in_gold_provinces = no
-	ai_will_do = {
-		factor = 1
-	}
-}
-factory = {
-	cost = 1200
-	time = 15
-	make_obsolete = steam_factory
-	modifier = { local_production_efficiency = 2.00 }
-	trigger = {  owner = { has_country_flag = factorytrue } } 
-	allow_in_gold_provinces = no	
-	ai_will_do = {
-		factor = 1
-	}
-}
-################################################
-#Government
-################################################
-courthouse = {
-	cost = 250
-	time = 6
-	modifier = { allowed_num_of_buildings = 1
-		local_development_cost = -0.15
-        local_state_maintenance_modifier = -0.15 }
-	ai_will_do = {
-		factor = 1
-	}
-}
-town_hall = {
-	cost = 350
-	time = 12
-	make_obsolete = courthouse
-	modifier = { allowed_num_of_buildings = 2
-		local_development_cost = -0.20
-        local_state_maintenance_modifier = -0.20 }
-	ai_will_do = {
-		factor = 1
-	}
-}
-capitol = {
-	cost = 500
-	time = 24
-    make_obsolete = town_hall
-	modifier = {  allowed_num_of_buildings = 3
-		local_development_cost = -0.25
-    local_state_maintenance_modifier = -0.30 }
-	ai_will_do = {
-		factor = 1
-	}
-}
-university = {
-	cost = 5000	### STT
+college = {
+	cost = 170
 	time = 12
 	
-	trigger = {	### STT
-	    development = 30
-	}
 	modifier = {
-		adm_tech_cost_modifier = -0.1
-        dip_tech_cost_modifier = -0.1
-        mil_tech_cost_modifier = -0.1
-	}
-	ai_will_do = {
-		factor = 1	
+		local_institution_spread = 0.30
+		local_unrest = -1
 	}
 	
+	on_built = {
+		hidden_effect = { 
+			FROM = { change_innovativeness = 0.05 }				
+		}
+	}
+	
+	on_destroyed = {
+		hidden_effect = { 
+			FROM = { change_innovativeness = -0.05 }
+						
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = { factor = 2.0 FROM = { num_of_cities = 1 } }
+	}
 }
-################################################
-#Unique
-################################################
+steel_mill = {
+	cost = 2000
+	time = 60
+	
+	trigger = {
+		AND = { 
+			FROM = { innovativeness = 80 } 
+			ROOT = { trade_goods = iron } 
+		}		
+	}
+	
+	on_built = {
+		hidden_effect = { 
+			THIS = { change_trade_goods = steel }			
+		}
+	}
+	
+	on_destroyed = {
+		hidden_effect = { 
+			THIS = { change_trade_goods = iron }			
+		}
+	}
+	
+	modifier = {
+		trade_goods_size = 1.0
+	}
+	
+	ai_will_do = {
+		factor = 5000 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+road_network = {
+	cost = 70
+	time = 12
+	
+	
+	modifier = {
+		local_friendly_movement_speed = 0.3
+		province_trade_power_modifier = 0.2
+		allowed_num_of_buildings = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.5 
+	}
+}
+
+railroad = {
+	cost = 250
+	time = 16
+	
+	make_obsolete = road_network
+	
+	trigger = {
+		FROM = { innovativeness = 20 }	
+	}
+	
+	modifier = {
+	local_friendly_movement_speed = 0.5
+	province_trade_power_modifier = 0.4
+	allowed_num_of_buildings = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+canal_system = {
+	cost = 170
+	time = 12
+	
+	modifier = {
+		trade_value_modifier = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+
+}
+
 customs_house = {
 	cost = 2000
 	time = 12
+	
 	one_per_country = yes
+	
 	trigger = {
-	    owner = { full_idea_group = exploration_ideas }
+	    OR = { 
+		owner = { full_idea_group = exploration_ideas } 
+		owner = { full_idea_group = expansion_ideas } 
+		}
 	}
+	
 	modifier = { 
 		colonists = 1
 		global_colonial_growth = 10
 		range = 0.2 
 	}
+	
 	ai_will_do = {
-		factor = 1
+		factor = 2500
+		modifier = { factor = 0.95 FROM = { NOT = { exploration_ideas = 1 } } }
+		modifier = { factor = 0.95 FROM = { NOT = { expansion_ideas = 1} } }
+		modifier = { factor = 0.95 FROM = { NOT = { personality = ai_colonialist } } }
 	}
 }
-arsenal = {
-	cost = 2000
-	time = 12
-	one_per_country = yes
-	trigger = {
-	    owner = { full_idea_group = offensive_ideas }
-	}
-	modifier = { 
-		army_tradition = 1
-		free_leader_pool = 1
-		discipline = 0.025 
-	}
-	ai_will_do = {
-		factor = 1
-	}
-}
+
 spy_agency = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	
 	trigger = {
-	    owner = { full_idea_group = trade_ideas }
+	    OR = { 
+		owner = { full_idea_group = trade_ideas } 
+		owner = { full_idea_group = naval_ideas } 
+		}
 	}
+	
 	modifier = { global_trade_power = 0.1 merchants = 1 }
 	ai_will_do = {
-		factor = 1
+		factor = 2500
+		modifier = { factor = 0.95 FROM = { NOT = { government = merchant_republic } } }
+        modifier = { factor = 2  FROM = { OR = { trade_ideas = 1 is_trade_league_leader = yes }	} }
 	}
 }
+
 tax_office = {
 	cost = 2000
 	time = 12
 	one_per_country = yes
+	
 	trigger = {
-	    owner = { full_idea_group = economic_ideas }
+	    OR = { 
+		owner = { full_idea_group = economic_ideas } 
+		owner = { full_idea_group = administrative_ideas } 
+		}
 	}
+	
 	modifier = { global_tax_modifier = 0.20 stability_cost_modifier = -0.1 }
 	ai_will_do = {
-		factor = 1
+		factor = 3000
 	}
 }
 
 glorious_monument = {
 	cost = 2000
 	time = 12
+	
 	one_per_country = yes
+	
 	trigger = {	### STT
 	    owner = { government_rank = 3 }
 	}
 	
-	modifier = { idea_cost = -0.1 prestige = 1 }
-	ai_will_do = { factor = 1 }
-}
-################################################
-#INFRASTRUCTURE
-################################################
-road_network = {
-	cost = 90
-	time = 8
-	modifier = {
-		local_friendly_movement_speed = 0.40
-		trade_value_modifier = 0.25
-		allowed_num_of_buildings = 1
-	}
-	ai_will_do = {
-		factor = 1
-	}
+	modifier = { idea_cost = -0.1 }
+	ai_will_do = { factor = 2500 }
 }
 
-canal_system = {
-	cost = 200
-	time = 12
 
-	modifier = {
-		trade_value = 1 
-		province_trade_power_modifier = 0.25
-	}
-	ai_will_do = {
-		factor = 1	
-	}
-}
 
-railroad = {
-	cost = 250
-	time = 12
-	trigger = {  owner = { has_country_flag = railwaystrue } } 
-	modifier = {
-        trade_goods_size_modifier = 0.25
-        local_production_efficiency = 0.15
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-################################################
-#Army
-################################################
-armory = {
+marketplace = {
 	cost = 100
 	time = 12
-	modifier = { land_forcelimit = 1 }	### STT
+	
+	modifier = {
+		province_trade_power_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+workshop = {
+	cost = 100
+	time = 12
+	modifier = {
+		local_production_efficiency = 0.5
+	}
+	
+	allow_in_gold_provinces = no
+
 	ai_will_do = {
 		factor = 1
 	}
 }
+
+temple = {
+	cost = 100
+	time = 12
+	modifier = {
+		local_tax_modifier = 0.4
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 barracks = {
-	cost = 300
-	time = 12
-	modifier = { land_forcelimit = 2 }	### STT
-	make_obsolete = armory	
-	
-	ai_will_do = {
-		factor = 1	
-	}
-}	
-
-training_fields = {
-	cost = 600
-	time = 12
-	make_obsolete = barracks
-	modifier = { land_forcelimit = 3 }	### STT
-	ai_will_do = {
-		factor = 1
-	}
-}
-regimental_camp = {
 	cost = 100
 	time = 12
-	modifier = { local_manpower_modifier = 0.50 }	### STT
-	ai_will_do = {
-		factor = 1
+	modifier = {
+		local_manpower_modifier = 0.5
 	}
-}
 
-conscription_center = {
-	cost = 300
-	time = 12
-	
-	make_obsolete = regimental_camp
-	
-	modifier = { local_manpower_modifier = 1.00 }	### STT
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
 	
 	ai_will_do = {
 		factor = 1
 	}
-}
+}		
 
-mint = {
-	cost = 600
-	time = 12
-    make_obsolete = conscription_center
-	modifier = { local_manpower_modifier = 1.50 }	### STT
-	ai_will_do = {
-		factor = 1
-	}
-}
-################################################
-#Navy
-################################################
 shipyard = {
 	cost = 100
 	time = 12
-	trigger = { has_port = yes }	
+	trigger = {
+		has_port = yes
+	}
 	modifier = {
 		naval_forcelimit = 2
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
-	}	
+	}
+	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 105 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+fort_15th = {
+	cost = 200
+	time = 30
+	modifier = {
+		fort_level = 2
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
+	
+	onmap = yes
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+	} 
+}
+
+
+################################################
+# Tier 2, 16th Century Buildings
+################################################
+courthouse = {
+	cost = 100
+	time = 12
+	modifier = {
+		local_state_maintenance_modifier = -0.25
+		local_autonomy = -0.1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dock = {
+	cost = 100
+	time = 12
+	trigger = {
+		has_port = yes
+	}
+	modifier = {
+		local_sailors_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+regimental_camp = {
+	cost = 200
+	time = 12
+	modifier = {
+		land_forcelimit = 1
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.005
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.005
+#			}
+#		}
+#	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 215 # Little above build cost
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+fort_16th = {
+	cost = 400
+	time = 30
+	make_obsolete = fort_15th
+	modifier = {
+		fort_level = 4
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.01
+#			}
+#		}
+#	}
+
+	onmap = yes
+	
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+	} 
+}
+
+################################################
+# Tier 3, 17th Century Buildings
+################################################
+cathedral = {
+	make_obsolete = temple
+	
+	cost = 300
+	time = 12
+	modifier = {
+		local_missionary_strength = 0.03
+		local_tax_modifier = 0.6
+	}
+	
+	ai_will_do = {
+		factor = 1	
+	}
+}
+
+
+university = {
+	cost = 300
+	time = 12
+	modifier = {
+		local_development_cost = -0.20
+		allowed_num_of_buildings = 1
+	}
+	
+	ai_will_do = {
+		# Hard coded AI sees no value in this above the 0.01 ducats base. Let's multiply that
+		factor = 1
+		modifier = {
+			factor = 250
+			development = 20
+			is_state = yes
+		}
+		modifier = {
+			factor = 0.9
+			OR = 
+			{
+				has_climate = tropical
+				has_climate = arid
+			}			
+		}
+		modifier = {
+			factor = 0.4
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_terrain = grasslands
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 3
+			has_terrain = farmlands
+		}
+	}
+}
+
+trade_depot = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = marketplace
+	
+	modifier = {
+		province_trade_power_modifier = 1
+	}
+	
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
 	}
 }
 
@@ -332,245 +564,364 @@ grand_shipyard = {
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 320 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
 	}
 }
 
-naval_base = {
-	cost = 600
+training_fields = {
+	cost = 300
 	time = 12
 	
-	make_obsolete = grand_shipyard
+	make_obsolete = barracks
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.01
+#			}
+#		}
+#	}
+	
+	modifier = {
+		local_manpower_modifier = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+fort_17th = {
+	cost = 600
+	time = 30
+	
+	make_obsolete = fort_16th
+	
+	modifier = {
+		fort_level = 6
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.04
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.02
+#			}
+#		}
+#	}
+
+	onmap = yes
+	
+	influencing_fort = yes
+	
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+	} 
+}
+
+
+
+################################################
+# Tier 4, 18th Century Buildings
+################################################
+stock_exchange = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = trade_depot
+	
+	modifier = {
+		province_trade_power_modifier = 1.25
+	}
+	
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+counting_house = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = workshop
+	modifier = {
+		local_production_efficiency = 1
+	}
+	
+	allow_in_gold_provinces = no
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+
+
+town_hall = {
+	cost = 200
+	time = 12
+	
+	make_obsolete = courthouse
+	
+	modifier = {
+		local_state_maintenance_modifier = -0.5
+		local_autonomy = -0.2
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+drydock = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = dock
 	
 	trigger = {
 		has_port = yes
 	}
+	
 	modifier = {
-		naval_forcelimit = 6
-		ship_recruit_speed = -1
-		local_ship_repair = 1
-	}
+		local_sailors_modifier = 1.0
+	}	
 	
 	ai_will_do = {
 		factor = 1
 	}
 }
-dock = {
-	cost = 100
-	time = 12
-	trigger = { has_port = yes }
-	modifier = { local_sailors_modifier = 0.5 }
-	ai_will_do = { factor = 1 }
-}
-drydock = {
-	cost = 300
-	time = 12
-	make_obsolete = dock
-	trigger = { has_port = yes }
-	modifier = { local_sailors_modifier = 1.0 }
-	ai_will_do = { factor = 1 }
-}
-naval_arsenal = {
-	cost = 600
-	time = 12
-	make_obsolete = drydock
-	trigger = { has_port = yes }
-	modifier = { local_sailors_modifier = 1.5 }
-	ai_will_do = { factor = 1 }
-}
-################################################
-#Religion
-################################################
-temple = {		
-	cost = 100
-	time = 12
-	modifier = {
-		local_tax_modifier = 0.2
-        local_missionary_strength = 0.01
-	}
-	ai_will_do = {
-		factor = 1		 
-	}
-}
-cathedral = {		
-	cost = 300
-	time = 12
 
-    make_obsolete = temple
-	modifier = {
-		local_tax_modifier = 0.4
-        local_missionary_strength = 0.015
-	}
-	ai_will_do = {
-		factor = 1		 
-	}
-}
-monastery = {
-	cost = 1500
-	time = 12
-    one_per_country = yes
-	trigger = {
-	    owner = { full_idea_group = religious_ideas }
-	}
-	modifier = {  global_missionary_strength = 0.02 missionaries = 1 }	
-	ai_will_do = {
-		factor = 1
-	}
-}
-################################################
-#Trade
-################################################
-marketplace = {
-	cost = 100
-	time = 12
-	modifier = { province_trade_power_modifier = 0.5 }
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-trade_depot = {
-	cost = 200
-	time = 12
-	make_obsolete = marketplace
-	modifier = { province_trade_power_modifier = 1 }
-    ai_will_do = {
-		factor = 1
-	}
-}
-
-treasury_office = {
+conscription_center = {
 	cost = 400
 	time = 12
-	make_obsolete = trade_depot
-	modifier = { province_trade_power_modifier = 1.5 }
+	
+	
+	make_obsolete = regimental_camp
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.01
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.02
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.01
+#			}
+#		}
+#	}
+	
+	modifier = {
+		land_forcelimit = 2
+	}
+	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 435 # Little above build cost
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
 	}
 }
-stock_exchange = {
-	cost = 600
-	time = 12	
-	make_obsolete = treasury_office 	
-	modifier = { province_trade_power_modifier = 2.0 }
-	ai_will_do = {
-		factor = 1
-	}
-}
-################################################
-#Defence
-################################################
-fort_15th = {
-	cost = 200
-	time = 30
-	modifier = { fort_level = 2 }
-    onmap = yes
-	influencing_fort = yes
-	ai_will_do = { factor = 1}
-}
-fort_16th = {
-	cost = 400
-	time = 30
-	make_obsolete = fort_15th
-	modifier = { fort_level = 4 }
-    onmap = yes
-	influencing_fort = yes
-	ai_will_do = { factor = 1}
-}
-fort_17th = {
-	cost = 600
-	time = 30
-	make_obsolete = fort_16th
-	modifier = { fort_level = 6 }
-    onmap = yes
-	influencing_fort = yes
-	ai_will_do = { factor = 1}
-}
+
+
+
 fort_18th = {
 	cost = 800
 	time = 30
+	
+	
 	make_obsolete = fort_17th
-	modifier = { fort_level = 8 }
-    onmap = yes
+	
+	modifier = {
+		fort_level = 8
+	}
+
+#	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+#	on_built = {
+#		FROM = {
+#			add_army_professionalism = 0.04
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+#	on_destroyed = {
+#		FROM = {
+#			add_army_professionalism = -0.08
+#		}
+#	}
+#
+#	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+#	on_obsolete = {
+#		hidden_effect = {
+#			FROM = {
+#				add_army_professionalism = -0.04
+#			}
+#		}
+#	}
+
+	onmap = yes
+	
 	influencing_fort = yes
-	ai_will_do = { factor = 1}
+	
+	ai_will_do = {
+		factor = 1 #Lots of logic in code instead, that multiplies with this value
+	} 
 }
+
 ################################################
 # Manufactories
 ################################################
-wharf = {
+
+manufactory = {
 	cost = 500
 	time = 60
+	modifier = {
+		trade_goods_size = 1.0
+	}
+}
+
+wharf = {
 	manufactory = {
 		naval_supplies
 		fish
 		salt
 	}
-	modifier = { trade_goods_size = 1.0 }
 	onmap = yes
+	
 	ai_will_do = {
-		factor = 1 
+		factor = 1750
+		
+		modifier = { 
+			factor = 0.4
+			NOT = { base_production = 6 }
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 10
+		}
+		modifier = {
+			factor = 1.5
+			base_production = 15
+		}
+		modifier = { 
+			factor = 5
+			OR = {
+				has_province_modifier = skanemarket
+				has_province_modifier = comet_ore_modifier
+				has_province_modifier = paradise_modifier
+			}
+		}
+		modifier = {
+			NOT = { num_free_building_slots = 3 }
+			factor = 1.5
+		}
 	}
 }
 
 weapons = {
-	cost = 500
-	time = 60
-	manufactory = { 
-		copper 
-		iron 
+	manufactory = {
+		copper
+		iron
 	}
-	modifier = { trade_goods_size = 1.0	}
 	onmap = yes	
+	
 	ai_will_do = {
 		factor = 1
 	}
 }
 
 textile = {
-	cost = 500
-	time = 60
 	manufactory = {
 		wool
 		cloth
 		silk
 		dyes
 	}
-	modifier = { trade_goods_size = 1.0	}
 	onmap = yes
+	
 	ai_will_do = {
 		factor = 1
 	}
 }
 
 plantations = {
-	cost = 500
-	time = 60
 	manufactory = {
 		coffee
 		cotton
 		sugar
 		tobacco
-		cocoa
 		tea
+		cocoa
 	}
-	modifier = { trade_goods_size = 1.0	}
 	onmap = yes
+	
 	ai_will_do = {
 		factor = 1
 	}
 }
 
 tradecompany = {
-	cost = 500
-	time = 60
 	manufactory = {
 		ivory
-		slaves	
+		slaves
 		spices
 		fur
 		incense
 	}
-	modifier = { trade_goods_size = 1.0	}
 	onmap = yes
 
 	ai_will_do = {
@@ -579,15 +930,10 @@ tradecompany = {
 }
 
 farm_estate = {
-	cost = 500
-	time = 60
 	manufactory = {
 		grain
 		livestock
 		wine
-	}
-	modifier = {
-		trade_goods_size = 1.0
 	}
 	onmap = yes
 	
@@ -596,20 +942,13 @@ farm_estate = {
 	}
 }
 
-
 mills = {
-	cost = 500
-	time = 60
 	manufactory = {
 		paper
 		gems
 		tropical_wood
 		glass
 		chinaware
-		coal
-	}
-	modifier = {
-		trade_goods_size = 1.0
 	}
 	onmap = yes
 	
@@ -617,3 +956,66 @@ mills = {
 		factor = 1
 	}
 }
+
+furnace = {
+	manufactory = {
+		coal
+	}
+
+	potential = {
+		has_dlc = "Rule Britannia"
+	}
+
+	modifier = {
+		global_trade_goods_size_modifier = 0.05 #National Bonus
+	}
+	onmap = yes
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+steam_factory = {
+	cost = 800
+	time = 12
+	
+	make_obsolete = counting_house
+	
+	allow_in_gold_provinces = no
+	
+	trigger = {
+		FROM = { innovativeness = 30 }	
+	}
+	
+	modifier = {
+		local_production_efficiency = 1.50
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+factory = {
+	cost = 1400
+	time = 12
+	
+	make_obsolete = steam_factory
+	
+	allow_in_gold_provinces = no
+	
+	trigger = {
+		FROM = { innovativeness = 60 }	
+	}
+	
+	modifier = {
+		local_production_efficiency = 2.00
+	}
+	
+	ai_will_do = {
+		factor = 1 
+	}
+}
+

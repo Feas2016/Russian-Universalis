@@ -1001,7 +1001,7 @@ native_council = {
 	rank = {
 		1 = {
 			stability_cost_modifier = -0.33
-			land_maintenance_modifier = -0.5	
+			land_maintenance_modifier = -0.25	
 			diplomatic_upkeep = -1
 			global_institution_spread = -0.025
 		}
@@ -1020,6 +1020,9 @@ siberian_native_council = {
 	
 	republican_name = yes
 	royal_marriage = no
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
 	
 	ai_will_do = {
 		factor = 0

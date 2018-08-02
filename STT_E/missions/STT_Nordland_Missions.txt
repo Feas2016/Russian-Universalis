@@ -1,0 +1,731 @@
+NDL_east_direction = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = NDL
+	}
+	has_country_shield = yes
+	
+	ndl_livonia = {
+		icon = mission_have_two_subjects
+		position = 1
+		required_missions = {  } #None
+		
+		provinces_to_highlight = {
+			province_id = 35
+			province_id = 38
+			province_id = 3210
+			province_id = 36
+			province_id = 1842
+		}
+		
+		trigger = {
+			35 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			38 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3210 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			36 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			1842 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+			novgorod_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			ingria_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ndl_novgorod = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { ndl_livonia } #None
+		
+		provinces_to_highlight = {
+			area = novgorod_area
+			area = ingria_area
+		}
+		
+		trigger = {
+			novgorod_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			ingria_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+			west_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ndl_dnepr = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { ndl_novgorod } #None
+		
+		provinces_to_highlight = {
+			area = west_dniepr_area
+			area = east_dniepr_area
+		}
+		
+		trigger = {
+			west_dniepr_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			east_dniepr_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 1958 
+						province_id = 1955
+						province_id = 313
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ndl_white_sea = {
+		icon = mission_have_two_subjects
+		position = 4
+		required_missions = { ndl_dnepr } #None
+		
+		provinces_to_highlight = {
+			province_id = 1958
+			province_id = 1955
+			province_id = 313
+		}
+		
+		trigger = {
+			1958 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			1955 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			313 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+			add_country_modifier = { 
+				name = "boom_economy" 
+				duration = 3650 
+			}
+		}
+	}
+}
+
+STT_NDL_pomerania = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = NDL
+	}
+	has_country_shield = yes
+	
+	ndl_pomerania = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = {  } #None
+		
+		provinces_to_highlight = {
+			area = vorpommern_area
+			area = hinter_pommern_area
+		}
+		
+		trigger = {
+			west_dniepr_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			east_dniepr_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+}
+
+NDL_main_direction1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = NDL
+	}
+	has_country_shield = yes
+	
+	ndl_islands = {
+		icon = mission_unite_home_region
+		position = 1
+		required_missions = {  } #None
+		
+		provinces_to_highlight = {
+			province_id = 253
+			province_id = 3290
+			province_id = 369
+			province_id = 252
+		}
+		
+		trigger = {
+			253 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			252 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3290 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			369 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+		}
+		
+		effect = {
+			northern_england_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			western_ireland_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_ireland_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+	
+	ndl_northumbry = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { 
+			ndl_islands
+			ndl_pomerania
+		} 
+		
+		provinces_to_highlight = {
+			area = northern_england_area
+		}
+		
+		trigger = {
+			northern_england_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			netherlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			frisia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+	
+	ndl_low_lands = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { 
+			ndl_northumbry
+		}
+		
+		provinces_to_highlight = {
+			area = frisia_area
+			area = netherlands_area
+		}
+		
+		trigger = {
+			frisia_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			netherlands_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			normandy_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+	
+	ndl_normandy = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { 
+			ndl_low_lands
+		}
+		
+		provinces_to_highlight = {
+			area = normandy_area
+		}
+		
+		trigger = {
+			normandy_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			calabria_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+NDL_main_direction2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = NDL
+	}
+	has_country_shield = yes
+	
+	ndl_ireland = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { 
+			ndl_islands
+		}
+		provinces_to_highlight = {
+			province_id = 374
+			province_id = 373
+			province_id = 3626
+			province_id = 3273
+			province_id = 3026
+		}
+		
+		trigger = {
+			374 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			373 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3626 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3273 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3026 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+		}
+		
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						province_id = 3062 
+						province_id = 3067
+						province_id = 174
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+		}
+	}
+	
+	ndl_picardia = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { ndl_ireland } #None
+		
+		provinces_to_highlight = {
+			province_id = 3062 
+			province_id = 3067
+			province_id = 174
+		}
+		
+		trigger = {
+			3062 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			3067 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+			174 = {
+				owned_by = ROOT	
+			    is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = 3650
+			}
+			sicily_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	ndl_sicily = {
+		icon = mission_cannons_firing
+		position = 4
+		required_missions = { 
+			ndl_picardia
+		} 
+		
+		provinces_to_highlight = {
+			area = sicily_area
+			area = naples_area
+			area = calabria_area
+			area = apulia_area
+		}
+		
+		trigger = {
+			sicily_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			naples_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			calabria_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+			apulia_area = {
+				owned_by = ROOT	
+			    is_core = ROOT
+				type = all
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "tyur_bless"
+				duration = -1
+			}
+			add_country_modifier = { 
+				name = "boom_economy" 
+				duration = 3650 
+			}
+		}
+	}
+}
+
+NDL_colon_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = NDL
+	}
+	
+	NDL_discover_greenland = {
+		icon = mission_galleys_in_port
+		position = 1
+		required_missions = { } 
+		
+		trigger = {
+			navy_size_percentage = 0.95
+			years_of_income = 3.0
+		}
+		
+		effect = {
+			add_years_of_income = -3.0
+			1481 = {
+				discover_country = NDL
+			}
+			1924 = {
+				discover_country = NDL
+			}
+			1482 = {
+				discover_country = NDL
+			}
+			1484 = {
+				discover_country = NDL
+			}
+			1104 = {
+				discover_country = NDL
+			}
+			1105 = {
+				discover_country = NDL
+			}
+			3185 = {
+				discover_country = NDL
+			}
+			add_country_modifier = { 
+				name = "ndl_colon_boom" 
+				duration = 14600 
+			}
+		}
+	}
+	
+	NDL_greenland = {
+		icon = mission_colonial
+		position = 2
+		required_missions = { 
+			NDL_discover_greenland
+		} 
+		
+		trigger = {
+			any_owned_province = {
+				limit = {
+					province_id = 1104
+					province_id = 1105
+					province_id = 3185
+				}
+				development = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = "boom_economy" 
+				duration = 3650 
+			}
+		}
+	}
+	
+	NDL_discover_winland = {
+		icon = mission_galleys_in_port
+		position = 3
+		required_missions = { 
+			NDL_greenland
+		}
+		
+		trigger = {
+			navy_size_percentage = 0.95
+			years_of_income = 3.0
+		}
+		
+		effect = {
+			add_years_of_income = -3.0
+			1496 = {
+				discover_country = NDL
+			}
+			1493 = {
+				discover_country = NDL
+			}
+			1495 = {
+				discover_country = NDL
+			}
+			1490 = {
+				discover_country = NDL
+			}
+			980 = {
+				discover_country = NDL
+			}
+			2573 = {
+				discover_country = NDL
+			}
+			981 = {
+				discover_country = NDL
+			}
+			add_country_modifier = { 
+				name = "ndl_colon_boom" 
+				duration = 10000
+			}
+		}
+	}
+	
+	NDL_colonize_winland = {
+		icon = mission_colonial
+		position = 4
+		required_missions = { 
+			NDL_discover_winland
+		}
+		
+		trigger = {
+			owns_core_province = 980
+			owns_core_province = 2573
+			owns_core_province = 981
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = "ndl_colon_win" 
+				duration = -1
+			}
+		}
+	}
+}

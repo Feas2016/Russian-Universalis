@@ -1,746 +1,570 @@
-recover_greece = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_provinces_list = {
-		144 145 146 147 148
-		1773 1853 3003
+byz_western = {
+	slot = 1 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = BYZ
 	}
+	has_country_shield = yes
 	
-	target_provinces = {
-		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { is_subject_of = ROOT } }
-		NOT = { owner = { overlord_of = ROOT } }
-	}
-	
-	allow = {
-		normal_or_historical_nations = yes
-		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
-		is_free_or_tributary_trigger = yes
-		NOT = { has_country_modifier = byzantium_resurgent }
-		NOT = { has_country_flag = retook_greece_byz }
-		is_at_war = no
-		any_province = {
+	recover_greece = {
+		icon = mission_assemble_an_army
+		required_missions = {  } #None
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+		provinces_to_highlight = {
 			OR = {
 				province_id = 144
 				province_id = 145
 				province_id = 146
 				province_id = 147
 				province_id = 148
+				province_id = 148
+				province_id = 149
 				province_id = 1773
 				province_id = 1853
-				province_id = 3003
 			}
-			NOT = { owned_by = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
+		trigger = {
+			owns_or_non_sovereign_subject_of = 144
+			owns_or_non_sovereign_subject_of = 145
+			owns_or_non_sovereign_subject_of = 146
+			owns_or_non_sovereign_subject_of = 147
+			owns_or_non_sovereign_subject_of = 148
+			owns_or_non_sovereign_subject_of = 149
+			owns_or_non_sovereign_subject_of = 1773
+			owns_or_non_sovereign_subject_of = 1853
 		}
-	}
-	chance = {
-		factor = 3500
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
+		effect = {
+			add_country_modifier = {
+				name = "byzantium_resurgent"
+				duration = 5475
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hudavendigar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			aydin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
+					has_dlc = "Purple Phoenix" #For the PP mission to conquer Albania
+				}
+				albania_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = retook_greece_byz
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
-		}
-	}
-}
-
-
-recover_the_coast_of_asia_minor = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		#hudavendigar_area #STT
-		aydin_area
-	}
-	
-	target_provinces = {
-		has_port = yes
-		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { is_subject_of = ROOT } }
-		NOT = { owner = { overlord_of = ROOT } }
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		tag = BYZ
-		is_free_or_tributary_trigger = yes
-		owns = 151		# Thrace
-		is_at_war = no
-		any_province = {
-			OR = {
-				#area = hudavendigar_area #STT
-				area = aydin_area
-			}
-			NOT = { owned_by = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		NOT = { has_country_flag = BYZ_asia_minor }
-		NOT = { has_country_modifier = byzantium_resurgent }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 8000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
+				macedonia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
 					}
+					add_permanent_claim = ROOT
 				}
-				remove_claim = ROOT
 			}
 		}
 	}
-	effect = {
-		set_country_flag = BYZ_asia_minor
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
+	recover_the_balkans = {
+		icon = mission_unite_home_region
+		required_missions = { recover_greece }
+		position = 3
+		provinces_to_highlight = {
+			area = bulgaria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-	}
-}
-
-
-recover_the_balkans = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		bulgaria_area
-	}
-	
-	target_provinces = {
-		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { is_subject_of = ROOT } }
-		NOT = { owner = { overlord_of = ROOT } }
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		bulgaria_area = {
-			NOT = { owned_by = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		NOT = { has_country_flag = BYZ_recovered_balkans }
-		NOT = { has_country_modifier = byzantium_resurgent }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 5000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
+		trigger = {
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-	}
-	effect = {
-		set_country_flag = BYZ_recovered_balkans
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
-		}
-	}
-}
-
-
-convert_asia_minor = {
-	
-	type = country
-
-	category = ADM
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = BYZ
-		religion = orthodox
-		is_at_war = no
-		any_owned_province = {
-			OR = {
-				area = aydin_area
-				#area = hudavendigar_area #STT
-				#area = eastern_aegean_area #STT
-				}
-			has_owner_religion = no
-			}
-		aydin_area = {
-			type = all
-			owned_by = ROOT
-		}
-		#STT -2 del
-	}
-	abort = {
-			NOT = { religion = orthodox }
-	}
-	success = {
-		aydin_area = {
-			type = all
-			religion = orthodox
-		}
-		#STT -2 del
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			adm = 3
-		}
-		modifier = {
-			factor = 2
-			advisor = theologian
-		}
-	}
-	effect = {
-		add_prestige = 10
-		add_patriarch_authority = 0.1
-	}
-}
-
-
-recover_south_italy = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		naples_area
-		apulia_area
-		calabria_area
-	}
-	
-	target_provinces = {
-		NOT = { province_id = 118 }
-		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { is_subject_of = ROOT } }
-		NOT = { owner = { overlord_of = ROOT } }
-	}
-	
-	allow = {
-		normal_or_historical_nations = yes
-		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		owns = 151
-		northern_greece_area = {
-			type = all
-			owned_by = ROOT
-		}
-		morea_area = {
-			type = all
-			owned_by = ROOT
-		}
-		OR = {
-			naples_area = {
-				NOT = { province_id = 118 }
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				NOT = { owner = { is_subject_of = ROOT } }
-				NOT = { owner = { overlord_of = ROOT } }
-			}
+		effect = {
 			apulia_area = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				NOT = { owner = { is_subject_of = ROOT } }
-				NOT = { owner = { overlord_of = ROOT } }
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			calabria_area = {
-				NOT = { owned_by = ROOT }
-				NOT = { owner = { alliance_with = ROOT } }
-				NOT = { owner = { is_subject_of = ROOT } }
-				NOT = { owner = { overlord_of = ROOT } }
-			}
-		}
-		NOT = { has_country_flag = BYZ_recovered_s_italy }
-		NOT = { has_country_modifier = byzantium_resurgent }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
-				remove_claim = ROOT
+				add_permanent_claim = ROOT
 			}
+			add_permanent_claim = 121
+			add_permanent_claim = 2983
 		}
 	}
-	effect = {
-		set_country_flag = BYZ_recovered_s_italy
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
-		}
-	}
-}
-
-
-recover_rome = { #This one does not care who the current owner is.
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	allow = {
-		normal_or_historical_nations = yes
-		tag = BYZ
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		NOT = { owns = 118 }	# Rome
-		naples_area = {
-			type = all
-			owned_by = ROOT
-		}
-		apulia_area = {
-			type = all
-			owned_by = ROOT
-		}
-		calabria_area = {
-			type = all
-			owned_by = ROOT
-		}
-		NOT = { has_country_flag = BYZ_recovered_rome }
-		NOT = { has_country_modifier = byzantium_resurgent }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		owns = 118 # Rome
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		add_claim = 118
-	}
-	abort_effect = {
-		118 = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = BYZ_recovered_rome
-		add_prestige = 25
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
-		}
-	}
-}
-
-
-recover_sicily = {
-	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	target_areas_list = {
-		sicily_area
-	}
-	
-	target_provinces = {
-		NOT = { owned_by = ROOT }
-		NOT = { owner = { alliance_with = ROOT } }
-		NOT = { owner = { is_subject_of = ROOT } }
-		NOT = { owner = { overlord_of = ROOT } }
-	}
-	
-	allow = {
-		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
-		normal_or_historical_nations = yes
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		naples_area = {
-			type = all
-			owned_by = ROOT
-		}
-		apulia_area = {
-			type = all
-			owned_by = ROOT
-		}
-		calabria_area = {
-			type = all
-			owned_by = ROOT
-		}
-		sicily_area = {
-			not = { owned_by = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-			NOT = { owner = { is_subject_of = ROOT } }
-			NOT = { owner = { overlord_of = ROOT } }
-		}
-		NOT = { has_country_flag = BYZ_recovered_sicily }
-		NOT = { has_country_modifier = byzantium_resurgent }
-	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
-	}
-	success = {
-		all_target_province = {
-			owned_by = ROOT
-		}
-	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
-		}
-		modifier = {
-			factor = 2
-			mil = 6
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
-				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
-				}
-				remove_claim = ROOT
-			}
-		}
-	}
-	effect = {
-		set_country_flag = BYZ_recovered_sicily
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
-		}
-	}
-}
-
-
-the_pentarchy = { #Regardless of who owns.
-	
-	type = country
-
-	category = DIP
-	ai_mission = yes
-	
-	target_provinces_list = {
-		118
-		151
-		377
-		2313
-		379
-		358
-	}
-	
-	target_provinces = {
-		NOT = { owned_by = ROOT }
-	}
-	allow = {
-		normal_or_historical_nations = yes
-		religion = orthodox
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		num_of_cities = 15
-		num_of_owned_provinces_with = {
-			value = 3
+	recover_south_italy = {
+		icon = mission_cannons_firing
+		required_missions = { recover_the_balkans }
+		position = 5
+		provinces_to_highlight = {
 			OR = {
-				province_id = 118 #Rome
-				province_id = 377 #Aleppo
-				province_id = 2313 #Antioch
-				province_id = 379 #Jerusalem
-				province_id = 358 #Alexandria
+				area = apulia_area
+				area = calabria_area
+				province_id = 121
+				province_id = 2983
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 121
+			owns_or_non_sovereign_subject_of = 2983
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		OR = {
-			118 = { NOT = { religion = orthodox } }
-			151 = { NOT = { religion = orthodox } }
-			377 = { NOT = { religion = orthodox } }
-			2313 = { NOT = { religion = orthodox } }
-			379 = { NOT = { religion = orthodox } }
-			358 = { NOT = { religion = orthodox } }
+		effect = {
+			capital_scope = {
+				add_base_manpower = 2
+				add_base_tax = 2
+				add_base_production = 2
+			}
+			add_permanent_claim = 118
+			add_permanent_claim = 124
+			add_permanent_claim = 125
+			add_permanent_claim = 2982
 		}
 	}
-	abort = {
-		is_subject_other_than_tributary_trigger = yes
+	recover_sicily = {
+		icon = mission_sea_battles
+		required_missions = { recover_south_italy }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 124
+				province_id = 125
+				province_id = 2982
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 124
+			owns_or_non_sovereign_subject_of = 125
+			owns_or_non_sovereign_subject_of = 2982
+		}
+		effect = {
+			add_country_modifier = {
+				name = "theme_of_sicily"
+				duration = 5475
+			}
+		}
 	}
-	success = {
-		118 = { religion = orthodox }
-		151 = { religion = orthodox }
-		377 = { religion = orthodox }
-		2313 = { religion = orthodox }
-		379 = { religion = orthodox }
-		358 = { religion = orthodox }
+}
+
+byz_generic_slot_2 = {
+	slot = 2
+	generic = no #Needs to be replaced by similar missions for Purple Phoenix
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { has_dlc = "Purple Phoenix" }
 	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 5.5
+	has_country_shield = yes
+	
+	recover_rome = {
+		position = 6
+		icon = mission_early_game_buildings
+		required_missions = { recover_south_italy }
+		provinces_to_highlight = {
+			province_id = 118
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
 			owns = 118
 		}
-		modifier = {
-			factor = 5.5
-			owns = 151
-		}
-		modifier = {
-			factor = 5.5
-			owns = 377
-		}
-		modifier = {
-			factor = 5.5
-			owns = 2313
-		}
-		modifier = {
-			factor = 5.5
-			owns = 379
-		}
-		modifier = {
-			factor = 5.5
-			owns = 358
-		}
-	}
-	immediate = {
-		every_target_province = {
-			add_claim = ROOT
-		}
-	}
-	abort_effect = {
-		every_target_province = {
-			if = {
+		effect = {
+			add_country_modifier = {
+				name = "roman_italy"
+				duration = 5475
+			}
+			venetia_area = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
-				remove_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}
-	effect = {
-		add_prestige = 20
-		country_event = { id = catholic_flavor.3 }
+	
+	destroy_venice = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { recover_rome }
+		provinces_to_highlight = {
+			area = venetia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_adm_power = 100
+			country_event = { id = flavor_byz.1 }
+			venetia_area = {
+				add_province_modifier = {
+					name = "faster_integration"
+					duration = 5475
+				}
+			}
+		}
 	}
 }
 
-
-destroy_venice = {
+byz_east = {
+	slot = 5
+	generic = no
+	ai = yes
 	
-	type = country
-
-	category = MIL
-	ai_mission = yes
-	
-	allow = {
-		normal_or_historical_nations = yes
-		OR = { tag = BYZ tag = PQR tag = ROM } ### STT
-		is_free_or_tributary_trigger = yes
-		is_at_war = no
-		owns = 151
-		owns = 146 # Athens
-		owns = 149 # Edirne
-		owns = 163 # Crete
-		112 = { owned_by = VEN }
-		OR = {
-			army_size = VEN
-			navy_size = VEN
-		}
-		NOT = { alliance_with = VEN }
-		NOT = { overlord_of = VEN }
-		NOT = { has_country_flag = BYZ_destroyed_venice }
-		NOT = { has_country_modifier = byzantium_resurgent }
+	potential = {
+		tag = BYZ
 	}
-	abort = {
-		OR = {
-			is_subject_other_than_tributary_trigger = yes
-			112 = {
-				NOT = { owned_by = VEN }  
+	
+	has_country_shield = yes
+	
+	recover_the_coast_of_asia_minor = {
+		icon = mission_galleys_in_port
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				area = hudavendigar_area
+				area = aydin_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hudavendigar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aydin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = { NOT = { has_dlc = "Purple Phoenix" } }
+				germiyan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				ankara_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				karaman_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				kastamonu_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				rum_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				thrace_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				erzurum_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_permanent_claim = 327 # Adana
+				add_permanent_claim = 2302 # Icel
+				add_permanent_claim = 2750 # Plovdiv
+				add_permanent_claim = 3114 # Divrigi	### STT
+			}
+			else = {
+				germiyan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				ankara_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				kastamonu_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
-	success = {
-		owns = 112	# Venice
+}
+
+byz_generic_slot_5 = {
+	slot = 5
+	generic = no #Needs to be replaced by similar missions for Purple Phoenix
+	ai = yes
+	potential = {
+		tag = BYZ
+		NOT = { has_dlc = "Purple Phoenix" }
 	}
-	chance = {
-		factor = 3000
-		modifier = {
-			factor = 2
-			mil = 4
+	has_country_shield = yes
+	
+	reestablish_the_theme_system = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { recover_the_coast_of_asia_minor }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = hudavendigar_area
+				area = germiyan_area
+				area = aydin_area
+				area = ankara_area
+				area = karaman_area
+				area = kastamonu_area
+				area = rum_area
+				area = thrace_area
+				area = erzurum_area
+				province_id = 327 # Adana
+				province_id = 2302 # Icel
+				province_id = 3114 # Divrigi	### STT
+				province_id = 2750 # Plovdiv
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		modifier = {
-			factor = 2
-			mil = 6
+		trigger = {
+			hudavendigar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			germiyan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aydin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ankara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			karaman_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kastamonu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			erzurum_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 327 # Adana
+			owns = 2302 # Icel
+			owns = 3114 # Divrigi	### STT
+			owns = 2750 # Plovdiv
+				
 		}
-	}
-	immediate = {
-		add_claim = 112
-	}
-	abort_effect = {
-		112 = {
+		effect = {
+			hidden_effect = {
+				149 = { change_province_name = "Адрианополь" rename_capital = "Адрианополь" }
+				316 = { change_province_name = "Оптиматы" rename_capital = "Никомедия" }
+				317 = { change_province_name = "Опсикий" rename_capital = "Прусса" }
+				318 = { change_province_name = "Смирна" rename_capital = "Смирна" }
+				319 = { change_province_name = "Ликия" rename_capital = "Ликия" }
+				#322 = { change_province_name = Кютахья rename_capital = Кютахья } #STT
+				322 = { change_province_name = "Фригия" rename_capital = "Фригия" } #STT
+				323 = { change_province_name = "Иконий" rename_capital = "Икониум" }
+				324 = { change_province_name = "Ларинда" rename_capital = "Ларинда" }
+				325 = { change_province_name = "Пафлагония" rename_capital = "Амастрис" }
+				326 = { change_province_name = "Галатия" rename_capital = "Ангира" }
+				328 = { change_province_name = "Синоп" rename_capital = "Синоп" }
+				329 = { change_province_name = "Себастия" rename_capital = "Себастия" }
+				330 = { change_province_name = "Трапезунд" rename_capital = "Трапезунд" }
+				327 = { change_province_name = "Киликея" rename_capital = "Атана" }
+				1846 = { change_province_name = "Армениакон" rename_capital = "Амасея" }
+				1848 = { change_province_name = "Анатоликон" rename_capital = "Анатоликон" }
+				151 = { change_province_name = "Константинополь" rename_capital = "Константинополь" }
+				2296 = { change_province_name = "Абидос" rename_capital = "Пигай" }
+				2297 = { change_province_name = "Фракиссия" rename_capital = "Магнисия" }
+				2298 = { change_province_name = "Атталия" rename_capital = "Атталия" }
+				2299 = { change_province_name = "Букеларии" rename_capital = "Клавдиполь" }
+				2300 = { change_province_name = "Каппадокия" rename_capital = "Тавиум" }
+				2301 = { change_province_name = "Харсиан" rename_capital = "Цесария" }
+				2302 = { change_province_name = "Селевкия" rename_capital = "Кермараг" }
+				2304 = { change_province_name = "Амиссос" rename_capital = "Амиссос" }
+				2750 = { change_province_name = "Филиппополь" rename_capital = "Филиппополь" }
+				#STT
+				2304 = { change_province_name = "Мезия" rename_capital = "Мезия" }
+				3106 = { change_province_name = "Траянополис" rename_capital = "Траянополис" }
+				3108 = { change_province_name = "Гарсаруа" rename_capital = "Гарсаруа" }
+				3110 = { change_province_name = "Тралл" rename_capital = "Тралл" }
+				3111 = { change_province_name = "Халдия" rename_capital = "Халдия" }
+				3114 = { change_province_name = "Мелитена" rename_capital = "Мелитена" }
+				3128 = { change_province_name = "Дорилей" rename_capital = "Дорилей" }
+				3261 = { change_province_name = "Аморион" rename_capital = "Аморион" }
+				3262 = { change_province_name = "Ликанда" rename_capital = "Ликанда" }
+				3263 = { change_province_name = "Архелай" rename_capital = "Архелай" }
+				3264 = { change_province_name = "Стримон" rename_capital = "Стримон" }
+			}
+			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
-					NOT = {
-						is_permanent_claim = ROOT
-					}
+					NOT = { has_global_flag = constantinople_restored }
 				}
-				remove_claim = ROOT
+				151 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
+			}
+						
+			add_country_modifier = {
+				name = "the_theme_system"
+				duration = -1
 			}
 		}
 	}
-	effect = {
-		set_country_flag = BYZ_destroyed_venice
-		add_country_modifier = {
-			name = "byzantium_resurgent"
-			duration = 3650
+	
+	convert_asia_minor = {
+		icon = mission_hands_praying
+		required_missions = { reestablish_the_theme_system }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = aydin_area
+				area = hudavendigar_area
+			}
+			OR = {
+				NOT = { religion = orthodox }
+				NOT = { owned_by = ROOT }
+			}
+		}
+		trigger = {
+			religion = orthodox
+			aydin_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+			hudavendigar_area = {
+				type = all
+				owned_by = ROOT
+				religion = orthodox
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "growth_of_the_orthodox_church"
+				duration = 7300
+			}
+			add_patriarch_authority = 0.1
+			add_permanent_claim = 358
+			add_permanent_claim = 379
+			add_permanent_claim = 2313
+		}
+	}
+	
+	the_pentarchy = {
+		icon = mission_empire
+		position = 7
+		required_missions = {
+			recover_rome
+			convert_asia_minor
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 118
+				province_id = 151
+				province_id = 358
+				province_id = 379
+				province_id = 2313
+			}
+		}
+		trigger = {
+			owns = 118 #Rome
+			owns = 151 #Constantinople
+			owns = 358 #Alexandria
+			owns = 379 #Jerusalem
+			owns = 2313 #Antioch
+		}
+		effect = {
+			add_country_modifier = {
+				name = "healing_the_schism"
+				duration = -1
+			}
+			country_event = { id = catholic_flavor.3 }
 		}
 	}
 }

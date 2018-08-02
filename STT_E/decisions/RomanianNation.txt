@@ -25,6 +25,21 @@ country_decisions = {
 				}
 			}
 		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 158	# Transylvania
+				province_id = 159	# Silistria
+				province_id = 160	# Oltenia
+				province_id = 161	# Wallachia
+				province_id = 268	# Bessarabia
+				province_id = 1756	# Budjak
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -42,6 +57,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = RMN
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {

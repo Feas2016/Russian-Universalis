@@ -4,9 +4,9 @@ country_decisions = {
 		
 		potential = {
 			OR = {
-			tag = HAB
-			tag = AEM
-			tag = DUA
+				tag = HAB
+				tag = AEM
+				tag = DUA
 			}
 			has_global_flag = golden_bulla
 			NOT = { has_country_modifier = aus_maius }
@@ -25,14 +25,17 @@ country_decisions = {
 			add_stability = -1
 			add_treasury = -50
 			add_adm_power = -50
-			random_list = {
-                50 = {
-                    country_event  = { id = aus_main.56471 }
-					}
-                50 = {
-                    country_event  = { id = aus_main.56472 }
-                 }
-            }
+			add_imperial_influence = -50
+			hidden_effect = {
+				if = {
+					limit = { imperial_influence = 50 }
+					country_event  = { id = aus_main.1 }
+				}
+				else_if = {
+					limit = { NOT = { imperial_influence = 50 } }
+					country_event  = { id = aus_main.2 }
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -58,7 +61,7 @@ country_decisions = {
 			# stability = 2
 		# }
 		# effect = {
-			# country_event  = { id = aus_main.56474 }
+			# country_event  = { id = aus_main.4 }
 			# add_stability = -1
 			# add_prestige = 10
 			# add_treasury = -100

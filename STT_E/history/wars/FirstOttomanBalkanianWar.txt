@@ -1,0 +1,56 @@
+name = "First Ottoman-Balkanian War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 3001 # Temes
+}
+
+1912.10.8 = {
+	add_attacker = MON
+	add_defender = TUR
+}
+1912.10.17 = {
+	add_attacker = BUL
+	add_attacker = GRE
+	add_attacker = SER
+}
+
+1912.10.23 = {
+	battle = {
+		name = "Kumanovo"
+		location = 1853
+		attacker = {
+			commander = "Zeki-Pasha"	# Zeki-Pasha
+			infantry = 100000
+			cavalry = 80000
+			losses = 2	# percent
+			country = TUR
+		}
+		defender = {
+			commander = "Alexander I"	# Korolevich Alexander I
+			infantry = 100000
+			cavalry = 20000
+			losses = 4	# percent
+			country = SER
+		}
+		result = no
+	}
+}
+1912.12.3 = {
+	rem_attacker = BUL
+	rem_attacker = MON
+	rem_attacker = SER
+}
+1913.3.2 = {
+	add_attacker = BUL
+	add_attacker = MON
+	add_attacker = SER
+}
+
+1913.5.30 = {
+	rem_defender = TUR
+	rem_attacker = BUL
+	rem_attacker = MON
+	rem_attacker = GRE
+	rem_attacker = SER
+}

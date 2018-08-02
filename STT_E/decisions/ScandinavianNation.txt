@@ -31,6 +31,20 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1		# Uppland
+				province_id = 6		# Skane
+				province_id = 7		# Vastergotland
+				province_id = 12		# Sjaelland
+				province_id = 15		# Jylland
+				province_id = 17		# Akershus
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			adm_tech = 20
 			is_free_or_tributary_trigger = yes

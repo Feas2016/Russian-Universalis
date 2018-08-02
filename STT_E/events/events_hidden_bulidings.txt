@@ -1,0 +1,37 @@
+namespace = event_marcin
+
+country_event = {
+	id = event_marcin.1
+	title = "event_marcin.EVTNAME1"
+	desc = "event_marcin.EVTDESC1"
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		any_owned_province = { 
+			has_building = college
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		months = 1
+
+		modifier = {
+			factor = 0
+			NOT = { is_month = 10 }
+		}
+		
+		modifier = {
+			factor = 100
+			is_month = 10
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			ROOT = { change_innovativeness = 0.15 }
+		}
+	}
+	option = { name = event_marcin.1.a }
+}

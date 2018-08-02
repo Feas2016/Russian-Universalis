@@ -407,8 +407,6 @@ country_decisions = {
 		}
 	}
 
-
-
 	velikoe_knyazestvo = {
 		major = yes
 		potential = {
@@ -422,9 +420,13 @@ country_decisions = {
 				AND = {
 					government = rus_government
 					government_rank = 2
-					}
 				}
 			}
+			is_year = 1400
+			OR = { MOS = { has_ruler_modifier = great_knyaz }
+			MOS = { has_country_modifier = perma_knyaz } 
+			}
+		}
 		allow = {
 			num_of_cities = 5
 			is_at_war = no
@@ -444,7 +446,20 @@ country_decisions = {
 		effect = {
 			change_government = rus_government
 			set_government_rank = 2
+			if = { limit = { has_global_flag = knyaz_rights_flag_t }
+				hidden_effect = { every_country = { limit = { has_country_modifier = perma_knyaz } remove_country_modifier = perma_knyaz } }
+				add_country_modifier = {
+				name = "perma_knyaz"
+				duration = -1
+				}
+				else = { 
+					add_ruler_modifier = {
+					name = "great_knyaz"
+					duration = -1
+					}
+				}
 			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -455,7 +470,6 @@ country_decisions = {
 			has_regency = yes
 			is_year = 1612
 			NOT = { is_year = 1613 }
-			is_year = 1612
 			tag = TSR
 			ai = no
 			was_player = no
@@ -484,15 +498,15 @@ country_decisions = {
 #			has_country_modifier = rus_hommage_modifer			
 #		}
 #		allow = {
-#			NOT = { truce_with = BHO }
+#			NOT = { truce_with = GHL }
 #			NOT = { truce_with = GOL }
 #			has_country_modifier = rus_hommage_modifer
 #			is_at_war = no
 #			OR = {
-#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GHL }
 #				ROOT = { is_neighbor_of = GOL }
 #				AND = {
-#					NOT = { exists = BHO }
+#					NOT = { exists = GHL }
 #					NOT = { exists = GOL }
 #				}				
 #			}
@@ -500,8 +514,8 @@ country_decisions = {
 #		effect = {
 #			remove_country_modifier = rus_hommage_modifer
 #			if = {
-#				limit = { exists = BHO }
-#				BHO = {
+#				limit = { exists = GHL }
+#				GHL = {
 #					country_event = { id = stt_rus.5 }
 #					remove_opinion = {
 #						who = ROOT
@@ -509,7 +523,7 @@ country_decisions = {
 #					}
 #				}
 #				remove_opinion = {
-#					who = BHO
+#					who = GHL
 #					modifier = rus_hommage_opinion
 #				}
 #			}
@@ -531,7 +545,7 @@ country_decisions = {
 #		ai_will_do = {
 #			factor = 1
 #			modifier = {
-#				NOT = { num_of_cities = BHO }
+#				NOT = { num_of_cities = GHL }
 #				factor = 0
 #			}
 #			modifier = {
@@ -545,7 +559,7 @@ country_decisions = {
 #		major = yes
 #		potential = {
 #			OR = {
-#				tag = BHO
+#				tag = GHL
 #				tag = GOL
 #			}
 #			has_country_modifier = gol_hommage_modifer
@@ -562,7 +576,7 @@ country_decisions = {
 #				is_at_war = no
 #				NOT = {
 #					OR = {
-#						truce_with = BHO
+#						truce_with = GHL
 #						truce_with = GOL
 #					}
 #				}
@@ -611,13 +625,13 @@ country_decisions = {
 #			}
 #			NOT = { has_country_modifier = rus_hommage_modifer }
 #			OR = {
-#					exists = BHO
+#					exists = GHL
 #					exists = GOL
 #				}
 #			}
 #		allow = {
 #			OR = {
-#				ROOT = { is_neighbor_of = BHO }
+#				ROOT = { is_neighbor_of = GHL }
 #				ROOT = { is_neighbor_of = GOL }
 #			}
 #			NOT = { has_country_modifier = rus_hommage_modifer }
@@ -627,13 +641,13 @@ country_decisions = {
 #				name = rus_hommage_modifer
 #				duration = -1
 #			}
-#			if = { limit = { exists = BHO }
+#			if = { limit = { exists = GHL }
 #				add_opinion = {
-#					who = BHO
+#					who = GHL
 #					modifier = rus_hommage_opinion
 #					years = 200
 #				}
-#				BHO = {
+#				GHL = {
 #					add_opinion = {
 #						who = ROOT
 #						modifier = rus_hommage_opinion
@@ -668,7 +682,7 @@ country_decisions = {
 #			modifier = {
 #				any_neighbor_country = {
 #					OR = {
-#						tag = BHO
+#						tag = GHL
 #						tag = GOL
 #					}
 #					num_of_infantry = ROOT

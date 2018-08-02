@@ -148,12 +148,12 @@ russia_region = {
 }
 
 
-# ural_region = {
-	# areas = {
+ural_region = {	### STT
+	areas = {
 		
 		
-	# }
-# }
+	}
+}
 
 iberia_region = {
 	areas = {
@@ -184,8 +184,10 @@ british_isles_region = {
 		wales_area
 		lowlands_area
 		highlands_area
-		eastern_ireland_area
-		western_ireland_area
+		munster_area
+		connacht_area
+		leinster_area
+		ulster_area
 	}
 }
 
@@ -543,8 +545,7 @@ mongolia_region = {
 		inner_mongolia_area
 		ordos_area
 		zungaria_area
-		altai_sayan_area
-		
+		altai_sayan_area		
 	}
 }
 
@@ -556,7 +557,12 @@ manchuria_region = {
 		liaoning_area
 		north_korea_area
 		central_korea_area
-		south_korea_area
+		south_korea_area		
+	}
+}
+
+korea_region = {	### STT
+	areas = {
 		
 	}
 }
@@ -655,13 +661,18 @@ burma_region = {
 japan_region = {
 	areas = {
 		hokkaido_area
-		#hokuriku_area
+		hokuriku_area
 		kanto_area
+		eastern_kanto_area
 		kyushu_area
 		chubu_area
-		kansai_area
+		eastern_chubu_area
+		kinai_area
 		thohoku_area
-		chugoku_area
+		saigoku_area
+		sanindo_area
+		shikoku_area
+		northern_kyushu
 	}
 }
 
