@@ -48,7 +48,7 @@ country_event = {
 	title = rushorde.1.t
 	desc = rushorde.1.d
 	picture = CITY_VIEW_eventPicture
-	major = yes
+	#major = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -87,7 +87,7 @@ country_event = {
 	title = rushorde.2.t
 	desc = rushorde.2.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-	major = yes
+	#major = yes
 	
 	mean_time_to_happen = {
 		months = 180
@@ -431,7 +431,7 @@ country_event = {
 	desc = rushorde.9.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	is_triggered_only = yes
-	major = yes
+	#major = yes
 	
 	trigger = {
 		is_subject_of_type = tributary_state
@@ -452,7 +452,7 @@ country_event = {
 	desc = rushorde.10.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	is_triggered_only = yes
-	major = yes
+	#major = yes
 	
 	trigger = {	}
 	
