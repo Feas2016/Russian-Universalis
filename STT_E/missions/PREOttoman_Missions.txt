@@ -1,0 +1,748 @@
+tur_conquerors_of_ellada = {
+	slot = 1 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = TU0
+	}
+	has_country_shield = yes
+	
+	marble_cost = {
+		icon = mission_non-western_cavalry_raid
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 317
+				province_id = 3642
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 317
+			owns = 3642
+		}
+		completed_by = 1336.1.1
+		effect = {
+			add_country_modifier = {
+				name = "TUO_greek_accimilation"
+				duration = 5475
+			}
+			nicaea_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	ellada_strand = {
+		icon = mission_invade_island
+		required_missions = { marble_cost }
+		position = 2
+		provinces_to_highlight = {
+			area = nicaea_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			nicaea_area = { owned_by = ROOT 
+			type = all
+			}
+		}
+		completed_by = 1361.1.1
+		effect = {
+			add_country_modifier = {
+				name = "thriving_ship_building_sector"
+				duration = 5475
+			}	
+			thrace_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}		
+	conquer_macedonia = {
+		icon = mission_conquer_5_states
+		required_missions = { turks_in_europe }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 1765
+			area = macedonia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			macedonia_area = { owned_by = ROOT 
+			type = all
+			}
+			owns = 1765
+		}
+		completed_by = 1387.1.1
+		effect = {
+			add_country_modifier = {
+				name = "conquerors_presence"
+				duration = 3650
+			}	
+			northern_greece_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	thrace_heathens = {
+		icon = mission_hands_praying
+		required_missions = { conquer_macedonia }
+		position = 5
+		trigger = {
+			NOT = { 
+				thrace_area = { 
+					owned_by =  ROOT
+					NOT = {
+						has_owner_religion = yes
+						}
+				} 
+			}					
+		}
+		completed_by = 1415.1.1
+		effect = {
+			add_country_modifier = {
+				name = "hsa_economic_reform"
+				duration = 5475
+			}			
+		}
+	}
+	
+}
+tur_conquerors_of_danube = {
+	slot = 2 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = TU0
+	}
+	has_country_shield = yes
+	
+	pontus_cost = {
+		icon = mission_non-western_cavalry_raid
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2299
+				province_id = 3643
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 2299
+			owns = 3643
+		}
+		completed_by = 1337.1.1
+		effect = {
+			add_country_modifier = {
+				name = "TUO_greek_accimilation"
+				duration = 5475
+			}
+			add_permanent_claim = 316			
+			kastamonu_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	conquer_kastamonu = {
+		icon = mission_galleys_in_port
+		required_missions = { pontus_cost }
+		position = 2
+		provinces_to_highlight = {
+			area = kastamonu_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kastamonu_area = { owned_by = ROOT 
+			type = all
+			}
+		}
+		completed_by = 1354.1.1
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 5475
+			}
+			add_permanent_claim = 328			
+			angora_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	turks_in_europe = {
+		icon = mission_chinese_general_riding
+		required_missions = { 
+			ellada_strand
+			conquer_kastamonu
+			the_sea_gazi
+			}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 3106
+			province_id = 3105
+			province_id = 149
+			province_id = 3264
+			province_id = 1764
+			province_id = 3259
+			province_id = 2750
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 3106
+			owns = 3105
+			owns = 149
+			owns = 3264
+			owns = 1764
+			owns = 3259
+			owns = 2750
+		}
+		completed_by = 1363.1.1
+		effect = {
+			add_country_modifier = {
+				name = "military_victory"
+				duration = 3650
+			}	
+			bulgaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}	
+		}
+	}
+	danube_water = {
+		icon = mission_conquer_50_development
+		required_missions = { turks_in_europe }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 3096
+			area = bulgaria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 3096
+			bulgaria_area = { owned_by = ROOT 
+			type = all
+			}
+		}
+		completed_by = 1396.1.1
+		effect = {
+			add_country_modifier = {
+				name = "defensive_modifier"
+				duration = 7300
+			}
+			wallachia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				target = WAL
+			}					
+		}
+	}
+	vassalize_wallachia	 = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { danube_water }
+		position = 5
+		trigger = {
+			government_rank = 2
+			OR = { 
+				AND = {
+					wallachia_area = { owned_by = ROOT 
+						type = all
+						}
+					NOT = { exists = WAL }
+					}
+				WAL = { 
+						is_subject_other_than_tributary_trigger = yes
+						is_subject_of = TU0
+						}												
+			}
+		}
+		completed_by = 1418.1.1
+		effect = {
+			add_country_modifier = {
+				name = "uni_lib_desire"
+				duration = 5475
+			}	
+			serbia_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			banat_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}	
+			wallachia_area = {
+				limit = {
+					NOT = { exists = WAL }
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				limit = {
+					exists = MOL
+					}
+				type = cb_vassalize_mission
+				target = MOL
+			}					
+		}
+	}
+}
+
+tur_imperial_ambition = {
+	slot = 3 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = TU0
+	}
+	has_country_shield = yes
+
+	the_sea_gazi = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { conquer_angora }
+		position = 2
+		trigger = {
+		navy_size = 12
+		sailors = 200
+		}
+		completed_by = 1360.1.1
+		effect = {
+			add_country_modifier = {
+				name = "merchants_prepare_war"
+				duration = 5475
+			}
+			random_owned_province = {
+				limit = { has_port = yes }
+				ROOT = {
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					light_ship = PREV
+					}
+				}
+
+		}
+	}	
+	edirne_capital = {
+		icon = mission_early_game_buildings
+		required_missions = { turks_in_europe }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 149
+		}
+		trigger = {
+		149 = { is_capital = yes }
+		is_subject = no
+		}
+		completed_by = 1365.1.1
+		effect = {
+			add_prestige = 25
+			149 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+			if = { 
+			limit = { NOT = { government_rank = 2 } }
+			set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = western_embassy_mission
+				duration = 7300
+			}		
+		}
+	}
+	tur_dhimmi = {
+		icon = mission_european_church
+		required_missions = { edirne_capital }
+		position = 5
+		trigger = {
+			limit = {
+				has_estate = estate_dhimmi
+				}
+			estate_influence = {
+					estate = estate_dhimmi
+					influence = 40
+					}
+			estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = 70
+					}
+			estate_territory  = {
+					estate = estate_dhimmi
+					territory = 12
+					}					
+		}
+		completed_by = 1415.1.1
+		effect = {
+			add_years_of_income = 0.5
+			add_mercantilism = 3
+			define_advisor = {
+					type = treasurer
+					skill = 2
+					culture = greek
+					religion = orthodox
+				}
+			add_country_modifier = {
+				name = "religious_tolerance"
+				duration = 5475
+			}			
+		}
+	}
+	defeat_the_byzantine_empire = {
+		icon = mission_empire
+		required_missions = { 
+			thrace_heathens
+			vassalize_wallachia
+			tur_dhimmi
+			tur_new_ordusu
+			siege_fleet
+			}
+		position = 6
+		trigger = {
+		NOT = { exists = BYZ }
+		owns = 151		
+		}
+		completed_by = 1453.5.29
+		effect = {
+			set_country_flag = byz_empire_conquered
+			add_country_modifier = {
+				name = "defeated_byzantine_empire"
+				duration = 3650
+			}
+		}
+	}	
+		
+}
+
+tur_western_anatolia = {
+	slot = 4 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = TU0
+	}
+	has_country_shield = yes
+	
+	conquer_angora = {
+		icon = mission_market_place_with_asian_traders
+		position = 1
+		provinces_to_highlight = {
+			province_id = 326
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 326
+			NOT = { exists = TNA }			
+		}
+		completed_by = 1354.1.1
+		effect = {
+			add_country_modifier = {
+				name = "TUO_angora"
+				duration = 5475
+			}
+			angora_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			rum_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			hudavendigar_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}	
+	conquer_hudavendigar = {
+		icon = mission_unite_home_region
+		required_missions = { conquer_angora }
+		position = 2
+		provinces_to_highlight = {
+			area = hudavendigar_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hudavendigar_area = { owned_by = ROOT 
+			type = all
+			}
+		}
+		completed_by = 1429.1.1
+		effect = {
+			add_country_modifier = {
+				name = "soldiers_stimulating_local_economy"
+				duration = 5475
+			}			
+			aydin_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			menteshe_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	conquer_western_anadolu = {
+		icon = mission_great_wall
+		required_missions = { conquer_hudavendigar }
+		position = 3
+		provinces_to_highlight = {
+			area = aydin_area
+			area = menteshe_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aydin_area = { owned_by = ROOT 
+			type = all
+			}
+			menteshe_area = { owned_by = ROOT 
+			type = all
+			}			
+		}
+		completed_by = 1429.1.1
+		effect = {
+			add_country_modifier = {
+				name = "per_shiite_immigration"
+				duration = 5475
+			}			
+			eastern_aegean_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_permanent_claim = 2302			
+		}
+	}
+	sultans_guards = {
+		icon = mission_non-western_soldiers
+		required_missions = { turks_in_europe }
+		position = 4
+		trigger = {
+			num_of_janissaries = 5
+		}
+		completed_by = 1365.1.1
+		effect = {
+			add_army_tradition = 15
+			add_army_professionalism = 0.15	
+		}
+	}
+	tur_new_ordusu = {
+		icon = mission_cannons_firing
+		required_missions = { 
+			edirne_capital
+			sultans_guards
+			foreign_masters			
+			}
+		position = 5
+		trigger = {
+			army_professionalism = 0.5
+			estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
+					}
+			army_size = 30
+			army_tradition = 40
+		}
+		completed_by = 1425.1.1
+		effect = {
+			create_general = 80
+			add_country_modifier = {
+				name = "the_beating_of_the_drums"
+				duration = 5475
+			}
+			random_owned_province = {
+				ROOT = {
+					artillery = PREV
+					artillery = PREV
+					artillery = PREV
+					artillery = PREV
+					artillery = PREV
+					}
+				}			
+		}
+	}
+	
+}
+
+
+tur_speciaslists = {
+	slot = 5 #upper left column
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = TU0
+	}
+	has_country_shield = yes
+	
+	conquer_rum = {
+		icon = mission_arabian_fort
+		required_missions = { conquer_angora }
+		position = 2
+		provinces_to_highlight = {
+			area = rum_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			rum_area = { owned_by = ROOT 
+			type = all
+			}
+		}
+		completed_by = 1398.1.1
+		effect = {
+			add_country_modifier = {
+				name = "tolerance_for_all"
+				duration = 5475
+			}			
+			karaman_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+		}
+	}
+	anatolian_heathens = {
+		icon = mission_mosque
+		required_missions = { conquer_rum }
+		position = 3
+		trigger = {
+			NOT = { 
+				anatolia_region = { 
+					owned_by =  ROOT
+					NOT = {
+						has_owner_religion = yes
+						}
+				} 
+			}					
+		}
+		completed_by = 1405.1.1
+		effect = {
+			add_country_modifier = {
+				name = "unified_islam"
+				duration = 5475
+			}			
+		}
+	}
+	foreign_masters = {
+		icon = mission_religious
+		required_missions = { anatolian_heathens }
+		position = 4
+		trigger = {
+			workshop = 10
+			copper = 5
+			iron = 3
+			treasury = VEN
+			treasury = GEN
+		}
+		completed_by = 1420.1.1
+		effect = {
+			add_country_modifier = {
+				name = "bah_attracting_the_right_people"
+				duration = 5475
+			}			
+		}
+	}
+	siege_fleet = {
+		icon = mission_sea_battles
+		required_missions = { foreign_masters }
+		position = 5
+		trigger = {
+			dock = 5
+			naval_supplies = 3
+			navy_size = 30
+		}
+		completed_by = 1435.1.1
+		effect = {
+			add_country_modifier = {
+				name = "expansion_of_the_shipbuilding_industry"
+				duration = 5475
+			}	
+			random_owned_province = {
+				limit = { has_port = yes }
+				ROOT = {
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					galley = PREV
+					}
+			}	
+			create_admiral = 60			
+		}
+	}	
+	
+}

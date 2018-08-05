@@ -1,0 +1,16 @@
+name = "Рисорджименто"
+war_goal = {
+	type = annex_country
+	casus_belli = cb_conquest
+}
+
+
+1860.3.1 = {
+	add_attacker = SPI
+	add_defender = KTT
+}
+
+1861.2.13 = {
+	rem_attacker = SPI
+	rem_defender = KTT
+}

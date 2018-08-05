@@ -25,4 +25,5 @@ discovered_by = mesoamerican
 	trade_goods = fish
 } # First settlers
 1578.1.1 = { capital = "Tegucigalpa" }
-1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA remove_core = SPA } # Mexican War of Independence
+1823.7.1 = { owner = CAM add_core = CAM controller = CAM remove_core = MEX  }

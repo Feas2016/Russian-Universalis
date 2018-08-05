@@ -11,7 +11,11 @@ base_manpower = 1
 native_size = 1
 native_ferocity = 1
 native_hostileness = 1
+
+
+
 discovered_by = INC
+
 
 1535.3.10 = {
 	discovered_by = SPA
@@ -29,3 +33,8 @@ discovered_by = INC
 	add_core = COL
 	remove_core = SPA
 } # The establishment of Gran Colombia
+1832.2.12 = {
+	owner = ECU
+	controller = ECU
+	add_core = ECU
+}

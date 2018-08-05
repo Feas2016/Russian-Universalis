@@ -7,7 +7,7 @@ add_core = KIC
 is_city = yes
 religion = mesoamerican_religion
 capital = "Chacujal"
-trade_goods = gems
+trade_goods = dyes
 hre = no
 base_tax = 2 
 base_production = 2
@@ -29,5 +29,5 @@ discovered_by = mesoamerican
 	culture = castillian
 	religion = catholic
 } # First settlers
-1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
-
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA remove_core = SPA } # Mexican War of Independence
+1823.7.1 = { owner = CAM add_core = CAM controller = CAM remove_core = MEX  }

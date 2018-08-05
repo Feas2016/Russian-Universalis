@@ -3599,44 +3599,44 @@ FEO_ideas = {
 	}
 }
 
-# SIL_ideas = {	### STT
-	# start = {
-		# prestige = 1
-		# diplomatic_reputation = 1
-	# }
+SIL_ideas = {
+	start = {
+		prestige = 1
+		diplomatic_reputation = 1
+	}
 
-	# bonus = {
-	 	# global_tax_modifier = 0.10
-	# }
+	bonus = {
+	 	global_tax_modifier = 0.10
+	}
 
-	# trigger = {
-		# tag = SIL
-	# }
-	# free = yes
+	trigger = {
+		tag = SIL
+	}
+	free = yes
 
-	# under_the_infuence = {
-		# improve_relation_modifier = 0.15
-	# }
-	# silesian_duchies = {
-		# stability_cost_modifier = -0.10
-	# }
-	# german_settlers = {
-		# build_cost = -0.1
-		# development_cost = -0.1
-	# }
-	# raubritter = {
-		# trade_steering = 0.10
-	# }
-	# via_regia = {
-		# trade_efficiency = 0.1
-	# }
-	# hanseatic_ties = {
-		# global_prov_trade_power_modifier = 0.1
-	# }
-	# black_gold = {
-		# production_efficiency = 0.1
-	# }
-# }
+	under_the_infuence = {
+		improve_relation_modifier = 0.15
+	}
+	silesian_duchies = {
+		stability_cost_modifier = -0.10
+	}
+	german_settlers = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	raubritter = {
+		trade_steering = 0.10
+	}
+	via_regia = {
+		trade_efficiency = 0.1
+	}
+	hanseatic_ties = {
+		global_prov_trade_power_modifier = 0.1
+	}
+	black_gold = {
+		production_efficiency = 0.1
+	}
+}
 
 
 DNZ_ideas = {

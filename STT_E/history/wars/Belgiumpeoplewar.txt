@@ -1,0 +1,20 @@
+name = "Бельгийская Революция"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+}
+
+1830.8.25 = {
+	add_attacker = BEL
+	add_defender = NED
+}
+
+1831.8.8 = {
+	add_attacker = RFC
+}
+
+1831.8.12 = {
+	rem_attacker = BEL
+	rem_attacker = RFC
+	rem_defender = NED
+}

@@ -1,0 +1,15 @@
+name = "Первая Опиумная Война"
+war_goal = {
+    type = superiority_trade
+	casus_belli = cb_trade_war_triggered
+}
+
+1839.3.18 = {
+    add_attacker = GBR
+	add_defender = QNG
+}
+
+1842.8.29 = {
+    rem_attacker = GBR
+	rem_defender = QNG
+}

@@ -1,0 +1,16 @@
+name = "Война за независимость Техаса"
+war_goal = {
+	type = defend_capital_independence
+	casus_belli = cb_independence_war
+	tag = TEX
+}
+
+1835.3.2 = {
+	add_attacker = TEX
+	add_defender = MEX
+}
+
+1836.4.21 = {
+	rem_attacker = TEX
+	rem_defender = MEX
+}

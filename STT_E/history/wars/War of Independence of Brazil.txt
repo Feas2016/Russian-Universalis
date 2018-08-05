@@ -1,0 +1,16 @@
+name = "Война за независимость Бразилии"
+war_goal = {
+	type = independence
+	casus_belli = cb_conquest
+}
+
+
+1822.2.18 = {
+	add_attacker = BRZ
+	add_defender = POR
+}
+
+1824.3.8 = {
+	rem_attacker = BRZ
+	rem_defender = POR
+}

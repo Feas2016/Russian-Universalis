@@ -1,0 +1,107 @@
+
+government = absolute_monarchy
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = neapolitan
+capital = 121 # Napoli
+
+1816.12.12 = {
+	monarch = {
+		name = "Фердинанд I"
+		birth_date = 1751.1.12
+		dynasty = "де Бурбон"
+		dip = 3
+		mil = 3
+		adm = 4
+	}
+}
+
+1816.12.12 = {
+	heir = {
+		name = "Франциск"
+		monarch_name = "Франциск I"
+		birth_date = 1777.8.14
+		death_date = 1830.11.8
+		dynasty = "де Бурбон"
+		claim = 100
+		dip = 2
+		mil = 4
+		adm = 3
+	}
+}
+
+1825.1.4 = {
+	monarch = {
+		name = "Франциск I"
+		birth_date = 1777.8.14
+		dynasty = "де Бурбон"
+		dip = 2
+		mil = 4
+		adm = 3
+	}
+}
+
+1825.1.4 = {
+	heir = {
+		name = "Фердинанд"
+		monarch_name = "Фердинанд II"
+		birth_date = 1810.1.12
+		death_date = 1859.5.22
+		dynasty = "де Бурбон"
+		claim = 100
+		dip = 2
+		mil = 4
+		adm = 1
+	}
+}
+
+1830.11.8 = {
+	monarch = {
+		name = "Фердинанд II"
+		birth_date = 1810.1.12
+		dynasty = "де Бурбон"
+		dip = 2
+		mil = 4
+		adm = 1
+	}
+}
+
+1836.1.16 = {
+	heir = {
+		name = "Франциск"
+		monarch_name = "Франциск II"
+		birth_date = 1836.1.16
+		death_date = 1894.12.27
+		dynasty = "де Бурбон"
+		claim = 100
+		dip = 4
+		mil = 3
+		adm = 3
+	}
+}
+
+1859.5.22 = {
+	monarch = {
+		name = "Франциск II"
+		birth_date = 1836.1.16
+		dynasty = "де Бурбон"
+		dip = 5
+		mil = 3
+		adm = 3
+	}
+}
+
+1859.11.8 = {
+	heir = {
+		name = "Альфонсо"
+		monarch_name = "Альфонсо I"
+		birth_date = 1841.3.16
+		death_date = 1934.5.26
+		dynasty = "де Бурбон"
+		claim = 100
+		dip = 2
+		mil = 3
+		adm = 5
+	}
+}

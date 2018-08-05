@@ -22,3 +22,12 @@ discovered_by = north_american
 	trade_goods = fish
 	is_city = yes 
 } #Salish grouping occupy large areas at contact
+1840.1.1 = { base_tax = 2 base_production = 2 }
+1846.6.15  = { 	owner = USA 
+		add_core = USA 
+		controller = USA 
+		remove_core = SAL
+		religion = protestant 
+		culture = american
+	     } # Oregon Treaty
+1859.1.28  = { capital = "Olympia" }

@@ -14,3 +14,14 @@ native_hostileness = 4
 discovered_by = north_american
 
 1774.1.1 = { discovered_by = SPA } # Colonists never really settled this far inland
+1776.3.28 = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	is_city = yes
+	trade_goods = wool 
+}
+1786.1.1 = { discovered_by = FRA } # Jean Francois la Perouse
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+1821.9.27 = { controller = MEX remove_core = SPA }
+1848.2.2 = { owner = USA add_core = USA controller = USA remove_core = MEX }

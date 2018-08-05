@@ -1,0 +1,39 @@
+name = "Американо-Мексиканская Война"
+
+war_goal = {
+	type = take_core
+	casus_belli = cb_core
+	province = 887
+}
+
+1846.4.23 = {
+	add_attacker = MEX
+	add_defender = USA
+}
+
+1846.9.21 = {
+	battle = {
+		name = "Битва при Монтеррее"
+		location = 2614
+		attacker = {
+			commander = "Закари Тейлор"
+			infantry = 6220
+			losses = 1	# percent
+			country = USA
+		}
+		defender = {
+			commander = "Педро де Ампудья"
+			infantry = 4000
+			cavalry = 2000
+			artillery = 15
+			losses = 3	# percent
+			country = MEX
+		}
+		result = yes
+	}
+}
+
+1848.2.2 = {
+	rem_attacker = MEX
+	rem_defender = USA
+}
