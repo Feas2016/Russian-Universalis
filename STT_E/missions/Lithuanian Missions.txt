@@ -35,6 +35,18 @@ lithuanian_missions_slot = {
 					}
 				}
 			}
+			else_if = {	### STT
+				limit = {
+					exists = GNE
+					NOT = { is_rival = GNE }
+				}
+				OR = {
+					alliance_with = GNE
+					GNE = {
+						is_subject_of = ROOT
+					}
+				}
+			}
 			else = {
 				samogitia_area = {
 					type = all
