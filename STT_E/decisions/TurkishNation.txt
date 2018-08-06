@@ -38,7 +38,7 @@ country_decisions = {
 				province_id = 329		# Sivas
 				province_id = 331		# Erzurum
 				province_id = 2301		# Kayseri
-				#province_id = 4312		# Eskeshehir	### STT
+				province_id = 319		# Menteste	### STT
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -53,14 +53,16 @@ country_decisions = {
 			NOT = { exists = RUM }
 			NOT = { exists = TUR }
 			NOT = { exists = BYZ }
-			owns_core_province = 151		# Constantinople
+			OR = {
+				owns_core_province = 151		# Constantinople
+				owns_core_province = 331		# Erzurum
+			}
 			owns_core_province = 316		# Iznik
 			owns_core_province = 323		# Konya
 			owns_core_province = 326		# Ankara
 			owns_core_province = 329		# Sivas
-			owns_core_province = 331		# Erzurum
 			owns_core_province = 2301		# Kayseri
-			#owns_core_province = 4312		# Eskeshehir	### STT
+			owns_core_province = 319		# Menteste	### STT
 		}
 		effect = {
 			change_tag = RUM

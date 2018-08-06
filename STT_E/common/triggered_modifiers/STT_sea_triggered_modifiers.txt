@@ -3,7 +3,7 @@ control_caspian_sea = {
 
 	potential = {
 		normal_or_historical_nations = yes
-		OR = {
+		calc_true_if = {
 			ROOT = { owns_or_vassal_of = 417 }	# Gilan
 			ROOT = { owns_or_vassal_of = 426 } 	# Mazandaran
 			ROOT = { owns_or_vassal_of = 425 }	# Derbent
@@ -20,6 +20,7 @@ control_caspian_sea = {
 			ROOT = { owns_or_vassal_of = 2208 }	# Tarek
 			ROOT = { owns_or_vassal_of = 3476 }	# Amol
 			ROOT = { owns_or_vassal_of = 3439 }	# Talesh
+			amount = 8
 		}
 	}
 
@@ -51,7 +52,7 @@ control_gibraltar_straits = {
 	potential = {
 		normal_or_historical_nations = yes
 		num_of_ports = 1 # Don't show this to land-locked countries
-		OR = {
+		calc_true_if = {
 			121 = { owned_by = ROOT }
 			126 = { owned_by = ROOT }
 			226 = { owned_by = ROOT }
@@ -62,6 +63,7 @@ control_gibraltar_straits = {
 			342 = { owned_by = ROOT }
 			1749 = { owned_by = ROOT }
 			1751 = { owned_by = ROOT }
+			amount = 3
 		}
 	}
 
@@ -208,12 +210,13 @@ mare_west = {
 mare_nostrum = {
 	potential = {
 		normal_or_historical_nations = yes
-		OR = {
+		calc_true_if = {
 			has_country_modifier = mare_trade
 			has_country_modifier = mare_west
 			has_country_modifier = mare_central
 			has_country_modifier = mare_east
 			has_country_modifier = control_gibraltar_straits
+			amount = 2
 		}
 	}
 	
@@ -233,10 +236,10 @@ center_of_europe = {
 	potential = {
 		normal_or_historical_nations = yes
 		OR = {
-			num_of_owned_provinces_with = { value = 1 region = south_german_region }
-			num_of_owned_provinces_with = { value = 1 region = north_german_region }
-			num_of_owned_provinces_with = { value = 1 region = poland_region }
-			num_of_owned_provinces_with = { value = 1 region = carpathia_region }
+			num_of_owned_provinces_with = { value = 5 region = south_german_region }
+			num_of_owned_provinces_with = { value = 5 region = north_german_region }
+			num_of_owned_provinces_with = { value = 5 region = poland_region }
+			num_of_owned_provinces_with = { value = 5 region = carpathia_region }
 		}
 	}
 
@@ -256,7 +259,7 @@ center_of_europe = {
 
 norse_pagans = {
     potential = {
-	    NOT = {is_year = 1725}
+	    NOT = { is_year = 1725 }
 		OR = {
 		    tag = NDL
 			tag = SWE
@@ -266,11 +269,10 @@ norse_pagans = {
 	}
 	
 	trigger = {
-	    NOT = {is_year = 1725}
+	    NOT = { is_year = 1725 }
 		religion = norse_pagan_reformed
 	}
 	
 	diplomatic_reputation = -4
 	improve_relation_modifier = -0.3
-	ae_impact = 0.10
 }

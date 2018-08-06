@@ -45,8 +45,9 @@ tur_conquerors_of_ellada = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			nicaea_area = { owned_by = ROOT 
-			type = all
+			nicaea_area = { 
+				owned_by = ROOT 
+				type = all
 			}
 		}
 		completed_by = 1361.1.1
@@ -69,13 +70,16 @@ tur_conquerors_of_ellada = {
 		required_missions = { turks_in_europe }
 		position = 4
 		provinces_to_highlight = {
-			province_id = 1765
-			area = macedonia_area
+			OR = { 
+				province_id = 1765
+				area = macedonia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			macedonia_area = { owned_by = ROOT 
-			type = all
+			macedonia_area = { 
+				owned_by = ROOT 
+				type = all
 			}
 			owns = 1765
 		}
@@ -150,7 +154,7 @@ tur_conquerors_of_danube = {
 		}
 		completed_by = 1337.1.1
 		effect = {
-			add_country_modifier = {
+			add_province_modifier  = {
 				name = "TUO_greek_accimilation"
 				duration = 5475
 			}
@@ -169,13 +173,16 @@ tur_conquerors_of_danube = {
 		required_missions = { pontus_cost }
 		position = 2
 		provinces_to_highlight = {
-			area = kastamonu_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			OR = { 
+				province_id = 325
+				province_id = 3647
+			}
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			kastamonu_area = { owned_by = ROOT 
-			type = all
-			}
+			num_of_owned_provinces_with = { has_port = yes value = 10 }
+			325 = { owned_by = ROOT }
+			3647 = { owned_by = ROOT }
 		}
 		completed_by = 1354.1.1
 		effect = {
@@ -183,7 +190,8 @@ tur_conquerors_of_danube = {
 				name = "naval_enthusiasm_mission"
 				duration = 5475
 			}
-			add_permanent_claim = 328			
+			add_permanent_claim = 328
+			add_permanent_claim = 3650
 			angora_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -202,13 +210,15 @@ tur_conquerors_of_danube = {
 			}
 		position = 3
 		provinces_to_highlight = {
-			province_id = 3106
-			province_id = 3105
-			province_id = 149
-			province_id = 3264
-			province_id = 1764
-			province_id = 3259
-			province_id = 2750
+			OR = {
+				province_id = 3106
+				province_id = 3105
+				province_id = 149
+				province_id = 3264
+				province_id = 1764
+				province_id = 3259
+				province_id = 2750
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -247,14 +257,17 @@ tur_conquerors_of_danube = {
 		required_missions = { turks_in_europe }
 		position = 4
 		provinces_to_highlight = {
-			province_id = 3096
-			area = bulgaria_area
+			OR = {
+				province_id = 3096
+				area = bulgaria_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns = 3096
-			bulgaria_area = { owned_by = ROOT 
-			type = all
+			bulgaria_area = { 
+				owned_by = ROOT 
+				type = all
 			}
 		}
 		completed_by = 1396.1.1
@@ -280,19 +293,24 @@ tur_conquerors_of_danube = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { danube_water }
 		position = 5
+		provinces_to_highlight = {
+			area = wallachia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = {
 			government_rank = 2
 			OR = { 
 				AND = {
-					wallachia_area = { owned_by = ROOT 
+					wallachia_area = { 
+						owned_by = ROOT 
 						type = all
-						}
-					NOT = { exists = WAL }
 					}
+					NOT = { exists = WAL }
+				}
 				WAL = { 
-						is_subject_other_than_tributary_trigger = yes
-						is_subject_of = TU0
-						}												
+					is_subject_other_than_tributary_trigger = yes
+					is_subject_of = TU0
+				}												
 			}
 		}
 		completed_by = 1418.1.1
@@ -348,8 +366,8 @@ tur_imperial_ambition = {
 		required_missions = { conquer_angora }
 		position = 2
 		trigger = {
-		navy_size = 12
-		sailors = 200
+			navy_size = 12
+			sailors = 200
 		}
 		completed_by = 1360.1.1
 		effect = {
@@ -365,8 +383,8 @@ tur_imperial_ambition = {
 					light_ship = PREV
 					light_ship = PREV
 					light_ship = PREV
-					}
 				}
+			}
 
 		}
 	}	
@@ -378,8 +396,7 @@ tur_imperial_ambition = {
 			province_id = 149
 		}
 		trigger = {
-		149 = { is_capital = yes }
-		is_subject = no
+			149 = { is_capital = yes }
 		}
 		completed_by = 1365.1.1
 		effect = {
@@ -388,10 +405,10 @@ tur_imperial_ambition = {
 					add_base_tax = 2
 					add_base_production = 2
 					add_base_manpower = 2
-				}
+			}
 			if = { 
-			limit = { NOT = { government_rank = 2 } }
-			set_government_rank = 2
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
 			add_country_modifier = {
 				name = western_embassy_mission
@@ -429,7 +446,8 @@ tur_imperial_ambition = {
 					skill = 2
 					culture = greek
 					religion = orthodox
-				}
+					discount = yes
+			}
 			add_country_modifier = {
 				name = "religious_tolerance"
 				duration = 5475
@@ -446,9 +464,12 @@ tur_imperial_ambition = {
 			siege_fleet
 			}
 		position = 6
+		provinces_to_highlight = {
+			province_id = 151
+		}
 		trigger = {
-		NOT = { exists = BYZ }
-		owns = 151		
+			NOT = { exists = BYZ }
+			owns = 151		
 		}
 		completed_by = 1453.5.29
 		effect = {
@@ -520,16 +541,19 @@ tur_western_anatolia = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			hudavendigar_area = { owned_by = ROOT 
-			type = all
+			hudavendigar_area = { 
+				owned_by = ROOT 
+				type = all
 			}
 		}
 		completed_by = 1429.1.1
 		effect = {
-			add_country_modifier = {
-				name = "soldiers_stimulating_local_economy"
-				duration = 5475
-			}			
+			hudavendigar_area = { 
+				add_province_modifier = {
+					name = "soldiers_stimulating_local_economy"
+					duration = 5475
+				}	
+			}
 			aydin_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -551,8 +575,10 @@ tur_western_anatolia = {
 		required_missions = { conquer_hudavendigar }
 		position = 3
 		provinces_to_highlight = {
-			area = aydin_area
-			area = menteshe_area
+			OR = {
+				area = aydin_area
+				area = menteshe_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -739,7 +765,7 @@ tur_speciaslists = {
 					galley = PREV
 					galley = PREV
 					galley = PREV
-					}
+				}
 			}	
 			create_admiral = 60			
 		}

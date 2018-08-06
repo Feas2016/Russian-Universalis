@@ -1,0 +1,42 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = turkish
+add_accepted_culture = pontic_greek
+religion = sunni
+technology_group = ottoman
+capital = 328	
+
+# Annexed by the CND in 1322
+
+1277.1.1 = { 
+	monarch = {
+		name = "Муинеддин Мехмед"          
+		dynasty = "Перванеогуллар"         
+		death_date = 1297.1.1
+		dip = 3
+		adm = 3
+		mil = 3
+		religion = sunni       
+		culture = turkish         
+	}
+}
+1297.1.1 = { 
+	monarch = {
+		name = "Месуд"          
+		dynasty = "Перванеогуллар"         
+		death_date = 1298.1.1
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}
+1298.1.1 = { 
+	monarch = {
+		name = "Гази Челеби"          
+		dynasty = "Перванеогуллар"
+		death_date = 1322.1.1
+		dip = 2
+		adm = 4
+		mil = 3
+	}
+}

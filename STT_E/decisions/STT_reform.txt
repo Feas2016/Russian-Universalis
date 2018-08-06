@@ -1,0 +1,172 @@
+#country_decisions = {
+
+	#open_reform = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = opened_reform }
+			ai = no
+		}
+		allow = { stability = -2 }
+		effect = {
+		set_country_flag = opened_reform
+		}
+	}
+	#close_reform = {
+		major = yes
+		potential = {
+			has_country_flag = opened_reform
+			ai = no			
+		}
+		allow = { }
+		effect = {
+		clr_country_flag = opened_reform
+		clr_country_flag = opened_adm_reform
+		clr_country_flag = opened_econom_reform
+		clr_country_flag = opened_mil_reform
+		clr_country_flag = opened_feo_reform
+		}
+	}
+	open_adm_reform = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = opened_adm_reform }
+			has_country_flag = opened_reform
+			ai = no
+		}
+		allow = {	}
+		effect = {
+		set_country_flag = opened_adm_reform
+		}
+	}
+	open_econom_reform = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = opened_econom_reform }
+			has_country_flag = opened_reform
+			ai = no
+		}
+		allow = {	}
+		effect = {
+		set_country_flag = opened_econom_reform
+		}
+	}
+	open_mil_reform = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = opened_mil_reform }
+			has_country_flag = opened_reform
+			ai = no
+		}
+		allow = {	}
+		effect = {
+		set_country_flag = opened_mil_reform
+		}
+	}
+	open_feo_reform = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = opened_feo_reform }
+			has_country_flag = opened_reform
+			ai = no
+		}
+		allow = {	}
+		effect = {
+		set_country_flag = opened_feo_reform
+		}
+	}
+
+	#admin reform
+	corruption_control_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			NOT = { has_country_flag = corruption_control_reform }
+		}
+		allow = { stability = 1 adm_power = 250 legitimacy = 100 adm_tech = 5 }
+		effect = {
+		add_stability = -2 
+		add_adm_power = -250
+		set_country_flag = going_reform
+		country_event = { id = stt_gov_reform.1 } 
+		set_country_flag = corruption_control_reform
+		}
+	}
+	corruption_controlorgan_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			has_country_flag = corruption_control_reform
+		}
+		allow = { stability = 1 adm_power = 350 legitimacy = 100 adm_tech = 7 }
+		effect = {
+		add_stability = -2 
+		add_adm_power = -350
+		country_event = { id = stt_gov_reform.1 } 
+		set_country_flag = going_reform
+		set_country_flag = corruption_controlorgan_reform
+		}
+	}
+	corruption_effective_1_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			has_country_flag = corruption_control_reform
+		}
+		allow = { stability = 1 adm_power = 100 legitimacy = 100 adm_tech = 9 adm = 2 }
+		effect = {
+		add_stability = -1 
+		add_adm_power = -100
+		set_country_flag = going_reform
+		set_country_flag = corruption_effective_1_reform
+		}
+	}
+	corruption_effective_2_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			has_country_flag = corruption_control_reform
+		}
+		allow = { stability = 1 adm_power = 150 legitimacy = 100 adm = 3 adm_tech = 12 administrative_ideas = 4 }
+		effect = {
+		add_stability = -1 
+		add_adm_power = -150
+		set_country_flag = going_reform
+		set_country_flag = corruption_effective_2_reform
+		}
+	}
+	corruption_effective_3_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			has_country_flag = corruption_control_reform
+		}
+		allow = { stability = 1 adm_power = 250 legitimacy = 100 adm = 4 adm_tech = 19 full_idea_group = administrative_ideas }
+		effect = {
+		add_stability = -1 
+		add_adm_power = -250
+		set_country_flag = going_reform
+		set_country_flag = corruption_effective_3_reform
+		}
+	}
+	corruption_effective_full_reform = {
+		major = yes
+		potential = {
+			OR = { ai = yes has_country_flag = opened_adm_reform }
+			NOT = { has_country_flag = going_reform }
+			has_country_flag = corruption_effective_1_reform
+			has_country_flag = corruption_effective_2_reform
+			has_country_flag = corruption_effective_3_reform
+		}
+		allow = { stability = 3 adm_power = 500 philosopher = 5 }
+		effect = {
+		add_stability = -3 
+		add_adm_power = -500
+		set_country_flag = going_reform
+		}
+	}
+}

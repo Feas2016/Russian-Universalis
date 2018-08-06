@@ -4,7 +4,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			NOT = { dynasty = "Timurid" }
+			NOT = { dynasty = "Тимурид" }
+			OR = {
+				has_global_flag = death_of_shah_rukh
+				started_in = 1444.11.11
+			}
 			NOT = { is_year = 1490 }
 			government = monarchy
 			NOT = { tag = HLR }
@@ -60,14 +64,14 @@ country_decisions = {
 				owns_core_province = 2214	# Astarabad
 				owns_core_province = 2218	# Shiraz
 			}
-			NOT = { dynasty = "Timurid" }
+			NOT = { dynasty = "Тимурид" }
 			NOT = { is_year = 1490 }
 		}
 		effect = {
 			add_stability = -2
 			custom_tooltip = tooltip_about_timurid_empire
 			define_ruler = {
-				dynasty = "Timurid"
+				dynasty = "Тимурид"
 			}
 			add_legitimacy = 20
 			if = {
@@ -77,7 +81,7 @@ country_decisions = {
 				remove_heir = yes
 			}
 			define_heir = {
-				dynasty = "Timurid"
+				dynasty = "Тимурид"
 			}
 		}
 		ai_will_do = {
@@ -115,7 +119,7 @@ country_decisions = {
 				primary_culture = turkmeni
 			}
 			religion_group = muslim
-			dynasty = "Timurid"
+			dynasty = "Тимурид"
 		}
 		allow = {
 			NOT = { exists = TIM }
@@ -209,13 +213,13 @@ country_decisions = {
 				}
 				add_permanent_claim = TIM
 			}
-			# termez_area = { #STT
-				# limit = {
-					# NOT = { owned_by = TIM }
-					# NOT = { is_core = TIM }
-				# }
-				# add_permanent_claim = TIM
-			# }
+			termez_area = {
+				limit = {
+					NOT = { owned_by = TIM }
+					NOT = { is_core = TIM }
+				}
+				add_permanent_claim = TIM
+			}
 			basra_area = {
 				limit = {
 					NOT = { owned_by = TIM }

@@ -1,0 +1,83 @@
+# Achievements
+
+#Hard
+
+stt_achievements_turok_1309 = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = TUR
+		start_date = 1309.3.9
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1354 }
+		anatolia_region = { type = all owned_by = TUR }
+		BYZ = { exists = no }
+	}
+	tolerance_own = 1
+}
+
+stt_achievements_hun_pentarchy = {
+	potential = {
+		has_global_flag = stt_achievements
+		normal_province_values = yes
+		ironman = yes
+		ai = no
+	}
+	trigger = {
+		tag = HUN
+		start_date = 1309.3.9
+		normal_or_historical_nations = yes
+		
+	}
+	tolerance_own = 1
+}
+
+stt_achievements_timurs_conquest = {
+	potential = {
+		has_global_flag = stt_achievements
+		normal_province_values = yes
+		ironman = yes
+		ai = no
+	}
+	trigger = {
+		tag = TIM
+		start_date = 1370.4.10
+		normal_or_historical_nations = yes
+		NOT = {
+			any_country = {
+				NOT = {
+					OR = {
+						tag = ROOT
+						AND = {
+							is_subject_of = ROOT
+							NOT = { is_subject_of_type = tributary_state }
+						}
+					}
+				}
+				exists = yes
+			}
+		}
+	}
+	army_tradition = 1
+}
+
+stt_achievements_timurs_china = {
+	potential = {
+		has_global_flag = stt_achievements
+		normal_province_values = yes
+		ironman = yes
+		ai = no
+	}
+	trigger = {
+		tag = TIM
+		start_date = 1370.4.10
+		normal_or_historical_nations = yes
+		south_china_region = { type = all owned_by = TUR }
+		north_china_region = { type = all owned_by = TUR }
+	}
+	army_tradition_from_battle = 0.5
+}

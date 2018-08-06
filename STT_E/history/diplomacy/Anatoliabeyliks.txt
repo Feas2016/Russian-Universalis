@@ -1,0 +1,158 @@
+
+# Alaya, a Karaman vassal
+vassal = {
+	first = KAR
+	second = ALA
+	start_date = 1309.1.1
+	end_date = 1427.1.1
+}
+
+#Ilhanat
+vassal = { #ERE < HUL
+	first = HUL
+	second = ERE
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+
+dependency = {
+		subject_type = "tributary_state"
+         first = HUL
+		 second = GEO
+		 start_date = 1309.1.1
+		 end_date = 1335.1.1
+}
+dependency = {
+		subject_type = "tributary_state"
+         first = HUL
+		 second = TRE
+		 start_date = 1309.1.1
+		 end_date = 1335.1.1	
+}
+dependency = {
+		subject_type = "tributary_state"
+         first = HUL
+		 second = KIL
+		 start_date = 1309.1.1
+		 end_date = 1335.1.1
+}
+dependency = {
+		subject_type = "tributary_state"
+         first = HUL
+		 second = CYP
+		 start_date = 1309.1.1
+		 end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = GAZ
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = SHK
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = KAR
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = TNA
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = CND
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = GRM
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = HMD
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = TKK
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = LAD
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = ESH
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = SAH
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = HAC
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = TAC
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = BAF
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = HUL
+	second = PRV
+	start_date = 1309.1.1
+	end_date = 1335.1.1
+}
+
+#Timur
+vassal = {
+	first = TIM ### STT
+	second = TAC
+	start_date = 1402.1.2
+	end_date = 1405.1.1	# Timur's death
+}

@@ -3,7 +3,7 @@ country_decisions = {
 	turkic_khaganate = {
 		major = yes
 		potential = {
-		    NOT = { is_year = 1650 }
+		    NOT = { is_year = 1600 }
 			NOT = { exists = TGN }
 			NOT = { tag = TUR }
 			NOT = { tag = RUS }
@@ -11,9 +11,28 @@ country_decisions = {
 			NOT = { tag = OIR }
 			NOT = { tag = KHA }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 465	# Krakow
+				province_id = 466
+				province_id = 457
+				province_id = 1082
+				province_id = 476
+				province_id = 739
+				province_id = 715
+				province_id = 2116
+				province_id = 2109
+				province_id = 2122
+				province_id = 2747
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
-			NOT = { is_year = 1650 }
+			NOT = { is_year = 1600 }
 			is_free_or_tributary_trigger = yes
 			stability = 2
 			prestige = 50
@@ -35,7 +54,7 @@ country_decisions = {
 			add_horde_unity = 25
 			add_legitimacy = 25
 			country_event = { id = ideagroups.1 } #Swap Ideas
-			central_asia_region = {
+			tartary_superregion = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

@@ -3,21 +3,23 @@ golden_horde_disaster = {
 		tag = GLH
 		normal_or_historical_nations = yes
 		uses_doom = no
-		NOT = { has_country_flag = GLH_collapse_ended  }
+		NOT = { has_country_flag = GLH_collapse_ended }
 		government = steppe_horde
+		NOT = { AND = { has_ruler = "Узбек" adm = 6 dip = 6 mil = 6 } }
 	}
 
 	can_start = {
-		NOT = { horde_unity = 75 } 
-		OR = { 
+		OR = { NOT = { horde_unity = 80 } }
+		OR = {
+			war_with = TIM
 		    war_exhaustion = 5
 		    num_of_owned_provinces_with = {
-			    value = 20
+			    value = 15
 				local_autonomy = 60
 			}
 			AND = { 
 			    num_of_loans = 2
-				inflation = 5
+				inflation = 3
 			}
 		}
 	}
@@ -84,6 +86,11 @@ golden_horde_disaster = {
 			factor = 0.5
 			NOT = { legitimacy_or_horde_unity = 40 }
 		}
+		modifier = {
+			factor = 2
+			war_with = TIM 
+			TIM = { has_ruler = "Тимур Тимурид" } 
+		}
 	}
 	
 	# At least one breakaway has occurred and been re-taken, and it's been 10 years.
@@ -124,11 +131,16 @@ ilkhanate_disaster = {
 		normal_or_historical_nations = yes
 		NOT = { has_country_flag = HUL_collapse_ended  }
 		uses_doom = no
+		NOT = { has_country_flag = formed_hul_flag }
 	}
 
 	can_start = {
-		NOT = { legitimacy_or_horde_unity = 60 } 
+		OR = {
+			NOT = { legitimacy_or_horde_unity = 80 }
+			AND = { adm = 5 NOT = { legitimacy_or_horde_unity = 60 } }
+		}
 		OR = { 
+			is_year = 1335
 		    war_exhaustion = 5
 			num_of_owned_provinces_with = {
 			    value = 20
@@ -191,6 +203,16 @@ ilkhanate_disaster = {
 			factor = 0.5
 			NOT = { legitimacy_or_horde_unity = 40 }
 		}
+		modifier = {
+			factor = 50
+			ai = yes 
+			has_global_flag = timur_was_born
+		}
+		modifier = {
+			factor = 5
+			ai = yes 
+			is_year = 1335
+		}
 	}
 	
 	# only for player
@@ -198,11 +220,11 @@ ilkhanate_disaster = {
 		NOT = { num_of_cities = 20 }
 		stability = 1
 		horde_unity = 50
-		ai = no
+		OR = { ai = no NOT = { tag = HUL } }
 	}
 
 	modifier = {
-		stability_cost_modifier = 0.50
+		stability_cost_modifier = 0.5
 		global_manpower_modifier = -0.25
 		global_unrest = 15
 		discipline = -0.1

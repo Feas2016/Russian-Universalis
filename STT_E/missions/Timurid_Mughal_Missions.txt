@@ -98,13 +98,6 @@ tim_reconquest_persia = {
 					}
 					add_permanent_claim = ROOT
 				}
-				persian_gulf_coast = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 				kerman_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -112,18 +105,17 @@ tim_reconquest_persia = {
 					}
 					add_permanent_claim = ROOT
 				}
-				431 = {
+				isfahan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
 					add_permanent_claim = ROOT
-				}
-				3438 = {	### STT
-					add_permanent_claim = ROOT
-				}
+				}				
 				2217 = {
 					add_permanent_claim = ROOT
 				}
-				3444 = {	### STT
-					add_permanent_claim = ROOT
-				}
+				
 			}
 		}
 	}
@@ -136,12 +128,9 @@ tim_reconquest_persia = {
 		provinces_to_highlight = {
 			OR = {
 				area = farsistan_area
-				area = persian_gulf_coast
 				area = kerman_area
-				province_id = 431
-				province_id = 3438	### STT
+				area = isfahan_area
 				province_id = 2217
-				province_id = 3444	### STT
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -151,44 +140,22 @@ tim_reconquest_persia = {
 				type = all
 				owned_by = ROOT
 			}
-			persian_gulf_coast = {
-				type = all
-				owned_by = ROOT
-			}
 			kerman_area = {
 				type = all
 				owned_by = ROOT
 			}
-			431 = {
-				owned_by = ROOT
-			}
-			3438 = {	### STT
+			isfahan_area = {
+				type = all
 				owned_by = ROOT
 			}
 			2217 = {
-				owned_by = ROOT
-			}
-			3444 = {	### STT
 				owned_by = ROOT
 			}
 		}
 		
 		effect = {
 			add_treasury = 400
-			413 = {
-				add_permanent_claim = ROOT
-			}
-			414 = {
-				add_permanent_claim = ROOT
-			}
-			2210 = {
-				add_permanent_claim = ROOT
-			}
-			isfahan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
+			2211 = {
 				add_permanent_claim = ROOT
 			}
 			iraq_e_ajam_area = {
@@ -205,6 +172,14 @@ tim_reconquest_persia = {
 				}
 				add_permanent_claim = ROOT
 			}
+			luristan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
 		}
 	}
 	
@@ -215,27 +190,19 @@ tim_reconquest_persia = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = isfahan_area
+				area = luristan_area
 				area = iraq_e_ajam_area
 				area = azerbaijan_area
-				province_id = 413
-				province_id = 414
-				province_id = 2210
+				province_id = 2211
 			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			413 = {
+			2211 = {
 				owned_by = ROOT
 			}
-			414 = {
-				owned_by = ROOT
-			}
-			2210 = {
-				owned_by = ROOT
-			}
-			isfahan_area = {
+			luristan_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -291,14 +258,21 @@ tim_reconquest_khorasan = {
 				name = "oma_buildforces_mod"
 				duration = 5475
 			}
-			mashhad_area = {
+			ghor_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			birjand_area = {
+			kabulistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -312,7 +286,67 @@ tim_reconquest_khorasan = {
 				}
 				add_permanent_claim = ROOT
 			}
-			herat_area = {
+			2233 = {
+				add_permanent_claim = ROOT
+			}			
+			434 = {
+				add_permanent_claim = ROOT
+			}
+		
+		}
+	}
+
+	tim_khorasan_two = {
+		icon = mission_unite_home_region
+		required_missions = { tim_army_built }
+		position = 5
+		
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+				area = sistan_area
+				province_id = 2233
+				province_id = 434
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			ghor_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kabulistan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			balkh_area = {
+				type = all
+				owned_by = ROOT
+			}
+			sistan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			2233 = {
+				owned_by = ROOT
+			}
+			434 = {
+				owned_by = ROOT
+			}				
+		}
+		
+		effect = {
+			makran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kalat_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -326,9 +360,6 @@ tim_reconquest_khorasan = {
 				}
 				add_permanent_claim = ROOT
 			}
-			506 = {
-				add_permanent_claim = ROOT
-			}
 			2078 = {
 				add_permanent_claim = ROOT
 			}
@@ -337,96 +368,49 @@ tim_reconquest_khorasan = {
 			}
 			2075 = {
 				add_permanent_claim = ROOT
-			}
+			}			
 		}
 	}
 	
 	tim_khorasan_one = {
 		icon = mission_non-western_cavalry_raid
-		required_missions = { tim_army_built }
+		required_missions = { tim_khorasan_two }
 		position = 3
 		
 		provinces_to_highlight = {
 			OR = {
-				area = mashhad_area
-				area = birjand_area
-				area = sistan_area
-				area = herat_area
+				area = makran_area
+				area = kalat_area
+				area = lahore_area
+				province_id = 2078
+				province_id = 510
+				province_id = 2075
 			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			mashhad_area = {
+			makran_area = {
 				type = all
 				owned_by = ROOT
 			}
-			birjand_area = {
+			kalat_area = {
 				type = all
 				owned_by = ROOT
 			}
-			sistan_area = {
+			lahore_area = {
 				type = all
 				owned_by = ROOT
 			}
-			herat_area = {
-				type = all
+			2078 = {
 				owned_by = ROOT
 			}
-		}
-		
-		effect = {
-			ghor_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			kabulistan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			balkh_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	tim_khorasan_two = {
-		icon = mission_unite_home_region
-		required_missions = { tim_khorasan_one }
-		position = 5
-		
-		provinces_to_highlight = {
-			OR = {
-				area = ghor_area
-				area = kabulistan_area
-				area = balkh_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-		
-		trigger = {
-			ghor_area = {
-				type = all
+			510 = {
 				owned_by = ROOT
 			}
-			kabulistan_area = {
-				type = all
+			2075 = {
 				owned_by = ROOT
-			}
-			balkh_area = {
-				type = all
-				owned_by = ROOT
-			}
+			}			
 		}
 		
 		effect = {
@@ -435,7 +419,6 @@ tim_reconquest_khorasan = {
 				name = "tim_heartland_reconquest"
 				duration = 5475
 			}
-		}
 	}
 	
 }
@@ -472,11 +455,7 @@ tim_reconquest_transoxiana = {
 				}
 				add_permanent_claim = ROOT
 			}
-			termez_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
+			440 = {
 				add_permanent_claim = ROOT
 			}
 			458 = {
@@ -502,7 +481,7 @@ tim_reconquest_transoxiana = {
 		provinces_to_highlight = {
 			OR = {
 				area = transoxiana_area
-				area = termez_area
+				province_id = 440
 				province_id = 458
 				province_id = 1967
 				province_id = 457
@@ -516,10 +495,9 @@ tim_reconquest_transoxiana = {
 				type = all
 				owned_by = ROOT
 			}
-			termez_area = {
-				type = all
+			440 = {
 				owned_by = ROOT
-			}
+			}			
 			458 = {
 				owned_by = ROOT
 			}
@@ -641,35 +619,24 @@ tim_india = {
 	
 	conquer_punjab_MUG = {
 		icon = mission_indian_soldier_elephant
-		required_missions = { }
+		required_missions = { tim_khorasan_one }
 		position = 6
 		
 		provinces_to_highlight = {
 			OR = {
-				area = lahore_area
-				province_id = 506
-				province_id = 2078
-				province_id = 510
-				province_id = 2075
+				area = multan_area
+				area = sindh_area
 			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			lahore_area = {
+			multan_area = {
 				type = all
 				owned_by = ROOT
 			}
-			506 = {
-				owned_by = ROOT
-			}
-			2078 = {
-				owned_by = ROOT
-			}
-			510 = {
-				owned_by = ROOT
-			}
-			2075 = {
+			sindh_area = {
+				type = all
 				owned_by = ROOT
 			}
 		}

@@ -110,9 +110,11 @@ country_event = {
 						    province_id = 317
 				            province_id = 316
 				            province_id = 2299
+							province_id = 3642
+							province_id = 3643
 				    }
 				}
-				add_claim = TU0
+				add_permanent_claim = TU0
 			}
 		}
 		   
@@ -138,6 +140,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	immediate = { hidden_effect = { HUL = { release = TU0 } BYZ = { declare_war = TU0 } } }
 	option = {
 	    name = stt_wek.4.a
 	    add_country_modifier = {
@@ -154,7 +157,6 @@ country_event = {
 			cavalry = ROOT
 			cavalry = ROOT
 		}
-		BYZ = { declare_war = TU0 }
 	}
 }
 
@@ -983,40 +985,19 @@ country_event = {
 	}
 }
 
-province_event = { ###STT FOR FRIDRIH
+country_event = { ###STT FOR FRIDRIH
 	id = stt_wek.200
 	title = no_need200
 	desc = no_need200
 	
-	picture = COUNTRY_COLLAPSE_eventPicture
-	
 	hidden = yes
-	mean_time_to_happen = { days = 1 }
-	
+	is_triggered_only = yes
+		
 	trigger = {
-		NOT = { is_year = 1452 }
-	    151 = {
-			controlled_by = BYZ
-			controlled_by = ROOT
-			has_province_modifier = BYZ_wall666
-			NOT = { has_building = fort_17th }
-		}
+		NOT = { is_year = 1453 }
+	    151 = { controlled_by = BYZ }
 	}
-	immediate = {
-		151 = {
-			remove_building = fort_15th 
-			add_building = fort_17th 
-		}
-		if = {
-			limit = { BYZ = { ai = yes } }
-			BYZ = {
-				add_country_modifier = {
-					name = ai_boost_wall
-					duration = -1
-				}
-			}
-		}
-	}
+	immediate = { 151 = { remove_building = fort_15th add_building = fort_17th } if = { limit = { BYZ = { ai = yes } } BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } } }
 	option = { name = stt_wek.200.a }
 }
 
@@ -1034,6 +1015,7 @@ country_event = { ### STT FOR FRIDRIH
 	trigger = {
 	    NOT = { 151 = { controlled_by = BYZ } }
 		151 = { controlled_by = ROOT }
+		NOT = { started_in = 1453 }
 	}
 	
 	option = {
@@ -1124,3 +1106,89 @@ country_event = {
 	}
 }
 
+country_event = { # krestoviy pohod
+    id = stt_wek.23
+	title = stt_wek.23.t
+	desc = stt_wek.23.d
+	
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+    fire_only_once = yes
+	major = yes
+	
+	mean_time_to_happen = {
+	    months = 120
+		modifier = {
+			factor = 0.5
+			BYZ = { exists = no }
+		}
+	}
+	
+	trigger = {
+		tag = PAP
+	    151 = { OR = { owned_by = TUR owned_by = TU0 } }
+		NOT = { is_year = 1460 }
+	}
+	
+	option = {
+        name = stt_wek.23.a1
+		ai_chance = { factor = 60 }
+		random_list = {
+			50 = { country_event = { id = stt_wek.24 }  } #good
+			50 = { country_event = { id = stt_wek.25 }  } #bad
+		}
+	}
+	option = {
+        name = stt_wek.23.a2
+		ai_chance = { factor = 40 }
+		add_prestige = -10
+		add_years_of_income = -0.5
+		random_list = {
+			80 = { country_event = { id = stt_wek.24 }  } #good
+			20 = { country_event = { id = stt_wek.25 }  } #bad
+		}
+	}
+}
+
+country_event = { # krestoviy pohod good
+    id = stt_wek.24
+	title = stt_wek.24.t
+	desc = stt_wek.24.d
+	
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+    fire_only_once = yes
+	major = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PAP
+	}
+	
+	option = {
+        name = stt_wek.24.a1
+		add_prestige = 20
+	}
+}
+
+country_event = { # krestoviy pohod bad
+    id = stt_wek.25
+	title = stt_wek.25.t
+	desc = stt_wek.25.d
+	
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+    fire_only_once = yes
+	major = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = PAP
+	} 
+	
+	option = {
+        name = stt_wek.25.a1
+		add_prestige = -5
+	}
+}

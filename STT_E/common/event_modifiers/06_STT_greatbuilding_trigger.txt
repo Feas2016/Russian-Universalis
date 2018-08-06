@@ -2,6 +2,8 @@ mod_stt_ssofia = {
 
 	local_manpower_modifier = 0.10
 	local_tax_modifier = 0.1
+	prestige = 1
+	missionaries = 1
 	
 	picture = "stt_ssofia"
 }
@@ -24,54 +26,89 @@ mod_vasil_blazen = {
 
 	local_unrest = -1
 	local_tax_modifier = 0.2
+	global_missionary_strength = 0.01
+	global_unrest = -1
+	missionaries = 1
 	
 	picture = "vasil_blazen"
 }
 mod_ermitaj = {
 	local_tax_modifier = 0.2
+	prestige = 1
 	
 	picture = "ermitaj"
 }
 mod_fort_sunking = {
     local_tax_modifier = 0.3
+	prestige = 1
+	legitimacy = 0.5
 }
 mod_hofburg = {
 	local_tax_modifier = 0.1
+	improve_relation_modifier = 0.3
+	prestige = 1
 }
 mod_tajh_mahal = {
 	global_tax_income = 120
+	legitimacy = 0.5
+	global_missionary_strength = 0.05
+	diplomatic_upkeep = 1
+	prestige = 0.5
 }
 mod_alhambra = {
 	local_defensiveness = 0.5
+	prestige = 0.5
+	global_tax_income = 1
+	land_forcelimit = 10
 }
 mod_alex_mayak = {
 	province_trade_power_value = 7.5
+	naval_forcelimit = 5
+	prestige = 1
 }
 mod_letn_pekin = {
 	global_tax_income = 48
+	legitimacy = 1
+	prestige = 1
+	discipline = 0.05
 }
 mod_atesgah = {
-	province_trade_power_value = 10
+	province_trade_power_value = 20
+	global_trade_power = 0.05
 }
 mod_tower = {
 	local_tax_modifier = 0.2
+	global_unrest = -2
+	legitimacy = 1
 }
 mod_cast_de_ovo = {
 	local_defensiveness = 0.4
 	province_trade_power_value = 10
+	army_tradition = 1
 }
 mod_zam_if = {
 	local_defensiveness = 0.3
 	province_trade_power_value = 10
+	global_unrest = -1
+	legitimacy = 1
 }
 mod_aachen_palace = {
 	local_tax_modifier = 0.5
+	prestige = 1.5
+	legitimacy = 1.5
+	diplomatic_upkeep = 1
 }
 mod_ryuanji = {
     global_tax_income = 24
 	local_unrest = -2
+	global_missionary_strength = -0.02
+	tolerance_heretic = 3
+ 	tolerance_heathen = 3	
 }
 mod_zam_sforza = {
     local_manpower_modifier = 0.75
 	local_defensiveness = 0.3
+	legitimacy = 1
+	prestige = 1.5
+	idea_cost = -0.02
 }

@@ -2,15 +2,18 @@ delhi_disaster = {
 	potential = {
 		tag = DLH
 		normal_or_historical_nations = yes
-		is_year = 1360
-		NOT = { is_year = 1390 }
-		num_of_cities = 40
+		OR = {
+			AND = { is_year = 1370 num_of_cities = 40 }
+			has_global_flag = timur_go_DLH
+		}
+		NOT = { is_year = 1410 }
 		NOT = { has_country_flag = DLH_collapse_ended }
 	}
 
 	can_start = {
-		NOT = { legitimacy = 99 } 
+		OR = { NOT = { legitimacy = 90 } war_with = TIM }
 		OR = { 
+			war_with = TIM
 		    war_exhaustion = 2
 		    num_of_owned_provinces_with = {
 			    value = 10
@@ -85,23 +88,26 @@ delhi_disaster = {
 			factor = 0.5
 			NOT = { legitimacy_or_horde_unity = 40 }
 		}
+		modifier = {
+			factor = 2
+			war_with = TIM 
+			TIM = { has_ruler = "Тимур Тимурид" } 
+		}
 	}
 	
 	can_end = {
 		OR = {
 			is_year = 1430
-			NOT = {
-			    num_of_cities = 25
-			}		
+			NOT = { num_of_cities = 20 }		
 		}
 	}
 
 	modifier = {
-		stability_cost_modifier = 0.50
+		stability_cost_modifier = 0.5
 		legitimacy = -0.5
-		infantry_power = -0.10
-		cavalry_power = -0.10
-		artillery_power = -0.10
+		infantry_power = -0.1
+		cavalry_power = -0.1
+		artillery_power = -0.1
 		global_unrest = 15
 	}
 

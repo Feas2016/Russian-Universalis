@@ -1,0 +1,231 @@
+country_decisions = {
+	
+	enthrone_hul_prince = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { exists = HUL }
+			NOT = { dynasty = "Хулагуид" }
+			NOT = { is_year = 1370 }
+			government = monarchy
+			capital_scope = { 
+				OR = { 
+					region = persia_region 
+					region = mashriq_region
+					region = khorasan_region
+				}
+			}
+			religion_group = muslim
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 410	
+				province_id = 416
+				province_id = 2218
+				province_id = 446
+				province_id = 428
+				province_id = 429
+				province_id = 329
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_subject = no
+			OR = {
+				owns_core_province = 410
+				owns_core_province = 416
+				owns_core_province = 2218
+				owns_core_province = 446
+				owns_core_province = 428
+				owns_core_province = 429
+				owns_core_province = 329
+				primary_culture = mongol
+			}
+			NOT = { dynasty = "Хулагуид" }
+			NOT = { is_year = 1370 }
+		}
+		effect = {
+			add_stability = -1
+			add_prestige = 10
+			add_legitimacy = 10
+			custom_tooltip = tooltip_about_hul_empire
+			define_ruler = {
+				dynasty = "Хулагуид"
+				culture = mongol
+			}
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				remove_heir = yes
+			}
+			define_heir = {
+				dynasty = "Хулагуид"
+				culture = mongol
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hul_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_hul_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HUL }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = MUG }
+			NOT = { tag = PER }
+			NOT = { tag = TIM }
+			NOT = { tag = ARB }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			religion_group = muslim
+			dynasty = "Хулагуид"
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 410	
+				province_id = 416
+				province_id = 2218
+				province_id = 446
+				province_id = 428
+				province_id = 429
+				province_id = 329
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = HUL }
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			dynasty = "Хулагуид"
+			owns_core_province = 446	# Herat
+			owns_core_province = 429 	# Isfahan
+			owns_core_province = 410	# Bagdad
+			owns_core_province = 428	# Tegeran
+			owns_core_province = 416 	# Tebriz
+			OR = {
+				AND = {
+					owns_core_province = 428
+					owns_core_province = 329
+				}
+				AND = { 
+					owns_core_province = 2308
+					owns_core_province = 2218
+					owns_core_province = 413
+				}
+			}
+		}
+		effect = {
+			416 = {
+				move_capital_effect = yes
+			}
+			change_tag = HUL
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			if = {
+				limit = {
+					NOT = { primary_culture = mongol }
+				}
+				change_primary_culture = mongol
+			}
+			persia_region = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			khorasan_region = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			basra_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			iraq_arabi_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			armenia_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = HUL }
+					NOT = { is_core = HUL }
+				}
+				add_permanent_claim = HUL
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_hul_flag
+		}
+		ai_will_do = {
+			factor = 400
+		}
+		ai_importance = 600
+	}
+}

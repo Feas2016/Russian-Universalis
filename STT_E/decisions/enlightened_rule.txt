@@ -1,0 +1,58 @@
+country_decisions = {
+
+	adopt_enlightened_rule = {
+		major = yes
+		potential = {
+			government = monarchy
+			NOT = { government = enlightened_despotism }
+			OR = { 
+				AND = {
+					is_institution_enabled = enlightenment
+					capital_scope = { continent = europe }
+				}
+				has_institution = enlightenment
+			}
+		}
+		allow =  {
+			OR = {
+				ai = no
+				government = constitutional_monarchy
+				government = administrative_monarchy
+			}
+			stability = 1		
+			is_at_war = no 
+			is_subject = no
+			has_institution = enlightenment
+			has_parliament = no
+			OR = {
+				AND = {
+					adm = 3
+					mil = 3
+					dip = 3
+				}
+				ruler_has_personality = free_thinker_personality
+				ruler_has_personality = scholar_personality
+			}
+		}
+		effect = {
+			change_government = enlightened_despotism
+			add_legitimacy = 10
+			set_country_flag = recently_changed_government_flag
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					adm = 4
+					dip = 4
+					mil = 4
+					OR = {
+						ruler_has_personality = free_thinker_personality
+						ruler_has_personality = scholar_personality
+					}
+				}
+			}
+		}
+	}
+}

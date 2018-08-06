@@ -7,10 +7,11 @@ religion = shiite
 capital = "Сивас"
 trade_goods = livestock
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 5
+base_production = 5
+base_manpower = 5
 is_city = yes
+fort_15th = yes
 	### STT
 add_core = ERE
 discovered_by = western
@@ -34,7 +35,7 @@ discovered_by = nomad_group
 	remove_core = TIM
 	remove_core = AKK
 } # The Ottomans restore control
-1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 }	### STT
+1453.5.29 = { owner = TUR controller = TUR add_core = TUR remove_core = TU0 religion = sunni }	### STT
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
 1509.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war

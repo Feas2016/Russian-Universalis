@@ -54,6 +54,12 @@ union = {
 	start_date = 1303.1.1
 	end_date = 1328.1.1
 }
+union = {
+	first = MOS
+	second = VLD
+	start_date = 1330.1.1
+	end_date = 1363.1.1
+}
 
 ### Ural tribal
 dependency = {
@@ -201,20 +207,6 @@ dependency = {
 	subject_type = "tributary_state"
 	first = GLH
 	second = CIR
-	start_date = 1309.1.1
-	end_date = 1409.1.1
-}
-dependency = {
-	subject_type = "tributary_state"
-	first = GLH
-	second = GAZ
-	start_date = 1309.1.1
-	end_date = 1409.1.1
-}
-dependency = {
-	subject_type = "tributary_state"
-	first = GLH
-	second = SHK
 	start_date = 1309.1.1
 	end_date = 1409.1.1
 }

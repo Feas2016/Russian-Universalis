@@ -13,18 +13,34 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_age_s"
 		texturefile = "gfx/interface/ages/icon_age_s.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 	}	
 
 	spriteType = {
 		name = "GFX_icon_age_l"
 		texturefile = "gfx/interface/ages/icon_age_l.dds"
-		noOfFrames = 5
+		noOfFrames = 6
 	}	
 	spriteType = {
 		name = "GFX_icon_age_of_feudalism_g"
 		texturefile = "gfx/interface/ages/icon_age_of_feudalism_g.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_g"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_g.dds"
+	}
+	spriteType = {
+		name = "GFX_age_of_enlightenment"
+		texturefile = "gfx/interface/ages/age_of_enlightenment.tga"
+	}
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_s"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_s.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_l"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_l.dds"
+	}	
 
  # Age of Feudalism Objectives
 	spriteType = {
@@ -71,8 +87,22 @@ spriteTypes = {
 		name = "GFX_obj_many_vassals_f"		
 		texturefile = "gfx/interface/ages/obj_many_vassals_f.dds"
 	}
+	# Age of Discovery Objectives
+	
+	spriteType = {
+		name = "GFX_obj_early_empire"
+		texturefile = "gfx/interface/ages/obj_early_empire.dds"
+	}	
 
-
+	spriteType = {
+		name = "GFX_obj_home_trade"		
+		texturefile = "gfx/interface/ages/obj_home_trade.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_obj_merchants"		
+		texturefile = "gfx/interface/ages/obj_merchants.dds"
+	}
 	
 	# Age of Feudalism Abilities
 	spriteType = {
@@ -110,7 +140,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ab_free_war_taxes_f"
 		texturefile = "gfx/interface/ages/ab_free_war_taxes_f.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_ab_golden_horde"
+		texturefile = "gfx/interface/ages/ab_golden_horde.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ab_england_longbowmen"
@@ -129,6 +164,119 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ab_viking_legacy"
 		texturefile = "gfx/interface/ages/ab_viking_legacy.dds"
+	}
+	#Age of Discovery
+	spriteType = {
+		name = "GFX_ab_new_world"
+		texturefile = "gfx/interface/ages/ab_new_world.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_centralization"
+		texturefile = "gfx/interface/ages/ab_centralization.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_create_empire"
+		texturefile = "gfx/interface/ages/ab_create_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_espionageup"
+		texturefile = "gfx/interface/ages/ab_espionageup.dds"
+	}
+	spriteType = {
+		name = "GFX_ab_renaissance"
+		texturefile = "gfx/interface/ages/ab_renaissance.dds"
+	}
+	#Age of enlightenment
+	spriteType = {
+		name = "GFX_age_of_enlightenment"
+		texturefile = "gfx/interface/ages/age_of_enlightenment.tga"
+	}
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_s"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_s.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_l"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_l.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_age_of_enlightenment_g"
+		texturefile = "gfx/interface/ages/icon_age_of_enlightenment_g.dds"
+	}
+	#Enlightenment objetives
+	spriteType = {
+		name = "GFX_obj_great_minds"
+		texturefile = "gfx/interface/ages/obj_universities.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_land_reforms"
+		texturefile = "gfx/interface/ages/obj_100_development.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_merchant_fleet"
+		texturefile = "gfx/interface/institutions/global_trade.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_enlightened_ruler"
+		texturefile = "gfx/interface/institutions/enlightenment.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_early_imperialism"
+		texturefile = "gfx/interface/ages/obj_two_continents.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_scientific_revolution"
+		texturefile = "gfx/interface/ages/obj_two_institutions.dds"
+	}	
+	spriteType = {
+		name = "GFX_obj_early_industrialization"
+		texturefile = "gfx/interface/buildings/manufactory_weapons.tga"
 	}	
 	
+	#Enlightenment abilities
+	spriteType = {
+		name = "GFX_ab_prestigious_court"
+		texturefile = "gfx/prestigious_court.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_repopulation_policy"
+		texturefile = "gfx/repopulation_policy.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_population_census"
+		texturefile = "gfx/population_census.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_classical_art"
+		texturefile = "gfx/classical_art.tga"
+	}	
+	spriteType = {
+		name = "GFX_ab_meritocratic_promotion"
+		texturefile = "gfx/meritocratic_promotion.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_new_doctrine"
+		texturefile = "gfx/new_doctrine.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_letter_marks"
+		texturefile = "gfx/letter_marks.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_royal_manufactories"
+		texturefile = "gfx/royal_manufactories.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_sanitation"
+		texturefile = "gfx/sanitation.tga"
+	}	
+	spriteType = {
+		name = "GFX_ab_colonial_assemblies"
+		texturefile = "gfx/colonial_assemblies.dds"
+	}	
+	spriteType = {
+		name = "GFX_ab_open_western"
+		texturefile = "gfx/western_openess.tga"
+	}	
 }

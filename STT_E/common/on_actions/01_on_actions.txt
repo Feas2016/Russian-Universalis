@@ -4,6 +4,27 @@ on_new_term_election = {
 		700					# Election event
 		elections.720		# Dutch Republic
 		elections.820       # Carthage Republic
+		elections_hhh.1		# Greek old monachy
+		elections.822		# Demarch_republic
+	}
+}
+
+on_monarch_death = {
+	if = {
+		limit = {
+			tag = ANS
+			BRA = {
+				has_country_flag = albrecht_achilles_flag
+			}
+		}
+		BRA = {
+			clr_country_flag = albrecht_achilles_flag #Just to be sure
+			kill_heir = yes #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+		}
+	}
+	events = {
+		flavor_tus.16 #Savanorola Leaves This World
+		stt_rise_timur.32
 	}
 }
 
@@ -13,25 +34,23 @@ on_death_election = {
 		701					# Election event
 		elections.721		# Dutch Republic
 		elections.821   	# Carthage Republic
+		chosearch.1			# Greek old monachy
+		elections.823		# Demarch_republic
 	}
 }
 
 on_five_year_pulse_4 = {
-	random_events = {	
-		100 = event_estate_hhh.4
-		100 = event_estate_hhh.5
-		100 = event_estate_hhh.5
-		1000 = 0              
-	}
 	random_events = {
 		100 = hhh_religion.3
 		100 = hhh_religion.1
 		100 = hhh_religion.4
-		60 = hhh_religion.4
+		100 = event_estate_hhh.4
+		100 = event_estate_hhh.5
+		1000 = 0
 	}
 }
 
-on_four_yearly_pulse_4  = {
+on_four_year_pulse_4  = {
 	random_events = {	
 		100 = event_estate_hhh.10
 		100 = event_estate_hhh.12
@@ -44,7 +63,11 @@ on_startup = {
 	events = {
 		muslim_school_events.20 #Pick School
 		hhh_choose_difficulty.0	### STT 1309 institutes
-		rushorde.11 #Tver hidden event
+		stt_startgame.1 #help for otto
+		stt_startgame.3 #help for LIT
+		stt_startgame.5 #dan' orde
+		stt_startgame.7 #achivki
+		stt_wek.200 #fort v konstantinopole
 	}
 	if = {
 		limit = {
@@ -110,6 +133,7 @@ on_new_monarch = {
 		flavor_tim.1			#Death of Shah Rukh
 		muslim_school_events.20 #No Religious School
 		flavor_daimyo.4			#Shiba Yoshikado
+		chosearch.1				#STT Greek monarchy
 	}
 	random_events = { 
 		1000 = 0
@@ -119,26 +143,5 @@ on_new_monarch = {
 		50 = dynastic_events.4	
 		50 = dynastic_events.5	
 		25 = harem_events.7		#Failed Policy of Fratricide
-	}
-}	
-	
-	# country
-on_monarch_death = {
-	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
-			}
-		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = yes #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
-		}
-	}
-	events = {
-		flavor_tus.16 #Savanorola Leaves This World
-		rushorde.0              #Yarlyk
-		rushorde.4
 	}
 }

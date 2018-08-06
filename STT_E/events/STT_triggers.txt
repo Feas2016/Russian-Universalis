@@ -1,0 +1,372 @@
+
+namespace = stt_triggers
+# TEST
+country_event = { # feodal_fix_minor 1 
+	id = stt_triggers.1
+	title = "stt_triggers.1.t"
+	desc = "stt_triggers.1.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+	NOT = { government = republic }
+	NOT = { num_of_cities = 6 }
+	NOT = { is_year = 1550 }
+	NOT = { has_country_modifier = feodal_fix_minor }
+	}
+	
+	immediate = { add_country_modifier = { name = feodal_fix_minor duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.1.a
+	}
+}
+country_event = { #feodal_fix_minor 2
+	id = stt_triggers.2 
+	title = "stt_triggers.2.t"
+	desc = "stt_triggers.2.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+	OR = { 	num_of_cities = 6 is_year = 1550 }	
+	has_country_modifier = feodal_fix_minor
+	}
+	
+	immediate = { remove_country_modifier = feodal_fix_minor }	
+		
+	option = {
+	name = stt_triggers.2.a
+	}
+}
+
+country_event = { #YUA_undersky_empire 1
+	id = stt_triggers.3
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+	tag = YUA 
+	government = celestial_empire
+	religion = confucianism
+	NOT = { has_country_modifier = YUA_undersky_empire }
+	}
+	
+	immediate = { add_country_modifier = { name = YUA_undersky_empire duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.3.a
+	}
+}
+
+country_event = { #YUA_undersky_empire 2
+	id = stt_triggers.4
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+	tag = YUA 
+	OR = {
+		NOT = { government = celestial_empire }
+		NOT = { religion = confucianism }
+	}
+	has_country_modifier = YUA_undersky_empire
+	}
+	
+	immediate = { remove_country_modifier = YUA_undersky_empire }	
+		
+	option = {
+	name = stt_triggers.4.a
+	}
+}
+#tradegood tradebonus
+country_event = { #grain_bonus_3  
+	id = stt_triggers.5
+	title = "stt_triggers.5.t"
+	desc = "stt_triggers.5.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		grain = 4
+		NOT = { grain = 8 }	
+		NOT = { has_country_modifier = grain_bonus_3 }
+	}
+	
+	immediate = { add_country_modifier = { name = grain_bonus_3 duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.5.a
+	}
+}
+country_event = { #off grain_bonus_3 grain_bonus_6
+	id = stt_triggers.6 
+	title = "stt_triggers.6.t"
+	desc = "stt_triggers.6.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		OR = {
+			NOT = { grain = 4 }
+			grain = 8
+		}
+		has_country_modifier = grain_bonus_3
+	}
+	
+	immediate = { remove_country_modifier = grain_bonus_3 }	
+		
+	option = {
+	name = stt_triggers.6.a
+	}
+}
+
+country_event = { #grain_bonus_6  
+	id = stt_triggers.7
+	title = "stt_triggers.7.t"
+	desc = "stt_triggers.7.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		grain = 8
+		NOT = { has_country_modifier = grain_bonus_6 }
+	}
+	
+	immediate = { add_country_modifier = { name = grain_bonus_6 duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.7.a
+	}
+}
+country_event = { #off grain_bonus_6
+	id = stt_triggers.8 
+	title = "stt_triggers.8.t"
+	desc = "stt_triggers.8.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		NOT = { grain = 8 }
+		has_country_modifier = grain_bonus_6
+	}
+	
+	immediate = { remove_country_modifier = grain_bonus_6 }	
+		
+	option = {
+	name = stt_triggers.8.a
+	}
+}
+
+country_event = { #salted_fish_bonus  
+	id = stt_triggers.9
+	title = "stt_triggers.9.t"
+	desc = "stt_triggers.9.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		OR = {
+			salt = 1 
+			any_subject_country = { salt = 2 }
+			any_known_country = {
+				is_colonial_nation_of = ROOT
+				salt = 1
+			}
+		}
+		OR = {
+			fish = 1 
+			any_subject_country = { fish = 2 }
+			any_known_country = {
+				is_colonial_nation_of = ROOT
+				fish = 1
+			}
+		}
+		NOT = { has_country_modifier = salted_fish_bonus }
+	}
+	
+	immediate = { add_country_modifier = { name = salted_fish_bonus duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.9.a
+	}
+}
+country_event = { #off salted_fish_bonus
+	id = stt_triggers.10
+	title = "stt_triggers.10.t"
+	desc = "stt_triggers.10.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		OR = {
+			OR = {
+				NOT = {	salt = 1 }
+				NOT = { any_subject_country = { salt = 2 } }
+				NOT = {	any_known_country = { is_colonial_nation_of = ROOT 	salt = 1 } }
+			}
+			OR = {
+				NOT = { fish = 1 }
+				NOT = { any_subject_country = { fish = 2 } }
+				NOT = { any_known_country = { is_colonial_nation_of = ROOT fish = 1 } }
+			}
+		}
+		has_country_modifier = salted_fish_bonus
+	}
+	
+	immediate = { remove_country_modifier = salted_fish_bonus }	
+		
+	option = {
+	name = stt_triggers.10.a
+	}
+}
+
+country_event = { #shipbuilding_bonus  
+	id = stt_triggers.11
+	title = "stt_triggers.11.t"
+	desc = "stt_triggers.11.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		num_of_ports = 1
+		grain = 1 
+		OR = {
+			naval_supplies = 2
+			any_subject_country = { naval_supplies = 2 }
+			any_known_country = {
+				is_colonial_nation_of = ROOT
+				naval_supplies = 2
+			}
+		}		
+		OR = {
+			iron = 1 
+			copper = 1	
+		}
+		OR = {
+			cotton = 1
+			cloth = 1
+			silk = 1
+		}
+		NOT = { has_country_modifier = shipbuilding_bonus }
+	}
+	
+	immediate = { add_country_modifier = { name = shipbuilding_bonus duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.11.a
+	}
+}
+country_event = { #off shipbuilding_bonus
+	id = stt_triggers.12
+	title = "stt_triggers.12.t"
+	desc = "stt_triggers.12.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		OR = {
+			OR = { NOT = { num_of_ports = 1 } NOT = { grain = 1 } }
+			OR = {
+				NOT = { naval_supplies = 2 }
+				NOT = { any_subject_country = { naval_supplies = 2 } }
+				NOT = { any_known_country = { is_colonial_nation_of = ROOT 	naval_supplies = 2 } }
+			}		
+			OR = {
+				NOT = { iron = 1 }
+				NOT = { copper = 1 }
+			}
+			OR = {
+				NOT = { cotton = 1 }
+				NOT = { cloth = 1 }
+				NOT = { silk = 1 }
+			}
+		}
+		has_country_modifier = shipbuilding_bonus 
+	}
+	
+	immediate = { remove_country_modifier = shipbuilding_bonus }	
+		
+	option = {
+	name = stt_triggers.12.a
+	}
+}
+
+country_event = { #metals_trade  
+	id = stt_triggers.13
+	title = "stt_triggers.13.t"
+	desc = "stt_triggers.13.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		OR = {
+			iron = 5 
+			copper = 5	
+		}	
+		NOT = { has_country_modifier = metals_trade }
+	}
+	
+	immediate = { add_country_modifier = { name = metals_trade duration = -1 } }	
+		
+	option = {
+	name = stt_triggers.13.a
+	}
+}
+country_event = { #off metals_trade
+	id = stt_triggers.14
+	title = "stt_triggers.14.t"
+	desc = "stt_triggers.14.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		OR = {
+			NOT = { iron = 5 }
+			NOT = { copper = 5 }	
+		}	
+		has_country_modifier = metals_trade 
+	}
+	
+	immediate = { remove_country_modifier = metals_trade }	
+		
+	option = {
+	name = stt_triggers.14.a
+	}
+}

@@ -3,6 +3,7 @@
 owner = CGU
 controller = CGU
 add_core = CGU
+add_core = KAS
 culture = uyghur
 religion = sunni
 capital = "Yarkant"
@@ -21,7 +22,8 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-1340.1.1. = { owner = KAS add_core = KAS controller = KAS }
+1340.1.1 = { owner = CHG add_core = CHG controller = CHG } #STT
+1514.1.1 = { owner = KAS controller = KAS add_core = KAS } #STT
 1682.1.1 = {
 	owner = ZUN
 	controller = ZUN

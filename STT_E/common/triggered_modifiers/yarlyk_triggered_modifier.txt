@@ -1,14 +1,1 @@
-russian_tributaries = {
-	potential = {
-		is_subject_of_type = tributary_state
-		primary_culture = russian
-		NOT = { has_global_flag = knyaz_rights_flag_s }
-	}
-
-	trigger = {
-		is_subject_of_type = tributary_state
-		primary_culture = russian
-	}
-
-	global_tax_modifier = -0.10
-}
+#delete

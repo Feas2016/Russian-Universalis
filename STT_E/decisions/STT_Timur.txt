@@ -1,0 +1,178 @@
+country_decisions = {
+
+	timur_military_1 = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			NOT = { has_country_modifier = stt_timur_army }
+			has_country_flag = timur_can_reform
+		}
+		allow = {
+			mil_power = 300
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 446	
+			owns_core_province = 454	
+		}
+		effect = {
+			add_mil_power = -500
+			add_country_modifier = { name = stt_timur_army duration = -1 }			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 4
+	}
+	
+	timur_military_2 = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1410 }
+			has_country_modifier = stt_timur_army
+			has_country_flag = timur_can_reform
+			NOT = { has_country_flag = timur_military_22 }
+		}
+		allow = {
+			total_development = 350
+			mil_power = 250
+			NOT = { num_of_loans = 1 }
+		}
+		effect = {
+			add_mil_power = -250
+			add_years_of_income = -1
+			add_army_professionalism = 0.2
+			set_country_flag = timur_military_22
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 4
+	}
+	
+	timur_military_3 = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			has_country_modifier = stt_timur_army
+			has_country_flag = timur_can_reform
+			NOT = { has_country_modifier = timur_military_timer }
+		}
+		allow = {
+			treasury = 200
+		}
+		effect = {
+			add_treasury = -200
+			add_war_exhaustion = -0.1
+			capital = infantry capital = infantry
+			capital = infantry capital = infantry 
+			capital = infantry capital = infantry
+			capital = cavalry capital = cavalry
+			add_country_modifier = { name = "timur_military_timer" duration = 365 } # 1 year pause
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	timur_military_4 = { #stavka na pehotu
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			has_country_modifier = stt_timur_army
+			has_country_flag = timur_can_reform
+			NOT = { has_country_flag = timur_military_44 }
+		}
+		allow = {
+			mil_power = 250
+			NOT = { num_of_loans = 1 }
+			infantry_fraction = 0.6
+		}
+		effect = {
+			add_mil_power = -250
+			add_years_of_income = -1
+			add_country_modifier = { name = stt_timur_infantry duration = -1 }
+			set_country_flag = timur_military_44
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	timur_military_5 = { #stavka na cavalry
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			has_country_modifier = stt_timur_army
+			has_country_flag = timur_can_reform
+			NOT = { has_country_flag = timur_military_44 }
+		}
+		allow = {
+			mil_power = 250
+			NOT = { num_of_loans = 1 }
+			cavalry_fraction = 0.4
+		}
+		effect = {
+			add_mil_power = -250
+			add_years_of_income = -2
+			add_country_modifier = { name = stt_timur_cavalry duration = -1 }
+			set_country_flag = timur_military_44
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	timur_create_fort = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			NOT = { 454 = { has_building = fort_16th } }
+		}
+		allow = {
+			treasury = 250
+			owns_core_province = 454
+			454 = { development = 15 }
+		}
+		effect = {
+			add_treasury = -250
+			454 = { remove_building = fort_15th add_building = fort_16th }
+			add_army_tradition = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	timur_science = {
+		major = yes
+		potential = {
+			tag = TIM
+			NOT = { is_year = 1405 }
+			NOT = { has_country_flag = timur_science_check }
+		}
+		allow = {
+			treasury = 500
+			owns_core_province = 454
+			454 = { development = 25 }
+		}
+		effect = {
+			add_treasury = -500
+			add_innovativeness_big_effect = yes
+			add_innovativeness_big_effect = yes
+			454 = { add_next_institution_embracement = 100 }
+			add_piety = 1
+			set_country_flag = timur_science_check
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+	

@@ -186,6 +186,21 @@ royal_marriage = {
 # Ottoman vassal 
 vassal = {
 	first = TU0 ### STT
+	second = KTL
+	start_date = 1381.1.1
+	end_date = 1393.1.1	# integrate
+}
+# Ottoman vassal 
+vassal = {
+	first = TU0 ### STT
+	second = TAC
+	start_date = 1398.1.1
+	end_date = 1402.1.1	# free by timur
+}
+
+# Ottoman vassal 
+vassal = {
+	first = TU0 ### STT
 	second = WAL
 	start_date = 1418.1.1
 	end_date = 1443.1.1	# Crusade of Varna
@@ -228,7 +243,7 @@ vassal = {
 	first = TUR
 	second = WAL
 	start_date = 1601.1.1
-	end_date = 1881.3.26
+	end_date = 1820.1.1
 }
 
 # Ottoman vassal
@@ -244,7 +259,7 @@ vassal = {
 	first = TUR
 	second = MOL
 	start_date = 1601.1.1
-	end_date = 1859.1.1
+	end_date = 1825.5.28
 }
 
 # Ottoman vassal
@@ -284,6 +299,14 @@ vassal = {
 	second = RAG
 	start_date = 1528.1.1
 	end_date = 1806.1.1
+}
+
+# Ottoman vassal #STT RD
+vassal = {
+	first = TUR
+	second = RAM
+	start_date = 1516.1.1
+	end_date = 1608.1.1
 }
 
 # The Septinsular Republic

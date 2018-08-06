@@ -1,0 +1,52 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = turkish
+add_accepted_culture = pontic_greek
+religion = sunni
+technology_group = ottoman
+capital = 2304	
+
+# Vassalize by Otto in 1381. annex by Otto in 1393
+
+1308.1.1 = { 
+	monarch = {
+		name = "Таджеддин Доган"          
+		dynasty = "Таджеддиногуллар"         
+		death_date = 1335.1.1
+		dip = 5
+		adm = 5
+		mil = 6
+		religion = sunni       
+		culture = turkish         
+	}
+}
+1348.1.1 = { 
+	monarch = {
+		name = "Таджеддин"          
+		dynasty = "Таджеддиногуллар"         
+		death_date = 1387.1.1
+		dip = 5
+		adm = 6
+		mil = 6
+	}
+}
+1387.1.1 = { 
+	monarch = {
+		name = "Махмуд Целеби"          
+		dynasty = "Таджеддиногуллар"
+		death_date = 1402.1.1
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+1402.1. = { 
+	monarch = {
+		name = "Хасумудин Хасан"          
+		dynasty = "Таджеддиногуллар"
+		death_date = 1428.1.1
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}

@@ -1,0 +1,157 @@
+
+namespace = stt_institution
+#normal
+country_event = { # hhh_dark_times
+	id = stt_institution.1
+	title = "stt_institution.1.t"
+	desc = "stt_institution.1.d"
+
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = { 
+		NOT = {
+			has_institution = hhh_dt_f
+		}
+		NOT = { has_country_modifier = hhh_dark_times }
+		NOT = { has_country_modifier = hhh_dark_times_light }
+	}
+	
+	option = {
+	name = stt_institution.1.a
+	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times duration = -1 } }
+	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_light duration = -1 } }
+	}
+}
+country_event = { # hhh_dark_times_s
+	id = stt_institution.2
+	title = "stt_institution.2.t"
+	desc = "stt_institution.2.d"
+
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		NOT = {
+		has_institution = hhh_dt_s
+		}
+		has_institution = hhh_dt_f
+		OR = {
+		has_country_modifier = hhh_dark_times
+		has_country_modifier = hhh_dark_times_light
+		}
+		NOT = { has_country_modifier = hhh_dark_times_s }
+		NOT = { has_country_modifier = hhh_dark_times_s_light }
+	}
+		
+	immediate = { 
+		hidden_effect = {
+			remove_country_modifier = hhh_dark_times 
+			remove_country_modifier = hhh_dark_times_light
+		}
+	}
+	
+	option = {
+	name = stt_institution.2.a
+	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_s duration = -1 } }
+	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_s_light duration = -1 } }
+	}
+}
+
+country_event = { # hhh_dark_times_t
+	id = stt_institution.3
+	title = "stt_institution.3.t"
+	desc = "stt_institution.3.d"
+
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		NOT = {
+		has_institution = hhh_dt_t
+		}
+		has_institution = hhh_dt_s
+		OR = {
+		has_country_modifier = hhh_dark_times_s
+		has_country_modifier = hhh_dark_times_s_light
+		}
+		NOT = { has_country_modifier = hhh_dark_times_t }
+		NOT = { has_country_modifier = hhh_dark_times_t_light }
+	}
+		
+	immediate = { 
+		hidden_effect = {
+			remove_country_modifier = hhh_dark_times_s 
+			remove_country_modifier = hhh_dark_times_s_light
+		}
+	}
+	
+	option = {
+	name = stt_institution.3.a
+	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_t duration = -1 } }
+	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_t_light duration = -1 } }
+	}
+}
+
+country_event = { # hhh_dark_times_l
+	id = stt_institution.4
+	title = "stt_institution.4.t"
+	desc = "stt_institution.4.d"
+
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		NOT = {
+		has_institution = hhh_dt_l
+		}
+		has_institution = hhh_dt_t
+		OR = {
+		has_country_modifier = hhh_dark_times_t
+		has_country_modifier = hhh_dark_times_t_light
+		}
+		NOT = { has_country_modifier = hhh_dark_times_l }
+		NOT = { has_country_modifier = hhh_dark_times_l_light }
+	}
+		
+	immediate = { 
+		hidden_effect = {
+			remove_country_modifier = hhh_dark_times_t 
+			remove_country_modifier = hhh_dark_times_t_light
+		}
+	}
+	
+	option = {
+	name = stt_institution.4.a
+	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_l duration = -1 } }
+	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_l_light duration = -1 } }
+	}
+}
+
+country_event = { # hhh_dark_times_remove
+	id = stt_institution.5
+	title = "stt_institution.5.t"
+	desc = "stt_institution.5.d"
+
+	picture = BATTLE_eventPicture
+	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = { 
+		has_institution = hhh_dt_l
+		OR = {
+		has_country_modifier = hhh_dark_times_l
+		has_country_modifier = hhh_dark_times_l_light
+		}
+	}
+		
+	option = {
+	name = stt_institution.5.a
+	if = { limit = { has_global_flag = hhh_default } remove_country_modifier = hhh_dark_times_l }
+	if = { limit = { has_global_flag = hhh_light } remove_country_modifier = hhh_dark_times_l_light }
+	}
+}

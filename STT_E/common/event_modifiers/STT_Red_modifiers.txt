@@ -3,3 +3,112 @@ fra_darktime_vassal = {
 	diplomatic_upkeep = 2
 	diplomatic_reputation = -1
 }
+
+stt_hard_corrupt_1 = { #base
+yearly_corruption = 1
+}
+
+stt_hard_corrupt_2 = { #after corruption_control_reform
+yearly_corruption = 0.85
+}
+
+stt_hard_corrupt_3 = { #after corruption_controlorgan_reform
+yearly_corruption = 0.75
+}
+
+corruption_effective_1_modifier = {
+yearly_corruption = -0.15 #0.50
+}
+
+corruption_effective_2_modifier = {
+yearly_corruption = -0.15 #0.35
+}
+corruption_effective_3_modifier = {
+yearly_corruption = -0.15 #0.2
+}
+corruption_effective_full_modifier = {
+max_absolutism = 10
+}
+
+corruption_independent_modifier = {
+yearly_corruption = -0.5
+max_absolutism = -10
+}
+
+corruption_hierarchy_modifier = {
+yearly_corruption = -0.2
+stability_cost_modifier = 0.1
+}
+
+stt_hard_corrupt_small = { #1-100 dev
+yearly_corruption = -0.35
+}
+stt_hard_corrupt_lowmedium = { #100-250 dev
+yearly_corruption = -0.25
+}
+
+stt_hard_corrupt_medium = { #250-500 dev
+yearly_corruption = -0.15
+}
+
+stt_hard_corrupt_hightmedium = { #500-1000 dev
+yearly_corruption = 0.1
+}
+
+stt_hard_corrupt_big = { #1000-2000 dev
+yearly_corruption = 0.2
+}
+
+stt_hard_corrupt_verybig = { #>2000 dev
+yearly_corruption = 0.3
+} 
+
+#timurs rise
+
+stt_timur_army = {
+	discipline = 0.15
+	siege_ability = 0.33
+}
+
+stt_timur_infantry = {
+	infantry_cost = -0.5
+	infantry_power = 0.1
+	siege_ability = 0.1
+}
+
+stt_timur_cavalry = {
+	cavalry_cost = -0.2
+	cavalry_flanking = 0.5
+	cavalry_power = 0.2
+}
+
+timur_military_timer = {
+	land_maintenance_modifier = 0.05
+}
+
+stt_timur_wartime_1 = {
+	land_morale = 0.25  land_maintenance_modifier = -0.75 manpower_recovery_speed = 100 
+	reinforce_cost_modifier = -0.95 reinforce_speed = 0.75 global_regiment_cost = -0.75
+	land_forcelimit_modifier = 1 global_tax_income = 50 war_exhaustion = -0.3 stability_cost_modifier = -0.8
+	global_regiment_recruit_speed = -0.8
+}
+
+stt_timur_wartime_2 = {
+	land_morale = 0.15  land_maintenance_modifier = -0.5 manpower_recovery_speed = 5
+	reinforce_speed = 0.5  global_tax_income = 25 war_exhaustion = -0.2
+}
+
+stt_timur_wartime_3 = {
+	land_morale = 0.1 land_maintenance_modifier = -0.25 manpower_recovery_speed = 1
+	reinforce_speed = 0.5 land_forcelimit_modifier = 1 global_tax_income = 15 war_exhaustion = -0.1
+}
+
+stt_hul_nounrest = {
+	local_unrest = -20
+}
+
+shahrukhs_empire = {
+	reduced_liberty_desire = 80
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 2
+}

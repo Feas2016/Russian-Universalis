@@ -1,0 +1,424 @@
+########################################
+# Events for government reform #STT
+#
+# written by Red Dragon
+########################################
+
+namespace = stt_gov_reform
+
+# Start small reform
+country_event = {
+	id = stt_gov_reform.1
+	title = stt_gov_reform.1.t
+	desc = stt_gov_reform.1.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = stt_gov_reform.1.a
+	}
+}
+# Start medium reform
+country_event = {
+	id = stt_gov_reform.11
+	title = stt_gov_reform.11.t
+	desc = stt_gov_reform.11.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = stt_gov_reform.11.a
+	}
+}
+# Start big reform
+country_event = {
+	id = stt_gov_reform.111
+	title = stt_gov_reform.111.t
+	desc = stt_gov_reform.111.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = stt_gov_reform.111.a
+	}
+}
+
+# Good end reform
+country_event = {
+	id = stt_gov_reform.2
+	title = stt_gov_reform.2.t
+	desc = stt_gov_reform.2.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	check_variable = { which = going_reform value = 10 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = stt_gov_reform.2.a
+		add_stability = 2
+		#adm reform effect
+			#corruption reform 
+		if = { limit = { has_country_flag = corruption_control_reform } remove_country_modifier = stt_hard_corrupt_1 add_country_modifier = { name = stt_hard_corrupt_2 duration = -1 } }
+		if = { limit = { has_country_flag = corruption_controlorgan_reform } remove_country_modifier = stt_hard_corrupt_2 add_country_modifier = { name = stt_hard_corrupt_3 duration = -1 } }
+		if = { limit = { has_country_flag = corruption_effective_1_reform } add_country_modifier = { name = corruption_effective_1_modifier duration = -1 } }
+		if = { limit = { has_country_flag = corruption_effective_2_reform } add_country_modifier = { name = corruption_effective_2_modifier duration = -1 } }
+		if = { limit = { has_country_flag = corruption_effective_3_reform } add_country_modifier = { name = corruption_effective_3_modifier duration = -1 } }
+		if = { 
+		limit = { has_country_flag = corruption_effective_full_reform } 
+		remove_country_modifier = corruption_effective_1_modifier
+		remove_country_modifier = corruption_effective_2_modifier
+		remove_country_modifier = corruption_effective_3_modifier
+		remove_country_modifier = stt_hard_corrupt_3
+		add_country_modifier = { name = corruption_effective_full_modifier duration = -1 }
+		}
+		#econom reform effect
+		#feo reform effect
+		#mil reform effect
+	}
+}
+
+# Bad end reform
+country_event = {
+	id = stt_gov_reform.3
+	title = stt_gov_reform.3.t
+	desc = stt_gov_reform.3.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	had_country_flag = { flag = going_reform days = 3650 }
+	NOT = { check_variable = { which = going_reform value = 10 } }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { 
+		name = stt_gov_reform.3.a
+		add_stability = 1
+	}
+}
+
+#Reform events
+country_event = {
+	id = stt_gov_reform.5
+	title = stt_gov_reform.5.t
+	desc = stt_gov_reform.5.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { 
+		name = stt_gov_reform.5.a
+		change_variable = { which = going_reform value = 1 }
+	}
+	
+	option = { 
+		name = stt_gov_reform.5.b
+		add_stability = 2
+	}
+}
+country_event = {
+	id = stt_gov_reform.6
+	title = stt_gov_reform.6.t
+	desc = stt_gov_reform.6.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { 
+		name = stt_gov_reform.6.a
+		change_variable = { which = going_reform value = -1 }
+	}
+	
+	option = { 
+		name = stt_gov_reform.6.b
+		add_stability = -1
+		random_owned_province = { limit = { controlled_by = ROOT } spawn_rebels = { type = noble_rebels size = 3 win = yes } }
+		every_owned_province = { limit = { is_capital = yes } spawn_rebels = { type = noble_rebels size = 2 } }
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.7
+	title = stt_gov_reform.7.t
+	desc = stt_gov_reform.7.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { 
+		name = stt_gov_reform.7.a
+		change_variable = { which = going_reform value = 1 }
+		kill_advisor = random
+		kill_advisor = random
+		kill_advisor = random
+	}
+	
+	option = { 
+		name = stt_gov_reform.7.b
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.8
+	title = stt_gov_reform.8.t
+	desc = stt_gov_reform.8.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	OR = { NOT = { adm = 5 } NOT = { dip = 5 } NOT = { mil = 5 } }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { 
+		name = stt_gov_reform.8.a
+		change_variable = { which = going_reform value = -1 }
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.9
+	title = stt_gov_reform.9.t
+	desc = stt_gov_reform.9.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = { 
+		name = stt_gov_reform.9.a
+		change_variable = { which = going_reform value = 2 }
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+	}
+	option = { 
+		name = stt_gov_reform.9.b
+		change_variable = { which = going_reform value = 1 }
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+	}
+	option = { 
+		name = stt_gov_reform.9.c
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.10
+	title = stt_gov_reform.10.t
+	desc = stt_gov_reform.10.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { 
+		name = stt_gov_reform.10.a
+		change_variable = { which = going_reform value = -2 }
+		add_army_tradition = 20
+	}
+	option = { 
+		name = stt_gov_reform.10.b
+		change_variable = { which = going_reform value = 1 }
+		add_manpower = -5
+		add_army_tradition = -10
+	}
+	option = { 
+		name = stt_gov_reform.10.c
+		change_variable = { which = going_reform value = 2 }
+		add_manpower = -10
+		add_army_tradition = -25
+	}
+} 
+
+country_event = {
+	id = stt_gov_reform.11
+	title = stt_gov_reform.11.t
+	desc = stt_gov_reform.11.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	}
+	
+	mean_time_to_happen = {
+		months = 18
+	}
+	
+	option = { 
+		name = stt_gov_reform.11.a
+		change_variable = { which = going_reform value = 1 }
+		add_years_of_income = -2
+	}
+	option = { 
+		name = stt_gov_reform.11.b
+		
+	}
+	option = { 
+		name = stt_gov_reform.11.c
+		change_variable = { which = going_reform value = -1 }
+		add_years_of_income = 1
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.12
+	title = stt_gov_reform.12.t
+	desc = stt_gov_reform.12.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	check_variable = { which = going_reform value = 5 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = stt_gov_reform.12.a
+		change_variable = { which = going_reform value = 1 }
+		add_stability = -2
+	}
+	option = { 
+		name = stt_gov_reform.12.b
+		random_owned_province = { limit = { controlled_by = ROOT } noble_rebels = 2 }
+		random_owned_province = { limit = { controlled_by = ROOT } noble_rebels = 1 }
+		random_owned_province = { limit = { controlled_by = ROOT } noble_rebels = 1 }
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.13
+	title = stt_gov_reform.13.t
+	desc = stt_gov_reform.13.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	check_variable = { which = going_reform value = 8 }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { 
+		name = stt_gov_reform.13.a
+		change_variable = { which = going_reform value = 1 }
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 3 }
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 3 } 
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 2 }
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 1 }
+	}
+	option = { 
+		name = stt_gov_reform.13.b
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 2 } 
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 2 }
+		random_owned_province = { limit = { controlled_by = ROOT } anti_tax_rebels = 1 }
+	}
+}
+
+country_event = {
+	id = stt_gov_reform.14
+	title = stt_gov_reform.14.t
+	desc = stt_gov_reform.14.d
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+	has_country_flag = going_reform
+	check_variable = { which = going_reform value = 9 }
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = { 
+		name = stt_gov_reform.14.a
+		change_variable = { which = going_reform value = 2 }
+		add_corruption = -5
+		add_stability = -3
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_army_tradition = -10
+		add_navy_tradition = -20
+		kill_advisor = random
+		kill_advisor = random
+		kill_advisor = random
+		kill_leader = { type = general }
+		kill_leader = { type = random }
+		capital = { spawn_rebels = { type = noble_rebels size = 3 }
+	}
+	option = { 
+		name = stt_gov_reform.14.b
+		trigger = { ai = no }
+		change_variable = { which = going_reform value = -4 }
+		add_stability = 3
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}

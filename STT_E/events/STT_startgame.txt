@@ -1,0 +1,212 @@
+
+namespace = stt_startgame
+
+country_event = { # help for otto
+	id = stt_startgame.1
+	title = "stt_startgame.1.t"
+	desc = "stt_startgame.1.d"
+
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+		
+	trigger = { 
+		OR = {
+			tag = TU0
+			tag = TUR
+		}
+		NOT = { is_year = 1453 }
+		NOT = { started_in = 1400.1.1 }
+		NOT = { total_development = 500 }
+		ai = yes
+		NOT = { has_country_modifier = osman_help }
+	}
+	
+	immediate = { add_country_modifier = { name = osman_help duration = -1 } set_ai_personality = { personality = ai_militarist locked = yes }  }	
+		
+	option = {
+	name = stt_startgame.1.a
+	}
+}
+country_event = { #off help for otto
+	id = stt_startgame.2 
+	title = "stt_startgame.2.t"
+	desc = "stt_startgame.2.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = { 
+		OR = {
+			tag = TU0
+			tag = TUR
+		}
+		OR = { 
+			total_development = 600 
+			num_of_cities = 40
+			is_year = 1453
+			ai = no
+		}
+		has_country_modifier = osman_help
+	}
+	
+	immediate = { remove_country_modifier = osman_help set_ai_personality = { personality = ai_balanced locked = no } }	
+		
+	option = {
+	name = stt_startgame.2.a
+	}
+}
+
+country_event = { #help for LIT
+	id = stt_startgame.3
+	title = "stt_startgame.3.t"
+	desc = "stt_startgame.3.d"
+
+	picture = BATTLE_eventPicture
+	hidden = yes
+		
+	trigger = { 
+		ai = yes
+		tag = LIT
+		NOT = { is_year = 1450 }
+		NOT = { started_in = 1400.1.1 }
+		NOT = { junior_union_with = POL }
+		NOT = { total_development = 350 }
+		NOT = { has_country_modifier = LIT_help }
+	}
+	
+	immediate = { add_country_modifier = { name = LIT_help duration = -1 } set_ai_personality = { personality = ai_militarist locked = yes } }	
+		
+	option = {
+	name = stt_startgame.3.a
+	}
+}
+
+country_event = { #off help for LIT
+	id = stt_startgame.4 
+	title = "stt_startgame.4.t"
+	desc = "stt_startgame.4.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = { 
+		OR = { 
+			total_development = 400 
+			num_of_cities = 25
+			is_year = 1450
+			junior_union_with = POL
+			ai = no
+		}
+		has_country_modifier = LIT_help
+	}
+	
+	immediate = { remove_country_modifier = LIT_help set_ai_personality = { personality = ai_balanced locked = no } }	
+		
+	option = {
+	name = stt_startgame.4.a
+	}
+}
+
+country_event = { #dan' orde
+	id = stt_startgame.5
+	title = "stt_startgame.5.t"
+	desc = "stt_startgame.5.d"
+
+	picture = BATTLE_eventPicture
+	hidden = yes
+		
+	trigger = { 
+		is_subject_of_type = tributary_state
+		culture_group = east_slavic
+		NOT = { has_global_flag = knyaz_rights_flag_s }
+	}
+	
+	immediate = { 
+		add_country_modifier = { name = russian_tributaries duration = -1 } 
+		if = { limit = { HUL = { ai = yes } } HUL = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } }
+	}	
+		
+	option = {
+	name = stt_startgame.5.a
+	}
+}
+
+country_event = { #off dan' orde
+	id = stt_startgame.6 
+	title = "stt_startgame.6.t"
+	desc = "stt_startgame.6.d"
+
+	picture = BATTLE_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = { 
+		OR = {
+			NOT = { is_subject_of_type = tributary_state }
+			has_global_flag = knyaz_rights_flag_s
+		}
+		has_country_modifier = russian_tributaries
+	}
+	
+	immediate = { remove_country_modifier = russian_tributaries }	
+		
+	option = {
+	name = stt_startgame.6.a
+	}
+}
+
+country_event = { #achivki
+	id = stt_startgame.7
+	title = "stt_startgame.7.t"
+	desc = "stt_startgame.7.d"
+
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	
+	trigger = { 
+		ai = no
+		ironman = yes
+	}
+		
+	option = {
+	name = stt_startgame.7.a
+	set_global_flag = stt_achievements
+	}
+	
+	option = {
+	name = stt_startgame.7.b
+	}
+}
+
+country_event = { #up proizvodit
+	id = stt_startgame.8
+	title = "stt_startgame.8.t"
+	desc = "stt_startgame.8.d"
+
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	trigger = { 
+		ai = no
+		has_leader = "Admin"
+	}
+		
+	option = {
+		name = stt_startgame.8.a
+		every_owned_province = { limit = { continent = south_america NOT = { owned_by = CSU } } add_core = CSU cede_province = CSU }
+		every_owned_province = { limit = { continent = north_america NOT = { owned_by = AZT } } add_core = AZT cede_province = AZT change_religion = totemism }
+		AZT = { change_religion = totemism }
+	}
+	
+	option = {
+		name = stt_startgame.8.b
+	}
+}

@@ -1,0 +1,61 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 3109	
+
+# buy by MAMluks in 1427
+
+1293.1.1 = { 
+	monarch = {
+		name = "Мечдуддин Махмуд"          
+		dynasty = "Караманогуллар"
+		dip = 2
+		adm = 2
+		mil = 4
+		death_date = 1330.1.1
+		religion = sunni       
+		culture = turkish         
+	}
+}
+1330.1.1 = { 
+	monarch = {
+		name = "Юсуф"          
+		dynasty = "Караманогуллар"
+		adm = 2
+		dip = 1
+		mil = 0
+		death_date = 1337.1.1
+	}
+}
+1337.1.1 = { 
+	monarch = {
+		name = "Шемсидин Мехмед"          
+		dynasty = "Караманогуллар"
+		dip = 4
+		adm = 3
+		mil = 3
+		death_date = 1352.1.1
+	}
+}
+1352.1.1 = {
+	monarch = {
+		name = "Хусамеддин Махмуд"          
+		dynasty = "Караманогуллар"
+		dip = 5
+		adm = 5
+		mil = 3		
+		death_date = 1390.1.1
+	}
+}
+1390.1.1 = {
+	monarch = {
+		name = "Совок"          
+		dynasty = "Караманогуллар"         
+		death_date = 1427.1.1
+		dip = 3
+		adm = 3
+		mil = 0
+	}
+}

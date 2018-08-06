@@ -1,0 +1,42 @@
+government = despotic_monarchy
+government_rank = 1
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+capital = 3644	
+
+# Annexed by the Otto in 1391
+
+1305.1.1 = { 
+	monarch = {
+		name = "Инанк-бей"          
+		dynasty = "Инанчогуллар"         
+		mil = 4                 
+		death_date = 1335.1.1
+		dip = 3
+		adm = 2
+		mil = 3
+		religion = sunni       
+		culture = turkish         
+	}
+}
+1335.1.1 = { 
+	monarch = {
+		name = "Мурад Арслан"          
+		dynasty = "Инанчогуллары"         
+		death_date = 1362.1.1
+		dip = 2
+		adm = 2
+		mil = 4
+	}
+}
+1362.1.1 = { 
+	monarch = {
+		name = "Ишак-бей"          
+		dynasty = "Инанчогуллары"
+		dip = 1
+		mil = 0
+		adm = 1
+		death_date = 1368.1.1
+	}
+}
