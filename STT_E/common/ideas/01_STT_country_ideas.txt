@@ -850,7 +850,7 @@ LGN_ideas = {
 }
 
 
-TIS_ideas = {
+LOI_ideas = {
     start = {
 	    naval_morale = 0.20
 		navy_tradition = 1.5
@@ -860,39 +860,39 @@ TIS_ideas = {
 	    mil_tech_cost_modifier  = -0.075
 	}
     trigger = {
-		tag = TIS
+		tag = LOI
 	}
 	free = yes
 	
-	TIS_multiculture = {
+	LOI_multiculture = {
 	    num_accepted_cultures = 2
 		global_unrest = -2
 	}
 	
-	TIS_gaelics = {
+	LOI_gaelics = {
 	    land_morale = 0.20
 		prestige = 1
 	}
 	
-	TIS_trade = {
+	LOI_trade = {
 	    global_trade_power = 0.20
 	}
 
-	TIS_monastery_aeon = {
+	LOI_monastery_aeon = {
 	    global_missionary_strength = 0.02
 		tolerance_own = 1
 	}
 	
-	TIS_castles = {
+	LOI_castles = {
 	    defensiveness = 0.25
 	}
 	
-	TIS_diplomacy = {
+	LOI_diplomacy = {
 		diplomats = 1
 		diplomatic_reputation = 2
 	}
 	
-	TIS_stability = {
+	LOI_stability = {
 	    stability_cost_modifier = -0.15
 	    years_of_nationalism = -5
 	}

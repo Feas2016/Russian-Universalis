@@ -13,9 +13,7 @@ country_event = {
 	
 	trigger = {
 	    government = greek_monarchy	
-		NOT = {
-		has_country_modifier = purple_guardy
-		}
+		NOT = { has_country_modifier = purple_guardy }
 		army_tradition = 30
 	}
 	
@@ -25,7 +23,7 @@ country_event = {
 		modifier = {
 		factor = 0.4
 		stability = 2
-	}
+		}
 	}
 	
 	option = {

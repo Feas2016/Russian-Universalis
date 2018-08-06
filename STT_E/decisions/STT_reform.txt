@@ -1,6 +1,6 @@
-#country_decisions = {
+country_decisions = {
 
-	#open_reform = {
+	open_reform = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = opened_reform }
@@ -11,7 +11,7 @@
 		set_country_flag = opened_reform
 		}
 	}
-	#close_reform = {
+	close_reform = {
 		major = yes
 		potential = {
 			has_country_flag = opened_reform

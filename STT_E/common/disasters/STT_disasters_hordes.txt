@@ -9,7 +9,7 @@ golden_horde_disaster = {
 	}
 
 	can_start = {
-		OR = { NOT = { horde_unity = 80 } }
+		NOT = { horde_unity = 80 }
 		OR = {
 			war_with = TIM
 		    war_exhaustion = 5
