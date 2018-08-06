@@ -3690,7 +3690,7 @@ guiTypes = {
 			listboxType = {
 				name = "institutions"
 				position = { x= 26 y = 178 }
-				size = { x = 256 y = 420 }
+				size = { x = 286 y = 400 }	### STT
 				Orientation = "UPPER_LEFT"
 				spacing = 0
 				scrollbartype = "standardlistbox_slider"
@@ -6192,7 +6192,7 @@ guiTypes = {
 			font = "vic_22s"
 			borderSize = {x = 2 y = 2}	
 			text = "..."
-			maxWidth = 180
+			maxWidth = 250	### STT
 			maxHeight = 20
 			format = left
 		}

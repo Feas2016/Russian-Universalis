@@ -992,13 +992,31 @@ province_event = { ###STT FOR FRIDRIH
 	
 	hidden = yes
 	mean_time_to_happen = { days = 1 }
-		
+	
 	trigger = {
 		NOT = { is_year = 1452 }
-	    151 = { controlled_by = BYZ }
-		151 = { has_province_modifier = BYZ_wall666 }
+	    151 = {
+			controlled_by = BYZ
+			controlled_by = ROOT
+			has_province_modifier = BYZ_wall666
+			NOT = { has_building = fort_17th }
+		}
 	}
-	immediate = { 151 = { remove_building = fort_15th add_building = fort_17th } if = { limit = { BYZ = { ai = yes } } BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } } }
+	immediate = {
+		151 = {
+			remove_building = fort_15th 
+			add_building = fort_17th 
+		}
+		if = {
+			limit = { BYZ = { ai = yes } }
+			BYZ = {
+				add_country_modifier = {
+					name = ai_boost_wall
+					duration = -1
+				}
+			}
+		}
+	}
 	option = { name = stt_wek.200.a }
 }
 
