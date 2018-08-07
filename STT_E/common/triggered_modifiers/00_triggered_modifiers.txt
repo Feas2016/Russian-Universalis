@@ -311,7 +311,7 @@ catholic_rome = {
 		NOT = { tag = ROM }
 		NOT = { tag = PQR }		###STT
         NOT = { tag = WEK }		###STT
-		NOT = { calc_true_if = { all_owned_province = { region = italy_region } amount = 30 } }
+		NOT = { num_of_owned_provinces_with = { value = 35 region = italy_region } } 
 	}
 
 	papal_influence = -10
@@ -333,7 +333,7 @@ papal_subjugation = {
 		NOT = { tag = ROM }
 		NOT = { tag = PQR }		###STT
         NOT = { tag = WEK }		###STT
-		NOT = { calc_true_if = { all_owned_province = { region = italy_region } amount = 30 } }
+		NOT = { num_of_owned_provinces_with = { value = 35 region = italy_region } } 
 	}
 
 	diplomatic_reputation = -2
@@ -387,6 +387,7 @@ submission_to_emperor = {
 		is_emperor = no
 		is_elector = no
 		NOT = { tag = ITA }
+		NOT = { num_of_owned_provinces_with = { value = 35 region = italy_region } }
 		capital_scope = {
 			is_part_of_hre = yes
 		}
@@ -656,8 +657,8 @@ hre_westphalia = {
 		}
 		religion_group = christian
 		OR = {
-		hre_leagues_enabled = yes
-		hre_religion_treaty = yes
+			hre_leagues_enabled = yes
+			hre_religion_treaty = yes
 		}
 	}
 

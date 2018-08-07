@@ -1437,18 +1437,23 @@ country_event = { # Timur's death
 	option = {
 	    name = stt_rise_timur.32.a
 		if = { 
-			limit = { NOT = { ruler_age = 50 } } 
-			custom_tooltip = remains_ruler
-			hidden_effect = { 
-				define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
-				define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 45 }
+			limit = { NOT = { total_development = 250 } } 
+			random_list = { 
+				75 = { 
+					custom_tooltip = timur_live_tooltip 
+					hidden_effect = { 
+						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
+						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 55 }
+					}
+				}
+				25 = { custom_tooltip = stt_rise_timur.32_tooltip country_event = { id = stt_rise_timur.33 } }
 			}
 		}
 		if = { 
-			limit = { ruler_age = 50 NOT = { ruler_age = 60 } } 
+			limit = { total_development = 250 NOT = { total_development = 500 } } 
 			random_list = { 
 				50 = { 
-					custom_tooltip = remains_ruler 
+					custom_tooltip = timur_live_tooltip 
 					hidden_effect = { 
 						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
 						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 55 }
@@ -1458,10 +1463,10 @@ country_event = { # Timur's death
 			}
 		}
 		if = { 
-			limit = { ruler_age = 60 NOT = { ruler_age = 70 } } 
+			limit = { total_development = 500 NOT = { total_development = 1000 } } 
 			random_list = { 
 				25 = {
-					custom_tooltip = remains_ruler 
+					custom_tooltip = timur_live_tooltip 
 					hidden_effect = { 
 						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
 						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 65 }
@@ -1471,7 +1476,7 @@ country_event = { # Timur's death
 			}
 		}
 		if = { 
-			limit = { ruler_age = 70 } 
+			limit = { total_development = 1000 } 
 			custom_tooltip = stt_rise_timur.32_tooltip
 			country_event = { id = stt_rise_timur.33 }			
 		}	
@@ -1580,9 +1585,9 @@ country_event = { # Timur's real death
 		remove_country_modifier = stt_timur_army
 		remove_country_modifier = stt_timur_infantry 
 		remove_country_modifier = stt_timur_cavalry 
-		if = { limit = { has_country_modifier stt_timur_wartime_1 } remove_country_modifier = stt_timur_wartime_1 }
-		if = { limit = { has_country_modifier stt_timur_wartime_2 } remove_country_modifier = stt_timur_wartime_2 }
-		if = { limit = { has_country_modifier stt_timur_wartime_3 } remove_country_modifier = stt_timur_wartime_3 }
+		remove_country_modifier = stt_timur_wartime_1 
+		remove_country_modifier = stt_timur_wartime_2 
+		remove_country_modifier = stt_timur_wartime_3 
 		if = { limit = { ARD = { NOT = { num_of_cities = 8 } } } vassalize = ARD }
 		if = { limit = { LRI = { NOT = { num_of_cities = 8 } } } vassalize = LRI }
 		hidden_effect = {
@@ -1638,6 +1643,7 @@ country_event = { # timurids go die
 	option = {
 	    name = stt_rise_timur.34.a
 		ai_chance = { factor = 100 }
+		add_stability = 1
 		every_owned_province = { 
 			limit = { 
 				OR = { 
@@ -1737,6 +1743,8 @@ country_event = { # Shahruh
 		
 	option = {
 	    name = stt_rise_timur.35.a
+		add_stability = 3
+		add_prestige = 50
 		446 = { move_capital_effect = yes add_base_tax = 2 add_base_manpower = 2 add_base_production = 2 }
 		define_ruler = { 
 			name = "Шахрух"
@@ -1747,7 +1755,7 @@ country_event = { # Shahruh
 			mil = 5
 			culture = uzbehk
 			religion = sunni
-			#fixed = yes
+			fixed = yes
 		}
 		define_ruler_to_general = {	fire = 2 shock = 4 manuever = 3 siege = 1 }
 		add_ruler_modifier = {
@@ -1766,19 +1774,18 @@ country_event = { # Shahruh
 				adm = 3
 				dip = 3
 				mil = 2
-				#fixed = yes
+				fixed = yes
 			}
 			define_consort = {
 				name = "Гаухаршад"
 				country_of_origin = TIM
-				age = 24
 				dynasty = "Тархан"
 				adm = 4
 				dip = 5
 				mil = 3
 				culture = persian
 				female = yes
-				#fixed = yes
+				fixed = yes
 			}
 		}
 		custom_tooltip = stt_rise_timur.35_tooltip #about TRS, KHO and other
@@ -1808,12 +1815,11 @@ country_event = { # Shahruh
 				define_ruler = { 
 					name = "Улугбек"
 					dynasty = "Тимурид"
-					age = 25
 					claim = 50
 					adm = 3
 					dip = 5
 					mil = 4
-					#fixed = yes
+					fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = scholar_personality
@@ -1828,7 +1834,7 @@ country_event = { # Shahruh
 					adm = 3
 					dip = 4
 					mil = 2
-					#fixed = yes
+					fixed = yes
 				}
 			}
 			KHO = {
@@ -1841,7 +1847,7 @@ country_event = { # Shahruh
 					mil = 5
 					culture = uzbehk
 					religion = sunni
-					#fixed = yes
+					fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = bold_fighter_personality

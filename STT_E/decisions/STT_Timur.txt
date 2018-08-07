@@ -6,12 +6,16 @@ country_decisions = {
 			tag = TIM
 			NOT = { is_year = 1405 }
 			NOT = { has_country_modifier = stt_timur_army }
+			NOT = { has_global_flag = timur_death }
 			has_country_flag = timur_can_reform
 		}
 		allow = {
 			mil_power = 300
 			is_free_or_tributary_trigger = yes
-			is_at_war = no
+			OR = {
+				ai = yes
+				is_at_war = no
+			}
 			owns_core_province = 446	
 			owns_core_province = 454	
 		}
@@ -56,26 +60,20 @@ country_decisions = {
 		potential = {
 			tag = TIM
 			NOT = { is_year = 1405 }
+			454 = { owned_by = ROOT }
 			has_country_modifier = stt_timur_army
 			has_country_flag = timur_can_reform
 			NOT = { has_country_modifier = timur_military_timer }
 		}
 		allow = {
+			454 = { controlled_by = ROOT }
 			treasury = 200
+			NOT = { has_country_modifier = timur_military_timer }
 		}
 		effect = {
 			add_treasury = -200
 			add_war_exhaustion = -0.1
-			capital_scope = {
-				cavalry = ROOT
-				cavalry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-				infantry = ROOT
-			}
+			add_manpower = 5
 			add_country_modifier = { name = "timur_military_timer" duration = 365 } # 1 year pause
 		}
 		ai_will_do = {

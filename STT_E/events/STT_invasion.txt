@@ -987,37 +987,17 @@ country_event = {
 
 country_event = { ###STT FOR FRIDRIH
 	id = stt_wek.200
-	title = stt_wek.200.t
-	desc = stt_wek.200.d
+	title = no_need200
+	desc = no_need200
 	
 	hidden = yes
 	is_triggered_only = yes
-	fire_only_once = yes
-	
+		
 	trigger = {
-		NOT = { is_year = 1452 }
-	    151 = {
-			controlled_by = BYZ
-			controlled_by = ROOT
-			has_province_modifier = BYZ_wall666
-			NOT = { has_building = fort_17th }
-		}
+		NOT = { is_year = 1453 }
+	    151 = { controlled_by = BYZ }
 	}
-	immediate = {
-		151 = {
-			remove_building = fort_15th 
-			add_building = fort_17th 
-		}
-		if = {
-			limit = { BYZ = { ai = yes } }
-			BYZ = {
-				add_country_modifier = {
-					name = ai_boost_wall
-					duration = -1
-				}
-			}
-		}
-	}
+	immediate = { 151 = { remove_building = fort_15th add_building = fort_17th } if = { limit = { BYZ = { ai = yes } } BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } } }
 	option = { name = stt_wek.200.a }
 }
 
@@ -1131,7 +1111,7 @@ country_event = { # krestoviy pohod
 	title = stt_wek.23.t
 	desc = stt_wek.23.d
 	
-	picture = COUNTRY_COLLAPSE_eventPicture
+	picture = RELIGION_eventPicture
 	
     fire_only_once = yes
 	major = yes
@@ -1146,7 +1126,7 @@ country_event = { # krestoviy pohod
 	
 	trigger = {
 		tag = PAP
-	    151 = { OR = { owned_by = TUR owned_by = TU0 } }
+	    151 = { owned_by = TUR }
 		NOT = { is_year = 1460 }
 	}
 	
@@ -1175,7 +1155,7 @@ country_event = { # krestoviy pohod good
 	title = stt_wek.24.t
 	desc = stt_wek.24.d
 	
-	picture = COUNTRY_COLLAPSE_eventPicture
+	picture = SIEGE_eventPicture
 	
     fire_only_once = yes
 	major = yes
@@ -1186,8 +1166,10 @@ country_event = { # krestoviy pohod good
 	}
 	
 	option = {
-        name = stt_wek.24.a1
+        name = stt_wek.24.a
 		add_prestige = 20
+		set_country_flag = go_crusade_otto
+		every_country = { limit = { NOT = { tag = PAP } NOT = { alliance_with = TUR } capital_scope = { continent = europe } religion = catholic total_development = 100 }  country_event = { id = stt_wek.26 } }
 	}
 }
 
@@ -1200,7 +1182,6 @@ country_event = { # krestoviy pohod bad
 	
     fire_only_once = yes
 	major = yes
-	
 	is_triggered_only = yes
 	
 	trigger = {
@@ -1208,7 +1189,78 @@ country_event = { # krestoviy pohod bad
 	} 
 	
 	option = {
-        name = stt_wek.25.a1
+        name = stt_wek.25.a
 		add_prestige = -5
+	}
+}
+
+country_event = { # krestoviy pohod check
+    id = stt_wek.26
+	title = stt_wek.26.t
+	desc = stt_wek.26.d
+	picture = SIEGE_eventPicture
+	
+    is_triggered_only = yes
+	major = yes
+	
+	trigger = {  } 
+	
+	immediate = { }
+	
+	option = {
+        name = stt_wek.26.a1
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 0.5
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { manpower_percentage = 0.1 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { has_opinion = { who = PAP value = 20 } }
+			}
+		}
+		add_prestige = 15
+		add_papal_influence = 10
+		set_country_flag = crusade_against_otto
+	}
+	option = {
+        name = stt_wek.26.a2
+		ai_chance = { factor = 40 }
+		add_prestige = -5
+		add_papal_influence = -20
+		clr_country_flag = crusade_against_otto
+	}
+}
+
+country_event = { # krestoviy pohod begin
+    id = stt_wek.27
+	title = stt_wek.27.t
+	desc = stt_wek.27.d
+	
+	picture = SIEGE_eventPicture
+	
+    fire_only_once = yes
+	major = yes
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+	
+	trigger = {
+		tag = PAP
+	    has_country_flag = go_crusade_otto
+	}
+	
+	option = {
+        name = stt_wek.27.a
+		clr_country_flag = go_crusade_otto
+		every_country = { limit = { has_country_flag = crusade_against_otto } form_coalition_against = TUR clr_country_flag = crusade_against_otto }
+		PAP = { form_coalition_against = TUR declare_war_with_cb = { who = TUR casus_belli = "cb_super_badboy" } }
+		clr_country_flag = go_crusade_otto
 	}
 }
