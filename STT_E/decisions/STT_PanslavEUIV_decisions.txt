@@ -4,11 +4,10 @@ country_decisions = {
 			OR = {
 				tag = RUS
 				tag = TSR
-				tag = RU2
 			}
 			is_year = 1600
 			NOT = { exists = GER }
-			NOT = { exists = HRE }
+			NOT = { exists = HLR }
 			NOT = { has_country_flag = volga_germans }
 		}
 		allow = {
@@ -44,7 +43,6 @@ country_decisions = {
 			OR = {
 				tag = RUS
 				tag = TSR
-				tag = RU2
 			}
 			is_year = 1600
 			owns_core_province = 2413 #Donbass
@@ -119,7 +117,7 @@ country_decisions = {
 				duration = 7300
 			}
 			change_tag = PLA
-			culture_group_union = west_slavic
+			#culture_group_union = west_slavic
 		}
 		ai_will_do = {
 			factor = 1
@@ -162,7 +160,7 @@ country_decisions = {
 				duration = 7300
 			}
 			change_tag = ILR
-			culture_group_union = south_slavic
+			#culture_group_union = south_slavic
 		}
 		ai_will_do = {
 			factor = 1
@@ -200,7 +198,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			culture_group_union = west_slavic
+			#culture_group_union = west_slavic
 			set_country_flag = czh_union
 		}
 		ai_will_do = {
@@ -234,7 +232,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			culture_group_union = gaelic
+			#culture_group_union = gaelic
 			set_country_flag = celtic_union
 		}
 		ai_will_do = {

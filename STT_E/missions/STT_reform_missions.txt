@@ -1,0 +1,208 @@
+
+# adm_reform_1 = { 
+	# slot = 1 
+	# generic = yes 
+	# ai = yes
+	# potential = {
+		# always = yes
+	# } 
+	
+	
+	# corruption_control_reform = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		# icon = mission_build_up_to_force_limit
+		# required_missions = {  }
+		# position = 50
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	
+	# corruption_controlorgan_reform = {
+        # icon = <gfx>            # The icon to use for the mission
+        # position = 51        # Which row the mission appears in. 1 is top.
+               
+        # required_missions = {
+            # corruption_control_reform
+        # }
+                    
+        # trigger = {
+            
+        # }
+        
+        # effect = {
+            
+        # }
+    # }
+	# corruption_hierarchy_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 52
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+			# NOT = { has_country_modifier = corruption_independent_modifier }
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	# corruption_effective_1_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 53
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+			
+# } 
+
+# adm_reform_2 = { 
+	# slot = 2 
+	# generic = yes 
+	# ai = yes
+	# potential = {
+		# always = yes
+	# }
+	# corruption_law_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_control_reform system_law_reform }
+		# position = 51
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	# corruption_independent_reform = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 52
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	# corruption_effective_2_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 53
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	# corruption_effective_full_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 54
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }
+	
+# }
+
+# adm_reform_3 = { 
+	# slot = 3 
+	# generic = yes 
+	# ai = yes
+	# potential = {
+		# always = yes
+	# }
+	# corruption_effective_3_reform = { 
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { corruption_controlorgan_reform }
+		# position = 53
+				
+		# trigger = {
+			# adm_power = 250
+			# stability = 1
+			# legitimacy = 100
+		# }
+		# effect = { 
+			# add_adm_power = -250
+			# add_stability = -1
+			# set_country_flag = going_reform
+			# country_event = { id = stt_gov_reform.1 } 
+		# }
+	# }	
+# }
+
+# #2nd mission series:
+# diplomatic_missions = {
+	# slot = 3
+	
+	# generic = yes
+	
+	# potential = {
+	   # always = yes
+	# }
+# }
+
+ # #3nd mission series:
+# administrative_missions = {
+	# slot = 4
+	
+	# generic = yes
+	
+	# potential = {
+	   # always = yes
+	# }
+	
+# }

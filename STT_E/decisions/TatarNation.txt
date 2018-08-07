@@ -53,9 +53,7 @@ country_decisions = {
 					}
 				}
 				AND = {
-					OR = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					OR = {
 						province_id = 294
 						province_id = 295

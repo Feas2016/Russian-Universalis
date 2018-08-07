@@ -1357,7 +1357,7 @@ country_event = { # root DLH
 			white_peace = TUR
 		}
 	}	
-						
+	
 	option = {
 	    name = stt_rise_timur.30.a
 		if = {
@@ -1367,7 +1367,7 @@ country_event = { # root DLH
 				add_stability = -1 
 				add_prestige = -25
 			}
-			esle = {
+			else = {
 				TUR = { 
 				kill_ruler = yes 
 				add_stability = -1 
@@ -1740,14 +1740,14 @@ country_event = { # Shahruh
 		446 = { move_capital_effect = yes add_base_tax = 2 add_base_manpower = 2 add_base_production = 2 }
 		define_ruler = { 
 			name = "Шахрух"
-			birth_date = 1377.8.20
 			dynasty = "Тимурид"
+			age = 25
 			adm = 4
 			dip = 3
 			mil = 5
 			culture = uzbehk
 			religion = sunni
-			fixed = yes
+			#fixed = yes
 		}
 		define_ruler_to_general = {	fire = 2 shock = 4 manuever = 3 siege = 1 }
 		add_ruler_modifier = {
@@ -1766,19 +1766,19 @@ country_event = { # Shahruh
 				adm = 3
 				dip = 3
 				mil = 2
-				fixed = yes
+				#fixed = yes
 			}
 			define_consort = {
 				name = "Гаухаршад"
 				country_of_origin = TIM
-				birth_date = 1378.1.1
+				age = 24
 				dynasty = "Тархан"
 				adm = 4
 				dip = 5
 				mil = 3
 				culture = persian
 				female = yes
-				fixed = yes
+				#fixed = yes
 			}
 		}
 		custom_tooltip = stt_rise_timur.35_tooltip #about TRS, KHO and other
@@ -1808,12 +1808,12 @@ country_event = { # Shahruh
 				define_ruler = { 
 					name = "Улугбек"
 					dynasty = "Тимурид"
-					birth_date = 1394.1.1
+					age = 25
 					claim = 50
 					adm = 3
 					dip = 5
 					mil = 4
-					fixed = yes
+					#fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = scholar_personality
@@ -1828,7 +1828,7 @@ country_event = { # Shahruh
 					adm = 3
 					dip = 4
 					mil = 2
-					fixed = yes
+					#fixed = yes
 				}
 			}
 			KHO = {
@@ -1841,7 +1841,7 @@ country_event = { # Shahruh
 					mil = 5
 					culture = uzbehk
 					religion = sunni
-					fixed = yes
+					#fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = bold_fighter_personality

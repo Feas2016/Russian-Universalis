@@ -5,13 +5,11 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			NOT = { exists = CAC }
 			NOT = { tag = ADU }
-			AND = {
-				OR = {
-					tag = GRA
-					primary_culture = andalucian
-				}
-				religion_group = muslim
+			OR = {
+				tag = GRA
+				primary_culture = andalucian
 			}
+			religion_group = muslim
 		}
 			
 		allow = {

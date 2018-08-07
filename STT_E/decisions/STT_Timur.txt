@@ -66,10 +66,16 @@ country_decisions = {
 		effect = {
 			add_treasury = -200
 			add_war_exhaustion = -0.1
-			capital = infantry capital = infantry
-			capital = infantry capital = infantry 
-			capital = infantry capital = infantry
-			capital = cavalry capital = cavalry
+			capital_scope = {
+				cavalry = ROOT
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
 			add_country_modifier = { name = "timur_military_timer" duration = 365 } # 1 year pause
 		}
 		ai_will_do = {
