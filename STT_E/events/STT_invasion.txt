@@ -987,8 +987,8 @@ country_event = {
 
 country_event = { ###STT FOR FRIDRIH
 	id = stt_wek.200
-	title = no_need200
-	desc = no_need200
+	title = stt_wek.200
+	desc = stt_wek.200
 	
 	hidden = yes
 	is_triggered_only = yes
@@ -997,7 +997,13 @@ country_event = { ###STT FOR FRIDRIH
 		NOT = { is_year = 1453 }
 	    151 = { controlled_by = BYZ }
 	}
-	immediate = { 151 = { remove_building = fort_15th add_building = fort_17th } if = { limit = { BYZ = { ai = yes } } BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } } }
+	immediate = { 
+		151 = { remove_building = fort_15th add_building = fort_17th } 
+		if = { 
+			limit = { BYZ = { ai = yes } } 
+			BYZ = { add_country_modifier = { name = ai_boost_wall  duration = -1 } } 
+		} 
+	}
 	option = { name = stt_wek.200.a }
 }
 
