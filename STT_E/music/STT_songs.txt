@@ -1,0 +1,18 @@
+song = {
+	name = "Krilya-Tamerlan"
+	
+	chance = {
+		modifier = {
+			factor = 0
+			NOT = { tag = TIM }
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_ruler = "Тимур Тимурид" }
+		}
+        modifier = {
+			factor = 1.35
+			is_at_war = yes
+		}
+	}
+}
