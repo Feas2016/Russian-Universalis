@@ -17,7 +17,7 @@ stt_achievements_turok_1309 = {
 		anatolia_region = { type = all owned_by = TUR }
 		BYZ = { exists = no }
 	}
-	tolerance_own = 1
+	
 }
 
 stt_achievements_hun_pentarchy = {
@@ -29,11 +29,12 @@ stt_achievements_hun_pentarchy = {
 	}
 	trigger = {
 		tag = HUN
-		start_date = 1309.3.9
 		normal_or_historical_nations = yes
-		
+		is_emperor = yes
+		religion = orthodox
+		all_country = { is_part_of_hre = yes religion = orthodox }
 	}
-	tolerance_own = 1
+	
 }
 
 stt_achievements_timurs_conquest = {
@@ -45,7 +46,6 @@ stt_achievements_timurs_conquest = {
 	}
 	trigger = {
 		tag = TIM
-		start_date = 1370.4.10
 		normal_or_historical_nations = yes
 		NOT = {
 			any_country = {
@@ -62,7 +62,7 @@ stt_achievements_timurs_conquest = {
 			}
 		}
 	}
-	army_tradition = 1
+	
 }
 
 stt_achievements_timurs_china = {
@@ -76,8 +76,9 @@ stt_achievements_timurs_china = {
 		tag = TIM
 		start_date = 1370.4.10
 		normal_or_historical_nations = yes
-		south_china_region = { type = all owned_by = TUR }
-		north_china_region = { type = all owned_by = TUR }
+		has_ruler = "Тимур"
+		south_china_region = { type = all owned_by = TIM }
+		north_china_region = { type = all owned_by = TIM }
 	}
-	army_tradition_from_battle = 0.5
+	
 }
