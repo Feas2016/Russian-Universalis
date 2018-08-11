@@ -175,12 +175,13 @@ country_event = { #achivki
 	}
 		
 	option = {
-	name = stt_startgame.7.a
-	set_global_flag = stt_achievements
+		name = stt_startgame.7.a
+		set_global_flag = stt_achievements
 	}
 	
 	option = {
-	name = stt_startgame.7.b
+		name = stt_startgame.7.b
+		add_prestige = -1
 	}
 }
 
@@ -201,8 +202,15 @@ country_event = { #up proizvodit
 		
 	option = {
 		name = stt_startgame.8.a
-		every_owned_province = { limit = { continent = south_america NOT = { owned_by = CSU } } add_core = CSU cede_province = CSU }
-		every_owned_province = { limit = { continent = north_america NOT = { owned_by = AZT } } add_core = AZT cede_province = AZT change_religion = totemism }
+		every_province = { limit = { continent = south_america NOT = { owned_by = CSU } is_city = yes } add_core = CSU cede_province = CSU }
+		every_province = { limit = { continent = north_america NOT = { owned_by = AZT } is_city = yes } add_core = AZT cede_province = AZT change_religion = totemism }
+		AZT = { change_religion = totemism }
+	}
+	
+	option = {
+		name = stt_startgame.8.aa
+		every_province = { limit = { continent = south_america NOT = { owned_by = CSU } } add_core = CSU cede_province = CSU }
+		every_province = { limit = { continent = north_america NOT = { owned_by = AZT } } add_core = AZT cede_province = AZT change_religion = totemism }
 		AZT = { change_religion = totemism }
 	}
 	

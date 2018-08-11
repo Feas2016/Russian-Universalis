@@ -1021,7 +1021,7 @@ country_event = { ### STT FOR FRIDRIH
 	trigger = {
 	    NOT = { 151 = { controlled_by = BYZ } }
 		151 = { controlled_by = ROOT }
-		NOT = { started_in = 1453 }
+		NOT = { started_in = 1453.11.11 }
 	}
 	
 	option = {
@@ -1041,7 +1041,6 @@ country_event = { ### STT FOR FRIDRIH
 	}
 	option = {
         name = stt_wek.20.a2
-		trigger = { NOT = { tag = TU0 } }
 		BYZ = { kill_ruler = yes }
 		add_treasury  = 500
 		151 = { remove_province_modifier = BYZ_wall666 }

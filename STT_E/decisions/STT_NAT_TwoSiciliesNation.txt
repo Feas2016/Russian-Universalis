@@ -7,7 +7,9 @@ country_decisions = {
 	  tag = SIC
 	 }     
 	           }
-    allow =    {
+    allow = {
+	 NOT = { exists = KTT }
+	 adm_tech = 10
 	 is_subject = no
 	 is_at_war = no
 	 owns_core_province = 120
