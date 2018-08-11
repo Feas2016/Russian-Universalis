@@ -11,6 +11,10 @@ country_event = { # hhh_dark_times
 	mean_time_to_happen = { days = 1 }
 	
 	trigger = { 
+		OR = { 
+			has_institution = feudalism 
+			capital_scope = { OR = { continent = asia continent = europe } }
+		}
 		NOT = {
 			has_institution = hhh_dt_f
 		}
@@ -20,8 +24,9 @@ country_event = { # hhh_dark_times
 	
 	option = {
 	name = stt_institution.1.a
-	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times duration = -1 } }
-	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_light duration = -1 } }
+		custom_tooltip = stt_institution_tooltip
+		if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times duration = -1 } }
+		if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_light duration = -1 } }
 	}
 }
 country_event = { # hhh_dark_times_s
@@ -35,12 +40,12 @@ country_event = { # hhh_dark_times_s
 	
 	trigger = { 
 		NOT = {
-		has_institution = hhh_dt_s
+			has_institution = hhh_dt_s
 		}
 		has_institution = hhh_dt_f
 		OR = {
-		has_country_modifier = hhh_dark_times
-		has_country_modifier = hhh_dark_times_light
+			has_country_modifier = hhh_dark_times
+			has_country_modifier = hhh_dark_times_light
 		}
 		NOT = { has_country_modifier = hhh_dark_times_s }
 		NOT = { has_country_modifier = hhh_dark_times_s_light }
@@ -55,8 +60,9 @@ country_event = { # hhh_dark_times_s
 	
 	option = {
 	name = stt_institution.2.a
-	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_s duration = -1 } }
-	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_s_light duration = -1 } }
+		custom_tooltip = stt_institution_tooltip
+		if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_s duration = -1 } }
+		if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_s_light duration = -1 } }
 	}
 }
 
@@ -71,12 +77,12 @@ country_event = { # hhh_dark_times_t
 	
 	trigger = { 
 		NOT = {
-		has_institution = hhh_dt_t
+			has_institution = hhh_dt_t
 		}
 		has_institution = hhh_dt_s
 		OR = {
-		has_country_modifier = hhh_dark_times_s
-		has_country_modifier = hhh_dark_times_s_light
+			has_country_modifier = hhh_dark_times_s
+			has_country_modifier = hhh_dark_times_s_light
 		}
 		NOT = { has_country_modifier = hhh_dark_times_t }
 		NOT = { has_country_modifier = hhh_dark_times_t_light }
@@ -91,8 +97,9 @@ country_event = { # hhh_dark_times_t
 	
 	option = {
 	name = stt_institution.3.a
-	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_t duration = -1 } }
-	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_t_light duration = -1 } }
+		custom_tooltip = stt_institution_tooltip
+		if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_t duration = -1 } }
+		if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_t_light duration = -1 } }
 	}
 }
 
@@ -127,8 +134,9 @@ country_event = { # hhh_dark_times_l
 	
 	option = {
 	name = stt_institution.4.a
-	if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_l duration = -1 } }
-	if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_l_light duration = -1 } }
+		custom_tooltip = stt_institution_tooltip
+		if = { limit = { has_global_flag = hhh_default } add_country_modifier = { name = hhh_dark_times_l duration = -1 } }
+		if = { limit = { has_global_flag = hhh_light } add_country_modifier = { name = hhh_dark_times_l_light duration = -1 } }
 	}
 }
 
@@ -151,7 +159,7 @@ country_event = { # hhh_dark_times_remove
 		
 	option = {
 	name = stt_institution.5.a
-	if = { limit = { has_global_flag = hhh_default } remove_country_modifier = hhh_dark_times_l }
-	if = { limit = { has_global_flag = hhh_light } remove_country_modifier = hhh_dark_times_l_light }
+		if = { limit = { has_global_flag = hhh_default } remove_country_modifier = hhh_dark_times_l }
+		if = { limit = { has_global_flag = hhh_light } remove_country_modifier = hhh_dark_times_l_light }
 	}
 }

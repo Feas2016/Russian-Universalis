@@ -221,7 +221,7 @@ form_the_latin_empire = { 	### STT
 			change_government = spqr_republic
 			if = {
 				limit = {
-					government_rank = 1
+					NOT = { government_rank = 3 }
 				}
 				set_government_rank = 2	  
 			}

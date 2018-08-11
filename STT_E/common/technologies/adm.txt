@@ -65,7 +65,7 @@ technology = {
 	year = 1325
 	
 	max_states = 1
-	monastery = yes
+	courthouse = yes
 }
 technology = {
 	# Tech 6
@@ -149,7 +149,7 @@ technology = {
 	# Tech 17
 
 	year = 1505
-	courthouse = yes
+	town_hall = yes
 	max_states = 3
 
 }
@@ -160,14 +160,14 @@ technology = {
 	
 	#The Scythe
 	production_efficiency 	=	0.05
-	storehouse = yes
+	college = yes
 }
 
 technology = {
 	# Tech 19
 	year = 1531
 	
-	college = yes
+	storehouse = yes
 	allowed_idea_groups = 5
 	administrative_efficiency = 0.05
 }
@@ -177,8 +177,7 @@ technology = {
 	year = 1544
 	
 	#Textile Manufactory
-	textile = yes  
-
+	textile = yes
 }
 
 technology = {
@@ -274,7 +273,7 @@ technology = {
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
-	town_hall = yes
+	capitol = yes
 }
 
 technology = {

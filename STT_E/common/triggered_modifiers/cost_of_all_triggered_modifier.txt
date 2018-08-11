@@ -1,0 +1,44 @@
+1750_year = {
+	potential = {
+		is_year = 0
+		not = { is_year = 1860 }
+	}
+
+	trigger = {
+		is_year = 1750
+		not = { is_year = 1860 }
+	}	
+	free_leader_pool = 1
+	development_cost = 0.75
+	culture_conversion_cost = -0.5
+	land_maintenance_modifier = 1
+	naval_maintenance_modifier = 1
+	state_maintenance_modifier = 0.8
+	build_cost = 1
+	advisor_cost = 1
+	yearly_corruption = 0.035
+	inflation_reduction = -0.5 #повышение цены содеражания миссионеров, колоний, повышение стоимости внедрения иснтиститу (не нашел это все)
+	
+}
+
+1860_year = {
+	potential = {
+		is_year = 0
+	}
+
+	trigger = {
+		is_year = 1860
+	}	
+	free_leader_pool = 1
+	technology_cost = 0.3
+	development_cost = 0.95
+	culture_conversion_cost = -0.6
+	land_maintenance_modifier = 1
+	naval_maintenance_modifier = 1
+	fort_maintenance_modifier = 1
+	state_maintenance_modifier = 0.8
+	build_cost = 1.1
+	advisor_cost = 1.1
+	yearly_corruption = 0.04
+	inflation_reduction = -0.7 #повышение цены содеражания миссионеров, колоний, повышение стоимости внедрения иснтиститу (не нашел это все) 
+}

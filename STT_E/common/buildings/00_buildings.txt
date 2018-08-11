@@ -60,10 +60,8 @@ steel_mill = {
 	time = 60
 	
 	trigger = {
-		AND = { 
-			FROM = { innovativeness = 80 } 
-			ROOT = { trade_goods = iron } 
-		}		
+		FROM = { innovativeness = 80 } 
+		ROOT = { trade_goods = iron }
 	}
 	
 	on_built = {
@@ -165,6 +163,22 @@ customs_house = {
 	}
 }
 
+arsenal = {
+	cost = 2000
+	time = 12
+	one_per_country = yes
+	trigger = {
+	    owner = { full_idea_group = offensive_ideas }
+	}
+	modifier = { 
+		army_tradition = 1
+		free_leader_pool = 1
+		discipline = 0.025 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
 spy_agency = {
 	cost = 2000
 	time = 12
@@ -236,7 +250,7 @@ workshop = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_production_efficiency = 0.5
+		local_production_efficiency = 0.25
 	}
 	
 	allow_in_gold_provinces = no
@@ -250,6 +264,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
+		local_missionary_strength = 0.01
 		local_tax_modifier = 0.4
 	}
 	
@@ -258,11 +273,22 @@ temple = {
 	}
 }
 
-barracks = {
+armory = {
 	cost = 100
 	time = 12
+
+	modifier = { local_manpower_modifier = 0.5 }	### STT
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+barracks = {
+	cost = 200
+	time = 12
 	modifier = {
-		local_manpower_modifier = 0.5
+		local_manpower_modifier = 1
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -301,8 +327,8 @@ shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 2
-		ship_recruit_speed = -0.25
-		local_ship_repair = 0.25
+		ship_recruit_speed = -0.20
+		local_ship_repair = 0.20
 	}
 	
 	ai_will_do = {
@@ -364,7 +390,7 @@ courthouse = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_state_maintenance_modifier = -0.25
+		local_state_maintenance_modifier = -0.20
 		local_autonomy = -0.1
 	}
 	
@@ -392,7 +418,7 @@ regimental_camp = {
 	cost = 200
 	time = 12
 	modifier = {
-		land_forcelimit = 1
+		land_forcelimit = 2
 	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
@@ -489,7 +515,6 @@ cathedral = {
 	}
 }
 
-
 university = {
 	cost = 300
 	time = 12
@@ -533,7 +558,7 @@ university = {
 }
 
 trade_depot = {
-	cost = 300
+	cost = 200
 	time = 12
 	
 	make_obsolete = marketplace
@@ -547,6 +572,17 @@ trade_depot = {
 	}
 }
 
+treasury_office = {
+	cost = 300
+	time = 12
+	make_obsolete = trade_depot
+	modifier = { province_trade_power_modifier = 1.5 }
+	ai_will_do = {
+		factor = 1
+	}
+
+}
+
 grand_shipyard = {
 	cost = 300
 	time = 12
@@ -558,8 +594,8 @@ grand_shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 4
-		ship_recruit_speed = -0.50
-		local_ship_repair = 0.50
+		ship_recruit_speed = -0.40
+		local_ship_repair = 0.40
 	}
 	
 	ai_will_do = {
@@ -572,6 +608,26 @@ grand_shipyard = {
 			factor = 1.1
 			local_autonomy = 50
 		}
+	}
+}
+
+naval_base = {
+	cost = 600
+	time = 12
+	make_obsolete = grand_shipyard
+	
+	trigger = {
+		has_port = yes
+	}
+	modifier = {
+
+		naval_forcelimit = 6
+		ship_recruit_speed = -0.60
+		local_ship_repair = 0.60
+	}
+	
+	ai_will_do = {
+		factor = 1
 	}
 }
 
@@ -605,7 +661,7 @@ training_fields = {
 #	}
 	
 	modifier = {
-		local_manpower_modifier = 1
+		local_manpower_modifier = 1.5
 	}
 	
 	ai_will_do = {
@@ -665,10 +721,10 @@ stock_exchange = {
 	cost = 400
 	time = 12
 	
-	make_obsolete = trade_depot
+	make_obsolete = treasury_office
 	
 	modifier = {
-		province_trade_power_modifier = 1.25
+		province_trade_power_modifier = 2
 	}
 	
 	ai_will_do = {
@@ -677,12 +733,12 @@ stock_exchange = {
 }
 
 counting_house = {
-	cost = 400
+	cost = 200
 	time = 12
 	
 	make_obsolete = workshop
 	modifier = {
-		local_production_efficiency = 1
+		local_production_efficiency = 0.5
 	}
 	
 	allow_in_gold_provinces = no
@@ -692,7 +748,21 @@ counting_house = {
 	}
 }
 
-
+storehouse = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = counting_house	
+	allow_in_gold_provinces = no
+	
+	modifier = {
+		local_production_efficiency = 1
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 
 town_hall = {
@@ -702,11 +772,30 @@ town_hall = {
 	make_obsolete = courthouse
 	
 	modifier = {
-		local_state_maintenance_modifier = -0.5
-		local_autonomy = -0.2
+		local_development_cost = -0.10
+		local_state_maintenance_modifier = -0.40
+		local_autonomy = -0.15
 	}
 	
 	ai_will_do = {
+		factor = 1
+	}
+}
+
+capitol = {
+	cost = 500
+	time = 24
+	
+    make_obsolete = town_hall
+	
+	modifier = {
+		local_development_cost = -0.25
+		local_state_maintenance_modifier = -0.60
+		allowed_num_of_buildings = 3
+	}
+	
+	ai_will_do = {
+
 		factor = 1
 	}
 }
@@ -728,6 +817,16 @@ drydock = {
 	ai_will_do = {
 		factor = 1
 	}
+}
+
+naval_arsenal = {
+	cost = 600
+	time = 12
+	make_obsolete = drydock
+	trigger = { has_port = yes }
+	modifier = { local_sailors_modifier = 1.5 }
+	ai_will_do = { factor = 1 }
+
 }
 
 conscription_center = {
@@ -761,7 +860,7 @@ conscription_center = {
 #	}
 	
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 4
 	}
 	
 	ai_will_do = {
@@ -779,6 +878,15 @@ conscription_center = {
 
 
 
+mint = {
+	cost = 600
+	time = 12
+    make_obsolete = conscription_center
+	modifier = { local_manpower_modifier = 1.50 }	### STT
+	ai_will_do = {
+		factor = 1
+	}
+}
 fort_18th = {
 	cost = 800
 	time = 30
@@ -981,7 +1089,7 @@ steam_factory = {
 	cost = 800
 	time = 12
 	
-	make_obsolete = counting_house
+	make_obsolete = storehouse
 	
 	allow_in_gold_provinces = no
 	
