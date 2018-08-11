@@ -1421,3 +1421,44 @@ ATO_Ideas = {
 		fort_maintenance_modifier = -0.1
 	}
 }
+
+HUL_ideas = {
+	start = {
+		fort_maintenance_modifier = -0.33
+		state_maintenance_modifier = -0.5
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = HUL
+	}
+	free = yes
+	
+	hul_first = {
+		horde_unity = 1
+		legitimacy = 1
+	}
+	hul_second = {
+		num_accepted_cultures = 3
+	}
+	hul_third = {
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.2
+		cavalry_flanking = 0.5
+	}
+	hul_fourth = {
+		global_autonomy = -0.2
+	}
+	hul_fifth = {
+		all_power_cost = -0.03
+	}
+	hul_six = {
+		years_of_nationalism = -15
+	}
+	hul_seven = {
+		leader_land_shock = 2
+	}
+}

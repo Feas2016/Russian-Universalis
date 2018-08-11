@@ -1,52 +1,43 @@
 country_decisions = {
- create_KTT = {
- major = yes
-   potential = {
-     OR = {
-	  tag = NAP
-	  tag = SIC
-	 }     
-	           }
-    allow = {
-	 NOT = { exists = KTT }
-	 adm_tech = 10
-	 is_subject = no
-	 is_at_war = no
-	 owns_core_province = 120
-	 owns_core_province = 3039
-	 owns_core_province = 121
-	 owns_core_province = 3017
-	 owns_core_province = 3016
-	 owns_core_province = 2985
-	 owns_core_province = 2983
-	 owns_core_province = 1934
-	 owns_core_province = 1933
-	 owns_core_province = 122
-	 owns_core_province = 2984
-	 owns_core_province = 123
-	 owns_core_province = 124
-	 owns_core_province = 125
-	 owns_core_province = 3019
-	 owns_core_province = 2982
-	           }
-    effect = {
-	 change_tag = KTT
-	 add_country_modifier = {
-	 name = "centralization_modifier"
-	 duration = 7300
-	                      }
-	 set_government_rank = 2				  
-	 set_capital = 121
-	 add_prestige = 25
-	         }
-             
-
-
-
-
-
-
-
-
-			    }
-                    }
+	create_KTT = {
+		major = yes
+		potential = {
+			OR = {
+				tag = NAP
+				tag = SIC
+			}
+		}
+		allow = {
+			NOT = { exists = KTT }
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 120
+			owns_core_province = 3039
+			owns_core_province = 121
+			owns_core_province = 3017
+			owns_core_province = 3016
+			owns_core_province = 2985
+			owns_core_province = 2983
+			owns_core_province = 1934
+			owns_core_province = 1933
+			owns_core_province = 122
+			owns_core_province = 2984
+			owns_core_province = 123
+			owns_core_province = 124
+			owns_core_province = 125
+			owns_core_province = 3019
+			owns_core_province = 2982
+		}
+		effect = {
+			change_tag = KTT
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_government_rank = 2				  
+			set_capital = 121
+			add_prestige = 25
+		}
+	}
+}

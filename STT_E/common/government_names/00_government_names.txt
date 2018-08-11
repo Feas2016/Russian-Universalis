@@ -3,6 +3,55 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+hul_empire = { #STT
+	rank = {
+		1 = HORDE
+		2 = KHANATE
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		1 = ILKHANATE
+		2 = ILKHANATE
+		3 = ILKHANATE
+	}
+	
+	ruler_female = {
+		1 = ILKHANATE
+		2 = ILKHANATE
+		3 = ILKHANATE
+	}
+	
+	consort_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = YEKHE_KHAGAN
+	}
+
+	consort_female = {
+		1 = GEGE
+		2 = KHANUM
+		3 = YEKHE_KHANUM
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHANUM
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	trigger = {
+		tag = HUL
+		government = steppe_horde
+	}
+}
+
 yuan_empire = {
 	rank = {
 		1 = HORDE

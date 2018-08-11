@@ -1,59 +1,57 @@
 country_decisions = {
 
 	Archon_gov_desigion = {
+		major = yes
 		potential = {
 			ai = no
 			government = monarchy
 			NOT = {
-			government = greek_monarchy
+				government = greek_monarchy
 			}
 			OR = {
-			italy_region = {
-			    owned_by = ROOT
-			    is_capital = yes
+				italy_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
+				balkan_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
 			}
-			balkan_region = {
-			    owned_by = ROOT
-			    is_capital = yes
-			}
-		  }
 		}
 		allow = {
-		    if = {
-			limit = {
-			        tag = BYZ
-					government_rank = 3
-			        }
-					is_year = 1349
-					has_truce = no
-			     }
+		    tag = BYZ
+			government_rank = 3
+			is_year = 1349
+			NOT = { is_year = 1455 }
+			is_at_war = no
 			legitimacy = 100
-			stability  = 2
+			stability = 2
 			OR = {
-			italy_region = {
-			    owned_by = ROOT
-			    is_capital = yes
+				italy_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
+				balkan_region = {
+					owned_by = ROOT
+					is_capital = yes
+				}
 			}
-			balkan_region = {
-			    owned_by = ROOT
-			    is_capital = yes
-			}
-		  }
 		}
 		effect = {
-		country_event = {
-	        id = chosearch.1
-			days = 2
+			country_event = {
+				id = chosearch.1
+				days = 2
 	        }
 			if = {
-			  limit = {
-			        tag = BYZ
-					  government_rank = 3
-			          }
-				 set_government_rank = 2	  
-			     }
+				limit = {
+					tag = BYZ
+					government_rank = 3
+				}
+				set_government_rank = 2	  
+			}
 		    add_legitimacy = -60
-			add_stability = -2
+			add_stability = -5
 			add_years_of_income = -0.5
 			change_government = greek_monarchy
 			add_country_modifier = {
@@ -69,15 +67,15 @@ country_decisions = {
 			}
 			set_country_flag = purple_palace_begin
 			hidden_effect = {
-			add_ruler_modifier = {
-				name = "archon_elect"
-				duration = 5475
+				add_ruler_modifier = {
+					name = "archon_elect"
+					duration = 5475
+				}
+				country_event = {
+					id = event_estate_hhh.3
+					days = 1825
+				}			
 			}
-		    country_event = {
-			id = event_estate_hhh.3
-			days = 1825
-			}			
-		}
 		}
 		
 		ai_will_do = {

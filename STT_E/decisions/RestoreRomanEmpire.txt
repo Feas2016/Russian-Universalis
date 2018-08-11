@@ -170,56 +170,61 @@ form_the_latin_empire = { 	### STT
 	ai_importance = 10
 }
 
-byz_spqr = { 	### STT
-	major = yes
-	potential = {
-		OR = {
-			culture_group = latin
-			culture_group = byzantine
+	byz_spqr = { 	### STT
+		major = yes
+		potential = {
+			OR = {
+				culture_group = latin
+				culture_group = byzantine
 			}
-		NOT = {	adm_tech = 10 }
-		is_free_or_tributary_trigger = yes
-		num_of_cities = 3
-		NOT = { exists = PQR }
-		NOT = { exists = ROM }
-	}
-	allow = {
-		OR = {
-			culture_group = latin
-			culture_group = byzantine
-			}
-		owns = 118
-		NOT = {	adm_tech = 10 }
-		is_at_war = no
-		num_of_owned_provinces_with = {
-			value = 20
-			region = italy_region
+			NOT = {	is_year = 1500 }
+			is_free_or_tributary_trigger = yes
+			num_of_cities = 3
+			NOT = { exists = PQR }
+			NOT = { exists = ROM }
+		}
+		allow = {
+			OR = {
+				culture_group = latin
+				culture_group = byzantine
+				}
+			owns = 118
+			NOT = {	is_year = 1500 }
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 20
+				region = italy_region
 			}
 		}
-	effect = {
-		every_province = {
-			limit = { region = italy_region }
-			add_permanent_claim = PQR
+		effect = {
+			every_province = {
+				limit = { region = italy_region }
+				add_permanent_claim = PQR
 			}
-		if = {
-				limit = {
-					is_part_of_hre = yes
-					is_elector = no
-					is_emperor = no
-				}
-				emperor = {
-					add_opinion = {
-						who = root
-						modifier = opinion_left_empire
+			if = {
+					limit = {
+						is_part_of_hre = yes
+						is_elector = no
+						is_emperor = no
 					}
-				}
-				set_in_empire = no
-				emperor = {
-					country_event = { id = hre_event.5 }
-				}
+					emperor = {
+						add_opinion = {
+							who = root
+							modifier = opinion_left_empire
+						}
+					}
+					set_in_empire = no
+					emperor = {
+						country_event = { id = hre_event.5 }
+					}
 			}
 			change_government = spqr_republic
-			set_government_rank = 2
+			if = {
+				limit = {
+					government_rank = 1
+				}
+				set_government_rank = 2	  
+			}
 			set_capital = 118
 			change_tag = PQR
 			country_event = { id = ideagroups.1 } #Swap Ideas
@@ -227,8 +232,8 @@ byz_spqr = { 	### STT
 			add_adm_power = 100
 			add_republican_tradition = 1
 		}
-	ai_will_do = { factor = 1 }
-	ai_importance = 40
+		ai_will_do = { factor = 1 }
+		ai_importance = 40
 	}
 	
 }

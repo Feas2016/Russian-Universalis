@@ -9,23 +9,44 @@ country_decisions = {
 				tag = ENG
 				tag = FRA
 			}
-			NOT = { is_year = 1650 }
+			NOT = { is_year = 1600 }
 		}
 		allow = {
-		    NOT = { is_year = 1650 }
+		    NOT = { is_year = 1600 }
 			is_free_or_tributary_trigger = yes
 			stability = 1
 			is_at_war = no
+			NOT = { num_of_unions = 3 }
 			OR = { 
 				owns_core_province = 236		# London
 				owns_core_province = 183		# Paris
 			}
+			num_of_owned_provinces_with = { value = 5 region = france_region }
+			num_of_owned_provinces_with = { value = 5 region = british_isles_region }
 			OR = {
 						FRA = { vassal_of = ENG }
-						ENG = { vassal_of = FRA }
 						FRA = { junior_union_with = ENG }
+						ENG = { vassal_of = FRA }
 						ENG = { junior_union_with = FRA }
-			}			
+			}
+			OR = { 
+				years_in_union_under = {
+					who = FRA
+					years = 50
+				}
+				years_in_union_under = {
+					who = ENG
+					years = 50
+				}
+				years_in_vassalage_under = {
+					who = FRA
+					years = 25
+				}
+				years_in_vassalage_under = {
+					who = ENG
+					years = 25
+				}
+			}
 		}		
 		effect = {	
 			mercia_area = { limit = { NOT = { owned_by = ROOT } } add_permanent_claim = UEF }
