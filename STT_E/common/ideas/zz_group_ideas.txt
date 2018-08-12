@@ -1795,6 +1795,8 @@ french_culture_ideas = {
 	
 	trigger = {
 		culture_group = french
+		NOT = { tag = FRA }	### STT
+		NOT = { tag = RFC }	### STT
 	}
 	free = yes
 	
