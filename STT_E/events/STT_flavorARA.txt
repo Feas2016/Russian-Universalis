@@ -1,0 +1,83 @@
+#############################################################
+#          Aragon's events. Written by Red Dragon           #
+#############################################################
+
+namespace = stt_flavor_ara
+normal_or_historical_nations = yes
+
+
+#Help Sardinia
+country_event = {
+	id = stt_flavor_ara.1
+	title = "stt_flavor_ara.1.t"
+	desc = "stt_flavor_ara.1.d"
+
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = ARA
+		OR = {
+			alliance_with = SAR
+			has_opinion = { who = SAR  value = 50 }
+		}
+		NOT = { started_in = 1327.1.1 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 60
+	}
+		
+	option = {
+		name = "stt_flavor_ara.1.a" #yes
+		ai_chance = { factor = 90 }
+		PIS = { declare_war_with_cb = { who = SAR casus_belli = cb_imperial } }
+		custom_tooltip =  sarpiswar_tooltip
+		SAR = { set_country_flag = sarpiswar_flag }
+	}
+	option = {
+		name = "stt_flavor_ara.1.b" #no
+		ai_chance = { factor = 10 }
+		PIS = { declare_war_with_cb = { who = SAR casus_belli = cb_imperial } }
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = stt_flavor_ara.2
+	title = "stt_flavor_ara.2.t"
+	desc = "stt_flavor_ara.2.d"
+
+	picture = LAND_MILITARY_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = ARA
+		alliance_with = SAR
+		SAR = { 
+			has_country_flag = sarpiswar_flag 
+			num_of_owned_provinces_with = { area = corsica_sardinia_area value = 4 } 
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 12
+	}
+		
+	option = {
+		name = "stt_flavor_ara.2.a" #vassalize them
+		ai_chance = { factor = 100 }
+		if = { 
+			limit = { SAR = { num_of_cities = 10 } }  
+			create_union = SAR
+			else = { vassalize = SAR }
+		}
+		SAR = { add_core = 1247 }
+		add_prestige = 10
+	}
+	option = {
+		name = "stt_flavor_ara.2.b" 
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+	}
+}

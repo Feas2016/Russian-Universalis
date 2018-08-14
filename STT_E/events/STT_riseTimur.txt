@@ -1114,14 +1114,15 @@ country_event = { # kill GLH
 				every_owned_province = { 
 					limit = { 
 						OR = { 
-							region = caucasia_region 
+							region = caucasia_region
+							NOT = { province_id = 2204 }
 							area = khiva_area 
 							area = transcaspia_area 
 							area = arys_area 
 							area = transoxiana_area 
 						} 
 					} 
-				cede_province = TIM add_core = TIM  
+					cede_province = TIM add_core = TIM  
 				}
 				every_owned_province = { limit = { has_province_flag = timur_looted } clr_province_flag = timur_looted }
 			}
@@ -1237,7 +1238,7 @@ country_event = { # root DLH's capital
 								
 	option = {
 	    name = stt_rise_timur.27.a 
-		random_province = { limit = { owned_by = DLH is_capital = yes controlled_by = TIM } add_base_tax = -5 add_base_production = -2 add_base_manpower = -2 }
+		random_province = { limit = { owned_by = DLH is_capital = yes controlled_by = TIM } add_base_tax = -5 add_base_production = -2 add_base_manpower = -2 set_province_flag = timur_looted }
 		TIM = { capital_scope = { add_base_tax = 5 } add_treasury = 500 }
 	}
 }
@@ -1257,7 +1258,7 @@ country_event = { # root DLH
 		NOT = { is_year = 1420 }
 	}
 	mean_time_to_happen = {
-	    days = 1
+	    days = 7
 	}
 	
 	immediate = {  }
@@ -1266,18 +1267,18 @@ country_event = { # root DLH
 	    name = stt_rise_timur.28.a
 		random_list = {
 			33 = {	
-				if = { limit = { NOT = { any_province = { base_tax = 5 has_province_flag = timur_looted NOT = { is_capital = yes } } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { capital = yes } owned_by = DLH controlled_by = TIM } add_base_tax = -1 TIM = { add_treasury = 25 } set_province_flag = timur_looted } 
-					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { is_capital = yes } owned_by = DLH controlled_by = TIM } add_base_tax = -2 TIM = { add_treasury = 40 } set_province_flag = timur_looted } }
+				if = { limit = { NOT = { any_province = { base_tax = 5 has_province_flag = timur_looted } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } owned_by = DLH controlled_by = TIM } add_base_tax = -1 TIM = { add_treasury = 25 } set_province_flag = timur_looted } 
+					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } owned_by = DLH controlled_by = TIM } add_base_tax = -2 TIM = { add_treasury = 40 } set_province_flag = timur_looted } }
 				}
 			}
 			33 = {	
-				if = { limit = { NOT = { any_province = { base_production = 5 has_province_flag = timur_looted NOT = { is_capital = yes } } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { capital = yes } owned_by = DLH controlled_by = TIM } add_base_production = -1 TIM = { add_treasury = 40 } set_province_flag = timur_looted } 
-					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { is_capital = yes } owned_by = DLH controlled_by = TIM } add_base_production = -2 TIM = { add_treasury = 60 } set_province_flag = timur_looted } }
+				if = { limit = { NOT = { any_province = { base_production = 5 has_province_flag = timur_looted } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { capital = yes } owned_by = DLH controlled_by = TIM } add_base_production = -1 TIM = { add_treasury = 40 } set_province_flag = timur_looted } 
+					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } owned_by = DLH controlled_by = TIM } add_base_production = -2 TIM = { add_treasury = 60 } set_province_flag = timur_looted } }
 				}
 			}
 			33 = {	
-				if = { limit = { NOT = { any_province = { base_manpower = 5 has_province_flag = timur_looted NOT = { is_capital = yes } } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { capital = yes } owned_by = DLH controlled_by = TIM } add_base_manpower = -1 TIM = { add_manpower = 1 add_mil_power = 10 } set_province_flag = timur_looted } 
-					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } NOT = { is_capital = yes } owned_by = DLH controlled_by = TIM } add_base_manpower = -2 TIM = { add_manpower = 2 add_mil_power = 20 } set_province_flag = timur_looted } }
+				if = { limit = { NOT = { any_province = { base_manpower = 5 has_province_flag = timur_looted } } } random_province = { limit = { NOT = { has_province_flag = timur_looted } owned_by = DLH controlled_by = TIM } add_base_manpower = -1 TIM = { add_manpower = 1 add_mil_power = 10 } set_province_flag = timur_looted } 
+					else = { random_province = { limit = { NOT = { has_province_flag = timur_looted } owned_by = DLH controlled_by = TIM } add_base_manpower = -2 TIM = { add_manpower = 2 add_mil_power = 20 } set_province_flag = timur_looted } }
 				}
 			}
 		}
@@ -1312,9 +1313,29 @@ country_event = { # root DLH
 		hidden_effect = {
 			DLH = { 
 				every_owned_province = { limit = { has_province_flag = timur_looted } clr_province_flag = timur_looted }
+				every_owned_province = { limit = { area = sindh_area } add_core = SND cede_province = SND }
+				every_owned_province = { limit = { OR = { area = multan_area province_id = 3382 } } add_core = MUL cede_province = MUL }
 				every_owned_province = { 
 					limit = { 
 						OR = { 
+							area = oudh_area
+							area = purvanchal_area
+							province_id = 556
+							province_id = 2063
+						} 
+					} 
+					add_core = JNP cede_province = JNP 
+				}
+				JNP = { define_ruler = { dynasty = "арки" } define_heir = { dynasty = "арки" } }
+				every_owned_province = { limit = { region = khorasan_region } add_core = TIM cede_province = TIM }
+				every_owned_province = { 
+					limit = { 
+						OR = { 
+							area = bihar_area
+							area = lower_doab_area
+							area = kashmir_area
+							area = himalayan_hills_area
+							area = nepalese_area
 							region = deccan_region 
 							region = coromandel_region
 							region = bengal_region
@@ -1331,6 +1352,7 @@ country_event = { # root DLH
 						
 	option = {
 	    name = stt_rise_timur.29.a
+		if = { limit = { SND = { NOT = { num_of_cities = 10 } } } vassalize = SND }
 		DLH = { 
 			kill_ruler = yes 
 			if = { limit = { has_heir = yes } kill_heir = yes } 
@@ -1982,6 +2004,10 @@ country_event = { # Shahruh
 					}
 			}
 			FRS = {
+				define_ruler = { dynasty = "Тимурид" culture = uzbehk }
+				define_heir = { culture = uzbehk dynasty = "Тимурид" }
+			}
+			SIS = {
 				define_ruler = { dynasty = "Тимурид" culture = uzbehk }
 				define_heir = { culture = uzbehk dynasty = "Тимурид" }
 			}

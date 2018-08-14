@@ -264,12 +264,7 @@ age_of_discovery = {
 			total_development = 100
 		}
 		obj_home_trade = {
-			home_trade_node = {
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
-			}
+			num_of_trading_bonuses = 2
 		}
 		obj_early_empire = {
 			OR = { 
@@ -363,6 +358,7 @@ age_of_discovery = {
 					capital_scope = { region = low_countries_region }
 					total_development = 150
 				}
+				is_free_or_tributary_trigger = yes
 			}
 			modifier = {
 				colonists = 1
@@ -410,7 +406,6 @@ age_of_discovery = {
 					technology_group = eastern
 					technology_group = ottoman
 				}
-				mil_tech = 12 #1440
 				OR = {
 					total_development = 300
 					owns_or_subject_of = 151
@@ -656,7 +651,6 @@ age_of_reformation = {
 					tag = SPA
 				}
 				total_development = 500
-				mil_tech = 12
 				num_of_colonies = 1
 			}
 			modifier = {
@@ -692,7 +686,6 @@ age_of_reformation = {
 						}
 					}
 				}
-				mil_tech = 7
 				government_rank = 2
 			}
 			modifier = {
@@ -741,12 +734,13 @@ age_of_reformation = {
 					full_idea_group = defensive_ideas
 					tag = PER
 				}
-				religion = shiite
+				OR = { 
+					culture_group = iranian
+					religion = shiite
+				}
 				capital_scope = {
 					superregion = persia_superregion
 				}
-				mil_tech = 9
-				culture_group = iranian
 				total_development = 300
 			}
 			modifier = {
@@ -902,12 +896,11 @@ age_of_absolutism = {
 	
 		ab_france_fire_damage = {
 			allow = {
-				religion = catholic
+				religion_group = christian
 				OR = {
 					full_idea_group = quality_ideas
 					full_idea_group = offensive_ideas
 					full_idea_group = defensive_ideas
-					land_morale = 5.5
 					tag = FRA
 				}
 				OR = {
@@ -917,7 +910,6 @@ age_of_absolutism = {
 					tag = FRA
 				}
 				total_development = 500
-				mil_tech = 17
 			}
 			modifier = {
 				fire_damage = 0.2
@@ -978,14 +970,12 @@ age_of_absolutism = {
 					has_idea_group = offensive_ideas
 					has_idea_group = aristocracy_ideas
 					tag = SWE
-					tag = RUS
 				}
-				AND = {
+				OR = {
 					adm = 5
 					dip = 5
 					mil = 5
 				}
-				mil_tech = 15
 				is_monarch_leader = yes
 				total_development = 150
 			}
@@ -1415,7 +1405,7 @@ age_of_revolutions = {
 				technology_group = western
 				has_global_modifier_value = {
 					which = discipline
-					value = 0.20
+					value = 0.15
 					extra_shortcut = yes
 				}
 				OR = {
@@ -1425,7 +1415,6 @@ age_of_revolutions = {
 					government = enlightened_despotism
 					government = republican_dictatorship
 				}
-				mil_tech = 21
 				army_tradition = 40
 			}
 			modifier = {
@@ -1439,9 +1428,9 @@ age_of_revolutions = {
 			allow = {
 				OR = { 
 					full_idea_group = maritime_ideas
+					full_idea_group = exploration_ideas
 					tag = GBR
 				}
-				full_idea_group = exploration_ideas
 				OR = {
 					full_idea_group = trade_ideas
 					full_idea_group = naval_ideas
@@ -1476,7 +1465,7 @@ age_of_revolutions = {
 				}
 				OR = { culture_group = east_slavic AND = { adm = 6 num_of_continents = 5 } }
 				total_development = 1250
-				army_size = 200
+				army_size = 150
 			}
 			modifier = {
 				max_states = 20
@@ -1498,7 +1487,7 @@ age_of_revolutions = {
 					tag = HAB
 				}
 				total_development = 400
-				num_of_royal_marriages = 5
+				num_of_royal_marriages = 4
 				diplomatic_reputation = 2
 			}
 			modifier = {

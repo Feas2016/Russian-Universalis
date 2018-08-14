@@ -1,0 +1,180 @@
+#############################################################
+#          Sicilian event. Written by Red Dragon            #
+#############################################################
+
+namespace = stt_flavor_sic
+normal_or_historical_nations = yes
+
+
+#Set check
+country_event = {
+	id = stt_flavor_sic.1
+	title = "stt_flavor_sic.1.t"
+	desc = "stt_flavor_sic.1.d"
+
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	hidden = yes	
+	
+	trigger = {
+	    tag = SIC
+		dynasty = "де Барселона"
+		ARA = { dynasty = "де Барселона" }
+		NOT = { is_year = 1410 }
+		NOT = { has_country_flag = stt_sicara_union }
+		OR = {
+			has_heir = no 
+			has_regency = yes
+			NOT = { legitimacy = 50 }
+		}
+	}
+	
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	immediate = {
+		set_country_flag = stt_sic_check
+	}
+	option = {
+		name = "stt_flavor_sic.2.a"
+	}
+}
+#Remove check
+country_event = {
+	id = stt_flavor_sic.2
+	title = "stt_flavor_sic.2.t"
+	desc = "stt_flavor_sic.2.d"
+
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	hidden = yes	
+	
+	trigger = {
+	    tag = SIC
+		has_country_flag = stt_sic_check
+		OR = {
+			has_heir = yes 
+			has_regency = no 
+			NOT = { dynasty = "де Барселона" }
+			legitimacy = 50
+		}
+	}
+	
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	immediate = {
+		clr_country_flag = stt_sic_check
+	}
+	
+	option = {
+		name = "stt_flavor_sic.2.a"
+	}
+}
+
+#Aragon union
+country_event = {
+	id = stt_flavor_sic.3
+	title = "stt_flavor_sic.3.t"
+		
+	desc = {
+		trigger = {
+			has_regency = no
+		}
+		desc = stt_flavor_sic.3.da
+	}
+	desc = {
+		trigger = {
+			has_regency = yes
+		}
+		desc = stt_flavor_sic.3.db
+	}
+
+	picture = BAD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+	    tag = SIC
+		has_country_flag = stt_sic_check
+		OR = {
+			ARA = { dynasty = "де Барселона" }
+			marriage_with = ARA
+		}
+		OR = {
+			has_regency = no
+			AND = { has_regency = yes NOT = { heir_age = 10 } }
+		}
+	}
+			
+	immediate = {
+		clr_country_flag = stt_sic_check
+		set_country_flag = stt_sicara_union
+		every_country = { 
+			limit = { junior_union_with = SIC } 
+			break_union = SIC 
+		}
+		every_country = { 
+			limit = { war_with = SIC } 
+			white_peace = SIC 
+		}
+	}
+	option = {
+		name = "stt_flavor_sic.3.a"
+		ARA = { country_event = { id = stt_flavor_sic.4  } }
+	}
+}
+
+country_event = { 
+	id = stt_flavor_sic.4
+	title = "stt_flavor_sic.4.t"
+	
+	desc = {
+		trigger = {
+			SIC = { has_regency = no }
+		}
+		desc = stt_flavor_sic.3.da
+	}
+	desc = {
+		trigger = {
+			SIC = { has_regency = yes }
+		}
+		desc = stt_flavor_sic.3.db
+	}
+
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	major = yes 
+	
+	trigger = {
+	    tag = ARA
+	}
+			
+	option = {
+		name = "stt_flavor_sic.4.a"
+		ai_chance = { factor = 100 }
+		if = { 
+			limit = { SIC = { NOT = { num_of_cities = 10 } ai = yes } }
+			inherit = SIC random_owned_province = { limit = { is_core = SIC } nationalist_rebels = 1 }
+			else = { create_union = SIC random_owned_province = { limit = { is_core = SIC } pretender_rebels = 1 } }
+		}
+		add_prestige = 15
+		hidden_effect = { 
+			every_country = { 
+				limit = { has_casus_belli = { type = cb_restore_personal_union target = SIC } } 
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = SIC
+				} 
+			} 
+		}
+	}
+	option = {
+		name = "stt_flavor_sic.4.b"
+		ai_chance = { factor = 0 }
+		add_stability_or_adm_power = yes
+		add_prestige = -15
+		SIC = { define_ruler = { dynasty = "де Барселона" } }
+	}
+}

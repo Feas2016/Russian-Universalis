@@ -35,7 +35,6 @@ country_decisions = {
 				province_id = 419	# Yerevan
 				province_id = 2202	# Melikates
 				province_id = 2204	# Lomsia
-				province_id = 4302	# Manzikert
 				AND = {
                     province_id = 2306
                     ROOT = { NOT = { owns_core_province = 2307 } }
@@ -60,7 +59,6 @@ country_decisions = {
 			owns_core_province = 419	# Yerevan
 			owns_core_province = 2202	# Melikates
 			owns_core_province = 2204	# Lomsia
-			owns_core_province = 4302	# Manzikert
 			OR = {
 				owns_core_province = 2306 #Mush
 				owns_core_province = 2307 #Van

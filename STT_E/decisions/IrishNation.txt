@@ -36,10 +36,8 @@ country_decisions = {
 				province_id = 374			# Leinster
 				province_id = 375			# Munster
 				province_id = 376			# Connaught
-				province_id = 4118			# Desmond
-				province_id = 4119			# Sligo
-				province_id = 4120			# Kildare
-				province_id = 4121			# Ulster
+				province_id = 3626			# Desmond
+				province_id = 3275			# Sligo
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -53,7 +51,7 @@ country_decisions = {
 			owns = 374			# Leinster
 			owns = 375			# Munster
 			owns = 376			# Connaught
-### delete province what not use in mod
+			### delete province what not use in mod
 			owns = 3626	### STT	# Desmond
 			owns = 3275	### STT	# Sligo
 		}
@@ -77,6 +75,17 @@ country_decisions = {
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			every_province = { 
+				limit = { 
+					OR = {
+						munster_area
+						connacht_area
+						leinster_area
+						ulster_area
+					} 
+				}
+				add_core = IRE
 			}
 		}
 		ai_will_do = {

@@ -1793,7 +1793,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-	    months = 120
+	    months = 240
 		modifier = {
 			factor = 0.5
 			is_at_war = yes
@@ -1813,12 +1813,13 @@ country_event = {
 			every_owned_province = { 
 				limit = {
 					OR = {
-					area = south_kurdistan_area
-					area = armenia_area
-					area = azerbaijan_area
-					area = al_jazira_area
-					province_id = 331
-					province_id = 2307
+						area = south_kurdistan_area
+						area = armenia_area
+						area = azerbaijan_area
+						area = al_jazira_area
+						province_id = 331
+						province_id = 2307
+						province_id = 2204
 					}
 				} 
 			add_core = QAR
@@ -2088,8 +2089,14 @@ country_event = {
 	picture = RAMADAN_eventPicture
 		
 	trigger = {
-	    culture = turkish
-		any_owned_province = { OR = { culture = greek culture = armenian } region = anatolia_region is_core = ROOT }
+	    primary_culture = turkish
+		any_owned_province = { 
+			OR = { culture = greek culture = armenian }
+			NOT = { area = pontus_area }
+			NOT = { area = eastern_aegean_area }
+			region = anatolia_region 
+			is_core = ROOT 
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -2103,9 +2110,10 @@ country_event = {
 	    name = stt_flavor_horde.39.a
 		if = { 
 			limit = { any_owned_province = { OR = { culture = greek culture = armenian } area = cilicia_area } } 
-			random_owned_province = { limit = { OR = { culture = greek culture = armenian } area = cilicia_area } change_culture = turkish change_religion = sunni }  
-			else = { random_owned_province = { limit = { OR = { culture = greek culture = armenian } region = anatolia_region } change_culture = turkish change_religion = sunni } }
+			random_owned_province = { limit = { OR = { culture = greek culture = armenian } area = cilicia_area } change_culture = turkish change_religion = sunni add_base_tax = -1 }  
+			else = { random_owned_province = { limit = { OR = { culture = greek culture = armenian } region = anatolia_region NOT = { area = pontus_area } 	NOT = { area = eastern_aegean_area } } change_culture = turkish change_religion = sunni add_base_tax = -1 } }
 		}
+		random_province = { limit = { OR = { culture = greek culture = armenian } owner = { religion_group = christian } } add_base_tax = 1 }
 	}
 }
 
