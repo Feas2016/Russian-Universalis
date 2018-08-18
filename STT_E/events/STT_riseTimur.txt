@@ -1616,6 +1616,7 @@ country_event = { # Timur's real death
 	trigger = {
 		tag = TIM
 		NOT = { has_ruler = "Тимур" }
+		NOT = { dynasty = "Тимурид" }
 	}
 	
 	immediate = { 
