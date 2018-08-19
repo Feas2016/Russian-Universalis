@@ -1,0 +1,172 @@
+namespace = ragusa
+
+# Earthquake in Dubrovnik
+country_event = {
+	id = ragusa.1
+	title = "ragusa.1.t"
+	desc = "ragusa.1.d"
+	picture = BD_RAG_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ROOT = {
+			owns = 137
+		}
+		is_year = 1667
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "ragusa.1.a"
+		137 = {
+			add_base_production = -3
+			add_base_tax = -3
+			add_base_manpower = -3
+		}
+	}
+	option = {
+		name = "ragusa.1.b"
+		137 = {
+			add_base_production = -2
+			add_base_tax = -2
+			add_base_manpower = -2
+		}
+		add_treasury = -300
+	}
+}
+
+country_event = {
+	id = ragusa.2
+	title = "ragusa.2.t"
+	desc = "ragusa.2.d"
+	picture = BD_RAG_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = RAG
+		RAG = {
+			is_neighbor_of = TUR
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "ragusa.2.a"
+		add_prestige = -5
+		TUR = { country_event = { id = ragusa.3 } }
+	}
+		
+	option = {
+		name = "ragusa.2.b"
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = ragusa.3
+	title = "ragusa.3.t"
+	desc = "ragusa.3.d"
+	picture = BD_RAG_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "ragusa.3.a" 
+		add_trust = {
+			who = RAG
+			value = -25
+			mutual = yes
+		}
+		RAG = {
+			add_stability = -1
+		}
+	}
+	
+	option = {
+		name = "ragusa.3.b"
+		TUR = {
+			create_subject = {
+				subject_type = tributary_state
+				subject = RAG
+			}
+		}
+		RAG = { add_stability = 1 }
+	}
+}
+
+country_event = {
+	id = ragusa.4
+	title = "ragusa.4.t"
+	desc = "ragusa.4.d"
+	picture = BD_RAG_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1400.1.1
+		date < 1600.1.1
+		NOT = {
+			RAG = {
+				OR = {
+					primary_culture = croatian
+					primary_culture = serbian
+				}
+			}
+		}
+		NOT = {
+			TUR = {
+				OR = {
+					accepted_culture = croatian
+					accepted_culture = serbian
+				}
+			}
+		}
+		exists = TUR
+		NOT = {
+			OR = {
+				exists = SER
+				exists = CRO
+				exists = BOS
+			}
+		}
+	}
+	
+	option = {
+		name = "ragusa.4.a"
+		add_stability = -1
+		add_prestige = 10
+		add_base_tax = 1
+		add_base_manpower = 1
+	}
+	
+	option = {
+		name = "ragusa.4.b"
+		change_primary_culture = croatian
+		137 = { 
+			change_culture = croatian
+			add_base_tax = 2
+			add_base_manpower = 1
+		}
+		add_stability = -1
+	}
+	
+	option = {
+		name = "ragusa.4.c"
+		change_primary_culture = serbian
+		137 = {
+			change_culture = serbian
+			add_base_tax = 1
+			add_base_manpower = 2
+		}
+		add_stability = -1
+	}
+	
+}

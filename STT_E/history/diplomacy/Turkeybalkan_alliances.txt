@@ -278,29 +278,6 @@ vassal = {
 	end_date = 1699.1.1
 }
 
-# Ottoman vassal
-guarantee = { ### STT
-	first = TU0
-	second = RAG
-	start_date = 1444.1.1
-	end_date = 1453.5.29
-}
-
-# Ottoman vassal
-guarantee = { ### STT
-	first = TUR
-	second = RAG
-	start_date = 1453.5.29
-	end_date = 1528.1.1
-}
-
-vassal = {
-	first = TUR
-	second = RAG
-	start_date = 1528.1.1
-	end_date = 1806.1.1
-}
-
 # Ottoman vassal #STT RD
 vassal = {
 	first = TUR
@@ -315,4 +292,27 @@ vassal = {
 	second = CEP
 	start_date = 1799.3.1
 	end_date = 1807.7.7
+}
+
+# VEN vassal
+vassal = { ### STT
+	first = VEN
+	second = RAG
+	start_date = 1309.1.1
+	end_date = 1358.1.1
+}
+
+guarantee = { ### STT
+	first = HUN
+	second = RAG
+	start_date = 1358.1.1
+	end_date = 1458.1.1
+}
+
+dependency = {
+	subject_type = "tributary_state"
+	first = TUR
+	second = RAG
+	start_date = 1458.1.1
+	end_date = 1806.1.1
 }

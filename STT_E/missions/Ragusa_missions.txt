@@ -1,0 +1,217 @@
+diplomatic_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = RAG
+	}
+	has_country_shield = yes
+	
+	indepedence_from_venice = {
+		icon = mission_cannons_firing
+		required_missions = { }
+		position = 1
+		completed_by = 1358.1.1
+		
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		
+		effect = {
+			add_prestige = 5
+		}
+	}
+	
+	hungary_relationship = {
+		icon = RAG_hun
+		required_missions = { indepedence_from_venice }
+		position = 2
+		
+		trigger = {
+			HUN = {
+				has_opinion = {
+					who = RAG
+					value = 50
+				}	
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_trust = {
+				who = HUN
+				value = 5
+				mutual = yes
+			}
+		}
+	}
+	
+	serbia_relationship = {
+		icon = RAG_ser
+		required_missions = { hungary_relationship }
+		position = 3
+		
+		trigger = {
+			SER = {
+				has_opinion = {
+					who = RAG
+					value = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_trust = {
+				who = SER
+				value = 5
+				mutual = yes
+			}
+		}
+	}
+	
+	turkey_relationship = {
+		icon = RAG_tur
+		required_missions = { serbia_relationship }
+		position = 4
+		
+		trigger = {
+			TUR = {
+				has_opinion = {
+					who = RAG
+					value = 50
+				}
+			}
+		}
+		
+		effect = {
+			add_prestige = 5
+			add_trust = {
+				who = TUR
+				value = 5
+				mutual = yes
+			}
+		}
+	}
+	
+	turkey_alliance = {
+		icon = mission_alliances
+		required_missions = { turkey_relationship }
+		position = 5
+		
+		trigger = {
+			alliance_with = TUR
+		}
+		
+		effect = {
+			add_stability = 1
+		}
+	}
+}
+
+war_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = RAG
+	}
+	has_country_shield = yes
+	
+	venice_fleet = {
+		icon = mission_establish_high_seas_navy
+		required_missions = {  }
+		position = 1
+		
+		trigger = {
+			navy_size = VEN
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}
+		}
+	}
+
+	build_fleet = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { indepedence_from_venice }
+		position = 2
+		
+		trigger = {
+			light_ships = 6
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			136 = { add_claim = RAG }
+		}
+	}
+	
+	dalmatia = {
+		icon = mission_cannons_firing
+		required_missions = { build_fleet }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 136
+		}
+		
+		trigger = {
+			RAG = { owns = 136 }
+		}
+		
+		effect = {
+			3031 = { add_claim = RAG }
+			3032 = { add_claim = RAG }
+		}
+	}
+	
+	cattaro = {
+		icon = mission_cannons_firing
+		required_missions = { dalmatia }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 3031
+			province_id = 3032
+		}
+		
+		trigger = {
+			RAG = { owns = 3031 }
+			RAG = { owns = 3032 }
+		}
+		
+		effect = {
+			130 = { add_claim = RAG }
+			112 = { add_claim = RAG }
+		}
+	}
+	
+	venice = {
+		icon = mission_cannons_firing
+		required_missions = { cattaro }
+		position = 5
+		
+		provinces_to_highlight = {
+			province_id = 130
+			province_id = 112
+		}
+		
+		trigger = {
+			RAG = { owns = 130 }
+			RAG = { owns = 112 }
+		}
+		
+		effect = {
+			add_prestige = 20
+		}
+	}
+
+}
+	
