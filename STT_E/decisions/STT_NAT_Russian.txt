@@ -14,6 +14,21 @@ country_decisions = {
 			government = rus_government
 			government_rank = 2
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295	# Moskva
+				province_id = 310	# Novgorod
+				province_id = 301	# Ryazan
+				province_id = 314	# Vologda
+				province_id = 294	# Tver
+				province_id = 308	# Yaroslavl
+				province_id = 306	# Nijni-Novgorod
+				province_id = 1079	# Vyatka
+				province_id = 274	# Pscov
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			adm_tech = 7
 			is_free_or_tributary_trigger = yes
@@ -28,8 +43,8 @@ country_decisions = {
 			OR = {
 				owns_core_province = 1079		# Vyatka
 				owns_core_province = 274		# Pscov
-				}
 			}
+		}
 		effect = {
 			add_prestige = 25
 			change_tag = TSR
@@ -112,6 +127,18 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 310	# Novgorod
+				province_id = 314	# Vologda
+				province_id = 294	# Tver
+				province_id = 308	# Yaroslavl
+				province_id = 275	# Polotsk
+				province_id = 274	# Pskov
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			adm_tech = 8
 			is_free_or_tributary_trigger = yes
@@ -123,8 +150,8 @@ country_decisions = {
 				owns = 308		# Yaroslavl	
 			}
 			OR = {
-				owns = 274		# Pskov
 				owns = 275		# Polotsk
+				owns = 274		# Pskov
 			}			
 		}
 		effect = {
@@ -187,6 +214,20 @@ country_decisions = {
 					num_of_cities = 3
 				}
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 295	# Moskva
+				province_id = 310	# Novgorod
+				province_id = 294	# Tver
+				province_id = 308	# Yaroslavl
+				province_id = 301	# Ryazan
+				province_id = 293	# Smolensk
+				province_id = 274	# Pskov
+				province_id = 307	# Vladimir
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
 		}
 		allow = {
 			adm_tech = 12

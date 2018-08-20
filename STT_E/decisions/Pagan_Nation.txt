@@ -9,6 +9,21 @@ country_decisions = {
 			}
 			NOT = { is_year = 1450 }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 582
+				province_id = 585
+				province_id = 588
+				province_id = 2399
+				province_id = 3451
+				province_id = 586
+				province_id = 1815
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
 			NOT = { exists = PAG }

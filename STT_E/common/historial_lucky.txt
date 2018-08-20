@@ -21,7 +21,9 @@ TUR = {
 }
 
 TU0 = {
-	always = yes
+	NOT = { 
+		exists = TUR
+	}
 } #NewOsmans
 
 RUS = {
@@ -53,7 +55,7 @@ HAB = {
 }
 
 PRU = {
-	is_year = 1700
+	is_year = 1650
 }
 
 NED = {
@@ -80,10 +82,37 @@ POL = {
 	}
 }
 
-
-
 PLC = {
 	NOT = { 
 		is_year = 1700
 	}
+}
+
+LIT = { #STT 
+	NOT = { 
+		junior_union_with = POL
+		senior_union_with = POL
+		is_year = 1450
+		total_development = 500
+	}
+}
+
+BUR = { 
+	NOT = {
+		total_development = 200
+		num_of_unions = 2
+		is_year = 1444
+	}
+}
+
+GLH = {
+	NOT = { is_year = 1340 }
+}
+
+AZT = { always = yes }
+
+CSU = { always = yes }
+
+PAP = { 
+	NOT = { num_of_cities = 10 }
 }

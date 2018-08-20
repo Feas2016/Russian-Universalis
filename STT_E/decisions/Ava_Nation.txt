@@ -8,6 +8,18 @@ country_decisions = {
 			NOT = { exists = AVA }
 			NOT = { is_year = 1500 }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 584
+				province_id = 585
+				province_id = 581
+				province_id = 2399
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_at_war = no
 			NOT = { exists = SIQ }
@@ -43,6 +55,17 @@ country_decisions = {
 			is_year = 1363
 			NOT = { exists = AVA }
 			NOT = { is_year = 1500 }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3458
+				province_id = 3459
+				province_id = 581
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
 			is_at_war = no

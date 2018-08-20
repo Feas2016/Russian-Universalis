@@ -12,8 +12,11 @@ delhi_disaster = {
 
 	can_start = {
 		OR = { NOT = { legitimacy = 90 } war_with = TIM }
-		OR = { 
-			war_with = TIM
+		OR = {
+			war_score_against = {
+				who = TIM
+				value = -25
+			}
 		    war_exhaustion = 2
 		    num_of_owned_provinces_with = {
 			    value = 10

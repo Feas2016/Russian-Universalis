@@ -1,6 +1,119 @@
 # Achievements
 
+
+#Easy
+
+stt_achievements_hab_swiss = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = HAB
+		start_date = 1309.3.9
+		normal_or_historical_nations = yes
+		switzerland_area = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		romandie_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+}
+
+stt_achievements_hab_australia = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = HAB
+		normal_or_historical_nations = yes
+		australia_region = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+}
+
+#Medium
+
+stt_achievements_habsburger = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = HAB
+		normal_or_historical_nations = yes
+		production_leader = { trade_goods = grain }
+		production_leader = { trade_goods = spices }
+		production_leader = { trade_goods = livestock }
+	}
+}
+
+stt_achievements_charstvo_litovskoe = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = LIT
+		religion = orthodox
+		government_rank = 2
+		start_date = 1309.3.9
+		normal_or_historical_nations = yes
+		russia_region = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+}
+
+stt_achievements_lit_grekcatholic = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = LIT
+		normal_or_historical_nations = yes
+		religion = catholic
+		ruthenia_region = { 
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+			religion = grekocatholic
+		}
+	}
+}
+
 #Hard
+
+stt_achievements_hab_unite = {
+	potential = {
+		has_global_flag = stt_achievements
+		ironman = yes
+		normal_province_values = yes
+		ai = no
+	}
+	trigger = {
+		tag = HAB
+		normal_or_historical_nations = yes
+		all_country = { capital_scope = { continent = europe } religion_group = christian dynasty = HAB }
+	}
+}
 
 stt_achievements_turok_1309 = {
 	potential = {

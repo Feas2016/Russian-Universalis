@@ -6,6 +6,13 @@ country_decisions = {
 			NOT = { capital = 141 } #STT
 			NOT = { has_country_flag = moved_capital_to_belgrade }
 		}
+		provinces_to_highlight = {
+			province_id = 141 #STT 
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			owns_core_province = 141 #STT
 			stability = 1

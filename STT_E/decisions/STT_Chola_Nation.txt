@@ -14,6 +14,17 @@ country_decisions = {
 			NOT = { exists = CLH }
 			religion = hinduism
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3417
+				province_id = 2101
+				province_id = 2026
+				province_id = 3401
+				province_id = 536
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			NOT = { is_year = 1400 }
 			is_subject = no

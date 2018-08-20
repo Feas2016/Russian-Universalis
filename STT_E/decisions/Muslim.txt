@@ -12,6 +12,25 @@ country_decisions = {
 			}
 			NOT = { exists = ISL }	###STT
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 504
+				province_id = 225
+				province_id = 151
+				province_id = 410
+				province_id = 385
+				province_id = 384
+				province_id = 124
+				province_id = 125
+				province_id = 425
+				province_id = 382
+				province_id = 454
+				province_id = 347
+				province_id = 388
+				province_id = 400
+			}
+			NOT = { country_or_vassal_holds = ROOT }
+		}
 		allow = {
 			religion_group = muslim
 			owns_or_vassal_of = 504

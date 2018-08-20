@@ -15,21 +15,36 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 530
+                province_id = 2030
+                province_id = 531
+				province_id = 2032
+                province_id = 3416
+				province_id = 3419
+				province_id = 541
+				province_id = 532
+				province_id = 2090
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			adm_tech = 5
 			is_subject = no
 			is_at_war = no
 			is_year = 1350
 			NOT = { exists = VIJ }
-                        owns_core_province = 530
-                        owns_core_province = 2030
-                        owns_core_province = 531
-						owns_core_province = 2032
-                        owns_core_province = 3416
-						owns_core_province = 3419
-						owns_core_province = 541
-						owns_core_province = 532
-						owns_core_province = 2090
+            owns_core_province = 530
+            owns_core_province = 2030
+            owns_core_province = 531
+			owns_core_province = 2032
+            owns_core_province = 3416
+			owns_core_province = 3419
+			owns_core_province = 541
+			owns_core_province = 532
+			owns_core_province = 2090
 		}
 	 	effect = {
 			change_tag = VIJ

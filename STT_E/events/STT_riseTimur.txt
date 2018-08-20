@@ -23,7 +23,7 @@ country_event = { #birth of timur
 	}
 	
 	mean_time_to_happen = {
-	    months = 350
+	    months = 300
 		modifier = {
 		    factor = 0.5
 			is_year = 1340
@@ -635,7 +635,7 @@ country_event = { # 2st conquest # bb KRT #Kartids
 	
 	immediate = {
 		hidden_effect = {
-			if = { limit = { ai = yes } add_war_exhaustion = -10  }
+			if = { limit = { ai = yes } add_war_exhaustion = -10 add_treasury = 1000 create_general = 100 }
 		}
 	}	
 						
@@ -664,6 +664,7 @@ country_event = { # 3th conquest # bb TAB and KRY
 			has_country_modifier = stt_timur_wartime_1
 			has_global_flag = timur_rules
 		}
+		is_at_war = no
 		NOT = { war_with = TAB }
 		SDB = { exists = no }
 		TAB = { exists = yes }
@@ -682,8 +683,14 @@ country_event = { # 3th conquest # bb TAB and KRY
 						
 	option = {
 	    name = stt_rise_timur.16.a
+		ai_chance = { factor = 99 }	
 		declare_war_with_cb = { who = TAB casus_belli = cb_imperial }
 		if = { limit = { NOT = { TAB = { vassal_of = TIM } } } declare_war_with_cb = { who = KRY casus_belli = cb_imperial } }	
+	}
+	option = {
+	    name = stt_rise_timur.23.f
+		ai_chance = { factor = 1 }	
+		add_prestige = 1
 	}
 }
 
@@ -706,7 +713,6 @@ country_event = { # conquest Mogulistan
 			has_ruler = "Тимур"
 		}
 		NOT = { is_year = 1420 }
-		is_at_war = no
 		CHG = { exists = yes }
 		NOT = { CHG = { vassal_of = TIM } }
 	}
@@ -723,7 +729,7 @@ country_event = { # conquest Mogulistan
 						
 	option = {
 	    name = stt_rise_timur.17.a
-		declare_war_with_cb = { who = CHG casus_belli = cb_vassalize_mission }
+		add_casus_belli = { target = CHG type = cb_vassalize_mission months = 600 }
 	}
 }
 
@@ -893,6 +899,7 @@ country_event = { # conquest begin
 	fire_only_once = yes
 			
 	trigger = {
+		is_at_war = no
 		tag = TIM
 		had_country_flag = { flag = timur_prepare_conquest1 days = 30 }
 	}
@@ -913,7 +920,9 @@ country_event = { # conquest begin
 	option = {
 	    name = stt_rise_timur.20.a
 		persia_region = { add_permanent_claim = ROOT }
-		every_country = { limit = { has_country_flag = timur_persia_target } reverse_add_casus_belli = { target = TIM type = cb_horde_vs_civ months = 600 } }
+		mashriq_region = { add_permanent_claim = ROOT }
+		add_army_tradition = 20
+		create_general = 100
 	}
 } 
 
@@ -927,6 +936,7 @@ country_event = { # conquest MUZ or other
 	fire_only_once = yes
 			
 	trigger = {
+		is_at_war = no
 		tag = TIM
 		had_country_flag = { flag = timur_prepare_conquest1 days = 30 }
 		MUZ = { exists = yes }
@@ -938,7 +948,13 @@ country_event = { # conquest MUZ or other
 								
 	option = {
 	    name = stt_rise_timur.21.a
+		ai_chance = { factor = 99 }
 		declare_war_with_cb = { who = MUZ casus_belli = cb_imperial } 
+	}
+	option = {
+	    name = stt_rise_timur.23.f
+		ai_chance = { factor = 1 }	
+		add_prestige = 1
 	}
 }
 
@@ -950,18 +966,16 @@ country_event = { # conquest all persia
 	picture = RAMADAN_eventPicture
 			
 	trigger = {
+		is_at_war = no
 		tag = TIM
 		had_country_flag = { flag = timur_prepare_conquest1 days = 365 }
 		any_country = { has_country_flag = timur_persia_target }
 		MUZ = { exists = no }
+		ai = yes
 	}
 	
 	mean_time_to_happen = {
 	    months = 1
-		modifier = {
-			factor = 12
-			is_at_war = yes
-		}
 	}
 							
 	option = {
@@ -1008,6 +1022,7 @@ country_event = { # choose next conquest
 		hidden_effect = { 
 			remove_country_modifier = stt_timur_wartime_1 remove_country_modifier = stt_timur_wartime_2 remove_country_modifier = stt_timur_wartime_3
 			if = { limit = { ai = yes NOT = { has_country_modifier = stt_timur_army } } add_country_modifier = { name = stt_timur_army duration = -1 } }
+			if = { limit = { ai = yes } add_manpower = 25 add_treasury = 1000 add_mil_power = 500 add_stability = 3 add_war_exhaustion = -20 }
 			every_province = {
 			    limit = {
 				    OR = {
@@ -1488,7 +1503,8 @@ country_event = { # go China
 	trigger = {
 		tag = TIM
 		has_ruler = "Тимур" 
-		NOT = { is_year = 1420 }
+		NOT = { is_year = 1420 } 
+		is_at_war = no
 		OR = {
 			AND = {
 				has_country_flag = timur_go_DLH
@@ -1531,6 +1547,7 @@ country_event = { # Timur's death
 			
 	option = {
 	    name = stt_rise_timur.32.a
+		ai_chance = { factor = 1 }
 		if = { 
 			limit = { NOT = { total_development = 250 } } 
 			random_list = { 
@@ -1545,7 +1562,7 @@ country_event = { # Timur's death
 			}
 		}
 		if = { 
-			limit = { total_development = 250 NOT = { total_development = 500 } ai = no } 
+			limit = { total_development = 250 NOT = { total_development = 500 } } 
 			random_list = { 
 				75 = { 
 					custom_tooltip = timur_live_tooltip 
@@ -1558,20 +1575,7 @@ country_event = { # Timur's death
 			}
 		}
 		if = { 
-			limit = { total_development = 250 NOT = { total_development = 500 } ai = yes } 
-			random_list = { 
-				90 = { 
-					custom_tooltip = timur_live_tooltip 
-					hidden_effect = { 
-						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
-						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 50 }
-					}
-				}
-				10 = { custom_tooltip = stt_rise_timur.32_tooltip country_event = { id = stt_rise_timur.33 } }
-			}
-		}
-		if = { 
-			limit = { total_development = 500 NOT = { total_development = 1000 } ai = no } 
+			limit = { total_development = 500 NOT = { total_development = 1000 } } 
 			random_list = { 
 				50 = {
 					custom_tooltip = timur_live_tooltip 
@@ -1584,7 +1588,44 @@ country_event = { # Timur's death
 			}
 		}
 		if = { 
-			limit = { total_development = 500 NOT = { total_development = 1000 } ai = yes } 
+			limit = { total_development = 1000 } 
+			custom_tooltip = stt_rise_timur.32_tooltip
+			country_event = { id = stt_rise_timur.33 }			
+		}	
+	}
+	
+	option = {
+	    name = stt_rise_timur.32.a
+		ai_chance = { factor = 99 }
+		trigger = { ai = yes }
+		if = { 
+			limit = { NOT = { total_development = 250 } } 
+			random_list = { 
+				99 = { 
+					custom_tooltip = timur_live_tooltip 
+					hidden_effect = { 
+						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
+						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 45 }
+					}
+				}
+				1 = { custom_tooltip = stt_rise_timur.32_tooltip country_event = { id = stt_rise_timur.33 } }
+			}
+		}
+		if = { 
+			limit = { total_development = 250 NOT = { total_development = 500 } } 
+			random_list = { 
+				90 = { 
+					custom_tooltip = timur_live_tooltip 
+					hidden_effect = { 
+						define_general = { name = "Тимур Тимурид" fire = 4 shock = 8 manuever = 6 siege = 3 } 
+						define_ruler = { name = "Тимур" dynasty = "Тимурид" dip = 6 mil = 6 adm = 6 attach_leader = "Тимур Тимурид" age = 50 }
+					}
+				}
+				10 = { custom_tooltip = stt_rise_timur.32_tooltip country_event = { id = stt_rise_timur.33 } }
+			}
+		}
+		if = { 
+			limit = { total_development = 500 NOT = { total_development = 1000 } } 
 			random_list = { 
 				65 = {
 					custom_tooltip = timur_live_tooltip 
@@ -1616,7 +1657,6 @@ country_event = { # Timur's real death
 	trigger = {
 		tag = TIM
 		NOT = { has_ruler = "Тимур" }
-		NOT = { dynasty = "Тимурид" }
 	}
 	
 	immediate = { 
@@ -1956,10 +1996,6 @@ country_event = { # Shahruh
 					name = "Улугбек"
 					dynasty = "Тимурид"
 					claim = 50
-					adm = 3
-					dip = 5
-					mil = 4
-					fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = scholar_personality
@@ -1971,10 +2007,6 @@ country_event = { # Shahruh
 					dynasty = "Тимурид"
 					age = 0
 					claim = 95
-					adm = 3
-					dip = 4
-					mil = 2
-					fixed = yes
 				}
 			}
 			KHO = {
@@ -1982,12 +2014,8 @@ country_event = { # Shahruh
 				define_ruler = { 
 					name = "Бабур ибн-Байсункур"
 					dynasty = "Тимурид"
-					adm = 3
-					dip = 5
-					mil = 5
 					culture = uzbehk
 					religion = sunni
-					fixed = yes
 				}
 				clear_scripted_personalities = yes
 				add_ruler_personality = bold_fighter_personality
@@ -2002,7 +2030,7 @@ country_event = { # Shahruh
 					name = "Карачар ибн Суюргатмыш"
 					culture = uzbehk
 					dynasty = "Тимурид"
-					}
+				}
 			}
 			FRS = {
 				define_ruler = { dynasty = "Тимурид" culture = uzbehk }
@@ -2012,6 +2040,48 @@ country_event = { # Shahruh
 				define_ruler = { dynasty = "Тимурид" culture = uzbehk }
 				define_heir = { culture = uzbehk dynasty = "Тимурид" }
 			}
+		}
+	}
+}
+
+country_event = { # AI IS COOL
+	id = stt_rise_timur.36
+	title = "stt_rise_timur.36.t"
+	desc = "stt_rise_timur.36.d"
+
+	picture = RAMADAN_eventPicture
+	fire_only_once = yes
+			
+	trigger = {
+		tag = TIM
+		has_ruler = "Тимур" 
+		ai = yes
+		had_country_flag = { flag = timur_rules days = 3650 }
+		NOT = { mashriq_region = { owned_by = TIM type = all } }
+		NOT = { has_country_flag = timur_death }
+		NOT = { is_year = 1415 }
+		NOT = { total_development = 800 }
+	}
+	
+	mean_time_to_happen = {
+	    months = 1
+	}
+		
+	option = {
+	    name = stt_rise_timur.36.a
+		every_province = { 
+			limit = { 
+				OR = { 
+					region = persia_region 
+					region = khorasan_region 
+					area = rakka_area
+					area = al_jazira_area
+					area = iraq_arabi_area
+					area = basra_area
+				} 
+				owner = { ai = yes }
+			}
+			add_core = TIM cede_province = TIM
 		}
 	}
 }

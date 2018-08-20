@@ -11,7 +11,10 @@ golden_horde_disaster = {
 	can_start = {
 		NOT = { horde_unity = 80 }
 		OR = {
-			war_with = TIM
+			war_score_against = {
+				who = TIM
+				value = -25
+			}
 		    war_exhaustion = 5
 		    num_of_owned_provinces_with = {
 			    value = 15

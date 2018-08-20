@@ -1,8 +1,9 @@
 # 2122 - Hami
 
-owner = YUA
-controller = YUA
-add_core = YUA
+owner = CGU
+controller = CGU
+add_core = CGU
+add_core = CHG
 culture = oirats
 religion = vajrayana
 capital = "Hami"
@@ -15,7 +16,7 @@ is_city = yes
 discovered_by = chinese
 discovered_by = nomad_group
 
-
+1340.1.1 = { owner = CHG controller = CHG remove_core = CGU }
 1368.1.1 = { owner = HMI controller = HMI remove_core = YUA add_core = HMI }
 1473.1.1 = {
 	owner = CHG

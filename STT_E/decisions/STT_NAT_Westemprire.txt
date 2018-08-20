@@ -11,63 +11,124 @@ country_decisions = {
 			    tag = LOR
 			    tag = AAC
 			}
-			NOT = { is_year = 1680 }
+			NOT = { is_year = 1650 }
 		}
-		allow = { OR = {
-			AND = { tag = FRA 
-				NOT = { exists = BUR }
-				NOT = { exists = LOR }
-				NOT = { exists = AAC }
-				}
-			AND = { tag = BUR 
-				NOT = { exists = FRA }
-				NOT = { exists = LOR }
-				NOT = { exists = AAC }
-				}
-			AND = { tag = LOR
-				NOT = { exists = BUR }
-				NOT = { exists = FRA }
-				NOT = { exists = AAC }
-				}
-			AND = { tag = AAC 
-				NOT = { exists = BUR }
-				NOT = { exists = LOR }
-				NOT = { exists = FRA }
-				}
-				}
-			NOT = { is_year = 1680 }	
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183   #Paris
+				province_id = 1878  #Axen
+				province_id = 189   #Lotaringia
+				province_id = 192   #Burgundy
+				province_id = 134   #Vien
+				province_id = 70 	#Vurtemberg
+				province_id = 75    #Elsas
+				province_id = 174 	#Guscony
+				province_id = 201   #Provence
+				province_id = 100   #Frisland
+				province_id = 65 	#Munhen
+				province_id = 2957 	#Regensburg (Bavaria)
+				province_id = 78 	#Mainz
+				province_id = 118   #Rome
+				province_id = 116   #Florencia
+				province_id = 104   #Milan
+			}
+			NOT = { country_or_vassal_holds = ROOT }
+		}
+		allow = { 
+			NOT = { is_year = 1650 }
 			government = monarchy
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			france_region = { type = all country_or_vassal_holds = ROOT }
-			lombardy_area = { type = all country_or_vassal_holds = ROOT }
-			liguria_area = { type = all country_or_vassal_holds = ROOT }
-			piedmont_area = { type = all country_or_vassal_holds = ROOT }
-			emilia_romagna_area = { type = all country_or_vassal_holds = ROOT }
-			venetia_area = { type = all country_or_vassal_holds = ROOT }
-			central_italy_area = { type = all country_or_vassal_holds = ROOT }
-			tuscany_area = { type = all country_or_vassal_holds = ROOT }
-			low_countries_region = { type = all country_or_vassal_holds = ROOT }	
-			south_german_region = { type = all country_or_vassal_holds = ROOT }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = stt_not_exists_hre
+					NOT = { hre_size = 1 }
+				}
+				all_elector = { vassal_of = ROOT }
+				is_emperor = yes
+			}
+			owns_core_province = 183  #Paris
+			owns_core_province = 1878 #Axen
+			owns_core_province = 189  #Lotaringia
+			owns_core_province = 192  #Burgundy
+			134 = { country_or_vassal_holds = ROOT } #Vien
+			70 = { country_or_vassal_holds = ROOT } #Vurtemberg
+			75 = { country_or_vassal_holds = ROOT } #Elsas
+			116 = { country_or_vassal_holds = ROOT } #Florencia
+			104 = { country_or_vassal_holds = ROOT } #Milan
+			174 = { country_or_vassal_holds = ROOT } #Guscony
+			201 = { country_or_vassal_holds = ROOT } #Provence
+			100 = { country_or_vassal_holds = ROOT } #Frisland
+			65 = { country_or_vassal_holds = ROOT } #Munhen
+			2957 = { country_or_vassal_holds = ROOT } #Regensburg (Bavaria)
+			OR = {
+				78 = { country_or_vassal_holds = ROOT } #Mainz
+				1876 = { country_or_vassal_holds = ROOT } #Franfurkt
+			}
+			OR = { 
+				118 = { country_or_vassal_holds = ROOT } #Rome
+				is_papal_controller = yes
+			}
+			num_of_owned_provinces_with = { region = france_region value = 35 }
+			num_of_owned_provinces_with = { region = south_german_region value = 20 }
+			num_of_owned_provinces_with = { region = low_countries_region value = 10 }
+			num_of_owned_provinces_with = { province_group = north_italy_region value = 10 }
 		}
 		effect = {
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_claim = WEK
+				add_permanent_claim = WEK
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = WEK
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = WEK
+			}
+			low_countries_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = WEK
+			}
+			north_italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_core = WEK
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 25
 			change_tag = WEK
 			set_capital = 1878
 			country_event = { id = ideagroups.1 } #Swap Ideas
 			dismantle_hre = yes
 			set_government_rank = 3
-			add_legitimacy = 50
+			add_prestige = 100
+			add_legitimacy = 100
+			add_accepted_culture = swiss
+			add_accepted_culture = bavarian
+			add_accepted_culture = swabian
+			add_accepted_culture = austrian
+			add_accepted_culture = lombard
+			add_accepted_culture = piedmontese
+			add_accepted_culture = venetian
+			add_accepted_culture = ligurian
+			add_accepted_culture = romagnan
+			add_accepted_culture = flemish
+			add_accepted_culture = dutch
+			add_accepted_culture = hessian
+			add_accepted_culture = hannoverian
 		}
 		ai_will_do = {
 			factor = 1

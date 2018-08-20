@@ -13,6 +13,21 @@ country_decisions = {
 			num_of_cities = 5
 			NOT = { government = theocracy }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 73	# Tirol
+				province_id = 128	# Karnten
+				province_id = 132	# Steiermark
+				province_id = 133	# Linz
+				province_id = 134	# Wien
+				province_id = 1770	# Ostmarch
+				province_id = 1863	# Graz
+				province_id = 266	# Bohemia
+				province_id = 265	# Moravia
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			adm_tech = 22
 			is_free_or_tributary_trigger = yes
@@ -28,16 +43,13 @@ country_decisions = {
 			owns_core_province = 1863	# Graz
 			owns_core_province = 266	# Bohemia
 			owns_core_province = 265	# Moravia
-			}
+		}
 		effect = {
-		random_owned_province = {
+			random_owned_province = {
 				limit = {
-					OR = {
-						religion = catholic
-						religion = protestant
-					}
+					is_capital = yes
 				}
-				add_base_tax = 1
+				add_base_tax = 1 add_base_production = 1 add_base_manpower = 1 
 			}
 			austria_proper_area = {
 				limit = {

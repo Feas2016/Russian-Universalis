@@ -10,6 +10,11 @@ country_decisions = {
 			NOT = { exists = HLR }
 			NOT = { has_country_flag = volga_germans }
 		}
+		provinces_to_highlight = {
+			province_id = 2418 #Pokrovsk
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -82,10 +87,37 @@ country_decisions = {
 				tag = LUS
 				tag = KSB
 			}
-			adm_tech = 10
 			NOT = { exists = PLA }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 43 			
+				province_id = 45 
+				province_id = 46 
+				province_id = 47 
+				province_id = 48 
+				province_id = 49 
+				province_id = 50 
+				province_id = 51 
+				province_id = 52 
+				province_id = 53 
+				province_id = 58 
+				province_id = 59 
+				province_id = 60 
+				province_id = 61 
+				province_id = 62 
+				province_id = 63 
+				province_id = 1759 
+				province_id = 1763 
+				province_id = 1775 
+				province_id = 1857 
+				province_id = 1858 
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 43 			
@@ -117,7 +149,15 @@ country_decisions = {
 				duration = 7300
 			}
 			change_tag = PLA
-			#culture_group_union = west_slavic
+			add_accepted_culture = moravian
+			add_accepted_culture = slovak
+			add_accepted_culture = polish
+			add_accepted_culture = obodrit
+			add_accepted_culture = kashubian
+			add_accepted_culture = mazovian
+			add_accepted_culture = sorbian
+			add_accepted_culture = schlesian
+			add_accepted_culture = czech
 		}
 		ai_will_do = {
 			factor = 1
@@ -135,11 +175,27 @@ country_decisions = {
 					tag = ALB 
 				}
 			}
-			adm_tech = 10
 			NOT = { exists = ILR }
 			NOT = { exists = YUG }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 130
+				province_id = 129
+				province_id = 1826
+				province_id = 1828
+				province_id = 138 
+				province_id = 136 
+				province_id = 131 
+				province_id = 1769 
+				province_id = 137
+				province_id = 139 
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 130
@@ -160,7 +216,11 @@ country_decisions = {
 				duration = 7300
 			}
 			change_tag = ILR
-			#culture_group_union = south_slavic
+			add_accepted_culture = croatian
+			add_accepted_culture = slovene
+			add_accepted_culture = serbian
+			add_accepted_culture = bosnian
+			add_accepted_culture = bulgarian
 		}
 		ai_will_do = {
 			factor = 1
@@ -174,10 +234,27 @@ country_decisions = {
 				tag = SLK
 				tag = SIL
 			}
-			adm_tech = 15
 			NOT = { has_country_flag = czh_union }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 266
+				province_id = 265
+				province_id = 1763
+				province_id = 2966
+				province_id = 263 
+				province_id = 2967 
+				province_id = 154
+				province_id = 1318 
+				province_id = 2963
+				province_id = 43 
+				province_id = 259 
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
+			adm_tech = 15
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 266
@@ -198,8 +275,16 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			#culture_group_union = west_slavic
 			set_country_flag = czh_union
+			add_accepted_culture = moravian
+			add_accepted_culture = slovak
+			add_accepted_culture = polish
+			add_accepted_culture = obodrit
+			add_accepted_culture = kashubian
+			add_accepted_culture = mazovian
+			add_accepted_culture = sorbian
+			add_accepted_culture = schlesian
+			add_accepted_culture = czech
 		}
 		ai_will_do = {
 			factor = 1
@@ -208,10 +293,27 @@ country_decisions = {
 	celtic_union = {
 		potential = {
 			culture_group = gaelic
-			adm_tech = 10
 			NOT = { has_country_flag = celtic_union }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 252
+				province_id = 373
+				province_id = 372
+				province_id = 170
+				province_id = 233 
+				province_id = 242 
+				province_id = 241
+				province_id = 250 
+				province_id = 375
+				province_id = 172 
+				province_id = 169  
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 252
@@ -232,7 +334,12 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			#culture_group_union = gaelic
+			add_accepted_culture = scottish
+			add_accepted_culture = breton
+			add_accepted_culture = welsh
+			add_accepted_culture = cornish
+			add_accepted_culture = irish
+			add_accepted_culture = highland_scottish
 			set_country_flag = celtic_union
 		}
 		ai_will_do = {

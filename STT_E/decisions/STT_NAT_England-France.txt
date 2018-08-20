@@ -11,6 +11,14 @@ country_decisions = {
 			}
 			NOT = { is_year = 1600 }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 236		# London
+				province_id = 183		# Paris
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 		    NOT = { is_year = 1600 }
 			is_free_or_tributary_trigger = yes

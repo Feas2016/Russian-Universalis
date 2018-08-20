@@ -5,16 +5,36 @@ jagiellon = {
 	major = yes
 	potential = {
 		NOT = { exists = JAG }
+		NOT = { tag = PLC }
 		is_free_or_tributary_trigger = yes
 		OR = {
 			tag = LIT
 			tag = POL
 			tag = HUN
 			tag = BOH
-			tag = PLC
+			dynasty = "√едиминович"
+			dynasty = "ягеллон"
 		}
-	}        
+	}
+	provinces_to_highlight = {
+		OR = {
+			province_id = 257 #Warszawa
+			province_id = 272 #Vilna
+			province_id = 262 #Krakow
+			province_id = 260 #Lubava
+			province_id = 266 #Bohemia
+			province_id = 153 #Pest
+			province_id = 276 #Minsk
+			province_id = 280 #Kiev
+			province_id = 290 #Poltava
+		}
+		NOT = { country_or_vassal_holds = ROOT }
+	}
 	allow = {
+		OR = { 
+			dynasty = "√едиминович"
+			dynasty = "ягеллон"
+		}
 		adm_tech = 15
 		NOT = { exists = JAG }
 		is_free_or_tributary_trigger = yes

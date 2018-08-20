@@ -19,7 +19,10 @@ country_event = {
 		POL = {
 			exists = yes
 			is_free_or_tributary_trigger = yes
-			has_regency = yes
+			OR = {
+				dynasty = LIT
+				has_regency = yes
+			}
 		}
 		NOT = { is_year = 1450 }
 	}
@@ -46,10 +49,19 @@ country_event = {
 			factor = 90 
 		}
 		add_prestige = 5
-		POL = { 
-			create_union = ROOT
-			country_event = { days = 5 id = stt_pol.2 }
+		if = { 
+			limit = { ai = yes } 
+			POL = { 
+				create_union = ROOT
+				country_event = { days = 5 id = stt_pol.2 }
 			}
+			else = {
+				set_global_flag = stt_lit_human
+				POL = { 
+					country_event = { days = 5 id = stt_pol.2 }
+				}
+			}
+		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
@@ -89,10 +101,16 @@ country_event = {
 	option = {
 		name = stt_pol.a.2
 		ai_chance = {
-			factor = 100 
+			factor = 99 
 		}		
 		add_prestige = 10
-		ROOT = { create_union = LIT	}
+		if = { 
+			limit = { NOT = { has_global_flag = stt_lit_human } }
+			ROOT = { create_union = LIT	}
+			else = {
+				LIT = { create_union = ROOT }
+			}
+		}
 		### STT
 		if = {
 			limit = {
@@ -109,6 +127,27 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
+		clr_global_flag = stt_lit_human
+	}
+	option = {
+		name = flavor_pol.18.b #Appoint a Local Noble.
+		ai_chance = { 
+			factor = 1
+		}
+		define_ruler = {
+			DIP = 5
+			ADM = 5
+			MIL = 5
+			claim = 100
+			culture = polish
+		}
+		LIT = {
+			add_opinion = {
+				who = ROOT
+				modifier = lit_denied_birthright
+			}
+		}
+		clr_global_flag = stt_lit_human
 	}
 }
 
@@ -150,6 +189,11 @@ country_event = {
 			desc = stt_pol3_influence_modifier
 			influence = 10
 			duration = 7300
+		}
+		add_casus_belli = {
+			target = LIT
+			type = cb_restore_personal_union
+			months = 300
 		}
 	}
 	option = {	
@@ -350,5 +394,69 @@ country_event = {
 			loyalty = 5
 		}
 		add_prestige = 2
+	}
+}
+
+#Poland Crown
+country_event = {
+	id = stt_pol.8
+	title = stt_pol.t.1
+	desc = stt_pol.de.1
+
+	picture = POLAND_CROWN_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = POL
+		is_free_or_tributary_trigger = yes
+		NOT = { junior_union_with = LIT }
+		NOT = { senior_union_with = LIT }
+		LIT = {
+			exists = yes
+			is_free_or_tributary_trigger = yes
+			OR = {
+				dynasty = POL
+				has_regency = yes
+			}
+		}
+		NOT = { is_year = 1450 }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = stt_pol.a.1 #We must retain the Jagiellon Dynasty
+		ai_chance = {
+			factor = 90 
+		}
+		add_prestige = 5
+		if = { 
+			limit = { LIT = { ai = yes } } 
+			create_union = LIT
+			country_event = { days = 5 id = stt_pol.2 }
+			else = {
+				set_global_flag = stt_lit_human
+				country_event = { days = 5 id = stt_pol.2 }
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}		
+	}
+	
+	option = {
+		name = stt_pol.b.1 #Appoint a Local Noble.
+		ai_chance = { 
+			factor = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
 	}
 }

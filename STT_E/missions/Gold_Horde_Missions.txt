@@ -1,0 +1,866 @@
+consolidate_expand_goldhorde_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		AND = {
+			tag = GLH
+		}
+	}
+		has_country_shield = yes
+		proffesional_army = {
+			icon = mission_1
+			required_missions = { } #None
+			completed_by = 1330.1.1
+			trigger = {
+				AND = {
+						army_size = 75
+						cavalry_fraction = 0.6
+						mil_power = 100
+						army_professionalism = 0.25
+						army_tradition = 40
+				}
+			}
+			effect = {
+				add_mil_power = -100
+				add_country_modifier = {
+					name = "glh_cavalry"
+					duration = 18225
+					}
+					russia_region = {
+						limit = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+			razorenie_of_Russia = {
+				icon = mission_1
+				required_missions = {proffesional_army}
+				trigger = {
+					ryazan_area = {
+						type = all
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					nizhy_novgorod_area = {
+						type = all
+						OR = {
+						 country_or_non_sovereign_subject_holds = ROOT
+						 is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					galich_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					rostov_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					moscow_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					tver_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					yaroslavl_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+					 3180 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state
+						}
+					}
+					 312 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state
+						}
+					}
+					1755 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state
+						}
+					}
+				}
+				effect = {
+					ruthenia_region = {
+						limit = {
+							NOT = { owned_by = ROOT}
+							NOT = { is_core = ROOT}
+							}
+							add_permanent_claim = ROOT
+							}
+							add_horde_unity = 25
+							add_prestige = 25
+					}
+				}
+			razorenie_of_Ruthenia = {
+				icon = mission_1
+				required_missions = {razorenie_of_Russia}
+				trigger = {
+					west_dniepr_area = {
+					type = all
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+						
+					east_dniepr_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					sloboda_ukraine_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					white_ruthenia_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					podolia_volhynia_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					smolensk_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					bryansk_area = {
+						type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state = ROOT
+							}
+						}
+					3226 = {
+						OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								is_subject_of_type = tributary_state
+						}
+					}
+					1941 = {
+						OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state
+						}
+					}
+					278 = {
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+				}
+					effect = {
+						 balkan_region = {
+							limit = {
+								NOT = { owned_by = ROOT }
+								NOT = { owned_by = BYZ }
+								NOT = { is_core = ROOT }
+								}
+							add_permanent_claim = ROOT
+							}
+						add_horde_unity = 25
+						add_prestige = 25
+					}
+				}
+				Balkanskie_danniki = {
+					icon mission_1
+					required_missions = {razorenie_of_Ruthenia}
+					trigger = {
+						3096 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3260 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						141 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3285 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1765 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3097 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						159 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1765 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3097 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						159 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						2746 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1827 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						150 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1776 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						138 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1831 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3106 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3002 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3151 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3035 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						139 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3099 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						140 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1767 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1828 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3284 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						1826 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3283 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						3101 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+						136 = {
+							OR = {
+							country_or_non_sovereign_subject_holds = ROOT
+							is_subject_of_type = tributary_state
+						}
+					}
+				}
+						effect = {
+							add_horde_unity = 25
+							add_prestige = 25
+							}
+					}
+				}
+consolidate_ruler_goldhorde_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		AND = { 
+			tag = GLH
+		}
+	}
+	has_country_shield = yes
+	kagan_uzbek = {
+				icon = mission_1
+				required_missions = { } #None
+				completed_by = 1313.1.1
+				trigger = {
+					AND = {
+						adm = 6
+						mil = 6
+						dip = 6
+						}
+						}
+				effect = {
+					add_mil_power = 100
+					add_dip_power = 100
+					add_adm_power = 100
+					add_stability = 1
+					}
+				}
+	Chagastanid_dannik = {
+		icon = mission_1
+		required_missions = { } #None
+		trigger = {
+			any_country = {
+				tag = CGU
+				is_subject_of_type = tributary_state
+				}
+			}
+		effect = {
+				add_prestige = 25
+				add_horde_unity = 25
+				}
+			}
+			ilhanat_dannik = {
+				icon = mission_1
+				required_missions = { } #None
+				trigger = {
+					any_country = {
+						tag = HUL
+						is_subject_of_type = tributary_state
+						}
+					}
+				effect = {
+					add_prestige = 25
+					add_horde_unity = 25
+					}
+				}
+			Yuan_dannik = {
+				icon = mission_1
+				required_missions = { } #None
+				trigger = {
+					any_country = {
+						tag = YUA
+						is_subject_of_type = tributary_state
+						}
+					}
+					effect = {
+						add_prestige = 25
+						add_horde_unity = 25
+						}
+					}
+				}
+consolidate_economic_goldhorde_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		AND = {
+			tag = GLH
+		}
+	}
+	has_country_shield = yes
+			economic_reform = {
+				icon = mission_1
+				required_missions = { } #None
+				completed_by = 1340.1.1
+				trigger = {
+					AND = {
+					treasury = 1000
+					dip_power = 100
+					monthly_income = 30
+					}
+					}
+				effect = {
+					add_dip_power = -100
+					add_country_modifier = {
+						name = glh_economic
+						duration = 18225
+									}
+						}
+				}
+	alliance_with_Chagataid = {
+		icon = mission_1
+		required_missions = { } #None
+		trigger = {
+			alliance_with = CGU
+			}
+		effect = {
+		add_country_modifier = {
+			name = glh_alliance
+			duration = 1800
+			}
+		}
+	}
+	alliance_with_ilfhanat = {
+		icon = mission_1
+		required_missions = { } # None
+		trigger = {
+			alliance_with = HUL
+			}
+		effect = {
+		add_country_modifier = {
+			name = glh_alliance
+			duration = 1800
+			}
+		}
+	}
+		alliance_with_Yuan = {
+			icon = mission_1
+			required_missions = { } # None
+			trigger = {
+				alliance_with = YUA
+				
+				}
+			effect = {
+			add_country_modifier = {
+				name = glh_alliance
+				duration = 1800
+				}
+			}
+		}
+	}
+	consolidate_administrative_goldhorde_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		AND = {
+			tag = GLH
+		}
+	}
+	has_country_shield = yes
+			administrative_reform = {
+				icon = mission_1
+				required_missions = { } #None
+				completed_by = 1330.1.1
+				trigger = {
+					AND = {
+					adm_power = 200
+					pure_unrest = 0
+					}
+				}
+				effect = {
+					add_country_modifier = {
+						name = glh_administrative
+						duration = 18225
+					}
+					add_adm_power = -200
+				}
+			}
+	Novgorod_dannik = {
+		icon mission_1
+		required_missions = {administrative_reform}
+		trigger = {
+			any_country = {
+				tag = NOV
+				is_subject_of_type = tributary_state
+				}
+			beloozero_area = {
+				type = all
+				OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+			pomor_area = {
+				typa = all
+				OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+			novgorod_area = {
+				type = all
+				OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+			1962 = {
+				OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state
+						}
+				}
+			perm_area = {
+				type = all 
+				OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						is_subject_of_type = tributary_state = ROOT
+						}
+					}
+			}
+		effect = {
+			add_country_modifier = {
+				name = glh_lesson_colonization
+				}
+			add_horde_unity = 25
+			add_prestige = 25
+			}
+		}
+			Colonize_West_siberia = {
+				icon = mission_1
+				required_missions = {Novgorod_dannik}
+				provinces_to_highlight = {
+				region = west_siberia_region
+				NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+				trigger = {
+					region = west_siberia_region = {
+						NOT = {owned_by = YUA}
+						NOT = {is_core = YUA}
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				effect = {
+					random_owned_province = { limit = { region = west_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+					random_owned_province = { limit = { region = west_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+					random_owned_province = { limit = { region = west_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+					add_country_modifier = {
+						name = glh_sucessful_colonization
+						duration = 1820
+						}
+					}
+				}
+				Colonize_East_siberia = {
+					icon = mission_1
+					required_missions = {Colonize_West_siberia}
+					provimces_to_highlight = {
+					region = east_siberia_region
+					NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+					trigger = {
+						region = east_siberia_region = {
+							NOT = {owned_by = YUA}
+							NOT = {is_core = YUA}
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+					effect = {
+						random_owned_province = { limit = { region = east_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+						random_owned_province = { limit = { region = east_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+						random_owned_province = { limit = { region = east_siberia_region } add_base_manpower = 1 add_base_production = 1 add_base_tax = 1}
+						add_prestige = 50
+					}
+				}
+			}
+	consolidate_trade_goldhorde_missions = {
+		slot = 5
+		generic = no
+		ai = yes
+		potential = {
+			AND = {
+				tag = GLH
+			}
+		}
+		has_country_shield = yes
+				capital_of_the_capitals = {
+					icon = mission_1
+					required_missions = { } #None
+					trigger = {
+						303 = {
+							development = 40
+						}
+					}
+				effect = {
+					add_country_modifier = {
+						name = "glh_great_capital"
+						duration = 18500
+									}
+							}
+					}
+				The_richest_node = {
+					icon = mission_1
+					required_missions = { } #None
+					trigger = {
+						303 = {
+							highest_value_trade_node = yes
+						}
+					}
+					effect = {
+						add_country_modifier = {
+							name = glh_great_trade
+							duration = 37000
+									}
+							}
+					}
+				The_russian_threat = {
+					icon = mission_1
+					required_missions = { } #None
+					trigger = {
+						any_country = { primary_culture = russian has_country_modifier = great_knyaz total_development = 300 }
+						}
+					effect = {
+						random_country = { limit = { primary_culture = russian has_country_modifier = great_knyaz total_development = 300 } declare_war = ROOT }
+						}
+					}
+				caucasia_danniki = {
+					icon = mission_1
+					required_missions = { } #None
+					trigger = {
+						any_country = {
+						tag = CIR 
+						is_subject_of = GLH = tributary_state
+					}
+						any_country = {
+						tag = SHK
+						is_subject_of = GLH = tributary_state
+					}
+						any_country = {
+						tag = GEO
+						is_subject_of = GLH = tributary_state
+					}
+						any_country = {
+						tag = GAZ
+						is_subject_of = GLH = tributary_state
+					}		
+				}	
+					effect = {
+						anatolia_region = {
+							limit = {
+								NOT = { owned_by = ROOT}
+								NOT = { is_core = ROOT}
+								NOT = { owned_by = HUL}
+								NOT = { owned_by = BYZ}
+								NOT = { owned_by = TU0}
+							}
+							add_permanent_claim = ROOT
+						}
+							add_horde_unity = 25
+							add_prestige = 25
+					}
+				}
+					smallasian_danniki = {
+						icon - mission_1
+						required_missions = {caucasia_danniki} 
+						trigger = {
+							karaman_area = {
+								type = all
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}	
+							menteshe_area = {
+								type = all
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}	
+							angora_area	= {
+								type = all
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}	
+							cilicia_area = {
+								type = all
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}	
+							pontus_area = {
+								type = all
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							325 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							322 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3645 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3644 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3110 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3639 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3640 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							2297 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3641 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							3107 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+							2296 = {
+								is_subject_of = GLH = tributary_state
+								country_or_non_sovereign_subject_holds = ROOT
+							}
+					}
+						effect = {
+							add_horde_unity = 25
+							add_prestige = 25
+						}
+				}
+					alliance_with_Mameluck = {
+						icon = mission_1
+						required_missions = { } #None
+						trigger = {
+							NOT = { alliance_with = HUL } 
+							alliance_with = MAM
+							}
+						effect = {
+							add_country_modifier = {
+								name = glh_alliance
+								duration = 1800
+										}
+							}
+						}
+					}
+	
+	
+					
+					
+					
+				
+			
+				
+				
+	
+	
+				
+				
+				
+				

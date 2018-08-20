@@ -12,10 +12,26 @@ country_decisions = {
 			      tag = AKK
 				  tag = QAR
 			}
-			owns = 429			# Esfahan
-			owns = 416
-			owns = 418
-			owns = 382
+			OR = {
+				owns = 429			
+				owns = 416
+				owns = 418
+				owns = 382
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 429		# Esfahan
+				province_id = 416
+				province_id = 418
+				province_id = 382
+				province_id = 444		# Charjui
+				province_id = 446		# Herat	
+				province_id = 442		# Bukhara
+				province_id = 436		# Qaen
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
 		}
 		allow = {
 		    NOT = { is_year = 1500 }
@@ -28,12 +44,12 @@ country_decisions = {
 			OR = {
 				owns_core_province = 444		# Charjui
 				owns_core_province = 446		# Herat	
-				}
+			}
 			OR = {
 				owns_core_province = 442		# Bukhara
 				owns_core_province = 436		# Qaen
-				}
 			}
+		}
 		effect = {
 			anatolia_region = {
 				limit = {
@@ -66,20 +82,20 @@ country_decisions = {
 				change_technology_group = muslim
 				change_unit_type = muslim
 			}
-		define_ruler = {
-			name = "Сельджук ибн Дукак"
-			dynasty = "Сельджукид"
-			adm = 2
-			dip = 2
-			mil = 5
-		}
-		define_heir = {
-			name = "Мелик-шах"
-			dynasty = "Сельджукид"
-			adm = 1
-			dip = 3
-			mil = 4
-		}
+			define_ruler = {
+				name = "Сельджук ибн Дукак"
+				dynasty = "Сельджукид"
+				adm = 2
+				dip = 2
+				mil = 5
+			}
+			define_heir = {
+				name = "Мелик-шах"
+				dynasty = "Сельджукид"
+				adm = 1
+				dip = 3
+				mil = 4
+			}
 		}
 		ai_will_do = {
 			factor = 1

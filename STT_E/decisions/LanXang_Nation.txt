@@ -6,6 +6,13 @@ country_decisions = {
 			tag = MUA
 			is_year = 1354
 		}
+		provinces_to_highlight = {
+			province_id = 615
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
 		allow = {
 			is_year = 1354
 			is_at_war = no

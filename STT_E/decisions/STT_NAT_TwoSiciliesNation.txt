@@ -7,6 +7,28 @@ country_decisions = {
 				tag = SIC
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 120
+				province_id = 3039
+				province_id = 121
+				province_id = 3017
+				province_id = 3016
+				province_id = 2985
+				province_id = 2983
+				province_id = 1934
+				province_id = 1933
+				province_id = 122
+				province_id = 2984
+				province_id = 123
+				province_id = 124
+				province_id = 125
+				province_id = 3019
+				province_id = 2982 
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			NOT = { exists = KTT }
 			adm_tech = 10

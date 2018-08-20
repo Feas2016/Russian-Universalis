@@ -12,17 +12,29 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3414
+                province_id = 3422
+                province_id = 3421
+				province_id = 2039
+                province_id = 2081
+				province_id = 561
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
 			adm_tech = 5
 			is_subject = no
 			is_at_war = no
 			NOT = { exists = BNG }
-                        owns_core_province = 3414
-                        owns_core_province = 3422
-                        owns_core_province = 3421
-						owns_core_province = 2039
-                        owns_core_province = 2081
-						owns_core_province = 561
+            owns_core_province = 3414
+            owns_core_province = 3422
+            owns_core_province = 3421
+			owns_core_province = 2039
+            owns_core_province = 2081
+			owns_core_province = 561
 		}
 	 	effect = {
 			change_tag = BNG

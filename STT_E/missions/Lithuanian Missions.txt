@@ -7,8 +7,87 @@ lithuanian_missions_slot = {
 	}
 	has_country_shield = yes
 	
+	lithuania_integrate_minors = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		position = 1
+		completed_by = 1336.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 276
+				province_id = 278
+				province_id = 1941
+				province_id = 3226
+				province_id = 3228
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 276
+			owns_core_province = 278
+			owns_core_province = 1941
+			owns_core_province = 3226
+			owns_core_province = 3228
+		}
+		effect = {		
+			white_ruthenia_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			277 = { add_permanent_claim = ROOT }
+			west_dniepr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_dniepr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	lithuania_conquer_west_dniepr = {
+		icon = mission_unite_home_region
+		required_missions = { lithuania_integrate_minors }
+		completed_by = 1362.1.1
+		position = 2
+		provinces_to_highlight = {
+			area = west_dniepr_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			west_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			280 = { add_base_tax = 2 add_base_production = 1 }
+		}
+	}
+	
 	polish_alliance_lit = {
 		icon = mission_alliances
+		position = 3
 		required_missions = {  }
 		trigger = {
 			if = {
@@ -78,10 +157,92 @@ lithuanian_missions_slot = {
 			}
 		}
 	}
+	lithuania_royal_marriage = {
+		icon = mission_alliances
+		position = 4
+		required_missions = { polish_alliance_lit }
+		trigger = {
+			if = {
+				limit = {
+					exists = POL
+					NOT = { is_rival = POL }
+				}
+				OR = {
+					marriage_with = POL
+					POL = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			else_if = {	### STT
+				limit = {
+					exists = KRA
+					NOT = { is_rival = KRA }
+				}
+				OR = {
+					marriage_with = KRA
+					KRA = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			else_if = {	### STT
+				limit = {
+					exists = GNE
+					NOT = { is_rival = GNE }
+				}
+				OR = {
+					marriage_with = GNE
+					GNE = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			else = {
+				samogitia_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			40 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			smolensk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 
+	Lithuania_get_ready = {
+		icon = mission_assemble_an_army
+		required_missions = { lithuania_royal_marriage }
+		position = 5
+		trigger = {
+			army_size_percentage = 1
+			treasury = 150
+		}
+		effect = {
+			create_general = 50
+			add_country_modifier = { name = "stt_army_bd_1" duration = 3650 }
+		}
+	}
 	defeat_the_livonian_order = {
 		icon = mission_conquer_5_states
-		required_missions = { polish_alliance_lit }
+		required_missions = { Lithuania_get_ready }
 		provinces_to_highlight = {
 			OR = {
 				area = livonia_area
@@ -107,9 +268,1154 @@ lithuanian_missions_slot = {
 			}
 		}
 		effect = {		
+			add_country_modifier = { 
+				name = "Lit_go_to_sea"
+				duration = 7300
+			}
+			pskov_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1981 = { add_permanent_claim = ROOT }
+			1930 = { add_permanent_claim = ROOT }
+			25 = { add_claim = ROOT }
+		}
+	}
+	Lithuania_islands = {
+		icon = mission_unite_home_region
+		required_missions = { defeat_the_livonian_order }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 25
+				province_id = 1930
+				province_id = 1981
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			25 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1930 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1981 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			skaneland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			denmark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jutland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "Lit_baltic_dominance"
+				duration = 36500
+			}
+		}
+	}
+	Lithuania_sound = {
+		icon = mission_empire
+		required_missions = { Lithuania_islands }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = jutland_area
+				area = skaneland_area
+				area = denmark_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			jutland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			skaneland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			denmark_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1926 = { # Baltic sea
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 20
+					key = Lit_baltic_dominance
+				}
+			}
+		}
+	}
+	lithuania_extend_north_Frontier = {
+		icon = mission_assemble_an_army
+		required_missions = { Conquer_novgorude_lithuania }
+		position = 9
+		provinces_to_highlight = {
+			area = beloozero_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			beloozero_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			beloozero_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			karelia_area = { 
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pomor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+lithuanian_missions_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+		
+	lithuania_conquer_east_dniepr = {
+		icon = mission_unite_home_region
+		required_missions = { lithuania_integrate_minors }
+		position = 2
+		completed_by = 1362.1.1
+		provinces_to_highlight = {
+			area = east_dniepr_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			east_dniepr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			east_dniepr_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	lithuania_conquer_yedisan_zaporizhia = {
+		icon = mission_conquer_5_states
+		required_missions = { lithuania_conquer_east_dniepr lithuania_conquer_west_dniepr  }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = zaporizhia_area
+				area = yedisan_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			zaporizhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yedisan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			zaporizhia_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			yedisan_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			crimea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { 
+				name = "Lit_go_to_sea"
+				duration = 7300
+			}
+		}
+	}
+	lithuania_conquer_smolensk = {
+		icon = mission_conquer_50_development
+		required_missions = { }
+		position = 4
+		provinces_to_highlight = {
+			area = smolensk_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			smolensk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			smolensk_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	austria_develop_capital = {
+		icon = mission_conquer_50_development
+		required_missions = {  }
+		position = 5
+		trigger = {
+			capital_scope = {
+				num_of_times_improved = 5
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			capital_scope = {
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
+		}
+	}
+	
+	lithuania_conquer_memel = {
+		icon = mission_conquer_5_states
+		required_missions = { Lithuania_get_ready }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 40
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			40 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {		
 			add_country_modifier = {
 				name = "baltic_ambition_new"
 				duration = 7300
+			}
+			40 = { add_base_tax = 2 }
+		}
+	}
+	Conquer_Pskov_Lituaen = {
+		icon = mission_conquer_50_development
+		required_missions = { defeat_the_livonian_order }
+		position = 7
+		provinces_to_highlight = {
+			area = pskov_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			pskov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {		
+			pskov_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			novgorod_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tver_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ingria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Conquer_novgorude_lithuania = {
+		icon = mission_conquer_50_development
+		required_missions = { Conquer_Pskov_Lituaen }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				province_id = 33
+				province_id = 34 
+				area = tver_area
+				area = novgorod_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tver_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			33 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			34 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {		
+			add_country_modifier = { name = "stt_army_bd_2" duration = 3650 }
+			tver_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			novgorod_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			moscow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			beloozero_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_accepted_culture = novgorodian
+		}
+	}
+	lithuania_conquer_north_moscow = {
+		icon = mission_conquer_5_states
+		required_missions = { Conquer_novgorude_lithuania }
+		position = 9
+		provinces_to_highlight = {
+			area = moscow_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			moscow_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			moscow_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			yaroslavl_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nizhy_novgorod_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			suzdal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_accepted_culture = russian
+		}
+	}
+	lithuania_extend_muscovite_frontier = {
+		icon = mission_empire
+		required_missions = { lithuania_conquer_north_moscow }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = yaroslavl_area
+				area = nizhy_novgorod_area
+				area = suzdal_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			yaroslavl_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			nizhy_novgorod_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			suzdal_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			yaroslavl_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			nizhy_novgorod_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			suzdal_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			galich_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kazan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_extend_to_almost_ural = {
+		icon = mission_assemble_an_army
+		required_missions = { lithuania_extend_muscovite_frontier }
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				area = kazan_area
+				area = galich_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			galich_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			galich_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			kazan_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			perm_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bashkiria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_ural = {
+		icon = mission_conquer_50_development
+		required_missions = { lithuania_extend_to_almost_ural }
+		position = 12
+		provinces_to_highlight = {
+			OR = {
+				area = perm_area
+				area = kama_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			perm_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kama_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			perm_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			kama_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			ural_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = { 
+				name = "stt_colonist_bonus"
+				duration = 7300
+			}
+		}
+	}
+}
+lithuanian_missions_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+
+	lithuania_conquer_oka = {
+		icon = mission_cannons_firing
+		required_missions = { Lithuania_get_ready }
+		position = 6
+		provinces_to_highlight = {
+			area = bryansk_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bryansk_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {		
+			bryansk_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			ryazan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquer_south_muscovy = {
+		icon = mission_assemble_an_army
+		required_missions = { lithuania_conquer_oka lithuania_consolidate_sloboda }
+		position = 7
+		provinces_to_highlight = {
+			area = ryazan_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ryazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			ryazan_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			tambov_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquer_tambov = {
+		icon = mission_conquer_5_states
+		required_missions = { lithuania_conquer_south_muscovy lithuania_conquest_lower_don  }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = tambov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			tambov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tambov_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+			saratov_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquer_saratov = {
+		icon = mission_assemble_an_army
+		required_missions = {  lithuania_conquer_tambov }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = saratov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			saratov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			saratov_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+		}
+	}
+	lithuania_extend_to_almost_ural2 = {
+		icon = mission_assemble_an_army
+		required_missions = { lithuania_extend_muscovite_frontier }
+		position = 11
+		provinces_to_highlight = {
+			area = bashkiria_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			bashkiria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bashkiria_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+			kama_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nogai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+		
+lithuanian_missions_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+
+	lithuania_consolidate_sloboda = {
+		icon = mission_unite_home_region
+		required_missions = { Lithuania_get_ready }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				area = sloboda_ukraine_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sloboda_ukraine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			sloboda_ukraine_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			lower_don_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquest_lower_don = {
+		icon = mission_empire
+		required_missions = { Lithuania_conquer_crimea lithuania_consolidate_sloboda }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = lower_don_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lower_don_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lower_don_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+			astrakhan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	lithuania_conquest_astrakhan = {
+		icon = mission_conquer_50_development
+		required_missions = { lithuania_conquest_lower_don lithuania_conquest_azov }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = astrakhan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			astrakhan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			astrakhan_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+		}
+	}
+	lithuania_grecocatholicism = {
+		icon = mission_european_church
+		required_missions = { }
+		position = 9
+		trigger = {
+			OR = {
+				religious_ideas = 7
+				humanist_ideas = 7
+			}
+			277 = { owned_by = ROOT }
+			religion = catholic
+		}
+		effect = {
+			277 = { change_religion = grekocatholic }
+			custom_tooltip = grecocatholicism_tooltip
+			set_country_flag = grecocatholicism
+		}
+	}
+}
+lithuanian_missions_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = LIT
+	}
+	has_country_shield = yes
+	
+	lithuania_defeat_YOT = {
+		icon = mission_unite_home_region
+		required_missions = {  }
+		position = 3
+		completed_by = 1315.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 277
+				province_id = 269
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			277 = { owned_by = ROOT }
+			269 = { owned_by = ROOT }
+		}
+		effect = {
+			269 = { remove_building = fort_16th remove_building = fort_17th remove_building = fort_18th add_building = fort_15th }
+			podolia_volhynia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	lithuania_conquer_podolia = {
+		icon = mission_unite_home_region
+		required_missions = { lithuania_defeat_YOT }
+		position = 4
+		completed_by = 1362.1.1
+		provinces_to_highlight = {
+			area = podolia_volhynia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			podolia_volhynia_area = { 
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			podolia_volhynia_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	Lithuania_conquer_crimea = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { Lithuania_get_ready }
+		position = 6
+		provinces_to_highlight = {
+			area = crimea_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			crimea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			crimea_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+			284 = { change_religion = ROOT add_base_tax = 2 add_base_production = 2 }
+			azov_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquest_azov = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { Lithuania_conquer_crimea }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = azov_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			azov_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			azov_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
+			}
+			286 = { change_religion = ROOT add_base_tax = 2 add_base_production = 2 }
+			circassia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquest_circassia = {
+		icon = mission_unite_home_region
+		required_missions = { lithuania_conquest_azov }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = circassia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			circassia_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+			}
+			dagestan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	lithuania_conquer_western_circassia = {
+		icon = mission_non-western_soldiers
+		required_missions = { lithuania_conquest_circassia lithuania_conquest_astrakhan }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				area = dagestan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			dagestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			dagestan_area = {
+				add_province_modifier = {
+					name = "efficient_integrating"
+					duration = 7300
+				}
+				add_province_modifier = {
+					name = "stt_local_miss"
+					duration = 3650
+				}
 			}
 		}
 	}

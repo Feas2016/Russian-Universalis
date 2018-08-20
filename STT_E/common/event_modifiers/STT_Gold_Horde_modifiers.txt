@@ -1,0 +1,34 @@
+# Gold Horde missions
+glh_cavalry = {
+	discipline = 0.05
+	cavalry_power = 0.2
+	cavalery_cosr = -0.5
+}
+glh_economic = {
+	development_cost = -0.1
+	global_tax_modifier = 0.2
+}
+glh_administrative = {
+	ae_impact = -0.25
+	administrative_efficiency = 0.5
+	global_unrest = -5
+}
+glh_great_capital = {
+	merchants = 1
+	trade_efficiency = 0.15
+}
+glh_great_trade = {
+	merchants = 1
+	global_trade_power = 0.20
+}
+glh_alliance = {
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.5
+}
+glh_lesson_colonization = {
+	colonists = 1
+	global_colonial_growth = 20
+}
+glh_sucessful_colonization = {
+	dlobal_colonial_growth = 30
+}

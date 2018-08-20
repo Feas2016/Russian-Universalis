@@ -2,38 +2,37 @@ country_decisions = {
 
 	carthagen_nation = {
 		major = yes
-		
 		potential = {
 			NOT = { is_year = 1520 }
 			NOT = { exists = CAR }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-		OR = {
-			AND = {
-			tag = ALG
-			NOT = { exists = TUN }
-			NOT = { exists = FEZ }
-			NOT = { exists = MOR }
+			OR = {
+				AND = {
+				tag = ALG
+				NOT = { exists = TUN }
+				NOT = { exists = FEZ }
+				NOT = { exists = MOR }
+				}
+				AND = {
+				tag = MOR
+				NOT = { exists = FEZ }
+				NOT = { exists = ALG }
+				NOT = { exists = TUN }
+				}
+				AND = {
+				tag = TUN
+				NOT = { exists = ALG }
+				NOT = { exists = FEZ }
+				NOT = { exists = TRP }
+				}
+				AND = {
+				tag = FEZ
+				NOT = { exists = MOR }
+				NOT = { exists = ALG }
+				NOT = { exists = TUN }
+				}
 			}
-			AND = {
-			tag = MOR
-			NOT = { exists = FEZ }
-			NOT = { exists = ALG }
-			NOT = { exists = TUN }
-			}
-			AND = {
-			tag = TUN
-			NOT = { exists = ALG }
-			NOT = { exists = FEZ }
-			NOT = { exists = TRP }
-			}
-			AND = {
-			tag = FEZ
-			NOT = { exists = MOR }
-			NOT = { exists = ALG }
-			NOT = { exists = TUN }
-			}
-		}
 			OR = {
 				ai = no
 				AND = {
@@ -50,28 +49,45 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 344		# Marrakesh
+				province_id = 338       # Al-Djazair
+				province_id = 341       # Tunis
+				province_id = 354       # Tripoli
+				province_id = 221       # Mursia
+				province_id = 343		# Fez
+				province_id = 227		# Lisboa
+				province_id = 220	    # Valencia 
+				province_id = 217		# Madrid
+				province_id = 333		# Palma
+				province_id = 127		# Cagliari
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+		}
 		allow = {
-		    NOT = {is_year = 1520}
+		    NOT = { is_year = 1520 }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			owns_core_province = 344			# Marrakesh
-			owns_core_province = 338                      # Al-Djazair
-			owns_core_province = 341                      # Tunis
-			owns_core_province = 354                      # Tripoli
-			owns_core_province = 221                      # Mursia
+			owns_core_province = 338            # Al-Djazair
+			owns_core_province = 341            # Tunis
+			owns_core_province = 354            # Tripoli
+			owns_core_province = 221            # Mursia
 			OR = {
 				owns_core_province = 343		# Fez
 				owns_core_province = 227		# Lisboa
-				}
+			}
 			OR = {
-				owns_core_province = 	220	        # Valencia 
+				owns_core_province = 	220	    # Valencia 
 				owns_core_province = 217		# Madrid
-				}
+			}
 			OR = {
 				owns_core_province = 333		# Palma
 				owns_core_province = 127		# Cagliari
-				}			
-			}
+			}			
+		}
 		effect = { 
 			maghreb_region = {
 				limit = {
