@@ -192,8 +192,10 @@ country_event = {
 	
 	trigger = {
 		tag = LIT
-		is_free_or_tributary_trigger = yes
+		is_year = 1430
 		NOT = { is_year = 1452 }
+		is_free_or_tributary_trigger = yes
+		
 	}
 	mean_time_to_happen = {
 		months = 5
@@ -216,25 +218,71 @@ country_event = {
 			dip = 6
 			mil = 2
 		}
-		POL = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_displeased
-				years = 50
+		if = { limit = { POL = exists }
+			POL = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+					years = 50
+				}
 			}
-		}		
+		}
+		else_if = { limit = { KRA = exists }
+			KRA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+					years = 50
+				}
+			}
+		}
+		else_if = { limit = { GNE = exists }
+			GNE = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_displeased
+					years = 50
+				}
+			}
+		}
+		else = {
+			add_years_of_income = 0.1
+		}
 	}
 	option = {	
 		name = "panslav.4.b"
 		ai_chance = { factor = 90 }
 		add_prestige = 5
 		add_stability = 1
-		POL = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_friendliness
-				years = 50
+		if = { limit = { POL = exists }
+			POL = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_friendliness
+					years = 50
+				}
 			}
+		}
+		else_if = { limit = { KRA = exists }
+			KRA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_friendliness
+					years = 50
+				}
+			}
+		}
+		else_if = { limit = { GNE = exists }
+			GNE = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_friendliness
+					years = 50
+				}
+			}
+		}
+		else = {
+			add_years_of_income = 0.1
 		}
 	}
 }
