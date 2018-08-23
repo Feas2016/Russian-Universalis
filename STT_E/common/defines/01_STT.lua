@@ -19,6 +19,7 @@ NDefines.NCountry.EXPLORE_COAST_EVENT_CHANCE = 5
 NDefines.NCountry.RAZE_TECH_BASE_LEVEL = 18
 NDefines.NCountry.IDEA_TO_TECH = -0.004
 NDefines.NCountry.FREE_IDEA_GROUP_COST  = 7
+NDefines.NDiplomacy.HRE_PRINCE_AUTHORITY_THRESHOLD = 50			-- Threshold below which you lose IA, and above which you gain it
 
 --  Marcin More Buildings	
 NDefines.NCountry.DEBT_LIMIT_ADM = -999						
