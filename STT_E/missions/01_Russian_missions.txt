@@ -7,7 +7,7 @@ consolidate_expand_russia_missions = {
 	}
 	has_country_shield = yes
 	south_lands = {
-	    icon = mission_1
+	    icon = Rus_South
 		required_missions = {  } #None
 		completed_by = 1350.1.15
 		provinces_to_highlight = {
@@ -652,7 +652,7 @@ consolidate_expand_russia_plus_missions = {
 	}
 	has_country_shield = yes
 	north_lands = {
-	    icon = mission_1
+	    icon = Rus_North
 		required_missions = {  } #None
 		completed_by = 1350.1.15
 		provinces_to_highlight = {
@@ -1123,7 +1123,7 @@ consolidate_expand_russia_minus_missions = {
 	}
 	has_country_shield = yes
 	west_lands = {
-	    icon = mission_1
+	    icon = Rus_West
 		required_missions = {  } #None
 		completed_by = 1350.1.15
 		provinces_to_highlight = { 
@@ -1670,7 +1670,7 @@ siberian_missions = {
 		primary_culture = russian
 	}
 	east_lands = {
-	    icon = mission_1
+	    icon = Rus_East
 		required_missions = {  } #None
 		completed_by = 1350.1.15
 		provinces_to_highlight = { 
@@ -2216,6 +2216,7 @@ russian_amerika_missions = {
 	
 	has_country_shield = yes
 	alyaska = {
+	icon = Rus_Alaska
 	position = 6
 	required_missions = { east_siberia }
 	
@@ -2251,6 +2252,7 @@ russian_amerika_missions = {
 }
 
 cascadia =  {
+	icon = Rus_Alaska
 	required_missions = { alyaska } 
 	provinces_to_highlight = { 
 		area = cascadia_region
