@@ -1,0 +1,103 @@
+diplomatic_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = croatian
+	}
+	has_country_shield = yes
+	
+	cro_indepedence = {
+		icon = mission_cannons_firing
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		
+		effect = {
+			add_prestige = 5
+		}
+	}
+	
+	cro_cele = {
+		icon = mission_cannons_firing
+		required_missions = { cro_indepedence }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 3150
+			province_id = 152
+			province_id = 131
+		}
+		
+		trigger = {
+			CRO = { owns = 3150 owns = 152 owns = 131 }
+		}
+		
+		effect = {
+			1828 = { add_claim = CRO }
+		}
+	}
+	
+	cro_bosnian_kraina = {
+		icon = mission_cannons_firing
+		required_missions = { cro_cele }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 1828
+		}
+		
+		trigger = {
+			CRO = { owns = 1828 }
+		}
+		
+		effect = {
+			137 = { add_claim = CRO }
+		}
+	}
+	
+	cro_dubrovnik = {
+		icon = mission_cannons_firing
+		required_missions = { cro_bosnian_kraina }
+		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 137
+		}
+		
+		trigger = {
+			CRO = { owns = 137 }
+		}
+		
+		effect = {
+			3031 = { add_claim = CRO }
+			137 = {
+				change_culture = croatian
+			}
+		}
+	}
+	
+	cro_kotor = {
+		icon = mission_cannons_firing
+		required_missions = { cro_dubrovnik }
+		position = 5
+		
+		provinces_to_highlight = {
+			province_id = 3031
+		}
+		
+		trigger = {
+			CRO = { owns = 3031 }
+		}
+		
+		effect = {
+			add_prestige = 10
+			3031 = {
+				change_culture = croatian
+			}
+		}
+	}
+}

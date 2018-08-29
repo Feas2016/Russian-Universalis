@@ -1,0 +1,33 @@
+country_decisions = {
+	slovene_nation = {
+		major = yes
+		potential = {
+			NOT = { tag = PAP }
+			NOT = { tag = SGT }
+			NOT = { tag = YUG }
+			primary_culture = slovene
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		allow = {
+		    is_free_or_tributary_trigger = yes
+			adm_tech = 10
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 3047
+			owns_core_province = 129
+		}
+	 	effect = {
+			change_tag = SLO
+			add_prestige = 10
+		}
+		ai_will_do = {
+		    factor = 400
+		}
+	}
+}

@@ -1,0 +1,74 @@
+diplomatic_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = slovene
+	}
+	has_country_shield = yes
+	
+	slo_ljubljana = {
+		icon = mission_cannons_firing
+		required_missions = { }
+		position = 1
+		
+		provinces_to_highlight = {
+			province_id = 129
+			province_id = 3047
+		}
+		
+		trigger = {
+			ROOT = { owns = 129 owns = 3047 }
+		}
+		
+		effect = {
+			3149 = { add_claim = ROOT }
+			1769 = { add_claim = ROOT }
+		}
+	}
+	
+	slo_triest = {
+		icon = mission_cannons_firing
+		required_missions = { slo_ljubljana }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 3149
+			province_id = 1769
+		}
+		
+		trigger = {
+			ROOT = { owns = 3149 owns = 1769 }
+		}
+		
+		effect = {
+			128 = { add_claim = ROOT }
+			130 = { add_claim = ROOT }
+		}
+	}
+	
+	slo_3 = {
+		icon = mission_cannons_firing
+		required_missions = { slo_triest }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 128
+			province_id = 130
+		}
+		
+		trigger = {
+			ROOT = { owns = 128 owns = 130 }
+		}
+		
+		effect = {
+			add_prestige = 10
+			128 = {
+				change_culture = slovene
+			}
+			130 = {
+				change_culture = croatian
+			}
+		}
+	}
+}

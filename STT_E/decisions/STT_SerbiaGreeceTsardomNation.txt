@@ -14,22 +14,9 @@ country_decisions = {
 				}
 			}
 		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 143 # Albania
-				province_id = 3001 # Skopje
-				province_id = 3034 # Arta
-				province_id = 147 # Thessaly
-				province_id = 144 # Epir
-				province_id = 1853 # Kastoria
-			}
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
-		}
 		allow = {
 		    is_free_or_tributary_trigger = yes
 		    NOT = { is_year = 1400 }
-			stability = 2
 			adm_tech = 5
 			is_subject = no
 			is_at_war = no
@@ -42,21 +29,7 @@ country_decisions = {
 			owns_core_province = 1853 # Kastoria
 		}
 	 	effect = {
-		    if = {
-				limit = { 
-					NOT = { government_rank = 3 } 
-				}
-				set_government_rank = 2
-			}
-		    add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			change_tag = SGT
-			change_government = despotic_monarchy
-			add_stability = -2
-			add_prestige = 50
-			1773 = { add_core = SGT }
+		    1773 = { add_core = SGT }
 			3104 = { add_core = SGT }	  
 			146 = { add_core = SGT }
 			3003 = { add_core = SGT }
@@ -70,6 +43,19 @@ country_decisions = {
 			3106 = { add_core = SGT }
 			151 = { add_core = SGT }
 			3265 = { add_core = SGT }
+			if = {
+				limit = { 
+					NOT = { government_rank = 3 } 
+					}
+				set_government_rank = 3
+			}
+		    add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_tag = SGT
+			change_government = despotic_monarchy
+			add_prestige = 50
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {

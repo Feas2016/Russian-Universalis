@@ -1,0 +1,38 @@
+country_decisions = {
+	ser_despotat = {
+		major = yes
+		potential = {
+			tag = SER
+		}
+		allow = {
+			is_at_war = no
+			government_rank = 1
+			NOT = {
+				government_rank = 2
+			}
+			year = 1360
+			NOT = { year = 1500 }
+			exists = BYZ
+			BYZ = {
+				has_opinion = {
+					who = SER
+					value = 75
+				}	
+			}
+			OR = {
+				SER = {
+					is_neighbor_of = TUR
+				}
+				SER = {
+					is_neighbor_of = TU0
+				}
+			}
+		}
+	 	effect = {
+		    BYZ = { country_event = { id = stt_serbia.2 } }
+		}
+		ai_will_do = {
+		    factor = 400
+		}
+	}
+}

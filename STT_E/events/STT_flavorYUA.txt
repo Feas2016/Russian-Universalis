@@ -34,7 +34,7 @@ country_event = {
 	option = {
 	    name = "STT_flavorYUA.1.a2"
 		ai_chance = { factor = 0 }
-		add_corruption = -1
+		add_corruption = -2
 		add_prestige = -10
 		add_ruler_modifier = {
 		    name = YUA_nogifts
@@ -135,7 +135,7 @@ country_event = {
 	
 	option = {
 	    name = "STT_flavorYUA.4.a1"
-		ai_chance = {factor = 50}
+		ai_chance = {factor = 80}
 		custom_tooltip = STT_flavorYUA.4.b1
 		hidden_effect = {
 		    every_owned_province = {
@@ -150,7 +150,7 @@ country_event = {
 	
 	option = {
 	    name = "STT_flavorYUA.4.a2"
-		ai_chance = {factor = 50}
+		ai_chance = {factor = 20}
 		custom_tooltip = STT_flavorYUA.4.b2
 		hidden_effect = {
 		    every_owned_province = {
@@ -212,20 +212,21 @@ province_event = {
 	    owner = {
 		    tag = YUA
 			NOT = { has_country_flag = YUA_rebellion }
+			NOT = { culture_group = east_asian }
 		}
-		NOT = { is_year = 1500 }
+		NOT = { is_year = 1450 }
 		culture_group = east_asian
 		NOT = { has_province_modifier = YUA_discrimination }
 	}
 	
 	mean_time_to_happen = {
-	    months = 2500
+	    months = 2800
 		modifier = {
-		    factor = 0.75
+		    factor = 0.85
 			has_owner_accepted_culture = no
 		}
 		modifier = {
-		    factor = 0.75
+		    factor = 0.85
 			unrest = 5
 		}
 		modifier = {
@@ -335,6 +336,14 @@ country_event = {
 				}
 			}
 		}
+		modifier = {
+			factor = 2 
+			culture_group = east_asian
+		}
+		modifier = {
+		    factor = 0.5
+			ai = yes
+		}
 	}
 	
 	option = {
@@ -393,12 +402,14 @@ country_event = {
 	
 	option = {
 	    name = "STT_flavorYUA.8.a"
-	    every_owned_province = {
+	    every_province = {
 		    limit = {
 			    region = north_china_region
 			}
 		    remove_province_modifier = YUA_destr_of_huanhe
 		}
+		add_stability = 3
+		add_mandate = 50
 	}
 }
 
@@ -423,7 +434,7 @@ country_event = {
 	
 	immediate = {
 	    hidden_effect = {
-		    every_owned_province = {
+		    every_province = {
 			    limit = {
 				    OR = {
 					    region = north_china_region
@@ -437,6 +448,7 @@ country_event = {
 	}
 	
 	option = {
+		ai_chance = { factor = 10 }
 	    name = "STT_flavorYUA.9.a"
 		1821 = {
 		    spawn_rebels = {
@@ -481,4 +493,84 @@ country_event = {
 			}
 		}
 	}
+	
+	option = {
+		trigger = { ai = no }
+		name = "STT_flavorYUA.9.b"
+		every_owned_province = {
+			limit = {
+				area = jiangsu_area
+			}
+			cede_province = MNG
+		}
+		switch_tag = MNG
+		MNG = {
+			add_country_modifier = {
+			    name = "MNG_liberation"
+				duration = 1825
+			}
+			random_owned_province = {
+				limit = {
+					area = jiangsu_area
+				}
+				build_to_forcelimit = {
+					infantry = 0.6
+					cavalry = 0.4
+				}
+			}
+			define_ruler = {
+				name = "Þàíü÷æàí"
+				dynasty = "×æó"
+				adm = 6
+				dip = 4
+				mil = 4
+				age = 30
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 3
+				manuever = 2
+				siege = 2
+			}
+			declare_war_with_cb = {
+				who = YUA
+				casus_belli = cb_core
+				war_goal_province = 2143
+			}
+		}
+	}
+	
+	option = {
+		trigger = { ai = yes }
+		ai_chance = { factor = 90 }
+		name = "STT_flavorYUA.9.c"
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = north_china_region
+					region = south_china_region
+					region = xinan_region
+				}
+			}
+			cede_province = MNG
+		}
+		set_emperor_of_china = MNG
+		MNG = {
+			define_ruler = {
+				name = "Þàíü÷æàí"
+				dynasty = "×æó"
+				adm = 6
+				dip = 4
+				mil = 4
+				age = 30
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 3
+				manuever = 2
+				siege = 2
+			}
+		}
+	}
+	
 }

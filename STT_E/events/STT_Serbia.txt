@@ -1,0 +1,125 @@
+namespace = stt_serbia
+normal_or_historical_nations = yes
+
+country_event = {
+    id = "stt_serbia.1"
+	title = "stt_serbia.1.t"
+	desc = "stt_serbia.1.d"
+	
+	fire_only_once = yes
+	
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		NOT = { is_year = 1500 }
+	    tag = SGT
+		is_at_war = no
+		NOT = { stability > 1 }
+		NOT = {
+			owns_core_province = 143 # Albania
+			owns_core_province = 3034 # Arta
+			owns_core_province = 147 # Thessaly
+			owns_core_province = 144 # Epir
+		}
+	}
+	
+	mean_time_to_happen = { 
+	    months = 6
+	}
+	
+	option = {
+	    name = "stt_serbia.1.a"
+		set_government_rank = 1
+		change_tag = SER
+		add_stability = -1
+		add_prestige = -50
+	}
+}
+
+country_event = {
+    id = "stt_serbia.2"
+	title = "stt_serbia.2.t"
+	desc = "stt_serbia.2.d"
+	
+	is_triggered_only = yes
+	
+	picture = DIPLOMACY_eventPicture
+	
+	option = {
+	    name = "stt_serbia.2.a"
+		SER = {
+			grant_independence = yes
+		}
+		SER = { country_event = { id = stt_serbia.5 } }
+	}
+	
+	option = {
+	    name = "stt_serbia.2.b"
+	}
+}
+
+country_event = {
+    id = "stt_serbia.3"
+	title = "stt_serbia.3.t"
+	desc = "stt_serbia.3.d"
+	
+	is_triggered_only = yes
+	
+	picture = DIPLOMACY_eventPicture
+	
+	option = {
+	    name = "stt_serbia.3.a"
+		SER = { country_event = { id = stt_serbia.4 } }
+	}
+	
+	option = {
+	    name = "stt_serbia.3.b"
+	}
+}
+
+country_event = {
+    id = "stt_serbia.4"
+	title = "stt_serbia.4.t"
+	desc = "stt_serbia.4.d"
+	
+	is_triggered_only = yes
+	
+	picture = DIPLOMACY_eventPicture
+	
+	option = {
+	    name = "stt_serbia.4.a"
+		create_alliance = HUN
+		3151 = {	
+			cede_province = SER
+		}
+	}
+	
+	option = {
+	    name = "stt_serbia.4.b"
+	}
+}
+
+country_event = {
+    id = "stt_serbia.5"
+	title = "stt_serbia.5.t"
+	desc = "stt_serbia.5.d"
+	
+	is_triggered_only = yes
+	
+	picture = DIPLOMACY_eventPicture
+	
+	option = {
+	    name = "stt_serbia.5.a"
+		set_government_rank = 2
+		add_prestige = 10
+		if = {
+			limit = {
+				HUN = {
+					owns_or_subject_of = 3151
+				}
+			}
+			HUN = { country_event = { id = stt_serbia.3 } }
+		}
+	}
+	
+}
