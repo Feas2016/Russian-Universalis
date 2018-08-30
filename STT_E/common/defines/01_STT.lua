@@ -18,8 +18,33 @@ NDefines.NCountry.OVERSEAS_CLIENT_STATES = 1
 NDefines.NCountry.EXPLORE_COAST_EVENT_CHANCE = 5
 NDefines.NCountry.RAZE_TECH_BASE_LEVEL = 18
 NDefines.NCountry.IDEA_TO_TECH = -0.004
-NDefines.NCountry.FREE_IDEA_GROUP_COST  = 7
+NDefines.NCountry.FREE_IDEA_GROUP_COST  = 5
 NDefines.NDiplomacy.HRE_PRINCE_AUTHORITY_THRESHOLD = 50			-- Threshold below which you lose IA, and above which you gain it
+
+NDefines.NDiplomacy.CHANGE_RIVAL_YEARS = 15											-- 25
+NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -50										-- -25
+NDefines.NCountry.MINIMUM_POLICY_TIME = 5											-- 10	| Minimum duration of a policy
+
+--- Mercenaries
+NDefines.NMilitary.MERCENARY_BASE_COST = 15.0										-- 10
+NDefines.NMilitary.MERCENARY_SUPPORT_LIMIT_BASE = 10								-- 20				
+NDefines.NMilitary.MERCENARY_SUPPORT_LIMIT_FRACTION = 0.15							-- 0.3
+
+NDefines.NMilitary.BASE_MP_TO_MANPOWER = 0.4 										-- 0.25
+
+NDefines.NDiplomacy.PO_REVOKE_REFORM_PEACE_COST = 70
+
+NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 15.0									-- 10
+NDefines.NMilitary.ARMY_DRILL_MAX_MORALE = 0.75										-- 0.5
+NDefines.NMilitary.ARMY_DRILL_YEARLY_DECAY = -1										-- -2.5
+NDefines.NReligion.YEARLY_PAPAL_INFLUENCE_CATHOLIC = 0.75							-- 0.5
+NDefines.NCountry.MAX_TOLERANCE_HERETIC = 5
+NDefines.NCountry.MAX_TOLERANCE_HEATHEN = 5
+NDefines.NCountry.PS_BOOST_MILITARIZATION = 30 										-- 50	| Cost to raise militarization
+
+NDefines.NCountry.COLONIAL_CLAIM_BONUS = 15											-- 10
+NDefines.NCountry.COLONIAL_CLAIM_VIOLATION = -5										-- -20
+NDefines.NCountry.COLONY_VIOLAION_PAPAL_INFLUENCE_COST = -1							-- -10
 
 --  Marcin More Buildings	
 NDefines.NCountry.DEBT_LIMIT_ADM = -999						
@@ -27,8 +52,6 @@ NDefines.NCountry.DEBT_LIMIT_DIP = -999
 NDefines.NCountry.DEBT_LIMIT_MIL = -999		
 
 --NDefines.NCountry.ADVISOR_COST_INCREASE_PER_YEAR = 0.0005
---NDefines.NCountry.MAX_TOLERANCE_HERETIC = 6
---NDefines.NCountry.MAX_TOLERANCE_HEATHEN = 6
 --NDefines.NCountry.PS_ADVANCE_TECH = 640
 --NDefines.NCountry.PS_BOOST_STABILITY = 120
 --NDefines.NCountry.PS_CHANGE_CULTURE = 20

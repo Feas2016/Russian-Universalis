@@ -16,18 +16,6 @@ country_decisions = {
 				}
 			}
 		}
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2040
-                province_id = 566
-                province_id = 571
-				province_id = 2042
-                province_id = 562
-				province_id = 2071
-			}
-			NOT = { owned_by = ROOT }
-			NOT = { is_core = ROOT }
-		}
 		allow = {
 			adm_tech = 5
 			is_subject = no
@@ -44,7 +32,7 @@ country_decisions = {
 			change_tag = KMR
 			change_government = despotic_monarchy
 			add_prestige = 25
-			bengal_region = { add_core = BNG }			
+			bengal_region = { add_core = KMR }			
 		}
 		ai_will_do = {
 				factor = 400

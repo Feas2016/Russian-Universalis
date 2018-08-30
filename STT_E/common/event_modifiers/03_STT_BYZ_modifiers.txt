@@ -170,13 +170,35 @@ TUR_war_time = {
     infantry_cost = -0.50
     cavalry_cost = -0.50
     global_tax_income = 96
-    cavalry_power = 0.25
-	land_morale = 0.1
+    infantry_power = 0.15
+	cavalry_power = 0.15
+	land_morale = 0.15
 	land_maintenance_modifier = -0.75
 	merc_maintenance_modifier = -0.75
 	manpower_recovery_speed = 0.50
 	land_forcelimit_modifier = 0.95
+	global_regiment_recruit_speed = -0.5
+	reinforce_speed = 0.5
+	recover_army_morale_speed = 0.5
 	siege_ability = 0.33
+	defensiveness = 0.33
+}
+
+TUR_war_time_player = {
+    infantry_cost = -0.5
+    cavalry_cost = -0.5
+    global_tax_income = 96
+    infantry_power = 0.1
+	land_morale = 0.1
+	land_maintenance_modifier = -0.75
+	merc_maintenance_modifier = -0.5
+	manpower_recovery_speed = 0.50
+	land_forcelimit_modifier = 1.25
+	global_regiment_recruit_speed = -0.5
+	reinforce_speed = 0.75
+	recover_army_morale_speed = 0.25
+	siege_ability = 0.5
+	core_creation = -0.25
 }
 
 BYZ_army_crisis2 = {

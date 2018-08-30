@@ -1,0 +1,367 @@
+UBI_ideas = {
+	start = {
+		enemy_core_creation = 0.5
+		trade_efficiency = 0.2
+	}
+	
+	bonus = {
+		prestige_decay = -0.01
+	}
+	
+	trigger = {
+		 NOT = { tag = CIR }
+		 NOT = { tag = CAU }
+		OR = {
+			primary_culture = ubihian
+			primary_culture = cabardian
+			primary_culture = stt_circassien
+			primary_culture = adazin
+			primary_culture = abhazian
+			primary_culture = adigian
+		}
+	
+		
+    }
+	free = yes		#will be added at load.
+
+	only_protection = {
+		global_manpower_modifier = 0.2
+	}
+	our_people_in_egypt = {
+		diplomatic_reputation = 2
+	}
+	vernaya_znat = {
+		global_autonomy = -0.05
+	}
+	circassien_plemena = {
+		num_accepted_cultures = 1
+	}
+	perehod_v_islam = {
+		global_missionary_strength = 0.015
+	}
+	circassien_horce = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.2
+	}
+	mnogo_sosedey = {
+		diplomatic_upkeep = 1
+		diplomats = 1
+ }
+ }
+ 
+ OST_ideas = {
+	start = {
+		enemy_core_creation = 0.5
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		num_accepted_cultures = 1
+	}
+	
+	trigger = {
+		
+			primary_culture = osetian
+			
+		
+	
+	}	
+    
+	free = yes		#will be added at load.
+
+	osetia_first = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.2
+	}
+	osetia_second = {
+		core_creation = -0.15
+	}
+	osetia_third = {
+		movement_speed = 0.15
+	}
+	osetia_fourth = {
+		improve_relation_modifier = 0.25
+	}
+	osetia_fifth = {
+		tolerance_heathen = 3
+	}
+	osetia_sixth = {
+		prestige_decay = -0.01
+	}
+	osetia_seventh = {
+		legitimacy = 1
+	}	
+ }
+ 
+ IKR_ideas = {
+	start = {
+		enemy_core_creation = 1
+		war_exhaustion = -0.03
+	}
+	
+	bonus = {
+		core_creation = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			primary_culture = chechen
+			primary_culture = ingush
+		}
+	
+	}	
+    
+	free = yes		#will be added at load.
+
+	IKR_first = {
+		global_autonomy = -0.05
+	}
+	IKR_second = {
+		infantry_power = 0.1
+	}
+	IKR_third = {
+		global_missionary_strength = 0.02
+	}
+	IKR_fourth = {
+		defensiveness = 0.25
+	}
+	IKR_fifth = {
+		diplomatic_reputation = 1
+	}
+	IKR_sixth = {
+		global_tax_modifier = 0.10
+	}
+	IKR_seventh = {
+		global_regiment_recruit_speed = -0.10
+		global_manpower_modifier = 0.35
+	}	
+ }
+ 
+ DAG_ideas = {
+	start = {
+		enemy_core_creation = 0.75
+		defensiveness = 0.2
+	}
+	
+	bonus = {
+	land_morale = 0.20
+	}
+	
+	trigger = {
+		OR = {
+			primary_culture = avar
+			primary_culture = tsahur
+			primary_culture = lezgin
+			primary_culture = kubachin			
+		}
+		NOT = { tag = DAG }
+	
+	}	
+    
+	free = yes		#will be added at load.
+
+	DAG_first = {
+		num_accepted_cultures = 2
+	}
+	DAG_second = {
+		global_autonomy = -0.03
+	}
+	DAG_third = {
+		improve_relation_modifier = 0.35
+	}
+	DAG_fourth = {
+		prestige_decay = -0.01
+	}
+	DAG_fifth = {
+		land_morale = 0.15
+	}
+	DAG_sixth = {
+		core_creation = -0.2
+	}
+	DAG_seventh = {
+		global_missionary_strength = 0.025
+	}	
+ }
+ 
+ DA2_ideas = {
+	start = {
+		enemy_core_creation = 1
+		discipline = 0.05
+	}
+	
+	bonus = {
+	legitimacy = 1
+	}
+	
+	trigger = {
+		tag = DAG
+	}	
+    
+	free = yes		#will be added at load.
+
+	DA2_first = {
+		culture_conversion_cost = -0.25
+	}
+	DA2_second = {
+		technology_cost = -0.075
+		idea_cost = -0.075	 
+	}
+	DA2_third = {
+		trade_efficiency = 0.15
+	}
+	DA2_fourth = {
+		missionaries = 1
+		global_missionary_strength = 0.01
+	}
+	DA2_fifth = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.25
+	}
+	DA2_sixth = {
+		diplomatic_reputation = 1
+	}
+	DA2_seventh = {
+		core_creation = -0.2
+	}	
+ }
+
+ GE2_ideas = {
+	start = {
+		enemy_core_creation = 0.5
+		num_accepted_cultures = 2
+	}
+	
+	bonus = {
+	administrative_efficiency = 0.05
+	}
+	
+	trigger = {
+		OR = {
+		primary_culture = svanian
+		primary_culture = lazian
+		primary_culture = imeretian
+		primary_culture = ajarian
+		primary_culture = megrelian
+		primary_culture = gurian
+		primary_culture = kahetian
+		primary_culture = kartlian
+	}
+	NOT = { tag = GEO }
+}	
+    
+	free = yes		#will be added at load.
+
+	GE2_first = {
+		core_creation = -0.15
+	}
+	GE2_second = {
+		land_forcelimit_modifier = 0.2	
+		}
+	GE2_third = {
+		prestige_decay = -0.01
+	}
+	GE2_fourth = {
+		merchants = 1
+		trade_efficiency = 0.075
+	}
+	GE2_fifth = {
+		advisor_pool = 1
+		
+	}
+	GE2_sixth = {
+		idea_cost = -0.1
+	}
+	GE2_seventh = {
+		global_missionary_strength = 0.02
+	}	
+}
+
+AZB_ideas = {
+	start = {
+		enemy_core_creation = 0.65
+		global_manpower_modifier = 0.15
+	}
+	
+	bonus = {
+	land_forcelimit_modifier = 0.15
+	}
+	
+	trigger = {
+		
+	primary_culture = azerbaijani
+    NOT = { tag = AZB }
+		
+	}	
+    
+	free = yes		#will be added at load.
+
+	AZB_first = {
+		army_tradition_decay = -0.01
+	}
+	AZB_second = {
+		idea_cost = -0.1
+		}
+	AZB_third = {
+		defensiveness = 0.1
+		fort_maintenance_modifier = -0.2
+	}
+	AZB_fourth = {
+		cavalry_cost = -0.15
+		cavalry_power = 0.1
+	}
+	AZB_fifth = {
+		diplomatic_upkeep = 1
+		
+	}
+	AZB_sixth = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+	AZB_seventh = {
+		land_morale = 0.15
+	}	
+ }
+ 
+CAU_ideas = {
+	start = {
+		enemy_core_creation = 1
+		global_unrest = -2.0
+	}
+	
+	bonus = {
+	land_forcelimit_modifier = 0.2
+	}
+	
+	trigger = {
+		
+	 tag = CAU 
+		
+	}	
+    
+	free = yes		#will be added at load.
+
+	circassien_horce = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.15
+	}
+	osetia_third = {
+		movement_speed = 0.15
+	}
+	IKR_seventh = {
+		global_regiment_recruit_speed = -0.10
+		global_manpower_modifier = 0.15
+	}	
+	DAG_seventh = {
+		global_missionary_strength = 0.02
+	}	
+	GE2_fourth = {
+		merchants = 1
+		trade_efficiency = 0.1
+	}
+	land_reclamation = {
+		development_cost = -0.1
+	}
+	AZB_seventh = {
+		land_morale = 0.15
+	}	
+ }

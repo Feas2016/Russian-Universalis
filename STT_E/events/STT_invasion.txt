@@ -114,7 +114,7 @@ country_event = {
 							province_id = 3643
 				    }
 				}
-				add_permanent_claim = TU0
+				add_core = TU0
 			}
 		}
 		   
@@ -143,20 +143,34 @@ country_event = {
 	immediate = { hidden_effect = { HUL = { release = TU0 } BYZ = { declare_war = TU0 } } }
 	option = {
 	    name = stt_wek.4.a
-	    add_country_modifier = {
-		    name = "TUR_war_time"
-            duration = 1825
+		if = { limit = { ai = no }
+			add_country_modifier = {
+					name = "TUR_war_time_player"
+					duration = 2555
+			}
+			add_manpower = 10
+			add_treasury = 100
+			else = {
+				add_country_modifier = {
+					name = "TUR_war_time"
+					duration = 1825
+				}
+			}
 		}
 		3111 = {
 		    infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 			cavalry = ROOT
 		}
+		create_general = 65
+		hidden_effect = { define_heir_to_general = { fire = 2 shock = 3 manuever = 2 siege = 2 } }
 	}
 }
 
@@ -1267,5 +1281,51 @@ country_event = { # krestoviy pohod begin
 		every_country = { limit = { has_country_flag = crusade_against_otto } form_coalition_against = TUR clr_country_flag = crusade_against_otto }
 		PAP = { form_coalition_against = TUR declare_war_with_cb = { who = TUR casus_belli = "cb_super_badboy" } }
 		clr_country_flag = go_crusade_otto
+	}
+}
+
+country_event = { # eastern empire
+    id = stt_wek.28
+	title = stt_wek.28.t
+	desc = stt_wek.28.d
+	
+	picture = SIEGE_eventPicture
+	   	
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		OR = {
+			total_development = 250
+			government_rank = 3
+		}
+		capital_scope = { continent = asia }
+		current_age = age_of_feudalism
+		NOT = { has_country_modifier = stt_feod_asia_empire }
+	} 
+	
+	option = {
+        name = stt_wek.25.a
+		add_country_modifier = { name = stt_feod_asia_empire duration = -1 }
+		custom_tooltip = stt_feod_asia_empire_tooltip
+	}
+}
+
+country_event = { # eastern empire end
+    id = stt_wek.29
+	title = stt_wek.29.t
+	desc = stt_wek.29.d
+	
+	picture = SIEGE_eventPicture
+	    
+	mean_time_to_happen = { months = 1 }
+	
+	trigger = {
+		has_country_modifier = stt_feod_asia_empire
+		NOT = { current_age = age_of_feudalism }
+	} 
+	
+	option = {
+        name = stt_wek.25.a
+		remove_country_modifier = stt_feod_asia_empire		
 	}
 }

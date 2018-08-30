@@ -1,0 +1,127 @@
+country_decisions = {
+
+	stt_yuan_admin_reform_1 = {
+		major = yes
+		potential = {
+		    NOT = { started_in = 1370.11.11 }
+			has_country_modifier = stt_yuan_admin_1
+		}
+		allow = {
+			OR = {
+				NOT = { num_of_cities = 20 }
+				adm = 5
+			}
+			stability = 2
+			treasury = 500
+			adm_power = 500
+			NOT = { corruption = 5 }
+			NOT = { num_of_loans = 1 }
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_treasury = -500
+			add_adm_power = -500
+			remove_country_modifier = stt_yuan_admin_1
+			add_country_modifier = { name = stt_yuan_admin_2 duration = -1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stt_yuan_admin_reform_2 = {
+		major = yes
+		potential = {
+		    NOT = { started_in = 1370.11.11 }
+			has_country_modifier = stt_yuan_admin_2
+		}
+		allow = {
+			OR = {
+				NOT = { num_of_cities = 20 }
+				adm = 5
+			}
+			stability = 1
+			adm_power = 350
+			NOT = { corruption = 8 }
+		}
+		effect = {
+			add_adm_power = -350
+			remove_country_modifier = stt_yuan_admin_2
+			add_country_modifier = { name = stt_yuan_admin_3 duration = -1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stt_yuan_admin_reform_3 = {
+		major = yes
+		potential = {
+		    NOT = { started_in = 1370.11.11 }
+			has_country_modifier = stt_yuan_admin_3
+		}
+		allow = {
+			OR = {
+				NOT = { num_of_cities = 20 }
+				adm = 5
+			}
+			adm_power = 200
+			NOT = { corruption = 10 }
+		}
+		effect = {
+			add_adm_power = -200
+			remove_country_modifier = stt_yuan_admin_3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stt_yuan_dip_reform_1 = {
+		major = yes
+		potential = {
+		    NOT = { started_in = 1370.11.11 }
+			has_country_modifier = stt_yuan_culture_1
+		}
+		allow = {
+			OR = {
+				NOT = { num_of_cities = 20 }
+				dip = 5
+			}
+			dip_power = 650
+		}
+		effect = {
+			add_dip_power = -650
+			remove_country_modifier = stt_yuan_culture_1
+			set_country_flag = stt_yuan_culture_reform_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	stt_yuan_dip_reform_2 = {
+		major = yes
+		potential = {
+		    NOT = { started_in = 1370.11.11 }
+			has_country_flag = stt_yuan_culture_reform_1
+			NOT = { primary_culture = manchu }
+			ai = no
+		}
+		allow = {
+			OR = {
+				NOT = { num_of_cities = 20 }
+				dip = 5
+			}
+			dip_power = 500
+		}
+		effect = {
+			add_dip_power = -500
+			change_primary_culture = manchu
+			clr_country_flag = stt_yuan_culture_reform_1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+}

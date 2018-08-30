@@ -326,10 +326,8 @@ FRA_ideas = {
 	}	
 
 	trigger = {
-		OR = {
-			tag = FRA
-			tag = RFC #STT
-		}
+		tag = FRA
+		tag = RFC #STT
 	}
 	free = yes		#will be added at load.
 	
@@ -598,7 +596,7 @@ HAB_ideas = {
 			tag = HAB
 			AND = {
 				tag = STY
-				dynasty = "фон Габсбург"
+				dynasty = "von Habsburg"
 			}
 		}
 	}
@@ -2527,7 +2525,7 @@ NAJ_ideas = {
 
 HED_ideas = {
 	start = {
-		global_manpower_modifier = 0.1
+		global_e_modifier = 0.1
 		cavalry_cost = -0.1
 	}
 	
@@ -3180,10 +3178,7 @@ GEO_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			tag = GEO
-			tag = IME
-		}
+		tag = GEO 
 	}
 	free = yes
 	
@@ -10356,6 +10351,7 @@ SME_ideas = {
 	}
 	trigger = {
 		tag = SME
+		tag = MEG
 	}
 	free = yes
 	
@@ -10391,7 +10387,7 @@ SRV_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	trigger = {
-		tag = SRV
+		tag = AZB 
 	}
 	free = yes
 	

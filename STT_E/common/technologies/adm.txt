@@ -77,14 +77,14 @@ technology = {
 	# Tech 7
 	year = 1355
 	
-	max_states = 1
-	administrative_efficiency = 0.05
+	allowed_idea_groups = 2
 }
 technology = {
 	# Tech 8
 	year = 1370
 	
-	allowed_idea_groups = 2
+	max_states = 1
+	administrative_efficiency = 0.05
 }
 technology = {
 	# Tech 9
@@ -99,6 +99,7 @@ technology = {
 	
 	max_states = 1
 	counting_house = yes
+	allowed_idea_groups = 3
 }
 
 technology = {
@@ -112,21 +113,22 @@ technology = {
 	# Tech 12
 	year = 1440
 
-	production_efficiency	=	0.05
+	production_efficiency =	0.05
 }
 
 technology = {
 	# Tech 13
 	year = 1453
 	
-	max_states = 1
+	allowed_idea_groups = 4
+	
 }
 
 technology = {
 	# Tech 14
 	year = 1466
 
-	allowed_idea_groups = 3
+	max_states = 1
 }
 
 technology = {
@@ -141,7 +143,7 @@ technology = {
 	year = 1492
 	
 	#Noble Republic
-	allowed_idea_groups = 4
+	allowed_idea_groups = 5
 	customs_house = yes
 }
 
@@ -168,7 +170,7 @@ technology = {
 	year = 1531
 	
 	storehouse = yes
-	allowed_idea_groups = 5
+	allowed_idea_groups = 6
 	administrative_efficiency = 0.05
 }
 
@@ -203,7 +205,7 @@ technology = {
 	
 	plantations = yes
 	farm_estate = yes
-	allowed_idea_groups	= 6
+	allowed_idea_groups	= 7
 }
 
 technology = {
@@ -235,7 +237,7 @@ technology = {
 	# Tech 27
 	year = 1635
 	
-	allowed_idea_groups	= 7
+	allowed_idea_groups	= 8
 }
 
 technology = {
@@ -269,7 +271,7 @@ technology = {
 	# Tech 31
 	year = 1687
 	
-	allowed_idea_groups = 8
+	allowed_idea_groups = 9
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -308,7 +310,7 @@ technology = {
 	# Tech 35
 	year = 1739
 	
-	allowed_idea_groups 	= 	9
+	allowed_idea_groups = 10
 }
 
 technology = {
@@ -332,7 +334,7 @@ technology = {
 	# Tech 38
 	year = 1778
 	
-	allowed_idea_groups = 10
+	allowed_idea_groups = 11
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
@@ -369,7 +371,7 @@ technology = {
 	#Four field rotation
 	production_efficiency 	=	0.05
 	
-	allowed_idea_groups 	= 	11
+	allowed_idea_groups 	= 	12
 	railroad = yes
 }
 
@@ -390,7 +392,7 @@ technology = {
 	#safety pin
 	production_efficiency 	=	0.05
 	
-	allowed_idea_groups 	= 	12
+	allowed_idea_groups 	= 	13
 }
 
 technology = {
@@ -427,7 +429,7 @@ technology = {
 	#radio
 	
 	development_efficiency = 0.1
-	allowed_idea_groups	= 13
+	allowed_idea_groups	= 14
 }
 
 technology = {

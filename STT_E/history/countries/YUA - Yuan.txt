@@ -1,102 +1,13 @@
-government = steppe_horde
+government = celestial_empire
 government_rank = 3
 technology_group = chinese
-religion = tengri_pagan_reformed
+religion = buddhism
 primary_culture = mongol
-capital = 2116	#Каракорум
+capital = 1816	#Ханбалык(Даду)
 
-1206.4.1 = {
-	monarch = {
-        name = "Чингисхан"
-		dynasty = "Борджигин"
-		birth_date = 1162.11.1
-		adm = 6
-		dip = 6
-		mil = 6
-	}
-}
+add_country_modifier = { name = stt_yuan_culture_1 duration = -1 }
 
-1227.8.25 = {
-	monarch = {
-		name = "Толуй"
-		dynasty = "Борджигин"
-		birth_date = 1193.1.1
-		adm = 3
-		dip = 2
-		mil = 6
-		regent = yes
-	}
-}
-
-1229.9.13 = {
-	monarch = {
-		name = "Угэдэй"
-		dynasty = "Борджигин"
-		birth_date = 1186.11.7
-		adm = 6
-		dip = 5
-		mil = 6
-	}
-}
-
-1241.12.11 = {
-	monarch = {
-		name = "Дорегене-хатун"
-		dynasty = "Борджигин"
-		birth_date = 1185.1.1
-		adm = 5
-		dip = 5
-		mil = 3
-		female = yes
-		regent = yes
-	}
-}
-
-1246.8.24 = {
-	monarch = {
-		name = "Гуюк"
-		dynasty = "Борджигин"
-		birth_date = 1206.3.19
-		adm = 4
-		dip = 3
-		mil = 6
-	}
-}
-
-1248.4.20 = {
-	monarch = {
-		name = "Огул-Гаймыш"
-		birth_date = 1216.1.1
-		adm = 1
-		dip = 1
-		mil = 0
-		female = yes
-		regent = yes
-	}
-}
-
-1251.7.1 = {
-	monarch = {
-		name = "Мунке"
-		dynasty = "Борджигин"
-		birth_date = 1209.1.11
-		adm = 5
-		dip = 3
-		mil = 5
-	}
-}
-1259.8.11 = {
-	monarch = {
-		name = "Ариг-Буга"
-		dynasty = "Борджигин"
-		birth_date = 1219.1.1
-		adm = 2
-		dip = 2
-		mil = 4
-	}
-}
-
-1260.5.4 = {
+1271.2.18 = {
 	monarch = {
 		name = "Хубилай"
 		dynasty = "Борджигин"
@@ -105,15 +16,6 @@ capital = 2116	#Каракорум
 		dip = 6
 		mil = 6
 	}
-}
-
-1264.1.1 = {
-capital = 1816	#Ханбалык
-}
-
-1271.2.18 = {
-government = celestial_empire
-religion = buddhism
 }
 
 1294.2.10 = {
@@ -129,7 +31,7 @@ religion = buddhism
 
 1307.3.10 = {
 	monarch = {
-		name = "Хайсан"
+		name = "Кулуг Хайсан"
 		dynasty = "Борджигин"
 		birth_date = 1281.8.4
 		claim = 75
@@ -152,7 +54,18 @@ religion = buddhism
 		mil = 4
 	}
 }
-
+1309.1.1 = { 
+	add_country_modifier = { name = stt_yuan_admin_2 duration = -1 }
+}
+1310.1.1 = { 
+	remove_country_modifier = stt_yuan_admin_2
+	add_country_modifier = { name = stt_yuan_admin_1 duration = -1 }
+}
+1310.2.2 = { 
+	remove_country_modifier = stt_yuan_admin_1 
+	add_country_modifier = { name = stt_yuan_admin_2 duration = -1 }
+}
+	
 1311.1.27 = {
 	monarch = {
 		name = "Аюрбарибада"
@@ -220,7 +133,7 @@ religion = buddhism
 		name = "Араджабиг"
 		monarch_name = "Раджапика"
 		dynasty = "Борджигин"
-       	birth_date = 1320.7.10
+       	birth_date = 1320.1.1
 		death_date = 1328.12.14
 		claim = 95
 		adm = 1
@@ -233,7 +146,7 @@ religion = buddhism
 	monarch = {
 		name = "Раджапика"
 		dynasty = "Борджигин"
-		birth_date = 1320.7.10
+		birth_date = 1320.1.1
 		adm = 1
 		dip = 3
 		mil = 2
@@ -302,7 +215,7 @@ religion = buddhism
 	monarch = {
 		name = "Эль-Тимур"
 		dynasty = "Чонгурид"
-		birth_date = 1285.1.1
+		birth_date = 1280.1.1
 		adm = 1
 		dip = 2
 		mil = 5
@@ -335,13 +248,13 @@ religion = buddhism
 	}
 }
 
-1339.1.23 = {
+1338.1.1 = {
 	heir = {
 		name = "Билигту"
 		monarch_name = "Аюршридара"
 		dynasty = "Борджигин"
-       	birth_date = 1339.1.23
-		death_date = 1378.5.10
+       	birth_date = 1338.1.1
+		death_date = 1378.1.1
 		claim = 95
 		adm = 2
 		dip = 3
@@ -349,8 +262,7 @@ religion = buddhism
 	}
 }
 
-1368.9.14 = {
-    government = steppe_horde
+1368.1.23 = {
 	government_rank = 2
 }
 
@@ -358,7 +270,7 @@ religion = buddhism
 	monarch = {
 		name = "Аюршридара"
 		dynasty = "Борджигин"
-		birth_date = 1339.1.23
+		birth_date = 1338.1.1
 		adm = 2
 		dip = 3
 		mil = 2
@@ -379,7 +291,7 @@ religion = buddhism
 	}
 }
 
-1378.5.10 = {
+1378.1.1 = {
 	monarch = {
 		name = "Тогус-Тэмур"
 		dynasty = "Борджигин"

@@ -11,6 +11,10 @@ country_decisions = {
 			}
 			NOT = { exists = MCH }
 			NOT = { exists = QNG }
+			OR = {
+				NOT = { tag = YUA }
+				NOT = { num_of_cities = 20 }
+			}
 			primary_culture = manchu
 		}
 		provinces_to_highlight = {
@@ -27,12 +31,25 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			
 			owns_core_province = 730		#Girin
 			owns_core_province = 1053		#Hinggan
 			owns_core_province = 2108		#Huncun
 		}
 		effect = {
+			if = { limit = { tag = YUA } 
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = north_china_region
+							region = south_china_region
+							region = xinan_region
+						}
+					}
+					add_core = MNG cede_province = MNG
+				}
+				set_emperor_of_china = MNG 
+			}
+			if = { limit = { is_emperor_of_china = yes NOT = { tag = YUA } } dismantle_empire_of_china = yes }
 			swap_non_generic_missions = yes
 			730 = {
 				move_capital_effect = yes
@@ -76,6 +93,13 @@ country_decisions = {
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				tag = YUA
 			}
 		}
 		ai_importance = 500		

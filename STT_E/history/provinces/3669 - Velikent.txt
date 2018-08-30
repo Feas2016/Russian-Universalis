@@ -1,0 +1,23 @@
+owner = SHK			### STT
+controller = SHK	### STT
+culture = lezgin
+religion = shiite
+capital = "Дербент"	### STT
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = SHK		### STT
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+
+1867.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+} # Incorporated into Russia

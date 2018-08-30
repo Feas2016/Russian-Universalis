@@ -1,0 +1,141 @@
+country_decisions = {
+
+	caucasus_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_georgia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = CAU }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = CAU }
+					num_of_cities = 3 #Carnage
+				}
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = { primary_culture = adazin
+			       primary_culture = abhazian
+				   primary_culture = stt_circassien
+				   primary_culture = ubihian
+				   primary_culture = adigian
+				   primary_culture = cabardian
+				   primary_culture = lezgin
+			       primary_culture = avar
+				   primary_culture = tsahur
+				   primary_culture = kubachin
+				   primary_culture = cubachin
+				   primary_culture = ingush
+				   primary_culture = chechen
+				   primary_culture = svanian
+				   primary_culture = megrelian
+				   primary_culture = kartlian
+				   primary_culture = lazian
+				   primary_culture = gurian
+				   primary_culture = agarian
+				   primary_culture = kartlian
+				   primary_culture = kahetian
+				   primary_culture = imeretian
+				   primary_culture = osetian
+				   primary_culture = azerbaijani
+				   primary_culture = armenian
+				   primary_culture = balkarian
+				   
+   			}	   
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			provinces_to_highlight = { region =  caucasia_region }
+			}
+		
+		allow = {
+			
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 421			
+			owns_core_province = 419
+			owns_core_province = 416			
+			owns_core_province = 422
+			owns_core_province = 423			
+			owns_core_province = 420
+			owns_core_province = 462			
+			owns_core_province = 2201
+			owns_core_province = 3665			
+			owns_core_province = 425
+			owns_core_province = 2199			
+			owns_core_province = 2197
+			owns_core_province = 463
+			owns_core_province = 2195			
+			owns_core_province = 1856
+			num_of_cities = 35
+		}
+		
+		effect = {
+			change_tag = CAU
+		
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			caucasia_region = { ### STT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = CAU
+			}
+			azerbaijan_area = { ### STT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = CAU
+			}
+			# samtskhe_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+					# NOT = { is_core = ROOT }
+				# }
+				# add_permanent_claim = GEO
+			# }
+			# imereti_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+					# NOT = { is_core = ROOT }
+				# }
+				# add_permanent_claim = GEO
+			# }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = CIR_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+}	

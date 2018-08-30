@@ -529,24 +529,78 @@ country_event = {
 	title = rushorde.11.t
 	desc = rushorde.11.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
-	is_triggered_only = yes
+	
 	fire_only_once = yes
 	hidden = yes
 	
+	mean_time_to_happen = { days = 1 }
+	
 	trigger = {
-		culture_group = east_slavic
-		OR = {
-		AND = { NOT = { is_year = 1330 } tag = TVE }
-		AND = { is_year = 1330 tag = MOS }
-		}
 		NOT = { is_year = 1444 }
+		OR = {
+			tag = TVE
+			tag = MOS
+		}
 	}
 	
 	option = {
 	    name = "rushorde11.a"
-		add_ruler_modifier = {
-			name = "great_knyaz"
-			duration = -1
+		if = { limit = { tag = MOS OR = { started_in = 1330.1.1 start_date = 1310.1.1 } }
+			add_ruler_modifier = {
+				name = "great_knyaz"
+				duration = -1
+			}
+			every_province = { 
+				limit = { 
+					OR = { area = tver_area area = moscow_area area = suzdal_area } 
+				}
+				add_core = ROOT
+			}
+		}
+		else_if = {	
+			limit = {
+				tag = TVE NOT = { started_in = 1330.1.1 }
+			}
+			add_ruler_modifier = {
+				name = "great_knyaz"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = rushorde.111
+	title = rushorde.111.t
+	desc = rushorde.111.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	hidden = yes
+	
+	mean_time_to_happen = { 
+		months = 1
+	}
+	
+	trigger = {
+		OR = { 
+			calc_true_if = {
+				any_country = { has_ruler_modifier = great_knyaz }
+				amount = 2
+			}
+			NOT = { any_country = { has_ruler_modifier = great_knyaz } }
+		}
+	}
+	
+	option = {
+	    name = "rushorde111.a"
+		if = { 
+			limit = { 
+				calc_true_if = {
+					any_country = { has_ruler_modifier = great_knyaz }
+					amount = 2
+				}
+			}
+			every_country = { limit = { has_ruler_modifier = great_knyaz } release = VLD kill_ruler = yes add_stability = 1 }
 		}
 	}
 }

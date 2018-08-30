@@ -59,6 +59,19 @@ government_rank = 2 ### STT
 	}
 }
 
+1310.1.1 = {
+	add_ruler_modifier = {
+		name = "great_knyaz"
+		duration = -1
+	}
+	every_province = { 
+		limit = { 
+			OR = { area = tver_area area = moscow_area area = suzdal_area } 
+		}
+		add_core = ROOT
+	}
+}
+
 1325.11.21 = {
 	monarch = {
 		name = "Иван I Калита"

@@ -1,8 +1,8 @@
 #425 - Dagestan
 
-owner = HUL			### STT
-controller = HUL	### STT
-culture = dagestani
+owner = SRV			### STT
+controller = SRV	### STT
+culture = lezgin
 religion = shiite
 capital = "Дербент"	### STT
 trade_goods = fish
@@ -11,7 +11,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = HUL		### STT
+add_core = SRV
+add_core = DER		### STT
 
 
 
@@ -20,7 +21,7 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1335.1.1 = { owner = SRV add_core = SRV controller = SRV }	### STT
+
 1395.1.1 = { owner = TIM add_core = TIM controller = TIM } 	### STT
 1402.1.1 = { owner = QAR add_core = QAR controller = QAR }	### STT
 1444.1.1 = { owner = SRV controller = SRV }	### STT
@@ -42,7 +43,7 @@ discovered_by = nomad_group
 1747.1.1 = { unrest = 3 } # Shah Nadir is killed, local khanates emerged
 1748.1.1 = { unrest = 4 } # The empire began to decline
 1779.1.1 = { unrest = 0 } # With the Qajar dynasty the situation stabilized
-1803.1.1 = {
+1806.1.1 = {
 	owner = RUS
 	controller = RUS
 	add_core = RUS

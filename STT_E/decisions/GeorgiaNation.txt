@@ -19,7 +19,15 @@ country_decisions = {
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
-			primary_culture = georgian
+			OR = { tag = IME
+			       tag = KLI
+                   tag = KHE
+                   tag = MEG
+                   tag = GUR
+                   tag = AJA
+                   tag = SVA
+                   tag = SME
+   			}	   
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -30,31 +38,11 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 422	# Imereti
-				province_id = 423	# Tblisi
-				province_id = 2203	# Kahketi
-				province_id = 2204	# Lomsia
-				province_id = 4301	# Kartli
-				AND = {
-                    province_id = 462
-                    ROOT = { NOT = { owns_core_province = 2196 } }
-                    ROOT = { NOT = { owns_core_province = 4303 } }
-                }
-				AND = {
-                    province_id = 2196
-                    ROOT = { NOT = { owns_core_province = 462 } }
-                    ROOT = { NOT = { owns_core_province = 4303 } }
-                }
-				AND = {
-                    province_id = 4303
-                    ROOT = { NOT = { owns_core_province = 2196 } }
-                    ROOT = { NOT = { owns_core_province = 462 } }
-                }
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+			provinces_to_highlight = { 
+				OR = {
+					area = georgia_area
+					area = kolkhida_area
+				}
 			}
 		}
 		allow = {
@@ -62,15 +50,13 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			owns_core_province = 422	# Imereti
-			owns_core_province = 423	# Tblisi
-			owns_core_province = 2203	# Kahketi
-			owns_core_province = 2204	# Lomsia
-			#owns_core_province = 4303	# Kartli ### STT
-			OR = {
-				owns_core_province = 462 #Mingrelia
-				owns_core_province = 2196 #Guria
-				owns_core_province = 4303 #Tao
+			georgia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kolkhida_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -80,7 +66,7 @@ country_decisions = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
-			georgia_area = { ### STT
+			ossetia_area = { ### STT
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

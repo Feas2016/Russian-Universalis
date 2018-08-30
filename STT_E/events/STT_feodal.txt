@@ -1,0 +1,24 @@
+
+namespace = stt_feodal
+
+country_event = { # help for otto
+	id = stt_feodal.1
+	title = "stt_feodal.1.t"
+	desc = "stt_feodal.1.d"
+
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = { 
+		always = yes
+	}
+	
+	immediate = {   }	
+		
+	option = {
+		name = stt_feodal.1.a
+		add_prestige = 5
+	}
+}
+

@@ -186,8 +186,11 @@ country_decisions = {
 			add_stability = -5
 			if = {
 				limit = {
-					technology_group = nomad_group
-					OR = {
+						OR = {
+						technology_group = nomad_group
+						technology_group = muslim
+						}
+						OR = {
 						religion_group = muslim
 						secondary_religion = sunni
 						secondary_religion = shiite

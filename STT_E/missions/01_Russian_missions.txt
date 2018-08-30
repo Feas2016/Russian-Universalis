@@ -831,6 +831,30 @@ consolidate_expand_russia_plus_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			east_circassia_area = { 
+			limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			nogai_steppe_area = { 
+			limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			ossetia_area = { 
+			limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			
 			
 		}
 	}
@@ -855,14 +879,20 @@ consolidate_expand_russia_plus_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
+			east_circassia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			nogai_steppe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			ossetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
 		}
 		effect = { 
-		    dagestan_area = { 
-				add_province_modifier = {
-					name = "new_muslim_lands"
-					duration = 9125
-				}
-			}
 			circassia_area = { 
 				add_province_modifier = {
 					name = "new_muslim_lands"
@@ -883,7 +913,7 @@ consolidate_expand_russia_plus_missions = {
 				}
 				add_permanent_claim = ROOT
 			} 
-			armenia_area= { 
+			armenia_area = { 
 			limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}

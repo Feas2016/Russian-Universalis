@@ -1,3 +1,42 @@
+# mp balance
+
+vassal = {
+	first = FRA
+	second = AMG
+	start_date = 1310.1.1
+	end_date = 1311.1.1
+}
+
+vassal = {
+	first = VEN
+	second = AQU
+	start_date = 1310.1.1
+	end_date = 1310.2.2
+}
+
+vassal = {
+	first = VEN
+	second = NAX
+	start_date = 1310.1.1
+	end_date = 1310.2.2
+}
+
+vassal = {
+	first = ARA
+	second = SAR
+	start_date = 1310.1.1
+	end_date = 1310.2.2
+}
+
+union = {
+	first = ARA
+	second = SIC
+	start_date = 1310.1.1
+	end_date = 1310.2.2
+}
+
+
+# 
 vassal = {
 	first = SAV
 	second = VLS
@@ -102,11 +141,18 @@ alliance = {
 }
 
 #########################################
-union = {
+union = { #history
 	first = NEV
 	second = FLA
 	start_date = 1305.3.7
 	end_date = 1384.1.1
+}
+ 
+union = { # mp balance
+	first = HOL
+	second = BUR
+	start_date = 1310.1.1
+	end_date = 1310.2.2
 }
 
 union = {
@@ -127,7 +173,14 @@ union = {
 	first = BOH
 	second = TIR
 	start_date = 1307.8.15
-	end_date = 1310.12.9
+	end_date = 1309.12.12
+}
+
+union = { #mp balance
+	first = HAB
+	second = STY
+	start_date = 1310.1.1
+	end_date = 1310.2.2
 }
 
 union = {

@@ -1,0 +1,120 @@
+country_decisions = {
+
+	azerbaidzan_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_georgia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = AZB }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = DAG }
+					num_of_cities = 3 #Carnage
+				}
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = { primary_culture = azerbaijani
+				}   
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			provinces_to_highlight = { OR = {
+			province_id = 421
+			province_id = 420
+			province_id = 416
+			province_id = 3685
+			province_id = 2205
+			province_id = 3443
+		
+			}
+			}
+		}
+		allow = {
+			NOT = { exists = AZB }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 421			
+			owns_core_province = 420
+			owns_core_province = 416			
+			owns_core_province = 3685
+			owns_core_province = 2205			
+			owns_core_province = 3443
+			num_of_cities = 12
+		}
+		
+		effect = {
+			change_tag = AZB
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			azerbaijan_area = { ### STT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = AZB
+			}
+			shirvan_area = { ### STT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = AZB
+			}
+			armenia_area = { ### STT
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = AZB
+			}
+			# samtskhe_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+					# NOT = { is_core = ROOT }
+				# }
+				# add_permanent_claim = GEO
+			# }
+			# imereti_area = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+					# NOT = { is_core = ROOT }
+				# }
+				# add_permanent_claim = GEO
+			# }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = CIR_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	}

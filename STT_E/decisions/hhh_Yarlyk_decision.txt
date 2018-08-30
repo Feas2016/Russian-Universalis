@@ -88,7 +88,6 @@ country_decisions = {
 		allow = {
 			has_ruler_modifier = great_knyaz
 			total_development = 60
-			is_year = 1325
 			prestige = 15
 			adm_power = 100
 			dip_power = 100
@@ -118,9 +117,8 @@ country_decisions = {
 			exists = VLD
 		}
 		allow = {
-			is_year = 1345
 			has_ruler_modifier = great_knyaz
-			total_development = 70
+			total_development = 100
 			prestige = 25
 			adm_power = 150
 			dip_power = 150
@@ -152,9 +150,8 @@ country_decisions = {
 		}
 		allow = {
 			has_ruler_modifier = great_knyaz
-			total_development = 80
+			total_development = 125
 			prestige = 35
-			is_year = 1360
 			adm_power = 200
 			dip_power = 200
 			stability = 1
@@ -188,8 +185,7 @@ country_decisions = {
 		}
 		allow = {
 			has_country_modifier = perma_knyaz
-			is_year = 1380
-			total_development = 120
+			total_development = 150
 			prestige = 50
 			adm_power = 300
 			dip_power = 300
@@ -233,8 +229,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			NOT = { has_global_flag = knyaz_rights_flag_l }
 			OR = {
-			ai = yes
-			has_leader = "test"
+				ai = yes
+				has_leader = "test"
 			}
 		}
 		allow = {

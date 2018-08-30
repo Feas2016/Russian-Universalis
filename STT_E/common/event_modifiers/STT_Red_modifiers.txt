@@ -108,7 +108,38 @@ stt_hul_nounrest = {
 }
 
 shahrukhs_empire = {
-	reduced_liberty_desire = 100
+	reduced_liberty_desire = 80
 	diplomatic_reputation = 2
 	diplomatic_upkeep = 2
+}
+
+stt_yuan_admin_1 = { 
+	min_autonomy = 40
+	global_autonomy = 0.2
+	religious_unity = -0.5
+	naval_maintenance = 1
+}
+
+stt_yuan_admin_2 = { 
+	min_autonomy = 25
+	global_autonomy = 0.15
+	stability_cost_modifier = 0.2
+}
+
+stt_yuan_admin_3 = { 
+	min_autonomy = 15
+	global_autonomy = 0.1
+}
+
+stt_yuan_culture_1 = {
+	culture_conversion_cost = 1
+	num_accepted_cultures = -5
+}
+
+stt_feod_asia_empire = {
+	discipline = -0.05
+	manpower_recovery_speed = 0.5
+	land_morale = 0.1
+	merc_maintenance_modifier = 2
+	possible_mercenaries = -0.9
 }

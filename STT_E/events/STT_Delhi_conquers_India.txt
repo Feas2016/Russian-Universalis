@@ -16,6 +16,8 @@ country_event = {
 		tag = DLH
 		is_year = 1309
 		NOT = { is_year = 1340 }
+		ai = yes
+		was_player = no
 	}	
 	mean_time_to_happen = {
 		months = 2
@@ -74,6 +76,8 @@ country_event = {
 		tag = DLH
 		is_year = 1340
 		NOT = { is_year = 1350 }
+		ai = yes
+		was_player = no
 	}	
 	mean_time_to_happen = {
 		months = 2
@@ -87,7 +91,7 @@ country_event = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_core = DLH
+			add_permanent_claim = DLH
 		}
 		west_india_region = {
 			limit = {
@@ -95,7 +99,7 @@ country_event = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_core = DLH
+			add_permanent_claim = DLH
 		}
 		deccan_region = {
 			limit = {
@@ -103,7 +107,7 @@ country_event = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_core = DLH
+			add_permanent_claim = DLH
 		}
 		coromandel_region = {
 			limit = {
@@ -111,7 +115,7 @@ country_event = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT }
 			}
-			add_core = DLH
+			add_permanent_claim = DLH
 		}
 		add_country_modifier = {
 			name = dlh_strooong_B

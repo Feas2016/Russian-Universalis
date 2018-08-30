@@ -138,8 +138,8 @@ age_of_feudalism = { ###STT
 		ab_chevauchee = {
 			allow = {
 				OR = {
-				army_tradition = 50
-				army_professionalism = 0.1
+					army_tradition = 50
+					army_professionalism = 0.1
 				}
 			}
 			modifier = {
@@ -207,7 +207,10 @@ age_of_feudalism = { ###STT
 		ab_bohemian_empire = {
 		
 			allow = {
-				tag = BOH
+				OR = {
+					tag = BOH
+					AND = { tag = HAB is_emperor = yes BOH = { is_subject_of = HAB } }
+				}
 			}
 			modifier = {
 				imperial_authority = 0.05
@@ -570,7 +573,7 @@ age_of_reformation = {
 			effect = {
 				custom_tooltip = religion_enforced_edict
 				set_country_flag = religion_enforced_edict
-				tolerance_own = 2
+				tolerance_own = 1
 				tolerance_heretic = -1
 			}
 			ai_will_do = {
